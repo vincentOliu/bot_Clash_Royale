@@ -6,231 +6,511 @@ mode: Rule
 log-level: info
 external-controller: 9090
 proxies:
-  - {name: 中国(TG频道@kxswa), server: 9bdc7f3764a60fb0.sanfen001.pics, port: 17525, type: ss, cipher: chacha20-ietf-poly1305, password: 18f6956e-4340-43ba-8b0e-ca9554f4b339, udp: true}
-  - {name: 中国(TG频道@kxswa) 2, server: r001.baipiaoxd.com, port: 22132, type: ss, cipher: aes-256-gcm, password: Mm9lWnREcEdxUFNISUVudVNmN3RLVlc4ZUJ3NktHTlQ=, udp: true}
-  - {name: 香港(TG频道@kxswa), server: hk80.sanfen001.pics, port: 80, type: vmess, uuid: 8543e573-88d6-4d54-9159-4f2aeb3fef9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn/, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: Relay_🇧🇬BG-🇧🇬BG_05, server: gcorepl.sylu.cyou, port: 443, type: vmess, uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /Falling42gcoreplnode, headers: {Host: gcorepl.sylu.cyou}}, udp: true}
-  - {name: 中国(TG频道@kxswa) 3, server: 9bdc7f3764a60fb0.sanfen001.pics, port: 17525, type: ss, cipher: chacha20-ietf-poly1305, password: e30fa02c-d604-4191-9b81-c550b32f82bc, udp: true}
-  - {name: 中国(TG频道@kxswa) 4, server: sinash01.dghjkjhertyuihgfddfghjasdertyuudfghjaxcvbj.com, port: 30056, type: trojan, password: c16b8aef-1c84-44cf-ba26-9ec600a39a7b, sni: v1kr01.fuqiangren.com, skip-cert-verify: true, udp: true}
-  - {name: 中国(TG频道@kxswa) 5, server: js-cm.alhttdw.cn, port: 20015, type: vmess, uuid: 0aec3a4e-fd2d-4916-b097-b47ba0f3fca4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: sg-am3.eqsunshine.com:32001, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: _FI_芬兰, server: hel1.yazdan.fun, port: 19730, type: vmess, uuid: e74af7d3-b7ba-462f-ea1e-9e033e5edd73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [hel1.yazdan.fun]}}, udp: true}
-  - {name: 越南_0108025, server: hn1.safepn.net, port: 80, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hn1.safepn.net}}, udp: true}
-  - {name: "@SSRSUB-美国V02-付费推荐:dlj.tf/ssrsub", server: http.download.yunzhongzhuan.com, port: 8080, type: vmess, uuid: 930eaab6-5a04-48fb-9c15-7545ab3ec0bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.asuka.buzz}}, udp: true}
-  - {name: 香港(TG频道@kxswa) 2, server: hk80-2.sanfen001.pics, port: 80, type: vmess, uuid: 506d93ec-ffdb-41cd-bbc3-367039c4b18f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn/, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: 香港(TG频道@kxswa) 3, server: hk80.sanfen001.pics, port: 80, type: vmess, uuid: e30fa02c-d604-4191-9b81-c550b32f82bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn/, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: 俄罗斯联邦_0108009, server: 194.87.248.27, port: 26743, type: vmess, uuid: 59952a8e-b712-4190-d85e-f9aadd65faa0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 中国(TG频道@kxswa) 6, server: sinash01.dghjkjhertyuihgfddfghjasdertyuudfghjaxcvbj.com, port: 30016, type: vmess, uuid: c16b8aef-1c84-44cf-ba26-9ec600a39a7b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sinash01.dghjkjhertyuihgfddfghjasdertyuudfghjaxcvbj.com}}, udp: true}
-  - {name: 新加坡_0108069, server: 00000000000000000000000000000000000000000000000000000000000005a.node-for-bigairport.win, port: 80, type: vmess, uuid: f3fda0c6-4025-4da7-82b4-88423d9ec489, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 波兰(TG频道@kxswa), server: gcspl.sylu.cyou, port: 443, type: vmess, uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /Falling42gcsplnode, headers: {Host: gcspl.sylu.cyou}}, udp: true}
-  - {name: 芬兰_0108009, server: 135.181.200.222, port: 19730, type: vmess, uuid: e74af7d3-b7ba-462f-ea1e-9e033e5edd73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 新加坡_0108049, server: sg1-v.sshmax.xyz, port: 80, type: vmess, uuid: a72bd7a7-732d-46c1-8274-bf16bca30e78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: sg1-v.sshmax.xyz}}, udp: true}
-  - {name: 越南_0108079, server: 103.237.145.61, port: 80, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 韩国(TG频道@kxswa), server: cloud.ylffb.xyz, port: 20003, type: ss, cipher: chacha20-ietf-poly1305, password: 1f465340-d1c7-4ac7-a75f-f7e68294fca7, udp: true}
-  - {name: _NL_荷兰, server: tj2.dalazhi.cyou, port: 443, type: trojan, password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯(油管:破解资源君) 5, server: gcssjp.sylu.cyou, port: 443, type: vmess, uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /Falling42gcssjpnode, headers: {Host: gcssjp.sylu.cyou}}, udp: true}
-  - {name: 中国_0108322, server: hainan.sfjsq001.info, port: 33204, type: vmess, uuid: b4991afe-a7f2-3a28-abb5-a8b8d5d99ab5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国_0108259, server: hainan.sfjsq001.info, port: 33207, type: vmess, uuid: b4991afe-a7f2-3a28-abb5-a8b8d5d99ab5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 越南_0108061, server: vn2.hello4g.pw, port: 80, type: vmess, uuid: 62f2d3ba-abc6-4858-82ef-219f62f8e070, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
-  - {name: 中国_0108258, server: hainan.sfjsq001.info, port: 33206, type: vmess, uuid: b4991afe-a7f2-3a28-abb5-a8b8d5d99ab5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡_0108094, server: 51.79.173.222, port: 80, type: vmess, uuid: a72bd7a7-732d-46c1-8274-bf16bca30e78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: 中国_01081043, server: 117.164.185.222, port: 16131, type: vmess, uuid: 4a0d81b8-a04a-382b-a3cb-84d1d4b9d6aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国(TG频道@kxswa), server: 38.91.107.37, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 中国_01081060, server: 117.164.185.222, port: 16130, type: vmess, uuid: 4a0d81b8-a04a-382b-a3cb-84d1d4b9d6aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 越南_0108125, server: 103.27.238.214, port: 80, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 澳门(TG频道@kxswa), server: dd4.bestcloud.tk, port: 443, type: vmess, uuid: 2eff2b3f-e645-4a4b-831a-f49e8fa9ff44, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /2, headers: {Host: uk3.mybestjj.com}}, udp: true}
-  - {name: 中国_01081041, server: 117.164.185.222, port: 16132, type: vmess, uuid: 4a0d81b8-a04a-382b-a3cb-84d1d4b9d6aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_01081064, server: 00000000000000000000000000000000000000000000000000000000000032a.node-for-bigairport.win, port: 12356, type: vmess, uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯联邦(TG频道@kxswa), server: els.glucy.top, port: 51489, type: vmess, uuid: 4e87810b-31e7-44be-a549-a9778b2c2420, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾(TG频道@kxswa), server: 1.170.208.123, port: 443, type: vmess, uuid: a25a8aba-7e6d-4ede-be30-2b13ac60cfce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /M2iEU, headers: {Host: dengxin.one}}, udp: true}
-  - {name: 韩国_0108207, server: 00000000000000000000000000000000000000000000000000000000000028a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国_0108252, server: hainan.sfjsq001.info, port: 33204, type: vmess, uuid: b4991afe-a7f2-3a28-abb5-a8b8d5d99ab5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国(TG频道@kxswa) 2, server: huclouds.ml, port: 5505, type: vmess, uuid: 69801534-3870-4d14-9d07-6f65da593da4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: huclouds.ml}}, udp: true}
-  - {name: 俄罗斯(油管:破解资源君) 6, server: gcsshkk.sylu.cyou, port: 443, type: vmess, uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /Falling42gcsshkknode, headers: {Host: gcsshkk.sylu.cyou}}, udp: true}
-  - {name: 越南_0108026, server: hcm1.safepn.net, port: 80, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hcm1.safepn.net}}, udp: true}
-  - {name: 英国 003, server: 51.68.139.22, port: 80, type: vmess, uuid: c6744c44-4eb7-48d5-a879-a10474e2ba34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:), server: 193.70.85.191, port: 80, type: vmess, uuid: ed579687-5171-46ad-a89a-bd06af52705d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 193.70.85.191}}, udp: true}
-  - {name: Pool_🇳🇱NL_92, server: 85.208.108.60, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国 074, server: dl-hk3.efyunpan.com, port: 443, type: trojan, password: 8970c934-9dbf-4481-ae3a-78967e5b68af, sni: data-hk.efyunpan.com, skip-cert-verify: true, udp: true}
-  - {name: _GB_英国, server: content-provider4.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: shefelnak, skip-cert-verify: true, udp: true}
-  - {name: "[01-09]-🇺🇸-美国-118-aws-bj.qianlong520.vip", server: aws-bj.qianlong520.vip, port: 995, type: ss, cipher: chacha20-ietf-poly1305, password: b3da4b74-ab6a-4fed-96de-ad873251d665, udp: true}
-  - {name: US_110, server: 51.81.220.34, port: 80, type: vmess, uuid: 0842be25-d718-491a-bca8-5e9d080150e6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: 巴拿马_0108001, server: 185.143.220.25, port: 443, type: vmess, uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /6e9EtZ2dL, headers: {Host: dengxin.one}}, udp: true}
-  - {name: US_148, server: 172.99.188.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _SG_新加坡_3, server: 13.215.173.114, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 英国_116, server: 141.95.61.209, port: 1145, type: trojan, password: 6416f8c6-8db1-4b59-a0af-09d58d7eb19b, sni: wx.qq.com, skip-cert-verify: true, udp: true}
+  - {name: 深圳移动-香港HKT7, server: 116.162.120.34, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 54654:SVIPTIZ8, obfs-param: t.me/vpnhat, udp: true}
+  - {name: Hongkong 9, server: yd-07.paofunlink.com, port: 5986, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 37f7e180722.microsoft.com}, udp: true}
+  - {name: 香港_0110068, server: 8.210.0.37, port: 36442, type: vmess, uuid: 85802212-5189-4301-9010-3180f65345b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 美国 086, server: 15.235.140.178, port: 80, type: vmess, uuid: 275ff4e2-8054-44ed-b996-e3d19c21a55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: 日本_53, server: dl-kr2.efyunpan.com, port: 443, type: trojan, password: 2974838f-e81a-46a3-ada4-fcb1b781b457, sni: data-ockrcc.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 越南_0108089, server: vn1.v2rayserv.com, port: 80, type: vmess, uuid: a94966a1-2225-422b-b756-dd4b4d6b974b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sshocean, headers: {Host: vn1.v2rayserv.com}}, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 31, server: 162.159.135.42, port: 443, type: vmess, uuid: 82d5ea73-8002-4319-cd3c-29d1560bd290, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dsadsa1dsadsa33434, headers: {Host: xjp4h.mayaa.ml}}, udp: true}
+  - {name: us(youtube阿伟科技) 4, server: 154.9.204.54, port: 60000, type: ssr, cipher: dummy, password: 52*wentermethod, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 伯利兹(TG频道@kxswa), server: 203.30.189.191, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
+  - {name: Singapore 07 TG:@nodpai, server: dl-sg1.efyunpan.com, port: 443, type: trojan, password: 2974838f-e81a-46a3-ada4-fcb1b781b457, sni: data-sg.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡_0110004, server: 51.79.173.222, port: 80, type: vmess, uuid: a72bd7a7-732d-46c1-8274-bf16bca30e78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: _SG_新加坡_3, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: vpnclub 2/9_153, server: 139.99.61.154, port: 80, type: vmess, uuid: 6a620223-84f8-40f4-b6ba-ed6abfe4e4f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 139.99.61.154}}, udp: true}
+  - {name: 香港HKT-dip@univstar_1, server: 58.153.132.96, port: 443, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 54654:SVIPTIZ8, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 郴州联通-香港HKT-dip@univstar_11, server: 116.162.120.29, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 54654:SVIPTIZ8, obfs-param: t.me/vpnhat, udp: true}
+  - {name: United States 10 TG:@nodpai, server: 103.172.116.196, port: 3389, type: trojan, password: 0c6a3341e8d5ab17, skip-cert-verify: true, udp: true}
+  - {name: Asia 香港04 | 直连 | 1.0x | V1 - 酸奶VPN, server: 20.205.120.177, port: 80, type: vmess, uuid: f8831822-2d31-31a3-a783-98cf8e11c7d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny}, udp: true}
+  - {name: _CN_中国->🇫🇷_FR_法国, server: 20010.purefast2.com, port: 20010, type: trojan, password: ed3ccb1e-7057-3d40-b794-630ef18fb7d2, skip-cert-verify: true, udp: true}
+  - {name: 香港_0110074, server: 8.210.88.29, port: 42783, type: vmess, uuid: 1e5a4ea1-53bb-4af5-ace5-630351def1c8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: _SG_新加坡_1, server: 15.235.184.36, port: 80, type: vmess, uuid: 7ce525f5-3a9b-4627-ae0e-3ca0b57519e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: 香港_0110075, server: 8.210.20.159, port: 45751, type: vmess, uuid: 3a0d252e-cddf-4695-ab0f-95a0ce7abcc0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: mianfeifq_011020237469-860trojan, server: 141.95.61.209, port: 1145, type: trojan, password: 414583b6-1d14-49f4-9988-9d6849efb420, skip-cert-verify: true, udp: true}
+  - {name: 香港_0110069, server: 8.210.206.163, port: 45719, type: vmess, uuid: a220dad2-a34e-4460-b0f7-eaba9c46e639, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 新加坡(TG频道@kxswa), server: sg-lb.vhax.net, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sshkit/Ertusg86/635014638c264/, headers: {Host: sg-lb.vhax.net}}, udp: true}
+  - {name: _MO_欢迎订阅yui科技, server: 45.64.22.56, port: 443, type: trojan, password: !<str> 123456, sni: trojan-ctb-sg01.globalssh.xyz, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 11, server: main.millionaireaisle.com, port: 443, type: vmess, uuid: e3eba3ac-5bea-409f-ac5c-6c964e04d0c4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca2.v2rayserv.com}}, udp: true}
+  - {name: 香港_0110071, server: 8.210.70.156, port: 54148, type: vmess, uuid: 1346261e-3201-4932-bfba-df869ab48116, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: github.com/freefq - 美国  26, server: 172.99.188.99, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: github.com/freefq - 美国RF Engineering 5, server: 141.193.213.20, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
+  - {name: Asia 香港01 | 直连 | 1.0 x | V1 - 酸奶VPN, server: 20.205.10.171, port: 80, type: vmess, uuid: f8831822-2d31-31a3-a783-98cf8e11c7d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny}, udp: true}
+  - {name: 香港_0110065, server: 8.210.140.81, port: 24447, type: vmess, uuid: ef97abb8-c32a-4c36-8ffd-40dfffb8dd30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 香港_0110076, server: 47.242.167.108, port: 43166, type: vmess, uuid: 2d1bd222-6883-455d-95a4-649f2da0967c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: Taiwan 44, server: yd-05.paofunlink.com, port: 1170, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 37f7e180722.microsoft.com}, udp: true}
+  - {name: -香港-8.210.153.242, server: 8.210.153.242, port: 48577, type: vmess, uuid: dd3c5ce4-6741-4cdb-a54d-bf43475969e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: Relay_🏁ZZ-🇫🇷FR_289, server: 162.159.128.7, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
+  - {name: 白嫖-0637, server: 3.34.6.217, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国惠普公司 20, server: 15.235.202.111, port: 80, type: vmess, uuid: 8097cc41-e2b8-46cc-b1e2-c9fe4776a9c2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 15.235.202.111}}, udp: true}
+  - {name: 香港_0110073, server: 8.210.152.173, port: 57365, type: vmess, uuid: 1b3c5ca1-5567-40e7-a7b5-41b876a6839f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN, server: 20.24.199.107, port: 80, type: vmess, uuid: f8831822-2d31-31a3-a783-98cf8e11c7d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny}, udp: true}
+  - {name: Hongkong 99, server: yd-07.paofunlink.com, port: 5986, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 37f7e180722.microsoft.com}, udp: true}
+  - {name: Asia 香港06 | 直连 | 1.0x | V1 - 酸奶VPN, server: 20.205.43.65, port: 80, type: vmess, uuid: f8831822-2d31-31a3-a783-98cf8e11c7d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny}, udp: true}
+  - {name: SGP 新加坡 | 中转 | 奈飞 | 5.0x | V1 - 酸奶VPN, server: 20.255.169.161, port: 39991, type: vmess, uuid: f8831822-2d31-31a3-a783-98cf8e11c7d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny}, udp: true}
+  - {name: 香港_0110070, server: 8.210.48.219, port: 26812, type: vmess, uuid: cbe5ac22-eb42-4ca9-9fdc-283e57f98008, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: Singapore 09 TG:@nodpai, server: dl-sg2.efyunpan.com, port: 443, type: trojan, password: 2974838f-e81a-46a3-ada4-fcb1b781b457, sni: data-sg.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 哥斯达黎加(TG频道@kxswa), server: 190.93.245.3, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
+  - {name: Relay_🇺🇸US-🇷🇺RU_103, server: v2ray.online, port: 443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: LosAngeles.v2ray.online}}, udp: true}
+  - {name: 韩国_0110031, server: 00000000000000000000000000000000000000000000000000000000000027a.node-for-bigairport.win, port: 52356, type: vmess, uuid: f3fda0c6-4025-4da7-82b4-88423d9ec489, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: mianfeifq 192, server: tr.gov.goumaituijian.xyz, port: 59888, type: trojan, password: 32b14383-7f68-4978-9c16-ae5a721bbbce, sni: tr.gov.goumaituijian.xyz, skip-cert-verify: true, udp: true}
+  - {name: 韩国_0110162, server: 00000000000000000000000000000000000000000000000000000000000007a.node-for-bigairport.win, port: 80, type: vmess, uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Hong Kong 03 TG:@nodpai, server: dl-hk1.efyunpan.com, port: 443, type: trojan, password: 2974838f-e81a-46a3-ada4-fcb1b781b457, sni: data-hk.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: Asia 香港07 | 直连 | 1.0x | V1 - 酸奶VPN, server: 20.239.151.16, port: 80, type: vmess, uuid: f8831822-2d31-31a3-a783-98cf8e11c7d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny}, udp: true}
+  - {name: 哥斯达黎加(TG频道@kxswa) 2, server: 190.93.245.4, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
+  - {name: 新加坡(TG频道@kxswa) 2, server: sg-lb.vhax.net, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sshkit/Ertusg86/635014638c264/, headers: {Host: zoom.us}}, udp: true}
+  - {name: mianfeifq_011020237469-240trojan, server: 88.150.137.177, port: 443, type: trojan, password: shefelnak, skip-cert-verify: true, udp: true}
+  - {name: Hongkong 133, server: yd-01.paofunlink.com, port: 5982, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 37f7e180722.microsoft.com}, udp: true}
+  - {name: 香港8(youtube阿伟科技)83, server: 58.153.132.96, port: 443, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 54654:SVIPTIZ8, obfs-param: "", udp: true}
+  - {name: "| 0.21Mb", server: uk1.trojanvh.xyz, port: 80, type: trojan, password: 211f5876-8c89-4d97-9004-ff16acddd506, skip-cert-verify: true, udp: true}
+  - {name: 香港_0110067, server: 8.210.253.93, port: 31083, type: vmess, uuid: d2070b97-6d7c-44dc-9c7c-84a9c891815e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 香港_0110081, server: 47.242.172.105, port: 51679, type: vmess, uuid: 6bfaa8c8-95f3-4f8d-aed8-07c5f402483d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 新加坡(TG频道@kxswa) 3, server: 15.235.147.186, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sshkit/Ertusg86/635014638c264/, headers: {Host: 15.235.147.186}}, udp: true}
+  - {name: United States 06 TG:@nodpai, server: dl-us2.efyunpan.com, port: 443, type: trojan, password: 2974838f-e81a-46a3-ada4-fcb1b781b457, sni: data-us.xn--vur082k.cc, skip-cert-verify: true, udp: true}
+  - {name: Asia 香港09 | 奈飞 | 2.0x | V1 - 酸奶VPN, server: 20.255.177.181, port: 80, type: vmess, uuid: f8831822-2d31-31a3-a783-98cf8e11c7d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny}, udp: true}
+  - {name: 香港 | 直连 - BIUBIU FAST, server: hk1.biubiufast.quest, port: 8846, type: trojan, password: 895a7e5e-8f36-475a-bce2-e21fe4918b37, skip-cert-verify: true, udp: true}
+  - {name: 香港_0110062, server: 198.252.107.240, port: 80, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dl.ops.kgvn.garenanow.com}}, udp: true}
+  - {name: 美国(TG频道@kxswa), server: v125.toddns.tk, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /usv125N93nz6Py, headers: {Host: v125.toddns.tk}}, udp: true}
+  - {name: KR【付费推荐：goo.gs/vip】, server: surongwei.eu.org, port: 443, type: vmess, uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /reffs7y26g0ua, headers: {Host: surongwei.eu.org}}, udp: true}
+  - {name: Taiwan 44 2, server: yd-05.paofunlink.com, port: 1170, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 37f7e180722.microsoft.com}, udp: true}
+  - {name: Japan 12 TG:@nodpai, server: dl-jp1.efyunpan.com, port: 443, type: trojan, password: 2974838f-e81a-46a3-ada4-fcb1b781b457, sni: data-jp.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: Asia 香港08 | 直连 | 1.0x | V1 - 酸奶VPN, server: 20.24.213.84, port: 80, type: vmess, uuid: f8831822-2d31-31a3-a783-98cf8e11c7d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny}, udp: true}
+  - {name: "@SSRSUB-V20-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: kr.sharecentre.online}}, udp: true}
+  - {name: 郴州联通-香港HKBN-dip@univstar_3, server: 116.162.120.28, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 54654:SVIPTIZ8, obfs-param: t.me/vpnhat, udp: true}
+  - {name: mianfeifq_010920232472-58trojan, server: 141.95.61.209, port: 1145, type: trojan, password: 55e51cd3-cf98-4cb3-aaab-a72044437df3, skip-cert-verify: true, udp: true}
+  - {name: Hongkong 6, server: yd-01.paofunlink.com, port: 5981, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 37f7e180722.microsoft.com}, udp: true}
+  - {name: 1907(@Outline_Vpn), server: 51.77.212.145, port: 80, type: vmess, uuid: 5f6e42bb-2fd1-478b-8f0f-e52b2d6f7652, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 51.77.212.145}}, udp: true}
+  - {name: 美国(TG频道@kxswa) 2, server: cao.htvviru.top, port: 205, type: ss, cipher: chacha20-ietf-poly1305, password: 3d81e6fb-c7f0-4791-af2e-82c93d149483, udp: true}
+  - {name: github.com/freefq - 美国惠普公司 35, server: 15.235.184.36, port: 80, type: vmess, uuid: 7ce525f5-3a9b-4627-ae0e-3ca0b57519e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 15.235.184.36}}, udp: true}
+  - {name: _JP_日本_3, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 美国(TG频道@kxswa) 3, server: cf-lt-dns.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: us-dp.sharecentre.online}}, udp: true}
+  - {name: Hongkong 12, server: yd-07.paofunlink.com, port: 5988, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 37f7e180722.microsoft.com}, udp: true}
+  - {name: 新加坡（youtube阿伟科技), server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: ===%%�, obfs-param: ===%%�, udp: true}
+  - {name: Asia 香港10 | 移动优化线路 | 1.0x | V1 - 酸奶VPN, server: 16.163.29.139, port: 80, type: vmess, uuid: f8831822-2d31-31a3-a783-98cf8e11c7d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny}, udp: true}
+  - {name: 越南_0110129, server: 103.82.24.79, port: 80, type: vmess, uuid: ef919c67-6638-4416-91af-9a13ffe5b9ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tandung288.click}, udp: true}
+  - {name: 美国(TG频道@kxswa) 4, server: 141.193.213.10, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sg-gcore.sharecentre.online}}, udp: true}
+  - {name: 荷兰(TG频道@kxswa), server: 172.99.188.99, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 越南_0110127, server: 103.166.184.157, port: 80, type: vmess, uuid: ef919c67-6638-4416-91af-9a13ffe5b9ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tandung288.click}, udp: true}
+  - {name: 荷兰(TG频道@kxswa) 2, server: 172.99.188.99, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国(TG频道@kxswa) 5, server: jt2.nmsl.pics, port: 443, type: vmess, uuid: 873b1489-85d6-4a1b-ebd9-46dacb6b1b15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jt2.nmsl.pics}}, udp: true}
+  - {name: 越南_0110001, server: 103.56.160.184, port: 80, type: vmess, uuid: ef919c67-6638-4416-91af-9a13ffe5b9ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tandung288.click, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
+  - {name: "@SSRSUB-V15-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lvryzenkvm1gb.sharecentre.online}}, udp: true}
+  - {name: Japan 02 TG:@nodpai, server: dl-jp2.efyunpan.com, port: 443, type: trojan, password: 2974838f-e81a-46a3-ada4-fcb1b781b457, sni: data-jp.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: mianfeifq 172, server: 141.95.61.209, port: 1145, type: trojan, password: e45b7759-6512-487b-ab20-22da1f46255f, sni: mci.ir, skip-cert-verify: true, udp: true}
+  - {name: 香港_0110077, server: 47.242.167.107, port: 41280, type: vmess, uuid: ba679005-db91-4411-ab60-a2642346a9cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 美国(油管:破解资源君) 39, server: 103.21.244.169, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8cda48b3, headers: {Host: SG-244-255.shoptunnel.live}}, udp: true}
+  - {name: 深圳移动-香港HKT-dip@univstar_1, server: 120.233.15.105, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 54654:SVIPTIZ8, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 美国(油管:破解资源君) 22, server: 103.21.244.17, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8cda48b3, headers: {Host: us-171-78.shoptunnel.live}}, udp: true}
+  - {name: "[01-10]-🇯🇵-日本-218-43.200.2.173", server: 43.200.2.173, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 美国(油管:破解资源君) 24, server: 51.81.220.34, port: 80, type: vmess, uuid: 0842be25-d718-491a-bca8-5e9d080150e6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 51.81.220.34}}, udp: true}
+  - {name: Hongkong 133 2, server: yd-01.paofunlink.com, port: 5982, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 37f7e180722.microsoft.com}, udp: true}
+  - {name: 越南_0110128, server: 103.82.24.174, port: 80, type: vmess, uuid: ef919c67-6638-4416-91af-9a13ffe5b9ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tandung288.click}, udp: true}
+  - {name: us(youtube阿伟科技) 4 2, server: 173.82.186.25, port: 50006, type: ssr, cipher: dummy, password: "IOSwgAYTREask(&1UHYTiq'&%12igsasamafSSR", protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 韩国_0110028, server: 00000000000000000000000000000000000000000000000000000000000027a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 1617ff1b-4e85-4a8a-81c3-511b3c2efad8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 越南_0110126, server: 103.166.185.227, port: 80, type: vmess, uuid: ef919c67-6638-4416-91af-9a13ffe5b9ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tandung288.click}, udp: true}
+  - {name: _SG_新加坡 3, server: 13.215.163.54, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 韩国_0110141, server: 00000000000000000000000000000000000000000000000000000000000038a.node-for-bigairport.win, port: 12356, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 芬兰_0110004, server: 135.181.200.222, port: 19730, type: vmess, uuid: e74af7d3-b7ba-462f-ea1e-9e033e5edd73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: UC 台湾01 | Youtube免广告 | 3.0x | V1 - 酸奶VPN, server: 165.154.246.150, port: 80, type: vmess, uuid: f8831822-2d31-31a3-a783-98cf8e11c7d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny}, udp: true}
+  - {name: 澳大利亚 004, server: 43.207.89.141, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 深圳移动-香港HKT4, server: 116.162.120.60, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 54654:SVIPTIZ8, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 新加坡_0110014, server: 139.99.61.154, port: 80, type: vmess, uuid: c4d7cd44-9adb-4a35-af03-4d1641f1eac7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 139.99.61.154}}, udp: true}
+  - {name: portfolio.progbyrazyar.ir:664, server: portfolio.progbyrazyar.ir, port: 664, type: trojan, password: rRIFmF2TnM, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇷🇺RU-🇫🇷FR_123, server: 45.136.244.181, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fr-unlimitxxx, headers: {Host: 45.136.244.181}}, udp: true}
+  - {name: Hongkong 100, server: yd-06.paofunlink.com, port: 5983, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 37f7e180722.microsoft.com}, udp: true}
+  - {name: github.com/freefq - 北美地区  4, server: 202.sbzpl.space, port: 35453, type: trojan, password: jSgDggeA8z, skip-cert-verify: true, udp: true}
+  - {name: 新加坡（youtube阿伟科技) 2, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: PT09PQ==, obfs-param: PT09PQ==, udp: true}
+  - {name: Hongkong 11, server: yd-06.paofunlink.com, port: 5985, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 37f7e180722.microsoft.com}, udp: true}
+  - {name: 越南_0110001 2, server: 103.56.160.184, port: 80, type: vmess, uuid: ef919c67-6638-4416-91af-9a13ffe5b9ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tandung288.click, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
+  - {name: 上海联通-香港HKT-dip@univstar, server: 223.167.41.121, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 54654:SVIPTIZ8, obfs-param: t.me/vpnhat, udp: true}
+  - {name: -香港-47.242.66.90, server: 47.242.66.90, port: 35317, type: vmess, uuid: 3d5d3753-4d33-4dd0-847a-65aa17f3e845, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 上海联通-香港HKT-dip@univstar 2, server: 223.167.41.121, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 54654:SVIPTIZ8, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港_0110079, server: 47.242.168.12, port: 35482, type: vmess, uuid: c6b5d490-5aee-49c7-bbce-699ad9e10507, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 郴州联通-香港HKBN-dip@univstar_3 2, server: 116.162.120.28, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 54654:SVIPTIZ8, obfs-param: t.me/vpnhat, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国(TG频道@kxswa)
-      - 中国(TG频道@kxswa) 2
-      - 香港(TG频道@kxswa)
-      - Relay_🇧🇬BG-🇧🇬BG_05
-      - 中国(TG频道@kxswa) 3
-      - 中国(TG频道@kxswa) 4
-      - 中国(TG频道@kxswa) 5
-      - sg-am3.eqsunshine.com:32001
-      - _FI_芬兰
-      - 越南_0108025
-      - "@SSRSUB-美国V02-付费推荐:dlj.tf/ssrsub"
-      - 香港(TG频道@kxswa) 2
-      - 香港(TG频道@kxswa) 3
-      - 俄罗斯联邦_0108009
-      - 中国(TG频道@kxswa) 6
-      - 新加坡_0108069
-      - 波兰(TG频道@kxswa)
-      - 芬兰_0108009
-      - 新加坡_0108049
-      - 越南_0108079
-      - 韩国(TG频道@kxswa)
-      - _NL_荷兰
-      - 俄罗斯(油管:破解资源君) 5
-      - 中国_0108322
-      - 中国_0108259
-      - 越南_0108061
-      - 中国_0108258
-      - 新加坡_0108094
-      - 中国_01081043
-      - 美国(TG频道@kxswa)
-      - 中国_01081060
-      - 越南_0108125
-      - 澳门(TG频道@kxswa)
-      - 中国_01081041
-      - 香港_01081064
-      - 俄罗斯联邦(TG频道@kxswa)
-      - 台湾(TG频道@kxswa)
-      - 韩国_0108207
-      - 中国_0108252
-      - 美国(TG频道@kxswa) 2
-      - 俄罗斯(油管:破解资源君) 6
-      - 越南_0108026
-      - 英国 003
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - Pool_🇳🇱NL_92
-      - 美国 074
-      - _GB_英国
-      - "[01-09]-🇺🇸-美国-118-aws-bj.qianlong520.vip"
-      - US_110
-      - 巴拿马_0108001
-      - US_148
+      - 英国_116
+      - 深圳移动-香港HKT7
+      - Hongkong 9
+      - 香港_0110068
+      - 美国 086
+      - 日本_53
+      - 越南_0108089
+      - github.com/freefq - 美国CloudFlare节点 31
+      - us(youtube阿伟科技) 4
+      - 伯利兹(TG频道@kxswa)
+      - Singapore 07 TG:@nodpai
+      - 新加坡_0110004
       - _SG_新加坡_3
+      - vpnclub 2/9_153
+      - 香港HKT-dip@univstar_1
+      - 郴州联通-香港HKT-dip@univstar_11
+      - United States 10 TG:@nodpai
+      - Asia 香港04 | 直连 | 1.0x | V1 - 酸奶VPN
+      - _CN_中国->🇫🇷_FR_法国
+      - 香港_0110074
+      - _SG_新加坡_1
+      - 香港_0110075
+      - mianfeifq_011020237469-860trojan
+      - 香港_0110069
+      - 新加坡(TG频道@kxswa)
+      - _MO_欢迎订阅yui科技
+      - github.com/freefq - 美国CloudFlare公司CDN节点 11
+      - 香港_0110071
+      - github.com/freefq - 美国  26
+      - github.com/freefq - 美国RF Engineering 5
+      - Asia 香港01 | 直连 | 1.0 x | V1 - 酸奶VPN
+      - 香港_0110065
+      - 香港_0110076
+      - Taiwan 44
+      - -香港-8.210.153.242
+      - Relay_🏁ZZ-🇫🇷FR_289
+      - 白嫖-0637
+      - github.com/freefq - 美国惠普公司 20
+      - 香港_0110073
+      - Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN
+      - Hongkong 99
+      - Asia 香港06 | 直连 | 1.0x | V1 - 酸奶VPN
+      - SGP 新加坡 | 中转 | 奈飞 | 5.0x | V1 - 酸奶VPN
+      - 香港_0110070
+      - Singapore 09 TG:@nodpai
+      - 哥斯达黎加(TG频道@kxswa)
+      - Relay_🇺🇸US-🇷🇺RU_103
+      - 韩国_0110031
+      - mianfeifq 192
+      - 韩国_0110162
+      - Hong Kong 03 TG:@nodpai
+      - Asia 香港07 | 直连 | 1.0x | V1 - 酸奶VPN
+      - 哥斯达黎加(TG频道@kxswa) 2
+      - 新加坡(TG频道@kxswa) 2
+      - mianfeifq_011020237469-240trojan
+      - Hongkong 133
+      - 香港8(youtube阿伟科技)83
+      - "| 0.21Mb"
+      - 香港_0110067
+      - 香港_0110081
+      - 新加坡(TG频道@kxswa) 3
+      - United States 06 TG:@nodpai
+      - Asia 香港09 | 奈飞 | 2.0x | V1 - 酸奶VPN
+      - 香港 | 直连 - BIUBIU FAST
+      - 香港_0110062
+      - 美国(TG频道@kxswa)
+      - KR【付费推荐：goo.gs/vip】
+      - Taiwan 44 2
+      - Japan 12 TG:@nodpai
+      - Asia 香港08 | 直连 | 1.0x | V1 - 酸奶VPN
+      - "@SSRSUB-V20-付费推荐:suo.yt/ssrsub"
+      - 郴州联通-香港HKBN-dip@univstar_3
+      - mianfeifq_010920232472-58trojan
+      - Hongkong 6
+      - 1907(@Outline_Vpn)
+      - 美国(TG频道@kxswa) 2
+      - github.com/freefq - 美国惠普公司 35
+      - _JP_日本_3
+      - 美国(TG频道@kxswa) 3
+      - Hongkong 12
+      - 新加坡（youtube阿伟科技)
+      - Asia 香港10 | 移动优化线路 | 1.0x | V1 - 酸奶VPN
+      - 越南_0110129
+      - 美国(TG频道@kxswa) 4
+      - 荷兰(TG频道@kxswa)
+      - 越南_0110127
+      - 荷兰(TG频道@kxswa) 2
+      - 美国(TG频道@kxswa) 5
+      - 越南_0110001
+      - "@SSRSUB-V15-付费推荐:suo.yt/ssrsub"
+      - Japan 02 TG:@nodpai
+      - mianfeifq 172
+      - 香港_0110077
+      - 美国(油管:破解资源君) 39
+      - 深圳移动-香港HKT-dip@univstar_1
+      - 美国(油管:破解资源君) 22
+      - "[01-10]-🇯🇵-日本-218-43.200.2.173"
+      - 美国(油管:破解资源君) 24
+      - Hongkong 133 2
+      - 越南_0110128
+      - us(youtube阿伟科技) 4 2
+      - 韩国_0110028
+      - 越南_0110126
+      - _SG_新加坡 3
+      - 韩国_0110141
+      - 芬兰_0110004
+      - UC 台湾01 | Youtube免广告 | 3.0x | V1 - 酸奶VPN
+      - 澳大利亚 004
+      - 深圳移动-香港HKT4
+      - 新加坡_0110014
+      - portfolio.progbyrazyar.ir:664
+      - Relay_🇷🇺RU-🇫🇷FR_123
+      - Hongkong 100
+      - github.com/freefq - 北美地区  4
+      - 新加坡（youtube阿伟科技) 2
+      - Hongkong 11
+      - 越南_0110001 2
+      - 上海联通-香港HKT-dip@univstar
+      - -香港-47.242.66.90
+      - 上海联通-香港HKT-dip@univstar 2
+      - 香港_0110079
+      - 郴州联通-香港HKBN-dip@univstar_3 2
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - 中国(TG频道@kxswa)
-      - 中国(TG频道@kxswa) 2
-      - 香港(TG频道@kxswa)
-      - Relay_🇧🇬BG-🇧🇬BG_05
-      - 中国(TG频道@kxswa) 3
-      - 中国(TG频道@kxswa) 4
-      - 中国(TG频道@kxswa) 5
-      - sg-am3.eqsunshine.com:32001
-      - _FI_芬兰
-      - 越南_0108025
-      - "@SSRSUB-美国V02-付费推荐:dlj.tf/ssrsub"
-      - 香港(TG频道@kxswa) 2
-      - 香港(TG频道@kxswa) 3
-      - 俄罗斯联邦_0108009
-      - 中国(TG频道@kxswa) 6
-      - 新加坡_0108069
-      - 波兰(TG频道@kxswa)
-      - 芬兰_0108009
-      - 新加坡_0108049
-      - 越南_0108079
-      - 韩国(TG频道@kxswa)
-      - _NL_荷兰
-      - 俄罗斯(油管:破解资源君) 5
-      - 中国_0108322
-      - 中国_0108259
-      - 越南_0108061
-      - 中国_0108258
-      - 新加坡_0108094
-      - 中国_01081043
-      - 美国(TG频道@kxswa)
-      - 中国_01081060
-      - 越南_0108125
-      - 澳门(TG频道@kxswa)
-      - 中国_01081041
-      - 香港_01081064
-      - 俄罗斯联邦(TG频道@kxswa)
-      - 台湾(TG频道@kxswa)
-      - 韩国_0108207
-      - 中国_0108252
-      - 美国(TG频道@kxswa) 2
-      - 俄罗斯(油管:破解资源君) 6
-      - 越南_0108026
-      - 英国 003
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - Pool_🇳🇱NL_92
-      - 美国 074
-      - _GB_英国
-      - "[01-09]-🇺🇸-美国-118-aws-bj.qianlong520.vip"
-      - US_110
-      - 巴拿马_0108001
-      - US_148
+      - 英国_116
+      - 深圳移动-香港HKT7
+      - Hongkong 9
+      - 香港_0110068
+      - 美国 086
+      - 日本_53
+      - 越南_0108089
+      - github.com/freefq - 美国CloudFlare节点 31
+      - us(youtube阿伟科技) 4
+      - 伯利兹(TG频道@kxswa)
+      - Singapore 07 TG:@nodpai
+      - 新加坡_0110004
       - _SG_新加坡_3
+      - vpnclub 2/9_153
+      - 香港HKT-dip@univstar_1
+      - 郴州联通-香港HKT-dip@univstar_11
+      - United States 10 TG:@nodpai
+      - Asia 香港04 | 直连 | 1.0x | V1 - 酸奶VPN
+      - _CN_中国->🇫🇷_FR_法国
+      - 香港_0110074
+      - _SG_新加坡_1
+      - 香港_0110075
+      - mianfeifq_011020237469-860trojan
+      - 香港_0110069
+      - 新加坡(TG频道@kxswa)
+      - _MO_欢迎订阅yui科技
+      - github.com/freefq - 美国CloudFlare公司CDN节点 11
+      - 香港_0110071
+      - github.com/freefq - 美国  26
+      - github.com/freefq - 美国RF Engineering 5
+      - Asia 香港01 | 直连 | 1.0 x | V1 - 酸奶VPN
+      - 香港_0110065
+      - 香港_0110076
+      - Taiwan 44
+      - -香港-8.210.153.242
+      - Relay_🏁ZZ-🇫🇷FR_289
+      - 白嫖-0637
+      - github.com/freefq - 美国惠普公司 20
+      - 香港_0110073
+      - Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN
+      - Hongkong 99
+      - Asia 香港06 | 直连 | 1.0x | V1 - 酸奶VPN
+      - SGP 新加坡 | 中转 | 奈飞 | 5.0x | V1 - 酸奶VPN
+      - 香港_0110070
+      - Singapore 09 TG:@nodpai
+      - 哥斯达黎加(TG频道@kxswa)
+      - Relay_🇺🇸US-🇷🇺RU_103
+      - 韩国_0110031
+      - mianfeifq 192
+      - 韩国_0110162
+      - Hong Kong 03 TG:@nodpai
+      - Asia 香港07 | 直连 | 1.0x | V1 - 酸奶VPN
+      - 哥斯达黎加(TG频道@kxswa) 2
+      - 新加坡(TG频道@kxswa) 2
+      - mianfeifq_011020237469-240trojan
+      - Hongkong 133
+      - 香港8(youtube阿伟科技)83
+      - "| 0.21Mb"
+      - 香港_0110067
+      - 香港_0110081
+      - 新加坡(TG频道@kxswa) 3
+      - United States 06 TG:@nodpai
+      - Asia 香港09 | 奈飞 | 2.0x | V1 - 酸奶VPN
+      - 香港 | 直连 - BIUBIU FAST
+      - 香港_0110062
+      - 美国(TG频道@kxswa)
+      - KR【付费推荐：goo.gs/vip】
+      - Taiwan 44 2
+      - Japan 12 TG:@nodpai
+      - Asia 香港08 | 直连 | 1.0x | V1 - 酸奶VPN
+      - "@SSRSUB-V20-付费推荐:suo.yt/ssrsub"
+      - 郴州联通-香港HKBN-dip@univstar_3
+      - mianfeifq_010920232472-58trojan
+      - Hongkong 6
+      - 1907(@Outline_Vpn)
+      - 美国(TG频道@kxswa) 2
+      - github.com/freefq - 美国惠普公司 35
+      - _JP_日本_3
+      - 美国(TG频道@kxswa) 3
+      - Hongkong 12
+      - 新加坡（youtube阿伟科技)
+      - Asia 香港10 | 移动优化线路 | 1.0x | V1 - 酸奶VPN
+      - 越南_0110129
+      - 美国(TG频道@kxswa) 4
+      - 荷兰(TG频道@kxswa)
+      - 越南_0110127
+      - 荷兰(TG频道@kxswa) 2
+      - 美国(TG频道@kxswa) 5
+      - 越南_0110001
+      - "@SSRSUB-V15-付费推荐:suo.yt/ssrsub"
+      - Japan 02 TG:@nodpai
+      - mianfeifq 172
+      - 香港_0110077
+      - 美国(油管:破解资源君) 39
+      - 深圳移动-香港HKT-dip@univstar_1
+      - 美国(油管:破解资源君) 22
+      - "[01-10]-🇯🇵-日本-218-43.200.2.173"
+      - 美国(油管:破解资源君) 24
+      - Hongkong 133 2
+      - 越南_0110128
+      - us(youtube阿伟科技) 4 2
+      - 韩国_0110028
+      - 越南_0110126
+      - _SG_新加坡 3
+      - 韩国_0110141
+      - 芬兰_0110004
+      - UC 台湾01 | Youtube免广告 | 3.0x | V1 - 酸奶VPN
+      - 澳大利亚 004
+      - 深圳移动-香港HKT4
+      - 新加坡_0110014
+      - portfolio.progbyrazyar.ir:664
+      - Relay_🇷🇺RU-🇫🇷FR_123
+      - Hongkong 100
+      - github.com/freefq - 北美地区  4
+      - 新加坡（youtube阿伟科技) 2
+      - Hongkong 11
+      - 越南_0110001 2
+      - 上海联通-香港HKT-dip@univstar
+      - -香港-47.242.66.90
+      - 上海联通-香港HKT-dip@univstar 2
+      - 香港_0110079
+      - 郴州联通-香港HKBN-dip@univstar_3 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国(TG频道@kxswa)
-      - 中国(TG频道@kxswa) 2
-      - 香港(TG频道@kxswa)
-      - Relay_🇧🇬BG-🇧🇬BG_05
-      - 中国(TG频道@kxswa) 3
-      - 中国(TG频道@kxswa) 4
-      - 中国(TG频道@kxswa) 5
-      - sg-am3.eqsunshine.com:32001
-      - _FI_芬兰
-      - 越南_0108025
-      - "@SSRSUB-美国V02-付费推荐:dlj.tf/ssrsub"
-      - 香港(TG频道@kxswa) 2
-      - 香港(TG频道@kxswa) 3
-      - 俄罗斯联邦_0108009
-      - 中国(TG频道@kxswa) 6
-      - 新加坡_0108069
-      - 波兰(TG频道@kxswa)
-      - 芬兰_0108009
-      - 新加坡_0108049
-      - 越南_0108079
-      - 韩国(TG频道@kxswa)
-      - _NL_荷兰
-      - 俄罗斯(油管:破解资源君) 5
-      - 中国_0108322
-      - 中国_0108259
-      - 越南_0108061
-      - 中国_0108258
-      - 新加坡_0108094
-      - 中国_01081043
-      - 美国(TG频道@kxswa)
-      - 中国_01081060
-      - 越南_0108125
-      - 澳门(TG频道@kxswa)
-      - 中国_01081041
-      - 香港_01081064
-      - 俄罗斯联邦(TG频道@kxswa)
-      - 台湾(TG频道@kxswa)
-      - 韩国_0108207
-      - 中国_0108252
-      - 美国(TG频道@kxswa) 2
-      - 俄罗斯(油管:破解资源君) 6
-      - 越南_0108026
-      - 英国 003
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - Pool_🇳🇱NL_92
-      - 美国 074
-      - _GB_英国
-      - "[01-09]-🇺🇸-美国-118-aws-bj.qianlong520.vip"
-      - US_110
-      - 巴拿马_0108001
-      - US_148
+      - 英国_116
+      - 深圳移动-香港HKT7
+      - Hongkong 9
+      - 香港_0110068
+      - 美国 086
+      - 日本_53
+      - 越南_0108089
+      - github.com/freefq - 美国CloudFlare节点 31
+      - us(youtube阿伟科技) 4
+      - 伯利兹(TG频道@kxswa)
+      - Singapore 07 TG:@nodpai
+      - 新加坡_0110004
       - _SG_新加坡_3
+      - vpnclub 2/9_153
+      - 香港HKT-dip@univstar_1
+      - 郴州联通-香港HKT-dip@univstar_11
+      - United States 10 TG:@nodpai
+      - Asia 香港04 | 直连 | 1.0x | V1 - 酸奶VPN
+      - _CN_中国->🇫🇷_FR_法国
+      - 香港_0110074
+      - _SG_新加坡_1
+      - 香港_0110075
+      - mianfeifq_011020237469-860trojan
+      - 香港_0110069
+      - 新加坡(TG频道@kxswa)
+      - _MO_欢迎订阅yui科技
+      - github.com/freefq - 美国CloudFlare公司CDN节点 11
+      - 香港_0110071
+      - github.com/freefq - 美国  26
+      - github.com/freefq - 美国RF Engineering 5
+      - Asia 香港01 | 直连 | 1.0 x | V1 - 酸奶VPN
+      - 香港_0110065
+      - 香港_0110076
+      - Taiwan 44
+      - -香港-8.210.153.242
+      - Relay_🏁ZZ-🇫🇷FR_289
+      - 白嫖-0637
+      - github.com/freefq - 美国惠普公司 20
+      - 香港_0110073
+      - Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN
+      - Hongkong 99
+      - Asia 香港06 | 直连 | 1.0x | V1 - 酸奶VPN
+      - SGP 新加坡 | 中转 | 奈飞 | 5.0x | V1 - 酸奶VPN
+      - 香港_0110070
+      - Singapore 09 TG:@nodpai
+      - 哥斯达黎加(TG频道@kxswa)
+      - Relay_🇺🇸US-🇷🇺RU_103
+      - 韩国_0110031
+      - mianfeifq 192
+      - 韩国_0110162
+      - Hong Kong 03 TG:@nodpai
+      - Asia 香港07 | 直连 | 1.0x | V1 - 酸奶VPN
+      - 哥斯达黎加(TG频道@kxswa) 2
+      - 新加坡(TG频道@kxswa) 2
+      - mianfeifq_011020237469-240trojan
+      - Hongkong 133
+      - 香港8(youtube阿伟科技)83
+      - "| 0.21Mb"
+      - 香港_0110067
+      - 香港_0110081
+      - 新加坡(TG频道@kxswa) 3
+      - United States 06 TG:@nodpai
+      - Asia 香港09 | 奈飞 | 2.0x | V1 - 酸奶VPN
+      - 香港 | 直连 - BIUBIU FAST
+      - 香港_0110062
+      - 美国(TG频道@kxswa)
+      - KR【付费推荐：goo.gs/vip】
+      - Taiwan 44 2
+      - Japan 12 TG:@nodpai
+      - Asia 香港08 | 直连 | 1.0x | V1 - 酸奶VPN
+      - "@SSRSUB-V20-付费推荐:suo.yt/ssrsub"
+      - 郴州联通-香港HKBN-dip@univstar_3
+      - mianfeifq_010920232472-58trojan
+      - Hongkong 6
+      - 1907(@Outline_Vpn)
+      - 美国(TG频道@kxswa) 2
+      - github.com/freefq - 美国惠普公司 35
+      - _JP_日本_3
+      - 美国(TG频道@kxswa) 3
+      - Hongkong 12
+      - 新加坡（youtube阿伟科技)
+      - Asia 香港10 | 移动优化线路 | 1.0x | V1 - 酸奶VPN
+      - 越南_0110129
+      - 美国(TG频道@kxswa) 4
+      - 荷兰(TG频道@kxswa)
+      - 越南_0110127
+      - 荷兰(TG频道@kxswa) 2
+      - 美国(TG频道@kxswa) 5
+      - 越南_0110001
+      - "@SSRSUB-V15-付费推荐:suo.yt/ssrsub"
+      - Japan 02 TG:@nodpai
+      - mianfeifq 172
+      - 香港_0110077
+      - 美国(油管:破解资源君) 39
+      - 深圳移动-香港HKT-dip@univstar_1
+      - 美国(油管:破解资源君) 22
+      - "[01-10]-🇯🇵-日本-218-43.200.2.173"
+      - 美国(油管:破解资源君) 24
+      - Hongkong 133 2
+      - 越南_0110128
+      - us(youtube阿伟科技) 4 2
+      - 韩国_0110028
+      - 越南_0110126
+      - _SG_新加坡 3
+      - 韩国_0110141
+      - 芬兰_0110004
+      - UC 台湾01 | Youtube免广告 | 3.0x | V1 - 酸奶VPN
+      - 澳大利亚 004
+      - 深圳移动-香港HKT4
+      - 新加坡_0110014
+      - portfolio.progbyrazyar.ir:664
+      - Relay_🇷🇺RU-🇫🇷FR_123
+      - Hongkong 100
+      - github.com/freefq - 北美地区  4
+      - 新加坡（youtube阿伟科技) 2
+      - Hongkong 11
+      - 越南_0110001 2
+      - 上海联通-香港HKT-dip@univstar
+      - -香港-47.242.66.90
+      - 上海联通-香港HKT-dip@univstar 2
+      - 香港_0110079
+      - 郴州联通-香港HKBN-dip@univstar_3 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -249,240 +529,551 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国(TG频道@kxswa)
-      - 中国(TG频道@kxswa) 2
-      - 香港(TG频道@kxswa)
-      - Relay_🇧🇬BG-🇧🇬BG_05
-      - 中国(TG频道@kxswa) 3
-      - 中国(TG频道@kxswa) 4
-      - 中国(TG频道@kxswa) 5
-      - sg-am3.eqsunshine.com:32001
-      - _FI_芬兰
-      - 越南_0108025
-      - "@SSRSUB-美国V02-付费推荐:dlj.tf/ssrsub"
-      - 香港(TG频道@kxswa) 2
-      - 香港(TG频道@kxswa) 3
-      - 俄罗斯联邦_0108009
-      - 中国(TG频道@kxswa) 6
-      - 新加坡_0108069
-      - 波兰(TG频道@kxswa)
-      - 芬兰_0108009
-      - 新加坡_0108049
-      - 越南_0108079
-      - 韩国(TG频道@kxswa)
-      - _NL_荷兰
-      - 俄罗斯(油管:破解资源君) 5
-      - 中国_0108322
-      - 中国_0108259
-      - 越南_0108061
-      - 中国_0108258
-      - 新加坡_0108094
-      - 中国_01081043
-      - 美国(TG频道@kxswa)
-      - 中国_01081060
-      - 越南_0108125
-      - 澳门(TG频道@kxswa)
-      - 中国_01081041
-      - 香港_01081064
-      - 俄罗斯联邦(TG频道@kxswa)
-      - 台湾(TG频道@kxswa)
-      - 韩国_0108207
-      - 中国_0108252
-      - 美国(TG频道@kxswa) 2
-      - 俄罗斯(油管:破解资源君) 6
-      - 越南_0108026
-      - 英国 003
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - Pool_🇳🇱NL_92
-      - 美国 074
-      - _GB_英国
-      - "[01-09]-🇺🇸-美国-118-aws-bj.qianlong520.vip"
-      - US_110
-      - 巴拿马_0108001
-      - US_148
+      - 英国_116
+      - 深圳移动-香港HKT7
+      - Hongkong 9
+      - 香港_0110068
+      - 美国 086
+      - 日本_53
+      - 越南_0108089
+      - github.com/freefq - 美国CloudFlare节点 31
+      - us(youtube阿伟科技) 4
+      - 伯利兹(TG频道@kxswa)
+      - Singapore 07 TG:@nodpai
+      - 新加坡_0110004
       - _SG_新加坡_3
+      - vpnclub 2/9_153
+      - 香港HKT-dip@univstar_1
+      - 郴州联通-香港HKT-dip@univstar_11
+      - United States 10 TG:@nodpai
+      - Asia 香港04 | 直连 | 1.0x | V1 - 酸奶VPN
+      - _CN_中国->🇫🇷_FR_法国
+      - 香港_0110074
+      - _SG_新加坡_1
+      - 香港_0110075
+      - mianfeifq_011020237469-860trojan
+      - 香港_0110069
+      - 新加坡(TG频道@kxswa)
+      - _MO_欢迎订阅yui科技
+      - github.com/freefq - 美国CloudFlare公司CDN节点 11
+      - 香港_0110071
+      - github.com/freefq - 美国  26
+      - github.com/freefq - 美国RF Engineering 5
+      - Asia 香港01 | 直连 | 1.0 x | V1 - 酸奶VPN
+      - 香港_0110065
+      - 香港_0110076
+      - Taiwan 44
+      - -香港-8.210.153.242
+      - Relay_🏁ZZ-🇫🇷FR_289
+      - 白嫖-0637
+      - github.com/freefq - 美国惠普公司 20
+      - 香港_0110073
+      - Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN
+      - Hongkong 99
+      - Asia 香港06 | 直连 | 1.0x | V1 - 酸奶VPN
+      - SGP 新加坡 | 中转 | 奈飞 | 5.0x | V1 - 酸奶VPN
+      - 香港_0110070
+      - Singapore 09 TG:@nodpai
+      - 哥斯达黎加(TG频道@kxswa)
+      - Relay_🇺🇸US-🇷🇺RU_103
+      - 韩国_0110031
+      - mianfeifq 192
+      - 韩国_0110162
+      - Hong Kong 03 TG:@nodpai
+      - Asia 香港07 | 直连 | 1.0x | V1 - 酸奶VPN
+      - 哥斯达黎加(TG频道@kxswa) 2
+      - 新加坡(TG频道@kxswa) 2
+      - mianfeifq_011020237469-240trojan
+      - Hongkong 133
+      - 香港8(youtube阿伟科技)83
+      - "| 0.21Mb"
+      - 香港_0110067
+      - 香港_0110081
+      - 新加坡(TG频道@kxswa) 3
+      - United States 06 TG:@nodpai
+      - Asia 香港09 | 奈飞 | 2.0x | V1 - 酸奶VPN
+      - 香港 | 直连 - BIUBIU FAST
+      - 香港_0110062
+      - 美国(TG频道@kxswa)
+      - KR【付费推荐：goo.gs/vip】
+      - Taiwan 44 2
+      - Japan 12 TG:@nodpai
+      - Asia 香港08 | 直连 | 1.0x | V1 - 酸奶VPN
+      - "@SSRSUB-V20-付费推荐:suo.yt/ssrsub"
+      - 郴州联通-香港HKBN-dip@univstar_3
+      - mianfeifq_010920232472-58trojan
+      - Hongkong 6
+      - 1907(@Outline_Vpn)
+      - 美国(TG频道@kxswa) 2
+      - github.com/freefq - 美国惠普公司 35
+      - _JP_日本_3
+      - 美国(TG频道@kxswa) 3
+      - Hongkong 12
+      - 新加坡（youtube阿伟科技)
+      - Asia 香港10 | 移动优化线路 | 1.0x | V1 - 酸奶VPN
+      - 越南_0110129
+      - 美国(TG频道@kxswa) 4
+      - 荷兰(TG频道@kxswa)
+      - 越南_0110127
+      - 荷兰(TG频道@kxswa) 2
+      - 美国(TG频道@kxswa) 5
+      - 越南_0110001
+      - "@SSRSUB-V15-付费推荐:suo.yt/ssrsub"
+      - Japan 02 TG:@nodpai
+      - mianfeifq 172
+      - 香港_0110077
+      - 美国(油管:破解资源君) 39
+      - 深圳移动-香港HKT-dip@univstar_1
+      - 美国(油管:破解资源君) 22
+      - "[01-10]-🇯🇵-日本-218-43.200.2.173"
+      - 美国(油管:破解资源君) 24
+      - Hongkong 133 2
+      - 越南_0110128
+      - us(youtube阿伟科技) 4 2
+      - 韩国_0110028
+      - 越南_0110126
+      - _SG_新加坡 3
+      - 韩国_0110141
+      - 芬兰_0110004
+      - UC 台湾01 | Youtube免广告 | 3.0x | V1 - 酸奶VPN
+      - 澳大利亚 004
+      - 深圳移动-香港HKT4
+      - 新加坡_0110014
+      - portfolio.progbyrazyar.ir:664
+      - Relay_🇷🇺RU-🇫🇷FR_123
+      - Hongkong 100
+      - github.com/freefq - 北美地区  4
+      - 新加坡（youtube阿伟科技) 2
+      - Hongkong 11
+      - 越南_0110001 2
+      - 上海联通-香港HKT-dip@univstar
+      - -香港-47.242.66.90
+      - 上海联通-香港HKT-dip@univstar 2
+      - 香港_0110079
+      - 郴州联通-香港HKBN-dip@univstar_3 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港(TG频道@kxswa)
-      - 香港(TG频道@kxswa) 2
-      - 香港(TG频道@kxswa) 3
-      - 香港_01081064
-      - 台湾(TG频道@kxswa)
+      - 深圳移动-香港HKT7
+      - 香港_0110068
+      - 香港HKT-dip@univstar_1
+      - 郴州联通-香港HKT-dip@univstar_11
+      - Asia 香港04 | 直连 | 1.0x | V1 - 酸奶VPN
+      - 香港_0110074
+      - 香港_0110075
+      - 香港_0110069
+      - 香港_0110071
+      - Asia 香港01 | 直连 | 1.0 x | V1 - 酸奶VPN
+      - 香港_0110065
+      - 香港_0110076
+      - -香港-8.210.153.242
+      - 香港_0110073
+      - Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN
+      - Asia 香港06 | 直连 | 1.0x | V1 - 酸奶VPN
+      - 香港_0110070
+      - Asia 香港07 | 直连 | 1.0x | V1 - 酸奶VPN
+      - 香港8(youtube阿伟科技)83
+      - 香港_0110067
+      - 香港_0110081
+      - Asia 香港09 | 奈飞 | 2.0x | V1 - 酸奶VPN
+      - 香港 | 直连 - BIUBIU FAST
+      - 香港_0110062
+      - Asia 香港08 | 直连 | 1.0x | V1 - 酸奶VPN
+      - 郴州联通-香港HKBN-dip@univstar_3
+      - Asia 香港10 | 移动优化线路 | 1.0x | V1 - 酸奶VPN
+      - 香港_0110077
+      - 深圳移动-香港HKT-dip@univstar_1
+      - UC 台湾01 | Youtube免广告 | 3.0x | V1 - 酸奶VPN
+      - 深圳移动-香港HKT4
+      - 上海联通-香港HKT-dip@univstar
+      - -香港-47.242.66.90
+      - 上海联通-香港HKT-dip@univstar 2
+      - 香港_0110079
+      - 郴州联通-香港HKBN-dip@univstar_3 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 中国(TG频道@kxswa)
-      - 中国(TG频道@kxswa) 2
-      - 香港(TG频道@kxswa)
-      - Relay_🇧🇬BG-🇧🇬BG_05
-      - 中国(TG频道@kxswa) 3
-      - 中国(TG频道@kxswa) 4
-      - 中国(TG频道@kxswa) 5
-      - sg-am3.eqsunshine.com:32001
-      - _FI_芬兰
-      - 越南_0108025
-      - "@SSRSUB-美国V02-付费推荐:dlj.tf/ssrsub"
-      - 香港(TG频道@kxswa) 2
-      - 香港(TG频道@kxswa) 3
-      - 俄罗斯联邦_0108009
-      - 中国(TG频道@kxswa) 6
-      - 新加坡_0108069
-      - 波兰(TG频道@kxswa)
-      - 芬兰_0108009
-      - 新加坡_0108049
-      - 越南_0108079
-      - 韩国(TG频道@kxswa)
-      - _NL_荷兰
-      - 俄罗斯(油管:破解资源君) 5
-      - 中国_0108322
-      - 中国_0108259
-      - 越南_0108061
-      - 中国_0108258
-      - 新加坡_0108094
-      - 中国_01081043
-      - 美国(TG频道@kxswa)
-      - 中国_01081060
-      - 越南_0108125
-      - 澳门(TG频道@kxswa)
-      - 中国_01081041
-      - 香港_01081064
-      - 俄罗斯联邦(TG频道@kxswa)
-      - 台湾(TG频道@kxswa)
-      - 韩国_0108207
-      - 中国_0108252
-      - 美国(TG频道@kxswa) 2
-      - 俄罗斯(油管:破解资源君) 6
-      - 越南_0108026
-      - 英国 003
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - Pool_🇳🇱NL_92
-      - 美国 074
-      - _GB_英国
-      - "[01-09]-🇺🇸-美国-118-aws-bj.qianlong520.vip"
-      - US_110
-      - 巴拿马_0108001
-      - US_148
+      - 英国_116
+      - 深圳移动-香港HKT7
+      - Hongkong 9
+      - 香港_0110068
+      - 美国 086
+      - 日本_53
+      - 越南_0108089
+      - github.com/freefq - 美国CloudFlare节点 31
+      - us(youtube阿伟科技) 4
+      - 伯利兹(TG频道@kxswa)
+      - Singapore 07 TG:@nodpai
+      - 新加坡_0110004
       - _SG_新加坡_3
+      - vpnclub 2/9_153
+      - 香港HKT-dip@univstar_1
+      - 郴州联通-香港HKT-dip@univstar_11
+      - United States 10 TG:@nodpai
+      - Asia 香港04 | 直连 | 1.0x | V1 - 酸奶VPN
+      - _CN_中国->🇫🇷_FR_法国
+      - 香港_0110074
+      - _SG_新加坡_1
+      - 香港_0110075
+      - mianfeifq_011020237469-860trojan
+      - 香港_0110069
+      - 新加坡(TG频道@kxswa)
+      - _MO_欢迎订阅yui科技
+      - github.com/freefq - 美国CloudFlare公司CDN节点 11
+      - 香港_0110071
+      - github.com/freefq - 美国  26
+      - github.com/freefq - 美国RF Engineering 5
+      - Asia 香港01 | 直连 | 1.0 x | V1 - 酸奶VPN
+      - 香港_0110065
+      - 香港_0110076
+      - Taiwan 44
+      - -香港-8.210.153.242
+      - Relay_🏁ZZ-🇫🇷FR_289
+      - 白嫖-0637
+      - github.com/freefq - 美国惠普公司 20
+      - 香港_0110073
+      - Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN
+      - Hongkong 99
+      - Asia 香港06 | 直连 | 1.0x | V1 - 酸奶VPN
+      - SGP 新加坡 | 中转 | 奈飞 | 5.0x | V1 - 酸奶VPN
+      - 香港_0110070
+      - Singapore 09 TG:@nodpai
+      - 哥斯达黎加(TG频道@kxswa)
+      - Relay_🇺🇸US-🇷🇺RU_103
+      - 韩国_0110031
+      - mianfeifq 192
+      - 韩国_0110162
+      - Hong Kong 03 TG:@nodpai
+      - Asia 香港07 | 直连 | 1.0x | V1 - 酸奶VPN
+      - 哥斯达黎加(TG频道@kxswa) 2
+      - 新加坡(TG频道@kxswa) 2
+      - mianfeifq_011020237469-240trojan
+      - Hongkong 133
+      - 香港8(youtube阿伟科技)83
+      - "| 0.21Mb"
+      - 香港_0110067
+      - 香港_0110081
+      - 新加坡(TG频道@kxswa) 3
+      - United States 06 TG:@nodpai
+      - Asia 香港09 | 奈飞 | 2.0x | V1 - 酸奶VPN
+      - 香港 | 直连 - BIUBIU FAST
+      - 香港_0110062
+      - 美国(TG频道@kxswa)
+      - KR【付费推荐：goo.gs/vip】
+      - Taiwan 44 2
+      - Japan 12 TG:@nodpai
+      - Asia 香港08 | 直连 | 1.0x | V1 - 酸奶VPN
+      - "@SSRSUB-V20-付费推荐:suo.yt/ssrsub"
+      - 郴州联通-香港HKBN-dip@univstar_3
+      - mianfeifq_010920232472-58trojan
+      - Hongkong 6
+      - 1907(@Outline_Vpn)
+      - 美国(TG频道@kxswa) 2
+      - github.com/freefq - 美国惠普公司 35
+      - _JP_日本_3
+      - 美国(TG频道@kxswa) 3
+      - Hongkong 12
+      - 新加坡（youtube阿伟科技)
+      - Asia 香港10 | 移动优化线路 | 1.0x | V1 - 酸奶VPN
+      - 越南_0110129
+      - 美国(TG频道@kxswa) 4
+      - 荷兰(TG频道@kxswa)
+      - 越南_0110127
+      - 荷兰(TG频道@kxswa) 2
+      - 美国(TG频道@kxswa) 5
+      - 越南_0110001
+      - "@SSRSUB-V15-付费推荐:suo.yt/ssrsub"
+      - Japan 02 TG:@nodpai
+      - mianfeifq 172
+      - 香港_0110077
+      - 美国(油管:破解资源君) 39
+      - 深圳移动-香港HKT-dip@univstar_1
+      - 美国(油管:破解资源君) 22
+      - "[01-10]-🇯🇵-日本-218-43.200.2.173"
+      - 美国(油管:破解资源君) 24
+      - Hongkong 133 2
+      - 越南_0110128
+      - us(youtube阿伟科技) 4 2
+      - 韩国_0110028
+      - 越南_0110126
+      - _SG_新加坡 3
+      - 韩国_0110141
+      - 芬兰_0110004
+      - UC 台湾01 | Youtube免广告 | 3.0x | V1 - 酸奶VPN
+      - 澳大利亚 004
+      - 深圳移动-香港HKT4
+      - 新加坡_0110014
+      - portfolio.progbyrazyar.ir:664
+      - Relay_🇷🇺RU-🇫🇷FR_123
+      - Hongkong 100
+      - github.com/freefq - 北美地区  4
+      - 新加坡（youtube阿伟科技) 2
+      - Hongkong 11
+      - 越南_0110001 2
+      - 上海联通-香港HKT-dip@univstar
+      - -香港-47.242.66.90
+      - 上海联通-香港HKT-dip@univstar 2
+      - 香港_0110079
+      - 郴州联通-香港HKBN-dip@univstar_3 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 中国(TG频道@kxswa)
-      - 中国(TG频道@kxswa) 2
-      - 香港(TG频道@kxswa)
-      - Relay_🇧🇬BG-🇧🇬BG_05
-      - 中国(TG频道@kxswa) 3
-      - 中国(TG频道@kxswa) 4
-      - 中国(TG频道@kxswa) 5
-      - sg-am3.eqsunshine.com:32001
-      - _FI_芬兰
-      - 越南_0108025
-      - "@SSRSUB-美国V02-付费推荐:dlj.tf/ssrsub"
-      - 香港(TG频道@kxswa) 2
-      - 香港(TG频道@kxswa) 3
-      - 俄罗斯联邦_0108009
-      - 中国(TG频道@kxswa) 6
-      - 新加坡_0108069
-      - 波兰(TG频道@kxswa)
-      - 芬兰_0108009
-      - 新加坡_0108049
-      - 越南_0108079
-      - 韩国(TG频道@kxswa)
-      - _NL_荷兰
-      - 俄罗斯(油管:破解资源君) 5
-      - 中国_0108322
-      - 中国_0108259
-      - 越南_0108061
-      - 中国_0108258
-      - 新加坡_0108094
-      - 中国_01081043
-      - 美国(TG频道@kxswa)
-      - 中国_01081060
-      - 越南_0108125
-      - 澳门(TG频道@kxswa)
-      - 中国_01081041
-      - 香港_01081064
-      - 俄罗斯联邦(TG频道@kxswa)
-      - 台湾(TG频道@kxswa)
-      - 韩国_0108207
-      - 中国_0108252
-      - 美国(TG频道@kxswa) 2
-      - 俄罗斯(油管:破解资源君) 6
-      - 越南_0108026
-      - 英国 003
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - Pool_🇳🇱NL_92
-      - 美国 074
-      - _GB_英国
-      - "[01-09]-🇺🇸-美国-118-aws-bj.qianlong520.vip"
-      - US_110
-      - 巴拿马_0108001
-      - US_148
+      - 英国_116
+      - 深圳移动-香港HKT7
+      - Hongkong 9
+      - 香港_0110068
+      - 美国 086
+      - 日本_53
+      - 越南_0108089
+      - github.com/freefq - 美国CloudFlare节点 31
+      - us(youtube阿伟科技) 4
+      - 伯利兹(TG频道@kxswa)
+      - Singapore 07 TG:@nodpai
+      - 新加坡_0110004
       - _SG_新加坡_3
+      - vpnclub 2/9_153
+      - 香港HKT-dip@univstar_1
+      - 郴州联通-香港HKT-dip@univstar_11
+      - United States 10 TG:@nodpai
+      - Asia 香港04 | 直连 | 1.0x | V1 - 酸奶VPN
+      - _CN_中国->🇫🇷_FR_法国
+      - 香港_0110074
+      - _SG_新加坡_1
+      - 香港_0110075
+      - mianfeifq_011020237469-860trojan
+      - 香港_0110069
+      - 新加坡(TG频道@kxswa)
+      - _MO_欢迎订阅yui科技
+      - github.com/freefq - 美国CloudFlare公司CDN节点 11
+      - 香港_0110071
+      - github.com/freefq - 美国  26
+      - github.com/freefq - 美国RF Engineering 5
+      - Asia 香港01 | 直连 | 1.0 x | V1 - 酸奶VPN
+      - 香港_0110065
+      - 香港_0110076
+      - Taiwan 44
+      - -香港-8.210.153.242
+      - Relay_🏁ZZ-🇫🇷FR_289
+      - 白嫖-0637
+      - github.com/freefq - 美国惠普公司 20
+      - 香港_0110073
+      - Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN
+      - Hongkong 99
+      - Asia 香港06 | 直连 | 1.0x | V1 - 酸奶VPN
+      - SGP 新加坡 | 中转 | 奈飞 | 5.0x | V1 - 酸奶VPN
+      - 香港_0110070
+      - Singapore 09 TG:@nodpai
+      - 哥斯达黎加(TG频道@kxswa)
+      - Relay_🇺🇸US-🇷🇺RU_103
+      - 韩国_0110031
+      - mianfeifq 192
+      - 韩国_0110162
+      - Hong Kong 03 TG:@nodpai
+      - Asia 香港07 | 直连 | 1.0x | V1 - 酸奶VPN
+      - 哥斯达黎加(TG频道@kxswa) 2
+      - 新加坡(TG频道@kxswa) 2
+      - mianfeifq_011020237469-240trojan
+      - Hongkong 133
+      - 香港8(youtube阿伟科技)83
+      - "| 0.21Mb"
+      - 香港_0110067
+      - 香港_0110081
+      - 新加坡(TG频道@kxswa) 3
+      - United States 06 TG:@nodpai
+      - Asia 香港09 | 奈飞 | 2.0x | V1 - 酸奶VPN
+      - 香港 | 直连 - BIUBIU FAST
+      - 香港_0110062
+      - 美国(TG频道@kxswa)
+      - KR【付费推荐：goo.gs/vip】
+      - Taiwan 44 2
+      - Japan 12 TG:@nodpai
+      - Asia 香港08 | 直连 | 1.0x | V1 - 酸奶VPN
+      - "@SSRSUB-V20-付费推荐:suo.yt/ssrsub"
+      - 郴州联通-香港HKBN-dip@univstar_3
+      - mianfeifq_010920232472-58trojan
+      - Hongkong 6
+      - 1907(@Outline_Vpn)
+      - 美国(TG频道@kxswa) 2
+      - github.com/freefq - 美国惠普公司 35
+      - _JP_日本_3
+      - 美国(TG频道@kxswa) 3
+      - Hongkong 12
+      - 新加坡（youtube阿伟科技)
+      - Asia 香港10 | 移动优化线路 | 1.0x | V1 - 酸奶VPN
+      - 越南_0110129
+      - 美国(TG频道@kxswa) 4
+      - 荷兰(TG频道@kxswa)
+      - 越南_0110127
+      - 荷兰(TG频道@kxswa) 2
+      - 美国(TG频道@kxswa) 5
+      - 越南_0110001
+      - "@SSRSUB-V15-付费推荐:suo.yt/ssrsub"
+      - Japan 02 TG:@nodpai
+      - mianfeifq 172
+      - 香港_0110077
+      - 美国(油管:破解资源君) 39
+      - 深圳移动-香港HKT-dip@univstar_1
+      - 美国(油管:破解资源君) 22
+      - "[01-10]-🇯🇵-日本-218-43.200.2.173"
+      - 美国(油管:破解资源君) 24
+      - Hongkong 133 2
+      - 越南_0110128
+      - us(youtube阿伟科技) 4 2
+      - 韩国_0110028
+      - 越南_0110126
+      - _SG_新加坡 3
+      - 韩国_0110141
+      - 芬兰_0110004
+      - UC 台湾01 | Youtube免广告 | 3.0x | V1 - 酸奶VPN
+      - 澳大利亚 004
+      - 深圳移动-香港HKT4
+      - 新加坡_0110014
+      - portfolio.progbyrazyar.ir:664
+      - Relay_🇷🇺RU-🇫🇷FR_123
+      - Hongkong 100
+      - github.com/freefq - 北美地区  4
+      - 新加坡（youtube阿伟科技) 2
+      - Hongkong 11
+      - 越南_0110001 2
+      - 上海联通-香港HKT-dip@univstar
+      - -香港-47.242.66.90
+      - 上海联通-香港HKT-dip@univstar 2
+      - 香港_0110079
+      - 郴州联通-香港HKBN-dip@univstar_3 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国(TG频道@kxswa)
-      - 中国(TG频道@kxswa) 2
-      - 香港(TG频道@kxswa)
-      - Relay_🇧🇬BG-🇧🇬BG_05
-      - 中国(TG频道@kxswa) 3
-      - 中国(TG频道@kxswa) 4
-      - 中国(TG频道@kxswa) 5
-      - sg-am3.eqsunshine.com:32001
-      - _FI_芬兰
-      - 越南_0108025
-      - "@SSRSUB-美国V02-付费推荐:dlj.tf/ssrsub"
-      - 香港(TG频道@kxswa) 2
-      - 香港(TG频道@kxswa) 3
-      - 俄罗斯联邦_0108009
-      - 中国(TG频道@kxswa) 6
-      - 新加坡_0108069
-      - 波兰(TG频道@kxswa)
-      - 芬兰_0108009
-      - 新加坡_0108049
-      - 越南_0108079
-      - 韩国(TG频道@kxswa)
-      - _NL_荷兰
-      - 俄罗斯(油管:破解资源君) 5
-      - 中国_0108322
-      - 中国_0108259
-      - 越南_0108061
-      - 中国_0108258
-      - 新加坡_0108094
-      - 中国_01081043
-      - 美国(TG频道@kxswa)
-      - 中国_01081060
-      - 越南_0108125
-      - 澳门(TG频道@kxswa)
-      - 中国_01081041
-      - 香港_01081064
-      - 俄罗斯联邦(TG频道@kxswa)
-      - 台湾(TG频道@kxswa)
-      - 韩国_0108207
-      - 中国_0108252
-      - 美国(TG频道@kxswa) 2
-      - 俄罗斯(油管:破解资源君) 6
-      - 越南_0108026
-      - 英国 003
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - Pool_🇳🇱NL_92
-      - 美国 074
-      - _GB_英国
-      - "[01-09]-🇺🇸-美国-118-aws-bj.qianlong520.vip"
-      - US_110
-      - 巴拿马_0108001
-      - US_148
+      - 英国_116
+      - 深圳移动-香港HKT7
+      - Hongkong 9
+      - 香港_0110068
+      - 美国 086
+      - 日本_53
+      - 越南_0108089
+      - github.com/freefq - 美国CloudFlare节点 31
+      - us(youtube阿伟科技) 4
+      - 伯利兹(TG频道@kxswa)
+      - Singapore 07 TG:@nodpai
+      - 新加坡_0110004
       - _SG_新加坡_3
+      - vpnclub 2/9_153
+      - 香港HKT-dip@univstar_1
+      - 郴州联通-香港HKT-dip@univstar_11
+      - United States 10 TG:@nodpai
+      - Asia 香港04 | 直连 | 1.0x | V1 - 酸奶VPN
+      - _CN_中国->🇫🇷_FR_法国
+      - 香港_0110074
+      - _SG_新加坡_1
+      - 香港_0110075
+      - mianfeifq_011020237469-860trojan
+      - 香港_0110069
+      - 新加坡(TG频道@kxswa)
+      - _MO_欢迎订阅yui科技
+      - github.com/freefq - 美国CloudFlare公司CDN节点 11
+      - 香港_0110071
+      - github.com/freefq - 美国  26
+      - github.com/freefq - 美国RF Engineering 5
+      - Asia 香港01 | 直连 | 1.0 x | V1 - 酸奶VPN
+      - 香港_0110065
+      - 香港_0110076
+      - Taiwan 44
+      - -香港-8.210.153.242
+      - Relay_🏁ZZ-🇫🇷FR_289
+      - 白嫖-0637
+      - github.com/freefq - 美国惠普公司 20
+      - 香港_0110073
+      - Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN
+      - Hongkong 99
+      - Asia 香港06 | 直连 | 1.0x | V1 - 酸奶VPN
+      - SGP 新加坡 | 中转 | 奈飞 | 5.0x | V1 - 酸奶VPN
+      - 香港_0110070
+      - Singapore 09 TG:@nodpai
+      - 哥斯达黎加(TG频道@kxswa)
+      - Relay_🇺🇸US-🇷🇺RU_103
+      - 韩国_0110031
+      - mianfeifq 192
+      - 韩国_0110162
+      - Hong Kong 03 TG:@nodpai
+      - Asia 香港07 | 直连 | 1.0x | V1 - 酸奶VPN
+      - 哥斯达黎加(TG频道@kxswa) 2
+      - 新加坡(TG频道@kxswa) 2
+      - mianfeifq_011020237469-240trojan
+      - Hongkong 133
+      - 香港8(youtube阿伟科技)83
+      - "| 0.21Mb"
+      - 香港_0110067
+      - 香港_0110081
+      - 新加坡(TG频道@kxswa) 3
+      - United States 06 TG:@nodpai
+      - Asia 香港09 | 奈飞 | 2.0x | V1 - 酸奶VPN
+      - 香港 | 直连 - BIUBIU FAST
+      - 香港_0110062
+      - 美国(TG频道@kxswa)
+      - KR【付费推荐：goo.gs/vip】
+      - Taiwan 44 2
+      - Japan 12 TG:@nodpai
+      - Asia 香港08 | 直连 | 1.0x | V1 - 酸奶VPN
+      - "@SSRSUB-V20-付费推荐:suo.yt/ssrsub"
+      - 郴州联通-香港HKBN-dip@univstar_3
+      - mianfeifq_010920232472-58trojan
+      - Hongkong 6
+      - 1907(@Outline_Vpn)
+      - 美国(TG频道@kxswa) 2
+      - github.com/freefq - 美国惠普公司 35
+      - _JP_日本_3
+      - 美国(TG频道@kxswa) 3
+      - Hongkong 12
+      - 新加坡（youtube阿伟科技)
+      - Asia 香港10 | 移动优化线路 | 1.0x | V1 - 酸奶VPN
+      - 越南_0110129
+      - 美国(TG频道@kxswa) 4
+      - 荷兰(TG频道@kxswa)
+      - 越南_0110127
+      - 荷兰(TG频道@kxswa) 2
+      - 美国(TG频道@kxswa) 5
+      - 越南_0110001
+      - "@SSRSUB-V15-付费推荐:suo.yt/ssrsub"
+      - Japan 02 TG:@nodpai
+      - mianfeifq 172
+      - 香港_0110077
+      - 美国(油管:破解资源君) 39
+      - 深圳移动-香港HKT-dip@univstar_1
+      - 美国(油管:破解资源君) 22
+      - "[01-10]-🇯🇵-日本-218-43.200.2.173"
+      - 美国(油管:破解资源君) 24
+      - Hongkong 133 2
+      - 越南_0110128
+      - us(youtube阿伟科技) 4 2
+      - 韩国_0110028
+      - 越南_0110126
+      - _SG_新加坡 3
+      - 韩国_0110141
+      - 芬兰_0110004
+      - UC 台湾01 | Youtube免广告 | 3.0x | V1 - 酸奶VPN
+      - 澳大利亚 004
+      - 深圳移动-香港HKT4
+      - 新加坡_0110014
+      - portfolio.progbyrazyar.ir:664
+      - Relay_🇷🇺RU-🇫🇷FR_123
+      - Hongkong 100
+      - github.com/freefq - 北美地区  4
+      - 新加坡（youtube阿伟科技) 2
+      - Hongkong 11
+      - 越南_0110001 2
+      - 上海联通-香港HKT-dip@univstar
+      - -香港-47.242.66.90
+      - 上海联通-香港HKT-dip@univstar 2
+      - 香港_0110079
+      - 郴州联通-香港HKBN-dip@univstar_3 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -498,58 +1089,128 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国(TG频道@kxswa)
-      - 中国(TG频道@kxswa) 2
-      - 香港(TG频道@kxswa)
-      - Relay_🇧🇬BG-🇧🇬BG_05
-      - 中国(TG频道@kxswa) 3
-      - 中国(TG频道@kxswa) 4
-      - 中国(TG频道@kxswa) 5
-      - sg-am3.eqsunshine.com:32001
-      - _FI_芬兰
-      - 越南_0108025
-      - "@SSRSUB-美国V02-付费推荐:dlj.tf/ssrsub"
-      - 香港(TG频道@kxswa) 2
-      - 香港(TG频道@kxswa) 3
-      - 俄罗斯联邦_0108009
-      - 中国(TG频道@kxswa) 6
-      - 新加坡_0108069
-      - 波兰(TG频道@kxswa)
-      - 芬兰_0108009
-      - 新加坡_0108049
-      - 越南_0108079
-      - 韩国(TG频道@kxswa)
-      - _NL_荷兰
-      - 俄罗斯(油管:破解资源君) 5
-      - 中国_0108322
-      - 中国_0108259
-      - 越南_0108061
-      - 中国_0108258
-      - 新加坡_0108094
-      - 中国_01081043
-      - 美国(TG频道@kxswa)
-      - 中国_01081060
-      - 越南_0108125
-      - 澳门(TG频道@kxswa)
-      - 中国_01081041
-      - 香港_01081064
-      - 俄罗斯联邦(TG频道@kxswa)
-      - 台湾(TG频道@kxswa)
-      - 韩国_0108207
-      - 中国_0108252
-      - 美国(TG频道@kxswa) 2
-      - 俄罗斯(油管:破解资源君) 6
-      - 越南_0108026
-      - 英国 003
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - Pool_🇳🇱NL_92
-      - 美国 074
-      - _GB_英国
-      - "[01-09]-🇺🇸-美国-118-aws-bj.qianlong520.vip"
-      - US_110
-      - 巴拿马_0108001
-      - US_148
+      - 英国_116
+      - 深圳移动-香港HKT7
+      - Hongkong 9
+      - 香港_0110068
+      - 美国 086
+      - 日本_53
+      - 越南_0108089
+      - github.com/freefq - 美国CloudFlare节点 31
+      - us(youtube阿伟科技) 4
+      - 伯利兹(TG频道@kxswa)
+      - Singapore 07 TG:@nodpai
+      - 新加坡_0110004
       - _SG_新加坡_3
+      - vpnclub 2/9_153
+      - 香港HKT-dip@univstar_1
+      - 郴州联通-香港HKT-dip@univstar_11
+      - United States 10 TG:@nodpai
+      - Asia 香港04 | 直连 | 1.0x | V1 - 酸奶VPN
+      - _CN_中国->🇫🇷_FR_法国
+      - 香港_0110074
+      - _SG_新加坡_1
+      - 香港_0110075
+      - mianfeifq_011020237469-860trojan
+      - 香港_0110069
+      - 新加坡(TG频道@kxswa)
+      - _MO_欢迎订阅yui科技
+      - github.com/freefq - 美国CloudFlare公司CDN节点 11
+      - 香港_0110071
+      - github.com/freefq - 美国  26
+      - github.com/freefq - 美国RF Engineering 5
+      - Asia 香港01 | 直连 | 1.0 x | V1 - 酸奶VPN
+      - 香港_0110065
+      - 香港_0110076
+      - Taiwan 44
+      - -香港-8.210.153.242
+      - Relay_🏁ZZ-🇫🇷FR_289
+      - 白嫖-0637
+      - github.com/freefq - 美国惠普公司 20
+      - 香港_0110073
+      - Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN
+      - Hongkong 99
+      - Asia 香港06 | 直连 | 1.0x | V1 - 酸奶VPN
+      - SGP 新加坡 | 中转 | 奈飞 | 5.0x | V1 - 酸奶VPN
+      - 香港_0110070
+      - Singapore 09 TG:@nodpai
+      - 哥斯达黎加(TG频道@kxswa)
+      - Relay_🇺🇸US-🇷🇺RU_103
+      - 韩国_0110031
+      - mianfeifq 192
+      - 韩国_0110162
+      - Hong Kong 03 TG:@nodpai
+      - Asia 香港07 | 直连 | 1.0x | V1 - 酸奶VPN
+      - 哥斯达黎加(TG频道@kxswa) 2
+      - 新加坡(TG频道@kxswa) 2
+      - mianfeifq_011020237469-240trojan
+      - Hongkong 133
+      - 香港8(youtube阿伟科技)83
+      - "| 0.21Mb"
+      - 香港_0110067
+      - 香港_0110081
+      - 新加坡(TG频道@kxswa) 3
+      - United States 06 TG:@nodpai
+      - Asia 香港09 | 奈飞 | 2.0x | V1 - 酸奶VPN
+      - 香港 | 直连 - BIUBIU FAST
+      - 香港_0110062
+      - 美国(TG频道@kxswa)
+      - KR【付费推荐：goo.gs/vip】
+      - Taiwan 44 2
+      - Japan 12 TG:@nodpai
+      - Asia 香港08 | 直连 | 1.0x | V1 - 酸奶VPN
+      - "@SSRSUB-V20-付费推荐:suo.yt/ssrsub"
+      - 郴州联通-香港HKBN-dip@univstar_3
+      - mianfeifq_010920232472-58trojan
+      - Hongkong 6
+      - 1907(@Outline_Vpn)
+      - 美国(TG频道@kxswa) 2
+      - github.com/freefq - 美国惠普公司 35
+      - _JP_日本_3
+      - 美国(TG频道@kxswa) 3
+      - Hongkong 12
+      - 新加坡（youtube阿伟科技)
+      - Asia 香港10 | 移动优化线路 | 1.0x | V1 - 酸奶VPN
+      - 越南_0110129
+      - 美国(TG频道@kxswa) 4
+      - 荷兰(TG频道@kxswa)
+      - 越南_0110127
+      - 荷兰(TG频道@kxswa) 2
+      - 美国(TG频道@kxswa) 5
+      - 越南_0110001
+      - "@SSRSUB-V15-付费推荐:suo.yt/ssrsub"
+      - Japan 02 TG:@nodpai
+      - mianfeifq 172
+      - 香港_0110077
+      - 美国(油管:破解资源君) 39
+      - 深圳移动-香港HKT-dip@univstar_1
+      - 美国(油管:破解资源君) 22
+      - "[01-10]-🇯🇵-日本-218-43.200.2.173"
+      - 美国(油管:破解资源君) 24
+      - Hongkong 133 2
+      - 越南_0110128
+      - us(youtube阿伟科技) 4 2
+      - 韩国_0110028
+      - 越南_0110126
+      - _SG_新加坡 3
+      - 韩国_0110141
+      - 芬兰_0110004
+      - UC 台湾01 | Youtube免广告 | 3.0x | V1 - 酸奶VPN
+      - 澳大利亚 004
+      - 深圳移动-香港HKT4
+      - 新加坡_0110014
+      - portfolio.progbyrazyar.ir:664
+      - Relay_🇷🇺RU-🇫🇷FR_123
+      - Hongkong 100
+      - github.com/freefq - 北美地区  4
+      - 新加坡（youtube阿伟科技) 2
+      - Hongkong 11
+      - 越南_0110001 2
+      - 上海联通-香港HKT-dip@univstar
+      - -香港-47.242.66.90
+      - 上海联通-香港HKT-dip@univstar 2
+      - 香港_0110079
+      - 郴州联通-香港HKBN-dip@univstar_3 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
