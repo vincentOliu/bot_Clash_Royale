@@ -6,563 +6,319 @@ mode: Rule
 log-level: info
 external-controller: 9090
 proxies:
-  - {name: _SG_新加坡, server: 15.235.202.111, port: 80, type: vmess, uuid: 0ce71b6e-d6a6-4335-94b8-0b1719142f4c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: 新加坡_0114520, server: 00000000000000000000000000000000000000000000000000000000000026a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:), server: au.yangon.club, port: 443, type: vmess, uuid: 76f6ed54-7f61-4407-f49d-dd33d07ebd8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: v2rayfree.eu.org - 美国  3, server: 136.175.178.176mgmg.xhtk.cc, port: 443, type: vmess, uuid: 23b3724b-3d90-2074-a5bf-09388a9806b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /veghvws, headers: {Host: 136.175.178.176mgmg.xhtk.cc}}, udp: true}
-  - {name: 中国_01141425, server: 117.164.185.222, port: 16258, type: vmess, uuid: 4a0d81b8-a04a-382b-a3cb-84d1d4b9d6aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 025, server: get.tech, port: 80, type: vmess, uuid: 8763e625-929a-43da-b7bf-7e7bc2e57615, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shared, headers: {Host: lv.awsbest.com}}, udp: true}
-  - {name: 新加坡 004, server: 139.99.45.193, port: 80, type: vmess, uuid: a0cfd598-f09f-440b-9204-77d6ae923dc5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 139.99.45.193}}, udp: true}
-  - {name: US【付费推荐：https://tt.sbs/vip】, server: 15.204.57.226, port: 80, type: vmess, uuid: be741417-6694-45f9-8bbd-80efba3c8dc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: 韩国_0114174, server: 00000000000000000000000000000000000000000000000000000000000037a.node-for-bigairport.win, port: 12356, type: vmess, uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 002, server: 195.54.174.18, port: 80, type: vmess, uuid: 6d6f413f-3dc2-4d02-8d35-8b45e39feb72, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: v2rayfree.eu.org - 美国CloudFlare节点 35, server: 162.159.128.7, port: 443, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sshkit/1350195536/63a625eb069d5/, headers: {Host: sg2-v2ray.sshkit.org}}, udp: true}
-  - {name: 韩国_0114137, server: 00000000000000000000000000000000000000000000000000000000000037a.node-for-bigairport.win, port: 12356, type: vmess, uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: PA【付费推荐：https://tt.sbs/vip】, server: 185.143.220.25, port: 443, type: vmess, uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /6e9EtZ2dL, headers: {Host: dengxin.one}}, udp: true}
-  - {name: 新加坡_0114077, server: 00000000000000000000000000000000000000000000000000000000000036a.node-for-bigairport.win, port: 12356, type: vmess, uuid: f3fda0c6-4025-4da7-82b4-88423d9ec489, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_0114250, server: zebra2.2022.2025.mlinuu.top, port: 888, type: vmess, uuid: 56ee393a-9573-3653-8818-9266e4ef83a9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_欢迎订阅yui科技, server: 111.45.22.239, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君) 49, server: 111.45.22.239, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: v2rayfree.eu.org - 美国CloudFlare节点 28, server: powerservice.com, port: 443, type: vmess, uuid: 0764a598-82c4-4b41-ba10-551a625beed5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: uk2.v2rayserv.com}}, udp: true}
-  - {name: 新加坡_0114620, server: 00000000000000000000000000000000000000000000000000000000000025a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/mehdimoghaddam-cell, server: 15.204.57.226, port: 80, type: vmess, uuid: be741417-6694-45f9-8bbd-80efba3c8dc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 15.204.57.226}}, udp: true}
-  - {name: v2rayfree.eu.org - 美国CloudFlare公司CDN节点 23, server: v2ray.online, port: 443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Phoenix.v2ray.online}}, udp: true}
-  - {name: 新加坡_0114529, server: 00000000000000000000000000000000000000000000000000000000000025a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港(油管:破解资源君) 5, server: data-hk-v2.shwjfkw.cn, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: data-hk-v2.shwjfkw.cn}}, udp: true}
-  - {name: 新加坡 008, server: 139.99.61.53, port: 80, type: vmess, uuid: cd2f622d-22f1-4840-b403-97c84f79c809, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: 韩国_0114237, server: bgroup.node2.v.nodelist-gfwairport1.download, port: 50001, type: vmess, uuid: ef58ac5e-3dd7-40e3-a33d-ce66580c1328, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_0114196, server: zebra2.2022.2025.mlinuu.top, port: 888, type: vmess, uuid: 56ee393a-9573-3653-8818-9266e4ef83a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: -日本-43.207.117.142, server: 43.207.117.142, port: 43632, type: vmess, uuid: d4b8815e-7dad-4350-83a6-092255fe66bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/mehdimoghaddam-cell_97, server: 129.154.50.21, port: 45885, type: vmess, uuid: f438d32f-bea0-4b6d-f15c-52de46338a31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: "|48.57Mb", server: v1-hk.xtspeeder001.xyz, port: 18001, type: vmess, uuid: 7affa329-5e15-369e-8929-b6452cdf2616, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: v2rayfree.eu.org - 美国RF Engineering 17, server: news.microsoft.com, port: 443, type: vmess, uuid: 615a1285-5848-42a1-9859-d4cb37b1fbd8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /share, headers: {Host: us.awsbest.com}}, udp: true}
-  - {name: 香港_0114656, server: bgroup.node4.v.nodelist-gfwairport1.download, port: 50001, type: vmess, uuid: ef58ac5e-3dd7-40e3-a33d-ce66580c1328, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: v2rayfree.eu.org - 美国  14, server: 162.19.224.176, port: 80, type: vmess, uuid: 25c8d48a-9abb-4fe1-a7a2-b1d0306589b8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 162.19.224.176}}, udp: true}
-  - {name: 越南_0112129, server: 103.75.186.153, port: 80, type: vmess, uuid: ef919c67-6638-4416-91af-9a13ffe5b9ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tandung288.click, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
-  - {name: _CN_中国->🇹🇭_TH_泰国, server: zj.zhuanfa.tk, port: 33396, type: vmess, uuid: 9516d40f-e00a-4ac1-b89e-d0bd77fd3f9f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/mehdimoghaddam-cell_160, server: 129.150.44.226, port: 24972, type: vmess, uuid: 851b9a0f-b257-464b-d2cb-1f22afc16a9c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /kimi, headers: {Host: 2022}}, udp: true}
-  - {name: 法国_0114001, server: 51.77.212.145, port: 80, type: vmess, uuid: 1a6b10f1-f9c2-4fa8-bf2b-3e5b44f84231, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 51.77.212.145}}, udp: true}
-  - {name: 日本_0114958, server: 43.207.117.142, port: 43632, type: vmess, uuid: d4b8815e-7dad-4350-83a6-092255fe66bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _JP_日本_3, server: 141.147.181.219, port: 443, type: vmess, uuid: 0b873cff-11ab-4716-c41a-04f886135091, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /roewesu}, udp: true}
-  - {name: _US_美国->🇫🇷_FR_法国_5, server: 141.101.114.32, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
-  - {name: 香港_0114187, server: zebra2.2022.2025.mlinuu.top, port: 888, type: vmess, uuid: 56ee393a-9573-3653-8818-9266e4ef83a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 荷兰_0114193, server: 195.54.174.18, port: 80, type: vmess, uuid: 6d6f413f-3dc2-4d02-8d35-8b45e39feb72, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 195.54.174.18}}, udp: true}
-  - {name: -美国-快嘴科技提供：kkzui.com7快嘴科技提供kkzui.com.67.快嘴科技提供：kkzui.com99.快嘴科技提供kkzui.com.4_快嘴科技提供：kkzui.com(由kkzui.com免费提供)4快嘴科技提供kkzui.com快嘴科技提供：kkzui.com, server: 172.67.199.34, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sshkit/fdfadsfa/63848bfe228fd/, headers: {Host: us-lb.sshkit.org}}, udp: true}
-  - {name: 美国 086, server: 154.37.152.57, port: 45184, type: vmess, uuid: 5b7e0aff-b5e4-3e08-41bf-2a6d1a351cac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 美国092(youtube阿伟科技)56, server: 162.19.224.176, port: 80, type: vmess, uuid: 32a919f6-f41f-4874-a559-cd914d8840a2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: github.com/mehdimoghaddam-cell_235, server: 185.143.233.140, port: 80, type: vmess, uuid: 205febb3-c669-4012-abc5-0e05cf516252, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 241.zirogame-54.site}}, udp: true}
-  - {name: 美国 115, server: 162.19.224.176, port: 80, type: vmess, uuid: 25c8d48a-9abb-4fe1-a7a2-b1d0306589b8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: _SG_新加坡_快嘴科技提供：kkzui.com, server: 15.235.202.196, port: 80, type: vmess, uuid: 66f7af16-9d20-4df2-9849-0f65a8bb5527, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: _FR_欢迎订阅yui科技, server: 51.77.212.145, port: 80, type: vmess, uuid: 17afb2a7-428a-4e5d-8785-76249b944b5c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 51.77.212.145}}, udp: true}
-  - {name: _MO_澳门->🇨🇳_CN_中国, server: 45.64.22.22, port: 443, type: vmess, uuid: e55ed7b2-ed4f-480c-8b99-08482da1e4c7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /OB7jTM5cTTrL, headers: {Host: hkbn.pgypgykmoljklj.xyz}}, udp: true}
-  - {name: 中国_01141163, server: 117.164.185.221, port: 16116, type: vmess, uuid: 4a0d81b8-a04a-382b-a3cb-84d1d4b9d6aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯联邦_0114001, server: 45.136.244.181, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fr-unlimitxxx}, udp: true}
-  - {name: FR【付费推荐：https://tt.sbs/vip】, server: 51.77.212.145, port: 80, type: vmess, uuid: 1a6b10f1-f9c2-4fa8-bf2b-3e5b44f84231, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 51.77.212.145}}, udp: true}
-  - {name: github.com/mehdimoghaddam-cell_230, server: 129.151.234.26, port: 38701, type: vmess, uuid: 01baf0d5-605a-4e54-d1d2-9e3b3a165f0e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /01baf0d5-605a-4e54-d1d2-9e3b3a165f0e}, udp: true}
-  - {name: 美国(TG频道@kxswa), server: 15.204.57.226, port: 80, type: vmess, uuid: ea9dfc5c-77e9-4986-be71-5e6b51d485c9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 15.204.57.226}}, udp: true}
-  - {name: SG【付费推荐：https://tt.sbs/vip】, server: 15.235.147.186, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sshkit/Ertusg86/635014638c264/}, udp: true}
-  - {name: 越南_0112127, server: 103.166.183.226, port: 80, type: vmess, uuid: ef919c67-6638-4416-91af-9a13ffe5b9ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tandung288.click}, udp: true}
-  - {name: _RU_俄罗斯联邦->🇫🇷_FR_法国, server: 45.136.244.181, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fr-unlimitxxx}, udp: true}
-  - {name: _PL_波兰, server: 51.68.139.22, port: 80, type: vmess, uuid: 51743351-cb07-439b-a3ba-8616c0ba7990, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: SG【付费推荐：https://tt.sbs/vip】 2, server: 139.99.61.53, port: 80, type: vmess, uuid: cd2f622d-22f1-4840-b403-97c84f79c809, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 139.99.61.53}}, udp: true}
-  - {name: 新加坡_0114002, server: 139.99.61.53, port: 80, type: vmess, uuid: cd2f622d-22f1-4840-b403-97c84f79c809, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: _KR_韩国 2, server: surongwei.eu.org, port: 443, type: vmess, uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /reffs7y26g0ua, headers: {Host: surongwei.eu.org}}, udp: true}
-  - {name: 1907(@Outline_Vpn), server: 51.77.212.145, port: 80, type: vmess, uuid: 5f6e42bb-2fd1-478b-8f0f-e52b2d6f7652, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 51.77.212.145}}, udp: true}
-  - {name: 法国_0112001, server: 51.77.212.145, port: 80, type: vmess, uuid: 5f6e42bb-2fd1-478b-8f0f-e52b2d6f7652, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 51.77.212.145}}, udp: true}
-  - {name: github.com/mehdimoghaddam-cell_128, server: 107.174.156.99, port: 1234, type: vmess, uuid: 47ab043c-7320-4db8-9e55-9076043f674a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bb}, udp: true}
-  - {name: 法国_0114003, server: 51.77.212.145, port: 80, type: vmess, uuid: 17afb2a7-428a-4e5d-8785-76249b944b5c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 51.77.212.145}}, udp: true}
-  - {name: SG【付费推荐：https://tt.sbs/vip】 3, server: 15.235.202.196, port: 80, type: vmess, uuid: 66f7af16-9d20-4df2-9849-0f65a8bb5527, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 15.235.202.196}}, udp: true}
-  - {name: 香港_0110067, server: 8.210.253.93, port: 31083, type: vmess, uuid: d2070b97-6d7c-44dc-9c7c-84a9c891815e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: github.com/mehdimoghaddam-cell 2, server: 15.235.202.111, port: 80, type: vmess, uuid: 0ce71b6e-d6a6-4335-94b8-0b1719142f4c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 15.235.202.111}}, udp: true}
-  - {name: Hong Kong 1, server: yd-01.paofunlink.com, port: 5982, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 37f7e180722.microsoft.com}, udp: true}
-  - {name: _HK_香港_5, server: 8.210.20.159, port: 45751, type: vmess, uuid: 3a0d252e-cddf-4695-ab0f-95a0ce7abcc0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 波兰_0114001, server: 51.68.139.22, port: 80, type: vmess, uuid: 51743351-cb07-439b-a3ba-8616c0ba7990, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 51.68.139.22}}, udp: true}
-  - {name: 香港_0110072, server: 8.210.126.138, port: 57070, type: vmess, uuid: 3727c689-134d-4b70-8962-9428225a79aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 土耳其_0114021, server: 80.253.246.179, port: 8080, type: vmess, uuid: 4e2b4472-7e98-449d-954a-3edcb3485543, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: HK-IPLC-44, server: 120.233.15.105, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 36680:LLLiioi877, obfs-param: t.me/vpnhat, udp: true}
-  - {name: HK-IPLC-19, server: yd-07.paofunlink.com, port: 5986, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 37f7e180722.microsoft.com}, udp: true}
-  - {name: _SG_新加坡 4, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: HK-IPLC-17, server: yd-01.paofunlink.com, port: 5982, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 37f7e180722.microsoft.com}, udp: true}
   - {name: -香港-47.242.0.10, server: 47.242.0.10, port: 61783, type: vmess, uuid: 9919c705-2d46-4411-bff3-2a48719ef2ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: HK-IPLC-16, server: yd-01.paofunlink.com, port: 5981, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 37f7e180722.microsoft.com}, udp: true}
-  - {name: Hong Kong-M2, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: 44e7eced-ca50-43b2-8cc0-b26834d256d7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkm2.targoocloud.live}}, udp: true}
-  - {name: 荷兰 002, server: 45.136.244.181, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fr-unlimitxxx, headers: {Host: 45.136.244.181}}, udp: true}
-  - {name: 俄罗斯 001, server: 185.143.220.25, port: 443, type: vmess, uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /6e9EtZ2dL}, udp: true}
-  - {name: _CN_中国->🇹🇭_TH_泰国 2, server: zj.zhuanfa.tk, port: 33396, type: vmess, uuid: 9516d40f-e00a-4ac1-b89e-d0bd77fd3f9f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 059, server: hucloud.tk, port: 443, type: vmess, uuid: 2df3ed4a-4313-45f9-b742-2f02ce593a6e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /huhu, headers: {Host: hucloud.tk}}, udp: true}
-  - {name: 美国 082, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: 44e7eced-ca50-43b2-8cc0-b26834d256d7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkm3.targoocloud.live}}, udp: true}
-  - {name: 美国 108, server: 162.19.224.175, port: 80, type: vmess, uuid: 42ba278d-65e0-4743-8707-e18ed98cfed5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: 美国 109, server: 147.135.112.248, port: 80, type: vmess, uuid: 973c2639-c9c2-484d-ae9b-3d68b2f30d9e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: 美国 069, server: powerservice.com, port: 443, type: vmess, uuid: 0764a598-82c4-4b41-ba10-551a625beed5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: uk2.v2rayserv.com}}, udp: true}
-  - {name: 台湾_0114370, server: 165.154.246.71, port: 80, type: vmess, uuid: 13581ae8-65c9-4fbe-9c78-77fac9ca503a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "?ed=2048"}, udp: true}
-  - {name: "[01-13]-🇸🇬-新加坡-204-sg-am3.eqsunshine.com", server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: ====, obfs-param: ====, udp: true}
-  - {name: _FR_法国_2, server: 51.77.212.145, port: 80, type: vmess, uuid: 5f6e42bb-2fd1-478b-8f0f-e52b2d6f7652, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: 新加坡_0114086, server: 00000000000000000000000000000000000000000000000000000000000025a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君) 46, server: au.yangon.club, port: 443, type: vmess, uuid: 76f6ed54-7f61-4407-f49d-dd33d07ebd8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 日本 006, server: xtom.mytargoocloud.live, port: 443, type: vmess, uuid: 44e7eced-ca50-43b2-8cc0-b26834d256d7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jpm1.targoocloud.live}}, udp: true}
-  - {name: 韩国_0114025, server: 00000000000000000000000000000000000000000000000000000000000028a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: FR(youtube阿伟科技)_2(youtube阿伟科技)55, server: 162.19.224.176, port: 80, type: vmess, uuid: 32a919f6-f41f-4874-a559-cd914d8840a2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 162.19.224.176}}, udp: true}
-  - {name: TW_165.154.246.71_011320239799-294vmess, server: 165.154.246.71, port: 80, type: vmess, uuid: 13581ae8-65c9-4fbe-9c78-77fac9ca503a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: v2rayfree.eu.org - 美国CloudFlare公司CDN节点 30, server: cf-lt-dns.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: us-dp.sharecentre.online}}, udp: true}
-  - {name: 新加坡_0114078, server: 00000000000000000000000000000000000000000000000000000000000025a.node-for-bigairport.win, port: 52356, type: vmess, uuid: f3fda0c6-4025-4da7-82b4-88423d9ec489, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_0114621, server: blog.voewl.com, port: 43815, type: vmess, uuid: 7a9f026f-f7a8-40ca-f2f9-3b380c287c0d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /abc, headers: {Host: blog.voewl.com}}, udp: true}
-  - {name: Japan 6, server: 42.237.112.208, port: 31904, type: ssr, cipher: chacha20-ietf, password: zztw9jk7gu, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 7432:82TfWp, obfs-param: e5ab07432.microsoft.com, udp: true}
-  - {name: _HK_香港_5 2, server: 8.210.48.219, port: 26812, type: vmess, uuid: cbe5ac22-eb42-4ca9-9fdc-283e57f98008, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: Pool_🇳🇱NL_115, server: 85.208.108.60, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 欧洲(油管:破解资源君) 18, server: 85.208.108.60, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: Hongkong 100, server: yd-06.paofunlink.com, port: 5983, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 37f7e180722.microsoft.com}, udp: true}
-  - {name: -香港-47.242.66.90, server: 47.242.66.90, port: 35317, type: vmess, uuid: 3d5d3753-4d33-4dd0-847a-65aa17f3e845, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: HK-IPLC-22, server: yd-07.paofunlink.com, port: 5988, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 37f7e180722.microsoft.com}, udp: true}
+  - {name: MO【付费推荐：https://tt.sbs/vip】, server: 45.64.22.22, port: 443, type: vmess, uuid: e55ed7b2-ed4f-480c-8b99-08482da1e4c7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /OB7jTM5cTTrL, headers: {Host: hkbn.pgypgykmoljklj.xyz}}, udp: true}
+  - {name: -加拿大-165.154.246.71, server: 165.154.246.71, port: 80, type: vmess, uuid: 13581ae8-65c9-4fbe-9c78-77fac9ca503a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: _HK_香港_2, server: 8.210.140.81, port: 24447, type: vmess, uuid: ef97abb8-c32a-4c36-8ffd-40dfffb8dd30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 瑞典_0114005, server: 13.51.178.44, port: 80, type: vmess, uuid: c24482f2-6b3b-4656-b23c-7a9528238282, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 香港_0110081, server: 47.242.172.105, port: 51679, type: vmess, uuid: 6bfaa8c8-95f3-4f8d-aed8-07c5f402483d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 澳大利亚 008, server: 43.201.69.62, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: _HK_香港_7, server: 8.210.206.163, port: 45719, type: vmess, uuid: a220dad2-a34e-4460-b0f7-eaba9c46e639, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
   - {name: 香港_0110078, server: 47.242.68.220, port: 33319, type: vmess, uuid: cf8134d2-f65b-4aef-8078-d84ebafd4c65, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _CN_中国->🇭🇰_HK_香港, server: adns.defucloud.shop, port: 32982, type: ssr, cipher: chacha20-ietf, password: zztw9jk7gu, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 4021:yWHABv, obfs-param: b9be14021.microsoft.com, udp: true}
-  - {name: 欧洲(油管:破解资源君) 17, server: 85.208.108.60, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 香港_0114048, server: 47.242.167.108, port: 43166, type: vmess, uuid: 2d1bd222-6883-455d-95a4-649f2da0967c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: mianfeifq_🇩🇪Limburg an der Lahn-1166-166, server: 141.95.61.209, port: 1145, type: trojan, password: 414583b6-1d14-49f4-9988-9d6849efb420, sni: 141.95.61.209, skip-cert-verify: true, udp: true}
-  - {name: HK-IPLC-17, server: yd-01.paofunlink.com, port: 5982, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 37f7e180722.microsoft.com}, udp: true}
-  - {name: _HK_香港_16, server: 8.210.70.156, port: 54148, type: vmess, uuid: 1346261e-3201-4932-bfba-df869ab48116, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: HK-IPLC-57, server: 116.162.120.34, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 36680:LLLiioi877, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港_0112140, server: 8.210.0.37, port: 36442, type: vmess, uuid: 85802212-5189-4301-9010-3180f65345b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: Hong Kong 10, server: 42.237.112.208, port: 32983, type: ssr, cipher: chacha20-ietf, password: zztw9jk7gu, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 7432:82TfWp, obfs-param: e5ab07432.microsoft.com, udp: true}
-  - {name: Hongkong 111, server: yd-06.paofunlink.com, port: 5985, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 37f7e180722.microsoft.com}, udp: true}
-  - {name: 欧洲(油管:破解资源君) 56, server: 85.208.108.60, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: _HK_香港_6, server: 47.242.168.12, port: 35482, type: vmess, uuid: c6b5d490-5aee-49c7-bbce-699ad9e10507, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: mianfeifq_🇩🇪Limburg an der Lahn-1145-145, server: 141.95.61.209, port: 1145, type: trojan, password: 55e51cd3-cf98-4cb3-aaab-a72044437df3, sni: 141.95.61.209, skip-cert-verify: true, udp: true}
   - {name: _HK_香港_3, server: 8.210.153.242, port: 48577, type: vmess, uuid: dd3c5ce4-6741-4cdb-a54d-bf43475969e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: HK-IPLC-52, server: 116.162.120.29, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 36680:LLLiioi877, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港_0112142, server: 8.210.88.29, port: 42783, type: vmess, uuid: 1e5a4ea1-53bb-4af5-ace5-630351def1c8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _HK_香港_14, server: 47.242.52.13, port: 31152, type: vmess, uuid: 59cf21e6-d029-47d8-9c37-7ef34280b9d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: HK-IPLC-54, server: 116.162.120.28, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 36680:LLLiioi877, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 1.36| Germany 3  NF D   备用, server: 141.95.61.209, port: 1145, type: trojan, password: be9cc8d4-5fbe-42bc-8b40-5d5d3a9542fa, sni: wx.qq.com, skip-cert-verify: true, udp: true}
-  - {name: _JP_日本_快嘴科技提供kkzui.com., server: micro.letitbe.ink, port: 443, type: trojan, password: 14c751113c, skip-cert-verify: true, udp: true}
-  - {name: mianfeifq_🇩🇪Limburg an der Lahn-1163-163, server: 141.95.61.209, port: 1145, type: trojan, password: e45b7759-6512-487b-ab20-22da1f46255f, sni: 141.95.61.209, skip-cert-verify: true, udp: true}
+  - {name: 白嫖-0589, server: 51.38.71.175, port: 80, type: trojan, password: 63bdf871-b985-4955-86cf-7f391c1667ce, sni: vipmahsa, skip-cert-verify: true, udp: true}
+  - {name: Hongkong 100, server: yd-06.paofunlink.com, port: 5983, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 37f7e180722.microsoft.com}, udp: true}
+  - {name: "| 6.83Mb", server: 111.45.22.239, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _GB_英国_2, server: uk1.trojanvh.xyz, port: 80, type: trojan, password: b640d791-ff83-4300-b509-c2a02f97f167, skip-cert-verify: true, udp: true}
+  - {name: Hong Kong 1, server: yd-01.paofunlink.com, port: 5982, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 37f7e180722.microsoft.com}, udp: true}
+  - {name: github.com/mehdimoghaddam-cell_246, server: 162.19.224.175, port: 80, type: vmess, uuid: 42ba278d-65e0-4743-8707-e18ed98cfed5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: bmi.ir}}, udp: true}
+  - {name: Hongkong 111, server: yd-06.paofunlink.com, port: 5985, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 37f7e180722.microsoft.com}, udp: true}
   - {name: _FR_法国, server: 141.95.61.209, port: 1145, type: trojan, password: 4f2c305b-9a03-4493-b3e4-2dff2f1af8c9, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_2, server: 8.210.140.81, port: 24447, type: vmess, uuid: ef97abb8-c32a-4c36-8ffd-40dfffb8dd30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 美国_01141770, server: 147.135.112.248, port: 80, type: vmess, uuid: 973c2639-c9c2-484d-ae9b-3d68b2f30d9e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 147.135.112.248}}, udp: true}
+  - {name: 澳大利亚_0114041, server: 13.210.139.80, port: 80, type: vmess, uuid: c24482f2-6b3b-4656-b23c-7a9528238282, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: _HK_香港_14, server: 47.242.52.13, port: 31152, type: vmess, uuid: 59cf21e6-d029-47d8-9c37-7ef34280b9d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 香港_0112142, server: 8.210.88.29, port: 42783, type: vmess, uuid: 1e5a4ea1-53bb-4af5-ace5-630351def1c8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 新加坡 008, server: 139.99.61.53, port: 80, type: vmess, uuid: cd2f622d-22f1-4840-b403-97c84f79c809, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: TW (youtube阿伟科技), server: 165.154.246.71, port: 80, type: vmess, uuid: 13581ae8-65c9-4fbe-9c78-77fac9ca503a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "?ed=2048", headers: {Host: 165.154.246.71}}, udp: true}
+  - {name: HK-IPLC-22, server: yd-07.paofunlink.com, port: 5988, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 37f7e180722.microsoft.com}, udp: true}
+  - {name: SG【付费推荐：https://tt.sbs/vip】, server: 139.99.61.53, port: 80, type: vmess, uuid: cd2f622d-22f1-4840-b403-97c84f79c809, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 139.99.61.53}}, udp: true}
+  - {name: 香港_0112140, server: 8.210.0.37, port: 36442, type: vmess, uuid: 85802212-5189-4301-9010-3180f65345b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 香港_0114042, server: 8.210.48.219, port: 26812, type: vmess, uuid: cbe5ac22-eb42-4ca9-9fdc-283e57f98008, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: HK-IPLC-19, server: yd-07.paofunlink.com, port: 5986, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 37f7e180722.microsoft.com}, udp: true}
+  - {name: 香港_0110072, server: 8.210.126.138, port: 57070, type: vmess, uuid: 3727c689-134d-4b70-8962-9428225a79aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 香港_0110067, server: 8.210.253.93, port: 31083, type: vmess, uuid: d2070b97-6d7c-44dc-9c7c-84a9c891815e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: mianfeifq 283, server: 135.148.149.209, port: 80, type: trojan, password: aa6eb272-1d8d-4461-9687-85ddbab1adb0, skip-cert-verify: true, udp: true}
+  - {name: TW_165.154.246.71_011320239799-294vmess, server: 165.154.246.71, port: 80, type: vmess, uuid: 13581ae8-65c9-4fbe-9c78-77fac9ca503a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: _SG_新加坡_快嘴科技提供：kkzui.com, server: 15.235.202.196, port: 80, type: vmess, uuid: 66f7af16-9d20-4df2-9849-0f65a8bb5527, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: _SG_新加坡_快嘴科技提供kkzui.com, server: f5465c4.pg.gladns.com, port: 3389, type: trojan, password: 0c6a3341e8d5ab17, skip-cert-verify: true, udp: true}
+  - {name: 台湾_0114370, server: 165.154.246.71, port: 80, type: vmess, uuid: 13581ae8-65c9-4fbe-9c78-77fac9ca503a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "?ed=2048"}, udp: true}
+  - {name: 欧洲(油管:破解资源君) 21, server: 111.45.22.239, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡_0114002, server: 139.99.61.53, port: 80, type: vmess, uuid: cd2f622d-22f1-4840-b403-97c84f79c809, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: FR_141.95.61.209_010920232472-4trojan, server: 141.95.61.209, port: 1145, type: trojan, password: 55e51cd3-cf98-4cb3-aaab-a72044437df3, skip-cert-verify: true, udp: true}
+  - {name: 1.47| Germany 3  NF D   备用, server: 141.95.61.209, port: 1145, type: trojan, password: be9cc8d4-5fbe-42bc-8b40-5d5d3a9542fa, sni: wx.qq.com, skip-cert-verify: true, udp: true}
   - {name: _US_欢迎订阅yui科技, server: 135.148.149.209, port: 80, type: trojan, password: 255c924c-1314-4084-9a9e-1d1a82a5cf49, sni: us2.trojanvh.xyz, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_2 2, server: 8.210.152.173, port: 57365, type: vmess, uuid: 1b3c5ca1-5567-40e7-a7b5-41b876a6839f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: github.com/mehdimoghaddam-cell, server: 15.235.202.111, port: 80, type: vmess, uuid: 0ce71b6e-d6a6-4335-94b8-0b1719142f4c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 15.235.202.111}}, udp: true}
+  - {name: vpnclub2/9_191, server: 141.95.61.209, port: 1145, type: trojan, password: 414583b6-1d14-49f4-9988-9d6849efb420, sni: mci.ir, skip-cert-verify: true, udp: true}
+  - {name: 美国 108, server: 162.19.224.175, port: 80, type: vmess, uuid: 42ba278d-65e0-4743-8707-e18ed98cfed5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: _SG_新加坡, server: 15.235.202.111, port: 80, type: vmess, uuid: 0ce71b6e-d6a6-4335-94b8-0b1719142f4c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: 台湾(TG频道@kxswa), server: 165.154.246.71, port: 80, type: vmess, uuid: 13581ae8-65c9-4fbe-9c78-77fac9ca503a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 165.154.246.71}}, udp: true}
+  - {name: _CN_欢迎订阅yui科技, server: 111.45.22.239, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Hongkong 111 2, server: yd-06.paofunlink.com, port: 5985, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 37f7e180722.microsoft.com}, udp: true}
+  - {name: _HK_香港_2 2, server: 47.242.167.107, port: 41280, type: vmess, uuid: ba679005-db91-4411-ab60-a2642346a9cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: _CN_中国->🇹🇭_TH_泰国, server: zj.zhuanfa.tk, port: 33396, type: vmess, uuid: 9516d40f-e00a-4ac1-b89e-d0bd77fd3f9f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡_0114084, server: 00000000000000000000000000000000000000000000000000000000000026a.node-for-bigairport.win, port: 52356, type: vmess, uuid: f3fda0c6-4025-4da7-82b4-88423d9ec489, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Hongkong 100 2, server: yd-06.paofunlink.com, port: 5983, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 37f7e180722.microsoft.com}, udp: true}
+  - {name: _HK_香港_16, server: 8.210.70.156, port: 54148, type: vmess, uuid: 1346261e-3201-4932-bfba-df869ab48116, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 俄罗斯 002, server: 195.54.174.18, port: 80, type: vmess, uuid: 6d6f413f-3dc2-4d02-8d35-8b45e39feb72, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: HK-IPLC-22 2, server: yd-07.paofunlink.com, port: 5988, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 37f7e180722.microsoft.com}, udp: true}
+  - {name: 荷兰_0114193, server: 195.54.174.18, port: 80, type: vmess, uuid: 6d6f413f-3dc2-4d02-8d35-8b45e39feb72, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 195.54.174.18}}, udp: true}
+  - {name: 新加坡_0114536, server: 00000000000000000000000000000000000000000000000000000000000026a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 越南_0112127, server: 103.166.183.226, port: 80, type: vmess, uuid: ef919c67-6638-4416-91af-9a13ffe5b9ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tandung288.click}, udp: true}
+  - {name: GB【付费推荐：https://tt.sbs/vip】, server: content-provider4.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: shefelnak, skip-cert-verify: true, udp: true}
+  - {name: -香港-47.242.66.90, server: 47.242.66.90, port: 35317, type: vmess, uuid: 3d5d3753-4d33-4dd0-847a-65aa17f3e845, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 欧洲(油管:破解资源君) 49, server: 111.45.22.239, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN_欢迎订阅yui科技 2, server: 111.45.22.239, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK-IPLC-19 2, server: yd-07.paofunlink.com, port: 5986, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 37f7e180722.microsoft.com}, udp: true}
+  - {name: _CN_中国->🇹🇭_TH_泰国 2, server: zj.zhuanfa.tk, port: 33396, type: vmess, uuid: 9516d40f-e00a-4ac1-b89e-d0bd77fd3f9f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SG_103.172.116.196_011320239799-474trojan, server: 103.172.116.196, port: 3389, type: trojan, password: 0c6a3341e8d5ab17, skip-cert-verify: true, udp: true}
+  - {name: _US_美国_1, server: us2.trojanvh.xyz, port: 80, type: trojan, password: 011eb011-c68e-4f92-80eb-f9bbef707bef, skip-cert-verify: true, udp: true}
+  - {name: 澳大利亚 008, server: 43.206.253.119, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _US_美国 7, server: 38.107.226.146, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 12, server: 38.107.226.146, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国_1 2, server: 15.204.31.63, port: 80, type: vmess, uuid: ab4a729f-e4d4-4a78-8c24-3107c5e4faee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: 韩国_0114001, server: 152.69.230.170, port: 80, type: vmess, uuid: 6aa24ded-5f15-48c7-8cba-3e2a159d6b77, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: mianfeifq_🇩🇪Limburg an der Lahn-1163-163, server: 141.95.61.209, port: 1145, type: trojan, password: e45b7759-6512-487b-ab20-22da1f46255f, sni: 141.95.61.209, skip-cert-verify: true, udp: true}
+  - {name: v2rayfree.eu.org - 美国  8, server: us2.trojanvh.xyz, port: 80, type: trojan, password: 255c924c-1314-4084-9a9e-1d1a82a5cf49, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _SG_新加坡
-      - 新加坡_0114520
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - v2rayfree.eu.org - 美国  3
-      - 中国_01141425
-      - 美国 025
-      - 新加坡 004
-      - US【付费推荐：https://tt.sbs/vip】
-      - 韩国_0114174
-      - 俄罗斯 002
-      - v2rayfree.eu.org - 美国CloudFlare节点 35
-      - 韩国_0114137
-      - PA【付费推荐：https://tt.sbs/vip】
-      - 新加坡_0114077
-      - 香港_0114250
-      - _CN_欢迎订阅yui科技
-      - 欧洲(油管:破解资源君) 49
-      - v2rayfree.eu.org - 美国CloudFlare节点 28
-      - 新加坡_0114620
-      - github.com/mehdimoghaddam-cell
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 23
-      - 新加坡_0114529
-      - 香港(油管:破解资源君) 5
-      - 新加坡 008
-      - 韩国_0114237
-      - 香港_0114196
-      - -日本-43.207.117.142
-      - github.com/mehdimoghaddam-cell_97
-      - "|48.57Mb"
-      - v2rayfree.eu.org - 美国RF Engineering 17
-      - 香港_0114656
-      - v2rayfree.eu.org - 美国  14
-      - 越南_0112129
-      - _CN_中国->🇹🇭_TH_泰国
-      - github.com/mehdimoghaddam-cell_160
-      - 法国_0114001
-      - 日本_0114958
-      - _JP_日本_3
-      - _US_美国->🇫🇷_FR_法国_5
-      - 香港_0114187
-      - 荷兰_0114193
-      - -美国-快嘴科技提供：kkzui.com7快嘴科技提供kkzui.com.67.快嘴科技提供：kkzui.com99.快嘴科技提供kkzui.com.4_快嘴科技提供：kkzui.com(由kkzui.com免费提供)4快嘴科技提供kkzui.com快嘴科技提供：kkzui.com
-      - 美国 086
-      - 美国092(youtube阿伟科技)56
-      - github.com/mehdimoghaddam-cell_235
-      - 美国 115
-      - _SG_新加坡_快嘴科技提供：kkzui.com
-      - _FR_欢迎订阅yui科技
-      - _MO_澳门->🇨🇳_CN_中国
-      - 中国_01141163
-      - 俄罗斯联邦_0114001
-      - FR【付费推荐：https://tt.sbs/vip】
-      - github.com/mehdimoghaddam-cell_230
-      - 美国(TG频道@kxswa)
-      - SG【付费推荐：https://tt.sbs/vip】
-      - 越南_0112127
-      - _RU_俄罗斯联邦->🇫🇷_FR_法国
-      - _PL_波兰
-      - SG【付费推荐：https://tt.sbs/vip】 2
-      - 新加坡_0114002
-      - _KR_韩国 2
-      - 1907(@Outline_Vpn)
-      - 法国_0112001
-      - github.com/mehdimoghaddam-cell_128
-      - 法国_0114003
-      - SG【付费推荐：https://tt.sbs/vip】 3
-      - 香港_0110067
-      - github.com/mehdimoghaddam-cell 2
-      - Hong Kong 1
-      - _HK_香港_5
-      - 波兰_0114001
-      - 香港_0110072
-      - 土耳其_0114021
-      - HK-IPLC-44
-      - HK-IPLC-19
-      - _SG_新加坡 4
+      - HK-IPLC-17
       - -香港-47.242.0.10
-      - HK-IPLC-16
-      - Hong Kong-M2
-      - 荷兰 002
-      - 俄罗斯 001
-      - _CN_中国->🇹🇭_TH_泰国 2
-      - 美国 059
-      - 美国 082
-      - 美国 108
-      - 美国 109
-      - 美国 069
-      - 台湾_0114370
-      - "[01-13]-🇸🇬-新加坡-204-sg-am3.eqsunshine.com"
-      - _FR_法国_2
-      - 新加坡_0114086
-      - 欧洲(油管:破解资源君) 46
-      - 日本 006
-      - 韩国_0114025
-      - FR(youtube阿伟科技)_2(youtube阿伟科技)55
-      - TW_165.154.246.71_011320239799-294vmess
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 30
-      - 新加坡_0114078
-      - 美国_0114621
-      - Japan 6
-      - _HK_香港_5 2
-      - Pool_🇳🇱NL_115
-      - 欧洲(油管:破解资源君) 18
-      - Hongkong 100
-      - -香港-47.242.66.90
-      - HK-IPLC-22
+      - MO【付费推荐：https://tt.sbs/vip】
+      - -加拿大-165.154.246.71
+      - _HK_香港_2
+      - 瑞典_0114005
       - 香港_0110081
-      - 澳大利亚 008
       - _HK_香港_7
       - 香港_0110078
-      - _CN_中国->🇭🇰_HK_香港
-      - 欧洲(油管:破解资源君) 17
-      - 香港_0114048
-      - mianfeifq_🇩🇪Limburg an der Lahn-1166-166
-      - HK-IPLC-17
-      - _HK_香港_16
-      - HK-IPLC-57
-      - 香港_0112140
-      - Hong Kong 10
-      - Hongkong 111
-      - 欧洲(油管:破解资源君) 56
       - _HK_香港_6
-      - mianfeifq_🇩🇪Limburg an der Lahn-1145-145
       - _HK_香港_3
-      - HK-IPLC-52
-      - 香港_0112142
-      - _HK_香港_14
-      - HK-IPLC-54
-      - 1.36| Germany 3  NF D   备用
-      - _JP_日本_快嘴科技提供kkzui.com.
-      - mianfeifq_🇩🇪Limburg an der Lahn-1163-163
+      - 白嫖-0589
+      - Hongkong 100
+      - "| 6.83Mb"
+      - _GB_英国_2
+      - Hong Kong 1
+      - github.com/mehdimoghaddam-cell_246
+      - Hongkong 111
       - _FR_法国
-      - _HK_香港_2
+      - 美国_01141770
+      - 澳大利亚_0114041
+      - _HK_香港_14
+      - 香港_0112142
+      - 新加坡 008
+      - TW (youtube阿伟科技)
+      - HK-IPLC-22
+      - SG【付费推荐：https://tt.sbs/vip】
+      - 香港_0112140
+      - 香港_0114042
+      - HK-IPLC-19
+      - 香港_0110072
+      - 香港_0110067
+      - mianfeifq 283
+      - TW_165.154.246.71_011320239799-294vmess
+      - _SG_新加坡_快嘴科技提供：kkzui.com
+      - _SG_新加坡_快嘴科技提供kkzui.com
+      - 台湾_0114370
+      - 欧洲(油管:破解资源君) 21
+      - 新加坡_0114002
+      - FR_141.95.61.209_010920232472-4trojan
+      - 1.47| Germany 3  NF D   备用
       - _US_欢迎订阅yui科技
+      - github.com/mehdimoghaddam-cell
+      - vpnclub2/9_191
+      - 美国 108
+      - _SG_新加坡
+      - 台湾(TG频道@kxswa)
+      - _CN_欢迎订阅yui科技
+      - Hongkong 111 2
       - _HK_香港_2 2
+      - _CN_中国->🇹🇭_TH_泰国
+      - 新加坡_0114084
+      - Hongkong 100 2
+      - _HK_香港_16
+      - 俄罗斯 002
+      - HK-IPLC-22 2
+      - 荷兰_0114193
+      - 新加坡_0114536
+      - 越南_0112127
+      - GB【付费推荐：https://tt.sbs/vip】
+      - -香港-47.242.66.90
+      - 欧洲(油管:破解资源君) 49
+      - _CN_欢迎订阅yui科技 2
+      - HK-IPLC-19 2
+      - _CN_中国->🇹🇭_TH_泰国 2
+      - SG_103.172.116.196_011320239799-474trojan
+      - _US_美国_1
+      - 澳大利亚 008
+      - _US_美国 7
+      - _US_美国 12
+      - _US_美国_1 2
+      - 韩国_0114001
+      - mianfeifq_🇩🇪Limburg an der Lahn-1163-163
+      - v2rayfree.eu.org - 美国  8
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - _SG_新加坡
-      - 新加坡_0114520
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - v2rayfree.eu.org - 美国  3
-      - 中国_01141425
-      - 美国 025
-      - 新加坡 004
-      - US【付费推荐：https://tt.sbs/vip】
-      - 韩国_0114174
-      - 俄罗斯 002
-      - v2rayfree.eu.org - 美国CloudFlare节点 35
-      - 韩国_0114137
-      - PA【付费推荐：https://tt.sbs/vip】
-      - 新加坡_0114077
-      - 香港_0114250
-      - _CN_欢迎订阅yui科技
-      - 欧洲(油管:破解资源君) 49
-      - v2rayfree.eu.org - 美国CloudFlare节点 28
-      - 新加坡_0114620
-      - github.com/mehdimoghaddam-cell
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 23
-      - 新加坡_0114529
-      - 香港(油管:破解资源君) 5
-      - 新加坡 008
-      - 韩国_0114237
-      - 香港_0114196
-      - -日本-43.207.117.142
-      - github.com/mehdimoghaddam-cell_97
-      - "|48.57Mb"
-      - v2rayfree.eu.org - 美国RF Engineering 17
-      - 香港_0114656
-      - v2rayfree.eu.org - 美国  14
-      - 越南_0112129
-      - _CN_中国->🇹🇭_TH_泰国
-      - github.com/mehdimoghaddam-cell_160
-      - 法国_0114001
-      - 日本_0114958
-      - _JP_日本_3
-      - _US_美国->🇫🇷_FR_法国_5
-      - 香港_0114187
-      - 荷兰_0114193
-      - -美国-快嘴科技提供：kkzui.com7快嘴科技提供kkzui.com.67.快嘴科技提供：kkzui.com99.快嘴科技提供kkzui.com.4_快嘴科技提供：kkzui.com(由kkzui.com免费提供)4快嘴科技提供kkzui.com快嘴科技提供：kkzui.com
-      - 美国 086
-      - 美国092(youtube阿伟科技)56
-      - github.com/mehdimoghaddam-cell_235
-      - 美国 115
-      - _SG_新加坡_快嘴科技提供：kkzui.com
-      - _FR_欢迎订阅yui科技
-      - _MO_澳门->🇨🇳_CN_中国
-      - 中国_01141163
-      - 俄罗斯联邦_0114001
-      - FR【付费推荐：https://tt.sbs/vip】
-      - github.com/mehdimoghaddam-cell_230
-      - 美国(TG频道@kxswa)
-      - SG【付费推荐：https://tt.sbs/vip】
-      - 越南_0112127
-      - _RU_俄罗斯联邦->🇫🇷_FR_法国
-      - _PL_波兰
-      - SG【付费推荐：https://tt.sbs/vip】 2
-      - 新加坡_0114002
-      - _KR_韩国 2
-      - 1907(@Outline_Vpn)
-      - 法国_0112001
-      - github.com/mehdimoghaddam-cell_128
-      - 法国_0114003
-      - SG【付费推荐：https://tt.sbs/vip】 3
-      - 香港_0110067
-      - github.com/mehdimoghaddam-cell 2
-      - Hong Kong 1
-      - _HK_香港_5
-      - 波兰_0114001
-      - 香港_0110072
-      - 土耳其_0114021
-      - HK-IPLC-44
-      - HK-IPLC-19
-      - _SG_新加坡 4
+      - HK-IPLC-17
       - -香港-47.242.0.10
-      - HK-IPLC-16
-      - Hong Kong-M2
-      - 荷兰 002
-      - 俄罗斯 001
-      - _CN_中国->🇹🇭_TH_泰国 2
-      - 美国 059
-      - 美国 082
-      - 美国 108
-      - 美国 109
-      - 美国 069
-      - 台湾_0114370
-      - "[01-13]-🇸🇬-新加坡-204-sg-am3.eqsunshine.com"
-      - _FR_法国_2
-      - 新加坡_0114086
-      - 欧洲(油管:破解资源君) 46
-      - 日本 006
-      - 韩国_0114025
-      - FR(youtube阿伟科技)_2(youtube阿伟科技)55
-      - TW_165.154.246.71_011320239799-294vmess
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 30
-      - 新加坡_0114078
-      - 美国_0114621
-      - Japan 6
-      - _HK_香港_5 2
-      - Pool_🇳🇱NL_115
-      - 欧洲(油管:破解资源君) 18
-      - Hongkong 100
-      - -香港-47.242.66.90
-      - HK-IPLC-22
+      - MO【付费推荐：https://tt.sbs/vip】
+      - -加拿大-165.154.246.71
+      - _HK_香港_2
+      - 瑞典_0114005
       - 香港_0110081
-      - 澳大利亚 008
       - _HK_香港_7
       - 香港_0110078
-      - _CN_中国->🇭🇰_HK_香港
-      - 欧洲(油管:破解资源君) 17
-      - 香港_0114048
-      - mianfeifq_🇩🇪Limburg an der Lahn-1166-166
-      - HK-IPLC-17
-      - _HK_香港_16
-      - HK-IPLC-57
-      - 香港_0112140
-      - Hong Kong 10
-      - Hongkong 111
-      - 欧洲(油管:破解资源君) 56
       - _HK_香港_6
-      - mianfeifq_🇩🇪Limburg an der Lahn-1145-145
       - _HK_香港_3
-      - HK-IPLC-52
-      - 香港_0112142
-      - _HK_香港_14
-      - HK-IPLC-54
-      - 1.36| Germany 3  NF D   备用
-      - _JP_日本_快嘴科技提供kkzui.com.
-      - mianfeifq_🇩🇪Limburg an der Lahn-1163-163
+      - 白嫖-0589
+      - Hongkong 100
+      - "| 6.83Mb"
+      - _GB_英国_2
+      - Hong Kong 1
+      - github.com/mehdimoghaddam-cell_246
+      - Hongkong 111
       - _FR_法国
-      - _HK_香港_2
+      - 美国_01141770
+      - 澳大利亚_0114041
+      - _HK_香港_14
+      - 香港_0112142
+      - 新加坡 008
+      - TW (youtube阿伟科技)
+      - HK-IPLC-22
+      - SG【付费推荐：https://tt.sbs/vip】
+      - 香港_0112140
+      - 香港_0114042
+      - HK-IPLC-19
+      - 香港_0110072
+      - 香港_0110067
+      - mianfeifq 283
+      - TW_165.154.246.71_011320239799-294vmess
+      - _SG_新加坡_快嘴科技提供：kkzui.com
+      - _SG_新加坡_快嘴科技提供kkzui.com
+      - 台湾_0114370
+      - 欧洲(油管:破解资源君) 21
+      - 新加坡_0114002
+      - FR_141.95.61.209_010920232472-4trojan
+      - 1.47| Germany 3  NF D   备用
       - _US_欢迎订阅yui科技
+      - github.com/mehdimoghaddam-cell
+      - vpnclub2/9_191
+      - 美国 108
+      - _SG_新加坡
+      - 台湾(TG频道@kxswa)
+      - _CN_欢迎订阅yui科技
+      - Hongkong 111 2
       - _HK_香港_2 2
+      - _CN_中国->🇹🇭_TH_泰国
+      - 新加坡_0114084
+      - Hongkong 100 2
+      - _HK_香港_16
+      - 俄罗斯 002
+      - HK-IPLC-22 2
+      - 荷兰_0114193
+      - 新加坡_0114536
+      - 越南_0112127
+      - GB【付费推荐：https://tt.sbs/vip】
+      - -香港-47.242.66.90
+      - 欧洲(油管:破解资源君) 49
+      - _CN_欢迎订阅yui科技 2
+      - HK-IPLC-19 2
+      - _CN_中国->🇹🇭_TH_泰国 2
+      - SG_103.172.116.196_011320239799-474trojan
+      - _US_美国_1
+      - 澳大利亚 008
+      - _US_美国 7
+      - _US_美国 12
+      - _US_美国_1 2
+      - 韩国_0114001
+      - mianfeifq_🇩🇪Limburg an der Lahn-1163-163
+      - v2rayfree.eu.org - 美国  8
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _SG_新加坡
-      - 新加坡_0114520
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - v2rayfree.eu.org - 美国  3
-      - 中国_01141425
-      - 美国 025
-      - 新加坡 004
-      - US【付费推荐：https://tt.sbs/vip】
-      - 韩国_0114174
-      - 俄罗斯 002
-      - v2rayfree.eu.org - 美国CloudFlare节点 35
-      - 韩国_0114137
-      - PA【付费推荐：https://tt.sbs/vip】
-      - 新加坡_0114077
-      - 香港_0114250
-      - _CN_欢迎订阅yui科技
-      - 欧洲(油管:破解资源君) 49
-      - v2rayfree.eu.org - 美国CloudFlare节点 28
-      - 新加坡_0114620
-      - github.com/mehdimoghaddam-cell
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 23
-      - 新加坡_0114529
-      - 香港(油管:破解资源君) 5
-      - 新加坡 008
-      - 韩国_0114237
-      - 香港_0114196
-      - -日本-43.207.117.142
-      - github.com/mehdimoghaddam-cell_97
-      - "|48.57Mb"
-      - v2rayfree.eu.org - 美国RF Engineering 17
-      - 香港_0114656
-      - v2rayfree.eu.org - 美国  14
-      - 越南_0112129
-      - _CN_中国->🇹🇭_TH_泰国
-      - github.com/mehdimoghaddam-cell_160
-      - 法国_0114001
-      - 日本_0114958
-      - _JP_日本_3
-      - _US_美国->🇫🇷_FR_法国_5
-      - 香港_0114187
-      - 荷兰_0114193
-      - -美国-快嘴科技提供：kkzui.com7快嘴科技提供kkzui.com.67.快嘴科技提供：kkzui.com99.快嘴科技提供kkzui.com.4_快嘴科技提供：kkzui.com(由kkzui.com免费提供)4快嘴科技提供kkzui.com快嘴科技提供：kkzui.com
-      - 美国 086
-      - 美国092(youtube阿伟科技)56
-      - github.com/mehdimoghaddam-cell_235
-      - 美国 115
-      - _SG_新加坡_快嘴科技提供：kkzui.com
-      - _FR_欢迎订阅yui科技
-      - _MO_澳门->🇨🇳_CN_中国
-      - 中国_01141163
-      - 俄罗斯联邦_0114001
-      - FR【付费推荐：https://tt.sbs/vip】
-      - github.com/mehdimoghaddam-cell_230
-      - 美国(TG频道@kxswa)
-      - SG【付费推荐：https://tt.sbs/vip】
-      - 越南_0112127
-      - _RU_俄罗斯联邦->🇫🇷_FR_法国
-      - _PL_波兰
-      - SG【付费推荐：https://tt.sbs/vip】 2
-      - 新加坡_0114002
-      - _KR_韩国 2
-      - 1907(@Outline_Vpn)
-      - 法国_0112001
-      - github.com/mehdimoghaddam-cell_128
-      - 法国_0114003
-      - SG【付费推荐：https://tt.sbs/vip】 3
-      - 香港_0110067
-      - github.com/mehdimoghaddam-cell 2
-      - Hong Kong 1
-      - _HK_香港_5
-      - 波兰_0114001
-      - 香港_0110072
-      - 土耳其_0114021
-      - HK-IPLC-44
-      - HK-IPLC-19
-      - _SG_新加坡 4
+      - HK-IPLC-17
       - -香港-47.242.0.10
-      - HK-IPLC-16
-      - Hong Kong-M2
-      - 荷兰 002
-      - 俄罗斯 001
-      - _CN_中国->🇹🇭_TH_泰国 2
-      - 美国 059
-      - 美国 082
-      - 美国 108
-      - 美国 109
-      - 美国 069
-      - 台湾_0114370
-      - "[01-13]-🇸🇬-新加坡-204-sg-am3.eqsunshine.com"
-      - _FR_法国_2
-      - 新加坡_0114086
-      - 欧洲(油管:破解资源君) 46
-      - 日本 006
-      - 韩国_0114025
-      - FR(youtube阿伟科技)_2(youtube阿伟科技)55
-      - TW_165.154.246.71_011320239799-294vmess
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 30
-      - 新加坡_0114078
-      - 美国_0114621
-      - Japan 6
-      - _HK_香港_5 2
-      - Pool_🇳🇱NL_115
-      - 欧洲(油管:破解资源君) 18
-      - Hongkong 100
-      - -香港-47.242.66.90
-      - HK-IPLC-22
+      - MO【付费推荐：https://tt.sbs/vip】
+      - -加拿大-165.154.246.71
+      - _HK_香港_2
+      - 瑞典_0114005
       - 香港_0110081
-      - 澳大利亚 008
       - _HK_香港_7
       - 香港_0110078
-      - _CN_中国->🇭🇰_HK_香港
-      - 欧洲(油管:破解资源君) 17
-      - 香港_0114048
-      - mianfeifq_🇩🇪Limburg an der Lahn-1166-166
-      - HK-IPLC-17
-      - _HK_香港_16
-      - HK-IPLC-57
-      - 香港_0112140
-      - Hong Kong 10
-      - Hongkong 111
-      - 欧洲(油管:破解资源君) 56
       - _HK_香港_6
-      - mianfeifq_🇩🇪Limburg an der Lahn-1145-145
       - _HK_香港_3
-      - HK-IPLC-52
-      - 香港_0112142
-      - _HK_香港_14
-      - HK-IPLC-54
-      - 1.36| Germany 3  NF D   备用
-      - _JP_日本_快嘴科技提供kkzui.com.
-      - mianfeifq_🇩🇪Limburg an der Lahn-1163-163
+      - 白嫖-0589
+      - Hongkong 100
+      - "| 6.83Mb"
+      - _GB_英国_2
+      - Hong Kong 1
+      - github.com/mehdimoghaddam-cell_246
+      - Hongkong 111
       - _FR_法国
-      - _HK_香港_2
+      - 美国_01141770
+      - 澳大利亚_0114041
+      - _HK_香港_14
+      - 香港_0112142
+      - 新加坡 008
+      - TW (youtube阿伟科技)
+      - HK-IPLC-22
+      - SG【付费推荐：https://tt.sbs/vip】
+      - 香港_0112140
+      - 香港_0114042
+      - HK-IPLC-19
+      - 香港_0110072
+      - 香港_0110067
+      - mianfeifq 283
+      - TW_165.154.246.71_011320239799-294vmess
+      - _SG_新加坡_快嘴科技提供：kkzui.com
+      - _SG_新加坡_快嘴科技提供kkzui.com
+      - 台湾_0114370
+      - 欧洲(油管:破解资源君) 21
+      - 新加坡_0114002
+      - FR_141.95.61.209_010920232472-4trojan
+      - 1.47| Germany 3  NF D   备用
       - _US_欢迎订阅yui科技
+      - github.com/mehdimoghaddam-cell
+      - vpnclub2/9_191
+      - 美国 108
+      - _SG_新加坡
+      - 台湾(TG频道@kxswa)
+      - _CN_欢迎订阅yui科技
+      - Hongkong 111 2
       - _HK_香港_2 2
+      - _CN_中国->🇹🇭_TH_泰国
+      - 新加坡_0114084
+      - Hongkong 100 2
+      - _HK_香港_16
+      - 俄罗斯 002
+      - HK-IPLC-22 2
+      - 荷兰_0114193
+      - 新加坡_0114536
+      - 越南_0112127
+      - GB【付费推荐：https://tt.sbs/vip】
+      - -香港-47.242.66.90
+      - 欧洲(油管:破解资源君) 49
+      - _CN_欢迎订阅yui科技 2
+      - HK-IPLC-19 2
+      - _CN_中国->🇹🇭_TH_泰国 2
+      - SG_103.172.116.196_011320239799-474trojan
+      - _US_美国_1
+      - 澳大利亚 008
+      - _US_美国 7
+      - _US_美国 12
+      - _US_美国_1 2
+      - 韩国_0114001
+      - mianfeifq_🇩🇪Limburg an der Lahn-1163-163
+      - v2rayfree.eu.org - 美国  8
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -581,592 +337,341 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _SG_新加坡
-      - 新加坡_0114520
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - v2rayfree.eu.org - 美国  3
-      - 中国_01141425
-      - 美国 025
-      - 新加坡 004
-      - US【付费推荐：https://tt.sbs/vip】
-      - 韩国_0114174
-      - 俄罗斯 002
-      - v2rayfree.eu.org - 美国CloudFlare节点 35
-      - 韩国_0114137
-      - PA【付费推荐：https://tt.sbs/vip】
-      - 新加坡_0114077
-      - 香港_0114250
-      - _CN_欢迎订阅yui科技
-      - 欧洲(油管:破解资源君) 49
-      - v2rayfree.eu.org - 美国CloudFlare节点 28
-      - 新加坡_0114620
-      - github.com/mehdimoghaddam-cell
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 23
-      - 新加坡_0114529
-      - 香港(油管:破解资源君) 5
-      - 新加坡 008
-      - 韩国_0114237
-      - 香港_0114196
-      - -日本-43.207.117.142
-      - github.com/mehdimoghaddam-cell_97
-      - "|48.57Mb"
-      - v2rayfree.eu.org - 美国RF Engineering 17
-      - 香港_0114656
-      - v2rayfree.eu.org - 美国  14
-      - 越南_0112129
-      - _CN_中国->🇹🇭_TH_泰国
-      - github.com/mehdimoghaddam-cell_160
-      - 法国_0114001
-      - 日本_0114958
-      - _JP_日本_3
-      - _US_美国->🇫🇷_FR_法国_5
-      - 香港_0114187
-      - 荷兰_0114193
-      - -美国-快嘴科技提供：kkzui.com7快嘴科技提供kkzui.com.67.快嘴科技提供：kkzui.com99.快嘴科技提供kkzui.com.4_快嘴科技提供：kkzui.com(由kkzui.com免费提供)4快嘴科技提供kkzui.com快嘴科技提供：kkzui.com
-      - 美国 086
-      - 美国092(youtube阿伟科技)56
-      - github.com/mehdimoghaddam-cell_235
-      - 美国 115
-      - _SG_新加坡_快嘴科技提供：kkzui.com
-      - _FR_欢迎订阅yui科技
-      - _MO_澳门->🇨🇳_CN_中国
-      - 中国_01141163
-      - 俄罗斯联邦_0114001
-      - FR【付费推荐：https://tt.sbs/vip】
-      - github.com/mehdimoghaddam-cell_230
-      - 美国(TG频道@kxswa)
-      - SG【付费推荐：https://tt.sbs/vip】
-      - 越南_0112127
-      - _RU_俄罗斯联邦->🇫🇷_FR_法国
-      - _PL_波兰
-      - SG【付费推荐：https://tt.sbs/vip】 2
-      - 新加坡_0114002
-      - _KR_韩国 2
-      - 1907(@Outline_Vpn)
-      - 法国_0112001
-      - github.com/mehdimoghaddam-cell_128
-      - 法国_0114003
-      - SG【付费推荐：https://tt.sbs/vip】 3
-      - 香港_0110067
-      - github.com/mehdimoghaddam-cell 2
-      - Hong Kong 1
-      - _HK_香港_5
-      - 波兰_0114001
-      - 香港_0110072
-      - 土耳其_0114021
-      - HK-IPLC-44
-      - HK-IPLC-19
-      - _SG_新加坡 4
+      - HK-IPLC-17
       - -香港-47.242.0.10
-      - HK-IPLC-16
-      - Hong Kong-M2
-      - 荷兰 002
-      - 俄罗斯 001
-      - _CN_中国->🇹🇭_TH_泰国 2
-      - 美国 059
-      - 美国 082
-      - 美国 108
-      - 美国 109
-      - 美国 069
-      - 台湾_0114370
-      - "[01-13]-🇸🇬-新加坡-204-sg-am3.eqsunshine.com"
-      - _FR_法国_2
-      - 新加坡_0114086
-      - 欧洲(油管:破解资源君) 46
-      - 日本 006
-      - 韩国_0114025
-      - FR(youtube阿伟科技)_2(youtube阿伟科技)55
-      - TW_165.154.246.71_011320239799-294vmess
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 30
-      - 新加坡_0114078
-      - 美国_0114621
-      - Japan 6
-      - _HK_香港_5 2
-      - Pool_🇳🇱NL_115
-      - 欧洲(油管:破解资源君) 18
-      - Hongkong 100
-      - -香港-47.242.66.90
-      - HK-IPLC-22
+      - MO【付费推荐：https://tt.sbs/vip】
+      - -加拿大-165.154.246.71
+      - _HK_香港_2
+      - 瑞典_0114005
       - 香港_0110081
-      - 澳大利亚 008
       - _HK_香港_7
       - 香港_0110078
-      - _CN_中国->🇭🇰_HK_香港
-      - 欧洲(油管:破解资源君) 17
-      - 香港_0114048
-      - mianfeifq_🇩🇪Limburg an der Lahn-1166-166
-      - HK-IPLC-17
-      - _HK_香港_16
-      - HK-IPLC-57
-      - 香港_0112140
-      - Hong Kong 10
-      - Hongkong 111
-      - 欧洲(油管:破解资源君) 56
       - _HK_香港_6
-      - mianfeifq_🇩🇪Limburg an der Lahn-1145-145
       - _HK_香港_3
-      - HK-IPLC-52
-      - 香港_0112142
-      - _HK_香港_14
-      - HK-IPLC-54
-      - 1.36| Germany 3  NF D   备用
-      - _JP_日本_快嘴科技提供kkzui.com.
-      - mianfeifq_🇩🇪Limburg an der Lahn-1163-163
+      - 白嫖-0589
+      - Hongkong 100
+      - "| 6.83Mb"
+      - _GB_英国_2
+      - Hong Kong 1
+      - github.com/mehdimoghaddam-cell_246
+      - Hongkong 111
       - _FR_法国
-      - _HK_香港_2
+      - 美国_01141770
+      - 澳大利亚_0114041
+      - _HK_香港_14
+      - 香港_0112142
+      - 新加坡 008
+      - TW (youtube阿伟科技)
+      - HK-IPLC-22
+      - SG【付费推荐：https://tt.sbs/vip】
+      - 香港_0112140
+      - 香港_0114042
+      - HK-IPLC-19
+      - 香港_0110072
+      - 香港_0110067
+      - mianfeifq 283
+      - TW_165.154.246.71_011320239799-294vmess
+      - _SG_新加坡_快嘴科技提供：kkzui.com
+      - _SG_新加坡_快嘴科技提供kkzui.com
+      - 台湾_0114370
+      - 欧洲(油管:破解资源君) 21
+      - 新加坡_0114002
+      - FR_141.95.61.209_010920232472-4trojan
+      - 1.47| Germany 3  NF D   备用
       - _US_欢迎订阅yui科技
+      - github.com/mehdimoghaddam-cell
+      - vpnclub2/9_191
+      - 美国 108
+      - _SG_新加坡
+      - 台湾(TG频道@kxswa)
+      - _CN_欢迎订阅yui科技
+      - Hongkong 111 2
       - _HK_香港_2 2
+      - _CN_中国->🇹🇭_TH_泰国
+      - 新加坡_0114084
+      - Hongkong 100 2
+      - _HK_香港_16
+      - 俄罗斯 002
+      - HK-IPLC-22 2
+      - 荷兰_0114193
+      - 新加坡_0114536
+      - 越南_0112127
+      - GB【付费推荐：https://tt.sbs/vip】
+      - -香港-47.242.66.90
+      - 欧洲(油管:破解资源君) 49
+      - _CN_欢迎订阅yui科技 2
+      - HK-IPLC-19 2
+      - _CN_中国->🇹🇭_TH_泰国 2
+      - SG_103.172.116.196_011320239799-474trojan
+      - _US_美国_1
+      - 澳大利亚 008
+      - _US_美国 7
+      - _US_美国 12
+      - _US_美国_1 2
+      - 韩国_0114001
+      - mianfeifq_🇩🇪Limburg an der Lahn-1163-163
+      - v2rayfree.eu.org - 美国  8
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港_0114250
-      - 香港(油管:破解资源君) 5
-      - 香港_0114196
-      - 香港_0114656
-      - 香港_0114187
-      - 香港_0110067
-      - _HK_香港_5
-      - 香港_0110072
       - -香港-47.242.0.10
-      - 台湾_0114370
-      - _HK_香港_5 2
-      - -香港-47.242.66.90
+      - _HK_香港_2
       - 香港_0110081
       - _HK_香港_7
       - 香港_0110078
-      - _CN_中国->🇭🇰_HK_香港
-      - 香港_0114048
-      - _HK_香港_16
-      - 香港_0112140
       - _HK_香港_6
       - _HK_香港_3
-      - 香港_0112142
       - _HK_香港_14
-      - _HK_香港_2
+      - 香港_0112142
+      - 香港_0112140
+      - 香港_0114042
+      - 香港_0110072
+      - 香港_0110067
+      - 台湾_0114370
+      - 台湾(TG频道@kxswa)
       - _HK_香港_2 2
+      - _HK_香港_16
+      - -香港-47.242.66.90
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _SG_新加坡
-      - 新加坡_0114520
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - v2rayfree.eu.org - 美国  3
-      - 中国_01141425
-      - 美国 025
-      - 新加坡 004
-      - US【付费推荐：https://tt.sbs/vip】
-      - 韩国_0114174
-      - 俄罗斯 002
-      - v2rayfree.eu.org - 美国CloudFlare节点 35
-      - 韩国_0114137
-      - PA【付费推荐：https://tt.sbs/vip】
-      - 新加坡_0114077
-      - 香港_0114250
-      - _CN_欢迎订阅yui科技
-      - 欧洲(油管:破解资源君) 49
-      - v2rayfree.eu.org - 美国CloudFlare节点 28
-      - 新加坡_0114620
-      - github.com/mehdimoghaddam-cell
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 23
-      - 新加坡_0114529
-      - 香港(油管:破解资源君) 5
-      - 新加坡 008
-      - 韩国_0114237
-      - 香港_0114196
-      - -日本-43.207.117.142
-      - github.com/mehdimoghaddam-cell_97
-      - "|48.57Mb"
-      - v2rayfree.eu.org - 美国RF Engineering 17
-      - 香港_0114656
-      - v2rayfree.eu.org - 美国  14
-      - 越南_0112129
-      - _CN_中国->🇹🇭_TH_泰国
-      - github.com/mehdimoghaddam-cell_160
-      - 法国_0114001
-      - 日本_0114958
-      - _JP_日本_3
-      - _US_美国->🇫🇷_FR_法国_5
-      - 香港_0114187
-      - 荷兰_0114193
-      - -美国-快嘴科技提供：kkzui.com7快嘴科技提供kkzui.com.67.快嘴科技提供：kkzui.com99.快嘴科技提供kkzui.com.4_快嘴科技提供：kkzui.com(由kkzui.com免费提供)4快嘴科技提供kkzui.com快嘴科技提供：kkzui.com
-      - 美国 086
-      - 美国092(youtube阿伟科技)56
-      - github.com/mehdimoghaddam-cell_235
-      - 美国 115
-      - _SG_新加坡_快嘴科技提供：kkzui.com
-      - _FR_欢迎订阅yui科技
-      - _MO_澳门->🇨🇳_CN_中国
-      - 中国_01141163
-      - 俄罗斯联邦_0114001
-      - FR【付费推荐：https://tt.sbs/vip】
-      - github.com/mehdimoghaddam-cell_230
-      - 美国(TG频道@kxswa)
-      - SG【付费推荐：https://tt.sbs/vip】
-      - 越南_0112127
-      - _RU_俄罗斯联邦->🇫🇷_FR_法国
-      - _PL_波兰
-      - SG【付费推荐：https://tt.sbs/vip】 2
-      - 新加坡_0114002
-      - _KR_韩国 2
-      - 1907(@Outline_Vpn)
-      - 法国_0112001
-      - github.com/mehdimoghaddam-cell_128
-      - 法国_0114003
-      - SG【付费推荐：https://tt.sbs/vip】 3
-      - 香港_0110067
-      - github.com/mehdimoghaddam-cell 2
-      - Hong Kong 1
-      - _HK_香港_5
-      - 波兰_0114001
-      - 香港_0110072
-      - 土耳其_0114021
-      - HK-IPLC-44
-      - HK-IPLC-19
-      - _SG_新加坡 4
+      - HK-IPLC-17
       - -香港-47.242.0.10
-      - HK-IPLC-16
-      - Hong Kong-M2
-      - 荷兰 002
-      - 俄罗斯 001
-      - _CN_中国->🇹🇭_TH_泰国 2
-      - 美国 059
-      - 美国 082
-      - 美国 108
-      - 美国 109
-      - 美国 069
-      - 台湾_0114370
-      - "[01-13]-🇸🇬-新加坡-204-sg-am3.eqsunshine.com"
-      - _FR_法国_2
-      - 新加坡_0114086
-      - 欧洲(油管:破解资源君) 46
-      - 日本 006
-      - 韩国_0114025
-      - FR(youtube阿伟科技)_2(youtube阿伟科技)55
-      - TW_165.154.246.71_011320239799-294vmess
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 30
-      - 新加坡_0114078
-      - 美国_0114621
-      - Japan 6
-      - _HK_香港_5 2
-      - Pool_🇳🇱NL_115
-      - 欧洲(油管:破解资源君) 18
-      - Hongkong 100
-      - -香港-47.242.66.90
-      - HK-IPLC-22
+      - MO【付费推荐：https://tt.sbs/vip】
+      - -加拿大-165.154.246.71
+      - _HK_香港_2
+      - 瑞典_0114005
       - 香港_0110081
-      - 澳大利亚 008
       - _HK_香港_7
       - 香港_0110078
-      - _CN_中国->🇭🇰_HK_香港
-      - 欧洲(油管:破解资源君) 17
-      - 香港_0114048
-      - mianfeifq_🇩🇪Limburg an der Lahn-1166-166
-      - HK-IPLC-17
-      - _HK_香港_16
-      - HK-IPLC-57
-      - 香港_0112140
-      - Hong Kong 10
-      - Hongkong 111
-      - 欧洲(油管:破解资源君) 56
       - _HK_香港_6
-      - mianfeifq_🇩🇪Limburg an der Lahn-1145-145
       - _HK_香港_3
-      - HK-IPLC-52
-      - 香港_0112142
-      - _HK_香港_14
-      - HK-IPLC-54
-      - 1.36| Germany 3  NF D   备用
-      - _JP_日本_快嘴科技提供kkzui.com.
-      - mianfeifq_🇩🇪Limburg an der Lahn-1163-163
+      - 白嫖-0589
+      - Hongkong 100
+      - "| 6.83Mb"
+      - _GB_英国_2
+      - Hong Kong 1
+      - github.com/mehdimoghaddam-cell_246
+      - Hongkong 111
       - _FR_法国
-      - _HK_香港_2
+      - 美国_01141770
+      - 澳大利亚_0114041
+      - _HK_香港_14
+      - 香港_0112142
+      - 新加坡 008
+      - TW (youtube阿伟科技)
+      - HK-IPLC-22
+      - SG【付费推荐：https://tt.sbs/vip】
+      - 香港_0112140
+      - 香港_0114042
+      - HK-IPLC-19
+      - 香港_0110072
+      - 香港_0110067
+      - mianfeifq 283
+      - TW_165.154.246.71_011320239799-294vmess
+      - _SG_新加坡_快嘴科技提供：kkzui.com
+      - _SG_新加坡_快嘴科技提供kkzui.com
+      - 台湾_0114370
+      - 欧洲(油管:破解资源君) 21
+      - 新加坡_0114002
+      - FR_141.95.61.209_010920232472-4trojan
+      - 1.47| Germany 3  NF D   备用
       - _US_欢迎订阅yui科技
+      - github.com/mehdimoghaddam-cell
+      - vpnclub2/9_191
+      - 美国 108
+      - _SG_新加坡
+      - 台湾(TG频道@kxswa)
+      - _CN_欢迎订阅yui科技
+      - Hongkong 111 2
       - _HK_香港_2 2
+      - _CN_中国->🇹🇭_TH_泰国
+      - 新加坡_0114084
+      - Hongkong 100 2
+      - _HK_香港_16
+      - 俄罗斯 002
+      - HK-IPLC-22 2
+      - 荷兰_0114193
+      - 新加坡_0114536
+      - 越南_0112127
+      - GB【付费推荐：https://tt.sbs/vip】
+      - -香港-47.242.66.90
+      - 欧洲(油管:破解资源君) 49
+      - _CN_欢迎订阅yui科技 2
+      - HK-IPLC-19 2
+      - _CN_中国->🇹🇭_TH_泰国 2
+      - SG_103.172.116.196_011320239799-474trojan
+      - _US_美国_1
+      - 澳大利亚 008
+      - _US_美国 7
+      - _US_美国 12
+      - _US_美国_1 2
+      - 韩国_0114001
+      - mianfeifq_🇩🇪Limburg an der Lahn-1163-163
+      - v2rayfree.eu.org - 美国  8
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _SG_新加坡
-      - 新加坡_0114520
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - v2rayfree.eu.org - 美国  3
-      - 中国_01141425
-      - 美国 025
-      - 新加坡 004
-      - US【付费推荐：https://tt.sbs/vip】
-      - 韩国_0114174
-      - 俄罗斯 002
-      - v2rayfree.eu.org - 美国CloudFlare节点 35
-      - 韩国_0114137
-      - PA【付费推荐：https://tt.sbs/vip】
-      - 新加坡_0114077
-      - 香港_0114250
-      - _CN_欢迎订阅yui科技
-      - 欧洲(油管:破解资源君) 49
-      - v2rayfree.eu.org - 美国CloudFlare节点 28
-      - 新加坡_0114620
-      - github.com/mehdimoghaddam-cell
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 23
-      - 新加坡_0114529
-      - 香港(油管:破解资源君) 5
-      - 新加坡 008
-      - 韩国_0114237
-      - 香港_0114196
-      - -日本-43.207.117.142
-      - github.com/mehdimoghaddam-cell_97
-      - "|48.57Mb"
-      - v2rayfree.eu.org - 美国RF Engineering 17
-      - 香港_0114656
-      - v2rayfree.eu.org - 美国  14
-      - 越南_0112129
-      - _CN_中国->🇹🇭_TH_泰国
-      - github.com/mehdimoghaddam-cell_160
-      - 法国_0114001
-      - 日本_0114958
-      - _JP_日本_3
-      - _US_美国->🇫🇷_FR_法国_5
-      - 香港_0114187
-      - 荷兰_0114193
-      - -美国-快嘴科技提供：kkzui.com7快嘴科技提供kkzui.com.67.快嘴科技提供：kkzui.com99.快嘴科技提供kkzui.com.4_快嘴科技提供：kkzui.com(由kkzui.com免费提供)4快嘴科技提供kkzui.com快嘴科技提供：kkzui.com
-      - 美国 086
-      - 美国092(youtube阿伟科技)56
-      - github.com/mehdimoghaddam-cell_235
-      - 美国 115
-      - _SG_新加坡_快嘴科技提供：kkzui.com
-      - _FR_欢迎订阅yui科技
-      - _MO_澳门->🇨🇳_CN_中国
-      - 中国_01141163
-      - 俄罗斯联邦_0114001
-      - FR【付费推荐：https://tt.sbs/vip】
-      - github.com/mehdimoghaddam-cell_230
-      - 美国(TG频道@kxswa)
-      - SG【付费推荐：https://tt.sbs/vip】
-      - 越南_0112127
-      - _RU_俄罗斯联邦->🇫🇷_FR_法国
-      - _PL_波兰
-      - SG【付费推荐：https://tt.sbs/vip】 2
-      - 新加坡_0114002
-      - _KR_韩国 2
-      - 1907(@Outline_Vpn)
-      - 法国_0112001
-      - github.com/mehdimoghaddam-cell_128
-      - 法国_0114003
-      - SG【付费推荐：https://tt.sbs/vip】 3
-      - 香港_0110067
-      - github.com/mehdimoghaddam-cell 2
-      - Hong Kong 1
-      - _HK_香港_5
-      - 波兰_0114001
-      - 香港_0110072
-      - 土耳其_0114021
-      - HK-IPLC-44
-      - HK-IPLC-19
-      - _SG_新加坡 4
+      - HK-IPLC-17
       - -香港-47.242.0.10
-      - HK-IPLC-16
-      - Hong Kong-M2
-      - 荷兰 002
-      - 俄罗斯 001
-      - _CN_中国->🇹🇭_TH_泰国 2
-      - 美国 059
-      - 美国 082
-      - 美国 108
-      - 美国 109
-      - 美国 069
-      - 台湾_0114370
-      - "[01-13]-🇸🇬-新加坡-204-sg-am3.eqsunshine.com"
-      - _FR_法国_2
-      - 新加坡_0114086
-      - 欧洲(油管:破解资源君) 46
-      - 日本 006
-      - 韩国_0114025
-      - FR(youtube阿伟科技)_2(youtube阿伟科技)55
-      - TW_165.154.246.71_011320239799-294vmess
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 30
-      - 新加坡_0114078
-      - 美国_0114621
-      - Japan 6
-      - _HK_香港_5 2
-      - Pool_🇳🇱NL_115
-      - 欧洲(油管:破解资源君) 18
-      - Hongkong 100
-      - -香港-47.242.66.90
-      - HK-IPLC-22
+      - MO【付费推荐：https://tt.sbs/vip】
+      - -加拿大-165.154.246.71
+      - _HK_香港_2
+      - 瑞典_0114005
       - 香港_0110081
-      - 澳大利亚 008
       - _HK_香港_7
       - 香港_0110078
-      - _CN_中国->🇭🇰_HK_香港
-      - 欧洲(油管:破解资源君) 17
-      - 香港_0114048
-      - mianfeifq_🇩🇪Limburg an der Lahn-1166-166
-      - HK-IPLC-17
-      - _HK_香港_16
-      - HK-IPLC-57
-      - 香港_0112140
-      - Hong Kong 10
-      - Hongkong 111
-      - 欧洲(油管:破解资源君) 56
       - _HK_香港_6
-      - mianfeifq_🇩🇪Limburg an der Lahn-1145-145
       - _HK_香港_3
-      - HK-IPLC-52
-      - 香港_0112142
-      - _HK_香港_14
-      - HK-IPLC-54
-      - 1.36| Germany 3  NF D   备用
-      - _JP_日本_快嘴科技提供kkzui.com.
-      - mianfeifq_🇩🇪Limburg an der Lahn-1163-163
+      - 白嫖-0589
+      - Hongkong 100
+      - "| 6.83Mb"
+      - _GB_英国_2
+      - Hong Kong 1
+      - github.com/mehdimoghaddam-cell_246
+      - Hongkong 111
       - _FR_法国
-      - _HK_香港_2
+      - 美国_01141770
+      - 澳大利亚_0114041
+      - _HK_香港_14
+      - 香港_0112142
+      - 新加坡 008
+      - TW (youtube阿伟科技)
+      - HK-IPLC-22
+      - SG【付费推荐：https://tt.sbs/vip】
+      - 香港_0112140
+      - 香港_0114042
+      - HK-IPLC-19
+      - 香港_0110072
+      - 香港_0110067
+      - mianfeifq 283
+      - TW_165.154.246.71_011320239799-294vmess
+      - _SG_新加坡_快嘴科技提供：kkzui.com
+      - _SG_新加坡_快嘴科技提供kkzui.com
+      - 台湾_0114370
+      - 欧洲(油管:破解资源君) 21
+      - 新加坡_0114002
+      - FR_141.95.61.209_010920232472-4trojan
+      - 1.47| Germany 3  NF D   备用
       - _US_欢迎订阅yui科技
+      - github.com/mehdimoghaddam-cell
+      - vpnclub2/9_191
+      - 美国 108
+      - _SG_新加坡
+      - 台湾(TG频道@kxswa)
+      - _CN_欢迎订阅yui科技
+      - Hongkong 111 2
       - _HK_香港_2 2
+      - _CN_中国->🇹🇭_TH_泰国
+      - 新加坡_0114084
+      - Hongkong 100 2
+      - _HK_香港_16
+      - 俄罗斯 002
+      - HK-IPLC-22 2
+      - 荷兰_0114193
+      - 新加坡_0114536
+      - 越南_0112127
+      - GB【付费推荐：https://tt.sbs/vip】
+      - -香港-47.242.66.90
+      - 欧洲(油管:破解资源君) 49
+      - _CN_欢迎订阅yui科技 2
+      - HK-IPLC-19 2
+      - _CN_中国->🇹🇭_TH_泰国 2
+      - SG_103.172.116.196_011320239799-474trojan
+      - _US_美国_1
+      - 澳大利亚 008
+      - _US_美国 7
+      - _US_美国 12
+      - _US_美国_1 2
+      - 韩国_0114001
+      - mianfeifq_🇩🇪Limburg an der Lahn-1163-163
+      - v2rayfree.eu.org - 美国  8
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _SG_新加坡
-      - 新加坡_0114520
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - v2rayfree.eu.org - 美国  3
-      - 中国_01141425
-      - 美国 025
-      - 新加坡 004
-      - US【付费推荐：https://tt.sbs/vip】
-      - 韩国_0114174
-      - 俄罗斯 002
-      - v2rayfree.eu.org - 美国CloudFlare节点 35
-      - 韩国_0114137
-      - PA【付费推荐：https://tt.sbs/vip】
-      - 新加坡_0114077
-      - 香港_0114250
-      - _CN_欢迎订阅yui科技
-      - 欧洲(油管:破解资源君) 49
-      - v2rayfree.eu.org - 美国CloudFlare节点 28
-      - 新加坡_0114620
-      - github.com/mehdimoghaddam-cell
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 23
-      - 新加坡_0114529
-      - 香港(油管:破解资源君) 5
-      - 新加坡 008
-      - 韩国_0114237
-      - 香港_0114196
-      - -日本-43.207.117.142
-      - github.com/mehdimoghaddam-cell_97
-      - "|48.57Mb"
-      - v2rayfree.eu.org - 美国RF Engineering 17
-      - 香港_0114656
-      - v2rayfree.eu.org - 美国  14
-      - 越南_0112129
-      - _CN_中国->🇹🇭_TH_泰国
-      - github.com/mehdimoghaddam-cell_160
-      - 法国_0114001
-      - 日本_0114958
-      - _JP_日本_3
-      - _US_美国->🇫🇷_FR_法国_5
-      - 香港_0114187
-      - 荷兰_0114193
-      - -美国-快嘴科技提供：kkzui.com7快嘴科技提供kkzui.com.67.快嘴科技提供：kkzui.com99.快嘴科技提供kkzui.com.4_快嘴科技提供：kkzui.com(由kkzui.com免费提供)4快嘴科技提供kkzui.com快嘴科技提供：kkzui.com
-      - 美国 086
-      - 美国092(youtube阿伟科技)56
-      - github.com/mehdimoghaddam-cell_235
-      - 美国 115
-      - _SG_新加坡_快嘴科技提供：kkzui.com
-      - _FR_欢迎订阅yui科技
-      - _MO_澳门->🇨🇳_CN_中国
-      - 中国_01141163
-      - 俄罗斯联邦_0114001
-      - FR【付费推荐：https://tt.sbs/vip】
-      - github.com/mehdimoghaddam-cell_230
-      - 美国(TG频道@kxswa)
-      - SG【付费推荐：https://tt.sbs/vip】
-      - 越南_0112127
-      - _RU_俄罗斯联邦->🇫🇷_FR_法国
-      - _PL_波兰
-      - SG【付费推荐：https://tt.sbs/vip】 2
-      - 新加坡_0114002
-      - _KR_韩国 2
-      - 1907(@Outline_Vpn)
-      - 法国_0112001
-      - github.com/mehdimoghaddam-cell_128
-      - 法国_0114003
-      - SG【付费推荐：https://tt.sbs/vip】 3
-      - 香港_0110067
-      - github.com/mehdimoghaddam-cell 2
-      - Hong Kong 1
-      - _HK_香港_5
-      - 波兰_0114001
-      - 香港_0110072
-      - 土耳其_0114021
-      - HK-IPLC-44
-      - HK-IPLC-19
-      - _SG_新加坡 4
+      - HK-IPLC-17
       - -香港-47.242.0.10
-      - HK-IPLC-16
-      - Hong Kong-M2
-      - 荷兰 002
-      - 俄罗斯 001
-      - _CN_中国->🇹🇭_TH_泰国 2
-      - 美国 059
-      - 美国 082
-      - 美国 108
-      - 美国 109
-      - 美国 069
-      - 台湾_0114370
-      - "[01-13]-🇸🇬-新加坡-204-sg-am3.eqsunshine.com"
-      - _FR_法国_2
-      - 新加坡_0114086
-      - 欧洲(油管:破解资源君) 46
-      - 日本 006
-      - 韩国_0114025
-      - FR(youtube阿伟科技)_2(youtube阿伟科技)55
-      - TW_165.154.246.71_011320239799-294vmess
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 30
-      - 新加坡_0114078
-      - 美国_0114621
-      - Japan 6
-      - _HK_香港_5 2
-      - Pool_🇳🇱NL_115
-      - 欧洲(油管:破解资源君) 18
-      - Hongkong 100
-      - -香港-47.242.66.90
-      - HK-IPLC-22
+      - MO【付费推荐：https://tt.sbs/vip】
+      - -加拿大-165.154.246.71
+      - _HK_香港_2
+      - 瑞典_0114005
       - 香港_0110081
-      - 澳大利亚 008
       - _HK_香港_7
       - 香港_0110078
-      - _CN_中国->🇭🇰_HK_香港
-      - 欧洲(油管:破解资源君) 17
-      - 香港_0114048
-      - mianfeifq_🇩🇪Limburg an der Lahn-1166-166
-      - HK-IPLC-17
-      - _HK_香港_16
-      - HK-IPLC-57
-      - 香港_0112140
-      - Hong Kong 10
-      - Hongkong 111
-      - 欧洲(油管:破解资源君) 56
       - _HK_香港_6
-      - mianfeifq_🇩🇪Limburg an der Lahn-1145-145
       - _HK_香港_3
-      - HK-IPLC-52
-      - 香港_0112142
-      - _HK_香港_14
-      - HK-IPLC-54
-      - 1.36| Germany 3  NF D   备用
-      - _JP_日本_快嘴科技提供kkzui.com.
-      - mianfeifq_🇩🇪Limburg an der Lahn-1163-163
+      - 白嫖-0589
+      - Hongkong 100
+      - "| 6.83Mb"
+      - _GB_英国_2
+      - Hong Kong 1
+      - github.com/mehdimoghaddam-cell_246
+      - Hongkong 111
       - _FR_法国
-      - _HK_香港_2
+      - 美国_01141770
+      - 澳大利亚_0114041
+      - _HK_香港_14
+      - 香港_0112142
+      - 新加坡 008
+      - TW (youtube阿伟科技)
+      - HK-IPLC-22
+      - SG【付费推荐：https://tt.sbs/vip】
+      - 香港_0112140
+      - 香港_0114042
+      - HK-IPLC-19
+      - 香港_0110072
+      - 香港_0110067
+      - mianfeifq 283
+      - TW_165.154.246.71_011320239799-294vmess
+      - _SG_新加坡_快嘴科技提供：kkzui.com
+      - _SG_新加坡_快嘴科技提供kkzui.com
+      - 台湾_0114370
+      - 欧洲(油管:破解资源君) 21
+      - 新加坡_0114002
+      - FR_141.95.61.209_010920232472-4trojan
+      - 1.47| Germany 3  NF D   备用
       - _US_欢迎订阅yui科技
+      - github.com/mehdimoghaddam-cell
+      - vpnclub2/9_191
+      - 美国 108
+      - _SG_新加坡
+      - 台湾(TG频道@kxswa)
+      - _CN_欢迎订阅yui科技
+      - Hongkong 111 2
       - _HK_香港_2 2
+      - _CN_中国->🇹🇭_TH_泰国
+      - 新加坡_0114084
+      - Hongkong 100 2
+      - _HK_香港_16
+      - 俄罗斯 002
+      - HK-IPLC-22 2
+      - 荷兰_0114193
+      - 新加坡_0114536
+      - 越南_0112127
+      - GB【付费推荐：https://tt.sbs/vip】
+      - -香港-47.242.66.90
+      - 欧洲(油管:破解资源君) 49
+      - _CN_欢迎订阅yui科技 2
+      - HK-IPLC-19 2
+      - _CN_中国->🇹🇭_TH_泰国 2
+      - SG_103.172.116.196_011320239799-474trojan
+      - _US_美国_1
+      - 澳大利亚 008
+      - _US_美国 7
+      - _US_美国 12
+      - _US_美国_1 2
+      - 韩国_0114001
+      - mianfeifq_🇩🇪Limburg an der Lahn-1163-163
+      - v2rayfree.eu.org - 美国  8
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1182,141 +687,80 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _SG_新加坡
-      - 新加坡_0114520
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - v2rayfree.eu.org - 美国  3
-      - 中国_01141425
-      - 美国 025
-      - 新加坡 004
-      - US【付费推荐：https://tt.sbs/vip】
-      - 韩国_0114174
-      - 俄罗斯 002
-      - v2rayfree.eu.org - 美国CloudFlare节点 35
-      - 韩国_0114137
-      - PA【付费推荐：https://tt.sbs/vip】
-      - 新加坡_0114077
-      - 香港_0114250
-      - _CN_欢迎订阅yui科技
-      - 欧洲(油管:破解资源君) 49
-      - v2rayfree.eu.org - 美国CloudFlare节点 28
-      - 新加坡_0114620
-      - github.com/mehdimoghaddam-cell
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 23
-      - 新加坡_0114529
-      - 香港(油管:破解资源君) 5
-      - 新加坡 008
-      - 韩国_0114237
-      - 香港_0114196
-      - -日本-43.207.117.142
-      - github.com/mehdimoghaddam-cell_97
-      - "|48.57Mb"
-      - v2rayfree.eu.org - 美国RF Engineering 17
-      - 香港_0114656
-      - v2rayfree.eu.org - 美国  14
-      - 越南_0112129
-      - _CN_中国->🇹🇭_TH_泰国
-      - github.com/mehdimoghaddam-cell_160
-      - 法国_0114001
-      - 日本_0114958
-      - _JP_日本_3
-      - _US_美国->🇫🇷_FR_法国_5
-      - 香港_0114187
-      - 荷兰_0114193
-      - -美国-快嘴科技提供：kkzui.com7快嘴科技提供kkzui.com.67.快嘴科技提供：kkzui.com99.快嘴科技提供kkzui.com.4_快嘴科技提供：kkzui.com(由kkzui.com免费提供)4快嘴科技提供kkzui.com快嘴科技提供：kkzui.com
-      - 美国 086
-      - 美国092(youtube阿伟科技)56
-      - github.com/mehdimoghaddam-cell_235
-      - 美国 115
-      - _SG_新加坡_快嘴科技提供：kkzui.com
-      - _FR_欢迎订阅yui科技
-      - _MO_澳门->🇨🇳_CN_中国
-      - 中国_01141163
-      - 俄罗斯联邦_0114001
-      - FR【付费推荐：https://tt.sbs/vip】
-      - github.com/mehdimoghaddam-cell_230
-      - 美国(TG频道@kxswa)
-      - SG【付费推荐：https://tt.sbs/vip】
-      - 越南_0112127
-      - _RU_俄罗斯联邦->🇫🇷_FR_法国
-      - _PL_波兰
-      - SG【付费推荐：https://tt.sbs/vip】 2
-      - 新加坡_0114002
-      - _KR_韩国 2
-      - 1907(@Outline_Vpn)
-      - 法国_0112001
-      - github.com/mehdimoghaddam-cell_128
-      - 法国_0114003
-      - SG【付费推荐：https://tt.sbs/vip】 3
-      - 香港_0110067
-      - github.com/mehdimoghaddam-cell 2
-      - Hong Kong 1
-      - _HK_香港_5
-      - 波兰_0114001
-      - 香港_0110072
-      - 土耳其_0114021
-      - HK-IPLC-44
-      - HK-IPLC-19
-      - _SG_新加坡 4
+      - HK-IPLC-17
       - -香港-47.242.0.10
-      - HK-IPLC-16
-      - Hong Kong-M2
-      - 荷兰 002
-      - 俄罗斯 001
-      - _CN_中国->🇹🇭_TH_泰国 2
-      - 美国 059
-      - 美国 082
-      - 美国 108
-      - 美国 109
-      - 美国 069
-      - 台湾_0114370
-      - "[01-13]-🇸🇬-新加坡-204-sg-am3.eqsunshine.com"
-      - _FR_法国_2
-      - 新加坡_0114086
-      - 欧洲(油管:破解资源君) 46
-      - 日本 006
-      - 韩国_0114025
-      - FR(youtube阿伟科技)_2(youtube阿伟科技)55
-      - TW_165.154.246.71_011320239799-294vmess
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 30
-      - 新加坡_0114078
-      - 美国_0114621
-      - Japan 6
-      - _HK_香港_5 2
-      - Pool_🇳🇱NL_115
-      - 欧洲(油管:破解资源君) 18
-      - Hongkong 100
-      - -香港-47.242.66.90
-      - HK-IPLC-22
+      - MO【付费推荐：https://tt.sbs/vip】
+      - -加拿大-165.154.246.71
+      - _HK_香港_2
+      - 瑞典_0114005
       - 香港_0110081
-      - 澳大利亚 008
       - _HK_香港_7
       - 香港_0110078
-      - _CN_中国->🇭🇰_HK_香港
-      - 欧洲(油管:破解资源君) 17
-      - 香港_0114048
-      - mianfeifq_🇩🇪Limburg an der Lahn-1166-166
-      - HK-IPLC-17
-      - _HK_香港_16
-      - HK-IPLC-57
-      - 香港_0112140
-      - Hong Kong 10
-      - Hongkong 111
-      - 欧洲(油管:破解资源君) 56
       - _HK_香港_6
-      - mianfeifq_🇩🇪Limburg an der Lahn-1145-145
       - _HK_香港_3
-      - HK-IPLC-52
-      - 香港_0112142
-      - _HK_香港_14
-      - HK-IPLC-54
-      - 1.36| Germany 3  NF D   备用
-      - _JP_日本_快嘴科技提供kkzui.com.
-      - mianfeifq_🇩🇪Limburg an der Lahn-1163-163
+      - 白嫖-0589
+      - Hongkong 100
+      - "| 6.83Mb"
+      - _GB_英国_2
+      - Hong Kong 1
+      - github.com/mehdimoghaddam-cell_246
+      - Hongkong 111
       - _FR_法国
-      - _HK_香港_2
+      - 美国_01141770
+      - 澳大利亚_0114041
+      - _HK_香港_14
+      - 香港_0112142
+      - 新加坡 008
+      - TW (youtube阿伟科技)
+      - HK-IPLC-22
+      - SG【付费推荐：https://tt.sbs/vip】
+      - 香港_0112140
+      - 香港_0114042
+      - HK-IPLC-19
+      - 香港_0110072
+      - 香港_0110067
+      - mianfeifq 283
+      - TW_165.154.246.71_011320239799-294vmess
+      - _SG_新加坡_快嘴科技提供：kkzui.com
+      - _SG_新加坡_快嘴科技提供kkzui.com
+      - 台湾_0114370
+      - 欧洲(油管:破解资源君) 21
+      - 新加坡_0114002
+      - FR_141.95.61.209_010920232472-4trojan
+      - 1.47| Germany 3  NF D   备用
       - _US_欢迎订阅yui科技
+      - github.com/mehdimoghaddam-cell
+      - vpnclub2/9_191
+      - 美国 108
+      - _SG_新加坡
+      - 台湾(TG频道@kxswa)
+      - _CN_欢迎订阅yui科技
+      - Hongkong 111 2
       - _HK_香港_2 2
+      - _CN_中国->🇹🇭_TH_泰国
+      - 新加坡_0114084
+      - Hongkong 100 2
+      - _HK_香港_16
+      - 俄罗斯 002
+      - HK-IPLC-22 2
+      - 荷兰_0114193
+      - 新加坡_0114536
+      - 越南_0112127
+      - GB【付费推荐：https://tt.sbs/vip】
+      - -香港-47.242.66.90
+      - 欧洲(油管:破解资源君) 49
+      - _CN_欢迎订阅yui科技 2
+      - HK-IPLC-19 2
+      - _CN_中国->🇹🇭_TH_泰国 2
+      - SG_103.172.116.196_011320239799-474trojan
+      - _US_美国_1
+      - 澳大利亚 008
+      - _US_美国 7
+      - _US_美国 12
+      - _US_美国_1 2
+      - 韩国_0114001
+      - mianfeifq_🇩🇪Limburg an der Lahn-1163-163
+      - v2rayfree.eu.org - 美国  8
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
