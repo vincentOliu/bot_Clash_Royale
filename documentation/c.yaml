@@ -6,139 +6,143 @@ mode: Rule
 log-level: info
 external-controller: 9090
 proxies:
-  - {name: _US_美国 9, server: cft.hicoom.com, port: 443, type: vmess, uuid: 654f997b-5bea-4c82-9538-35ee57b6fd72, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /654f997b-5bea-4c82-9538-35ee57b6fd72, headers: {Host: cft.hicoom.com}}, udp: true}
+  - {name: "[ 直连] 日本 · U1 | 02", server: zzjp01.fuqiangren.com, port: 20221, type: trojan, password: 5184abfb-2234-45f4-ae94-bb5a0731aa96, sni: zzjp01.fuqiangren.com, skip-cert-verify: true, udp: true}
+  - {name: trojan_tcp_64_52_84_4, server: 64.52.84.4, port: 443, type: trojan, password: c442891d-b8b9-4fbd-9ae2-00db4487ec89, sni: wx.qq.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 039, server: jp1.v2rayserv.com, port: 443, type: vmess, uuid: 143f0cb3-23f1-4fd0-b1da-bc9a10f97318, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sshocean, headers: {Host: jp1.v2rayserv.com}}, udp: true}
+  - {name: "%�\x11�'��9�oyj�L\f\x0e\r%%�", server: 185.199.225.45, port: 10002, type: ssr, cipher: aes-256-cfb, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 美国 043, server: ccfr1.cutcloudjd.site, port: 458, type: trojan, password: 2380f07e-e54c-4645-8abe-50575b31f45f, skip-cert-verify: true, udp: true}
+  - {name: 香港动态 HKT C, server: shcuzxhk.eucdurl.me, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34189:jsnzkpg, obfs-param: "", udp: true}
+  - {name: 美国CMI国际|风车高级线路2, server: 154.3.8.29, port: 42116, type: vmess, uuid: 01e07f2e-fc00-45bb-bbf5-547f58316e18, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: JP日本(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技, server: xtom.mytargoocloud.live, port: 443, type: vmess, uuid: 03deb375-385e-4cdf-bf32-504523391e5d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jpm1.targoocloud.live}}, udp: true}
+  - {name: 美国 059, server: ssrfree.zhujicn2.net, port: 10002, type: ssr, cipher: aes-256-cfb, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 新加坡_0126716, server: sg002.170203.xyz, port: 43543, type: vmess, uuid: d9e3ebb4-00e9-4f58-bc78-183023b7e1c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg002.170203.xyz}}, udp: true}
+  - {name: "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】", server: 183.240.60.119, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡_0126132, server: sg02.170203.xyz, port: 43543, type: vmess, uuid: 30c23ca4-1bde-4828-b5a9-e0cb531fe506, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg02.170203.xyz}}, udp: true}
   - {name: 拉脱维亚_0124003, server: 45.142.213.51, port: 80, type: vmess, uuid: b64efcc6-5392-429e-8da5-5fe9617deba2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sshocean}, udp: true}
-  - {name: "@SSRSUB-V14-付费推荐:suo.yt/ssrsub", server: mncc.cf, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: mncc.cf}}, udp: true}
-  - {name: _VN_越南, server: vn1.v2rayserv.com, port: 80, type: vmess, uuid: a94966a1-2225-422b-b756-dd4b4d6b974b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sshocean, headers: {Host: vn1.v2rayserv.com}}, udp: true}
-  - {name: 日本_01241279, server: 152.69.197.74, port: 12345, type: vmess, uuid: b8a6bf58-485a-4046-b386-b3661bf65eff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bb}, udp: true}
-  - {name: v2rayfree.eu.org - 俄罗斯莫斯科JustHost 18, server: 45.136.244.181, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fr-unlimitxxx, headers: {Host: 45.136.244.181}}, udp: true}
-  - {name: _JP_日本, server: 45.76.49.237, port: 443, type: vmess, uuid: 2ab56f70-39e3-4422-bb2e-dbfe59cb01f8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: A1香港iplc-08, server: iplc.xiaohouzi.club, port: 20018, type: trojan, password: a3278882-3614-39cf-a3d6-faefa8c910ab, sni: aws-hk03.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: v2rayfree.eu.org - 俄罗斯莫斯科JustHost 3, server: v10a.toddns.tk, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fr-unlimitxxx, headers: {Host: v10a.toddns.tk}}, udp: true}
-  - {name: _US_美国_1, server: 24.199.119.135, port: 443, type: vmess, uuid: e6da31cb-6c97-4699-c412-124d5ab80856, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 澳大利亚_0124109, server: 45.32.190.114, port: 443, type: vmess, uuid: 2ab56f70-39e3-4422-bb2e-dbfe59cb01f8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: "[01-25]-🇺🇸-美国-136-jp-am48-6.eqnode.net", server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: PT09PQ==, obfs-param: PT09PQ==, udp: true}
-  - {name: _SG_新加坡_来源;kkzui.com, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 俄罗斯联邦_0124003, server: 176.32.35.22, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fr-unlimitxxx, headers: {Host: 176.32.35.22}}, udp: true}
-  - {name: "@SSRSUB-V21-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lu.sharecentre.online}}, udp: true}
-  - {name: 俄罗斯 006, server: 193.203.203.53, port: 28364, type: vmess, uuid: c14b9faa-b2ff-4f2b-80c5-499bbdb9b886, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _JP_日本_来源;kkzui.com, server: 140.83.87.4, port: 80, type: vmess, uuid: 04852071-6116-41ed-8455-2b04543f3c8a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6546}, udp: true}
-  - {name: _HK_香港, server: 47.242.18.44, port: 30792, type: vmess, uuid: 99a13d3e-8c60-4c5c-9592-ab93383588ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 日本(TG频道@kxswa), server: 140.83.87.4, port: 80, type: vmess, uuid: 04852071-6116-41ed-8455-2b04543f3c8a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6546, headers: {Host: 140.83.87.4}}, udp: true}
-  - {name: 日本 012, server: n1672131079.lyqrdde.cn, port: 443, type: vmess, uuid: bf489515-1335-4017-871e-6cd5a38488a7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: n1672131079.lyqrdde.cn}}, udp: true}
-  - {name: "[01-25]-🇺🇸-美国-202-jp-am48-6.eqnode.net", server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: ====, obfs-param: ====, udp: true}
-  - {name: _HK_香港 2, server: 47.242.151.173, port: 65360, type: vmess, uuid: b99e4d05-4a31-4095-b11e-f10cfe1f122e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 印度尼西亚(TG频道@kxswa), server: nata.xtls.my.id, port: 443, type: vmess, uuid: 0f8b0797-ae9a-43ea-a385-2e0c79cb57f3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: nata.xtls.my.id, grpc-opts: {grpc-service-name: vmess-grpc}, udp: true}
-  - {name: 印度尼西亚(TG频道@kxswa) 2, server: nata.xtls.my.id, port: 443, type: vmess, uuid: 0f8b0797-ae9a-43ea-a385-2e0c79cb57f3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: nata.xtls.my.id}}, udp: true}
-  - {name: _HK_香港 3, server: 8.210.87.130, port: 33459, type: vmess, uuid: bc75a7aa-fbd0-4fc3-a08c-c21192cfca43, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: -香港-8.210.34.104, server: 8.210.34.104, port: 28182, type: vmess, uuid: e3c074dc-bcbb-45c2-bf58-96310ea4b999, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: GB【付费推荐：https//tt.sbs/vip】, server: gb-ls03.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: gb-ls03.nb1.fr}}, udp: true}
-  - {name: 香港超级节点01, server: hnm.xiaohouzi.club, port: 17113, type: trojan, password: a3278882-3614-39cf-a3d6-faefa8c910ab, sni: shk01.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 1.81|BG保加利亚 httpsawkjcfky 注册体验流媒体机场youtube阿伟科技, server: www.rinyin.top, port: 443, type: vmess, uuid: 10706e0a-8251-4cfc-b211-b908b99dfd5f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/7a17336201?ed=2048", headers: {Host: www.rinyin.top}}, udp: true}
+  - {name: _HK_香港_来源：kkzui.com_2, server: 47.243.30.150, port: 61338, type: vmess, uuid: 88db38e9-83c7-4bf1-af64-94830a62b205, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 新加坡 003, server: aws.sg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202301000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: bulianglin.com}, udp: true}
+  - {name: 美国_01261930, server: 173.211.42.221, port: 40091, type: vmess, uuid: 56284735-fb54-44fb-fcbb-21dea3b30573, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 美国 134, server: 138.2.83.217, port: 43863, type: vmess, uuid: ca984457-b017-46e5-d973-42a3c3fdc292, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 香港_0126119, server: hkbn03.tizi1.net, port: 443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: hkbn03.tizi1.net}}, udp: true}
+  - {name: 新加坡-V02, server: hnm.xiaohouzi.club, port: 36305, type: trojan, password: a3278882-3614-39cf-a3d6-faefa8c910ab, sni: vusig02.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: US【付费推荐：https://tt.sbs/vip】, server: 154.3.5.250, port: 40086, type: ssr, cipher: dummy, password: pYT%$#SFrytrrocIOS*12ola, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 澳大利亚 005 2, server: ccjp.cutcloudjd.site, port: 451, type: vmess, uuid: 2380f07e-e54c-4645-8abe-50575b31f45f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /jp, headers: {Host: ccjp.cutcloudjd.site}}, udp: true}
+  - {name: 日本ava02, server: hn.xiaohouzi.club, port: 18432, type: trojan, password: a3278882-3614-39cf-a3d6-faefa8c910ab, sni: ajpn02.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 泰国, server: hnm.xiaohouzi.club, port: 47553, type: trojan, password: a3278882-3614-39cf-a3d6-faefa8c910ab, sni: taiguo.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 美国 095, server: ca-ls03.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: ca-ls03.nb1.fr}}, udp: true}
+  - {name: 德国 003, server: 51.75.76.22, port: 443, type: trojan, password: edda8370-9513-11ed-b532-225401db9d57, sni: de.tjvpn.org, skip-cert-verify: true, udp: true}
+  - {name: 中国_0124076, server: 183.240.60.119, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_212.90.103.177_0126202374ea-325vmess, server: 212.90.103.177, port: 42322, type: vmess, uuid: 0450258b-468f-4872-e0a9-c1463f397f72, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 美国 049, server: www.cjf0423.ga, port: 443, type: trojan, password: !<str> 111111, sni: www.cjf0423.ga, skip-cert-verify: true, udp: true}
+  - {name: _JP_日本_来源：kkzui.com-快嘴科技_1, server: 152.69.197.74, port: 12345, type: vmess, uuid: b8a6bf58-485a-4046-b386-b3661bf65eff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bb}, udp: true}
+  - {name: "[ 直连] 日本 · U1 | 01", server: zzjp01.fuqiangren.com, port: 20220, type: trojan, password: 5184abfb-2234-45f4-ae94-bb5a0731aa96, sni: zzjp01.fuqiangren.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _US_美国 9
+      - "[ 直连] 日本 · U1 | 02"
+      - trojan_tcp_64_52_84_4
+      - 美国 039
+      - "%�\x11�'��9�oyj�L\f\x0e\r%%�"
+      - 美国 043
+      - 香港动态 HKT C
+      - 美国CMI国际|风车高级线路2
+      - JP日本(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技
+      - 美国 059
+      - 新加坡_0126716
+      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】"
+      - 新加坡_0126132
       - 拉脱维亚_0124003
-      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
-      - _VN_越南
-      - 日本_01241279
-      - v2rayfree.eu.org - 俄罗斯莫斯科JustHost 18
-      - _JP_日本
-      - A1香港iplc-08
-      - v2rayfree.eu.org - 俄罗斯莫斯科JustHost 3
-      - _US_美国_1
-      - 澳大利亚_0124109
-      - "[01-25]-🇺🇸-美国-136-jp-am48-6.eqnode.net"
-      - _SG_新加坡_来源;kkzui.com
-      - 俄罗斯联邦_0124003
-      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
-      - 俄罗斯 006
-      - _JP_日本_来源;kkzui.com
-      - _HK_香港
-      - 日本(TG频道@kxswa)
-      - 日本 012
-      - "[01-25]-🇺🇸-美国-202-jp-am48-6.eqnode.net"
-      - _HK_香港 2
-      - 印度尼西亚(TG频道@kxswa)
-      - 印度尼西亚(TG频道@kxswa) 2
-      - _HK_香港 3
-      - -香港-8.210.34.104
-      - GB【付费推荐：https//tt.sbs/vip】
-      - 香港超级节点01
-      - 1.81|BG保加利亚 httpsawkjcfky 注册体验流媒体机场youtube阿伟科技
+      - _HK_香港_来源：kkzui.com_2
+      - 新加坡 003
+      - 美国_01261930
+      - 美国 134
+      - 香港_0126119
+      - 新加坡-V02
+      - US【付费推荐：https://tt.sbs/vip】
+      - 澳大利亚 005 2
+      - 日本ava02
+      - 泰国
+      - 美国 095
+      - 德国 003
+      - 中国_0124076
+      - US_212.90.103.177_0126202374ea-325vmess
+      - 美国 049
+      - _JP_日本_来源：kkzui.com-快嘴科技_1
+      - "[ 直连] 日本 · U1 | 01"
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - _US_美国 9
+      - "[ 直连] 日本 · U1 | 02"
+      - trojan_tcp_64_52_84_4
+      - 美国 039
+      - "%�\x11�'��9�oyj�L\f\x0e\r%%�"
+      - 美国 043
+      - 香港动态 HKT C
+      - 美国CMI国际|风车高级线路2
+      - JP日本(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技
+      - 美国 059
+      - 新加坡_0126716
+      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】"
+      - 新加坡_0126132
       - 拉脱维亚_0124003
-      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
-      - _VN_越南
-      - 日本_01241279
-      - v2rayfree.eu.org - 俄罗斯莫斯科JustHost 18
-      - _JP_日本
-      - A1香港iplc-08
-      - v2rayfree.eu.org - 俄罗斯莫斯科JustHost 3
-      - _US_美国_1
-      - 澳大利亚_0124109
-      - "[01-25]-🇺🇸-美国-136-jp-am48-6.eqnode.net"
-      - _SG_新加坡_来源;kkzui.com
-      - 俄罗斯联邦_0124003
-      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
-      - 俄罗斯 006
-      - _JP_日本_来源;kkzui.com
-      - _HK_香港
-      - 日本(TG频道@kxswa)
-      - 日本 012
-      - "[01-25]-🇺🇸-美国-202-jp-am48-6.eqnode.net"
-      - _HK_香港 2
-      - 印度尼西亚(TG频道@kxswa)
-      - 印度尼西亚(TG频道@kxswa) 2
-      - _HK_香港 3
-      - -香港-8.210.34.104
-      - GB【付费推荐：https//tt.sbs/vip】
-      - 香港超级节点01
-      - 1.81|BG保加利亚 httpsawkjcfky 注册体验流媒体机场youtube阿伟科技
+      - _HK_香港_来源：kkzui.com_2
+      - 新加坡 003
+      - 美国_01261930
+      - 美国 134
+      - 香港_0126119
+      - 新加坡-V02
+      - US【付费推荐：https://tt.sbs/vip】
+      - 澳大利亚 005 2
+      - 日本ava02
+      - 泰国
+      - 美国 095
+      - 德国 003
+      - 中国_0124076
+      - US_212.90.103.177_0126202374ea-325vmess
+      - 美国 049
+      - _JP_日本_来源：kkzui.com-快嘴科技_1
+      - "[ 直连] 日本 · U1 | 01"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _US_美国 9
+      - "[ 直连] 日本 · U1 | 02"
+      - trojan_tcp_64_52_84_4
+      - 美国 039
+      - "%�\x11�'��9�oyj�L\f\x0e\r%%�"
+      - 美国 043
+      - 香港动态 HKT C
+      - 美国CMI国际|风车高级线路2
+      - JP日本(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技
+      - 美国 059
+      - 新加坡_0126716
+      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】"
+      - 新加坡_0126132
       - 拉脱维亚_0124003
-      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
-      - _VN_越南
-      - 日本_01241279
-      - v2rayfree.eu.org - 俄罗斯莫斯科JustHost 18
-      - _JP_日本
-      - A1香港iplc-08
-      - v2rayfree.eu.org - 俄罗斯莫斯科JustHost 3
-      - _US_美国_1
-      - 澳大利亚_0124109
-      - "[01-25]-🇺🇸-美国-136-jp-am48-6.eqnode.net"
-      - _SG_新加坡_来源;kkzui.com
-      - 俄罗斯联邦_0124003
-      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
-      - 俄罗斯 006
-      - _JP_日本_来源;kkzui.com
-      - _HK_香港
-      - 日本(TG频道@kxswa)
-      - 日本 012
-      - "[01-25]-🇺🇸-美国-202-jp-am48-6.eqnode.net"
-      - _HK_香港 2
-      - 印度尼西亚(TG频道@kxswa)
-      - 印度尼西亚(TG频道@kxswa) 2
-      - _HK_香港 3
-      - -香港-8.210.34.104
-      - GB【付费推荐：https//tt.sbs/vip】
-      - 香港超级节点01
-      - 1.81|BG保加利亚 httpsawkjcfky 注册体验流媒体机场youtube阿伟科技
+      - _HK_香港_来源：kkzui.com_2
+      - 新加坡 003
+      - 美国_01261930
+      - 美国 134
+      - 香港_0126119
+      - 新加坡-V02
+      - US【付费推荐：https://tt.sbs/vip】
+      - 澳大利亚 005 2
+      - 日本ava02
+      - 泰国
+      - 美国 095
+      - 德国 003
+      - 中国_0124076
+      - US_212.90.103.177_0126202374ea-325vmess
+      - 美国 049
+      - _JP_日本_来源：kkzui.com-快嘴科技_1
+      - "[ 直连] 日本 · U1 | 01"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -157,149 +161,150 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _US_美国 9
+      - "[ 直连] 日本 · U1 | 02"
+      - trojan_tcp_64_52_84_4
+      - 美国 039
+      - "%�\x11�'��9�oyj�L\f\x0e\r%%�"
+      - 美国 043
+      - 香港动态 HKT C
+      - 美国CMI国际|风车高级线路2
+      - JP日本(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技
+      - 美国 059
+      - 新加坡_0126716
+      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】"
+      - 新加坡_0126132
       - 拉脱维亚_0124003
-      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
-      - _VN_越南
-      - 日本_01241279
-      - v2rayfree.eu.org - 俄罗斯莫斯科JustHost 18
-      - _JP_日本
-      - A1香港iplc-08
-      - v2rayfree.eu.org - 俄罗斯莫斯科JustHost 3
-      - _US_美国_1
-      - 澳大利亚_0124109
-      - "[01-25]-🇺🇸-美国-136-jp-am48-6.eqnode.net"
-      - _SG_新加坡_来源;kkzui.com
-      - 俄罗斯联邦_0124003
-      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
-      - 俄罗斯 006
-      - _JP_日本_来源;kkzui.com
-      - _HK_香港
-      - 日本(TG频道@kxswa)
-      - 日本 012
-      - "[01-25]-🇺🇸-美国-202-jp-am48-6.eqnode.net"
-      - _HK_香港 2
-      - 印度尼西亚(TG频道@kxswa)
-      - 印度尼西亚(TG频道@kxswa) 2
-      - _HK_香港 3
-      - -香港-8.210.34.104
-      - GB【付费推荐：https//tt.sbs/vip】
-      - 香港超级节点01
-      - 1.81|BG保加利亚 httpsawkjcfky 注册体验流媒体机场youtube阿伟科技
+      - _HK_香港_来源：kkzui.com_2
+      - 新加坡 003
+      - 美国_01261930
+      - 美国 134
+      - 香港_0126119
+      - 新加坡-V02
+      - US【付费推荐：https://tt.sbs/vip】
+      - 澳大利亚 005 2
+      - 日本ava02
+      - 泰国
+      - 美国 095
+      - 德国 003
+      - 中国_0124076
+      - US_212.90.103.177_0126202374ea-325vmess
+      - 美国 049
+      - _JP_日本_来源：kkzui.com-快嘴科技_1
+      - "[ 直连] 日本 · U1 | 01"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - A1香港iplc-08
-      - _HK_香港
-      - _HK_香港 2
-      - _HK_香港 3
-      - -香港-8.210.34.104
-      - 香港超级节点01
+      - 香港动态 HKT C
+      - _HK_香港_来源：kkzui.com_2
+      - 香港_0126119
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _US_美国 9
+      - "[ 直连] 日本 · U1 | 02"
+      - trojan_tcp_64_52_84_4
+      - 美国 039
+      - "%�\x11�'��9�oyj�L\f\x0e\r%%�"
+      - 美国 043
+      - 香港动态 HKT C
+      - 美国CMI国际|风车高级线路2
+      - JP日本(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技
+      - 美国 059
+      - 新加坡_0126716
+      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】"
+      - 新加坡_0126132
       - 拉脱维亚_0124003
-      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
-      - _VN_越南
-      - 日本_01241279
-      - v2rayfree.eu.org - 俄罗斯莫斯科JustHost 18
-      - _JP_日本
-      - A1香港iplc-08
-      - v2rayfree.eu.org - 俄罗斯莫斯科JustHost 3
-      - _US_美国_1
-      - 澳大利亚_0124109
-      - "[01-25]-🇺🇸-美国-136-jp-am48-6.eqnode.net"
-      - _SG_新加坡_来源;kkzui.com
-      - 俄罗斯联邦_0124003
-      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
-      - 俄罗斯 006
-      - _JP_日本_来源;kkzui.com
-      - _HK_香港
-      - 日本(TG频道@kxswa)
-      - 日本 012
-      - "[01-25]-🇺🇸-美国-202-jp-am48-6.eqnode.net"
-      - _HK_香港 2
-      - 印度尼西亚(TG频道@kxswa)
-      - 印度尼西亚(TG频道@kxswa) 2
-      - _HK_香港 3
-      - -香港-8.210.34.104
-      - GB【付费推荐：https//tt.sbs/vip】
-      - 香港超级节点01
-      - 1.81|BG保加利亚 httpsawkjcfky 注册体验流媒体机场youtube阿伟科技
+      - _HK_香港_来源：kkzui.com_2
+      - 新加坡 003
+      - 美国_01261930
+      - 美国 134
+      - 香港_0126119
+      - 新加坡-V02
+      - US【付费推荐：https://tt.sbs/vip】
+      - 澳大利亚 005 2
+      - 日本ava02
+      - 泰国
+      - 美国 095
+      - 德国 003
+      - 中国_0124076
+      - US_212.90.103.177_0126202374ea-325vmess
+      - 美国 049
+      - _JP_日本_来源：kkzui.com-快嘴科技_1
+      - "[ 直连] 日本 · U1 | 01"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _US_美国 9
+      - "[ 直连] 日本 · U1 | 02"
+      - trojan_tcp_64_52_84_4
+      - 美国 039
+      - "%�\x11�'��9�oyj�L\f\x0e\r%%�"
+      - 美国 043
+      - 香港动态 HKT C
+      - 美国CMI国际|风车高级线路2
+      - JP日本(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技
+      - 美国 059
+      - 新加坡_0126716
+      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】"
+      - 新加坡_0126132
       - 拉脱维亚_0124003
-      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
-      - _VN_越南
-      - 日本_01241279
-      - v2rayfree.eu.org - 俄罗斯莫斯科JustHost 18
-      - _JP_日本
-      - A1香港iplc-08
-      - v2rayfree.eu.org - 俄罗斯莫斯科JustHost 3
-      - _US_美国_1
-      - 澳大利亚_0124109
-      - "[01-25]-🇺🇸-美国-136-jp-am48-6.eqnode.net"
-      - _SG_新加坡_来源;kkzui.com
-      - 俄罗斯联邦_0124003
-      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
-      - 俄罗斯 006
-      - _JP_日本_来源;kkzui.com
-      - _HK_香港
-      - 日本(TG频道@kxswa)
-      - 日本 012
-      - "[01-25]-🇺🇸-美国-202-jp-am48-6.eqnode.net"
-      - _HK_香港 2
-      - 印度尼西亚(TG频道@kxswa)
-      - 印度尼西亚(TG频道@kxswa) 2
-      - _HK_香港 3
-      - -香港-8.210.34.104
-      - GB【付费推荐：https//tt.sbs/vip】
-      - 香港超级节点01
-      - 1.81|BG保加利亚 httpsawkjcfky 注册体验流媒体机场youtube阿伟科技
+      - _HK_香港_来源：kkzui.com_2
+      - 新加坡 003
+      - 美国_01261930
+      - 美国 134
+      - 香港_0126119
+      - 新加坡-V02
+      - US【付费推荐：https://tt.sbs/vip】
+      - 澳大利亚 005 2
+      - 日本ava02
+      - 泰国
+      - 美国 095
+      - 德国 003
+      - 中国_0124076
+      - US_212.90.103.177_0126202374ea-325vmess
+      - 美国 049
+      - _JP_日本_来源：kkzui.com-快嘴科技_1
+      - "[ 直连] 日本 · U1 | 01"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _US_美国 9
+      - "[ 直连] 日本 · U1 | 02"
+      - trojan_tcp_64_52_84_4
+      - 美国 039
+      - "%�\x11�'��9�oyj�L\f\x0e\r%%�"
+      - 美国 043
+      - 香港动态 HKT C
+      - 美国CMI国际|风车高级线路2
+      - JP日本(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技
+      - 美国 059
+      - 新加坡_0126716
+      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】"
+      - 新加坡_0126132
       - 拉脱维亚_0124003
-      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
-      - _VN_越南
-      - 日本_01241279
-      - v2rayfree.eu.org - 俄罗斯莫斯科JustHost 18
-      - _JP_日本
-      - A1香港iplc-08
-      - v2rayfree.eu.org - 俄罗斯莫斯科JustHost 3
-      - _US_美国_1
-      - 澳大利亚_0124109
-      - "[01-25]-🇺🇸-美国-136-jp-am48-6.eqnode.net"
-      - _SG_新加坡_来源;kkzui.com
-      - 俄罗斯联邦_0124003
-      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
-      - 俄罗斯 006
-      - _JP_日本_来源;kkzui.com
-      - _HK_香港
-      - 日本(TG频道@kxswa)
-      - 日本 012
-      - "[01-25]-🇺🇸-美国-202-jp-am48-6.eqnode.net"
-      - _HK_香港 2
-      - 印度尼西亚(TG频道@kxswa)
-      - 印度尼西亚(TG频道@kxswa) 2
-      - _HK_香港 3
-      - -香港-8.210.34.104
-      - GB【付费推荐：https//tt.sbs/vip】
-      - 香港超级节点01
-      - 1.81|BG保加利亚 httpsawkjcfky 注册体验流媒体机场youtube阿伟科技
+      - _HK_香港_来源：kkzui.com_2
+      - 新加坡 003
+      - 美国_01261930
+      - 美国 134
+      - 香港_0126119
+      - 新加坡-V02
+      - US【付费推荐：https://tt.sbs/vip】
+      - 澳大利亚 005 2
+      - 日本ava02
+      - 泰国
+      - 美国 095
+      - 德国 003
+      - 中国_0124076
+      - US_212.90.103.177_0126202374ea-325vmess
+      - 美国 049
+      - _JP_日本_来源：kkzui.com-快嘴科技_1
+      - "[ 直连] 日本 · U1 | 01"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -315,35 +320,36 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _US_美国 9
+      - "[ 直连] 日本 · U1 | 02"
+      - trojan_tcp_64_52_84_4
+      - 美国 039
+      - "%�\x11�'��9�oyj�L\f\x0e\r%%�"
+      - 美国 043
+      - 香港动态 HKT C
+      - 美国CMI国际|风车高级线路2
+      - JP日本(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技
+      - 美国 059
+      - 新加坡_0126716
+      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】"
+      - 新加坡_0126132
       - 拉脱维亚_0124003
-      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
-      - _VN_越南
-      - 日本_01241279
-      - v2rayfree.eu.org - 俄罗斯莫斯科JustHost 18
-      - _JP_日本
-      - A1香港iplc-08
-      - v2rayfree.eu.org - 俄罗斯莫斯科JustHost 3
-      - _US_美国_1
-      - 澳大利亚_0124109
-      - "[01-25]-🇺🇸-美国-136-jp-am48-6.eqnode.net"
-      - _SG_新加坡_来源;kkzui.com
-      - 俄罗斯联邦_0124003
-      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
-      - 俄罗斯 006
-      - _JP_日本_来源;kkzui.com
-      - _HK_香港
-      - 日本(TG频道@kxswa)
-      - 日本 012
-      - "[01-25]-🇺🇸-美国-202-jp-am48-6.eqnode.net"
-      - _HK_香港 2
-      - 印度尼西亚(TG频道@kxswa)
-      - 印度尼西亚(TG频道@kxswa) 2
-      - _HK_香港 3
-      - -香港-8.210.34.104
-      - GB【付费推荐：https//tt.sbs/vip】
-      - 香港超级节点01
-      - 1.81|BG保加利亚 httpsawkjcfky 注册体验流媒体机场youtube阿伟科技
+      - _HK_香港_来源：kkzui.com_2
+      - 新加坡 003
+      - 美国_01261930
+      - 美国 134
+      - 香港_0126119
+      - 新加坡-V02
+      - US【付费推荐：https://tt.sbs/vip】
+      - 澳大利亚 005 2
+      - 日本ava02
+      - 泰国
+      - 美国 095
+      - 德国 003
+      - 中国_0124076
+      - US_212.90.103.177_0126202374ea-325vmess
+      - 美国 049
+      - _JP_日本_来源：kkzui.com-快嘴科技_1
+      - "[ 直连] 日本 · U1 | 01"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
