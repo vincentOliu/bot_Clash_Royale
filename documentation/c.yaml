@@ -6,263 +6,155 @@ mode: Rule
 log-level: info
 external-controller: 9090
 proxies:
+  - {name: 日本-4, server: 120.233.15.58, port: 47223, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, skip-cert-verify: true, udp: true}
+  - {name: 新加坡_0130082, server: 15.235.147.186, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sshkit/Ertusg86/635014638c264/, headers: {Host: 15.235.147.186}}, udp: true}
+  - {name: 美国(TG频道@kxswa), server: us7.baf1.sbs, port: 10121, type: vmess, uuid: 447ef855-b642-4157-a296-d797ef7508d4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: JP【付费推荐：https://tt.sbs/vip】, server: 138.2.45.89, port: 44301, type: trojan, password: 6d64570c-81d4-30fa-b2e2-dce73e1a2702, sni: osav101.jd0001.top, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君) 58, server: 111.45.22.239, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本-5, server: 120.233.15.58, port: 42541, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, skip-cert-verify: true, udp: true}
+  - {name: "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】 5", server: cu.subclsnet.com, port: 10046, type: vmess, uuid: 40cc1825-c52a-4438-8983-10aeb1cf3a47, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 129, server: 138.2.83.217, port: 43863, type: vmess, uuid: ca984457-b017-46e5-d973-42a3c3fdc292, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 新加坡-2, server: 20.89.147.217, port: 443, type: trojan, password: 31800919-e199-47dd-b9e0-a9d4f4ae320b, sni: pcd462233.netvigator.com, skip-cert-verify: true, udp: true}
+  - {name: CN【付费推荐：https://tt.sbs/vip】, server: data-hk-v2.shwjfkw.cn, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: data-hk-v2.shwjfkw.cn}}, udp: true}
+  - {name: GB【付费推荐：https://tt.sbs/vip】, server: content-provider4.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: shefelnak, sni: content-provider4.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
+  - {name: 日本-3, server: 120.233.15.58, port: 27851, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, skip-cert-verify: true, udp: true}
+  - {name: US【付费推荐：https://tt.sbs/vip】, server: 185.199.225.45, port: 10002, type: ssr, cipher: aes-256-cfb, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: t.me/kutoproxy🇩🇪, server: 91.107.131.8, port: 8080, type: vmess, uuid: e939e855-7f67-4e01-8328-be2778110afc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /@hashmakvpn 🇩🇪}, udp: true}
+  - {name: US_135.148.149.209_01292023bbc1-87trojan, server: 135.148.149.209, port: 80, type: trojan, password: aa6eb272-1d8d-4461-9687-85ddbab1adb0, skip-cert-verify: true, udp: true}
+  - {name: 美国 049, server: 154.3.5.250, port: 40086, type: ssr, cipher: dummy, password: pYT%$#SFrytrrocIOS*12ola, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
+  - {name: "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】 3", server: 111.45.22.239, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 白嫖-0642, server: 135.148.149.209, port: 80, type: trojan, password: 255c924c-1314-4084-9a9e-1d1a82a5cf49, sni: us2.trojanvh.xyz, skip-cert-verify: true, udp: true}
+  - {name: 白嫖-0022, server: 173.82.240.199, port: 44301, type: trojan, password: 6d64570c-81d4-30fa-b2e2-dce73e1a2702, sni: lav002.jd0001.top, skip-cert-verify: true, udp: true}
+  - {name: GB【付费推荐：https://tt.sbs/vip】 2, server: 88.150.137.177, port: 443, type: trojan, password: shefelnak, sni: content-provider4.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
+  - {name: 印度(TG频道@kxswa), server: in1.baf1.sbs, port: 443, type: trojan, password: 447ef855-b642-4157-a296-d797ef7508d4, sni: data-sg.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: 亚洲(油管:破解资源君) 3, server: cu.subclsnet.com, port: 10046, type: vmess, uuid: 40cc1825-c52a-4438-8983-10aeb1cf3a47, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国-3, server: 148.59.74.184, port: 443, type: trojan, password: 31800919-e199-47dd-b9e0-a9d4f4ae320b, sni: pcd462233.netvigator.com, skip-cert-verify: true, udp: true}
+  - {name: "日本(TG频道@kxswa)\r", server: awsjp3-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 447ef855-b642-4157-a296-d797ef7508d4, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: CN【付费推荐：https//tt.sbs/vip】, server: z80001.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
+  - {name: _TR_土耳其, server: 80.253.246.179, port: 8080, type: vmess, uuid: 4e2b4472-7e98-449d-954a-3edcb3485543, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 中国_01305877, server: tanz-moble.gatknqh.cn, port: 35133, type: vmess, uuid: 2a11c6ac-db6b-3efc-8b8c-a9d7d016ba4e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: FI【付费推荐：https://tt.sbs/vip】, server: 95.216.182.20, port: 29563, type: vmess, uuid: 9761669e-fe83-4f8d-f96e-0c7ab2737087, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: "%�\x11�'��9�oyj�L\r�L%%�", server: 104.149.139.189, port: 10002, type: ssr, cipher: aes-256-cfb, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: AU【付费推荐：https://tt.sbs/vip】, server: 3.24.103.195, port: 80, type: vmess, uuid: aeaf057e-95d3-437a-ec94-307d1ad54c17, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cek12, headers: {Host: 3.24.103.195}}, udp: true}
-  - {name: RU【付费推荐：https://tt.sbs/vip】, server: v10a.toddns.tk, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fr-unlimitxxx, headers: {Host: v10a.toddns.tk}}, udp: true}
-  - {name: US【付费推荐：https://tt.sbs/vip】, server: 104.149.139.189, port: 10002, type: ssr, cipher: aes-256-cfb, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: CN【付费推荐：https://tt.sbs/vip】, server: z00031.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
-  - {name: CN【付费推荐：https://tt.sbs/vip】 2, server: z2002.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
-  - {name: "[01-28]-🇺🇸-美国-107-104.149.139.189", server: 104.149.139.189, port: 10002, type: ssr, cipher: aes-256-cfb, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: ====, obfs-param: ====, udp: true}
-  - {name: CN【付费推荐：https//tt.sbs/vip】 16, server: data-hk-v2.shwjfkw.cn, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: data-hk-v2.shwjfkw.cn}}, udp: true}
-  - {name: CN【付费推荐：https//tt.sbs/vip】 7, server: z0003.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
-  - {name: CN【付费推荐：https://tt.sbs/vip】 3, server: z00022.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
-  - {name: HK【付费推荐：https://tt.sbs/vip】, server: hk12.sanfen001.pics, port: 2001, type: vmess, uuid: b10abf21-761e-41bb-a45b-f07aea5101b9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
-  - {name: CN【付费推荐：https://tt.sbs/vip】 4, server: z0003.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
-  - {name: CN【付费推荐：https//tt.sbs/vip】 3, server: z0001.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
-  - {name: CN【付费推荐：https://tt.sbs/vip】 5, server: cu.subclsnet.com, port: 10046, type: vmess, uuid: 40cc1825-c52a-4438-8983-10aeb1cf3a47, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国_01281616, server: 103.45.78.195, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN【付费推荐：https://tt.sbs/vip】 6, server: z0002.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
-  - {name: CN【付费推荐：https://tt.sbs/vip】 7, server: z0001.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
-  - {name: RU【付费推荐：https://tt.sbs/vip】 2, server: 176.32.35.22, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fr-unlimitxxx}, udp: true}
-  - {name: CN【付费推荐：https//tt.sbs/vip】 11, server: z3001.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
-  - {name: DE【付费推荐：https://tt.sbs/vip】, server: de-ls03.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: de-ls03.nb1.fr}}, udp: true}
-  - {name: 美国_01282004, server: 77.83.254.18, port: 51093, type: vmess, uuid: 16fbd33a-117d-486b-b0df-11a2759f3b14, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: AU【付费推荐：https://tt.sbs/vip】 2, server: 45.76.114.115, port: 22199, type: vmess, uuid: 97f85dab-305c-4502-d084-63fc395172ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 45.76.114.115}}, udp: true}
-  - {name: CN【付费推荐：https//tt.sbs/vip】 8, server: z0002.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
-  - {name: CN【付费推荐：https://tt.sbs/vip】 8, server: live15.suijiceshi.xyz, port: 2052, type: vmess, uuid: bfb32a33-cb31-4a10-ad54-b52da93d7173, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /xbov/6f42f0ef9d9257447d1f4d4391b4dd76e164c00fb47c0a318b3b1125e03f4d959921f11e97d0da21/media_0003.ts, headers: {Host: live15.hlzuifv.cn}}, udp: true}
-  - {name: github.com/freefq - 河南省洛阳市移动 12, server: gy.xhowtogetit.xyz, port: 21897, type: vmess, uuid: 73dcc1f6-3b4d-36fe-932f-500f32793b3a, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: hk01.htgssl.xyz}}, udp: true}
-  - {name: V2-高速节点-美国-3-G口, server: 3.135.241.88, port: 468, type: vmess, uuid: b1947c16-580b-4e55-a453-dced55efd52e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /www.sjys6.cloud, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: US【付费推荐：https://tt.sbs/vip】 2, server: sea10.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: sea10.nb1.fr}}, udp: true}
-  - {name: V2-高速节点-香港-4-G口, server: 43.155.169.198, port: 468, type: vmess, uuid: b1947c16-580b-4e55-a453-dced55efd52e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /www.sjys6.cloud, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: US【付费推荐：https://tt.sbs/vip】 3, server: 173.211.42.221, port: 40091, type: vmess, uuid: 56284735-fb54-44fb-fcbb-21dea3b30573, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 俄罗斯(油管:破解资源君) 2, server: 176.32.35.22, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fr-unlimitxxx, headers: {Host: 176.32.35.22}}, udp: true}
-  - {name: 中国_01284316, server: 117.164.185.222, port: 16129, type: vmess, uuid: 4a0d81b8-a04a-382b-a3cb-84d1d4b9d6aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK【付费推荐：https://tt.sbs/vip】 2, server: hk3.sanfen001.pics, port: 443, type: vmess, uuid: b10abf21-761e-41bb-a45b-f07aea5101b9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
-  - {name: US【付费推荐：https://tt.sbs/vip】 4, server: pics.quicklyfast.xyz, port: 443, type: vmess, uuid: a0b1fb66-ed41-4077-86a9-a61c143d3777, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /a0b1fb66-ed41-4077-86a9-a61c143d3777, headers: {Host: pics.quicklyfast.xyz}}, udp: true}
-  - {name: VN【付费推荐：https://tt.sbs/vip】, server: 103.14.48.159, port: 80, type: vmess, uuid: 0f8dd795-7552-41e8-e7b7-faf6b54bc29a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 103.14.48.159}}, udp: true}
-  - {name: US【付费推荐：https://tt.sbs/vip】 5, server: us80-3.sanfen001.pics, port: 80, type: vmess, uuid: b10abf21-761e-41bb-a45b-f07aea5101b9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn/, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: 美国 060 2, server: ssrfree.zhujicn2.net, port: 10002, type: ssr, cipher: aes-256-cfb, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: V2-高速节点-美国-G口, server: 137.175.53.180, port: 6666, type: vmess, uuid: b1947c16-580b-4e55-a453-dced55efd52e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /www.sjys6.cloud, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: CN【付费推荐：https//tt.sbs/vip】 29, server: cu.subclsnet.com, port: 10046, type: vmess, uuid: 40cc1825-c52a-4438-8983-10aeb1cf3a47, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国_01286525, server: 103.45.78.195, port: 10004, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_0128089, server: 163.197.211.159, port: 8080, type: vmess, uuid: 9878964a-3bb3-4e43-efe9-b3777fcc67d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hkaa0, headers: {Host: hk159.hkaa0.tk}}, udp: true}
-  - {name: HK【付费推荐：https://tt.sbs/vip】 3, server: hkbn03.tizi1.net, port: 443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: hkbn03.tizi1.net}}, udp: true}
-  - {name: VN【付费推荐：https://tt.sbs/vip】 2, server: vn-01.legeth.tk, port: 80, type: vmess, uuid: b37bf119-e816-49bf-bc70-aa0be7c69f04, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: vn-01.legeth.tk}}, udp: true}
-  - {name: mianfeifq 24, server: 155.248.193.254, port: 31853, type: trojan, password: jKRJgS7uvI, skip-cert-verify: true, udp: true}
-  - {name: V2-高速节点-北京, server: bbbbjjj.sjys6.me, port: 468, type: vmess, uuid: b1947c16-580b-4e55-a453-dced55efd52e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /www.sjys6.cloud, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: CA【付费推荐：https://tt.sbs/vip】, server: 193.203.203.53, port: 28364, type: vmess, uuid: c14b9faa-b2ff-4f2b-80c5-499bbdb9b886, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 新加坡_0128090, server: 146.190.202.9, port: 57711, type: vmess, uuid: fc912850-b6da-4ec6-9348-f3d1d7471907, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: V2-高速节点-英国.-G口, server: 66.29.154.129, port: 468, type: vmess, uuid: b1947c16-580b-4e55-a453-dced55efd52e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /www.sjys6.cloud, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 澳大利亚_0128118, server: 3.24.103.195, port: 80, type: vmess, uuid: aeaf057e-95d3-437a-ec94-307d1ad54c17, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cek12}, udp: true}
-  - {name: HK【付费推荐：https://tt.sbs/vip】 4, server: proxysu-alan.46651201.xyz, port: 443, type: vmess, uuid: 0a40bbe2-6974-4e59-820e-7a94e8e800bb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /STW7MVSY, headers: {Host: proxysu-alan.46651201.xyz}}, udp: true}
-  - {name: 中国_01284299, server: 117.164.185.221, port: 16129, type: vmess, uuid: 4a0d81b8-a04a-382b-a3cb-84d1d4b9d6aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SG【付费推荐：https://tt.sbs/vip】, server: sg1.sanfen001.pics, port: 2003, type: vmess, uuid: b10abf21-761e-41bb-a45b-f07aea5101b9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cn, headers: {Host: aws.amazon.com}}, udp: true}
-  - {name: V2-高速节点-美国z-G口, server: 154.17.19.12, port: 468, type: vmess, uuid: b1947c16-580b-4e55-a453-dced55efd52e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /www.sjys6.cloud, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 中国_0128095, server: 117.164.185.222, port: 16131, type: vmess, uuid: 4a0d81b8-a04a-382b-a3cb-84d1d4b9d6aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_154.9.204.21_01272023824e-350s%�, server: 154.9.204.21, port: 40088, type: ssr, cipher: dummy, password: qwbnmadaqweqnn, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 美国 059, server: 185.199.225.45, port: 10002, type: ssr, cipher: aes-256-cfb, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: CN【付费推荐：https://tt.sbs/vip】 9, server: 1482df26-e459-36f1-e7eb-038794d742d0.interface.buzz, port: 15021, type: ss, cipher: aes-256-gcm, password: 2f2a534d-5685-4319-bdaf-e2ee57f2c8a1, udp: true}
-  - {name: CN【付费推荐：https//tt.sbs/vip】, server: 36.156.222.25, port: 31904, type: ssr, cipher: chacha20-ietf, password: zztw9jk7gu, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 7432:82TfWp, obfs-param: e5ab07432.microsoft.com, udp: true}
-  - {name: US【付费推荐：https://tt.sbs/vip】 6, server: 185.199.225.45, port: 10002, type: ssr, cipher: aes-256-cfb, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 日本_0128157, server: 138.2.35.81, port: 80, type: vmess, uuid: a0733fc9-457e-498d-c363-9ec774a74947, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jun}, udp: true}
+  - {name: 美国_0130102, server: 163.197.211.159, port: 8080, type: vmess, uuid: 9878964a-3bb3-4e43-efe9-b3777fcc67d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hkaa0}, udp: true}
+  - {name: 新加坡-1, server: 4.194.24.210, port: 38443, type: trojan, password: 31800919-e199-47dd-b9e0-a9d4f4ae320b, sni: pcd462233.netvigator.com, skip-cert-verify: true, udp: true}
+  - {name: 香港-7, server: 120.233.15.58, port: 12468, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, skip-cert-verify: true, udp: true}
+  - {name: 美国-1, server: 148.59.74.185, port: 443, type: trojan, password: 31800919-e199-47dd-b9e0-a9d4f4ae320b, sni: pcd462233.netvigator.com, skip-cert-verify: true, udp: true}
+  - {name: 德国_0130008, server: 188.40.132.107, port: 80, type: vmess, uuid: 4ddd24d6-d901-5e5f-9a7c-080015c2e246, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /p3573l6m92h1ham3q23t}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - FI【付费推荐：https://tt.sbs/vip】
-      - "%�\x11�'��9�oyj�L\r�L%%�"
-      - AU【付费推荐：https://tt.sbs/vip】
-      - RU【付费推荐：https://tt.sbs/vip】
-      - US【付费推荐：https://tt.sbs/vip】
+      - 日本-4
+      - 新加坡_0130082
+      - 美国(TG频道@kxswa)
+      - JP【付费推荐：https://tt.sbs/vip】
+      - 欧洲(油管:破解资源君) 58
+      - 日本-5
+      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】 5"
+      - 美国 129
+      - 新加坡-2
       - CN【付费推荐：https://tt.sbs/vip】
-      - CN【付费推荐：https://tt.sbs/vip】 2
-      - "[01-28]-🇺🇸-美国-107-104.149.139.189"
-      - CN【付费推荐：https//tt.sbs/vip】 16
-      - CN【付费推荐：https//tt.sbs/vip】 7
-      - CN【付费推荐：https://tt.sbs/vip】 3
-      - HK【付费推荐：https://tt.sbs/vip】
-      - CN【付费推荐：https://tt.sbs/vip】 4
-      - CN【付费推荐：https//tt.sbs/vip】 3
-      - CN【付费推荐：https://tt.sbs/vip】 5
-      - 中国_01281616
-      - CN【付费推荐：https://tt.sbs/vip】 6
-      - CN【付费推荐：https://tt.sbs/vip】 7
-      - RU【付费推荐：https://tt.sbs/vip】 2
-      - CN【付费推荐：https//tt.sbs/vip】 11
-      - DE【付费推荐：https://tt.sbs/vip】
-      - 美国_01282004
-      - AU【付费推荐：https://tt.sbs/vip】 2
-      - CN【付费推荐：https//tt.sbs/vip】 8
-      - CN【付费推荐：https://tt.sbs/vip】 8
-      - github.com/freefq - 河南省洛阳市移动 12
-      - V2-高速节点-美国-3-G口
-      - US【付费推荐：https://tt.sbs/vip】 2
-      - V2-高速节点-香港-4-G口
-      - US【付费推荐：https://tt.sbs/vip】 3
-      - 俄罗斯(油管:破解资源君) 2
-      - 中国_01284316
-      - HK【付费推荐：https://tt.sbs/vip】 2
-      - US【付费推荐：https://tt.sbs/vip】 4
-      - VN【付费推荐：https://tt.sbs/vip】
-      - US【付费推荐：https://tt.sbs/vip】 5
-      - 美国 060 2
-      - V2-高速节点-美国-G口
-      - CN【付费推荐：https//tt.sbs/vip】 29
-      - 中国_01286525
-      - 美国_0128089
-      - HK【付费推荐：https://tt.sbs/vip】 3
-      - VN【付费推荐：https://tt.sbs/vip】 2
-      - mianfeifq 24
-      - V2-高速节点-北京
-      - CA【付费推荐：https://tt.sbs/vip】
-      - 新加坡_0128090
-      - V2-高速节点-英国.-G口
-      - 澳大利亚_0128118
-      - HK【付费推荐：https://tt.sbs/vip】 4
-      - 中国_01284299
-      - SG【付费推荐：https://tt.sbs/vip】
-      - V2-高速节点-美国z-G口
-      - 中国_0128095
-      - US_154.9.204.21_01272023824e-350s%�
-      - 美国 059
-      - CN【付费推荐：https://tt.sbs/vip】 9
+      - GB【付费推荐：https://tt.sbs/vip】
+      - 日本-3
+      - US【付费推荐：https://tt.sbs/vip】
+      - t.me/kutoproxy🇩🇪
+      - US_135.148.149.209_01292023bbc1-87trojan
+      - 美国 049
+      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】 3"
+      - 白嫖-0642
+      - 白嫖-0022
+      - GB【付费推荐：https://tt.sbs/vip】 2
+      - 印度(TG频道@kxswa)
+      - 亚洲(油管:破解资源君) 3
+      - 美国-3
+      - "日本(TG频道@kxswa)\r"
       - CN【付费推荐：https//tt.sbs/vip】
-      - US【付费推荐：https://tt.sbs/vip】 6
-      - 日本_0128157
+      - _TR_土耳其
+      - 中国_01305877
+      - FI【付费推荐：https://tt.sbs/vip】
+      - 美国_0130102
+      - 新加坡-1
+      - 香港-7
+      - 美国-1
+      - 德国_0130008
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - FI【付费推荐：https://tt.sbs/vip】
-      - "%�\x11�'��9�oyj�L\r�L%%�"
-      - AU【付费推荐：https://tt.sbs/vip】
-      - RU【付费推荐：https://tt.sbs/vip】
-      - US【付费推荐：https://tt.sbs/vip】
+      - 日本-4
+      - 新加坡_0130082
+      - 美国(TG频道@kxswa)
+      - JP【付费推荐：https://tt.sbs/vip】
+      - 欧洲(油管:破解资源君) 58
+      - 日本-5
+      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】 5"
+      - 美国 129
+      - 新加坡-2
       - CN【付费推荐：https://tt.sbs/vip】
-      - CN【付费推荐：https://tt.sbs/vip】 2
-      - "[01-28]-🇺🇸-美国-107-104.149.139.189"
-      - CN【付费推荐：https//tt.sbs/vip】 16
-      - CN【付费推荐：https//tt.sbs/vip】 7
-      - CN【付费推荐：https://tt.sbs/vip】 3
-      - HK【付费推荐：https://tt.sbs/vip】
-      - CN【付费推荐：https://tt.sbs/vip】 4
-      - CN【付费推荐：https//tt.sbs/vip】 3
-      - CN【付费推荐：https://tt.sbs/vip】 5
-      - 中国_01281616
-      - CN【付费推荐：https://tt.sbs/vip】 6
-      - CN【付费推荐：https://tt.sbs/vip】 7
-      - RU【付费推荐：https://tt.sbs/vip】 2
-      - CN【付费推荐：https//tt.sbs/vip】 11
-      - DE【付费推荐：https://tt.sbs/vip】
-      - 美国_01282004
-      - AU【付费推荐：https://tt.sbs/vip】 2
-      - CN【付费推荐：https//tt.sbs/vip】 8
-      - CN【付费推荐：https://tt.sbs/vip】 8
-      - github.com/freefq - 河南省洛阳市移动 12
-      - V2-高速节点-美国-3-G口
-      - US【付费推荐：https://tt.sbs/vip】 2
-      - V2-高速节点-香港-4-G口
-      - US【付费推荐：https://tt.sbs/vip】 3
-      - 俄罗斯(油管:破解资源君) 2
-      - 中国_01284316
-      - HK【付费推荐：https://tt.sbs/vip】 2
-      - US【付费推荐：https://tt.sbs/vip】 4
-      - VN【付费推荐：https://tt.sbs/vip】
-      - US【付费推荐：https://tt.sbs/vip】 5
-      - 美国 060 2
-      - V2-高速节点-美国-G口
-      - CN【付费推荐：https//tt.sbs/vip】 29
-      - 中国_01286525
-      - 美国_0128089
-      - HK【付费推荐：https://tt.sbs/vip】 3
-      - VN【付费推荐：https://tt.sbs/vip】 2
-      - mianfeifq 24
-      - V2-高速节点-北京
-      - CA【付费推荐：https://tt.sbs/vip】
-      - 新加坡_0128090
-      - V2-高速节点-英国.-G口
-      - 澳大利亚_0128118
-      - HK【付费推荐：https://tt.sbs/vip】 4
-      - 中国_01284299
-      - SG【付费推荐：https://tt.sbs/vip】
-      - V2-高速节点-美国z-G口
-      - 中国_0128095
-      - US_154.9.204.21_01272023824e-350s%�
-      - 美国 059
-      - CN【付费推荐：https://tt.sbs/vip】 9
+      - GB【付费推荐：https://tt.sbs/vip】
+      - 日本-3
+      - US【付费推荐：https://tt.sbs/vip】
+      - t.me/kutoproxy🇩🇪
+      - US_135.148.149.209_01292023bbc1-87trojan
+      - 美国 049
+      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】 3"
+      - 白嫖-0642
+      - 白嫖-0022
+      - GB【付费推荐：https://tt.sbs/vip】 2
+      - 印度(TG频道@kxswa)
+      - 亚洲(油管:破解资源君) 3
+      - 美国-3
+      - "日本(TG频道@kxswa)\r"
       - CN【付费推荐：https//tt.sbs/vip】
-      - US【付费推荐：https://tt.sbs/vip】 6
-      - 日本_0128157
+      - _TR_土耳其
+      - 中国_01305877
+      - FI【付费推荐：https://tt.sbs/vip】
+      - 美国_0130102
+      - 新加坡-1
+      - 香港-7
+      - 美国-1
+      - 德国_0130008
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - FI【付费推荐：https://tt.sbs/vip】
-      - "%�\x11�'��9�oyj�L\r�L%%�"
-      - AU【付费推荐：https://tt.sbs/vip】
-      - RU【付费推荐：https://tt.sbs/vip】
-      - US【付费推荐：https://tt.sbs/vip】
+      - 日本-4
+      - 新加坡_0130082
+      - 美国(TG频道@kxswa)
+      - JP【付费推荐：https://tt.sbs/vip】
+      - 欧洲(油管:破解资源君) 58
+      - 日本-5
+      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】 5"
+      - 美国 129
+      - 新加坡-2
       - CN【付费推荐：https://tt.sbs/vip】
-      - CN【付费推荐：https://tt.sbs/vip】 2
-      - "[01-28]-🇺🇸-美国-107-104.149.139.189"
-      - CN【付费推荐：https//tt.sbs/vip】 16
-      - CN【付费推荐：https//tt.sbs/vip】 7
-      - CN【付费推荐：https://tt.sbs/vip】 3
-      - HK【付费推荐：https://tt.sbs/vip】
-      - CN【付费推荐：https://tt.sbs/vip】 4
-      - CN【付费推荐：https//tt.sbs/vip】 3
-      - CN【付费推荐：https://tt.sbs/vip】 5
-      - 中国_01281616
-      - CN【付费推荐：https://tt.sbs/vip】 6
-      - CN【付费推荐：https://tt.sbs/vip】 7
-      - RU【付费推荐：https://tt.sbs/vip】 2
-      - CN【付费推荐：https//tt.sbs/vip】 11
-      - DE【付费推荐：https://tt.sbs/vip】
-      - 美国_01282004
-      - AU【付费推荐：https://tt.sbs/vip】 2
-      - CN【付费推荐：https//tt.sbs/vip】 8
-      - CN【付费推荐：https://tt.sbs/vip】 8
-      - github.com/freefq - 河南省洛阳市移动 12
-      - V2-高速节点-美国-3-G口
-      - US【付费推荐：https://tt.sbs/vip】 2
-      - V2-高速节点-香港-4-G口
-      - US【付费推荐：https://tt.sbs/vip】 3
-      - 俄罗斯(油管:破解资源君) 2
-      - 中国_01284316
-      - HK【付费推荐：https://tt.sbs/vip】 2
-      - US【付费推荐：https://tt.sbs/vip】 4
-      - VN【付费推荐：https://tt.sbs/vip】
-      - US【付费推荐：https://tt.sbs/vip】 5
-      - 美国 060 2
-      - V2-高速节点-美国-G口
-      - CN【付费推荐：https//tt.sbs/vip】 29
-      - 中国_01286525
-      - 美国_0128089
-      - HK【付费推荐：https://tt.sbs/vip】 3
-      - VN【付费推荐：https://tt.sbs/vip】 2
-      - mianfeifq 24
-      - V2-高速节点-北京
-      - CA【付费推荐：https://tt.sbs/vip】
-      - 新加坡_0128090
-      - V2-高速节点-英国.-G口
-      - 澳大利亚_0128118
-      - HK【付费推荐：https://tt.sbs/vip】 4
-      - 中国_01284299
-      - SG【付费推荐：https://tt.sbs/vip】
-      - V2-高速节点-美国z-G口
-      - 中国_0128095
-      - US_154.9.204.21_01272023824e-350s%�
-      - 美国 059
-      - CN【付费推荐：https://tt.sbs/vip】 9
+      - GB【付费推荐：https://tt.sbs/vip】
+      - 日本-3
+      - US【付费推荐：https://tt.sbs/vip】
+      - t.me/kutoproxy🇩🇪
+      - US_135.148.149.209_01292023bbc1-87trojan
+      - 美国 049
+      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】 3"
+      - 白嫖-0642
+      - 白嫖-0022
+      - GB【付费推荐：https://tt.sbs/vip】 2
+      - 印度(TG频道@kxswa)
+      - 亚洲(油管:破解资源君) 3
+      - 美国-3
+      - "日本(TG频道@kxswa)\r"
       - CN【付费推荐：https//tt.sbs/vip】
-      - US【付费推荐：https://tt.sbs/vip】 6
-      - 日本_0128157
+      - _TR_土耳其
+      - 中国_01305877
+      - FI【付费推荐：https://tt.sbs/vip】
+      - 美国_0130102
+      - 新加坡-1
+      - 香港-7
+      - 美国-1
+      - 德国_0130008
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -281,268 +173,160 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - FI【付费推荐：https://tt.sbs/vip】
-      - "%�\x11�'��9�oyj�L\r�L%%�"
-      - AU【付费推荐：https://tt.sbs/vip】
-      - RU【付费推荐：https://tt.sbs/vip】
-      - US【付费推荐：https://tt.sbs/vip】
+      - 日本-4
+      - 新加坡_0130082
+      - 美国(TG频道@kxswa)
+      - JP【付费推荐：https://tt.sbs/vip】
+      - 欧洲(油管:破解资源君) 58
+      - 日本-5
+      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】 5"
+      - 美国 129
+      - 新加坡-2
       - CN【付费推荐：https://tt.sbs/vip】
-      - CN【付费推荐：https://tt.sbs/vip】 2
-      - "[01-28]-🇺🇸-美国-107-104.149.139.189"
-      - CN【付费推荐：https//tt.sbs/vip】 16
-      - CN【付费推荐：https//tt.sbs/vip】 7
-      - CN【付费推荐：https://tt.sbs/vip】 3
-      - HK【付费推荐：https://tt.sbs/vip】
-      - CN【付费推荐：https://tt.sbs/vip】 4
-      - CN【付费推荐：https//tt.sbs/vip】 3
-      - CN【付费推荐：https://tt.sbs/vip】 5
-      - 中国_01281616
-      - CN【付费推荐：https://tt.sbs/vip】 6
-      - CN【付费推荐：https://tt.sbs/vip】 7
-      - RU【付费推荐：https://tt.sbs/vip】 2
-      - CN【付费推荐：https//tt.sbs/vip】 11
-      - DE【付费推荐：https://tt.sbs/vip】
-      - 美国_01282004
-      - AU【付费推荐：https://tt.sbs/vip】 2
-      - CN【付费推荐：https//tt.sbs/vip】 8
-      - CN【付费推荐：https://tt.sbs/vip】 8
-      - github.com/freefq - 河南省洛阳市移动 12
-      - V2-高速节点-美国-3-G口
-      - US【付费推荐：https://tt.sbs/vip】 2
-      - V2-高速节点-香港-4-G口
-      - US【付费推荐：https://tt.sbs/vip】 3
-      - 俄罗斯(油管:破解资源君) 2
-      - 中国_01284316
-      - HK【付费推荐：https://tt.sbs/vip】 2
-      - US【付费推荐：https://tt.sbs/vip】 4
-      - VN【付费推荐：https://tt.sbs/vip】
-      - US【付费推荐：https://tt.sbs/vip】 5
-      - 美国 060 2
-      - V2-高速节点-美国-G口
-      - CN【付费推荐：https//tt.sbs/vip】 29
-      - 中国_01286525
-      - 美国_0128089
-      - HK【付费推荐：https://tt.sbs/vip】 3
-      - VN【付费推荐：https://tt.sbs/vip】 2
-      - mianfeifq 24
-      - V2-高速节点-北京
-      - CA【付费推荐：https://tt.sbs/vip】
-      - 新加坡_0128090
-      - V2-高速节点-英国.-G口
-      - 澳大利亚_0128118
-      - HK【付费推荐：https://tt.sbs/vip】 4
-      - 中国_01284299
-      - SG【付费推荐：https://tt.sbs/vip】
-      - V2-高速节点-美国z-G口
-      - 中国_0128095
-      - US_154.9.204.21_01272023824e-350s%�
-      - 美国 059
-      - CN【付费推荐：https://tt.sbs/vip】 9
+      - GB【付费推荐：https://tt.sbs/vip】
+      - 日本-3
+      - US【付费推荐：https://tt.sbs/vip】
+      - t.me/kutoproxy🇩🇪
+      - US_135.148.149.209_01292023bbc1-87trojan
+      - 美国 049
+      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】 3"
+      - 白嫖-0642
+      - 白嫖-0022
+      - GB【付费推荐：https://tt.sbs/vip】 2
+      - 印度(TG频道@kxswa)
+      - 亚洲(油管:破解资源君) 3
+      - 美国-3
+      - "日本(TG频道@kxswa)\r"
       - CN【付费推荐：https//tt.sbs/vip】
-      - US【付费推荐：https://tt.sbs/vip】 6
-      - 日本_0128157
+      - _TR_土耳其
+      - 中国_01305877
+      - FI【付费推荐：https://tt.sbs/vip】
+      - 美国_0130102
+      - 新加坡-1
+      - 香港-7
+      - 美国-1
+      - 德国_0130008
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - V2-高速节点-香港-4-G口
+      - 香港-7
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - FI【付费推荐：https://tt.sbs/vip】
-      - "%�\x11�'��9�oyj�L\r�L%%�"
-      - AU【付费推荐：https://tt.sbs/vip】
-      - RU【付费推荐：https://tt.sbs/vip】
-      - US【付费推荐：https://tt.sbs/vip】
+      - 日本-4
+      - 新加坡_0130082
+      - 美国(TG频道@kxswa)
+      - JP【付费推荐：https://tt.sbs/vip】
+      - 欧洲(油管:破解资源君) 58
+      - 日本-5
+      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】 5"
+      - 美国 129
+      - 新加坡-2
       - CN【付费推荐：https://tt.sbs/vip】
-      - CN【付费推荐：https://tt.sbs/vip】 2
-      - "[01-28]-🇺🇸-美国-107-104.149.139.189"
-      - CN【付费推荐：https//tt.sbs/vip】 16
-      - CN【付费推荐：https//tt.sbs/vip】 7
-      - CN【付费推荐：https://tt.sbs/vip】 3
-      - HK【付费推荐：https://tt.sbs/vip】
-      - CN【付费推荐：https://tt.sbs/vip】 4
-      - CN【付费推荐：https//tt.sbs/vip】 3
-      - CN【付费推荐：https://tt.sbs/vip】 5
-      - 中国_01281616
-      - CN【付费推荐：https://tt.sbs/vip】 6
-      - CN【付费推荐：https://tt.sbs/vip】 7
-      - RU【付费推荐：https://tt.sbs/vip】 2
-      - CN【付费推荐：https//tt.sbs/vip】 11
-      - DE【付费推荐：https://tt.sbs/vip】
-      - 美国_01282004
-      - AU【付费推荐：https://tt.sbs/vip】 2
-      - CN【付费推荐：https//tt.sbs/vip】 8
-      - CN【付费推荐：https://tt.sbs/vip】 8
-      - github.com/freefq - 河南省洛阳市移动 12
-      - V2-高速节点-美国-3-G口
-      - US【付费推荐：https://tt.sbs/vip】 2
-      - V2-高速节点-香港-4-G口
-      - US【付费推荐：https://tt.sbs/vip】 3
-      - 俄罗斯(油管:破解资源君) 2
-      - 中国_01284316
-      - HK【付费推荐：https://tt.sbs/vip】 2
-      - US【付费推荐：https://tt.sbs/vip】 4
-      - VN【付费推荐：https://tt.sbs/vip】
-      - US【付费推荐：https://tt.sbs/vip】 5
-      - 美国 060 2
-      - V2-高速节点-美国-G口
-      - CN【付费推荐：https//tt.sbs/vip】 29
-      - 中国_01286525
-      - 美国_0128089
-      - HK【付费推荐：https://tt.sbs/vip】 3
-      - VN【付费推荐：https://tt.sbs/vip】 2
-      - mianfeifq 24
-      - V2-高速节点-北京
-      - CA【付费推荐：https://tt.sbs/vip】
-      - 新加坡_0128090
-      - V2-高速节点-英国.-G口
-      - 澳大利亚_0128118
-      - HK【付费推荐：https://tt.sbs/vip】 4
-      - 中国_01284299
-      - SG【付费推荐：https://tt.sbs/vip】
-      - V2-高速节点-美国z-G口
-      - 中国_0128095
-      - US_154.9.204.21_01272023824e-350s%�
-      - 美国 059
-      - CN【付费推荐：https://tt.sbs/vip】 9
+      - GB【付费推荐：https://tt.sbs/vip】
+      - 日本-3
+      - US【付费推荐：https://tt.sbs/vip】
+      - t.me/kutoproxy🇩🇪
+      - US_135.148.149.209_01292023bbc1-87trojan
+      - 美国 049
+      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】 3"
+      - 白嫖-0642
+      - 白嫖-0022
+      - GB【付费推荐：https://tt.sbs/vip】 2
+      - 印度(TG频道@kxswa)
+      - 亚洲(油管:破解资源君) 3
+      - 美国-3
+      - "日本(TG频道@kxswa)\r"
       - CN【付费推荐：https//tt.sbs/vip】
-      - US【付费推荐：https://tt.sbs/vip】 6
-      - 日本_0128157
+      - _TR_土耳其
+      - 中国_01305877
+      - FI【付费推荐：https://tt.sbs/vip】
+      - 美国_0130102
+      - 新加坡-1
+      - 香港-7
+      - 美国-1
+      - 德国_0130008
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - FI【付费推荐：https://tt.sbs/vip】
-      - "%�\x11�'��9�oyj�L\r�L%%�"
-      - AU【付费推荐：https://tt.sbs/vip】
-      - RU【付费推荐：https://tt.sbs/vip】
-      - US【付费推荐：https://tt.sbs/vip】
+      - 日本-4
+      - 新加坡_0130082
+      - 美国(TG频道@kxswa)
+      - JP【付费推荐：https://tt.sbs/vip】
+      - 欧洲(油管:破解资源君) 58
+      - 日本-5
+      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】 5"
+      - 美国 129
+      - 新加坡-2
       - CN【付费推荐：https://tt.sbs/vip】
-      - CN【付费推荐：https://tt.sbs/vip】 2
-      - "[01-28]-🇺🇸-美国-107-104.149.139.189"
-      - CN【付费推荐：https//tt.sbs/vip】 16
-      - CN【付费推荐：https//tt.sbs/vip】 7
-      - CN【付费推荐：https://tt.sbs/vip】 3
-      - HK【付费推荐：https://tt.sbs/vip】
-      - CN【付费推荐：https://tt.sbs/vip】 4
-      - CN【付费推荐：https//tt.sbs/vip】 3
-      - CN【付费推荐：https://tt.sbs/vip】 5
-      - 中国_01281616
-      - CN【付费推荐：https://tt.sbs/vip】 6
-      - CN【付费推荐：https://tt.sbs/vip】 7
-      - RU【付费推荐：https://tt.sbs/vip】 2
-      - CN【付费推荐：https//tt.sbs/vip】 11
-      - DE【付费推荐：https://tt.sbs/vip】
-      - 美国_01282004
-      - AU【付费推荐：https://tt.sbs/vip】 2
-      - CN【付费推荐：https//tt.sbs/vip】 8
-      - CN【付费推荐：https://tt.sbs/vip】 8
-      - github.com/freefq - 河南省洛阳市移动 12
-      - V2-高速节点-美国-3-G口
-      - US【付费推荐：https://tt.sbs/vip】 2
-      - V2-高速节点-香港-4-G口
-      - US【付费推荐：https://tt.sbs/vip】 3
-      - 俄罗斯(油管:破解资源君) 2
-      - 中国_01284316
-      - HK【付费推荐：https://tt.sbs/vip】 2
-      - US【付费推荐：https://tt.sbs/vip】 4
-      - VN【付费推荐：https://tt.sbs/vip】
-      - US【付费推荐：https://tt.sbs/vip】 5
-      - 美国 060 2
-      - V2-高速节点-美国-G口
-      - CN【付费推荐：https//tt.sbs/vip】 29
-      - 中国_01286525
-      - 美国_0128089
-      - HK【付费推荐：https://tt.sbs/vip】 3
-      - VN【付费推荐：https://tt.sbs/vip】 2
-      - mianfeifq 24
-      - V2-高速节点-北京
-      - CA【付费推荐：https://tt.sbs/vip】
-      - 新加坡_0128090
-      - V2-高速节点-英国.-G口
-      - 澳大利亚_0128118
-      - HK【付费推荐：https://tt.sbs/vip】 4
-      - 中国_01284299
-      - SG【付费推荐：https://tt.sbs/vip】
-      - V2-高速节点-美国z-G口
-      - 中国_0128095
-      - US_154.9.204.21_01272023824e-350s%�
-      - 美国 059
-      - CN【付费推荐：https://tt.sbs/vip】 9
+      - GB【付费推荐：https://tt.sbs/vip】
+      - 日本-3
+      - US【付费推荐：https://tt.sbs/vip】
+      - t.me/kutoproxy🇩🇪
+      - US_135.148.149.209_01292023bbc1-87trojan
+      - 美国 049
+      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】 3"
+      - 白嫖-0642
+      - 白嫖-0022
+      - GB【付费推荐：https://tt.sbs/vip】 2
+      - 印度(TG频道@kxswa)
+      - 亚洲(油管:破解资源君) 3
+      - 美国-3
+      - "日本(TG频道@kxswa)\r"
       - CN【付费推荐：https//tt.sbs/vip】
-      - US【付费推荐：https://tt.sbs/vip】 6
-      - 日本_0128157
+      - _TR_土耳其
+      - 中国_01305877
+      - FI【付费推荐：https://tt.sbs/vip】
+      - 美国_0130102
+      - 新加坡-1
+      - 香港-7
+      - 美国-1
+      - 德国_0130008
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - FI【付费推荐：https://tt.sbs/vip】
-      - "%�\x11�'��9�oyj�L\r�L%%�"
-      - AU【付费推荐：https://tt.sbs/vip】
-      - RU【付费推荐：https://tt.sbs/vip】
-      - US【付费推荐：https://tt.sbs/vip】
+      - 日本-4
+      - 新加坡_0130082
+      - 美国(TG频道@kxswa)
+      - JP【付费推荐：https://tt.sbs/vip】
+      - 欧洲(油管:破解资源君) 58
+      - 日本-5
+      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】 5"
+      - 美国 129
+      - 新加坡-2
       - CN【付费推荐：https://tt.sbs/vip】
-      - CN【付费推荐：https://tt.sbs/vip】 2
-      - "[01-28]-🇺🇸-美国-107-104.149.139.189"
-      - CN【付费推荐：https//tt.sbs/vip】 16
-      - CN【付费推荐：https//tt.sbs/vip】 7
-      - CN【付费推荐：https://tt.sbs/vip】 3
-      - HK【付费推荐：https://tt.sbs/vip】
-      - CN【付费推荐：https://tt.sbs/vip】 4
-      - CN【付费推荐：https//tt.sbs/vip】 3
-      - CN【付费推荐：https://tt.sbs/vip】 5
-      - 中国_01281616
-      - CN【付费推荐：https://tt.sbs/vip】 6
-      - CN【付费推荐：https://tt.sbs/vip】 7
-      - RU【付费推荐：https://tt.sbs/vip】 2
-      - CN【付费推荐：https//tt.sbs/vip】 11
-      - DE【付费推荐：https://tt.sbs/vip】
-      - 美国_01282004
-      - AU【付费推荐：https://tt.sbs/vip】 2
-      - CN【付费推荐：https//tt.sbs/vip】 8
-      - CN【付费推荐：https://tt.sbs/vip】 8
-      - github.com/freefq - 河南省洛阳市移动 12
-      - V2-高速节点-美国-3-G口
-      - US【付费推荐：https://tt.sbs/vip】 2
-      - V2-高速节点-香港-4-G口
-      - US【付费推荐：https://tt.sbs/vip】 3
-      - 俄罗斯(油管:破解资源君) 2
-      - 中国_01284316
-      - HK【付费推荐：https://tt.sbs/vip】 2
-      - US【付费推荐：https://tt.sbs/vip】 4
-      - VN【付费推荐：https://tt.sbs/vip】
-      - US【付费推荐：https://tt.sbs/vip】 5
-      - 美国 060 2
-      - V2-高速节点-美国-G口
-      - CN【付费推荐：https//tt.sbs/vip】 29
-      - 中国_01286525
-      - 美国_0128089
-      - HK【付费推荐：https://tt.sbs/vip】 3
-      - VN【付费推荐：https://tt.sbs/vip】 2
-      - mianfeifq 24
-      - V2-高速节点-北京
-      - CA【付费推荐：https://tt.sbs/vip】
-      - 新加坡_0128090
-      - V2-高速节点-英国.-G口
-      - 澳大利亚_0128118
-      - HK【付费推荐：https://tt.sbs/vip】 4
-      - 中国_01284299
-      - SG【付费推荐：https://tt.sbs/vip】
-      - V2-高速节点-美国z-G口
-      - 中国_0128095
-      - US_154.9.204.21_01272023824e-350s%�
-      - 美国 059
-      - CN【付费推荐：https://tt.sbs/vip】 9
+      - GB【付费推荐：https://tt.sbs/vip】
+      - 日本-3
+      - US【付费推荐：https://tt.sbs/vip】
+      - t.me/kutoproxy🇩🇪
+      - US_135.148.149.209_01292023bbc1-87trojan
+      - 美国 049
+      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】 3"
+      - 白嫖-0642
+      - 白嫖-0022
+      - GB【付费推荐：https://tt.sbs/vip】 2
+      - 印度(TG频道@kxswa)
+      - 亚洲(油管:破解资源君) 3
+      - 美国-3
+      - "日本(TG频道@kxswa)\r"
       - CN【付费推荐：https//tt.sbs/vip】
-      - US【付费推荐：https://tt.sbs/vip】 6
-      - 日本_0128157
+      - _TR_土耳其
+      - 中国_01305877
+      - FI【付费推荐：https://tt.sbs/vip】
+      - 美国_0130102
+      - 新加坡-1
+      - 香港-7
+      - 美国-1
+      - 德国_0130008
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -558,66 +342,39 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - FI【付费推荐：https://tt.sbs/vip】
-      - "%�\x11�'��9�oyj�L\r�L%%�"
-      - AU【付费推荐：https://tt.sbs/vip】
-      - RU【付费推荐：https://tt.sbs/vip】
-      - US【付费推荐：https://tt.sbs/vip】
+      - 日本-4
+      - 新加坡_0130082
+      - 美国(TG频道@kxswa)
+      - JP【付费推荐：https://tt.sbs/vip】
+      - 欧洲(油管:破解资源君) 58
+      - 日本-5
+      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】 5"
+      - 美国 129
+      - 新加坡-2
       - CN【付费推荐：https://tt.sbs/vip】
-      - CN【付费推荐：https://tt.sbs/vip】 2
-      - "[01-28]-🇺🇸-美国-107-104.149.139.189"
-      - CN【付费推荐：https//tt.sbs/vip】 16
-      - CN【付费推荐：https//tt.sbs/vip】 7
-      - CN【付费推荐：https://tt.sbs/vip】 3
-      - HK【付费推荐：https://tt.sbs/vip】
-      - CN【付费推荐：https://tt.sbs/vip】 4
-      - CN【付费推荐：https//tt.sbs/vip】 3
-      - CN【付费推荐：https://tt.sbs/vip】 5
-      - 中国_01281616
-      - CN【付费推荐：https://tt.sbs/vip】 6
-      - CN【付费推荐：https://tt.sbs/vip】 7
-      - RU【付费推荐：https://tt.sbs/vip】 2
-      - CN【付费推荐：https//tt.sbs/vip】 11
-      - DE【付费推荐：https://tt.sbs/vip】
-      - 美国_01282004
-      - AU【付费推荐：https://tt.sbs/vip】 2
-      - CN【付费推荐：https//tt.sbs/vip】 8
-      - CN【付费推荐：https://tt.sbs/vip】 8
-      - github.com/freefq - 河南省洛阳市移动 12
-      - V2-高速节点-美国-3-G口
-      - US【付费推荐：https://tt.sbs/vip】 2
-      - V2-高速节点-香港-4-G口
-      - US【付费推荐：https://tt.sbs/vip】 3
-      - 俄罗斯(油管:破解资源君) 2
-      - 中国_01284316
-      - HK【付费推荐：https://tt.sbs/vip】 2
-      - US【付费推荐：https://tt.sbs/vip】 4
-      - VN【付费推荐：https://tt.sbs/vip】
-      - US【付费推荐：https://tt.sbs/vip】 5
-      - 美国 060 2
-      - V2-高速节点-美国-G口
-      - CN【付费推荐：https//tt.sbs/vip】 29
-      - 中国_01286525
-      - 美国_0128089
-      - HK【付费推荐：https://tt.sbs/vip】 3
-      - VN【付费推荐：https://tt.sbs/vip】 2
-      - mianfeifq 24
-      - V2-高速节点-北京
-      - CA【付费推荐：https://tt.sbs/vip】
-      - 新加坡_0128090
-      - V2-高速节点-英国.-G口
-      - 澳大利亚_0128118
-      - HK【付费推荐：https://tt.sbs/vip】 4
-      - 中国_01284299
-      - SG【付费推荐：https://tt.sbs/vip】
-      - V2-高速节点-美国z-G口
-      - 中国_0128095
-      - US_154.9.204.21_01272023824e-350s%�
-      - 美国 059
-      - CN【付费推荐：https://tt.sbs/vip】 9
+      - GB【付费推荐：https://tt.sbs/vip】
+      - 日本-3
+      - US【付费推荐：https://tt.sbs/vip】
+      - t.me/kutoproxy🇩🇪
+      - US_135.148.149.209_01292023bbc1-87trojan
+      - 美国 049
+      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】 3"
+      - 白嫖-0642
+      - 白嫖-0022
+      - GB【付费推荐：https://tt.sbs/vip】 2
+      - 印度(TG频道@kxswa)
+      - 亚洲(油管:破解资源君) 3
+      - 美国-3
+      - "日本(TG频道@kxswa)\r"
       - CN【付费推荐：https//tt.sbs/vip】
-      - US【付费推荐：https://tt.sbs/vip】 6
-      - 日本_0128157
+      - _TR_土耳其
+      - 中国_01305877
+      - FI【付费推荐：https://tt.sbs/vip】
+      - 美国_0130102
+      - 新加坡-1
+      - 香港-7
+      - 美国-1
+      - 德国_0130008
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
