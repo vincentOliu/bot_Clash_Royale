@@ -6,319 +6,467 @@ mode: Rule
 log-level: info
 external-controller: 9090
 proxies:
-  - {name: 新加坡 001, server: zf.622888.xyz, port: 211, type: vmess, uuid: 203eb0ba-af18-4312-8a07-259211cbaa03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: zf.622888.xyz}}, udp: true}
-  - {name: _DE_德国, server: vde2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vde2.0bad.com}}, udp: true}
-  - {name: 美国 025, server: hk80-2.sanfen001.pics, port: 80, type: vmess, uuid: 3c34f264-6d9c-4234-b1da-3b84f183a931, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn/, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: 美国 030, server: jp80-4.sanfen001.pics, port: 80, type: vmess, uuid: 3c34f264-6d9c-4234-b1da-3b84f183a931, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: 澳大利亚 006, server: vip.moonnas.cn, port: 21194, type: vmess, uuid: 99bd585f-8360-40b0-d129-3e144b26d999, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: vip.moonnas.cn}}, udp: true}
-  - {name: 日本_0131019, server: jp-04.wxfz.ml, port: 80, type: vmess, uuid: a0733fc9-457e-498d-c363-9ec774a74948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jun, headers: {Host: jp-04.wxfz.ml}}, udp: true}
-  - {name: v2rayfree.eu.org - 澳大利亚  31, server: 140.83.86.129, port: 80, type: vmess, uuid: 8700cfbd-71dc-42b0-84f2-53cd7fe5645b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 美国 020, server: cooing-luxuriant-blue.glitch.me, port: 443, type: vmess, uuid: 80e7dd59-b1fc-45a0-98be-1478a9af89f2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /api, headers: {Host: cooing-luxuriant-blue.glitch.me}}, udp: true}
-  - {name: _油管：全网最强白嫖, server: ingress-i2.iivvppnn.info, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: v2rayfree.eu.org - 俄罗斯  19, server: v2ray30daybot.irancaptial.com, port: 80, type: vmess, uuid: 7f3b5829-f9bb-4646-8c54-20fc754a7efa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: bmi.ir}}, udp: true}
-  - {name: "[VMess] 🇸🇬 SG【付费推荐：https://tt.sbs/vip】", server: 15.235.147.186, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sshkit/Ertusg86/635014638c264/}, udp: true}
-  - {name: "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】 2", server: data-hk-v2.shwjfkw.cn, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: data-hk-v2.shwjfkw.cn}}, udp: true}
-  - {name: "[VMess] 🇦🇺 AU【付费推荐：https://tt.sbs/vip】", server: 3.24.103.195, port: 80, type: vmess, uuid: aeaf057e-95d3-437a-ec94-307d1ad54c17, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cek12, headers: {Host: 3.24.103.195}}, udp: true}
-  - {name: _GB_英国_2, server: vtors43.net2vip.com, port: 33018, type: vmess, uuid: 259f345d-617e-4cfb-a9fa-57d3dc244288, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: vtors43.net2vip.com}}, udp: true}
-  - {name: 欧洲(油管破解资源君) 38, server: vde1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vde1.0bad.com}}, udp: true}
-  - {name: 欧洲(油管破解资源君) 42, server: 15.235.147.186, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sshkit/Ertusg86/635014638c264/, headers: {Host: 15.235.147.186}}, udp: true}
-  - {name: 新加坡(油管破解资源君) 2, server: us-01.wxfz.ml, port: 25815, type: vmess, uuid: 254a9c81-a355-4df2-9f2f-03f92bdcfefc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-01.wxfz.ml}}, udp: true}
-  - {name: 香港_0131099, server: hkbn03.tizi1.net, port: 443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: hkbn03.tizi1.net}}, udp: true}
-  - {name: JP(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技 2, server: jp-amd1.018999.xyz, port: 443, type: vmess, uuid: 65e619e7-0bf1-4f5b-a390-5735b01a3713, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /65e619e7-0bf1-4f5b-a390-5735b01a3713, headers: {Host: jp-amd1.018999.xyz}}, udp: true}
-  - {name: 澳大利亚 004, server: xg1.htvviru.top, port: 3674, type: vmess, uuid: 3d81e6fb-c7f0-4791-af2e-82c93d149483, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: xg1.htvviru.top}}, udp: true}
-  - {name: 澳大利亚 005, server: kr-05.wxfz.ml, port: 48413, type: vmess, uuid: a06748d4-7669-49dd-dd1a-25d73471a051, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /1234, headers: {Host: a.duoyouduo.tk}}, udp: true}
-  - {name: 美国 026, server: sg-1.018999.xyz, port: 443, type: vmess, uuid: 384d38a9-c8e4-4a27-e49e-72454c798d85, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /384d38a9-c8e4-4a27-e49e-72454c798d85, headers: {Host: sg-1.018999.xyz}}, udp: true}
-  - {name: 美国-G口-161, server: 66.152.188.161, port: 80, type: vmess, uuid: c66edc1c-639d-45b8-9818-13e86f4e1c5f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 美国G-CN2-8080, server: 155.94.179.233, port: 8080, type: vmess, uuid: c66edc1c-639d-45b8-9818-13e86f4e1c5f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.189.cn}}, udp: true}
-  - {name: 立陶宛流媒体解锁, server: 77.83.254.118, port: 80, type: vmess, uuid: c66edc1c-639d-45b8-9818-13e86f4e1c5f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.189.cn}}, udp: true}
-  - {name: _KR_韩国 2 3, server: 1.yueguang.group, port: 15380, type: vmess, uuid: 98ec93c7-fe53-4449-b397-aa1ff99dd33e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 1.yueguang.group}}, udp: true}
-  - {name: 俄罗斯 003, server: v2ray30daybot.irancaptial.com, port: 80, type: vmess, uuid: 7f3b5829-f9bb-4646-8c54-20fc754a7efa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v2ray30daybot.irancaptial.com}}, udp: true}
-  - {name: _油管：全网最强白嫖 2, server: in-jp-1.iivvppnn.info, port: 38301, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: 香港(TG频道@kxswa), server: zebra2.2022.2025.mlinuu.top, port: 4503, type: vmess, uuid: a29229f6-2fc5-3a1d-889b-cf6a2bdebf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】", server: 111.45.22.239, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管破解资源君) 64, server: 111.45.22.239, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 捷克 001, server: zebra2.2022.2025.mlinuu.top, port: 4503, type: vmess, uuid: a29229f6-2fc5-3a1d-889b-cf6a2bdebf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 巴西 002, server: www.kuromi.eu.org, port: 33421, type: vmess, uuid: 94e56ff9-ccf1-414e-a114-46e0a79f6614, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN【付费推荐：https://tt.sbs/vip】, server: 111.45.22.239, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 普通|AU|Sydney_0113_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技5, server: z0113.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
+  - {name: 韩国_0202202, server: kr-01.wxfz.ml, port: 80, type: vmess, uuid: 2bf8cebf-7911-4c25-b0a4-b642a5bdd4d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: kr-01.wxfz.ml}}, udp: true}
+  - {name: 俄罗斯 002, server: 185.143.220.25, port: 443, type: vmess, uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /6e9EtZ2dL, headers: {Host: dengxin.one}}, udp: true}
   - {name: "IPLC专线｜冀港[2.0][原生][Disney+](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技7", server: iplc-ji.mielink-dns2.com, port: 668, type: ssr, cipher: rc4-md5, password: miejump.com, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 84517:0d4926a0-9881-3609-b6ee-4716da84e59e, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: "IPLC专线｜沪港[2.0](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技4", server: iplc-hu.mielink-dns2.com, port: 668, type: ssr, cipher: rc4-md5, password: miejump.com, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 84517:0d4926a0-9881-3609-b6ee-4716da84e59e, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 普通|SE|Stockholm_0117_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技2, server: z0117.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
-  - {name: US_youtube@资源分享师_99, server: 104.149.155.13, port: 443, type: trojan, password: 79c935c0-27dc-4383-b307-dcac1b8e5509, sni: vzwzasc.cn, skip-cert-verify: true, udp: true}
-  - {name: 美国 013, server: kaizen-us-9.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: "|46.28Mb", server: 103.103.245.125, port: 50206, type: trojan, password: 789d73af-b985-4778-9872-211047c28015, skip-cert-verify: true, udp: true}
-  - {name: 美国 014, server: kaizen-us-10.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管破解资源君) 34, server: content-provider4.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: shefelnak, sni: content-provider4.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
-  - {name: 美国 015, server: kaizen-us-4.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: 菲律宾 001, server: special-ph-a.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: 美国 036, server: kaizen-kr-2.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: 法国 001, server: de1.trojan-lite.com, port: 443, type: trojan, password: bs6KJkPBW9MP74uHEa, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管破解资源君) 30, server: 135.148.149.209, port: 80, type: trojan, password: 255c924c-1314-4084-9a9e-1d1a82a5cf49, sni: us2.trojanvh.xyz, skip-cert-verify: true, udp: true}
-  - {name: 英国 001, server: 88.150.137.177, port: 443, type: trojan, password: shefelnak, sni: content-provider4.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 001, server: kaizen-ru-1.mielink-dns2.com, port: 443, type: trojan, password: 1af287d5-2f03-30b5-a2b9-c67a0a727770mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: 美国 018, server: kaizen-us-7.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: "|63.12Mb", server: 103.103.245.125, port: 50350, type: trojan, password: 006bca8c-4e1f-44e0-9399-1cd4ff480a40, skip-cert-verify: true, udp: true}
-  - {name: 美国 031, server: kaizen-jp-4.mielink-dns2.com, port: 443, type: trojan, password: 1af287d5-2f03-30b5-a2b9-c67a0a727770mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: 荷兰 002, server: kaizen-ru-2.mielink-dns2.com, port: 443, type: trojan, password: 1af287d5-2f03-30b5-a2b9-c67a0a727770mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: 荷兰 003, server: zhilian-th-a.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: 斯洛伐克 001, server: sk.abadanvpn.host, port: 443, type: trojan, password: 8099cb0f-d19d-4252-af27-1527c00b64c5, skip-cert-verify: true, udp: true}
-  - {name: 美国 017, server: kaizen-us-8.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: 美国-4, server: 148.59.74.186, port: 443, type: trojan, password: 0469291f-33cf-4909-aac2-265c22fe9e1e, sni: pcd462233.netvigator.com, skip-cert-verify: true, udp: true}
-  - {name: 美国-3, server: 148.59.74.184, port: 443, type: trojan, password: 0469291f-33cf-4909-aac2-265c22fe9e1e, sni: pcd462233.netvigator.com, skip-cert-verify: true, udp: true}
-  - {name: v2rayfree.eu.org - 美国  28, server: us2.trojanvh.xyz, port: 80, type: trojan, password: 255c924c-1314-4084-9a9e-1d1a82a5cf49, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 四川省成都市移动 54, server: ydsichuan01.bpzhuanfa.com, port: 53698, type: ss, cipher: aes-256-gcm, password: 33497afb-9266-40cc-b75b-79256eb4965e, udp: true}
-  - {name: 美国-2, server: 148.59.74.185, port: 443, type: trojan, password: 0469291f-33cf-4909-aac2-265c22fe9e1e, sni: pcd462233.netvigator.com, skip-cert-verify: true, udp: true}
-  - {name: 美国 049, server: 138.2.45.89, port: 44301, type: trojan, password: 6d64570c-81d4-30fa-b2e2-dce73e1a2702, sni: osav101.jd0001.top, skip-cert-verify: true, udp: true}
-  - {name: 美国 021, server: kaizen-us-5.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯 001, server: kaizen-ru-1.mielink-dns2.com, port: 443, type: trojan, password: 0d4926a0-9881-3609-b6ee-4716da84e59emielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: 荷兰 003, server: kaizen-ru-2.mielink-dns2.com, port: 443, type: trojan, password: 0d4926a0-9881-3609-b6ee-4716da84e59emielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 001, server: dl-sg5.efyunpan.com, port: 443, type: trojan, password: 9b8250da-6dee-4ab9-b989-52d5c652a1b6, sni: data-sg.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 上海市联通 3, server: 223.167.41.68, port: 63078, type: vmess, uuid: 17b0db9e-2c8a-3c36-a65c-48d7c5a66425, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk-balancer.airport-v2.com}}, udp: true}
+  - {name: 荷兰 002, server: 130.162.32.137, port: 59630, type: vmess, uuid: 6347a935-60c0-4b4d-d2d9-2d3f3b73f970, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 中国_02024726, server: 36.156.102.166, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 中国(TG频道@kxswa), server: hn.xiaohouzi.club, port: 14185, type: trojan, password: f52e6827-d087-3fd0-9c66-ef87874c69ba, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: "| 4.30Mb", server: 43-153-34-170.ipv4.rush.ml, port: 8443, type: trojan, password: cf4295378e209e70d12c5bdd017144dfd1c772d3, skip-cert-verify: true, udp: true}
-  - {name: "| 0.03Mb", server: 43-154-228-196.ipv4.rush.ml, port: 8443, type: trojan, password: cf4295378e209e70d12c5bdd017144dfd1c772d3, skip-cert-verify: true, udp: true}
-  - {name: smtp.lemail.cloud:443, server: smtp.lemail.cloud, port: 443, type: trojan, password: 392f8755-75e7-481e-927e-0f3aae34234e, skip-cert-verify: true, udp: true}
-  - {name: "|68.99Mb", server: 103.103.245.125, port: 50418, type: trojan, password: a70b39d1-62ea-4d9e-b681-9c5408352234, skip-cert-verify: true, udp: true}
-  - {name: "[Trojan] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】", server: hnm.xiaohouzi.club, port: 19362, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: aws-hk03.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 美国 035, server: kaizen-kr-1.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: 美国 131, server: 173.82.240.199, port: 44301, type: trojan, password: 6d64570c-81d4-30fa-b2e2-dce73e1a2702, sni: lav002.jd0001.top, skip-cert-verify: true, udp: true}
-  - {name: "YW(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技\r", server: kaizen-tw-4.mielink-dns2.com, port: 443, type: trojan, password: 0d4926a0-9881-3609-b6ee-4716da84e59emielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: "香港HKT|防失联直连|1x\r", server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: 372688e0-d18f-4243-b684-2e1a3d7b1c7c, sni: dc3-download.windowsupdate1.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 063, server: kaizen-kr-2.mielink-dns2.com, port: 443, type: trojan, password: 0d4926a0-9881-3609-b6ee-4716da84e59emielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_99, server: 104.149.155.13, port: 443, type: trojan, password: 79c935c0-27dc-4383-b307-dcac1b8e5509, sni: vzwzasc.cn, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管破解资源君) 6, server: 88.150.137.177, port: 443, type: trojan, password: shefelnak, sni: content-provider4.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡_0202009, server: 15.235.147.186, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sshkit/Ertusg86/635014638c264/, headers: {Host: 15.235.147.186}}, udp: true}
+  - {name: _HK_香港, server: 103.103.245.125, port: 50206, type: trojan, password: 789d73af-b985-4778-9872-211047c28015, skip-cert-verify: true, udp: true}
+  - {name: _油管：全网最强白嫖, server: ingress-i2.iivvppnn.info, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
+  - {name: 菲律宾 001, server: special-ph-a.mielink-dns2.com, port: 443, type: trojan, password: 0d4926a0-9881-3609-b6ee-4716da84e59emielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: 德国_0202027, server: 89.163.213.20, port: 80, type: vmess, uuid: 5668ff97-631f-4602-a13f-b56552c67abe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: 日本 01, server: 36.156.222.25, port: 32986, type: ssr, cipher: chacha20-ietf, password: zztw9jk7gu, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 6181:m9oDIc, obfs-param: e5ab06181.microsoft.com, udp: true}
+  - {name: _HK_香港 2, server: 103.103.245.125, port: 50350, type: trojan, password: 006bca8c-4e1f-44e0-9399-1cd4ff480a40, skip-cert-verify: true, udp: true}
+  - {name: 美国 023, server: dl-hk2.efyunpan.com, port: 443, type: trojan, password: 9b8250da-6dee-4ab9-b989-52d5c652a1b6, sni: data-hk.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 中国-291.8KB/s(Youtube:不良林), server: fd2cd9tyhu4w.b4s02m25.xyz, port: 47005, type: vmess, uuid: 077f1ef4-b2bd-37cb-900d-728cd84493b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 012, server: kaizen-us-9.mielink-dns2.com, port: 443, type: trojan, password: 0d4926a0-9881-3609-b6ee-4716da84e59emielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 014, server: kaizen-us-10.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: 中国-7.21MB/s(Youtube:不良林), server: md25ufcmgr83.b4s02m25.xyz, port: 11301, type: vmess, uuid: 077f1ef4-b2bd-37cb-900d-728cd84493b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 022, server: dl-hk5.efyunpan.com, port: 443, type: trojan, password: 9b8250da-6dee-4ab9-b989-52d5c652a1b6, sni: data-hk.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: "IPLC专线｜沪港[2.0](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技4", server: iplc-hu.mielink-dns2.com, port: 668, type: ssr, cipher: rc4-md5, password: miejump.com, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 84517:0d4926a0-9881-3609-b6ee-4716da84e59e, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 中国-646.4KB/s(Youtube:不良林), server: fd2cd9tyhu4w.b4s02m25.xyz, port: 47101, type: vmess, uuid: 077f1ef4-b2bd-37cb-900d-728cd84493b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 022 2, server: kaizen-us-10.mielink-dns2.com, port: 443, type: trojan, password: 1af287d5-2f03-30b5-a2b9-c67a0a727770mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: HK(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技, server: 117.28.245.196, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 美国(油管破解资源君) 30, server: 135.148.149.209, port: 80, type: trojan, password: 255c924c-1314-4084-9a9e-1d1a82a5cf49, sni: us2.trojanvh.xyz, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君) 26, server: au-ls03.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: au-ls03.nb1.fr}}, udp: true}
+  - {name: 欧洲(油管破解资源君) 64, server: 111.45.22.239, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_02022067, server: 103.45.78.195, port: 10004, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国-1.19MB/s(Youtube:不良林), server: fd2cd9tyhu4w.b4s02m25.xyz, port: 47105, type: vmess, uuid: 077f1ef4-b2bd-37cb-900d-728cd84493b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _HK_香港 3, server: 103.103.245.125, port: 50418, type: trojan, password: a70b39d1-62ea-4d9e-b681-9c5408352234, skip-cert-verify: true, udp: true}
+  - {name: 波兰_0202005, server: 77.91.102.27, port: 2082, type: vmess, uuid: f32ddc47-ff49-4756-9e93-240a670831ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:), server: de-v.sshmax.xyz, port: 80, type: vmess, uuid: 5668ff97-631f-4602-a13f-b56552c67abe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: de-v.sshmax.xyz}}, udp: true}
+  - {name: 中国_02024726 2, server: 36.156.102.166, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 荷兰 002 2, server: kaizen-ru-2.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 020, server: kaizen-us-7.mielink-dns2.com, port: 443, type: trojan, password: 0d4926a0-9881-3609-b6ee-4716da84e59emielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: 【直连】狮城 - 亚马逊 - 3, server: 003.AP.POP.node-for-smallairport.win, port: 22356, type: vmess, uuid: cd0e1cd4-9aac-41df-9746-4d76182c8009, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 003.AP.POP.node-for-smallairport.win}}, udp: true}
+  - {name: 美国 017, server: kaizen-us-8.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: 法国 001, server: de1.trojan-lite.com, port: 443, type: trojan, password: bs6KJkPBW9MP74uHEa, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君) 15, server: 111.45.22.239, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 016, server: 104.149.155.13, port: 443, type: trojan, password: 17c412d9-f283-483c-b095-72605fb2840e, sni: vzwzasc.cn, skip-cert-verify: true, udp: true}
+  - {name: 中国-304.0KB/s(Youtube:不良林), server: fd2cd9tyhu4w.b4s02m25.xyz, port: 47102, type: vmess, uuid: 077f1ef4-b2bd-37cb-900d-728cd84493b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 014 2, server: kaizen-us-4.mielink-dns2.com, port: 443, type: trojan, password: 0d4926a0-9881-3609-b6ee-4716da84e59emielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 107, server: hk5.sanfen001.pics, port: 443, type: vmess, uuid: 3c34f264-6d9c-4234-b1da-3b84f183a931, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
+  - {name: 美国 036, server: kaizen-kr-2.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 009, server: dl-us1.efyunpan.com, port: 443, type: trojan, password: 9b8250da-6dee-4ab9-b989-52d5c652a1b6, sni: data-us.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 138, server: 138.2.35.81, port: 80, type: vmess, uuid: a0733fc9-457e-498d-c363-9ec774a74948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jun}, udp: true}
+  - {name: 澳大利亚 002, server: kr-05.wxfz.ml, port: 48413, type: vmess, uuid: a06748d4-7669-49dd-dd1a-25d73471a051, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /1234, headers: {Host: kr-05.wxfz.ml}}, udp: true}
+  - {name: v2rayfree.eu.org - 美国  28, server: us2.trojanvh.xyz, port: 80, type: trojan, password: 255c924c-1314-4084-9a9e-1d1a82a5cf49, skip-cert-verify: true, udp: true}
+  - {name: 美国 010, server: dl-us3.efyunpan.com, port: 443, type: trojan, password: 9b8250da-6dee-4ab9-b989-52d5c652a1b6, sni: data-us.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 中国-863.3KB/s(Youtube:不良林), server: hzyd.abc111222.top, port: 52000, type: vmess, uuid: f2ec1022-b279-4399-9d12-bb7fcd29558f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: hzyd.abc111222.top}}, udp: true}
+  - {name: 美国-4, server: 148.59.74.186, port: 443, type: trojan, password: 0469291f-33cf-4909-aac2-265c22fe9e1e, sni: pcd462233.netvigator.com, skip-cert-verify: true, udp: true}
+  - {name: __27_92Mb, server: 15.235.197.5, port: 80, type: trojan, password: bedae0a3-a7dc-4ff0-9013-be459839b5b7, sni: sg2.trojanvh.xyz, skip-cert-verify: true, udp: true}
+  - {name: 中国-2.93MB/s(Youtube:不良林), server: md25ufcmgr83.b4s02m25.xyz, port: 11208, type: vmess, uuid: 077f1ef4-b2bd-37cb-900d-728cd84493b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _AU_澳大利亚, server: au-ls03.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: au-ls03.nb1.fr}}, udp: true}
+  - {name: _US_美国, server: 24.199.119.135, port: 443, type: vmess, uuid: e6da31cb-6c97-4699-c412-124d5ab80856, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 24.199.119.135}}, udp: true}
+  - {name: 中国_02024728, server: 36.156.102.164, port: 10003, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_02021904, server: 103.45.78.195, port: 10004, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_02024727, server: 36.156.102.164, port: 10002, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _GB_英国, server: content-provider4.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: shefelnak, skip-cert-verify: true, udp: true}
+  - {name: CN【付费推荐：https//tt.sbs/vip】, server: z80001.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
+  - {name: _JP_日本, server: 140.83.86.129, port: 80, type: vmess, uuid: 8700cfbd-71dc-42b0-84f2-53cd7fe5645b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: _US_美国 2, server: vde1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vde1.0bad.com}}, udp: true}
+  - {name: 美国 014 3, server: kaizen-us-02.mielink-dns2.com, port: 443, type: trojan, password: 1af287d5-2f03-30b5-a2b9-c67a0a727770mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇭🇰_HK_香港_1, server: 120.241.126.212, port: 63078, type: vmess, uuid: 17b0db9e-2c8a-3c36-a65c-48d7c5a66425, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 美国 013, server: kaizen-us-9.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: 日本(油管:破解资源君), server: 140.83.86.129, port: 80, type: vmess, uuid: 8700cfbd-71dc-42b0-84f2-53cd7fe5645b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 140.83.86.129}}, udp: true}
+  - {name: 美国 015, server: kaizen-us-4.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: "|13.06Mb", server: us2.trojanvh.xyz, port: 80, type: trojan, password: 011eb011-c68e-4f92-80eb-f9bbef707bef, skip-cert-verify: true, udp: true}
+  - {name: sg-am3.eqsunshine.com:32001, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: "@An0nymousteam_ssr22🇸🇪", server: z0117.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
+  - {name: 美国 018, server: kaizen-us-7.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇭🇰_HK_香港_2, server: 223.167.41.68, port: 63078, type: vmess, uuid: 17b0db9e-2c8a-3c36-a65c-48d7c5a66425, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 美国 013 2, server: kaizen-us-9.mielink-dns2.com, port: 443, type: trojan, password: 1af287d5-2f03-30b5-a2b9-c67a0a727770mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君) 14, server: 45.142.158.85, port: 443, type: vmess, uuid: b7b604e4-50e7-3a8b-84f6-2035fcd24e3f, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 45.142.158.85}}, udp: true}
+  - {name: JP【付费推荐：https://tt.sbs/vip】, server: 138.2.45.89, port: 44301, type: trojan, password: 6d64570c-81d4-30fa-b2e2-dce73e1a2702, sni: osav101.jd0001.top, skip-cert-verify: true, udp: true}
+  - {name: "%�\x11�%�P���白嫖-055%%�", server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 俄罗斯 001 2, server: kaizen-ru-1.mielink-dns2.com, port: 443, type: trojan, password: 1af287d5-2f03-30b5-a2b9-c67a0a727770mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: 普通|AU|Sydney_0113_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技5, server: z0113.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
+  - {name: 澳大利亚 005, server: kr-05.wxfz.ml, port: 48413, type: vmess, uuid: a06748d4-7669-49dd-dd1a-25d73471a051, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /1234, headers: {Host: a.duoyouduo.tk}}, udp: true}
+  - {name: 美国 012 2, server: kaizen-us-7.mielink-dns2.com, port: 443, type: trojan, password: 1af287d5-2f03-30b5-a2b9-c67a0a727770mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: 荷兰 002 3, server: kaizen-ru-2.mielink-dns2.com, port: 443, type: trojan, password: 1af287d5-2f03-30b5-a2b9-c67a0a727770mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: 美国-2, server: 148.59.74.185, port: 443, type: trojan, password: 0469291f-33cf-4909-aac2-265c22fe9e1e, sni: pcd462233.netvigator.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 108, server: hk2.sanfen001.pics, port: 443, type: vmess, uuid: 3c34f264-6d9c-4234-b1da-3b84f183a931, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
+  - {name: 美国 003, server: kaizen-jp-4.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 015 2, server: kaizen-us-8.mielink-dns2.com, port: 443, type: trojan, password: 0d4926a0-9881-3609-b6ee-4716da84e59emielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管破解资源君) 15, server: 111.45.22.239, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 俄罗斯  61, server: st.3wcdn.xyz, port: 443, type: vmess, uuid: 8467a939-b0c2-4444-cd72-aed162ea8c09, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /gogo, headers: {Host: st.3wcdn.xyz}}, udp: true}
+  - {name: 澳大利亚 005 2, server: dl-jp5.efyunpan.com, port: 443, type: trojan, password: 9b8250da-6dee-4ab9-b989-52d5c652a1b6, sni: data-jp.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 028, server: dl-sg3.efyunpan.com, port: 443, type: trojan, password: 9b8250da-6dee-4ab9-b989-52d5c652a1b6, sni: data-sg.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 029, server: dl-sg2.efyunpan.com, port: 443, type: trojan, password: 9b8250da-6dee-4ab9-b989-52d5c652a1b6, sni: data-sg.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 中国_0202017, server: 117.164.185.222, port: 16131, type: vmess, uuid: 4a0d81b8-a04a-382b-a3cb-84d1d4b9d6aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本_0202003, server: 138.2.35.81, port: 80, type: vmess, uuid: a0733fc9-457e-498d-c363-9ec774a74948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jun}, udp: true}
+  - {name: SG【付费推荐：https://tt.sbs/vip】, server: 15.235.147.186, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sshkit/Ertusg86/635014638c264/}, udp: true}
+  - {name: 菲律宾 001 2, server: special-ph-a.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 026, server: dl-sg1.efyunpan.com, port: 443, type: trojan, password: 9b8250da-6dee-4ab9-b989-52d5c652a1b6, sni: data-sg.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 035, server: dl-jp4.efyunpan.com, port: 443, type: trojan, password: 9b8250da-6dee-4ab9-b989-52d5c652a1b6, sni: data-jp.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 033, server: dl-jp1.efyunpan.com, port: 443, type: trojan, password: 9b8250da-6dee-4ab9-b989-52d5c652a1b6, sni: data-jp.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 027, server: dl-sg4.efyunpan.com, port: 443, type: trojan, password: 9b8250da-6dee-4ab9-b989-52d5c652a1b6, sni: data-sg.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 025, server: dl-tw3.efyunpan.com, port: 443, type: trojan, password: 9b8250da-6dee-4ab9-b989-52d5c652a1b6, sni: data-tw.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 日本_0131019, server: jp-04.wxfz.ml, port: 80, type: vmess, uuid: a0733fc9-457e-498d-c363-9ec774a74948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jun, headers: {Host: jp-04.wxfz.ml}}, udp: true}
+  - {name: 美国 039, server: dl-kr2.efyunpan.com, port: 443, type: trojan, password: 9b8250da-6dee-4ab9-b989-52d5c652a1b6, sni: data-ockrcc.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 034, server: dl-jp2.efyunpan.com, port: 443, type: trojan, password: 9b8250da-6dee-4ab9-b989-52d5c652a1b6, sni: data-jp.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: v2rayfree.eu.org - 广东省移动 3, server: 120.241.126.212, port: 63078, type: vmess, uuid: 17b0db9e-2c8a-3c36-a65c-48d7c5a66425, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk-balancer.airport-v2.com}}, udp: true}
+  - {name: 美国 024, server: dl-hk6.efyunpan.com, port: 443, type: trojan, password: 9b8250da-6dee-4ab9-b989-52d5c652a1b6, sni: data-hk.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 032, server: dl-jp3.efyunpan.com, port: 443, type: trojan, password: 9b8250da-6dee-4ab9-b989-52d5c652a1b6, sni: data-jp.efyunpan.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 001
-      - _DE_德国
-      - 美国 025
-      - 美国 030
-      - 澳大利亚 006
-      - 日本_0131019
-      - v2rayfree.eu.org - 澳大利亚  31
-      - 美国 020
-      - _油管：全网最强白嫖
-      - v2rayfree.eu.org - 俄罗斯  19
-      - "[VMess] 🇸🇬 SG【付费推荐：https://tt.sbs/vip】"
-      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】 2"
-      - "[VMess] 🇦🇺 AU【付费推荐：https://tt.sbs/vip】"
-      - _GB_英国_2
-      - 欧洲(油管破解资源君) 38
-      - 欧洲(油管破解资源君) 42
-      - 新加坡(油管破解资源君) 2
-      - 香港_0131099
-      - JP(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技 2
-      - 澳大利亚 004
-      - 澳大利亚 005
-      - 美国 026
-      - 美国-G口-161
-      - 美国G-CN2-8080
-      - 立陶宛流媒体解锁
-      - _KR_韩国 2 3
-      - 俄罗斯 003
-      - _油管：全网最强白嫖 2
-      - 香港(TG频道@kxswa)
-      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】"
-      - 欧洲(油管破解资源君) 64
-      - 捷克 001
-      - 巴西 002
-      - CN【付费推荐：https://tt.sbs/vip】
-      - 普通|AU|Sydney_0113_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技5
+      - 韩国_0202202
+      - 俄罗斯 002
       - IPLC专线｜冀港[2.0][原生][Disney+](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技7
-      - IPLC专线｜沪港[2.0](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技4
-      - 普通|SE|Stockholm_0117_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技2
-      - US_youtube@资源分享师_99
-      - 美国 013
-      - "|46.28Mb"
-      - 美国 014
-      - 欧洲(油管破解资源君) 34
-      - 美国 015
-      - 菲律宾 001
-      - 美国 036
-      - 法国 001
-      - 美国(油管破解资源君) 30
-      - 英国 001
       - 俄罗斯 001
-      - 美国 018
-      - "|63.12Mb"
-      - 美国 031
-      - 荷兰 002
       - 荷兰 003
-      - 斯洛伐克 001
-      - 美国 017
-      - 美国-4
-      - 美国-3
-      - v2rayfree.eu.org - 美国  28
-      - github.com/freefq - 四川省成都市移动 54
-      - 美国-2
-      - 美国 049
-      - 美国 021
+      - 新加坡 001
+      - github.com/freefq - 上海市联通 3
+      - 荷兰 002
+      - 中国_02024726
       - 中国(TG频道@kxswa)
-      - "| 4.30Mb"
-      - "| 0.03Mb"
-      - smtp.lemail.cloud:443
-      - "|68.99Mb"
-      - "[Trojan] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】"
+      - 美国 063
+      - US_youtube@资源分享师_99
+      - 欧洲(油管破解资源君) 6
+      - 新加坡_0202009
+      - _HK_香港
+      - _油管：全网最强白嫖
+      - 菲律宾 001
+      - 德国_0202027
+      - 日本 01
+      - _HK_香港 2
+      - 美国 023
+      - 中国-291.8KB/s(Youtube:不良林)
+      - 美国 012
+      - 美国 014
+      - 中国-7.21MB/s(Youtube:不良林)
+      - 美国 022
+      - IPLC专线｜沪港[2.0](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技4
+      - 中国-646.4KB/s(Youtube:不良林)
+      - 美国 022 2
+      - HK(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技
+      - 美国(油管破解资源君) 30
+      - 欧洲(油管:破解资源君) 26
+      - 欧洲(油管破解资源君) 64
+      - 中国_02022067
+      - 中国-1.19MB/s(Youtube:不良林)
+      - _HK_香港 3
+      - 波兰_0202005
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 中国_02024726 2
+      - 荷兰 002 2
+      - 美国 020
+      - 【直连】狮城 - 亚马逊 - 3
+      - 美国 017
+      - 法国 001
+      - 欧洲(油管:破解资源君) 15
+      - 美国 016
+      - 中国-304.0KB/s(Youtube:不良林)
+      - 美国 014 2
+      - 美国 107
+      - 美国 036
+      - 美国 009
+      - 美国 138
+      - 澳大利亚 002
+      - v2rayfree.eu.org - 美国  28
+      - 美国 010
+      - 中国-863.3KB/s(Youtube:不良林)
+      - 美国-4
+      - __27_92Mb
+      - 中国-2.93MB/s(Youtube:不良林)
+      - _AU_澳大利亚
+      - _US_美国
+      - 中国_02024728
+      - 中国_02021904
+      - 中国_02024727
+      - _GB_英国
+      - CN【付费推荐：https//tt.sbs/vip】
+      - _JP_日本
+      - _US_美国 2
+      - 美国 014 3
+      - _CN_中国->🇭🇰_HK_香港_1
+      - 美国 013
+      - 日本(油管:破解资源君)
+      - 美国 015
+      - "|13.06Mb"
+      - sg-am3.eqsunshine.com:32001
+      - "@An0nymousteam_ssr22🇸🇪"
+      - 美国 018
+      - _CN_中国->🇭🇰_HK_香港_2
+      - 美国 013 2
+      - 欧洲(油管:破解资源君) 14
+      - JP【付费推荐：https://tt.sbs/vip】
+      - "%�\x11�%�P���白嫖-055%%�"
+      - 俄罗斯 001 2
+      - 普通|AU|Sydney_0113_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技5
+      - 澳大利亚 005
+      - 美国 012 2
+      - 荷兰 002 3
+      - 美国-2
+      - 美国 108
+      - 美国 003
+      - 美国 015 2
+      - 欧洲(油管破解资源君) 15
+      - github.com/freefq - 俄罗斯  61
+      - 澳大利亚 005 2
+      - 美国 028
+      - 美国 029
+      - 中国_0202017
+      - 日本_0202003
+      - SG【付费推荐：https://tt.sbs/vip】
+      - 菲律宾 001 2
+      - 美国 026
       - 美国 035
-      - 美国 131
-      - "YW(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技\r"
-      - "香港HKT|防失联直连|1x\r"
+      - 美国 033
+      - 美国 027
+      - 美国 025
+      - 日本_0131019
+      - 美国 039
+      - 美国 034
+      - v2rayfree.eu.org - 广东省移动 3
+      - 美国 024
+      - 美国 032
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - 新加坡 001
-      - _DE_德国
-      - 美国 025
-      - 美国 030
-      - 澳大利亚 006
-      - 日本_0131019
-      - v2rayfree.eu.org - 澳大利亚  31
-      - 美国 020
-      - _油管：全网最强白嫖
-      - v2rayfree.eu.org - 俄罗斯  19
-      - "[VMess] 🇸🇬 SG【付费推荐：https://tt.sbs/vip】"
-      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】 2"
-      - "[VMess] 🇦🇺 AU【付费推荐：https://tt.sbs/vip】"
-      - _GB_英国_2
-      - 欧洲(油管破解资源君) 38
-      - 欧洲(油管破解资源君) 42
-      - 新加坡(油管破解资源君) 2
-      - 香港_0131099
-      - JP(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技 2
-      - 澳大利亚 004
-      - 澳大利亚 005
-      - 美国 026
-      - 美国-G口-161
-      - 美国G-CN2-8080
-      - 立陶宛流媒体解锁
-      - _KR_韩国 2 3
-      - 俄罗斯 003
-      - _油管：全网最强白嫖 2
-      - 香港(TG频道@kxswa)
-      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】"
-      - 欧洲(油管破解资源君) 64
-      - 捷克 001
-      - 巴西 002
-      - CN【付费推荐：https://tt.sbs/vip】
-      - 普通|AU|Sydney_0113_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技5
+      - 韩国_0202202
+      - 俄罗斯 002
       - IPLC专线｜冀港[2.0][原生][Disney+](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技7
-      - IPLC专线｜沪港[2.0](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技4
-      - 普通|SE|Stockholm_0117_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技2
-      - US_youtube@资源分享师_99
-      - 美国 013
-      - "|46.28Mb"
-      - 美国 014
-      - 欧洲(油管破解资源君) 34
-      - 美国 015
-      - 菲律宾 001
-      - 美国 036
-      - 法国 001
-      - 美国(油管破解资源君) 30
-      - 英国 001
       - 俄罗斯 001
-      - 美国 018
-      - "|63.12Mb"
-      - 美国 031
-      - 荷兰 002
       - 荷兰 003
-      - 斯洛伐克 001
-      - 美国 017
-      - 美国-4
-      - 美国-3
-      - v2rayfree.eu.org - 美国  28
-      - github.com/freefq - 四川省成都市移动 54
-      - 美国-2
-      - 美国 049
-      - 美国 021
+      - 新加坡 001
+      - github.com/freefq - 上海市联通 3
+      - 荷兰 002
+      - 中国_02024726
       - 中国(TG频道@kxswa)
-      - "| 4.30Mb"
-      - "| 0.03Mb"
-      - smtp.lemail.cloud:443
-      - "|68.99Mb"
-      - "[Trojan] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】"
+      - 美国 063
+      - US_youtube@资源分享师_99
+      - 欧洲(油管破解资源君) 6
+      - 新加坡_0202009
+      - _HK_香港
+      - _油管：全网最强白嫖
+      - 菲律宾 001
+      - 德国_0202027
+      - 日本 01
+      - _HK_香港 2
+      - 美国 023
+      - 中国-291.8KB/s(Youtube:不良林)
+      - 美国 012
+      - 美国 014
+      - 中国-7.21MB/s(Youtube:不良林)
+      - 美国 022
+      - IPLC专线｜沪港[2.0](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技4
+      - 中国-646.4KB/s(Youtube:不良林)
+      - 美国 022 2
+      - HK(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技
+      - 美国(油管破解资源君) 30
+      - 欧洲(油管:破解资源君) 26
+      - 欧洲(油管破解资源君) 64
+      - 中国_02022067
+      - 中国-1.19MB/s(Youtube:不良林)
+      - _HK_香港 3
+      - 波兰_0202005
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 中国_02024726 2
+      - 荷兰 002 2
+      - 美国 020
+      - 【直连】狮城 - 亚马逊 - 3
+      - 美国 017
+      - 法国 001
+      - 欧洲(油管:破解资源君) 15
+      - 美国 016
+      - 中国-304.0KB/s(Youtube:不良林)
+      - 美国 014 2
+      - 美国 107
+      - 美国 036
+      - 美国 009
+      - 美国 138
+      - 澳大利亚 002
+      - v2rayfree.eu.org - 美国  28
+      - 美国 010
+      - 中国-863.3KB/s(Youtube:不良林)
+      - 美国-4
+      - __27_92Mb
+      - 中国-2.93MB/s(Youtube:不良林)
+      - _AU_澳大利亚
+      - _US_美国
+      - 中国_02024728
+      - 中国_02021904
+      - 中国_02024727
+      - _GB_英国
+      - CN【付费推荐：https//tt.sbs/vip】
+      - _JP_日本
+      - _US_美国 2
+      - 美国 014 3
+      - _CN_中国->🇭🇰_HK_香港_1
+      - 美国 013
+      - 日本(油管:破解资源君)
+      - 美国 015
+      - "|13.06Mb"
+      - sg-am3.eqsunshine.com:32001
+      - "@An0nymousteam_ssr22🇸🇪"
+      - 美国 018
+      - _CN_中国->🇭🇰_HK_香港_2
+      - 美国 013 2
+      - 欧洲(油管:破解资源君) 14
+      - JP【付费推荐：https://tt.sbs/vip】
+      - "%�\x11�%�P���白嫖-055%%�"
+      - 俄罗斯 001 2
+      - 普通|AU|Sydney_0113_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技5
+      - 澳大利亚 005
+      - 美国 012 2
+      - 荷兰 002 3
+      - 美国-2
+      - 美国 108
+      - 美国 003
+      - 美国 015 2
+      - 欧洲(油管破解资源君) 15
+      - github.com/freefq - 俄罗斯  61
+      - 澳大利亚 005 2
+      - 美国 028
+      - 美国 029
+      - 中国_0202017
+      - 日本_0202003
+      - SG【付费推荐：https://tt.sbs/vip】
+      - 菲律宾 001 2
+      - 美国 026
       - 美国 035
-      - 美国 131
-      - "YW(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技\r"
-      - "香港HKT|防失联直连|1x\r"
+      - 美国 033
+      - 美国 027
+      - 美国 025
+      - 日本_0131019
+      - 美国 039
+      - 美国 034
+      - v2rayfree.eu.org - 广东省移动 3
+      - 美国 024
+      - 美国 032
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 001
-      - _DE_德国
-      - 美国 025
-      - 美国 030
-      - 澳大利亚 006
-      - 日本_0131019
-      - v2rayfree.eu.org - 澳大利亚  31
-      - 美国 020
-      - _油管：全网最强白嫖
-      - v2rayfree.eu.org - 俄罗斯  19
-      - "[VMess] 🇸🇬 SG【付费推荐：https://tt.sbs/vip】"
-      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】 2"
-      - "[VMess] 🇦🇺 AU【付费推荐：https://tt.sbs/vip】"
-      - _GB_英国_2
-      - 欧洲(油管破解资源君) 38
-      - 欧洲(油管破解资源君) 42
-      - 新加坡(油管破解资源君) 2
-      - 香港_0131099
-      - JP(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技 2
-      - 澳大利亚 004
-      - 澳大利亚 005
-      - 美国 026
-      - 美国-G口-161
-      - 美国G-CN2-8080
-      - 立陶宛流媒体解锁
-      - _KR_韩国 2 3
-      - 俄罗斯 003
-      - _油管：全网最强白嫖 2
-      - 香港(TG频道@kxswa)
-      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】"
-      - 欧洲(油管破解资源君) 64
-      - 捷克 001
-      - 巴西 002
-      - CN【付费推荐：https://tt.sbs/vip】
-      - 普通|AU|Sydney_0113_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技5
+      - 韩国_0202202
+      - 俄罗斯 002
       - IPLC专线｜冀港[2.0][原生][Disney+](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技7
-      - IPLC专线｜沪港[2.0](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技4
-      - 普通|SE|Stockholm_0117_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技2
-      - US_youtube@资源分享师_99
-      - 美国 013
-      - "|46.28Mb"
-      - 美国 014
-      - 欧洲(油管破解资源君) 34
-      - 美国 015
-      - 菲律宾 001
-      - 美国 036
-      - 法国 001
-      - 美国(油管破解资源君) 30
-      - 英国 001
       - 俄罗斯 001
-      - 美国 018
-      - "|63.12Mb"
-      - 美国 031
-      - 荷兰 002
       - 荷兰 003
-      - 斯洛伐克 001
-      - 美国 017
-      - 美国-4
-      - 美国-3
-      - v2rayfree.eu.org - 美国  28
-      - github.com/freefq - 四川省成都市移动 54
-      - 美国-2
-      - 美国 049
-      - 美国 021
+      - 新加坡 001
+      - github.com/freefq - 上海市联通 3
+      - 荷兰 002
+      - 中国_02024726
       - 中国(TG频道@kxswa)
-      - "| 4.30Mb"
-      - "| 0.03Mb"
-      - smtp.lemail.cloud:443
-      - "|68.99Mb"
-      - "[Trojan] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】"
+      - 美国 063
+      - US_youtube@资源分享师_99
+      - 欧洲(油管破解资源君) 6
+      - 新加坡_0202009
+      - _HK_香港
+      - _油管：全网最强白嫖
+      - 菲律宾 001
+      - 德国_0202027
+      - 日本 01
+      - _HK_香港 2
+      - 美国 023
+      - 中国-291.8KB/s(Youtube:不良林)
+      - 美国 012
+      - 美国 014
+      - 中国-7.21MB/s(Youtube:不良林)
+      - 美国 022
+      - IPLC专线｜沪港[2.0](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技4
+      - 中国-646.4KB/s(Youtube:不良林)
+      - 美国 022 2
+      - HK(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技
+      - 美国(油管破解资源君) 30
+      - 欧洲(油管:破解资源君) 26
+      - 欧洲(油管破解资源君) 64
+      - 中国_02022067
+      - 中国-1.19MB/s(Youtube:不良林)
+      - _HK_香港 3
+      - 波兰_0202005
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 中国_02024726 2
+      - 荷兰 002 2
+      - 美国 020
+      - 【直连】狮城 - 亚马逊 - 3
+      - 美国 017
+      - 法国 001
+      - 欧洲(油管:破解资源君) 15
+      - 美国 016
+      - 中国-304.0KB/s(Youtube:不良林)
+      - 美国 014 2
+      - 美国 107
+      - 美国 036
+      - 美国 009
+      - 美国 138
+      - 澳大利亚 002
+      - v2rayfree.eu.org - 美国  28
+      - 美国 010
+      - 中国-863.3KB/s(Youtube:不良林)
+      - 美国-4
+      - __27_92Mb
+      - 中国-2.93MB/s(Youtube:不良林)
+      - _AU_澳大利亚
+      - _US_美国
+      - 中国_02024728
+      - 中国_02021904
+      - 中国_02024727
+      - _GB_英国
+      - CN【付费推荐：https//tt.sbs/vip】
+      - _JP_日本
+      - _US_美国 2
+      - 美国 014 3
+      - _CN_中国->🇭🇰_HK_香港_1
+      - 美国 013
+      - 日本(油管:破解资源君)
+      - 美国 015
+      - "|13.06Mb"
+      - sg-am3.eqsunshine.com:32001
+      - "@An0nymousteam_ssr22🇸🇪"
+      - 美国 018
+      - _CN_中国->🇭🇰_HK_香港_2
+      - 美国 013 2
+      - 欧洲(油管:破解资源君) 14
+      - JP【付费推荐：https://tt.sbs/vip】
+      - "%�\x11�%�P���白嫖-055%%�"
+      - 俄罗斯 001 2
+      - 普通|AU|Sydney_0113_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技5
+      - 澳大利亚 005
+      - 美国 012 2
+      - 荷兰 002 3
+      - 美国-2
+      - 美国 108
+      - 美国 003
+      - 美国 015 2
+      - 欧洲(油管破解资源君) 15
+      - github.com/freefq - 俄罗斯  61
+      - 澳大利亚 005 2
+      - 美国 028
+      - 美国 029
+      - 中国_0202017
+      - 日本_0202003
+      - SG【付费推荐：https://tt.sbs/vip】
+      - 菲律宾 001 2
+      - 美国 026
       - 美国 035
-      - 美国 131
-      - "YW(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技\r"
-      - "香港HKT|防失联直连|1x\r"
+      - 美国 033
+      - 美国 027
+      - 美国 025
+      - 日本_0131019
+      - 美国 039
+      - 美国 034
+      - v2rayfree.eu.org - 广东省移动 3
+      - 美国 024
+      - 美国 032
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -337,328 +485,478 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 001
-      - _DE_德国
-      - 美国 025
-      - 美国 030
-      - 澳大利亚 006
-      - 日本_0131019
-      - v2rayfree.eu.org - 澳大利亚  31
-      - 美国 020
-      - _油管：全网最强白嫖
-      - v2rayfree.eu.org - 俄罗斯  19
-      - "[VMess] 🇸🇬 SG【付费推荐：https://tt.sbs/vip】"
-      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】 2"
-      - "[VMess] 🇦🇺 AU【付费推荐：https://tt.sbs/vip】"
-      - _GB_英国_2
-      - 欧洲(油管破解资源君) 38
-      - 欧洲(油管破解资源君) 42
-      - 新加坡(油管破解资源君) 2
-      - 香港_0131099
-      - JP(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技 2
-      - 澳大利亚 004
-      - 澳大利亚 005
-      - 美国 026
-      - 美国-G口-161
-      - 美国G-CN2-8080
-      - 立陶宛流媒体解锁
-      - _KR_韩国 2 3
-      - 俄罗斯 003
-      - _油管：全网最强白嫖 2
-      - 香港(TG频道@kxswa)
-      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】"
-      - 欧洲(油管破解资源君) 64
-      - 捷克 001
-      - 巴西 002
-      - CN【付费推荐：https://tt.sbs/vip】
-      - 普通|AU|Sydney_0113_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技5
+      - 韩国_0202202
+      - 俄罗斯 002
       - IPLC专线｜冀港[2.0][原生][Disney+](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技7
-      - IPLC专线｜沪港[2.0](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技4
-      - 普通|SE|Stockholm_0117_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技2
-      - US_youtube@资源分享师_99
-      - 美国 013
-      - "|46.28Mb"
-      - 美国 014
-      - 欧洲(油管破解资源君) 34
-      - 美国 015
-      - 菲律宾 001
-      - 美国 036
-      - 法国 001
-      - 美国(油管破解资源君) 30
-      - 英国 001
       - 俄罗斯 001
-      - 美国 018
-      - "|63.12Mb"
-      - 美国 031
-      - 荷兰 002
       - 荷兰 003
-      - 斯洛伐克 001
-      - 美国 017
-      - 美国-4
-      - 美国-3
-      - v2rayfree.eu.org - 美国  28
-      - github.com/freefq - 四川省成都市移动 54
-      - 美国-2
-      - 美国 049
-      - 美国 021
+      - 新加坡 001
+      - github.com/freefq - 上海市联通 3
+      - 荷兰 002
+      - 中国_02024726
       - 中国(TG频道@kxswa)
-      - "| 4.30Mb"
-      - "| 0.03Mb"
-      - smtp.lemail.cloud:443
-      - "|68.99Mb"
-      - "[Trojan] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】"
+      - 美国 063
+      - US_youtube@资源分享师_99
+      - 欧洲(油管破解资源君) 6
+      - 新加坡_0202009
+      - _HK_香港
+      - _油管：全网最强白嫖
+      - 菲律宾 001
+      - 德国_0202027
+      - 日本 01
+      - _HK_香港 2
+      - 美国 023
+      - 中国-291.8KB/s(Youtube:不良林)
+      - 美国 012
+      - 美国 014
+      - 中国-7.21MB/s(Youtube:不良林)
+      - 美国 022
+      - IPLC专线｜沪港[2.0](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技4
+      - 中国-646.4KB/s(Youtube:不良林)
+      - 美国 022 2
+      - HK(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技
+      - 美国(油管破解资源君) 30
+      - 欧洲(油管:破解资源君) 26
+      - 欧洲(油管破解资源君) 64
+      - 中国_02022067
+      - 中国-1.19MB/s(Youtube:不良林)
+      - _HK_香港 3
+      - 波兰_0202005
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 中国_02024726 2
+      - 荷兰 002 2
+      - 美国 020
+      - 【直连】狮城 - 亚马逊 - 3
+      - 美国 017
+      - 法国 001
+      - 欧洲(油管:破解资源君) 15
+      - 美国 016
+      - 中国-304.0KB/s(Youtube:不良林)
+      - 美国 014 2
+      - 美国 107
+      - 美国 036
+      - 美国 009
+      - 美国 138
+      - 澳大利亚 002
+      - v2rayfree.eu.org - 美国  28
+      - 美国 010
+      - 中国-863.3KB/s(Youtube:不良林)
+      - 美国-4
+      - __27_92Mb
+      - 中国-2.93MB/s(Youtube:不良林)
+      - _AU_澳大利亚
+      - _US_美国
+      - 中国_02024728
+      - 中国_02021904
+      - 中国_02024727
+      - _GB_英国
+      - CN【付费推荐：https//tt.sbs/vip】
+      - _JP_日本
+      - _US_美国 2
+      - 美国 014 3
+      - _CN_中国->🇭🇰_HK_香港_1
+      - 美国 013
+      - 日本(油管:破解资源君)
+      - 美国 015
+      - "|13.06Mb"
+      - sg-am3.eqsunshine.com:32001
+      - "@An0nymousteam_ssr22🇸🇪"
+      - 美国 018
+      - _CN_中国->🇭🇰_HK_香港_2
+      - 美国 013 2
+      - 欧洲(油管:破解资源君) 14
+      - JP【付费推荐：https://tt.sbs/vip】
+      - "%�\x11�%�P���白嫖-055%%�"
+      - 俄罗斯 001 2
+      - 普通|AU|Sydney_0113_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技5
+      - 澳大利亚 005
+      - 美国 012 2
+      - 荷兰 002 3
+      - 美国-2
+      - 美国 108
+      - 美国 003
+      - 美国 015 2
+      - 欧洲(油管破解资源君) 15
+      - github.com/freefq - 俄罗斯  61
+      - 澳大利亚 005 2
+      - 美国 028
+      - 美国 029
+      - 中国_0202017
+      - 日本_0202003
+      - SG【付费推荐：https://tt.sbs/vip】
+      - 菲律宾 001 2
+      - 美国 026
       - 美国 035
-      - 美国 131
-      - "YW(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技\r"
-      - "香港HKT|防失联直连|1x\r"
+      - 美国 033
+      - 美国 027
+      - 美国 025
+      - 日本_0131019
+      - 美国 039
+      - 美国 034
+      - v2rayfree.eu.org - 广东省移动 3
+      - 美国 024
+      - 美国 032
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港_0131099
-      - 香港(TG频道@kxswa)
       - IPLC专线｜冀港[2.0][原生][Disney+](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技7
+      - _HK_香港
+      - _HK_香港 2
       - IPLC专线｜沪港[2.0](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技4
-      - "香港HKT|防失联直连|1x\r"
+      - _HK_香港 3
+      - _CN_中国->🇭🇰_HK_香港_1
+      - _CN_中国->🇭🇰_HK_香港_2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡 001
-      - _DE_德国
-      - 美国 025
-      - 美国 030
-      - 澳大利亚 006
-      - 日本_0131019
-      - v2rayfree.eu.org - 澳大利亚  31
-      - 美国 020
-      - _油管：全网最强白嫖
-      - v2rayfree.eu.org - 俄罗斯  19
-      - "[VMess] 🇸🇬 SG【付费推荐：https://tt.sbs/vip】"
-      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】 2"
-      - "[VMess] 🇦🇺 AU【付费推荐：https://tt.sbs/vip】"
-      - _GB_英国_2
-      - 欧洲(油管破解资源君) 38
-      - 欧洲(油管破解资源君) 42
-      - 新加坡(油管破解资源君) 2
-      - 香港_0131099
-      - JP(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技 2
-      - 澳大利亚 004
-      - 澳大利亚 005
-      - 美国 026
-      - 美国-G口-161
-      - 美国G-CN2-8080
-      - 立陶宛流媒体解锁
-      - _KR_韩国 2 3
-      - 俄罗斯 003
-      - _油管：全网最强白嫖 2
-      - 香港(TG频道@kxswa)
-      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】"
-      - 欧洲(油管破解资源君) 64
-      - 捷克 001
-      - 巴西 002
-      - CN【付费推荐：https://tt.sbs/vip】
-      - 普通|AU|Sydney_0113_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技5
+      - 韩国_0202202
+      - 俄罗斯 002
       - IPLC专线｜冀港[2.0][原生][Disney+](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技7
-      - IPLC专线｜沪港[2.0](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技4
-      - 普通|SE|Stockholm_0117_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技2
-      - US_youtube@资源分享师_99
-      - 美国 013
-      - "|46.28Mb"
-      - 美国 014
-      - 欧洲(油管破解资源君) 34
-      - 美国 015
-      - 菲律宾 001
-      - 美国 036
-      - 法国 001
-      - 美国(油管破解资源君) 30
-      - 英国 001
       - 俄罗斯 001
-      - 美国 018
-      - "|63.12Mb"
-      - 美国 031
-      - 荷兰 002
       - 荷兰 003
-      - 斯洛伐克 001
-      - 美国 017
-      - 美国-4
-      - 美国-3
-      - v2rayfree.eu.org - 美国  28
-      - github.com/freefq - 四川省成都市移动 54
-      - 美国-2
-      - 美国 049
-      - 美国 021
+      - 新加坡 001
+      - github.com/freefq - 上海市联通 3
+      - 荷兰 002
+      - 中国_02024726
       - 中国(TG频道@kxswa)
-      - "| 4.30Mb"
-      - "| 0.03Mb"
-      - smtp.lemail.cloud:443
-      - "|68.99Mb"
-      - "[Trojan] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】"
+      - 美国 063
+      - US_youtube@资源分享师_99
+      - 欧洲(油管破解资源君) 6
+      - 新加坡_0202009
+      - _HK_香港
+      - _油管：全网最强白嫖
+      - 菲律宾 001
+      - 德国_0202027
+      - 日本 01
+      - _HK_香港 2
+      - 美国 023
+      - 中国-291.8KB/s(Youtube:不良林)
+      - 美国 012
+      - 美国 014
+      - 中国-7.21MB/s(Youtube:不良林)
+      - 美国 022
+      - IPLC专线｜沪港[2.0](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技4
+      - 中国-646.4KB/s(Youtube:不良林)
+      - 美国 022 2
+      - HK(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技
+      - 美国(油管破解资源君) 30
+      - 欧洲(油管:破解资源君) 26
+      - 欧洲(油管破解资源君) 64
+      - 中国_02022067
+      - 中国-1.19MB/s(Youtube:不良林)
+      - _HK_香港 3
+      - 波兰_0202005
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 中国_02024726 2
+      - 荷兰 002 2
+      - 美国 020
+      - 【直连】狮城 - 亚马逊 - 3
+      - 美国 017
+      - 法国 001
+      - 欧洲(油管:破解资源君) 15
+      - 美国 016
+      - 中国-304.0KB/s(Youtube:不良林)
+      - 美国 014 2
+      - 美国 107
+      - 美国 036
+      - 美国 009
+      - 美国 138
+      - 澳大利亚 002
+      - v2rayfree.eu.org - 美国  28
+      - 美国 010
+      - 中国-863.3KB/s(Youtube:不良林)
+      - 美国-4
+      - __27_92Mb
+      - 中国-2.93MB/s(Youtube:不良林)
+      - _AU_澳大利亚
+      - _US_美国
+      - 中国_02024728
+      - 中国_02021904
+      - 中国_02024727
+      - _GB_英国
+      - CN【付费推荐：https//tt.sbs/vip】
+      - _JP_日本
+      - _US_美国 2
+      - 美国 014 3
+      - _CN_中国->🇭🇰_HK_香港_1
+      - 美国 013
+      - 日本(油管:破解资源君)
+      - 美国 015
+      - "|13.06Mb"
+      - sg-am3.eqsunshine.com:32001
+      - "@An0nymousteam_ssr22🇸🇪"
+      - 美国 018
+      - _CN_中国->🇭🇰_HK_香港_2
+      - 美国 013 2
+      - 欧洲(油管:破解资源君) 14
+      - JP【付费推荐：https://tt.sbs/vip】
+      - "%�\x11�%�P���白嫖-055%%�"
+      - 俄罗斯 001 2
+      - 普通|AU|Sydney_0113_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技5
+      - 澳大利亚 005
+      - 美国 012 2
+      - 荷兰 002 3
+      - 美国-2
+      - 美国 108
+      - 美国 003
+      - 美国 015 2
+      - 欧洲(油管破解资源君) 15
+      - github.com/freefq - 俄罗斯  61
+      - 澳大利亚 005 2
+      - 美国 028
+      - 美国 029
+      - 中国_0202017
+      - 日本_0202003
+      - SG【付费推荐：https://tt.sbs/vip】
+      - 菲律宾 001 2
+      - 美国 026
       - 美国 035
-      - 美国 131
-      - "YW(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技\r"
-      - "香港HKT|防失联直连|1x\r"
+      - 美国 033
+      - 美国 027
+      - 美国 025
+      - 日本_0131019
+      - 美国 039
+      - 美国 034
+      - v2rayfree.eu.org - 广东省移动 3
+      - 美国 024
+      - 美国 032
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡 001
-      - _DE_德国
-      - 美国 025
-      - 美国 030
-      - 澳大利亚 006
-      - 日本_0131019
-      - v2rayfree.eu.org - 澳大利亚  31
-      - 美国 020
-      - _油管：全网最强白嫖
-      - v2rayfree.eu.org - 俄罗斯  19
-      - "[VMess] 🇸🇬 SG【付费推荐：https://tt.sbs/vip】"
-      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】 2"
-      - "[VMess] 🇦🇺 AU【付费推荐：https://tt.sbs/vip】"
-      - _GB_英国_2
-      - 欧洲(油管破解资源君) 38
-      - 欧洲(油管破解资源君) 42
-      - 新加坡(油管破解资源君) 2
-      - 香港_0131099
-      - JP(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技 2
-      - 澳大利亚 004
-      - 澳大利亚 005
-      - 美国 026
-      - 美国-G口-161
-      - 美国G-CN2-8080
-      - 立陶宛流媒体解锁
-      - _KR_韩国 2 3
-      - 俄罗斯 003
-      - _油管：全网最强白嫖 2
-      - 香港(TG频道@kxswa)
-      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】"
-      - 欧洲(油管破解资源君) 64
-      - 捷克 001
-      - 巴西 002
-      - CN【付费推荐：https://tt.sbs/vip】
-      - 普通|AU|Sydney_0113_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技5
+      - 韩国_0202202
+      - 俄罗斯 002
       - IPLC专线｜冀港[2.0][原生][Disney+](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技7
-      - IPLC专线｜沪港[2.0](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技4
-      - 普通|SE|Stockholm_0117_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技2
-      - US_youtube@资源分享师_99
-      - 美国 013
-      - "|46.28Mb"
-      - 美国 014
-      - 欧洲(油管破解资源君) 34
-      - 美国 015
-      - 菲律宾 001
-      - 美国 036
-      - 法国 001
-      - 美国(油管破解资源君) 30
-      - 英国 001
       - 俄罗斯 001
-      - 美国 018
-      - "|63.12Mb"
-      - 美国 031
-      - 荷兰 002
       - 荷兰 003
-      - 斯洛伐克 001
-      - 美国 017
-      - 美国-4
-      - 美国-3
-      - v2rayfree.eu.org - 美国  28
-      - github.com/freefq - 四川省成都市移动 54
-      - 美国-2
-      - 美国 049
-      - 美国 021
+      - 新加坡 001
+      - github.com/freefq - 上海市联通 3
+      - 荷兰 002
+      - 中国_02024726
       - 中国(TG频道@kxswa)
-      - "| 4.30Mb"
-      - "| 0.03Mb"
-      - smtp.lemail.cloud:443
-      - "|68.99Mb"
-      - "[Trojan] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】"
+      - 美国 063
+      - US_youtube@资源分享师_99
+      - 欧洲(油管破解资源君) 6
+      - 新加坡_0202009
+      - _HK_香港
+      - _油管：全网最强白嫖
+      - 菲律宾 001
+      - 德国_0202027
+      - 日本 01
+      - _HK_香港 2
+      - 美国 023
+      - 中国-291.8KB/s(Youtube:不良林)
+      - 美国 012
+      - 美国 014
+      - 中国-7.21MB/s(Youtube:不良林)
+      - 美国 022
+      - IPLC专线｜沪港[2.0](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技4
+      - 中国-646.4KB/s(Youtube:不良林)
+      - 美国 022 2
+      - HK(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技
+      - 美国(油管破解资源君) 30
+      - 欧洲(油管:破解资源君) 26
+      - 欧洲(油管破解资源君) 64
+      - 中国_02022067
+      - 中国-1.19MB/s(Youtube:不良林)
+      - _HK_香港 3
+      - 波兰_0202005
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 中国_02024726 2
+      - 荷兰 002 2
+      - 美国 020
+      - 【直连】狮城 - 亚马逊 - 3
+      - 美国 017
+      - 法国 001
+      - 欧洲(油管:破解资源君) 15
+      - 美国 016
+      - 中国-304.0KB/s(Youtube:不良林)
+      - 美国 014 2
+      - 美国 107
+      - 美国 036
+      - 美国 009
+      - 美国 138
+      - 澳大利亚 002
+      - v2rayfree.eu.org - 美国  28
+      - 美国 010
+      - 中国-863.3KB/s(Youtube:不良林)
+      - 美国-4
+      - __27_92Mb
+      - 中国-2.93MB/s(Youtube:不良林)
+      - _AU_澳大利亚
+      - _US_美国
+      - 中国_02024728
+      - 中国_02021904
+      - 中国_02024727
+      - _GB_英国
+      - CN【付费推荐：https//tt.sbs/vip】
+      - _JP_日本
+      - _US_美国 2
+      - 美国 014 3
+      - _CN_中国->🇭🇰_HK_香港_1
+      - 美国 013
+      - 日本(油管:破解资源君)
+      - 美国 015
+      - "|13.06Mb"
+      - sg-am3.eqsunshine.com:32001
+      - "@An0nymousteam_ssr22🇸🇪"
+      - 美国 018
+      - _CN_中国->🇭🇰_HK_香港_2
+      - 美国 013 2
+      - 欧洲(油管:破解资源君) 14
+      - JP【付费推荐：https://tt.sbs/vip】
+      - "%�\x11�%�P���白嫖-055%%�"
+      - 俄罗斯 001 2
+      - 普通|AU|Sydney_0113_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技5
+      - 澳大利亚 005
+      - 美国 012 2
+      - 荷兰 002 3
+      - 美国-2
+      - 美国 108
+      - 美国 003
+      - 美国 015 2
+      - 欧洲(油管破解资源君) 15
+      - github.com/freefq - 俄罗斯  61
+      - 澳大利亚 005 2
+      - 美国 028
+      - 美国 029
+      - 中国_0202017
+      - 日本_0202003
+      - SG【付费推荐：https://tt.sbs/vip】
+      - 菲律宾 001 2
+      - 美国 026
       - 美国 035
-      - 美国 131
-      - "YW(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技\r"
-      - "香港HKT|防失联直连|1x\r"
+      - 美国 033
+      - 美国 027
+      - 美国 025
+      - 日本_0131019
+      - 美国 039
+      - 美国 034
+      - v2rayfree.eu.org - 广东省移动 3
+      - 美国 024
+      - 美国 032
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 001
-      - _DE_德国
-      - 美国 025
-      - 美国 030
-      - 澳大利亚 006
-      - 日本_0131019
-      - v2rayfree.eu.org - 澳大利亚  31
-      - 美国 020
-      - _油管：全网最强白嫖
-      - v2rayfree.eu.org - 俄罗斯  19
-      - "[VMess] 🇸🇬 SG【付费推荐：https://tt.sbs/vip】"
-      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】 2"
-      - "[VMess] 🇦🇺 AU【付费推荐：https://tt.sbs/vip】"
-      - _GB_英国_2
-      - 欧洲(油管破解资源君) 38
-      - 欧洲(油管破解资源君) 42
-      - 新加坡(油管破解资源君) 2
-      - 香港_0131099
-      - JP(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技 2
-      - 澳大利亚 004
-      - 澳大利亚 005
-      - 美国 026
-      - 美国-G口-161
-      - 美国G-CN2-8080
-      - 立陶宛流媒体解锁
-      - _KR_韩国 2 3
-      - 俄罗斯 003
-      - _油管：全网最强白嫖 2
-      - 香港(TG频道@kxswa)
-      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】"
-      - 欧洲(油管破解资源君) 64
-      - 捷克 001
-      - 巴西 002
-      - CN【付费推荐：https://tt.sbs/vip】
-      - 普通|AU|Sydney_0113_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技5
+      - 韩国_0202202
+      - 俄罗斯 002
       - IPLC专线｜冀港[2.0][原生][Disney+](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技7
-      - IPLC专线｜沪港[2.0](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技4
-      - 普通|SE|Stockholm_0117_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技2
-      - US_youtube@资源分享师_99
-      - 美国 013
-      - "|46.28Mb"
-      - 美国 014
-      - 欧洲(油管破解资源君) 34
-      - 美国 015
-      - 菲律宾 001
-      - 美国 036
-      - 法国 001
-      - 美国(油管破解资源君) 30
-      - 英国 001
       - 俄罗斯 001
-      - 美国 018
-      - "|63.12Mb"
-      - 美国 031
-      - 荷兰 002
       - 荷兰 003
-      - 斯洛伐克 001
-      - 美国 017
-      - 美国-4
-      - 美国-3
-      - v2rayfree.eu.org - 美国  28
-      - github.com/freefq - 四川省成都市移动 54
-      - 美国-2
-      - 美国 049
-      - 美国 021
+      - 新加坡 001
+      - github.com/freefq - 上海市联通 3
+      - 荷兰 002
+      - 中国_02024726
       - 中国(TG频道@kxswa)
-      - "| 4.30Mb"
-      - "| 0.03Mb"
-      - smtp.lemail.cloud:443
-      - "|68.99Mb"
-      - "[Trojan] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】"
+      - 美国 063
+      - US_youtube@资源分享师_99
+      - 欧洲(油管破解资源君) 6
+      - 新加坡_0202009
+      - _HK_香港
+      - _油管：全网最强白嫖
+      - 菲律宾 001
+      - 德国_0202027
+      - 日本 01
+      - _HK_香港 2
+      - 美国 023
+      - 中国-291.8KB/s(Youtube:不良林)
+      - 美国 012
+      - 美国 014
+      - 中国-7.21MB/s(Youtube:不良林)
+      - 美国 022
+      - IPLC专线｜沪港[2.0](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技4
+      - 中国-646.4KB/s(Youtube:不良林)
+      - 美国 022 2
+      - HK(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技
+      - 美国(油管破解资源君) 30
+      - 欧洲(油管:破解资源君) 26
+      - 欧洲(油管破解资源君) 64
+      - 中国_02022067
+      - 中国-1.19MB/s(Youtube:不良林)
+      - _HK_香港 3
+      - 波兰_0202005
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 中国_02024726 2
+      - 荷兰 002 2
+      - 美国 020
+      - 【直连】狮城 - 亚马逊 - 3
+      - 美国 017
+      - 法国 001
+      - 欧洲(油管:破解资源君) 15
+      - 美国 016
+      - 中国-304.0KB/s(Youtube:不良林)
+      - 美国 014 2
+      - 美国 107
+      - 美国 036
+      - 美国 009
+      - 美国 138
+      - 澳大利亚 002
+      - v2rayfree.eu.org - 美国  28
+      - 美国 010
+      - 中国-863.3KB/s(Youtube:不良林)
+      - 美国-4
+      - __27_92Mb
+      - 中国-2.93MB/s(Youtube:不良林)
+      - _AU_澳大利亚
+      - _US_美国
+      - 中国_02024728
+      - 中国_02021904
+      - 中国_02024727
+      - _GB_英国
+      - CN【付费推荐：https//tt.sbs/vip】
+      - _JP_日本
+      - _US_美国 2
+      - 美国 014 3
+      - _CN_中国->🇭🇰_HK_香港_1
+      - 美国 013
+      - 日本(油管:破解资源君)
+      - 美国 015
+      - "|13.06Mb"
+      - sg-am3.eqsunshine.com:32001
+      - "@An0nymousteam_ssr22🇸🇪"
+      - 美国 018
+      - _CN_中国->🇭🇰_HK_香港_2
+      - 美国 013 2
+      - 欧洲(油管:破解资源君) 14
+      - JP【付费推荐：https://tt.sbs/vip】
+      - "%�\x11�%�P���白嫖-055%%�"
+      - 俄罗斯 001 2
+      - 普通|AU|Sydney_0113_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技5
+      - 澳大利亚 005
+      - 美国 012 2
+      - 荷兰 002 3
+      - 美国-2
+      - 美国 108
+      - 美国 003
+      - 美国 015 2
+      - 欧洲(油管破解资源君) 15
+      - github.com/freefq - 俄罗斯  61
+      - 澳大利亚 005 2
+      - 美国 028
+      - 美国 029
+      - 中国_0202017
+      - 日本_0202003
+      - SG【付费推荐：https://tt.sbs/vip】
+      - 菲律宾 001 2
+      - 美国 026
       - 美国 035
-      - 美国 131
-      - "YW(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技\r"
-      - "香港HKT|防失联直连|1x\r"
+      - 美国 033
+      - 美国 027
+      - 美国 025
+      - 日本_0131019
+      - 美国 039
+      - 美国 034
+      - v2rayfree.eu.org - 广东省移动 3
+      - 美国 024
+      - 美国 032
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -674,80 +972,117 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 001
-      - _DE_德国
-      - 美国 025
-      - 美国 030
-      - 澳大利亚 006
-      - 日本_0131019
-      - v2rayfree.eu.org - 澳大利亚  31
-      - 美国 020
-      - _油管：全网最强白嫖
-      - v2rayfree.eu.org - 俄罗斯  19
-      - "[VMess] 🇸🇬 SG【付费推荐：https://tt.sbs/vip】"
-      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】 2"
-      - "[VMess] 🇦🇺 AU【付费推荐：https://tt.sbs/vip】"
-      - _GB_英国_2
-      - 欧洲(油管破解资源君) 38
-      - 欧洲(油管破解资源君) 42
-      - 新加坡(油管破解资源君) 2
-      - 香港_0131099
-      - JP(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技 2
-      - 澳大利亚 004
-      - 澳大利亚 005
-      - 美国 026
-      - 美国-G口-161
-      - 美国G-CN2-8080
-      - 立陶宛流媒体解锁
-      - _KR_韩国 2 3
-      - 俄罗斯 003
-      - _油管：全网最强白嫖 2
-      - 香港(TG频道@kxswa)
-      - "[VMess] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】"
-      - 欧洲(油管破解资源君) 64
-      - 捷克 001
-      - 巴西 002
-      - CN【付费推荐：https://tt.sbs/vip】
-      - 普通|AU|Sydney_0113_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技5
+      - 韩国_0202202
+      - 俄罗斯 002
       - IPLC专线｜冀港[2.0][原生][Disney+](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技7
-      - IPLC专线｜沪港[2.0](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技4
-      - 普通|SE|Stockholm_0117_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技2
-      - US_youtube@资源分享师_99
-      - 美国 013
-      - "|46.28Mb"
-      - 美国 014
-      - 欧洲(油管破解资源君) 34
-      - 美国 015
-      - 菲律宾 001
-      - 美国 036
-      - 法国 001
-      - 美国(油管破解资源君) 30
-      - 英国 001
       - 俄罗斯 001
-      - 美国 018
-      - "|63.12Mb"
-      - 美国 031
-      - 荷兰 002
       - 荷兰 003
-      - 斯洛伐克 001
-      - 美国 017
-      - 美国-4
-      - 美国-3
-      - v2rayfree.eu.org - 美国  28
-      - github.com/freefq - 四川省成都市移动 54
-      - 美国-2
-      - 美国 049
-      - 美国 021
+      - 新加坡 001
+      - github.com/freefq - 上海市联通 3
+      - 荷兰 002
+      - 中国_02024726
       - 中国(TG频道@kxswa)
-      - "| 4.30Mb"
-      - "| 0.03Mb"
-      - smtp.lemail.cloud:443
-      - "|68.99Mb"
-      - "[Trojan] 🇨🇳 CN【付费推荐：https://tt.sbs/vip】"
+      - 美国 063
+      - US_youtube@资源分享师_99
+      - 欧洲(油管破解资源君) 6
+      - 新加坡_0202009
+      - _HK_香港
+      - _油管：全网最强白嫖
+      - 菲律宾 001
+      - 德国_0202027
+      - 日本 01
+      - _HK_香港 2
+      - 美国 023
+      - 中国-291.8KB/s(Youtube:不良林)
+      - 美国 012
+      - 美国 014
+      - 中国-7.21MB/s(Youtube:不良林)
+      - 美国 022
+      - IPLC专线｜沪港[2.0](https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技4
+      - 中国-646.4KB/s(Youtube:不良林)
+      - 美国 022 2
+      - HK(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技
+      - 美国(油管破解资源君) 30
+      - 欧洲(油管:破解资源君) 26
+      - 欧洲(油管破解资源君) 64
+      - 中国_02022067
+      - 中国-1.19MB/s(Youtube:不良林)
+      - _HK_香港 3
+      - 波兰_0202005
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 中国_02024726 2
+      - 荷兰 002 2
+      - 美国 020
+      - 【直连】狮城 - 亚马逊 - 3
+      - 美国 017
+      - 法国 001
+      - 欧洲(油管:破解资源君) 15
+      - 美国 016
+      - 中国-304.0KB/s(Youtube:不良林)
+      - 美国 014 2
+      - 美国 107
+      - 美国 036
+      - 美国 009
+      - 美国 138
+      - 澳大利亚 002
+      - v2rayfree.eu.org - 美国  28
+      - 美国 010
+      - 中国-863.3KB/s(Youtube:不良林)
+      - 美国-4
+      - __27_92Mb
+      - 中国-2.93MB/s(Youtube:不良林)
+      - _AU_澳大利亚
+      - _US_美国
+      - 中国_02024728
+      - 中国_02021904
+      - 中国_02024727
+      - _GB_英国
+      - CN【付费推荐：https//tt.sbs/vip】
+      - _JP_日本
+      - _US_美国 2
+      - 美国 014 3
+      - _CN_中国->🇭🇰_HK_香港_1
+      - 美国 013
+      - 日本(油管:破解资源君)
+      - 美国 015
+      - "|13.06Mb"
+      - sg-am3.eqsunshine.com:32001
+      - "@An0nymousteam_ssr22🇸🇪"
+      - 美国 018
+      - _CN_中国->🇭🇰_HK_香港_2
+      - 美国 013 2
+      - 欧洲(油管:破解资源君) 14
+      - JP【付费推荐：https://tt.sbs/vip】
+      - "%�\x11�%�P���白嫖-055%%�"
+      - 俄罗斯 001 2
+      - 普通|AU|Sydney_0113_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技5
+      - 澳大利亚 005
+      - 美国 012 2
+      - 荷兰 002 3
+      - 美国-2
+      - 美国 108
+      - 美国 003
+      - 美国 015 2
+      - 欧洲(油管破解资源君) 15
+      - github.com/freefq - 俄罗斯  61
+      - 澳大利亚 005 2
+      - 美国 028
+      - 美国 029
+      - 中国_0202017
+      - 日本_0202003
+      - SG【付费推荐：https://tt.sbs/vip】
+      - 菲律宾 001 2
+      - 美国 026
       - 美国 035
-      - 美国 131
-      - "YW(https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技\r"
-      - "香港HKT|防失联直连|1x\r"
+      - 美国 033
+      - 美国 027
+      - 美国 025
+      - 日本_0131019
+      - 美国 039
+      - 美国 034
+      - v2rayfree.eu.org - 广东省移动 3
+      - 美国 024
+      - 美国 032
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
