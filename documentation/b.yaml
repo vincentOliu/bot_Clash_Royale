@@ -6,367 +6,311 @@ mode: Rule
 log-level: info
 external-controller: 9090
 proxies:
-  - {name: 瑞典 001, server: 141.147.181.219, port: 443, type: vmess, uuid: 0b873cff-11ab-4716-c41a-04f886135091, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /roewesu}, udp: true}
-  - {name: github.com/freefq - 新加坡Amazon数据中心 1, server: sg05.170203.xyz, port: 43543, type: vmess, uuid: 1f3f5b8a-be41-4a92-9b90-6473702aaa3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg05.170203.xyz}}, udp: true}
-  - {name: 美国(油管:破解资源君) 16, server: 140.83.86.129, port: 80, type: vmess, uuid: 8700cfbd-71dc-42b0-84f2-53cd7fe5645b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 140.83.86.129}}, udp: true}
-  - {name: 美国 001, server: dl-hk5.efyunpan.com, port: 443, type: trojan, password: 0d22d2ba-b10a-40c3-9b0e-c7ad8c8198eb, sni: data-hk.efyunpan.com, skip-cert-verify: true, udp: true}
-  - {name: _SG_新加坡 2 2, server: sg04.170203.xyz, port: 43543, type: vmess, uuid: 1f3f5b8a-be41-4a92-9b90-6473702aaa3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg04.170203.xyz}}, udp: true}
-  - {name: _CN_中国->🇨🇭_CH_瑞士_27, server: t.cccao.cyou, port: 16633, type: vmess, uuid: d6eb1026-91a9-453d-aefe-5048303dd951, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: t.cccao.cyou}}, udp: true}
-  - {name: _CN_中国->🇺🇦_UA_乌克兰_4, server: m.lwvzmdu.cn, port: 16637, type: vmess, uuid: d6eb1026-91a9-453d-aefe-5048303dd951, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: m.lwvzmdu.cn}}, udp: true}
-  - {name: _CN_中国->🇹🇼_TW_台湾_2_39, server: m.lwvzmdu.cn, port: 16616, type: vmess, uuid: d6eb1026-91a9-453d-aefe-5048303dd951, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: m.lwvzmdu.cn}}, udp: true}
-  - {name: "[Trojan] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】", server: hn.xiaohouzi.club, port: 14185, type: trojan, password: f52e6827-d087-3fd0-9c66-ef87874c69ba, sni: "%24hktnew01.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: "_HK_香港\r_38\r", server: hkmax01.170203.xyz, port: 443, type: trojan, password: 1f3f5b8a-be41-4a92-9b90-6473702aaa3b, sni: "%24%24%24%24%24hkmax01.170203.xyz", skip-cert-verify: true, udp: true}
-  - {name: _KR_韩国 2, server: surongwei.eu.org, port: 443, type: vmess, uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /reffs7y26g0ua, headers: {Host: surongwei.eu.org}}, udp: true}
+  - {name: 中国_0206176, server: 36.156.102.166, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https//tt.sbs/vip】 4, server: 111.45.22.239, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 韩国 002, server: kaizen-jp-11.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇯🇵_JP_日本_4, server: yes.iamagoodman.net, port: 16617, type: vmess, uuid: d6eb1026-91a9-453d-aefe-5048303dd951, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: yes.iamagoodman.net}}, udp: true}
-  - {name: _JP_日本_来源：kkzui.com（快嘴科技）_24, server: jp04.170203.xyz, port: 23245, type: vmess, uuid: 1f3f5b8a-be41-4a92-9b90-6473702aaa3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp04.170203.xyz}}, udp: true}
-  - {name: _HK_香港_2, server: 47.242.65.80, port: 62307, type: vmess, uuid: 48f3fa93-1722-4f8d-af74-fcc54c2f21d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: "|25.25Mb", server: phxv001.jd0001.top, port: 44302, type: trojan, password: 4d111af8-5078-37e0-a583-34155f60b32c, skip-cert-verify: true, udp: true}
-  - {name: 日本_0202003, server: 138.2.35.81, port: 80, type: vmess, uuid: a0733fc9-457e-498d-c363-9ec774a74948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jun}, udp: true}
-  - {name: HK-8.210.248.210-0380, server: 8.210.248.210, port: 54570, type: vmess, uuid: aa1d02a4-60e6-4671-8107-4d5e6bacd265, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: "| 5.92Mb", server: ca-ls03.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: ca-ls03.nb1.fr}}, udp: true}
-  - {name: -台湾-dd7.bestcloud.tk, server: dd7.bestcloud.tk, port: 443, type: vmess, uuid: b2e83a55-f1b9-4a28-bdbd-c07f3a27dd99, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /2, headers: {Host: uk3.mybestjj.com}}, udp: true}
-  - {name: 未知_0206190, server: 141.101.114.32, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
-  - {name: _SG_新加坡_来源：kkzui.com（快嘴科技）_32, server: sg02.170203.xyz, port: 43543, type: vmess, uuid: 1f3f5b8a-be41-4a92-9b90-6473702aaa3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg02.170203.xyz}}, udp: true}
-  - {name: _SG_新加坡_2, server: sg05.170203.xyz, port: 43543, type: vmess, uuid: 1f3f5b8a-be41-4a92-9b90-6473702aaa3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg05.170203.xyz}}, udp: true}
-  - {name: FR_5.135.235.160_02052023772f-1727trojan, server: 5.135.235.160, port: 443, type: trojan, password: a2c8194b-fcfd-4c39-a6bd-31ea9f4ea671, skip-cert-verify: true, udp: true}
-  - {name: "| 9.29Mb", server: meiguo.htvviru.top, port: 671, type: trojan, password: 3d81e6fb-c7f0-4791-af2e-82c93d149483, skip-cert-verify: true, udp: true}
-  - {name: 香港【付费推荐：https//tt.sbs/vip】 3, server: txy.zemzoh.cf, port: 49985, type: vmess, uuid: 50f58a39-82c4-4cc4-fd80-1cf4f38d2e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 日本(TG频道@kxswa), server: 152.69.197.74, port: 12345, type: vmess, uuid: b8a6bf58-485a-4046-b386-b3661bf65eff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bb, headers: {Host: 152.69.197.74}}, udp: true}
-  - {name: _HK_香港_2 2, server: 47.242.1.160, port: 36298, type: vmess, uuid: 6cea7176-148d-4f51-9bf4-313199c839ba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 香港(TG频道@kxswa), server: txy.zemzoh.cf, port: 49985, type: vmess, uuid: 50f58a39-82c4-4cc4-fd80-1cf4f38d2e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国乔治亚州 23, server: 24.199.119.135, port: 443, type: vmess, uuid: e6da31cb-6c97-4699-c412-124d5ab80856, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: _CN_中国->🇳🇱_NL_荷兰_43, server: t.cccao.cyou, port: 16642, type: vmess, uuid: d6eb1026-91a9-453d-aefe-5048303dd951, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: t.cccao.cyou}}, udp: true}
-  - {name: "|38.84Mb", server: 138.2.39.67, port: 80, type: vmess, uuid: ab335c88-d14a-4e67-b52c-54ed8be80c49, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 澳大利亚 006, server: au-ls03.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: au-ls03.nb1.fr}}, udp: true}
-  - {name: _CN_中国->🇭🇰_HK_香港_2_40, server: m.lwvzmdu.cn, port: 16620, type: vmess, uuid: d6eb1026-91a9-453d-aefe-5048303dd951, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: m.lwvzmdu.cn}}, udp: true}
-  - {name: github.com/freefq - 法国OVH机房SAS硬盘BGP主机 16, server: upload.soft98.download, port: 443, type: trojan, password: a2c8194b-fcfd-4c39-a6bd-31ea9f4ea671, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇪🇸_ES_西班牙, server: yes.iamagoodman.net, port: 16648, type: vmess, uuid: d6eb1026-91a9-453d-aefe-5048303dd951, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: yes.iamagoodman.net}}, udp: true}
-  - {name: US_20.106.103.230_02032023838a-554trojan, server: 20.106.103.230, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, skip-cert-verify: true, udp: true}
-  - {name: 日本 002, server: free-jp.tencent.cfd, port: 61616, type: vmess, uuid: d1860587-aa33-4b76-85cd-c191edecb338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /videos, headers: {Host: free-jp.tencent.cfd}}, udp: true}
-  - {name: 未知_0206056, server: 162.159.152.100, port: 2082, type: vmess, uuid: 80837af3-1ed8-4686-fa8a-6bf9214d5351, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aries, headers: {Host: UK.CLOUDFLARE.QUEST}}, udp: true}
-  - {name: _HK_香港_3, server: 8.210.116.6, port: 26302, type: vmess, uuid: c592c241-8317-452a-9ef3-2c0c5b8ea5f8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: JP-138.2.35.81-1186, server: 138.2.35.81, port: 80, type: vmess, uuid: a0733fc9-457e-498d-c363-9ec774a74948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jun}, udp: true}
-  - {name: CN-43.154.208.92-0270, server: 43.154.208.92, port: 53613, type: vmess, uuid: 4b89f5bf-5ef2-4047-bc64-6cd9bc7d6829, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hk10/getData}, udp: true}
-  - {name: JP-140.83.86.129-0398, server: 140.83.86.129, port: 80, type: vmess, uuid: 8700cfbd-71dc-42b0-84f2-53cd7fe5645b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 澳大利亚 001, server: 43.154.208.92, port: 53613, type: vmess, uuid: 4b89f5bf-5ef2-4047-bc64-6cd9bc7d6829, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hk10/getData, headers: {Host: hk10.linkeden.co}}, udp: true}
-  - {name: US-135.148.138.80-0378, server: us-2.0rd.net, port: 443, type: vmess, uuid: 597888c0-a318-11ed-b536-205c6d5f5d78, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-2.0rd.net}}, udp: true}
-  - {name: "[Trojan] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】 2", server: hnm.xiaohouzi.club, port: 19362, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24aws-hk03.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: "| 6.36Mb", server: 173.208.242.226, port: 80, type: vmess, uuid: 3740cc26-bd94-449d-abd1-3dad6c08553f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: "| 1.87Mb", server: air-sonjose12.900513.xyz, port: 7758, type: trojan, password: 4cfb5b98-5a9d-4c6d-8911-25deca297fa1, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港 3 2, server: 8.210.166.114, port: 48236, type: vmess, uuid: 9a3ab916-0662-45ae-8844-8efa29365f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 美国 005, server: b.mg.us.cat77.cloud, port: 5215, type: trojan, password: cd27884b-c5af-34ec-b75f-8248077818fe, sni: b.mg.us.cat77.cloud, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港 2 2, server: 8.210.236.45, port: 61228, type: vmess, uuid: 7e0ee5c7-46ff-42f8-ab7c-06d8227da454, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 中国【付费推荐：https://tt.sbs/vip】, server: z80001.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 美国 008, server: kaizen-us-4.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_1, server: 8.210.194.24, port: 62665, type: vmess, uuid: 12c440f8-78d4-4e15-92a6-32fce44ade79, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: "|26.23Mb", server: air-osaka24.900513.xyz, port: 7758, type: trojan, password: 4cfb5b98-5a9d-4c6d-8911-25deca297fa1, skip-cert-verify: true, udp: true}
-  - {name: _SG_新加坡_2 2, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 中国【付费推荐：https://tt.sbs/vip】 2, server: g.cccao.cyou, port: 16616, type: vmess, uuid: d6eb1026-91a9-453d-aefe-5048303dd951, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: g.cccao.cyou}}, udp: true}
-  - {name: "[VMess] 🇸🇬 新加坡【付费推荐：https://tt.sbs/vip】 3", server: 15.235.147.186, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sshkit/Ertusg86/635014638c264/}, udp: true}
+  - {name: github.com/freefq - 香港腾讯云 20, server: txy.zemzoh.cf, port: 49985, type: vmess, uuid: 50f58a39-82c4-4cc4-fd80-1cf4f38d2e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
   - {name: 香港【付费推荐：https//tt.sbs/vip】 2, server: txy.zemzoh.cf, port: 49985, type: vmess, uuid: 50f58a39-82c4-4cc4-fd80-1cf4f38d2e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 美国 024, server: kaizen-hk-13.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: 美国 俄勒冈州 — 谷歌云 GCP, server: yg.stg18855479570.repl.co, port: 443, type: vmess, uuid: c268d888-c3d2-4a15-8be6-c1e824214810, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: yg.stg18855479570.repl.co}}, udp: true}
-  - {name: 香港【付费推荐：https//tt.sbs/vip】 2 2, server: txy.zemzoh.cf, port: 49985, type: vmess, uuid: 50f58a39-82c4-4cc4-fd80-1cf4f38d2e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: _JP_日本_2, server: jp001.170203.xyz, port: 23245, type: vmess, uuid: 1f3f5b8a-be41-4a92-9b90-6473702aaa3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp001.170203.xyz}}, udp: true}
-  - {name: 日本_0206048, server: 141.147.185.100, port: 19048, type: vmess, uuid: c1ac357d-3619-43ae-dbf5-d201a5a82b27, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇳🇱_NL_荷兰_2, server: yes.iamagoodman.net, port: 16642, type: vmess, uuid: d6eb1026-91a9-453d-aefe-5048303dd951, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: yes.iamagoodman.net}}, udp: true}
-  - {name: github.com/freefq - 英国社会保险安全部 28, server: uk1.trojanvh.xyz, port: 80, type: trojan, password: b640d791-ff83-4300-b509-c2a02f97f167, skip-cert-verify: true, udp: true}
-  - {name: "[SSR] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】", server: z80001.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 未知_0206057, server: 162.159.128.100, port: 2082, type: vmess, uuid: 80837af3-1ed8-4686-fa8a-6bf9214d5351, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aries, headers: {Host: UK.CLOUDFLARE.QUEST}}, udp: true}
-  - {name: _US_美国_3, server: 161.129.34.126, port: 443, type: vmess, uuid: a0b1fb66-ed41-4077-86a9-a61c143d3777, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /a0b1fb66-ed41-4077-86a9-a61c143d3777}, udp: true}
-  - {name: "[VMess] 🇺🇲 美国【付费推荐：https://tt.sbs/vip】 14", server: 162.159.135.42, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
-  - {name: _CN_中国->🇭🇰_HK_香港_来源：kkzui.com（快嘴科技）_26, server: m.lwvzmdu.cn, port: 16627, type: vmess, uuid: d6eb1026-91a9-453d-aefe-5048303dd951, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: m.lwvzmdu.cn}}, udp: true}
-  - {name: 日本_0206048 2, server: 141.147.185.100, port: 19048, type: vmess, uuid: c1ac357d-3619-43ae-dbf5-d201a5a82b27, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇦🇺 澳大利亚【付费推荐：https://tt.sbs/vip】", server: au-ls03.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: au-ls03.nb1.fr}}, udp: true}
-  - {name: 中国【付费推荐：https://tt.sbs/vip】 3, server: yes.iamagoodman.net, port: 16618, type: vmess, uuid: d6eb1026-91a9-453d-aefe-5048303dd951, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: yes.iamagoodman.net}}, udp: true}
-  - {name: _CN_中国->🇮🇳_IN_印度, server: yes.iamagoodman.net, port: 16626, type: vmess, uuid: d6eb1026-91a9-453d-aefe-5048303dd951, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: yes.iamagoodman.net}}, udp: true}
-  - {name: 欧洲(油管:破解资源君) 11, server: 162.159.128.7, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
-  - {name: TR-2.59.181.37-6615, server: tk02.nb1.fr, port: 443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: tk02.nb1.fr}}, udp: true}
-  - {name: _CN_中国->🇹🇼_TW_台湾_2, server: yes.iamagoodman.net, port: 16616, type: vmess, uuid: d6eb1026-91a9-453d-aefe-5048303dd951, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: yes.iamagoodman.net}}, udp: true}
-  - {name: _CN_中国->🇯🇵_JP_日本_5, server: m.lwvzmdu.cn, port: 16617, type: vmess, uuid: d6eb1026-91a9-453d-aefe-5048303dd951, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: m.lwvzmdu.cn}}, udp: true}
-  - {name: 爱尔兰_0206006, server: 34.252.165.109, port: 11111, type: vmess, uuid: 7cb72883-9635-46eb-8531-8d697927ff04, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "|21.41Mb", server: air-phoenix13.900513.xyz, port: 7528, type: trojan, password: 4cfb5b98-5a9d-4c6d-8911-25deca297fa1, skip-cert-verify: true, udp: true}
-  - {name: 美国 002, server: n1672318788.lyqrdde.cn, port: 443, type: vmess, uuid: 0aec6047-2839-4a7d-a296-605d5c256350, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: n1672318788.lyqrdde.cn}}, udp: true}
+  - {name: _HK_香港_1, server: txy.zemzoh.cf, port: 49985, type: vmess, uuid: 50f58a39-82c4-4cc4-fd80-1cf4f38d2e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: Taiwan 01 TG@nodpai, server: kaizen-tw-2.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: _HK_香港_3, server: 8.210.116.6, port: 26302, type: vmess, uuid: c592c241-8317-452a-9ef3-2c0c5b8ea5f8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
   - {name: 美国 007, server: 104.149.155.13, port: 443, type: trojan, password: 17c412d9-f283-483c-b095-72605fb2840e, sni: vzwzasc.cn, skip-cert-verify: true, udp: true}
-  - {name: "|17.71Mb", server: air-chuncheon24.900513.xyz, port: 7758, type: trojan, password: 4cfb5b98-5a9d-4c6d-8911-25deca297fa1, skip-cert-verify: true, udp: true}
+  - {name: 香港【付费推荐：https//tt.sbs/vip】 3, server: txy.zemzoh.cf, port: 49985, type: vmess, uuid: 50f58a39-82c4-4cc4-fd80-1cf4f38d2e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 香港(TG频道@kxswa), server: txy.zemzoh.cf, port: 49985, type: vmess, uuid: 50f58a39-82c4-4cc4-fd80-1cf4f38d2e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 美国 015, server: kaizen-jp-12.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: _HK_香港_1 2, server: 8.210.194.24, port: 62665, type: vmess, uuid: 12c440f8-78d4-4e15-92a6-32fce44ade79, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: Hong Kong 03 TG@nodpai, server: kaizen-hk-11.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: _HK_香港_1 3, server: 47.242.21.177, port: 51007, type: vmess, uuid: 318b3dd1-09cf-4980-81ed-6cf689e5825a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 日本 01 | ws, server: ca0831a7-9d9b-a828-144e-1cb47eae7ff9.cnnic.rip, port: 80, type: vmess, uuid: 116c96f0-363b-4b44-9dcd-3f973565f666, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: "[HK_TROJAN_103.135.103.229443]", server: 103.135.103.229, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, skip-cert-verify: true, udp: true}
+  - {name: US2, server: 148.59.74.184, port: 443, type: trojan, password: f92cbc43-7f00-4ee0-bfab-1ea4f39c2de9, sni: pcd462233.netvigator.com, skip-cert-verify: true, udp: true}
+  - {name: _HK_香港_2, server: 47.242.1.160, port: 36298, type: vmess, uuid: 6cea7176-148d-4f51-9bf4-313199c839ba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 伊朗 001, server: 109.122.208.205, port: 48377, type: vmess, uuid: 21745bfe-ef4d-4e61-c142-97b4848fdc14, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 美国 010, server: kaizen-us-9.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: -美国-cft.hicoom.com, server: cft.hicoom.com, port: 443, type: vmess, uuid: 654f997b-5bea-4c82-9538-35ee57b6fd72, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /654f997b-5bea-4c82-9538-35ee57b6fd72, headers: {Host: cft.hicoom.com}}, udp: true}
+  - {name: HK1, server: 20.24.154.167, port: 443, type: trojan, password: f92cbc43-7f00-4ee0-bfab-1ea4f39c2de9, sni: pcd462233.netvigator.com, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://tt.sbs/vip】, server: hnm.xiaohouzi.club, port: 19362, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24%24%24aws-hk03.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 荷兰 001, server: kaizen-ru-2.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://tt.sbs/vip】 2, server: 117.28.245.196, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: -美国-in-ls03.nb1.fr, server: in-ls03.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: in-ls03.nb1.fr}}, udp: true}
+  - {name: _CN_中国->🇩🇪_DE_德国_49_49, server: 111.45.22.239, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 普通|CA|Montreal_0115_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技3, server: z0115.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
+  - {name: _HK_香港 2 2, server: 8.210.236.45, port: 61228, type: vmess, uuid: 7e0ee5c7-46ff-42f8-ab7c-06d8227da454, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: _HK_香港 3 2, server: 8.210.166.114, port: 48236, type: vmess, uuid: 9a3ab916-0662-45ae-8844-8efa29365f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 亚洲(油管破解资源君) 3, server: in-ls03.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: in-ls03.nb1.fr}}, udp: true}
+  - {name: 美国(油管破解资源君) 17, server: de1.trojan-lite.com, port: 443, type: trojan, password: bs6KJkPBW9MP74uHEa, sni: de1.trojan-lite.com, skip-cert-verify: true, udp: true}
+  - {name: "[VMess] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】 4", server: 111.45.22.239, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[SSR] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】 3", server: 117.28.245.196, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 日本_0202003, server: 138.2.35.81, port: 80, type: vmess, uuid: a0733fc9-457e-498d-c363-9ec774a74948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jun}, udp: true}
+  - {name: _HK_香港_1 4, server: 20.239.197.243, port: 443, type: vmess, uuid: 4eb40c8d-37c6-4a6e-add9-97f94360d494, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: github.com/freefq - 香港腾讯云 2, server: txy.zemzoh.cf, port: 49985, type: vmess, uuid: 50f58a39-82c4-4cc4-fd80-1cf4f38d2e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 瑞典 Oracle Corporation, server: us02.wxfz.ga, port: 11903, type: vmess, uuid: 197b49d8-5d07-49e6-8944-68afa81a5fe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "|26.23Mb", server: air-osaka24.900513.xyz, port: 7758, type: trojan, password: 4cfb5b98-5a9d-4c6d-8911-25deca297fa1, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https//tt.sbs/vip】 5, server: 111.45.22.239, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港 腾讯云_1, server: txy.zemzoh.cf, port: 49985, type: vmess, uuid: 50f58a39-82c4-4cc4-fd80-1cf4f38d2e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: _HK_香港 2, server: petal.ga, port: 443, type: vmess, uuid: b744f5cc-eab2-d2cd-f477-76646d17987f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /petalvws, headers: {Host: petal.ga}}, udp: true}
+  - {name: 美国 013, server: cooing-luxuriant-blue.glitch.me, port: 443, type: vmess, uuid: 80e7dd59-b1fc-45a0-98be-1478a9af89f2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /api, headers: {Host: cooing-luxuriant-blue.glitch.me}}, udp: true}
+  - {name: _VN_越南 2, server: 103.75.186.153, port: 80, type: vmess, uuid: 8886bc65-e61d-41f3-922a-8f1b25b499bf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tandung288.click}, udp: true}
+  - {name: _KR_韩国 2, server: surongwei.eu.org, port: 443, type: vmess, uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /reffs7y26g0ua, headers: {Host: surongwei.eu.org}}, udp: true}
+  - {name: HK3, server: 20.24.155.66, port: 443, type: trojan, password: f92cbc43-7f00-4ee0-bfab-1ea4f39c2de9, sni: pcd462233.netvigator.com, skip-cert-verify: true, udp: true}
+  - {name: _VN_越南_1, server: 103.82.24.174, port: 80, type: vmess, uuid: 8886bc65-e61d-41f3-922a-8f1b25b499bf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tandung288.click}, udp: true}
   - {name: "[VMess] 🇯🇵 日本【付费推荐：https://tt.sbs/vip】 4", server: 138.2.35.81, port: 80, type: vmess, uuid: a0733fc9-457e-498d-c363-9ec774a74948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jun, headers: {Host: 138.2.35.81}}, udp: true}
-  - {name: "US_youtube@79c935c0-27dc-4383-b307-dcac1b8e5509@104.149.155.13443?type=tcp&sni=$vzwzasc.cn&allowInsecure=1#US_youtube@资源分享师_72\r", server: 104.149.155.13, port: 443, type: trojan, password: 79c935c0-27dc-4383-b307-dcac1b8e5509, sni: vzwzasc.cn, skip-cert-verify: true, udp: true}
+  - {name: HK-免流, server: hkt.52147.top, port: 80, type: vmess, uuid: f92cbc43-7f00-4ee0-bfab-1ea4f39c2de9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yfjc/jp1, headers: {Host: tlu.dl.delivery.mp.microsoft.com}}, udp: true}
+  - {name: 英国 002, server: 88.150.137.177, port: 443, type: trojan, password: shefelnak, sni: content-provider4.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
+  - {name: "%�\x11�<'��9�oyj�L\f\rM%%�", server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 美国 004, server: 138.2.35.81, port: 80, type: vmess, uuid: a0733fc9-457e-498d-c363-9ec774a74948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jun}, udp: true}
+  - {name: 香港 02 | ws, server: 96cfae9d-7c6c-0722-5eb8-a2b8e9d53aee.cnnic.rip, port: 80, type: vmess, uuid: 116c96f0-363b-4b44-9dcd-3f973565f666, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: _US_美国_7, server: v-aws-tk-4.heima-bot.tech, port: 8882, type: vmess, uuid: 90ea24f6-4b7f-4b4e-a9c1-de7d77b67e45, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /m3, headers: {Host: v-aws-tk-4.heima-bot.tech}}, udp: true}
+  - {name: VIETNAM 6, server: 103.82.24.174, port: 80, type: vmess, uuid: 8886bc65-e61d-41f3-922a-8f1b25b499bf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tandung288.click, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
+  - {name: 美国 Microsoft公司, server: jp1.sanfen001.pics, port: 443, type: vmess, uuid: 2d506805-626a-4669-8c8b-23f383e371ca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: jp1.sanfen001.pics}}, udp: true}
+  - {name: v2rayfree.eu.org - 美国乔治亚州 23, server: 24.199.119.135, port: 443, type: vmess, uuid: e6da31cb-6c97-4699-c412-124d5ab80856, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: DE_45.80.190.59_02042023e26d-373trojan, server: 45.80.190.59, port: 443, type: trojan, password: bs6KJkPBW9MP74uHEa, skip-cert-verify: true, udp: true}
+  - {name: jp-am48-6.eqnode.net:8081, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 香港 Amazon数据中心, server: hk3.sanfen001.pics, port: 443, type: vmess, uuid: 2d506805-626a-4669-8c8b-23f383e371ca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: hk3.sanfen001.pics}}, udp: true}
+  - {name: 美国Linode数据中心 31, server: vuk1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vuk1.0bad.com}}, udp: true}
+  - {name: github.com/freefq - 香港Amazon数据中心 14, server: hk3.sanfen001.pics, port: 443, type: vmess, uuid: 2d506805-626a-4669-8c8b-23f383e371ca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
+  - {name: 澳大利亚 002, server: 43.134.239.46, port: 29808, type: vmess, uuid: 088da47b-0815-48a3-b60e-b86a4806b21f, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sg2/getData, headers: {Host: sg2.verichains.co}}, udp: true}
+  - {name: VIETNAM 3, server: 103.56.160.184, port: 80, type: vmess, uuid: 8886bc65-e61d-41f3-922a-8f1b25b499bf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tandung288.click, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
+  - {name: 美国 073, server: de-ls03.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: de-ls03.nb1.fr}}, udp: true}
+  - {name: _VN_越南_2, server: 103.166.184.157, port: 80, type: vmess, uuid: 8886bc65-e61d-41f3-922a-8f1b25b499bf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tandung288.click}, udp: true}
+  - {name: 美国 012, server: 34.194.135.141, port: 443, type: vmess, uuid: 80e7dd59-b1fc-45a0-98be-1478a9af89f2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /api, headers: {Host: cooing-luxuriant-blue.glitch.me}}, udp: true}
+  - {name: 中国【付费推荐：https://tt.sbs/vip】 3, server: data-hk-v2.shwjfkw.cn, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: data-hk-v2.shwjfkw.cn}}, udp: true}
+  - {name: _VN_越南, server: 103.166.183.151, port: 80, type: vmess, uuid: 8886bc65-e61d-41f3-922a-8f1b25b499bf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tandung288.click}, udp: true}
+  - {name: VIETNAM 2, server: 103.166.184.157, port: 80, type: vmess, uuid: 8886bc65-e61d-41f3-922a-8f1b25b499bf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tandung288.click, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
+  - {name: v2rayfree.eu.org - 亚太地区  8, server: 103.183.118.19, port: 80, type: vmess, uuid: 8886bc65-e61d-41f3-922a-8f1b25b499bf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tandung288.click, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 瑞典 001
-      - github.com/freefq - 新加坡Amazon数据中心 1
-      - 美国(油管:破解资源君) 16
-      - 美国 001
-      - _SG_新加坡 2 2
-      - _CN_中国->🇨🇭_CH_瑞士_27
-      - _CN_中国->🇺🇦_UA_乌克兰_4
-      - _CN_中国->🇹🇼_TW_台湾_2_39
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】"
-      - "_HK_香港\r_38\r"
-      - _KR_韩国 2
+      - 中国_0206176
+      - 中国【付费推荐：https//tt.sbs/vip】 4
       - 韩国 002
-      - _CN_中国->🇯🇵_JP_日本_4
-      - _JP_日本_来源：kkzui.com（快嘴科技）_24
-      - _HK_香港_2
-      - "|25.25Mb"
-      - 日本_0202003
-      - HK-8.210.248.210-0380
-      - "| 5.92Mb"
-      - -台湾-dd7.bestcloud.tk
-      - 未知_0206190
-      - _SG_新加坡_来源：kkzui.com（快嘴科技）_32
-      - _SG_新加坡_2
-      - FR_5.135.235.160_02052023772f-1727trojan
-      - "| 9.29Mb"
-      - 香港【付费推荐：https//tt.sbs/vip】 3
-      - 日本(TG频道@kxswa)
-      - _HK_香港_2 2
-      - 香港(TG频道@kxswa)
-      - github.com/freefq - 美国乔治亚州 23
-      - _CN_中国->🇳🇱_NL_荷兰_43
-      - "|38.84Mb"
-      - 澳大利亚 006
-      - _CN_中国->🇭🇰_HK_香港_2_40
-      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 16
-      - _CN_中国->🇪🇸_ES_西班牙
-      - US_20.106.103.230_02032023838a-554trojan
-      - 日本 002
-      - 未知_0206056
-      - _HK_香港_3
-      - JP-138.2.35.81-1186
-      - CN-43.154.208.92-0270
-      - JP-140.83.86.129-0398
-      - 澳大利亚 001
-      - US-135.148.138.80-0378
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】 2"
-      - "| 6.36Mb"
-      - "| 1.87Mb"
-      - _HK_香港 3 2
-      - 美国 005
-      - _HK_香港 2 2
-      - 中国【付费推荐：https://tt.sbs/vip】
-      - 美国 008
-      - _HK_香港_1
-      - "|26.23Mb"
-      - _SG_新加坡_2 2
-      - 中国【付费推荐：https://tt.sbs/vip】 2
-      - "[VMess] 🇸🇬 新加坡【付费推荐：https://tt.sbs/vip】 3"
+      - github.com/freefq - 香港腾讯云 20
       - 香港【付费推荐：https//tt.sbs/vip】 2
-      - 美国 024
-      - 美国 俄勒冈州 — 谷歌云 GCP
-      - 香港【付费推荐：https//tt.sbs/vip】 2 2
-      - _JP_日本_2
-      - 日本_0206048
-      - _CN_中国->🇳🇱_NL_荷兰_2
-      - github.com/freefq - 英国社会保险安全部 28
-      - "[SSR] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】"
-      - 未知_0206057
-      - _US_美国_3
-      - "[VMess] 🇺🇲 美国【付费推荐：https://tt.sbs/vip】 14"
-      - _CN_中国->🇭🇰_HK_香港_来源：kkzui.com（快嘴科技）_26
-      - 日本_0206048 2
-      - "[VMess] 🇦🇺 澳大利亚【付费推荐：https://tt.sbs/vip】"
-      - 中国【付费推荐：https://tt.sbs/vip】 3
-      - _CN_中国->🇮🇳_IN_印度
-      - 欧洲(油管:破解资源君) 11
-      - TR-2.59.181.37-6615
-      - _CN_中国->🇹🇼_TW_台湾_2
-      - _CN_中国->🇯🇵_JP_日本_5
-      - 爱尔兰_0206006
-      - "|21.41Mb"
-      - 美国 002
+      - _HK_香港_1
+      - Taiwan 01 TG@nodpai
+      - _HK_香港_3
       - 美国 007
-      - "|17.71Mb"
+      - 香港【付费推荐：https//tt.sbs/vip】 3
+      - 香港(TG频道@kxswa)
+      - 美国 015
+      - _HK_香港_1 2
+      - Hong Kong 03 TG@nodpai
+      - _HK_香港_1 3
+      - 日本 01 | ws
+      - "[HK_TROJAN_103.135.103.229443]"
+      - US2
+      - _HK_香港_2
+      - 伊朗 001
+      - 美国 010
+      - -美国-cft.hicoom.com
+      - HK1
+      - 中国【付费推荐：https://tt.sbs/vip】
+      - 荷兰 001
+      - 中国【付费推荐：https://tt.sbs/vip】 2
+      - -美国-in-ls03.nb1.fr
+      - _CN_中国->🇩🇪_DE_德国_49_49
+      - 普通|CA|Montreal_0115_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技3
+      - _HK_香港 2 2
+      - _HK_香港 3 2
+      - 亚洲(油管破解资源君) 3
+      - 美国(油管破解资源君) 17
+      - "[VMess] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】 4"
+      - "[SSR] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】 3"
+      - 日本_0202003
+      - _HK_香港_1 4
+      - github.com/freefq - 香港腾讯云 2
+      - 瑞典 Oracle Corporation
+      - "|26.23Mb"
+      - 中国【付费推荐：https//tt.sbs/vip】 5
+      - 香港 腾讯云_1
+      - _HK_香港 2
+      - 美国 013
+      - _VN_越南 2
+      - _KR_韩国 2
+      - HK3
+      - _VN_越南_1
       - "[VMess] 🇯🇵 日本【付费推荐：https://tt.sbs/vip】 4"
-      - "US_youtube@79c935c0-27dc-4383-b307-dcac1b8e5509@104.149.155.13443?type=tcp&sni=$vzwzasc.cn&allowInsecure=1#US_youtube@资源分享师_72\r"
+      - HK-免流
+      - 英国 002
+      - "%�\x11�<'��9�oyj�L\f\rM%%�"
+      - 美国 004
+      - 香港 02 | ws
+      - _US_美国_7
+      - VIETNAM 6
+      - 美国 Microsoft公司
+      - v2rayfree.eu.org - 美国乔治亚州 23
+      - DE_45.80.190.59_02042023e26d-373trojan
+      - jp-am48-6.eqnode.net:8081
+      - 香港 Amazon数据中心
+      - 美国Linode数据中心 31
+      - github.com/freefq - 香港Amazon数据中心 14
+      - 澳大利亚 002
+      - VIETNAM 3
+      - 美国 073
+      - _VN_越南_2
+      - 美国 012
+      - 中国【付费推荐：https://tt.sbs/vip】 3
+      - _VN_越南
+      - VIETNAM 2
+      - v2rayfree.eu.org - 亚太地区  8
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - 瑞典 001
-      - github.com/freefq - 新加坡Amazon数据中心 1
-      - 美国(油管:破解资源君) 16
-      - 美国 001
-      - _SG_新加坡 2 2
-      - _CN_中国->🇨🇭_CH_瑞士_27
-      - _CN_中国->🇺🇦_UA_乌克兰_4
-      - _CN_中国->🇹🇼_TW_台湾_2_39
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】"
-      - "_HK_香港\r_38\r"
-      - _KR_韩国 2
+      - 中国_0206176
+      - 中国【付费推荐：https//tt.sbs/vip】 4
       - 韩国 002
-      - _CN_中国->🇯🇵_JP_日本_4
-      - _JP_日本_来源：kkzui.com（快嘴科技）_24
-      - _HK_香港_2
-      - "|25.25Mb"
-      - 日本_0202003
-      - HK-8.210.248.210-0380
-      - "| 5.92Mb"
-      - -台湾-dd7.bestcloud.tk
-      - 未知_0206190
-      - _SG_新加坡_来源：kkzui.com（快嘴科技）_32
-      - _SG_新加坡_2
-      - FR_5.135.235.160_02052023772f-1727trojan
-      - "| 9.29Mb"
-      - 香港【付费推荐：https//tt.sbs/vip】 3
-      - 日本(TG频道@kxswa)
-      - _HK_香港_2 2
-      - 香港(TG频道@kxswa)
-      - github.com/freefq - 美国乔治亚州 23
-      - _CN_中国->🇳🇱_NL_荷兰_43
-      - "|38.84Mb"
-      - 澳大利亚 006
-      - _CN_中国->🇭🇰_HK_香港_2_40
-      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 16
-      - _CN_中国->🇪🇸_ES_西班牙
-      - US_20.106.103.230_02032023838a-554trojan
-      - 日本 002
-      - 未知_0206056
-      - _HK_香港_3
-      - JP-138.2.35.81-1186
-      - CN-43.154.208.92-0270
-      - JP-140.83.86.129-0398
-      - 澳大利亚 001
-      - US-135.148.138.80-0378
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】 2"
-      - "| 6.36Mb"
-      - "| 1.87Mb"
-      - _HK_香港 3 2
-      - 美国 005
-      - _HK_香港 2 2
-      - 中国【付费推荐：https://tt.sbs/vip】
-      - 美国 008
-      - _HK_香港_1
-      - "|26.23Mb"
-      - _SG_新加坡_2 2
-      - 中国【付费推荐：https://tt.sbs/vip】 2
-      - "[VMess] 🇸🇬 新加坡【付费推荐：https://tt.sbs/vip】 3"
+      - github.com/freefq - 香港腾讯云 20
       - 香港【付费推荐：https//tt.sbs/vip】 2
-      - 美国 024
-      - 美国 俄勒冈州 — 谷歌云 GCP
-      - 香港【付费推荐：https//tt.sbs/vip】 2 2
-      - _JP_日本_2
-      - 日本_0206048
-      - _CN_中国->🇳🇱_NL_荷兰_2
-      - github.com/freefq - 英国社会保险安全部 28
-      - "[SSR] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】"
-      - 未知_0206057
-      - _US_美国_3
-      - "[VMess] 🇺🇲 美国【付费推荐：https://tt.sbs/vip】 14"
-      - _CN_中国->🇭🇰_HK_香港_来源：kkzui.com（快嘴科技）_26
-      - 日本_0206048 2
-      - "[VMess] 🇦🇺 澳大利亚【付费推荐：https://tt.sbs/vip】"
-      - 中国【付费推荐：https://tt.sbs/vip】 3
-      - _CN_中国->🇮🇳_IN_印度
-      - 欧洲(油管:破解资源君) 11
-      - TR-2.59.181.37-6615
-      - _CN_中国->🇹🇼_TW_台湾_2
-      - _CN_中国->🇯🇵_JP_日本_5
-      - 爱尔兰_0206006
-      - "|21.41Mb"
-      - 美国 002
+      - _HK_香港_1
+      - Taiwan 01 TG@nodpai
+      - _HK_香港_3
       - 美国 007
-      - "|17.71Mb"
+      - 香港【付费推荐：https//tt.sbs/vip】 3
+      - 香港(TG频道@kxswa)
+      - 美国 015
+      - _HK_香港_1 2
+      - Hong Kong 03 TG@nodpai
+      - _HK_香港_1 3
+      - 日本 01 | ws
+      - "[HK_TROJAN_103.135.103.229443]"
+      - US2
+      - _HK_香港_2
+      - 伊朗 001
+      - 美国 010
+      - -美国-cft.hicoom.com
+      - HK1
+      - 中国【付费推荐：https://tt.sbs/vip】
+      - 荷兰 001
+      - 中国【付费推荐：https://tt.sbs/vip】 2
+      - -美国-in-ls03.nb1.fr
+      - _CN_中国->🇩🇪_DE_德国_49_49
+      - 普通|CA|Montreal_0115_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技3
+      - _HK_香港 2 2
+      - _HK_香港 3 2
+      - 亚洲(油管破解资源君) 3
+      - 美国(油管破解资源君) 17
+      - "[VMess] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】 4"
+      - "[SSR] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】 3"
+      - 日本_0202003
+      - _HK_香港_1 4
+      - github.com/freefq - 香港腾讯云 2
+      - 瑞典 Oracle Corporation
+      - "|26.23Mb"
+      - 中国【付费推荐：https//tt.sbs/vip】 5
+      - 香港 腾讯云_1
+      - _HK_香港 2
+      - 美国 013
+      - _VN_越南 2
+      - _KR_韩国 2
+      - HK3
+      - _VN_越南_1
       - "[VMess] 🇯🇵 日本【付费推荐：https://tt.sbs/vip】 4"
-      - "US_youtube@79c935c0-27dc-4383-b307-dcac1b8e5509@104.149.155.13443?type=tcp&sni=$vzwzasc.cn&allowInsecure=1#US_youtube@资源分享师_72\r"
+      - HK-免流
+      - 英国 002
+      - "%�\x11�<'��9�oyj�L\f\rM%%�"
+      - 美国 004
+      - 香港 02 | ws
+      - _US_美国_7
+      - VIETNAM 6
+      - 美国 Microsoft公司
+      - v2rayfree.eu.org - 美国乔治亚州 23
+      - DE_45.80.190.59_02042023e26d-373trojan
+      - jp-am48-6.eqnode.net:8081
+      - 香港 Amazon数据中心
+      - 美国Linode数据中心 31
+      - github.com/freefq - 香港Amazon数据中心 14
+      - 澳大利亚 002
+      - VIETNAM 3
+      - 美国 073
+      - _VN_越南_2
+      - 美国 012
+      - 中国【付费推荐：https://tt.sbs/vip】 3
+      - _VN_越南
+      - VIETNAM 2
+      - v2rayfree.eu.org - 亚太地区  8
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 瑞典 001
-      - github.com/freefq - 新加坡Amazon数据中心 1
-      - 美国(油管:破解资源君) 16
-      - 美国 001
-      - _SG_新加坡 2 2
-      - _CN_中国->🇨🇭_CH_瑞士_27
-      - _CN_中国->🇺🇦_UA_乌克兰_4
-      - _CN_中国->🇹🇼_TW_台湾_2_39
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】"
-      - "_HK_香港\r_38\r"
-      - _KR_韩国 2
+      - 中国_0206176
+      - 中国【付费推荐：https//tt.sbs/vip】 4
       - 韩国 002
-      - _CN_中国->🇯🇵_JP_日本_4
-      - _JP_日本_来源：kkzui.com（快嘴科技）_24
-      - _HK_香港_2
-      - "|25.25Mb"
-      - 日本_0202003
-      - HK-8.210.248.210-0380
-      - "| 5.92Mb"
-      - -台湾-dd7.bestcloud.tk
-      - 未知_0206190
-      - _SG_新加坡_来源：kkzui.com（快嘴科技）_32
-      - _SG_新加坡_2
-      - FR_5.135.235.160_02052023772f-1727trojan
-      - "| 9.29Mb"
-      - 香港【付费推荐：https//tt.sbs/vip】 3
-      - 日本(TG频道@kxswa)
-      - _HK_香港_2 2
-      - 香港(TG频道@kxswa)
-      - github.com/freefq - 美国乔治亚州 23
-      - _CN_中国->🇳🇱_NL_荷兰_43
-      - "|38.84Mb"
-      - 澳大利亚 006
-      - _CN_中国->🇭🇰_HK_香港_2_40
-      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 16
-      - _CN_中国->🇪🇸_ES_西班牙
-      - US_20.106.103.230_02032023838a-554trojan
-      - 日本 002
-      - 未知_0206056
-      - _HK_香港_3
-      - JP-138.2.35.81-1186
-      - CN-43.154.208.92-0270
-      - JP-140.83.86.129-0398
-      - 澳大利亚 001
-      - US-135.148.138.80-0378
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】 2"
-      - "| 6.36Mb"
-      - "| 1.87Mb"
-      - _HK_香港 3 2
-      - 美国 005
-      - _HK_香港 2 2
-      - 中国【付费推荐：https://tt.sbs/vip】
-      - 美国 008
-      - _HK_香港_1
-      - "|26.23Mb"
-      - _SG_新加坡_2 2
-      - 中国【付费推荐：https://tt.sbs/vip】 2
-      - "[VMess] 🇸🇬 新加坡【付费推荐：https://tt.sbs/vip】 3"
+      - github.com/freefq - 香港腾讯云 20
       - 香港【付费推荐：https//tt.sbs/vip】 2
-      - 美国 024
-      - 美国 俄勒冈州 — 谷歌云 GCP
-      - 香港【付费推荐：https//tt.sbs/vip】 2 2
-      - _JP_日本_2
-      - 日本_0206048
-      - _CN_中国->🇳🇱_NL_荷兰_2
-      - github.com/freefq - 英国社会保险安全部 28
-      - "[SSR] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】"
-      - 未知_0206057
-      - _US_美国_3
-      - "[VMess] 🇺🇲 美国【付费推荐：https://tt.sbs/vip】 14"
-      - _CN_中国->🇭🇰_HK_香港_来源：kkzui.com（快嘴科技）_26
-      - 日本_0206048 2
-      - "[VMess] 🇦🇺 澳大利亚【付费推荐：https://tt.sbs/vip】"
-      - 中国【付费推荐：https://tt.sbs/vip】 3
-      - _CN_中国->🇮🇳_IN_印度
-      - 欧洲(油管:破解资源君) 11
-      - TR-2.59.181.37-6615
-      - _CN_中国->🇹🇼_TW_台湾_2
-      - _CN_中国->🇯🇵_JP_日本_5
-      - 爱尔兰_0206006
-      - "|21.41Mb"
-      - 美国 002
+      - _HK_香港_1
+      - Taiwan 01 TG@nodpai
+      - _HK_香港_3
       - 美国 007
-      - "|17.71Mb"
+      - 香港【付费推荐：https//tt.sbs/vip】 3
+      - 香港(TG频道@kxswa)
+      - 美国 015
+      - _HK_香港_1 2
+      - Hong Kong 03 TG@nodpai
+      - _HK_香港_1 3
+      - 日本 01 | ws
+      - "[HK_TROJAN_103.135.103.229443]"
+      - US2
+      - _HK_香港_2
+      - 伊朗 001
+      - 美国 010
+      - -美国-cft.hicoom.com
+      - HK1
+      - 中国【付费推荐：https://tt.sbs/vip】
+      - 荷兰 001
+      - 中国【付费推荐：https://tt.sbs/vip】 2
+      - -美国-in-ls03.nb1.fr
+      - _CN_中国->🇩🇪_DE_德国_49_49
+      - 普通|CA|Montreal_0115_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技3
+      - _HK_香港 2 2
+      - _HK_香港 3 2
+      - 亚洲(油管破解资源君) 3
+      - 美国(油管破解资源君) 17
+      - "[VMess] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】 4"
+      - "[SSR] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】 3"
+      - 日本_0202003
+      - _HK_香港_1 4
+      - github.com/freefq - 香港腾讯云 2
+      - 瑞典 Oracle Corporation
+      - "|26.23Mb"
+      - 中国【付费推荐：https//tt.sbs/vip】 5
+      - 香港 腾讯云_1
+      - _HK_香港 2
+      - 美国 013
+      - _VN_越南 2
+      - _KR_韩国 2
+      - HK3
+      - _VN_越南_1
       - "[VMess] 🇯🇵 日本【付费推荐：https://tt.sbs/vip】 4"
-      - "US_youtube@79c935c0-27dc-4383-b307-dcac1b8e5509@104.149.155.13443?type=tcp&sni=$vzwzasc.cn&allowInsecure=1#US_youtube@资源分享师_72\r"
+      - HK-免流
+      - 英国 002
+      - "%�\x11�<'��9�oyj�L\f\rM%%�"
+      - 美国 004
+      - 香港 02 | ws
+      - _US_美国_7
+      - VIETNAM 6
+      - 美国 Microsoft公司
+      - v2rayfree.eu.org - 美国乔治亚州 23
+      - DE_45.80.190.59_02042023e26d-373trojan
+      - jp-am48-6.eqnode.net:8081
+      - 香港 Amazon数据中心
+      - 美国Linode数据中心 31
+      - github.com/freefq - 香港Amazon数据中心 14
+      - 澳大利亚 002
+      - VIETNAM 3
+      - 美国 073
+      - _VN_越南_2
+      - 美国 012
+      - 中国【付费推荐：https://tt.sbs/vip】 3
+      - _VN_越南
+      - VIETNAM 2
+      - v2rayfree.eu.org - 亚太地区  8
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -385,387 +329,333 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 瑞典 001
-      - github.com/freefq - 新加坡Amazon数据中心 1
-      - 美国(油管:破解资源君) 16
-      - 美国 001
-      - _SG_新加坡 2 2
-      - _CN_中国->🇨🇭_CH_瑞士_27
-      - _CN_中国->🇺🇦_UA_乌克兰_4
-      - _CN_中国->🇹🇼_TW_台湾_2_39
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】"
-      - "_HK_香港\r_38\r"
-      - _KR_韩国 2
+      - 中国_0206176
+      - 中国【付费推荐：https//tt.sbs/vip】 4
       - 韩国 002
-      - _CN_中国->🇯🇵_JP_日本_4
-      - _JP_日本_来源：kkzui.com（快嘴科技）_24
-      - _HK_香港_2
-      - "|25.25Mb"
-      - 日本_0202003
-      - HK-8.210.248.210-0380
-      - "| 5.92Mb"
-      - -台湾-dd7.bestcloud.tk
-      - 未知_0206190
-      - _SG_新加坡_来源：kkzui.com（快嘴科技）_32
-      - _SG_新加坡_2
-      - FR_5.135.235.160_02052023772f-1727trojan
-      - "| 9.29Mb"
-      - 香港【付费推荐：https//tt.sbs/vip】 3
-      - 日本(TG频道@kxswa)
-      - _HK_香港_2 2
-      - 香港(TG频道@kxswa)
-      - github.com/freefq - 美国乔治亚州 23
-      - _CN_中国->🇳🇱_NL_荷兰_43
-      - "|38.84Mb"
-      - 澳大利亚 006
-      - _CN_中国->🇭🇰_HK_香港_2_40
-      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 16
-      - _CN_中国->🇪🇸_ES_西班牙
-      - US_20.106.103.230_02032023838a-554trojan
-      - 日本 002
-      - 未知_0206056
-      - _HK_香港_3
-      - JP-138.2.35.81-1186
-      - CN-43.154.208.92-0270
-      - JP-140.83.86.129-0398
-      - 澳大利亚 001
-      - US-135.148.138.80-0378
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】 2"
-      - "| 6.36Mb"
-      - "| 1.87Mb"
-      - _HK_香港 3 2
-      - 美国 005
-      - _HK_香港 2 2
-      - 中国【付费推荐：https://tt.sbs/vip】
-      - 美国 008
-      - _HK_香港_1
-      - "|26.23Mb"
-      - _SG_新加坡_2 2
-      - 中国【付费推荐：https://tt.sbs/vip】 2
-      - "[VMess] 🇸🇬 新加坡【付费推荐：https://tt.sbs/vip】 3"
+      - github.com/freefq - 香港腾讯云 20
       - 香港【付费推荐：https//tt.sbs/vip】 2
-      - 美国 024
-      - 美国 俄勒冈州 — 谷歌云 GCP
-      - 香港【付费推荐：https//tt.sbs/vip】 2 2
-      - _JP_日本_2
-      - 日本_0206048
-      - _CN_中国->🇳🇱_NL_荷兰_2
-      - github.com/freefq - 英国社会保险安全部 28
-      - "[SSR] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】"
-      - 未知_0206057
-      - _US_美国_3
-      - "[VMess] 🇺🇲 美国【付费推荐：https://tt.sbs/vip】 14"
-      - _CN_中国->🇭🇰_HK_香港_来源：kkzui.com（快嘴科技）_26
-      - 日本_0206048 2
-      - "[VMess] 🇦🇺 澳大利亚【付费推荐：https://tt.sbs/vip】"
-      - 中国【付费推荐：https://tt.sbs/vip】 3
-      - _CN_中国->🇮🇳_IN_印度
-      - 欧洲(油管:破解资源君) 11
-      - TR-2.59.181.37-6615
-      - _CN_中国->🇹🇼_TW_台湾_2
-      - _CN_中国->🇯🇵_JP_日本_5
-      - 爱尔兰_0206006
-      - "|21.41Mb"
-      - 美国 002
+      - _HK_香港_1
+      - Taiwan 01 TG@nodpai
+      - _HK_香港_3
       - 美国 007
-      - "|17.71Mb"
+      - 香港【付费推荐：https//tt.sbs/vip】 3
+      - 香港(TG频道@kxswa)
+      - 美国 015
+      - _HK_香港_1 2
+      - Hong Kong 03 TG@nodpai
+      - _HK_香港_1 3
+      - 日本 01 | ws
+      - "[HK_TROJAN_103.135.103.229443]"
+      - US2
+      - _HK_香港_2
+      - 伊朗 001
+      - 美国 010
+      - -美国-cft.hicoom.com
+      - HK1
+      - 中国【付费推荐：https://tt.sbs/vip】
+      - 荷兰 001
+      - 中国【付费推荐：https://tt.sbs/vip】 2
+      - -美国-in-ls03.nb1.fr
+      - _CN_中国->🇩🇪_DE_德国_49_49
+      - 普通|CA|Montreal_0115_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技3
+      - _HK_香港 2 2
+      - _HK_香港 3 2
+      - 亚洲(油管破解资源君) 3
+      - 美国(油管破解资源君) 17
+      - "[VMess] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】 4"
+      - "[SSR] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】 3"
+      - 日本_0202003
+      - _HK_香港_1 4
+      - github.com/freefq - 香港腾讯云 2
+      - 瑞典 Oracle Corporation
+      - "|26.23Mb"
+      - 中国【付费推荐：https//tt.sbs/vip】 5
+      - 香港 腾讯云_1
+      - _HK_香港 2
+      - 美国 013
+      - _VN_越南 2
+      - _KR_韩国 2
+      - HK3
+      - _VN_越南_1
       - "[VMess] 🇯🇵 日本【付费推荐：https://tt.sbs/vip】 4"
-      - "US_youtube@79c935c0-27dc-4383-b307-dcac1b8e5509@104.149.155.13443?type=tcp&sni=$vzwzasc.cn&allowInsecure=1#US_youtube@资源分享师_72\r"
+      - HK-免流
+      - 英国 002
+      - "%�\x11�<'��9�oyj�L\f\rM%%�"
+      - 美国 004
+      - 香港 02 | ws
+      - _US_美国_7
+      - VIETNAM 6
+      - 美国 Microsoft公司
+      - v2rayfree.eu.org - 美国乔治亚州 23
+      - DE_45.80.190.59_02042023e26d-373trojan
+      - jp-am48-6.eqnode.net:8081
+      - 香港 Amazon数据中心
+      - 美国Linode数据中心 31
+      - github.com/freefq - 香港Amazon数据中心 14
+      - 澳大利亚 002
+      - VIETNAM 3
+      - 美国 073
+      - _VN_越南_2
+      - 美国 012
+      - 中国【付费推荐：https://tt.sbs/vip】 3
+      - _VN_越南
+      - VIETNAM 2
+      - v2rayfree.eu.org - 亚太地区  8
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - _CN_中国->🇹🇼_TW_台湾_2_39
-      - "_HK_香港\r_38\r"
-      - _HK_香港_2
-      - -台湾-dd7.bestcloud.tk
-      - 香港【付费推荐：https//tt.sbs/vip】 3
-      - _HK_香港_2 2
-      - 香港(TG频道@kxswa)
-      - _CN_中国->🇭🇰_HK_香港_2_40
-      - _HK_香港_3
-      - _HK_香港 3 2
-      - _HK_香港 2 2
-      - _HK_香港_1
+      - github.com/freefq - 香港腾讯云 20
       - 香港【付费推荐：https//tt.sbs/vip】 2
-      - 香港【付费推荐：https//tt.sbs/vip】 2 2
-      - _CN_中国->🇭🇰_HK_香港_来源：kkzui.com（快嘴科技）_26
-      - _CN_中国->🇹🇼_TW_台湾_2
+      - _HK_香港_1
+      - _HK_香港_3
+      - 香港【付费推荐：https//tt.sbs/vip】 3
+      - 香港(TG频道@kxswa)
+      - _HK_香港_1 2
+      - _HK_香港_1 3
+      - _HK_香港_2
+      - _HK_香港 2 2
+      - _HK_香港 3 2
+      - _HK_香港_1 4
+      - github.com/freefq - 香港腾讯云 2
+      - 香港 腾讯云_1
+      - _HK_香港 2
+      - 香港 02 | ws
+      - 香港 Amazon数据中心
+      - github.com/freefq - 香港Amazon数据中心 14
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 瑞典 001
-      - github.com/freefq - 新加坡Amazon数据中心 1
-      - 美国(油管:破解资源君) 16
-      - 美国 001
-      - _SG_新加坡 2 2
-      - _CN_中国->🇨🇭_CH_瑞士_27
-      - _CN_中国->🇺🇦_UA_乌克兰_4
-      - _CN_中国->🇹🇼_TW_台湾_2_39
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】"
-      - "_HK_香港\r_38\r"
-      - _KR_韩国 2
+      - 中国_0206176
+      - 中国【付费推荐：https//tt.sbs/vip】 4
       - 韩国 002
-      - _CN_中国->🇯🇵_JP_日本_4
-      - _JP_日本_来源：kkzui.com（快嘴科技）_24
-      - _HK_香港_2
-      - "|25.25Mb"
-      - 日本_0202003
-      - HK-8.210.248.210-0380
-      - "| 5.92Mb"
-      - -台湾-dd7.bestcloud.tk
-      - 未知_0206190
-      - _SG_新加坡_来源：kkzui.com（快嘴科技）_32
-      - _SG_新加坡_2
-      - FR_5.135.235.160_02052023772f-1727trojan
-      - "| 9.29Mb"
-      - 香港【付费推荐：https//tt.sbs/vip】 3
-      - 日本(TG频道@kxswa)
-      - _HK_香港_2 2
-      - 香港(TG频道@kxswa)
-      - github.com/freefq - 美国乔治亚州 23
-      - _CN_中国->🇳🇱_NL_荷兰_43
-      - "|38.84Mb"
-      - 澳大利亚 006
-      - _CN_中国->🇭🇰_HK_香港_2_40
-      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 16
-      - _CN_中国->🇪🇸_ES_西班牙
-      - US_20.106.103.230_02032023838a-554trojan
-      - 日本 002
-      - 未知_0206056
-      - _HK_香港_3
-      - JP-138.2.35.81-1186
-      - CN-43.154.208.92-0270
-      - JP-140.83.86.129-0398
-      - 澳大利亚 001
-      - US-135.148.138.80-0378
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】 2"
-      - "| 6.36Mb"
-      - "| 1.87Mb"
-      - _HK_香港 3 2
-      - 美国 005
-      - _HK_香港 2 2
-      - 中国【付费推荐：https://tt.sbs/vip】
-      - 美国 008
-      - _HK_香港_1
-      - "|26.23Mb"
-      - _SG_新加坡_2 2
-      - 中国【付费推荐：https://tt.sbs/vip】 2
-      - "[VMess] 🇸🇬 新加坡【付费推荐：https://tt.sbs/vip】 3"
+      - github.com/freefq - 香港腾讯云 20
       - 香港【付费推荐：https//tt.sbs/vip】 2
-      - 美国 024
-      - 美国 俄勒冈州 — 谷歌云 GCP
-      - 香港【付费推荐：https//tt.sbs/vip】 2 2
-      - _JP_日本_2
-      - 日本_0206048
-      - _CN_中国->🇳🇱_NL_荷兰_2
-      - github.com/freefq - 英国社会保险安全部 28
-      - "[SSR] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】"
-      - 未知_0206057
-      - _US_美国_3
-      - "[VMess] 🇺🇲 美国【付费推荐：https://tt.sbs/vip】 14"
-      - _CN_中国->🇭🇰_HK_香港_来源：kkzui.com（快嘴科技）_26
-      - 日本_0206048 2
-      - "[VMess] 🇦🇺 澳大利亚【付费推荐：https://tt.sbs/vip】"
-      - 中国【付费推荐：https://tt.sbs/vip】 3
-      - _CN_中国->🇮🇳_IN_印度
-      - 欧洲(油管:破解资源君) 11
-      - TR-2.59.181.37-6615
-      - _CN_中国->🇹🇼_TW_台湾_2
-      - _CN_中国->🇯🇵_JP_日本_5
-      - 爱尔兰_0206006
-      - "|21.41Mb"
-      - 美国 002
+      - _HK_香港_1
+      - Taiwan 01 TG@nodpai
+      - _HK_香港_3
       - 美国 007
-      - "|17.71Mb"
+      - 香港【付费推荐：https//tt.sbs/vip】 3
+      - 香港(TG频道@kxswa)
+      - 美国 015
+      - _HK_香港_1 2
+      - Hong Kong 03 TG@nodpai
+      - _HK_香港_1 3
+      - 日本 01 | ws
+      - "[HK_TROJAN_103.135.103.229443]"
+      - US2
+      - _HK_香港_2
+      - 伊朗 001
+      - 美国 010
+      - -美国-cft.hicoom.com
+      - HK1
+      - 中国【付费推荐：https://tt.sbs/vip】
+      - 荷兰 001
+      - 中国【付费推荐：https://tt.sbs/vip】 2
+      - -美国-in-ls03.nb1.fr
+      - _CN_中国->🇩🇪_DE_德国_49_49
+      - 普通|CA|Montreal_0115_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技3
+      - _HK_香港 2 2
+      - _HK_香港 3 2
+      - 亚洲(油管破解资源君) 3
+      - 美国(油管破解资源君) 17
+      - "[VMess] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】 4"
+      - "[SSR] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】 3"
+      - 日本_0202003
+      - _HK_香港_1 4
+      - github.com/freefq - 香港腾讯云 2
+      - 瑞典 Oracle Corporation
+      - "|26.23Mb"
+      - 中国【付费推荐：https//tt.sbs/vip】 5
+      - 香港 腾讯云_1
+      - _HK_香港 2
+      - 美国 013
+      - _VN_越南 2
+      - _KR_韩国 2
+      - HK3
+      - _VN_越南_1
       - "[VMess] 🇯🇵 日本【付费推荐：https://tt.sbs/vip】 4"
-      - "US_youtube@79c935c0-27dc-4383-b307-dcac1b8e5509@104.149.155.13443?type=tcp&sni=$vzwzasc.cn&allowInsecure=1#US_youtube@资源分享师_72\r"
+      - HK-免流
+      - 英国 002
+      - "%�\x11�<'��9�oyj�L\f\rM%%�"
+      - 美国 004
+      - 香港 02 | ws
+      - _US_美国_7
+      - VIETNAM 6
+      - 美国 Microsoft公司
+      - v2rayfree.eu.org - 美国乔治亚州 23
+      - DE_45.80.190.59_02042023e26d-373trojan
+      - jp-am48-6.eqnode.net:8081
+      - 香港 Amazon数据中心
+      - 美国Linode数据中心 31
+      - github.com/freefq - 香港Amazon数据中心 14
+      - 澳大利亚 002
+      - VIETNAM 3
+      - 美国 073
+      - _VN_越南_2
+      - 美国 012
+      - 中国【付费推荐：https://tt.sbs/vip】 3
+      - _VN_越南
+      - VIETNAM 2
+      - v2rayfree.eu.org - 亚太地区  8
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 瑞典 001
-      - github.com/freefq - 新加坡Amazon数据中心 1
-      - 美国(油管:破解资源君) 16
-      - 美国 001
-      - _SG_新加坡 2 2
-      - _CN_中国->🇨🇭_CH_瑞士_27
-      - _CN_中国->🇺🇦_UA_乌克兰_4
-      - _CN_中国->🇹🇼_TW_台湾_2_39
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】"
-      - "_HK_香港\r_38\r"
-      - _KR_韩国 2
+      - 中国_0206176
+      - 中国【付费推荐：https//tt.sbs/vip】 4
       - 韩国 002
-      - _CN_中国->🇯🇵_JP_日本_4
-      - _JP_日本_来源：kkzui.com（快嘴科技）_24
-      - _HK_香港_2
-      - "|25.25Mb"
-      - 日本_0202003
-      - HK-8.210.248.210-0380
-      - "| 5.92Mb"
-      - -台湾-dd7.bestcloud.tk
-      - 未知_0206190
-      - _SG_新加坡_来源：kkzui.com（快嘴科技）_32
-      - _SG_新加坡_2
-      - FR_5.135.235.160_02052023772f-1727trojan
-      - "| 9.29Mb"
-      - 香港【付费推荐：https//tt.sbs/vip】 3
-      - 日本(TG频道@kxswa)
-      - _HK_香港_2 2
-      - 香港(TG频道@kxswa)
-      - github.com/freefq - 美国乔治亚州 23
-      - _CN_中国->🇳🇱_NL_荷兰_43
-      - "|38.84Mb"
-      - 澳大利亚 006
-      - _CN_中国->🇭🇰_HK_香港_2_40
-      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 16
-      - _CN_中国->🇪🇸_ES_西班牙
-      - US_20.106.103.230_02032023838a-554trojan
-      - 日本 002
-      - 未知_0206056
-      - _HK_香港_3
-      - JP-138.2.35.81-1186
-      - CN-43.154.208.92-0270
-      - JP-140.83.86.129-0398
-      - 澳大利亚 001
-      - US-135.148.138.80-0378
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】 2"
-      - "| 6.36Mb"
-      - "| 1.87Mb"
-      - _HK_香港 3 2
-      - 美国 005
-      - _HK_香港 2 2
-      - 中国【付费推荐：https://tt.sbs/vip】
-      - 美国 008
-      - _HK_香港_1
-      - "|26.23Mb"
-      - _SG_新加坡_2 2
-      - 中国【付费推荐：https://tt.sbs/vip】 2
-      - "[VMess] 🇸🇬 新加坡【付费推荐：https://tt.sbs/vip】 3"
+      - github.com/freefq - 香港腾讯云 20
       - 香港【付费推荐：https//tt.sbs/vip】 2
-      - 美国 024
-      - 美国 俄勒冈州 — 谷歌云 GCP
-      - 香港【付费推荐：https//tt.sbs/vip】 2 2
-      - _JP_日本_2
-      - 日本_0206048
-      - _CN_中国->🇳🇱_NL_荷兰_2
-      - github.com/freefq - 英国社会保险安全部 28
-      - "[SSR] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】"
-      - 未知_0206057
-      - _US_美国_3
-      - "[VMess] 🇺🇲 美国【付费推荐：https://tt.sbs/vip】 14"
-      - _CN_中国->🇭🇰_HK_香港_来源：kkzui.com（快嘴科技）_26
-      - 日本_0206048 2
-      - "[VMess] 🇦🇺 澳大利亚【付费推荐：https://tt.sbs/vip】"
-      - 中国【付费推荐：https://tt.sbs/vip】 3
-      - _CN_中国->🇮🇳_IN_印度
-      - 欧洲(油管:破解资源君) 11
-      - TR-2.59.181.37-6615
-      - _CN_中国->🇹🇼_TW_台湾_2
-      - _CN_中国->🇯🇵_JP_日本_5
-      - 爱尔兰_0206006
-      - "|21.41Mb"
-      - 美国 002
+      - _HK_香港_1
+      - Taiwan 01 TG@nodpai
+      - _HK_香港_3
       - 美国 007
-      - "|17.71Mb"
+      - 香港【付费推荐：https//tt.sbs/vip】 3
+      - 香港(TG频道@kxswa)
+      - 美国 015
+      - _HK_香港_1 2
+      - Hong Kong 03 TG@nodpai
+      - _HK_香港_1 3
+      - 日本 01 | ws
+      - "[HK_TROJAN_103.135.103.229443]"
+      - US2
+      - _HK_香港_2
+      - 伊朗 001
+      - 美国 010
+      - -美国-cft.hicoom.com
+      - HK1
+      - 中国【付费推荐：https://tt.sbs/vip】
+      - 荷兰 001
+      - 中国【付费推荐：https://tt.sbs/vip】 2
+      - -美国-in-ls03.nb1.fr
+      - _CN_中国->🇩🇪_DE_德国_49_49
+      - 普通|CA|Montreal_0115_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技3
+      - _HK_香港 2 2
+      - _HK_香港 3 2
+      - 亚洲(油管破解资源君) 3
+      - 美国(油管破解资源君) 17
+      - "[VMess] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】 4"
+      - "[SSR] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】 3"
+      - 日本_0202003
+      - _HK_香港_1 4
+      - github.com/freefq - 香港腾讯云 2
+      - 瑞典 Oracle Corporation
+      - "|26.23Mb"
+      - 中国【付费推荐：https//tt.sbs/vip】 5
+      - 香港 腾讯云_1
+      - _HK_香港 2
+      - 美国 013
+      - _VN_越南 2
+      - _KR_韩国 2
+      - HK3
+      - _VN_越南_1
       - "[VMess] 🇯🇵 日本【付费推荐：https://tt.sbs/vip】 4"
-      - "US_youtube@79c935c0-27dc-4383-b307-dcac1b8e5509@104.149.155.13443?type=tcp&sni=$vzwzasc.cn&allowInsecure=1#US_youtube@资源分享师_72\r"
+      - HK-免流
+      - 英国 002
+      - "%�\x11�<'��9�oyj�L\f\rM%%�"
+      - 美国 004
+      - 香港 02 | ws
+      - _US_美国_7
+      - VIETNAM 6
+      - 美国 Microsoft公司
+      - v2rayfree.eu.org - 美国乔治亚州 23
+      - DE_45.80.190.59_02042023e26d-373trojan
+      - jp-am48-6.eqnode.net:8081
+      - 香港 Amazon数据中心
+      - 美国Linode数据中心 31
+      - github.com/freefq - 香港Amazon数据中心 14
+      - 澳大利亚 002
+      - VIETNAM 3
+      - 美国 073
+      - _VN_越南_2
+      - 美国 012
+      - 中国【付费推荐：https://tt.sbs/vip】 3
+      - _VN_越南
+      - VIETNAM 2
+      - v2rayfree.eu.org - 亚太地区  8
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 瑞典 001
-      - github.com/freefq - 新加坡Amazon数据中心 1
-      - 美国(油管:破解资源君) 16
-      - 美国 001
-      - _SG_新加坡 2 2
-      - _CN_中国->🇨🇭_CH_瑞士_27
-      - _CN_中国->🇺🇦_UA_乌克兰_4
-      - _CN_中国->🇹🇼_TW_台湾_2_39
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】"
-      - "_HK_香港\r_38\r"
-      - _KR_韩国 2
+      - 中国_0206176
+      - 中国【付费推荐：https//tt.sbs/vip】 4
       - 韩国 002
-      - _CN_中国->🇯🇵_JP_日本_4
-      - _JP_日本_来源：kkzui.com（快嘴科技）_24
-      - _HK_香港_2
-      - "|25.25Mb"
-      - 日本_0202003
-      - HK-8.210.248.210-0380
-      - "| 5.92Mb"
-      - -台湾-dd7.bestcloud.tk
-      - 未知_0206190
-      - _SG_新加坡_来源：kkzui.com（快嘴科技）_32
-      - _SG_新加坡_2
-      - FR_5.135.235.160_02052023772f-1727trojan
-      - "| 9.29Mb"
-      - 香港【付费推荐：https//tt.sbs/vip】 3
-      - 日本(TG频道@kxswa)
-      - _HK_香港_2 2
-      - 香港(TG频道@kxswa)
-      - github.com/freefq - 美国乔治亚州 23
-      - _CN_中国->🇳🇱_NL_荷兰_43
-      - "|38.84Mb"
-      - 澳大利亚 006
-      - _CN_中国->🇭🇰_HK_香港_2_40
-      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 16
-      - _CN_中国->🇪🇸_ES_西班牙
-      - US_20.106.103.230_02032023838a-554trojan
-      - 日本 002
-      - 未知_0206056
-      - _HK_香港_3
-      - JP-138.2.35.81-1186
-      - CN-43.154.208.92-0270
-      - JP-140.83.86.129-0398
-      - 澳大利亚 001
-      - US-135.148.138.80-0378
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】 2"
-      - "| 6.36Mb"
-      - "| 1.87Mb"
-      - _HK_香港 3 2
-      - 美国 005
-      - _HK_香港 2 2
-      - 中国【付费推荐：https://tt.sbs/vip】
-      - 美国 008
-      - _HK_香港_1
-      - "|26.23Mb"
-      - _SG_新加坡_2 2
-      - 中国【付费推荐：https://tt.sbs/vip】 2
-      - "[VMess] 🇸🇬 新加坡【付费推荐：https://tt.sbs/vip】 3"
+      - github.com/freefq - 香港腾讯云 20
       - 香港【付费推荐：https//tt.sbs/vip】 2
-      - 美国 024
-      - 美国 俄勒冈州 — 谷歌云 GCP
-      - 香港【付费推荐：https//tt.sbs/vip】 2 2
-      - _JP_日本_2
-      - 日本_0206048
-      - _CN_中国->🇳🇱_NL_荷兰_2
-      - github.com/freefq - 英国社会保险安全部 28
-      - "[SSR] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】"
-      - 未知_0206057
-      - _US_美国_3
-      - "[VMess] 🇺🇲 美国【付费推荐：https://tt.sbs/vip】 14"
-      - _CN_中国->🇭🇰_HK_香港_来源：kkzui.com（快嘴科技）_26
-      - 日本_0206048 2
-      - "[VMess] 🇦🇺 澳大利亚【付费推荐：https://tt.sbs/vip】"
-      - 中国【付费推荐：https://tt.sbs/vip】 3
-      - _CN_中国->🇮🇳_IN_印度
-      - 欧洲(油管:破解资源君) 11
-      - TR-2.59.181.37-6615
-      - _CN_中国->🇹🇼_TW_台湾_2
-      - _CN_中国->🇯🇵_JP_日本_5
-      - 爱尔兰_0206006
-      - "|21.41Mb"
-      - 美国 002
+      - _HK_香港_1
+      - Taiwan 01 TG@nodpai
+      - _HK_香港_3
       - 美国 007
-      - "|17.71Mb"
+      - 香港【付费推荐：https//tt.sbs/vip】 3
+      - 香港(TG频道@kxswa)
+      - 美国 015
+      - _HK_香港_1 2
+      - Hong Kong 03 TG@nodpai
+      - _HK_香港_1 3
+      - 日本 01 | ws
+      - "[HK_TROJAN_103.135.103.229443]"
+      - US2
+      - _HK_香港_2
+      - 伊朗 001
+      - 美国 010
+      - -美国-cft.hicoom.com
+      - HK1
+      - 中国【付费推荐：https://tt.sbs/vip】
+      - 荷兰 001
+      - 中国【付费推荐：https://tt.sbs/vip】 2
+      - -美国-in-ls03.nb1.fr
+      - _CN_中国->🇩🇪_DE_德国_49_49
+      - 普通|CA|Montreal_0115_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技3
+      - _HK_香港 2 2
+      - _HK_香港 3 2
+      - 亚洲(油管破解资源君) 3
+      - 美国(油管破解资源君) 17
+      - "[VMess] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】 4"
+      - "[SSR] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】 3"
+      - 日本_0202003
+      - _HK_香港_1 4
+      - github.com/freefq - 香港腾讯云 2
+      - 瑞典 Oracle Corporation
+      - "|26.23Mb"
+      - 中国【付费推荐：https//tt.sbs/vip】 5
+      - 香港 腾讯云_1
+      - _HK_香港 2
+      - 美国 013
+      - _VN_越南 2
+      - _KR_韩国 2
+      - HK3
+      - _VN_越南_1
       - "[VMess] 🇯🇵 日本【付费推荐：https://tt.sbs/vip】 4"
-      - "US_youtube@79c935c0-27dc-4383-b307-dcac1b8e5509@104.149.155.13443?type=tcp&sni=$vzwzasc.cn&allowInsecure=1#US_youtube@资源分享师_72\r"
+      - HK-免流
+      - 英国 002
+      - "%�\x11�<'��9�oyj�L\f\rM%%�"
+      - 美国 004
+      - 香港 02 | ws
+      - _US_美国_7
+      - VIETNAM 6
+      - 美国 Microsoft公司
+      - v2rayfree.eu.org - 美国乔治亚州 23
+      - DE_45.80.190.59_02042023e26d-373trojan
+      - jp-am48-6.eqnode.net:8081
+      - 香港 Amazon数据中心
+      - 美国Linode数据中心 31
+      - github.com/freefq - 香港Amazon数据中心 14
+      - 澳大利亚 002
+      - VIETNAM 3
+      - 美国 073
+      - _VN_越南_2
+      - 美国 012
+      - 中国【付费推荐：https://tt.sbs/vip】 3
+      - _VN_越南
+      - VIETNAM 2
+      - v2rayfree.eu.org - 亚太地区  8
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -781,92 +671,78 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 瑞典 001
-      - github.com/freefq - 新加坡Amazon数据中心 1
-      - 美国(油管:破解资源君) 16
-      - 美国 001
-      - _SG_新加坡 2 2
-      - _CN_中国->🇨🇭_CH_瑞士_27
-      - _CN_中国->🇺🇦_UA_乌克兰_4
-      - _CN_中国->🇹🇼_TW_台湾_2_39
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】"
-      - "_HK_香港\r_38\r"
-      - _KR_韩国 2
+      - 中国_0206176
+      - 中国【付费推荐：https//tt.sbs/vip】 4
       - 韩国 002
-      - _CN_中国->🇯🇵_JP_日本_4
-      - _JP_日本_来源：kkzui.com（快嘴科技）_24
-      - _HK_香港_2
-      - "|25.25Mb"
-      - 日本_0202003
-      - HK-8.210.248.210-0380
-      - "| 5.92Mb"
-      - -台湾-dd7.bestcloud.tk
-      - 未知_0206190
-      - _SG_新加坡_来源：kkzui.com（快嘴科技）_32
-      - _SG_新加坡_2
-      - FR_5.135.235.160_02052023772f-1727trojan
-      - "| 9.29Mb"
-      - 香港【付费推荐：https//tt.sbs/vip】 3
-      - 日本(TG频道@kxswa)
-      - _HK_香港_2 2
-      - 香港(TG频道@kxswa)
-      - github.com/freefq - 美国乔治亚州 23
-      - _CN_中国->🇳🇱_NL_荷兰_43
-      - "|38.84Mb"
-      - 澳大利亚 006
-      - _CN_中国->🇭🇰_HK_香港_2_40
-      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 16
-      - _CN_中国->🇪🇸_ES_西班牙
-      - US_20.106.103.230_02032023838a-554trojan
-      - 日本 002
-      - 未知_0206056
-      - _HK_香港_3
-      - JP-138.2.35.81-1186
-      - CN-43.154.208.92-0270
-      - JP-140.83.86.129-0398
-      - 澳大利亚 001
-      - US-135.148.138.80-0378
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】 2"
-      - "| 6.36Mb"
-      - "| 1.87Mb"
-      - _HK_香港 3 2
-      - 美国 005
-      - _HK_香港 2 2
-      - 中国【付费推荐：https://tt.sbs/vip】
-      - 美国 008
-      - _HK_香港_1
-      - "|26.23Mb"
-      - _SG_新加坡_2 2
-      - 中国【付费推荐：https://tt.sbs/vip】 2
-      - "[VMess] 🇸🇬 新加坡【付费推荐：https://tt.sbs/vip】 3"
+      - github.com/freefq - 香港腾讯云 20
       - 香港【付费推荐：https//tt.sbs/vip】 2
-      - 美国 024
-      - 美国 俄勒冈州 — 谷歌云 GCP
-      - 香港【付费推荐：https//tt.sbs/vip】 2 2
-      - _JP_日本_2
-      - 日本_0206048
-      - _CN_中国->🇳🇱_NL_荷兰_2
-      - github.com/freefq - 英国社会保险安全部 28
-      - "[SSR] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】"
-      - 未知_0206057
-      - _US_美国_3
-      - "[VMess] 🇺🇲 美国【付费推荐：https://tt.sbs/vip】 14"
-      - _CN_中国->🇭🇰_HK_香港_来源：kkzui.com（快嘴科技）_26
-      - 日本_0206048 2
-      - "[VMess] 🇦🇺 澳大利亚【付费推荐：https://tt.sbs/vip】"
-      - 中国【付费推荐：https://tt.sbs/vip】 3
-      - _CN_中国->🇮🇳_IN_印度
-      - 欧洲(油管:破解资源君) 11
-      - TR-2.59.181.37-6615
-      - _CN_中国->🇹🇼_TW_台湾_2
-      - _CN_中国->🇯🇵_JP_日本_5
-      - 爱尔兰_0206006
-      - "|21.41Mb"
-      - 美国 002
+      - _HK_香港_1
+      - Taiwan 01 TG@nodpai
+      - _HK_香港_3
       - 美国 007
-      - "|17.71Mb"
+      - 香港【付费推荐：https//tt.sbs/vip】 3
+      - 香港(TG频道@kxswa)
+      - 美国 015
+      - _HK_香港_1 2
+      - Hong Kong 03 TG@nodpai
+      - _HK_香港_1 3
+      - 日本 01 | ws
+      - "[HK_TROJAN_103.135.103.229443]"
+      - US2
+      - _HK_香港_2
+      - 伊朗 001
+      - 美国 010
+      - -美国-cft.hicoom.com
+      - HK1
+      - 中国【付费推荐：https://tt.sbs/vip】
+      - 荷兰 001
+      - 中国【付费推荐：https://tt.sbs/vip】 2
+      - -美国-in-ls03.nb1.fr
+      - _CN_中国->🇩🇪_DE_德国_49_49
+      - 普通|CA|Montreal_0115_https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技3
+      - _HK_香港 2 2
+      - _HK_香港 3 2
+      - 亚洲(油管破解资源君) 3
+      - 美国(油管破解资源君) 17
+      - "[VMess] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】 4"
+      - "[SSR] 🇨🇳 中国【付费推荐：https://tt.sbs/vip】 3"
+      - 日本_0202003
+      - _HK_香港_1 4
+      - github.com/freefq - 香港腾讯云 2
+      - 瑞典 Oracle Corporation
+      - "|26.23Mb"
+      - 中国【付费推荐：https//tt.sbs/vip】 5
+      - 香港 腾讯云_1
+      - _HK_香港 2
+      - 美国 013
+      - _VN_越南 2
+      - _KR_韩国 2
+      - HK3
+      - _VN_越南_1
       - "[VMess] 🇯🇵 日本【付费推荐：https://tt.sbs/vip】 4"
-      - "US_youtube@79c935c0-27dc-4383-b307-dcac1b8e5509@104.149.155.13443?type=tcp&sni=$vzwzasc.cn&allowInsecure=1#US_youtube@资源分享师_72\r"
+      - HK-免流
+      - 英国 002
+      - "%�\x11�<'��9�oyj�L\f\rM%%�"
+      - 美国 004
+      - 香港 02 | ws
+      - _US_美国_7
+      - VIETNAM 6
+      - 美国 Microsoft公司
+      - v2rayfree.eu.org - 美国乔治亚州 23
+      - DE_45.80.190.59_02042023e26d-373trojan
+      - jp-am48-6.eqnode.net:8081
+      - 香港 Amazon数据中心
+      - 美国Linode数据中心 31
+      - github.com/freefq - 香港Amazon数据中心 14
+      - 澳大利亚 002
+      - VIETNAM 3
+      - 美国 073
+      - _VN_越南_2
+      - 美国 012
+      - 中国【付费推荐：https://tt.sbs/vip】 3
+      - _VN_越南
+      - VIETNAM 2
+      - v2rayfree.eu.org - 亚太地区  8
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
