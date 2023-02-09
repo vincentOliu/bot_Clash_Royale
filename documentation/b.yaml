@@ -6,703 +6,451 @@ mode: Rule
 log-level: info
 external-controller: 9090
 proxies:
-  - {name: github.com/freefq - 美国  42, server: trxjp.ballistics.top, port: 443, type: trojan, password: 39386ab3-db28-468f-b87b-471f4ab7ca1c, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国加利福尼亚州Winnetka 6, server: trfg.ballistics.top, port: 443, type: trojan, password: 39386ab3-db28-468f-b87b-471f4ab7ca1c, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国纽约DigitalOcean数据中心 41, server: trny.ballistics.top, port: 443, type: trojan, password: 39386ab3-db28-468f-b87b-471f4ab7ca1c, skip-cert-verify: true, udp: true}
-  - {name: 土耳其 001, server: l2-tr-a.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国  12, server: trxn.ballistics.top, port: 443, type: trojan, password: 39386ab3-db28-468f-b87b-471f4ab7ca1c, skip-cert-verify: true, udp: true}
-  - {name: v2rayfree.eu.org - 美国马里兰州罗耀拉大学 15, server: trld.ballistics.top, port: 443, type: trojan, password: 39386ab3-db28-468f-b87b-471f4ab7ca1c, skip-cert-verify: true, udp: true}
-  - {name: Pool_🇳🇱NL_104, server: 85.208.108.60, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国 010, server: kaizen-us-9.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: 荷兰 001, server: kaizen-ru-2.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip 】126, server: gz01.xiaohouzi.club, port: 20091, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24%24ajpn01.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君) 40, server: 85.208.108.60, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: Taiwan 05 TG@nodpai, server: kaizen-tw-4.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: Taiwan 01 TG@nodpai, server: kaizen-tw-2.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip 】124, server: gz01.xiaohouzi.club, port: 14705, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24%24vusig01.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: 美国 014, server: kaizen-us-01.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_2, server: 47.242.1.160, port: 36298, type: vmess, uuid: 6cea7176-148d-4f51-9bf4-313199c839ba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 中国【付费推荐：https//v1.mk/vip 】2, server: z80001.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 美国 017, server: kaizen-us-8.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 法国OVH SAS 40, server: france.oneusernm.xyz, port: 443, type: trojan, password: d0dab49e1e, skip-cert-verify: true, udp: true}
-  - {name: 印度 002, server: z0114.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: Pool_🇳🇱NL_102, server: 85.208.108.60, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 7, server: 85.208.108.60, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 英国 002, server: 88.150.137.177, port: 443, type: trojan, password: shefelnak, sni: content-provider4.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君) 43, server: 85.208.108.60, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 中国_02065657, server: 103.45.78.185, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https//v1.mk/vip 】 2, server: z00031.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 美国(油管破解资源君) 17, server: de1.trojan-lite.com, port: 443, type: trojan, password: bs6KJkPBW9MP74uHEa, sni: de1.trojan-lite.com, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君) 37, server: 111.45.22.239, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 「SCP」DE-CF1, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: de-1.sharecentre.online}}, udp: true}
-  - {name: 「SCP」US-DP2, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: us-dp2.sharecentre.online}}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip 】, server: z00031.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 中国【付费推荐：https//v1.mk/vip 】4, server: z0005.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: "[VMess] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】 4", server: 112.33.52.59, port: 3101, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip 】86, server: cvywfavasdc.cymlr.xyz, port: 443, type: vmess, uuid: 23f4bc80-3b0a-4aa3-cbe5-b8be4e8c32fc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ksebupo, headers: {Host: cvywfavasdc.cymlr.xyz}}, udp: true}
-  - {name: 欧洲(油管:破解资源君) 41, server: 85.208.108.60, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip 】4, server: z0005.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: "[VMess] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】 15", server: 111.45.22.239, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 017 2, server: cft.hicoom.com, port: 443, type: vmess, uuid: 654f997b-5bea-4c82-9538-35ee57b6fd72, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /654f997b-5bea-4c82-9538-35ee57b6fd72, headers: {Host: cft.hicoom.com}}, udp: true}
-  - {name: "[02-09]-🇸🇪-瑞典-165-z0117.security-cloudfront-cdn.com", server: z0117.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: ====, obfs-param: ====, udp: true}
-  - {name: 印度尼西亚【付费推荐：https://v1.mk/vip 】111, server: yd.wxfz.ml, port: 36738, type: vmess, uuid: c080af5d-5da8-4d0a-a55f-5e10bc901bd5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国_02066282, server: 103.45.78.241, port: 10004, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_2 2, server: 47.242.65.80, port: 62307, type: vmess, uuid: 48f3fa93-1722-4f8d-af74-fcc54c2f21d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 中国【付费推荐：https://tt.sbs/vip】, server: data-hk-v2.shwjfkw.cn, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: data-hk-v2.shwjfkw.cn}}, udp: true}
-  - {name: 中国【付费推荐：https//v1.mk/vip 】, server: 112.33.52.59, port: 3101, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 亚太地区  3, server: 103.178.234.201, port: 41785, type: vmess, uuid: ce6e804e-3258-4cc1-a922-1c87a3886611, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾省台北市 中华电信, server: hinet1261.gfwisbest.xyz, port: 224, type: vmess, uuid: 2285133e-b9ba-3fb5-a246-9c7ddcc2cd7a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip 】 2, server: hn.xiaohouzi.club, port: 14185, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24%24hktnew01.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: 美国CloudFlare公司CDN节点 19, server: cdnjs.com, port: 443, type: vmess, uuid: ee30d3ff-da14-4ea8-bcd2-02e8ee3667de, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /aidapp.lifevws, headers: {Host: hstr1675520106270.aidapp.life}}, udp: true}
-  - {name: 欧洲(油管:破解资源君) 55, server: 85.208.108.60, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 欧洲(油管:破解资源君) 44, server: 85.208.108.60, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip 】, server: no.aries.ovh, port: 2052, type: vmess, uuid: 12c3b55f-f225-4daa-adf3-39f8cf3969ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: fr.cloudflare.quest}}, udp: true}
-  - {name: Hong Kong 11 TG@nodpai, server: kaizen-hk-2.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: "%24%24paydiu.com", skip-cert-verify: true, udp: true}
-  - {name: "@SSRSUB-V52-付费推荐:suo.yt/ssrsub", server: no.aries.ovh, port: 2052, type: vmess, uuid: 12c3b55f-f225-4daa-adf3-39f8cf3969ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: lv.cloudflare.quest}}, udp: true}
-  - {name: "[HK_TROJAN_103.135.103.229443]", server: 103.135.103.229, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇺🇸_US_美国, server: bjcub.r1u.cn, port: 24713, type: vmess, uuid: f02afd21-9a72-34f3-b228-1d38207a9740, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "1.66|普通SEStockholm0117httpsawkjcfky 注册�%�\x19��流媒�%�\x16��场youtube�%�Y/%�Y��y��\f", server: z0117.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
-  - {name: _US_美国->🇫🇷_FR_法国_来源;kkzui.com(快嘴科技)_来源;kkzui.com(快嘴科技)3_23, server: news.microsoft.com, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
-  - {name: github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 43, server: 85.208.108.60, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: "@SSRSUB-V37-付费推荐:suo.yt/ssrsub", server: no.aries.ovh, port: 8080, type: vmess, uuid: 35b50ae8-93ba-4f1e-96d8-fa682cc385d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v10.asuka.buzz}}, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip 】 2, server: six.r33.fun, port: 443, type: vmess, uuid: 34175f99-b5fa-4bb8-b93a-fee02d87c2b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /freevmess, headers: {Host: au-freevmess.privateip.net}}, udp: true}
-  - {name: "|25.54Mb", server: 172.105.255.4, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat}, udp: true}
-  - {name: 新加坡 012, server: sg1-v.sshmax.xyz, port: 80, type: vmess, uuid: a72bd7a7-732d-46c1-8274-bf16bca30e78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: sg1-v.sshmax.xyz}}, udp: true}
-  - {name: "@SSRSUB-V36-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 8080, type: vmess, uuid: 35b50ae8-93ba-4f1e-96d8-fa682cc385d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v10.asuka.buzz}}, udp: true}
-  - {name: 韩国 002, server: 52.78.213.224, port: 80, type: vmess, uuid: 6f442823-6b73-4b31-f1f5-aa1e907b051e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: "@SSRSUB-V07-付费推荐:suo.yt/ssrsub", server: 172.67.199.34, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}, udp: true}
-  - {name: _GCORE, server: no.aries.ovh, port: 2052, type: vmess, uuid: 12c3b55f-f225-4daa-adf3-39f8cf3969ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: gcore-hk.cloudflare.quest}}, udp: true}
-  - {name: 荷兰 002, server: 45.136.255.125, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, skip-cert-verify: true, udp: true}
-  - {name: _TMNET-伪家宽, server: no.aries.ovh, port: 2052, type: vmess, uuid: 12c3b55f-f225-4daa-adf3-39f8cf3969ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: tm.cloudflare.quest}}, udp: true}
-  - {name: 未知_0206191, server: 190.93.246.4, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
-  - {name: 中国【付费推荐：https//v1.mk/vip 】 12, server: 111.45.22.239, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国Alabanza 48, server: 65.109.182.241, port: 80, type: vmess, uuid: df2862e4-9630-436b-91a4-a263576fa0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 巴西 001, server: ba.wxfz.ml, port: 443, type: vmess, uuid: d99f257d-a203-4cea-eb08-e4326f6ccb69, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ba.wxfz.ml}}, udp: true}
-  - {name: 中国_02065732, server: 103.45.78.185, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 未知【付费推荐：https://v1.mk/vip 】57, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxpol3.fovi.tk}}, udp: true}
-  - {name: _CN_中国->🇺🇸_US_美国 2, server: bjcub.r1u.cn, port: 24713, type: vmess, uuid: f02afd21-9a72-34f3-b228-1d38207a9740, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _AM_亚美尼亚_来源：kkzui.com5, server: 185.162.228.228, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}, udp: true}
-  - {name: _AU_澳大利亚, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}, udp: true}
-  - {name: 美国CloudFlare节点 29, server: 162.159.135.42, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
-  - {name: DE_45.80.190.59_02042023e26d-373trojan, server: 45.80.190.59, port: 443, type: trojan, password: bs6KJkPBW9MP74uHEa, skip-cert-verify: true, udp: true}
-  - {name: 美国 018, server: kaizen-hk-12.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 003, server: 18.143.123.35, port: 80, type: vmess, uuid: 68df4838-46d0-4b5b-c3f0-a40ec7063245, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 荷兰(TG频道@kxswa), server: 188.114.99.9, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}, udp: true}
-  - {name: github.com/freefq - 亚太地区  9, server: 103.178.234.201, port: 41785, type: vmess, uuid: ce6e804e-3258-4cc1-a922-1c87a3886611, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 「SCP」LU-CF, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lu.sharecentre.online}}, udp: true}
-  - {name: 韩国 002 2, server: kaizen-jp-11.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: sg-am3.eqsunshine.com:32001, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 新加坡4, server: 13.215.178.190, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip 】 3, server: hnm.xiaohouzi.club, port: 47651, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24%24taiguo.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: 「SCP」KH-CF, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: kh.sharecentre.online}}, udp: true}
-  - {name: 美国(油管:破解资源君) 57, server: 172.67.199.34, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sg-gcore.sharecentre.online}}, udp: true}
-  - {name: 伯利兹【付费推荐：https://v1.mk/vip 】, server: 203.30.189.190, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
-  - {name: 中国【付费推荐：https//v1.mk/vip 】24, server: 112.33.52.59, port: 3101, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip 】88, server: bjcua.r1u.cn, port: 26180, type: vmess, uuid: f02afd21-9a72-34f3-b228-1d38207a9740, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君) 47, server: 172.67.199.34, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare节点 31, server: six.r33.fun, port: 443, type: vmess, uuid: 9bb0e2e3-c5b9-4606-9cbb-a3c36f2d01d7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /racevpn, headers: {Host: fr2-full.privateip.net}}, udp: true}
-  - {name: _CN_中国->🇺🇸_US_美国_1, server: bjcua.r1u.cn, port: 24712, type: vmess, uuid: f02afd21-9a72-34f3-b228-1d38207a9740, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国CloudFlare公司CDN节点 37, server: get.tech, port: 80, type: vmess, uuid: 8763e625-929a-43da-b7bf-7e7bc2e57615, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shared, headers: {Host: lv.awsbest.com}}, udp: true}
-  - {name: 「SCP」DE-CF2, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: de-2.sharecentre.online}}, udp: true}
-  - {name: "@SSRSUB-V49-付费推荐:suo.yt/ssrsub", server: no.aries.ovh, port: 2052, type: vmess, uuid: 12c3b55f-f225-4daa-adf3-39f8cf3969ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ee.cloudflare.quest}}, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip 】22, server: NO.ARIES.OVH, port: 2052, type: vmess, uuid: 12c3b55f-f225-4daa-adf3-39f8cf3969ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: gcore-in.cloudflare.quest}}, udp: true}
-  - {name: 欧洲(油管:破解资源君) 33, server: vuk2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vuk2.0bad.com}}, udp: true}
-  - {name: 新加坡 002, server: 51.79.173.222, port: 80, type: vmess, uuid: a72bd7a7-732d-46c1-8274-bf16bca30e78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: _KR_韩国 2, server: surongwei.eu.org, port: 443, type: vmess, uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /reffs7y26g0ua, headers: {Host: surongwei.eu.org}}, udp: true}
-  - {name: 芬兰【付费推荐：https://v1.mk/vip 】106, server: 65.109.182.241, port: 80, type: vmess, uuid: df2862e4-9630-436b-91a4-a263576fa0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 65.109.182.241}}, udp: true}
-  - {name: 中国【付费推荐：https//v1.mk/vip 】112, server: 111.45.22.239, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _BuyVM-无审计, server: no.aries.ovh, port: 2052, type: vmess, uuid: 12c3b55f-f225-4daa-adf3-39f8cf3969ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.cloudflare.quest}}, udp: true}
-  - {name: 美国 016, server: vde1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vde1.0bad.com}}, udp: true}
-  - {name: 亚太地区 006, server: 103.178.234.201, port: 41785, type: vmess, uuid: ce6e804e-3258-4cc1-a922-1c87a3886611, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare节点 24, server: hohm.microsoft.com, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
-  - {name: 欧洲(油管:破解资源君) 49, server: v2ray.ibgfw.top, port: 2083, type: vmess, uuid: f23b7338-84f7-476c-8c24-d116f181ab85, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5rtP40gj/, headers: {Host: v2ray.ibgfw.top}}, udp: true}
-  - {name: 美国_02061263, server: 172.67.203.162, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: "@SSRSUB-V43-付费推荐:suo.yt/ssrsub", server: no.aries.ovh, port: 2052, type: vmess, uuid: 12c3b55f-f225-4daa-adf3-39f8cf3969ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: uk.cloudflare.quest}}, udp: true}
-  - {name: "@SSRSUB-V39-付费推荐:suo.yt/ssrsub", server: no.aries.ovh, port: 2052, type: vmess, uuid: 12c3b55f-f225-4daa-adf3-39f8cf3969ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: france.cloudflare.quest}}, udp: true}
-  - {name: 香港【付费推荐：https://v1.mk/vip 】23, server: az.747698.xyz, port: 80, type: vmess, uuid: b7b8970d-f6bc-477e-8e08-7e110c9c3501, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /silentflower, headers: {Host: az.747698.xyz}}, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip 】 3, server: els200.jslist.tk, port: 8443, type: vmess, uuid: e30cfa80-bc2c-43df-e808-97876aee77e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /wo.php, headers: {Host: els200.jslist.tk}}, udp: true}
-  - {name: 澳大利亚 001, server: 43.134.239.46, port: 29808, type: vmess, uuid: 088da47b-0815-48a3-b60e-b86a4806b21f, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sg2/getData, headers: {Host: sg2.verichains.co}}, udp: true}
-  - {name: 亚太地区 V2CROSS.COM_1, server: 103.178.234.201, port: 41785, type: vmess, uuid: ce6e804e-3258-4cc1-a922-1c87a3886611, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "_JP_日本\r_3_25\r", server: 85.208.108.60, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 亚美尼亚【付费推荐：https://v1.mk/vip 】, server: 185.162.228.229, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 17, server: landan2.shapark-tab.com, port: 443, type: vmess, uuid: 39ed274e-fc86-41a8-c1dc-aa59e3709fbf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path-thruth-code, headers: {Host: sv1.shapark-tab.com}}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip 】96, server: live08.suijiceshi.xyz, port: 2052, type: vmess, uuid: 4782d4a9-0aa2-4571-be82-a474f5d3b5c8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /xvod/7f42f1ef9d9257447d1f4d4391b4dd76e164c00fb47c0a318b3b1125e03f4d959921f11e97d0da21/media_0003.ts, headers: {Host: live08.hlzuifv.cn}}, udp: true}
-  - {name: -美国-hkgjgterg.76898102.xyz, server: hkgjgterg.76898102.xyz, port: 2052, type: vmess, uuid: 56673d1c-bf0f-3ccc-9c5a-48d93906af1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /miaohk, headers: {Host: hkgjgterg.76898102.xyz}}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip 】24, server: 112.33.52.59, port: 3101, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip 】125, server: 162.159.152.5, port: 443, type: vmess, uuid: 718046d1-acee-48be-b5d3-1bda5eee0139, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/yfjc/jp1?ed=2048", headers: {Host: jp1.yfjc.sbs}}, udp: true}
-  - {name: 美国_02061242, server: 66.235.200.21, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
-  - {name: 丹麦  22, server: 185.162.228.230, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
-  - {name: _CN_中国->🇺🇸_US_美国_2, server: bjcua.r1u.cn, port: 24711, type: vmess, uuid: f02afd21-9a72-34f3-b228-1d38207a9740, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "@SSRSUB-V40-付费推荐:suo.yt/ssrsub", server: no.aries.ovh, port: 2052, type: vmess, uuid: 12c3b55f-f225-4daa-adf3-39f8cf3969ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: netherlands.cloudflare.quest}}, udp: true}
-  - {name: _DE_德国, server: vde2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vde2.0bad.com}}, udp: true}
-  - {name: 美国CloudFlare节点 20, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 18849b38-719b-483e-958b-45397595a8ec, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: lsb.wqxzhang.online}}, udp: true}
-  - {name: github.com/freefq - 美国Linode数据中心 8, server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vus2.0bad.com}}, udp: true}
-  - {name: _JP_日本_3, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 「SCP」UK-CF1, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: uk-1.sharecentre.online}}, udp: true}
-  - {name: "|34.13Mb", server: hk3.sanfen001.pics, port: 443, type: vmess, uuid: 2d506805-626a-4669-8c8b-23f383e371ca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
-  - {name: 「SCP」UK-CF2, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: uk-2.sharecentre.online}}, udp: true}
-  - {name: ws, server: 45.129.2.237, port: 10258, type: vmess, uuid: add194d6-192c-4ea3-a5af-eea994390831, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: "@SSRSUB-V09-付费推荐:suo.yt/ssrsub", server: 203.30.191.193, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
-  - {name: "@SSRSUB-V42-付费推荐:suo.yt/ssrsub", server: no.aries.ovh, port: 2052, type: vmess, uuid: 12c3b55f-f225-4daa-adf3-39f8cf3969ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: scw.cloudflare.quest}}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip 】33, server: hn.xiaohouzi.club, port: 18733, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24ajpn03.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare节点 18, server: v2ray.ibgfw.top, port: 2083, type: vmess, uuid: 4efdd8a5-ba9a-4faf-b4ef-127c68924aa2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5rtP40gj/, headers: {Host: v2ray.ibgfw.top}}, udp: true}
-  - {name: 欧洲(油管:破解资源君) 53, server: v2ray.ibgfw.top, port: 2083, type: vmess, uuid: a5740cfd-f2b3-478a-9b1f-b34bdb1a493b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5rtP40gj/, headers: {Host: v2ray.ibgfw.top}}, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip 】 4, server: oplg1.cfcdn2.xyz, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: 「SCP」SG-CF, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sg-1.sharecentre.online}}, udp: true}
-  - {name: 中国_02065657 2, server: 103.45.78.185, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "_SG_新加坡\r_来源：kkzui.com_13\r", server: 13.215.177.216, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: -美国-138.2.35.81, server: 138.2.35.81, port: 80, type: vmess, uuid: a0733fc9-457e-498d-c363-9ec774a74948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jun}, udp: true}
+  - {name: "[VMess] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】116", server: 103.45.78.241, port: 10004, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _DE_德国_1, server: us02.wxfz.ml, port: 11903, type: vmess, uuid: 197b49d8-5d07-49e6-8944-68afa81a5fe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国【付费推荐：https://v1.mk/vip 】81, server: de1.trojan-lite.com, port: 443, type: trojan, password: bs6KJkPBW9MP74uHEa, sni: "%24de1.trojan-lite.com", skip-cert-verify: true, udp: true}
   - {name: github.com/freefq - 美国CloudFlare公司CDN节点 16, server: v2ray.ibgfw.top, port: 2083, type: vmess, uuid: c28ba523-64d3-4059-a9b7-a5f0f74527f7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5rtP40gj/, headers: {Host: v2ray.ibgfw.top}}, udp: true}
-  - {name: 美国_02061241, server: 66.235.200.22, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare节点 15, server: v2ray.ibgfw.top, port: 2083, type: vmess, uuid: 71cd0fe5-6f4f-4ce1-941c-d56c3bb090a7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5rtP40gj/, headers: {Host: v2ray.ibgfw.top}}, udp: true}
-  - {name: github.com/freefq - 美国  1, server: jp1.sanfen001.pics, port: 443, type: vmess, uuid: 2d506805-626a-4669-8c8b-23f383e371ca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: jp1.sanfen001.pics}}, udp: true}
-  - {name: 中国_0206176, server: 36.156.102.166, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip 】 5, server: 172.67.205.70, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sg-gcore.sharecentre.online}}, udp: true}
-  - {name: 美国_02061267, server: 172.67.70.22, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: 印度【付费推荐：https://v1.mk/vip 】, server: in-ls03.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: in-ls03.nb1.fr}}, udp: true}
-  - {name: 美国_02061359, server: 172.67.45.144, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: "[02-08]-🇺🇸-美国-099-jp-am48-6.eqnode.net", server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: PT09PQ==, obfs-param: PT09PQ==, udp: true}
-  - {name: 澳大利亚 003, server: kr05.wxfz.ml, port: 48413, type: vmess, uuid: a06748d4-7669-49dd-dd1a-25d73471a051, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /1234, headers: {Host: a.duoyouduo.tk}}, udp: true}
-  - {name: "@SSRSUB-V19-付费推荐:suo.yt/ssrsub", server: v2ray.online, port: 443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Phoenix.v2ray.online}}, udp: true}
-  - {name: 美国(油管:破解资源君) 36, server: 111.45.22.239, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip 】116, server: 103.45.78.241, port: 10004, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君) 49, server: v2ray.ibgfw.top, port: 2083, type: vmess, uuid: f23b7338-84f7-476c-8c24-d116f181ab85, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5rtP40gj/, headers: {Host: v2ray.ibgfw.top}}, udp: true}
+  - {name: _DE_德国, server: us02.wxfz.ml, port: 11903, type: vmess, uuid: 197b49d8-5d07-49e6-8944-68afa81a5fe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https//v1.mk/vip 】4, server: z0005.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 台湾省台北市中华电信 23, server: hinet1261.gfwisbest.xyz, port: 224, type: vmess, uuid: 2285133e-b9ba-3fb5-a246-9c7ddcc2cd7a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[SSR] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】158", server: z00031.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 美国CloudFlare节点 10, server: no.aries.ovh, port: 8080, type: vmess, uuid: 35b50ae8-93ba-4f1e-96d8-fa682cc385d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v10.asuka.buzz}}, udp: true}
+  - {name: 新加坡_0208751, server: ofsg.bwh088.xyz, port: 30337, type: vmess, uuid: 14c0784b-827a-40c9-a530-99097619916a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /gtw151, headers: {Host: ofsg.bwh088.xyz}}, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip 】87, server: els200.jslist.tk, port: 8443, type: vmess, uuid: e30cfa80-bc2c-43df-e808-97876aee77e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /wo.php, headers: {Host: els200.jslist.tk}}, udp: true}
+  - {name: _油管：全网最强白嫖, server: ingress-i2.iivvppnn.info, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
+  - {name: -美国-hkgjgterg.76898102.xyz, server: hkgjgterg.76898102.xyz, port: 2052, type: vmess, uuid: 56673d1c-bf0f-3ccc-9c5a-48d93906af1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /miaohk, headers: {Host: hkgjgterg.76898102.xyz}}, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 24, server: hohm.microsoft.com, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip 】2, server: z80001.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: Taiwan 03 TG@nodpai, server: kaizen-tw-6.paolu.co, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
   - {name: 美国 044, server: kaizen-jp-12.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: 中国_02065679, server: 103.45.78.185, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇹🇼_TW_台湾, server: 103.45.78.241, port: 10004, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip 】 6, server: main.millionaireaisle.com, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}, udp: true}
-  - {name: "@SSRSUB-V38-付费推荐:suo.yt/ssrsub", server: no.aries.ovh, port: 2052, type: vmess, uuid: 12c3b55f-f225-4daa-adf3-39f8cf3969ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: waw.cloudflare.quest}}, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip 】89, server: 162.159.152.58, port: 443, type: vmess, uuid: 718046d1-acee-48be-b5d3-1bda5eee0139, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/yfjc/sg1?ed=2048", headers: {Host: sg1.yfjc.sbs}}, udp: true}
-  - {name: "@SSRSUB-V06-付费推荐:suo.yt/ssrsub", server: 172.67.199.34, port: 443, type: vmess, uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shares, headers: {Host: la.awsbest.com}}, udp: true}
-  - {name: "| 8.54Mb", server: 103.178.234.201, port: 41785, type: vmess, uuid: ce6e804e-3258-4cc1-a922-1c87a3886611, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君) 12, server: 162.159.128.7, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip 】 4, server: hn.xiaohouzi.club, port: 18581, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24%24vutnkr01.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君) 59, server: 162.159.128.7, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
-  - {name: github.com/freefq - 韩国首尔Amazon数据中心 33, server: 13.125.251.144, port: 58588, type: vmess, uuid: 2a337268-ce87-4952-b815-512d3bac2132, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: github.com/freefq - 美国  42, server: trxjp.ballistics.top, port: 443, type: trojan, password: 39386ab3-db28-468f-b87b-471f4ab7ca1c, skip-cert-verify: true, udp: true}
+  - {name: 荷兰 001, server: kaizen-ru-2.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国加利福尼亚州Winnetka 6, server: trfg.ballistics.top, port: 443, type: trojan, password: 39386ab3-db28-468f-b87b-471f4ab7ca1c, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国  12, server: trxn.ballistics.top, port: 443, type: trojan, password: 39386ab3-db28-468f-b87b-471f4ab7ca1c, skip-cert-verify: true, udp: true}
+  - {name: 美国  46, server: sfo.wyatt.cf, port: 443, type: vmess, uuid: dc822f4e-cd60-4174-a93e-c1d3865976aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /us, headers: {Host: sfo.wyatt.cf}}, udp: true}
+  - {name: 丹麦 001, server: tk02.nb1.fr, port: 443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: tk02.nb1.fr}}, udp: true}
+  - {name: "|66.63Mb", server: hainan.sfjsq001.info, port: 33203, type: vmess, uuid: 86b7378f-ad65-3bc0-9552-6943b7109871, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /app/dytv.m3u8, headers: {Host: douyu.tv}}, udp: true}
+  - {name: Hong Kong 11 TG@nodpai, server: kaizen-hk-2.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: "%24%24paydiu.com", skip-cert-verify: true, udp: true}
+  - {name: 瑞典 001, server: jp09.wxfz.ml, port: 54673, type: vmess, uuid: a28a73ee-a5a3-4dce-a832-5c3f60841032, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 007, server: sz-sg.19991314.xyz, port: 16216, type: vmess, uuid: 4b1ddb97-51ce-44cc-84f2-0a6ae6eba50d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip 】126, server: gz01.xiaohouzi.club, port: 20091, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24%24ajpn01.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip 】32, server: hnm.xiaohouzi.club, port: 16082, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24nh-hinet06.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip 】152, server: hnm.xiaohouzi.club, port: 19362, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24%24%24%24%24%24aws-hk03.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip 】38, server: iplc.xiaohouzi.club, port: 20514, type: trojan, password: a3278882-3614-39cf-a3d6-faefa8c910ab, sni: "%24supaz041.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https//v1.mk/vip 】2, server: z80001.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 34, server: six.r33.fun, port: 443, type: vmess, uuid: 9ee50101-c2e4-4a16-8501-98e7e10d148a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /racevpn, headers: {Host: nl2-full.privateip.net}}, udp: true}
+  - {name: v2rayfree.eu.org - 美国马里兰州罗耀拉大学 15, server: trld.ballistics.top, port: 443, type: trojan, password: 39386ab3-db28-468f-b87b-471f4ab7ca1c, skip-cert-verify: true, udp: true}
+  - {name: _JP_日本_3, server: suzhihan.eu.org, port: 443, type: vmess, uuid: 0b873cff-11ab-4716-c41a-04f886135091, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /roewesu, headers: {Host: suzhihan.eu.org}}, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 18, server: v2ray.ibgfw.top, port: 2083, type: vmess, uuid: 4efdd8a5-ba9a-4faf-b4ef-127c68924aa2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5rtP40gj/, headers: {Host: v2ray.ibgfw.top}}, udp: true}
+  - {name: _KR_韩国 2, server: surongwei.eu.org, port: 443, type: vmess, uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /reffs7y26g0ua, headers: {Host: surongwei.eu.org}}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip 】82, server: hn.xiaohouzi.club, port: 18835, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24feilvbin.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip 】158, server: z00031.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 美国CloudFlare节点 35, server: investors.spotify.com, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sg-gcore.sharecentre.online}}, udp: true}
+  - {name: 荷兰 002, server: zhilian-th-a.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: 日本 009, server: kaizen-jp-2.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 016, server: vde1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vde1.0bad.com}}, udp: true}
+  - {name: 美国CloudFlare公司CDN节点 37, server: get.tech, port: 80, type: vmess, uuid: 8763e625-929a-43da-b7bf-7e7bc2e57615, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shared, headers: {Host: lv.awsbest.com}}, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 31, server: six.r33.fun, port: 443, type: vmess, uuid: 9bb0e2e3-c5b9-4606-9cbb-a3c36f2d01d7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /racevpn, headers: {Host: fr2-full.privateip.net}}, udp: true}
+  - {name: 韩国 002, server: kaizen-jp-11.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 017, server: kaizen-us-8.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip 】130, server: new3.hucloud-dns.xyz, port: 443, type: vmess, uuid: 2926bbcf-eef0-4d0d-d8a7-400e417608aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: new3.hucloud-dns.xyz}}, udp: true}
+  - {name: Taiwan 09 TG@nodpai, server: kaizen-tw-1.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: 瑞典 001 2, server: jp09.wxfz.ml, port: 54673, type: vmess, uuid: a28a73ee-a5a3-4dce-a832-5c3f60841032, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: sg-am3.eqsunshine.com:32001, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip 】, server: hnm.xiaohouzi.club, port: 47651, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24%24taiguo.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip 】33, server: hn.xiaohouzi.club, port: 18733, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24ajpn03.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 土耳其 001, server: l2-tr-a.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
+  - {name: 「SCP」LU-CF, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lu.sharecentre.online}}, udp: true}
+  - {name: "@SSRSUB-V28-付费推荐:suo.yt/ssrsub", server: mncc.cf, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: mncc.cf}}, udp: true}
+  - {name: 俄罗斯  54, server: st.3wcdn.xyz, port: 443, type: vmess, uuid: 8467a939-b0c2-4444-cd72-aed162ea8c09, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /gogo, headers: {Host: st.3wcdn.xyz}}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip 】63, server: hn.xiaohouzi.club, port: 18581, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24vutnkr01.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 瑞典 003, server: de02.wxfz.ml, port: 11903, type: vmess, uuid: 197b49d8-5d07-49e6-8944-68afa81a5fe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(TG频道@kxswa), server: v2ray.online, port: 443, type: vmess, uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.v2ray.online}}, udp: true}
+  - {name: 澳大利亚 003, server: kr05.wxfz.ml, port: 48413, type: vmess, uuid: a06748d4-7669-49dd-dd1a-25d73471a051, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /1234, headers: {Host: a.duoyouduo.tk}}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip 】 2, server: hn.xiaohouzi.club, port: 14185, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24%24hktnew01.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 「SCP」SG-Gcore, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sg-gcore.sharecentre.online}}, udp: true}
+  - {name: github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 13, server: 85.208.108.60, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 美国CloudFlare节点 27, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 18849b38-719b-483e-958b-45397595a8ec, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: lsb.wqxzhang.online}}, udp: true}
+  - {name: _US_美国_1, server: cf-lt-dns.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: us-dp2.sharecentre.online}}, udp: true}
+  - {name: 「SCP」DE-CF1, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: de-1.sharecentre.online}}, udp: true}
+  - {name: 欧洲(油管:破解资源君) 44, server: 85.208.108.60, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 欧洲(油管:破解资源君) 40, server: 85.208.108.60, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 加拿大(TG频道@kxswa), server: ak1617.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: _HK_香港, server: 8.210.166.114, port: 48236, type: vmess, uuid: 9a3ab916-0662-45ae-8844-8efa29365f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: _HK_香港_3, server: 8.210.15.231, port: 41083, type: vmess, uuid: 1d1ad417-29ed-41e8-aaed-323f797efe6b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 「SCP」DE-CF2, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: de-2.sharecentre.online}}, udp: true}
+  - {name: Pool_🇳🇱NL_104, server: 85.208.108.60, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 欧洲(油管:破解资源君) 41, server: 85.208.108.60, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 未知【付费推荐：https://v1.mk/vip 】57, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxpol3.fovi.tk}}, udp: true}
+  - {name: 「SCP」UK-CF2, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: uk-2.sharecentre.online}}, udp: true}
+  - {name: 「SCP」US-DP, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: us-dp.sharecentre.online}}, udp: true}
+  - {name: 「SCP」JP-蛋糕并不是谎言, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: opc-jp.sharecentre.online}}, udp: true}
+  - {name: "@SSRSUB-V36-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 8080, type: vmess, uuid: 35b50ae8-93ba-4f1e-96d8-fa682cc385d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v10.asuka.buzz}}, udp: true}
   - {name: 美国  10, server: 138.2.35.81, port: 80, type: vmess, uuid: a0733fc9-457e-498d-c363-9ec774a74948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jun, headers: {Host: 138.2.35.81}}, udp: true}
+  - {name: 「SCP」UK-CF1, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: uk-1.sharecentre.online}}, udp: true}
+  - {name: 「SCP」KH-CF, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: kh.sharecentre.online}}, udp: true}
+  - {name: 「SCP」SG-CF, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sg-1.sharecentre.online}}, udp: true}
+  - {name: 美国 017 2, server: cft.hicoom.com, port: 443, type: vmess, uuid: 654f997b-5bea-4c82-9538-35ee57b6fd72, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /654f997b-5bea-4c82-9538-35ee57b6fd72, headers: {Host: cft.hicoom.com}}, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip 】125, server: 162.159.152.5, port: 443, type: vmess, uuid: 718046d1-acee-48be-b5d3-1bda5eee0139, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/yfjc/jp1?ed=2048", headers: {Host: jp1.yfjc.sbs}}, udp: true}
+  - {name: 美国 007, server: 148.59.74.184, port: 443, type: trojan, password: 718046d1-acee-48be-b5d3-1bda5eee0139, sni: pcd462233.netvigator.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 020, server: 0kxedm1x8q8lksmj01.xingbayun.buzz, port: 10010, type: vmess, uuid: 04868566-70bd-41ce-bbfe-74f138e01cf2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 021, server: 20.24.154.167, port: 443, type: trojan, password: 718046d1-acee-48be-b5d3-1bda5eee0139, sni: pcd462233.netvigator.com, skip-cert-verify: true, udp: true}
+  - {name: "_SG_新加坡\r", server: 54.251.24.187, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip 】77, server: 172.67.135.57, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip 】34, server: 172.67.199.34, port: 443, type: vmess, uuid: 8763e625-929a-43da-b7bf-7e7bc2e57615, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shared, headers: {Host: lv.awsbest.com}}, udp: true}
+  - {name: 美国 008, server: 148.59.74.186, port: 443, type: trojan, password: 718046d1-acee-48be-b5d3-1bda5eee0139, sni: pcd462233.netvigator.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 066, server: 172.67.169.131, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: _US_美国->🇫🇷_FR_法国_2, server: 172.67.199.34, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
+  - {name: 美国RF Engineering 55, server: 141.193.213.20, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip 】86, server: cvywfavasdc.cymlr.xyz, port: 443, type: vmess, uuid: 23f4bc80-3b0a-4aa3-cbe5-b8be4e8c32fc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ksebupo, headers: {Host: cvywfavasdc.cymlr.xyz}}, udp: true}
+  - {name: 美国_02061359, server: 172.67.45.144, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: 法国 003, server: 141.11.127.230, port: 443, type: trojan, password: 718046d1-acee-48be-b5d3-1bda5eee0139, sni: pcd462233.netvigator.com, skip-cert-verify: true, udp: true}
+  - {name: DE_45.80.190.63_02042023e26d-79trojan, server: 45.80.190.63, port: 443, type: trojan, password: bs6KJkPBW9MP74uHEa, skip-cert-verify: true, udp: true}
+  - {name: 日本【付费推荐：https://v1.mk/vip 】107, server: 152.70.109.16, port: 443, type: vmess, uuid: b5a503a9-a3ad-42d9-af00-86f959d3454b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "@SSRSUB-V09-付费推荐:suo.yt/ssrsub", server: 203.30.191.193, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
+  - {name: DE_45.80.190.59_02042023e26d-373trojan, server: 45.80.190.59, port: 443, type: trojan, password: bs6KJkPBW9MP74uHEa, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - github.com/freefq - 美国  42
-      - github.com/freefq - 美国加利福尼亚州Winnetka 6
-      - github.com/freefq - 美国纽约DigitalOcean数据中心 41
-      - 土耳其 001
-      - github.com/freefq - 美国  12
-      - v2rayfree.eu.org - 美国马里兰州罗耀拉大学 15
-      - Pool_🇳🇱NL_104
-      - 美国 010
-      - 荷兰 001
-      - 中国【付费推荐：https://v1.mk/vip 】126
-      - 欧洲(油管:破解资源君) 40
-      - Taiwan 05 TG@nodpai
-      - Taiwan 01 TG@nodpai
-      - 中国【付费推荐：https://v1.mk/vip 】124
-      - 美国 014
-      - _HK_香港_2
-      - 中国【付费推荐：https//v1.mk/vip 】2
-      - 美国 017
-      - github.com/freefq - 法国OVH SAS 40
-      - 印度 002
-      - Pool_🇳🇱NL_102
-      - github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 7
-      - 英国 002
-      - 欧洲(油管:破解资源君) 43
-      - 中国_02065657
-      - 中国【付费推荐：https//v1.mk/vip 】 2
-      - 美国(油管破解资源君) 17
-      - 欧洲(油管:破解资源君) 37
-      - 「SCP」DE-CF1
-      - 「SCP」US-DP2
-      - 中国【付费推荐：https://v1.mk/vip 】
-      - 中国【付费推荐：https//v1.mk/vip 】4
-      - "[VMess] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】 4"
-      - 美国【付费推荐：https://v1.mk/vip 】86
-      - 欧洲(油管:破解资源君) 41
-      - 中国【付费推荐：https://v1.mk/vip 】4
-      - "[VMess] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】 15"
-      - 美国 017 2
-      - "[02-09]-🇸🇪-瑞典-165-z0117.security-cloudfront-cdn.com"
-      - 印度尼西亚【付费推荐：https://v1.mk/vip 】111
-      - 中国_02066282
-      - _HK_香港_2 2
-      - 中国【付费推荐：https://tt.sbs/vip】
-      - 中国【付费推荐：https//v1.mk/vip 】
-      - 亚太地区  3
-      - 台湾省台北市 中华电信
-      - 中国【付费推荐：https://v1.mk/vip 】 2
-      - 美国CloudFlare公司CDN节点 19
-      - 欧洲(油管:破解资源君) 55
-      - 欧洲(油管:破解资源君) 44
-      - 美国【付费推荐：https://v1.mk/vip 】
-      - Hong Kong 11 TG@nodpai
-      - "@SSRSUB-V52-付费推荐:suo.yt/ssrsub"
-      - "[HK_TROJAN_103.135.103.229443]"
-      - _CN_中国->🇺🇸_US_美国
-      - "1.66|普通SEStockholm0117httpsawkjcfky 注册�%�\x19��流媒�%�\x16��场youtube�%�Y/%�Y��y��\f"
-      - _US_美国->🇫🇷_FR_法国_来源;kkzui.com(快嘴科技)_来源;kkzui.com(快嘴科技)3_23
-      - github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 43
-      - "@SSRSUB-V37-付费推荐:suo.yt/ssrsub"
-      - 美国【付费推荐：https://v1.mk/vip 】 2
-      - "|25.54Mb"
-      - 新加坡 012
-      - "@SSRSUB-V36-付费推荐:suo.yt/ssrsub"
-      - 韩国 002
-      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
-      - _GCORE
-      - 荷兰 002
-      - _TMNET-伪家宽
-      - 未知_0206191
-      - 中国【付费推荐：https//v1.mk/vip 】 12
-      - github.com/freefq - 美国Alabanza 48
-      - 巴西 001
-      - 中国_02065732
-      - 未知【付费推荐：https://v1.mk/vip 】57
-      - _CN_中国->🇺🇸_US_美国 2
-      - _AM_亚美尼亚_来源：kkzui.com5
-      - _AU_澳大利亚
-      - 美国CloudFlare节点 29
-      - DE_45.80.190.59_02042023e26d-373trojan
-      - 美国 018
-      - 新加坡 003
-      - 荷兰(TG频道@kxswa)
-      - github.com/freefq - 亚太地区  9
-      - 「SCP」LU-CF
-      - 韩国 002 2
-      - sg-am3.eqsunshine.com:32001
-      - 新加坡4
-      - 中国【付费推荐：https://v1.mk/vip 】 3
-      - 「SCP」KH-CF
-      - 美国(油管:破解资源君) 57
-      - 伯利兹【付费推荐：https://v1.mk/vip 】
-      - 中国【付费推荐：https//v1.mk/vip 】24
-      - 中国【付费推荐：https://v1.mk/vip 】88
-      - 美国(油管:破解资源君) 47
-      - github.com/freefq - 美国CloudFlare节点 31
-      - _CN_中国->🇺🇸_US_美国_1
-      - 美国CloudFlare公司CDN节点 37
-      - 「SCP」DE-CF2
-      - "@SSRSUB-V49-付费推荐:suo.yt/ssrsub"
-      - 美国【付费推荐：https://v1.mk/vip 】22
-      - 欧洲(油管:破解资源君) 33
-      - 新加坡 002
-      - _KR_韩国 2
-      - 芬兰【付费推荐：https://v1.mk/vip 】106
-      - 中国【付费推荐：https//v1.mk/vip 】112
-      - _BuyVM-无审计
-      - 美国 016
-      - 亚太地区 006
-      - github.com/freefq - 美国CloudFlare节点 24
-      - 欧洲(油管:破解资源君) 49
-      - 美国_02061263
-      - "@SSRSUB-V43-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V39-付费推荐:suo.yt/ssrsub"
-      - 香港【付费推荐：https://v1.mk/vip 】23
-      - 美国【付费推荐：https://v1.mk/vip 】 3
-      - 澳大利亚 001
-      - 亚太地区 V2CROSS.COM_1
-      - "_JP_日本\r_3_25\r"
-      - 亚美尼亚【付费推荐：https://v1.mk/vip 】
-      - github.com/freefq - 美国CloudFlare公司CDN节点 17
-      - 中国【付费推荐：https://v1.mk/vip 】96
-      - -美国-hkgjgterg.76898102.xyz
-      - 中国【付费推荐：https://v1.mk/vip 】24
-      - 美国【付费推荐：https://v1.mk/vip 】125
-      - 美国_02061242
-      - 丹麦  22
-      - _CN_中国->🇺🇸_US_美国_2
-      - "@SSRSUB-V40-付费推荐:suo.yt/ssrsub"
-      - _DE_德国
-      - 美国CloudFlare节点 20
-      - github.com/freefq - 美国Linode数据中心 8
-      - _JP_日本_3
-      - 「SCP」UK-CF1
-      - "|34.13Mb"
-      - 「SCP」UK-CF2
-      - ws
-      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V42-付费推荐:suo.yt/ssrsub"
-      - 中国【付费推荐：https://v1.mk/vip 】33
-      - github.com/freefq - 美国CloudFlare节点 18
-      - 欧洲(油管:破解资源君) 53
-      - 美国【付费推荐：https://v1.mk/vip 】 4
-      - 「SCP」SG-CF
-      - 中国_02065657 2
+      - "_SG_新加坡\r_来源：kkzui.com_13\r"
+      - -美国-138.2.35.81
+      - "[VMess] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】116"
+      - _DE_德国_1
+      - 德国【付费推荐：https://v1.mk/vip 】81
       - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - 美国_02061241
-      - github.com/freefq - 美国CloudFlare节点 15
-      - github.com/freefq - 美国  1
-      - 中国_0206176
-      - 美国【付费推荐：https://v1.mk/vip 】 5
-      - 美国_02061267
-      - 印度【付费推荐：https://v1.mk/vip 】
-      - 美国_02061359
-      - "[02-08]-🇺🇸-美国-099-jp-am48-6.eqnode.net"
-      - 澳大利亚 003
-      - "@SSRSUB-V19-付费推荐:suo.yt/ssrsub"
-      - 美国(油管:破解资源君) 36
+      - 中国【付费推荐：https://v1.mk/vip 】116
+      - 欧洲(油管:破解资源君) 49
+      - _DE_德国
+      - 中国【付费推荐：https//v1.mk/vip 】4
+      - 台湾省台北市中华电信 23
+      - "[SSR] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】158"
+      - 美国CloudFlare节点 10
+      - 新加坡_0208751
+      - 美国【付费推荐：https://v1.mk/vip 】87
+      - _油管：全网最强白嫖
+      - -美国-hkgjgterg.76898102.xyz
+      - github.com/freefq - 美国CloudFlare节点 24
+      - 中国【付费推荐：https://v1.mk/vip 】2
+      - Taiwan 03 TG@nodpai
       - 美国 044
-      - 中国_02065679
-      - _CN_中国->🇹🇼_TW_台湾
-      - 美国【付费推荐：https://v1.mk/vip 】 6
-      - "@SSRSUB-V38-付费推荐:suo.yt/ssrsub"
-      - 美国【付费推荐：https://v1.mk/vip 】89
-      - "@SSRSUB-V06-付费推荐:suo.yt/ssrsub"
-      - "| 8.54Mb"
-      - 欧洲(油管:破解资源君) 12
-      - 中国【付费推荐：https://v1.mk/vip 】 4
-      - 美国(油管:破解资源君) 59
-      - github.com/freefq - 韩国首尔Amazon数据中心 33
+      - github.com/freefq - 美国  42
+      - 荷兰 001
+      - github.com/freefq - 美国加利福尼亚州Winnetka 6
+      - github.com/freefq - 美国  12
+      - 美国  46
+      - 丹麦 001
+      - "|66.63Mb"
+      - Hong Kong 11 TG@nodpai
+      - 瑞典 001
+      - 新加坡 007
+      - 中国【付费推荐：https://v1.mk/vip 】126
+      - 中国【付费推荐：https://v1.mk/vip 】32
+      - 中国【付费推荐：https://v1.mk/vip 】152
+      - 中国【付费推荐：https://v1.mk/vip 】38
+      - 中国【付费推荐：https//v1.mk/vip 】2
+      - github.com/freefq - 美国CloudFlare节点 34
+      - v2rayfree.eu.org - 美国马里兰州罗耀拉大学 15
+      - _JP_日本_3
+      - github.com/freefq - 美国CloudFlare节点 18
+      - _KR_韩国 2
+      - 中国【付费推荐：https://v1.mk/vip 】82
+      - 中国【付费推荐：https://v1.mk/vip 】158
+      - 美国CloudFlare节点 35
+      - 荷兰 002
+      - 日本 009
+      - 美国 016
+      - 美国CloudFlare公司CDN节点 37
+      - github.com/freefq - 美国CloudFlare节点 31
+      - 韩国 002
+      - 美国 017
+      - 美国【付费推荐：https://v1.mk/vip 】130
+      - Taiwan 09 TG@nodpai
+      - 瑞典 001 2
+      - sg-am3.eqsunshine.com:32001
+      - 中国【付费推荐：https://v1.mk/vip 】
+      - 中国【付费推荐：https://v1.mk/vip 】33
+      - 土耳其 001
+      - 「SCP」LU-CF
+      - "@SSRSUB-V28-付费推荐:suo.yt/ssrsub"
+      - 俄罗斯  54
+      - 中国【付费推荐：https://v1.mk/vip 】63
+      - 瑞典 003
+      - 美国(TG频道@kxswa)
+      - 澳大利亚 003
+      - 中国【付费推荐：https://v1.mk/vip 】 2
+      - 「SCP」SG-Gcore
+      - github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 13
+      - 美国CloudFlare节点 27
+      - _US_美国_1
+      - 「SCP」DE-CF1
+      - 欧洲(油管:破解资源君) 44
+      - 欧洲(油管:破解资源君) 40
+      - 加拿大(TG频道@kxswa)
+      - _HK_香港
+      - _HK_香港_3
+      - 「SCP」DE-CF2
+      - Pool_🇳🇱NL_104
+      - 欧洲(油管:破解资源君) 41
+      - 未知【付费推荐：https://v1.mk/vip 】57
+      - 「SCP」UK-CF2
+      - 「SCP」US-DP
+      - 「SCP」JP-蛋糕并不是谎言
+      - "@SSRSUB-V36-付费推荐:suo.yt/ssrsub"
       - 美国  10
+      - 「SCP」UK-CF1
+      - 「SCP」KH-CF
+      - 「SCP」SG-CF
+      - 美国 017 2
+      - 美国【付费推荐：https://v1.mk/vip 】125
+      - 美国 007
+      - 美国 020
+      - 美国 021
+      - "_SG_新加坡\r"
+      - 美国【付费推荐：https://v1.mk/vip 】77
+      - 美国【付费推荐：https://v1.mk/vip 】34
+      - 美国 008
+      - 美国 066
+      - _US_美国->🇫🇷_FR_法国_2
+      - 美国RF Engineering 55
+      - 美国【付费推荐：https://v1.mk/vip 】86
+      - 美国_02061359
+      - 法国 003
+      - DE_45.80.190.63_02042023e26d-79trojan
+      - 日本【付费推荐：https://v1.mk/vip 】107
+      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
+      - DE_45.80.190.59_02042023e26d-373trojan
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - github.com/freefq - 美国  42
-      - github.com/freefq - 美国加利福尼亚州Winnetka 6
-      - github.com/freefq - 美国纽约DigitalOcean数据中心 41
-      - 土耳其 001
-      - github.com/freefq - 美国  12
-      - v2rayfree.eu.org - 美国马里兰州罗耀拉大学 15
-      - Pool_🇳🇱NL_104
-      - 美国 010
-      - 荷兰 001
-      - 中国【付费推荐：https://v1.mk/vip 】126
-      - 欧洲(油管:破解资源君) 40
-      - Taiwan 05 TG@nodpai
-      - Taiwan 01 TG@nodpai
-      - 中国【付费推荐：https://v1.mk/vip 】124
-      - 美国 014
-      - _HK_香港_2
-      - 中国【付费推荐：https//v1.mk/vip 】2
-      - 美国 017
-      - github.com/freefq - 法国OVH SAS 40
-      - 印度 002
-      - Pool_🇳🇱NL_102
-      - github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 7
-      - 英国 002
-      - 欧洲(油管:破解资源君) 43
-      - 中国_02065657
-      - 中国【付费推荐：https//v1.mk/vip 】 2
-      - 美国(油管破解资源君) 17
-      - 欧洲(油管:破解资源君) 37
-      - 「SCP」DE-CF1
-      - 「SCP」US-DP2
-      - 中国【付费推荐：https://v1.mk/vip 】
-      - 中国【付费推荐：https//v1.mk/vip 】4
-      - "[VMess] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】 4"
-      - 美国【付费推荐：https://v1.mk/vip 】86
-      - 欧洲(油管:破解资源君) 41
-      - 中国【付费推荐：https://v1.mk/vip 】4
-      - "[VMess] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】 15"
-      - 美国 017 2
-      - "[02-09]-🇸🇪-瑞典-165-z0117.security-cloudfront-cdn.com"
-      - 印度尼西亚【付费推荐：https://v1.mk/vip 】111
-      - 中国_02066282
-      - _HK_香港_2 2
-      - 中国【付费推荐：https://tt.sbs/vip】
-      - 中国【付费推荐：https//v1.mk/vip 】
-      - 亚太地区  3
-      - 台湾省台北市 中华电信
-      - 中国【付费推荐：https://v1.mk/vip 】 2
-      - 美国CloudFlare公司CDN节点 19
-      - 欧洲(油管:破解资源君) 55
-      - 欧洲(油管:破解资源君) 44
-      - 美国【付费推荐：https://v1.mk/vip 】
-      - Hong Kong 11 TG@nodpai
-      - "@SSRSUB-V52-付费推荐:suo.yt/ssrsub"
-      - "[HK_TROJAN_103.135.103.229443]"
-      - _CN_中国->🇺🇸_US_美国
-      - "1.66|普通SEStockholm0117httpsawkjcfky 注册�%�\x19��流媒�%�\x16��场youtube�%�Y/%�Y��y��\f"
-      - _US_美国->🇫🇷_FR_法国_来源;kkzui.com(快嘴科技)_来源;kkzui.com(快嘴科技)3_23
-      - github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 43
-      - "@SSRSUB-V37-付费推荐:suo.yt/ssrsub"
-      - 美国【付费推荐：https://v1.mk/vip 】 2
-      - "|25.54Mb"
-      - 新加坡 012
-      - "@SSRSUB-V36-付费推荐:suo.yt/ssrsub"
-      - 韩国 002
-      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
-      - _GCORE
-      - 荷兰 002
-      - _TMNET-伪家宽
-      - 未知_0206191
-      - 中国【付费推荐：https//v1.mk/vip 】 12
-      - github.com/freefq - 美国Alabanza 48
-      - 巴西 001
-      - 中国_02065732
-      - 未知【付费推荐：https://v1.mk/vip 】57
-      - _CN_中国->🇺🇸_US_美国 2
-      - _AM_亚美尼亚_来源：kkzui.com5
-      - _AU_澳大利亚
-      - 美国CloudFlare节点 29
-      - DE_45.80.190.59_02042023e26d-373trojan
-      - 美国 018
-      - 新加坡 003
-      - 荷兰(TG频道@kxswa)
-      - github.com/freefq - 亚太地区  9
-      - 「SCP」LU-CF
-      - 韩国 002 2
-      - sg-am3.eqsunshine.com:32001
-      - 新加坡4
-      - 中国【付费推荐：https://v1.mk/vip 】 3
-      - 「SCP」KH-CF
-      - 美国(油管:破解资源君) 57
-      - 伯利兹【付费推荐：https://v1.mk/vip 】
-      - 中国【付费推荐：https//v1.mk/vip 】24
-      - 中国【付费推荐：https://v1.mk/vip 】88
-      - 美国(油管:破解资源君) 47
-      - github.com/freefq - 美国CloudFlare节点 31
-      - _CN_中国->🇺🇸_US_美国_1
-      - 美国CloudFlare公司CDN节点 37
-      - 「SCP」DE-CF2
-      - "@SSRSUB-V49-付费推荐:suo.yt/ssrsub"
-      - 美国【付费推荐：https://v1.mk/vip 】22
-      - 欧洲(油管:破解资源君) 33
-      - 新加坡 002
-      - _KR_韩国 2
-      - 芬兰【付费推荐：https://v1.mk/vip 】106
-      - 中国【付费推荐：https//v1.mk/vip 】112
-      - _BuyVM-无审计
-      - 美国 016
-      - 亚太地区 006
-      - github.com/freefq - 美国CloudFlare节点 24
-      - 欧洲(油管:破解资源君) 49
-      - 美国_02061263
-      - "@SSRSUB-V43-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V39-付费推荐:suo.yt/ssrsub"
-      - 香港【付费推荐：https://v1.mk/vip 】23
-      - 美国【付费推荐：https://v1.mk/vip 】 3
-      - 澳大利亚 001
-      - 亚太地区 V2CROSS.COM_1
-      - "_JP_日本\r_3_25\r"
-      - 亚美尼亚【付费推荐：https://v1.mk/vip 】
-      - github.com/freefq - 美国CloudFlare公司CDN节点 17
-      - 中国【付费推荐：https://v1.mk/vip 】96
-      - -美国-hkgjgterg.76898102.xyz
-      - 中国【付费推荐：https://v1.mk/vip 】24
-      - 美国【付费推荐：https://v1.mk/vip 】125
-      - 美国_02061242
-      - 丹麦  22
-      - _CN_中国->🇺🇸_US_美国_2
-      - "@SSRSUB-V40-付费推荐:suo.yt/ssrsub"
-      - _DE_德国
-      - 美国CloudFlare节点 20
-      - github.com/freefq - 美国Linode数据中心 8
-      - _JP_日本_3
-      - 「SCP」UK-CF1
-      - "|34.13Mb"
-      - 「SCP」UK-CF2
-      - ws
-      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V42-付费推荐:suo.yt/ssrsub"
-      - 中国【付费推荐：https://v1.mk/vip 】33
-      - github.com/freefq - 美国CloudFlare节点 18
-      - 欧洲(油管:破解资源君) 53
-      - 美国【付费推荐：https://v1.mk/vip 】 4
-      - 「SCP」SG-CF
-      - 中国_02065657 2
+      - "_SG_新加坡\r_来源：kkzui.com_13\r"
+      - -美国-138.2.35.81
+      - "[VMess] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】116"
+      - _DE_德国_1
+      - 德国【付费推荐：https://v1.mk/vip 】81
       - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - 美国_02061241
-      - github.com/freefq - 美国CloudFlare节点 15
-      - github.com/freefq - 美国  1
-      - 中国_0206176
-      - 美国【付费推荐：https://v1.mk/vip 】 5
-      - 美国_02061267
-      - 印度【付费推荐：https://v1.mk/vip 】
-      - 美国_02061359
-      - "[02-08]-🇺🇸-美国-099-jp-am48-6.eqnode.net"
-      - 澳大利亚 003
-      - "@SSRSUB-V19-付费推荐:suo.yt/ssrsub"
-      - 美国(油管:破解资源君) 36
+      - 中国【付费推荐：https://v1.mk/vip 】116
+      - 欧洲(油管:破解资源君) 49
+      - _DE_德国
+      - 中国【付费推荐：https//v1.mk/vip 】4
+      - 台湾省台北市中华电信 23
+      - "[SSR] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】158"
+      - 美国CloudFlare节点 10
+      - 新加坡_0208751
+      - 美国【付费推荐：https://v1.mk/vip 】87
+      - _油管：全网最强白嫖
+      - -美国-hkgjgterg.76898102.xyz
+      - github.com/freefq - 美国CloudFlare节点 24
+      - 中国【付费推荐：https://v1.mk/vip 】2
+      - Taiwan 03 TG@nodpai
       - 美国 044
-      - 中国_02065679
-      - _CN_中国->🇹🇼_TW_台湾
-      - 美国【付费推荐：https://v1.mk/vip 】 6
-      - "@SSRSUB-V38-付费推荐:suo.yt/ssrsub"
-      - 美国【付费推荐：https://v1.mk/vip 】89
-      - "@SSRSUB-V06-付费推荐:suo.yt/ssrsub"
-      - "| 8.54Mb"
-      - 欧洲(油管:破解资源君) 12
-      - 中国【付费推荐：https://v1.mk/vip 】 4
-      - 美国(油管:破解资源君) 59
-      - github.com/freefq - 韩国首尔Amazon数据中心 33
+      - github.com/freefq - 美国  42
+      - 荷兰 001
+      - github.com/freefq - 美国加利福尼亚州Winnetka 6
+      - github.com/freefq - 美国  12
+      - 美国  46
+      - 丹麦 001
+      - "|66.63Mb"
+      - Hong Kong 11 TG@nodpai
+      - 瑞典 001
+      - 新加坡 007
+      - 中国【付费推荐：https://v1.mk/vip 】126
+      - 中国【付费推荐：https://v1.mk/vip 】32
+      - 中国【付费推荐：https://v1.mk/vip 】152
+      - 中国【付费推荐：https://v1.mk/vip 】38
+      - 中国【付费推荐：https//v1.mk/vip 】2
+      - github.com/freefq - 美国CloudFlare节点 34
+      - v2rayfree.eu.org - 美国马里兰州罗耀拉大学 15
+      - _JP_日本_3
+      - github.com/freefq - 美国CloudFlare节点 18
+      - _KR_韩国 2
+      - 中国【付费推荐：https://v1.mk/vip 】82
+      - 中国【付费推荐：https://v1.mk/vip 】158
+      - 美国CloudFlare节点 35
+      - 荷兰 002
+      - 日本 009
+      - 美国 016
+      - 美国CloudFlare公司CDN节点 37
+      - github.com/freefq - 美国CloudFlare节点 31
+      - 韩国 002
+      - 美国 017
+      - 美国【付费推荐：https://v1.mk/vip 】130
+      - Taiwan 09 TG@nodpai
+      - 瑞典 001 2
+      - sg-am3.eqsunshine.com:32001
+      - 中国【付费推荐：https://v1.mk/vip 】
+      - 中国【付费推荐：https://v1.mk/vip 】33
+      - 土耳其 001
+      - 「SCP」LU-CF
+      - "@SSRSUB-V28-付费推荐:suo.yt/ssrsub"
+      - 俄罗斯  54
+      - 中国【付费推荐：https://v1.mk/vip 】63
+      - 瑞典 003
+      - 美国(TG频道@kxswa)
+      - 澳大利亚 003
+      - 中国【付费推荐：https://v1.mk/vip 】 2
+      - 「SCP」SG-Gcore
+      - github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 13
+      - 美国CloudFlare节点 27
+      - _US_美国_1
+      - 「SCP」DE-CF1
+      - 欧洲(油管:破解资源君) 44
+      - 欧洲(油管:破解资源君) 40
+      - 加拿大(TG频道@kxswa)
+      - _HK_香港
+      - _HK_香港_3
+      - 「SCP」DE-CF2
+      - Pool_🇳🇱NL_104
+      - 欧洲(油管:破解资源君) 41
+      - 未知【付费推荐：https://v1.mk/vip 】57
+      - 「SCP」UK-CF2
+      - 「SCP」US-DP
+      - 「SCP」JP-蛋糕并不是谎言
+      - "@SSRSUB-V36-付费推荐:suo.yt/ssrsub"
       - 美国  10
+      - 「SCP」UK-CF1
+      - 「SCP」KH-CF
+      - 「SCP」SG-CF
+      - 美国 017 2
+      - 美国【付费推荐：https://v1.mk/vip 】125
+      - 美国 007
+      - 美国 020
+      - 美国 021
+      - "_SG_新加坡\r"
+      - 美国【付费推荐：https://v1.mk/vip 】77
+      - 美国【付费推荐：https://v1.mk/vip 】34
+      - 美国 008
+      - 美国 066
+      - _US_美国->🇫🇷_FR_法国_2
+      - 美国RF Engineering 55
+      - 美国【付费推荐：https://v1.mk/vip 】86
+      - 美国_02061359
+      - 法国 003
+      - DE_45.80.190.63_02042023e26d-79trojan
+      - 日本【付费推荐：https://v1.mk/vip 】107
+      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
+      - DE_45.80.190.59_02042023e26d-373trojan
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - github.com/freefq - 美国  42
-      - github.com/freefq - 美国加利福尼亚州Winnetka 6
-      - github.com/freefq - 美国纽约DigitalOcean数据中心 41
-      - 土耳其 001
-      - github.com/freefq - 美国  12
-      - v2rayfree.eu.org - 美国马里兰州罗耀拉大学 15
-      - Pool_🇳🇱NL_104
-      - 美国 010
-      - 荷兰 001
-      - 中国【付费推荐：https://v1.mk/vip 】126
-      - 欧洲(油管:破解资源君) 40
-      - Taiwan 05 TG@nodpai
-      - Taiwan 01 TG@nodpai
-      - 中国【付费推荐：https://v1.mk/vip 】124
-      - 美国 014
-      - _HK_香港_2
-      - 中国【付费推荐：https//v1.mk/vip 】2
-      - 美国 017
-      - github.com/freefq - 法国OVH SAS 40
-      - 印度 002
-      - Pool_🇳🇱NL_102
-      - github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 7
-      - 英国 002
-      - 欧洲(油管:破解资源君) 43
-      - 中国_02065657
-      - 中国【付费推荐：https//v1.mk/vip 】 2
-      - 美国(油管破解资源君) 17
-      - 欧洲(油管:破解资源君) 37
-      - 「SCP」DE-CF1
-      - 「SCP」US-DP2
-      - 中国【付费推荐：https://v1.mk/vip 】
-      - 中国【付费推荐：https//v1.mk/vip 】4
-      - "[VMess] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】 4"
-      - 美国【付费推荐：https://v1.mk/vip 】86
-      - 欧洲(油管:破解资源君) 41
-      - 中国【付费推荐：https://v1.mk/vip 】4
-      - "[VMess] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】 15"
-      - 美国 017 2
-      - "[02-09]-🇸🇪-瑞典-165-z0117.security-cloudfront-cdn.com"
-      - 印度尼西亚【付费推荐：https://v1.mk/vip 】111
-      - 中国_02066282
-      - _HK_香港_2 2
-      - 中国【付费推荐：https://tt.sbs/vip】
-      - 中国【付费推荐：https//v1.mk/vip 】
-      - 亚太地区  3
-      - 台湾省台北市 中华电信
-      - 中国【付费推荐：https://v1.mk/vip 】 2
-      - 美国CloudFlare公司CDN节点 19
-      - 欧洲(油管:破解资源君) 55
-      - 欧洲(油管:破解资源君) 44
-      - 美国【付费推荐：https://v1.mk/vip 】
-      - Hong Kong 11 TG@nodpai
-      - "@SSRSUB-V52-付费推荐:suo.yt/ssrsub"
-      - "[HK_TROJAN_103.135.103.229443]"
-      - _CN_中国->🇺🇸_US_美国
-      - "1.66|普通SEStockholm0117httpsawkjcfky 注册�%�\x19��流媒�%�\x16��场youtube�%�Y/%�Y��y��\f"
-      - _US_美国->🇫🇷_FR_法国_来源;kkzui.com(快嘴科技)_来源;kkzui.com(快嘴科技)3_23
-      - github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 43
-      - "@SSRSUB-V37-付费推荐:suo.yt/ssrsub"
-      - 美国【付费推荐：https://v1.mk/vip 】 2
-      - "|25.54Mb"
-      - 新加坡 012
-      - "@SSRSUB-V36-付费推荐:suo.yt/ssrsub"
-      - 韩国 002
-      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
-      - _GCORE
-      - 荷兰 002
-      - _TMNET-伪家宽
-      - 未知_0206191
-      - 中国【付费推荐：https//v1.mk/vip 】 12
-      - github.com/freefq - 美国Alabanza 48
-      - 巴西 001
-      - 中国_02065732
-      - 未知【付费推荐：https://v1.mk/vip 】57
-      - _CN_中国->🇺🇸_US_美国 2
-      - _AM_亚美尼亚_来源：kkzui.com5
-      - _AU_澳大利亚
-      - 美国CloudFlare节点 29
-      - DE_45.80.190.59_02042023e26d-373trojan
-      - 美国 018
-      - 新加坡 003
-      - 荷兰(TG频道@kxswa)
-      - github.com/freefq - 亚太地区  9
-      - 「SCP」LU-CF
-      - 韩国 002 2
-      - sg-am3.eqsunshine.com:32001
-      - 新加坡4
-      - 中国【付费推荐：https://v1.mk/vip 】 3
-      - 「SCP」KH-CF
-      - 美国(油管:破解资源君) 57
-      - 伯利兹【付费推荐：https://v1.mk/vip 】
-      - 中国【付费推荐：https//v1.mk/vip 】24
-      - 中国【付费推荐：https://v1.mk/vip 】88
-      - 美国(油管:破解资源君) 47
-      - github.com/freefq - 美国CloudFlare节点 31
-      - _CN_中国->🇺🇸_US_美国_1
-      - 美国CloudFlare公司CDN节点 37
-      - 「SCP」DE-CF2
-      - "@SSRSUB-V49-付费推荐:suo.yt/ssrsub"
-      - 美国【付费推荐：https://v1.mk/vip 】22
-      - 欧洲(油管:破解资源君) 33
-      - 新加坡 002
-      - _KR_韩国 2
-      - 芬兰【付费推荐：https://v1.mk/vip 】106
-      - 中国【付费推荐：https//v1.mk/vip 】112
-      - _BuyVM-无审计
-      - 美国 016
-      - 亚太地区 006
-      - github.com/freefq - 美国CloudFlare节点 24
-      - 欧洲(油管:破解资源君) 49
-      - 美国_02061263
-      - "@SSRSUB-V43-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V39-付费推荐:suo.yt/ssrsub"
-      - 香港【付费推荐：https://v1.mk/vip 】23
-      - 美国【付费推荐：https://v1.mk/vip 】 3
-      - 澳大利亚 001
-      - 亚太地区 V2CROSS.COM_1
-      - "_JP_日本\r_3_25\r"
-      - 亚美尼亚【付费推荐：https://v1.mk/vip 】
-      - github.com/freefq - 美国CloudFlare公司CDN节点 17
-      - 中国【付费推荐：https://v1.mk/vip 】96
-      - -美国-hkgjgterg.76898102.xyz
-      - 中国【付费推荐：https://v1.mk/vip 】24
-      - 美国【付费推荐：https://v1.mk/vip 】125
-      - 美国_02061242
-      - 丹麦  22
-      - _CN_中国->🇺🇸_US_美国_2
-      - "@SSRSUB-V40-付费推荐:suo.yt/ssrsub"
-      - _DE_德国
-      - 美国CloudFlare节点 20
-      - github.com/freefq - 美国Linode数据中心 8
-      - _JP_日本_3
-      - 「SCP」UK-CF1
-      - "|34.13Mb"
-      - 「SCP」UK-CF2
-      - ws
-      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V42-付费推荐:suo.yt/ssrsub"
-      - 中国【付费推荐：https://v1.mk/vip 】33
-      - github.com/freefq - 美国CloudFlare节点 18
-      - 欧洲(油管:破解资源君) 53
-      - 美国【付费推荐：https://v1.mk/vip 】 4
-      - 「SCP」SG-CF
-      - 中国_02065657 2
+      - "_SG_新加坡\r_来源：kkzui.com_13\r"
+      - -美国-138.2.35.81
+      - "[VMess] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】116"
+      - _DE_德国_1
+      - 德国【付费推荐：https://v1.mk/vip 】81
       - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - 美国_02061241
-      - github.com/freefq - 美国CloudFlare节点 15
-      - github.com/freefq - 美国  1
-      - 中国_0206176
-      - 美国【付费推荐：https://v1.mk/vip 】 5
-      - 美国_02061267
-      - 印度【付费推荐：https://v1.mk/vip 】
-      - 美国_02061359
-      - "[02-08]-🇺🇸-美国-099-jp-am48-6.eqnode.net"
-      - 澳大利亚 003
-      - "@SSRSUB-V19-付费推荐:suo.yt/ssrsub"
-      - 美国(油管:破解资源君) 36
+      - 中国【付费推荐：https://v1.mk/vip 】116
+      - 欧洲(油管:破解资源君) 49
+      - _DE_德国
+      - 中国【付费推荐：https//v1.mk/vip 】4
+      - 台湾省台北市中华电信 23
+      - "[SSR] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】158"
+      - 美国CloudFlare节点 10
+      - 新加坡_0208751
+      - 美国【付费推荐：https://v1.mk/vip 】87
+      - _油管：全网最强白嫖
+      - -美国-hkgjgterg.76898102.xyz
+      - github.com/freefq - 美国CloudFlare节点 24
+      - 中国【付费推荐：https://v1.mk/vip 】2
+      - Taiwan 03 TG@nodpai
       - 美国 044
-      - 中国_02065679
-      - _CN_中国->🇹🇼_TW_台湾
-      - 美国【付费推荐：https://v1.mk/vip 】 6
-      - "@SSRSUB-V38-付费推荐:suo.yt/ssrsub"
-      - 美国【付费推荐：https://v1.mk/vip 】89
-      - "@SSRSUB-V06-付费推荐:suo.yt/ssrsub"
-      - "| 8.54Mb"
-      - 欧洲(油管:破解资源君) 12
-      - 中国【付费推荐：https://v1.mk/vip 】 4
-      - 美国(油管:破解资源君) 59
-      - github.com/freefq - 韩国首尔Amazon数据中心 33
+      - github.com/freefq - 美国  42
+      - 荷兰 001
+      - github.com/freefq - 美国加利福尼亚州Winnetka 6
+      - github.com/freefq - 美国  12
+      - 美国  46
+      - 丹麦 001
+      - "|66.63Mb"
+      - Hong Kong 11 TG@nodpai
+      - 瑞典 001
+      - 新加坡 007
+      - 中国【付费推荐：https://v1.mk/vip 】126
+      - 中国【付费推荐：https://v1.mk/vip 】32
+      - 中国【付费推荐：https://v1.mk/vip 】152
+      - 中国【付费推荐：https://v1.mk/vip 】38
+      - 中国【付费推荐：https//v1.mk/vip 】2
+      - github.com/freefq - 美国CloudFlare节点 34
+      - v2rayfree.eu.org - 美国马里兰州罗耀拉大学 15
+      - _JP_日本_3
+      - github.com/freefq - 美国CloudFlare节点 18
+      - _KR_韩国 2
+      - 中国【付费推荐：https://v1.mk/vip 】82
+      - 中国【付费推荐：https://v1.mk/vip 】158
+      - 美国CloudFlare节点 35
+      - 荷兰 002
+      - 日本 009
+      - 美国 016
+      - 美国CloudFlare公司CDN节点 37
+      - github.com/freefq - 美国CloudFlare节点 31
+      - 韩国 002
+      - 美国 017
+      - 美国【付费推荐：https://v1.mk/vip 】130
+      - Taiwan 09 TG@nodpai
+      - 瑞典 001 2
+      - sg-am3.eqsunshine.com:32001
+      - 中国【付费推荐：https://v1.mk/vip 】
+      - 中国【付费推荐：https://v1.mk/vip 】33
+      - 土耳其 001
+      - 「SCP」LU-CF
+      - "@SSRSUB-V28-付费推荐:suo.yt/ssrsub"
+      - 俄罗斯  54
+      - 中国【付费推荐：https://v1.mk/vip 】63
+      - 瑞典 003
+      - 美国(TG频道@kxswa)
+      - 澳大利亚 003
+      - 中国【付费推荐：https://v1.mk/vip 】 2
+      - 「SCP」SG-Gcore
+      - github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 13
+      - 美国CloudFlare节点 27
+      - _US_美国_1
+      - 「SCP」DE-CF1
+      - 欧洲(油管:破解资源君) 44
+      - 欧洲(油管:破解资源君) 40
+      - 加拿大(TG频道@kxswa)
+      - _HK_香港
+      - _HK_香港_3
+      - 「SCP」DE-CF2
+      - Pool_🇳🇱NL_104
+      - 欧洲(油管:破解资源君) 41
+      - 未知【付费推荐：https://v1.mk/vip 】57
+      - 「SCP」UK-CF2
+      - 「SCP」US-DP
+      - 「SCP」JP-蛋糕并不是谎言
+      - "@SSRSUB-V36-付费推荐:suo.yt/ssrsub"
       - 美国  10
+      - 「SCP」UK-CF1
+      - 「SCP」KH-CF
+      - 「SCP」SG-CF
+      - 美国 017 2
+      - 美国【付费推荐：https://v1.mk/vip 】125
+      - 美国 007
+      - 美国 020
+      - 美国 021
+      - "_SG_新加坡\r"
+      - 美国【付费推荐：https://v1.mk/vip 】77
+      - 美国【付费推荐：https://v1.mk/vip 】34
+      - 美国 008
+      - 美国 066
+      - _US_美国->🇫🇷_FR_法国_2
+      - 美国RF Engineering 55
+      - 美国【付费推荐：https://v1.mk/vip 】86
+      - 美国_02061359
+      - 法国 003
+      - DE_45.80.190.63_02042023e26d-79trojan
+      - 日本【付费推荐：https://v1.mk/vip 】107
+      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
+      - DE_45.80.190.59_02042023e26d-373trojan
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -721,713 +469,459 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - github.com/freefq - 美国  42
-      - github.com/freefq - 美国加利福尼亚州Winnetka 6
-      - github.com/freefq - 美国纽约DigitalOcean数据中心 41
-      - 土耳其 001
-      - github.com/freefq - 美国  12
-      - v2rayfree.eu.org - 美国马里兰州罗耀拉大学 15
-      - Pool_🇳🇱NL_104
-      - 美国 010
-      - 荷兰 001
-      - 中国【付费推荐：https://v1.mk/vip 】126
-      - 欧洲(油管:破解资源君) 40
-      - Taiwan 05 TG@nodpai
-      - Taiwan 01 TG@nodpai
-      - 中国【付费推荐：https://v1.mk/vip 】124
-      - 美国 014
-      - _HK_香港_2
-      - 中国【付费推荐：https//v1.mk/vip 】2
-      - 美国 017
-      - github.com/freefq - 法国OVH SAS 40
-      - 印度 002
-      - Pool_🇳🇱NL_102
-      - github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 7
-      - 英国 002
-      - 欧洲(油管:破解资源君) 43
-      - 中国_02065657
-      - 中国【付费推荐：https//v1.mk/vip 】 2
-      - 美国(油管破解资源君) 17
-      - 欧洲(油管:破解资源君) 37
-      - 「SCP」DE-CF1
-      - 「SCP」US-DP2
-      - 中国【付费推荐：https://v1.mk/vip 】
-      - 中国【付费推荐：https//v1.mk/vip 】4
-      - "[VMess] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】 4"
-      - 美国【付费推荐：https://v1.mk/vip 】86
-      - 欧洲(油管:破解资源君) 41
-      - 中国【付费推荐：https://v1.mk/vip 】4
-      - "[VMess] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】 15"
-      - 美国 017 2
-      - "[02-09]-🇸🇪-瑞典-165-z0117.security-cloudfront-cdn.com"
-      - 印度尼西亚【付费推荐：https://v1.mk/vip 】111
-      - 中国_02066282
-      - _HK_香港_2 2
-      - 中国【付费推荐：https://tt.sbs/vip】
-      - 中国【付费推荐：https//v1.mk/vip 】
-      - 亚太地区  3
-      - 台湾省台北市 中华电信
-      - 中国【付费推荐：https://v1.mk/vip 】 2
-      - 美国CloudFlare公司CDN节点 19
-      - 欧洲(油管:破解资源君) 55
-      - 欧洲(油管:破解资源君) 44
-      - 美国【付费推荐：https://v1.mk/vip 】
-      - Hong Kong 11 TG@nodpai
-      - "@SSRSUB-V52-付费推荐:suo.yt/ssrsub"
-      - "[HK_TROJAN_103.135.103.229443]"
-      - _CN_中国->🇺🇸_US_美国
-      - "1.66|普通SEStockholm0117httpsawkjcfky 注册�%�\x19��流媒�%�\x16��场youtube�%�Y/%�Y��y��\f"
-      - _US_美国->🇫🇷_FR_法国_来源;kkzui.com(快嘴科技)_来源;kkzui.com(快嘴科技)3_23
-      - github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 43
-      - "@SSRSUB-V37-付费推荐:suo.yt/ssrsub"
-      - 美国【付费推荐：https://v1.mk/vip 】 2
-      - "|25.54Mb"
-      - 新加坡 012
-      - "@SSRSUB-V36-付费推荐:suo.yt/ssrsub"
-      - 韩国 002
-      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
-      - _GCORE
-      - 荷兰 002
-      - _TMNET-伪家宽
-      - 未知_0206191
-      - 中国【付费推荐：https//v1.mk/vip 】 12
-      - github.com/freefq - 美国Alabanza 48
-      - 巴西 001
-      - 中国_02065732
-      - 未知【付费推荐：https://v1.mk/vip 】57
-      - _CN_中国->🇺🇸_US_美国 2
-      - _AM_亚美尼亚_来源：kkzui.com5
-      - _AU_澳大利亚
-      - 美国CloudFlare节点 29
-      - DE_45.80.190.59_02042023e26d-373trojan
-      - 美国 018
-      - 新加坡 003
-      - 荷兰(TG频道@kxswa)
-      - github.com/freefq - 亚太地区  9
-      - 「SCP」LU-CF
-      - 韩国 002 2
-      - sg-am3.eqsunshine.com:32001
-      - 新加坡4
-      - 中国【付费推荐：https://v1.mk/vip 】 3
-      - 「SCP」KH-CF
-      - 美国(油管:破解资源君) 57
-      - 伯利兹【付费推荐：https://v1.mk/vip 】
-      - 中国【付费推荐：https//v1.mk/vip 】24
-      - 中国【付费推荐：https://v1.mk/vip 】88
-      - 美国(油管:破解资源君) 47
-      - github.com/freefq - 美国CloudFlare节点 31
-      - _CN_中国->🇺🇸_US_美国_1
-      - 美国CloudFlare公司CDN节点 37
-      - 「SCP」DE-CF2
-      - "@SSRSUB-V49-付费推荐:suo.yt/ssrsub"
-      - 美国【付费推荐：https://v1.mk/vip 】22
-      - 欧洲(油管:破解资源君) 33
-      - 新加坡 002
-      - _KR_韩国 2
-      - 芬兰【付费推荐：https://v1.mk/vip 】106
-      - 中国【付费推荐：https//v1.mk/vip 】112
-      - _BuyVM-无审计
-      - 美国 016
-      - 亚太地区 006
-      - github.com/freefq - 美国CloudFlare节点 24
-      - 欧洲(油管:破解资源君) 49
-      - 美国_02061263
-      - "@SSRSUB-V43-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V39-付费推荐:suo.yt/ssrsub"
-      - 香港【付费推荐：https://v1.mk/vip 】23
-      - 美国【付费推荐：https://v1.mk/vip 】 3
-      - 澳大利亚 001
-      - 亚太地区 V2CROSS.COM_1
-      - "_JP_日本\r_3_25\r"
-      - 亚美尼亚【付费推荐：https://v1.mk/vip 】
-      - github.com/freefq - 美国CloudFlare公司CDN节点 17
-      - 中国【付费推荐：https://v1.mk/vip 】96
-      - -美国-hkgjgterg.76898102.xyz
-      - 中国【付费推荐：https://v1.mk/vip 】24
-      - 美国【付费推荐：https://v1.mk/vip 】125
-      - 美国_02061242
-      - 丹麦  22
-      - _CN_中国->🇺🇸_US_美国_2
-      - "@SSRSUB-V40-付费推荐:suo.yt/ssrsub"
-      - _DE_德国
-      - 美国CloudFlare节点 20
-      - github.com/freefq - 美国Linode数据中心 8
-      - _JP_日本_3
-      - 「SCP」UK-CF1
-      - "|34.13Mb"
-      - 「SCP」UK-CF2
-      - ws
-      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V42-付费推荐:suo.yt/ssrsub"
-      - 中国【付费推荐：https://v1.mk/vip 】33
-      - github.com/freefq - 美国CloudFlare节点 18
-      - 欧洲(油管:破解资源君) 53
-      - 美国【付费推荐：https://v1.mk/vip 】 4
-      - 「SCP」SG-CF
-      - 中国_02065657 2
+      - "_SG_新加坡\r_来源：kkzui.com_13\r"
+      - -美国-138.2.35.81
+      - "[VMess] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】116"
+      - _DE_德国_1
+      - 德国【付费推荐：https://v1.mk/vip 】81
       - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - 美国_02061241
-      - github.com/freefq - 美国CloudFlare节点 15
-      - github.com/freefq - 美国  1
-      - 中国_0206176
-      - 美国【付费推荐：https://v1.mk/vip 】 5
-      - 美国_02061267
-      - 印度【付费推荐：https://v1.mk/vip 】
-      - 美国_02061359
-      - "[02-08]-🇺🇸-美国-099-jp-am48-6.eqnode.net"
-      - 澳大利亚 003
-      - "@SSRSUB-V19-付费推荐:suo.yt/ssrsub"
-      - 美国(油管:破解资源君) 36
+      - 中国【付费推荐：https://v1.mk/vip 】116
+      - 欧洲(油管:破解资源君) 49
+      - _DE_德国
+      - 中国【付费推荐：https//v1.mk/vip 】4
+      - 台湾省台北市中华电信 23
+      - "[SSR] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】158"
+      - 美国CloudFlare节点 10
+      - 新加坡_0208751
+      - 美国【付费推荐：https://v1.mk/vip 】87
+      - _油管：全网最强白嫖
+      - -美国-hkgjgterg.76898102.xyz
+      - github.com/freefq - 美国CloudFlare节点 24
+      - 中国【付费推荐：https://v1.mk/vip 】2
+      - Taiwan 03 TG@nodpai
       - 美国 044
-      - 中国_02065679
-      - _CN_中国->🇹🇼_TW_台湾
-      - 美国【付费推荐：https://v1.mk/vip 】 6
-      - "@SSRSUB-V38-付费推荐:suo.yt/ssrsub"
-      - 美国【付费推荐：https://v1.mk/vip 】89
-      - "@SSRSUB-V06-付费推荐:suo.yt/ssrsub"
-      - "| 8.54Mb"
-      - 欧洲(油管:破解资源君) 12
-      - 中国【付费推荐：https://v1.mk/vip 】 4
-      - 美国(油管:破解资源君) 59
-      - github.com/freefq - 韩国首尔Amazon数据中心 33
+      - github.com/freefq - 美国  42
+      - 荷兰 001
+      - github.com/freefq - 美国加利福尼亚州Winnetka 6
+      - github.com/freefq - 美国  12
+      - 美国  46
+      - 丹麦 001
+      - "|66.63Mb"
+      - Hong Kong 11 TG@nodpai
+      - 瑞典 001
+      - 新加坡 007
+      - 中国【付费推荐：https://v1.mk/vip 】126
+      - 中国【付费推荐：https://v1.mk/vip 】32
+      - 中国【付费推荐：https://v1.mk/vip 】152
+      - 中国【付费推荐：https://v1.mk/vip 】38
+      - 中国【付费推荐：https//v1.mk/vip 】2
+      - github.com/freefq - 美国CloudFlare节点 34
+      - v2rayfree.eu.org - 美国马里兰州罗耀拉大学 15
+      - _JP_日本_3
+      - github.com/freefq - 美国CloudFlare节点 18
+      - _KR_韩国 2
+      - 中国【付费推荐：https://v1.mk/vip 】82
+      - 中国【付费推荐：https://v1.mk/vip 】158
+      - 美国CloudFlare节点 35
+      - 荷兰 002
+      - 日本 009
+      - 美国 016
+      - 美国CloudFlare公司CDN节点 37
+      - github.com/freefq - 美国CloudFlare节点 31
+      - 韩国 002
+      - 美国 017
+      - 美国【付费推荐：https://v1.mk/vip 】130
+      - Taiwan 09 TG@nodpai
+      - 瑞典 001 2
+      - sg-am3.eqsunshine.com:32001
+      - 中国【付费推荐：https://v1.mk/vip 】
+      - 中国【付费推荐：https://v1.mk/vip 】33
+      - 土耳其 001
+      - 「SCP」LU-CF
+      - "@SSRSUB-V28-付费推荐:suo.yt/ssrsub"
+      - 俄罗斯  54
+      - 中国【付费推荐：https://v1.mk/vip 】63
+      - 瑞典 003
+      - 美国(TG频道@kxswa)
+      - 澳大利亚 003
+      - 中国【付费推荐：https://v1.mk/vip 】 2
+      - 「SCP」SG-Gcore
+      - github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 13
+      - 美国CloudFlare节点 27
+      - _US_美国_1
+      - 「SCP」DE-CF1
+      - 欧洲(油管:破解资源君) 44
+      - 欧洲(油管:破解资源君) 40
+      - 加拿大(TG频道@kxswa)
+      - _HK_香港
+      - _HK_香港_3
+      - 「SCP」DE-CF2
+      - Pool_🇳🇱NL_104
+      - 欧洲(油管:破解资源君) 41
+      - 未知【付费推荐：https://v1.mk/vip 】57
+      - 「SCP」UK-CF2
+      - 「SCP」US-DP
+      - 「SCP」JP-蛋糕并不是谎言
+      - "@SSRSUB-V36-付费推荐:suo.yt/ssrsub"
       - 美国  10
+      - 「SCP」UK-CF1
+      - 「SCP」KH-CF
+      - 「SCP」SG-CF
+      - 美国 017 2
+      - 美国【付费推荐：https://v1.mk/vip 】125
+      - 美国 007
+      - 美国 020
+      - 美国 021
+      - "_SG_新加坡\r"
+      - 美国【付费推荐：https://v1.mk/vip 】77
+      - 美国【付费推荐：https://v1.mk/vip 】34
+      - 美国 008
+      - 美国 066
+      - _US_美国->🇫🇷_FR_法国_2
+      - 美国RF Engineering 55
+      - 美国【付费推荐：https://v1.mk/vip 】86
+      - 美国_02061359
+      - 法国 003
+      - DE_45.80.190.63_02042023e26d-79trojan
+      - 日本【付费推荐：https://v1.mk/vip 】107
+      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
+      - DE_45.80.190.59_02042023e26d-373trojan
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - _HK_香港_2
-      - _HK_香港_2 2
-      - 台湾省台北市 中华电信
-      - 香港【付费推荐：https://v1.mk/vip 】23
+      - 台湾省台北市中华电信 23
       - -美国-hkgjgterg.76898102.xyz
-      - _CN_中国->🇹🇼_TW_台湾
+      - _HK_香港
+      - _HK_香港_3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - github.com/freefq - 美国  42
-      - github.com/freefq - 美国加利福尼亚州Winnetka 6
-      - github.com/freefq - 美国纽约DigitalOcean数据中心 41
-      - 土耳其 001
-      - github.com/freefq - 美国  12
-      - v2rayfree.eu.org - 美国马里兰州罗耀拉大学 15
-      - Pool_🇳🇱NL_104
-      - 美国 010
-      - 荷兰 001
-      - 中国【付费推荐：https://v1.mk/vip 】126
-      - 欧洲(油管:破解资源君) 40
-      - Taiwan 05 TG@nodpai
-      - Taiwan 01 TG@nodpai
-      - 中国【付费推荐：https://v1.mk/vip 】124
-      - 美国 014
-      - _HK_香港_2
-      - 中国【付费推荐：https//v1.mk/vip 】2
-      - 美国 017
-      - github.com/freefq - 法国OVH SAS 40
-      - 印度 002
-      - Pool_🇳🇱NL_102
-      - github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 7
-      - 英国 002
-      - 欧洲(油管:破解资源君) 43
-      - 中国_02065657
-      - 中国【付费推荐：https//v1.mk/vip 】 2
-      - 美国(油管破解资源君) 17
-      - 欧洲(油管:破解资源君) 37
-      - 「SCP」DE-CF1
-      - 「SCP」US-DP2
-      - 中国【付费推荐：https://v1.mk/vip 】
-      - 中国【付费推荐：https//v1.mk/vip 】4
-      - "[VMess] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】 4"
-      - 美国【付费推荐：https://v1.mk/vip 】86
-      - 欧洲(油管:破解资源君) 41
-      - 中国【付费推荐：https://v1.mk/vip 】4
-      - "[VMess] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】 15"
-      - 美国 017 2
-      - "[02-09]-🇸🇪-瑞典-165-z0117.security-cloudfront-cdn.com"
-      - 印度尼西亚【付费推荐：https://v1.mk/vip 】111
-      - 中国_02066282
-      - _HK_香港_2 2
-      - 中国【付费推荐：https://tt.sbs/vip】
-      - 中国【付费推荐：https//v1.mk/vip 】
-      - 亚太地区  3
-      - 台湾省台北市 中华电信
-      - 中国【付费推荐：https://v1.mk/vip 】 2
-      - 美国CloudFlare公司CDN节点 19
-      - 欧洲(油管:破解资源君) 55
-      - 欧洲(油管:破解资源君) 44
-      - 美国【付费推荐：https://v1.mk/vip 】
-      - Hong Kong 11 TG@nodpai
-      - "@SSRSUB-V52-付费推荐:suo.yt/ssrsub"
-      - "[HK_TROJAN_103.135.103.229443]"
-      - _CN_中国->🇺🇸_US_美国
-      - "1.66|普通SEStockholm0117httpsawkjcfky 注册�%�\x19��流媒�%�\x16��场youtube�%�Y/%�Y��y��\f"
-      - _US_美国->🇫🇷_FR_法国_来源;kkzui.com(快嘴科技)_来源;kkzui.com(快嘴科技)3_23
-      - github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 43
-      - "@SSRSUB-V37-付费推荐:suo.yt/ssrsub"
-      - 美国【付费推荐：https://v1.mk/vip 】 2
-      - "|25.54Mb"
-      - 新加坡 012
-      - "@SSRSUB-V36-付费推荐:suo.yt/ssrsub"
-      - 韩国 002
-      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
-      - _GCORE
-      - 荷兰 002
-      - _TMNET-伪家宽
-      - 未知_0206191
-      - 中国【付费推荐：https//v1.mk/vip 】 12
-      - github.com/freefq - 美国Alabanza 48
-      - 巴西 001
-      - 中国_02065732
-      - 未知【付费推荐：https://v1.mk/vip 】57
-      - _CN_中国->🇺🇸_US_美国 2
-      - _AM_亚美尼亚_来源：kkzui.com5
-      - _AU_澳大利亚
-      - 美国CloudFlare节点 29
-      - DE_45.80.190.59_02042023e26d-373trojan
-      - 美国 018
-      - 新加坡 003
-      - 荷兰(TG频道@kxswa)
-      - github.com/freefq - 亚太地区  9
-      - 「SCP」LU-CF
-      - 韩国 002 2
-      - sg-am3.eqsunshine.com:32001
-      - 新加坡4
-      - 中国【付费推荐：https://v1.mk/vip 】 3
-      - 「SCP」KH-CF
-      - 美国(油管:破解资源君) 57
-      - 伯利兹【付费推荐：https://v1.mk/vip 】
-      - 中国【付费推荐：https//v1.mk/vip 】24
-      - 中国【付费推荐：https://v1.mk/vip 】88
-      - 美国(油管:破解资源君) 47
-      - github.com/freefq - 美国CloudFlare节点 31
-      - _CN_中国->🇺🇸_US_美国_1
-      - 美国CloudFlare公司CDN节点 37
-      - 「SCP」DE-CF2
-      - "@SSRSUB-V49-付费推荐:suo.yt/ssrsub"
-      - 美国【付费推荐：https://v1.mk/vip 】22
-      - 欧洲(油管:破解资源君) 33
-      - 新加坡 002
-      - _KR_韩国 2
-      - 芬兰【付费推荐：https://v1.mk/vip 】106
-      - 中国【付费推荐：https//v1.mk/vip 】112
-      - _BuyVM-无审计
-      - 美国 016
-      - 亚太地区 006
-      - github.com/freefq - 美国CloudFlare节点 24
-      - 欧洲(油管:破解资源君) 49
-      - 美国_02061263
-      - "@SSRSUB-V43-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V39-付费推荐:suo.yt/ssrsub"
-      - 香港【付费推荐：https://v1.mk/vip 】23
-      - 美国【付费推荐：https://v1.mk/vip 】 3
-      - 澳大利亚 001
-      - 亚太地区 V2CROSS.COM_1
-      - "_JP_日本\r_3_25\r"
-      - 亚美尼亚【付费推荐：https://v1.mk/vip 】
-      - github.com/freefq - 美国CloudFlare公司CDN节点 17
-      - 中国【付费推荐：https://v1.mk/vip 】96
-      - -美国-hkgjgterg.76898102.xyz
-      - 中国【付费推荐：https://v1.mk/vip 】24
-      - 美国【付费推荐：https://v1.mk/vip 】125
-      - 美国_02061242
-      - 丹麦  22
-      - _CN_中国->🇺🇸_US_美国_2
-      - "@SSRSUB-V40-付费推荐:suo.yt/ssrsub"
-      - _DE_德国
-      - 美国CloudFlare节点 20
-      - github.com/freefq - 美国Linode数据中心 8
-      - _JP_日本_3
-      - 「SCP」UK-CF1
-      - "|34.13Mb"
-      - 「SCP」UK-CF2
-      - ws
-      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V42-付费推荐:suo.yt/ssrsub"
-      - 中国【付费推荐：https://v1.mk/vip 】33
-      - github.com/freefq - 美国CloudFlare节点 18
-      - 欧洲(油管:破解资源君) 53
-      - 美国【付费推荐：https://v1.mk/vip 】 4
-      - 「SCP」SG-CF
-      - 中国_02065657 2
+      - "_SG_新加坡\r_来源：kkzui.com_13\r"
+      - -美国-138.2.35.81
+      - "[VMess] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】116"
+      - _DE_德国_1
+      - 德国【付费推荐：https://v1.mk/vip 】81
       - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - 美国_02061241
-      - github.com/freefq - 美国CloudFlare节点 15
-      - github.com/freefq - 美国  1
-      - 中国_0206176
-      - 美国【付费推荐：https://v1.mk/vip 】 5
-      - 美国_02061267
-      - 印度【付费推荐：https://v1.mk/vip 】
-      - 美国_02061359
-      - "[02-08]-🇺🇸-美国-099-jp-am48-6.eqnode.net"
-      - 澳大利亚 003
-      - "@SSRSUB-V19-付费推荐:suo.yt/ssrsub"
-      - 美国(油管:破解资源君) 36
+      - 中国【付费推荐：https://v1.mk/vip 】116
+      - 欧洲(油管:破解资源君) 49
+      - _DE_德国
+      - 中国【付费推荐：https//v1.mk/vip 】4
+      - 台湾省台北市中华电信 23
+      - "[SSR] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】158"
+      - 美国CloudFlare节点 10
+      - 新加坡_0208751
+      - 美国【付费推荐：https://v1.mk/vip 】87
+      - _油管：全网最强白嫖
+      - -美国-hkgjgterg.76898102.xyz
+      - github.com/freefq - 美国CloudFlare节点 24
+      - 中国【付费推荐：https://v1.mk/vip 】2
+      - Taiwan 03 TG@nodpai
       - 美国 044
-      - 中国_02065679
-      - _CN_中国->🇹🇼_TW_台湾
-      - 美国【付费推荐：https://v1.mk/vip 】 6
-      - "@SSRSUB-V38-付费推荐:suo.yt/ssrsub"
-      - 美国【付费推荐：https://v1.mk/vip 】89
-      - "@SSRSUB-V06-付费推荐:suo.yt/ssrsub"
-      - "| 8.54Mb"
-      - 欧洲(油管:破解资源君) 12
-      - 中国【付费推荐：https://v1.mk/vip 】 4
-      - 美国(油管:破解资源君) 59
-      - github.com/freefq - 韩国首尔Amazon数据中心 33
+      - github.com/freefq - 美国  42
+      - 荷兰 001
+      - github.com/freefq - 美国加利福尼亚州Winnetka 6
+      - github.com/freefq - 美国  12
+      - 美国  46
+      - 丹麦 001
+      - "|66.63Mb"
+      - Hong Kong 11 TG@nodpai
+      - 瑞典 001
+      - 新加坡 007
+      - 中国【付费推荐：https://v1.mk/vip 】126
+      - 中国【付费推荐：https://v1.mk/vip 】32
+      - 中国【付费推荐：https://v1.mk/vip 】152
+      - 中国【付费推荐：https://v1.mk/vip 】38
+      - 中国【付费推荐：https//v1.mk/vip 】2
+      - github.com/freefq - 美国CloudFlare节点 34
+      - v2rayfree.eu.org - 美国马里兰州罗耀拉大学 15
+      - _JP_日本_3
+      - github.com/freefq - 美国CloudFlare节点 18
+      - _KR_韩国 2
+      - 中国【付费推荐：https://v1.mk/vip 】82
+      - 中国【付费推荐：https://v1.mk/vip 】158
+      - 美国CloudFlare节点 35
+      - 荷兰 002
+      - 日本 009
+      - 美国 016
+      - 美国CloudFlare公司CDN节点 37
+      - github.com/freefq - 美国CloudFlare节点 31
+      - 韩国 002
+      - 美国 017
+      - 美国【付费推荐：https://v1.mk/vip 】130
+      - Taiwan 09 TG@nodpai
+      - 瑞典 001 2
+      - sg-am3.eqsunshine.com:32001
+      - 中国【付费推荐：https://v1.mk/vip 】
+      - 中国【付费推荐：https://v1.mk/vip 】33
+      - 土耳其 001
+      - 「SCP」LU-CF
+      - "@SSRSUB-V28-付费推荐:suo.yt/ssrsub"
+      - 俄罗斯  54
+      - 中国【付费推荐：https://v1.mk/vip 】63
+      - 瑞典 003
+      - 美国(TG频道@kxswa)
+      - 澳大利亚 003
+      - 中国【付费推荐：https://v1.mk/vip 】 2
+      - 「SCP」SG-Gcore
+      - github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 13
+      - 美国CloudFlare节点 27
+      - _US_美国_1
+      - 「SCP」DE-CF1
+      - 欧洲(油管:破解资源君) 44
+      - 欧洲(油管:破解资源君) 40
+      - 加拿大(TG频道@kxswa)
+      - _HK_香港
+      - _HK_香港_3
+      - 「SCP」DE-CF2
+      - Pool_🇳🇱NL_104
+      - 欧洲(油管:破解资源君) 41
+      - 未知【付费推荐：https://v1.mk/vip 】57
+      - 「SCP」UK-CF2
+      - 「SCP」US-DP
+      - 「SCP」JP-蛋糕并不是谎言
+      - "@SSRSUB-V36-付费推荐:suo.yt/ssrsub"
       - 美国  10
+      - 「SCP」UK-CF1
+      - 「SCP」KH-CF
+      - 「SCP」SG-CF
+      - 美国 017 2
+      - 美国【付费推荐：https://v1.mk/vip 】125
+      - 美国 007
+      - 美国 020
+      - 美国 021
+      - "_SG_新加坡\r"
+      - 美国【付费推荐：https://v1.mk/vip 】77
+      - 美国【付费推荐：https://v1.mk/vip 】34
+      - 美国 008
+      - 美国 066
+      - _US_美国->🇫🇷_FR_法国_2
+      - 美国RF Engineering 55
+      - 美国【付费推荐：https://v1.mk/vip 】86
+      - 美国_02061359
+      - 法国 003
+      - DE_45.80.190.63_02042023e26d-79trojan
+      - 日本【付费推荐：https://v1.mk/vip 】107
+      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
+      - DE_45.80.190.59_02042023e26d-373trojan
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - github.com/freefq - 美国  42
-      - github.com/freefq - 美国加利福尼亚州Winnetka 6
-      - github.com/freefq - 美国纽约DigitalOcean数据中心 41
-      - 土耳其 001
-      - github.com/freefq - 美国  12
-      - v2rayfree.eu.org - 美国马里兰州罗耀拉大学 15
-      - Pool_🇳🇱NL_104
-      - 美国 010
-      - 荷兰 001
-      - 中国【付费推荐：https://v1.mk/vip 】126
-      - 欧洲(油管:破解资源君) 40
-      - Taiwan 05 TG@nodpai
-      - Taiwan 01 TG@nodpai
-      - 中国【付费推荐：https://v1.mk/vip 】124
-      - 美国 014
-      - _HK_香港_2
-      - 中国【付费推荐：https//v1.mk/vip 】2
-      - 美国 017
-      - github.com/freefq - 法国OVH SAS 40
-      - 印度 002
-      - Pool_🇳🇱NL_102
-      - github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 7
-      - 英国 002
-      - 欧洲(油管:破解资源君) 43
-      - 中国_02065657
-      - 中国【付费推荐：https//v1.mk/vip 】 2
-      - 美国(油管破解资源君) 17
-      - 欧洲(油管:破解资源君) 37
-      - 「SCP」DE-CF1
-      - 「SCP」US-DP2
-      - 中国【付费推荐：https://v1.mk/vip 】
-      - 中国【付费推荐：https//v1.mk/vip 】4
-      - "[VMess] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】 4"
-      - 美国【付费推荐：https://v1.mk/vip 】86
-      - 欧洲(油管:破解资源君) 41
-      - 中国【付费推荐：https://v1.mk/vip 】4
-      - "[VMess] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】 15"
-      - 美国 017 2
-      - "[02-09]-🇸🇪-瑞典-165-z0117.security-cloudfront-cdn.com"
-      - 印度尼西亚【付费推荐：https://v1.mk/vip 】111
-      - 中国_02066282
-      - _HK_香港_2 2
-      - 中国【付费推荐：https://tt.sbs/vip】
-      - 中国【付费推荐：https//v1.mk/vip 】
-      - 亚太地区  3
-      - 台湾省台北市 中华电信
-      - 中国【付费推荐：https://v1.mk/vip 】 2
-      - 美国CloudFlare公司CDN节点 19
-      - 欧洲(油管:破解资源君) 55
-      - 欧洲(油管:破解资源君) 44
-      - 美国【付费推荐：https://v1.mk/vip 】
-      - Hong Kong 11 TG@nodpai
-      - "@SSRSUB-V52-付费推荐:suo.yt/ssrsub"
-      - "[HK_TROJAN_103.135.103.229443]"
-      - _CN_中国->🇺🇸_US_美国
-      - "1.66|普通SEStockholm0117httpsawkjcfky 注册�%�\x19��流媒�%�\x16��场youtube�%�Y/%�Y��y��\f"
-      - _US_美国->🇫🇷_FR_法国_来源;kkzui.com(快嘴科技)_来源;kkzui.com(快嘴科技)3_23
-      - github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 43
-      - "@SSRSUB-V37-付费推荐:suo.yt/ssrsub"
-      - 美国【付费推荐：https://v1.mk/vip 】 2
-      - "|25.54Mb"
-      - 新加坡 012
-      - "@SSRSUB-V36-付费推荐:suo.yt/ssrsub"
-      - 韩国 002
-      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
-      - _GCORE
-      - 荷兰 002
-      - _TMNET-伪家宽
-      - 未知_0206191
-      - 中国【付费推荐：https//v1.mk/vip 】 12
-      - github.com/freefq - 美国Alabanza 48
-      - 巴西 001
-      - 中国_02065732
-      - 未知【付费推荐：https://v1.mk/vip 】57
-      - _CN_中国->🇺🇸_US_美国 2
-      - _AM_亚美尼亚_来源：kkzui.com5
-      - _AU_澳大利亚
-      - 美国CloudFlare节点 29
-      - DE_45.80.190.59_02042023e26d-373trojan
-      - 美国 018
-      - 新加坡 003
-      - 荷兰(TG频道@kxswa)
-      - github.com/freefq - 亚太地区  9
-      - 「SCP」LU-CF
-      - 韩国 002 2
-      - sg-am3.eqsunshine.com:32001
-      - 新加坡4
-      - 中国【付费推荐：https://v1.mk/vip 】 3
-      - 「SCP」KH-CF
-      - 美国(油管:破解资源君) 57
-      - 伯利兹【付费推荐：https://v1.mk/vip 】
-      - 中国【付费推荐：https//v1.mk/vip 】24
-      - 中国【付费推荐：https://v1.mk/vip 】88
-      - 美国(油管:破解资源君) 47
-      - github.com/freefq - 美国CloudFlare节点 31
-      - _CN_中国->🇺🇸_US_美国_1
-      - 美国CloudFlare公司CDN节点 37
-      - 「SCP」DE-CF2
-      - "@SSRSUB-V49-付费推荐:suo.yt/ssrsub"
-      - 美国【付费推荐：https://v1.mk/vip 】22
-      - 欧洲(油管:破解资源君) 33
-      - 新加坡 002
-      - _KR_韩国 2
-      - 芬兰【付费推荐：https://v1.mk/vip 】106
-      - 中国【付费推荐：https//v1.mk/vip 】112
-      - _BuyVM-无审计
-      - 美国 016
-      - 亚太地区 006
-      - github.com/freefq - 美国CloudFlare节点 24
-      - 欧洲(油管:破解资源君) 49
-      - 美国_02061263
-      - "@SSRSUB-V43-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V39-付费推荐:suo.yt/ssrsub"
-      - 香港【付费推荐：https://v1.mk/vip 】23
-      - 美国【付费推荐：https://v1.mk/vip 】 3
-      - 澳大利亚 001
-      - 亚太地区 V2CROSS.COM_1
-      - "_JP_日本\r_3_25\r"
-      - 亚美尼亚【付费推荐：https://v1.mk/vip 】
-      - github.com/freefq - 美国CloudFlare公司CDN节点 17
-      - 中国【付费推荐：https://v1.mk/vip 】96
-      - -美国-hkgjgterg.76898102.xyz
-      - 中国【付费推荐：https://v1.mk/vip 】24
-      - 美国【付费推荐：https://v1.mk/vip 】125
-      - 美国_02061242
-      - 丹麦  22
-      - _CN_中国->🇺🇸_US_美国_2
-      - "@SSRSUB-V40-付费推荐:suo.yt/ssrsub"
-      - _DE_德国
-      - 美国CloudFlare节点 20
-      - github.com/freefq - 美国Linode数据中心 8
-      - _JP_日本_3
-      - 「SCP」UK-CF1
-      - "|34.13Mb"
-      - 「SCP」UK-CF2
-      - ws
-      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V42-付费推荐:suo.yt/ssrsub"
-      - 中国【付费推荐：https://v1.mk/vip 】33
-      - github.com/freefq - 美国CloudFlare节点 18
-      - 欧洲(油管:破解资源君) 53
-      - 美国【付费推荐：https://v1.mk/vip 】 4
-      - 「SCP」SG-CF
-      - 中国_02065657 2
+      - "_SG_新加坡\r_来源：kkzui.com_13\r"
+      - -美国-138.2.35.81
+      - "[VMess] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】116"
+      - _DE_德国_1
+      - 德国【付费推荐：https://v1.mk/vip 】81
       - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - 美国_02061241
-      - github.com/freefq - 美国CloudFlare节点 15
-      - github.com/freefq - 美国  1
-      - 中国_0206176
-      - 美国【付费推荐：https://v1.mk/vip 】 5
-      - 美国_02061267
-      - 印度【付费推荐：https://v1.mk/vip 】
-      - 美国_02061359
-      - "[02-08]-🇺🇸-美国-099-jp-am48-6.eqnode.net"
-      - 澳大利亚 003
-      - "@SSRSUB-V19-付费推荐:suo.yt/ssrsub"
-      - 美国(油管:破解资源君) 36
+      - 中国【付费推荐：https://v1.mk/vip 】116
+      - 欧洲(油管:破解资源君) 49
+      - _DE_德国
+      - 中国【付费推荐：https//v1.mk/vip 】4
+      - 台湾省台北市中华电信 23
+      - "[SSR] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】158"
+      - 美国CloudFlare节点 10
+      - 新加坡_0208751
+      - 美国【付费推荐：https://v1.mk/vip 】87
+      - _油管：全网最强白嫖
+      - -美国-hkgjgterg.76898102.xyz
+      - github.com/freefq - 美国CloudFlare节点 24
+      - 中国【付费推荐：https://v1.mk/vip 】2
+      - Taiwan 03 TG@nodpai
       - 美国 044
-      - 中国_02065679
-      - _CN_中国->🇹🇼_TW_台湾
-      - 美国【付费推荐：https://v1.mk/vip 】 6
-      - "@SSRSUB-V38-付费推荐:suo.yt/ssrsub"
-      - 美国【付费推荐：https://v1.mk/vip 】89
-      - "@SSRSUB-V06-付费推荐:suo.yt/ssrsub"
-      - "| 8.54Mb"
-      - 欧洲(油管:破解资源君) 12
-      - 中国【付费推荐：https://v1.mk/vip 】 4
-      - 美国(油管:破解资源君) 59
-      - github.com/freefq - 韩国首尔Amazon数据中心 33
+      - github.com/freefq - 美国  42
+      - 荷兰 001
+      - github.com/freefq - 美国加利福尼亚州Winnetka 6
+      - github.com/freefq - 美国  12
+      - 美国  46
+      - 丹麦 001
+      - "|66.63Mb"
+      - Hong Kong 11 TG@nodpai
+      - 瑞典 001
+      - 新加坡 007
+      - 中国【付费推荐：https://v1.mk/vip 】126
+      - 中国【付费推荐：https://v1.mk/vip 】32
+      - 中国【付费推荐：https://v1.mk/vip 】152
+      - 中国【付费推荐：https://v1.mk/vip 】38
+      - 中国【付费推荐：https//v1.mk/vip 】2
+      - github.com/freefq - 美国CloudFlare节点 34
+      - v2rayfree.eu.org - 美国马里兰州罗耀拉大学 15
+      - _JP_日本_3
+      - github.com/freefq - 美国CloudFlare节点 18
+      - _KR_韩国 2
+      - 中国【付费推荐：https://v1.mk/vip 】82
+      - 中国【付费推荐：https://v1.mk/vip 】158
+      - 美国CloudFlare节点 35
+      - 荷兰 002
+      - 日本 009
+      - 美国 016
+      - 美国CloudFlare公司CDN节点 37
+      - github.com/freefq - 美国CloudFlare节点 31
+      - 韩国 002
+      - 美国 017
+      - 美国【付费推荐：https://v1.mk/vip 】130
+      - Taiwan 09 TG@nodpai
+      - 瑞典 001 2
+      - sg-am3.eqsunshine.com:32001
+      - 中国【付费推荐：https://v1.mk/vip 】
+      - 中国【付费推荐：https://v1.mk/vip 】33
+      - 土耳其 001
+      - 「SCP」LU-CF
+      - "@SSRSUB-V28-付费推荐:suo.yt/ssrsub"
+      - 俄罗斯  54
+      - 中国【付费推荐：https://v1.mk/vip 】63
+      - 瑞典 003
+      - 美国(TG频道@kxswa)
+      - 澳大利亚 003
+      - 中国【付费推荐：https://v1.mk/vip 】 2
+      - 「SCP」SG-Gcore
+      - github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 13
+      - 美国CloudFlare节点 27
+      - _US_美国_1
+      - 「SCP」DE-CF1
+      - 欧洲(油管:破解资源君) 44
+      - 欧洲(油管:破解资源君) 40
+      - 加拿大(TG频道@kxswa)
+      - _HK_香港
+      - _HK_香港_3
+      - 「SCP」DE-CF2
+      - Pool_🇳🇱NL_104
+      - 欧洲(油管:破解资源君) 41
+      - 未知【付费推荐：https://v1.mk/vip 】57
+      - 「SCP」UK-CF2
+      - 「SCP」US-DP
+      - 「SCP」JP-蛋糕并不是谎言
+      - "@SSRSUB-V36-付费推荐:suo.yt/ssrsub"
       - 美国  10
+      - 「SCP」UK-CF1
+      - 「SCP」KH-CF
+      - 「SCP」SG-CF
+      - 美国 017 2
+      - 美国【付费推荐：https://v1.mk/vip 】125
+      - 美国 007
+      - 美国 020
+      - 美国 021
+      - "_SG_新加坡\r"
+      - 美国【付费推荐：https://v1.mk/vip 】77
+      - 美国【付费推荐：https://v1.mk/vip 】34
+      - 美国 008
+      - 美国 066
+      - _US_美国->🇫🇷_FR_法国_2
+      - 美国RF Engineering 55
+      - 美国【付费推荐：https://v1.mk/vip 】86
+      - 美国_02061359
+      - 法国 003
+      - DE_45.80.190.63_02042023e26d-79trojan
+      - 日本【付费推荐：https://v1.mk/vip 】107
+      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
+      - DE_45.80.190.59_02042023e26d-373trojan
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - github.com/freefq - 美国  42
-      - github.com/freefq - 美国加利福尼亚州Winnetka 6
-      - github.com/freefq - 美国纽约DigitalOcean数据中心 41
-      - 土耳其 001
-      - github.com/freefq - 美国  12
-      - v2rayfree.eu.org - 美国马里兰州罗耀拉大学 15
-      - Pool_🇳🇱NL_104
-      - 美国 010
-      - 荷兰 001
-      - 中国【付费推荐：https://v1.mk/vip 】126
-      - 欧洲(油管:破解资源君) 40
-      - Taiwan 05 TG@nodpai
-      - Taiwan 01 TG@nodpai
-      - 中国【付费推荐：https://v1.mk/vip 】124
-      - 美国 014
-      - _HK_香港_2
-      - 中国【付费推荐：https//v1.mk/vip 】2
-      - 美国 017
-      - github.com/freefq - 法国OVH SAS 40
-      - 印度 002
-      - Pool_🇳🇱NL_102
-      - github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 7
-      - 英国 002
-      - 欧洲(油管:破解资源君) 43
-      - 中国_02065657
-      - 中国【付费推荐：https//v1.mk/vip 】 2
-      - 美国(油管破解资源君) 17
-      - 欧洲(油管:破解资源君) 37
-      - 「SCP」DE-CF1
-      - 「SCP」US-DP2
-      - 中国【付费推荐：https://v1.mk/vip 】
-      - 中国【付费推荐：https//v1.mk/vip 】4
-      - "[VMess] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】 4"
-      - 美国【付费推荐：https://v1.mk/vip 】86
-      - 欧洲(油管:破解资源君) 41
-      - 中国【付费推荐：https://v1.mk/vip 】4
-      - "[VMess] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】 15"
-      - 美国 017 2
-      - "[02-09]-🇸🇪-瑞典-165-z0117.security-cloudfront-cdn.com"
-      - 印度尼西亚【付费推荐：https://v1.mk/vip 】111
-      - 中国_02066282
-      - _HK_香港_2 2
-      - 中国【付费推荐：https://tt.sbs/vip】
-      - 中国【付费推荐：https//v1.mk/vip 】
-      - 亚太地区  3
-      - 台湾省台北市 中华电信
-      - 中国【付费推荐：https://v1.mk/vip 】 2
-      - 美国CloudFlare公司CDN节点 19
-      - 欧洲(油管:破解资源君) 55
-      - 欧洲(油管:破解资源君) 44
-      - 美国【付费推荐：https://v1.mk/vip 】
-      - Hong Kong 11 TG@nodpai
-      - "@SSRSUB-V52-付费推荐:suo.yt/ssrsub"
-      - "[HK_TROJAN_103.135.103.229443]"
-      - _CN_中国->🇺🇸_US_美国
-      - "1.66|普通SEStockholm0117httpsawkjcfky 注册�%�\x19��流媒�%�\x16��场youtube�%�Y/%�Y��y��\f"
-      - _US_美国->🇫🇷_FR_法国_来源;kkzui.com(快嘴科技)_来源;kkzui.com(快嘴科技)3_23
-      - github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 43
-      - "@SSRSUB-V37-付费推荐:suo.yt/ssrsub"
-      - 美国【付费推荐：https://v1.mk/vip 】 2
-      - "|25.54Mb"
-      - 新加坡 012
-      - "@SSRSUB-V36-付费推荐:suo.yt/ssrsub"
-      - 韩国 002
-      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
-      - _GCORE
-      - 荷兰 002
-      - _TMNET-伪家宽
-      - 未知_0206191
-      - 中国【付费推荐：https//v1.mk/vip 】 12
-      - github.com/freefq - 美国Alabanza 48
-      - 巴西 001
-      - 中国_02065732
-      - 未知【付费推荐：https://v1.mk/vip 】57
-      - _CN_中国->🇺🇸_US_美国 2
-      - _AM_亚美尼亚_来源：kkzui.com5
-      - _AU_澳大利亚
-      - 美国CloudFlare节点 29
-      - DE_45.80.190.59_02042023e26d-373trojan
-      - 美国 018
-      - 新加坡 003
-      - 荷兰(TG频道@kxswa)
-      - github.com/freefq - 亚太地区  9
-      - 「SCP」LU-CF
-      - 韩国 002 2
-      - sg-am3.eqsunshine.com:32001
-      - 新加坡4
-      - 中国【付费推荐：https://v1.mk/vip 】 3
-      - 「SCP」KH-CF
-      - 美国(油管:破解资源君) 57
-      - 伯利兹【付费推荐：https://v1.mk/vip 】
-      - 中国【付费推荐：https//v1.mk/vip 】24
-      - 中国【付费推荐：https://v1.mk/vip 】88
-      - 美国(油管:破解资源君) 47
-      - github.com/freefq - 美国CloudFlare节点 31
-      - _CN_中国->🇺🇸_US_美国_1
-      - 美国CloudFlare公司CDN节点 37
-      - 「SCP」DE-CF2
-      - "@SSRSUB-V49-付费推荐:suo.yt/ssrsub"
-      - 美国【付费推荐：https://v1.mk/vip 】22
-      - 欧洲(油管:破解资源君) 33
-      - 新加坡 002
-      - _KR_韩国 2
-      - 芬兰【付费推荐：https://v1.mk/vip 】106
-      - 中国【付费推荐：https//v1.mk/vip 】112
-      - _BuyVM-无审计
-      - 美国 016
-      - 亚太地区 006
-      - github.com/freefq - 美国CloudFlare节点 24
-      - 欧洲(油管:破解资源君) 49
-      - 美国_02061263
-      - "@SSRSUB-V43-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V39-付费推荐:suo.yt/ssrsub"
-      - 香港【付费推荐：https://v1.mk/vip 】23
-      - 美国【付费推荐：https://v1.mk/vip 】 3
-      - 澳大利亚 001
-      - 亚太地区 V2CROSS.COM_1
-      - "_JP_日本\r_3_25\r"
-      - 亚美尼亚【付费推荐：https://v1.mk/vip 】
-      - github.com/freefq - 美国CloudFlare公司CDN节点 17
-      - 中国【付费推荐：https://v1.mk/vip 】96
-      - -美国-hkgjgterg.76898102.xyz
-      - 中国【付费推荐：https://v1.mk/vip 】24
-      - 美国【付费推荐：https://v1.mk/vip 】125
-      - 美国_02061242
-      - 丹麦  22
-      - _CN_中国->🇺🇸_US_美国_2
-      - "@SSRSUB-V40-付费推荐:suo.yt/ssrsub"
-      - _DE_德国
-      - 美国CloudFlare节点 20
-      - github.com/freefq - 美国Linode数据中心 8
-      - _JP_日本_3
-      - 「SCP」UK-CF1
-      - "|34.13Mb"
-      - 「SCP」UK-CF2
-      - ws
-      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V42-付费推荐:suo.yt/ssrsub"
-      - 中国【付费推荐：https://v1.mk/vip 】33
-      - github.com/freefq - 美国CloudFlare节点 18
-      - 欧洲(油管:破解资源君) 53
-      - 美国【付费推荐：https://v1.mk/vip 】 4
-      - 「SCP」SG-CF
-      - 中国_02065657 2
+      - "_SG_新加坡\r_来源：kkzui.com_13\r"
+      - -美国-138.2.35.81
+      - "[VMess] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】116"
+      - _DE_德国_1
+      - 德国【付费推荐：https://v1.mk/vip 】81
       - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - 美国_02061241
-      - github.com/freefq - 美国CloudFlare节点 15
-      - github.com/freefq - 美国  1
-      - 中国_0206176
-      - 美国【付费推荐：https://v1.mk/vip 】 5
-      - 美国_02061267
-      - 印度【付费推荐：https://v1.mk/vip 】
-      - 美国_02061359
-      - "[02-08]-🇺🇸-美国-099-jp-am48-6.eqnode.net"
-      - 澳大利亚 003
-      - "@SSRSUB-V19-付费推荐:suo.yt/ssrsub"
-      - 美国(油管:破解资源君) 36
+      - 中国【付费推荐：https://v1.mk/vip 】116
+      - 欧洲(油管:破解资源君) 49
+      - _DE_德国
+      - 中国【付费推荐：https//v1.mk/vip 】4
+      - 台湾省台北市中华电信 23
+      - "[SSR] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】158"
+      - 美国CloudFlare节点 10
+      - 新加坡_0208751
+      - 美国【付费推荐：https://v1.mk/vip 】87
+      - _油管：全网最强白嫖
+      - -美国-hkgjgterg.76898102.xyz
+      - github.com/freefq - 美国CloudFlare节点 24
+      - 中国【付费推荐：https://v1.mk/vip 】2
+      - Taiwan 03 TG@nodpai
       - 美国 044
-      - 中国_02065679
-      - _CN_中国->🇹🇼_TW_台湾
-      - 美国【付费推荐：https://v1.mk/vip 】 6
-      - "@SSRSUB-V38-付费推荐:suo.yt/ssrsub"
-      - 美国【付费推荐：https://v1.mk/vip 】89
-      - "@SSRSUB-V06-付费推荐:suo.yt/ssrsub"
-      - "| 8.54Mb"
-      - 欧洲(油管:破解资源君) 12
-      - 中国【付费推荐：https://v1.mk/vip 】 4
-      - 美国(油管:破解资源君) 59
-      - github.com/freefq - 韩国首尔Amazon数据中心 33
+      - github.com/freefq - 美国  42
+      - 荷兰 001
+      - github.com/freefq - 美国加利福尼亚州Winnetka 6
+      - github.com/freefq - 美国  12
+      - 美国  46
+      - 丹麦 001
+      - "|66.63Mb"
+      - Hong Kong 11 TG@nodpai
+      - 瑞典 001
+      - 新加坡 007
+      - 中国【付费推荐：https://v1.mk/vip 】126
+      - 中国【付费推荐：https://v1.mk/vip 】32
+      - 中国【付费推荐：https://v1.mk/vip 】152
+      - 中国【付费推荐：https://v1.mk/vip 】38
+      - 中国【付费推荐：https//v1.mk/vip 】2
+      - github.com/freefq - 美国CloudFlare节点 34
+      - v2rayfree.eu.org - 美国马里兰州罗耀拉大学 15
+      - _JP_日本_3
+      - github.com/freefq - 美国CloudFlare节点 18
+      - _KR_韩国 2
+      - 中国【付费推荐：https://v1.mk/vip 】82
+      - 中国【付费推荐：https://v1.mk/vip 】158
+      - 美国CloudFlare节点 35
+      - 荷兰 002
+      - 日本 009
+      - 美国 016
+      - 美国CloudFlare公司CDN节点 37
+      - github.com/freefq - 美国CloudFlare节点 31
+      - 韩国 002
+      - 美国 017
+      - 美国【付费推荐：https://v1.mk/vip 】130
+      - Taiwan 09 TG@nodpai
+      - 瑞典 001 2
+      - sg-am3.eqsunshine.com:32001
+      - 中国【付费推荐：https://v1.mk/vip 】
+      - 中国【付费推荐：https://v1.mk/vip 】33
+      - 土耳其 001
+      - 「SCP」LU-CF
+      - "@SSRSUB-V28-付费推荐:suo.yt/ssrsub"
+      - 俄罗斯  54
+      - 中国【付费推荐：https://v1.mk/vip 】63
+      - 瑞典 003
+      - 美国(TG频道@kxswa)
+      - 澳大利亚 003
+      - 中国【付费推荐：https://v1.mk/vip 】 2
+      - 「SCP」SG-Gcore
+      - github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 13
+      - 美国CloudFlare节点 27
+      - _US_美国_1
+      - 「SCP」DE-CF1
+      - 欧洲(油管:破解资源君) 44
+      - 欧洲(油管:破解资源君) 40
+      - 加拿大(TG频道@kxswa)
+      - _HK_香港
+      - _HK_香港_3
+      - 「SCP」DE-CF2
+      - Pool_🇳🇱NL_104
+      - 欧洲(油管:破解资源君) 41
+      - 未知【付费推荐：https://v1.mk/vip 】57
+      - 「SCP」UK-CF2
+      - 「SCP」US-DP
+      - 「SCP」JP-蛋糕并不是谎言
+      - "@SSRSUB-V36-付费推荐:suo.yt/ssrsub"
       - 美国  10
+      - 「SCP」UK-CF1
+      - 「SCP」KH-CF
+      - 「SCP」SG-CF
+      - 美国 017 2
+      - 美国【付费推荐：https://v1.mk/vip 】125
+      - 美国 007
+      - 美国 020
+      - 美国 021
+      - "_SG_新加坡\r"
+      - 美国【付费推荐：https://v1.mk/vip 】77
+      - 美国【付费推荐：https://v1.mk/vip 】34
+      - 美国 008
+      - 美国 066
+      - _US_美国->🇫🇷_FR_法国_2
+      - 美国RF Engineering 55
+      - 美国【付费推荐：https://v1.mk/vip 】86
+      - 美国_02061359
+      - 法国 003
+      - DE_45.80.190.63_02042023e26d-79trojan
+      - 日本【付费推荐：https://v1.mk/vip 】107
+      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
+      - DE_45.80.190.59_02042023e26d-373trojan
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1443,176 +937,113 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - github.com/freefq - 美国  42
-      - github.com/freefq - 美国加利福尼亚州Winnetka 6
-      - github.com/freefq - 美国纽约DigitalOcean数据中心 41
-      - 土耳其 001
-      - github.com/freefq - 美国  12
-      - v2rayfree.eu.org - 美国马里兰州罗耀拉大学 15
-      - Pool_🇳🇱NL_104
-      - 美国 010
-      - 荷兰 001
-      - 中国【付费推荐：https://v1.mk/vip 】126
-      - 欧洲(油管:破解资源君) 40
-      - Taiwan 05 TG@nodpai
-      - Taiwan 01 TG@nodpai
-      - 中国【付费推荐：https://v1.mk/vip 】124
-      - 美国 014
-      - _HK_香港_2
-      - 中国【付费推荐：https//v1.mk/vip 】2
-      - 美国 017
-      - github.com/freefq - 法国OVH SAS 40
-      - 印度 002
-      - Pool_🇳🇱NL_102
-      - github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 7
-      - 英国 002
-      - 欧洲(油管:破解资源君) 43
-      - 中国_02065657
-      - 中国【付费推荐：https//v1.mk/vip 】 2
-      - 美国(油管破解资源君) 17
-      - 欧洲(油管:破解资源君) 37
-      - 「SCP」DE-CF1
-      - 「SCP」US-DP2
-      - 中国【付费推荐：https://v1.mk/vip 】
-      - 中国【付费推荐：https//v1.mk/vip 】4
-      - "[VMess] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】 4"
-      - 美国【付费推荐：https://v1.mk/vip 】86
-      - 欧洲(油管:破解资源君) 41
-      - 中国【付费推荐：https://v1.mk/vip 】4
-      - "[VMess] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】 15"
-      - 美国 017 2
-      - "[02-09]-🇸🇪-瑞典-165-z0117.security-cloudfront-cdn.com"
-      - 印度尼西亚【付费推荐：https://v1.mk/vip 】111
-      - 中国_02066282
-      - _HK_香港_2 2
-      - 中国【付费推荐：https://tt.sbs/vip】
-      - 中国【付费推荐：https//v1.mk/vip 】
-      - 亚太地区  3
-      - 台湾省台北市 中华电信
-      - 中国【付费推荐：https://v1.mk/vip 】 2
-      - 美国CloudFlare公司CDN节点 19
-      - 欧洲(油管:破解资源君) 55
-      - 欧洲(油管:破解资源君) 44
-      - 美国【付费推荐：https://v1.mk/vip 】
-      - Hong Kong 11 TG@nodpai
-      - "@SSRSUB-V52-付费推荐:suo.yt/ssrsub"
-      - "[HK_TROJAN_103.135.103.229443]"
-      - _CN_中国->🇺🇸_US_美国
-      - "1.66|普通SEStockholm0117httpsawkjcfky 注册�%�\x19��流媒�%�\x16��场youtube�%�Y/%�Y��y��\f"
-      - _US_美国->🇫🇷_FR_法国_来源;kkzui.com(快嘴科技)_来源;kkzui.com(快嘴科技)3_23
-      - github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 43
-      - "@SSRSUB-V37-付费推荐:suo.yt/ssrsub"
-      - 美国【付费推荐：https://v1.mk/vip 】 2
-      - "|25.54Mb"
-      - 新加坡 012
-      - "@SSRSUB-V36-付费推荐:suo.yt/ssrsub"
-      - 韩国 002
-      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
-      - _GCORE
-      - 荷兰 002
-      - _TMNET-伪家宽
-      - 未知_0206191
-      - 中国【付费推荐：https//v1.mk/vip 】 12
-      - github.com/freefq - 美国Alabanza 48
-      - 巴西 001
-      - 中国_02065732
-      - 未知【付费推荐：https://v1.mk/vip 】57
-      - _CN_中国->🇺🇸_US_美国 2
-      - _AM_亚美尼亚_来源：kkzui.com5
-      - _AU_澳大利亚
-      - 美国CloudFlare节点 29
-      - DE_45.80.190.59_02042023e26d-373trojan
-      - 美国 018
-      - 新加坡 003
-      - 荷兰(TG频道@kxswa)
-      - github.com/freefq - 亚太地区  9
-      - 「SCP」LU-CF
-      - 韩国 002 2
-      - sg-am3.eqsunshine.com:32001
-      - 新加坡4
-      - 中国【付费推荐：https://v1.mk/vip 】 3
-      - 「SCP」KH-CF
-      - 美国(油管:破解资源君) 57
-      - 伯利兹【付费推荐：https://v1.mk/vip 】
-      - 中国【付费推荐：https//v1.mk/vip 】24
-      - 中国【付费推荐：https://v1.mk/vip 】88
-      - 美国(油管:破解资源君) 47
-      - github.com/freefq - 美国CloudFlare节点 31
-      - _CN_中国->🇺🇸_US_美国_1
-      - 美国CloudFlare公司CDN节点 37
-      - 「SCP」DE-CF2
-      - "@SSRSUB-V49-付费推荐:suo.yt/ssrsub"
-      - 美国【付费推荐：https://v1.mk/vip 】22
-      - 欧洲(油管:破解资源君) 33
-      - 新加坡 002
-      - _KR_韩国 2
-      - 芬兰【付费推荐：https://v1.mk/vip 】106
-      - 中国【付费推荐：https//v1.mk/vip 】112
-      - _BuyVM-无审计
-      - 美国 016
-      - 亚太地区 006
-      - github.com/freefq - 美国CloudFlare节点 24
-      - 欧洲(油管:破解资源君) 49
-      - 美国_02061263
-      - "@SSRSUB-V43-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V39-付费推荐:suo.yt/ssrsub"
-      - 香港【付费推荐：https://v1.mk/vip 】23
-      - 美国【付费推荐：https://v1.mk/vip 】 3
-      - 澳大利亚 001
-      - 亚太地区 V2CROSS.COM_1
-      - "_JP_日本\r_3_25\r"
-      - 亚美尼亚【付费推荐：https://v1.mk/vip 】
-      - github.com/freefq - 美国CloudFlare公司CDN节点 17
-      - 中国【付费推荐：https://v1.mk/vip 】96
-      - -美国-hkgjgterg.76898102.xyz
-      - 中国【付费推荐：https://v1.mk/vip 】24
-      - 美国【付费推荐：https://v1.mk/vip 】125
-      - 美国_02061242
-      - 丹麦  22
-      - _CN_中国->🇺🇸_US_美国_2
-      - "@SSRSUB-V40-付费推荐:suo.yt/ssrsub"
-      - _DE_德国
-      - 美国CloudFlare节点 20
-      - github.com/freefq - 美国Linode数据中心 8
-      - _JP_日本_3
-      - 「SCP」UK-CF1
-      - "|34.13Mb"
-      - 「SCP」UK-CF2
-      - ws
-      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V42-付费推荐:suo.yt/ssrsub"
-      - 中国【付费推荐：https://v1.mk/vip 】33
-      - github.com/freefq - 美国CloudFlare节点 18
-      - 欧洲(油管:破解资源君) 53
-      - 美国【付费推荐：https://v1.mk/vip 】 4
-      - 「SCP」SG-CF
-      - 中国_02065657 2
+      - "_SG_新加坡\r_来源：kkzui.com_13\r"
+      - -美国-138.2.35.81
+      - "[VMess] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】116"
+      - _DE_德国_1
+      - 德国【付费推荐：https://v1.mk/vip 】81
       - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - 美国_02061241
-      - github.com/freefq - 美国CloudFlare节点 15
-      - github.com/freefq - 美国  1
-      - 中国_0206176
-      - 美国【付费推荐：https://v1.mk/vip 】 5
-      - 美国_02061267
-      - 印度【付费推荐：https://v1.mk/vip 】
-      - 美国_02061359
-      - "[02-08]-🇺🇸-美国-099-jp-am48-6.eqnode.net"
-      - 澳大利亚 003
-      - "@SSRSUB-V19-付费推荐:suo.yt/ssrsub"
-      - 美国(油管:破解资源君) 36
+      - 中国【付费推荐：https://v1.mk/vip 】116
+      - 欧洲(油管:破解资源君) 49
+      - _DE_德国
+      - 中国【付费推荐：https//v1.mk/vip 】4
+      - 台湾省台北市中华电信 23
+      - "[SSR] 🇨🇳 中国【付费推荐：https://v1.mk/vip 】158"
+      - 美国CloudFlare节点 10
+      - 新加坡_0208751
+      - 美国【付费推荐：https://v1.mk/vip 】87
+      - _油管：全网最强白嫖
+      - -美国-hkgjgterg.76898102.xyz
+      - github.com/freefq - 美国CloudFlare节点 24
+      - 中国【付费推荐：https://v1.mk/vip 】2
+      - Taiwan 03 TG@nodpai
       - 美国 044
-      - 中国_02065679
-      - _CN_中国->🇹🇼_TW_台湾
-      - 美国【付费推荐：https://v1.mk/vip 】 6
-      - "@SSRSUB-V38-付费推荐:suo.yt/ssrsub"
-      - 美国【付费推荐：https://v1.mk/vip 】89
-      - "@SSRSUB-V06-付费推荐:suo.yt/ssrsub"
-      - "| 8.54Mb"
-      - 欧洲(油管:破解资源君) 12
-      - 中国【付费推荐：https://v1.mk/vip 】 4
-      - 美国(油管:破解资源君) 59
-      - github.com/freefq - 韩国首尔Amazon数据中心 33
+      - github.com/freefq - 美国  42
+      - 荷兰 001
+      - github.com/freefq - 美国加利福尼亚州Winnetka 6
+      - github.com/freefq - 美国  12
+      - 美国  46
+      - 丹麦 001
+      - "|66.63Mb"
+      - Hong Kong 11 TG@nodpai
+      - 瑞典 001
+      - 新加坡 007
+      - 中国【付费推荐：https://v1.mk/vip 】126
+      - 中国【付费推荐：https://v1.mk/vip 】32
+      - 中国【付费推荐：https://v1.mk/vip 】152
+      - 中国【付费推荐：https://v1.mk/vip 】38
+      - 中国【付费推荐：https//v1.mk/vip 】2
+      - github.com/freefq - 美国CloudFlare节点 34
+      - v2rayfree.eu.org - 美国马里兰州罗耀拉大学 15
+      - _JP_日本_3
+      - github.com/freefq - 美国CloudFlare节点 18
+      - _KR_韩国 2
+      - 中国【付费推荐：https://v1.mk/vip 】82
+      - 中国【付费推荐：https://v1.mk/vip 】158
+      - 美国CloudFlare节点 35
+      - 荷兰 002
+      - 日本 009
+      - 美国 016
+      - 美国CloudFlare公司CDN节点 37
+      - github.com/freefq - 美国CloudFlare节点 31
+      - 韩国 002
+      - 美国 017
+      - 美国【付费推荐：https://v1.mk/vip 】130
+      - Taiwan 09 TG@nodpai
+      - 瑞典 001 2
+      - sg-am3.eqsunshine.com:32001
+      - 中国【付费推荐：https://v1.mk/vip 】
+      - 中国【付费推荐：https://v1.mk/vip 】33
+      - 土耳其 001
+      - 「SCP」LU-CF
+      - "@SSRSUB-V28-付费推荐:suo.yt/ssrsub"
+      - 俄罗斯  54
+      - 中国【付费推荐：https://v1.mk/vip 】63
+      - 瑞典 003
+      - 美国(TG频道@kxswa)
+      - 澳大利亚 003
+      - 中国【付费推荐：https://v1.mk/vip 】 2
+      - 「SCP」SG-Gcore
+      - github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 13
+      - 美国CloudFlare节点 27
+      - _US_美国_1
+      - 「SCP」DE-CF1
+      - 欧洲(油管:破解资源君) 44
+      - 欧洲(油管:破解资源君) 40
+      - 加拿大(TG频道@kxswa)
+      - _HK_香港
+      - _HK_香港_3
+      - 「SCP」DE-CF2
+      - Pool_🇳🇱NL_104
+      - 欧洲(油管:破解资源君) 41
+      - 未知【付费推荐：https://v1.mk/vip 】57
+      - 「SCP」UK-CF2
+      - 「SCP」US-DP
+      - 「SCP」JP-蛋糕并不是谎言
+      - "@SSRSUB-V36-付费推荐:suo.yt/ssrsub"
       - 美国  10
+      - 「SCP」UK-CF1
+      - 「SCP」KH-CF
+      - 「SCP」SG-CF
+      - 美国 017 2
+      - 美国【付费推荐：https://v1.mk/vip 】125
+      - 美国 007
+      - 美国 020
+      - 美国 021
+      - "_SG_新加坡\r"
+      - 美国【付费推荐：https://v1.mk/vip 】77
+      - 美国【付费推荐：https://v1.mk/vip 】34
+      - 美国 008
+      - 美国 066
+      - _US_美国->🇫🇷_FR_法国_2
+      - 美国RF Engineering 55
+      - 美国【付费推荐：https://v1.mk/vip 】86
+      - 美国_02061359
+      - 法国 003
+      - DE_45.80.190.63_02042023e26d-79trojan
+      - 日本【付费推荐：https://v1.mk/vip 】107
+      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
+      - DE_45.80.190.59_02042023e26d-373trojan
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
