@@ -6,475 +6,163 @@ mode: Rule
 log-level: info
 external-controller: 9090
 proxies:
-  - {name: Japan 17 TG:@nodpai, server: www.wyca.ga, port: 443, type: vmess, uuid: d394b3e5-abc2-444f-8f2c-74eb8e4dc6ec, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /giuivws, headers: {Host: www.wyca.ga}}, udp: true}
-  - {name: ssrfree.zhujicn2.net:10004, server: ssrfree.zhujicn2.net, port: 10004, type: ssr, cipher: aes-256-cfb, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】133, server: hn.xiaohouzi.club, port: 14185, type: trojan, password: f52e6827-d087-3fd0-9c66-ef87874c69ba, sni: "%24%24hktnew01.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: RU_45.147.200.44_02032023838a-138trojan, server: 45.147.200.44, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, skip-cert-verify: true, udp: true}
-  - {name: ssrfree.zhujicn2.net:10007, server: ssrfree.zhujicn2.net, port: 10007, type: ssr, cipher: aes-256-cfb, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 印度 001, server: vn1.v2rayserv.com, port: 80, type: vmess, uuid: a94966a1-2225-422b-b756-dd4b4d6b974b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sshocean, headers: {Host: vn1.v2rayserv.com}}, udp: true}
-  - {name: 荷兰 003, server: 45.136.255.125, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: "%24paydiu.com", skip-cert-verify: true, udp: true}
-  - {name: ssrfree.zhujicn2.net:10003, server: ssrfree.zhujicn2.net, port: 10003, type: ssr, cipher: aes-256-cfb, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: _US_美国 6 2, server: 23.145.24.30, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, skip-cert-verify: true, udp: true}
-  - {name: -美国-xjp2.wangjiaxin.xyz, server: xjp2.wangjiaxin.xyz, port: 25932, type: vmess, uuid: 33a47ce6-5ea9-4d21-d3db-ce38421d2558, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /23423, headers: {Host: xjp2.wangjiaxin.xyz}}, udp: true}
-  - {name: 菲律宾 001, server: 116.93.97.74, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: "%24paydiu.com", skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】113, server: hn.xiaohouzi.club, port: 42541, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: "%24%24hn.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: "_JP_日本\r_3", server: 138.2.45.89, port: 44301, type: trojan, password: 6abfad5a-24be-3657-85da-ceac782b7e19, sni: "%24%24%24%24osav101.jd0001.top", skip-cert-verify: true, udp: true}
-  - {name: ssrfree.zhujicn2.net:10006, server: ssrfree.zhujicn2.net, port: 10006, type: ssr, cipher: aes-256-cfb, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: JP_138.2.45.89_02092023bee9-962trojan, server: 138.2.45.89, port: 44301, type: trojan, password: 6d64570c-81d4-30fa-b2e2-dce73e1a2702, skip-cert-verify: true, udp: true}
-  - {name: ssrfree.zhujicn2.net:10008, server: ssrfree.zhujicn2.net, port: 10008, type: ssr, cipher: aes-256-cfb, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 英国【付费推荐：https://v1.mk/vip】78, server: 51.38.71.175, port: 80, type: trojan, password: 211f5876-8c89-4d97-9004-ff16acddd506, sni: "%24%24uk1.trojanvh.xyz", skip-cert-verify: true, udp: true}
-  - {name: 美国 033, server: 23.145.24.31, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: "%24paydiu.com", skip-cert-verify: true, udp: true}
-  - {name: 美国 017, server: hk4.sanfen001.pics, port: 443, type: vmess, uuid: ae13496e-4756-4f65-bc01-4104e296ca9c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: hk1.sanfen001.pics}}, udp: true}
-  - {name: "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】99", server: gz01.xiaohouzi.club, port: 51058, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: "%24%24aru01.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】97", server: gz01.xiaohouzi.club, port: 20091, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24%24%24ajpn01.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: South Korea 07 TG:@nodpai, server: kr05.cctvvip.ml, port: 48413, type: vmess, uuid: a06748d4-7669-49dd-dd1a-25d73471a051, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /1234, headers: {Host: kr05.cctvvip.ml}}, udp: true}
-  - {name: v2rayfree.eu.org - 法国OVH SAS 21, server: france.oneusernm.xyz, port: 443, type: trojan, password: d0dab49e1e, skip-cert-verify: true, udp: true}
-  - {name: Japan 08 TG:@nodpai, server: jp01.cctvvip.ml, port: 24429, type: vmess, uuid: 8d5ca59e-8e3e-4a10-e023-53cfcd87a721, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp01.cctvvip.ml}}, udp: true}
-  - {name: 美国 015, server: hk5.sanfen001.pics, port: 443, type: vmess, uuid: ae13496e-4756-4f65-bc01-4104e296ca9c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: hk1.sanfen001.pics}}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】121, server: hn.xiaohouzi.club, port: 61003, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24%24%24%24hn.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: Japan 01 TG:@nodpai, server: jp80-4.sanfen001.pics, port: 80, type: vmess, uuid: ae13496e-4756-4f65-bc01-4104e296ca9c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: jp80-4.sanfen001.pics}}, udp: true}
-  - {name: HK_125.59.27.66_02102023acf7-268trojan, server: 125.59.27.66, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】111, server: hn.xiaohouzi.club, port: 51056, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: "%24%24%24hn.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: 美国 011, server: 45.59.187.27, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: "%24paydiu.com", skip-cert-verify: true, udp: true}
-  - {name: Japan 02 TG@nodpai, server: jp80-4.sanfen001.pics, port: 80, type: vmess, uuid: ae13496e-4756-4f65-bc01-4104e296ca9c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: 美国 035, server: 16.170.221.47, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 美国 016, server: hk80.sanfen001.pics, port: 80, type: vmess, uuid: ae13496e-4756-4f65-bc01-4104e296ca9c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn/, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】106, server: hn.xiaohouzi.club, port: 48431, type: trojan, password: a3278882-3614-39cf-a3d6-faefa8c910ab, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚 004, server: kr05.cctvvip.ml, port: 48413, type: vmess, uuid: a06748d4-7669-49dd-dd1a-25d73471a051, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /1234, headers: {Host: a.duoyouduo.tk}}, udp: true}
-  - {name: ssrfree.zhujicn2.net:10005, server: ssrfree.zhujicn2.net, port: 10005, type: ssr, cipher: aes-256-cfb, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 日本 03|高速|流媒体, server: jp3.sanfen001.pics, port: 2003, type: vmess, uuid: ae13496e-4756-4f65-bc01-4104e296ca9c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cn, headers: {Host: jp1.sanfen001.pics}}, udp: true}
-  - {name: "[HK_TROJAN_1.65.139.228443]", server: 1.65.139.228, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】134, server: hn.xiaohouzi.club, port: 18433, type: trojan, password: a3278882-3614-39cf-a3d6-faefa8c910ab, skip-cert-verify: true, udp: true}
-  - {name: 美国 022, server: jp03.cctvvip.ml, port: 37206, type: vmess, uuid: ff3fd078-99b5-46b6-8cd5-d48ff2717191, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp03.cctvvip.ml}}, udp: true}
-  - {name: 英国 002, server: nltls4.goloo.icu, port: 8880, type: vmess, uuid: c9c27130-e057-4264-be86-5a4381ee9014, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇭🇰 Hong Kong 02 TG:@nodpai, server: hk4.sanfen001.pics, port: 443, type: vmess, uuid: ae13496e-4756-4f65-bc01-4104e296ca9c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: hk4.sanfen001.pics}}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】129, server: hn.xiaohouzi.club, port: 18581, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24%24vutnkr01.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】145, server: hnm.xiaohouzi.club, port: 51052, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24%24%24%24hnm.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: 美国 031, server: kaizen-jp-11.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: Hong Kong 04 TG:@nodpai, server: hk6.sanfen001.pics, port: 443, type: vmess, uuid: ae13496e-4756-4f65-bc01-4104e296ca9c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: hk6.sanfen001.pics}}, udp: true}
-  - {name: "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】152", server: hnm.xiaohouzi.club, port: 47551, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: "%24%24helan01.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: _HK_香港_3, server: 47.243.187.171, port: 60808, type: vmess, uuid: 99c3c1c3-c27c-49a0-9c2c-7c77c3d92bf6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 法国【付费推荐：https://v1.mk/vip】306, server: 5.135.43.119, port: 58732, type: vmess, uuid: d159c5be-8291-45c4-bd21-51d024658a6d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: YTB-awkj}}, udp: true}
+  - {name: "@SSRSUB-V28-付费推荐:suo.yt/ssrsub", server: v12a.toddns.tk, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fr-111unlimitxxx, headers: {Host: v12a.toddns.tk}}, udp: true}
+  - {name: "_JP_日本\r_2", server: 138.2.45.89, port: 44301, type: trojan, password: 6abfad5a-24be-3657-85da-ceac782b7e19, sni: "%24%24osav101.jd0001.top", skip-cert-verify: true, udp: true}
+  - {name: _HK_香港_2 2, server: 8.210.15.231, port: 41083, type: vmess, uuid: 1d1ad417-29ed-41e8-aaed-323f797efe6b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 法国 001, server: 5.135.43.119, port: 58732, type: vmess, uuid: d159c5be-8291-45c4-bd21-51d024658a6d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 5.135.43.119}}, udp: true}
+  - {name: github.com/freefq - 法国OVH机房SAS硬盘BGP主机 41, server: 5.135.43.119, port: 58732, type: vmess, uuid: d159c5be-8291-45c4-bd21-51d024658a6d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: bmi.irT.me/s0013_Official}}, udp: true}
+  - {name: 香港【付费推荐：https://v1.mk/vip】286, server: 8.210.17.238, port: 28952, type: vmess, uuid: b8c3342b-8309-46d6-bf08-a3076651e180, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 香港【付费推荐：https//v1.mk/vip】308, server: 47.243.230.222, port: 35668, type: vmess, uuid: ab4df3ef-e77f-4f2a-bfb8-63604412f73b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
   - {name: _HK_香港_5, server: 47.243.131.166, port: 24319, type: vmess, uuid: 1163bd66-75eb-4fc3-8980-0154cb86dd4d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】165", server: iplc.xiaohouzi.club, port: 20018, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24%24%24%24iplc.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: Relay 🇭🇰 Hong Kong 03 TG:@nodpai, server: hk80.sanfen001.pics, port: 80, type: vmess, uuid: ae13496e-4756-4f65-bc01-4104e296ca9c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn/, headers: {Host: hk80.sanfen001.pics}}, udp: true}
-  - {name: _HK_香港_4, server: 47.243.230.222, port: 35668, type: vmess, uuid: ab4df3ef-e77f-4f2a-bfb8-63604412f73b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】162", server: iplc.xiaohouzi.club, port: 20037, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24%24%24%24iplc.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:), server: us2.trojanvh.xyz, port: 80, type: trojan, password: 255c924c-1314-4084-9a9e-1d1a82a5cf49, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】142, server: hnm.xiaohouzi.club, port: 47651, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24%24taiguo.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: "[02-12]-🇫🇷-法国-171-z0111.security-cloudfront-cdn.com", server: z0111.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: ====, obfs-param: ====, udp: true}
-  - {name: 印度尼西亚 001, server: reog.xtls.my.id, port: 443, type: vmess, uuid: da9df159-e7ad-4042-ae68-57d6404867bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: reog.xtls.my.id}}, udp: true}
-  - {name: "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】98", server: gz01.xiaohouzi.club, port: 14705, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24%24%24%24%24%24%24vusig01.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_8, server: 47.243.227.139, port: 31450, type: vmess, uuid: bbe67936-0312-4da1-900b-80ffe82e8521, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 俄罗斯 002, server: kaizen-ru-1.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: 美国 021, server: sg1.sanfen001.pics, port: 2006, type: vmess, uuid: ae13496e-4756-4f65-bc01-4104e296ca9c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cn, headers: {Host: sg1.sanfen001.pics}}, udp: true}
-  - {name: "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】164", server: iplc.xiaohouzi.club, port: 20036, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: "%24%24nazhk03.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: Philippines 03 TG@nodpai, server: special-ph-a.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 09|高速|流媒体|免流, server: sg2.sanfen001.pics, port: 2007, type: vmess, uuid: ae13496e-4756-4f65-bc01-4104e296ca9c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cn, headers: {Host: sg1.sanfen001.pics}}, udp: true}
-  - {name: 荷兰 002, server: kaizen-ru-2.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: "%24paydiu.com", skip-cert-verify: true, udp: true}
-  - {name: "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】159", server: iplc.xiaohouzi.club, port: 20032, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24%24iplc.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】190", server: sub.xiaohouzi.club, port: 37093, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: "%24%24vuus01.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: 美国 029, server: osav101.jd0001.top, port: 44301, type: trojan, password: 6abfad5a-24be-3657-85da-ceac782b7e19, sni: "%24osav101.jd0001.top", skip-cert-verify: true, udp: true}
-  - {name: Hong Kong 37 TG@nodpai, server: kaizen-hk-12.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】163", server: iplc.xiaohouzi.club, port: 20015, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24%24%24supaz05.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】141", server: hnm.xiaohouzi.club, port: 36305, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24%24hnm.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: 美国 013, server: v47a.toddns.tk, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v47-2023unlimitndxd, headers: {Host: v47a.toddns.tk}}, udp: true}
-  - {name: 俄罗斯 001, server: moscow.ser1.i2chighway.com, port: 1787, type: trojan, password: 5f197919-2794-4a99-a60b-4dc230ac1d6e, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】144, server: hnm.xiaohouzi.club, port: 17106, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: "%24%24sofia.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: _HK_香港 6, server: 47.242.69.245, port: 23312, type: vmess, uuid: 94cca229-5e17-4f35-9b49-fe113e142c75, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】151", server: hnm.xiaohouzi.club, port: 17107, type: trojan, password: a3278882-3614-39cf-a3d6-faefa8c910ab, sni: "%24%24vusig01.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: _AU_澳大利亚, server: z0113.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 韩国_0211048, server: 52.78.213.224, port: 80, type: vmess, uuid: 6f442823-6b73-4b31-f1f5-aa1e907b051e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 52.78.213.224}}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】143, server: hnm.xiaohouzi.club, port: 17103, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: "%24%24canada01.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: Hong Kong 07 TG@nodpai, server: hk6.sanfen001.pics, port: 443, type: vmess, uuid: ae13496e-4756-4f65-bc01-4104e296ca9c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: hk1.sanfen001.pics}}, udp: true}
-  - {name: Japan 21 TG:@nodpai, server: 152.69.197.74, port: 12345, type: vmess, uuid: b8a6bf58-485a-4046-b386-b3661bf65eff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bb}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】149, server: hnm.xiaohouzi.club, port: 49361, type: trojan, password: a3278882-3614-39cf-a3d6-faefa8c910ab, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】155, server: hnm.xiaohouzi.club, port: 19362, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24%24%24%24%24%24%24%24aws-hk03.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: 美国 009, server: kaizen-us-8.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】154, server: hnm.xiaohouzi.club, port: 49363, type: trojan, password: a3278882-3614-39cf-a3d6-faefa8c910ab, skip-cert-verify: true, udp: true}
-  - {name: 美国 019, server: sg3.sanfen001.pics, port: 2001, type: vmess, uuid: ae13496e-4756-4f65-bc01-4104e296ca9c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: sg1.sanfen001.pics}}, udp: true}
-  - {name: "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】194", server: szf02.xiaohouzi.club, port: 27851, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: "%24%24tr-awsjp01.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: "|24.57Mb", server: 5.133.12.63, port: 443, type: vmess, uuid: 4d0247e0-d1da-444c-9cda-8cc20e4e4435, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/220128071100}, udp: true}
-  - {name: 日本【付费推荐：https://v1.mk/vip】178, server: osav101.jd0001.top, port: 4430, type: vmess, uuid: 6abfad5a-24be-3657-85da-ceac782b7e19, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /osav101, headers: {Host: osav101.jd0001.top}}, udp: true}
-  - {name: 美国 022 2, server: suzhihan.eu.org, port: 443, type: vmess, uuid: 0b873cff-11ab-4716-c41a-04f886135091, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /roewesu, headers: {Host: suzhihan.eu.org}}, udp: true}
-  - {name: github.com/freefq - 法国OVH机房SAS硬盘BGP主机 8, server: 5.135.43.119, port: 58732, type: vmess, uuid: d159c5be-8291-45c4-bd21-51d024658a6d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: bmi.irT.me/s0013_Official}}, udp: true}
-  - {name: 美国 025, server: kaizen-jp-12.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇮🇩 印度尼西亚【付费推荐：https://v1.mk/vip】185", server: reog.xtls.my.id, port: 443, type: vmess, uuid: da9df159-e7ad-4042-ae68-57d6404867bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: reog.xtls.my.id}}, udp: true}
-  - {name: 韩国 003, server: 52.78.213.224, port: 80, type: vmess, uuid: 6f442823-6b73-4b31-f1f5-aa1e907b051e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: "[SSR] 🇨🇦 加拿大【付费推荐：https://v1.mk/vip】216", server: z0115.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 俄罗斯 003, server: 185.143.220.25, port: 443, type: vmess, uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /6e9EtZ2dL, headers: {Host: dengxin.one}}, udp: true}
-  - {name: US_youtube@资源分享师_96, server: 152.67.254.16, port: 43815, type: vmess, uuid: 7a9f026f-f7a8-40ca-f2f9-3b380c287c0d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /abc, headers: {Host: 152.67.254.16}}, udp: true}
-  - {name: github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 16, server: tcas.padra-holding.com, port: 36005, type: vmess, uuid: 05c38399-5296-4bf2-a606-1cec3b71c942, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tcas.padra-holding.com}}, udp: true}
-  - {name: 加拿大【付费推荐：https://v1.mk/vip】195, server: tcas.padra-holding.com, port: 36005, type: vmess, uuid: 05c38399-5296-4bf2-a606-1cec3b71c942, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tcas.padra-holding.com}}, udp: true}
-  - {name: 新加坡 06|高速|流媒体|免流, server: sg4.sanfen001.pics, port: 2001, type: vmess, uuid: ae13496e-4756-4f65-bc01-4104e296ca9c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: sg1.sanfen001.pics}}, udp: true}
-  - {name: Taiwan 03 TG@nodpai, server: kaizen-tw-3.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: 加拿大【付费推荐：https://v1.mk/vip】216, server: z0115.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
   - {name: _FR_法国, server: 5.135.43.119, port: 58732, type: vmess, uuid: d159c5be-8291-45c4-bd21-51d024658a6d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技_18, server: z0111.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: "[SSR] 🇨🇳 中国【付费推荐：https://v1.mk/vip】217", server: z80001.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: _HK_香港_7, server: 47.243.183.124, port: 42093, type: vmess, uuid: 6bd6d540-ab4a-4ecf-98d6-1bd781a450c7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: _HK_香港 6, server: 47.242.69.245, port: 23312, type: vmess, uuid: 94cca229-5e17-4f35-9b49-fe113e142c75, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 香港IPLC3, server: 120.226.39.25, port: 19219, type: trojan, password: 0aa156ed-a3e6-3571-ad3d-c8281b376d5b, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 德国  12, server: us-7.0rd.net, port: 443, type: vmess, uuid: b3a6c9c0-a645-11ed-b835-205c6d5f5d78, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ob74vrme, headers: {Host: us-7.0rd.net}}, udp: true}
+  - {name: _HK_香港_2, server: 47.243.29.234, port: 27537, type: vmess, uuid: 98b193f3-8056-4f48-bc4a-f1e893486548, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 日本【付费推荐：https://v1.mk/vip】489, server: 138.2.45.89, port: 4430, type: vmess, uuid: 6abfad5a-24be-3657-85da-ceac782b7e19, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /osav101, headers: {Host: 138.2.45.89}}, udp: true}
+  - {name: 香港【付费推荐：https://v1.mk/vip】310, server: 47.242.26.30, port: 28045, type: vmess, uuid: bb73d6fe-9700-4607-8dc1-eb9f15253e9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: -加拿大-167.88.186.202, server: 167.88.186.202, port: 56574, type: vmess, uuid: 596769b4-d3b9-4374-9bd0-215fd6533841, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /jp2/getData, headers: {Host: jp2.linkeden.co}}, udp: true}
+  - {name: 美国 018, server: 174.136.205.25, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: "%24paydiu.com", skip-cert-verify: true, udp: true}
+  - {name: 美国 019, server: 20.168.78.33, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: "%24paydiu.com", skip-cert-verify: true, udp: true}
+  - {name: _HK_香港_2 3, server: 8.210.131.2, port: 31357, type: vmess, uuid: 618c0914-e31e-4b82-8289-2e7a47e48dfd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 美国 024, server: 23.145.24.30, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, skip-cert-verify: true, udp: true}
+  - {name: "|24.57Mb", server: 5.133.12.63, port: 443, type: vmess, uuid: 4d0247e0-d1da-444c-9cda-8cc20e4e4435, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/220128071100}, udp: true}
+  - {name: 丹麦 001, server: tk02.nb1.fr, port: 443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: tk02.nb1.fr}}, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】496, server: 129.146.113.254, port: 44107, type: vmess, uuid: fd84746b-24ed-449f-c53e-def4b90e122e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 129.146.113.254}}, udp: true}
   - {name: 老胡凤凰城, server: us.hugesport.xyz, port: 34597, type: trojan, password: SqMw9NkaW7, sni: us.hugesport.xyz, skip-cert-verify: true, udp: true}
-  - {name: Turkey 01 TG:@nodpai, server: us02.cctvvip.ml, port: 80, type: vmess, uuid: 1c557a51-80b9-49be-d74a-1450c3e2b77f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us02.cctvvip.ml}}, udp: true}
-  - {name: _HK_香港_2, server: 8.210.131.2, port: 31357, type: vmess, uuid: 618c0914-e31e-4b82-8289-2e7a47e48dfd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】115, server: hn.xiaohouzi.club, port: 61005, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: "%24%24aru05.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】120, server: hn.xiaohouzi.club, port: 46014, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: "%24%24tcus01.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】136, server: hn.xiaohouzi.club, port: 48462, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: "%24%24hn.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】139, server: hnm.xiaohouzi.club, port: 47555, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: "%24%24%24au02.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: France 03 TG:@nodpai, server: fr-1.0rd.net, port: 443, type: vmess, uuid: 497e12d0-a645-11ed-b930-205c6d5f5d78, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /it0svahf, headers: {Host: fr-1.0rd.net}}, udp: true}
-  - {name: "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】150", server: hnm.xiaohouzi.club, port: 17113, type: trojan, password: a3278882-3614-39cf-a3d6-faefa8c910ab, sni: "%24%24hnm.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 美国 030, server: 3.72.3.54, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
+  - {name: -美国华盛顿州西雅图-sea21.nb1.fr, server: sea21.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: sea21.nb1.fr}}, udp: true}
+  - {name: github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 47, server: 192.99.8.99, port: 36005, type: vmess, uuid: 05c38399-5296-4bf2-a606-1cec3b71c942, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: -澳大利亚-kr05.cctvvip.ml, server: kr05.cctvvip.ml, port: 48413, type: vmess, uuid: 106748d4-7669-49dd-dd1a-25d73471a051, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /1234, headers: {Host: kr05.cctvvip.ml}}, udp: true}
+  - {name: 澳大利亚 002, server: kr05.cctvvip.ml, port: 48413, type: vmess, uuid: 106748d4-7669-49dd-dd1a-25d73471a051, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /1234, headers: {Host: a.duoyouduo.tk}}, udp: true}
+  - {name: _US_美国_1, server: v47a.toddns.tk, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v47-2023unlimitndxd, headers: {Host: v47a.toddns.tk}}, udp: true}
+  - {name: 新加坡 002, server: 51.79.173.222, port: 80, type: vmess, uuid: a72bd7a7-732d-46c1-8274-bf16bca30e78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】190, server: hn.xiaohouzi.club, port: 14185, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hktnew01.xiaohouzi.club, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Japan 17 TG:@nodpai
-      - ssrfree.zhujicn2.net:10004
-      - 中国【付费推荐：https://v1.mk/vip】133
-      - RU_45.147.200.44_02032023838a-138trojan
-      - ssrfree.zhujicn2.net:10007
-      - 印度 001
-      - 荷兰 003
-      - ssrfree.zhujicn2.net:10003
-      - _US_美国 6 2
-      - -美国-xjp2.wangjiaxin.xyz
-      - 菲律宾 001
-      - 中国【付费推荐：https://v1.mk/vip】113
-      - "_JP_日本\r_3"
-      - ssrfree.zhujicn2.net:10006
-      - JP_138.2.45.89_02092023bee9-962trojan
-      - ssrfree.zhujicn2.net:10008
-      - 英国【付费推荐：https://v1.mk/vip】78
-      - 美国 033
-      - 美国 017
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】99"
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】97"
-      - South Korea 07 TG:@nodpai
-      - v2rayfree.eu.org - 法国OVH SAS 21
-      - Japan 08 TG:@nodpai
-      - 美国 015
-      - 中国【付费推荐：https://v1.mk/vip】121
-      - Japan 01 TG:@nodpai
-      - HK_125.59.27.66_02102023acf7-268trojan
-      - 中国【付费推荐：https://v1.mk/vip】111
-      - 美国 011
-      - Japan 02 TG@nodpai
-      - 美国 035
-      - 美国 016
-      - 中国【付费推荐：https://v1.mk/vip】106
-      - 澳大利亚 004
-      - ssrfree.zhujicn2.net:10005
-      - 日本 03|高速|流媒体
-      - "[HK_TROJAN_1.65.139.228443]"
-      - 中国【付费推荐：https://v1.mk/vip】134
-      - 美国 022
-      - 英国 002
-      - Relay 🇭🇰 Hong Kong 02 TG:@nodpai
-      - 中国【付费推荐：https://v1.mk/vip】129
-      - 中国【付费推荐：https://v1.mk/vip】145
-      - 美国 031
-      - Hong Kong 04 TG:@nodpai
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】152"
+      - _HK_香港_3
+      - 法国【付费推荐：https://v1.mk/vip】306
+      - "@SSRSUB-V28-付费推荐:suo.yt/ssrsub"
+      - "_JP_日本\r_2"
+      - _HK_香港_2 2
+      - 法国 001
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 41
+      - 香港【付费推荐：https://v1.mk/vip】286
+      - 香港【付费推荐：https//v1.mk/vip】308
       - _HK_香港_5
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】165"
-      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
-      - _HK_香港_4
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】162"
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 中国【付费推荐：https://v1.mk/vip】142
-      - "[02-12]-🇫🇷-法国-171-z0111.security-cloudfront-cdn.com"
-      - 印度尼西亚 001
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】98"
-      - _HK_香港_8
-      - 俄罗斯 002
-      - 美国 021
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】164"
-      - Philippines 03 TG@nodpai
-      - 新加坡 09|高速|流媒体|免流
-      - 荷兰 002
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】159"
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】190"
-      - 美国 029
-      - Hong Kong 37 TG@nodpai
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】163"
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】141"
-      - 美国 013
-      - 俄罗斯 001
-      - 中国【付费推荐：https://v1.mk/vip】144
-      - _HK_香港 6
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】151"
-      - _AU_澳大利亚
-      - 韩国_0211048
-      - 中国【付费推荐：https://v1.mk/vip】143
-      - Hong Kong 07 TG@nodpai
-      - Japan 21 TG:@nodpai
-      - 中国【付费推荐：https://v1.mk/vip】149
-      - 中国【付费推荐：https://v1.mk/vip】155
-      - 美国 009
-      - 中国【付费推荐：https://v1.mk/vip】154
-      - 美国 019
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】194"
-      - "|24.57Mb"
-      - 日本【付费推荐：https://v1.mk/vip】178
-      - 美国 022 2
-      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 8
-      - 美国 025
-      - "[VMess] 🇮🇩 印度尼西亚【付费推荐：https://v1.mk/vip】185"
-      - 韩国 003
-      - "[SSR] 🇨🇦 加拿大【付费推荐：https://v1.mk/vip】216"
-      - 俄罗斯 003
-      - US_youtube@资源分享师_96
-      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 16
-      - 加拿大【付费推荐：https://v1.mk/vip】195
-      - 新加坡 06|高速|流媒体|免流
-      - Taiwan 03 TG@nodpai
-      - 加拿大【付费推荐：https://v1.mk/vip】216
       - _FR_法国
-      - https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技_18
-      - "[SSR] 🇨🇳 中国【付费推荐：https://v1.mk/vip】217"
-      - 老胡凤凰城
-      - Turkey 01 TG:@nodpai
+      - _HK_香港_7
+      - _HK_香港 6
+      - 香港IPLC3
+      - github.com/freefq - 德国  12
       - _HK_香港_2
-      - 中国【付费推荐：https://v1.mk/vip】115
-      - 中国【付费推荐：https://v1.mk/vip】120
-      - 中国【付费推荐：https://v1.mk/vip】136
-      - 中国【付费推荐：https://v1.mk/vip】139
-      - France 03 TG:@nodpai
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】150"
+      - 日本【付费推荐：https://v1.mk/vip】489
+      - 香港【付费推荐：https://v1.mk/vip】310
+      - -加拿大-167.88.186.202
+      - 美国 018
+      - 美国 019
+      - _HK_香港_2 3
+      - 美国 024
+      - "|24.57Mb"
+      - 丹麦 001
+      - 美国【付费推荐：https://v1.mk/vip】496
+      - 老胡凤凰城
+      - 美国 030
+      - -美国华盛顿州西雅图-sea21.nb1.fr
+      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 47
+      - -澳大利亚-kr05.cctvvip.ml
+      - 澳大利亚 002
+      - _US_美国_1
+      - 新加坡 002
+      - 中国【付费推荐：https://v1.mk/vip】190
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - Japan 17 TG:@nodpai
-      - ssrfree.zhujicn2.net:10004
-      - 中国【付费推荐：https://v1.mk/vip】133
-      - RU_45.147.200.44_02032023838a-138trojan
-      - ssrfree.zhujicn2.net:10007
-      - 印度 001
-      - 荷兰 003
-      - ssrfree.zhujicn2.net:10003
-      - _US_美国 6 2
-      - -美国-xjp2.wangjiaxin.xyz
-      - 菲律宾 001
-      - 中国【付费推荐：https://v1.mk/vip】113
-      - "_JP_日本\r_3"
-      - ssrfree.zhujicn2.net:10006
-      - JP_138.2.45.89_02092023bee9-962trojan
-      - ssrfree.zhujicn2.net:10008
-      - 英国【付费推荐：https://v1.mk/vip】78
-      - 美国 033
-      - 美国 017
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】99"
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】97"
-      - South Korea 07 TG:@nodpai
-      - v2rayfree.eu.org - 法国OVH SAS 21
-      - Japan 08 TG:@nodpai
-      - 美国 015
-      - 中国【付费推荐：https://v1.mk/vip】121
-      - Japan 01 TG:@nodpai
-      - HK_125.59.27.66_02102023acf7-268trojan
-      - 中国【付费推荐：https://v1.mk/vip】111
-      - 美国 011
-      - Japan 02 TG@nodpai
-      - 美国 035
-      - 美国 016
-      - 中国【付费推荐：https://v1.mk/vip】106
-      - 澳大利亚 004
-      - ssrfree.zhujicn2.net:10005
-      - 日本 03|高速|流媒体
-      - "[HK_TROJAN_1.65.139.228443]"
-      - 中国【付费推荐：https://v1.mk/vip】134
-      - 美国 022
-      - 英国 002
-      - Relay 🇭🇰 Hong Kong 02 TG:@nodpai
-      - 中国【付费推荐：https://v1.mk/vip】129
-      - 中国【付费推荐：https://v1.mk/vip】145
-      - 美国 031
-      - Hong Kong 04 TG:@nodpai
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】152"
+      - _HK_香港_3
+      - 法国【付费推荐：https://v1.mk/vip】306
+      - "@SSRSUB-V28-付费推荐:suo.yt/ssrsub"
+      - "_JP_日本\r_2"
+      - _HK_香港_2 2
+      - 法国 001
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 41
+      - 香港【付费推荐：https://v1.mk/vip】286
+      - 香港【付费推荐：https//v1.mk/vip】308
       - _HK_香港_5
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】165"
-      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
-      - _HK_香港_4
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】162"
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 中国【付费推荐：https://v1.mk/vip】142
-      - "[02-12]-🇫🇷-法国-171-z0111.security-cloudfront-cdn.com"
-      - 印度尼西亚 001
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】98"
-      - _HK_香港_8
-      - 俄罗斯 002
-      - 美国 021
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】164"
-      - Philippines 03 TG@nodpai
-      - 新加坡 09|高速|流媒体|免流
-      - 荷兰 002
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】159"
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】190"
-      - 美国 029
-      - Hong Kong 37 TG@nodpai
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】163"
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】141"
-      - 美国 013
-      - 俄罗斯 001
-      - 中国【付费推荐：https://v1.mk/vip】144
-      - _HK_香港 6
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】151"
-      - _AU_澳大利亚
-      - 韩国_0211048
-      - 中国【付费推荐：https://v1.mk/vip】143
-      - Hong Kong 07 TG@nodpai
-      - Japan 21 TG:@nodpai
-      - 中国【付费推荐：https://v1.mk/vip】149
-      - 中国【付费推荐：https://v1.mk/vip】155
-      - 美国 009
-      - 中国【付费推荐：https://v1.mk/vip】154
-      - 美国 019
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】194"
-      - "|24.57Mb"
-      - 日本【付费推荐：https://v1.mk/vip】178
-      - 美国 022 2
-      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 8
-      - 美国 025
-      - "[VMess] 🇮🇩 印度尼西亚【付费推荐：https://v1.mk/vip】185"
-      - 韩国 003
-      - "[SSR] 🇨🇦 加拿大【付费推荐：https://v1.mk/vip】216"
-      - 俄罗斯 003
-      - US_youtube@资源分享师_96
-      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 16
-      - 加拿大【付费推荐：https://v1.mk/vip】195
-      - 新加坡 06|高速|流媒体|免流
-      - Taiwan 03 TG@nodpai
-      - 加拿大【付费推荐：https://v1.mk/vip】216
       - _FR_法国
-      - https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技_18
-      - "[SSR] 🇨🇳 中国【付费推荐：https://v1.mk/vip】217"
-      - 老胡凤凰城
-      - Turkey 01 TG:@nodpai
+      - _HK_香港_7
+      - _HK_香港 6
+      - 香港IPLC3
+      - github.com/freefq - 德国  12
       - _HK_香港_2
-      - 中国【付费推荐：https://v1.mk/vip】115
-      - 中国【付费推荐：https://v1.mk/vip】120
-      - 中国【付费推荐：https://v1.mk/vip】136
-      - 中国【付费推荐：https://v1.mk/vip】139
-      - France 03 TG:@nodpai
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】150"
+      - 日本【付费推荐：https://v1.mk/vip】489
+      - 香港【付费推荐：https://v1.mk/vip】310
+      - -加拿大-167.88.186.202
+      - 美国 018
+      - 美国 019
+      - _HK_香港_2 3
+      - 美国 024
+      - "|24.57Mb"
+      - 丹麦 001
+      - 美国【付费推荐：https://v1.mk/vip】496
+      - 老胡凤凰城
+      - 美国 030
+      - -美国华盛顿州西雅图-sea21.nb1.fr
+      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 47
+      - -澳大利亚-kr05.cctvvip.ml
+      - 澳大利亚 002
+      - _US_美国_1
+      - 新加坡 002
+      - 中国【付费推荐：https://v1.mk/vip】190
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Japan 17 TG:@nodpai
-      - ssrfree.zhujicn2.net:10004
-      - 中国【付费推荐：https://v1.mk/vip】133
-      - RU_45.147.200.44_02032023838a-138trojan
-      - ssrfree.zhujicn2.net:10007
-      - 印度 001
-      - 荷兰 003
-      - ssrfree.zhujicn2.net:10003
-      - _US_美国 6 2
-      - -美国-xjp2.wangjiaxin.xyz
-      - 菲律宾 001
-      - 中国【付费推荐：https://v1.mk/vip】113
-      - "_JP_日本\r_3"
-      - ssrfree.zhujicn2.net:10006
-      - JP_138.2.45.89_02092023bee9-962trojan
-      - ssrfree.zhujicn2.net:10008
-      - 英国【付费推荐：https://v1.mk/vip】78
-      - 美国 033
-      - 美国 017
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】99"
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】97"
-      - South Korea 07 TG:@nodpai
-      - v2rayfree.eu.org - 法国OVH SAS 21
-      - Japan 08 TG:@nodpai
-      - 美国 015
-      - 中国【付费推荐：https://v1.mk/vip】121
-      - Japan 01 TG:@nodpai
-      - HK_125.59.27.66_02102023acf7-268trojan
-      - 中国【付费推荐：https://v1.mk/vip】111
-      - 美国 011
-      - Japan 02 TG@nodpai
-      - 美国 035
-      - 美国 016
-      - 中国【付费推荐：https://v1.mk/vip】106
-      - 澳大利亚 004
-      - ssrfree.zhujicn2.net:10005
-      - 日本 03|高速|流媒体
-      - "[HK_TROJAN_1.65.139.228443]"
-      - 中国【付费推荐：https://v1.mk/vip】134
-      - 美国 022
-      - 英国 002
-      - Relay 🇭🇰 Hong Kong 02 TG:@nodpai
-      - 中国【付费推荐：https://v1.mk/vip】129
-      - 中国【付费推荐：https://v1.mk/vip】145
-      - 美国 031
-      - Hong Kong 04 TG:@nodpai
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】152"
+      - _HK_香港_3
+      - 法国【付费推荐：https://v1.mk/vip】306
+      - "@SSRSUB-V28-付费推荐:suo.yt/ssrsub"
+      - "_JP_日本\r_2"
+      - _HK_香港_2 2
+      - 法国 001
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 41
+      - 香港【付费推荐：https://v1.mk/vip】286
+      - 香港【付费推荐：https//v1.mk/vip】308
       - _HK_香港_5
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】165"
-      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
-      - _HK_香港_4
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】162"
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 中国【付费推荐：https://v1.mk/vip】142
-      - "[02-12]-🇫🇷-法国-171-z0111.security-cloudfront-cdn.com"
-      - 印度尼西亚 001
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】98"
-      - _HK_香港_8
-      - 俄罗斯 002
-      - 美国 021
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】164"
-      - Philippines 03 TG@nodpai
-      - 新加坡 09|高速|流媒体|免流
-      - 荷兰 002
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】159"
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】190"
-      - 美国 029
-      - Hong Kong 37 TG@nodpai
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】163"
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】141"
-      - 美国 013
-      - 俄罗斯 001
-      - 中国【付费推荐：https://v1.mk/vip】144
-      - _HK_香港 6
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】151"
-      - _AU_澳大利亚
-      - 韩国_0211048
-      - 中国【付费推荐：https://v1.mk/vip】143
-      - Hong Kong 07 TG@nodpai
-      - Japan 21 TG:@nodpai
-      - 中国【付费推荐：https://v1.mk/vip】149
-      - 中国【付费推荐：https://v1.mk/vip】155
-      - 美国 009
-      - 中国【付费推荐：https://v1.mk/vip】154
-      - 美国 019
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】194"
-      - "|24.57Mb"
-      - 日本【付费推荐：https://v1.mk/vip】178
-      - 美国 022 2
-      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 8
-      - 美国 025
-      - "[VMess] 🇮🇩 印度尼西亚【付费推荐：https://v1.mk/vip】185"
-      - 韩国 003
-      - "[SSR] 🇨🇦 加拿大【付费推荐：https://v1.mk/vip】216"
-      - 俄罗斯 003
-      - US_youtube@资源分享师_96
-      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 16
-      - 加拿大【付费推荐：https://v1.mk/vip】195
-      - 新加坡 06|高速|流媒体|免流
-      - Taiwan 03 TG@nodpai
-      - 加拿大【付费推荐：https://v1.mk/vip】216
       - _FR_法国
-      - https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技_18
-      - "[SSR] 🇨🇳 中国【付费推荐：https://v1.mk/vip】217"
-      - 老胡凤凰城
-      - Turkey 01 TG:@nodpai
+      - _HK_香港_7
+      - _HK_香港 6
+      - 香港IPLC3
+      - github.com/freefq - 德国  12
       - _HK_香港_2
-      - 中国【付费推荐：https://v1.mk/vip】115
-      - 中国【付费推荐：https://v1.mk/vip】120
-      - 中国【付费推荐：https://v1.mk/vip】136
-      - 中国【付费推荐：https://v1.mk/vip】139
-      - France 03 TG:@nodpai
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】150"
+      - 日本【付费推荐：https://v1.mk/vip】489
+      - 香港【付费推荐：https://v1.mk/vip】310
+      - -加拿大-167.88.186.202
+      - 美国 018
+      - 美国 019
+      - _HK_香港_2 3
+      - 美国 024
+      - "|24.57Mb"
+      - 丹麦 001
+      - 美国【付费推荐：https://v1.mk/vip】496
+      - 老胡凤凰城
+      - 美国 030
+      - -美国华盛顿州西雅图-sea21.nb1.fr
+      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 47
+      - -澳大利亚-kr05.cctvvip.ml
+      - 澳大利亚 002
+      - _US_美国_1
+      - 新加坡 002
+      - 中国【付费推荐：https://v1.mk/vip】190
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -493,484 +181,178 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Japan 17 TG:@nodpai
-      - ssrfree.zhujicn2.net:10004
-      - 中国【付费推荐：https://v1.mk/vip】133
-      - RU_45.147.200.44_02032023838a-138trojan
-      - ssrfree.zhujicn2.net:10007
-      - 印度 001
-      - 荷兰 003
-      - ssrfree.zhujicn2.net:10003
-      - _US_美国 6 2
-      - -美国-xjp2.wangjiaxin.xyz
-      - 菲律宾 001
-      - 中国【付费推荐：https://v1.mk/vip】113
-      - "_JP_日本\r_3"
-      - ssrfree.zhujicn2.net:10006
-      - JP_138.2.45.89_02092023bee9-962trojan
-      - ssrfree.zhujicn2.net:10008
-      - 英国【付费推荐：https://v1.mk/vip】78
-      - 美国 033
-      - 美国 017
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】99"
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】97"
-      - South Korea 07 TG:@nodpai
-      - v2rayfree.eu.org - 法国OVH SAS 21
-      - Japan 08 TG:@nodpai
-      - 美国 015
-      - 中国【付费推荐：https://v1.mk/vip】121
-      - Japan 01 TG:@nodpai
-      - HK_125.59.27.66_02102023acf7-268trojan
-      - 中国【付费推荐：https://v1.mk/vip】111
-      - 美国 011
-      - Japan 02 TG@nodpai
-      - 美国 035
-      - 美国 016
-      - 中国【付费推荐：https://v1.mk/vip】106
-      - 澳大利亚 004
-      - ssrfree.zhujicn2.net:10005
-      - 日本 03|高速|流媒体
-      - "[HK_TROJAN_1.65.139.228443]"
-      - 中国【付费推荐：https://v1.mk/vip】134
-      - 美国 022
-      - 英国 002
-      - Relay 🇭🇰 Hong Kong 02 TG:@nodpai
-      - 中国【付费推荐：https://v1.mk/vip】129
-      - 中国【付费推荐：https://v1.mk/vip】145
-      - 美国 031
-      - Hong Kong 04 TG:@nodpai
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】152"
+      - _HK_香港_3
+      - 法国【付费推荐：https://v1.mk/vip】306
+      - "@SSRSUB-V28-付费推荐:suo.yt/ssrsub"
+      - "_JP_日本\r_2"
+      - _HK_香港_2 2
+      - 法国 001
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 41
+      - 香港【付费推荐：https://v1.mk/vip】286
+      - 香港【付费推荐：https//v1.mk/vip】308
       - _HK_香港_5
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】165"
-      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
-      - _HK_香港_4
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】162"
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 中国【付费推荐：https://v1.mk/vip】142
-      - "[02-12]-🇫🇷-法国-171-z0111.security-cloudfront-cdn.com"
-      - 印度尼西亚 001
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】98"
-      - _HK_香港_8
-      - 俄罗斯 002
-      - 美国 021
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】164"
-      - Philippines 03 TG@nodpai
-      - 新加坡 09|高速|流媒体|免流
-      - 荷兰 002
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】159"
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】190"
-      - 美国 029
-      - Hong Kong 37 TG@nodpai
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】163"
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】141"
-      - 美国 013
-      - 俄罗斯 001
-      - 中国【付费推荐：https://v1.mk/vip】144
-      - _HK_香港 6
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】151"
-      - _AU_澳大利亚
-      - 韩国_0211048
-      - 中国【付费推荐：https://v1.mk/vip】143
-      - Hong Kong 07 TG@nodpai
-      - Japan 21 TG:@nodpai
-      - 中国【付费推荐：https://v1.mk/vip】149
-      - 中国【付费推荐：https://v1.mk/vip】155
-      - 美国 009
-      - 中国【付费推荐：https://v1.mk/vip】154
-      - 美国 019
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】194"
-      - "|24.57Mb"
-      - 日本【付费推荐：https://v1.mk/vip】178
-      - 美国 022 2
-      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 8
-      - 美国 025
-      - "[VMess] 🇮🇩 印度尼西亚【付费推荐：https://v1.mk/vip】185"
-      - 韩国 003
-      - "[SSR] 🇨🇦 加拿大【付费推荐：https://v1.mk/vip】216"
-      - 俄罗斯 003
-      - US_youtube@资源分享师_96
-      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 16
-      - 加拿大【付费推荐：https://v1.mk/vip】195
-      - 新加坡 06|高速|流媒体|免流
-      - Taiwan 03 TG@nodpai
-      - 加拿大【付费推荐：https://v1.mk/vip】216
       - _FR_法国
-      - https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技_18
-      - "[SSR] 🇨🇳 中国【付费推荐：https://v1.mk/vip】217"
-      - 老胡凤凰城
-      - Turkey 01 TG:@nodpai
+      - _HK_香港_7
+      - _HK_香港 6
+      - 香港IPLC3
+      - github.com/freefq - 德国  12
       - _HK_香港_2
-      - 中国【付费推荐：https://v1.mk/vip】115
-      - 中国【付费推荐：https://v1.mk/vip】120
-      - 中国【付费推荐：https://v1.mk/vip】136
-      - 中国【付费推荐：https://v1.mk/vip】139
-      - France 03 TG:@nodpai
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】150"
+      - 日本【付费推荐：https://v1.mk/vip】489
+      - 香港【付费推荐：https://v1.mk/vip】310
+      - -加拿大-167.88.186.202
+      - 美国 018
+      - 美国 019
+      - _HK_香港_2 3
+      - 美国 024
+      - "|24.57Mb"
+      - 丹麦 001
+      - 美国【付费推荐：https://v1.mk/vip】496
+      - 老胡凤凰城
+      - 美国 030
+      - -美国华盛顿州西雅图-sea21.nb1.fr
+      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 47
+      - -澳大利亚-kr05.cctvvip.ml
+      - 澳大利亚 002
+      - _US_美国_1
+      - 新加坡 002
+      - 中国【付费推荐：https://v1.mk/vip】190
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - _HK_香港_3
+      - _HK_香港_2 2
+      - 香港【付费推荐：https://v1.mk/vip】286
+      - 香港【付费推荐：https//v1.mk/vip】308
       - _HK_香港_5
-      - _HK_香港_4
-      - _HK_香港_8
+      - _HK_香港_7
       - _HK_香港 6
+      - 香港IPLC3
       - _HK_香港_2
+      - 香港【付费推荐：https://v1.mk/vip】310
+      - _HK_香港_2 3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Japan 17 TG:@nodpai
-      - ssrfree.zhujicn2.net:10004
-      - 中国【付费推荐：https://v1.mk/vip】133
-      - RU_45.147.200.44_02032023838a-138trojan
-      - ssrfree.zhujicn2.net:10007
-      - 印度 001
-      - 荷兰 003
-      - ssrfree.zhujicn2.net:10003
-      - _US_美国 6 2
-      - -美国-xjp2.wangjiaxin.xyz
-      - 菲律宾 001
-      - 中国【付费推荐：https://v1.mk/vip】113
-      - "_JP_日本\r_3"
-      - ssrfree.zhujicn2.net:10006
-      - JP_138.2.45.89_02092023bee9-962trojan
-      - ssrfree.zhujicn2.net:10008
-      - 英国【付费推荐：https://v1.mk/vip】78
-      - 美国 033
-      - 美国 017
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】99"
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】97"
-      - South Korea 07 TG:@nodpai
-      - v2rayfree.eu.org - 法国OVH SAS 21
-      - Japan 08 TG:@nodpai
-      - 美国 015
-      - 中国【付费推荐：https://v1.mk/vip】121
-      - Japan 01 TG:@nodpai
-      - HK_125.59.27.66_02102023acf7-268trojan
-      - 中国【付费推荐：https://v1.mk/vip】111
-      - 美国 011
-      - Japan 02 TG@nodpai
-      - 美国 035
-      - 美国 016
-      - 中国【付费推荐：https://v1.mk/vip】106
-      - 澳大利亚 004
-      - ssrfree.zhujicn2.net:10005
-      - 日本 03|高速|流媒体
-      - "[HK_TROJAN_1.65.139.228443]"
-      - 中国【付费推荐：https://v1.mk/vip】134
-      - 美国 022
-      - 英国 002
-      - Relay 🇭🇰 Hong Kong 02 TG:@nodpai
-      - 中国【付费推荐：https://v1.mk/vip】129
-      - 中国【付费推荐：https://v1.mk/vip】145
-      - 美国 031
-      - Hong Kong 04 TG:@nodpai
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】152"
+      - _HK_香港_3
+      - 法国【付费推荐：https://v1.mk/vip】306
+      - "@SSRSUB-V28-付费推荐:suo.yt/ssrsub"
+      - "_JP_日本\r_2"
+      - _HK_香港_2 2
+      - 法国 001
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 41
+      - 香港【付费推荐：https://v1.mk/vip】286
+      - 香港【付费推荐：https//v1.mk/vip】308
       - _HK_香港_5
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】165"
-      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
-      - _HK_香港_4
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】162"
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 中国【付费推荐：https://v1.mk/vip】142
-      - "[02-12]-🇫🇷-法国-171-z0111.security-cloudfront-cdn.com"
-      - 印度尼西亚 001
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】98"
-      - _HK_香港_8
-      - 俄罗斯 002
-      - 美国 021
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】164"
-      - Philippines 03 TG@nodpai
-      - 新加坡 09|高速|流媒体|免流
-      - 荷兰 002
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】159"
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】190"
-      - 美国 029
-      - Hong Kong 37 TG@nodpai
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】163"
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】141"
-      - 美国 013
-      - 俄罗斯 001
-      - 中国【付费推荐：https://v1.mk/vip】144
-      - _HK_香港 6
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】151"
-      - _AU_澳大利亚
-      - 韩国_0211048
-      - 中国【付费推荐：https://v1.mk/vip】143
-      - Hong Kong 07 TG@nodpai
-      - Japan 21 TG:@nodpai
-      - 中国【付费推荐：https://v1.mk/vip】149
-      - 中国【付费推荐：https://v1.mk/vip】155
-      - 美国 009
-      - 中国【付费推荐：https://v1.mk/vip】154
-      - 美国 019
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】194"
-      - "|24.57Mb"
-      - 日本【付费推荐：https://v1.mk/vip】178
-      - 美国 022 2
-      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 8
-      - 美国 025
-      - "[VMess] 🇮🇩 印度尼西亚【付费推荐：https://v1.mk/vip】185"
-      - 韩国 003
-      - "[SSR] 🇨🇦 加拿大【付费推荐：https://v1.mk/vip】216"
-      - 俄罗斯 003
-      - US_youtube@资源分享师_96
-      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 16
-      - 加拿大【付费推荐：https://v1.mk/vip】195
-      - 新加坡 06|高速|流媒体|免流
-      - Taiwan 03 TG@nodpai
-      - 加拿大【付费推荐：https://v1.mk/vip】216
       - _FR_法国
-      - https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技_18
-      - "[SSR] 🇨🇳 中国【付费推荐：https://v1.mk/vip】217"
-      - 老胡凤凰城
-      - Turkey 01 TG:@nodpai
+      - _HK_香港_7
+      - _HK_香港 6
+      - 香港IPLC3
+      - github.com/freefq - 德国  12
       - _HK_香港_2
-      - 中国【付费推荐：https://v1.mk/vip】115
-      - 中国【付费推荐：https://v1.mk/vip】120
-      - 中国【付费推荐：https://v1.mk/vip】136
-      - 中国【付费推荐：https://v1.mk/vip】139
-      - France 03 TG:@nodpai
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】150"
+      - 日本【付费推荐：https://v1.mk/vip】489
+      - 香港【付费推荐：https://v1.mk/vip】310
+      - -加拿大-167.88.186.202
+      - 美国 018
+      - 美国 019
+      - _HK_香港_2 3
+      - 美国 024
+      - "|24.57Mb"
+      - 丹麦 001
+      - 美国【付费推荐：https://v1.mk/vip】496
+      - 老胡凤凰城
+      - 美国 030
+      - -美国华盛顿州西雅图-sea21.nb1.fr
+      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 47
+      - -澳大利亚-kr05.cctvvip.ml
+      - 澳大利亚 002
+      - _US_美国_1
+      - 新加坡 002
+      - 中国【付费推荐：https://v1.mk/vip】190
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Japan 17 TG:@nodpai
-      - ssrfree.zhujicn2.net:10004
-      - 中国【付费推荐：https://v1.mk/vip】133
-      - RU_45.147.200.44_02032023838a-138trojan
-      - ssrfree.zhujicn2.net:10007
-      - 印度 001
-      - 荷兰 003
-      - ssrfree.zhujicn2.net:10003
-      - _US_美国 6 2
-      - -美国-xjp2.wangjiaxin.xyz
-      - 菲律宾 001
-      - 中国【付费推荐：https://v1.mk/vip】113
-      - "_JP_日本\r_3"
-      - ssrfree.zhujicn2.net:10006
-      - JP_138.2.45.89_02092023bee9-962trojan
-      - ssrfree.zhujicn2.net:10008
-      - 英国【付费推荐：https://v1.mk/vip】78
-      - 美国 033
-      - 美国 017
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】99"
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】97"
-      - South Korea 07 TG:@nodpai
-      - v2rayfree.eu.org - 法国OVH SAS 21
-      - Japan 08 TG:@nodpai
-      - 美国 015
-      - 中国【付费推荐：https://v1.mk/vip】121
-      - Japan 01 TG:@nodpai
-      - HK_125.59.27.66_02102023acf7-268trojan
-      - 中国【付费推荐：https://v1.mk/vip】111
-      - 美国 011
-      - Japan 02 TG@nodpai
-      - 美国 035
-      - 美国 016
-      - 中国【付费推荐：https://v1.mk/vip】106
-      - 澳大利亚 004
-      - ssrfree.zhujicn2.net:10005
-      - 日本 03|高速|流媒体
-      - "[HK_TROJAN_1.65.139.228443]"
-      - 中国【付费推荐：https://v1.mk/vip】134
-      - 美国 022
-      - 英国 002
-      - Relay 🇭🇰 Hong Kong 02 TG:@nodpai
-      - 中国【付费推荐：https://v1.mk/vip】129
-      - 中国【付费推荐：https://v1.mk/vip】145
-      - 美国 031
-      - Hong Kong 04 TG:@nodpai
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】152"
+      - _HK_香港_3
+      - 法国【付费推荐：https://v1.mk/vip】306
+      - "@SSRSUB-V28-付费推荐:suo.yt/ssrsub"
+      - "_JP_日本\r_2"
+      - _HK_香港_2 2
+      - 法国 001
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 41
+      - 香港【付费推荐：https://v1.mk/vip】286
+      - 香港【付费推荐：https//v1.mk/vip】308
       - _HK_香港_5
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】165"
-      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
-      - _HK_香港_4
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】162"
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 中国【付费推荐：https://v1.mk/vip】142
-      - "[02-12]-🇫🇷-法国-171-z0111.security-cloudfront-cdn.com"
-      - 印度尼西亚 001
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】98"
-      - _HK_香港_8
-      - 俄罗斯 002
-      - 美国 021
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】164"
-      - Philippines 03 TG@nodpai
-      - 新加坡 09|高速|流媒体|免流
-      - 荷兰 002
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】159"
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】190"
-      - 美国 029
-      - Hong Kong 37 TG@nodpai
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】163"
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】141"
-      - 美国 013
-      - 俄罗斯 001
-      - 中国【付费推荐：https://v1.mk/vip】144
-      - _HK_香港 6
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】151"
-      - _AU_澳大利亚
-      - 韩国_0211048
-      - 中国【付费推荐：https://v1.mk/vip】143
-      - Hong Kong 07 TG@nodpai
-      - Japan 21 TG:@nodpai
-      - 中国【付费推荐：https://v1.mk/vip】149
-      - 中国【付费推荐：https://v1.mk/vip】155
-      - 美国 009
-      - 中国【付费推荐：https://v1.mk/vip】154
-      - 美国 019
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】194"
-      - "|24.57Mb"
-      - 日本【付费推荐：https://v1.mk/vip】178
-      - 美国 022 2
-      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 8
-      - 美国 025
-      - "[VMess] 🇮🇩 印度尼西亚【付费推荐：https://v1.mk/vip】185"
-      - 韩国 003
-      - "[SSR] 🇨🇦 加拿大【付费推荐：https://v1.mk/vip】216"
-      - 俄罗斯 003
-      - US_youtube@资源分享师_96
-      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 16
-      - 加拿大【付费推荐：https://v1.mk/vip】195
-      - 新加坡 06|高速|流媒体|免流
-      - Taiwan 03 TG@nodpai
-      - 加拿大【付费推荐：https://v1.mk/vip】216
       - _FR_法国
-      - https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技_18
-      - "[SSR] 🇨🇳 中国【付费推荐：https://v1.mk/vip】217"
-      - 老胡凤凰城
-      - Turkey 01 TG:@nodpai
+      - _HK_香港_7
+      - _HK_香港 6
+      - 香港IPLC3
+      - github.com/freefq - 德国  12
       - _HK_香港_2
-      - 中国【付费推荐：https://v1.mk/vip】115
-      - 中国【付费推荐：https://v1.mk/vip】120
-      - 中国【付费推荐：https://v1.mk/vip】136
-      - 中国【付费推荐：https://v1.mk/vip】139
-      - France 03 TG:@nodpai
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】150"
+      - 日本【付费推荐：https://v1.mk/vip】489
+      - 香港【付费推荐：https://v1.mk/vip】310
+      - -加拿大-167.88.186.202
+      - 美国 018
+      - 美国 019
+      - _HK_香港_2 3
+      - 美国 024
+      - "|24.57Mb"
+      - 丹麦 001
+      - 美国【付费推荐：https://v1.mk/vip】496
+      - 老胡凤凰城
+      - 美国 030
+      - -美国华盛顿州西雅图-sea21.nb1.fr
+      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 47
+      - -澳大利亚-kr05.cctvvip.ml
+      - 澳大利亚 002
+      - _US_美国_1
+      - 新加坡 002
+      - 中国【付费推荐：https://v1.mk/vip】190
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Japan 17 TG:@nodpai
-      - ssrfree.zhujicn2.net:10004
-      - 中国【付费推荐：https://v1.mk/vip】133
-      - RU_45.147.200.44_02032023838a-138trojan
-      - ssrfree.zhujicn2.net:10007
-      - 印度 001
-      - 荷兰 003
-      - ssrfree.zhujicn2.net:10003
-      - _US_美国 6 2
-      - -美国-xjp2.wangjiaxin.xyz
-      - 菲律宾 001
-      - 中国【付费推荐：https://v1.mk/vip】113
-      - "_JP_日本\r_3"
-      - ssrfree.zhujicn2.net:10006
-      - JP_138.2.45.89_02092023bee9-962trojan
-      - ssrfree.zhujicn2.net:10008
-      - 英国【付费推荐：https://v1.mk/vip】78
-      - 美国 033
-      - 美国 017
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】99"
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】97"
-      - South Korea 07 TG:@nodpai
-      - v2rayfree.eu.org - 法国OVH SAS 21
-      - Japan 08 TG:@nodpai
-      - 美国 015
-      - 中国【付费推荐：https://v1.mk/vip】121
-      - Japan 01 TG:@nodpai
-      - HK_125.59.27.66_02102023acf7-268trojan
-      - 中国【付费推荐：https://v1.mk/vip】111
-      - 美国 011
-      - Japan 02 TG@nodpai
-      - 美国 035
-      - 美国 016
-      - 中国【付费推荐：https://v1.mk/vip】106
-      - 澳大利亚 004
-      - ssrfree.zhujicn2.net:10005
-      - 日本 03|高速|流媒体
-      - "[HK_TROJAN_1.65.139.228443]"
-      - 中国【付费推荐：https://v1.mk/vip】134
-      - 美国 022
-      - 英国 002
-      - Relay 🇭🇰 Hong Kong 02 TG:@nodpai
-      - 中国【付费推荐：https://v1.mk/vip】129
-      - 中国【付费推荐：https://v1.mk/vip】145
-      - 美国 031
-      - Hong Kong 04 TG:@nodpai
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】152"
+      - _HK_香港_3
+      - 法国【付费推荐：https://v1.mk/vip】306
+      - "@SSRSUB-V28-付费推荐:suo.yt/ssrsub"
+      - "_JP_日本\r_2"
+      - _HK_香港_2 2
+      - 法国 001
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 41
+      - 香港【付费推荐：https://v1.mk/vip】286
+      - 香港【付费推荐：https//v1.mk/vip】308
       - _HK_香港_5
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】165"
-      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
-      - _HK_香港_4
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】162"
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 中国【付费推荐：https://v1.mk/vip】142
-      - "[02-12]-🇫🇷-法国-171-z0111.security-cloudfront-cdn.com"
-      - 印度尼西亚 001
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】98"
-      - _HK_香港_8
-      - 俄罗斯 002
-      - 美国 021
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】164"
-      - Philippines 03 TG@nodpai
-      - 新加坡 09|高速|流媒体|免流
-      - 荷兰 002
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】159"
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】190"
-      - 美国 029
-      - Hong Kong 37 TG@nodpai
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】163"
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】141"
-      - 美国 013
-      - 俄罗斯 001
-      - 中国【付费推荐：https://v1.mk/vip】144
-      - _HK_香港 6
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】151"
-      - _AU_澳大利亚
-      - 韩国_0211048
-      - 中国【付费推荐：https://v1.mk/vip】143
-      - Hong Kong 07 TG@nodpai
-      - Japan 21 TG:@nodpai
-      - 中国【付费推荐：https://v1.mk/vip】149
-      - 中国【付费推荐：https://v1.mk/vip】155
-      - 美国 009
-      - 中国【付费推荐：https://v1.mk/vip】154
-      - 美国 019
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】194"
-      - "|24.57Mb"
-      - 日本【付费推荐：https://v1.mk/vip】178
-      - 美国 022 2
-      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 8
-      - 美国 025
-      - "[VMess] 🇮🇩 印度尼西亚【付费推荐：https://v1.mk/vip】185"
-      - 韩国 003
-      - "[SSR] 🇨🇦 加拿大【付费推荐：https://v1.mk/vip】216"
-      - 俄罗斯 003
-      - US_youtube@资源分享师_96
-      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 16
-      - 加拿大【付费推荐：https://v1.mk/vip】195
-      - 新加坡 06|高速|流媒体|免流
-      - Taiwan 03 TG@nodpai
-      - 加拿大【付费推荐：https://v1.mk/vip】216
       - _FR_法国
-      - https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技_18
-      - "[SSR] 🇨🇳 中国【付费推荐：https://v1.mk/vip】217"
-      - 老胡凤凰城
-      - Turkey 01 TG:@nodpai
+      - _HK_香港_7
+      - _HK_香港 6
+      - 香港IPLC3
+      - github.com/freefq - 德国  12
       - _HK_香港_2
-      - 中国【付费推荐：https://v1.mk/vip】115
-      - 中国【付费推荐：https://v1.mk/vip】120
-      - 中国【付费推荐：https://v1.mk/vip】136
-      - 中国【付费推荐：https://v1.mk/vip】139
-      - France 03 TG:@nodpai
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】150"
+      - 日本【付费推荐：https://v1.mk/vip】489
+      - 香港【付费推荐：https://v1.mk/vip】310
+      - -加拿大-167.88.186.202
+      - 美国 018
+      - 美国 019
+      - _HK_香港_2 3
+      - 美国 024
+      - "|24.57Mb"
+      - 丹麦 001
+      - 美国【付费推荐：https://v1.mk/vip】496
+      - 老胡凤凰城
+      - 美国 030
+      - -美国华盛顿州西雅图-sea21.nb1.fr
+      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 47
+      - -澳大利亚-kr05.cctvvip.ml
+      - 澳大利亚 002
+      - _US_美国_1
+      - 新加坡 002
+      - 中国【付费推荐：https://v1.mk/vip】190
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -986,119 +368,41 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Japan 17 TG:@nodpai
-      - ssrfree.zhujicn2.net:10004
-      - 中国【付费推荐：https://v1.mk/vip】133
-      - RU_45.147.200.44_02032023838a-138trojan
-      - ssrfree.zhujicn2.net:10007
-      - 印度 001
-      - 荷兰 003
-      - ssrfree.zhujicn2.net:10003
-      - _US_美国 6 2
-      - -美国-xjp2.wangjiaxin.xyz
-      - 菲律宾 001
-      - 中国【付费推荐：https://v1.mk/vip】113
-      - "_JP_日本\r_3"
-      - ssrfree.zhujicn2.net:10006
-      - JP_138.2.45.89_02092023bee9-962trojan
-      - ssrfree.zhujicn2.net:10008
-      - 英国【付费推荐：https://v1.mk/vip】78
-      - 美国 033
-      - 美国 017
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】99"
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】97"
-      - South Korea 07 TG:@nodpai
-      - v2rayfree.eu.org - 法国OVH SAS 21
-      - Japan 08 TG:@nodpai
-      - 美国 015
-      - 中国【付费推荐：https://v1.mk/vip】121
-      - Japan 01 TG:@nodpai
-      - HK_125.59.27.66_02102023acf7-268trojan
-      - 中国【付费推荐：https://v1.mk/vip】111
-      - 美国 011
-      - Japan 02 TG@nodpai
-      - 美国 035
-      - 美国 016
-      - 中国【付费推荐：https://v1.mk/vip】106
-      - 澳大利亚 004
-      - ssrfree.zhujicn2.net:10005
-      - 日本 03|高速|流媒体
-      - "[HK_TROJAN_1.65.139.228443]"
-      - 中国【付费推荐：https://v1.mk/vip】134
-      - 美国 022
-      - 英国 002
-      - Relay 🇭🇰 Hong Kong 02 TG:@nodpai
-      - 中国【付费推荐：https://v1.mk/vip】129
-      - 中国【付费推荐：https://v1.mk/vip】145
-      - 美国 031
-      - Hong Kong 04 TG:@nodpai
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】152"
+      - _HK_香港_3
+      - 法国【付费推荐：https://v1.mk/vip】306
+      - "@SSRSUB-V28-付费推荐:suo.yt/ssrsub"
+      - "_JP_日本\r_2"
+      - _HK_香港_2 2
+      - 法国 001
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 41
+      - 香港【付费推荐：https://v1.mk/vip】286
+      - 香港【付费推荐：https//v1.mk/vip】308
       - _HK_香港_5
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】165"
-      - Relay 🇭🇰 Hong Kong 03 TG:@nodpai
-      - _HK_香港_4
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】162"
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 中国【付费推荐：https://v1.mk/vip】142
-      - "[02-12]-🇫🇷-法国-171-z0111.security-cloudfront-cdn.com"
-      - 印度尼西亚 001
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】98"
-      - _HK_香港_8
-      - 俄罗斯 002
-      - 美国 021
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】164"
-      - Philippines 03 TG@nodpai
-      - 新加坡 09|高速|流媒体|免流
-      - 荷兰 002
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】159"
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】190"
-      - 美国 029
-      - Hong Kong 37 TG@nodpai
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】163"
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】141"
-      - 美国 013
-      - 俄罗斯 001
-      - 中国【付费推荐：https://v1.mk/vip】144
-      - _HK_香港 6
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】151"
-      - _AU_澳大利亚
-      - 韩国_0211048
-      - 中国【付费推荐：https://v1.mk/vip】143
-      - Hong Kong 07 TG@nodpai
-      - Japan 21 TG:@nodpai
-      - 中国【付费推荐：https://v1.mk/vip】149
-      - 中国【付费推荐：https://v1.mk/vip】155
-      - 美国 009
-      - 中国【付费推荐：https://v1.mk/vip】154
-      - 美国 019
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】194"
-      - "|24.57Mb"
-      - 日本【付费推荐：https://v1.mk/vip】178
-      - 美国 022 2
-      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 8
-      - 美国 025
-      - "[VMess] 🇮🇩 印度尼西亚【付费推荐：https://v1.mk/vip】185"
-      - 韩国 003
-      - "[SSR] 🇨🇦 加拿大【付费推荐：https://v1.mk/vip】216"
-      - 俄罗斯 003
-      - US_youtube@资源分享师_96
-      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 16
-      - 加拿大【付费推荐：https://v1.mk/vip】195
-      - 新加坡 06|高速|流媒体|免流
-      - Taiwan 03 TG@nodpai
-      - 加拿大【付费推荐：https://v1.mk/vip】216
       - _FR_法国
-      - https//awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技_18
-      - "[SSR] 🇨🇳 中国【付费推荐：https://v1.mk/vip】217"
-      - 老胡凤凰城
-      - Turkey 01 TG:@nodpai
+      - _HK_香港_7
+      - _HK_香港 6
+      - 香港IPLC3
+      - github.com/freefq - 德国  12
       - _HK_香港_2
-      - 中国【付费推荐：https://v1.mk/vip】115
-      - 中国【付费推荐：https://v1.mk/vip】120
-      - 中国【付费推荐：https://v1.mk/vip】136
-      - 中国【付费推荐：https://v1.mk/vip】139
-      - France 03 TG:@nodpai
-      - "[Trojan] 🇨🇳 中国【付费推荐：https://v1.mk/vip】150"
+      - 日本【付费推荐：https://v1.mk/vip】489
+      - 香港【付费推荐：https://v1.mk/vip】310
+      - -加拿大-167.88.186.202
+      - 美国 018
+      - 美国 019
+      - _HK_香港_2 3
+      - 美国 024
+      - "|24.57Mb"
+      - 丹麦 001
+      - 美国【付费推荐：https://v1.mk/vip】496
+      - 老胡凤凰城
+      - 美国 030
+      - -美国华盛顿州西雅图-sea21.nb1.fr
+      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 47
+      - -澳大利亚-kr05.cctvvip.ml
+      - 澳大利亚 002
+      - _US_美国_1
+      - 新加坡 002
+      - 中国【付费推荐：https://v1.mk/vip】190
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
