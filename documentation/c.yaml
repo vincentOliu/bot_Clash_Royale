@@ -6,379 +6,127 @@ mode: Rule
 log-level: info
 external-controller: 9090
 proxies:
-  - {name: github.com/freefq - 英国社会保险安全部 7, server: uk1.trojanvh.xyz, port: 80, type: trojan, password: 211f5876-8c89-4d97-9004-ff16acddd506, skip-cert-verify: true, udp: true}
-  - {name: _FR_法国_1, server: 5.135.43.119, port: 58732, type: vmess, uuid: d159c5be-8291-45c4-bd21-51d024658a6d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: Asia 香港06 | 直连 | 1.0x | V1 - 酸奶VPN, server: 20.205.43.65, port: 80, type: vmess, uuid: 36db33a7-45d9-3ca2-81a3-21f30f487c8c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny}, udp: true}
-  - {name: 韩国 002, server: 210.87.202.181, port: 46625, type: vmess, uuid: 2e947e87-eee2-4ce0-a343-fe951f9476c8, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /kor4/getData, headers: {Host: kor4.linkeden.co}}, udp: true}
-  - {name: "| 3.22Mb", server: 202.79.172.53, port: 443, type: vmess, uuid: 30216206-14b7-40e7-995d-61c1219ba584, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/220128071100}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】48, server: uns.xiaohouzi.club, port: 13328, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: siga01.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚 001, server: 43.155.102.33, port: 50028, type: vmess, uuid: 4592247e-1528-4943-8bf3-cd9bb58b31c0, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hk6/getData, headers: {Host: hk6.linkeden.co}}, udp: true}
-  - {name: _ID_印度尼西亚, server: reog.xtls.my.id, port: 443, type: vmess, uuid: da9df159-e7ad-4042-ae68-57d6404867bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: reog.xtls.my.id}}, udp: true}
-  - {name: 白嫖-0429, server: kaizen-ru-2.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国  18, server: phxv001.jd0001.top, port: 4431, type: vmess, uuid: 6abfad5a-24be-3657-85da-ceac782b7e19, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /phxv001, headers: {Host: phxv001.jd0001.top}}, udp: true}
-  - {name: github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 29, server: tcas.padra-holding.com, port: 36005, type: vmess, uuid: 05c38399-5296-4bf2-a606-1cec3b71c942, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tcas.padra-holding.com}}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】153, server: hnm.xiaohouzi.club, port: 47555, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: "%24%24%24au02.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: 菲律宾 001, server: special-ph-a.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: Asia 香港04 | 直连 | 1.0x | V1 - 酸奶VPN, server: 20.187.82.133, port: 80, type: vmess, uuid: 36db33a7-45d9-3ca2-81a3-21f30f487c8c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny}, udp: true}
-  - {name: github.com/freefq - 法国北部－加来海峡大区鲁贝OVH数据中心 13, server: r5.safyno.tk, port: 32935, type: trojan, password: OwXaiuJi7H, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】57, server: sub.xiaohouzi.club, port: 16011, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: "%24%24azhk095.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: 新加坡【付费推荐：https://v1.mk/vip】10, server: xjp2.wangjiaxin.xyz, port: 25932, type: vmess, uuid: 33a47ce6-5ea9-4d21-d3db-ce38421d2558, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /23423, headers: {Host: xjp2.wangjiaxin.xyz}}, udp: true}
-  - {name: "_JP_日本\r_2", server: 138.2.45.89, port: 44301, type: trojan, password: 6abfad5a-24be-3657-85da-ceac782b7e19, sni: "%24%24osav101.jd0001.top", skip-cert-verify: true, udp: true}
-  - {name: 菲律宾 001 2, server: 116.93.97.74, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: "%24paydiu.com", skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip】47, server: us.hugesport.xyz, port: 34597, type: trojan, password: SqMw9NkaW7, sni: us.hugesport.xyz, skip-cert-verify: true, udp: true}
-  - {name: Asia 香港05 | 直连 | 1.0x | V1 - 酸奶VPN, server: 20.205.41.152, port: 80, type: vmess, uuid: 36db33a7-45d9-3ca2-81a3-21f30f487c8c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny}, udp: true}
-  - {name: FR_youtube@资源分享师_114, server: 5.135.43.119, port: 58732, type: vmess, uuid: d159c5be-8291-45c4-bd21-51d024658a6d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 5.135.43.119}}, udp: true}
-  - {name: 加拿大【付费推荐：https://v1.mk/vip】52, server: tcas.padra-holding.com, port: 36005, type: vmess, uuid: 05c38399-5296-4bf2-a606-1cec3b71c942, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tcas.padra-holding.com}}, udp: true}
-  - {name: _HK_香港_7, server: 47.243.183.124, port: 42093, type: vmess, uuid: 6bd6d540-ab4a-4ecf-98d6-1bd781a450c7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: v2rayfree.eu.org - 印度尼西亚  58, server: reog.xtls.my.id, port: 443, type: vmess, uuid: da9df159-e7ad-4042-ae68-57d6404867bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: reog.xtls.my.id}}, udp: true}
-  - {name: South Korea 05 TG:@nodpai, server: jk.jkk.mkitty.top, port: 443, type: trojan, password: 4d048fc6-d944-41dd-b327-10856adcc82d, sni: jk.jkk.mkitty.top, skip-cert-verify: true, udp: true}
-  - {name: Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN, server: 20.24.93.78, port: 80, type: vmess, uuid: 36db33a7-45d9-3ca2-81a3-21f30f487c8c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny}, udp: true}
-  - {name: 韩国【付费推荐：https://v1.mk/vip】56, server: surongwei.eu.org, port: 443, type: vmess, uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /reffs7y26g0ua, headers: {Host: surongwei.eu.org}}, udp: true}
-  - {name: 法国(TG频道@kxswa), server: 5.135.43.119, port: 58732, type: vmess, uuid: d159c5be-8291-45c4-bd21-51d024658a6d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: bmi.irT.me/s0013_Official}}, udp: true}
-  - {name: "US_youtube@资源分享师_159\r", server: us2.trojanvh.xyz, port: 80, type: trojan, password: aa6eb272-1d8d-4461-9687-85ddbab1adb0, sni: us2.trojanvh.xyz, skip-cert-verify: true, udp: true}
-  - {name: HK_103.135.103.132_0211202366d2-362trojan, server: 103.135.103.132, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, skip-cert-verify: true, udp: true}
-  - {name: 日本【付费推荐：https://v1.mk/vip】88, server: osav101.jd0001.top, port: 4430, type: vmess, uuid: 6abfad5a-24be-3657-85da-ceac782b7e19, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /osav101, headers: {Host: osav101.jd0001.top}}, udp: true}
-  - {name: github.com/freefq - 美国  5, server: us2.trojanvh.xyz, port: 80, type: trojan, password: 255c924c-1314-4084-9a9e-1d1a82a5cf49, skip-cert-verify: true, udp: true}
-  - {name: 美国 012, server: 135.148.149.209, port: 80, type: trojan, password: 255c924c-1314-4084-9a9e-1d1a82a5cf49, sni: us2.trojanvh.xyz, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国  51, server: suzhihan.eu.org, port: 443, type: vmess, uuid: 0b873cff-11ab-4716-c41a-04f886135091, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /roewesu, headers: {Host: suzhihan.eu.org}}, udp: true}
-  - {name: 美国 026, server: se-ls03.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: se-ls03.nb1.fr}}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】170, server: hn.xiaohouzi.club, port: 19023, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: siga03.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 香港【付费推荐：https://v1.mk/vip】286, server: 8.210.17.238, port: 28952, type: vmess, uuid: b8c3342b-8309-46d6-bf08-a3076651e180, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _HK_香港 6, server: 47.242.69.245, port: 23312, type: vmess, uuid: 94cca229-5e17-4f35-9b49-fe113e142c75, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: US_152.70.143.228_02132023ec08-343trojan, server: 152.70.143.228, port: 44302, type: trojan, password: 4d111af8-5078-37e0-a583-34155f60b32c, skip-cert-verify: true, udp: true}
-  - {name: 香港IPLC9, server: 120.226.39.25, port: 19228, type: trojan, password: 0aa156ed-a3e6-3571-ad3d-c8281b376d5b, skip-cert-verify: true, udp: true}
-  - {name: Turkey(ChatGPT) 02 TG:@nodpai, server: 141.11.127.23, port: 443, type: trojan, password: 7174de40-bf95-4781-b25f-a9123a80fe3c, sni: glc.windowsupdate1.com, skip-cert-verify: true, udp: true}
-  - {name: 英国【付费推荐：https://v1.mk/vip】294, server: 51.38.71.175, port: 80, type: trojan, password: 211f5876-8c89-4d97-9004-ff16acddd506, sni: "%24%24uk1.trojanvh.xyz", skip-cert-verify: true, udp: true}
-  - {name: "[02-14]-🇯🇵-日本-162-jp-am48-6.eqnode.net", server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: PT09PQ==, obfs-param: PT09PQ==, udp: true}
-  - {name: 香港【付费推荐：https://v1.mk/vip】308, server: 47.243.230.222, port: 35668, type: vmess, uuid: ab4df3ef-e77f-4f2a-bfb8-63604412f73b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: "Trojan优化｜台湾-5 [2.0][原生]", server: kaizen-tw-5.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: 美国 020, server: blog.voewl.com, port: 43815, type: vmess, uuid: 7a9f026f-f7a8-40ca-f2f9-3b380c287c0d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /abc, headers: {Host: blog.voewl.com}}, udp: true}
-  - {name: HK_103.135.103.229_02102023acf7-153trojan, server: 103.135.103.229, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, skip-cert-verify: true, udp: true}
-  - {name: Germany 01 TG:@nodpai, server: v2.de1.hgwc.xyz, port: 101, type: vmess, uuid: 22d0611c-9269-4983-a0be-86912460494c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v2.de1.hgwc.xyz}}, udp: true}
-  - {name: Asia 香港01 | 直连 | 1.0 x | V1 - 酸奶VPN, server: 20.205.10.171, port: 80, type: vmess, uuid: 36db33a7-45d9-3ca2-81a3-21f30f487c8c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny}, udp: true}
-  - {name: 美国 016, server: dd3.1808.cf, port: 443, type: vmess, uuid: 05e7d010-52b9-42aa-8a06-daf3e737f279, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nguevws, headers: {Host: dd3.1808.cf}}, udp: true}
-  - {name: 越南 001, server: 103.81.85.238, port: 443, type: trojan, password: 7174de40-bf95-4781-b25f-a9123a80fe3c, sni: glc.hruqoaw.cn, skip-cert-verify: true, udp: true}
-  - {name: 白嫖-0304, server: 20.222.228.18, port: 443, type: trojan, password: b511d2f9-7385-456d-a820-a91587ba7955, sni: vzwzasc.cn, skip-cert-verify: true, udp: true}
-  - {name: https://awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技_7, server: z0111.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: _HK_香港_3, server: 47.243.187.171, port: 60808, type: vmess, uuid: 99c3c1c3-c27c-49a0-9c2c-7c77c3d92bf6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 新加坡 001, server: zf.622888.xyz, port: 203, type: vmess, uuid: 22d0611c-9269-4983-a0be-86912460494c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: zf.622888.xyz}}, udp: true}
-  - {name: FR_37.59.175.106_020720235eb7-19trojan, server: 37.59.175.106, port: 32935, type: trojan, password: OwXaiuJi7H, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚 001 2, server: kr05.cctvvip.ml, port: 48413, type: vmess, uuid: 106748d4-7669-49dd-dd1a-25d73471a051, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /1234, headers: {Host: kr05.cctvvip.ml}}, udp: true}
-  - {name: jp-am48-6.eqnode.net8081, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: _FR_法国_群：https://t.me/suyucom, server: 15.188.249.67, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 中国_02121066, server: 117.164.185.221, port: 16105, type: vmess, uuid: b8cce40a-6eba-3bcd-a255-005930040937, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 026 2, server: op.en.usdeth.top, port: 443, type: trojan, password: 4d048fc6-d944-41dd-b327-10856adcc82d, sni: op.en.usdeth.top, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 荷兰  19, server: kr01.cctvvip.ml, port: 80, type: vmess, uuid: 1bf8cebf-7911-4c25-b0a4-b642a5bdd4d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: kr01.cctvvip.ml}}, udp: true}
-  - {name: https://awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技_6, server: z0114.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: JP_138.2.45.89_021020237856-49trojan, server: 138.2.45.89, port: 44301, type: trojan, password: 6d64570c-81d4-30fa-b2e2-dce73e1a2702, skip-cert-verify: true, udp: true}
-  - {name: 香港【付费推荐：https://v1.mk/vip】310, server: 47.242.26.30, port: 28045, type: vmess, uuid: bb73d6fe-9700-4607-8dc1-eb9f15253e9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _HK_香港_2, server: 47.243.29.234, port: 27537, type: vmess, uuid: 98b193f3-8056-4f48-bc4a-f1e893486548, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 法国【付费推荐：https://v1.mk/vip】306, server: 5.135.43.119, port: 58732, type: vmess, uuid: d159c5be-8291-45c4-bd21-51d024658a6d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: YTB-awkj}}, udp: true}
-  - {name: United States 02 TG:@nodpai, server: 129.146.8.200, port: 34597, type: trojan, password: SqMw9NkaW7, skip-cert-verify: true, udp: true}
-  - {name: _SG_新加坡, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: _IN_印度_来源：kkzui.com（快嘴科技）_来源：kkzui.com（快嘴科技）0_40_40_40_40, server: z0114.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: Asia 香港08 | 1.0x | V1 - 酸奶VPN, server: 20.187.72.209, port: 80, type: vmess, uuid: 36db33a7-45d9-3ca2-81a3-21f30f487c8c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny}, udp: true}
-  - {name: github.com/freefq - 美国  47, server: phxv001.jd0001.top, port: 44302, type: trojan, password: 4d111af8-5078-37e0-a583-34155f60b32c, skip-cert-verify: true, udp: true}
-  - {name: FR_15.237.40.204_02132023bc88-804ssr, server: z0111.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: ===%%�, obfs-param: ===%%�, udp: true}
-  - {name: 香港【付费推荐：https://v1.mk/vip】288, server: 8.210.131.2, port: 31357, type: vmess, uuid: 618c0914-e31e-4b82-8289-2e7a47e48dfd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 印度尼西亚【付费推荐：https://v1.mk/vip】83, server: reog.xtls.my.id, port: 443, type: vmess, uuid: da9df159-e7ad-4042-ae68-57d6404867bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: reog.xtls.my.id}}, udp: true}
-  - {name: 美国 005, server: 20.78.72.90, port: 443, type: trojan, password: b511d2f9-7385-456d-a820-a91587ba7955, sni: vzwzasc.cn, skip-cert-verify: true, udp: true}
-  - {name: United States 08 TG:@nodpai, server: v2.linux.im, port: 443, type: vmess, uuid: 599a2a1f-dc4f-3378-b4dc-3923e599257b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chinanet, headers: {Host: v2.linux.im}}, udp: true}
-  - {name: Russia 01 TG:@nodpai, server: kaizen-ru-1.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: "[02-14]-🇺🇸-美国-182-z0111.security-cloudfront-cdn.com", server: z0111.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: ====, obfs-param: ====, udp: true}
   - {name: _SE_瑞典, server: z0117.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: github.com/freefq - 美国  10, server: osav101.jd0001.top, port: 44301, type: trojan, password: 6abfad5a-24be-3657-85da-ceac782b7e19, skip-cert-verify: true, udp: true}
-  - {name: CA-3.99.161.142-0247, server: z0115.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: ===%%�, obfs-param: ===%%�, udp: true}
-  - {name: United States(ChatGPT) 07 TG:@nodpai, server: kaizen-us-03.mielink-dns2.com, port: 443, type: trojan, password: 265f092f-418b-30c9-a479-4800fd44dd19mielink, sni: paydiu.com, skip-cert-verify: true, udp: true}
-  - {name: 加拿大 001, server: 132.145.99.228, port: 13724, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path, headers: {Host: 132.145.99.228}}, udp: true}
-  - {name: Ireland 01 TG:@nodpai, server: 54.155.224.56, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
-  - {name: Taiwan(ChatGPT) 04 TG:@nodpai 3, server: gkifo-8-tr-0.tw-tpe-hinet-0-0.o-two.xyz, port: 889, type: trojan, password: pBjnlrFmwNatVULHGMkDWlDOpbfeHSWi, sni: o-two.bond, skip-cert-verify: true, udp: true}
-  - {name: UC 台湾02 | tiktok | Youtube免广告 | 3.0x | V1 - 酸奶VPN, server: 165.154.253.155, port: 80, type: vmess, uuid: 36db33a7-45d9-3ca2-81a3-21f30f487c8c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny}, udp: true}
-  - {name: github.com/freefq - 加拿大多伦多Oracle云计算数据中心 25, server: 132.145.99.228, port: 13724, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path}, udp: true}
+  - {name: 中国_02162178, server: shcu01.xc188.net, port: 10005, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 5 → tg@nicevpn123, server: z3002.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
+  - {name: 中国_0216059, server: shcu01.xc188.net, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _HK_香港_7, server: 47.243.183.124, port: 42093, type: vmess, uuid: 6bd6d540-ab4a-4ecf-98d6-1bd781a450c7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: "[02-16]-🇦🇺-澳大利亚-065-z0113.security-cloudfront-cdn.com", server: z0113.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: ====, obfs-param: ====, udp: true}
+  - {name: _HK_香港_3, server: 47.243.187.171, port: 60808, type: vmess, uuid: 99c3c1c3-c27c-49a0-9c2c-7c77c3d92bf6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 23, server: 192.99.8.99, port: 36005, type: vmess, uuid: 05c38399-5296-4bf2-a606-1cec3b71c942, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: United States(ChatGPT) 01 TG:@nodpai, server: 23.94.240.81, port: 45524, type: vmess, uuid: d74aa1c6-f2bb-484a-866c-613fb853ea22, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: _JP_日本, server: osav101.jd0001.top, port: 4430, type: vmess, uuid: 6abfad5a-24be-3657-85da-ceac782b7e19, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /osav101, headers: {Host: osav101.jd0001.top}}, udp: true}
+  - {name: github.com/freefq - 欧盟  67, server: 45.89.230.196, port: 80, type: vmess, uuid: 8f9f526b-cab6-41d2-9424-cbdde94ea14f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: Germany 04 TG:@nodpai, server: 45.95.241.251, port: 443, type: vmess, uuid: d1ace408-1102-4919-9ee8-88f85c8a91e3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: gemws.mainssh.xyz}}, udp: true}
+  - {name: 俄罗斯联邦_0216003, server: 45.89.230.196, port: 80, type: vmess, uuid: 8f9f526b-cab6-41d2-9424-cbdde94ea14f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 中国_0216163, server: shcu01.xc188.net, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: FR_youtube@资源分享师_114, server: 5.135.43.119, port: 58732, type: vmess, uuid: d159c5be-8291-45c4-bd21-51d024658a6d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 5.135.43.119}}, udp: true}
+  - {name: _CA_加拿大_1, server: 192.99.8.99, port: 36005, type: vmess, uuid: 05c38399-5296-4bf2-a606-1cec3b71c942, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: github.com/freefq - 欧盟  4, server: 45.89.230.196, port: 80, type: vmess, uuid: 8f9f526b-cab6-41d2-9424-cbdde94ea14f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 香港【付费推荐：https://v1.mk/vip】288, server: 8.210.131.2, port: 31357, type: vmess, uuid: 618c0914-e31e-4b82-8289-2e7a47e48dfd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: Japan 06 TG:@nodpai, server: jp08.wxfz.ga, port: 37206, type: vmess, uuid: 2f3fd078-99b5-46b6-8cd5-d48ff2717191, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp08.wxfz.ga}}, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】358, server: phxv001.jd0001.top, port: 4431, type: vmess, uuid: 6abfad5a-24be-3657-85da-ceac782b7e19, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /phxv001, headers: {Host: phxv001.jd0001.top}}, udp: true}
+  - {name: 美国_02163173, server: 158.101.7.73, port: 11176, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path}, udp: true}
+  - {name: 美国_0216040, server: sea21.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: sea21.nb1.fr}}, udp: true}
+  - {name: 印度_0216020, server: 152.67.161.155, port: 17355, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path}, udp: true}
+  - {name: "|74.53Mb", server: hk3.sanfen001.pics, port: 443, type: vmess, uuid: 2d506805-626a-4669-8c8b-23f383e371ca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
+  - {name: 沙特阿拉伯_0216001, server: 158.101.229.162, port: 15227, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】259, server: hn.xiaohouzi.club, port: 51056, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: "%24%24%24hn.xiaohouzi.club", skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - github.com/freefq - 英国社会保险安全部 7
-      - _FR_法国_1
-      - Asia 香港06 | 直连 | 1.0x | V1 - 酸奶VPN
-      - 韩国 002
-      - "| 3.22Mb"
-      - 中国【付费推荐：https://v1.mk/vip】48
-      - 澳大利亚 001
-      - _ID_印度尼西亚
-      - 白嫖-0429
-      - github.com/freefq - 美国  18
-      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 29
-      - 中国【付费推荐：https://v1.mk/vip】153
-      - 菲律宾 001
-      - Asia 香港04 | 直连 | 1.0x | V1 - 酸奶VPN
-      - github.com/freefq - 法国北部－加来海峡大区鲁贝OVH数据中心 13
-      - 中国【付费推荐：https://v1.mk/vip】57
-      - 新加坡【付费推荐：https://v1.mk/vip】10
-      - "_JP_日本\r_2"
-      - 菲律宾 001 2
-      - 美国【付费推荐：https://v1.mk/vip】47
-      - Asia 香港05 | 直连 | 1.0x | V1 - 酸奶VPN
-      - FR_youtube@资源分享师_114
-      - 加拿大【付费推荐：https://v1.mk/vip】52
-      - _HK_香港_7
-      - v2rayfree.eu.org - 印度尼西亚  58
-      - South Korea 05 TG:@nodpai
-      - Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN
-      - 韩国【付费推荐：https://v1.mk/vip】56
-      - 法国(TG频道@kxswa)
-      - "US_youtube@资源分享师_159\r"
-      - HK_103.135.103.132_0211202366d2-362trojan
-      - 日本【付费推荐：https://v1.mk/vip】88
-      - github.com/freefq - 美国  5
-      - 美国 012
-      - github.com/freefq - 美国  51
-      - 美国 026
-      - 中国【付费推荐：https://v1.mk/vip】170
-      - 香港【付费推荐：https://v1.mk/vip】286
-      - _HK_香港 6
-      - US_152.70.143.228_02132023ec08-343trojan
-      - 香港IPLC9
-      - Turkey(ChatGPT) 02 TG:@nodpai
-      - 英国【付费推荐：https://v1.mk/vip】294
-      - "[02-14]-🇯🇵-日本-162-jp-am48-6.eqnode.net"
-      - 香港【付费推荐：https://v1.mk/vip】308
-      - Trojan优化｜台湾-5 [2.0][原生]
-      - 美国 020
-      - HK_103.135.103.229_02102023acf7-153trojan
-      - Germany 01 TG:@nodpai
-      - Asia 香港01 | 直连 | 1.0 x | V1 - 酸奶VPN
-      - 美国 016
-      - 越南 001
-      - 白嫖-0304
-      - https://awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技_7
-      - _HK_香港_3
-      - 新加坡 001
-      - FR_37.59.175.106_020720235eb7-19trojan
-      - 澳大利亚 001 2
-      - jp-am48-6.eqnode.net8081
-      - _FR_法国_群：https://t.me/suyucom
-      - 中国_02121066
-      - 美国 026 2
-      - github.com/freefq - 荷兰  19
-      - https://awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技_6
-      - JP_138.2.45.89_021020237856-49trojan
-      - 香港【付费推荐：https://v1.mk/vip】310
-      - _HK_香港_2
-      - 法国【付费推荐：https://v1.mk/vip】306
-      - United States 02 TG:@nodpai
-      - _SG_新加坡
-      - _IN_印度_来源：kkzui.com（快嘴科技）_来源：kkzui.com（快嘴科技）0_40_40_40_40
-      - Asia 香港08 | 1.0x | V1 - 酸奶VPN
-      - github.com/freefq - 美国  47
-      - FR_15.237.40.204_02132023bc88-804ssr
-      - 香港【付费推荐：https://v1.mk/vip】288
-      - 印度尼西亚【付费推荐：https://v1.mk/vip】83
-      - 美国 005
-      - United States 08 TG:@nodpai
-      - Russia 01 TG:@nodpai
-      - "[02-14]-🇺🇸-美国-182-z0111.security-cloudfront-cdn.com"
       - _SE_瑞典
-      - github.com/freefq - 美国  10
-      - CA-3.99.161.142-0247
-      - United States(ChatGPT) 07 TG:@nodpai
-      - 加拿大 001
-      - Ireland 01 TG:@nodpai
-      - Taiwan(ChatGPT) 04 TG:@nodpai 3
-      - UC 台湾02 | tiktok | Youtube免广告 | 3.0x | V1 - 酸奶VPN
-      - github.com/freefq - 加拿大多伦多Oracle云计算数据中心 25
+      - 中国_02162178
+      - CN 5 → tg@nicevpn123
+      - 中国_0216059
+      - _HK_香港_7
+      - "[02-16]-🇦🇺-澳大利亚-065-z0113.security-cloudfront-cdn.com"
+      - _HK_香港_3
+      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 23
+      - United States(ChatGPT) 01 TG:@nodpai
+      - _JP_日本
+      - github.com/freefq - 欧盟  67
+      - Germany 04 TG:@nodpai
+      - 俄罗斯联邦_0216003
+      - 中国_0216163
+      - FR_youtube@资源分享师_114
+      - _CA_加拿大_1
+      - github.com/freefq - 欧盟  4
+      - 香港【付费推荐：https://v1.mk/vip】288
+      - Japan 06 TG:@nodpai
+      - 美国【付费推荐：https://v1.mk/vip】358
+      - 美国_02163173
+      - 美国_0216040
+      - 印度_0216020
+      - "|74.53Mb"
+      - 沙特阿拉伯_0216001
+      - 中国【付费推荐：https://v1.mk/vip】259
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - github.com/freefq - 英国社会保险安全部 7
-      - _FR_法国_1
-      - Asia 香港06 | 直连 | 1.0x | V1 - 酸奶VPN
-      - 韩国 002
-      - "| 3.22Mb"
-      - 中国【付费推荐：https://v1.mk/vip】48
-      - 澳大利亚 001
-      - _ID_印度尼西亚
-      - 白嫖-0429
-      - github.com/freefq - 美国  18
-      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 29
-      - 中国【付费推荐：https://v1.mk/vip】153
-      - 菲律宾 001
-      - Asia 香港04 | 直连 | 1.0x | V1 - 酸奶VPN
-      - github.com/freefq - 法国北部－加来海峡大区鲁贝OVH数据中心 13
-      - 中国【付费推荐：https://v1.mk/vip】57
-      - 新加坡【付费推荐：https://v1.mk/vip】10
-      - "_JP_日本\r_2"
-      - 菲律宾 001 2
-      - 美国【付费推荐：https://v1.mk/vip】47
-      - Asia 香港05 | 直连 | 1.0x | V1 - 酸奶VPN
-      - FR_youtube@资源分享师_114
-      - 加拿大【付费推荐：https://v1.mk/vip】52
-      - _HK_香港_7
-      - v2rayfree.eu.org - 印度尼西亚  58
-      - South Korea 05 TG:@nodpai
-      - Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN
-      - 韩国【付费推荐：https://v1.mk/vip】56
-      - 法国(TG频道@kxswa)
-      - "US_youtube@资源分享师_159\r"
-      - HK_103.135.103.132_0211202366d2-362trojan
-      - 日本【付费推荐：https://v1.mk/vip】88
-      - github.com/freefq - 美国  5
-      - 美国 012
-      - github.com/freefq - 美国  51
-      - 美国 026
-      - 中国【付费推荐：https://v1.mk/vip】170
-      - 香港【付费推荐：https://v1.mk/vip】286
-      - _HK_香港 6
-      - US_152.70.143.228_02132023ec08-343trojan
-      - 香港IPLC9
-      - Turkey(ChatGPT) 02 TG:@nodpai
-      - 英国【付费推荐：https://v1.mk/vip】294
-      - "[02-14]-🇯🇵-日本-162-jp-am48-6.eqnode.net"
-      - 香港【付费推荐：https://v1.mk/vip】308
-      - Trojan优化｜台湾-5 [2.0][原生]
-      - 美国 020
-      - HK_103.135.103.229_02102023acf7-153trojan
-      - Germany 01 TG:@nodpai
-      - Asia 香港01 | 直连 | 1.0 x | V1 - 酸奶VPN
-      - 美国 016
-      - 越南 001
-      - 白嫖-0304
-      - https://awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技_7
-      - _HK_香港_3
-      - 新加坡 001
-      - FR_37.59.175.106_020720235eb7-19trojan
-      - 澳大利亚 001 2
-      - jp-am48-6.eqnode.net8081
-      - _FR_法国_群：https://t.me/suyucom
-      - 中国_02121066
-      - 美国 026 2
-      - github.com/freefq - 荷兰  19
-      - https://awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技_6
-      - JP_138.2.45.89_021020237856-49trojan
-      - 香港【付费推荐：https://v1.mk/vip】310
-      - _HK_香港_2
-      - 法国【付费推荐：https://v1.mk/vip】306
-      - United States 02 TG:@nodpai
-      - _SG_新加坡
-      - _IN_印度_来源：kkzui.com（快嘴科技）_来源：kkzui.com（快嘴科技）0_40_40_40_40
-      - Asia 香港08 | 1.0x | V1 - 酸奶VPN
-      - github.com/freefq - 美国  47
-      - FR_15.237.40.204_02132023bc88-804ssr
-      - 香港【付费推荐：https://v1.mk/vip】288
-      - 印度尼西亚【付费推荐：https://v1.mk/vip】83
-      - 美国 005
-      - United States 08 TG:@nodpai
-      - Russia 01 TG:@nodpai
-      - "[02-14]-🇺🇸-美国-182-z0111.security-cloudfront-cdn.com"
       - _SE_瑞典
-      - github.com/freefq - 美国  10
-      - CA-3.99.161.142-0247
-      - United States(ChatGPT) 07 TG:@nodpai
-      - 加拿大 001
-      - Ireland 01 TG:@nodpai
-      - Taiwan(ChatGPT) 04 TG:@nodpai 3
-      - UC 台湾02 | tiktok | Youtube免广告 | 3.0x | V1 - 酸奶VPN
-      - github.com/freefq - 加拿大多伦多Oracle云计算数据中心 25
+      - 中国_02162178
+      - CN 5 → tg@nicevpn123
+      - 中国_0216059
+      - _HK_香港_7
+      - "[02-16]-🇦🇺-澳大利亚-065-z0113.security-cloudfront-cdn.com"
+      - _HK_香港_3
+      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 23
+      - United States(ChatGPT) 01 TG:@nodpai
+      - _JP_日本
+      - github.com/freefq - 欧盟  67
+      - Germany 04 TG:@nodpai
+      - 俄罗斯联邦_0216003
+      - 中国_0216163
+      - FR_youtube@资源分享师_114
+      - _CA_加拿大_1
+      - github.com/freefq - 欧盟  4
+      - 香港【付费推荐：https://v1.mk/vip】288
+      - Japan 06 TG:@nodpai
+      - 美国【付费推荐：https://v1.mk/vip】358
+      - 美国_02163173
+      - 美国_0216040
+      - 印度_0216020
+      - "|74.53Mb"
+      - 沙特阿拉伯_0216001
+      - 中国【付费推荐：https://v1.mk/vip】259
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - github.com/freefq - 英国社会保险安全部 7
-      - _FR_法国_1
-      - Asia 香港06 | 直连 | 1.0x | V1 - 酸奶VPN
-      - 韩国 002
-      - "| 3.22Mb"
-      - 中国【付费推荐：https://v1.mk/vip】48
-      - 澳大利亚 001
-      - _ID_印度尼西亚
-      - 白嫖-0429
-      - github.com/freefq - 美国  18
-      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 29
-      - 中国【付费推荐：https://v1.mk/vip】153
-      - 菲律宾 001
-      - Asia 香港04 | 直连 | 1.0x | V1 - 酸奶VPN
-      - github.com/freefq - 法国北部－加来海峡大区鲁贝OVH数据中心 13
-      - 中国【付费推荐：https://v1.mk/vip】57
-      - 新加坡【付费推荐：https://v1.mk/vip】10
-      - "_JP_日本\r_2"
-      - 菲律宾 001 2
-      - 美国【付费推荐：https://v1.mk/vip】47
-      - Asia 香港05 | 直连 | 1.0x | V1 - 酸奶VPN
-      - FR_youtube@资源分享师_114
-      - 加拿大【付费推荐：https://v1.mk/vip】52
-      - _HK_香港_7
-      - v2rayfree.eu.org - 印度尼西亚  58
-      - South Korea 05 TG:@nodpai
-      - Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN
-      - 韩国【付费推荐：https://v1.mk/vip】56
-      - 法国(TG频道@kxswa)
-      - "US_youtube@资源分享师_159\r"
-      - HK_103.135.103.132_0211202366d2-362trojan
-      - 日本【付费推荐：https://v1.mk/vip】88
-      - github.com/freefq - 美国  5
-      - 美国 012
-      - github.com/freefq - 美国  51
-      - 美国 026
-      - 中国【付费推荐：https://v1.mk/vip】170
-      - 香港【付费推荐：https://v1.mk/vip】286
-      - _HK_香港 6
-      - US_152.70.143.228_02132023ec08-343trojan
-      - 香港IPLC9
-      - Turkey(ChatGPT) 02 TG:@nodpai
-      - 英国【付费推荐：https://v1.mk/vip】294
-      - "[02-14]-🇯🇵-日本-162-jp-am48-6.eqnode.net"
-      - 香港【付费推荐：https://v1.mk/vip】308
-      - Trojan优化｜台湾-5 [2.0][原生]
-      - 美国 020
-      - HK_103.135.103.229_02102023acf7-153trojan
-      - Germany 01 TG:@nodpai
-      - Asia 香港01 | 直连 | 1.0 x | V1 - 酸奶VPN
-      - 美国 016
-      - 越南 001
-      - 白嫖-0304
-      - https://awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技_7
-      - _HK_香港_3
-      - 新加坡 001
-      - FR_37.59.175.106_020720235eb7-19trojan
-      - 澳大利亚 001 2
-      - jp-am48-6.eqnode.net8081
-      - _FR_法国_群：https://t.me/suyucom
-      - 中国_02121066
-      - 美国 026 2
-      - github.com/freefq - 荷兰  19
-      - https://awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技_6
-      - JP_138.2.45.89_021020237856-49trojan
-      - 香港【付费推荐：https://v1.mk/vip】310
-      - _HK_香港_2
-      - 法国【付费推荐：https://v1.mk/vip】306
-      - United States 02 TG:@nodpai
-      - _SG_新加坡
-      - _IN_印度_来源：kkzui.com（快嘴科技）_来源：kkzui.com（快嘴科技）0_40_40_40_40
-      - Asia 香港08 | 1.0x | V1 - 酸奶VPN
-      - github.com/freefq - 美国  47
-      - FR_15.237.40.204_02132023bc88-804ssr
-      - 香港【付费推荐：https://v1.mk/vip】288
-      - 印度尼西亚【付费推荐：https://v1.mk/vip】83
-      - 美国 005
-      - United States 08 TG:@nodpai
-      - Russia 01 TG:@nodpai
-      - "[02-14]-🇺🇸-美国-182-z0111.security-cloudfront-cdn.com"
       - _SE_瑞典
-      - github.com/freefq - 美国  10
-      - CA-3.99.161.142-0247
-      - United States(ChatGPT) 07 TG:@nodpai
-      - 加拿大 001
-      - Ireland 01 TG:@nodpai
-      - Taiwan(ChatGPT) 04 TG:@nodpai 3
-      - UC 台湾02 | tiktok | Youtube免广告 | 3.0x | V1 - 酸奶VPN
-      - github.com/freefq - 加拿大多伦多Oracle云计算数据中心 25
+      - 中国_02162178
+      - CN 5 → tg@nicevpn123
+      - 中国_0216059
+      - _HK_香港_7
+      - "[02-16]-🇦🇺-澳大利亚-065-z0113.security-cloudfront-cdn.com"
+      - _HK_香港_3
+      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 23
+      - United States(ChatGPT) 01 TG:@nodpai
+      - _JP_日本
+      - github.com/freefq - 欧盟  67
+      - Germany 04 TG:@nodpai
+      - 俄罗斯联邦_0216003
+      - 中国_0216163
+      - FR_youtube@资源分享师_114
+      - _CA_加拿大_1
+      - github.com/freefq - 欧盟  4
+      - 香港【付费推荐：https://v1.mk/vip】288
+      - Japan 06 TG:@nodpai
+      - 美国【付费推荐：https://v1.mk/vip】358
+      - 美国_02163173
+      - 美国_0216040
+      - 印度_0216020
+      - "|74.53Mb"
+      - 沙特阿拉伯_0216001
+      - 中国【付费推荐：https://v1.mk/vip】259
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -397,400 +145,134 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - github.com/freefq - 英国社会保险安全部 7
-      - _FR_法国_1
-      - Asia 香港06 | 直连 | 1.0x | V1 - 酸奶VPN
-      - 韩国 002
-      - "| 3.22Mb"
-      - 中国【付费推荐：https://v1.mk/vip】48
-      - 澳大利亚 001
-      - _ID_印度尼西亚
-      - 白嫖-0429
-      - github.com/freefq - 美国  18
-      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 29
-      - 中国【付费推荐：https://v1.mk/vip】153
-      - 菲律宾 001
-      - Asia 香港04 | 直连 | 1.0x | V1 - 酸奶VPN
-      - github.com/freefq - 法国北部－加来海峡大区鲁贝OVH数据中心 13
-      - 中国【付费推荐：https://v1.mk/vip】57
-      - 新加坡【付费推荐：https://v1.mk/vip】10
-      - "_JP_日本\r_2"
-      - 菲律宾 001 2
-      - 美国【付费推荐：https://v1.mk/vip】47
-      - Asia 香港05 | 直连 | 1.0x | V1 - 酸奶VPN
-      - FR_youtube@资源分享师_114
-      - 加拿大【付费推荐：https://v1.mk/vip】52
-      - _HK_香港_7
-      - v2rayfree.eu.org - 印度尼西亚  58
-      - South Korea 05 TG:@nodpai
-      - Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN
-      - 韩国【付费推荐：https://v1.mk/vip】56
-      - 法国(TG频道@kxswa)
-      - "US_youtube@资源分享师_159\r"
-      - HK_103.135.103.132_0211202366d2-362trojan
-      - 日本【付费推荐：https://v1.mk/vip】88
-      - github.com/freefq - 美国  5
-      - 美国 012
-      - github.com/freefq - 美国  51
-      - 美国 026
-      - 中国【付费推荐：https://v1.mk/vip】170
-      - 香港【付费推荐：https://v1.mk/vip】286
-      - _HK_香港 6
-      - US_152.70.143.228_02132023ec08-343trojan
-      - 香港IPLC9
-      - Turkey(ChatGPT) 02 TG:@nodpai
-      - 英国【付费推荐：https://v1.mk/vip】294
-      - "[02-14]-🇯🇵-日本-162-jp-am48-6.eqnode.net"
-      - 香港【付费推荐：https://v1.mk/vip】308
-      - Trojan优化｜台湾-5 [2.0][原生]
-      - 美国 020
-      - HK_103.135.103.229_02102023acf7-153trojan
-      - Germany 01 TG:@nodpai
-      - Asia 香港01 | 直连 | 1.0 x | V1 - 酸奶VPN
-      - 美国 016
-      - 越南 001
-      - 白嫖-0304
-      - https://awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技_7
-      - _HK_香港_3
-      - 新加坡 001
-      - FR_37.59.175.106_020720235eb7-19trojan
-      - 澳大利亚 001 2
-      - jp-am48-6.eqnode.net8081
-      - _FR_法国_群：https://t.me/suyucom
-      - 中国_02121066
-      - 美国 026 2
-      - github.com/freefq - 荷兰  19
-      - https://awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技_6
-      - JP_138.2.45.89_021020237856-49trojan
-      - 香港【付费推荐：https://v1.mk/vip】310
-      - _HK_香港_2
-      - 法国【付费推荐：https://v1.mk/vip】306
-      - United States 02 TG:@nodpai
-      - _SG_新加坡
-      - _IN_印度_来源：kkzui.com（快嘴科技）_来源：kkzui.com（快嘴科技）0_40_40_40_40
-      - Asia 香港08 | 1.0x | V1 - 酸奶VPN
-      - github.com/freefq - 美国  47
-      - FR_15.237.40.204_02132023bc88-804ssr
-      - 香港【付费推荐：https://v1.mk/vip】288
-      - 印度尼西亚【付费推荐：https://v1.mk/vip】83
-      - 美国 005
-      - United States 08 TG:@nodpai
-      - Russia 01 TG:@nodpai
-      - "[02-14]-🇺🇸-美国-182-z0111.security-cloudfront-cdn.com"
       - _SE_瑞典
-      - github.com/freefq - 美国  10
-      - CA-3.99.161.142-0247
-      - United States(ChatGPT) 07 TG:@nodpai
-      - 加拿大 001
-      - Ireland 01 TG:@nodpai
-      - Taiwan(ChatGPT) 04 TG:@nodpai 3
-      - UC 台湾02 | tiktok | Youtube免广告 | 3.0x | V1 - 酸奶VPN
-      - github.com/freefq - 加拿大多伦多Oracle云计算数据中心 25
+      - 中国_02162178
+      - CN 5 → tg@nicevpn123
+      - 中国_0216059
+      - _HK_香港_7
+      - "[02-16]-🇦🇺-澳大利亚-065-z0113.security-cloudfront-cdn.com"
+      - _HK_香港_3
+      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 23
+      - United States(ChatGPT) 01 TG:@nodpai
+      - _JP_日本
+      - github.com/freefq - 欧盟  67
+      - Germany 04 TG:@nodpai
+      - 俄罗斯联邦_0216003
+      - 中国_0216163
+      - FR_youtube@资源分享师_114
+      - _CA_加拿大_1
+      - github.com/freefq - 欧盟  4
+      - 香港【付费推荐：https://v1.mk/vip】288
+      - Japan 06 TG:@nodpai
+      - 美国【付费推荐：https://v1.mk/vip】358
+      - 美国_02163173
+      - 美国_0216040
+      - 印度_0216020
+      - "|74.53Mb"
+      - 沙特阿拉伯_0216001
+      - 中国【付费推荐：https://v1.mk/vip】259
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - Asia 香港06 | 直连 | 1.0x | V1 - 酸奶VPN
-      - Asia 香港04 | 直连 | 1.0x | V1 - 酸奶VPN
-      - Asia 香港05 | 直连 | 1.0x | V1 - 酸奶VPN
       - _HK_香港_7
-      - Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN
-      - 香港【付费推荐：https://v1.mk/vip】286
-      - _HK_香港 6
-      - 香港IPLC9
-      - 香港【付费推荐：https://v1.mk/vip】308
-      - Trojan优化｜台湾-5 [2.0][原生]
-      - Asia 香港01 | 直连 | 1.0 x | V1 - 酸奶VPN
       - _HK_香港_3
-      - 香港【付费推荐：https://v1.mk/vip】310
-      - _HK_香港_2
-      - Asia 香港08 | 1.0x | V1 - 酸奶VPN
       - 香港【付费推荐：https://v1.mk/vip】288
-      - UC 台湾02 | tiktok | Youtube免广告 | 3.0x | V1 - 酸奶VPN
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - github.com/freefq - 英国社会保险安全部 7
-      - _FR_法国_1
-      - Asia 香港06 | 直连 | 1.0x | V1 - 酸奶VPN
-      - 韩国 002
-      - "| 3.22Mb"
-      - 中国【付费推荐：https://v1.mk/vip】48
-      - 澳大利亚 001
-      - _ID_印度尼西亚
-      - 白嫖-0429
-      - github.com/freefq - 美国  18
-      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 29
-      - 中国【付费推荐：https://v1.mk/vip】153
-      - 菲律宾 001
-      - Asia 香港04 | 直连 | 1.0x | V1 - 酸奶VPN
-      - github.com/freefq - 法国北部－加来海峡大区鲁贝OVH数据中心 13
-      - 中国【付费推荐：https://v1.mk/vip】57
-      - 新加坡【付费推荐：https://v1.mk/vip】10
-      - "_JP_日本\r_2"
-      - 菲律宾 001 2
-      - 美国【付费推荐：https://v1.mk/vip】47
-      - Asia 香港05 | 直连 | 1.0x | V1 - 酸奶VPN
-      - FR_youtube@资源分享师_114
-      - 加拿大【付费推荐：https://v1.mk/vip】52
-      - _HK_香港_7
-      - v2rayfree.eu.org - 印度尼西亚  58
-      - South Korea 05 TG:@nodpai
-      - Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN
-      - 韩国【付费推荐：https://v1.mk/vip】56
-      - 法国(TG频道@kxswa)
-      - "US_youtube@资源分享师_159\r"
-      - HK_103.135.103.132_0211202366d2-362trojan
-      - 日本【付费推荐：https://v1.mk/vip】88
-      - github.com/freefq - 美国  5
-      - 美国 012
-      - github.com/freefq - 美国  51
-      - 美国 026
-      - 中国【付费推荐：https://v1.mk/vip】170
-      - 香港【付费推荐：https://v1.mk/vip】286
-      - _HK_香港 6
-      - US_152.70.143.228_02132023ec08-343trojan
-      - 香港IPLC9
-      - Turkey(ChatGPT) 02 TG:@nodpai
-      - 英国【付费推荐：https://v1.mk/vip】294
-      - "[02-14]-🇯🇵-日本-162-jp-am48-6.eqnode.net"
-      - 香港【付费推荐：https://v1.mk/vip】308
-      - Trojan优化｜台湾-5 [2.0][原生]
-      - 美国 020
-      - HK_103.135.103.229_02102023acf7-153trojan
-      - Germany 01 TG:@nodpai
-      - Asia 香港01 | 直连 | 1.0 x | V1 - 酸奶VPN
-      - 美国 016
-      - 越南 001
-      - 白嫖-0304
-      - https://awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技_7
-      - _HK_香港_3
-      - 新加坡 001
-      - FR_37.59.175.106_020720235eb7-19trojan
-      - 澳大利亚 001 2
-      - jp-am48-6.eqnode.net8081
-      - _FR_法国_群：https://t.me/suyucom
-      - 中国_02121066
-      - 美国 026 2
-      - github.com/freefq - 荷兰  19
-      - https://awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技_6
-      - JP_138.2.45.89_021020237856-49trojan
-      - 香港【付费推荐：https://v1.mk/vip】310
-      - _HK_香港_2
-      - 法国【付费推荐：https://v1.mk/vip】306
-      - United States 02 TG:@nodpai
-      - _SG_新加坡
-      - _IN_印度_来源：kkzui.com（快嘴科技）_来源：kkzui.com（快嘴科技）0_40_40_40_40
-      - Asia 香港08 | 1.0x | V1 - 酸奶VPN
-      - github.com/freefq - 美国  47
-      - FR_15.237.40.204_02132023bc88-804ssr
-      - 香港【付费推荐：https://v1.mk/vip】288
-      - 印度尼西亚【付费推荐：https://v1.mk/vip】83
-      - 美国 005
-      - United States 08 TG:@nodpai
-      - Russia 01 TG:@nodpai
-      - "[02-14]-🇺🇸-美国-182-z0111.security-cloudfront-cdn.com"
       - _SE_瑞典
-      - github.com/freefq - 美国  10
-      - CA-3.99.161.142-0247
-      - United States(ChatGPT) 07 TG:@nodpai
-      - 加拿大 001
-      - Ireland 01 TG:@nodpai
-      - Taiwan(ChatGPT) 04 TG:@nodpai 3
-      - UC 台湾02 | tiktok | Youtube免广告 | 3.0x | V1 - 酸奶VPN
-      - github.com/freefq - 加拿大多伦多Oracle云计算数据中心 25
+      - 中国_02162178
+      - CN 5 → tg@nicevpn123
+      - 中国_0216059
+      - _HK_香港_7
+      - "[02-16]-🇦🇺-澳大利亚-065-z0113.security-cloudfront-cdn.com"
+      - _HK_香港_3
+      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 23
+      - United States(ChatGPT) 01 TG:@nodpai
+      - _JP_日本
+      - github.com/freefq - 欧盟  67
+      - Germany 04 TG:@nodpai
+      - 俄罗斯联邦_0216003
+      - 中国_0216163
+      - FR_youtube@资源分享师_114
+      - _CA_加拿大_1
+      - github.com/freefq - 欧盟  4
+      - 香港【付费推荐：https://v1.mk/vip】288
+      - Japan 06 TG:@nodpai
+      - 美国【付费推荐：https://v1.mk/vip】358
+      - 美国_02163173
+      - 美国_0216040
+      - 印度_0216020
+      - "|74.53Mb"
+      - 沙特阿拉伯_0216001
+      - 中国【付费推荐：https://v1.mk/vip】259
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - github.com/freefq - 英国社会保险安全部 7
-      - _FR_法国_1
-      - Asia 香港06 | 直连 | 1.0x | V1 - 酸奶VPN
-      - 韩国 002
-      - "| 3.22Mb"
-      - 中国【付费推荐：https://v1.mk/vip】48
-      - 澳大利亚 001
-      - _ID_印度尼西亚
-      - 白嫖-0429
-      - github.com/freefq - 美国  18
-      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 29
-      - 中国【付费推荐：https://v1.mk/vip】153
-      - 菲律宾 001
-      - Asia 香港04 | 直连 | 1.0x | V1 - 酸奶VPN
-      - github.com/freefq - 法国北部－加来海峡大区鲁贝OVH数据中心 13
-      - 中国【付费推荐：https://v1.mk/vip】57
-      - 新加坡【付费推荐：https://v1.mk/vip】10
-      - "_JP_日本\r_2"
-      - 菲律宾 001 2
-      - 美国【付费推荐：https://v1.mk/vip】47
-      - Asia 香港05 | 直连 | 1.0x | V1 - 酸奶VPN
-      - FR_youtube@资源分享师_114
-      - 加拿大【付费推荐：https://v1.mk/vip】52
-      - _HK_香港_7
-      - v2rayfree.eu.org - 印度尼西亚  58
-      - South Korea 05 TG:@nodpai
-      - Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN
-      - 韩国【付费推荐：https://v1.mk/vip】56
-      - 法国(TG频道@kxswa)
-      - "US_youtube@资源分享师_159\r"
-      - HK_103.135.103.132_0211202366d2-362trojan
-      - 日本【付费推荐：https://v1.mk/vip】88
-      - github.com/freefq - 美国  5
-      - 美国 012
-      - github.com/freefq - 美国  51
-      - 美国 026
-      - 中国【付费推荐：https://v1.mk/vip】170
-      - 香港【付费推荐：https://v1.mk/vip】286
-      - _HK_香港 6
-      - US_152.70.143.228_02132023ec08-343trojan
-      - 香港IPLC9
-      - Turkey(ChatGPT) 02 TG:@nodpai
-      - 英国【付费推荐：https://v1.mk/vip】294
-      - "[02-14]-🇯🇵-日本-162-jp-am48-6.eqnode.net"
-      - 香港【付费推荐：https://v1.mk/vip】308
-      - Trojan优化｜台湾-5 [2.0][原生]
-      - 美国 020
-      - HK_103.135.103.229_02102023acf7-153trojan
-      - Germany 01 TG:@nodpai
-      - Asia 香港01 | 直连 | 1.0 x | V1 - 酸奶VPN
-      - 美国 016
-      - 越南 001
-      - 白嫖-0304
-      - https://awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技_7
-      - _HK_香港_3
-      - 新加坡 001
-      - FR_37.59.175.106_020720235eb7-19trojan
-      - 澳大利亚 001 2
-      - jp-am48-6.eqnode.net8081
-      - _FR_法国_群：https://t.me/suyucom
-      - 中国_02121066
-      - 美国 026 2
-      - github.com/freefq - 荷兰  19
-      - https://awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技_6
-      - JP_138.2.45.89_021020237856-49trojan
-      - 香港【付费推荐：https://v1.mk/vip】310
-      - _HK_香港_2
-      - 法国【付费推荐：https://v1.mk/vip】306
-      - United States 02 TG:@nodpai
-      - _SG_新加坡
-      - _IN_印度_来源：kkzui.com（快嘴科技）_来源：kkzui.com（快嘴科技）0_40_40_40_40
-      - Asia 香港08 | 1.0x | V1 - 酸奶VPN
-      - github.com/freefq - 美国  47
-      - FR_15.237.40.204_02132023bc88-804ssr
-      - 香港【付费推荐：https://v1.mk/vip】288
-      - 印度尼西亚【付费推荐：https://v1.mk/vip】83
-      - 美国 005
-      - United States 08 TG:@nodpai
-      - Russia 01 TG:@nodpai
-      - "[02-14]-🇺🇸-美国-182-z0111.security-cloudfront-cdn.com"
       - _SE_瑞典
-      - github.com/freefq - 美国  10
-      - CA-3.99.161.142-0247
-      - United States(ChatGPT) 07 TG:@nodpai
-      - 加拿大 001
-      - Ireland 01 TG:@nodpai
-      - Taiwan(ChatGPT) 04 TG:@nodpai 3
-      - UC 台湾02 | tiktok | Youtube免广告 | 3.0x | V1 - 酸奶VPN
-      - github.com/freefq - 加拿大多伦多Oracle云计算数据中心 25
+      - 中国_02162178
+      - CN 5 → tg@nicevpn123
+      - 中国_0216059
+      - _HK_香港_7
+      - "[02-16]-🇦🇺-澳大利亚-065-z0113.security-cloudfront-cdn.com"
+      - _HK_香港_3
+      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 23
+      - United States(ChatGPT) 01 TG:@nodpai
+      - _JP_日本
+      - github.com/freefq - 欧盟  67
+      - Germany 04 TG:@nodpai
+      - 俄罗斯联邦_0216003
+      - 中国_0216163
+      - FR_youtube@资源分享师_114
+      - _CA_加拿大_1
+      - github.com/freefq - 欧盟  4
+      - 香港【付费推荐：https://v1.mk/vip】288
+      - Japan 06 TG:@nodpai
+      - 美国【付费推荐：https://v1.mk/vip】358
+      - 美国_02163173
+      - 美国_0216040
+      - 印度_0216020
+      - "|74.53Mb"
+      - 沙特阿拉伯_0216001
+      - 中国【付费推荐：https://v1.mk/vip】259
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - github.com/freefq - 英国社会保险安全部 7
-      - _FR_法国_1
-      - Asia 香港06 | 直连 | 1.0x | V1 - 酸奶VPN
-      - 韩国 002
-      - "| 3.22Mb"
-      - 中国【付费推荐：https://v1.mk/vip】48
-      - 澳大利亚 001
-      - _ID_印度尼西亚
-      - 白嫖-0429
-      - github.com/freefq - 美国  18
-      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 29
-      - 中国【付费推荐：https://v1.mk/vip】153
-      - 菲律宾 001
-      - Asia 香港04 | 直连 | 1.0x | V1 - 酸奶VPN
-      - github.com/freefq - 法国北部－加来海峡大区鲁贝OVH数据中心 13
-      - 中国【付费推荐：https://v1.mk/vip】57
-      - 新加坡【付费推荐：https://v1.mk/vip】10
-      - "_JP_日本\r_2"
-      - 菲律宾 001 2
-      - 美国【付费推荐：https://v1.mk/vip】47
-      - Asia 香港05 | 直连 | 1.0x | V1 - 酸奶VPN
-      - FR_youtube@资源分享师_114
-      - 加拿大【付费推荐：https://v1.mk/vip】52
-      - _HK_香港_7
-      - v2rayfree.eu.org - 印度尼西亚  58
-      - South Korea 05 TG:@nodpai
-      - Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN
-      - 韩国【付费推荐：https://v1.mk/vip】56
-      - 法国(TG频道@kxswa)
-      - "US_youtube@资源分享师_159\r"
-      - HK_103.135.103.132_0211202366d2-362trojan
-      - 日本【付费推荐：https://v1.mk/vip】88
-      - github.com/freefq - 美国  5
-      - 美国 012
-      - github.com/freefq - 美国  51
-      - 美国 026
-      - 中国【付费推荐：https://v1.mk/vip】170
-      - 香港【付费推荐：https://v1.mk/vip】286
-      - _HK_香港 6
-      - US_152.70.143.228_02132023ec08-343trojan
-      - 香港IPLC9
-      - Turkey(ChatGPT) 02 TG:@nodpai
-      - 英国【付费推荐：https://v1.mk/vip】294
-      - "[02-14]-🇯🇵-日本-162-jp-am48-6.eqnode.net"
-      - 香港【付费推荐：https://v1.mk/vip】308
-      - Trojan优化｜台湾-5 [2.0][原生]
-      - 美国 020
-      - HK_103.135.103.229_02102023acf7-153trojan
-      - Germany 01 TG:@nodpai
-      - Asia 香港01 | 直连 | 1.0 x | V1 - 酸奶VPN
-      - 美国 016
-      - 越南 001
-      - 白嫖-0304
-      - https://awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技_7
-      - _HK_香港_3
-      - 新加坡 001
-      - FR_37.59.175.106_020720235eb7-19trojan
-      - 澳大利亚 001 2
-      - jp-am48-6.eqnode.net8081
-      - _FR_法国_群：https://t.me/suyucom
-      - 中国_02121066
-      - 美国 026 2
-      - github.com/freefq - 荷兰  19
-      - https://awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技_6
-      - JP_138.2.45.89_021020237856-49trojan
-      - 香港【付费推荐：https://v1.mk/vip】310
-      - _HK_香港_2
-      - 法国【付费推荐：https://v1.mk/vip】306
-      - United States 02 TG:@nodpai
-      - _SG_新加坡
-      - _IN_印度_来源：kkzui.com（快嘴科技）_来源：kkzui.com（快嘴科技）0_40_40_40_40
-      - Asia 香港08 | 1.0x | V1 - 酸奶VPN
-      - github.com/freefq - 美国  47
-      - FR_15.237.40.204_02132023bc88-804ssr
-      - 香港【付费推荐：https://v1.mk/vip】288
-      - 印度尼西亚【付费推荐：https://v1.mk/vip】83
-      - 美国 005
-      - United States 08 TG:@nodpai
-      - Russia 01 TG:@nodpai
-      - "[02-14]-🇺🇸-美国-182-z0111.security-cloudfront-cdn.com"
       - _SE_瑞典
-      - github.com/freefq - 美国  10
-      - CA-3.99.161.142-0247
-      - United States(ChatGPT) 07 TG:@nodpai
-      - 加拿大 001
-      - Ireland 01 TG:@nodpai
-      - Taiwan(ChatGPT) 04 TG:@nodpai 3
-      - UC 台湾02 | tiktok | Youtube免广告 | 3.0x | V1 - 酸奶VPN
-      - github.com/freefq - 加拿大多伦多Oracle云计算数据中心 25
+      - 中国_02162178
+      - CN 5 → tg@nicevpn123
+      - 中国_0216059
+      - _HK_香港_7
+      - "[02-16]-🇦🇺-澳大利亚-065-z0113.security-cloudfront-cdn.com"
+      - _HK_香港_3
+      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 23
+      - United States(ChatGPT) 01 TG:@nodpai
+      - _JP_日本
+      - github.com/freefq - 欧盟  67
+      - Germany 04 TG:@nodpai
+      - 俄罗斯联邦_0216003
+      - 中国_0216163
+      - FR_youtube@资源分享师_114
+      - _CA_加拿大_1
+      - github.com/freefq - 欧盟  4
+      - 香港【付费推荐：https://v1.mk/vip】288
+      - Japan 06 TG:@nodpai
+      - 美国【付费推荐：https://v1.mk/vip】358
+      - 美国_02163173
+      - 美国_0216040
+      - 印度_0216020
+      - "|74.53Mb"
+      - 沙特阿拉伯_0216001
+      - 中国【付费推荐：https://v1.mk/vip】259
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -806,95 +288,32 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - github.com/freefq - 英国社会保险安全部 7
-      - _FR_法国_1
-      - Asia 香港06 | 直连 | 1.0x | V1 - 酸奶VPN
-      - 韩国 002
-      - "| 3.22Mb"
-      - 中国【付费推荐：https://v1.mk/vip】48
-      - 澳大利亚 001
-      - _ID_印度尼西亚
-      - 白嫖-0429
-      - github.com/freefq - 美国  18
-      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 29
-      - 中国【付费推荐：https://v1.mk/vip】153
-      - 菲律宾 001
-      - Asia 香港04 | 直连 | 1.0x | V1 - 酸奶VPN
-      - github.com/freefq - 法国北部－加来海峡大区鲁贝OVH数据中心 13
-      - 中国【付费推荐：https://v1.mk/vip】57
-      - 新加坡【付费推荐：https://v1.mk/vip】10
-      - "_JP_日本\r_2"
-      - 菲律宾 001 2
-      - 美国【付费推荐：https://v1.mk/vip】47
-      - Asia 香港05 | 直连 | 1.0x | V1 - 酸奶VPN
-      - FR_youtube@资源分享师_114
-      - 加拿大【付费推荐：https://v1.mk/vip】52
-      - _HK_香港_7
-      - v2rayfree.eu.org - 印度尼西亚  58
-      - South Korea 05 TG:@nodpai
-      - Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN
-      - 韩国【付费推荐：https://v1.mk/vip】56
-      - 法国(TG频道@kxswa)
-      - "US_youtube@资源分享师_159\r"
-      - HK_103.135.103.132_0211202366d2-362trojan
-      - 日本【付费推荐：https://v1.mk/vip】88
-      - github.com/freefq - 美国  5
-      - 美国 012
-      - github.com/freefq - 美国  51
-      - 美国 026
-      - 中国【付费推荐：https://v1.mk/vip】170
-      - 香港【付费推荐：https://v1.mk/vip】286
-      - _HK_香港 6
-      - US_152.70.143.228_02132023ec08-343trojan
-      - 香港IPLC9
-      - Turkey(ChatGPT) 02 TG:@nodpai
-      - 英国【付费推荐：https://v1.mk/vip】294
-      - "[02-14]-🇯🇵-日本-162-jp-am48-6.eqnode.net"
-      - 香港【付费推荐：https://v1.mk/vip】308
-      - Trojan优化｜台湾-5 [2.0][原生]
-      - 美国 020
-      - HK_103.135.103.229_02102023acf7-153trojan
-      - Germany 01 TG:@nodpai
-      - Asia 香港01 | 直连 | 1.0 x | V1 - 酸奶VPN
-      - 美国 016
-      - 越南 001
-      - 白嫖-0304
-      - https://awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技_7
-      - _HK_香港_3
-      - 新加坡 001
-      - FR_37.59.175.106_020720235eb7-19trojan
-      - 澳大利亚 001 2
-      - jp-am48-6.eqnode.net8081
-      - _FR_法国_群：https://t.me/suyucom
-      - 中国_02121066
-      - 美国 026 2
-      - github.com/freefq - 荷兰  19
-      - https://awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技_6
-      - JP_138.2.45.89_021020237856-49trojan
-      - 香港【付费推荐：https://v1.mk/vip】310
-      - _HK_香港_2
-      - 法国【付费推荐：https://v1.mk/vip】306
-      - United States 02 TG:@nodpai
-      - _SG_新加坡
-      - _IN_印度_来源：kkzui.com（快嘴科技）_来源：kkzui.com（快嘴科技）0_40_40_40_40
-      - Asia 香港08 | 1.0x | V1 - 酸奶VPN
-      - github.com/freefq - 美国  47
-      - FR_15.237.40.204_02132023bc88-804ssr
-      - 香港【付费推荐：https://v1.mk/vip】288
-      - 印度尼西亚【付费推荐：https://v1.mk/vip】83
-      - 美国 005
-      - United States 08 TG:@nodpai
-      - Russia 01 TG:@nodpai
-      - "[02-14]-🇺🇸-美国-182-z0111.security-cloudfront-cdn.com"
       - _SE_瑞典
-      - github.com/freefq - 美国  10
-      - CA-3.99.161.142-0247
-      - United States(ChatGPT) 07 TG:@nodpai
-      - 加拿大 001
-      - Ireland 01 TG:@nodpai
-      - Taiwan(ChatGPT) 04 TG:@nodpai 3
-      - UC 台湾02 | tiktok | Youtube免广告 | 3.0x | V1 - 酸奶VPN
-      - github.com/freefq - 加拿大多伦多Oracle云计算数据中心 25
+      - 中国_02162178
+      - CN 5 → tg@nicevpn123
+      - 中国_0216059
+      - _HK_香港_7
+      - "[02-16]-🇦🇺-澳大利亚-065-z0113.security-cloudfront-cdn.com"
+      - _HK_香港_3
+      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 23
+      - United States(ChatGPT) 01 TG:@nodpai
+      - _JP_日本
+      - github.com/freefq - 欧盟  67
+      - Germany 04 TG:@nodpai
+      - 俄罗斯联邦_0216003
+      - 中国_0216163
+      - FR_youtube@资源分享师_114
+      - _CA_加拿大_1
+      - github.com/freefq - 欧盟  4
+      - 香港【付费推荐：https://v1.mk/vip】288
+      - Japan 06 TG:@nodpai
+      - 美国【付费推荐：https://v1.mk/vip】358
+      - 美国_02163173
+      - 美国_0216040
+      - 印度_0216020
+      - "|74.53Mb"
+      - 沙特阿拉伯_0216001
+      - 中国【付费推荐：https://v1.mk/vip】259
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
