@@ -6,243 +6,471 @@ mode: Rule
 log-level: info
 external-controller: 9090
 proxies:
-  - {name: FR 44 → tg@nicevpn123, server: 37.59.175.106, port: 32935, type: trojan, password: OwXaiuJi7H, skip-cert-verify: true, udp: true}
-  - {name: US_185.199.225.45_012920239fdb-7s%, server: 185.199.225.45, port: 10002, type: ssr, cipher: aes-256-cfb, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: CN 5 → tg@nicevpn123, server: z3002.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
-  - {name: _HK_香港_3, server: 47.243.187.171, port: 60808, type: vmess, uuid: 99c3c1c3-c27c-49a0-9c2c-7c77c3d92bf6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip】358, server: phxv001.jd0001.top, port: 4431, type: vmess, uuid: 6abfad5a-24be-3657-85da-ceac782b7e19, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /phxv001, headers: {Host: phxv001.jd0001.top}}, udp: true}
-  - {name: 美国_0216040, server: sea21.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: sea21.nb1.fr}}, udp: true}
-  - {name: 香港【付费推荐：https://v1.mk/vip】288, server: 8.210.131.2, port: 31357, type: vmess, uuid: 618c0914-e31e-4b82-8289-2e7a47e48dfd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】288, server: hn.xiaohouzi.club, port: 48464, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: "%24%24vuus04.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】279, server: hn.xiaohouzi.club, port: 19359, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: "%24%24%24%24%24hn.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】298, server: hnm.xiaohouzi.club, port: 47551, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: "%24%24helan01.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: Russia-俄罗斯, server: frontend.yijianlian.app, port: 54510, type: trojan, password: 486d0623-b24b-436b-803e-9e6f9cebe497, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 49, server: tcas.padra-holding.com, port: 36005, type: vmess, uuid: 05c38399-5296-4bf2-a606-1cec3b71c942, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tcas.padra-holding.com}}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】275, server: hn.xiaohouzi.club, port: 48434, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24ajpn04.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 英国【付费推荐：https://v1.mk/vip】388, server: uk1.trojanvh.xyz, port: 80, type: trojan, password: b640d791-ff83-4300-b509-c2a02f97f167, sni: uk1.trojanvh.xyz, skip-cert-verify: true, udp: true}
+  - {name: 中国_02161162, server: 117.164.185.221, port: 16132, type: vmess, uuid: e62c703f-6910-3858-9228-da30a3e51225, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 中国【付费推荐：https://v1.mk/vip】246, server: gz01.xiaohouzi.club, port: 20091, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24%24%24ajpn01.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: _JP_日本, server: osav101.jd0001.top, port: 4430, type: vmess, uuid: 6abfad5a-24be-3657-85da-ceac782b7e19, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /osav101, headers: {Host: osav101.jd0001.top}}, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip】363, server: sea21.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: sea21.nb1.fr}}, udp: true}
-  - {name: _US_美国, server: 152.70.143.228, port: 44302, type: trojan, password: 4d111af8-5078-37e0-a583-34155f60b32c, skip-cert-verify: true, udp: true}
-  - {name: USA-美国, server: frontend.yijianlian.app, port: 54430, type: trojan, password: 486d0623-b24b-436b-803e-9e6f9cebe497, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】262, server: hn.xiaohouzi.club, port: 14185, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hktnew01.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip】46, server: 135.148.149.209, port: 80, type: trojan, password: 255c924c-1314-4084-9a9e-1d1a82a5cf49, sni: us2.trojanvh.xyz, skip-cert-verify: true, udp: true}
-  - {name: 中国_02161201, server: 117.164.185.222, port: 16317, type: vmess, uuid: e62c703f-6910-3858-9228-da30a3e51225, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】274, server: hn.xiaohouzi.club, port: 18463, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: "%24%24%24%24hn.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: 3.06| 新加坡sgam3eqsunshinecom, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: Japan-日本, server: frontend.yijianlian.app, port: 54530, type: trojan, password: 486d0623-b24b-436b-803e-9e6f9cebe497, skip-cert-verify: true, udp: true}
-  - {name: 香港【付费推荐：https://v1.mk/vip】173, server: 47.243.230.222, port: 35668, type: vmess, uuid: ab4df3ef-e77f-4f2a-bfb8-63604412f73b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: "[02-15]-🇸🇬-新加坡-208-sg-am3.eqsunshine.com", server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: ====, obfs-param: ====, udp: true}
-  - {name: Korea1-韩国一, server: frontend.yijianlian.app, port: 54580, type: trojan, password: 486d0623-b24b-436b-803e-9e6f9cebe497, skip-cert-verify: true, udp: true}
-  - {name: France 03 TG:@nodpai, server: 15.188.27.96, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】312, server: hnm.xiaohouzi.club, port: 47555, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: "%24%24%24au02.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: "_JP_日本\r_1", server: 138.2.45.89, port: 44301, type: trojan, password: 6abfad5a-24be-3657-85da-ceac782b7e19, sni: "%24%24osav101.jd0001.top", skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_7, server: 47.243.183.124, port: 42093, type: vmess, uuid: 6bd6d540-ab4a-4ecf-98d6-1bd781a450c7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】309, server: hnm.xiaohouzi.club, port: 47651, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24hnm.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: "|74.53Mb", server: hk3.sanfen001.pics, port: 443, type: vmess, uuid: 2d506805-626a-4669-8c8b-23f383e371ca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】261, server: hn.xiaohouzi.club, port: 18457, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯联邦_0216003, server: 45.89.230.196, port: 80, type: vmess, uuid: 8f9f526b-cab6-41d2-9424-cbdde94ea14f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】269, server: hn.xiaohouzi.club, port: 16012, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: supsig.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: FR_youtube@资源分享师_114, server: 5.135.43.119, port: 58732, type: vmess, uuid: d159c5be-8291-45c4-bd21-51d024658a6d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 5.135.43.119}}, udp: true}
-  - {name: 爱尔兰 001, server: 3.253.67.209, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
-  - {name: _CA_加拿大_1, server: 192.99.8.99, port: 36005, type: vmess, uuid: 05c38399-5296-4bf2-a606-1cec3b71c942, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: US_youtube@资源分享师_289, server: 51.81.202.62, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v47-2023unlimitndxd}, udp: true}
-  - {name: v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 23, server: 192.99.8.99, port: 36005, type: vmess, uuid: 05c38399-5296-4bf2-a606-1cec3b71c942, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 美国 101, server: 152.67.254.16, port: 43815, type: vmess, uuid: 7a9f026f-f7a8-40ca-f2f9-3b380c287c0d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /abc}, udp: true}
-  - {name: github.com/freefq - 法国OVH机房SAS硬盘BGP主机 38, server: 5.135.43.119, port: 58732, type: vmess, uuid: d159c5be-8291-45c4-bd21-51d024658a6d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: bmi.irT.me/s0013_Official}}, udp: true}
-  - {name: github.com/freefq - 俄罗斯  4, server: 185.143.220.25, port: 443, type: vmess, uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /6e9EtZ2dL, headers: {Host: dengxin.one}}, udp: true}
-  - {name: github.com/freefq - 欧盟  67, server: 45.89.230.196, port: 80, type: vmess, uuid: 8f9f526b-cab6-41d2-9424-cbdde94ea14f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 英国【付费推荐：https://v1.mk/vip】187, server: 51.38.71.175, port: 80, type: trojan, password: 211f5876-8c89-4d97-9004-ff16acddd506, sni: "%24%24uk1.trojanvh.xyz", skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip】188, server: 51.81.202.62, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v47-2023unlimitndxd, headers: {Host: YTB-awkj}}, udp: true}
-  - {name: Germany 04 TG:@nodpai, server: 45.95.241.251, port: 443, type: vmess, uuid: d1ace408-1102-4919-9ee8-88f85c8a91e3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: gemws.mainssh.xyz}}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】226, server: hn.xiaohouzi.club, port: 46014, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: "%�\x11�'���oyj�L\r�\r%%�", server: z0113.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】227, server: hn.xiaohouzi.club, port: 48431, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 加拿大(TG频道@kxswa), server: 168.138.68.36, port: 14252, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path, headers: {Host: 168.138.68.36}}, udp: true}
+  - {name: 加拿大(TG频道@kxswa) 2, server: tcas.padra-holding.com, port: 36005, type: vmess, uuid: 05c38399-5296-4bf2-a606-1cec3b71c942, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tcas.padra-holding.com}}, udp: true}
+  - {name: 美国 004, server: 138.2.45.89, port: 44301, type: trojan, password: 6abfad5a-24be-3657-85da-ceac782b7e19, sni: "%24osav101.jd0001.top", skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】199, server: hnm.xiaohouzi.club, port: 47651, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24hnm.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: "| 2.96Mb", server: 135.148.149.209, port: 80, type: trojan, password: 011eb011-c68e-4f92-80eb-f9bbef707bef, skip-cert-verify: true, udp: true}
+  - {name: _JP_日本_3, server: suzhihan.eu.org, port: 443, type: vmess, uuid: 0b873cff-11ab-4716-c41a-04f886135091, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /roewesu, headers: {Host: suzhihan.eu.org}}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】216, server: hn.xiaohouzi.club, port: 18457, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
   - {name: -法国-5.135.43.119, server: 5.135.43.119, port: 58732, type: vmess, uuid: d159c5be-8291-45c4-bd21-51d024658a6d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: github.com/freefq - 欧盟  4, server: 45.89.230.196, port: 80, type: vmess, uuid: 8f9f526b-cab6-41d2-9424-cbdde94ea14f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 日本【付费推荐：https://v1.mk/vip】59, server: 152.69.197.74, port: 12345, type: vmess, uuid: b8a6bf58-485a-4046-b386-b3661bf65eff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bb, headers: {Host: 152.69.197.74}}, udp: true}
-  - {name: 加拿大_0216201, server: 168.138.68.36, port: 14252, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path}, udp: true}
-  - {name: 韩国_0216273, server: 152.67.218.216, port: 17992, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path}, udp: true}
-  - {name: GB 24 → tg@nicevpn123, server: 51.38.71.175, port: 80, type: trojan, password: b640d791-ff83-4300-b509-c2a02f97f167, skip-cert-verify: true, udp: true}
+  - {name: v2rayfree.eu.org - 美国  9, server: osav101.jd0001.top, port: 44301, type: trojan, password: 6abfad5a-24be-3657-85da-ceac782b7e19, skip-cert-verify: true, udp: true}
+  - {name: 德国 006, server: 89.163.213.20, port: 80, type: vmess, uuid: 5668ff97-631f-4602-a13f-b56552c67abe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: 印度尼西亚【付费推荐：https://v1.mk/vip】163, server: jpjoq.ftvpn.xyz, port: 80, type: vmess, uuid: b9f6ef01-a4a6-4a95-8c22-59666be14599, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: jpjoq.ftvpn.xyz}}, udp: true}
+  - {name: v2rayfree.eu.org - 美国弗吉尼亚州文特山农场OVH数据中心 41, server: v47a.toddns.tk, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v47-2023unlimitndxd, headers: {Host: v47a.toddns.tk}}, udp: true}
+  - {name: 中国_0216059, server: shcu01.xc188.net, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】579, server: 152.70.143.228, port: 44302, type: trojan, password: 4d111af8-5078-37e0-a583-34155f60b32c, skip-cert-verify: true, udp: true}
+  - {name: v2rayfree.eu.org - 美国  6, server: us2.trojanvh.xyz, port: 80, type: trojan, password: 255c924c-1314-4084-9a9e-1d1a82a5cf49, skip-cert-verify: true, udp: true}
+  - {name: _油管：全网最强白嫖, server: in-jp-1.iivvppnn.info, port: 38301, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
+  - {name: _FR_法国, server: z0111.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】176, server: iplc.xiaohouzi.club, port: 20015, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24%24%24supaz05.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】454, server: 223.111.202.139, port: 63088, type: vmess, uuid: e159f409-af0e-38b6-b34e-404a98089471, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: tw-load-balancer.myn1des.com}}, udp: true}
+  - {name: 中国_02162178, server: shcu01.xc188.net, port: 10005, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "_US_美国\r", server: 135.148.149.209, port: 80, type: trojan, password: 255c924c-1314-4084-9a9e-1d1a82a5cf49, sni: us2.trojanvh.xyz, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】208, server: hn.xiaohouzi.club, port: 16015, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24%24hn.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 法国OVH机房SAS硬盘BGP主机 17, server: 5.135.43.119, port: 58732, type: vmess, uuid: d159c5be-8291-45c4-bd21-51d024658a6d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: bmi.irT.me/s0013_Official}}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】192, server: hnm.xiaohouzi.club, port: 17108, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: "%�\x11�'����oyj�L\r�N%%�", server: z0114.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: _CN_中国->🇹🇼_TW_台湾, server: 36.156.102.164, port: 10003, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 欧盟  44, server: 45.95.241.251, port: 443, type: vmess, uuid: d1ace408-1102-4919-9ee8-88f85c8a91e3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: gemws.mainssh.xyz}}, udp: true}
+  - {name: _JP_日本, server: osav101.jd0001.top, port: 4430, type: vmess, uuid: 6abfad5a-24be-3657-85da-ceac782b7e19, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /osav101, headers: {Host: osav101.jd0001.top}}, udp: true}
+  - {name: github.com/freefq - 美国  20, server: 168.138.68.36, port: 14252, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】191, server: hnm.xiaohouzi.club, port: 17106, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 欧盟  67, server: 45.89.230.196, port: 80, type: vmess, uuid: 8f9f526b-cab6-41d2-9424-cbdde94ea14f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 日本【付费推荐：https://v1.mk/vip】622, server: 138.2.45.89, port: 44301, type: trojan, password: 6d64570c-81d4-30fa-b2e2-dce73e1a2702, sni: osav101.jd0001.top, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】234, server: hn.xiaohouzi.club, port: 14185, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hktnew01.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】212, server: hn.xiaohouzi.club, port: 18435, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】413, server: 42.225.20.18, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港【付费推荐：https://v1.mk/vip】356, server: 8.218.84.248, port: 35610, type: vmess, uuid: 4217b657-a9b0-4a13-a132-532318c5d6f8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】214, server: hn.xiaohouzi.club, port: 18443, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 中国_0216163, server: shcu01.xc188.net, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国_2, server: hn.xiaohouzi.club, port: 18835, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24feilvbin.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】381, server: 51.81.202.62, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v47-2023unlimitndxd, headers: {Host: 51.81.202.62}}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】231, server: hn.xiaohouzi.club, port: 49438, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 印度_0216020, server: 152.67.161.155, port: 17355, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】418, server: 36.155.22.91, port: 62072, type: vmess, uuid: 9a5dc02b-8adc-3529-9163-ab690f38fbb6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】202, server: hnm.xiaohouzi.club, port: 49363, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24hnm.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 沙特阿拉伯_0216001, server: 158.101.229.162, port: 15227, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path}, udp: true}
+  - {name: 中国_0216059 2, server: shcu01.xc188.net, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 101, server: 152.67.254.16, port: 43815, type: vmess, uuid: 7a9f026f-f7a8-40ca-f2f9-3b380c287c0d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /abc}, udp: true}
+  - {name: v2rayfree.eu.org - 德国  3, server: 89.163.213.20, port: 80, type: vmess, uuid: 5668ff97-631f-4602-a13f-b56552c67abe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 89.163.213.20}}, udp: true}
+  - {name: "| 5.76Mb", server: 51.38.71.175, port: 80, type: trojan, password: b640d791-ff83-4300-b509-c2a02f97f167, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯联邦_0216003, server: 45.89.230.196, port: 80, type: vmess, uuid: 8f9f526b-cab6-41d2-9424-cbdde94ea14f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 美国_02163173, server: 158.101.7.73, port: 11176, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path}, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】577, server: 158.101.7.73, port: 11176, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path, headers: {Host: 158.101.7.73}}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】300, server: hnm.xiaohouzi.club, port: 36305, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24%24hnm.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 美国 011, server: 51.81.202.62, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v47-2023unlimitndxd}, udp: true}
+  - {name: "[02-16]-🇦🇺-澳大利亚-065-z0113.security-cloudfront-cdn.com", server: z0113.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: ====, obfs-param: ====, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】217, server: hn.xiaohouzi.club, port: 18459, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】174, server: iplc.xiaohouzi.club, port: 20018, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24iplc.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 日本【付费推荐：https://v1.mk/vip】581, server: 152.69.197.74, port: 12345, type: vmess, uuid: b8a6bf58-485a-4046-b386-b3661bf65eff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bb}, udp: true}
+  - {name: v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 23, server: 192.99.8.99, port: 36005, type: vmess, uuid: 05c38399-5296-4bf2-a606-1cec3b71c942, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: FR_5.135.43.119_0211202366d2-22vmess, server: 5.135.43.119, port: 58732, type: vmess, uuid: d159c5be-8291-45c4-bd21-51d024658a6d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】417, server: 36.156.102.164, port: 10003, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】219, server: hn.xiaohouzi.club, port: 18581, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24%24vutnkr01.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: v2rayfree.eu.org - 俄罗斯  4, server: 185.143.220.25, port: 443, type: vmess, uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /6e9EtZ2dL, headers: {Host: dengxin.one}}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】190, server: hnm.xiaohouzi.club, port: 17105, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: "| 3.07Mb 2", server: us2.trojanvh.xyz, port: 80, type: trojan, password: 011eb011-c68e-4f92-80eb-f9bbef707bef, skip-cert-verify: true, udp: true}
+  - {name: _CA_加拿大_1, server: 192.99.8.99, port: 36005, type: vmess, uuid: 05c38399-5296-4bf2-a606-1cec3b71c942, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: -欧盟-45.89.230.196, server: 45.89.230.196, port: 80, type: vmess, uuid: 8f9f526b-cab6-41d2-9424-cbdde94ea14f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: github.com/freefq - 英国社会保险安全部 33, server: uk1.trojanvh.xyz, port: 80, type: trojan, password: b44579e1-f803-4981-86bc-aa8c783daa04, skip-cert-verify: true, udp: true}
+  - {name: US(https://awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技, server: 158.101.7.73, port: 11176, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path, headers: {Host: YTB-awkj}}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】278, server: hn.xiaohouzi.club, port: 18440, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: "%24hn.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 法国【付费推荐：https://v1.mk/vip】394, server: 5.135.43.119, port: 58732, type: vmess, uuid: d159c5be-8291-45c4-bd21-51d024658a6d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 5.135.43.119}}, udp: true}
+  - {name: v2rayfree.eu.org - 美国  25, server: phxv001.jd0001.top, port: 44302, type: trojan, password: 4d111af8-5078-37e0-a583-34155f60b32c, skip-cert-verify: true, udp: true}
+  - {name: 加拿大(TG频道@kxswa) 3, server: 23.227.60.192, port: 443, type: vmess, uuid: f57a9ff2-4725-4a2d-b974-5ad48874d89f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dpnjvws, headers: {Host: shangou.doinb.tk}}, udp: true}
   - {name: 美国_0216034, server: 51.81.202.62, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v47-2023unlimitndxd}, udp: true}
-  - {name: "|19.19Mb", server: jp.swiftfalcon.app, port: 8461, type: trojan, password: shenmegui, skip-cert-verify: true, udp: true}
+  - {name: 新加坡【付费推荐：https://v1.mk/vip】13, server: xjp2.wangjiaxin.xyz, port: 25932, type: vmess, uuid: 33a47ce6-5ea9-4d21-d3db-ce38421d2558, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /23423, headers: {Host: xjp2.wangjiaxin.xyz}}, udp: true}
+  - {name: "_CN_中国->🇨🇦_CA_加拿大\r_来源：kkzui.com（快嘴科技）9_49_49_49_49\r", server: hnm.xiaohouzi.club, port: 17103, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: "%24%24canada01.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: -美国-158.101.7.8, server: 158.101.7.8, port: 80, type: vmess, uuid: 95b45c49-f5c0-4959-bb64-2b8fbc4a869c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: YTB-awkj}}, udp: true}
+  - {name: 法国【付费推荐：https://v1.mk/vip】7, server: z0111.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 俄罗斯联邦【付费推荐：https://v1.mk/vip】404, server: 45.89.230.196, port: 80, type: vmess, uuid: 8f9f526b-cab6-41d2-9424-cbdde94ea14f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 45.89.230.196}}, udp: true}
+  - {name: _HK_香港, server: petal.ga, port: 443, type: vmess, uuid: b744f5cc-eab2-d2cd-f477-76646d17987f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /petalvws, headers: {Host: petal.ga}}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】419, server: 36.155.22.91, port: 63005, type: vmess, uuid: 9a5dc02b-8adc-3529-9163-ab690f38fbb6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国麻省理工学院 74, server: 18.143.123.35, port: 80, type: vmess, uuid: 68df4838-46d0-4b5b-c3f0-a40ec7063245, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】279, server: hn.xiaohouzi.club, port: 19359, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: "%24%24%24%24%24hn.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】288, server: hn.xiaohouzi.club, port: 48464, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: "%24%24vuus04.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】421, server: 36.155.22.91, port: 63089, type: vmess, uuid: 9a5dc02b-8adc-3529-9163-ab690f38fbb6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】8, server: z00041.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: "|74.53Mb", server: hk3.sanfen001.pics, port: 443, type: vmess, uuid: 2d506805-626a-4669-8c8b-23f383e371ca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
+  - {name: github.com/freefq - 美国3COM公司企业网 81, server: 152.67.254.16, port: 43815, type: vmess, uuid: 7a9f026f-f7a8-40ca-f2f9-3b380c287c0d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /abc, headers: {Host: 152.67.254.16}}, udp: true}
+  - {name: _SE_瑞典, server: z0117.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】420, server: 36.155.22.91, port: 63077, type: vmess, uuid: 9a5dc02b-8adc-3529-9163-ab690f38fbb6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 49, server: tcas.padra-holding.com, port: 36005, type: vmess, uuid: 05c38399-5296-4bf2-a606-1cec3b71c942, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tcas.padra-holding.com}}, udp: true}
+  - {name: 韩国_0216273, server: 152.67.218.216, port: 17992, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path}, udp: true}
+  - {name: github.com/freefq - 美国麻省理工学院 74 2, server: 18.143.123.35, port: 80, type: vmess, uuid: 68df4838-46d0-4b5b-c3f0-a40ec7063245, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: _KR_韩国 2, server: surongwei.eu.org, port: 443, type: vmess, uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /reffs7y26g0ua, headers: {Host: surongwei.eu.org}}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】422, server: 36.155.22.91, port: 63090, type: vmess, uuid: e159f409-af0e-38b6-b34e-404a98089471, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】204, server: hnm.xiaohouzi.club, port: 47552, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: "%24hnm.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】644, server: 120.241.126.212, port: 63071, type: vmess, uuid: e159f409-af0e-38b6-b34e-404a98089471, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 印度【付费推荐：https://v1.mk/vip】584, server: 152.67.161.155, port: 17355, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path, headers: {Host: 152.67.161.155}}, udp: true}
+  - {name: _HK_香港 4 2, server: 8.218.58.199, port: 44200, type: vmess, uuid: 815705a3-056e-4dbd-86c0-25d212144365, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 10200@oneclickvpnkeys, server: login.progbyrazyar.ir, port: 10020, type: vmess, uuid: 3c2396dc-8e76-41a3-fed1-23b99d573390, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /graphql, headers: {Host: login.progbyrazyar.ir}}, udp: true}
+  - {name: "[02-17]-🇫🇷-法国-179-z0111.security-cloudfront-cdn.com", server: z0111.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: ====, obfs-param: ====, udp: true}
+  - {name: _CN_中国->🇹🇼_TW_台湾 2, server: z3002.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】65, server: us2.trojanvh.xyz, port: 80, type: trojan, password: aa6eb272-1d8d-4461-9687-85ddbab1adb0, sni: us2.trojanvh.xyz, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】646, server: 120.241.126.212, port: 63088, type: vmess, uuid: e159f409-af0e-38b6-b34e-404a98089471, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: tw-load-balancer.myn1des.com}}, udp: true}
+  - {name: 香港【付费推荐：https://v1.mk/vip】401, server: 47.242.69.124, port: 54620, type: vmess, uuid: 7c3008e5-9665-4319-a2b9-ac7370665f1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - FR 44 → tg@nicevpn123
-      - US_185.199.225.45_012920239fdb-7s%
-      - CN 5 → tg@nicevpn123
-      - _HK_香港_3
-      - 美国【付费推荐：https://v1.mk/vip】358
-      - 美国_0216040
-      - 香港【付费推荐：https://v1.mk/vip】288
-      - 中国【付费推荐：https://v1.mk/vip】288
-      - 中国【付费推荐：https://v1.mk/vip】279
-      - 中国【付费推荐：https://v1.mk/vip】298
-      - Russia-俄罗斯
-      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 49
+      - 中国【付费推荐：https://v1.mk/vip】275
+      - 英国【付费推荐：https://v1.mk/vip】388
+      - 中国_02161162
       - 中国【付费推荐：https://v1.mk/vip】246
-      - _JP_日本
-      - 美国【付费推荐：https://v1.mk/vip】363
-      - _US_美国
-      - USA-美国
-      - 中国【付费推荐：https://v1.mk/vip】262
-      - 美国【付费推荐：https://v1.mk/vip】46
-      - 中国_02161201
-      - 中国【付费推荐：https://v1.mk/vip】274
-      - 3.06| 新加坡sgam3eqsunshinecom
-      - Japan-日本
-      - 香港【付费推荐：https://v1.mk/vip】173
-      - "[02-15]-🇸🇬-新加坡-208-sg-am3.eqsunshine.com"
-      - Korea1-韩国一
-      - France 03 TG:@nodpai
-      - 中国【付费推荐：https://v1.mk/vip】312
-      - "_JP_日本\r_1"
-      - _HK_香港_7
-      - 中国【付费推荐：https://v1.mk/vip】309
-      - "|74.53Mb"
-      - 中国【付费推荐：https://v1.mk/vip】261
-      - 俄罗斯联邦_0216003
-      - 中国【付费推荐：https://v1.mk/vip】269
-      - FR_youtube@资源分享师_114
-      - 爱尔兰 001
-      - _CA_加拿大_1
-      - US_youtube@资源分享师_289
-      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 23
-      - 美国 101
-      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 38
-      - github.com/freefq - 俄罗斯  4
-      - github.com/freefq - 欧盟  67
-      - 英国【付费推荐：https://v1.mk/vip】187
-      - 美国【付费推荐：https://v1.mk/vip】188
-      - Germany 04 TG:@nodpai
+      - 中国【付费推荐：https://v1.mk/vip】226
+      - "%�\x11�'���oyj�L\r�\r%%�"
+      - 中国【付费推荐：https://v1.mk/vip】227
+      - 加拿大(TG频道@kxswa)
+      - 加拿大(TG频道@kxswa) 2
+      - 美国 004
+      - 中国【付费推荐：https://v1.mk/vip】199
+      - "| 2.96Mb"
+      - _JP_日本_3
+      - 中国【付费推荐：https://v1.mk/vip】216
       - -法国-5.135.43.119
-      - github.com/freefq - 欧盟  4
-      - 日本【付费推荐：https://v1.mk/vip】59
-      - 加拿大_0216201
-      - 韩国_0216273
-      - GB 24 → tg@nicevpn123
+      - v2rayfree.eu.org - 美国  9
+      - 德国 006
+      - 印度尼西亚【付费推荐：https://v1.mk/vip】163
+      - v2rayfree.eu.org - 美国弗吉尼亚州文特山农场OVH数据中心 41
+      - 中国_0216059
+      - 美国【付费推荐：https://v1.mk/vip】579
+      - v2rayfree.eu.org - 美国  6
+      - _油管：全网最强白嫖
+      - _FR_法国
+      - 中国【付费推荐：https://v1.mk/vip】176
+      - 中国【付费推荐：https://v1.mk/vip】454
+      - 中国_02162178
+      - "_US_美国\r"
+      - 中国【付费推荐：https://v1.mk/vip】208
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 17
+      - 中国【付费推荐：https://v1.mk/vip】192
+      - "%�\x11�'����oyj�L\r�N%%�"
+      - _CN_中国->🇹🇼_TW_台湾
+      - github.com/freefq - 欧盟  44
+      - _JP_日本
+      - github.com/freefq - 美国  20
+      - 中国【付费推荐：https://v1.mk/vip】191
+      - github.com/freefq - 欧盟  67
+      - 日本【付费推荐：https://v1.mk/vip】622
+      - 中国【付费推荐：https://v1.mk/vip】234
+      - 中国【付费推荐：https://v1.mk/vip】212
+      - 中国【付费推荐：https://v1.mk/vip】413
+      - 香港【付费推荐：https://v1.mk/vip】356
+      - 中国【付费推荐：https://v1.mk/vip】214
+      - 中国_0216163
+      - _CN_中国_2
+      - 美国【付费推荐：https://v1.mk/vip】381
+      - 中国【付费推荐：https://v1.mk/vip】231
+      - 印度_0216020
+      - 中国【付费推荐：https://v1.mk/vip】418
+      - 中国【付费推荐：https://v1.mk/vip】202
+      - 沙特阿拉伯_0216001
+      - 中国_0216059 2
+      - 美国 101
+      - v2rayfree.eu.org - 德国  3
+      - "| 5.76Mb"
+      - 俄罗斯联邦_0216003
+      - 美国_02163173
+      - 美国【付费推荐：https://v1.mk/vip】577
+      - 中国【付费推荐：https://v1.mk/vip】300
+      - 美国 011
+      - "[02-16]-🇦🇺-澳大利亚-065-z0113.security-cloudfront-cdn.com"
+      - 中国【付费推荐：https://v1.mk/vip】217
+      - 中国【付费推荐：https://v1.mk/vip】174
+      - 日本【付费推荐：https://v1.mk/vip】581
+      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 23
+      - FR_5.135.43.119_0211202366d2-22vmess
+      - 中国【付费推荐：https://v1.mk/vip】417
+      - 中国【付费推荐：https://v1.mk/vip】219
+      - v2rayfree.eu.org - 俄罗斯  4
+      - 中国【付费推荐：https://v1.mk/vip】190
+      - "| 3.07Mb 2"
+      - _CA_加拿大_1
+      - -欧盟-45.89.230.196
+      - github.com/freefq - 英国社会保险安全部 33
+      - US(https://awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技
+      - 中国【付费推荐：https://v1.mk/vip】278
+      - 法国【付费推荐：https://v1.mk/vip】394
+      - v2rayfree.eu.org - 美国  25
+      - 加拿大(TG频道@kxswa) 3
       - 美国_0216034
-      - "|19.19Mb"
+      - 新加坡【付费推荐：https://v1.mk/vip】13
+      - "_CN_中国->🇨🇦_CA_加拿大\r_来源：kkzui.com（快嘴科技）9_49_49_49_49\r"
+      - -美国-158.101.7.8
+      - 法国【付费推荐：https://v1.mk/vip】7
+      - 俄罗斯联邦【付费推荐：https://v1.mk/vip】404
+      - _HK_香港
+      - 中国【付费推荐：https://v1.mk/vip】419
+      - github.com/freefq - 美国麻省理工学院 74
+      - 中国【付费推荐：https://v1.mk/vip】279
+      - 中国【付费推荐：https://v1.mk/vip】288
+      - 中国【付费推荐：https://v1.mk/vip】421
+      - 中国【付费推荐：https://v1.mk/vip】8
+      - "|74.53Mb"
+      - github.com/freefq - 美国3COM公司企业网 81
+      - _SE_瑞典
+      - 中国【付费推荐：https://v1.mk/vip】420
+      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 49
+      - 韩国_0216273
+      - github.com/freefq - 美国麻省理工学院 74 2
+      - _KR_韩国 2
+      - 中国【付费推荐：https://v1.mk/vip】422
+      - 中国【付费推荐：https://v1.mk/vip】204
+      - 中国【付费推荐：https://v1.mk/vip】644
+      - 印度【付费推荐：https://v1.mk/vip】584
+      - _HK_香港 4 2
+      - 10200@oneclickvpnkeys
+      - "[02-17]-🇫🇷-法国-179-z0111.security-cloudfront-cdn.com"
+      - _CN_中国->🇹🇼_TW_台湾 2
+      - 美国【付费推荐：https://v1.mk/vip】65
+      - 中国【付费推荐：https://v1.mk/vip】646
+      - 香港【付费推荐：https://v1.mk/vip】401
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - FR 44 → tg@nicevpn123
-      - US_185.199.225.45_012920239fdb-7s%
-      - CN 5 → tg@nicevpn123
-      - _HK_香港_3
-      - 美国【付费推荐：https://v1.mk/vip】358
-      - 美国_0216040
-      - 香港【付费推荐：https://v1.mk/vip】288
-      - 中国【付费推荐：https://v1.mk/vip】288
-      - 中国【付费推荐：https://v1.mk/vip】279
-      - 中国【付费推荐：https://v1.mk/vip】298
-      - Russia-俄罗斯
-      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 49
+      - 中国【付费推荐：https://v1.mk/vip】275
+      - 英国【付费推荐：https://v1.mk/vip】388
+      - 中国_02161162
       - 中国【付费推荐：https://v1.mk/vip】246
-      - _JP_日本
-      - 美国【付费推荐：https://v1.mk/vip】363
-      - _US_美国
-      - USA-美国
-      - 中国【付费推荐：https://v1.mk/vip】262
-      - 美国【付费推荐：https://v1.mk/vip】46
-      - 中国_02161201
-      - 中国【付费推荐：https://v1.mk/vip】274
-      - 3.06| 新加坡sgam3eqsunshinecom
-      - Japan-日本
-      - 香港【付费推荐：https://v1.mk/vip】173
-      - "[02-15]-🇸🇬-新加坡-208-sg-am3.eqsunshine.com"
-      - Korea1-韩国一
-      - France 03 TG:@nodpai
-      - 中国【付费推荐：https://v1.mk/vip】312
-      - "_JP_日本\r_1"
-      - _HK_香港_7
-      - 中国【付费推荐：https://v1.mk/vip】309
-      - "|74.53Mb"
-      - 中国【付费推荐：https://v1.mk/vip】261
-      - 俄罗斯联邦_0216003
-      - 中国【付费推荐：https://v1.mk/vip】269
-      - FR_youtube@资源分享师_114
-      - 爱尔兰 001
-      - _CA_加拿大_1
-      - US_youtube@资源分享师_289
-      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 23
-      - 美国 101
-      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 38
-      - github.com/freefq - 俄罗斯  4
-      - github.com/freefq - 欧盟  67
-      - 英国【付费推荐：https://v1.mk/vip】187
-      - 美国【付费推荐：https://v1.mk/vip】188
-      - Germany 04 TG:@nodpai
+      - 中国【付费推荐：https://v1.mk/vip】226
+      - "%�\x11�'���oyj�L\r�\r%%�"
+      - 中国【付费推荐：https://v1.mk/vip】227
+      - 加拿大(TG频道@kxswa)
+      - 加拿大(TG频道@kxswa) 2
+      - 美国 004
+      - 中国【付费推荐：https://v1.mk/vip】199
+      - "| 2.96Mb"
+      - _JP_日本_3
+      - 中国【付费推荐：https://v1.mk/vip】216
       - -法国-5.135.43.119
-      - github.com/freefq - 欧盟  4
-      - 日本【付费推荐：https://v1.mk/vip】59
-      - 加拿大_0216201
-      - 韩国_0216273
-      - GB 24 → tg@nicevpn123
+      - v2rayfree.eu.org - 美国  9
+      - 德国 006
+      - 印度尼西亚【付费推荐：https://v1.mk/vip】163
+      - v2rayfree.eu.org - 美国弗吉尼亚州文特山农场OVH数据中心 41
+      - 中国_0216059
+      - 美国【付费推荐：https://v1.mk/vip】579
+      - v2rayfree.eu.org - 美国  6
+      - _油管：全网最强白嫖
+      - _FR_法国
+      - 中国【付费推荐：https://v1.mk/vip】176
+      - 中国【付费推荐：https://v1.mk/vip】454
+      - 中国_02162178
+      - "_US_美国\r"
+      - 中国【付费推荐：https://v1.mk/vip】208
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 17
+      - 中国【付费推荐：https://v1.mk/vip】192
+      - "%�\x11�'����oyj�L\r�N%%�"
+      - _CN_中国->🇹🇼_TW_台湾
+      - github.com/freefq - 欧盟  44
+      - _JP_日本
+      - github.com/freefq - 美国  20
+      - 中国【付费推荐：https://v1.mk/vip】191
+      - github.com/freefq - 欧盟  67
+      - 日本【付费推荐：https://v1.mk/vip】622
+      - 中国【付费推荐：https://v1.mk/vip】234
+      - 中国【付费推荐：https://v1.mk/vip】212
+      - 中国【付费推荐：https://v1.mk/vip】413
+      - 香港【付费推荐：https://v1.mk/vip】356
+      - 中国【付费推荐：https://v1.mk/vip】214
+      - 中国_0216163
+      - _CN_中国_2
+      - 美国【付费推荐：https://v1.mk/vip】381
+      - 中国【付费推荐：https://v1.mk/vip】231
+      - 印度_0216020
+      - 中国【付费推荐：https://v1.mk/vip】418
+      - 中国【付费推荐：https://v1.mk/vip】202
+      - 沙特阿拉伯_0216001
+      - 中国_0216059 2
+      - 美国 101
+      - v2rayfree.eu.org - 德国  3
+      - "| 5.76Mb"
+      - 俄罗斯联邦_0216003
+      - 美国_02163173
+      - 美国【付费推荐：https://v1.mk/vip】577
+      - 中国【付费推荐：https://v1.mk/vip】300
+      - 美国 011
+      - "[02-16]-🇦🇺-澳大利亚-065-z0113.security-cloudfront-cdn.com"
+      - 中国【付费推荐：https://v1.mk/vip】217
+      - 中国【付费推荐：https://v1.mk/vip】174
+      - 日本【付费推荐：https://v1.mk/vip】581
+      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 23
+      - FR_5.135.43.119_0211202366d2-22vmess
+      - 中国【付费推荐：https://v1.mk/vip】417
+      - 中国【付费推荐：https://v1.mk/vip】219
+      - v2rayfree.eu.org - 俄罗斯  4
+      - 中国【付费推荐：https://v1.mk/vip】190
+      - "| 3.07Mb 2"
+      - _CA_加拿大_1
+      - -欧盟-45.89.230.196
+      - github.com/freefq - 英国社会保险安全部 33
+      - US(https://awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技
+      - 中国【付费推荐：https://v1.mk/vip】278
+      - 法国【付费推荐：https://v1.mk/vip】394
+      - v2rayfree.eu.org - 美国  25
+      - 加拿大(TG频道@kxswa) 3
       - 美国_0216034
-      - "|19.19Mb"
+      - 新加坡【付费推荐：https://v1.mk/vip】13
+      - "_CN_中国->🇨🇦_CA_加拿大\r_来源：kkzui.com（快嘴科技）9_49_49_49_49\r"
+      - -美国-158.101.7.8
+      - 法国【付费推荐：https://v1.mk/vip】7
+      - 俄罗斯联邦【付费推荐：https://v1.mk/vip】404
+      - _HK_香港
+      - 中国【付费推荐：https://v1.mk/vip】419
+      - github.com/freefq - 美国麻省理工学院 74
+      - 中国【付费推荐：https://v1.mk/vip】279
+      - 中国【付费推荐：https://v1.mk/vip】288
+      - 中国【付费推荐：https://v1.mk/vip】421
+      - 中国【付费推荐：https://v1.mk/vip】8
+      - "|74.53Mb"
+      - github.com/freefq - 美国3COM公司企业网 81
+      - _SE_瑞典
+      - 中国【付费推荐：https://v1.mk/vip】420
+      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 49
+      - 韩国_0216273
+      - github.com/freefq - 美国麻省理工学院 74 2
+      - _KR_韩国 2
+      - 中国【付费推荐：https://v1.mk/vip】422
+      - 中国【付费推荐：https://v1.mk/vip】204
+      - 中国【付费推荐：https://v1.mk/vip】644
+      - 印度【付费推荐：https://v1.mk/vip】584
+      - _HK_香港 4 2
+      - 10200@oneclickvpnkeys
+      - "[02-17]-🇫🇷-法国-179-z0111.security-cloudfront-cdn.com"
+      - _CN_中国->🇹🇼_TW_台湾 2
+      - 美国【付费推荐：https://v1.mk/vip】65
+      - 中国【付费推荐：https://v1.mk/vip】646
+      - 香港【付费推荐：https://v1.mk/vip】401
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - FR 44 → tg@nicevpn123
-      - US_185.199.225.45_012920239fdb-7s%
-      - CN 5 → tg@nicevpn123
-      - _HK_香港_3
-      - 美国【付费推荐：https://v1.mk/vip】358
-      - 美国_0216040
-      - 香港【付费推荐：https://v1.mk/vip】288
-      - 中国【付费推荐：https://v1.mk/vip】288
-      - 中国【付费推荐：https://v1.mk/vip】279
-      - 中国【付费推荐：https://v1.mk/vip】298
-      - Russia-俄罗斯
-      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 49
+      - 中国【付费推荐：https://v1.mk/vip】275
+      - 英国【付费推荐：https://v1.mk/vip】388
+      - 中国_02161162
       - 中国【付费推荐：https://v1.mk/vip】246
-      - _JP_日本
-      - 美国【付费推荐：https://v1.mk/vip】363
-      - _US_美国
-      - USA-美国
-      - 中国【付费推荐：https://v1.mk/vip】262
-      - 美国【付费推荐：https://v1.mk/vip】46
-      - 中国_02161201
-      - 中国【付费推荐：https://v1.mk/vip】274
-      - 3.06| 新加坡sgam3eqsunshinecom
-      - Japan-日本
-      - 香港【付费推荐：https://v1.mk/vip】173
-      - "[02-15]-🇸🇬-新加坡-208-sg-am3.eqsunshine.com"
-      - Korea1-韩国一
-      - France 03 TG:@nodpai
-      - 中国【付费推荐：https://v1.mk/vip】312
-      - "_JP_日本\r_1"
-      - _HK_香港_7
-      - 中国【付费推荐：https://v1.mk/vip】309
-      - "|74.53Mb"
-      - 中国【付费推荐：https://v1.mk/vip】261
-      - 俄罗斯联邦_0216003
-      - 中国【付费推荐：https://v1.mk/vip】269
-      - FR_youtube@资源分享师_114
-      - 爱尔兰 001
-      - _CA_加拿大_1
-      - US_youtube@资源分享师_289
-      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 23
-      - 美国 101
-      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 38
-      - github.com/freefq - 俄罗斯  4
-      - github.com/freefq - 欧盟  67
-      - 英国【付费推荐：https://v1.mk/vip】187
-      - 美国【付费推荐：https://v1.mk/vip】188
-      - Germany 04 TG:@nodpai
+      - 中国【付费推荐：https://v1.mk/vip】226
+      - "%�\x11�'���oyj�L\r�\r%%�"
+      - 中国【付费推荐：https://v1.mk/vip】227
+      - 加拿大(TG频道@kxswa)
+      - 加拿大(TG频道@kxswa) 2
+      - 美国 004
+      - 中国【付费推荐：https://v1.mk/vip】199
+      - "| 2.96Mb"
+      - _JP_日本_3
+      - 中国【付费推荐：https://v1.mk/vip】216
       - -法国-5.135.43.119
-      - github.com/freefq - 欧盟  4
-      - 日本【付费推荐：https://v1.mk/vip】59
-      - 加拿大_0216201
-      - 韩国_0216273
-      - GB 24 → tg@nicevpn123
+      - v2rayfree.eu.org - 美国  9
+      - 德国 006
+      - 印度尼西亚【付费推荐：https://v1.mk/vip】163
+      - v2rayfree.eu.org - 美国弗吉尼亚州文特山农场OVH数据中心 41
+      - 中国_0216059
+      - 美国【付费推荐：https://v1.mk/vip】579
+      - v2rayfree.eu.org - 美国  6
+      - _油管：全网最强白嫖
+      - _FR_法国
+      - 中国【付费推荐：https://v1.mk/vip】176
+      - 中国【付费推荐：https://v1.mk/vip】454
+      - 中国_02162178
+      - "_US_美国\r"
+      - 中国【付费推荐：https://v1.mk/vip】208
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 17
+      - 中国【付费推荐：https://v1.mk/vip】192
+      - "%�\x11�'����oyj�L\r�N%%�"
+      - _CN_中国->🇹🇼_TW_台湾
+      - github.com/freefq - 欧盟  44
+      - _JP_日本
+      - github.com/freefq - 美国  20
+      - 中国【付费推荐：https://v1.mk/vip】191
+      - github.com/freefq - 欧盟  67
+      - 日本【付费推荐：https://v1.mk/vip】622
+      - 中国【付费推荐：https://v1.mk/vip】234
+      - 中国【付费推荐：https://v1.mk/vip】212
+      - 中国【付费推荐：https://v1.mk/vip】413
+      - 香港【付费推荐：https://v1.mk/vip】356
+      - 中国【付费推荐：https://v1.mk/vip】214
+      - 中国_0216163
+      - _CN_中国_2
+      - 美国【付费推荐：https://v1.mk/vip】381
+      - 中国【付费推荐：https://v1.mk/vip】231
+      - 印度_0216020
+      - 中国【付费推荐：https://v1.mk/vip】418
+      - 中国【付费推荐：https://v1.mk/vip】202
+      - 沙特阿拉伯_0216001
+      - 中国_0216059 2
+      - 美国 101
+      - v2rayfree.eu.org - 德国  3
+      - "| 5.76Mb"
+      - 俄罗斯联邦_0216003
+      - 美国_02163173
+      - 美国【付费推荐：https://v1.mk/vip】577
+      - 中国【付费推荐：https://v1.mk/vip】300
+      - 美国 011
+      - "[02-16]-🇦🇺-澳大利亚-065-z0113.security-cloudfront-cdn.com"
+      - 中国【付费推荐：https://v1.mk/vip】217
+      - 中国【付费推荐：https://v1.mk/vip】174
+      - 日本【付费推荐：https://v1.mk/vip】581
+      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 23
+      - FR_5.135.43.119_0211202366d2-22vmess
+      - 中国【付费推荐：https://v1.mk/vip】417
+      - 中国【付费推荐：https://v1.mk/vip】219
+      - v2rayfree.eu.org - 俄罗斯  4
+      - 中国【付费推荐：https://v1.mk/vip】190
+      - "| 3.07Mb 2"
+      - _CA_加拿大_1
+      - -欧盟-45.89.230.196
+      - github.com/freefq - 英国社会保险安全部 33
+      - US(https://awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技
+      - 中国【付费推荐：https://v1.mk/vip】278
+      - 法国【付费推荐：https://v1.mk/vip】394
+      - v2rayfree.eu.org - 美国  25
+      - 加拿大(TG频道@kxswa) 3
       - 美国_0216034
-      - "|19.19Mb"
+      - 新加坡【付费推荐：https://v1.mk/vip】13
+      - "_CN_中国->🇨🇦_CA_加拿大\r_来源：kkzui.com（快嘴科技）9_49_49_49_49\r"
+      - -美国-158.101.7.8
+      - 法国【付费推荐：https://v1.mk/vip】7
+      - 俄罗斯联邦【付费推荐：https://v1.mk/vip】404
+      - _HK_香港
+      - 中国【付费推荐：https://v1.mk/vip】419
+      - github.com/freefq - 美国麻省理工学院 74
+      - 中国【付费推荐：https://v1.mk/vip】279
+      - 中国【付费推荐：https://v1.mk/vip】288
+      - 中国【付费推荐：https://v1.mk/vip】421
+      - 中国【付费推荐：https://v1.mk/vip】8
+      - "|74.53Mb"
+      - github.com/freefq - 美国3COM公司企业网 81
+      - _SE_瑞典
+      - 中国【付费推荐：https://v1.mk/vip】420
+      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 49
+      - 韩国_0216273
+      - github.com/freefq - 美国麻省理工学院 74 2
+      - _KR_韩国 2
+      - 中国【付费推荐：https://v1.mk/vip】422
+      - 中国【付费推荐：https://v1.mk/vip】204
+      - 中国【付费推荐：https://v1.mk/vip】644
+      - 印度【付费推荐：https://v1.mk/vip】584
+      - _HK_香港 4 2
+      - 10200@oneclickvpnkeys
+      - "[02-17]-🇫🇷-法国-179-z0111.security-cloudfront-cdn.com"
+      - _CN_中国->🇹🇼_TW_台湾 2
+      - 美国【付费推荐：https://v1.mk/vip】65
+      - 中国【付费推荐：https://v1.mk/vip】646
+      - 香港【付费推荐：https://v1.mk/vip】401
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -261,251 +489,481 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - FR 44 → tg@nicevpn123
-      - US_185.199.225.45_012920239fdb-7s%
-      - CN 5 → tg@nicevpn123
-      - _HK_香港_3
-      - 美国【付费推荐：https://v1.mk/vip】358
-      - 美国_0216040
-      - 香港【付费推荐：https://v1.mk/vip】288
-      - 中国【付费推荐：https://v1.mk/vip】288
-      - 中国【付费推荐：https://v1.mk/vip】279
-      - 中国【付费推荐：https://v1.mk/vip】298
-      - Russia-俄罗斯
-      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 49
+      - 中国【付费推荐：https://v1.mk/vip】275
+      - 英国【付费推荐：https://v1.mk/vip】388
+      - 中国_02161162
       - 中国【付费推荐：https://v1.mk/vip】246
-      - _JP_日本
-      - 美国【付费推荐：https://v1.mk/vip】363
-      - _US_美国
-      - USA-美国
-      - 中国【付费推荐：https://v1.mk/vip】262
-      - 美国【付费推荐：https://v1.mk/vip】46
-      - 中国_02161201
-      - 中国【付费推荐：https://v1.mk/vip】274
-      - 3.06| 新加坡sgam3eqsunshinecom
-      - Japan-日本
-      - 香港【付费推荐：https://v1.mk/vip】173
-      - "[02-15]-🇸🇬-新加坡-208-sg-am3.eqsunshine.com"
-      - Korea1-韩国一
-      - France 03 TG:@nodpai
-      - 中国【付费推荐：https://v1.mk/vip】312
-      - "_JP_日本\r_1"
-      - _HK_香港_7
-      - 中国【付费推荐：https://v1.mk/vip】309
-      - "|74.53Mb"
-      - 中国【付费推荐：https://v1.mk/vip】261
-      - 俄罗斯联邦_0216003
-      - 中国【付费推荐：https://v1.mk/vip】269
-      - FR_youtube@资源分享师_114
-      - 爱尔兰 001
-      - _CA_加拿大_1
-      - US_youtube@资源分享师_289
-      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 23
-      - 美国 101
-      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 38
-      - github.com/freefq - 俄罗斯  4
-      - github.com/freefq - 欧盟  67
-      - 英国【付费推荐：https://v1.mk/vip】187
-      - 美国【付费推荐：https://v1.mk/vip】188
-      - Germany 04 TG:@nodpai
+      - 中国【付费推荐：https://v1.mk/vip】226
+      - "%�\x11�'���oyj�L\r�\r%%�"
+      - 中国【付费推荐：https://v1.mk/vip】227
+      - 加拿大(TG频道@kxswa)
+      - 加拿大(TG频道@kxswa) 2
+      - 美国 004
+      - 中国【付费推荐：https://v1.mk/vip】199
+      - "| 2.96Mb"
+      - _JP_日本_3
+      - 中国【付费推荐：https://v1.mk/vip】216
       - -法国-5.135.43.119
-      - github.com/freefq - 欧盟  4
-      - 日本【付费推荐：https://v1.mk/vip】59
-      - 加拿大_0216201
-      - 韩国_0216273
-      - GB 24 → tg@nicevpn123
+      - v2rayfree.eu.org - 美国  9
+      - 德国 006
+      - 印度尼西亚【付费推荐：https://v1.mk/vip】163
+      - v2rayfree.eu.org - 美国弗吉尼亚州文特山农场OVH数据中心 41
+      - 中国_0216059
+      - 美国【付费推荐：https://v1.mk/vip】579
+      - v2rayfree.eu.org - 美国  6
+      - _油管：全网最强白嫖
+      - _FR_法国
+      - 中国【付费推荐：https://v1.mk/vip】176
+      - 中国【付费推荐：https://v1.mk/vip】454
+      - 中国_02162178
+      - "_US_美国\r"
+      - 中国【付费推荐：https://v1.mk/vip】208
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 17
+      - 中国【付费推荐：https://v1.mk/vip】192
+      - "%�\x11�'����oyj�L\r�N%%�"
+      - _CN_中国->🇹🇼_TW_台湾
+      - github.com/freefq - 欧盟  44
+      - _JP_日本
+      - github.com/freefq - 美国  20
+      - 中国【付费推荐：https://v1.mk/vip】191
+      - github.com/freefq - 欧盟  67
+      - 日本【付费推荐：https://v1.mk/vip】622
+      - 中国【付费推荐：https://v1.mk/vip】234
+      - 中国【付费推荐：https://v1.mk/vip】212
+      - 中国【付费推荐：https://v1.mk/vip】413
+      - 香港【付费推荐：https://v1.mk/vip】356
+      - 中国【付费推荐：https://v1.mk/vip】214
+      - 中国_0216163
+      - _CN_中国_2
+      - 美国【付费推荐：https://v1.mk/vip】381
+      - 中国【付费推荐：https://v1.mk/vip】231
+      - 印度_0216020
+      - 中国【付费推荐：https://v1.mk/vip】418
+      - 中国【付费推荐：https://v1.mk/vip】202
+      - 沙特阿拉伯_0216001
+      - 中国_0216059 2
+      - 美国 101
+      - v2rayfree.eu.org - 德国  3
+      - "| 5.76Mb"
+      - 俄罗斯联邦_0216003
+      - 美国_02163173
+      - 美国【付费推荐：https://v1.mk/vip】577
+      - 中国【付费推荐：https://v1.mk/vip】300
+      - 美国 011
+      - "[02-16]-🇦🇺-澳大利亚-065-z0113.security-cloudfront-cdn.com"
+      - 中国【付费推荐：https://v1.mk/vip】217
+      - 中国【付费推荐：https://v1.mk/vip】174
+      - 日本【付费推荐：https://v1.mk/vip】581
+      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 23
+      - FR_5.135.43.119_0211202366d2-22vmess
+      - 中国【付费推荐：https://v1.mk/vip】417
+      - 中国【付费推荐：https://v1.mk/vip】219
+      - v2rayfree.eu.org - 俄罗斯  4
+      - 中国【付费推荐：https://v1.mk/vip】190
+      - "| 3.07Mb 2"
+      - _CA_加拿大_1
+      - -欧盟-45.89.230.196
+      - github.com/freefq - 英国社会保险安全部 33
+      - US(https://awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技
+      - 中国【付费推荐：https://v1.mk/vip】278
+      - 法国【付费推荐：https://v1.mk/vip】394
+      - v2rayfree.eu.org - 美国  25
+      - 加拿大(TG频道@kxswa) 3
       - 美国_0216034
-      - "|19.19Mb"
+      - 新加坡【付费推荐：https://v1.mk/vip】13
+      - "_CN_中国->🇨🇦_CA_加拿大\r_来源：kkzui.com（快嘴科技）9_49_49_49_49\r"
+      - -美国-158.101.7.8
+      - 法国【付费推荐：https://v1.mk/vip】7
+      - 俄罗斯联邦【付费推荐：https://v1.mk/vip】404
+      - _HK_香港
+      - 中国【付费推荐：https://v1.mk/vip】419
+      - github.com/freefq - 美国麻省理工学院 74
+      - 中国【付费推荐：https://v1.mk/vip】279
+      - 中国【付费推荐：https://v1.mk/vip】288
+      - 中国【付费推荐：https://v1.mk/vip】421
+      - 中国【付费推荐：https://v1.mk/vip】8
+      - "|74.53Mb"
+      - github.com/freefq - 美国3COM公司企业网 81
+      - _SE_瑞典
+      - 中国【付费推荐：https://v1.mk/vip】420
+      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 49
+      - 韩国_0216273
+      - github.com/freefq - 美国麻省理工学院 74 2
+      - _KR_韩国 2
+      - 中国【付费推荐：https://v1.mk/vip】422
+      - 中国【付费推荐：https://v1.mk/vip】204
+      - 中国【付费推荐：https://v1.mk/vip】644
+      - 印度【付费推荐：https://v1.mk/vip】584
+      - _HK_香港 4 2
+      - 10200@oneclickvpnkeys
+      - "[02-17]-🇫🇷-法国-179-z0111.security-cloudfront-cdn.com"
+      - _CN_中国->🇹🇼_TW_台湾 2
+      - 美国【付费推荐：https://v1.mk/vip】65
+      - 中国【付费推荐：https://v1.mk/vip】646
+      - 香港【付费推荐：https://v1.mk/vip】401
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - _HK_香港_3
-      - 香港【付费推荐：https://v1.mk/vip】288
-      - 香港【付费推荐：https://v1.mk/vip】173
-      - _HK_香港_7
+      - _CN_中国->🇹🇼_TW_台湾
+      - 香港【付费推荐：https://v1.mk/vip】356
+      - _HK_香港
+      - _HK_香港 4 2
+      - _CN_中国->🇹🇼_TW_台湾 2
+      - 香港【付费推荐：https://v1.mk/vip】401
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - FR 44 → tg@nicevpn123
-      - US_185.199.225.45_012920239fdb-7s%
-      - CN 5 → tg@nicevpn123
-      - _HK_香港_3
-      - 美国【付费推荐：https://v1.mk/vip】358
-      - 美国_0216040
-      - 香港【付费推荐：https://v1.mk/vip】288
-      - 中国【付费推荐：https://v1.mk/vip】288
-      - 中国【付费推荐：https://v1.mk/vip】279
-      - 中国【付费推荐：https://v1.mk/vip】298
-      - Russia-俄罗斯
-      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 49
+      - 中国【付费推荐：https://v1.mk/vip】275
+      - 英国【付费推荐：https://v1.mk/vip】388
+      - 中国_02161162
       - 中国【付费推荐：https://v1.mk/vip】246
-      - _JP_日本
-      - 美国【付费推荐：https://v1.mk/vip】363
-      - _US_美国
-      - USA-美国
-      - 中国【付费推荐：https://v1.mk/vip】262
-      - 美国【付费推荐：https://v1.mk/vip】46
-      - 中国_02161201
-      - 中国【付费推荐：https://v1.mk/vip】274
-      - 3.06| 新加坡sgam3eqsunshinecom
-      - Japan-日本
-      - 香港【付费推荐：https://v1.mk/vip】173
-      - "[02-15]-🇸🇬-新加坡-208-sg-am3.eqsunshine.com"
-      - Korea1-韩国一
-      - France 03 TG:@nodpai
-      - 中国【付费推荐：https://v1.mk/vip】312
-      - "_JP_日本\r_1"
-      - _HK_香港_7
-      - 中国【付费推荐：https://v1.mk/vip】309
-      - "|74.53Mb"
-      - 中国【付费推荐：https://v1.mk/vip】261
-      - 俄罗斯联邦_0216003
-      - 中国【付费推荐：https://v1.mk/vip】269
-      - FR_youtube@资源分享师_114
-      - 爱尔兰 001
-      - _CA_加拿大_1
-      - US_youtube@资源分享师_289
-      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 23
-      - 美国 101
-      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 38
-      - github.com/freefq - 俄罗斯  4
-      - github.com/freefq - 欧盟  67
-      - 英国【付费推荐：https://v1.mk/vip】187
-      - 美国【付费推荐：https://v1.mk/vip】188
-      - Germany 04 TG:@nodpai
+      - 中国【付费推荐：https://v1.mk/vip】226
+      - "%�\x11�'���oyj�L\r�\r%%�"
+      - 中国【付费推荐：https://v1.mk/vip】227
+      - 加拿大(TG频道@kxswa)
+      - 加拿大(TG频道@kxswa) 2
+      - 美国 004
+      - 中国【付费推荐：https://v1.mk/vip】199
+      - "| 2.96Mb"
+      - _JP_日本_3
+      - 中国【付费推荐：https://v1.mk/vip】216
       - -法国-5.135.43.119
-      - github.com/freefq - 欧盟  4
-      - 日本【付费推荐：https://v1.mk/vip】59
-      - 加拿大_0216201
-      - 韩国_0216273
-      - GB 24 → tg@nicevpn123
+      - v2rayfree.eu.org - 美国  9
+      - 德国 006
+      - 印度尼西亚【付费推荐：https://v1.mk/vip】163
+      - v2rayfree.eu.org - 美国弗吉尼亚州文特山农场OVH数据中心 41
+      - 中国_0216059
+      - 美国【付费推荐：https://v1.mk/vip】579
+      - v2rayfree.eu.org - 美国  6
+      - _油管：全网最强白嫖
+      - _FR_法国
+      - 中国【付费推荐：https://v1.mk/vip】176
+      - 中国【付费推荐：https://v1.mk/vip】454
+      - 中国_02162178
+      - "_US_美国\r"
+      - 中国【付费推荐：https://v1.mk/vip】208
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 17
+      - 中国【付费推荐：https://v1.mk/vip】192
+      - "%�\x11�'����oyj�L\r�N%%�"
+      - _CN_中国->🇹🇼_TW_台湾
+      - github.com/freefq - 欧盟  44
+      - _JP_日本
+      - github.com/freefq - 美国  20
+      - 中国【付费推荐：https://v1.mk/vip】191
+      - github.com/freefq - 欧盟  67
+      - 日本【付费推荐：https://v1.mk/vip】622
+      - 中国【付费推荐：https://v1.mk/vip】234
+      - 中国【付费推荐：https://v1.mk/vip】212
+      - 中国【付费推荐：https://v1.mk/vip】413
+      - 香港【付费推荐：https://v1.mk/vip】356
+      - 中国【付费推荐：https://v1.mk/vip】214
+      - 中国_0216163
+      - _CN_中国_2
+      - 美国【付费推荐：https://v1.mk/vip】381
+      - 中国【付费推荐：https://v1.mk/vip】231
+      - 印度_0216020
+      - 中国【付费推荐：https://v1.mk/vip】418
+      - 中国【付费推荐：https://v1.mk/vip】202
+      - 沙特阿拉伯_0216001
+      - 中国_0216059 2
+      - 美国 101
+      - v2rayfree.eu.org - 德国  3
+      - "| 5.76Mb"
+      - 俄罗斯联邦_0216003
+      - 美国_02163173
+      - 美国【付费推荐：https://v1.mk/vip】577
+      - 中国【付费推荐：https://v1.mk/vip】300
+      - 美国 011
+      - "[02-16]-🇦🇺-澳大利亚-065-z0113.security-cloudfront-cdn.com"
+      - 中国【付费推荐：https://v1.mk/vip】217
+      - 中国【付费推荐：https://v1.mk/vip】174
+      - 日本【付费推荐：https://v1.mk/vip】581
+      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 23
+      - FR_5.135.43.119_0211202366d2-22vmess
+      - 中国【付费推荐：https://v1.mk/vip】417
+      - 中国【付费推荐：https://v1.mk/vip】219
+      - v2rayfree.eu.org - 俄罗斯  4
+      - 中国【付费推荐：https://v1.mk/vip】190
+      - "| 3.07Mb 2"
+      - _CA_加拿大_1
+      - -欧盟-45.89.230.196
+      - github.com/freefq - 英国社会保险安全部 33
+      - US(https://awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技
+      - 中国【付费推荐：https://v1.mk/vip】278
+      - 法国【付费推荐：https://v1.mk/vip】394
+      - v2rayfree.eu.org - 美国  25
+      - 加拿大(TG频道@kxswa) 3
       - 美国_0216034
-      - "|19.19Mb"
+      - 新加坡【付费推荐：https://v1.mk/vip】13
+      - "_CN_中国->🇨🇦_CA_加拿大\r_来源：kkzui.com（快嘴科技）9_49_49_49_49\r"
+      - -美国-158.101.7.8
+      - 法国【付费推荐：https://v1.mk/vip】7
+      - 俄罗斯联邦【付费推荐：https://v1.mk/vip】404
+      - _HK_香港
+      - 中国【付费推荐：https://v1.mk/vip】419
+      - github.com/freefq - 美国麻省理工学院 74
+      - 中国【付费推荐：https://v1.mk/vip】279
+      - 中国【付费推荐：https://v1.mk/vip】288
+      - 中国【付费推荐：https://v1.mk/vip】421
+      - 中国【付费推荐：https://v1.mk/vip】8
+      - "|74.53Mb"
+      - github.com/freefq - 美国3COM公司企业网 81
+      - _SE_瑞典
+      - 中国【付费推荐：https://v1.mk/vip】420
+      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 49
+      - 韩国_0216273
+      - github.com/freefq - 美国麻省理工学院 74 2
+      - _KR_韩国 2
+      - 中国【付费推荐：https://v1.mk/vip】422
+      - 中国【付费推荐：https://v1.mk/vip】204
+      - 中国【付费推荐：https://v1.mk/vip】644
+      - 印度【付费推荐：https://v1.mk/vip】584
+      - _HK_香港 4 2
+      - 10200@oneclickvpnkeys
+      - "[02-17]-🇫🇷-法国-179-z0111.security-cloudfront-cdn.com"
+      - _CN_中国->🇹🇼_TW_台湾 2
+      - 美国【付费推荐：https://v1.mk/vip】65
+      - 中国【付费推荐：https://v1.mk/vip】646
+      - 香港【付费推荐：https://v1.mk/vip】401
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - FR 44 → tg@nicevpn123
-      - US_185.199.225.45_012920239fdb-7s%
-      - CN 5 → tg@nicevpn123
-      - _HK_香港_3
-      - 美国【付费推荐：https://v1.mk/vip】358
-      - 美国_0216040
-      - 香港【付费推荐：https://v1.mk/vip】288
-      - 中国【付费推荐：https://v1.mk/vip】288
-      - 中国【付费推荐：https://v1.mk/vip】279
-      - 中国【付费推荐：https://v1.mk/vip】298
-      - Russia-俄罗斯
-      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 49
+      - 中国【付费推荐：https://v1.mk/vip】275
+      - 英国【付费推荐：https://v1.mk/vip】388
+      - 中国_02161162
       - 中国【付费推荐：https://v1.mk/vip】246
-      - _JP_日本
-      - 美国【付费推荐：https://v1.mk/vip】363
-      - _US_美国
-      - USA-美国
-      - 中国【付费推荐：https://v1.mk/vip】262
-      - 美国【付费推荐：https://v1.mk/vip】46
-      - 中国_02161201
-      - 中国【付费推荐：https://v1.mk/vip】274
-      - 3.06| 新加坡sgam3eqsunshinecom
-      - Japan-日本
-      - 香港【付费推荐：https://v1.mk/vip】173
-      - "[02-15]-🇸🇬-新加坡-208-sg-am3.eqsunshine.com"
-      - Korea1-韩国一
-      - France 03 TG:@nodpai
-      - 中国【付费推荐：https://v1.mk/vip】312
-      - "_JP_日本\r_1"
-      - _HK_香港_7
-      - 中国【付费推荐：https://v1.mk/vip】309
-      - "|74.53Mb"
-      - 中国【付费推荐：https://v1.mk/vip】261
-      - 俄罗斯联邦_0216003
-      - 中国【付费推荐：https://v1.mk/vip】269
-      - FR_youtube@资源分享师_114
-      - 爱尔兰 001
-      - _CA_加拿大_1
-      - US_youtube@资源分享师_289
-      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 23
-      - 美国 101
-      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 38
-      - github.com/freefq - 俄罗斯  4
-      - github.com/freefq - 欧盟  67
-      - 英国【付费推荐：https://v1.mk/vip】187
-      - 美国【付费推荐：https://v1.mk/vip】188
-      - Germany 04 TG:@nodpai
+      - 中国【付费推荐：https://v1.mk/vip】226
+      - "%�\x11�'���oyj�L\r�\r%%�"
+      - 中国【付费推荐：https://v1.mk/vip】227
+      - 加拿大(TG频道@kxswa)
+      - 加拿大(TG频道@kxswa) 2
+      - 美国 004
+      - 中国【付费推荐：https://v1.mk/vip】199
+      - "| 2.96Mb"
+      - _JP_日本_3
+      - 中国【付费推荐：https://v1.mk/vip】216
       - -法国-5.135.43.119
-      - github.com/freefq - 欧盟  4
-      - 日本【付费推荐：https://v1.mk/vip】59
-      - 加拿大_0216201
-      - 韩国_0216273
-      - GB 24 → tg@nicevpn123
+      - v2rayfree.eu.org - 美国  9
+      - 德国 006
+      - 印度尼西亚【付费推荐：https://v1.mk/vip】163
+      - v2rayfree.eu.org - 美国弗吉尼亚州文特山农场OVH数据中心 41
+      - 中国_0216059
+      - 美国【付费推荐：https://v1.mk/vip】579
+      - v2rayfree.eu.org - 美国  6
+      - _油管：全网最强白嫖
+      - _FR_法国
+      - 中国【付费推荐：https://v1.mk/vip】176
+      - 中国【付费推荐：https://v1.mk/vip】454
+      - 中国_02162178
+      - "_US_美国\r"
+      - 中国【付费推荐：https://v1.mk/vip】208
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 17
+      - 中国【付费推荐：https://v1.mk/vip】192
+      - "%�\x11�'����oyj�L\r�N%%�"
+      - _CN_中国->🇹🇼_TW_台湾
+      - github.com/freefq - 欧盟  44
+      - _JP_日本
+      - github.com/freefq - 美国  20
+      - 中国【付费推荐：https://v1.mk/vip】191
+      - github.com/freefq - 欧盟  67
+      - 日本【付费推荐：https://v1.mk/vip】622
+      - 中国【付费推荐：https://v1.mk/vip】234
+      - 中国【付费推荐：https://v1.mk/vip】212
+      - 中国【付费推荐：https://v1.mk/vip】413
+      - 香港【付费推荐：https://v1.mk/vip】356
+      - 中国【付费推荐：https://v1.mk/vip】214
+      - 中国_0216163
+      - _CN_中国_2
+      - 美国【付费推荐：https://v1.mk/vip】381
+      - 中国【付费推荐：https://v1.mk/vip】231
+      - 印度_0216020
+      - 中国【付费推荐：https://v1.mk/vip】418
+      - 中国【付费推荐：https://v1.mk/vip】202
+      - 沙特阿拉伯_0216001
+      - 中国_0216059 2
+      - 美国 101
+      - v2rayfree.eu.org - 德国  3
+      - "| 5.76Mb"
+      - 俄罗斯联邦_0216003
+      - 美国_02163173
+      - 美国【付费推荐：https://v1.mk/vip】577
+      - 中国【付费推荐：https://v1.mk/vip】300
+      - 美国 011
+      - "[02-16]-🇦🇺-澳大利亚-065-z0113.security-cloudfront-cdn.com"
+      - 中国【付费推荐：https://v1.mk/vip】217
+      - 中国【付费推荐：https://v1.mk/vip】174
+      - 日本【付费推荐：https://v1.mk/vip】581
+      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 23
+      - FR_5.135.43.119_0211202366d2-22vmess
+      - 中国【付费推荐：https://v1.mk/vip】417
+      - 中国【付费推荐：https://v1.mk/vip】219
+      - v2rayfree.eu.org - 俄罗斯  4
+      - 中国【付费推荐：https://v1.mk/vip】190
+      - "| 3.07Mb 2"
+      - _CA_加拿大_1
+      - -欧盟-45.89.230.196
+      - github.com/freefq - 英国社会保险安全部 33
+      - US(https://awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技
+      - 中国【付费推荐：https://v1.mk/vip】278
+      - 法国【付费推荐：https://v1.mk/vip】394
+      - v2rayfree.eu.org - 美国  25
+      - 加拿大(TG频道@kxswa) 3
       - 美国_0216034
-      - "|19.19Mb"
+      - 新加坡【付费推荐：https://v1.mk/vip】13
+      - "_CN_中国->🇨🇦_CA_加拿大\r_来源：kkzui.com（快嘴科技）9_49_49_49_49\r"
+      - -美国-158.101.7.8
+      - 法国【付费推荐：https://v1.mk/vip】7
+      - 俄罗斯联邦【付费推荐：https://v1.mk/vip】404
+      - _HK_香港
+      - 中国【付费推荐：https://v1.mk/vip】419
+      - github.com/freefq - 美国麻省理工学院 74
+      - 中国【付费推荐：https://v1.mk/vip】279
+      - 中国【付费推荐：https://v1.mk/vip】288
+      - 中国【付费推荐：https://v1.mk/vip】421
+      - 中国【付费推荐：https://v1.mk/vip】8
+      - "|74.53Mb"
+      - github.com/freefq - 美国3COM公司企业网 81
+      - _SE_瑞典
+      - 中国【付费推荐：https://v1.mk/vip】420
+      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 49
+      - 韩国_0216273
+      - github.com/freefq - 美国麻省理工学院 74 2
+      - _KR_韩国 2
+      - 中国【付费推荐：https://v1.mk/vip】422
+      - 中国【付费推荐：https://v1.mk/vip】204
+      - 中国【付费推荐：https://v1.mk/vip】644
+      - 印度【付费推荐：https://v1.mk/vip】584
+      - _HK_香港 4 2
+      - 10200@oneclickvpnkeys
+      - "[02-17]-🇫🇷-法国-179-z0111.security-cloudfront-cdn.com"
+      - _CN_中国->🇹🇼_TW_台湾 2
+      - 美国【付费推荐：https://v1.mk/vip】65
+      - 中国【付费推荐：https://v1.mk/vip】646
+      - 香港【付费推荐：https://v1.mk/vip】401
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - FR 44 → tg@nicevpn123
-      - US_185.199.225.45_012920239fdb-7s%
-      - CN 5 → tg@nicevpn123
-      - _HK_香港_3
-      - 美国【付费推荐：https://v1.mk/vip】358
-      - 美国_0216040
-      - 香港【付费推荐：https://v1.mk/vip】288
-      - 中国【付费推荐：https://v1.mk/vip】288
-      - 中国【付费推荐：https://v1.mk/vip】279
-      - 中国【付费推荐：https://v1.mk/vip】298
-      - Russia-俄罗斯
-      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 49
+      - 中国【付费推荐：https://v1.mk/vip】275
+      - 英国【付费推荐：https://v1.mk/vip】388
+      - 中国_02161162
       - 中国【付费推荐：https://v1.mk/vip】246
-      - _JP_日本
-      - 美国【付费推荐：https://v1.mk/vip】363
-      - _US_美国
-      - USA-美国
-      - 中国【付费推荐：https://v1.mk/vip】262
-      - 美国【付费推荐：https://v1.mk/vip】46
-      - 中国_02161201
-      - 中国【付费推荐：https://v1.mk/vip】274
-      - 3.06| 新加坡sgam3eqsunshinecom
-      - Japan-日本
-      - 香港【付费推荐：https://v1.mk/vip】173
-      - "[02-15]-🇸🇬-新加坡-208-sg-am3.eqsunshine.com"
-      - Korea1-韩国一
-      - France 03 TG:@nodpai
-      - 中国【付费推荐：https://v1.mk/vip】312
-      - "_JP_日本\r_1"
-      - _HK_香港_7
-      - 中国【付费推荐：https://v1.mk/vip】309
-      - "|74.53Mb"
-      - 中国【付费推荐：https://v1.mk/vip】261
-      - 俄罗斯联邦_0216003
-      - 中国【付费推荐：https://v1.mk/vip】269
-      - FR_youtube@资源分享师_114
-      - 爱尔兰 001
-      - _CA_加拿大_1
-      - US_youtube@资源分享师_289
-      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 23
-      - 美国 101
-      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 38
-      - github.com/freefq - 俄罗斯  4
-      - github.com/freefq - 欧盟  67
-      - 英国【付费推荐：https://v1.mk/vip】187
-      - 美国【付费推荐：https://v1.mk/vip】188
-      - Germany 04 TG:@nodpai
+      - 中国【付费推荐：https://v1.mk/vip】226
+      - "%�\x11�'���oyj�L\r�\r%%�"
+      - 中国【付费推荐：https://v1.mk/vip】227
+      - 加拿大(TG频道@kxswa)
+      - 加拿大(TG频道@kxswa) 2
+      - 美国 004
+      - 中国【付费推荐：https://v1.mk/vip】199
+      - "| 2.96Mb"
+      - _JP_日本_3
+      - 中国【付费推荐：https://v1.mk/vip】216
       - -法国-5.135.43.119
-      - github.com/freefq - 欧盟  4
-      - 日本【付费推荐：https://v1.mk/vip】59
-      - 加拿大_0216201
-      - 韩国_0216273
-      - GB 24 → tg@nicevpn123
+      - v2rayfree.eu.org - 美国  9
+      - 德国 006
+      - 印度尼西亚【付费推荐：https://v1.mk/vip】163
+      - v2rayfree.eu.org - 美国弗吉尼亚州文特山农场OVH数据中心 41
+      - 中国_0216059
+      - 美国【付费推荐：https://v1.mk/vip】579
+      - v2rayfree.eu.org - 美国  6
+      - _油管：全网最强白嫖
+      - _FR_法国
+      - 中国【付费推荐：https://v1.mk/vip】176
+      - 中国【付费推荐：https://v1.mk/vip】454
+      - 中国_02162178
+      - "_US_美国\r"
+      - 中国【付费推荐：https://v1.mk/vip】208
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 17
+      - 中国【付费推荐：https://v1.mk/vip】192
+      - "%�\x11�'����oyj�L\r�N%%�"
+      - _CN_中国->🇹🇼_TW_台湾
+      - github.com/freefq - 欧盟  44
+      - _JP_日本
+      - github.com/freefq - 美国  20
+      - 中国【付费推荐：https://v1.mk/vip】191
+      - github.com/freefq - 欧盟  67
+      - 日本【付费推荐：https://v1.mk/vip】622
+      - 中国【付费推荐：https://v1.mk/vip】234
+      - 中国【付费推荐：https://v1.mk/vip】212
+      - 中国【付费推荐：https://v1.mk/vip】413
+      - 香港【付费推荐：https://v1.mk/vip】356
+      - 中国【付费推荐：https://v1.mk/vip】214
+      - 中国_0216163
+      - _CN_中国_2
+      - 美国【付费推荐：https://v1.mk/vip】381
+      - 中国【付费推荐：https://v1.mk/vip】231
+      - 印度_0216020
+      - 中国【付费推荐：https://v1.mk/vip】418
+      - 中国【付费推荐：https://v1.mk/vip】202
+      - 沙特阿拉伯_0216001
+      - 中国_0216059 2
+      - 美国 101
+      - v2rayfree.eu.org - 德国  3
+      - "| 5.76Mb"
+      - 俄罗斯联邦_0216003
+      - 美国_02163173
+      - 美国【付费推荐：https://v1.mk/vip】577
+      - 中国【付费推荐：https://v1.mk/vip】300
+      - 美国 011
+      - "[02-16]-🇦🇺-澳大利亚-065-z0113.security-cloudfront-cdn.com"
+      - 中国【付费推荐：https://v1.mk/vip】217
+      - 中国【付费推荐：https://v1.mk/vip】174
+      - 日本【付费推荐：https://v1.mk/vip】581
+      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 23
+      - FR_5.135.43.119_0211202366d2-22vmess
+      - 中国【付费推荐：https://v1.mk/vip】417
+      - 中国【付费推荐：https://v1.mk/vip】219
+      - v2rayfree.eu.org - 俄罗斯  4
+      - 中国【付费推荐：https://v1.mk/vip】190
+      - "| 3.07Mb 2"
+      - _CA_加拿大_1
+      - -欧盟-45.89.230.196
+      - github.com/freefq - 英国社会保险安全部 33
+      - US(https://awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技
+      - 中国【付费推荐：https://v1.mk/vip】278
+      - 法国【付费推荐：https://v1.mk/vip】394
+      - v2rayfree.eu.org - 美国  25
+      - 加拿大(TG频道@kxswa) 3
       - 美国_0216034
-      - "|19.19Mb"
+      - 新加坡【付费推荐：https://v1.mk/vip】13
+      - "_CN_中国->🇨🇦_CA_加拿大\r_来源：kkzui.com（快嘴科技）9_49_49_49_49\r"
+      - -美国-158.101.7.8
+      - 法国【付费推荐：https://v1.mk/vip】7
+      - 俄罗斯联邦【付费推荐：https://v1.mk/vip】404
+      - _HK_香港
+      - 中国【付费推荐：https://v1.mk/vip】419
+      - github.com/freefq - 美国麻省理工学院 74
+      - 中国【付费推荐：https://v1.mk/vip】279
+      - 中国【付费推荐：https://v1.mk/vip】288
+      - 中国【付费推荐：https://v1.mk/vip】421
+      - 中国【付费推荐：https://v1.mk/vip】8
+      - "|74.53Mb"
+      - github.com/freefq - 美国3COM公司企业网 81
+      - _SE_瑞典
+      - 中国【付费推荐：https://v1.mk/vip】420
+      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 49
+      - 韩国_0216273
+      - github.com/freefq - 美国麻省理工学院 74 2
+      - _KR_韩国 2
+      - 中国【付费推荐：https://v1.mk/vip】422
+      - 中国【付费推荐：https://v1.mk/vip】204
+      - 中国【付费推荐：https://v1.mk/vip】644
+      - 印度【付费推荐：https://v1.mk/vip】584
+      - _HK_香港 4 2
+      - 10200@oneclickvpnkeys
+      - "[02-17]-🇫🇷-法国-179-z0111.security-cloudfront-cdn.com"
+      - _CN_中国->🇹🇼_TW_台湾 2
+      - 美国【付费推荐：https://v1.mk/vip】65
+      - 中国【付费推荐：https://v1.mk/vip】646
+      - 香港【付费推荐：https://v1.mk/vip】401
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -521,61 +979,118 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - FR 44 → tg@nicevpn123
-      - US_185.199.225.45_012920239fdb-7s%
-      - CN 5 → tg@nicevpn123
-      - _HK_香港_3
-      - 美国【付费推荐：https://v1.mk/vip】358
-      - 美国_0216040
-      - 香港【付费推荐：https://v1.mk/vip】288
-      - 中国【付费推荐：https://v1.mk/vip】288
-      - 中国【付费推荐：https://v1.mk/vip】279
-      - 中国【付费推荐：https://v1.mk/vip】298
-      - Russia-俄罗斯
-      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 49
+      - 中国【付费推荐：https://v1.mk/vip】275
+      - 英国【付费推荐：https://v1.mk/vip】388
+      - 中国_02161162
       - 中国【付费推荐：https://v1.mk/vip】246
-      - _JP_日本
-      - 美国【付费推荐：https://v1.mk/vip】363
-      - _US_美国
-      - USA-美国
-      - 中国【付费推荐：https://v1.mk/vip】262
-      - 美国【付费推荐：https://v1.mk/vip】46
-      - 中国_02161201
-      - 中国【付费推荐：https://v1.mk/vip】274
-      - 3.06| 新加坡sgam3eqsunshinecom
-      - Japan-日本
-      - 香港【付费推荐：https://v1.mk/vip】173
-      - "[02-15]-🇸🇬-新加坡-208-sg-am3.eqsunshine.com"
-      - Korea1-韩国一
-      - France 03 TG:@nodpai
-      - 中国【付费推荐：https://v1.mk/vip】312
-      - "_JP_日本\r_1"
-      - _HK_香港_7
-      - 中国【付费推荐：https://v1.mk/vip】309
-      - "|74.53Mb"
-      - 中国【付费推荐：https://v1.mk/vip】261
-      - 俄罗斯联邦_0216003
-      - 中国【付费推荐：https://v1.mk/vip】269
-      - FR_youtube@资源分享师_114
-      - 爱尔兰 001
-      - _CA_加拿大_1
-      - US_youtube@资源分享师_289
-      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 23
-      - 美国 101
-      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 38
-      - github.com/freefq - 俄罗斯  4
-      - github.com/freefq - 欧盟  67
-      - 英国【付费推荐：https://v1.mk/vip】187
-      - 美国【付费推荐：https://v1.mk/vip】188
-      - Germany 04 TG:@nodpai
+      - 中国【付费推荐：https://v1.mk/vip】226
+      - "%�\x11�'���oyj�L\r�\r%%�"
+      - 中国【付费推荐：https://v1.mk/vip】227
+      - 加拿大(TG频道@kxswa)
+      - 加拿大(TG频道@kxswa) 2
+      - 美国 004
+      - 中国【付费推荐：https://v1.mk/vip】199
+      - "| 2.96Mb"
+      - _JP_日本_3
+      - 中国【付费推荐：https://v1.mk/vip】216
       - -法国-5.135.43.119
-      - github.com/freefq - 欧盟  4
-      - 日本【付费推荐：https://v1.mk/vip】59
-      - 加拿大_0216201
-      - 韩国_0216273
-      - GB 24 → tg@nicevpn123
+      - v2rayfree.eu.org - 美国  9
+      - 德国 006
+      - 印度尼西亚【付费推荐：https://v1.mk/vip】163
+      - v2rayfree.eu.org - 美国弗吉尼亚州文特山农场OVH数据中心 41
+      - 中国_0216059
+      - 美国【付费推荐：https://v1.mk/vip】579
+      - v2rayfree.eu.org - 美国  6
+      - _油管：全网最强白嫖
+      - _FR_法国
+      - 中国【付费推荐：https://v1.mk/vip】176
+      - 中国【付费推荐：https://v1.mk/vip】454
+      - 中国_02162178
+      - "_US_美国\r"
+      - 中国【付费推荐：https://v1.mk/vip】208
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 17
+      - 中国【付费推荐：https://v1.mk/vip】192
+      - "%�\x11�'����oyj�L\r�N%%�"
+      - _CN_中国->🇹🇼_TW_台湾
+      - github.com/freefq - 欧盟  44
+      - _JP_日本
+      - github.com/freefq - 美国  20
+      - 中国【付费推荐：https://v1.mk/vip】191
+      - github.com/freefq - 欧盟  67
+      - 日本【付费推荐：https://v1.mk/vip】622
+      - 中国【付费推荐：https://v1.mk/vip】234
+      - 中国【付费推荐：https://v1.mk/vip】212
+      - 中国【付费推荐：https://v1.mk/vip】413
+      - 香港【付费推荐：https://v1.mk/vip】356
+      - 中国【付费推荐：https://v1.mk/vip】214
+      - 中国_0216163
+      - _CN_中国_2
+      - 美国【付费推荐：https://v1.mk/vip】381
+      - 中国【付费推荐：https://v1.mk/vip】231
+      - 印度_0216020
+      - 中国【付费推荐：https://v1.mk/vip】418
+      - 中国【付费推荐：https://v1.mk/vip】202
+      - 沙特阿拉伯_0216001
+      - 中国_0216059 2
+      - 美国 101
+      - v2rayfree.eu.org - 德国  3
+      - "| 5.76Mb"
+      - 俄罗斯联邦_0216003
+      - 美国_02163173
+      - 美国【付费推荐：https://v1.mk/vip】577
+      - 中国【付费推荐：https://v1.mk/vip】300
+      - 美国 011
+      - "[02-16]-🇦🇺-澳大利亚-065-z0113.security-cloudfront-cdn.com"
+      - 中国【付费推荐：https://v1.mk/vip】217
+      - 中国【付费推荐：https://v1.mk/vip】174
+      - 日本【付费推荐：https://v1.mk/vip】581
+      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 23
+      - FR_5.135.43.119_0211202366d2-22vmess
+      - 中国【付费推荐：https://v1.mk/vip】417
+      - 中国【付费推荐：https://v1.mk/vip】219
+      - v2rayfree.eu.org - 俄罗斯  4
+      - 中国【付费推荐：https://v1.mk/vip】190
+      - "| 3.07Mb 2"
+      - _CA_加拿大_1
+      - -欧盟-45.89.230.196
+      - github.com/freefq - 英国社会保险安全部 33
+      - US(https://awkj.cf/ky 注册体验流媒体机场)youtube阿伟科技
+      - 中国【付费推荐：https://v1.mk/vip】278
+      - 法国【付费推荐：https://v1.mk/vip】394
+      - v2rayfree.eu.org - 美国  25
+      - 加拿大(TG频道@kxswa) 3
       - 美国_0216034
-      - "|19.19Mb"
+      - 新加坡【付费推荐：https://v1.mk/vip】13
+      - "_CN_中国->🇨🇦_CA_加拿大\r_来源：kkzui.com（快嘴科技）9_49_49_49_49\r"
+      - -美国-158.101.7.8
+      - 法国【付费推荐：https://v1.mk/vip】7
+      - 俄罗斯联邦【付费推荐：https://v1.mk/vip】404
+      - _HK_香港
+      - 中国【付费推荐：https://v1.mk/vip】419
+      - github.com/freefq - 美国麻省理工学院 74
+      - 中国【付费推荐：https://v1.mk/vip】279
+      - 中国【付费推荐：https://v1.mk/vip】288
+      - 中国【付费推荐：https://v1.mk/vip】421
+      - 中国【付费推荐：https://v1.mk/vip】8
+      - "|74.53Mb"
+      - github.com/freefq - 美国3COM公司企业网 81
+      - _SE_瑞典
+      - 中国【付费推荐：https://v1.mk/vip】420
+      - v2rayfree.eu.org - 加拿大魁北克省博阿努瓦OVH数据中心 49
+      - 韩国_0216273
+      - github.com/freefq - 美国麻省理工学院 74 2
+      - _KR_韩国 2
+      - 中国【付费推荐：https://v1.mk/vip】422
+      - 中国【付费推荐：https://v1.mk/vip】204
+      - 中国【付费推荐：https://v1.mk/vip】644
+      - 印度【付费推荐：https://v1.mk/vip】584
+      - _HK_香港 4 2
+      - 10200@oneclickvpnkeys
+      - "[02-17]-🇫🇷-法国-179-z0111.security-cloudfront-cdn.com"
+      - _CN_中国->🇹🇼_TW_台湾 2
+      - 美国【付费推荐：https://v1.mk/vip】65
+      - 中国【付费推荐：https://v1.mk/vip】646
+      - 香港【付费推荐：https://v1.mk/vip】401
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
