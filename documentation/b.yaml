@@ -6,479 +6,587 @@ mode: Rule
 log-level: info
 external-controller: 9090
 proxies:
-  - {name: _HK_香港_2_22, server: 8.218.79.195, port: 36595, type: vmess, uuid: e8781ba1-7c16-46a3-a24a-ebb52e83f006, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: "[02-24]-🇦🇺-澳大利亚-220-z0113.security-cloudfront-cdn.com", server: z0113.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: ====, obfs-param: ====, udp: true}
-  - {name: GreenCloud, server: greencloud.jp.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202302280000000000000020, plugin: obfs, plugin-opts: {mode: http, host: bulianglin.com}, udp: true}
-  - {name: United States(ChatGPT) 03 TG@nodpai, server: 46.3.82.31, port: 443, type: vmess, uuid: d23239a4-36b9-404e-bb70-85d5d5f3fae7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 加拿大(TG频道@kxswa), server: 168.138.68.36, port: 14252, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path}, udp: true}
-  - {name: "_US_美国\r_来源;kkzui.com(快嘴科技)_34_34\r", server: 129.159.39.30, port: 8646, type: trojan, password: cd27884b-c5af-34ec-b75f-8248077818fe, skip-cert-verify: true, udp: true}
-  - {name: "[02-25]-🇯🇵-日本东京-169-jp-am48-6.eqnode.net", server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: ====, obfs-param: ====, udp: true}
-  - {name: 韩国【付费推荐：https://v1.mk/vip】197, server: a3.wzr905.ml, port: 80, type: vmess, uuid: f63dff77-c865-4f4d-bfa0-bef0597f6da4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: 7932, headers: {Host: a3.wzr905.ml}}, udp: true}
-  - {name: aws, server: aws.jp.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202302280000000000000020, plugin: obfs, plugin-opts: {mode: http, host: bulianglin.com}, udp: true}
-  - {name: v2rayfree.eu.org - 美国3COM公司企业网 52, server: 152.67.8.205, port: 80, type: vmess, uuid: 9db4c708-aef8-4359-821b-38e47990be0d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 韩国 004, server: 152.67.218.216, port: 17992, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path}, udp: true}
-  - {name: 002, server: 23.94.240.81, port: 45524, type: vmess, uuid: 8b882c2f-f12f-4c81-a7ee-2aad61d2a32c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: Singapore 24 TG:@nodpai, server: sg-ovh2.1server.co, port: 8080, type: vmess, uuid: 397489e0-a0b4-11ed-b443-1577c1651679, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /files, headers: {Host: sg-ovh2.1server.co}}, udp: true}
-  - {name: v2rayfree.eu.org - 美国亚利桑那州凤凰城Oracle云计算数据中心 28, server: 158.101.7.73, port: 11176, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path, headers: {Host: 158.101.7.73}}, udp: true}
-  - {name: github.com/freefq - 台湾省台北市  1, server: 46.3.82.31, port: 443, type: vmess, uuid: d23239a4-36b9-404e-bb70-85d5d5f3fae7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 美国 129, server: 51.91.248.209, port: 10000, type: vmess, uuid: ff7c5648-b275-11ed-8842-2f75954514f8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit}, udp: true}
-  - {name: github.com/freefq - 香港城市电讯有限公司 7, server: cdn.hkhkbn.6641634715834932.me, port: 80, type: vmess, uuid: a4955acf-b475-47b5-8c63-8574fee2a2e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /wel/21, headers: {Host: wangsu.com}}, udp: true}
-  - {name: Vip1丨香港18丨 ChatGPT, server: scloud18.jafiyun.world, port: 22018, type: vmess, uuid: 534d8501-ef8c-3c39-b39d-7b1ba839a60a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: AU-52.62.192.25-0336, server: z0113.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 香港【付费推荐：https//v1.mk/vip】559, server: 8.218.79.43, port: 40106, type: vmess, uuid: 3c5e9d21-226e-4d5a-b392-d5631e1dc215, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _HK_香港_5, server: 8.218.94.239, port: 61725, type: vmess, uuid: b7eef349-730f-4b56-b0e6-8e58e3e968c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 韩国【付费推荐：https://v1.mk/vip】316, server: 144.24.76.54, port: 8443, type: trojan, password: cd27884b-c5af-34ec-b75f-8248077818fe, sni: 2.hg.kr.cat77.cloud, skip-cert-verify: true, udp: true}
-  - {name: "[02-24]-🇺🇸-美国-136-z0115.security-cloudfront-cdn.com", server: z0115.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: ====, obfs-param: ====, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip】338, server: 152.70.143.228, port: 44302, type: trojan, password: 4d111af8-5078-37e0-a583-34155f60b32c, skip-cert-verify: true, udp: true}
-  - {name: 法国【付费推荐：https://v1.mk/vip】266, server: 51.91.248.209, port: 10000, type: vmess, uuid: ff7c5648-b275-11ed-8842-2f75954514f8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: 51.91.248.209}}, udp: true}
-  - {name: 中国【付费推荐：https//v1.mk/vip】557, server: z80001.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 32, server: v47a.toddns.tk, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v47-2023unlimitndxd, headers: {Host: v47a.toddns.tk}}, udp: true}
-  - {name: 日本【付费推荐：https://v1.mk/vip】158, server: 138.2.45.89, port: 44301, type: trojan, password: 6d64570c-81d4-30fa-b2e2-dce73e1a2702, skip-cert-verify: true, udp: true}
-  - {name: 【2023.02.1923:30更新】, server: 111.45.22.159, port: 53173, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇹🇼_TW_台湾, server: 36.156.102.164, port: 10003, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡_0224002, server: 143.198.219.182, port: 80, type: vmess, uuid: e9c4ce52-9a78-4381-b6f8-23350bc4d606, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray}, udp: true}
-  - {name: VirMach, server: virmach.jp.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202302280000000000000020, plugin: obfs, plugin-opts: {mode: http, host: bulianglin.com}, udp: true}
-  - {name: _CN_中国_4, server: z3002.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
-  - {name: 003, server: 23.94.240.81, port: 45534, type: vmess, uuid: 8b882c2f-f12f-4c81-a7ee-2aad61d2a32c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 沙特阿拉伯_0221001, server: 158.101.229.162, port: 15227, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path}, udp: true}
-  - {name: Vip1丨台湾30丨隧道专线, server: scloud30.jafiyun.world, port: 22030, type: vmess, uuid: 534d8501-ef8c-3c39-b39d-7b1ba839a60a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】302, server: z80001.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: github.com/freefq - 美国  16, server: 192.18.139.46, port: 50346, type: vmess, uuid: a3c31a2b-5a83-4b88-aaf1-881a5c9d21d2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ooxx, headers: {Host: us.okman.cf}}, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】230, server: sg-1.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sg-1.sharecentre.online}}, udp: true}
+  - {name: 日本7-Tunnel | 1x_1, server: sdrfgubi.76898102.xyz, port: 13412, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aeiougfhidf, headers: {Host: lpfdtgigr.76898102.xyz}}, udp: true}
+  - {name: 美国西部圣何塞3 | 1x_1, server: armus.114514782.xyz, port: 2052, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /miao, headers: {Host: armus.114514782.xyz}}, udp: true}
+  - {name: "@SSRSUB-V24-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: us-dp2.sharecentre.online}}, udp: true}
+  - {name: "@SSRSUB-V53-付费推荐:suo.yt/ssrsub", server: cf.bakapie.cf, port: 2096, type: vmess, uuid: 72fd33d5-5c1a-4193-96c6-665fc20b71c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: c7d5ea85.adorc.ml}}, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】116, server: cdn.chigua.tk, port: 443, type: vmess, uuid: ffffffff-ffff-ffff-ffff-ffffffffffff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: v2.chigua.tk}}, udp: true}
+  - {name: 日本_02262014, server: 3.112.221.69, port: 30866, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo}, udp: true}
+  - {name: 新加坡3-Tunnel | 1x_1, server: sdrfgubi.76898102.xyz, port: 12171, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bvdfyueusf, headers: {Host: asfdewtr.76898102.xyz}}, udp: true}
+  - {name: 韩国-春川4-Tunnel | 1x_2, server: isuedfvfuisf.76898102.xyz, port: 13428, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /uedbgiawz, headers: {Host: busdbtgrt.76898102.xyz}}, udp: true}
+  - {name: 未知_02261254, server: hax.smely.eu.org, port: 80, type: vmess, uuid: a6dfb50f-75bb-48e0-b56a-1edeb62b5a49, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hax02, headers: {Host: hax.smely.eu.org}}, udp: true}
+  - {name: "@SSRSUB-V30-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: aws-jp.sharecentre.online}}, udp: true}
+  - {name: 巴西1 | 0.3x_2, server: baawftvbh.76898102.xyz, port: 2052, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bxqmiao, headers: {Host: baawftvbh.76898102.xyz}}, udp: true}
+  - {name: 韩国-春川2-Tunnel | 1x_2, server: auvwfuyse.76898102.xyz, port: 13636, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aeiougfhidf, headers: {Host: nvufdiwedased.76898102.xyz}}, udp: true}
+  - {name: CN_二爷翻墙网 https://1808.ga Node_1, server: 36.156.102.166, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 010, server: sg-ovh2.1server.co, port: 8080, type: vmess, uuid: 397489e0-a0b4-11ed-b443-1577c1651679, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg-ovh2.1server.co}}, udp: true}
+  - {name: "@SSRSUB-V31-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ca1.sharecentre.online}}, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】254, server: hax-us3.sudoxin.tk, port: 443, type: vmess, uuid: c8e0f808-25d6-4911-833e-50b9f5050ba6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /c8e0f808-25d6-4911-833e-50b9f5050ba6, headers: {Host: hax-us3.sudoxin.tk}}, udp: true}
+  - {name: 加拿大 | 1x_1, server: caaubefw.76898102.xyz, port: 2095, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /flkwdfadss, headers: {Host: caaubefw.76898102.xyz}}, udp: true}
+  - {name: 澳大利亚4-Tunnel | 0.8x_1, server: msiawdfgz.76898102.xyz, port: 11827, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bvdfyueusf, headers: {Host: ttasfsgwr.76898102.xyz}}, udp: true}
+  - {name: "@SSRSUB-V52-付费推荐:suo.yt/ssrsub", server: cf.bakapie.cf, port: 2096, type: vmess, uuid: 72fd33d5-5c1a-4193-96c6-665fc20b71c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: 4bb4ced4.adorc.ml}}, udp: true}
+  - {name: 美国 024, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: b4066c72-3e5b-41d0-90da-41ba2e6d7457, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: 3464a64e.adorc.ml}}, udp: true}
+  - {name: 韩国-春川6-Tunnel | 1x_2, server: llpvdsunsd.76898102.xyz, port: 15236, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /uedbgiawz, headers: {Host: suidbfifcx.76898102.xyz}}, udp: true}
+  - {name: 日本3-Tunnel | 1x_2, server: aiuwgfvuiauegfiu.76898102.xyz, port: 14520, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aeiougfhidf, headers: {Host: afrgtsregxv.76898102.xyz}}, udp: true}
+  - {name: github.com/freefq - 美国惠普公司 4, server: free-eu1.tencent.sbs, port: 61011, type: vmess, uuid: d1860587-aa33-4b76-85cd-c191edecb338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: free-eu1.tencent.sbs}}, udp: true}
+  - {name: v2rayfree.eu.org - 美国CloudFlare公司CDN节点 24, server: cf.515188.xyz, port: 80, type: vmess, uuid: 05ab5fed-281d-4882-c29c-3c6dc8434fb0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 3woi.weigogogo.tk}}, udp: true}
+  - {name: 日本-东京2-Tunnel | 1x_1, server: auvwfuyse.76898102.xyz, port: 16552, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /eduifbiefg, headers: {Host: ejdfsbgwr.76898102.xyz}}, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】45, server: 66.235.200.22, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
+  - {name: "@SSRSUB-V22-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sg-gcore.sharecentre.online}}, udp: true}
+  - {name: 巴西5 | 0.3x_1, server: baxwabe.76898102.xyz, port: 2052, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aubverfsg, headers: {Host: baxwabe.76898102.xyz}}, udp: true}
+  - {name: 防失效github SubCrawler中国_0226028, server: 42.225.20.24, port: 10006, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 英国2 | 0.5x_2, server: gbawbc.76898102.xyz, port: 2052, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /miao, headers: {Host: gbawbc.76898102.xyz}}, udp: true}
+  - {name: 德国2 | 0.5x_1, server: dearmb.76898102.xyz, port: 2052, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ancihgrt, headers: {Host: dearmb.76898102.xyz}}, udp: true}
+  - {name: 日本-东京1-Tunnel | 1x_1, server: kgcwafbvf.76898102.xyz, port: 15452, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aeiougfhidf, headers: {Host: toyfeugi.76898102.xyz}}, udp: true}
+  - {name: "@SSRSUB-V07-付费推荐:suo.yt/ssrsub", server: 68.183.83.94, port: 59477, type: vmess, uuid: b8f6a71c-6925-4e84-fb93-6e54f8d98b25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 68.183.83.94}}, udp: true}
+  - {name: 加拿大_0226004, server: 23.227.38.40, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
+  - {name: 日本【付费推荐：https://v1.mk/vip】151, server: 138.2.62.255, port: 443, type: vmess, uuid: d394b3e5-abc2-444f-8f2c-74eb8e4dc6ec, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /giuivws, headers: {Host: www.wyca.ga}}, udp: true}
+  - {name: 新加坡_0226948, server: 51.79.161.126, port: 8080, type: vmess, uuid: 397489e0-a0b4-11ed-b443-1577c1651679, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /files}, udp: true}
+  - {name: JP 8 → tg@nicevpn123, server: 43.128.230.110, port: 39000, type: vmess, uuid: d2415d14-693e-4ecc-f8d6-36c21fb19bc5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 巴西1 | 0.3x_1, server: baawftvbh.76898102.xyz, port: 2052, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bxqmiao, headers: {Host: baawftvbh.76898102.xyz}}, udp: true}
+  - {name: 日本-东京2-Tunnel | 1x_2, server: auvwfuyse.76898102.xyz, port: 16552, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /eduifbiefg, headers: {Host: ejdfsbgwr.76898102.xyz}}, udp: true}
+  - {name: "@SSRSUB-V48-付费推荐:suo.yt/ssrsub", server: cf.bakapie.cf, port: 2096, type: vmess, uuid: 72fd33d5-5c1a-4193-96c6-665fc20b71c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: 4e7cc378.adorc.ml}}, udp: true}
   - {name: 美国 053, server: suzhihan.eu.org, port: 443, type: vmess, uuid: 0b873cff-11ab-4716-c41a-04f886135091, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /roewesu, headers: {Host: suzhihan.eu.org}}, udp: true}
-  - {name: 新加坡【付费推荐：https://v1.mk/vip】222, server: 143.198.219.182, port: 80, type: vmess, uuid: e9c4ce52-9a78-4381-b6f8-23350bc4d606, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray}, udp: true}
-  - {name: 韩国(TG频道@kxswa), server: 152.67.218.216, port: 17992, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path, headers: {Host: 152.67.218.216}}, udp: true}
-  - {name: 法国_0224002, server: 51.91.248.209, port: 10000, type: vmess, uuid: ff7c5648-b275-11ed-8842-2f75954514f8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit}, udp: true}
-  - {name: 中国【付费推荐：https//v1.mk/vip】3, server: 42.225.20.18, port: 10005, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 爱尔兰【付费推荐：https://v1.mk/vip】344, server: z0116.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
-  - {name: US 23 → tg@nicevpn123, server: 20.74.251.90, port: 443, type: trojan, password: ca688b02-6c35-4b7a-9e28-3632e66e1086, skip-cert-verify: true, udp: true}
-  - {name: 美国 107, server: 152.69.206.73, port: 12794, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path, headers: {Host: 152.69.206.73}}, udp: true}
-  - {name: 美国 126, server: 152.69.197.74, port: 12345, type: vmess, uuid: b8a6bf58-485a-4046-b386-b3661bf65eff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bb}, udp: true}
-  - {name: 001, server: 23.94.240.81, port: 45512, type: vmess, uuid: 8b882c2f-f12f-4c81-a7ee-2aad61d2a32c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: _CN_中国_5, server: z00031.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: youtube阿伟科技, server: z00031.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 香港【付费推荐：https://v1.mk/vip】15, server: cdn.hkhkbn.6641634715834932.me, port: 80, type: vmess, uuid: a4955acf-b475-47b5-8c63-8574fee2a2e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /wel/18, headers: {Host: wangsu.com}}, udp: true}
-  - {name: 美国 097, server: 152.69.206.73, port: 12794, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path}, udp: true}
-  - {name: 新加坡_0224150, server: 51.79.173.222, port: 80, type: vmess, uuid: a72bd7a7-732d-46c1-8274-bf16bca30e78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: "[02-26]-🇸🇪-瑞典-193-z0117.security-cloudfront-cdn.com", server: z0117.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: ====, obfs-param: d3d3Lm1pY3Jvc29mdC5jb20jVXNlci1BZ2VudDpNb3ppbGxhLzUuMChpUGhvbmU7Q1BVaVBob25lT1MxMV80XzFsaWtlTWFjT1NYKUFwcGxlV2ViS2l0LzYwMi40LjYoS0hUTUwsbGlrZUdlY2tvKVZlcnNpb24vMTAuME1vYmlsZS8xNEQyN01pY3JvTWVzc2VuZ2VyLzYuNS4xM0FjY2VwdDovQ29ubmVjdGlvbjprZWVwLWFsaXZl====, udp: true}
-  - {name: 澳大利亚 010, server: 140.83.84.209, port: 1234, type: vmess, uuid: e94247e0-d3e5-4f96-d8f3-b2144b383292, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /1234}, udp: true}
-  - {name: 韩国(TG频道@kxswa) 2, server: 152.67.218.216, port: 17992, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path, headers: {Host: YTB-AWKJ}}, udp: true}
-  - {name: 香港【付费推荐：https//v1.mk/vip】555, server: 8.218.58.199, port: 44200, type: vmess, uuid: 815705a3-056e-4dbd-86c0-25d212144365, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 加拿大【付费推荐：https://v1.mk/vip】2, server: 132.145.99.228, port: 13724, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path, headers: {Host: YTB-awkj}}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】3, server: 42.225.20.18, port: 10005, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _DE_德国_38_38, server: z0110.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
-  - {name: _HK_香港, server: petal.ga, port: 443, type: vmess, uuid: b744f5cc-eab2-d2cd-f477-76646d17987f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /petalvws, headers: {Host: petal.ga}}, udp: true}
-  - {name: _HK_香港_7, server: 8.218.94.25, port: 48288, type: vmess, uuid: 1c3ea2bd-4056-4dae-b0f8-e1737217c6e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: "@SSRSUB-V27-付费推荐:suo.yt/ssrsub", server: 132.145.99.228, port: 13724, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path, headers: {Host: 132.145.99.228}}, udp: true}
-  - {name: 香港(TG频道@kxswa), server: cdn.hkhkbn.6641634715834932.me, port: 80, type: vmess, uuid: a4955acf-b475-47b5-8c63-8574fee2a2e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /wel/21, headers: {Host: cdn.hkhkbn.6641634715834932.me}}, udp: true}
+  - {name: 韩国-春川4-Tunnel | 1x_1, server: isuedfvfuisf.76898102.xyz, port: 13428, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /uedbgiawz, headers: {Host: busdbtgrt.76898102.xyz}}, udp: true}
+  - {name: 韩国-春川2-Tunnel | 1x_1, server: auvwfuyse.76898102.xyz, port: 13636, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aeiougfhidf, headers: {Host: nvufdiwedased.76898102.xyz}}, udp: true}
+  - {name: v2rayfree.eu.org - 日本东京Choopa数据中心 36, server: 149.28.22.136, port: 1234, type: vmess, uuid: 4abc70af-1897-4b94-d6e5-8a4d2ce65490, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bb}, udp: true}
+  - {name: 中国_02264731, server: 42.225.20.24, port: 10005, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: "[02-25]-🇯🇵-日本东京-199-jp-am48-6.eqnode.net", server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: PT09PQ==, obfs-param: PT09PQ==, udp: true}
-  - {name: 123, server: 111.45.22.159, port: 51002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: aws 2, server: aws.sg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202302280000000000000020, plugin: obfs, plugin-opts: {mode: http, host: bulianglin.com}, udp: true}
-  - {name: 沙特阿拉伯【付费推荐：https://v1.mk/vip】24, server: 158.101.229.162, port: 15227, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path}, udp: true}
-  - {name: 美国 058, server: cooing-luxuriant-blue.glitch.me, port: 443, type: vmess, uuid: 80e7dd59-b1fc-45a0-98be-1478a9af89f2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /api, headers: {Host: cooing-luxuriant-blue.glitch.me}}, udp: true}
-  - {name: A-Vip1丨日本26丨流媒体解锁丨, server: jafi26.jafiyun.world, port: 22026, type: vmess, uuid: 534d8501-ef8c-3c39-b39d-7b1ba839a60a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 意大利(TG频道@kxswa), server: 129.152.13.117, port: 11691, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path, headers: {Host: 129.152.13.117}}, udp: true}
-  - {name: 美国 056, server: z0117.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: _HK_香港_来源;kkzui.com(快嘴科技)_19, server: 8.218.7.81, port: 25346, type: vmess, uuid: 2f82e36d-635a-41eb-ac60-7d50fb8fd50c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 加拿大 001, server: 132.145.99.228, port: 13724, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path}, udp: true}
-  - {name: A-Vip1丨日本27丨流媒体解锁丨江西入口, server: jafi27.jafiyun.world, port: 23027, type: vmess, uuid: 519d0974-5dbe-3298-8a93-a35779697368, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇹🇼_TW_台湾 2, server: 103.45.78.251, port: 10004, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国(TG频道@kxswa), server: 158.101.7.73, port: 11176, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path}, udp: true}
-  - {name: 美国 131, server: 129.152.13.117, port: 11691, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path}, udp: true}
-  - {name: 美国 089, server: 138.2.45.89, port: 44301, type: trojan, password: 6abfad5a-24be-3657-85da-ceac782b7e19, sni: "%24osav101.jd0001.top", skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_1 2, server: 8.210.239.148, port: 63411, type: vmess, uuid: ef29fb95-2d48-4799-99d3-8ec3b52e8af3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】75, server: 36.156.102.164, port: 10003, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "| 3.39Mb", server: cdn.hkhkt.6641634715834932.me, port: 80, type: vmess, uuid: a4955acf-b475-47b5-8c63-8574fee2a2e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /wel/10, headers: {Host: wangsu.com}}, udp: true}
-  - {name: UC 台湾02 | tiktok | Youtube免广告 | 3.0x | V1 - 酸奶VPN, server: 165.154.253.155, port: 80, type: vmess, uuid: 208a62d3-7bc5-304c-84c6-11bd5f485ed0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny}, udp: true}
-  - {name: "[02-26]-🇦🇺-澳大利亚-184-z0113.security-cloudfront-cdn.com", server: z0113.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: PT09PQ==, obfs-param: PT09PQ==, udp: true}
-  - {name: 香港【付费推荐：https//v1.mk/vip】558, server: 8.218.95.203, port: 61018, type: vmess, uuid: ade9e193-f710-4851-b287-cba895507345, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 日本【付费推荐：https://v1.mk/vip】214, server: www.wyca.ga, port: 443, type: vmess, uuid: d394b3e5-abc2-444f-8f2c-74eb8e4dc6ec, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /giuivws, headers: {Host: www.wyca.ga}}, udp: true}
-  - {name: 美国 062, server: 170.178.179.189, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/031730091420}, udp: true}
-  - {name: 爱尔兰 001, server: ie-ls03.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: ie-ls03.nb1.fr}}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】125, server: hnm.xiaohouzi.club, port: 17106, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 美国 019, server: osav101.jd0001.top, port: 44301, type: trojan, password: 6abfad5a-24be-3657-85da-ceac782b7e19, skip-cert-verify: true, udp: true}
+  - {name: "@SSRSUB-V12-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 8880, type: vmess, uuid: e59bd762-dacd-445c-8e2a-e1c5812949cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v10.asuka.buzz}}, udp: true}
+  - {name: 韩国-春川3-Tunnel | 1x_2, server: aiuwgfvuiauegfiu.76898102.xyz, port: 12782, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /uedbgiawz, headers: {Host: fghnifsvg.76898102.xyz}}, udp: true}
+  - {name: 中国【付费推荐：https//v1.mk/vip】21, server: 36.156.102.166, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[02-25]-🇯🇵-日本东京-169-jp-am48-6.eqnode.net", server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: ====, obfs-param: ====, udp: true}
+  - {name: _US_美国->🇷🇺_RU_俄罗斯联邦_36, server: els200.jslist.tk, port: 8443, type: vmess, uuid: e30cfa80-bc2c-43df-e808-97876aee77e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /wo.php, headers: {Host: els200.jslist.tk}}, udp: true}
+  - {name: sg-am3.eqsunshine.com32001, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】5, server: vus5.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vus5.0bad.com}}, udp: true}
+  - {name: "| 4.18Mb", server: 27.124.8.141, port: 443, type: vmess, uuid: c7e645be-1704-4f0a-afe9-8b21f9c711d6, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/220128071100}, udp: true}
+  - {name: _CA_加拿大->🇫🇷_FR_法国, server: 23.227.38.40, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
+  - {name: 沙特阿拉伯_0221001, server: 158.101.229.162, port: 15227, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path}, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】81, server: investors.spotify.com, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sg-gcore.sharecentre.online}}, udp: true}
+  - {name: _US_美国->🇸🇬_SG_新加坡_1, server: cf-yd-dns.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sg-1.sharecentre.online}}, udp: true}
+  - {name: "@SSRSUB-V21-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: jp1.sharecentre.online}}, udp: true}
+  - {name: "@SSRSUB-V32-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sg-1.sharecentre.online}}, udp: true}
+  - {name: 澳大利亚 008, server: 43.154.190.26, port: 47175, type: vmess, uuid: ce387c33-6d75-4722-95dd-b265657f2802, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hk8/getData, headers: {Host: hk8.linkeden.co}}, udp: true}
+  - {name: _HK_香港, server: petal.ga, port: 443, type: vmess, uuid: b744f5cc-eab2-d2cd-f477-76646d17987f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /petalvws, headers: {Host: petal.ga}}, udp: true}
+  - {name: -新加坡-sg-ovh2.1server.co, server: sg-ovh2.1server.co, port: 8080, type: vmess, uuid: 397489e0-a0b4-11ed-b443-1577c1651679, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg-ovh2.1server.co}}, udp: true}
+  - {name: 韩国-春川1-Tunnel | 1x_2, server: kgcwafbvf.76898102.xyz, port: 15230, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aeiougfhidf, headers: {Host: aiohfdboihefrw.76898102.xyz}}, udp: true}
+  - {name: "@SSRSUB-V49-付费推荐:suo.yt/ssrsub", server: cf.bakapie.cf, port: 2096, type: vmess, uuid: 72fd33d5-5c1a-4193-96c6-665fc20b71c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: 8ed8bd9b.adorc.ml}}, udp: true}
+  - {name: 日本5-Tunnel | 1x_2, server: kwudfujgiba.76898102.xyz, port: 13541, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /auefbsroeithdx, headers: {Host: ndsuifsgb.76898102.xyz}}, udp: true}
+  - {name: 巴西2 | 0.3x_1, server: frarmbc.76898102.xyz, port: 2052, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bxrmiao, headers: {Host: frarmbc.76898102.xyz}}, udp: true}
+  - {name: 韩国-春川3-Tunnel | 1x_1, server: aiuwgfvuiauegfiu.76898102.xyz, port: 12782, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /uedbgiawz, headers: {Host: fghnifsvg.76898102.xyz}}, udp: true}
+  - {name: "@SSRSUB-V47-付费推荐:suo.yt/ssrsub", server: cf.bakapie.cf, port: 2096, type: vmess, uuid: 72fd33d5-5c1a-4193-96c6-665fc20b71c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: 84a514ba.adorc.ml}}, udp: true}
+  - {name: _BZ_伯利兹->🇫🇷_FR_法国_50_50, server: 203.30.190.192, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
+  - {name: 印度-孟买2-Tunnel | 0.8x_1, server: kwudfujgiba.76898102.xyz, port: 11723, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yertehrbdv, headers: {Host: ysfsbuadb.76898102.xyz}}, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】96, server: kh.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: kh.sharecentre.online}}, udp: true}
+  - {name: 印度 005, server: 152.67.8.205, port: 80, type: vmess, uuid: 9db4c708-aef8-4359-821b-38e47990be0d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 新加坡4-Tunnel | 1x_1, server: msiawdfgz.76898102.xyz, port: 10252, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bvdfyueusf, headers: {Host: asfdewtr.76898102.xyz}}, udp: true}
+  - {name: "@SSRSUB-V09-付费推荐:suo.yt/ssrsub", server: hax-us4.sudoxin.tk, port: 443, type: vmess, uuid: c8e0f808-25d6-4911-833e-50b9f5050ba6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /c8e0f808-25d6-4911-833e-50b9f5050ba6, headers: {Host: hax-us4.sudoxin.tk}}, udp: true}
+  - {name: 日本B | Anti-DDos |0.7x_1, server: dbamwvb.76898102.xyz, port: 2082, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tadabfw, headers: {Host: dbamwvb.76898102.xyz}}, udp: true}
+  - {name: 韩国-春川5-Tunnel | 1x_2, server: sdrfgubi.76898102.xyz, port: 13252, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /uedbgiawz, headers: {Host: adwafcv.76898102.xyz}}, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】73, server: cf-lt-dns.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: kh.sharecentre.online}}, udp: true}
+  - {name: "|23.19Mb", server: 104.233.191.182, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/031730091420}, udp: true}
+  - {name: Singapore 24 TG:@nodpai, server: sg-ovh2.1server.co, port: 8080, type: vmess, uuid: 397489e0-a0b4-11ed-b443-1577c1651679, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /files, headers: {Host: sg-ovh2.1server.co}}, udp: true}
+  - {name: 日本7-Tunnel | 1x_2, server: sdrfgubi.76898102.xyz, port: 13412, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aeiougfhidf, headers: {Host: lpfdtgigr.76898102.xyz}}, udp: true}
+  - {name: 巴西2 | 0.3x_2, server: frarmbc.76898102.xyz, port: 2052, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bxrmiao, headers: {Host: frarmbc.76898102.xyz}}, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】124, server: fr1.trump2023.org, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
+  - {name: _CN_中国->🇭🇰_HK_香港_1, server: 36.156.102.166, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本8-Tunnel | 1x_2, server: llpvdsunsd.76898102.xyz, port: 14125, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aeiougfhidf, headers: {Host: hbfdvusdr.76898102.xyz}}, udp: true}
+  - {name: 澳大利亚1-Tunnel | 0.8x_1, server: kwudfujgiba.76898102.xyz, port: 12961, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bvdfyueusf, headers: {Host: adrfxni.76898102.xyz}}, udp: true}
+  - {name: 印度-海得拉巴3-Tunnel | 0.8x_1, server: kuoscvtsqe.76898102.xyz, port: 12479, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aeiougfhidf, headers: {Host: awiufbioieng.76898102.xyz}}, udp: true}
+  - {name: "@SSRSUB-V25-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-2.sharecentre.online}}, udp: true}
+  - {name: 印度-海得拉巴1-Tunnel | 0.8x_2, server: wnwihtghaftrh.76898102.xyz, port: 13142, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aeiougfhidf, headers: {Host: awiufbioieng.76898102.xyz}}, udp: true}
+  - {name: "@SSRSUB-V29-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: buyvm-ny.sharecentre.online}}, udp: true}
   - {name: 沙特阿拉伯(TG频道@kxswa), server: 158.101.229.162, port: 15227, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path, headers: {Host: 158.101.229.162}}, udp: true}
-  - {name: US_youtube@资源分享师_158, server: r.wyhkaa0.cf, port: 8080, type: vmess, uuid: 5d53019b-6832-4dbc-9d3c-4468ec601c21, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /TG:@hkaa0, headers: {Host: r.wyhkaa0.cf}}, udp: true}
-  - {name: 中国(TG频道@kxswa), server: hnm.xiaohouzi.club, port: 16082, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 中国(TG频道@kxswa) 2, server: v02.gutingting.com, port: 20227, type: trojan, password: 7a5bbeb8-ba0e-48b4-a1d6-fd82a14d2a91, sni: v2uk01.fuqiangren.com, skip-cert-verify: true, udp: true}
-  - {name: 意大利(TG频道@kxswa) 2, server: 129.152.13.117, port: 11691, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path, headers: {Host: YTB-awkj}}, udp: true}
-  - {name: 中国(TG频道@kxswa) 3, server: hnm.xiaohouzi.club, port: 18831, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: Vip1丨台湾29丨ChatGPT, server: scloud29.jafiyun.world, port: 22029, type: trojan, password: 519d0974-5dbe-3298-8a93-a35779697368, sni: scloud29.jafiyun.world, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】47, server: hnm.xiaohouzi.club, port: 49361, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https//v1.mk/vip】317, server: hnm.xiaohouzi.club, port: 27482, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】119, server: hnm.xiaohouzi.club, port: 17107, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 中国(TG频道@kxswa) 4, server: hnm.xiaohouzi.club, port: 18634, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: login.progbyrazyar.ir:2052, server: login.progbyrazyar.ir, port: 2052, type: trojan, password: Hm2zW85j9f, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】309, server: hn.xiaohouzi.club, port: 18459, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】580, server: hnm.xiaohouzi.club, port: 47651, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24hnm.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】97, server: hn.xiaohouzi.club, port: 18463, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】105, server: hn.xiaohouzi.club, port: 18435, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: "@SSRSUB-V24-付费推荐:suo.yt/ssrsub", server: 168.138.68.36, port: 14252, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path, headers: {Host: 168.138.68.36}}, udp: true}
-  - {name: Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN, server: 104.208.64.233, port: 80, type: vmess, uuid: 208a62d3-7bc5-304c-84c6-11bd5f485ed0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】306, server: hn.xiaohouzi.club, port: 14185, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】297, server: hn.xiaohouzi.club, port: 18581, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 中国(TG频道@kxswa) 5, server: hn.xiaohouzi.club, port: 51054, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: United States 22 TG:@nodpai, server: 51.81.82.15, port: 443, type: trojan, password: 66bd6910-a7ba-11ed-a8b2-1239d0255272, skip-cert-verify: true, udp: true}
-  - {name: _MO_澳门->🇸🇬_SG_新加坡, server: 45.64.22.56, port: 443, type: trojan, password: !<str> 123456, sni: trojan-ctb-sg01.globalssh.xyz, skip-cert-verify: true, udp: true}
-  - {name: FR_51.255.49.192_022420239df8-333trojan, server: 51.255.49.192, port: 443, type: trojan, password: b3df8f31-da3a-4cda-90b1-b3b777cd48e7, skip-cert-verify: true, udp: true}
+  - {name: 沙特阿拉伯 | 0.5x_1, server: starmdsblp.76898102.xyz, port: 2095, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vbsefhtt, headers: {Host: starmdsblp.76898102.xyz}}, udp: true}
+  - {name: 新加坡3-Tunnel | 1x_2, server: sdrfgubi.76898102.xyz, port: 12171, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bvdfyueusf, headers: {Host: asfdewtr.76898102.xyz}}, udp: true}
+  - {name: 韩国-春川5-Tunnel | 1x_1, server: sdrfgubi.76898102.xyz, port: 13252, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /uedbgiawz, headers: {Host: adwafcv.76898102.xyz}}, udp: true}
+  - {name: 印度-海得拉巴3-Tunnel | 0.8x_2, server: kuoscvtsqe.76898102.xyz, port: 12479, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aeiougfhidf, headers: {Host: awiufbioieng.76898102.xyz}}, udp: true}
+  - {name: 韩国-春川1-Tunnel | 1x_1, server: kgcwafbvf.76898102.xyz, port: 15230, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aeiougfhidf, headers: {Host: aiohfdboihefrw.76898102.xyz}}, udp: true}
+  - {name: 伯利兹【付费推荐：https://v1.mk/vip】70, server: 203.30.191.193, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
+  - {name: 英国2 | 0.5x_1, server: gbawbc.76898102.xyz, port: 2052, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /miao, headers: {Host: gbawbc.76898102.xyz}}, udp: true}
+  - {name: 日本5-Tunnel | 1x_1, server: kwudfujgiba.76898102.xyz, port: 13541, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /auefbsroeithdx, headers: {Host: ndsuifsgb.76898102.xyz}}, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】328, server: haxus3.janechiu.icu, port: 443, type: vmess, uuid: 0df258cb-a376-4b8e-a378-a556a4658aeb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: haxus3.janechiu.icu}}, udp: true}
+  - {name: 美国3 | 1x_1, server: greencloudkss.114514782.xyz, port: 8880, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /usdbfaiuws, headers: {Host: greencloudkss.114514782.xyz}}, udp: true}
+  - {name: 新加坡1-Tunnel | 1x_2, server: sdrfgubi.76898102.xyz, port: 11621, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aoigbneioueb, headers: {Host: sgvfdjh.76898102.xyz}}, udp: true}
+  - {name: 美国 062, server: 170.178.179.189, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/031730091420}, udp: true}
+  - {name: "@SSRSUB-V33-付费推荐:suo.yt/ssrsub", server: 106.245.77.162, port: 80, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: kr.sharecentre.online}}, udp: true}
+  - {name: JP 10 → tg@nicevpn123, server: vjp1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vjp1.0bad.com}}, udp: true}
+  - {name: 新加坡4-Tunnel | 1x_2, server: msiawdfgz.76898102.xyz, port: 10252, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bvdfyueusf, headers: {Host: asfdewtr.76898102.xyz}}, udp: true}
+  - {name: 印度-孟买2-Tunnel | 0.8x_2, server: kwudfujgiba.76898102.xyz, port: 11723, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yertehrbdv, headers: {Host: ysfsbuadb.76898102.xyz}}, udp: true}
+  - {name: 澳大利亚1-Tunnel | 0.8x_2, server: kwudfujgiba.76898102.xyz, port: 12961, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bvdfyueusf, headers: {Host: adrfxni.76898102.xyz}}, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】7, server: hk-2.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-2.sharecentre.online}}, udp: true}
+  - {name: 澳大利亚2-Tunnel | 0.8x_1, server: wnwihtghaftrh.76898102.xyz, port: 12934, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bvdfyueusf, headers: {Host: ttasfsgwr.76898102.xyz}}, udp: true}
+  - {name: 亚太地区 001, server: sea21.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: sea21.nb1.fr}}, udp: true}
+  - {name: "@SSRSUB-V34-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: kh.sharecentre.online}}, udp: true}
+  - {name: 美国西部圣何塞3 | 1x_2, server: armus.114514782.xyz, port: 2052, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /miao, headers: {Host: armus.114514782.xyz}}, udp: true}
+  - {name: 澳大利亚2-Tunnel | 0.8x_2, server: wnwihtghaftrh.76898102.xyz, port: 12934, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bvdfyueusf, headers: {Host: ttasfsgwr.76898102.xyz}}, udp: true}
+  - {name: 澳大利亚4-Tunnel | 0.8x_2, server: msiawdfgz.76898102.xyz, port: 11827, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bvdfyueusf, headers: {Host: ttasfsgwr.76898102.xyz}}, udp: true}
+  - {name: 日本6-Tunnel | 1x_2, server: wnwihtghaftrh.76898102.xyz, port: 13152, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aeiougfhidf, headers: {Host: afrgtsregxv.76898102.xyz}}, udp: true}
+  - {name: 日本-大阪1-Tunnel | 1x_2, server: uaiwhbfdiuaf.76898102.xyz, port: 13358, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /usewgrvnc, headers: {Host: vncfiudzat.76898102.xyz}}, udp: true}
+  - {name: US美国(youtube阿伟科技), server: 203.30.188.190, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
+  - {name: _IN_印度_来源;kkzui.com(快嘴科技)_28_28, server: 68.183.83.94, port: 59477, type: vmess, uuid: b8f6a71c-6925-4e84-fb93-6e54f8d98b25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: Pool_ | 6.32Mb, server: 202.79.172.53, port: 443, type: vmess, uuid: 30216206-14b7-40e7-995d-61c1219ba584, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/220128071100}, udp: true}
+  - {name: 沙特阿拉伯【付费推荐：https://v1.mk/vip】24, server: 158.101.229.162, port: 15227, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path}, udp: true}
+  - {name: 中国_02264730, server: 42.225.20.24, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[02-26]-🇸🇪-瑞典-193-z0117.security-cloudfront-cdn.com", server: z0117.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: ====, obfs-param: d3d3Lm1pY3Jvc29mdC5jb20jVXNlci1BZ2VudDpNb3ppbGxhLzUuMChpUGhvbmU7Q1BVaVBob25lT1MxMV80XzFsaWtlTWFjT1NYKUFwcGxlV2ViS2l0LzYwMi40LjYoS0hUTUwsbGlrZUdlY2tvKVZlcnNpb24vMTAuME1vYmlsZS8xNEQyN01pY3JvTWVzc2VuZ2VyLzYuNS4xM0FjY2VwdDovQ29ubmVjdGlvbjprZWVwLWFsaXZl====, udp: true}
+  - {name: 韩国-春川6-Tunnel | 1x_1, server: llpvdsunsd.76898102.xyz, port: 15236, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /uedbgiawz, headers: {Host: suidbfifcx.76898102.xyz}}, udp: true}
+  - {name: "@SSRSUB-V50-付费推荐:suo.yt/ssrsub", server: cf.bakapie.cf, port: 2096, type: vmess, uuid: 72fd33d5-5c1a-4193-96c6-665fc20b71c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: a8c74c6c.adorc.ml}}, udp: true}
+  - {name: DE_3.72.190.230_022420239df8-452s%�, server: z0110.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
+  - {name: 印度-海得拉巴1-Tunnel | 0.8x_1, server: wnwihtghaftrh.76898102.xyz, port: 13142, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aeiougfhidf, headers: {Host: awiufbioieng.76898102.xyz}}, udp: true}
+  - {name: 美国 056, server: z0117.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 日本-东京1-Tunnel | 1x_2, server: kgcwafbvf.76898102.xyz, port: 15452, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aeiougfhidf, headers: {Host: toyfeugi.76898102.xyz}}, udp: true}
+  - {name: "%�\x11�<'���oyj�L\f\f�%%�", server: z0115.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: _FR_法国, server: z0111.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: _DE_德国_38_38, server: z0110.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
+  - {name: "@SSRSUB-V51-付费推荐:suo.yt/ssrsub", server: cf.bakapie.cf, port: 2096, type: vmess, uuid: 72fd33d5-5c1a-4193-96c6-665fc20b71c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: 3464a64e.adorc.ml}}, udp: true}
+  - {name: 日本A | Anti-DDos |0.7x_1, server: dbamwv.76898102.xyz, port: 2082, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tadvchk, headers: {Host: dbamwv.76898102.xyz}}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】327, server: z00031.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: "[02-26]-🇺🇸-美国-181-z0115.security-cloudfront-cdn.com", server: z0115.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: ====, obfs-param: ====, udp: true}
+  - {name: 123, server: 111.45.22.159, port: 51002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港-Tunnel 200Mbps | 1x_2, server: zerpplsmze.76898102.xyz, port: 10263, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /eduifbiefg, headers: {Host: hkbcktgasc.76898102.xyz}}, udp: true}
+  - {name: 澳大利亚3-Tunnel | 0.8x_2, server: zerpplsmze.76898102.xyz, port: 11279, type: vmess, uuid: eaefcb64-2776-3706-b963-a19a2433755e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bvdfyueusf, headers: {Host: adrfxni.76898102.xyz}}, udp: true}
+  - {name: 香港-Tunnel 200Mbps | 1x_1, server: zerpplsmze.76898102.xyz, port: 10263, type: vmess, uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /eduifbiefg, headers: {Host: hkbcktgasc.76898102.xyz}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _HK_香港_2_22
-      - "[02-24]-🇦🇺-澳大利亚-220-z0113.security-cloudfront-cdn.com"
-      - GreenCloud
-      - United States(ChatGPT) 03 TG@nodpai
-      - 加拿大(TG频道@kxswa)
-      - "_US_美国\r_来源;kkzui.com(快嘴科技)_34_34\r"
-      - "[02-25]-🇯🇵-日本东京-169-jp-am48-6.eqnode.net"
-      - 韩国【付费推荐：https://v1.mk/vip】197
-      - aws
-      - v2rayfree.eu.org - 美国3COM公司企业网 52
-      - 韩国 004
-      - 002
-      - Singapore 24 TG:@nodpai
-      - v2rayfree.eu.org - 美国亚利桑那州凤凰城Oracle云计算数据中心 28
-      - github.com/freefq - 台湾省台北市  1
-      - 美国 129
-      - github.com/freefq - 香港城市电讯有限公司 7
-      - Vip1丨香港18丨 ChatGPT
-      - AU-52.62.192.25-0336
-      - 香港【付费推荐：https//v1.mk/vip】559
-      - _HK_香港_5
-      - 韩国【付费推荐：https://v1.mk/vip】316
-      - "[02-24]-🇺🇸-美国-136-z0115.security-cloudfront-cdn.com"
-      - 美国【付费推荐：https://v1.mk/vip】338
-      - 法国【付费推荐：https://v1.mk/vip】266
-      - 中国【付费推荐：https//v1.mk/vip】557
-      - github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 32
-      - 日本【付费推荐：https://v1.mk/vip】158
-      - 【2023.02.1923:30更新】
-      - _CN_中国->🇹🇼_TW_台湾
-      - 新加坡_0224002
-      - VirMach
-      - _CN_中国_4
-      - 003
-      - 沙特阿拉伯_0221001
-      - Vip1丨台湾30丨隧道专线
-      - 中国【付费推荐：https://v1.mk/vip】302
-      - github.com/freefq - 美国  16
-      - 美国 053
-      - 新加坡【付费推荐：https://v1.mk/vip】222
-      - 韩国(TG频道@kxswa)
-      - 法国_0224002
-      - 中国【付费推荐：https//v1.mk/vip】3
-      - 爱尔兰【付费推荐：https://v1.mk/vip】344
-      - US 23 → tg@nicevpn123
-      - 美国 107
-      - 美国 126
-      - 001
-      - _CN_中国_5
-      - youtube阿伟科技
-      - 香港【付费推荐：https://v1.mk/vip】15
-      - 美国 097
-      - 新加坡_0224150
-      - "[02-26]-🇸🇪-瑞典-193-z0117.security-cloudfront-cdn.com"
-      - 澳大利亚 010
-      - 韩国(TG频道@kxswa) 2
-      - 香港【付费推荐：https//v1.mk/vip】555
-      - 加拿大【付费推荐：https://v1.mk/vip】2
-      - 中国【付费推荐：https://v1.mk/vip】3
-      - _DE_德国_38_38
-      - _HK_香港
-      - _HK_香港_7
-      - "@SSRSUB-V27-付费推荐:suo.yt/ssrsub"
-      - 香港(TG频道@kxswa)
-      - "[02-25]-🇯🇵-日本东京-199-jp-am48-6.eqnode.net"
-      - 123
-      - aws 2
-      - 沙特阿拉伯【付费推荐：https://v1.mk/vip】24
-      - 美国 058
-      - A-Vip1丨日本26丨流媒体解锁丨
-      - 意大利(TG频道@kxswa)
-      - 美国 056
-      - _HK_香港_来源;kkzui.com(快嘴科技)_19
-      - 加拿大 001
-      - A-Vip1丨日本27丨流媒体解锁丨江西入口
-      - _CN_中国->🇹🇼_TW_台湾 2
-      - 美国(TG频道@kxswa)
-      - 美国 131
-      - 美国 089
-      - _HK_香港_1 2
-      - 中国【付费推荐：https://v1.mk/vip】75
-      - "| 3.39Mb"
-      - UC 台湾02 | tiktok | Youtube免广告 | 3.0x | V1 - 酸奶VPN
-      - "[02-26]-🇦🇺-澳大利亚-184-z0113.security-cloudfront-cdn.com"
-      - 香港【付费推荐：https//v1.mk/vip】558
-      - 日本【付费推荐：https://v1.mk/vip】214
-      - 美国 062
-      - 爱尔兰 001
-      - 中国【付费推荐：https://v1.mk/vip】125
-      - 美国 019
-      - 沙特阿拉伯(TG频道@kxswa)
-      - US_youtube@资源分享师_158
-      - 中国(TG频道@kxswa)
-      - 中国(TG频道@kxswa) 2
-      - 意大利(TG频道@kxswa) 2
-      - 中国(TG频道@kxswa) 3
-      - Vip1丨台湾29丨ChatGPT
-      - 中国【付费推荐：https://v1.mk/vip】47
-      - 中国【付费推荐：https//v1.mk/vip】317
-      - 中国【付费推荐：https://v1.mk/vip】119
-      - 中国(TG频道@kxswa) 4
-      - login.progbyrazyar.ir:2052
-      - 中国【付费推荐：https://v1.mk/vip】309
-      - 中国【付费推荐：https://v1.mk/vip】580
-      - 中国【付费推荐：https://v1.mk/vip】97
-      - 中国【付费推荐：https://v1.mk/vip】105
+      - 美国【付费推荐：https://v1.mk/vip】230
+      - 日本7-Tunnel | 1x_1
+      - 美国西部圣何塞3 | 1x_1
       - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
-      - Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN
-      - 中国【付费推荐：https://v1.mk/vip】306
-      - 中国【付费推荐：https://v1.mk/vip】297
-      - 中国(TG频道@kxswa) 5
-      - United States 22 TG:@nodpai
-      - _MO_澳门->🇸🇬_SG_新加坡
-      - FR_51.255.49.192_022420239df8-333trojan
+      - "@SSRSUB-V53-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://v1.mk/vip】116
+      - 日本_02262014
+      - 新加坡3-Tunnel | 1x_1
+      - 韩国-春川4-Tunnel | 1x_2
+      - 未知_02261254
+      - "@SSRSUB-V30-付费推荐:suo.yt/ssrsub"
+      - 巴西1 | 0.3x_2
+      - 韩国-春川2-Tunnel | 1x_2
+      - CN_二爷翻墙网 https://1808.ga Node_1
+      - 新加坡 010
+      - "@SSRSUB-V31-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://v1.mk/vip】254
+      - 加拿大 | 1x_1
+      - 澳大利亚4-Tunnel | 0.8x_1
+      - "@SSRSUB-V52-付费推荐:suo.yt/ssrsub"
+      - 美国 024
+      - 韩国-春川6-Tunnel | 1x_2
+      - 日本3-Tunnel | 1x_2
+      - github.com/freefq - 美国惠普公司 4
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 24
+      - 日本-东京2-Tunnel | 1x_1
+      - 美国【付费推荐：https://v1.mk/vip】45
+      - "@SSRSUB-V22-付费推荐:suo.yt/ssrsub"
+      - 巴西5 | 0.3x_1
+      - 防失效github SubCrawler中国_0226028
+      - 英国2 | 0.5x_2
+      - 德国2 | 0.5x_1
+      - 日本-东京1-Tunnel | 1x_1
+      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
+      - 加拿大_0226004
+      - 日本【付费推荐：https://v1.mk/vip】151
+      - 新加坡_0226948
+      - JP 8 → tg@nicevpn123
+      - 巴西1 | 0.3x_1
+      - 日本-东京2-Tunnel | 1x_2
+      - "@SSRSUB-V48-付费推荐:suo.yt/ssrsub"
+      - 美国 053
+      - 韩国-春川4-Tunnel | 1x_1
+      - 韩国-春川2-Tunnel | 1x_1
+      - v2rayfree.eu.org - 日本东京Choopa数据中心 36
+      - 中国_02264731
+      - "[02-25]-🇯🇵-日本东京-199-jp-am48-6.eqnode.net"
+      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
+      - 韩国-春川3-Tunnel | 1x_2
+      - 中国【付费推荐：https//v1.mk/vip】21
+      - "[02-25]-🇯🇵-日本东京-169-jp-am48-6.eqnode.net"
+      - _US_美国->🇷🇺_RU_俄罗斯联邦_36
+      - sg-am3.eqsunshine.com32001
+      - 美国【付费推荐：https://v1.mk/vip】5
+      - "| 4.18Mb"
+      - _CA_加拿大->🇫🇷_FR_法国
+      - 沙特阿拉伯_0221001
+      - 美国【付费推荐：https://v1.mk/vip】81
+      - _US_美国->🇸🇬_SG_新加坡_1
+      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V32-付费推荐:suo.yt/ssrsub"
+      - 澳大利亚 008
+      - _HK_香港
+      - -新加坡-sg-ovh2.1server.co
+      - 韩国-春川1-Tunnel | 1x_2
+      - "@SSRSUB-V49-付费推荐:suo.yt/ssrsub"
+      - 日本5-Tunnel | 1x_2
+      - 巴西2 | 0.3x_1
+      - 韩国-春川3-Tunnel | 1x_1
+      - "@SSRSUB-V47-付费推荐:suo.yt/ssrsub"
+      - _BZ_伯利兹->🇫🇷_FR_法国_50_50
+      - 印度-孟买2-Tunnel | 0.8x_1
+      - 美国【付费推荐：https://v1.mk/vip】96
+      - 印度 005
+      - 新加坡4-Tunnel | 1x_1
+      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
+      - 日本B | Anti-DDos |0.7x_1
+      - 韩国-春川5-Tunnel | 1x_2
+      - 美国【付费推荐：https://v1.mk/vip】73
+      - "|23.19Mb"
+      - Singapore 24 TG:@nodpai
+      - 日本7-Tunnel | 1x_2
+      - 巴西2 | 0.3x_2
+      - 美国【付费推荐：https://v1.mk/vip】124
+      - _CN_中国->🇭🇰_HK_香港_1
+      - 日本8-Tunnel | 1x_2
+      - 澳大利亚1-Tunnel | 0.8x_1
+      - 印度-海得拉巴3-Tunnel | 0.8x_1
+      - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
+      - 印度-海得拉巴1-Tunnel | 0.8x_2
+      - "@SSRSUB-V29-付费推荐:suo.yt/ssrsub"
+      - 沙特阿拉伯(TG频道@kxswa)
+      - 沙特阿拉伯 | 0.5x_1
+      - 新加坡3-Tunnel | 1x_2
+      - 韩国-春川5-Tunnel | 1x_1
+      - 印度-海得拉巴3-Tunnel | 0.8x_2
+      - 韩国-春川1-Tunnel | 1x_1
+      - 伯利兹【付费推荐：https://v1.mk/vip】70
+      - 英国2 | 0.5x_1
+      - 日本5-Tunnel | 1x_1
+      - 美国【付费推荐：https://v1.mk/vip】328
+      - 美国3 | 1x_1
+      - 新加坡1-Tunnel | 1x_2
+      - 美国 062
+      - "@SSRSUB-V33-付费推荐:suo.yt/ssrsub"
+      - JP 10 → tg@nicevpn123
+      - 新加坡4-Tunnel | 1x_2
+      - 印度-孟买2-Tunnel | 0.8x_2
+      - 澳大利亚1-Tunnel | 0.8x_2
+      - 美国【付费推荐：https://v1.mk/vip】7
+      - 澳大利亚2-Tunnel | 0.8x_1
+      - 亚太地区 001
+      - "@SSRSUB-V34-付费推荐:suo.yt/ssrsub"
+      - 美国西部圣何塞3 | 1x_2
+      - 澳大利亚2-Tunnel | 0.8x_2
+      - 澳大利亚4-Tunnel | 0.8x_2
+      - 日本6-Tunnel | 1x_2
+      - 日本-大阪1-Tunnel | 1x_2
+      - US美国(youtube阿伟科技)
+      - _IN_印度_来源;kkzui.com(快嘴科技)_28_28
+      - Pool_ | 6.32Mb
+      - 沙特阿拉伯【付费推荐：https://v1.mk/vip】24
+      - 中国_02264730
+      - "[02-26]-🇸🇪-瑞典-193-z0117.security-cloudfront-cdn.com"
+      - 韩国-春川6-Tunnel | 1x_1
+      - "@SSRSUB-V50-付费推荐:suo.yt/ssrsub"
+      - DE_3.72.190.230_022420239df8-452s%�
+      - 印度-海得拉巴1-Tunnel | 0.8x_1
+      - 美国 056
+      - 日本-东京1-Tunnel | 1x_2
+      - "%�\x11�<'���oyj�L\f\f�%%�"
+      - _FR_法国
+      - _DE_德国_38_38
+      - "@SSRSUB-V51-付费推荐:suo.yt/ssrsub"
+      - 日本A | Anti-DDos |0.7x_1
+      - 中国【付费推荐：https://v1.mk/vip】327
+      - "[02-26]-🇺🇸-美国-181-z0115.security-cloudfront-cdn.com"
+      - 123
+      - 香港-Tunnel 200Mbps | 1x_2
+      - 澳大利亚3-Tunnel | 0.8x_2
+      - 香港-Tunnel 200Mbps | 1x_1
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - _HK_香港_2_22
-      - "[02-24]-🇦🇺-澳大利亚-220-z0113.security-cloudfront-cdn.com"
-      - GreenCloud
-      - United States(ChatGPT) 03 TG@nodpai
-      - 加拿大(TG频道@kxswa)
-      - "_US_美国\r_来源;kkzui.com(快嘴科技)_34_34\r"
-      - "[02-25]-🇯🇵-日本东京-169-jp-am48-6.eqnode.net"
-      - 韩国【付费推荐：https://v1.mk/vip】197
-      - aws
-      - v2rayfree.eu.org - 美国3COM公司企业网 52
-      - 韩国 004
-      - 002
-      - Singapore 24 TG:@nodpai
-      - v2rayfree.eu.org - 美国亚利桑那州凤凰城Oracle云计算数据中心 28
-      - github.com/freefq - 台湾省台北市  1
-      - 美国 129
-      - github.com/freefq - 香港城市电讯有限公司 7
-      - Vip1丨香港18丨 ChatGPT
-      - AU-52.62.192.25-0336
-      - 香港【付费推荐：https//v1.mk/vip】559
-      - _HK_香港_5
-      - 韩国【付费推荐：https://v1.mk/vip】316
-      - "[02-24]-🇺🇸-美国-136-z0115.security-cloudfront-cdn.com"
-      - 美国【付费推荐：https://v1.mk/vip】338
-      - 法国【付费推荐：https://v1.mk/vip】266
-      - 中国【付费推荐：https//v1.mk/vip】557
-      - github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 32
-      - 日本【付费推荐：https://v1.mk/vip】158
-      - 【2023.02.1923:30更新】
-      - _CN_中国->🇹🇼_TW_台湾
-      - 新加坡_0224002
-      - VirMach
-      - _CN_中国_4
-      - 003
-      - 沙特阿拉伯_0221001
-      - Vip1丨台湾30丨隧道专线
-      - 中国【付费推荐：https://v1.mk/vip】302
-      - github.com/freefq - 美国  16
-      - 美国 053
-      - 新加坡【付费推荐：https://v1.mk/vip】222
-      - 韩国(TG频道@kxswa)
-      - 法国_0224002
-      - 中国【付费推荐：https//v1.mk/vip】3
-      - 爱尔兰【付费推荐：https://v1.mk/vip】344
-      - US 23 → tg@nicevpn123
-      - 美国 107
-      - 美国 126
-      - 001
-      - _CN_中国_5
-      - youtube阿伟科技
-      - 香港【付费推荐：https://v1.mk/vip】15
-      - 美国 097
-      - 新加坡_0224150
-      - "[02-26]-🇸🇪-瑞典-193-z0117.security-cloudfront-cdn.com"
-      - 澳大利亚 010
-      - 韩国(TG频道@kxswa) 2
-      - 香港【付费推荐：https//v1.mk/vip】555
-      - 加拿大【付费推荐：https://v1.mk/vip】2
-      - 中国【付费推荐：https://v1.mk/vip】3
-      - _DE_德国_38_38
-      - _HK_香港
-      - _HK_香港_7
-      - "@SSRSUB-V27-付费推荐:suo.yt/ssrsub"
-      - 香港(TG频道@kxswa)
-      - "[02-25]-🇯🇵-日本东京-199-jp-am48-6.eqnode.net"
-      - 123
-      - aws 2
-      - 沙特阿拉伯【付费推荐：https://v1.mk/vip】24
-      - 美国 058
-      - A-Vip1丨日本26丨流媒体解锁丨
-      - 意大利(TG频道@kxswa)
-      - 美国 056
-      - _HK_香港_来源;kkzui.com(快嘴科技)_19
-      - 加拿大 001
-      - A-Vip1丨日本27丨流媒体解锁丨江西入口
-      - _CN_中国->🇹🇼_TW_台湾 2
-      - 美国(TG频道@kxswa)
-      - 美国 131
-      - 美国 089
-      - _HK_香港_1 2
-      - 中国【付费推荐：https://v1.mk/vip】75
-      - "| 3.39Mb"
-      - UC 台湾02 | tiktok | Youtube免广告 | 3.0x | V1 - 酸奶VPN
-      - "[02-26]-🇦🇺-澳大利亚-184-z0113.security-cloudfront-cdn.com"
-      - 香港【付费推荐：https//v1.mk/vip】558
-      - 日本【付费推荐：https://v1.mk/vip】214
-      - 美国 062
-      - 爱尔兰 001
-      - 中国【付费推荐：https://v1.mk/vip】125
-      - 美国 019
-      - 沙特阿拉伯(TG频道@kxswa)
-      - US_youtube@资源分享师_158
-      - 中国(TG频道@kxswa)
-      - 中国(TG频道@kxswa) 2
-      - 意大利(TG频道@kxswa) 2
-      - 中国(TG频道@kxswa) 3
-      - Vip1丨台湾29丨ChatGPT
-      - 中国【付费推荐：https://v1.mk/vip】47
-      - 中国【付费推荐：https//v1.mk/vip】317
-      - 中国【付费推荐：https://v1.mk/vip】119
-      - 中国(TG频道@kxswa) 4
-      - login.progbyrazyar.ir:2052
-      - 中国【付费推荐：https://v1.mk/vip】309
-      - 中国【付费推荐：https://v1.mk/vip】580
-      - 中国【付费推荐：https://v1.mk/vip】97
-      - 中国【付费推荐：https://v1.mk/vip】105
+      - 美国【付费推荐：https://v1.mk/vip】230
+      - 日本7-Tunnel | 1x_1
+      - 美国西部圣何塞3 | 1x_1
       - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
-      - Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN
-      - 中国【付费推荐：https://v1.mk/vip】306
-      - 中国【付费推荐：https://v1.mk/vip】297
-      - 中国(TG频道@kxswa) 5
-      - United States 22 TG:@nodpai
-      - _MO_澳门->🇸🇬_SG_新加坡
-      - FR_51.255.49.192_022420239df8-333trojan
+      - "@SSRSUB-V53-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://v1.mk/vip】116
+      - 日本_02262014
+      - 新加坡3-Tunnel | 1x_1
+      - 韩国-春川4-Tunnel | 1x_2
+      - 未知_02261254
+      - "@SSRSUB-V30-付费推荐:suo.yt/ssrsub"
+      - 巴西1 | 0.3x_2
+      - 韩国-春川2-Tunnel | 1x_2
+      - CN_二爷翻墙网 https://1808.ga Node_1
+      - 新加坡 010
+      - "@SSRSUB-V31-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://v1.mk/vip】254
+      - 加拿大 | 1x_1
+      - 澳大利亚4-Tunnel | 0.8x_1
+      - "@SSRSUB-V52-付费推荐:suo.yt/ssrsub"
+      - 美国 024
+      - 韩国-春川6-Tunnel | 1x_2
+      - 日本3-Tunnel | 1x_2
+      - github.com/freefq - 美国惠普公司 4
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 24
+      - 日本-东京2-Tunnel | 1x_1
+      - 美国【付费推荐：https://v1.mk/vip】45
+      - "@SSRSUB-V22-付费推荐:suo.yt/ssrsub"
+      - 巴西5 | 0.3x_1
+      - 防失效github SubCrawler中国_0226028
+      - 英国2 | 0.5x_2
+      - 德国2 | 0.5x_1
+      - 日本-东京1-Tunnel | 1x_1
+      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
+      - 加拿大_0226004
+      - 日本【付费推荐：https://v1.mk/vip】151
+      - 新加坡_0226948
+      - JP 8 → tg@nicevpn123
+      - 巴西1 | 0.3x_1
+      - 日本-东京2-Tunnel | 1x_2
+      - "@SSRSUB-V48-付费推荐:suo.yt/ssrsub"
+      - 美国 053
+      - 韩国-春川4-Tunnel | 1x_1
+      - 韩国-春川2-Tunnel | 1x_1
+      - v2rayfree.eu.org - 日本东京Choopa数据中心 36
+      - 中国_02264731
+      - "[02-25]-🇯🇵-日本东京-199-jp-am48-6.eqnode.net"
+      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
+      - 韩国-春川3-Tunnel | 1x_2
+      - 中国【付费推荐：https//v1.mk/vip】21
+      - "[02-25]-🇯🇵-日本东京-169-jp-am48-6.eqnode.net"
+      - _US_美国->🇷🇺_RU_俄罗斯联邦_36
+      - sg-am3.eqsunshine.com32001
+      - 美国【付费推荐：https://v1.mk/vip】5
+      - "| 4.18Mb"
+      - _CA_加拿大->🇫🇷_FR_法国
+      - 沙特阿拉伯_0221001
+      - 美国【付费推荐：https://v1.mk/vip】81
+      - _US_美国->🇸🇬_SG_新加坡_1
+      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V32-付费推荐:suo.yt/ssrsub"
+      - 澳大利亚 008
+      - _HK_香港
+      - -新加坡-sg-ovh2.1server.co
+      - 韩国-春川1-Tunnel | 1x_2
+      - "@SSRSUB-V49-付费推荐:suo.yt/ssrsub"
+      - 日本5-Tunnel | 1x_2
+      - 巴西2 | 0.3x_1
+      - 韩国-春川3-Tunnel | 1x_1
+      - "@SSRSUB-V47-付费推荐:suo.yt/ssrsub"
+      - _BZ_伯利兹->🇫🇷_FR_法国_50_50
+      - 印度-孟买2-Tunnel | 0.8x_1
+      - 美国【付费推荐：https://v1.mk/vip】96
+      - 印度 005
+      - 新加坡4-Tunnel | 1x_1
+      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
+      - 日本B | Anti-DDos |0.7x_1
+      - 韩国-春川5-Tunnel | 1x_2
+      - 美国【付费推荐：https://v1.mk/vip】73
+      - "|23.19Mb"
+      - Singapore 24 TG:@nodpai
+      - 日本7-Tunnel | 1x_2
+      - 巴西2 | 0.3x_2
+      - 美国【付费推荐：https://v1.mk/vip】124
+      - _CN_中国->🇭🇰_HK_香港_1
+      - 日本8-Tunnel | 1x_2
+      - 澳大利亚1-Tunnel | 0.8x_1
+      - 印度-海得拉巴3-Tunnel | 0.8x_1
+      - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
+      - 印度-海得拉巴1-Tunnel | 0.8x_2
+      - "@SSRSUB-V29-付费推荐:suo.yt/ssrsub"
+      - 沙特阿拉伯(TG频道@kxswa)
+      - 沙特阿拉伯 | 0.5x_1
+      - 新加坡3-Tunnel | 1x_2
+      - 韩国-春川5-Tunnel | 1x_1
+      - 印度-海得拉巴3-Tunnel | 0.8x_2
+      - 韩国-春川1-Tunnel | 1x_1
+      - 伯利兹【付费推荐：https://v1.mk/vip】70
+      - 英国2 | 0.5x_1
+      - 日本5-Tunnel | 1x_1
+      - 美国【付费推荐：https://v1.mk/vip】328
+      - 美国3 | 1x_1
+      - 新加坡1-Tunnel | 1x_2
+      - 美国 062
+      - "@SSRSUB-V33-付费推荐:suo.yt/ssrsub"
+      - JP 10 → tg@nicevpn123
+      - 新加坡4-Tunnel | 1x_2
+      - 印度-孟买2-Tunnel | 0.8x_2
+      - 澳大利亚1-Tunnel | 0.8x_2
+      - 美国【付费推荐：https://v1.mk/vip】7
+      - 澳大利亚2-Tunnel | 0.8x_1
+      - 亚太地区 001
+      - "@SSRSUB-V34-付费推荐:suo.yt/ssrsub"
+      - 美国西部圣何塞3 | 1x_2
+      - 澳大利亚2-Tunnel | 0.8x_2
+      - 澳大利亚4-Tunnel | 0.8x_2
+      - 日本6-Tunnel | 1x_2
+      - 日本-大阪1-Tunnel | 1x_2
+      - US美国(youtube阿伟科技)
+      - _IN_印度_来源;kkzui.com(快嘴科技)_28_28
+      - Pool_ | 6.32Mb
+      - 沙特阿拉伯【付费推荐：https://v1.mk/vip】24
+      - 中国_02264730
+      - "[02-26]-🇸🇪-瑞典-193-z0117.security-cloudfront-cdn.com"
+      - 韩国-春川6-Tunnel | 1x_1
+      - "@SSRSUB-V50-付费推荐:suo.yt/ssrsub"
+      - DE_3.72.190.230_022420239df8-452s%�
+      - 印度-海得拉巴1-Tunnel | 0.8x_1
+      - 美国 056
+      - 日本-东京1-Tunnel | 1x_2
+      - "%�\x11�<'���oyj�L\f\f�%%�"
+      - _FR_法国
+      - _DE_德国_38_38
+      - "@SSRSUB-V51-付费推荐:suo.yt/ssrsub"
+      - 日本A | Anti-DDos |0.7x_1
+      - 中国【付费推荐：https://v1.mk/vip】327
+      - "[02-26]-🇺🇸-美国-181-z0115.security-cloudfront-cdn.com"
+      - 123
+      - 香港-Tunnel 200Mbps | 1x_2
+      - 澳大利亚3-Tunnel | 0.8x_2
+      - 香港-Tunnel 200Mbps | 1x_1
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _HK_香港_2_22
-      - "[02-24]-🇦🇺-澳大利亚-220-z0113.security-cloudfront-cdn.com"
-      - GreenCloud
-      - United States(ChatGPT) 03 TG@nodpai
-      - 加拿大(TG频道@kxswa)
-      - "_US_美国\r_来源;kkzui.com(快嘴科技)_34_34\r"
-      - "[02-25]-🇯🇵-日本东京-169-jp-am48-6.eqnode.net"
-      - 韩国【付费推荐：https://v1.mk/vip】197
-      - aws
-      - v2rayfree.eu.org - 美国3COM公司企业网 52
-      - 韩国 004
-      - 002
-      - Singapore 24 TG:@nodpai
-      - v2rayfree.eu.org - 美国亚利桑那州凤凰城Oracle云计算数据中心 28
-      - github.com/freefq - 台湾省台北市  1
-      - 美国 129
-      - github.com/freefq - 香港城市电讯有限公司 7
-      - Vip1丨香港18丨 ChatGPT
-      - AU-52.62.192.25-0336
-      - 香港【付费推荐：https//v1.mk/vip】559
-      - _HK_香港_5
-      - 韩国【付费推荐：https://v1.mk/vip】316
-      - "[02-24]-🇺🇸-美国-136-z0115.security-cloudfront-cdn.com"
-      - 美国【付费推荐：https://v1.mk/vip】338
-      - 法国【付费推荐：https://v1.mk/vip】266
-      - 中国【付费推荐：https//v1.mk/vip】557
-      - github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 32
-      - 日本【付费推荐：https://v1.mk/vip】158
-      - 【2023.02.1923:30更新】
-      - _CN_中国->🇹🇼_TW_台湾
-      - 新加坡_0224002
-      - VirMach
-      - _CN_中国_4
-      - 003
-      - 沙特阿拉伯_0221001
-      - Vip1丨台湾30丨隧道专线
-      - 中国【付费推荐：https://v1.mk/vip】302
-      - github.com/freefq - 美国  16
-      - 美国 053
-      - 新加坡【付费推荐：https://v1.mk/vip】222
-      - 韩国(TG频道@kxswa)
-      - 法国_0224002
-      - 中国【付费推荐：https//v1.mk/vip】3
-      - 爱尔兰【付费推荐：https://v1.mk/vip】344
-      - US 23 → tg@nicevpn123
-      - 美国 107
-      - 美国 126
-      - 001
-      - _CN_中国_5
-      - youtube阿伟科技
-      - 香港【付费推荐：https://v1.mk/vip】15
-      - 美国 097
-      - 新加坡_0224150
-      - "[02-26]-🇸🇪-瑞典-193-z0117.security-cloudfront-cdn.com"
-      - 澳大利亚 010
-      - 韩国(TG频道@kxswa) 2
-      - 香港【付费推荐：https//v1.mk/vip】555
-      - 加拿大【付费推荐：https://v1.mk/vip】2
-      - 中国【付费推荐：https://v1.mk/vip】3
-      - _DE_德国_38_38
-      - _HK_香港
-      - _HK_香港_7
-      - "@SSRSUB-V27-付费推荐:suo.yt/ssrsub"
-      - 香港(TG频道@kxswa)
-      - "[02-25]-🇯🇵-日本东京-199-jp-am48-6.eqnode.net"
-      - 123
-      - aws 2
-      - 沙特阿拉伯【付费推荐：https://v1.mk/vip】24
-      - 美国 058
-      - A-Vip1丨日本26丨流媒体解锁丨
-      - 意大利(TG频道@kxswa)
-      - 美国 056
-      - _HK_香港_来源;kkzui.com(快嘴科技)_19
-      - 加拿大 001
-      - A-Vip1丨日本27丨流媒体解锁丨江西入口
-      - _CN_中国->🇹🇼_TW_台湾 2
-      - 美国(TG频道@kxswa)
-      - 美国 131
-      - 美国 089
-      - _HK_香港_1 2
-      - 中国【付费推荐：https://v1.mk/vip】75
-      - "| 3.39Mb"
-      - UC 台湾02 | tiktok | Youtube免广告 | 3.0x | V1 - 酸奶VPN
-      - "[02-26]-🇦🇺-澳大利亚-184-z0113.security-cloudfront-cdn.com"
-      - 香港【付费推荐：https//v1.mk/vip】558
-      - 日本【付费推荐：https://v1.mk/vip】214
-      - 美国 062
-      - 爱尔兰 001
-      - 中国【付费推荐：https://v1.mk/vip】125
-      - 美国 019
-      - 沙特阿拉伯(TG频道@kxswa)
-      - US_youtube@资源分享师_158
-      - 中国(TG频道@kxswa)
-      - 中国(TG频道@kxswa) 2
-      - 意大利(TG频道@kxswa) 2
-      - 中国(TG频道@kxswa) 3
-      - Vip1丨台湾29丨ChatGPT
-      - 中国【付费推荐：https://v1.mk/vip】47
-      - 中国【付费推荐：https//v1.mk/vip】317
-      - 中国【付费推荐：https://v1.mk/vip】119
-      - 中国(TG频道@kxswa) 4
-      - login.progbyrazyar.ir:2052
-      - 中国【付费推荐：https://v1.mk/vip】309
-      - 中国【付费推荐：https://v1.mk/vip】580
-      - 中国【付费推荐：https://v1.mk/vip】97
-      - 中国【付费推荐：https://v1.mk/vip】105
+      - 美国【付费推荐：https://v1.mk/vip】230
+      - 日本7-Tunnel | 1x_1
+      - 美国西部圣何塞3 | 1x_1
       - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
-      - Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN
-      - 中国【付费推荐：https://v1.mk/vip】306
-      - 中国【付费推荐：https://v1.mk/vip】297
-      - 中国(TG频道@kxswa) 5
-      - United States 22 TG:@nodpai
-      - _MO_澳门->🇸🇬_SG_新加坡
-      - FR_51.255.49.192_022420239df8-333trojan
+      - "@SSRSUB-V53-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://v1.mk/vip】116
+      - 日本_02262014
+      - 新加坡3-Tunnel | 1x_1
+      - 韩国-春川4-Tunnel | 1x_2
+      - 未知_02261254
+      - "@SSRSUB-V30-付费推荐:suo.yt/ssrsub"
+      - 巴西1 | 0.3x_2
+      - 韩国-春川2-Tunnel | 1x_2
+      - CN_二爷翻墙网 https://1808.ga Node_1
+      - 新加坡 010
+      - "@SSRSUB-V31-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://v1.mk/vip】254
+      - 加拿大 | 1x_1
+      - 澳大利亚4-Tunnel | 0.8x_1
+      - "@SSRSUB-V52-付费推荐:suo.yt/ssrsub"
+      - 美国 024
+      - 韩国-春川6-Tunnel | 1x_2
+      - 日本3-Tunnel | 1x_2
+      - github.com/freefq - 美国惠普公司 4
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 24
+      - 日本-东京2-Tunnel | 1x_1
+      - 美国【付费推荐：https://v1.mk/vip】45
+      - "@SSRSUB-V22-付费推荐:suo.yt/ssrsub"
+      - 巴西5 | 0.3x_1
+      - 防失效github SubCrawler中国_0226028
+      - 英国2 | 0.5x_2
+      - 德国2 | 0.5x_1
+      - 日本-东京1-Tunnel | 1x_1
+      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
+      - 加拿大_0226004
+      - 日本【付费推荐：https://v1.mk/vip】151
+      - 新加坡_0226948
+      - JP 8 → tg@nicevpn123
+      - 巴西1 | 0.3x_1
+      - 日本-东京2-Tunnel | 1x_2
+      - "@SSRSUB-V48-付费推荐:suo.yt/ssrsub"
+      - 美国 053
+      - 韩国-春川4-Tunnel | 1x_1
+      - 韩国-春川2-Tunnel | 1x_1
+      - v2rayfree.eu.org - 日本东京Choopa数据中心 36
+      - 中国_02264731
+      - "[02-25]-🇯🇵-日本东京-199-jp-am48-6.eqnode.net"
+      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
+      - 韩国-春川3-Tunnel | 1x_2
+      - 中国【付费推荐：https//v1.mk/vip】21
+      - "[02-25]-🇯🇵-日本东京-169-jp-am48-6.eqnode.net"
+      - _US_美国->🇷🇺_RU_俄罗斯联邦_36
+      - sg-am3.eqsunshine.com32001
+      - 美国【付费推荐：https://v1.mk/vip】5
+      - "| 4.18Mb"
+      - _CA_加拿大->🇫🇷_FR_法国
+      - 沙特阿拉伯_0221001
+      - 美国【付费推荐：https://v1.mk/vip】81
+      - _US_美国->🇸🇬_SG_新加坡_1
+      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V32-付费推荐:suo.yt/ssrsub"
+      - 澳大利亚 008
+      - _HK_香港
+      - -新加坡-sg-ovh2.1server.co
+      - 韩国-春川1-Tunnel | 1x_2
+      - "@SSRSUB-V49-付费推荐:suo.yt/ssrsub"
+      - 日本5-Tunnel | 1x_2
+      - 巴西2 | 0.3x_1
+      - 韩国-春川3-Tunnel | 1x_1
+      - "@SSRSUB-V47-付费推荐:suo.yt/ssrsub"
+      - _BZ_伯利兹->🇫🇷_FR_法国_50_50
+      - 印度-孟买2-Tunnel | 0.8x_1
+      - 美国【付费推荐：https://v1.mk/vip】96
+      - 印度 005
+      - 新加坡4-Tunnel | 1x_1
+      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
+      - 日本B | Anti-DDos |0.7x_1
+      - 韩国-春川5-Tunnel | 1x_2
+      - 美国【付费推荐：https://v1.mk/vip】73
+      - "|23.19Mb"
+      - Singapore 24 TG:@nodpai
+      - 日本7-Tunnel | 1x_2
+      - 巴西2 | 0.3x_2
+      - 美国【付费推荐：https://v1.mk/vip】124
+      - _CN_中国->🇭🇰_HK_香港_1
+      - 日本8-Tunnel | 1x_2
+      - 澳大利亚1-Tunnel | 0.8x_1
+      - 印度-海得拉巴3-Tunnel | 0.8x_1
+      - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
+      - 印度-海得拉巴1-Tunnel | 0.8x_2
+      - "@SSRSUB-V29-付费推荐:suo.yt/ssrsub"
+      - 沙特阿拉伯(TG频道@kxswa)
+      - 沙特阿拉伯 | 0.5x_1
+      - 新加坡3-Tunnel | 1x_2
+      - 韩国-春川5-Tunnel | 1x_1
+      - 印度-海得拉巴3-Tunnel | 0.8x_2
+      - 韩国-春川1-Tunnel | 1x_1
+      - 伯利兹【付费推荐：https://v1.mk/vip】70
+      - 英国2 | 0.5x_1
+      - 日本5-Tunnel | 1x_1
+      - 美国【付费推荐：https://v1.mk/vip】328
+      - 美国3 | 1x_1
+      - 新加坡1-Tunnel | 1x_2
+      - 美国 062
+      - "@SSRSUB-V33-付费推荐:suo.yt/ssrsub"
+      - JP 10 → tg@nicevpn123
+      - 新加坡4-Tunnel | 1x_2
+      - 印度-孟买2-Tunnel | 0.8x_2
+      - 澳大利亚1-Tunnel | 0.8x_2
+      - 美国【付费推荐：https://v1.mk/vip】7
+      - 澳大利亚2-Tunnel | 0.8x_1
+      - 亚太地区 001
+      - "@SSRSUB-V34-付费推荐:suo.yt/ssrsub"
+      - 美国西部圣何塞3 | 1x_2
+      - 澳大利亚2-Tunnel | 0.8x_2
+      - 澳大利亚4-Tunnel | 0.8x_2
+      - 日本6-Tunnel | 1x_2
+      - 日本-大阪1-Tunnel | 1x_2
+      - US美国(youtube阿伟科技)
+      - _IN_印度_来源;kkzui.com(快嘴科技)_28_28
+      - Pool_ | 6.32Mb
+      - 沙特阿拉伯【付费推荐：https://v1.mk/vip】24
+      - 中国_02264730
+      - "[02-26]-🇸🇪-瑞典-193-z0117.security-cloudfront-cdn.com"
+      - 韩国-春川6-Tunnel | 1x_1
+      - "@SSRSUB-V50-付费推荐:suo.yt/ssrsub"
+      - DE_3.72.190.230_022420239df8-452s%�
+      - 印度-海得拉巴1-Tunnel | 0.8x_1
+      - 美国 056
+      - 日本-东京1-Tunnel | 1x_2
+      - "%�\x11�<'���oyj�L\f\f�%%�"
+      - _FR_法国
+      - _DE_德国_38_38
+      - "@SSRSUB-V51-付费推荐:suo.yt/ssrsub"
+      - 日本A | Anti-DDos |0.7x_1
+      - 中国【付费推荐：https://v1.mk/vip】327
+      - "[02-26]-🇺🇸-美国-181-z0115.security-cloudfront-cdn.com"
+      - 123
+      - 香港-Tunnel 200Mbps | 1x_2
+      - 澳大利亚3-Tunnel | 0.8x_2
+      - 香港-Tunnel 200Mbps | 1x_1
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -497,503 +605,595 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _HK_香港_2_22
-      - "[02-24]-🇦🇺-澳大利亚-220-z0113.security-cloudfront-cdn.com"
-      - GreenCloud
-      - United States(ChatGPT) 03 TG@nodpai
-      - 加拿大(TG频道@kxswa)
-      - "_US_美国\r_来源;kkzui.com(快嘴科技)_34_34\r"
-      - "[02-25]-🇯🇵-日本东京-169-jp-am48-6.eqnode.net"
-      - 韩国【付费推荐：https://v1.mk/vip】197
-      - aws
-      - v2rayfree.eu.org - 美国3COM公司企业网 52
-      - 韩国 004
-      - 002
-      - Singapore 24 TG:@nodpai
-      - v2rayfree.eu.org - 美国亚利桑那州凤凰城Oracle云计算数据中心 28
-      - github.com/freefq - 台湾省台北市  1
-      - 美国 129
-      - github.com/freefq - 香港城市电讯有限公司 7
-      - Vip1丨香港18丨 ChatGPT
-      - AU-52.62.192.25-0336
-      - 香港【付费推荐：https//v1.mk/vip】559
-      - _HK_香港_5
-      - 韩国【付费推荐：https://v1.mk/vip】316
-      - "[02-24]-🇺🇸-美国-136-z0115.security-cloudfront-cdn.com"
-      - 美国【付费推荐：https://v1.mk/vip】338
-      - 法国【付费推荐：https://v1.mk/vip】266
-      - 中国【付费推荐：https//v1.mk/vip】557
-      - github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 32
-      - 日本【付费推荐：https://v1.mk/vip】158
-      - 【2023.02.1923:30更新】
-      - _CN_中国->🇹🇼_TW_台湾
-      - 新加坡_0224002
-      - VirMach
-      - _CN_中国_4
-      - 003
-      - 沙特阿拉伯_0221001
-      - Vip1丨台湾30丨隧道专线
-      - 中国【付费推荐：https://v1.mk/vip】302
-      - github.com/freefq - 美国  16
-      - 美国 053
-      - 新加坡【付费推荐：https://v1.mk/vip】222
-      - 韩国(TG频道@kxswa)
-      - 法国_0224002
-      - 中国【付费推荐：https//v1.mk/vip】3
-      - 爱尔兰【付费推荐：https://v1.mk/vip】344
-      - US 23 → tg@nicevpn123
-      - 美国 107
-      - 美国 126
-      - 001
-      - _CN_中国_5
-      - youtube阿伟科技
-      - 香港【付费推荐：https://v1.mk/vip】15
-      - 美国 097
-      - 新加坡_0224150
-      - "[02-26]-🇸🇪-瑞典-193-z0117.security-cloudfront-cdn.com"
-      - 澳大利亚 010
-      - 韩国(TG频道@kxswa) 2
-      - 香港【付费推荐：https//v1.mk/vip】555
-      - 加拿大【付费推荐：https://v1.mk/vip】2
-      - 中国【付费推荐：https://v1.mk/vip】3
-      - _DE_德国_38_38
-      - _HK_香港
-      - _HK_香港_7
-      - "@SSRSUB-V27-付费推荐:suo.yt/ssrsub"
-      - 香港(TG频道@kxswa)
-      - "[02-25]-🇯🇵-日本东京-199-jp-am48-6.eqnode.net"
-      - 123
-      - aws 2
-      - 沙特阿拉伯【付费推荐：https://v1.mk/vip】24
-      - 美国 058
-      - A-Vip1丨日本26丨流媒体解锁丨
-      - 意大利(TG频道@kxswa)
-      - 美国 056
-      - _HK_香港_来源;kkzui.com(快嘴科技)_19
-      - 加拿大 001
-      - A-Vip1丨日本27丨流媒体解锁丨江西入口
-      - _CN_中国->🇹🇼_TW_台湾 2
-      - 美国(TG频道@kxswa)
-      - 美国 131
-      - 美国 089
-      - _HK_香港_1 2
-      - 中国【付费推荐：https://v1.mk/vip】75
-      - "| 3.39Mb"
-      - UC 台湾02 | tiktok | Youtube免广告 | 3.0x | V1 - 酸奶VPN
-      - "[02-26]-🇦🇺-澳大利亚-184-z0113.security-cloudfront-cdn.com"
-      - 香港【付费推荐：https//v1.mk/vip】558
-      - 日本【付费推荐：https://v1.mk/vip】214
-      - 美国 062
-      - 爱尔兰 001
-      - 中国【付费推荐：https://v1.mk/vip】125
-      - 美国 019
-      - 沙特阿拉伯(TG频道@kxswa)
-      - US_youtube@资源分享师_158
-      - 中国(TG频道@kxswa)
-      - 中国(TG频道@kxswa) 2
-      - 意大利(TG频道@kxswa) 2
-      - 中国(TG频道@kxswa) 3
-      - Vip1丨台湾29丨ChatGPT
-      - 中国【付费推荐：https://v1.mk/vip】47
-      - 中国【付费推荐：https//v1.mk/vip】317
-      - 中国【付费推荐：https://v1.mk/vip】119
-      - 中国(TG频道@kxswa) 4
-      - login.progbyrazyar.ir:2052
-      - 中国【付费推荐：https://v1.mk/vip】309
-      - 中国【付费推荐：https://v1.mk/vip】580
-      - 中国【付费推荐：https://v1.mk/vip】97
-      - 中国【付费推荐：https://v1.mk/vip】105
+      - 美国【付费推荐：https://v1.mk/vip】230
+      - 日本7-Tunnel | 1x_1
+      - 美国西部圣何塞3 | 1x_1
       - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
-      - Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN
-      - 中国【付费推荐：https://v1.mk/vip】306
-      - 中国【付费推荐：https://v1.mk/vip】297
-      - 中国(TG频道@kxswa) 5
-      - United States 22 TG:@nodpai
-      - _MO_澳门->🇸🇬_SG_新加坡
-      - FR_51.255.49.192_022420239df8-333trojan
+      - "@SSRSUB-V53-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://v1.mk/vip】116
+      - 日本_02262014
+      - 新加坡3-Tunnel | 1x_1
+      - 韩国-春川4-Tunnel | 1x_2
+      - 未知_02261254
+      - "@SSRSUB-V30-付费推荐:suo.yt/ssrsub"
+      - 巴西1 | 0.3x_2
+      - 韩国-春川2-Tunnel | 1x_2
+      - CN_二爷翻墙网 https://1808.ga Node_1
+      - 新加坡 010
+      - "@SSRSUB-V31-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://v1.mk/vip】254
+      - 加拿大 | 1x_1
+      - 澳大利亚4-Tunnel | 0.8x_1
+      - "@SSRSUB-V52-付费推荐:suo.yt/ssrsub"
+      - 美国 024
+      - 韩国-春川6-Tunnel | 1x_2
+      - 日本3-Tunnel | 1x_2
+      - github.com/freefq - 美国惠普公司 4
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 24
+      - 日本-东京2-Tunnel | 1x_1
+      - 美国【付费推荐：https://v1.mk/vip】45
+      - "@SSRSUB-V22-付费推荐:suo.yt/ssrsub"
+      - 巴西5 | 0.3x_1
+      - 防失效github SubCrawler中国_0226028
+      - 英国2 | 0.5x_2
+      - 德国2 | 0.5x_1
+      - 日本-东京1-Tunnel | 1x_1
+      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
+      - 加拿大_0226004
+      - 日本【付费推荐：https://v1.mk/vip】151
+      - 新加坡_0226948
+      - JP 8 → tg@nicevpn123
+      - 巴西1 | 0.3x_1
+      - 日本-东京2-Tunnel | 1x_2
+      - "@SSRSUB-V48-付费推荐:suo.yt/ssrsub"
+      - 美国 053
+      - 韩国-春川4-Tunnel | 1x_1
+      - 韩国-春川2-Tunnel | 1x_1
+      - v2rayfree.eu.org - 日本东京Choopa数据中心 36
+      - 中国_02264731
+      - "[02-25]-🇯🇵-日本东京-199-jp-am48-6.eqnode.net"
+      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
+      - 韩国-春川3-Tunnel | 1x_2
+      - 中国【付费推荐：https//v1.mk/vip】21
+      - "[02-25]-🇯🇵-日本东京-169-jp-am48-6.eqnode.net"
+      - _US_美国->🇷🇺_RU_俄罗斯联邦_36
+      - sg-am3.eqsunshine.com32001
+      - 美国【付费推荐：https://v1.mk/vip】5
+      - "| 4.18Mb"
+      - _CA_加拿大->🇫🇷_FR_法国
+      - 沙特阿拉伯_0221001
+      - 美国【付费推荐：https://v1.mk/vip】81
+      - _US_美国->🇸🇬_SG_新加坡_1
+      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V32-付费推荐:suo.yt/ssrsub"
+      - 澳大利亚 008
+      - _HK_香港
+      - -新加坡-sg-ovh2.1server.co
+      - 韩国-春川1-Tunnel | 1x_2
+      - "@SSRSUB-V49-付费推荐:suo.yt/ssrsub"
+      - 日本5-Tunnel | 1x_2
+      - 巴西2 | 0.3x_1
+      - 韩国-春川3-Tunnel | 1x_1
+      - "@SSRSUB-V47-付费推荐:suo.yt/ssrsub"
+      - _BZ_伯利兹->🇫🇷_FR_法国_50_50
+      - 印度-孟买2-Tunnel | 0.8x_1
+      - 美国【付费推荐：https://v1.mk/vip】96
+      - 印度 005
+      - 新加坡4-Tunnel | 1x_1
+      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
+      - 日本B | Anti-DDos |0.7x_1
+      - 韩国-春川5-Tunnel | 1x_2
+      - 美国【付费推荐：https://v1.mk/vip】73
+      - "|23.19Mb"
+      - Singapore 24 TG:@nodpai
+      - 日本7-Tunnel | 1x_2
+      - 巴西2 | 0.3x_2
+      - 美国【付费推荐：https://v1.mk/vip】124
+      - _CN_中国->🇭🇰_HK_香港_1
+      - 日本8-Tunnel | 1x_2
+      - 澳大利亚1-Tunnel | 0.8x_1
+      - 印度-海得拉巴3-Tunnel | 0.8x_1
+      - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
+      - 印度-海得拉巴1-Tunnel | 0.8x_2
+      - "@SSRSUB-V29-付费推荐:suo.yt/ssrsub"
+      - 沙特阿拉伯(TG频道@kxswa)
+      - 沙特阿拉伯 | 0.5x_1
+      - 新加坡3-Tunnel | 1x_2
+      - 韩国-春川5-Tunnel | 1x_1
+      - 印度-海得拉巴3-Tunnel | 0.8x_2
+      - 韩国-春川1-Tunnel | 1x_1
+      - 伯利兹【付费推荐：https://v1.mk/vip】70
+      - 英国2 | 0.5x_1
+      - 日本5-Tunnel | 1x_1
+      - 美国【付费推荐：https://v1.mk/vip】328
+      - 美国3 | 1x_1
+      - 新加坡1-Tunnel | 1x_2
+      - 美国 062
+      - "@SSRSUB-V33-付费推荐:suo.yt/ssrsub"
+      - JP 10 → tg@nicevpn123
+      - 新加坡4-Tunnel | 1x_2
+      - 印度-孟买2-Tunnel | 0.8x_2
+      - 澳大利亚1-Tunnel | 0.8x_2
+      - 美国【付费推荐：https://v1.mk/vip】7
+      - 澳大利亚2-Tunnel | 0.8x_1
+      - 亚太地区 001
+      - "@SSRSUB-V34-付费推荐:suo.yt/ssrsub"
+      - 美国西部圣何塞3 | 1x_2
+      - 澳大利亚2-Tunnel | 0.8x_2
+      - 澳大利亚4-Tunnel | 0.8x_2
+      - 日本6-Tunnel | 1x_2
+      - 日本-大阪1-Tunnel | 1x_2
+      - US美国(youtube阿伟科技)
+      - _IN_印度_来源;kkzui.com(快嘴科技)_28_28
+      - Pool_ | 6.32Mb
+      - 沙特阿拉伯【付费推荐：https://v1.mk/vip】24
+      - 中国_02264730
+      - "[02-26]-🇸🇪-瑞典-193-z0117.security-cloudfront-cdn.com"
+      - 韩国-春川6-Tunnel | 1x_1
+      - "@SSRSUB-V50-付费推荐:suo.yt/ssrsub"
+      - DE_3.72.190.230_022420239df8-452s%�
+      - 印度-海得拉巴1-Tunnel | 0.8x_1
+      - 美国 056
+      - 日本-东京1-Tunnel | 1x_2
+      - "%�\x11�<'���oyj�L\f\f�%%�"
+      - _FR_法国
+      - _DE_德国_38_38
+      - "@SSRSUB-V51-付费推荐:suo.yt/ssrsub"
+      - 日本A | Anti-DDos |0.7x_1
+      - 中国【付费推荐：https://v1.mk/vip】327
+      - "[02-26]-🇺🇸-美国-181-z0115.security-cloudfront-cdn.com"
+      - 123
+      - 香港-Tunnel 200Mbps | 1x_2
+      - 澳大利亚3-Tunnel | 0.8x_2
+      - 香港-Tunnel 200Mbps | 1x_1
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - _HK_香港_2_22
-      - github.com/freefq - 台湾省台北市  1
-      - github.com/freefq - 香港城市电讯有限公司 7
-      - Vip1丨香港18丨 ChatGPT
-      - 香港【付费推荐：https//v1.mk/vip】559
-      - _HK_香港_5
-      - _CN_中国->🇹🇼_TW_台湾
-      - Vip1丨台湾30丨隧道专线
-      - 香港【付费推荐：https://v1.mk/vip】15
-      - 香港【付费推荐：https//v1.mk/vip】555
       - _HK_香港
-      - _HK_香港_7
-      - 香港(TG频道@kxswa)
-      - _HK_香港_来源;kkzui.com(快嘴科技)_19
-      - _CN_中国->🇹🇼_TW_台湾 2
-      - _HK_香港_1 2
-      - UC 台湾02 | tiktok | Youtube免广告 | 3.0x | V1 - 酸奶VPN
-      - 香港【付费推荐：https//v1.mk/vip】558
-      - Vip1丨台湾29丨ChatGPT
-      - Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN
+      - _CN_中国->🇭🇰_HK_香港_1
+      - 香港-Tunnel 200Mbps | 1x_2
+      - 香港-Tunnel 200Mbps | 1x_1
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _HK_香港_2_22
-      - "[02-24]-🇦🇺-澳大利亚-220-z0113.security-cloudfront-cdn.com"
-      - GreenCloud
-      - United States(ChatGPT) 03 TG@nodpai
-      - 加拿大(TG频道@kxswa)
-      - "_US_美国\r_来源;kkzui.com(快嘴科技)_34_34\r"
-      - "[02-25]-🇯🇵-日本东京-169-jp-am48-6.eqnode.net"
-      - 韩国【付费推荐：https://v1.mk/vip】197
-      - aws
-      - v2rayfree.eu.org - 美国3COM公司企业网 52
-      - 韩国 004
-      - 002
-      - Singapore 24 TG:@nodpai
-      - v2rayfree.eu.org - 美国亚利桑那州凤凰城Oracle云计算数据中心 28
-      - github.com/freefq - 台湾省台北市  1
-      - 美国 129
-      - github.com/freefq - 香港城市电讯有限公司 7
-      - Vip1丨香港18丨 ChatGPT
-      - AU-52.62.192.25-0336
-      - 香港【付费推荐：https//v1.mk/vip】559
-      - _HK_香港_5
-      - 韩国【付费推荐：https://v1.mk/vip】316
-      - "[02-24]-🇺🇸-美国-136-z0115.security-cloudfront-cdn.com"
-      - 美国【付费推荐：https://v1.mk/vip】338
-      - 法国【付费推荐：https://v1.mk/vip】266
-      - 中国【付费推荐：https//v1.mk/vip】557
-      - github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 32
-      - 日本【付费推荐：https://v1.mk/vip】158
-      - 【2023.02.1923:30更新】
-      - _CN_中国->🇹🇼_TW_台湾
-      - 新加坡_0224002
-      - VirMach
-      - _CN_中国_4
-      - 003
-      - 沙特阿拉伯_0221001
-      - Vip1丨台湾30丨隧道专线
-      - 中国【付费推荐：https://v1.mk/vip】302
-      - github.com/freefq - 美国  16
-      - 美国 053
-      - 新加坡【付费推荐：https://v1.mk/vip】222
-      - 韩国(TG频道@kxswa)
-      - 法国_0224002
-      - 中国【付费推荐：https//v1.mk/vip】3
-      - 爱尔兰【付费推荐：https://v1.mk/vip】344
-      - US 23 → tg@nicevpn123
-      - 美国 107
-      - 美国 126
-      - 001
-      - _CN_中国_5
-      - youtube阿伟科技
-      - 香港【付费推荐：https://v1.mk/vip】15
-      - 美国 097
-      - 新加坡_0224150
-      - "[02-26]-🇸🇪-瑞典-193-z0117.security-cloudfront-cdn.com"
-      - 澳大利亚 010
-      - 韩国(TG频道@kxswa) 2
-      - 香港【付费推荐：https//v1.mk/vip】555
-      - 加拿大【付费推荐：https://v1.mk/vip】2
-      - 中国【付费推荐：https://v1.mk/vip】3
-      - _DE_德国_38_38
-      - _HK_香港
-      - _HK_香港_7
-      - "@SSRSUB-V27-付费推荐:suo.yt/ssrsub"
-      - 香港(TG频道@kxswa)
-      - "[02-25]-🇯🇵-日本东京-199-jp-am48-6.eqnode.net"
-      - 123
-      - aws 2
-      - 沙特阿拉伯【付费推荐：https://v1.mk/vip】24
-      - 美国 058
-      - A-Vip1丨日本26丨流媒体解锁丨
-      - 意大利(TG频道@kxswa)
-      - 美国 056
-      - _HK_香港_来源;kkzui.com(快嘴科技)_19
-      - 加拿大 001
-      - A-Vip1丨日本27丨流媒体解锁丨江西入口
-      - _CN_中国->🇹🇼_TW_台湾 2
-      - 美国(TG频道@kxswa)
-      - 美国 131
-      - 美国 089
-      - _HK_香港_1 2
-      - 中国【付费推荐：https://v1.mk/vip】75
-      - "| 3.39Mb"
-      - UC 台湾02 | tiktok | Youtube免广告 | 3.0x | V1 - 酸奶VPN
-      - "[02-26]-🇦🇺-澳大利亚-184-z0113.security-cloudfront-cdn.com"
-      - 香港【付费推荐：https//v1.mk/vip】558
-      - 日本【付费推荐：https://v1.mk/vip】214
-      - 美国 062
-      - 爱尔兰 001
-      - 中国【付费推荐：https://v1.mk/vip】125
-      - 美国 019
-      - 沙特阿拉伯(TG频道@kxswa)
-      - US_youtube@资源分享师_158
-      - 中国(TG频道@kxswa)
-      - 中国(TG频道@kxswa) 2
-      - 意大利(TG频道@kxswa) 2
-      - 中国(TG频道@kxswa) 3
-      - Vip1丨台湾29丨ChatGPT
-      - 中国【付费推荐：https://v1.mk/vip】47
-      - 中国【付费推荐：https//v1.mk/vip】317
-      - 中国【付费推荐：https://v1.mk/vip】119
-      - 中国(TG频道@kxswa) 4
-      - login.progbyrazyar.ir:2052
-      - 中国【付费推荐：https://v1.mk/vip】309
-      - 中国【付费推荐：https://v1.mk/vip】580
-      - 中国【付费推荐：https://v1.mk/vip】97
-      - 中国【付费推荐：https://v1.mk/vip】105
+      - 美国【付费推荐：https://v1.mk/vip】230
+      - 日本7-Tunnel | 1x_1
+      - 美国西部圣何塞3 | 1x_1
       - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
-      - Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN
-      - 中国【付费推荐：https://v1.mk/vip】306
-      - 中国【付费推荐：https://v1.mk/vip】297
-      - 中国(TG频道@kxswa) 5
-      - United States 22 TG:@nodpai
-      - _MO_澳门->🇸🇬_SG_新加坡
-      - FR_51.255.49.192_022420239df8-333trojan
+      - "@SSRSUB-V53-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://v1.mk/vip】116
+      - 日本_02262014
+      - 新加坡3-Tunnel | 1x_1
+      - 韩国-春川4-Tunnel | 1x_2
+      - 未知_02261254
+      - "@SSRSUB-V30-付费推荐:suo.yt/ssrsub"
+      - 巴西1 | 0.3x_2
+      - 韩国-春川2-Tunnel | 1x_2
+      - CN_二爷翻墙网 https://1808.ga Node_1
+      - 新加坡 010
+      - "@SSRSUB-V31-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://v1.mk/vip】254
+      - 加拿大 | 1x_1
+      - 澳大利亚4-Tunnel | 0.8x_1
+      - "@SSRSUB-V52-付费推荐:suo.yt/ssrsub"
+      - 美国 024
+      - 韩国-春川6-Tunnel | 1x_2
+      - 日本3-Tunnel | 1x_2
+      - github.com/freefq - 美国惠普公司 4
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 24
+      - 日本-东京2-Tunnel | 1x_1
+      - 美国【付费推荐：https://v1.mk/vip】45
+      - "@SSRSUB-V22-付费推荐:suo.yt/ssrsub"
+      - 巴西5 | 0.3x_1
+      - 防失效github SubCrawler中国_0226028
+      - 英国2 | 0.5x_2
+      - 德国2 | 0.5x_1
+      - 日本-东京1-Tunnel | 1x_1
+      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
+      - 加拿大_0226004
+      - 日本【付费推荐：https://v1.mk/vip】151
+      - 新加坡_0226948
+      - JP 8 → tg@nicevpn123
+      - 巴西1 | 0.3x_1
+      - 日本-东京2-Tunnel | 1x_2
+      - "@SSRSUB-V48-付费推荐:suo.yt/ssrsub"
+      - 美国 053
+      - 韩国-春川4-Tunnel | 1x_1
+      - 韩国-春川2-Tunnel | 1x_1
+      - v2rayfree.eu.org - 日本东京Choopa数据中心 36
+      - 中国_02264731
+      - "[02-25]-🇯🇵-日本东京-199-jp-am48-6.eqnode.net"
+      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
+      - 韩国-春川3-Tunnel | 1x_2
+      - 中国【付费推荐：https//v1.mk/vip】21
+      - "[02-25]-🇯🇵-日本东京-169-jp-am48-6.eqnode.net"
+      - _US_美国->🇷🇺_RU_俄罗斯联邦_36
+      - sg-am3.eqsunshine.com32001
+      - 美国【付费推荐：https://v1.mk/vip】5
+      - "| 4.18Mb"
+      - _CA_加拿大->🇫🇷_FR_法国
+      - 沙特阿拉伯_0221001
+      - 美国【付费推荐：https://v1.mk/vip】81
+      - _US_美国->🇸🇬_SG_新加坡_1
+      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V32-付费推荐:suo.yt/ssrsub"
+      - 澳大利亚 008
+      - _HK_香港
+      - -新加坡-sg-ovh2.1server.co
+      - 韩国-春川1-Tunnel | 1x_2
+      - "@SSRSUB-V49-付费推荐:suo.yt/ssrsub"
+      - 日本5-Tunnel | 1x_2
+      - 巴西2 | 0.3x_1
+      - 韩国-春川3-Tunnel | 1x_1
+      - "@SSRSUB-V47-付费推荐:suo.yt/ssrsub"
+      - _BZ_伯利兹->🇫🇷_FR_法国_50_50
+      - 印度-孟买2-Tunnel | 0.8x_1
+      - 美国【付费推荐：https://v1.mk/vip】96
+      - 印度 005
+      - 新加坡4-Tunnel | 1x_1
+      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
+      - 日本B | Anti-DDos |0.7x_1
+      - 韩国-春川5-Tunnel | 1x_2
+      - 美国【付费推荐：https://v1.mk/vip】73
+      - "|23.19Mb"
+      - Singapore 24 TG:@nodpai
+      - 日本7-Tunnel | 1x_2
+      - 巴西2 | 0.3x_2
+      - 美国【付费推荐：https://v1.mk/vip】124
+      - _CN_中国->🇭🇰_HK_香港_1
+      - 日本8-Tunnel | 1x_2
+      - 澳大利亚1-Tunnel | 0.8x_1
+      - 印度-海得拉巴3-Tunnel | 0.8x_1
+      - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
+      - 印度-海得拉巴1-Tunnel | 0.8x_2
+      - "@SSRSUB-V29-付费推荐:suo.yt/ssrsub"
+      - 沙特阿拉伯(TG频道@kxswa)
+      - 沙特阿拉伯 | 0.5x_1
+      - 新加坡3-Tunnel | 1x_2
+      - 韩国-春川5-Tunnel | 1x_1
+      - 印度-海得拉巴3-Tunnel | 0.8x_2
+      - 韩国-春川1-Tunnel | 1x_1
+      - 伯利兹【付费推荐：https://v1.mk/vip】70
+      - 英国2 | 0.5x_1
+      - 日本5-Tunnel | 1x_1
+      - 美国【付费推荐：https://v1.mk/vip】328
+      - 美国3 | 1x_1
+      - 新加坡1-Tunnel | 1x_2
+      - 美国 062
+      - "@SSRSUB-V33-付费推荐:suo.yt/ssrsub"
+      - JP 10 → tg@nicevpn123
+      - 新加坡4-Tunnel | 1x_2
+      - 印度-孟买2-Tunnel | 0.8x_2
+      - 澳大利亚1-Tunnel | 0.8x_2
+      - 美国【付费推荐：https://v1.mk/vip】7
+      - 澳大利亚2-Tunnel | 0.8x_1
+      - 亚太地区 001
+      - "@SSRSUB-V34-付费推荐:suo.yt/ssrsub"
+      - 美国西部圣何塞3 | 1x_2
+      - 澳大利亚2-Tunnel | 0.8x_2
+      - 澳大利亚4-Tunnel | 0.8x_2
+      - 日本6-Tunnel | 1x_2
+      - 日本-大阪1-Tunnel | 1x_2
+      - US美国(youtube阿伟科技)
+      - _IN_印度_来源;kkzui.com(快嘴科技)_28_28
+      - Pool_ | 6.32Mb
+      - 沙特阿拉伯【付费推荐：https://v1.mk/vip】24
+      - 中国_02264730
+      - "[02-26]-🇸🇪-瑞典-193-z0117.security-cloudfront-cdn.com"
+      - 韩国-春川6-Tunnel | 1x_1
+      - "@SSRSUB-V50-付费推荐:suo.yt/ssrsub"
+      - DE_3.72.190.230_022420239df8-452s%�
+      - 印度-海得拉巴1-Tunnel | 0.8x_1
+      - 美国 056
+      - 日本-东京1-Tunnel | 1x_2
+      - "%�\x11�<'���oyj�L\f\f�%%�"
+      - _FR_法国
+      - _DE_德国_38_38
+      - "@SSRSUB-V51-付费推荐:suo.yt/ssrsub"
+      - 日本A | Anti-DDos |0.7x_1
+      - 中国【付费推荐：https://v1.mk/vip】327
+      - "[02-26]-🇺🇸-美国-181-z0115.security-cloudfront-cdn.com"
+      - 123
+      - 香港-Tunnel 200Mbps | 1x_2
+      - 澳大利亚3-Tunnel | 0.8x_2
+      - 香港-Tunnel 200Mbps | 1x_1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _HK_香港_2_22
-      - "[02-24]-🇦🇺-澳大利亚-220-z0113.security-cloudfront-cdn.com"
-      - GreenCloud
-      - United States(ChatGPT) 03 TG@nodpai
-      - 加拿大(TG频道@kxswa)
-      - "_US_美国\r_来源;kkzui.com(快嘴科技)_34_34\r"
-      - "[02-25]-🇯🇵-日本东京-169-jp-am48-6.eqnode.net"
-      - 韩国【付费推荐：https://v1.mk/vip】197
-      - aws
-      - v2rayfree.eu.org - 美国3COM公司企业网 52
-      - 韩国 004
-      - 002
-      - Singapore 24 TG:@nodpai
-      - v2rayfree.eu.org - 美国亚利桑那州凤凰城Oracle云计算数据中心 28
-      - github.com/freefq - 台湾省台北市  1
-      - 美国 129
-      - github.com/freefq - 香港城市电讯有限公司 7
-      - Vip1丨香港18丨 ChatGPT
-      - AU-52.62.192.25-0336
-      - 香港【付费推荐：https//v1.mk/vip】559
-      - _HK_香港_5
-      - 韩国【付费推荐：https://v1.mk/vip】316
-      - "[02-24]-🇺🇸-美国-136-z0115.security-cloudfront-cdn.com"
-      - 美国【付费推荐：https://v1.mk/vip】338
-      - 法国【付费推荐：https://v1.mk/vip】266
-      - 中国【付费推荐：https//v1.mk/vip】557
-      - github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 32
-      - 日本【付费推荐：https://v1.mk/vip】158
-      - 【2023.02.1923:30更新】
-      - _CN_中国->🇹🇼_TW_台湾
-      - 新加坡_0224002
-      - VirMach
-      - _CN_中国_4
-      - 003
-      - 沙特阿拉伯_0221001
-      - Vip1丨台湾30丨隧道专线
-      - 中国【付费推荐：https://v1.mk/vip】302
-      - github.com/freefq - 美国  16
-      - 美国 053
-      - 新加坡【付费推荐：https://v1.mk/vip】222
-      - 韩国(TG频道@kxswa)
-      - 法国_0224002
-      - 中国【付费推荐：https//v1.mk/vip】3
-      - 爱尔兰【付费推荐：https://v1.mk/vip】344
-      - US 23 → tg@nicevpn123
-      - 美国 107
-      - 美国 126
-      - 001
-      - _CN_中国_5
-      - youtube阿伟科技
-      - 香港【付费推荐：https://v1.mk/vip】15
-      - 美国 097
-      - 新加坡_0224150
-      - "[02-26]-🇸🇪-瑞典-193-z0117.security-cloudfront-cdn.com"
-      - 澳大利亚 010
-      - 韩国(TG频道@kxswa) 2
-      - 香港【付费推荐：https//v1.mk/vip】555
-      - 加拿大【付费推荐：https://v1.mk/vip】2
-      - 中国【付费推荐：https://v1.mk/vip】3
-      - _DE_德国_38_38
-      - _HK_香港
-      - _HK_香港_7
-      - "@SSRSUB-V27-付费推荐:suo.yt/ssrsub"
-      - 香港(TG频道@kxswa)
-      - "[02-25]-🇯🇵-日本东京-199-jp-am48-6.eqnode.net"
-      - 123
-      - aws 2
-      - 沙特阿拉伯【付费推荐：https://v1.mk/vip】24
-      - 美国 058
-      - A-Vip1丨日本26丨流媒体解锁丨
-      - 意大利(TG频道@kxswa)
-      - 美国 056
-      - _HK_香港_来源;kkzui.com(快嘴科技)_19
-      - 加拿大 001
-      - A-Vip1丨日本27丨流媒体解锁丨江西入口
-      - _CN_中国->🇹🇼_TW_台湾 2
-      - 美国(TG频道@kxswa)
-      - 美国 131
-      - 美国 089
-      - _HK_香港_1 2
-      - 中国【付费推荐：https://v1.mk/vip】75
-      - "| 3.39Mb"
-      - UC 台湾02 | tiktok | Youtube免广告 | 3.0x | V1 - 酸奶VPN
-      - "[02-26]-🇦🇺-澳大利亚-184-z0113.security-cloudfront-cdn.com"
-      - 香港【付费推荐：https//v1.mk/vip】558
-      - 日本【付费推荐：https://v1.mk/vip】214
-      - 美国 062
-      - 爱尔兰 001
-      - 中国【付费推荐：https://v1.mk/vip】125
-      - 美国 019
-      - 沙特阿拉伯(TG频道@kxswa)
-      - US_youtube@资源分享师_158
-      - 中国(TG频道@kxswa)
-      - 中国(TG频道@kxswa) 2
-      - 意大利(TG频道@kxswa) 2
-      - 中国(TG频道@kxswa) 3
-      - Vip1丨台湾29丨ChatGPT
-      - 中国【付费推荐：https://v1.mk/vip】47
-      - 中国【付费推荐：https//v1.mk/vip】317
-      - 中国【付费推荐：https://v1.mk/vip】119
-      - 中国(TG频道@kxswa) 4
-      - login.progbyrazyar.ir:2052
-      - 中国【付费推荐：https://v1.mk/vip】309
-      - 中国【付费推荐：https://v1.mk/vip】580
-      - 中国【付费推荐：https://v1.mk/vip】97
-      - 中国【付费推荐：https://v1.mk/vip】105
+      - 美国【付费推荐：https://v1.mk/vip】230
+      - 日本7-Tunnel | 1x_1
+      - 美国西部圣何塞3 | 1x_1
       - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
-      - Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN
-      - 中国【付费推荐：https://v1.mk/vip】306
-      - 中国【付费推荐：https://v1.mk/vip】297
-      - 中国(TG频道@kxswa) 5
-      - United States 22 TG:@nodpai
-      - _MO_澳门->🇸🇬_SG_新加坡
-      - FR_51.255.49.192_022420239df8-333trojan
+      - "@SSRSUB-V53-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://v1.mk/vip】116
+      - 日本_02262014
+      - 新加坡3-Tunnel | 1x_1
+      - 韩国-春川4-Tunnel | 1x_2
+      - 未知_02261254
+      - "@SSRSUB-V30-付费推荐:suo.yt/ssrsub"
+      - 巴西1 | 0.3x_2
+      - 韩国-春川2-Tunnel | 1x_2
+      - CN_二爷翻墙网 https://1808.ga Node_1
+      - 新加坡 010
+      - "@SSRSUB-V31-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://v1.mk/vip】254
+      - 加拿大 | 1x_1
+      - 澳大利亚4-Tunnel | 0.8x_1
+      - "@SSRSUB-V52-付费推荐:suo.yt/ssrsub"
+      - 美国 024
+      - 韩国-春川6-Tunnel | 1x_2
+      - 日本3-Tunnel | 1x_2
+      - github.com/freefq - 美国惠普公司 4
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 24
+      - 日本-东京2-Tunnel | 1x_1
+      - 美国【付费推荐：https://v1.mk/vip】45
+      - "@SSRSUB-V22-付费推荐:suo.yt/ssrsub"
+      - 巴西5 | 0.3x_1
+      - 防失效github SubCrawler中国_0226028
+      - 英国2 | 0.5x_2
+      - 德国2 | 0.5x_1
+      - 日本-东京1-Tunnel | 1x_1
+      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
+      - 加拿大_0226004
+      - 日本【付费推荐：https://v1.mk/vip】151
+      - 新加坡_0226948
+      - JP 8 → tg@nicevpn123
+      - 巴西1 | 0.3x_1
+      - 日本-东京2-Tunnel | 1x_2
+      - "@SSRSUB-V48-付费推荐:suo.yt/ssrsub"
+      - 美国 053
+      - 韩国-春川4-Tunnel | 1x_1
+      - 韩国-春川2-Tunnel | 1x_1
+      - v2rayfree.eu.org - 日本东京Choopa数据中心 36
+      - 中国_02264731
+      - "[02-25]-🇯🇵-日本东京-199-jp-am48-6.eqnode.net"
+      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
+      - 韩国-春川3-Tunnel | 1x_2
+      - 中国【付费推荐：https//v1.mk/vip】21
+      - "[02-25]-🇯🇵-日本东京-169-jp-am48-6.eqnode.net"
+      - _US_美国->🇷🇺_RU_俄罗斯联邦_36
+      - sg-am3.eqsunshine.com32001
+      - 美国【付费推荐：https://v1.mk/vip】5
+      - "| 4.18Mb"
+      - _CA_加拿大->🇫🇷_FR_法国
+      - 沙特阿拉伯_0221001
+      - 美国【付费推荐：https://v1.mk/vip】81
+      - _US_美国->🇸🇬_SG_新加坡_1
+      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V32-付费推荐:suo.yt/ssrsub"
+      - 澳大利亚 008
+      - _HK_香港
+      - -新加坡-sg-ovh2.1server.co
+      - 韩国-春川1-Tunnel | 1x_2
+      - "@SSRSUB-V49-付费推荐:suo.yt/ssrsub"
+      - 日本5-Tunnel | 1x_2
+      - 巴西2 | 0.3x_1
+      - 韩国-春川3-Tunnel | 1x_1
+      - "@SSRSUB-V47-付费推荐:suo.yt/ssrsub"
+      - _BZ_伯利兹->🇫🇷_FR_法国_50_50
+      - 印度-孟买2-Tunnel | 0.8x_1
+      - 美国【付费推荐：https://v1.mk/vip】96
+      - 印度 005
+      - 新加坡4-Tunnel | 1x_1
+      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
+      - 日本B | Anti-DDos |0.7x_1
+      - 韩国-春川5-Tunnel | 1x_2
+      - 美国【付费推荐：https://v1.mk/vip】73
+      - "|23.19Mb"
+      - Singapore 24 TG:@nodpai
+      - 日本7-Tunnel | 1x_2
+      - 巴西2 | 0.3x_2
+      - 美国【付费推荐：https://v1.mk/vip】124
+      - _CN_中国->🇭🇰_HK_香港_1
+      - 日本8-Tunnel | 1x_2
+      - 澳大利亚1-Tunnel | 0.8x_1
+      - 印度-海得拉巴3-Tunnel | 0.8x_1
+      - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
+      - 印度-海得拉巴1-Tunnel | 0.8x_2
+      - "@SSRSUB-V29-付费推荐:suo.yt/ssrsub"
+      - 沙特阿拉伯(TG频道@kxswa)
+      - 沙特阿拉伯 | 0.5x_1
+      - 新加坡3-Tunnel | 1x_2
+      - 韩国-春川5-Tunnel | 1x_1
+      - 印度-海得拉巴3-Tunnel | 0.8x_2
+      - 韩国-春川1-Tunnel | 1x_1
+      - 伯利兹【付费推荐：https://v1.mk/vip】70
+      - 英国2 | 0.5x_1
+      - 日本5-Tunnel | 1x_1
+      - 美国【付费推荐：https://v1.mk/vip】328
+      - 美国3 | 1x_1
+      - 新加坡1-Tunnel | 1x_2
+      - 美国 062
+      - "@SSRSUB-V33-付费推荐:suo.yt/ssrsub"
+      - JP 10 → tg@nicevpn123
+      - 新加坡4-Tunnel | 1x_2
+      - 印度-孟买2-Tunnel | 0.8x_2
+      - 澳大利亚1-Tunnel | 0.8x_2
+      - 美国【付费推荐：https://v1.mk/vip】7
+      - 澳大利亚2-Tunnel | 0.8x_1
+      - 亚太地区 001
+      - "@SSRSUB-V34-付费推荐:suo.yt/ssrsub"
+      - 美国西部圣何塞3 | 1x_2
+      - 澳大利亚2-Tunnel | 0.8x_2
+      - 澳大利亚4-Tunnel | 0.8x_2
+      - 日本6-Tunnel | 1x_2
+      - 日本-大阪1-Tunnel | 1x_2
+      - US美国(youtube阿伟科技)
+      - _IN_印度_来源;kkzui.com(快嘴科技)_28_28
+      - Pool_ | 6.32Mb
+      - 沙特阿拉伯【付费推荐：https://v1.mk/vip】24
+      - 中国_02264730
+      - "[02-26]-🇸🇪-瑞典-193-z0117.security-cloudfront-cdn.com"
+      - 韩国-春川6-Tunnel | 1x_1
+      - "@SSRSUB-V50-付费推荐:suo.yt/ssrsub"
+      - DE_3.72.190.230_022420239df8-452s%�
+      - 印度-海得拉巴1-Tunnel | 0.8x_1
+      - 美国 056
+      - 日本-东京1-Tunnel | 1x_2
+      - "%�\x11�<'���oyj�L\f\f�%%�"
+      - _FR_法国
+      - _DE_德国_38_38
+      - "@SSRSUB-V51-付费推荐:suo.yt/ssrsub"
+      - 日本A | Anti-DDos |0.7x_1
+      - 中国【付费推荐：https://v1.mk/vip】327
+      - "[02-26]-🇺🇸-美国-181-z0115.security-cloudfront-cdn.com"
+      - 123
+      - 香港-Tunnel 200Mbps | 1x_2
+      - 澳大利亚3-Tunnel | 0.8x_2
+      - 香港-Tunnel 200Mbps | 1x_1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _HK_香港_2_22
-      - "[02-24]-🇦🇺-澳大利亚-220-z0113.security-cloudfront-cdn.com"
-      - GreenCloud
-      - United States(ChatGPT) 03 TG@nodpai
-      - 加拿大(TG频道@kxswa)
-      - "_US_美国\r_来源;kkzui.com(快嘴科技)_34_34\r"
-      - "[02-25]-🇯🇵-日本东京-169-jp-am48-6.eqnode.net"
-      - 韩国【付费推荐：https://v1.mk/vip】197
-      - aws
-      - v2rayfree.eu.org - 美国3COM公司企业网 52
-      - 韩国 004
-      - 002
-      - Singapore 24 TG:@nodpai
-      - v2rayfree.eu.org - 美国亚利桑那州凤凰城Oracle云计算数据中心 28
-      - github.com/freefq - 台湾省台北市  1
-      - 美国 129
-      - github.com/freefq - 香港城市电讯有限公司 7
-      - Vip1丨香港18丨 ChatGPT
-      - AU-52.62.192.25-0336
-      - 香港【付费推荐：https//v1.mk/vip】559
-      - _HK_香港_5
-      - 韩国【付费推荐：https://v1.mk/vip】316
-      - "[02-24]-🇺🇸-美国-136-z0115.security-cloudfront-cdn.com"
-      - 美国【付费推荐：https://v1.mk/vip】338
-      - 法国【付费推荐：https://v1.mk/vip】266
-      - 中国【付费推荐：https//v1.mk/vip】557
-      - github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 32
-      - 日本【付费推荐：https://v1.mk/vip】158
-      - 【2023.02.1923:30更新】
-      - _CN_中国->🇹🇼_TW_台湾
-      - 新加坡_0224002
-      - VirMach
-      - _CN_中国_4
-      - 003
-      - 沙特阿拉伯_0221001
-      - Vip1丨台湾30丨隧道专线
-      - 中国【付费推荐：https://v1.mk/vip】302
-      - github.com/freefq - 美国  16
-      - 美国 053
-      - 新加坡【付费推荐：https://v1.mk/vip】222
-      - 韩国(TG频道@kxswa)
-      - 法国_0224002
-      - 中国【付费推荐：https//v1.mk/vip】3
-      - 爱尔兰【付费推荐：https://v1.mk/vip】344
-      - US 23 → tg@nicevpn123
-      - 美国 107
-      - 美国 126
-      - 001
-      - _CN_中国_5
-      - youtube阿伟科技
-      - 香港【付费推荐：https://v1.mk/vip】15
-      - 美国 097
-      - 新加坡_0224150
-      - "[02-26]-🇸🇪-瑞典-193-z0117.security-cloudfront-cdn.com"
-      - 澳大利亚 010
-      - 韩国(TG频道@kxswa) 2
-      - 香港【付费推荐：https//v1.mk/vip】555
-      - 加拿大【付费推荐：https://v1.mk/vip】2
-      - 中国【付费推荐：https://v1.mk/vip】3
-      - _DE_德国_38_38
-      - _HK_香港
-      - _HK_香港_7
-      - "@SSRSUB-V27-付费推荐:suo.yt/ssrsub"
-      - 香港(TG频道@kxswa)
-      - "[02-25]-🇯🇵-日本东京-199-jp-am48-6.eqnode.net"
-      - 123
-      - aws 2
-      - 沙特阿拉伯【付费推荐：https://v1.mk/vip】24
-      - 美国 058
-      - A-Vip1丨日本26丨流媒体解锁丨
-      - 意大利(TG频道@kxswa)
-      - 美国 056
-      - _HK_香港_来源;kkzui.com(快嘴科技)_19
-      - 加拿大 001
-      - A-Vip1丨日本27丨流媒体解锁丨江西入口
-      - _CN_中国->🇹🇼_TW_台湾 2
-      - 美国(TG频道@kxswa)
-      - 美国 131
-      - 美国 089
-      - _HK_香港_1 2
-      - 中国【付费推荐：https://v1.mk/vip】75
-      - "| 3.39Mb"
-      - UC 台湾02 | tiktok | Youtube免广告 | 3.0x | V1 - 酸奶VPN
-      - "[02-26]-🇦🇺-澳大利亚-184-z0113.security-cloudfront-cdn.com"
-      - 香港【付费推荐：https//v1.mk/vip】558
-      - 日本【付费推荐：https://v1.mk/vip】214
-      - 美国 062
-      - 爱尔兰 001
-      - 中国【付费推荐：https://v1.mk/vip】125
-      - 美国 019
-      - 沙特阿拉伯(TG频道@kxswa)
-      - US_youtube@资源分享师_158
-      - 中国(TG频道@kxswa)
-      - 中国(TG频道@kxswa) 2
-      - 意大利(TG频道@kxswa) 2
-      - 中国(TG频道@kxswa) 3
-      - Vip1丨台湾29丨ChatGPT
-      - 中国【付费推荐：https://v1.mk/vip】47
-      - 中国【付费推荐：https//v1.mk/vip】317
-      - 中国【付费推荐：https://v1.mk/vip】119
-      - 中国(TG频道@kxswa) 4
-      - login.progbyrazyar.ir:2052
-      - 中国【付费推荐：https://v1.mk/vip】309
-      - 中国【付费推荐：https://v1.mk/vip】580
-      - 中国【付费推荐：https://v1.mk/vip】97
-      - 中国【付费推荐：https://v1.mk/vip】105
+      - 美国【付费推荐：https://v1.mk/vip】230
+      - 日本7-Tunnel | 1x_1
+      - 美国西部圣何塞3 | 1x_1
       - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
-      - Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN
-      - 中国【付费推荐：https://v1.mk/vip】306
-      - 中国【付费推荐：https://v1.mk/vip】297
-      - 中国(TG频道@kxswa) 5
-      - United States 22 TG:@nodpai
-      - _MO_澳门->🇸🇬_SG_新加坡
-      - FR_51.255.49.192_022420239df8-333trojan
+      - "@SSRSUB-V53-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://v1.mk/vip】116
+      - 日本_02262014
+      - 新加坡3-Tunnel | 1x_1
+      - 韩国-春川4-Tunnel | 1x_2
+      - 未知_02261254
+      - "@SSRSUB-V30-付费推荐:suo.yt/ssrsub"
+      - 巴西1 | 0.3x_2
+      - 韩国-春川2-Tunnel | 1x_2
+      - CN_二爷翻墙网 https://1808.ga Node_1
+      - 新加坡 010
+      - "@SSRSUB-V31-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://v1.mk/vip】254
+      - 加拿大 | 1x_1
+      - 澳大利亚4-Tunnel | 0.8x_1
+      - "@SSRSUB-V52-付费推荐:suo.yt/ssrsub"
+      - 美国 024
+      - 韩国-春川6-Tunnel | 1x_2
+      - 日本3-Tunnel | 1x_2
+      - github.com/freefq - 美国惠普公司 4
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 24
+      - 日本-东京2-Tunnel | 1x_1
+      - 美国【付费推荐：https://v1.mk/vip】45
+      - "@SSRSUB-V22-付费推荐:suo.yt/ssrsub"
+      - 巴西5 | 0.3x_1
+      - 防失效github SubCrawler中国_0226028
+      - 英国2 | 0.5x_2
+      - 德国2 | 0.5x_1
+      - 日本-东京1-Tunnel | 1x_1
+      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
+      - 加拿大_0226004
+      - 日本【付费推荐：https://v1.mk/vip】151
+      - 新加坡_0226948
+      - JP 8 → tg@nicevpn123
+      - 巴西1 | 0.3x_1
+      - 日本-东京2-Tunnel | 1x_2
+      - "@SSRSUB-V48-付费推荐:suo.yt/ssrsub"
+      - 美国 053
+      - 韩国-春川4-Tunnel | 1x_1
+      - 韩国-春川2-Tunnel | 1x_1
+      - v2rayfree.eu.org - 日本东京Choopa数据中心 36
+      - 中国_02264731
+      - "[02-25]-🇯🇵-日本东京-199-jp-am48-6.eqnode.net"
+      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
+      - 韩国-春川3-Tunnel | 1x_2
+      - 中国【付费推荐：https//v1.mk/vip】21
+      - "[02-25]-🇯🇵-日本东京-169-jp-am48-6.eqnode.net"
+      - _US_美国->🇷🇺_RU_俄罗斯联邦_36
+      - sg-am3.eqsunshine.com32001
+      - 美国【付费推荐：https://v1.mk/vip】5
+      - "| 4.18Mb"
+      - _CA_加拿大->🇫🇷_FR_法国
+      - 沙特阿拉伯_0221001
+      - 美国【付费推荐：https://v1.mk/vip】81
+      - _US_美国->🇸🇬_SG_新加坡_1
+      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V32-付费推荐:suo.yt/ssrsub"
+      - 澳大利亚 008
+      - _HK_香港
+      - -新加坡-sg-ovh2.1server.co
+      - 韩国-春川1-Tunnel | 1x_2
+      - "@SSRSUB-V49-付费推荐:suo.yt/ssrsub"
+      - 日本5-Tunnel | 1x_2
+      - 巴西2 | 0.3x_1
+      - 韩国-春川3-Tunnel | 1x_1
+      - "@SSRSUB-V47-付费推荐:suo.yt/ssrsub"
+      - _BZ_伯利兹->🇫🇷_FR_法国_50_50
+      - 印度-孟买2-Tunnel | 0.8x_1
+      - 美国【付费推荐：https://v1.mk/vip】96
+      - 印度 005
+      - 新加坡4-Tunnel | 1x_1
+      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
+      - 日本B | Anti-DDos |0.7x_1
+      - 韩国-春川5-Tunnel | 1x_2
+      - 美国【付费推荐：https://v1.mk/vip】73
+      - "|23.19Mb"
+      - Singapore 24 TG:@nodpai
+      - 日本7-Tunnel | 1x_2
+      - 巴西2 | 0.3x_2
+      - 美国【付费推荐：https://v1.mk/vip】124
+      - _CN_中国->🇭🇰_HK_香港_1
+      - 日本8-Tunnel | 1x_2
+      - 澳大利亚1-Tunnel | 0.8x_1
+      - 印度-海得拉巴3-Tunnel | 0.8x_1
+      - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
+      - 印度-海得拉巴1-Tunnel | 0.8x_2
+      - "@SSRSUB-V29-付费推荐:suo.yt/ssrsub"
+      - 沙特阿拉伯(TG频道@kxswa)
+      - 沙特阿拉伯 | 0.5x_1
+      - 新加坡3-Tunnel | 1x_2
+      - 韩国-春川5-Tunnel | 1x_1
+      - 印度-海得拉巴3-Tunnel | 0.8x_2
+      - 韩国-春川1-Tunnel | 1x_1
+      - 伯利兹【付费推荐：https://v1.mk/vip】70
+      - 英国2 | 0.5x_1
+      - 日本5-Tunnel | 1x_1
+      - 美国【付费推荐：https://v1.mk/vip】328
+      - 美国3 | 1x_1
+      - 新加坡1-Tunnel | 1x_2
+      - 美国 062
+      - "@SSRSUB-V33-付费推荐:suo.yt/ssrsub"
+      - JP 10 → tg@nicevpn123
+      - 新加坡4-Tunnel | 1x_2
+      - 印度-孟买2-Tunnel | 0.8x_2
+      - 澳大利亚1-Tunnel | 0.8x_2
+      - 美国【付费推荐：https://v1.mk/vip】7
+      - 澳大利亚2-Tunnel | 0.8x_1
+      - 亚太地区 001
+      - "@SSRSUB-V34-付费推荐:suo.yt/ssrsub"
+      - 美国西部圣何塞3 | 1x_2
+      - 澳大利亚2-Tunnel | 0.8x_2
+      - 澳大利亚4-Tunnel | 0.8x_2
+      - 日本6-Tunnel | 1x_2
+      - 日本-大阪1-Tunnel | 1x_2
+      - US美国(youtube阿伟科技)
+      - _IN_印度_来源;kkzui.com(快嘴科技)_28_28
+      - Pool_ | 6.32Mb
+      - 沙特阿拉伯【付费推荐：https://v1.mk/vip】24
+      - 中国_02264730
+      - "[02-26]-🇸🇪-瑞典-193-z0117.security-cloudfront-cdn.com"
+      - 韩国-春川6-Tunnel | 1x_1
+      - "@SSRSUB-V50-付费推荐:suo.yt/ssrsub"
+      - DE_3.72.190.230_022420239df8-452s%�
+      - 印度-海得拉巴1-Tunnel | 0.8x_1
+      - 美国 056
+      - 日本-东京1-Tunnel | 1x_2
+      - "%�\x11�<'���oyj�L\f\f�%%�"
+      - _FR_法国
+      - _DE_德国_38_38
+      - "@SSRSUB-V51-付费推荐:suo.yt/ssrsub"
+      - 日本A | Anti-DDos |0.7x_1
+      - 中国【付费推荐：https://v1.mk/vip】327
+      - "[02-26]-🇺🇸-美国-181-z0115.security-cloudfront-cdn.com"
+      - 123
+      - 香港-Tunnel 200Mbps | 1x_2
+      - 澳大利亚3-Tunnel | 0.8x_2
+      - 香港-Tunnel 200Mbps | 1x_1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1009,120 +1209,147 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _HK_香港_2_22
-      - "[02-24]-🇦🇺-澳大利亚-220-z0113.security-cloudfront-cdn.com"
-      - GreenCloud
-      - United States(ChatGPT) 03 TG@nodpai
-      - 加拿大(TG频道@kxswa)
-      - "_US_美国\r_来源;kkzui.com(快嘴科技)_34_34\r"
-      - "[02-25]-🇯🇵-日本东京-169-jp-am48-6.eqnode.net"
-      - 韩国【付费推荐：https://v1.mk/vip】197
-      - aws
-      - v2rayfree.eu.org - 美国3COM公司企业网 52
-      - 韩国 004
-      - 002
-      - Singapore 24 TG:@nodpai
-      - v2rayfree.eu.org - 美国亚利桑那州凤凰城Oracle云计算数据中心 28
-      - github.com/freefq - 台湾省台北市  1
-      - 美国 129
-      - github.com/freefq - 香港城市电讯有限公司 7
-      - Vip1丨香港18丨 ChatGPT
-      - AU-52.62.192.25-0336
-      - 香港【付费推荐：https//v1.mk/vip】559
-      - _HK_香港_5
-      - 韩国【付费推荐：https://v1.mk/vip】316
-      - "[02-24]-🇺🇸-美国-136-z0115.security-cloudfront-cdn.com"
-      - 美国【付费推荐：https://v1.mk/vip】338
-      - 法国【付费推荐：https://v1.mk/vip】266
-      - 中国【付费推荐：https//v1.mk/vip】557
-      - github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 32
-      - 日本【付费推荐：https://v1.mk/vip】158
-      - 【2023.02.1923:30更新】
-      - _CN_中国->🇹🇼_TW_台湾
-      - 新加坡_0224002
-      - VirMach
-      - _CN_中国_4
-      - 003
-      - 沙特阿拉伯_0221001
-      - Vip1丨台湾30丨隧道专线
-      - 中国【付费推荐：https://v1.mk/vip】302
-      - github.com/freefq - 美国  16
-      - 美国 053
-      - 新加坡【付费推荐：https://v1.mk/vip】222
-      - 韩国(TG频道@kxswa)
-      - 法国_0224002
-      - 中国【付费推荐：https//v1.mk/vip】3
-      - 爱尔兰【付费推荐：https://v1.mk/vip】344
-      - US 23 → tg@nicevpn123
-      - 美国 107
-      - 美国 126
-      - 001
-      - _CN_中国_5
-      - youtube阿伟科技
-      - 香港【付费推荐：https://v1.mk/vip】15
-      - 美国 097
-      - 新加坡_0224150
-      - "[02-26]-🇸🇪-瑞典-193-z0117.security-cloudfront-cdn.com"
-      - 澳大利亚 010
-      - 韩国(TG频道@kxswa) 2
-      - 香港【付费推荐：https//v1.mk/vip】555
-      - 加拿大【付费推荐：https://v1.mk/vip】2
-      - 中国【付费推荐：https://v1.mk/vip】3
-      - _DE_德国_38_38
-      - _HK_香港
-      - _HK_香港_7
-      - "@SSRSUB-V27-付费推荐:suo.yt/ssrsub"
-      - 香港(TG频道@kxswa)
-      - "[02-25]-🇯🇵-日本东京-199-jp-am48-6.eqnode.net"
-      - 123
-      - aws 2
-      - 沙特阿拉伯【付费推荐：https://v1.mk/vip】24
-      - 美国 058
-      - A-Vip1丨日本26丨流媒体解锁丨
-      - 意大利(TG频道@kxswa)
-      - 美国 056
-      - _HK_香港_来源;kkzui.com(快嘴科技)_19
-      - 加拿大 001
-      - A-Vip1丨日本27丨流媒体解锁丨江西入口
-      - _CN_中国->🇹🇼_TW_台湾 2
-      - 美国(TG频道@kxswa)
-      - 美国 131
-      - 美国 089
-      - _HK_香港_1 2
-      - 中国【付费推荐：https://v1.mk/vip】75
-      - "| 3.39Mb"
-      - UC 台湾02 | tiktok | Youtube免广告 | 3.0x | V1 - 酸奶VPN
-      - "[02-26]-🇦🇺-澳大利亚-184-z0113.security-cloudfront-cdn.com"
-      - 香港【付费推荐：https//v1.mk/vip】558
-      - 日本【付费推荐：https://v1.mk/vip】214
-      - 美国 062
-      - 爱尔兰 001
-      - 中国【付费推荐：https://v1.mk/vip】125
-      - 美国 019
-      - 沙特阿拉伯(TG频道@kxswa)
-      - US_youtube@资源分享师_158
-      - 中国(TG频道@kxswa)
-      - 中国(TG频道@kxswa) 2
-      - 意大利(TG频道@kxswa) 2
-      - 中国(TG频道@kxswa) 3
-      - Vip1丨台湾29丨ChatGPT
-      - 中国【付费推荐：https://v1.mk/vip】47
-      - 中国【付费推荐：https//v1.mk/vip】317
-      - 中国【付费推荐：https://v1.mk/vip】119
-      - 中国(TG频道@kxswa) 4
-      - login.progbyrazyar.ir:2052
-      - 中国【付费推荐：https://v1.mk/vip】309
-      - 中国【付费推荐：https://v1.mk/vip】580
-      - 中国【付费推荐：https://v1.mk/vip】97
-      - 中国【付费推荐：https://v1.mk/vip】105
+      - 美国【付费推荐：https://v1.mk/vip】230
+      - 日本7-Tunnel | 1x_1
+      - 美国西部圣何塞3 | 1x_1
       - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
-      - Asia 香港02 | 直连 | 1.0x | V1 - 酸奶VPN
-      - 中国【付费推荐：https://v1.mk/vip】306
-      - 中国【付费推荐：https://v1.mk/vip】297
-      - 中国(TG频道@kxswa) 5
-      - United States 22 TG:@nodpai
-      - _MO_澳门->🇸🇬_SG_新加坡
-      - FR_51.255.49.192_022420239df8-333trojan
+      - "@SSRSUB-V53-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://v1.mk/vip】116
+      - 日本_02262014
+      - 新加坡3-Tunnel | 1x_1
+      - 韩国-春川4-Tunnel | 1x_2
+      - 未知_02261254
+      - "@SSRSUB-V30-付费推荐:suo.yt/ssrsub"
+      - 巴西1 | 0.3x_2
+      - 韩国-春川2-Tunnel | 1x_2
+      - CN_二爷翻墙网 https://1808.ga Node_1
+      - 新加坡 010
+      - "@SSRSUB-V31-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://v1.mk/vip】254
+      - 加拿大 | 1x_1
+      - 澳大利亚4-Tunnel | 0.8x_1
+      - "@SSRSUB-V52-付费推荐:suo.yt/ssrsub"
+      - 美国 024
+      - 韩国-春川6-Tunnel | 1x_2
+      - 日本3-Tunnel | 1x_2
+      - github.com/freefq - 美国惠普公司 4
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 24
+      - 日本-东京2-Tunnel | 1x_1
+      - 美国【付费推荐：https://v1.mk/vip】45
+      - "@SSRSUB-V22-付费推荐:suo.yt/ssrsub"
+      - 巴西5 | 0.3x_1
+      - 防失效github SubCrawler中国_0226028
+      - 英国2 | 0.5x_2
+      - 德国2 | 0.5x_1
+      - 日本-东京1-Tunnel | 1x_1
+      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
+      - 加拿大_0226004
+      - 日本【付费推荐：https://v1.mk/vip】151
+      - 新加坡_0226948
+      - JP 8 → tg@nicevpn123
+      - 巴西1 | 0.3x_1
+      - 日本-东京2-Tunnel | 1x_2
+      - "@SSRSUB-V48-付费推荐:suo.yt/ssrsub"
+      - 美国 053
+      - 韩国-春川4-Tunnel | 1x_1
+      - 韩国-春川2-Tunnel | 1x_1
+      - v2rayfree.eu.org - 日本东京Choopa数据中心 36
+      - 中国_02264731
+      - "[02-25]-🇯🇵-日本东京-199-jp-am48-6.eqnode.net"
+      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
+      - 韩国-春川3-Tunnel | 1x_2
+      - 中国【付费推荐：https//v1.mk/vip】21
+      - "[02-25]-🇯🇵-日本东京-169-jp-am48-6.eqnode.net"
+      - _US_美国->🇷🇺_RU_俄罗斯联邦_36
+      - sg-am3.eqsunshine.com32001
+      - 美国【付费推荐：https://v1.mk/vip】5
+      - "| 4.18Mb"
+      - _CA_加拿大->🇫🇷_FR_法国
+      - 沙特阿拉伯_0221001
+      - 美国【付费推荐：https://v1.mk/vip】81
+      - _US_美国->🇸🇬_SG_新加坡_1
+      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V32-付费推荐:suo.yt/ssrsub"
+      - 澳大利亚 008
+      - _HK_香港
+      - -新加坡-sg-ovh2.1server.co
+      - 韩国-春川1-Tunnel | 1x_2
+      - "@SSRSUB-V49-付费推荐:suo.yt/ssrsub"
+      - 日本5-Tunnel | 1x_2
+      - 巴西2 | 0.3x_1
+      - 韩国-春川3-Tunnel | 1x_1
+      - "@SSRSUB-V47-付费推荐:suo.yt/ssrsub"
+      - _BZ_伯利兹->🇫🇷_FR_法国_50_50
+      - 印度-孟买2-Tunnel | 0.8x_1
+      - 美国【付费推荐：https://v1.mk/vip】96
+      - 印度 005
+      - 新加坡4-Tunnel | 1x_1
+      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
+      - 日本B | Anti-DDos |0.7x_1
+      - 韩国-春川5-Tunnel | 1x_2
+      - 美国【付费推荐：https://v1.mk/vip】73
+      - "|23.19Mb"
+      - Singapore 24 TG:@nodpai
+      - 日本7-Tunnel | 1x_2
+      - 巴西2 | 0.3x_2
+      - 美国【付费推荐：https://v1.mk/vip】124
+      - _CN_中国->🇭🇰_HK_香港_1
+      - 日本8-Tunnel | 1x_2
+      - 澳大利亚1-Tunnel | 0.8x_1
+      - 印度-海得拉巴3-Tunnel | 0.8x_1
+      - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
+      - 印度-海得拉巴1-Tunnel | 0.8x_2
+      - "@SSRSUB-V29-付费推荐:suo.yt/ssrsub"
+      - 沙特阿拉伯(TG频道@kxswa)
+      - 沙特阿拉伯 | 0.5x_1
+      - 新加坡3-Tunnel | 1x_2
+      - 韩国-春川5-Tunnel | 1x_1
+      - 印度-海得拉巴3-Tunnel | 0.8x_2
+      - 韩国-春川1-Tunnel | 1x_1
+      - 伯利兹【付费推荐：https://v1.mk/vip】70
+      - 英国2 | 0.5x_1
+      - 日本5-Tunnel | 1x_1
+      - 美国【付费推荐：https://v1.mk/vip】328
+      - 美国3 | 1x_1
+      - 新加坡1-Tunnel | 1x_2
+      - 美国 062
+      - "@SSRSUB-V33-付费推荐:suo.yt/ssrsub"
+      - JP 10 → tg@nicevpn123
+      - 新加坡4-Tunnel | 1x_2
+      - 印度-孟买2-Tunnel | 0.8x_2
+      - 澳大利亚1-Tunnel | 0.8x_2
+      - 美国【付费推荐：https://v1.mk/vip】7
+      - 澳大利亚2-Tunnel | 0.8x_1
+      - 亚太地区 001
+      - "@SSRSUB-V34-付费推荐:suo.yt/ssrsub"
+      - 美国西部圣何塞3 | 1x_2
+      - 澳大利亚2-Tunnel | 0.8x_2
+      - 澳大利亚4-Tunnel | 0.8x_2
+      - 日本6-Tunnel | 1x_2
+      - 日本-大阪1-Tunnel | 1x_2
+      - US美国(youtube阿伟科技)
+      - _IN_印度_来源;kkzui.com(快嘴科技)_28_28
+      - Pool_ | 6.32Mb
+      - 沙特阿拉伯【付费推荐：https://v1.mk/vip】24
+      - 中国_02264730
+      - "[02-26]-🇸🇪-瑞典-193-z0117.security-cloudfront-cdn.com"
+      - 韩国-春川6-Tunnel | 1x_1
+      - "@SSRSUB-V50-付费推荐:suo.yt/ssrsub"
+      - DE_3.72.190.230_022420239df8-452s%�
+      - 印度-海得拉巴1-Tunnel | 0.8x_1
+      - 美国 056
+      - 日本-东京1-Tunnel | 1x_2
+      - "%�\x11�<'���oyj�L\f\f�%%�"
+      - _FR_法国
+      - _DE_德国_38_38
+      - "@SSRSUB-V51-付费推荐:suo.yt/ssrsub"
+      - 日本A | Anti-DDos |0.7x_1
+      - 中国【付费推荐：https://v1.mk/vip】327
+      - "[02-26]-🇺🇸-美国-181-z0115.security-cloudfront-cdn.com"
+      - 123
+      - 香港-Tunnel 200Mbps | 1x_2
+      - 澳大利亚3-Tunnel | 0.8x_2
+      - 香港-Tunnel 200Mbps | 1x_1
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
