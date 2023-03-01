@@ -6,195 +6,327 @@ mode: Rule
 log-level: info
 external-controller: 9090
 proxies:
-  - {name: 美国2号-0.1x, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 769c2da7-add3-42e8-a03c-07be9fcf483c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/yfjc/us2?ed=2048", headers: {Host: us2.yfjc.sbs}}, udp: true}
-  - {name: 美国3号-0.1x, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 769c2da7-add3-42e8-a03c-07be9fcf483c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/yfjc/us3?ed=2048", headers: {Host: us3.yfjc.sbs}}, udp: true}
-  - {name: DE_3.72.190.230_022420239df8-452s%�, server: z0110.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
-  - {name: LU卢森堡(youtube阿伟科技), server: ru.wyhkaa0.ga, port: 80, type: vmess, uuid: d194f947-2c28-49b1-b3ec-1255c164ecc0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /TG:@hkaa0, headers: {Host: ru.wyhkaa0.ga}}, udp: true}
-  - {name: "[02-28]-🇸🇬-新加坡-140-sg-am3.eqsunshine.com", server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: ====, obfs-param: ====, udp: true}
-  - {name: "[02-27]-🇺🇸-美国-179-z0110.security-cloudfront-cdn.com", server: z0110.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: ====, obfs-param: d3d3Lm1pY3Jvc29mdC5jb20jVXNlci1BZ2VudDpNb3ppbGxhLzUuMChpUGhvbmU7Q1BVaVBob25lT1MxMV80XzFsaWtlTWFjT1NYKUFwcGxlV2ViS2l0LzYwMi40LjYoS0hUTUwsbGlrZUdlY2tvKVZlcnNpb24vMTAuME1vYmlsZS8xNEQyN01pY3JvTWVzc2VuZ2VyLzYuNS4xM0FjY2VwdDovQ29ubmVjdGlvbjprZWVwLWFsaXZl====, udp: true}
-  - {name: _DE_德国_38_38, server: z0110.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
-  - {name: 美国1号-0.1x, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 769c2da7-add3-42e8-a03c-07be9fcf483c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/yfjc/us1?ed=2048", headers: {Host: us1.yfjc.sbs}}, udp: true}
-  - {name: _CN_中国_4, server: z00031.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: "@SSRSUB-V44-付费推荐:suo.yt/ssrsub", server: no.aries.ovh, port: 2052, type: vmess, uuid: 14157890-890b-4fbb-ad1a-5e58dd189c2a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ee.cloudflare.quest}}, udp: true}
-  - {name: sg-am3.eqsunshine.com:32001, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 荷兰2 | BT下载-0.1x, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 769c2da7-add3-42e8-a03c-07be9fcf483c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/yfjc/nl2?ed=2048", headers: {Host: nl2.yfjc.sbs}}, udp: true}
-  - {name: 韩国 002, server: 27.124.8.141, port: 443, type: vmess, uuid: c7e645be-1704-4f0a-afe9-8b21f9c711d6, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/220128071100}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】327, server: z00031.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: DE_3.76.62.24_02282023a8ab-976ssr, server: z0110.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: ===%%�, obfs-param: d3d3Lm1pY3Jvc29mdC5jb20jVXNlci1BZ2VudDpNb3ppbGxhLzUuMChpUGhvbmU7Q1BVaVBob25lT1MxMV80XzFsaWtlTWFjT1NYKUFwcGxlV2ViS2l0LzYwMi40LjYoS0hUTUwsbGlrZUdlY2tvKVZlcnNpb24vMTAuME1vYmlsZS8xNEQyN01pY3JvTWVzc2VuZ2VyLzYuNS4xM0FjY2VwdDovQ29ubmVjdGlvbjprZWVwLWFsaXZl====, udp: true}
-  - {name: 英国 001, server: gb-ls03.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: gb-ls03.nb1.fr}}, udp: true}
-  - {name: JP 6 → tg@nicevpn123, server: jp02-vm0.entry.srthdw.art, port: 448, type: vmess, uuid: b2badfd5-55f8-38fc-b84e-d1fdddfee1ec, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jp02-vm0.entry.srthdw.art}}, udp: true}
-  - {name: 美国 032, server: 15.152.34.150, port: 16342, type: vmess, uuid: e8cfaf7b-d534-4014-80d0-346961e29695, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚 001, server: 43.154.90.134, port: 38906, type: vmess, uuid: 6b6dd11a-798c-401e-ba46-d6272e29aca3, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hk4/getData, headers: {Host: hk4.verichains.co}}, udp: true}
-  - {name: 荷兰 | BT下载-0.1x, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 769c2da7-add3-42e8-a03c-07be9fcf483c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/yfjc/nl?ed=2048", headers: {Host: nl.yfjc.sbs}}, udp: true}
-  - {name: _US_美国_9, server: 24.199.119.135, port: 443, type: vmess, uuid: e6da31cb-6c97-4699-c412-124d5ab80856, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 【直连】香港 - 1, server: 00000000000000000000000000000000000000000000000000000000000021a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP 日本 | 直连 | 2.0x | V1 - 酸奶VPN, server: 141.147.149.186, port: 80, type: vmess, uuid: 39422c6f-842c-3cee-a07f-cd5611ec30b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny}, udp: true}
-  - {name: _HK_香港_5, server: 8.218.94.25, port: 48288, type: vmess, uuid: 1c3ea2bd-4056-4dae-b0f8-e1737217c6e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 俄罗斯 001, server: zzcm06.cacbce.com, port: 2570, type: trojan, password: 99252428-a8f3-37ba-8c73-3ba8f18a196e, sni: hkt2.bbprovm.com, skip-cert-verify: true, udp: true}
-  - {name: 香港 06, server: dl-hk6.steamdownload.top, port: 443, type: trojan, password: 0c2b0987-f29f-470f-9c30-37b34e9713aa, sni: data-hk.xn--vur082k.cc, skip-cert-verify: true, udp: true}
-  - {name: 美国 029, server: s-sg02.aikun.online, port: 10000, type: trojan, password: 4a4a30a0-cef9-4ac9-a0ca-4eecda96665a, sni: s-sg02.aikun.online, skip-cert-verify: true, udp: true}
-  - {name: 香港【付费推荐：https://v1.mk/vip】312, server: 8.218.90.70, port: 38917, type: vmess, uuid: b4580cef-9a5b-4866-80b6-8ace5c567498, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 香港 05, server: dl-hk5.steamdownload.top, port: 443, type: trojan, password: 0c2b0987-f29f-470f-9c30-37b34e9713aa, sni: data-hk.xn--vur082k.cc, skip-cert-verify: true, udp: true}
-  - {name: 香港03|高速, server: awshk3-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 5d922216-6f50-44c6-af2c-e9ca65b3664a, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_5 2, server: 8.218.94.239, port: 61725, type: vmess, uuid: b7eef349-730f-4b56-b0e6-8e58e3e968c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】91, server: gz01.xiaohouzi.club, port: 14705, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24vusig01.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: 美国 033, server: s-jp03.aikun.online, port: 10000, type: trojan, password: 4a4a30a0-cef9-4ac9-a0ca-4eecda96665a, sni: s-jp03.aikun.online, skip-cert-verify: true, udp: true}
-  - {name: 香港04|高速, server: awshk4-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 5d922216-6f50-44c6-af2c-e9ca65b3664a, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
-  - {name: IE_34.244.249.39_0225202356ae-432ssr, server: z0116.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
-  - {name: 美国 027, server: g13z2f000h06.nekorock.me, port: 13427, type: ss, cipher: aes-256-gcm, password: cf8d6b02-6aca-4393-9834-5ccd5b527fab, udp: true}
+  - {name: 美国 039, server: mg6.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: 挪威 002, server: fga3.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: 美国 045, server: mg8.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: 美国 035, server: mga9.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: -中国-8.218.94.239, server: 8.218.94.239, port: 61725, type: vmess, uuid: b7eef349-730f-4b56-b0e6-8e58e3e968c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 美国 055, server: xjp.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: 澳大利亚 009, server: cc2.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: 美国 027, server: d1k8bewjynktzm.cloudfront.net, port: 443, type: vmess, uuid: f77f973c-44eb-4d1e-fbf0-0fac66dfcc43, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /fire, headers: {Host: d1k8bewjynktzm.cloudfront.net}}, udp: true}
+  - {name: 日本 011, server: jp06-vm0.entry.srthdw.art, port: 447, type: vmess, uuid: 1624af3b-1bbf-35e6-9a33-0572e5bc7aed, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jp06-vm0.entry.srthdw.art}}, udp: true}
+  - {name: 日本 009, server: dba2.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: 美国 061, server: xjpa2.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: 澳大利亚 005, server: yda5.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: 美国 075, server: jnda3.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: 美国 070, server: alqa2.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: 爱尔兰 004, server: hla4.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: 挪威 004, server: fga2.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: 美国 002, server: 13.213.38.103, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 美国 026, server: 107.174.156.99, port: 1234, type: vmess, uuid: 47ab043c-7320-4db8-9e55-9076043f674a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bb}, udp: true}
+  - {name: "[03-01]-🇺🇸-美国-113-13.215.154.95", server: 13.215.154.95, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 台灣 02, server: 223.111.115.208, port: 61012, type: trojan, password: c67a6aaa-4953-4f18-8470-9cb95f98c5db, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: 日本 005, server: dl-jp1.steamdownload.top, port: 443, type: trojan, password: 3bc392b4-ab17-4870-ace6-e968f93c4ac6, sni: data-jp.xn--vur082k.cc, skip-cert-verify: true, udp: true}
   - {name: 荷兰Eygelshoven | BT下载-0.1x, server: 146.19.215.81, port: 443, type: trojan, password: 769c2da7-add3-42e8-a03c-07be9fcf483c, sni: zaelot.cc, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港 5, server: 47.243.111.25, port: 31705, type: vmess, uuid: d0fc2199-6bb4-4559-a7ec-48f3d728500d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】320, server: hn.xiaohouzi.club, port: 19023, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: "%�\x11�%�P���_FR_法国", server: z0111.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】317, server: hnm.xiaohouzi.club, port: 27482, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_6, server: 8.210.40.15, port: 29715, type: vmess, uuid: ffb7e598-22b4-4868-978a-bdf4533e66ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _IN_印度, server: z0114.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
+  - {name: 瑞士 009, server: hla1.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: 美国 057, server: xjp3.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: 瑞士 006, server: yda6.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: 英国 007, server: 212.102.53.80, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 瑞士 008, server: hla6.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: "_JP_日本\r", server: jpaws.nekorock.me, port: 7777, type: ss, cipher: aes-256-gcm, password: bffd2c2e-d54c-4d1c-b034-9805279d23be, udp: true}
+  - {name: 日本 002, server: 52.194.235.232, port: 443, type: trojan, password: b3e2314b-6153-360e-8c9b-cb265b52837b, sni: d1--cn-gotcha05.bilivideo.com, skip-cert-verify: true, udp: true}
+  - {name: "|28.37Mb", server: 103.103.245.125, port: 50350, type: trojan, password: 006bca8c-4e1f-44e0-9399-1cd4ff480a40, skip-cert-verify: true, udp: true}
+  - {name: 美国 054, server: dl-sg1.steamdownload.top, port: 50000, type: trojan, password: 3bc392b4-ab17-4870-ace6-e968f93c4ac6, sni: data-sg.xn--vur082k.cc, skip-cert-verify: true, udp: true}
+  - {name: 美国 050, server: dl-hk2.steamdownload.top, port: 443, type: trojan, password: 3bc392b4-ab17-4870-ace6-e968f93c4ac6, sni: data-hk.xn--vur082k.cc, skip-cert-verify: true, udp: true}
+  - {name: 美国 068, server: dba3.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: 香港HKT|防失联直连|1x, server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: d2c435dd-f5d6-4b27-b2af-daddcf85b56c, sni: dc3-download.windowsupdate1.com, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯 002, server: insaneguo2333.top, port: 443, type: trojan, password: 1d0a80ca-0f96-4016-ac51-c284dedd28a1, skip-cert-verify: true, udp: true}
+  - {name: 澳大利亚 001, server: 43.201.86.41, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 瑞典 001, server: st1.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: "|21.96Mb", server: air-phoenix13.900513.xyz, port: 7528, type: trojan, password: 4cfb5b98-5a9d-4c6d-8911-25deca297fa1, skip-cert-verify: true, udp: true}
+  - {name: CN_二爷翻墙网 https://1808.ga Node_69, server: hn.xiaohouzi.club, port: 18432, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 澳大利亚 006, server: 43.201.70.114, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "印度[解锁]0.5x", server: 01-in01.xmss.vip, port: 16609, type: ss, cipher: chacha20-ietf-poly1305, password: 9f2fb5b4-c1a4-4760-be78-6811c49b8046, udp: true}
+  - {name: 美国 104, server: sta1.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: 台灣 01, server: 223.111.115.208, port: 61011, type: trojan, password: c67a6aaa-4953-4f18-8470-9cb95f98c5db, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】22, server: hn.xiaohouzi.club, port: 18733, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: ajpn03.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 瑞士 007, server: yd6.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: 英国 003, server: 212.102.53.193, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 美国 029, server: 107.173.148.91, port: 10093, type: ss, cipher: aes-256-gcm, password: Ge8RK9CqlH1XyYrw, udp: true}
+  - {name: _HK_香港_4, server: 8.210.40.15, port: 29715, type: vmess, uuid: ffb7e598-22b4-4868-978a-bdf4533e66ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】229, server: hnm.xiaohouzi.club, port: 47651, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: taiguo.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 中国(TG频道@kxswa), server: hn.xiaohouzi.club, port: 18435, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 荷兰 008, server: 213.183.59.211, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】59, server: hn.xiaohouzi.club, port: 18433, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: "加拿大[解锁]0.5 x", server: 01-ca01.xmss.vip, port: 16615, type: ss, cipher: chacha20-ietf-poly1305, password: 9f2fb5b4-c1a4-4760-be78-6811c49b8046, udp: true}
+  - {name: 英国 010, server: lda1.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: 挪威 001, server: fga4.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】91, server: gz01.xiaohouzi.club, port: 14705, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24vusig01.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 英国 009, server: ld3.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: 韩国 002, server: 118.107.57.180, port: 27542, type: vmess, uuid: 0c88b5fe-b19b-4b17-9abb-99a0824d04f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 荷兰 003, server: dg1.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: 荷兰 006, server: sr4.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: -俄罗斯-vie-1.2tt.org, server: vie-1.2tt.org, port: 10010, type: vmess, uuid: 6d03167b-6aee-3f75-bd0c-27776c9fef28, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /v2, headers: {Host: vie-1.2tt.org}}, udp: true}
+  - {name: 美国 005, server: 154.9.204.22, port: 60000, type: ssr, cipher: dummy, password: bsvabsdasdasnb, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 荷兰 005, server: sra2.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 挪威 003, server: fga1.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: 美国 015, server: z0117.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 荷兰 010, server: hla2.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: _HK_香港_5, server: 8.218.145.251, port: 52757, type: vmess, uuid: 451d0d8d-6e0b-403c-9fab-937a92f211e2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: _AU_澳大利亚, server: z0113.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 印度 001, server: yda1.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: 美国 098, server: ydla2.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: _HK_香港_2, server: 47.242.185.168, port: 60651, type: vmess, uuid: d73ea4d9-04f9-4d5c-8acb-d678f3639f33, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 美国 077, server: jnda4.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
+  - {name: _HK_香港_1, server: 8.218.94.25, port: 48288, type: vmess, uuid: 1c3ea2bd-4056-4dae-b0f8-e1737217c6e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: "荷兰[解锁]0.5 x", server: 01-nl01.xmss.vip, port: 16614, type: ss, cipher: chacha20-ietf-poly1305, password: 9f2fb5b4-c1a4-4760-be78-6811c49b8046, udp: true}
+  - {name: 美国 003, server: 13.215.51.179, port: 443, type: trojan, password: b3e2314b-6153-360e-8c9b-cb265b52837b, sni: d1--cn-gotcha05.bilivideo.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 076, server: jnda2.6bbt.tk, port: 443, type: vmess, uuid: 6e41c22a-2794-4504-a05a-4f8def6d0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6bbt.tk, headers: {Host: 6bbt.tk}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国2号-0.1x
-      - 美国3号-0.1x
-      - DE_3.72.190.230_022420239df8-452s%�
-      - LU卢森堡(youtube阿伟科技)
-      - "[02-28]-🇸🇬-新加坡-140-sg-am3.eqsunshine.com"
-      - "[02-27]-🇺🇸-美国-179-z0110.security-cloudfront-cdn.com"
-      - _DE_德国_38_38
-      - 美国1号-0.1x
-      - _CN_中国_4
-      - "@SSRSUB-V44-付费推荐:suo.yt/ssrsub"
-      - sg-am3.eqsunshine.com:32001
-      - 荷兰2 | BT下载-0.1x
-      - 韩国 002
-      - 中国【付费推荐：https://v1.mk/vip】327
-      - DE_3.76.62.24_02282023a8ab-976ssr
-      - 英国 001
-      - JP 6 → tg@nicevpn123
-      - 美国 032
-      - 澳大利亚 001
-      - 荷兰 | BT下载-0.1x
-      - _US_美国_9
-      - 【直连】香港 - 1
-      - JP 日本 | 直连 | 2.0x | V1 - 酸奶VPN
-      - _HK_香港_5
-      - 俄罗斯 001
-      - 香港 06
-      - 美国 029
-      - 香港【付费推荐：https://v1.mk/vip】312
-      - 香港 05
-      - 香港03|高速
-      - _HK_香港_5 2
-      - 中国【付费推荐：https://v1.mk/vip】91
-      - 美国 033
-      - 香港04|高速
-      - IE_34.244.249.39_0225202356ae-432ssr
+      - 美国 039
+      - 挪威 002
+      - 美国 045
+      - 美国 035
+      - -中国-8.218.94.239
+      - 美国 055
+      - 澳大利亚 009
       - 美国 027
+      - 日本 011
+      - 日本 009
+      - 美国 061
+      - 澳大利亚 005
+      - 美国 075
+      - 美国 070
+      - 爱尔兰 004
+      - 挪威 004
+      - 美国 002
+      - 美国 026
+      - "[03-01]-🇺🇸-美国-113-13.215.154.95"
+      - 台灣 02
+      - 日本 005
       - 荷兰Eygelshoven | BT下载-0.1x
-      - _HK_香港 5
-      - 中国【付费推荐：https://v1.mk/vip】320
-      - "%�\x11�%�P���_FR_法国"
-      - 中国【付费推荐：https://v1.mk/vip】317
-      - _HK_香港_6
-      - _IN_印度
+      - 瑞士 009
+      - 美国 057
+      - 瑞士 006
+      - 英国 007
+      - 瑞士 008
+      - "_JP_日本\r"
+      - 日本 002
+      - "|28.37Mb"
+      - 美国 054
+      - 美国 050
+      - 美国 068
+      - 香港HKT|防失联直连|1x
+      - 俄罗斯 002
+      - 澳大利亚 001
+      - 瑞典 001
+      - "|21.96Mb"
+      - CN_二爷翻墙网 https://1808.ga Node_69
+      - 澳大利亚 006
+      - 印度[解锁]0.5x
+      - 美国 104
+      - 台灣 01
+      - 中国【付费推荐：https://v1.mk/vip】22
+      - 瑞士 007
+      - 英国 003
+      - 美国 029
+      - _HK_香港_4
+      - 中国【付费推荐：https://v1.mk/vip】229
+      - 中国(TG频道@kxswa)
+      - 荷兰 008
+      - 中国【付费推荐：https://v1.mk/vip】59
+      - 加拿大[解锁]0.5 x
+      - 英国 010
+      - 挪威 001
+      - 中国【付费推荐：https://v1.mk/vip】91
+      - 英国 009
+      - 韩国 002
+      - 荷兰 003
+      - 荷兰 006
+      - -俄罗斯-vie-1.2tt.org
+      - 美国 005
+      - 荷兰 005
+      - 挪威 003
+      - 美国 015
+      - 荷兰 010
+      - _HK_香港_5
+      - _AU_澳大利亚
+      - 印度 001
+      - 美国 098
+      - _HK_香港_2
+      - 美国 077
+      - _HK_香港_1
+      - 荷兰[解锁]0.5 x
+      - 美国 003
+      - 美国 076
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - 美国2号-0.1x
-      - 美国3号-0.1x
-      - DE_3.72.190.230_022420239df8-452s%�
-      - LU卢森堡(youtube阿伟科技)
-      - "[02-28]-🇸🇬-新加坡-140-sg-am3.eqsunshine.com"
-      - "[02-27]-🇺🇸-美国-179-z0110.security-cloudfront-cdn.com"
-      - _DE_德国_38_38
-      - 美国1号-0.1x
-      - _CN_中国_4
-      - "@SSRSUB-V44-付费推荐:suo.yt/ssrsub"
-      - sg-am3.eqsunshine.com:32001
-      - 荷兰2 | BT下载-0.1x
-      - 韩国 002
-      - 中国【付费推荐：https://v1.mk/vip】327
-      - DE_3.76.62.24_02282023a8ab-976ssr
-      - 英国 001
-      - JP 6 → tg@nicevpn123
-      - 美国 032
-      - 澳大利亚 001
-      - 荷兰 | BT下载-0.1x
-      - _US_美国_9
-      - 【直连】香港 - 1
-      - JP 日本 | 直连 | 2.0x | V1 - 酸奶VPN
-      - _HK_香港_5
-      - 俄罗斯 001
-      - 香港 06
-      - 美国 029
-      - 香港【付费推荐：https://v1.mk/vip】312
-      - 香港 05
-      - 香港03|高速
-      - _HK_香港_5 2
-      - 中国【付费推荐：https://v1.mk/vip】91
-      - 美国 033
-      - 香港04|高速
-      - IE_34.244.249.39_0225202356ae-432ssr
+      - 美国 039
+      - 挪威 002
+      - 美国 045
+      - 美国 035
+      - -中国-8.218.94.239
+      - 美国 055
+      - 澳大利亚 009
       - 美国 027
+      - 日本 011
+      - 日本 009
+      - 美国 061
+      - 澳大利亚 005
+      - 美国 075
+      - 美国 070
+      - 爱尔兰 004
+      - 挪威 004
+      - 美国 002
+      - 美国 026
+      - "[03-01]-🇺🇸-美国-113-13.215.154.95"
+      - 台灣 02
+      - 日本 005
       - 荷兰Eygelshoven | BT下载-0.1x
-      - _HK_香港 5
-      - 中国【付费推荐：https://v1.mk/vip】320
-      - "%�\x11�%�P���_FR_法国"
-      - 中国【付费推荐：https://v1.mk/vip】317
-      - _HK_香港_6
-      - _IN_印度
+      - 瑞士 009
+      - 美国 057
+      - 瑞士 006
+      - 英国 007
+      - 瑞士 008
+      - "_JP_日本\r"
+      - 日本 002
+      - "|28.37Mb"
+      - 美国 054
+      - 美国 050
+      - 美国 068
+      - 香港HKT|防失联直连|1x
+      - 俄罗斯 002
+      - 澳大利亚 001
+      - 瑞典 001
+      - "|21.96Mb"
+      - CN_二爷翻墙网 https://1808.ga Node_69
+      - 澳大利亚 006
+      - 印度[解锁]0.5x
+      - 美国 104
+      - 台灣 01
+      - 中国【付费推荐：https://v1.mk/vip】22
+      - 瑞士 007
+      - 英国 003
+      - 美国 029
+      - _HK_香港_4
+      - 中国【付费推荐：https://v1.mk/vip】229
+      - 中国(TG频道@kxswa)
+      - 荷兰 008
+      - 中国【付费推荐：https://v1.mk/vip】59
+      - 加拿大[解锁]0.5 x
+      - 英国 010
+      - 挪威 001
+      - 中国【付费推荐：https://v1.mk/vip】91
+      - 英国 009
+      - 韩国 002
+      - 荷兰 003
+      - 荷兰 006
+      - -俄罗斯-vie-1.2tt.org
+      - 美国 005
+      - 荷兰 005
+      - 挪威 003
+      - 美国 015
+      - 荷兰 010
+      - _HK_香港_5
+      - _AU_澳大利亚
+      - 印度 001
+      - 美国 098
+      - _HK_香港_2
+      - 美国 077
+      - _HK_香港_1
+      - 荷兰[解锁]0.5 x
+      - 美国 003
+      - 美国 076
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国2号-0.1x
-      - 美国3号-0.1x
-      - DE_3.72.190.230_022420239df8-452s%�
-      - LU卢森堡(youtube阿伟科技)
-      - "[02-28]-🇸🇬-新加坡-140-sg-am3.eqsunshine.com"
-      - "[02-27]-🇺🇸-美国-179-z0110.security-cloudfront-cdn.com"
-      - _DE_德国_38_38
-      - 美国1号-0.1x
-      - _CN_中国_4
-      - "@SSRSUB-V44-付费推荐:suo.yt/ssrsub"
-      - sg-am3.eqsunshine.com:32001
-      - 荷兰2 | BT下载-0.1x
-      - 韩国 002
-      - 中国【付费推荐：https://v1.mk/vip】327
-      - DE_3.76.62.24_02282023a8ab-976ssr
-      - 英国 001
-      - JP 6 → tg@nicevpn123
-      - 美国 032
-      - 澳大利亚 001
-      - 荷兰 | BT下载-0.1x
-      - _US_美国_9
-      - 【直连】香港 - 1
-      - JP 日本 | 直连 | 2.0x | V1 - 酸奶VPN
-      - _HK_香港_5
-      - 俄罗斯 001
-      - 香港 06
-      - 美国 029
-      - 香港【付费推荐：https://v1.mk/vip】312
-      - 香港 05
-      - 香港03|高速
-      - _HK_香港_5 2
-      - 中国【付费推荐：https://v1.mk/vip】91
-      - 美国 033
-      - 香港04|高速
-      - IE_34.244.249.39_0225202356ae-432ssr
+      - 美国 039
+      - 挪威 002
+      - 美国 045
+      - 美国 035
+      - -中国-8.218.94.239
+      - 美国 055
+      - 澳大利亚 009
       - 美国 027
+      - 日本 011
+      - 日本 009
+      - 美国 061
+      - 澳大利亚 005
+      - 美国 075
+      - 美国 070
+      - 爱尔兰 004
+      - 挪威 004
+      - 美国 002
+      - 美国 026
+      - "[03-01]-🇺🇸-美国-113-13.215.154.95"
+      - 台灣 02
+      - 日本 005
       - 荷兰Eygelshoven | BT下载-0.1x
-      - _HK_香港 5
-      - 中国【付费推荐：https://v1.mk/vip】320
-      - "%�\x11�%�P���_FR_法国"
-      - 中国【付费推荐：https://v1.mk/vip】317
-      - _HK_香港_6
-      - _IN_印度
+      - 瑞士 009
+      - 美国 057
+      - 瑞士 006
+      - 英国 007
+      - 瑞士 008
+      - "_JP_日本\r"
+      - 日本 002
+      - "|28.37Mb"
+      - 美国 054
+      - 美国 050
+      - 美国 068
+      - 香港HKT|防失联直连|1x
+      - 俄罗斯 002
+      - 澳大利亚 001
+      - 瑞典 001
+      - "|21.96Mb"
+      - CN_二爷翻墙网 https://1808.ga Node_69
+      - 澳大利亚 006
+      - 印度[解锁]0.5x
+      - 美国 104
+      - 台灣 01
+      - 中国【付费推荐：https://v1.mk/vip】22
+      - 瑞士 007
+      - 英国 003
+      - 美国 029
+      - _HK_香港_4
+      - 中国【付费推荐：https://v1.mk/vip】229
+      - 中国(TG频道@kxswa)
+      - 荷兰 008
+      - 中国【付费推荐：https://v1.mk/vip】59
+      - 加拿大[解锁]0.5 x
+      - 英国 010
+      - 挪威 001
+      - 中国【付费推荐：https://v1.mk/vip】91
+      - 英国 009
+      - 韩国 002
+      - 荷兰 003
+      - 荷兰 006
+      - -俄罗斯-vie-1.2tt.org
+      - 美国 005
+      - 荷兰 005
+      - 挪威 003
+      - 美国 015
+      - 荷兰 010
+      - _HK_香港_5
+      - _AU_澳大利亚
+      - 印度 001
+      - 美国 098
+      - _HK_香港_2
+      - 美国 077
+      - _HK_香港_1
+      - 荷兰[解锁]0.5 x
+      - 美国 003
+      - 美国 076
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -213,209 +345,338 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国2号-0.1x
-      - 美国3号-0.1x
-      - DE_3.72.190.230_022420239df8-452s%�
-      - LU卢森堡(youtube阿伟科技)
-      - "[02-28]-🇸🇬-新加坡-140-sg-am3.eqsunshine.com"
-      - "[02-27]-🇺🇸-美国-179-z0110.security-cloudfront-cdn.com"
-      - _DE_德国_38_38
-      - 美国1号-0.1x
-      - _CN_中国_4
-      - "@SSRSUB-V44-付费推荐:suo.yt/ssrsub"
-      - sg-am3.eqsunshine.com:32001
-      - 荷兰2 | BT下载-0.1x
-      - 韩国 002
-      - 中国【付费推荐：https://v1.mk/vip】327
-      - DE_3.76.62.24_02282023a8ab-976ssr
-      - 英国 001
-      - JP 6 → tg@nicevpn123
-      - 美国 032
-      - 澳大利亚 001
-      - 荷兰 | BT下载-0.1x
-      - _US_美国_9
-      - 【直连】香港 - 1
-      - JP 日本 | 直连 | 2.0x | V1 - 酸奶VPN
-      - _HK_香港_5
-      - 俄罗斯 001
-      - 香港 06
-      - 美国 029
-      - 香港【付费推荐：https://v1.mk/vip】312
-      - 香港 05
-      - 香港03|高速
-      - _HK_香港_5 2
-      - 中国【付费推荐：https://v1.mk/vip】91
-      - 美国 033
-      - 香港04|高速
-      - IE_34.244.249.39_0225202356ae-432ssr
+      - 美国 039
+      - 挪威 002
+      - 美国 045
+      - 美国 035
+      - -中国-8.218.94.239
+      - 美国 055
+      - 澳大利亚 009
       - 美国 027
+      - 日本 011
+      - 日本 009
+      - 美国 061
+      - 澳大利亚 005
+      - 美国 075
+      - 美国 070
+      - 爱尔兰 004
+      - 挪威 004
+      - 美国 002
+      - 美国 026
+      - "[03-01]-🇺🇸-美国-113-13.215.154.95"
+      - 台灣 02
+      - 日本 005
       - 荷兰Eygelshoven | BT下载-0.1x
-      - _HK_香港 5
-      - 中国【付费推荐：https://v1.mk/vip】320
-      - "%�\x11�%�P���_FR_法国"
-      - 中国【付费推荐：https://v1.mk/vip】317
-      - _HK_香港_6
-      - _IN_印度
+      - 瑞士 009
+      - 美国 057
+      - 瑞士 006
+      - 英国 007
+      - 瑞士 008
+      - "_JP_日本\r"
+      - 日本 002
+      - "|28.37Mb"
+      - 美国 054
+      - 美国 050
+      - 美国 068
+      - 香港HKT|防失联直连|1x
+      - 俄罗斯 002
+      - 澳大利亚 001
+      - 瑞典 001
+      - "|21.96Mb"
+      - CN_二爷翻墙网 https://1808.ga Node_69
+      - 澳大利亚 006
+      - 印度[解锁]0.5x
+      - 美国 104
+      - 台灣 01
+      - 中国【付费推荐：https://v1.mk/vip】22
+      - 瑞士 007
+      - 英国 003
+      - 美国 029
+      - _HK_香港_4
+      - 中国【付费推荐：https://v1.mk/vip】229
+      - 中国(TG频道@kxswa)
+      - 荷兰 008
+      - 中国【付费推荐：https://v1.mk/vip】59
+      - 加拿大[解锁]0.5 x
+      - 英国 010
+      - 挪威 001
+      - 中国【付费推荐：https://v1.mk/vip】91
+      - 英国 009
+      - 韩国 002
+      - 荷兰 003
+      - 荷兰 006
+      - -俄罗斯-vie-1.2tt.org
+      - 美国 005
+      - 荷兰 005
+      - 挪威 003
+      - 美国 015
+      - 荷兰 010
+      - _HK_香港_5
+      - _AU_澳大利亚
+      - 印度 001
+      - 美国 098
+      - _HK_香港_2
+      - 美国 077
+      - _HK_香港_1
+      - 荷兰[解锁]0.5 x
+      - 美国 003
+      - 美国 076
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 【直连】香港 - 1
+      - 台灣 02
+      - 香港HKT|防失联直连|1x
+      - 台灣 01
+      - _HK_香港_4
       - _HK_香港_5
-      - 香港 06
-      - 香港【付费推荐：https://v1.mk/vip】312
-      - 香港 05
-      - 香港03|高速
-      - _HK_香港_5 2
-      - 香港04|高速
-      - _HK_香港 5
-      - _HK_香港_6
+      - _HK_香港_2
+      - _HK_香港_1
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国2号-0.1x
-      - 美国3号-0.1x
-      - DE_3.72.190.230_022420239df8-452s%�
-      - LU卢森堡(youtube阿伟科技)
-      - "[02-28]-🇸🇬-新加坡-140-sg-am3.eqsunshine.com"
-      - "[02-27]-🇺🇸-美国-179-z0110.security-cloudfront-cdn.com"
-      - _DE_德国_38_38
-      - 美国1号-0.1x
-      - _CN_中国_4
-      - "@SSRSUB-V44-付费推荐:suo.yt/ssrsub"
-      - sg-am3.eqsunshine.com:32001
-      - 荷兰2 | BT下载-0.1x
-      - 韩国 002
-      - 中国【付费推荐：https://v1.mk/vip】327
-      - DE_3.76.62.24_02282023a8ab-976ssr
-      - 英国 001
-      - JP 6 → tg@nicevpn123
-      - 美国 032
-      - 澳大利亚 001
-      - 荷兰 | BT下载-0.1x
-      - _US_美国_9
-      - 【直连】香港 - 1
-      - JP 日本 | 直连 | 2.0x | V1 - 酸奶VPN
-      - _HK_香港_5
-      - 俄罗斯 001
-      - 香港 06
-      - 美国 029
-      - 香港【付费推荐：https://v1.mk/vip】312
-      - 香港 05
-      - 香港03|高速
-      - _HK_香港_5 2
-      - 中国【付费推荐：https://v1.mk/vip】91
-      - 美国 033
-      - 香港04|高速
-      - IE_34.244.249.39_0225202356ae-432ssr
+      - 美国 039
+      - 挪威 002
+      - 美国 045
+      - 美国 035
+      - -中国-8.218.94.239
+      - 美国 055
+      - 澳大利亚 009
       - 美国 027
+      - 日本 011
+      - 日本 009
+      - 美国 061
+      - 澳大利亚 005
+      - 美国 075
+      - 美国 070
+      - 爱尔兰 004
+      - 挪威 004
+      - 美国 002
+      - 美国 026
+      - "[03-01]-🇺🇸-美国-113-13.215.154.95"
+      - 台灣 02
+      - 日本 005
       - 荷兰Eygelshoven | BT下载-0.1x
-      - _HK_香港 5
-      - 中国【付费推荐：https://v1.mk/vip】320
-      - "%�\x11�%�P���_FR_法国"
-      - 中国【付费推荐：https://v1.mk/vip】317
-      - _HK_香港_6
-      - _IN_印度
+      - 瑞士 009
+      - 美国 057
+      - 瑞士 006
+      - 英国 007
+      - 瑞士 008
+      - "_JP_日本\r"
+      - 日本 002
+      - "|28.37Mb"
+      - 美国 054
+      - 美国 050
+      - 美国 068
+      - 香港HKT|防失联直连|1x
+      - 俄罗斯 002
+      - 澳大利亚 001
+      - 瑞典 001
+      - "|21.96Mb"
+      - CN_二爷翻墙网 https://1808.ga Node_69
+      - 澳大利亚 006
+      - 印度[解锁]0.5x
+      - 美国 104
+      - 台灣 01
+      - 中国【付费推荐：https://v1.mk/vip】22
+      - 瑞士 007
+      - 英国 003
+      - 美国 029
+      - _HK_香港_4
+      - 中国【付费推荐：https://v1.mk/vip】229
+      - 中国(TG频道@kxswa)
+      - 荷兰 008
+      - 中国【付费推荐：https://v1.mk/vip】59
+      - 加拿大[解锁]0.5 x
+      - 英国 010
+      - 挪威 001
+      - 中国【付费推荐：https://v1.mk/vip】91
+      - 英国 009
+      - 韩国 002
+      - 荷兰 003
+      - 荷兰 006
+      - -俄罗斯-vie-1.2tt.org
+      - 美国 005
+      - 荷兰 005
+      - 挪威 003
+      - 美国 015
+      - 荷兰 010
+      - _HK_香港_5
+      - _AU_澳大利亚
+      - 印度 001
+      - 美国 098
+      - _HK_香港_2
+      - 美国 077
+      - _HK_香港_1
+      - 荷兰[解锁]0.5 x
+      - 美国 003
+      - 美国 076
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国2号-0.1x
-      - 美国3号-0.1x
-      - DE_3.72.190.230_022420239df8-452s%�
-      - LU卢森堡(youtube阿伟科技)
-      - "[02-28]-🇸🇬-新加坡-140-sg-am3.eqsunshine.com"
-      - "[02-27]-🇺🇸-美国-179-z0110.security-cloudfront-cdn.com"
-      - _DE_德国_38_38
-      - 美国1号-0.1x
-      - _CN_中国_4
-      - "@SSRSUB-V44-付费推荐:suo.yt/ssrsub"
-      - sg-am3.eqsunshine.com:32001
-      - 荷兰2 | BT下载-0.1x
-      - 韩国 002
-      - 中国【付费推荐：https://v1.mk/vip】327
-      - DE_3.76.62.24_02282023a8ab-976ssr
-      - 英国 001
-      - JP 6 → tg@nicevpn123
-      - 美国 032
-      - 澳大利亚 001
-      - 荷兰 | BT下载-0.1x
-      - _US_美国_9
-      - 【直连】香港 - 1
-      - JP 日本 | 直连 | 2.0x | V1 - 酸奶VPN
-      - _HK_香港_5
-      - 俄罗斯 001
-      - 香港 06
-      - 美国 029
-      - 香港【付费推荐：https://v1.mk/vip】312
-      - 香港 05
-      - 香港03|高速
-      - _HK_香港_5 2
-      - 中国【付费推荐：https://v1.mk/vip】91
-      - 美国 033
-      - 香港04|高速
-      - IE_34.244.249.39_0225202356ae-432ssr
+      - 美国 039
+      - 挪威 002
+      - 美国 045
+      - 美国 035
+      - -中国-8.218.94.239
+      - 美国 055
+      - 澳大利亚 009
       - 美国 027
+      - 日本 011
+      - 日本 009
+      - 美国 061
+      - 澳大利亚 005
+      - 美国 075
+      - 美国 070
+      - 爱尔兰 004
+      - 挪威 004
+      - 美国 002
+      - 美国 026
+      - "[03-01]-🇺🇸-美国-113-13.215.154.95"
+      - 台灣 02
+      - 日本 005
       - 荷兰Eygelshoven | BT下载-0.1x
-      - _HK_香港 5
-      - 中国【付费推荐：https://v1.mk/vip】320
-      - "%�\x11�%�P���_FR_法国"
-      - 中国【付费推荐：https://v1.mk/vip】317
-      - _HK_香港_6
-      - _IN_印度
+      - 瑞士 009
+      - 美国 057
+      - 瑞士 006
+      - 英国 007
+      - 瑞士 008
+      - "_JP_日本\r"
+      - 日本 002
+      - "|28.37Mb"
+      - 美国 054
+      - 美国 050
+      - 美国 068
+      - 香港HKT|防失联直连|1x
+      - 俄罗斯 002
+      - 澳大利亚 001
+      - 瑞典 001
+      - "|21.96Mb"
+      - CN_二爷翻墙网 https://1808.ga Node_69
+      - 澳大利亚 006
+      - 印度[解锁]0.5x
+      - 美国 104
+      - 台灣 01
+      - 中国【付费推荐：https://v1.mk/vip】22
+      - 瑞士 007
+      - 英国 003
+      - 美国 029
+      - _HK_香港_4
+      - 中国【付费推荐：https://v1.mk/vip】229
+      - 中国(TG频道@kxswa)
+      - 荷兰 008
+      - 中国【付费推荐：https://v1.mk/vip】59
+      - 加拿大[解锁]0.5 x
+      - 英国 010
+      - 挪威 001
+      - 中国【付费推荐：https://v1.mk/vip】91
+      - 英国 009
+      - 韩国 002
+      - 荷兰 003
+      - 荷兰 006
+      - -俄罗斯-vie-1.2tt.org
+      - 美国 005
+      - 荷兰 005
+      - 挪威 003
+      - 美国 015
+      - 荷兰 010
+      - _HK_香港_5
+      - _AU_澳大利亚
+      - 印度 001
+      - 美国 098
+      - _HK_香港_2
+      - 美国 077
+      - _HK_香港_1
+      - 荷兰[解锁]0.5 x
+      - 美国 003
+      - 美国 076
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国2号-0.1x
-      - 美国3号-0.1x
-      - DE_3.72.190.230_022420239df8-452s%�
-      - LU卢森堡(youtube阿伟科技)
-      - "[02-28]-🇸🇬-新加坡-140-sg-am3.eqsunshine.com"
-      - "[02-27]-🇺🇸-美国-179-z0110.security-cloudfront-cdn.com"
-      - _DE_德国_38_38
-      - 美国1号-0.1x
-      - _CN_中国_4
-      - "@SSRSUB-V44-付费推荐:suo.yt/ssrsub"
-      - sg-am3.eqsunshine.com:32001
-      - 荷兰2 | BT下载-0.1x
-      - 韩国 002
-      - 中国【付费推荐：https://v1.mk/vip】327
-      - DE_3.76.62.24_02282023a8ab-976ssr
-      - 英国 001
-      - JP 6 → tg@nicevpn123
-      - 美国 032
-      - 澳大利亚 001
-      - 荷兰 | BT下载-0.1x
-      - _US_美国_9
-      - 【直连】香港 - 1
-      - JP 日本 | 直连 | 2.0x | V1 - 酸奶VPN
-      - _HK_香港_5
-      - 俄罗斯 001
-      - 香港 06
-      - 美国 029
-      - 香港【付费推荐：https://v1.mk/vip】312
-      - 香港 05
-      - 香港03|高速
-      - _HK_香港_5 2
-      - 中国【付费推荐：https://v1.mk/vip】91
-      - 美国 033
-      - 香港04|高速
-      - IE_34.244.249.39_0225202356ae-432ssr
+      - 美国 039
+      - 挪威 002
+      - 美国 045
+      - 美国 035
+      - -中国-8.218.94.239
+      - 美国 055
+      - 澳大利亚 009
       - 美国 027
+      - 日本 011
+      - 日本 009
+      - 美国 061
+      - 澳大利亚 005
+      - 美国 075
+      - 美国 070
+      - 爱尔兰 004
+      - 挪威 004
+      - 美国 002
+      - 美国 026
+      - "[03-01]-🇺🇸-美国-113-13.215.154.95"
+      - 台灣 02
+      - 日本 005
       - 荷兰Eygelshoven | BT下载-0.1x
-      - _HK_香港 5
-      - 中国【付费推荐：https://v1.mk/vip】320
-      - "%�\x11�%�P���_FR_法国"
-      - 中国【付费推荐：https://v1.mk/vip】317
-      - _HK_香港_6
-      - _IN_印度
+      - 瑞士 009
+      - 美国 057
+      - 瑞士 006
+      - 英国 007
+      - 瑞士 008
+      - "_JP_日本\r"
+      - 日本 002
+      - "|28.37Mb"
+      - 美国 054
+      - 美国 050
+      - 美国 068
+      - 香港HKT|防失联直连|1x
+      - 俄罗斯 002
+      - 澳大利亚 001
+      - 瑞典 001
+      - "|21.96Mb"
+      - CN_二爷翻墙网 https://1808.ga Node_69
+      - 澳大利亚 006
+      - 印度[解锁]0.5x
+      - 美国 104
+      - 台灣 01
+      - 中国【付费推荐：https://v1.mk/vip】22
+      - 瑞士 007
+      - 英国 003
+      - 美国 029
+      - _HK_香港_4
+      - 中国【付费推荐：https://v1.mk/vip】229
+      - 中国(TG频道@kxswa)
+      - 荷兰 008
+      - 中国【付费推荐：https://v1.mk/vip】59
+      - 加拿大[解锁]0.5 x
+      - 英国 010
+      - 挪威 001
+      - 中国【付费推荐：https://v1.mk/vip】91
+      - 英国 009
+      - 韩国 002
+      - 荷兰 003
+      - 荷兰 006
+      - -俄罗斯-vie-1.2tt.org
+      - 美国 005
+      - 荷兰 005
+      - 挪威 003
+      - 美国 015
+      - 荷兰 010
+      - _HK_香港_5
+      - _AU_澳大利亚
+      - 印度 001
+      - 美国 098
+      - _HK_香港_2
+      - 美国 077
+      - _HK_香港_1
+      - 荷兰[解锁]0.5 x
+      - 美国 003
+      - 美国 076
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -431,49 +692,82 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国2号-0.1x
-      - 美国3号-0.1x
-      - DE_3.72.190.230_022420239df8-452s%�
-      - LU卢森堡(youtube阿伟科技)
-      - "[02-28]-🇸🇬-新加坡-140-sg-am3.eqsunshine.com"
-      - "[02-27]-🇺🇸-美国-179-z0110.security-cloudfront-cdn.com"
-      - _DE_德国_38_38
-      - 美国1号-0.1x
-      - _CN_中国_4
-      - "@SSRSUB-V44-付费推荐:suo.yt/ssrsub"
-      - sg-am3.eqsunshine.com:32001
-      - 荷兰2 | BT下载-0.1x
-      - 韩国 002
-      - 中国【付费推荐：https://v1.mk/vip】327
-      - DE_3.76.62.24_02282023a8ab-976ssr
-      - 英国 001
-      - JP 6 → tg@nicevpn123
-      - 美国 032
-      - 澳大利亚 001
-      - 荷兰 | BT下载-0.1x
-      - _US_美国_9
-      - 【直连】香港 - 1
-      - JP 日本 | 直连 | 2.0x | V1 - 酸奶VPN
-      - _HK_香港_5
-      - 俄罗斯 001
-      - 香港 06
-      - 美国 029
-      - 香港【付费推荐：https://v1.mk/vip】312
-      - 香港 05
-      - 香港03|高速
-      - _HK_香港_5 2
-      - 中国【付费推荐：https://v1.mk/vip】91
-      - 美国 033
-      - 香港04|高速
-      - IE_34.244.249.39_0225202356ae-432ssr
+      - 美国 039
+      - 挪威 002
+      - 美国 045
+      - 美国 035
+      - -中国-8.218.94.239
+      - 美国 055
+      - 澳大利亚 009
       - 美国 027
+      - 日本 011
+      - 日本 009
+      - 美国 061
+      - 澳大利亚 005
+      - 美国 075
+      - 美国 070
+      - 爱尔兰 004
+      - 挪威 004
+      - 美国 002
+      - 美国 026
+      - "[03-01]-🇺🇸-美国-113-13.215.154.95"
+      - 台灣 02
+      - 日本 005
       - 荷兰Eygelshoven | BT下载-0.1x
-      - _HK_香港 5
-      - 中国【付费推荐：https://v1.mk/vip】320
-      - "%�\x11�%�P���_FR_法国"
-      - 中国【付费推荐：https://v1.mk/vip】317
-      - _HK_香港_6
-      - _IN_印度
+      - 瑞士 009
+      - 美国 057
+      - 瑞士 006
+      - 英国 007
+      - 瑞士 008
+      - "_JP_日本\r"
+      - 日本 002
+      - "|28.37Mb"
+      - 美国 054
+      - 美国 050
+      - 美国 068
+      - 香港HKT|防失联直连|1x
+      - 俄罗斯 002
+      - 澳大利亚 001
+      - 瑞典 001
+      - "|21.96Mb"
+      - CN_二爷翻墙网 https://1808.ga Node_69
+      - 澳大利亚 006
+      - 印度[解锁]0.5x
+      - 美国 104
+      - 台灣 01
+      - 中国【付费推荐：https://v1.mk/vip】22
+      - 瑞士 007
+      - 英国 003
+      - 美国 029
+      - _HK_香港_4
+      - 中国【付费推荐：https://v1.mk/vip】229
+      - 中国(TG频道@kxswa)
+      - 荷兰 008
+      - 中国【付费推荐：https://v1.mk/vip】59
+      - 加拿大[解锁]0.5 x
+      - 英国 010
+      - 挪威 001
+      - 中国【付费推荐：https://v1.mk/vip】91
+      - 英国 009
+      - 韩国 002
+      - 荷兰 003
+      - 荷兰 006
+      - -俄罗斯-vie-1.2tt.org
+      - 美国 005
+      - 荷兰 005
+      - 挪威 003
+      - 美国 015
+      - 荷兰 010
+      - _HK_香港_5
+      - _AU_澳大利亚
+      - 印度 001
+      - 美国 098
+      - _HK_香港_2
+      - 美国 077
+      - _HK_香港_1
+      - 荷兰[解锁]0.5 x
+      - 美国 003
+      - 美国 076
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
