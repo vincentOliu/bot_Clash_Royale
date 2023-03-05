@@ -6,91 +6,255 @@ mode: Rule
 log-level: info
 external-controller: 9090
 proxies:
-  - {name: "[03-04]-🇸🇪-瑞典-039-z0117.security-cloudfront-cdn.com", server: z0117.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: ====, obfs-param: ====, udp: true}
-  - {name: "[03-04]-🇯🇵-日本-024-43.207.66.114", server: 43.207.66.114, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: github.com/freefq - 德国  6, server: 89.163.213.20, port: 80, type: vmess, uuid: 5668ff97-631f-4602-a13f-b56552c67abe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: 瑞士 001, server: yd01.wxfz.ga, port: 80, type: vmess, uuid: f9b79c12-9510-4a4e-9340-ec44f01ed6ab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: yd01.wxfz.ga}}, udp: true}
-  - {name: github.com/freefq - 印度尼西亚  10, server: asia1.oceis.net, port: 443, type: trojan, password: cf2af470-b8f1-11ed-b133-205c6d5f5d78, skip-cert-verify: true, udp: true}
-  - {name: 香港(TG频道@kxswa), server: 0kxedm1x8q8lksmj01.xingbayun.buzz, port: 1001, type: vmess, uuid: 5eb28488-7c95-4f39-b711-e5cc96ec1756, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _SE_瑞典, server: z0117.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】143, server: shnnb37f1.xz56bm2v8.lzmg3khpq.soabgo.com, port: 45000, type: vmess, uuid: FF5D3BF5-1296-FB0A-4596-B3CD0C884200, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 瑞典 001, server: hongbozeng.ml, port: 443, type: vmess, uuid: 860b543f-5039-473b-96ec-4494aebe4416, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /xuexi, headers: {Host: hongbozeng.ml}}, udp: true}
-  - {name: 美国 009, server: suzhihan.eu.org, port: 443, type: vmess, uuid: 0b873cff-11ab-4716-c41a-04f886135091, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /roewesu, headers: {Host: suzhihan.eu.org}}, udp: true}
-  - {name: 美国(TG频道@kxswa), server: phoenix-d.4422331.xyz, port: 10086, type: trojan, password: 4134219f-2384-449c-92e9-50fe8474c30a, sni: phoenix-d.4422331.xyz, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国_2, server: hn.xiaohouzi.club, port: 18835, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24feilvbin.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: 中国(TG频道@kxswa), server: 223.111.202.139, port: 63087, type: vmess, uuid: cef94bbf-8bd7-3565-a1c8-0e311643e657, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: sg-balancer.tencent.best}}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】42, server: hnm.xiaohouzi.club, port: 27482, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 新加坡Amazon数据中心 22, server: sc.svip8.cn, port: 10000, type: vmess, uuid: dab765bb-0d68-40f2-a27a-ba78551844cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[03-04]-🇫🇷-法国-225-z0111.security-cloudfront-cdn.com", server: z0111.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: ====, obfs-param: ====, udp: true}
-  - {name: github.com/freefq - 瑞士Oracle Corporation 12, server: yd01.wxfz.ga, port: 80, type: vmess, uuid: f9b79c12-9510-4a4e-9340-ec44f01ed6ab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: yd01.wxfz.ga}}, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】144, server: Kansas.v2ray.online, port: 443, type: vmess, uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.v2ray.online}}, udp: true}
+  - {name: 瑞典 001, server: 141.147.149.186, port: 10344, type: vmess, uuid: 479972b1-e60d-4985-9a7f-dfee6498adb1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 美国 019, server: us.he.04.nekocloud.cn, port: 19042, type: vmess, uuid: 767ebf8c-3020-3e52-9109-4bdb49510842, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /catnet, headers: {Host: us.he.04.nekocloud.cn}}, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】148, server: v2ray.online, port: 443, type: vmess, uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.v2ray.online}}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】136, server: hn.xiaohouzi.club, port: 14185, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hktnew01.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 香港1丨2x计费, server: v21.gaowosiquanjia.top, port: 80, type: vmess, uuid: dcc43c72-b4ae-4c6d-9454-78650144f33c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】212, server: z80001.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】203, server: hn.xiaohouzi.club, port: 61003, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24%24hn.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】139, server: hnm.xiaohouzi.club, port: 27094, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: siga01.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 德国 003, server: stonebreak.online, port: 443, type: trojan, password: xl87654321, skip-cert-verify: true, udp: true}
+  - {name: 美国 040, server: us.he.07.nekocloud.cn, port: 10002, type: vmess, uuid: 767ebf8c-3020-3e52-9109-4bdb49510842, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /catnet, headers: {Host: us.he.07.nekocloud.cn}}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】196, server: hnm.xiaohouzi.club, port: 17105, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24tukey.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】176, server: hn.xiaohouzi.club, port: 48464, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 美国 070, server: 15.204.210.176, port: 80, type: trojan, password: c0fde6ac-a07c-4f60-84ae-e7ed4da78a6f, skip-cert-verify: true, udp: true}
+  - {name: 香港2丨2x计费, server: v22.gaowosiquanjia.top, port: 80, type: vmess, uuid: dcc43c72-b4ae-4c6d-9454-78650144f33c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】217, server: 45.59.187.42, port: 80, type: vmess, uuid: 761cf552-a1c3-4fc2-f2dd-a90897105412, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 45.59.187.42}}, udp: true}
+  - {name: 香港超高速专线 02, server: gdyd.aikun.online, port: 38343, type: ss, cipher: aes-128-gcm, password: d0dc5f19-5854-4cb7-8e7e-4c8336dbcfb3, udp: true}
+  - {name: 美国 087, server: dl-hk4.steamdownload.top, port: 443, type: trojan, password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5, sni: data-hk.xn--vur082k.cc, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】187, server: iplc.xiaohouzi.club, port: 20018, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: iplc.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】191, server: hn.xiaohouzi.club, port: 18443, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】184, server: hn.xiaohouzi.club, port: 18735, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: ajpn05.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】135, server: iplc.xiaohouzi.club, port: 20039, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: iplc.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】138, server: hnm.xiaohouzi.club, port: 51052, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 美国 092, server: s-hk02.aikun.online, port: 10000, type: trojan, password: 73811320-dd55-4984-b484-f8e90c035058, sni: s-hk02.aikun.online, skip-cert-verify: true, udp: true}
+  - {name: 越南 004, server: 49.236.209.45, port: 80, type: vmess, uuid: 5bb6b5c3-40dd-4a1f-9f43-802320cc5b56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /project4gyuna.pw}, udp: true}
+  - {name: 加拿大 003, server: ca1.xvless.xyz, port: 443, type: vmess, uuid: 40c43ed4-b826-4d29-8f11-ebbafd361a3b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: ca1.xvless.xyz}}, udp: true}
+  - {name: 荷兰 003, server: 46.182.107.22, port: 443, type: vmess, uuid: de491802-233e-47f2-8c6c-d19bcf5bd56b, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/353021140201}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】173, server: hnm.xiaohouzi.club, port: 17103, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 香港【付费推荐：https://v1.mk/vip】225, server: 47.243.111.25, port: 31705, type: vmess, uuid: d0fc2199-6bb4-4559-a7ec-48f3d728500d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 美国 102, server: s-jp03.aikun.online, port: 10000, type: trojan, password: 73811320-dd55-4984-b484-f8e90c035058, sni: s-jp03.aikun.online, skip-cert-verify: true, udp: true}
+  - {name: 荷兰Eygelshoven | BT下载-0.1x, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 3855b736-bf24-461f-b5b9-1d3f04484b37, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/yfjc/nl3?ed=2048", headers: {Host: nl3.yfjc.sbs}}, udp: true}
+  - {name: "[03-05]-🇦🇺-澳大利亚-168-z0113.security-cloudfront-cdn.com", server: z0113.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: "[03-05]-🇺🇸-美国-150-z0111.security-cloudfront-cdn.com", server: z0111.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: ====, obfs-param: ====, udp: true}
+  - {name: 德国 001, server: srvet-4.mehyaz.shop, port: 18638, type: vmess, uuid: 9961e987-ec2b-4998-aa03-67825bf6a45d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [srvet-4.mehyaz.shop]}}, udp: true}
+  - {name: 美国 088, server: dl-hk6.steamdownload.top, port: 443, type: trojan, password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5, sni: data-hk.xn--vur082k.cc, skip-cert-verify: true, udp: true}
+  - {name: 美国 065, server: sanjose-d2.4422331.xyz, port: 10086, type: trojan, password: 4134219f-2384-449c-92e9-50fe8474c30a, sni: https%3a%2f%2fmofa.4422331.xyz, skip-cert-verify: true, udp: true}
+  - {name: 美国 073, server: dl-us2.steamdownload.top, port: 443, type: trojan, password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5, sni: data-us.xn--vur082k.cc, skip-cert-verify: true, udp: true}
+  - {name: 荷兰 002, server: 46.182.107.161, port: 443, type: vmess, uuid: 29a5d48e-24f1-48fd-a5e1-9a46cb31032f, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/353021140201}, udp: true}
+  - {name: "|34.91Mb", server: 112.33.32.136, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国2号-0.1x, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 3855b736-bf24-461f-b5b9-1d3f04484b37, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/yfjc/us2?ed=2048", headers: {Host: us2.yfjc.sbs}}, udp: true}
+  - {name: 香港超高速专线 03, server: gdyd.aikun.online, port: 49771, type: ss, cipher: aes-128-gcm, password: d0dc5f19-5854-4cb7-8e7e-4c8336dbcfb3, udp: true}
+  - {name: 荷兰 001, server: b2f37b8.v2.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /d/b2f37b8.fm.apple.com:106061, headers: {Host: b2f37b8.v2.gladns.com}}, udp: true}
+  - {name: 美国 080, server: dl-hk2.steamdownload.top, port: 443, type: trojan, password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5, sni: data-hk.xn--vur082k.cc, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】167, server: hnm.xiaohouzi.club, port: 27482, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 香港【付费推荐：https://v1.mk/vip】160, server: 8.218.150.152, port: 45106, type: vmess, uuid: aa7f7fd3-8f88-45c7-9e27-a03380d6cc89, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】150, server: hy.guanguan.club, port: 11410, type: vmess, uuid: 5707bceb-1da9-41e1-bd03-1bb3d1c28a2c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nba, headers: {Host: hy.guanguan.club}}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】185, server: hnm.xiaohouzi.club, port: 36305, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】190, server: iplc.xiaohouzi.club, port: 20015, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: iplc.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 荷兰2 | BT下载-0.1x, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 3855b736-bf24-461f-b5b9-1d3f04484b37, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/yfjc/nl2?ed=2048", headers: {Host: nl2.yfjc.sbs}}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】186, server: iplc.xiaohouzi.club, port: 20037, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: iplc.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯 002, server: 91.193.181.192, port: 8090, type: vmess, uuid: 08bc30e1-be39-4eb4-e887-e6579be15a45, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】211, server: gz01.xiaohouzi.club, port: 51058, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: gz01.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 美国 101, server: 0kxedm1x8q8lksmj10.xingbayun.buzz, port: 443, type: vmess, uuid: 5eb28488-7c95-4f39-b711-e5cc96ec1756, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 美国 093, server: dl-sg3.steamdownload.top, port: 50000, type: trojan, password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5, sni: data-sg.xn--vur082k.cc, skip-cert-verify: true, udp: true}
+  - {name: 荷兰 | BT下载-0.1x, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 3855b736-bf24-461f-b5b9-1d3f04484b37, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/yfjc/nl?ed=2048", headers: {Host: nl.yfjc.sbs}}, udp: true}
+  - {name: 美国 094, server: dl-sg1.steamdownload.top, port: 50000, type: trojan, password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5, sni: data-sg.xn--vur082k.cc, skip-cert-verify: true, udp: true}
+  - {name: "[03-05]-🇸🇬-新加坡-036-sg-am3.eqsunshine.com", server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: PT09PQ======, obfs-param: PT09PQ======, udp: true}
+  - {name: sg-am3.eqsunshine.com:32001, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[03-04]-🇸🇪-瑞典-039-z0117.security-cloudfront-cdn.com"
-      - "[03-04]-🇯🇵-日本-024-43.207.66.114"
-      - github.com/freefq - 德国  6
-      - 瑞士 001
-      - github.com/freefq - 印度尼西亚  10
-      - 香港(TG频道@kxswa)
-      - _SE_瑞典
-      - 中国【付费推荐：https://v1.mk/vip】143
+      - 美国【付费推荐：https://v1.mk/vip】144
       - 瑞典 001
-      - 美国 009
-      - 美国(TG频道@kxswa)
-      - _CN_中国_2
-      - 中国(TG频道@kxswa)
-      - 中国【付费推荐：https://v1.mk/vip】42
-      - github.com/freefq - 新加坡Amazon数据中心 22
-      - "[03-04]-🇫🇷-法国-225-z0111.security-cloudfront-cdn.com"
-      - github.com/freefq - 瑞士Oracle Corporation 12
+      - 美国 019
+      - 美国【付费推荐：https://v1.mk/vip】148
+      - 中国【付费推荐：https://v1.mk/vip】136
+      - 香港1丨2x计费
+      - 中国【付费推荐：https://v1.mk/vip】212
+      - 中国【付费推荐：https://v1.mk/vip】203
+      - 中国【付费推荐：https://v1.mk/vip】139
+      - 德国 003
+      - 美国 040
+      - 中国【付费推荐：https://v1.mk/vip】196
+      - 中国【付费推荐：https://v1.mk/vip】176
+      - 美国 070
+      - 香港2丨2x计费
+      - 美国【付费推荐：https://v1.mk/vip】217
+      - 香港超高速专线 02
+      - 美国 087
+      - 中国【付费推荐：https://v1.mk/vip】187
+      - 中国【付费推荐：https://v1.mk/vip】191
+      - 中国【付费推荐：https://v1.mk/vip】184
+      - 中国【付费推荐：https://v1.mk/vip】135
+      - 中国【付费推荐：https://v1.mk/vip】138
+      - 美国 092
+      - 越南 004
+      - 加拿大 003
+      - 荷兰 003
+      - 中国【付费推荐：https://v1.mk/vip】173
+      - 香港【付费推荐：https://v1.mk/vip】225
+      - 美国 102
+      - 荷兰Eygelshoven | BT下载-0.1x
+      - "[03-05]-🇦🇺-澳大利亚-168-z0113.security-cloudfront-cdn.com"
+      - "[03-05]-🇺🇸-美国-150-z0111.security-cloudfront-cdn.com"
+      - 德国 001
+      - 美国 088
+      - 美国 065
+      - 美国 073
+      - 荷兰 002
+      - "|34.91Mb"
+      - 美国2号-0.1x
+      - 香港超高速专线 03
+      - 荷兰 001
+      - 美国 080
+      - 中国【付费推荐：https://v1.mk/vip】167
+      - 香港【付费推荐：https://v1.mk/vip】160
+      - 中国【付费推荐：https://v1.mk/vip】150
+      - 中国【付费推荐：https://v1.mk/vip】185
+      - 中国【付费推荐：https://v1.mk/vip】190
+      - 荷兰2 | BT下载-0.1x
+      - 中国【付费推荐：https://v1.mk/vip】186
+      - 俄罗斯 002
+      - 中国【付费推荐：https://v1.mk/vip】211
+      - 美国 101
+      - 美国 093
+      - 荷兰 | BT下载-0.1x
+      - 美国 094
+      - "[03-05]-🇸🇬-新加坡-036-sg-am3.eqsunshine.com"
+      - sg-am3.eqsunshine.com:32001
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - "[03-04]-🇸🇪-瑞典-039-z0117.security-cloudfront-cdn.com"
-      - "[03-04]-🇯🇵-日本-024-43.207.66.114"
-      - github.com/freefq - 德国  6
-      - 瑞士 001
-      - github.com/freefq - 印度尼西亚  10
-      - 香港(TG频道@kxswa)
-      - _SE_瑞典
-      - 中国【付费推荐：https://v1.mk/vip】143
+      - 美国【付费推荐：https://v1.mk/vip】144
       - 瑞典 001
-      - 美国 009
-      - 美国(TG频道@kxswa)
-      - _CN_中国_2
-      - 中国(TG频道@kxswa)
-      - 中国【付费推荐：https://v1.mk/vip】42
-      - github.com/freefq - 新加坡Amazon数据中心 22
-      - "[03-04]-🇫🇷-法国-225-z0111.security-cloudfront-cdn.com"
-      - github.com/freefq - 瑞士Oracle Corporation 12
+      - 美国 019
+      - 美国【付费推荐：https://v1.mk/vip】148
+      - 中国【付费推荐：https://v1.mk/vip】136
+      - 香港1丨2x计费
+      - 中国【付费推荐：https://v1.mk/vip】212
+      - 中国【付费推荐：https://v1.mk/vip】203
+      - 中国【付费推荐：https://v1.mk/vip】139
+      - 德国 003
+      - 美国 040
+      - 中国【付费推荐：https://v1.mk/vip】196
+      - 中国【付费推荐：https://v1.mk/vip】176
+      - 美国 070
+      - 香港2丨2x计费
+      - 美国【付费推荐：https://v1.mk/vip】217
+      - 香港超高速专线 02
+      - 美国 087
+      - 中国【付费推荐：https://v1.mk/vip】187
+      - 中国【付费推荐：https://v1.mk/vip】191
+      - 中国【付费推荐：https://v1.mk/vip】184
+      - 中国【付费推荐：https://v1.mk/vip】135
+      - 中国【付费推荐：https://v1.mk/vip】138
+      - 美国 092
+      - 越南 004
+      - 加拿大 003
+      - 荷兰 003
+      - 中国【付费推荐：https://v1.mk/vip】173
+      - 香港【付费推荐：https://v1.mk/vip】225
+      - 美国 102
+      - 荷兰Eygelshoven | BT下载-0.1x
+      - "[03-05]-🇦🇺-澳大利亚-168-z0113.security-cloudfront-cdn.com"
+      - "[03-05]-🇺🇸-美国-150-z0111.security-cloudfront-cdn.com"
+      - 德国 001
+      - 美国 088
+      - 美国 065
+      - 美国 073
+      - 荷兰 002
+      - "|34.91Mb"
+      - 美国2号-0.1x
+      - 香港超高速专线 03
+      - 荷兰 001
+      - 美国 080
+      - 中国【付费推荐：https://v1.mk/vip】167
+      - 香港【付费推荐：https://v1.mk/vip】160
+      - 中国【付费推荐：https://v1.mk/vip】150
+      - 中国【付费推荐：https://v1.mk/vip】185
+      - 中国【付费推荐：https://v1.mk/vip】190
+      - 荷兰2 | BT下载-0.1x
+      - 中国【付费推荐：https://v1.mk/vip】186
+      - 俄罗斯 002
+      - 中国【付费推荐：https://v1.mk/vip】211
+      - 美国 101
+      - 美国 093
+      - 荷兰 | BT下载-0.1x
+      - 美国 094
+      - "[03-05]-🇸🇬-新加坡-036-sg-am3.eqsunshine.com"
+      - sg-am3.eqsunshine.com:32001
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[03-04]-🇸🇪-瑞典-039-z0117.security-cloudfront-cdn.com"
-      - "[03-04]-🇯🇵-日本-024-43.207.66.114"
-      - github.com/freefq - 德国  6
-      - 瑞士 001
-      - github.com/freefq - 印度尼西亚  10
-      - 香港(TG频道@kxswa)
-      - _SE_瑞典
-      - 中国【付费推荐：https://v1.mk/vip】143
+      - 美国【付费推荐：https://v1.mk/vip】144
       - 瑞典 001
-      - 美国 009
-      - 美国(TG频道@kxswa)
-      - _CN_中国_2
-      - 中国(TG频道@kxswa)
-      - 中国【付费推荐：https://v1.mk/vip】42
-      - github.com/freefq - 新加坡Amazon数据中心 22
-      - "[03-04]-🇫🇷-法国-225-z0111.security-cloudfront-cdn.com"
-      - github.com/freefq - 瑞士Oracle Corporation 12
+      - 美国 019
+      - 美国【付费推荐：https://v1.mk/vip】148
+      - 中国【付费推荐：https://v1.mk/vip】136
+      - 香港1丨2x计费
+      - 中国【付费推荐：https://v1.mk/vip】212
+      - 中国【付费推荐：https://v1.mk/vip】203
+      - 中国【付费推荐：https://v1.mk/vip】139
+      - 德国 003
+      - 美国 040
+      - 中国【付费推荐：https://v1.mk/vip】196
+      - 中国【付费推荐：https://v1.mk/vip】176
+      - 美国 070
+      - 香港2丨2x计费
+      - 美国【付费推荐：https://v1.mk/vip】217
+      - 香港超高速专线 02
+      - 美国 087
+      - 中国【付费推荐：https://v1.mk/vip】187
+      - 中国【付费推荐：https://v1.mk/vip】191
+      - 中国【付费推荐：https://v1.mk/vip】184
+      - 中国【付费推荐：https://v1.mk/vip】135
+      - 中国【付费推荐：https://v1.mk/vip】138
+      - 美国 092
+      - 越南 004
+      - 加拿大 003
+      - 荷兰 003
+      - 中国【付费推荐：https://v1.mk/vip】173
+      - 香港【付费推荐：https://v1.mk/vip】225
+      - 美国 102
+      - 荷兰Eygelshoven | BT下载-0.1x
+      - "[03-05]-🇦🇺-澳大利亚-168-z0113.security-cloudfront-cdn.com"
+      - "[03-05]-🇺🇸-美国-150-z0111.security-cloudfront-cdn.com"
+      - 德国 001
+      - 美国 088
+      - 美国 065
+      - 美国 073
+      - 荷兰 002
+      - "|34.91Mb"
+      - 美国2号-0.1x
+      - 香港超高速专线 03
+      - 荷兰 001
+      - 美国 080
+      - 中国【付费推荐：https://v1.mk/vip】167
+      - 香港【付费推荐：https://v1.mk/vip】160
+      - 中国【付费推荐：https://v1.mk/vip】150
+      - 中国【付费推荐：https://v1.mk/vip】185
+      - 中国【付费推荐：https://v1.mk/vip】190
+      - 荷兰2 | BT下载-0.1x
+      - 中国【付费推荐：https://v1.mk/vip】186
+      - 俄罗斯 002
+      - 中国【付费推荐：https://v1.mk/vip】211
+      - 美国 101
+      - 美国 093
+      - 荷兰 | BT下载-0.1x
+      - 美国 094
+      - "[03-05]-🇸🇬-新加坡-036-sg-am3.eqsunshine.com"
+      - sg-am3.eqsunshine.com:32001
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -109,96 +273,265 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[03-04]-🇸🇪-瑞典-039-z0117.security-cloudfront-cdn.com"
-      - "[03-04]-🇯🇵-日本-024-43.207.66.114"
-      - github.com/freefq - 德国  6
-      - 瑞士 001
-      - github.com/freefq - 印度尼西亚  10
-      - 香港(TG频道@kxswa)
-      - _SE_瑞典
-      - 中国【付费推荐：https://v1.mk/vip】143
+      - 美国【付费推荐：https://v1.mk/vip】144
       - 瑞典 001
-      - 美国 009
-      - 美国(TG频道@kxswa)
-      - _CN_中国_2
-      - 中国(TG频道@kxswa)
-      - 中国【付费推荐：https://v1.mk/vip】42
-      - github.com/freefq - 新加坡Amazon数据中心 22
-      - "[03-04]-🇫🇷-法国-225-z0111.security-cloudfront-cdn.com"
-      - github.com/freefq - 瑞士Oracle Corporation 12
+      - 美国 019
+      - 美国【付费推荐：https://v1.mk/vip】148
+      - 中国【付费推荐：https://v1.mk/vip】136
+      - 香港1丨2x计费
+      - 中国【付费推荐：https://v1.mk/vip】212
+      - 中国【付费推荐：https://v1.mk/vip】203
+      - 中国【付费推荐：https://v1.mk/vip】139
+      - 德国 003
+      - 美国 040
+      - 中国【付费推荐：https://v1.mk/vip】196
+      - 中国【付费推荐：https://v1.mk/vip】176
+      - 美国 070
+      - 香港2丨2x计费
+      - 美国【付费推荐：https://v1.mk/vip】217
+      - 香港超高速专线 02
+      - 美国 087
+      - 中国【付费推荐：https://v1.mk/vip】187
+      - 中国【付费推荐：https://v1.mk/vip】191
+      - 中国【付费推荐：https://v1.mk/vip】184
+      - 中国【付费推荐：https://v1.mk/vip】135
+      - 中国【付费推荐：https://v1.mk/vip】138
+      - 美国 092
+      - 越南 004
+      - 加拿大 003
+      - 荷兰 003
+      - 中国【付费推荐：https://v1.mk/vip】173
+      - 香港【付费推荐：https://v1.mk/vip】225
+      - 美国 102
+      - 荷兰Eygelshoven | BT下载-0.1x
+      - "[03-05]-🇦🇺-澳大利亚-168-z0113.security-cloudfront-cdn.com"
+      - "[03-05]-🇺🇸-美国-150-z0111.security-cloudfront-cdn.com"
+      - 德国 001
+      - 美国 088
+      - 美国 065
+      - 美国 073
+      - 荷兰 002
+      - "|34.91Mb"
+      - 美国2号-0.1x
+      - 香港超高速专线 03
+      - 荷兰 001
+      - 美国 080
+      - 中国【付费推荐：https://v1.mk/vip】167
+      - 香港【付费推荐：https://v1.mk/vip】160
+      - 中国【付费推荐：https://v1.mk/vip】150
+      - 中国【付费推荐：https://v1.mk/vip】185
+      - 中国【付费推荐：https://v1.mk/vip】190
+      - 荷兰2 | BT下载-0.1x
+      - 中国【付费推荐：https://v1.mk/vip】186
+      - 俄罗斯 002
+      - 中国【付费推荐：https://v1.mk/vip】211
+      - 美国 101
+      - 美国 093
+      - 荷兰 | BT下载-0.1x
+      - 美国 094
+      - "[03-05]-🇸🇬-新加坡-036-sg-am3.eqsunshine.com"
+      - sg-am3.eqsunshine.com:32001
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港(TG频道@kxswa)
+      - 香港1丨2x计费
+      - 香港2丨2x计费
+      - 香港超高速专线 02
+      - 香港【付费推荐：https://v1.mk/vip】225
+      - 香港超高速专线 03
+      - 香港【付费推荐：https://v1.mk/vip】160
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[03-04]-🇸🇪-瑞典-039-z0117.security-cloudfront-cdn.com"
-      - "[03-04]-🇯🇵-日本-024-43.207.66.114"
-      - github.com/freefq - 德国  6
-      - 瑞士 001
-      - github.com/freefq - 印度尼西亚  10
-      - 香港(TG频道@kxswa)
-      - _SE_瑞典
-      - 中国【付费推荐：https://v1.mk/vip】143
+      - 美国【付费推荐：https://v1.mk/vip】144
       - 瑞典 001
-      - 美国 009
-      - 美国(TG频道@kxswa)
-      - _CN_中国_2
-      - 中国(TG频道@kxswa)
-      - 中国【付费推荐：https://v1.mk/vip】42
-      - github.com/freefq - 新加坡Amazon数据中心 22
-      - "[03-04]-🇫🇷-法国-225-z0111.security-cloudfront-cdn.com"
-      - github.com/freefq - 瑞士Oracle Corporation 12
+      - 美国 019
+      - 美国【付费推荐：https://v1.mk/vip】148
+      - 中国【付费推荐：https://v1.mk/vip】136
+      - 香港1丨2x计费
+      - 中国【付费推荐：https://v1.mk/vip】212
+      - 中国【付费推荐：https://v1.mk/vip】203
+      - 中国【付费推荐：https://v1.mk/vip】139
+      - 德国 003
+      - 美国 040
+      - 中国【付费推荐：https://v1.mk/vip】196
+      - 中国【付费推荐：https://v1.mk/vip】176
+      - 美国 070
+      - 香港2丨2x计费
+      - 美国【付费推荐：https://v1.mk/vip】217
+      - 香港超高速专线 02
+      - 美国 087
+      - 中国【付费推荐：https://v1.mk/vip】187
+      - 中国【付费推荐：https://v1.mk/vip】191
+      - 中国【付费推荐：https://v1.mk/vip】184
+      - 中国【付费推荐：https://v1.mk/vip】135
+      - 中国【付费推荐：https://v1.mk/vip】138
+      - 美国 092
+      - 越南 004
+      - 加拿大 003
+      - 荷兰 003
+      - 中国【付费推荐：https://v1.mk/vip】173
+      - 香港【付费推荐：https://v1.mk/vip】225
+      - 美国 102
+      - 荷兰Eygelshoven | BT下载-0.1x
+      - "[03-05]-🇦🇺-澳大利亚-168-z0113.security-cloudfront-cdn.com"
+      - "[03-05]-🇺🇸-美国-150-z0111.security-cloudfront-cdn.com"
+      - 德国 001
+      - 美国 088
+      - 美国 065
+      - 美国 073
+      - 荷兰 002
+      - "|34.91Mb"
+      - 美国2号-0.1x
+      - 香港超高速专线 03
+      - 荷兰 001
+      - 美国 080
+      - 中国【付费推荐：https://v1.mk/vip】167
+      - 香港【付费推荐：https://v1.mk/vip】160
+      - 中国【付费推荐：https://v1.mk/vip】150
+      - 中国【付费推荐：https://v1.mk/vip】185
+      - 中国【付费推荐：https://v1.mk/vip】190
+      - 荷兰2 | BT下载-0.1x
+      - 中国【付费推荐：https://v1.mk/vip】186
+      - 俄罗斯 002
+      - 中国【付费推荐：https://v1.mk/vip】211
+      - 美国 101
+      - 美国 093
+      - 荷兰 | BT下载-0.1x
+      - 美国 094
+      - "[03-05]-🇸🇬-新加坡-036-sg-am3.eqsunshine.com"
+      - sg-am3.eqsunshine.com:32001
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[03-04]-🇸🇪-瑞典-039-z0117.security-cloudfront-cdn.com"
-      - "[03-04]-🇯🇵-日本-024-43.207.66.114"
-      - github.com/freefq - 德国  6
-      - 瑞士 001
-      - github.com/freefq - 印度尼西亚  10
-      - 香港(TG频道@kxswa)
-      - _SE_瑞典
-      - 中国【付费推荐：https://v1.mk/vip】143
+      - 美国【付费推荐：https://v1.mk/vip】144
       - 瑞典 001
-      - 美国 009
-      - 美国(TG频道@kxswa)
-      - _CN_中国_2
-      - 中国(TG频道@kxswa)
-      - 中国【付费推荐：https://v1.mk/vip】42
-      - github.com/freefq - 新加坡Amazon数据中心 22
-      - "[03-04]-🇫🇷-法国-225-z0111.security-cloudfront-cdn.com"
-      - github.com/freefq - 瑞士Oracle Corporation 12
+      - 美国 019
+      - 美国【付费推荐：https://v1.mk/vip】148
+      - 中国【付费推荐：https://v1.mk/vip】136
+      - 香港1丨2x计费
+      - 中国【付费推荐：https://v1.mk/vip】212
+      - 中国【付费推荐：https://v1.mk/vip】203
+      - 中国【付费推荐：https://v1.mk/vip】139
+      - 德国 003
+      - 美国 040
+      - 中国【付费推荐：https://v1.mk/vip】196
+      - 中国【付费推荐：https://v1.mk/vip】176
+      - 美国 070
+      - 香港2丨2x计费
+      - 美国【付费推荐：https://v1.mk/vip】217
+      - 香港超高速专线 02
+      - 美国 087
+      - 中国【付费推荐：https://v1.mk/vip】187
+      - 中国【付费推荐：https://v1.mk/vip】191
+      - 中国【付费推荐：https://v1.mk/vip】184
+      - 中国【付费推荐：https://v1.mk/vip】135
+      - 中国【付费推荐：https://v1.mk/vip】138
+      - 美国 092
+      - 越南 004
+      - 加拿大 003
+      - 荷兰 003
+      - 中国【付费推荐：https://v1.mk/vip】173
+      - 香港【付费推荐：https://v1.mk/vip】225
+      - 美国 102
+      - 荷兰Eygelshoven | BT下载-0.1x
+      - "[03-05]-🇦🇺-澳大利亚-168-z0113.security-cloudfront-cdn.com"
+      - "[03-05]-🇺🇸-美国-150-z0111.security-cloudfront-cdn.com"
+      - 德国 001
+      - 美国 088
+      - 美国 065
+      - 美国 073
+      - 荷兰 002
+      - "|34.91Mb"
+      - 美国2号-0.1x
+      - 香港超高速专线 03
+      - 荷兰 001
+      - 美国 080
+      - 中国【付费推荐：https://v1.mk/vip】167
+      - 香港【付费推荐：https://v1.mk/vip】160
+      - 中国【付费推荐：https://v1.mk/vip】150
+      - 中国【付费推荐：https://v1.mk/vip】185
+      - 中国【付费推荐：https://v1.mk/vip】190
+      - 荷兰2 | BT下载-0.1x
+      - 中国【付费推荐：https://v1.mk/vip】186
+      - 俄罗斯 002
+      - 中国【付费推荐：https://v1.mk/vip】211
+      - 美国 101
+      - 美国 093
+      - 荷兰 | BT下载-0.1x
+      - 美国 094
+      - "[03-05]-🇸🇬-新加坡-036-sg-am3.eqsunshine.com"
+      - sg-am3.eqsunshine.com:32001
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[03-04]-🇸🇪-瑞典-039-z0117.security-cloudfront-cdn.com"
-      - "[03-04]-🇯🇵-日本-024-43.207.66.114"
-      - github.com/freefq - 德国  6
-      - 瑞士 001
-      - github.com/freefq - 印度尼西亚  10
-      - 香港(TG频道@kxswa)
-      - _SE_瑞典
-      - 中国【付费推荐：https://v1.mk/vip】143
+      - 美国【付费推荐：https://v1.mk/vip】144
       - 瑞典 001
-      - 美国 009
-      - 美国(TG频道@kxswa)
-      - _CN_中国_2
-      - 中国(TG频道@kxswa)
-      - 中国【付费推荐：https://v1.mk/vip】42
-      - github.com/freefq - 新加坡Amazon数据中心 22
-      - "[03-04]-🇫🇷-法国-225-z0111.security-cloudfront-cdn.com"
-      - github.com/freefq - 瑞士Oracle Corporation 12
+      - 美国 019
+      - 美国【付费推荐：https://v1.mk/vip】148
+      - 中国【付费推荐：https://v1.mk/vip】136
+      - 香港1丨2x计费
+      - 中国【付费推荐：https://v1.mk/vip】212
+      - 中国【付费推荐：https://v1.mk/vip】203
+      - 中国【付费推荐：https://v1.mk/vip】139
+      - 德国 003
+      - 美国 040
+      - 中国【付费推荐：https://v1.mk/vip】196
+      - 中国【付费推荐：https://v1.mk/vip】176
+      - 美国 070
+      - 香港2丨2x计费
+      - 美国【付费推荐：https://v1.mk/vip】217
+      - 香港超高速专线 02
+      - 美国 087
+      - 中国【付费推荐：https://v1.mk/vip】187
+      - 中国【付费推荐：https://v1.mk/vip】191
+      - 中国【付费推荐：https://v1.mk/vip】184
+      - 中国【付费推荐：https://v1.mk/vip】135
+      - 中国【付费推荐：https://v1.mk/vip】138
+      - 美国 092
+      - 越南 004
+      - 加拿大 003
+      - 荷兰 003
+      - 中国【付费推荐：https://v1.mk/vip】173
+      - 香港【付费推荐：https://v1.mk/vip】225
+      - 美国 102
+      - 荷兰Eygelshoven | BT下载-0.1x
+      - "[03-05]-🇦🇺-澳大利亚-168-z0113.security-cloudfront-cdn.com"
+      - "[03-05]-🇺🇸-美国-150-z0111.security-cloudfront-cdn.com"
+      - 德国 001
+      - 美国 088
+      - 美国 065
+      - 美国 073
+      - 荷兰 002
+      - "|34.91Mb"
+      - 美国2号-0.1x
+      - 香港超高速专线 03
+      - 荷兰 001
+      - 美国 080
+      - 中国【付费推荐：https://v1.mk/vip】167
+      - 香港【付费推荐：https://v1.mk/vip】160
+      - 中国【付费推荐：https://v1.mk/vip】150
+      - 中国【付费推荐：https://v1.mk/vip】185
+      - 中国【付费推荐：https://v1.mk/vip】190
+      - 荷兰2 | BT下载-0.1x
+      - 中国【付费推荐：https://v1.mk/vip】186
+      - 俄罗斯 002
+      - 中国【付费推荐：https://v1.mk/vip】211
+      - 美国 101
+      - 美国 093
+      - 荷兰 | BT下载-0.1x
+      - 美国 094
+      - "[03-05]-🇸🇬-新加坡-036-sg-am3.eqsunshine.com"
+      - sg-am3.eqsunshine.com:32001
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -214,23 +547,64 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[03-04]-🇸🇪-瑞典-039-z0117.security-cloudfront-cdn.com"
-      - "[03-04]-🇯🇵-日本-024-43.207.66.114"
-      - github.com/freefq - 德国  6
-      - 瑞士 001
-      - github.com/freefq - 印度尼西亚  10
-      - 香港(TG频道@kxswa)
-      - _SE_瑞典
-      - 中国【付费推荐：https://v1.mk/vip】143
+      - 美国【付费推荐：https://v1.mk/vip】144
       - 瑞典 001
-      - 美国 009
-      - 美国(TG频道@kxswa)
-      - _CN_中国_2
-      - 中国(TG频道@kxswa)
-      - 中国【付费推荐：https://v1.mk/vip】42
-      - github.com/freefq - 新加坡Amazon数据中心 22
-      - "[03-04]-🇫🇷-法国-225-z0111.security-cloudfront-cdn.com"
-      - github.com/freefq - 瑞士Oracle Corporation 12
+      - 美国 019
+      - 美国【付费推荐：https://v1.mk/vip】148
+      - 中国【付费推荐：https://v1.mk/vip】136
+      - 香港1丨2x计费
+      - 中国【付费推荐：https://v1.mk/vip】212
+      - 中国【付费推荐：https://v1.mk/vip】203
+      - 中国【付费推荐：https://v1.mk/vip】139
+      - 德国 003
+      - 美国 040
+      - 中国【付费推荐：https://v1.mk/vip】196
+      - 中国【付费推荐：https://v1.mk/vip】176
+      - 美国 070
+      - 香港2丨2x计费
+      - 美国【付费推荐：https://v1.mk/vip】217
+      - 香港超高速专线 02
+      - 美国 087
+      - 中国【付费推荐：https://v1.mk/vip】187
+      - 中国【付费推荐：https://v1.mk/vip】191
+      - 中国【付费推荐：https://v1.mk/vip】184
+      - 中国【付费推荐：https://v1.mk/vip】135
+      - 中国【付费推荐：https://v1.mk/vip】138
+      - 美国 092
+      - 越南 004
+      - 加拿大 003
+      - 荷兰 003
+      - 中国【付费推荐：https://v1.mk/vip】173
+      - 香港【付费推荐：https://v1.mk/vip】225
+      - 美国 102
+      - 荷兰Eygelshoven | BT下载-0.1x
+      - "[03-05]-🇦🇺-澳大利亚-168-z0113.security-cloudfront-cdn.com"
+      - "[03-05]-🇺🇸-美国-150-z0111.security-cloudfront-cdn.com"
+      - 德国 001
+      - 美国 088
+      - 美国 065
+      - 美国 073
+      - 荷兰 002
+      - "|34.91Mb"
+      - 美国2号-0.1x
+      - 香港超高速专线 03
+      - 荷兰 001
+      - 美国 080
+      - 中国【付费推荐：https://v1.mk/vip】167
+      - 香港【付费推荐：https://v1.mk/vip】160
+      - 中国【付费推荐：https://v1.mk/vip】150
+      - 中国【付费推荐：https://v1.mk/vip】185
+      - 中国【付费推荐：https://v1.mk/vip】190
+      - 荷兰2 | BT下载-0.1x
+      - 中国【付费推荐：https://v1.mk/vip】186
+      - 俄罗斯 002
+      - 中国【付费推荐：https://v1.mk/vip】211
+      - 美国 101
+      - 美国 093
+      - 荷兰 | BT下载-0.1x
+      - 美国 094
+      - "[03-05]-🇸🇬-新加坡-036-sg-am3.eqsunshine.com"
+      - sg-am3.eqsunshine.com:32001
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
