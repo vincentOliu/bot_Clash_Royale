@@ -6,103 +6,179 @@ mode: Rule
 log-level: info
 external-controller: 9090
 proxies:
-  - {name: 美国 062, server: us.disnet.gq, port: 443, type: trojan, password: 7c7e0edb-c45a-4c07-b66a-69b191179349, skip-cert-verify: true, udp: true}
-  - {name: "_NL_荷兰\r_2", server: 185.212.200.76, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
-  - {name: "_CN_中国->🇹🇼_TW_台湾\r", server: 500.sayitfree.website, port: 61003, type: ss, cipher: chacha20-ietf-poly1305, password: 3307ba30-a638-490a-9910-672c4049a722, udp: true}
+  - {name: "[03-11]-🇺🇸-美国-209-13.215.154.95", server: 13.215.154.95, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 澳大利亚 017, server: 43.156.110.222, port: 39630, type: vmess, uuid: f21f434d-8097-4302-9c0c-0b0c7dffcfcb, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sg6/getData}, udp: true}
+  - {name: 美国 068, server: 011124.xyz, port: 443, type: vmess, uuid: e7605e13-6320-4b9a-a5bb-db095880900b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /e7605e13-6320-4b9a-a5bb-db095880900b, headers: {Host: 011124.xyz}}, udp: true}
+  - {name: -法国-188.165.170.83, server: 188.165.170.83, port: 80, type: vmess, uuid: 860a862a-2798-4037-8513-b060e310e7fc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 台湾_0310423, server: 165.154.246.103, port: 80, type: vmess, uuid: adb909bb-0486-36e0-a1de-57c69571df87, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /adobe}, udp: true}
+  - {name: 美国 075, server: jp2.af49c4e4c2ef.sanfen001.pics, port: 2004, type: vmess, uuid: 9d4f9d66-407c-4c1b-b594-41e20a776ce3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cn, headers: {Host: aws.amazon.com}}, udp: true}
+  - {name: 越南_0310028, server: 49.236.209.45, port: 80, type: vmess, uuid: 5bb6b5c3-40dd-4a1f-9f43-802320cc5b56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /project4gyuna.pw, headers: {Host: dizme.sni.lifebox.lordvcl.trash.vcl.vutmevaosotrac.akmaized.net.tv360.com.viettelidc.cloud.tv360.snidaivaicalon.daivaichuong.yunactv.vietteltelecom.tv360.appfly3m.project4gyuna.pw.yunagrp.xyz.appsflyer.com}}, udp: true}
+  - {name: _CN_中国->🇸🇬_SG_新加坡, server: 2f36c18cfe75.sanfen001.pics, port: 15526, type: vmess, uuid: 235d3cf3-6527-4124-abf6-79d1d901a4c8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国_3, server: 144.34.175.46, port: 80, type: vmess, uuid: 751192f4-437e-4ea9-f34f-4f0252509267, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: _HK_香港_7, server: 8.218.183.217, port: 64098, type: vmess, uuid: 7243a003-b59a-4686-b460-950fdf61819b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: bulink自建免费11线 三网, server: la56.burstlinker.com.fobzs.com, port: 443, type: vmess, uuid: 998b144b-6616-4f72-8024-7bf9d1f3afa5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: la56.burstlinker.com.fobzs.com}}, udp: true}
+  - {name: _HK_香港_2, server: 8.218.184.30, port: 25800, type: vmess, uuid: af6d7eb3-c0e5-4bd8-b650-5ffd299be97c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: US_SSRSUB_180, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/pq/fr1?ed=2048", headers: {Host: fr1.pqjc.buzz}}, udp: true}
+  - {name: US_SSRSUB_22, server: 172.67.137.72, port: 443, type: vmess, uuid: db39ef95-4245-418a-84c0-14c202f29bc6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /videnset, headers: {Host: khvwycch.cymlr.xyz}}, udp: true}
+  - {name: _CN_中国_2, server: hn.xiaohouzi.club, port: 18835, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24feilvbin.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: "美国【付费推荐：https://v1.mk/vip】163\r", server: us-sjc.okman.cf, port: 2096, type: trojan, password: f62b7fbe09, sni: us-sjc.okman.cf, skip-cert-verify: true, udp: true}
+  - {name: "英国【付费推荐：https://v1.mk/vip】109\r", server: 212.102.53.80, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 印度尼西亚_0310004, server: 147.139.160.130, port: 80, type: vmess, uuid: b9f6ef01-a4a6-4a95-8c22-59666be14599, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: "荷兰【付费推荐：https://v1.mk/vip】214\r", server: 185.212.200.76, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
+  - {name: AM_SSRSUB_31, server: 185.162.228.110, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: BZ_SSRSUB_145, server: 203.30.191.2, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: CA_SSRSUB_168, server: 23.227.38.26, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: CA_SSRSUB_66, server: 23.227.38.23, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: CA_SSRSUB_86, server: 23.227.38.24, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: US_SSRSUB_178, server: news.microsoft.com, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
+  - {name: US_SSRSUB_198, server: 172.67.199.34, port: 443, type: vmess, uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shares, headers: {Host: la.awsbest.com}}, udp: true}
+  - {name: US_SSRSUB_215, server: 172.67.135.55, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: US_SSRSUB_79, server: 141.193.213.21, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
+  - {name: _HK_香港_11, server: 8.218.168.163, port: 42675, type: vmess, uuid: 6f532e4c-1ea2-4e1d-a18a-af34c766ea02, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: _HK_香港_5, server: 8.218.180.44, port: 30840, type: vmess, uuid: 99ac8983-3728-4302-a5e7-171099928c00, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
   - {name: _HK_香港_1, server: 8.218.178.58, port: 53207, type: vmess, uuid: 9930e472-959f-4649-aa19-09354073fabc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】305, server: hn.xiaohouzi.club, port: 18581, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_6, server: 8.218.168.163, port: 42675, type: vmess, uuid: 6f532e4c-1ea2-4e1d-a18a-af34c766ea02, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: US_SSRSUB_175, server: 103.21.244.173, port: 80, type: vmess, uuid: f7738290-ba04-4dd1-b4f3-e6863a9e1c8a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: zzsg.nmsl.pics}}, udp: true}
-  - {name: _TW_台湾, server: twweb.dashedu.net, port: 50516, type: vmess, uuid: dd28265e-cda9-4638-8072-93170203f71a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_1 2, server: 8.218.184.220, port: 52214, type: vmess, uuid: 3b776f57-8b04-498e-89d7-cb5c640eede8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _HK_香港_5, server: 8.218.183.217, port: 64098, type: vmess, uuid: 7243a003-b59a-4686-b460-950fdf61819b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 香港【付费推荐：https://v1.mk/vip】457, server: 8.218.150.152, port: 45106, type: vmess, uuid: aa7f7fd3-8f88-45c7-9e27-a03380d6cc89, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _HK_香港_4, server: 47.243.174.8, port: 26234, type: vmess, uuid: 2f0e176d-c1a4-4672-90cb-e81a80c7e684, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 澳大利亚 002, server: 43.156.110.222, port: 39630, type: vmess, uuid: f21f434d-8097-4302-9c0c-0b0c7dffcfcb, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sg6/getData, headers: {Host: sg6.verichains.co}}, udp: true}
-  - {name: v2rayfree.eu.org - 美国弗吉尼亚州阿什本NV NEXT数据中心 7, server: 173.245.49.8, port: 443, type: vmess, uuid: 9a18cbb1-81d2-4720-9f09-46ea276b6ddb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /huhublog, headers: {Host: zhuyong.hucloud-dns.xyz}}, udp: true}
-  - {name: v2rayfree.eu.org - 韩国首尔Oracle云计算数据中心 1, server: surongwei.eu.org, port: 443, type: vmess, uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /reffs7y26g0ua, headers: {Host: surongwei.eu.org}}, udp: true}
-  - {name: "_KR_韩国\r_3", server: op.en.usdeth.top, port: 449, type: trojan, password: 9a9326c1-d05c-4c6c-bd8b-509a69143639, sni: op.en.usdeth.top, skip-cert-verify: true, udp: true}
-  - {name: 「SCP」NL-CF, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: nl1.scproxy.top}}, udp: true}
-  - {name: v2rayfree.eu.org - 法国格拉沃利讷OVH 9, server: t3.teslacdn2.live, port: 443, type: trojan, password: e1c12e6f-a555-4ff8-b071-1e09dd5d91e6, skip-cert-verify: true, udp: true}
-  - {name: 阿联酋(TG频道@kxswa), server: dubai-m.4422331.xyz, port: 10086, type: trojan, password: 4134219f-2384-449c-92e9-50fe8474c30a, sni: dubai-m.4422331.xyz, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_2, server: 8.218.181.75, port: 57408, type: vmess, uuid: a93df277-c3a8-4948-abd1-663722cb32b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: _HK_香港_8, server: 8.218.183.204, port: 59544, type: vmess, uuid: ed617ad5-803e-4dc6-b475-babead4c83e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: _US_美国->🇩🇪_DE_德国_2, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/pq/nl1?ed=2048", headers: {Host: nl1.pqjc.buzz}}, udp: true}
+  - {name: _HK_香港_3, server: 8.218.182.129, port: 27191, type: vmess, uuid: a7be7873-3f6f-4aec-a24d-dba051e3283a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: US_SSRSUB_190, server: 172.67.164.123, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】165, server: 144.34.175.46, port: 80, type: vmess, uuid: 751192f4-437e-4ea9-f34f-4f0252509267, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 144.34.175.46}}, udp: true}
+  - {name: 巴拿马【付费推荐：https://v1.mk/vip】222, server: 185.143.220.25, port: 443, type: vmess, uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /6e9EtZ2dL, headers: {Host: dengxin.one}}, udp: true}
+  - {name: "中国【付费推荐：https://v1.mk/vip】230\r", server: iplc.xiaohouzi.club, port: 20039, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: iplc.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: "中国【付费推荐：https://v1.mk/vip】308\r", server: hn.xiaohouzi.club, port: 18735, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: ajpn05.xiaohouzi.club, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 062
-      - "_NL_荷兰\r_2"
-      - "_CN_中国->🇹🇼_TW_台湾\r"
-      - _HK_香港_1
-      - 中国【付费推荐：https://v1.mk/vip】305
-      - _HK_香港_6
-      - US_SSRSUB_175
-      - _TW_台湾
-      - _HK_香港_1 2
-      - _HK_香港_5
-      - 香港【付费推荐：https://v1.mk/vip】457
-      - _HK_香港_4
-      - 澳大利亚 002
-      - v2rayfree.eu.org - 美国弗吉尼亚州阿什本NV NEXT数据中心 7
-      - v2rayfree.eu.org - 韩国首尔Oracle云计算数据中心 1
-      - "_KR_韩国\r_3"
-      - 「SCP」NL-CF
-      - v2rayfree.eu.org - 法国格拉沃利讷OVH 9
-      - 阿联酋(TG频道@kxswa)
+      - "[03-11]-🇺🇸-美国-209-13.215.154.95"
+      - 澳大利亚 017
+      - 美国 068
+      - -法国-188.165.170.83
+      - 台湾_0310423
+      - 美国 075
+      - 越南_0310028
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _US_美国_3
+      - _HK_香港_7
+      - bulink自建免费11线 三网
       - _HK_香港_2
+      - US_SSRSUB_180
+      - US_SSRSUB_22
+      - _CN_中国_2
+      - "美国【付费推荐：https://v1.mk/vip】163\r"
+      - "英国【付费推荐：https://v1.mk/vip】109\r"
+      - 印度尼西亚_0310004
+      - "荷兰【付费推荐：https://v1.mk/vip】214\r"
+      - AM_SSRSUB_31
+      - BZ_SSRSUB_145
+      - CA_SSRSUB_168
+      - CA_SSRSUB_66
+      - CA_SSRSUB_86
+      - US_SSRSUB_178
+      - US_SSRSUB_198
+      - US_SSRSUB_215
+      - US_SSRSUB_79
+      - _HK_香港_11
+      - _HK_香港_5
+      - _HK_香港_1
+      - _HK_香港_8
+      - _US_美国->🇩🇪_DE_德国_2
+      - _HK_香港_3
+      - US_SSRSUB_190
+      - 美国【付费推荐：https://v1.mk/vip】165
+      - 巴拿马【付费推荐：https://v1.mk/vip】222
+      - "中国【付费推荐：https://v1.mk/vip】230\r"
+      - "中国【付费推荐：https://v1.mk/vip】308\r"
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - 美国 062
-      - "_NL_荷兰\r_2"
-      - "_CN_中国->🇹🇼_TW_台湾\r"
-      - _HK_香港_1
-      - 中国【付费推荐：https://v1.mk/vip】305
-      - _HK_香港_6
-      - US_SSRSUB_175
-      - _TW_台湾
-      - _HK_香港_1 2
-      - _HK_香港_5
-      - 香港【付费推荐：https://v1.mk/vip】457
-      - _HK_香港_4
-      - 澳大利亚 002
-      - v2rayfree.eu.org - 美国弗吉尼亚州阿什本NV NEXT数据中心 7
-      - v2rayfree.eu.org - 韩国首尔Oracle云计算数据中心 1
-      - "_KR_韩国\r_3"
-      - 「SCP」NL-CF
-      - v2rayfree.eu.org - 法国格拉沃利讷OVH 9
-      - 阿联酋(TG频道@kxswa)
+      - "[03-11]-🇺🇸-美国-209-13.215.154.95"
+      - 澳大利亚 017
+      - 美国 068
+      - -法国-188.165.170.83
+      - 台湾_0310423
+      - 美国 075
+      - 越南_0310028
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _US_美国_3
+      - _HK_香港_7
+      - bulink自建免费11线 三网
       - _HK_香港_2
+      - US_SSRSUB_180
+      - US_SSRSUB_22
+      - _CN_中国_2
+      - "美国【付费推荐：https://v1.mk/vip】163\r"
+      - "英国【付费推荐：https://v1.mk/vip】109\r"
+      - 印度尼西亚_0310004
+      - "荷兰【付费推荐：https://v1.mk/vip】214\r"
+      - AM_SSRSUB_31
+      - BZ_SSRSUB_145
+      - CA_SSRSUB_168
+      - CA_SSRSUB_66
+      - CA_SSRSUB_86
+      - US_SSRSUB_178
+      - US_SSRSUB_198
+      - US_SSRSUB_215
+      - US_SSRSUB_79
+      - _HK_香港_11
+      - _HK_香港_5
+      - _HK_香港_1
+      - _HK_香港_8
+      - _US_美国->🇩🇪_DE_德国_2
+      - _HK_香港_3
+      - US_SSRSUB_190
+      - 美国【付费推荐：https://v1.mk/vip】165
+      - 巴拿马【付费推荐：https://v1.mk/vip】222
+      - "中国【付费推荐：https://v1.mk/vip】230\r"
+      - "中国【付费推荐：https://v1.mk/vip】308\r"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 062
-      - "_NL_荷兰\r_2"
-      - "_CN_中国->🇹🇼_TW_台湾\r"
-      - _HK_香港_1
-      - 中国【付费推荐：https://v1.mk/vip】305
-      - _HK_香港_6
-      - US_SSRSUB_175
-      - _TW_台湾
-      - _HK_香港_1 2
-      - _HK_香港_5
-      - 香港【付费推荐：https://v1.mk/vip】457
-      - _HK_香港_4
-      - 澳大利亚 002
-      - v2rayfree.eu.org - 美国弗吉尼亚州阿什本NV NEXT数据中心 7
-      - v2rayfree.eu.org - 韩国首尔Oracle云计算数据中心 1
-      - "_KR_韩国\r_3"
-      - 「SCP」NL-CF
-      - v2rayfree.eu.org - 法国格拉沃利讷OVH 9
-      - 阿联酋(TG频道@kxswa)
+      - "[03-11]-🇺🇸-美国-209-13.215.154.95"
+      - 澳大利亚 017
+      - 美国 068
+      - -法国-188.165.170.83
+      - 台湾_0310423
+      - 美国 075
+      - 越南_0310028
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _US_美国_3
+      - _HK_香港_7
+      - bulink自建免费11线 三网
       - _HK_香港_2
+      - US_SSRSUB_180
+      - US_SSRSUB_22
+      - _CN_中国_2
+      - "美国【付费推荐：https://v1.mk/vip】163\r"
+      - "英国【付费推荐：https://v1.mk/vip】109\r"
+      - 印度尼西亚_0310004
+      - "荷兰【付费推荐：https://v1.mk/vip】214\r"
+      - AM_SSRSUB_31
+      - BZ_SSRSUB_145
+      - CA_SSRSUB_168
+      - CA_SSRSUB_66
+      - CA_SSRSUB_86
+      - US_SSRSUB_178
+      - US_SSRSUB_198
+      - US_SSRSUB_215
+      - US_SSRSUB_79
+      - _HK_香港_11
+      - _HK_香港_5
+      - _HK_香港_1
+      - _HK_香港_8
+      - _US_美国->🇩🇪_DE_德国_2
+      - _HK_香港_3
+      - US_SSRSUB_190
+      - 美国【付费推荐：https://v1.mk/vip】165
+      - 巴拿马【付费推荐：https://v1.mk/vip】222
+      - "中国【付费推荐：https://v1.mk/vip】230\r"
+      - "中国【付费推荐：https://v1.mk/vip】308\r"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -121,116 +197,191 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 062
-      - "_NL_荷兰\r_2"
-      - "_CN_中国->🇹🇼_TW_台湾\r"
-      - _HK_香港_1
-      - 中国【付费推荐：https://v1.mk/vip】305
-      - _HK_香港_6
-      - US_SSRSUB_175
-      - _TW_台湾
-      - _HK_香港_1 2
-      - _HK_香港_5
-      - 香港【付费推荐：https://v1.mk/vip】457
-      - _HK_香港_4
-      - 澳大利亚 002
-      - v2rayfree.eu.org - 美国弗吉尼亚州阿什本NV NEXT数据中心 7
-      - v2rayfree.eu.org - 韩国首尔Oracle云计算数据中心 1
-      - "_KR_韩国\r_3"
-      - 「SCP」NL-CF
-      - v2rayfree.eu.org - 法国格拉沃利讷OVH 9
-      - 阿联酋(TG频道@kxswa)
+      - "[03-11]-🇺🇸-美国-209-13.215.154.95"
+      - 澳大利亚 017
+      - 美国 068
+      - -法国-188.165.170.83
+      - 台湾_0310423
+      - 美国 075
+      - 越南_0310028
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _US_美国_3
+      - _HK_香港_7
+      - bulink自建免费11线 三网
       - _HK_香港_2
+      - US_SSRSUB_180
+      - US_SSRSUB_22
+      - _CN_中国_2
+      - "美国【付费推荐：https://v1.mk/vip】163\r"
+      - "英国【付费推荐：https://v1.mk/vip】109\r"
+      - 印度尼西亚_0310004
+      - "荷兰【付费推荐：https://v1.mk/vip】214\r"
+      - AM_SSRSUB_31
+      - BZ_SSRSUB_145
+      - CA_SSRSUB_168
+      - CA_SSRSUB_66
+      - CA_SSRSUB_86
+      - US_SSRSUB_178
+      - US_SSRSUB_198
+      - US_SSRSUB_215
+      - US_SSRSUB_79
+      - _HK_香港_11
+      - _HK_香港_5
+      - _HK_香港_1
+      - _HK_香港_8
+      - _US_美国->🇩🇪_DE_德国_2
+      - _HK_香港_3
+      - US_SSRSUB_190
+      - 美国【付费推荐：https://v1.mk/vip】165
+      - 巴拿马【付费推荐：https://v1.mk/vip】222
+      - "中国【付费推荐：https://v1.mk/vip】230\r"
+      - "中国【付费推荐：https://v1.mk/vip】308\r"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "_CN_中国->🇹🇼_TW_台湾\r"
-      - _HK_香港_1
-      - _HK_香港_6
-      - _TW_台湾
-      - _HK_香港_1 2
-      - _HK_香港_5
-      - 香港【付费推荐：https://v1.mk/vip】457
-      - _HK_香港_4
+      - 台湾_0310423
+      - _HK_香港_7
       - _HK_香港_2
+      - _HK_香港_11
+      - _HK_香港_5
+      - _HK_香港_1
+      - _HK_香港_8
+      - _HK_香港_3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国 062
-      - "_NL_荷兰\r_2"
-      - "_CN_中国->🇹🇼_TW_台湾\r"
-      - _HK_香港_1
-      - 中国【付费推荐：https://v1.mk/vip】305
-      - _HK_香港_6
-      - US_SSRSUB_175
-      - _TW_台湾
-      - _HK_香港_1 2
-      - _HK_香港_5
-      - 香港【付费推荐：https://v1.mk/vip】457
-      - _HK_香港_4
-      - 澳大利亚 002
-      - v2rayfree.eu.org - 美国弗吉尼亚州阿什本NV NEXT数据中心 7
-      - v2rayfree.eu.org - 韩国首尔Oracle云计算数据中心 1
-      - "_KR_韩国\r_3"
-      - 「SCP」NL-CF
-      - v2rayfree.eu.org - 法国格拉沃利讷OVH 9
-      - 阿联酋(TG频道@kxswa)
+      - "[03-11]-🇺🇸-美国-209-13.215.154.95"
+      - 澳大利亚 017
+      - 美国 068
+      - -法国-188.165.170.83
+      - 台湾_0310423
+      - 美国 075
+      - 越南_0310028
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _US_美国_3
+      - _HK_香港_7
+      - bulink自建免费11线 三网
       - _HK_香港_2
+      - US_SSRSUB_180
+      - US_SSRSUB_22
+      - _CN_中国_2
+      - "美国【付费推荐：https://v1.mk/vip】163\r"
+      - "英国【付费推荐：https://v1.mk/vip】109\r"
+      - 印度尼西亚_0310004
+      - "荷兰【付费推荐：https://v1.mk/vip】214\r"
+      - AM_SSRSUB_31
+      - BZ_SSRSUB_145
+      - CA_SSRSUB_168
+      - CA_SSRSUB_66
+      - CA_SSRSUB_86
+      - US_SSRSUB_178
+      - US_SSRSUB_198
+      - US_SSRSUB_215
+      - US_SSRSUB_79
+      - _HK_香港_11
+      - _HK_香港_5
+      - _HK_香港_1
+      - _HK_香港_8
+      - _US_美国->🇩🇪_DE_德国_2
+      - _HK_香港_3
+      - US_SSRSUB_190
+      - 美国【付费推荐：https://v1.mk/vip】165
+      - 巴拿马【付费推荐：https://v1.mk/vip】222
+      - "中国【付费推荐：https://v1.mk/vip】230\r"
+      - "中国【付费推荐：https://v1.mk/vip】308\r"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国 062
-      - "_NL_荷兰\r_2"
-      - "_CN_中国->🇹🇼_TW_台湾\r"
-      - _HK_香港_1
-      - 中国【付费推荐：https://v1.mk/vip】305
-      - _HK_香港_6
-      - US_SSRSUB_175
-      - _TW_台湾
-      - _HK_香港_1 2
-      - _HK_香港_5
-      - 香港【付费推荐：https://v1.mk/vip】457
-      - _HK_香港_4
-      - 澳大利亚 002
-      - v2rayfree.eu.org - 美国弗吉尼亚州阿什本NV NEXT数据中心 7
-      - v2rayfree.eu.org - 韩国首尔Oracle云计算数据中心 1
-      - "_KR_韩国\r_3"
-      - 「SCP」NL-CF
-      - v2rayfree.eu.org - 法国格拉沃利讷OVH 9
-      - 阿联酋(TG频道@kxswa)
+      - "[03-11]-🇺🇸-美国-209-13.215.154.95"
+      - 澳大利亚 017
+      - 美国 068
+      - -法国-188.165.170.83
+      - 台湾_0310423
+      - 美国 075
+      - 越南_0310028
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _US_美国_3
+      - _HK_香港_7
+      - bulink自建免费11线 三网
       - _HK_香港_2
+      - US_SSRSUB_180
+      - US_SSRSUB_22
+      - _CN_中国_2
+      - "美国【付费推荐：https://v1.mk/vip】163\r"
+      - "英国【付费推荐：https://v1.mk/vip】109\r"
+      - 印度尼西亚_0310004
+      - "荷兰【付费推荐：https://v1.mk/vip】214\r"
+      - AM_SSRSUB_31
+      - BZ_SSRSUB_145
+      - CA_SSRSUB_168
+      - CA_SSRSUB_66
+      - CA_SSRSUB_86
+      - US_SSRSUB_178
+      - US_SSRSUB_198
+      - US_SSRSUB_215
+      - US_SSRSUB_79
+      - _HK_香港_11
+      - _HK_香港_5
+      - _HK_香港_1
+      - _HK_香港_8
+      - _US_美国->🇩🇪_DE_德国_2
+      - _HK_香港_3
+      - US_SSRSUB_190
+      - 美国【付费推荐：https://v1.mk/vip】165
+      - 巴拿马【付费推荐：https://v1.mk/vip】222
+      - "中国【付费推荐：https://v1.mk/vip】230\r"
+      - "中国【付费推荐：https://v1.mk/vip】308\r"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 062
-      - "_NL_荷兰\r_2"
-      - "_CN_中国->🇹🇼_TW_台湾\r"
-      - _HK_香港_1
-      - 中国【付费推荐：https://v1.mk/vip】305
-      - _HK_香港_6
-      - US_SSRSUB_175
-      - _TW_台湾
-      - _HK_香港_1 2
-      - _HK_香港_5
-      - 香港【付费推荐：https://v1.mk/vip】457
-      - _HK_香港_4
-      - 澳大利亚 002
-      - v2rayfree.eu.org - 美国弗吉尼亚州阿什本NV NEXT数据中心 7
-      - v2rayfree.eu.org - 韩国首尔Oracle云计算数据中心 1
-      - "_KR_韩国\r_3"
-      - 「SCP」NL-CF
-      - v2rayfree.eu.org - 法国格拉沃利讷OVH 9
-      - 阿联酋(TG频道@kxswa)
+      - "[03-11]-🇺🇸-美国-209-13.215.154.95"
+      - 澳大利亚 017
+      - 美国 068
+      - -法国-188.165.170.83
+      - 台湾_0310423
+      - 美国 075
+      - 越南_0310028
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _US_美国_3
+      - _HK_香港_7
+      - bulink自建免费11线 三网
       - _HK_香港_2
+      - US_SSRSUB_180
+      - US_SSRSUB_22
+      - _CN_中国_2
+      - "美国【付费推荐：https://v1.mk/vip】163\r"
+      - "英国【付费推荐：https://v1.mk/vip】109\r"
+      - 印度尼西亚_0310004
+      - "荷兰【付费推荐：https://v1.mk/vip】214\r"
+      - AM_SSRSUB_31
+      - BZ_SSRSUB_145
+      - CA_SSRSUB_168
+      - CA_SSRSUB_66
+      - CA_SSRSUB_86
+      - US_SSRSUB_178
+      - US_SSRSUB_198
+      - US_SSRSUB_215
+      - US_SSRSUB_79
+      - _HK_香港_11
+      - _HK_香港_5
+      - _HK_香港_1
+      - _HK_香港_8
+      - _US_美国->🇩🇪_DE_德国_2
+      - _HK_香港_3
+      - US_SSRSUB_190
+      - 美国【付费推荐：https://v1.mk/vip】165
+      - 巴拿马【付费推荐：https://v1.mk/vip】222
+      - "中国【付费推荐：https://v1.mk/vip】230\r"
+      - "中国【付费推荐：https://v1.mk/vip】308\r"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -246,26 +397,45 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 062
-      - "_NL_荷兰\r_2"
-      - "_CN_中国->🇹🇼_TW_台湾\r"
-      - _HK_香港_1
-      - 中国【付费推荐：https://v1.mk/vip】305
-      - _HK_香港_6
-      - US_SSRSUB_175
-      - _TW_台湾
-      - _HK_香港_1 2
-      - _HK_香港_5
-      - 香港【付费推荐：https://v1.mk/vip】457
-      - _HK_香港_4
-      - 澳大利亚 002
-      - v2rayfree.eu.org - 美国弗吉尼亚州阿什本NV NEXT数据中心 7
-      - v2rayfree.eu.org - 韩国首尔Oracle云计算数据中心 1
-      - "_KR_韩国\r_3"
-      - 「SCP」NL-CF
-      - v2rayfree.eu.org - 法国格拉沃利讷OVH 9
-      - 阿联酋(TG频道@kxswa)
+      - "[03-11]-🇺🇸-美国-209-13.215.154.95"
+      - 澳大利亚 017
+      - 美国 068
+      - -法国-188.165.170.83
+      - 台湾_0310423
+      - 美国 075
+      - 越南_0310028
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _US_美国_3
+      - _HK_香港_7
+      - bulink自建免费11线 三网
       - _HK_香港_2
+      - US_SSRSUB_180
+      - US_SSRSUB_22
+      - _CN_中国_2
+      - "美国【付费推荐：https://v1.mk/vip】163\r"
+      - "英国【付费推荐：https://v1.mk/vip】109\r"
+      - 印度尼西亚_0310004
+      - "荷兰【付费推荐：https://v1.mk/vip】214\r"
+      - AM_SSRSUB_31
+      - BZ_SSRSUB_145
+      - CA_SSRSUB_168
+      - CA_SSRSUB_66
+      - CA_SSRSUB_86
+      - US_SSRSUB_178
+      - US_SSRSUB_198
+      - US_SSRSUB_215
+      - US_SSRSUB_79
+      - _HK_香港_11
+      - _HK_香港_5
+      - _HK_香港_1
+      - _HK_香港_8
+      - _US_美国->🇩🇪_DE_德国_2
+      - _HK_香港_3
+      - US_SSRSUB_190
+      - 美国【付费推荐：https://v1.mk/vip】165
+      - 巴拿马【付费推荐：https://v1.mk/vip】222
+      - "中国【付费推荐：https://v1.mk/vip】230\r"
+      - "中国【付费推荐：https://v1.mk/vip】308\r"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
