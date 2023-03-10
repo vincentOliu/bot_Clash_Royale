@@ -6,119 +6,207 @@ mode: Rule
 log-level: info
 external-controller: 9090
 proxies:
-  - {name: _HK_香港_6, server: 8.218.168.163, port: 42675, type: vmess, uuid: 6f532e4c-1ea2-4e1d-a18a-af34c766ea02, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 美国 017, server: render-efeh.onrender.com, port: 443, type: vmess, uuid: 87ceb800-6a97-4dbb-b4fc-3f71a5d03931, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: render-efeh.onrender.com}}, udp: true}
-  - {name: 中国(TG频道@kxswa), server: 111.22.122.189, port: 29867, type: vmess, uuid: afe791b9-3047-3510-b619-f6d816929f26, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港(TG频道@kxswa), server: hk80-2.af49c4e4c2ef.sanfen001.pics, port: 80, type: vmess, uuid: dcea7f3e-98ba-4ac8-a294-5092dc381a57, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn/, headers: {Host: hk80-2.af49c4e4c2ef.sanfen001.pics}}, udp: true}
-  - {name: 澳大利亚 003, server: 43.155.102.33, port: 55543, type: vmess, uuid: 4592247e-1528-4943-8bf3-cd9bb58b31c0, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hk6/getData, headers: {Host: hk6.verichains.co}}, udp: true}
-  - {name: 美国(TG频道@kxswa), server: 43.153.36.204, port: 56504, type: vmess, uuid: 520dbae8-b01b-4f34-b15b-5754a2a12195, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_1, server: 8.218.184.220, port: 52214, type: vmess, uuid: 3b776f57-8b04-498e-89d7-cb5c640eede8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _HK_香港_4, server: 47.243.174.8, port: 26234, type: vmess, uuid: 2f0e176d-c1a4-4672-90cb-e81a80c7e684, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 美国 012, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/pq/nl1?ed=2048", headers: {Host: nl1.pqjc.buzz}}, udp: true}
-  - {name: 澳大利亚 005, server: 43.159.196.4, port: 58250, type: vmess, uuid: 00e35854-8706-470e-af31-e30e557e7e5e, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hk3/getData, headers: {Host: hk3.verichains.co}}, udp: true}
-  - {name: 中国(TG频道@kxswa) 2, server: in02.my1188.org, port: 63087, type: vmess, uuid: ecea3377-066e-32e8-888a-ba4e3aeb0e29, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: sg-balancer.tencent.best}}, udp: true}
-  - {name: 美国 010, server: hk80-2.af49c4e4c2ef.sanfen001.pics, port: 80, type: vmess, uuid: dcea7f3e-98ba-4ac8-a294-5092dc381a57, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn/, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: 美国 009, server: hk11.sanfen001.pics, port: 443, type: vmess, uuid: 3b21ac2f-41be-4f9a-872d-1169250351f0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
-  - {name: US_SSRSUB_22, server: 172.67.137.72, port: 443, type: vmess, uuid: db39ef95-4245-418a-84c0-14c202f29bc6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /videnset, headers: {Host: khvwycch.cymlr.xyz}}, udp: true}
-  - {name: 中国(TG频道@kxswa) 3, server: in02.my1188.org, port: 63086, type: vmess, uuid: ecea3377-066e-32e8-888a-ba4e3aeb0e29, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: jp-balancer.myn1des.com}}, udp: true}
-  - {name: _HK_香港_1 2, server: 8.218.178.58, port: 53207, type: vmess, uuid: 9930e472-959f-4649-aa19-09354073fabc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 香港【付费推荐：https://v1.mk/vip】457, server: 8.218.150.152, port: 45106, type: vmess, uuid: aa7f7fd3-8f88-45c7-9e27-a03380d6cc89, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _HK_香港_4 2, server: 8.218.79.213, port: 34569, type: vmess, uuid: d91d9883-c37b-41f7-a2ca-ea5a2a05247c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _HK_香港_2, server: 8.218.181.75, port: 57408, type: vmess, uuid: a93df277-c3a8-4948-abd1-663722cb32b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: sg-am3.eqsunshine.com:32001, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 中国(TG频道@kxswa) 4, server: hn.xiaohouzi.club, port: 18733, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_5, server: 8.218.180.44, port: 30840, type: vmess, uuid: 99ac8983-3728-4302-a5e7-171099928c00, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 美国 042, server: finland2.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /yWJGGBHoVpr3DbNuVycP, headers: {Host: finland2.yj2022.ga}}, udp: true}
-  - {name: _HK_香港_1 3, server: 8.218.183.204, port: 59544, type: vmess, uuid: ed617ad5-803e-4dc6-b475-babead4c83e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】54, server: hn.xiaohouzi.club, port: 18435, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: _HK_香港_1, server: 8.218.178.58, port: 53207, type: vmess, uuid: 9930e472-959f-4649-aa19-09354073fabc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】86, server: hn.xiaohouzi.club, port: 14185, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hktnew01.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】83, server: hn.xiaohouzi.club, port: 51056, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24vutnkr02.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: US_SSRSUB_85, server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vus2.0bad.com}}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】228, server: hn.xiaohouzi.club, port: 48431, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】88, server: hn.xiaohouzi.club, port: 18432, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】226, server: hnm.xiaohouzi.club, port: 47551, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 法国【付费推荐：https://v1.mk/vip】193, server: 51.75.226.83, port: 39152, type: vmess, uuid: dd716574-789e-4153-ea8d-2251b46c2299, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: _CN_中国_2, server: hn.xiaohouzi.club, port: 18835, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24feilvbin.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】47, server: hn.xiaohouzi.club, port: 18433, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 印度尼西亚【付费推荐：https://v1.mk/vip】231, server: ulist.com.my.asia1.oceis.net, port: 443, type: trojan, password: 94660920-baaa-11ed-b236-205c6d5f5d78, sni: ulist.com.my.asia1.oceis.net, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】49, server: hnm.xiaohouzi.club, port: 18831, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: avas01.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: "[03-10]-🇯🇵-日本-089-jp-am48-6.eqnode.net", server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: PT09PQ==, obfs-param: PT09PQ==, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】77, server: hnm.xiaohouzi.club, port: 49363, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】103, server: hnm.xiaohouzi.club, port: 47555, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: _HK_香港_6, server: 8.218.184.220, port: 52214, type: vmess, uuid: 3b776f57-8b04-498e-89d7-cb5c640eede8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】71, server: iplc.xiaohouzi.club, port: 20015, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: iplc.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 香港【付费推荐：https://v1.mk/vip】42, server: 8.218.150.152, port: 45106, type: vmess, uuid: aa7f7fd3-8f88-45c7-9e27-a03380d6cc89, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】64, server: hnm.xiaohouzi.club, port: 49361, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】48, server: hn.xiaohouzi.club, port: 48464, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】62, server: hnm.xiaohouzi.club, port: 27094, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: siga01.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】99, server: hnm.xiaohouzi.club, port: 49353, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24a89.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 香港【付费推荐：https://v1.mk/vip】122, server: 8.218.168.163, port: 42675, type: vmess, uuid: 6f532e4c-1ea2-4e1d-a18a-af34c766ea02, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: CN_SSRSUB_216, server: data-hk-v1.shwjfkw.cn, port: 50207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: data-hk-v1.shwjfkw.cn}}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】227, server: hnm.xiaohouzi.club, port: 17105, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24tukey.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】90, server: hn.xiaohouzi.club, port: 61003, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】75, server: hn.xiaohouzi.club, port: 51054, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】158, server: hn.xiaohouzi.club, port: 18456, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, skip-cert-verify: true, udp: true}
+  - {name: "|81.16Mb", server: 23.224.191.6, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/220128071100}, udp: true}
+  - {name: 香港【付费推荐：https://v1.mk/vip】134, server: 8.218.182.129, port: 27191, type: vmess, uuid: a7be7873-3f6f-4aec-a24d-dba051e3283a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】2, server: cs.guanguan.club, port: 41406, type: vmess, uuid: 5707bceb-1da9-41e1-bd03-1bb3d1c28a2c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cs.guanguan.club}}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】156, server: hn.xiaohouzi.club, port: 18443, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: _HK_香港_2, server: 8.218.184.30, port: 25800, type: vmess, uuid: af6d7eb3-c0e5-4bd8-b650-5ffd299be97c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 法国_0308013, server: 188.165.170.83, port: 80, type: vmess, uuid: 860a862a-2798-4037-8513-b060e310e7fc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: _HK_香港_8, server: 8.218.183.204, port: 59544, type: vmess, uuid: ed617ad5-803e-4dc6-b475-babead4c83e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 日本 004, server: jp.blowm1k.club, port: 443, type: trojan, password: 8e87563a-d5b7-4097-897d-df310873a142, sni: jp.blowm1k.club, skip-cert-verify: true, udp: true}
+  - {name: -香港-awsca1.lianghy.ml, server: awsca1.lianghy.ml, port: 443, type: vmess, uuid: f32d2739-d012-4fc5-9d47-b0a800a1cfe8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /defaultvws, headers: {Host: awsca1.lianghy.ml}}, udp: true}
+  - {name: "[03-10]-🇸🇬-新加坡-199-sg-am3.eqsunshine.com", server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: -香港-47.243.55.80, server: 47.243.55.80, port: 26900, type: vmess, uuid: ce3fac76-3d8e-4cac-a16d-41d186637442, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】308, server: hn.xiaohouzi.club, port: 18735, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: ajpn05.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】249, server: 180.101.193.226, port: 10068, type: ss, cipher: aes-256-cfb, password: RsDk3peCSuo76B68, udp: true}
+  - {name: _HK_香港_3, server: 8.218.181.75, port: 57408, type: vmess, uuid: a93df277-c3a8-4948-abd1-663722cb32b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】346, server: hnm.xiaohouzi.club, port: 27482, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24%24%24hnm.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】434, server: gz01.xiaohouzi.club, port: 51058, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: gz01.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: "_NL_荷兰\r", server: 185.212.200.76, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _HK_香港_6
-      - 美国 017
-      - 中国(TG频道@kxswa)
-      - 香港(TG频道@kxswa)
-      - 澳大利亚 003
-      - 美国(TG频道@kxswa)
+      - 中国【付费推荐：https://v1.mk/vip】54
       - _HK_香港_1
-      - _HK_香港_4
-      - 美国 012
-      - 澳大利亚 005
-      - 中国(TG频道@kxswa) 2
-      - 美国 010
-      - 美国 009
-      - US_SSRSUB_22
-      - 中国(TG频道@kxswa) 3
-      - _HK_香港_1 2
-      - 香港【付费推荐：https://v1.mk/vip】457
-      - _HK_香港_4 2
+      - 中国【付费推荐：https://v1.mk/vip】86
+      - 中国【付费推荐：https://v1.mk/vip】83
+      - US_SSRSUB_85
+      - 中国【付费推荐：https://v1.mk/vip】228
+      - 中国【付费推荐：https://v1.mk/vip】88
+      - 中国【付费推荐：https://v1.mk/vip】226
+      - 法国【付费推荐：https://v1.mk/vip】193
+      - _CN_中国_2
+      - 中国【付费推荐：https://v1.mk/vip】47
+      - 印度尼西亚【付费推荐：https://v1.mk/vip】231
+      - 中国【付费推荐：https://v1.mk/vip】49
+      - "[03-10]-🇯🇵-日本-089-jp-am48-6.eqnode.net"
+      - 中国【付费推荐：https://v1.mk/vip】77
+      - 中国【付费推荐：https://v1.mk/vip】103
+      - _HK_香港_6
+      - 中国【付费推荐：https://v1.mk/vip】71
+      - 香港【付费推荐：https://v1.mk/vip】42
+      - 中国【付费推荐：https://v1.mk/vip】64
+      - 中国【付费推荐：https://v1.mk/vip】48
+      - 中国【付费推荐：https://v1.mk/vip】62
+      - 中国【付费推荐：https://v1.mk/vip】99
+      - 香港【付费推荐：https://v1.mk/vip】122
+      - CN_SSRSUB_216
+      - 中国【付费推荐：https://v1.mk/vip】227
+      - 中国【付费推荐：https://v1.mk/vip】90
+      - 中国【付费推荐：https://v1.mk/vip】75
+      - 中国【付费推荐：https://v1.mk/vip】158
+      - "|81.16Mb"
+      - 香港【付费推荐：https://v1.mk/vip】134
+      - 中国【付费推荐：https://v1.mk/vip】2
+      - 中国【付费推荐：https://v1.mk/vip】156
       - _HK_香港_2
-      - sg-am3.eqsunshine.com:32001
-      - 中国(TG频道@kxswa) 4
-      - _HK_香港_5
-      - 美国 042
-      - _HK_香港_1 3
+      - 法国_0308013
+      - _HK_香港_8
+      - 日本 004
+      - -香港-awsca1.lianghy.ml
+      - "[03-10]-🇸🇬-新加坡-199-sg-am3.eqsunshine.com"
+      - -香港-47.243.55.80
+      - 中国【付费推荐：https://v1.mk/vip】308
+      - 中国【付费推荐：https://v1.mk/vip】249
+      - _HK_香港_3
+      - 中国【付费推荐：https://v1.mk/vip】346
+      - 中国【付费推荐：https://v1.mk/vip】434
+      - "_NL_荷兰\r"
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - _HK_香港_6
-      - 美国 017
-      - 中国(TG频道@kxswa)
-      - 香港(TG频道@kxswa)
-      - 澳大利亚 003
-      - 美国(TG频道@kxswa)
+      - 中国【付费推荐：https://v1.mk/vip】54
       - _HK_香港_1
-      - _HK_香港_4
-      - 美国 012
-      - 澳大利亚 005
-      - 中国(TG频道@kxswa) 2
-      - 美国 010
-      - 美国 009
-      - US_SSRSUB_22
-      - 中国(TG频道@kxswa) 3
-      - _HK_香港_1 2
-      - 香港【付费推荐：https://v1.mk/vip】457
-      - _HK_香港_4 2
+      - 中国【付费推荐：https://v1.mk/vip】86
+      - 中国【付费推荐：https://v1.mk/vip】83
+      - US_SSRSUB_85
+      - 中国【付费推荐：https://v1.mk/vip】228
+      - 中国【付费推荐：https://v1.mk/vip】88
+      - 中国【付费推荐：https://v1.mk/vip】226
+      - 法国【付费推荐：https://v1.mk/vip】193
+      - _CN_中国_2
+      - 中国【付费推荐：https://v1.mk/vip】47
+      - 印度尼西亚【付费推荐：https://v1.mk/vip】231
+      - 中国【付费推荐：https://v1.mk/vip】49
+      - "[03-10]-🇯🇵-日本-089-jp-am48-6.eqnode.net"
+      - 中国【付费推荐：https://v1.mk/vip】77
+      - 中国【付费推荐：https://v1.mk/vip】103
+      - _HK_香港_6
+      - 中国【付费推荐：https://v1.mk/vip】71
+      - 香港【付费推荐：https://v1.mk/vip】42
+      - 中国【付费推荐：https://v1.mk/vip】64
+      - 中国【付费推荐：https://v1.mk/vip】48
+      - 中国【付费推荐：https://v1.mk/vip】62
+      - 中国【付费推荐：https://v1.mk/vip】99
+      - 香港【付费推荐：https://v1.mk/vip】122
+      - CN_SSRSUB_216
+      - 中国【付费推荐：https://v1.mk/vip】227
+      - 中国【付费推荐：https://v1.mk/vip】90
+      - 中国【付费推荐：https://v1.mk/vip】75
+      - 中国【付费推荐：https://v1.mk/vip】158
+      - "|81.16Mb"
+      - 香港【付费推荐：https://v1.mk/vip】134
+      - 中国【付费推荐：https://v1.mk/vip】2
+      - 中国【付费推荐：https://v1.mk/vip】156
       - _HK_香港_2
-      - sg-am3.eqsunshine.com:32001
-      - 中国(TG频道@kxswa) 4
-      - _HK_香港_5
-      - 美国 042
-      - _HK_香港_1 3
+      - 法国_0308013
+      - _HK_香港_8
+      - 日本 004
+      - -香港-awsca1.lianghy.ml
+      - "[03-10]-🇸🇬-新加坡-199-sg-am3.eqsunshine.com"
+      - -香港-47.243.55.80
+      - 中国【付费推荐：https://v1.mk/vip】308
+      - 中国【付费推荐：https://v1.mk/vip】249
+      - _HK_香港_3
+      - 中国【付费推荐：https://v1.mk/vip】346
+      - 中国【付费推荐：https://v1.mk/vip】434
+      - "_NL_荷兰\r"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _HK_香港_6
-      - 美国 017
-      - 中国(TG频道@kxswa)
-      - 香港(TG频道@kxswa)
-      - 澳大利亚 003
-      - 美国(TG频道@kxswa)
+      - 中国【付费推荐：https://v1.mk/vip】54
       - _HK_香港_1
-      - _HK_香港_4
-      - 美国 012
-      - 澳大利亚 005
-      - 中国(TG频道@kxswa) 2
-      - 美国 010
-      - 美国 009
-      - US_SSRSUB_22
-      - 中国(TG频道@kxswa) 3
-      - _HK_香港_1 2
-      - 香港【付费推荐：https://v1.mk/vip】457
-      - _HK_香港_4 2
+      - 中国【付费推荐：https://v1.mk/vip】86
+      - 中国【付费推荐：https://v1.mk/vip】83
+      - US_SSRSUB_85
+      - 中国【付费推荐：https://v1.mk/vip】228
+      - 中国【付费推荐：https://v1.mk/vip】88
+      - 中国【付费推荐：https://v1.mk/vip】226
+      - 法国【付费推荐：https://v1.mk/vip】193
+      - _CN_中国_2
+      - 中国【付费推荐：https://v1.mk/vip】47
+      - 印度尼西亚【付费推荐：https://v1.mk/vip】231
+      - 中国【付费推荐：https://v1.mk/vip】49
+      - "[03-10]-🇯🇵-日本-089-jp-am48-6.eqnode.net"
+      - 中国【付费推荐：https://v1.mk/vip】77
+      - 中国【付费推荐：https://v1.mk/vip】103
+      - _HK_香港_6
+      - 中国【付费推荐：https://v1.mk/vip】71
+      - 香港【付费推荐：https://v1.mk/vip】42
+      - 中国【付费推荐：https://v1.mk/vip】64
+      - 中国【付费推荐：https://v1.mk/vip】48
+      - 中国【付费推荐：https://v1.mk/vip】62
+      - 中国【付费推荐：https://v1.mk/vip】99
+      - 香港【付费推荐：https://v1.mk/vip】122
+      - CN_SSRSUB_216
+      - 中国【付费推荐：https://v1.mk/vip】227
+      - 中国【付费推荐：https://v1.mk/vip】90
+      - 中国【付费推荐：https://v1.mk/vip】75
+      - 中国【付费推荐：https://v1.mk/vip】158
+      - "|81.16Mb"
+      - 香港【付费推荐：https://v1.mk/vip】134
+      - 中国【付费推荐：https://v1.mk/vip】2
+      - 中国【付费推荐：https://v1.mk/vip】156
       - _HK_香港_2
-      - sg-am3.eqsunshine.com:32001
-      - 中国(TG频道@kxswa) 4
-      - _HK_香港_5
-      - 美国 042
-      - _HK_香港_1 3
+      - 法国_0308013
+      - _HK_香港_8
+      - 日本 004
+      - -香港-awsca1.lianghy.ml
+      - "[03-10]-🇸🇬-新加坡-199-sg-am3.eqsunshine.com"
+      - -香港-47.243.55.80
+      - 中国【付费推荐：https://v1.mk/vip】308
+      - 中国【付费推荐：https://v1.mk/vip】249
+      - _HK_香港_3
+      - 中国【付费推荐：https://v1.mk/vip】346
+      - 中国【付费推荐：https://v1.mk/vip】434
+      - "_NL_荷兰\r"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -137,133 +225,221 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _HK_香港_6
-      - 美国 017
-      - 中国(TG频道@kxswa)
-      - 香港(TG频道@kxswa)
-      - 澳大利亚 003
-      - 美国(TG频道@kxswa)
+      - 中国【付费推荐：https://v1.mk/vip】54
       - _HK_香港_1
-      - _HK_香港_4
-      - 美国 012
-      - 澳大利亚 005
-      - 中国(TG频道@kxswa) 2
-      - 美国 010
-      - 美国 009
-      - US_SSRSUB_22
-      - 中国(TG频道@kxswa) 3
-      - _HK_香港_1 2
-      - 香港【付费推荐：https://v1.mk/vip】457
-      - _HK_香港_4 2
+      - 中国【付费推荐：https://v1.mk/vip】86
+      - 中国【付费推荐：https://v1.mk/vip】83
+      - US_SSRSUB_85
+      - 中国【付费推荐：https://v1.mk/vip】228
+      - 中国【付费推荐：https://v1.mk/vip】88
+      - 中国【付费推荐：https://v1.mk/vip】226
+      - 法国【付费推荐：https://v1.mk/vip】193
+      - _CN_中国_2
+      - 中国【付费推荐：https://v1.mk/vip】47
+      - 印度尼西亚【付费推荐：https://v1.mk/vip】231
+      - 中国【付费推荐：https://v1.mk/vip】49
+      - "[03-10]-🇯🇵-日本-089-jp-am48-6.eqnode.net"
+      - 中国【付费推荐：https://v1.mk/vip】77
+      - 中国【付费推荐：https://v1.mk/vip】103
+      - _HK_香港_6
+      - 中国【付费推荐：https://v1.mk/vip】71
+      - 香港【付费推荐：https://v1.mk/vip】42
+      - 中国【付费推荐：https://v1.mk/vip】64
+      - 中国【付费推荐：https://v1.mk/vip】48
+      - 中国【付费推荐：https://v1.mk/vip】62
+      - 中国【付费推荐：https://v1.mk/vip】99
+      - 香港【付费推荐：https://v1.mk/vip】122
+      - CN_SSRSUB_216
+      - 中国【付费推荐：https://v1.mk/vip】227
+      - 中国【付费推荐：https://v1.mk/vip】90
+      - 中国【付费推荐：https://v1.mk/vip】75
+      - 中国【付费推荐：https://v1.mk/vip】158
+      - "|81.16Mb"
+      - 香港【付费推荐：https://v1.mk/vip】134
+      - 中国【付费推荐：https://v1.mk/vip】2
+      - 中国【付费推荐：https://v1.mk/vip】156
       - _HK_香港_2
-      - sg-am3.eqsunshine.com:32001
-      - 中国(TG频道@kxswa) 4
-      - _HK_香港_5
-      - 美国 042
-      - _HK_香港_1 3
+      - 法国_0308013
+      - _HK_香港_8
+      - 日本 004
+      - -香港-awsca1.lianghy.ml
+      - "[03-10]-🇸🇬-新加坡-199-sg-am3.eqsunshine.com"
+      - -香港-47.243.55.80
+      - 中国【付费推荐：https://v1.mk/vip】308
+      - 中国【付费推荐：https://v1.mk/vip】249
+      - _HK_香港_3
+      - 中国【付费推荐：https://v1.mk/vip】346
+      - 中国【付费推荐：https://v1.mk/vip】434
+      - "_NL_荷兰\r"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - _HK_香港_6
-      - 香港(TG频道@kxswa)
       - _HK_香港_1
-      - _HK_香港_4
-      - _HK_香港_1 2
-      - 香港【付费推荐：https://v1.mk/vip】457
-      - _HK_香港_4 2
+      - _HK_香港_6
+      - 香港【付费推荐：https://v1.mk/vip】42
+      - 香港【付费推荐：https://v1.mk/vip】122
+      - 香港【付费推荐：https://v1.mk/vip】134
       - _HK_香港_2
-      - _HK_香港_5
-      - _HK_香港_1 3
+      - _HK_香港_8
+      - -香港-awsca1.lianghy.ml
+      - -香港-47.243.55.80
+      - _HK_香港_3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _HK_香港_6
-      - 美国 017
-      - 中国(TG频道@kxswa)
-      - 香港(TG频道@kxswa)
-      - 澳大利亚 003
-      - 美国(TG频道@kxswa)
+      - 中国【付费推荐：https://v1.mk/vip】54
       - _HK_香港_1
-      - _HK_香港_4
-      - 美国 012
-      - 澳大利亚 005
-      - 中国(TG频道@kxswa) 2
-      - 美国 010
-      - 美国 009
-      - US_SSRSUB_22
-      - 中国(TG频道@kxswa) 3
-      - _HK_香港_1 2
-      - 香港【付费推荐：https://v1.mk/vip】457
-      - _HK_香港_4 2
+      - 中国【付费推荐：https://v1.mk/vip】86
+      - 中国【付费推荐：https://v1.mk/vip】83
+      - US_SSRSUB_85
+      - 中国【付费推荐：https://v1.mk/vip】228
+      - 中国【付费推荐：https://v1.mk/vip】88
+      - 中国【付费推荐：https://v1.mk/vip】226
+      - 法国【付费推荐：https://v1.mk/vip】193
+      - _CN_中国_2
+      - 中国【付费推荐：https://v1.mk/vip】47
+      - 印度尼西亚【付费推荐：https://v1.mk/vip】231
+      - 中国【付费推荐：https://v1.mk/vip】49
+      - "[03-10]-🇯🇵-日本-089-jp-am48-6.eqnode.net"
+      - 中国【付费推荐：https://v1.mk/vip】77
+      - 中国【付费推荐：https://v1.mk/vip】103
+      - _HK_香港_6
+      - 中国【付费推荐：https://v1.mk/vip】71
+      - 香港【付费推荐：https://v1.mk/vip】42
+      - 中国【付费推荐：https://v1.mk/vip】64
+      - 中国【付费推荐：https://v1.mk/vip】48
+      - 中国【付费推荐：https://v1.mk/vip】62
+      - 中国【付费推荐：https://v1.mk/vip】99
+      - 香港【付费推荐：https://v1.mk/vip】122
+      - CN_SSRSUB_216
+      - 中国【付费推荐：https://v1.mk/vip】227
+      - 中国【付费推荐：https://v1.mk/vip】90
+      - 中国【付费推荐：https://v1.mk/vip】75
+      - 中国【付费推荐：https://v1.mk/vip】158
+      - "|81.16Mb"
+      - 香港【付费推荐：https://v1.mk/vip】134
+      - 中国【付费推荐：https://v1.mk/vip】2
+      - 中国【付费推荐：https://v1.mk/vip】156
       - _HK_香港_2
-      - sg-am3.eqsunshine.com:32001
-      - 中国(TG频道@kxswa) 4
-      - _HK_香港_5
-      - 美国 042
-      - _HK_香港_1 3
+      - 法国_0308013
+      - _HK_香港_8
+      - 日本 004
+      - -香港-awsca1.lianghy.ml
+      - "[03-10]-🇸🇬-新加坡-199-sg-am3.eqsunshine.com"
+      - -香港-47.243.55.80
+      - 中国【付费推荐：https://v1.mk/vip】308
+      - 中国【付费推荐：https://v1.mk/vip】249
+      - _HK_香港_3
+      - 中国【付费推荐：https://v1.mk/vip】346
+      - 中国【付费推荐：https://v1.mk/vip】434
+      - "_NL_荷兰\r"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _HK_香港_6
-      - 美国 017
-      - 中国(TG频道@kxswa)
-      - 香港(TG频道@kxswa)
-      - 澳大利亚 003
-      - 美国(TG频道@kxswa)
+      - 中国【付费推荐：https://v1.mk/vip】54
       - _HK_香港_1
-      - _HK_香港_4
-      - 美国 012
-      - 澳大利亚 005
-      - 中国(TG频道@kxswa) 2
-      - 美国 010
-      - 美国 009
-      - US_SSRSUB_22
-      - 中国(TG频道@kxswa) 3
-      - _HK_香港_1 2
-      - 香港【付费推荐：https://v1.mk/vip】457
-      - _HK_香港_4 2
+      - 中国【付费推荐：https://v1.mk/vip】86
+      - 中国【付费推荐：https://v1.mk/vip】83
+      - US_SSRSUB_85
+      - 中国【付费推荐：https://v1.mk/vip】228
+      - 中国【付费推荐：https://v1.mk/vip】88
+      - 中国【付费推荐：https://v1.mk/vip】226
+      - 法国【付费推荐：https://v1.mk/vip】193
+      - _CN_中国_2
+      - 中国【付费推荐：https://v1.mk/vip】47
+      - 印度尼西亚【付费推荐：https://v1.mk/vip】231
+      - 中国【付费推荐：https://v1.mk/vip】49
+      - "[03-10]-🇯🇵-日本-089-jp-am48-6.eqnode.net"
+      - 中国【付费推荐：https://v1.mk/vip】77
+      - 中国【付费推荐：https://v1.mk/vip】103
+      - _HK_香港_6
+      - 中国【付费推荐：https://v1.mk/vip】71
+      - 香港【付费推荐：https://v1.mk/vip】42
+      - 中国【付费推荐：https://v1.mk/vip】64
+      - 中国【付费推荐：https://v1.mk/vip】48
+      - 中国【付费推荐：https://v1.mk/vip】62
+      - 中国【付费推荐：https://v1.mk/vip】99
+      - 香港【付费推荐：https://v1.mk/vip】122
+      - CN_SSRSUB_216
+      - 中国【付费推荐：https://v1.mk/vip】227
+      - 中国【付费推荐：https://v1.mk/vip】90
+      - 中国【付费推荐：https://v1.mk/vip】75
+      - 中国【付费推荐：https://v1.mk/vip】158
+      - "|81.16Mb"
+      - 香港【付费推荐：https://v1.mk/vip】134
+      - 中国【付费推荐：https://v1.mk/vip】2
+      - 中国【付费推荐：https://v1.mk/vip】156
       - _HK_香港_2
-      - sg-am3.eqsunshine.com:32001
-      - 中国(TG频道@kxswa) 4
-      - _HK_香港_5
-      - 美国 042
-      - _HK_香港_1 3
+      - 法国_0308013
+      - _HK_香港_8
+      - 日本 004
+      - -香港-awsca1.lianghy.ml
+      - "[03-10]-🇸🇬-新加坡-199-sg-am3.eqsunshine.com"
+      - -香港-47.243.55.80
+      - 中国【付费推荐：https://v1.mk/vip】308
+      - 中国【付费推荐：https://v1.mk/vip】249
+      - _HK_香港_3
+      - 中国【付费推荐：https://v1.mk/vip】346
+      - 中国【付费推荐：https://v1.mk/vip】434
+      - "_NL_荷兰\r"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _HK_香港_6
-      - 美国 017
-      - 中国(TG频道@kxswa)
-      - 香港(TG频道@kxswa)
-      - 澳大利亚 003
-      - 美国(TG频道@kxswa)
+      - 中国【付费推荐：https://v1.mk/vip】54
       - _HK_香港_1
-      - _HK_香港_4
-      - 美国 012
-      - 澳大利亚 005
-      - 中国(TG频道@kxswa) 2
-      - 美国 010
-      - 美国 009
-      - US_SSRSUB_22
-      - 中国(TG频道@kxswa) 3
-      - _HK_香港_1 2
-      - 香港【付费推荐：https://v1.mk/vip】457
-      - _HK_香港_4 2
+      - 中国【付费推荐：https://v1.mk/vip】86
+      - 中国【付费推荐：https://v1.mk/vip】83
+      - US_SSRSUB_85
+      - 中国【付费推荐：https://v1.mk/vip】228
+      - 中国【付费推荐：https://v1.mk/vip】88
+      - 中国【付费推荐：https://v1.mk/vip】226
+      - 法国【付费推荐：https://v1.mk/vip】193
+      - _CN_中国_2
+      - 中国【付费推荐：https://v1.mk/vip】47
+      - 印度尼西亚【付费推荐：https://v1.mk/vip】231
+      - 中国【付费推荐：https://v1.mk/vip】49
+      - "[03-10]-🇯🇵-日本-089-jp-am48-6.eqnode.net"
+      - 中国【付费推荐：https://v1.mk/vip】77
+      - 中国【付费推荐：https://v1.mk/vip】103
+      - _HK_香港_6
+      - 中国【付费推荐：https://v1.mk/vip】71
+      - 香港【付费推荐：https://v1.mk/vip】42
+      - 中国【付费推荐：https://v1.mk/vip】64
+      - 中国【付费推荐：https://v1.mk/vip】48
+      - 中国【付费推荐：https://v1.mk/vip】62
+      - 中国【付费推荐：https://v1.mk/vip】99
+      - 香港【付费推荐：https://v1.mk/vip】122
+      - CN_SSRSUB_216
+      - 中国【付费推荐：https://v1.mk/vip】227
+      - 中国【付费推荐：https://v1.mk/vip】90
+      - 中国【付费推荐：https://v1.mk/vip】75
+      - 中国【付费推荐：https://v1.mk/vip】158
+      - "|81.16Mb"
+      - 香港【付费推荐：https://v1.mk/vip】134
+      - 中国【付费推荐：https://v1.mk/vip】2
+      - 中国【付费推荐：https://v1.mk/vip】156
       - _HK_香港_2
-      - sg-am3.eqsunshine.com:32001
-      - 中国(TG频道@kxswa) 4
-      - _HK_香港_5
-      - 美国 042
-      - _HK_香港_1 3
+      - 法国_0308013
+      - _HK_香港_8
+      - 日本 004
+      - -香港-awsca1.lianghy.ml
+      - "[03-10]-🇸🇬-新加坡-199-sg-am3.eqsunshine.com"
+      - -香港-47.243.55.80
+      - 中国【付费推荐：https://v1.mk/vip】308
+      - 中国【付费推荐：https://v1.mk/vip】249
+      - _HK_香港_3
+      - 中国【付费推荐：https://v1.mk/vip】346
+      - 中国【付费推荐：https://v1.mk/vip】434
+      - "_NL_荷兰\r"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -279,30 +455,52 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _HK_香港_6
-      - 美国 017
-      - 中国(TG频道@kxswa)
-      - 香港(TG频道@kxswa)
-      - 澳大利亚 003
-      - 美国(TG频道@kxswa)
+      - 中国【付费推荐：https://v1.mk/vip】54
       - _HK_香港_1
-      - _HK_香港_4
-      - 美国 012
-      - 澳大利亚 005
-      - 中国(TG频道@kxswa) 2
-      - 美国 010
-      - 美国 009
-      - US_SSRSUB_22
-      - 中国(TG频道@kxswa) 3
-      - _HK_香港_1 2
-      - 香港【付费推荐：https://v1.mk/vip】457
-      - _HK_香港_4 2
+      - 中国【付费推荐：https://v1.mk/vip】86
+      - 中国【付费推荐：https://v1.mk/vip】83
+      - US_SSRSUB_85
+      - 中国【付费推荐：https://v1.mk/vip】228
+      - 中国【付费推荐：https://v1.mk/vip】88
+      - 中国【付费推荐：https://v1.mk/vip】226
+      - 法国【付费推荐：https://v1.mk/vip】193
+      - _CN_中国_2
+      - 中国【付费推荐：https://v1.mk/vip】47
+      - 印度尼西亚【付费推荐：https://v1.mk/vip】231
+      - 中国【付费推荐：https://v1.mk/vip】49
+      - "[03-10]-🇯🇵-日本-089-jp-am48-6.eqnode.net"
+      - 中国【付费推荐：https://v1.mk/vip】77
+      - 中国【付费推荐：https://v1.mk/vip】103
+      - _HK_香港_6
+      - 中国【付费推荐：https://v1.mk/vip】71
+      - 香港【付费推荐：https://v1.mk/vip】42
+      - 中国【付费推荐：https://v1.mk/vip】64
+      - 中国【付费推荐：https://v1.mk/vip】48
+      - 中国【付费推荐：https://v1.mk/vip】62
+      - 中国【付费推荐：https://v1.mk/vip】99
+      - 香港【付费推荐：https://v1.mk/vip】122
+      - CN_SSRSUB_216
+      - 中国【付费推荐：https://v1.mk/vip】227
+      - 中国【付费推荐：https://v1.mk/vip】90
+      - 中国【付费推荐：https://v1.mk/vip】75
+      - 中国【付费推荐：https://v1.mk/vip】158
+      - "|81.16Mb"
+      - 香港【付费推荐：https://v1.mk/vip】134
+      - 中国【付费推荐：https://v1.mk/vip】2
+      - 中国【付费推荐：https://v1.mk/vip】156
       - _HK_香港_2
-      - sg-am3.eqsunshine.com:32001
-      - 中国(TG频道@kxswa) 4
-      - _HK_香港_5
-      - 美国 042
-      - _HK_香港_1 3
+      - 法国_0308013
+      - _HK_香港_8
+      - 日本 004
+      - -香港-awsca1.lianghy.ml
+      - "[03-10]-🇸🇬-新加坡-199-sg-am3.eqsunshine.com"
+      - -香港-47.243.55.80
+      - 中国【付费推荐：https://v1.mk/vip】308
+      - 中国【付费推荐：https://v1.mk/vip】249
+      - _HK_香港_3
+      - 中国【付费推荐：https://v1.mk/vip】346
+      - 中国【付费推荐：https://v1.mk/vip】434
+      - "_NL_荷兰\r"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
