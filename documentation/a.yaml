@@ -6,303 +6,67 @@ mode: Rule
 log-level: info
 external-controller: 9090
 proxies:
-  - {name: 中国【付费推荐：https://v1.mk/vip】65, server: hnm.xiaohouzi.club, port: 49353, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】71, server: hnm.xiaohouzi.club, port: 47651, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: taiguo.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_6, server: 8.218.182.129, port: 27191, type: vmess, uuid: a7be7873-3f6f-4aec-a24d-dba051e3283a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】63, server: iplc.xiaohouzi.club, port: 20018, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: iplc.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: "_CN_中国->🇺🇸_US_美国\r", server: oss-cn-shanghai.westdatacloud.top, port: 20048, type: trojan, password: 626351FA-3CA6-8118-FADF-CCDBCD620871, sni: v12.kwaicdn.com, skip-cert-verify: true, udp: true}
-  - {name: "| 9.77Mb", server: AZHK-NODE-01.PL2020.XYZ, port: 10017, type: vmess, uuid: 7bb78d3e-c1ce-430d-b0ab-cd85fabd09c5, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: "| 9.04Mb", server: AZHK-NODE-01.PL2020.XYZ, port: 10020, type: vmess, uuid: 7bb78d3e-c1ce-430d-b0ab-cd85fabd09c5, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_3, server: 8.218.184.30, port: 25800, type: vmess, uuid: af6d7eb3-c0e5-4bd8-b650-5ffd299be97c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: jp-am48-6.eqnode.net:8081, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 美国 044, server: ny1.sharecentrepro.org, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ny1.sharecentrepro.org}}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】86, server: hn.xiaohouzi.club, port: 51054, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇬🇧_GB_英国, server: AZHK-NODE-01.PL2020.XYZ, port: 10015, type: vmess, uuid: 7bb78d3e-c1ce-430d-b0ab-cd85fabd09c5, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇮🇳_IN_印度, server: AZHK-NODE-01.PL2020.XYZ, port: 10025, type: vmess, uuid: 7bb78d3e-c1ce-430d-b0ab-cd85fabd09c5, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip】109, server: dp1.scproxy.top, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}, udp: true}
-  - {name: 美国 066, server: lv2.sharecentrepro.org, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}, udp: true}
-  - {name: github.com/freefq - 俄罗斯  11, server: 185.231.204.143, port: 80, type: vmess, uuid: 39895690-ba4b-4f26-b1d3-fb18a954dfee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】35, server: sa.unlimitedtraffic.top, port: 25881, type: ss, cipher: chacha20-ietf-poly1305, password: 19323732-d371-43f0-a6c1-1833dc68a137, udp: true}
-  - {name: _US_美国_6, server: cooing-luxuriant-blue.glitch.me, port: 443, type: vmess, uuid: 80e7dd59-b1fc-45a0-98be-1478a9af89f2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /api, headers: {Host: cooing-luxuriant-blue.glitch.me}}, udp: true}
-  - {name: 美国 067, server: 172.67.199.31, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip】48, server: main.millionaireaisle.com, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
-  - {name: "[03-17]-🇯🇵-日本-118-jp-am48-6.eqnode.net", server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: PT09PQ==, obfs-param: PT09PQ==, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 4, server: 6bf5.v9966.shop, port: 80, type: vmess, uuid: e6877db0-c1b8-11ed-b839-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 6bf5.v9966.shop}}, udp: true}
-  - {name: _CN_中国->🇰🇷_KR_韩国, server: AZHK-NODE-01.PL2020.XYZ, port: 10040, type: vmess, uuid: 7bb78d3e-c1ce-430d-b0ab-cd85fabd09c5, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: "@SSRSUB-V24-付费推荐:suo.yt/ssrsub", server: finland2.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /yWJGGBHoVpr3DbNuVycP, headers: {Host: finland2.yj2022.ga}}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】17, server: us-cn-hk-relay-2-3cc426.ferryhwp8ebm.com, port: 7302, type: trojan, password: f2fc982f-3462-11e9-96d3-020b85e0a428, sni: us-cn-hk-relay-2-3cc426.ferryhwp8ebm.com, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare节点 24, server: no.aries.ovh, port: 2052, type: vmess, uuid: 69899069-e222-4b02-9fbe-570338bd7e36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: scw.cloudflare.quest}}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】52, server: lv2iwahxwawhooiixzawx.occwaszxjjhwx.cyou, port: 12323, type: trojan, password: 001a5927-bcf7-368a-8a4d-cb8c2fd6aab5, sni: lv2iwahxwawhooiixzawx.occwaszxjjhwx.cyou, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】66, server: hnm.xiaohouzi.club, port: 18831, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: avas01.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip】60, server: Kansas.v2ray.online, port: 443, type: vmess, uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.v2ray.online}}, udp: true}
-  - {name: github.com/freefq - 北美地区  21, server: wash.inbarayeman.xyz, port: 443, type: trojan, password: 6aaab9d9-a4aa-454e-a672-c0c99aeebeb0, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】81, server: hn.xiaohouzi.club, port: 16013, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】80, server: hn.xiaohouzi.club, port: 18439, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 意大利  1, server: 212.102.53.194, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】257, server: hn.xiaohouzi.club, port: 19023, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: siga03.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】82, server: hn.xiaohouzi.club, port: 48464, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip】202, server: 172.67.201.204, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}, udp: true}
-  - {name: Pool_🇳🇱NL_111, server: 85.208.108.60, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: "|23.47Mb", server: AZHK-NODE-01.PL2020.XYZ, port: 10025, type: vmess, uuid: 7bb78d3e-c1ce-430d-b0ab-cd85fabd09c5, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】270, server: 180.101.193.226, port: 10068, type: ss, cipher: aes-256-cfb, password: RsDk3peCSuo76B68, udp: true}
-  - {name: 乌克兰【付费推荐：https://v1.mk/vip】110, server: doinb.ml, port: 443, type: vmess, uuid: c2f89bc3-e151-411c-a2ea-7f3ef63a5408, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ikidvws, headers: {Host: jp.lzgsm.tk}}, udp: true}
-  - {name: 韩国【付费推荐：https://v1.mk/vip】144, server: 43.200.244.234, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 美国 016, server: 103.21.244.173, port: 80, type: vmess, uuid: f7738290-ba04-4dd1-b4f3-e6863a9e1c8a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: zzsg.nmsl.pics}}, udp: true}
-  - {name: 美国3号-0.1x, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: b3259ac5-2662-4f8c-8c26-63fedb766aa9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/yfjc/us3?ed=2048", headers: {Host: us3.yfjc.sbs}}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】95, server: gz01.xiaohouzi.club, port: 14705, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24vusig01.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】77, server: hn.xiaohouzi.club, port: 19024, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 伯利兹【付费推荐：https://v1.mk/vip】182, server: 203.30.188.1, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}, udp: true}
-  - {name: _CN_中国->🇺🇸_US_美国_1, server: AZHK-NODE-01.PL2020.XYZ, port: 10016, type: vmess, uuid: 7bb78d3e-c1ce-430d-b0ab-cd85fabd09c5, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 伯利兹【付费推荐：https://v1.mk/vip】175, server: 203.30.190.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
-  - {name: 香港【付费推荐：https://v1.mk/vip】131, server: 8.218.178.58, port: 53207, type: vmess, uuid: 9930e472-959f-4649-aa19-09354073fabc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 伯利兹【付费推荐：https://v1.mk/vip】179, server: 203.30.188.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】67, server: hnm.xiaohouzi.club, port: 18634, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 美国 062, server: 172.67.219.5, port: 443, type: vmess, uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.v2ray.online}}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】50, server: lv3oiwdaxsaowhdnjkzxw.occwaszxjjhwx.cyou, port: 12324, type: trojan, password: 001a5927-bcf7-368a-8a4d-cb8c2fd6aab5, sni: lv3oiwdaxsaowhdnjkzxw.occwaszxjjhwx.cyou, skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip】210, server: 172.67.169.131, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip】97, server: germany2.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8kH8qnepjkprbsidLrLkmX, headers: {Host: germany2.yj2022.ga}}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】264, server: lv3oiwdaxsaowhdnjkzxw.occwaszxjjhwx.cyou, port: 12346, type: trojan, password: 001a5927-bcf7-368a-8a4d-cb8c2fd6aab5, sni: oiugbalxawdfas.vzwzasc.cn, skip-cert-verify: true, udp: true}
-  - {name: 伯利兹【付费推荐：https://v1.mk/vip】177, server: 203.30.189.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】51, server: lv3oiwdaxsaowhdnjkzxw.occwaszxjjhwx.cyou, port: 12347, type: trojan, password: 001a5927-bcf7-368a-8a4d-cb8c2fd6aab5, sni: lv3oiwdaxsaowhdnjkzxw.occwaszxjjhwx.cyou, skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip】111, server: docker.com, port: 80, type: vmess, uuid: e018b9e8-96eb-45b6-b929-a39812631a30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /b11TYOdgihBEkvUmenTSMO0, headers: {Host: germany.misnetwork.top}}, udp: true}
-  - {name: 塞浦路斯【付费推荐：https://v1.mk/vip】185, server: 203.24.108.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
-  - {name: 香港【付费推荐：https://v1.mk/vip】130, server: 8.218.183.204, port: 59544, type: vmess, uuid: ed617ad5-803e-4dc6-b475-babead4c83e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip】246, server: 172.67.137.72, port: 443, type: vmess, uuid: db39ef95-4245-418a-84c0-14c202f29bc6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /videnset, headers: {Host: khvwycch.cymlr.xyz}}, udp: true}
-  - {name: _CN_中国->🇺🇸_US_美国_2, server: AZHK-NODE-01.PL2020.XYZ, port: 10017, type: vmess, uuid: 7bb78d3e-c1ce-430d-b0ab-cd85fabd09c5, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】74, server: hnm.xiaohouzi.club, port: 47551, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: "|10.01Mb", server: AZHK-NODE-01.PL2020.XYZ, port: 10016, type: vmess, uuid: 7bb78d3e-c1ce-430d-b0ab-cd85fabd09c5, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 美国 070, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: d7c91c45-8f30-4175-b78b-c18ccf6a1fa5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sgm1.targoocloud.live}}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】25, server: szf02.xiaohouzi.club, port: 36304, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: szf02.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港_10, server: 8.218.168.163, port: 42675, type: vmess, uuid: 6f532e4c-1ea2-4e1d-a18a-af34c766ea02, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip】38, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: d7c91c45-8f30-4175-b78b-c18ccf6a1fa5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sgm1.targoocloud.live}}, udp: true}
-  - {name: _HK_香港_7, server: 8.218.180.44, port: 30840, type: vmess, uuid: 99ac8983-3728-4302-a5e7-171099928c00, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 中国(TG@kxswa), server: lv2iwahxwawhooiixzawx.occwaszxjjhwx.cyou, port: 12323, type: trojan, password: 001a5927-bcf7-368a-8a4d-cb8c2fd6aab5, sni: lv2iwahxwawhooiixzawx.occwaszxjjhwx.cyou, skip-cert-verify: true, udp: true}
+  - {name: 中国(TG@kxswa) 2, server: yd.huojian666.xyz, port: 14256, type: trojan, password: e8c7b4f7-dd99-458a-a5c5-d40edcbf662e, sni: hka.apirocket.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[03-19]-🇯🇵-日本-184-jp-am48-6.eqnode.net", server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: ====, obfs-param: ====, udp: true}
+  - {name: 德国(TG@kxswa), server: 35.157.193.176, port: 8080, type: vmess, uuid: 7a173658-c9f9-4194-84dd-4c50a83134ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 35.157.193.176}}, udp: true}
+  - {name: github.com/freefq - 德国黑森州法兰克福Amazon数据中心 23, server: 35.157.193.176, port: 8080, type: vmess, uuid: 7a173658-c9f9-4194-84dd-4c50a83134ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sptest.hostiran.net.prod.hosts.ooklaserver.net}}, udp: true}
+  - {name: _IN_印度, server: 152.70.74.66, port: 443, type: trojan, password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e, skip-cert-verify: true, udp: true}
+  - {name: 美国(TG@kxswa), server: 74.120.169.229, port: 80, type: vmess, uuid: d4d97aee-ebda-4a44-b208-9b5414d92033, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 74.120.169.229}}, udp: true}
+  - {name: "[03-19]-🇯🇵-日本-210-jp-am48-6.eqnode.net", server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: PT09PQ==, obfs-param: PT09PQ==, udp: true}
+  - {name: 美国 025, server: az.oxcc.eu.org, port: 7923, type: vmess, uuid: f484e8ea-cc14-448a-8dd7-411c49cdb3e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /f484e8ea-cc14-448a-8dd7-411c49cdb3e0, headers: {Host: az.oxcc.eu.org}}, udp: true}
+  - {name: _CN_中国->🇺🇸_US_美国, server: oss-cn-shanghai.westdatacloud.top, port: 20048, type: trojan, password: 626351FA-3CA6-8118-FADF-CCDBCD620871, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: -法国-188.165.170.83, server: 188.165.170.83, port: 80, type: vmess, uuid: 860a862a-2798-4037-8513-b060e310e7fc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国【付费推荐：https://v1.mk/vip】65
-      - 中国【付费推荐：https://v1.mk/vip】71
-      - _HK_香港_6
-      - 中国【付费推荐：https://v1.mk/vip】63
-      - "_CN_中国->🇺🇸_US_美国\r"
-      - "| 9.77Mb"
-      - "| 9.04Mb"
-      - _HK_香港_3
-      - jp-am48-6.eqnode.net:8081
-      - 美国 044
-      - 中国【付费推荐：https://v1.mk/vip】86
-      - _CN_中国->🇬🇧_GB_英国
-      - _CN_中国->🇮🇳_IN_印度
-      - 美国【付费推荐：https://v1.mk/vip】109
-      - 美国 066
-      - github.com/freefq - 俄罗斯  11
-      - 中国【付费推荐：https://v1.mk/vip】35
-      - _US_美国_6
-      - 美国 067
-      - 美国【付费推荐：https://v1.mk/vip】48
-      - "[03-17]-🇯🇵-日本-118-jp-am48-6.eqnode.net"
-      - github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - _CN_中国->🇰🇷_KR_韩国
-      - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
-      - 中国【付费推荐：https://v1.mk/vip】17
-      - github.com/freefq - 美国CloudFlare节点 24
-      - 中国【付费推荐：https://v1.mk/vip】52
-      - 中国【付费推荐：https://v1.mk/vip】66
-      - 美国【付费推荐：https://v1.mk/vip】60
-      - github.com/freefq - 北美地区  21
-      - 中国【付费推荐：https://v1.mk/vip】81
-      - 中国【付费推荐：https://v1.mk/vip】80
-      - github.com/freefq - 意大利  1
-      - 中国【付费推荐：https://v1.mk/vip】257
-      - 中国【付费推荐：https://v1.mk/vip】82
-      - 美国【付费推荐：https://v1.mk/vip】202
-      - Pool_🇳🇱NL_111
-      - "|23.47Mb"
-      - 中国【付费推荐：https://v1.mk/vip】270
-      - 乌克兰【付费推荐：https://v1.mk/vip】110
-      - 韩国【付费推荐：https://v1.mk/vip】144
-      - 美国 016
-      - 美国3号-0.1x
-      - 中国【付费推荐：https://v1.mk/vip】95
-      - 中国【付费推荐：https://v1.mk/vip】77
-      - 伯利兹【付费推荐：https://v1.mk/vip】182
-      - _CN_中国->🇺🇸_US_美国_1
-      - 伯利兹【付费推荐：https://v1.mk/vip】175
-      - 香港【付费推荐：https://v1.mk/vip】131
-      - 伯利兹【付费推荐：https://v1.mk/vip】179
-      - 中国【付费推荐：https://v1.mk/vip】67
-      - 美国 062
-      - 中国【付费推荐：https://v1.mk/vip】50
-      - 美国【付费推荐：https://v1.mk/vip】210
-      - 美国【付费推荐：https://v1.mk/vip】97
-      - 中国【付费推荐：https://v1.mk/vip】264
-      - 伯利兹【付费推荐：https://v1.mk/vip】177
-      - 中国【付费推荐：https://v1.mk/vip】51
-      - 美国【付费推荐：https://v1.mk/vip】111
-      - 塞浦路斯【付费推荐：https://v1.mk/vip】185
-      - 香港【付费推荐：https://v1.mk/vip】130
-      - 美国【付费推荐：https://v1.mk/vip】246
-      - _CN_中国->🇺🇸_US_美国_2
-      - 中国【付费推荐：https://v1.mk/vip】74
-      - "|10.01Mb"
-      - 美国 070
-      - 中国【付费推荐：https://v1.mk/vip】25
-      - _HK_香港_10
-      - 美国【付费推荐：https://v1.mk/vip】38
-      - _HK_香港_7
+      - 中国(TG@kxswa)
+      - 中国(TG@kxswa) 2
+      - "[03-19]-🇯🇵-日本-184-jp-am48-6.eqnode.net"
+      - 德国(TG@kxswa)
+      - github.com/freefq - 德国黑森州法兰克福Amazon数据中心 23
+      - _IN_印度
+      - 美国(TG@kxswa)
+      - "[03-19]-🇯🇵-日本-210-jp-am48-6.eqnode.net"
+      - 美国 025
+      - _CN_中国->🇺🇸_US_美国
+      - -法国-188.165.170.83
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - 中国【付费推荐：https://v1.mk/vip】65
-      - 中国【付费推荐：https://v1.mk/vip】71
-      - _HK_香港_6
-      - 中国【付费推荐：https://v1.mk/vip】63
-      - "_CN_中国->🇺🇸_US_美国\r"
-      - "| 9.77Mb"
-      - "| 9.04Mb"
-      - _HK_香港_3
-      - jp-am48-6.eqnode.net:8081
-      - 美国 044
-      - 中国【付费推荐：https://v1.mk/vip】86
-      - _CN_中国->🇬🇧_GB_英国
-      - _CN_中国->🇮🇳_IN_印度
-      - 美国【付费推荐：https://v1.mk/vip】109
-      - 美国 066
-      - github.com/freefq - 俄罗斯  11
-      - 中国【付费推荐：https://v1.mk/vip】35
-      - _US_美国_6
-      - 美国 067
-      - 美国【付费推荐：https://v1.mk/vip】48
-      - "[03-17]-🇯🇵-日本-118-jp-am48-6.eqnode.net"
-      - github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - _CN_中国->🇰🇷_KR_韩国
-      - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
-      - 中国【付费推荐：https://v1.mk/vip】17
-      - github.com/freefq - 美国CloudFlare节点 24
-      - 中国【付费推荐：https://v1.mk/vip】52
-      - 中国【付费推荐：https://v1.mk/vip】66
-      - 美国【付费推荐：https://v1.mk/vip】60
-      - github.com/freefq - 北美地区  21
-      - 中国【付费推荐：https://v1.mk/vip】81
-      - 中国【付费推荐：https://v1.mk/vip】80
-      - github.com/freefq - 意大利  1
-      - 中国【付费推荐：https://v1.mk/vip】257
-      - 中国【付费推荐：https://v1.mk/vip】82
-      - 美国【付费推荐：https://v1.mk/vip】202
-      - Pool_🇳🇱NL_111
-      - "|23.47Mb"
-      - 中国【付费推荐：https://v1.mk/vip】270
-      - 乌克兰【付费推荐：https://v1.mk/vip】110
-      - 韩国【付费推荐：https://v1.mk/vip】144
-      - 美国 016
-      - 美国3号-0.1x
-      - 中国【付费推荐：https://v1.mk/vip】95
-      - 中国【付费推荐：https://v1.mk/vip】77
-      - 伯利兹【付费推荐：https://v1.mk/vip】182
-      - _CN_中国->🇺🇸_US_美国_1
-      - 伯利兹【付费推荐：https://v1.mk/vip】175
-      - 香港【付费推荐：https://v1.mk/vip】131
-      - 伯利兹【付费推荐：https://v1.mk/vip】179
-      - 中国【付费推荐：https://v1.mk/vip】67
-      - 美国 062
-      - 中国【付费推荐：https://v1.mk/vip】50
-      - 美国【付费推荐：https://v1.mk/vip】210
-      - 美国【付费推荐：https://v1.mk/vip】97
-      - 中国【付费推荐：https://v1.mk/vip】264
-      - 伯利兹【付费推荐：https://v1.mk/vip】177
-      - 中国【付费推荐：https://v1.mk/vip】51
-      - 美国【付费推荐：https://v1.mk/vip】111
-      - 塞浦路斯【付费推荐：https://v1.mk/vip】185
-      - 香港【付费推荐：https://v1.mk/vip】130
-      - 美国【付费推荐：https://v1.mk/vip】246
-      - _CN_中国->🇺🇸_US_美国_2
-      - 中国【付费推荐：https://v1.mk/vip】74
-      - "|10.01Mb"
-      - 美国 070
-      - 中国【付费推荐：https://v1.mk/vip】25
-      - _HK_香港_10
-      - 美国【付费推荐：https://v1.mk/vip】38
-      - _HK_香港_7
+      - 中国(TG@kxswa)
+      - 中国(TG@kxswa) 2
+      - "[03-19]-🇯🇵-日本-184-jp-am48-6.eqnode.net"
+      - 德国(TG@kxswa)
+      - github.com/freefq - 德国黑森州法兰克福Amazon数据中心 23
+      - _IN_印度
+      - 美国(TG@kxswa)
+      - "[03-19]-🇯🇵-日本-210-jp-am48-6.eqnode.net"
+      - 美国 025
+      - _CN_中国->🇺🇸_US_美国
+      - -法国-188.165.170.83
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国【付费推荐：https://v1.mk/vip】65
-      - 中国【付费推荐：https://v1.mk/vip】71
-      - _HK_香港_6
-      - 中国【付费推荐：https://v1.mk/vip】63
-      - "_CN_中国->🇺🇸_US_美国\r"
-      - "| 9.77Mb"
-      - "| 9.04Mb"
-      - _HK_香港_3
-      - jp-am48-6.eqnode.net:8081
-      - 美国 044
-      - 中国【付费推荐：https://v1.mk/vip】86
-      - _CN_中国->🇬🇧_GB_英国
-      - _CN_中国->🇮🇳_IN_印度
-      - 美国【付费推荐：https://v1.mk/vip】109
-      - 美国 066
-      - github.com/freefq - 俄罗斯  11
-      - 中国【付费推荐：https://v1.mk/vip】35
-      - _US_美国_6
-      - 美国 067
-      - 美国【付费推荐：https://v1.mk/vip】48
-      - "[03-17]-🇯🇵-日本-118-jp-am48-6.eqnode.net"
-      - github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - _CN_中国->🇰🇷_KR_韩国
-      - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
-      - 中国【付费推荐：https://v1.mk/vip】17
-      - github.com/freefq - 美国CloudFlare节点 24
-      - 中国【付费推荐：https://v1.mk/vip】52
-      - 中国【付费推荐：https://v1.mk/vip】66
-      - 美国【付费推荐：https://v1.mk/vip】60
-      - github.com/freefq - 北美地区  21
-      - 中国【付费推荐：https://v1.mk/vip】81
-      - 中国【付费推荐：https://v1.mk/vip】80
-      - github.com/freefq - 意大利  1
-      - 中国【付费推荐：https://v1.mk/vip】257
-      - 中国【付费推荐：https://v1.mk/vip】82
-      - 美国【付费推荐：https://v1.mk/vip】202
-      - Pool_🇳🇱NL_111
-      - "|23.47Mb"
-      - 中国【付费推荐：https://v1.mk/vip】270
-      - 乌克兰【付费推荐：https://v1.mk/vip】110
-      - 韩国【付费推荐：https://v1.mk/vip】144
-      - 美国 016
-      - 美国3号-0.1x
-      - 中国【付费推荐：https://v1.mk/vip】95
-      - 中国【付费推荐：https://v1.mk/vip】77
-      - 伯利兹【付费推荐：https://v1.mk/vip】182
-      - _CN_中国->🇺🇸_US_美国_1
-      - 伯利兹【付费推荐：https://v1.mk/vip】175
-      - 香港【付费推荐：https://v1.mk/vip】131
-      - 伯利兹【付费推荐：https://v1.mk/vip】179
-      - 中国【付费推荐：https://v1.mk/vip】67
-      - 美国 062
-      - 中国【付费推荐：https://v1.mk/vip】50
-      - 美国【付费推荐：https://v1.mk/vip】210
-      - 美国【付费推荐：https://v1.mk/vip】97
-      - 中国【付费推荐：https://v1.mk/vip】264
-      - 伯利兹【付费推荐：https://v1.mk/vip】177
-      - 中国【付费推荐：https://v1.mk/vip】51
-      - 美国【付费推荐：https://v1.mk/vip】111
-      - 塞浦路斯【付费推荐：https://v1.mk/vip】185
-      - 香港【付费推荐：https://v1.mk/vip】130
-      - 美国【付费推荐：https://v1.mk/vip】246
-      - _CN_中国->🇺🇸_US_美国_2
-      - 中国【付费推荐：https://v1.mk/vip】74
-      - "|10.01Mb"
-      - 美国 070
-      - 中国【付费推荐：https://v1.mk/vip】25
-      - _HK_香港_10
-      - 美国【付费推荐：https://v1.mk/vip】38
-      - _HK_香港_7
+      - 中国(TG@kxswa)
+      - 中国(TG@kxswa) 2
+      - "[03-19]-🇯🇵-日本-184-jp-am48-6.eqnode.net"
+      - 德国(TG@kxswa)
+      - github.com/freefq - 德国黑森州法兰克福Amazon数据中心 23
+      - _IN_印度
+      - 美国(TG@kxswa)
+      - "[03-19]-🇯🇵-日本-210-jp-am48-6.eqnode.net"
+      - 美国 025
+      - _CN_中国->🇺🇸_US_美国
+      - -法国-188.165.170.83
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -321,313 +85,71 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国【付费推荐：https://v1.mk/vip】65
-      - 中国【付费推荐：https://v1.mk/vip】71
-      - _HK_香港_6
-      - 中国【付费推荐：https://v1.mk/vip】63
-      - "_CN_中国->🇺🇸_US_美国\r"
-      - "| 9.77Mb"
-      - "| 9.04Mb"
-      - _HK_香港_3
-      - jp-am48-6.eqnode.net:8081
-      - 美国 044
-      - 中国【付费推荐：https://v1.mk/vip】86
-      - _CN_中国->🇬🇧_GB_英国
-      - _CN_中国->🇮🇳_IN_印度
-      - 美国【付费推荐：https://v1.mk/vip】109
-      - 美国 066
-      - github.com/freefq - 俄罗斯  11
-      - 中国【付费推荐：https://v1.mk/vip】35
-      - _US_美国_6
-      - 美国 067
-      - 美国【付费推荐：https://v1.mk/vip】48
-      - "[03-17]-🇯🇵-日本-118-jp-am48-6.eqnode.net"
-      - github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - _CN_中国->🇰🇷_KR_韩国
-      - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
-      - 中国【付费推荐：https://v1.mk/vip】17
-      - github.com/freefq - 美国CloudFlare节点 24
-      - 中国【付费推荐：https://v1.mk/vip】52
-      - 中国【付费推荐：https://v1.mk/vip】66
-      - 美国【付费推荐：https://v1.mk/vip】60
-      - github.com/freefq - 北美地区  21
-      - 中国【付费推荐：https://v1.mk/vip】81
-      - 中国【付费推荐：https://v1.mk/vip】80
-      - github.com/freefq - 意大利  1
-      - 中国【付费推荐：https://v1.mk/vip】257
-      - 中国【付费推荐：https://v1.mk/vip】82
-      - 美国【付费推荐：https://v1.mk/vip】202
-      - Pool_🇳🇱NL_111
-      - "|23.47Mb"
-      - 中国【付费推荐：https://v1.mk/vip】270
-      - 乌克兰【付费推荐：https://v1.mk/vip】110
-      - 韩国【付费推荐：https://v1.mk/vip】144
-      - 美国 016
-      - 美国3号-0.1x
-      - 中国【付费推荐：https://v1.mk/vip】95
-      - 中国【付费推荐：https://v1.mk/vip】77
-      - 伯利兹【付费推荐：https://v1.mk/vip】182
-      - _CN_中国->🇺🇸_US_美国_1
-      - 伯利兹【付费推荐：https://v1.mk/vip】175
-      - 香港【付费推荐：https://v1.mk/vip】131
-      - 伯利兹【付费推荐：https://v1.mk/vip】179
-      - 中国【付费推荐：https://v1.mk/vip】67
-      - 美国 062
-      - 中国【付费推荐：https://v1.mk/vip】50
-      - 美国【付费推荐：https://v1.mk/vip】210
-      - 美国【付费推荐：https://v1.mk/vip】97
-      - 中国【付费推荐：https://v1.mk/vip】264
-      - 伯利兹【付费推荐：https://v1.mk/vip】177
-      - 中国【付费推荐：https://v1.mk/vip】51
-      - 美国【付费推荐：https://v1.mk/vip】111
-      - 塞浦路斯【付费推荐：https://v1.mk/vip】185
-      - 香港【付费推荐：https://v1.mk/vip】130
-      - 美国【付费推荐：https://v1.mk/vip】246
-      - _CN_中国->🇺🇸_US_美国_2
-      - 中国【付费推荐：https://v1.mk/vip】74
-      - "|10.01Mb"
-      - 美国 070
-      - 中国【付费推荐：https://v1.mk/vip】25
-      - _HK_香港_10
-      - 美国【付费推荐：https://v1.mk/vip】38
-      - _HK_香港_7
+      - 中国(TG@kxswa)
+      - 中国(TG@kxswa) 2
+      - "[03-19]-🇯🇵-日本-184-jp-am48-6.eqnode.net"
+      - 德国(TG@kxswa)
+      - github.com/freefq - 德国黑森州法兰克福Amazon数据中心 23
+      - _IN_印度
+      - 美国(TG@kxswa)
+      - "[03-19]-🇯🇵-日本-210-jp-am48-6.eqnode.net"
+      - 美国 025
+      - _CN_中国->🇺🇸_US_美国
+      - -法国-188.165.170.83
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - _HK_香港_6
-      - _HK_香港_3
-      - 香港【付费推荐：https://v1.mk/vip】131
-      - 香港【付费推荐：https://v1.mk/vip】130
-      - _HK_香港_10
-      - _HK_香港_7
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 中国【付费推荐：https://v1.mk/vip】65
-      - 中国【付费推荐：https://v1.mk/vip】71
-      - _HK_香港_6
-      - 中国【付费推荐：https://v1.mk/vip】63
-      - "_CN_中国->🇺🇸_US_美国\r"
-      - "| 9.77Mb"
-      - "| 9.04Mb"
-      - _HK_香港_3
-      - jp-am48-6.eqnode.net:8081
-      - 美国 044
-      - 中国【付费推荐：https://v1.mk/vip】86
-      - _CN_中国->🇬🇧_GB_英国
-      - _CN_中国->🇮🇳_IN_印度
-      - 美国【付费推荐：https://v1.mk/vip】109
-      - 美国 066
-      - github.com/freefq - 俄罗斯  11
-      - 中国【付费推荐：https://v1.mk/vip】35
-      - _US_美国_6
-      - 美国 067
-      - 美国【付费推荐：https://v1.mk/vip】48
-      - "[03-17]-🇯🇵-日本-118-jp-am48-6.eqnode.net"
-      - github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - _CN_中国->🇰🇷_KR_韩国
-      - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
-      - 中国【付费推荐：https://v1.mk/vip】17
-      - github.com/freefq - 美国CloudFlare节点 24
-      - 中国【付费推荐：https://v1.mk/vip】52
-      - 中国【付费推荐：https://v1.mk/vip】66
-      - 美国【付费推荐：https://v1.mk/vip】60
-      - github.com/freefq - 北美地区  21
-      - 中国【付费推荐：https://v1.mk/vip】81
-      - 中国【付费推荐：https://v1.mk/vip】80
-      - github.com/freefq - 意大利  1
-      - 中国【付费推荐：https://v1.mk/vip】257
-      - 中国【付费推荐：https://v1.mk/vip】82
-      - 美国【付费推荐：https://v1.mk/vip】202
-      - Pool_🇳🇱NL_111
-      - "|23.47Mb"
-      - 中国【付费推荐：https://v1.mk/vip】270
-      - 乌克兰【付费推荐：https://v1.mk/vip】110
-      - 韩国【付费推荐：https://v1.mk/vip】144
-      - 美国 016
-      - 美国3号-0.1x
-      - 中国【付费推荐：https://v1.mk/vip】95
-      - 中国【付费推荐：https://v1.mk/vip】77
-      - 伯利兹【付费推荐：https://v1.mk/vip】182
-      - _CN_中国->🇺🇸_US_美国_1
-      - 伯利兹【付费推荐：https://v1.mk/vip】175
-      - 香港【付费推荐：https://v1.mk/vip】131
-      - 伯利兹【付费推荐：https://v1.mk/vip】179
-      - 中国【付费推荐：https://v1.mk/vip】67
-      - 美国 062
-      - 中国【付费推荐：https://v1.mk/vip】50
-      - 美国【付费推荐：https://v1.mk/vip】210
-      - 美国【付费推荐：https://v1.mk/vip】97
-      - 中国【付费推荐：https://v1.mk/vip】264
-      - 伯利兹【付费推荐：https://v1.mk/vip】177
-      - 中国【付费推荐：https://v1.mk/vip】51
-      - 美国【付费推荐：https://v1.mk/vip】111
-      - 塞浦路斯【付费推荐：https://v1.mk/vip】185
-      - 香港【付费推荐：https://v1.mk/vip】130
-      - 美国【付费推荐：https://v1.mk/vip】246
-      - _CN_中国->🇺🇸_US_美国_2
-      - 中国【付费推荐：https://v1.mk/vip】74
-      - "|10.01Mb"
-      - 美国 070
-      - 中国【付费推荐：https://v1.mk/vip】25
-      - _HK_香港_10
-      - 美国【付费推荐：https://v1.mk/vip】38
-      - _HK_香港_7
+      - 中国(TG@kxswa)
+      - 中国(TG@kxswa) 2
+      - "[03-19]-🇯🇵-日本-184-jp-am48-6.eqnode.net"
+      - 德国(TG@kxswa)
+      - github.com/freefq - 德国黑森州法兰克福Amazon数据中心 23
+      - _IN_印度
+      - 美国(TG@kxswa)
+      - "[03-19]-🇯🇵-日本-210-jp-am48-6.eqnode.net"
+      - 美国 025
+      - _CN_中国->🇺🇸_US_美国
+      - -法国-188.165.170.83
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 中国【付费推荐：https://v1.mk/vip】65
-      - 中国【付费推荐：https://v1.mk/vip】71
-      - _HK_香港_6
-      - 中国【付费推荐：https://v1.mk/vip】63
-      - "_CN_中国->🇺🇸_US_美国\r"
-      - "| 9.77Mb"
-      - "| 9.04Mb"
-      - _HK_香港_3
-      - jp-am48-6.eqnode.net:8081
-      - 美国 044
-      - 中国【付费推荐：https://v1.mk/vip】86
-      - _CN_中国->🇬🇧_GB_英国
-      - _CN_中国->🇮🇳_IN_印度
-      - 美国【付费推荐：https://v1.mk/vip】109
-      - 美国 066
-      - github.com/freefq - 俄罗斯  11
-      - 中国【付费推荐：https://v1.mk/vip】35
-      - _US_美国_6
-      - 美国 067
-      - 美国【付费推荐：https://v1.mk/vip】48
-      - "[03-17]-🇯🇵-日本-118-jp-am48-6.eqnode.net"
-      - github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - _CN_中国->🇰🇷_KR_韩国
-      - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
-      - 中国【付费推荐：https://v1.mk/vip】17
-      - github.com/freefq - 美国CloudFlare节点 24
-      - 中国【付费推荐：https://v1.mk/vip】52
-      - 中国【付费推荐：https://v1.mk/vip】66
-      - 美国【付费推荐：https://v1.mk/vip】60
-      - github.com/freefq - 北美地区  21
-      - 中国【付费推荐：https://v1.mk/vip】81
-      - 中国【付费推荐：https://v1.mk/vip】80
-      - github.com/freefq - 意大利  1
-      - 中国【付费推荐：https://v1.mk/vip】257
-      - 中国【付费推荐：https://v1.mk/vip】82
-      - 美国【付费推荐：https://v1.mk/vip】202
-      - Pool_🇳🇱NL_111
-      - "|23.47Mb"
-      - 中国【付费推荐：https://v1.mk/vip】270
-      - 乌克兰【付费推荐：https://v1.mk/vip】110
-      - 韩国【付费推荐：https://v1.mk/vip】144
-      - 美国 016
-      - 美国3号-0.1x
-      - 中国【付费推荐：https://v1.mk/vip】95
-      - 中国【付费推荐：https://v1.mk/vip】77
-      - 伯利兹【付费推荐：https://v1.mk/vip】182
-      - _CN_中国->🇺🇸_US_美国_1
-      - 伯利兹【付费推荐：https://v1.mk/vip】175
-      - 香港【付费推荐：https://v1.mk/vip】131
-      - 伯利兹【付费推荐：https://v1.mk/vip】179
-      - 中国【付费推荐：https://v1.mk/vip】67
-      - 美国 062
-      - 中国【付费推荐：https://v1.mk/vip】50
-      - 美国【付费推荐：https://v1.mk/vip】210
-      - 美国【付费推荐：https://v1.mk/vip】97
-      - 中国【付费推荐：https://v1.mk/vip】264
-      - 伯利兹【付费推荐：https://v1.mk/vip】177
-      - 中国【付费推荐：https://v1.mk/vip】51
-      - 美国【付费推荐：https://v1.mk/vip】111
-      - 塞浦路斯【付费推荐：https://v1.mk/vip】185
-      - 香港【付费推荐：https://v1.mk/vip】130
-      - 美国【付费推荐：https://v1.mk/vip】246
-      - _CN_中国->🇺🇸_US_美国_2
-      - 中国【付费推荐：https://v1.mk/vip】74
-      - "|10.01Mb"
-      - 美国 070
-      - 中国【付费推荐：https://v1.mk/vip】25
-      - _HK_香港_10
-      - 美国【付费推荐：https://v1.mk/vip】38
-      - _HK_香港_7
+      - 中国(TG@kxswa)
+      - 中国(TG@kxswa) 2
+      - "[03-19]-🇯🇵-日本-184-jp-am48-6.eqnode.net"
+      - 德国(TG@kxswa)
+      - github.com/freefq - 德国黑森州法兰克福Amazon数据中心 23
+      - _IN_印度
+      - 美国(TG@kxswa)
+      - "[03-19]-🇯🇵-日本-210-jp-am48-6.eqnode.net"
+      - 美国 025
+      - _CN_中国->🇺🇸_US_美国
+      - -法国-188.165.170.83
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国【付费推荐：https://v1.mk/vip】65
-      - 中国【付费推荐：https://v1.mk/vip】71
-      - _HK_香港_6
-      - 中国【付费推荐：https://v1.mk/vip】63
-      - "_CN_中国->🇺🇸_US_美国\r"
-      - "| 9.77Mb"
-      - "| 9.04Mb"
-      - _HK_香港_3
-      - jp-am48-6.eqnode.net:8081
-      - 美国 044
-      - 中国【付费推荐：https://v1.mk/vip】86
-      - _CN_中国->🇬🇧_GB_英国
-      - _CN_中国->🇮🇳_IN_印度
-      - 美国【付费推荐：https://v1.mk/vip】109
-      - 美国 066
-      - github.com/freefq - 俄罗斯  11
-      - 中国【付费推荐：https://v1.mk/vip】35
-      - _US_美国_6
-      - 美国 067
-      - 美国【付费推荐：https://v1.mk/vip】48
-      - "[03-17]-🇯🇵-日本-118-jp-am48-6.eqnode.net"
-      - github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - _CN_中国->🇰🇷_KR_韩国
-      - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
-      - 中国【付费推荐：https://v1.mk/vip】17
-      - github.com/freefq - 美国CloudFlare节点 24
-      - 中国【付费推荐：https://v1.mk/vip】52
-      - 中国【付费推荐：https://v1.mk/vip】66
-      - 美国【付费推荐：https://v1.mk/vip】60
-      - github.com/freefq - 北美地区  21
-      - 中国【付费推荐：https://v1.mk/vip】81
-      - 中国【付费推荐：https://v1.mk/vip】80
-      - github.com/freefq - 意大利  1
-      - 中国【付费推荐：https://v1.mk/vip】257
-      - 中国【付费推荐：https://v1.mk/vip】82
-      - 美国【付费推荐：https://v1.mk/vip】202
-      - Pool_🇳🇱NL_111
-      - "|23.47Mb"
-      - 中国【付费推荐：https://v1.mk/vip】270
-      - 乌克兰【付费推荐：https://v1.mk/vip】110
-      - 韩国【付费推荐：https://v1.mk/vip】144
-      - 美国 016
-      - 美国3号-0.1x
-      - 中国【付费推荐：https://v1.mk/vip】95
-      - 中国【付费推荐：https://v1.mk/vip】77
-      - 伯利兹【付费推荐：https://v1.mk/vip】182
-      - _CN_中国->🇺🇸_US_美国_1
-      - 伯利兹【付费推荐：https://v1.mk/vip】175
-      - 香港【付费推荐：https://v1.mk/vip】131
-      - 伯利兹【付费推荐：https://v1.mk/vip】179
-      - 中国【付费推荐：https://v1.mk/vip】67
-      - 美国 062
-      - 中国【付费推荐：https://v1.mk/vip】50
-      - 美国【付费推荐：https://v1.mk/vip】210
-      - 美国【付费推荐：https://v1.mk/vip】97
-      - 中国【付费推荐：https://v1.mk/vip】264
-      - 伯利兹【付费推荐：https://v1.mk/vip】177
-      - 中国【付费推荐：https://v1.mk/vip】51
-      - 美国【付费推荐：https://v1.mk/vip】111
-      - 塞浦路斯【付费推荐：https://v1.mk/vip】185
-      - 香港【付费推荐：https://v1.mk/vip】130
-      - 美国【付费推荐：https://v1.mk/vip】246
-      - _CN_中国->🇺🇸_US_美国_2
-      - 中国【付费推荐：https://v1.mk/vip】74
-      - "|10.01Mb"
-      - 美国 070
-      - 中国【付费推荐：https://v1.mk/vip】25
-      - _HK_香港_10
-      - 美国【付费推荐：https://v1.mk/vip】38
-      - _HK_香港_7
+      - 中国(TG@kxswa)
+      - 中国(TG@kxswa) 2
+      - "[03-19]-🇯🇵-日本-184-jp-am48-6.eqnode.net"
+      - 德国(TG@kxswa)
+      - github.com/freefq - 德国黑森州法兰克福Amazon数据中心 23
+      - _IN_印度
+      - 美国(TG@kxswa)
+      - "[03-19]-🇯🇵-日本-210-jp-am48-6.eqnode.net"
+      - 美国 025
+      - _CN_中国->🇺🇸_US_美国
+      - -法国-188.165.170.83
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -643,76 +165,17 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国【付费推荐：https://v1.mk/vip】65
-      - 中国【付费推荐：https://v1.mk/vip】71
-      - _HK_香港_6
-      - 中国【付费推荐：https://v1.mk/vip】63
-      - "_CN_中国->🇺🇸_US_美国\r"
-      - "| 9.77Mb"
-      - "| 9.04Mb"
-      - _HK_香港_3
-      - jp-am48-6.eqnode.net:8081
-      - 美国 044
-      - 中国【付费推荐：https://v1.mk/vip】86
-      - _CN_中国->🇬🇧_GB_英国
-      - _CN_中国->🇮🇳_IN_印度
-      - 美国【付费推荐：https://v1.mk/vip】109
-      - 美国 066
-      - github.com/freefq - 俄罗斯  11
-      - 中国【付费推荐：https://v1.mk/vip】35
-      - _US_美国_6
-      - 美国 067
-      - 美国【付费推荐：https://v1.mk/vip】48
-      - "[03-17]-🇯🇵-日本-118-jp-am48-6.eqnode.net"
-      - github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - _CN_中国->🇰🇷_KR_韩国
-      - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
-      - 中国【付费推荐：https://v1.mk/vip】17
-      - github.com/freefq - 美国CloudFlare节点 24
-      - 中国【付费推荐：https://v1.mk/vip】52
-      - 中国【付费推荐：https://v1.mk/vip】66
-      - 美国【付费推荐：https://v1.mk/vip】60
-      - github.com/freefq - 北美地区  21
-      - 中国【付费推荐：https://v1.mk/vip】81
-      - 中国【付费推荐：https://v1.mk/vip】80
-      - github.com/freefq - 意大利  1
-      - 中国【付费推荐：https://v1.mk/vip】257
-      - 中国【付费推荐：https://v1.mk/vip】82
-      - 美国【付费推荐：https://v1.mk/vip】202
-      - Pool_🇳🇱NL_111
-      - "|23.47Mb"
-      - 中国【付费推荐：https://v1.mk/vip】270
-      - 乌克兰【付费推荐：https://v1.mk/vip】110
-      - 韩国【付费推荐：https://v1.mk/vip】144
-      - 美国 016
-      - 美国3号-0.1x
-      - 中国【付费推荐：https://v1.mk/vip】95
-      - 中国【付费推荐：https://v1.mk/vip】77
-      - 伯利兹【付费推荐：https://v1.mk/vip】182
-      - _CN_中国->🇺🇸_US_美国_1
-      - 伯利兹【付费推荐：https://v1.mk/vip】175
-      - 香港【付费推荐：https://v1.mk/vip】131
-      - 伯利兹【付费推荐：https://v1.mk/vip】179
-      - 中国【付费推荐：https://v1.mk/vip】67
-      - 美国 062
-      - 中国【付费推荐：https://v1.mk/vip】50
-      - 美国【付费推荐：https://v1.mk/vip】210
-      - 美国【付费推荐：https://v1.mk/vip】97
-      - 中国【付费推荐：https://v1.mk/vip】264
-      - 伯利兹【付费推荐：https://v1.mk/vip】177
-      - 中国【付费推荐：https://v1.mk/vip】51
-      - 美国【付费推荐：https://v1.mk/vip】111
-      - 塞浦路斯【付费推荐：https://v1.mk/vip】185
-      - 香港【付费推荐：https://v1.mk/vip】130
-      - 美国【付费推荐：https://v1.mk/vip】246
-      - _CN_中国->🇺🇸_US_美国_2
-      - 中国【付费推荐：https://v1.mk/vip】74
-      - "|10.01Mb"
-      - 美国 070
-      - 中国【付费推荐：https://v1.mk/vip】25
-      - _HK_香港_10
-      - 美国【付费推荐：https://v1.mk/vip】38
-      - _HK_香港_7
+      - 中国(TG@kxswa)
+      - 中国(TG@kxswa) 2
+      - "[03-19]-🇯🇵-日本-184-jp-am48-6.eqnode.net"
+      - 德国(TG@kxswa)
+      - github.com/freefq - 德国黑森州法兰克福Amazon数据中心 23
+      - _IN_印度
+      - 美国(TG@kxswa)
+      - "[03-19]-🇯🇵-日本-210-jp-am48-6.eqnode.net"
+      - 美国 025
+      - _CN_中国->🇺🇸_US_美国
+      - -法国-188.165.170.83
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
