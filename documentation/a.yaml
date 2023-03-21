@@ -6,151 +6,79 @@ mode: Rule
 log-level: info
 external-controller: 9090
 proxies:
-  - {name: 日本 005, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 香港(TG@kxswa), server: 8.218.204.207, port: 34579, type: vmess, uuid: d1feb230-d383-4c0f-8ad1-344d65e96b01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 香港(TG@kxswa) 2, server: 8.218.226.112, port: 20329, type: vmess, uuid: 2f999df9-07d0-42a5-8423-2b0b69b9fa0a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 23, server: jp1.scproxy.top, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: jp1.scproxy.top}}, udp: true}
-  - {name: github.com/freefq - 德国黑森州法兰克福Choopa数据中心 31, server: 45.77.141.230, port: 5400, type: vmess, uuid: 227596cc-67a2-4127-e274-b65c196ba52f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _HK_香港_8_40, server: 8.218.70.44, port: 53908, type: vmess, uuid: 48d927af-a825-4384-b805-a0b4782c980b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 中国【付费推荐：https://tt.vg/vip】19, server: hnm.xiaohouzi.club, port: 27094, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: siga01.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 香港【付费推荐：https://tt.vg/vip】176, server: 8.218.228.49, port: 31578, type: vmess, uuid: 63947df8-2609-4770-ac20-800bcffed655, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 日本【付费推荐：https://tt.vg/vip】62, server: 85.208.108.60, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 中国【付费推荐：https://tt.vg/vip】13, server: hn.xiaohouzi.club, port: 19024, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: v2rayfree.eu.org - 广东省广州市移动 20, server: 34.wgong1.top, port: 52234, type: vmess, uuid: f0330805-d5d5-3cf2-95a2-2195ff5aaf9b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://tt.vg/vip】150, server: 34.wgong1.top, port: 52234, type: vmess, uuid: f0330805-d5d5-3cf2-95a2-2195ff5aaf9b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://tt.vg/vip】65, server: hbcu.r1u.cn, port: 43425, type: ss, cipher: chacha20-ietf-poly1305, password: 246ccec8-43b5-4ced-b680-735e180c8ada, udp: true}
+  - {name: 乌克兰【付费推荐：https://tt.vg/vip】163, server: 45.80.111.53, port: 443, type: vmess, uuid: 0b873cff-11ab-4716-c41a-04f886135091, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /suzhihan.eu.org/roewesu, headers: {Host: 200.aquabazi.site}}, udp: true}
+  - {name: _HK_香港_3_来源：快嘴科技-kkzui.com6, server: 8.218.204.207, port: 34579, type: vmess, uuid: d1feb230-d383-4c0f-8ad1-344d65e96b01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 中国【付费推荐：https://tt.vg/vip】32, server: oss-cn-shanghai.westdatacloud.top, port: 20048, type: trojan, password: 626351FA-3CA6-8118-FADF-CCDBCD620871, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 韩国【付费推荐：https://tt.vg/vip】55, server: 43.201.37.176, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 日本【付费推荐：https://tt.vg/vip】63, server: 85.208.108.60, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
   - {name: _油管：全网最强白嫖, server: in-jp-1.iivvppnn.info, port: 38301, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: "[03-20]-🇯🇵-日本-184-jp-am48-6.eqnode.net", server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: ====, obfs-param: ====, udp: true}
-  - {name: 香港(TG@kxswa) 3, server: hk1.b.bd6b6c503c93.sanfen001.pics, port: 443, type: vmess, uuid: da9d5c74-a572-4cf4-a375-19b886f5ffc4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
-  - {name: github.com/freefq - 美国  15, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/pq/nl1?ed=2048", headers: {Host: nl1.pqjc.buzz}}, udp: true}
-  - {name: 香港(TG@kxswa) 4, server: 8.218.206.118, port: 60148, type: vmess, uuid: c33f0e11-3ac7-4225-a03a-f0f33603a3c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 香港(TG@kxswa) 5, server: 8.218.194.198, port: 59383, type: vmess, uuid: fa530a36-1b07-46ef-9f89-620070640d71, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 香港(TG@kxswa) 6, server: 8.218.225.242, port: 33712, type: vmess, uuid: 9639a882-a0bc-4d26-8955-24a49d6cfe4c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】115, server: hnm.xiaohouzi.club, port: 27094, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: siga01.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国_2, server: hn.xiaohouzi.club, port: 18835, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24feilvbin.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: 美国 013, server: hk6.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: da9d5c74-a572-4cf4-a375-19b886f5ffc4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
-  - {name: github.com/freefq - 荷兰阿姆斯特丹Choopa数据中心 24, server: 95.179.128.145, port: 2083, type: vmess, uuid: 1cf2679f-8ec4-4b07-d758-132573825850, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 香港(TG@kxswa) 7, server: 8.218.225.146, port: 25076, type: vmess, uuid: de035cbd-9c64-45b3-8485-bae38a33bd3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 香港(TG@kxswa) 8, server: 8.218.228.49, port: 31578, type: vmess, uuid: 63947df8-2609-4770-ac20-800bcffed655, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 香港(TG@kxswa) 9, server: 8.218.227.58, port: 57005, type: vmess, uuid: fcb1a085-2c74-4ed5-829c-bcff003cfbad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: "[03-20]-🇳🇱-荷兰-033-213.183.51.172", server: 213.183.51.172, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: 印度(TG@kxswa), server: 152.70.74.66, port: 443, type: trojan, password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e, skip-cert-verify: true, udp: true}
-  - {name: "[03-20]-🇯🇵-日本-210-jp-am48-6.eqnode.net", server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: PT09PQ==, obfs-param: PT09PQ==, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 32, server: v2ray.online, port: 443, type: vmess, uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.v2ray.online}}, udp: true}
-  - {name: 日本 004, server: 18.183.107.80, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _CN_中国->🇺🇸_US_美国, server: oss-cn-shanghai.westdatacloud.top, port: 20048, type: trojan, password: 626351FA-3CA6-8118-FADF-CCDBCD620871, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】121, server: hnm.xiaohouzi.club, port: 18634, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 中国(TG@kxswa), server: hk6.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: da9d5c74-a572-4cf4-a375-19b886f5ffc4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: hk6.af49c4e4c2ef.sanfen001.pics}}, udp: true}
-  - {name: FR_230, server: 188.165.170.83, port: 80, type: vmess, uuid: 860a862a-2798-4037-8513-b060e310e7fc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 美国 023, server: 13.212.244.29, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 美国 024, server: t3.teslacdn2.live, port: 443, type: trojan, password: e1c12e6f-a555-4ff8-b071-1e09dd5d91e6, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】135, server: lv3oiwdaxsaowhdnjkzxw.occwaszxjjhwx.cyou, port: 12346, type: trojan, password: 001a5927-bcf7-368a-8a4d-cb8c2fd6aab5, sni: oiugbalxawdfas.vzwzasc.cn, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚 007, server: 43.154.148.54, port: 51790, type: vmess, uuid: b74f0019-b839-421f-add8-ffaf94fc3139, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hk7/getData}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本 005
-      - 香港(TG@kxswa)
-      - 香港(TG@kxswa) 2
-      - github.com/freefq - 美国CloudFlare公司CDN节点 23
-      - github.com/freefq - 德国黑森州法兰克福Choopa数据中心 31
+      - _HK_香港_8_40
+      - 中国【付费推荐：https://tt.vg/vip】19
+      - 香港【付费推荐：https://tt.vg/vip】176
+      - 日本【付费推荐：https://tt.vg/vip】62
+      - 中国【付费推荐：https://tt.vg/vip】13
+      - v2rayfree.eu.org - 广东省广州市移动 20
+      - 中国【付费推荐：https://tt.vg/vip】150
+      - 中国【付费推荐：https://tt.vg/vip】65
+      - 乌克兰【付费推荐：https://tt.vg/vip】163
+      - _HK_香港_3_来源：快嘴科技-kkzui.com6
+      - 中国【付费推荐：https://tt.vg/vip】32
+      - 韩国【付费推荐：https://tt.vg/vip】55
+      - 日本【付费推荐：https://tt.vg/vip】63
       - _油管：全网最强白嫖
-      - "[03-20]-🇯🇵-日本-184-jp-am48-6.eqnode.net"
-      - 香港(TG@kxswa) 3
-      - github.com/freefq - 美国  15
-      - 香港(TG@kxswa) 4
-      - 香港(TG@kxswa) 5
-      - 香港(TG@kxswa) 6
-      - 中国【付费推荐：https://v1.mk/vip】115
-      - _CN_中国_2
-      - 美国 013
-      - github.com/freefq - 荷兰阿姆斯特丹Choopa数据中心 24
-      - 香港(TG@kxswa) 7
-      - 香港(TG@kxswa) 8
-      - 香港(TG@kxswa) 9
-      - "[03-20]-🇳🇱-荷兰-033-213.183.51.172"
-      - 印度(TG@kxswa)
-      - "[03-20]-🇯🇵-日本-210-jp-am48-6.eqnode.net"
-      - github.com/freefq - 美国CloudFlare公司CDN节点 32
-      - 日本 004
-      - _CN_中国->🇺🇸_US_美国
-      - 中国【付费推荐：https://v1.mk/vip】121
-      - 中国(TG@kxswa)
-      - FR_230
-      - 美国 023
-      - 美国 024
-      - 中国【付费推荐：https://v1.mk/vip】135
-      - 澳大利亚 007
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - 日本 005
-      - 香港(TG@kxswa)
-      - 香港(TG@kxswa) 2
-      - github.com/freefq - 美国CloudFlare公司CDN节点 23
-      - github.com/freefq - 德国黑森州法兰克福Choopa数据中心 31
+      - _HK_香港_8_40
+      - 中国【付费推荐：https://tt.vg/vip】19
+      - 香港【付费推荐：https://tt.vg/vip】176
+      - 日本【付费推荐：https://tt.vg/vip】62
+      - 中国【付费推荐：https://tt.vg/vip】13
+      - v2rayfree.eu.org - 广东省广州市移动 20
+      - 中国【付费推荐：https://tt.vg/vip】150
+      - 中国【付费推荐：https://tt.vg/vip】65
+      - 乌克兰【付费推荐：https://tt.vg/vip】163
+      - _HK_香港_3_来源：快嘴科技-kkzui.com6
+      - 中国【付费推荐：https://tt.vg/vip】32
+      - 韩国【付费推荐：https://tt.vg/vip】55
+      - 日本【付费推荐：https://tt.vg/vip】63
       - _油管：全网最强白嫖
-      - "[03-20]-🇯🇵-日本-184-jp-am48-6.eqnode.net"
-      - 香港(TG@kxswa) 3
-      - github.com/freefq - 美国  15
-      - 香港(TG@kxswa) 4
-      - 香港(TG@kxswa) 5
-      - 香港(TG@kxswa) 6
-      - 中国【付费推荐：https://v1.mk/vip】115
-      - _CN_中国_2
-      - 美国 013
-      - github.com/freefq - 荷兰阿姆斯特丹Choopa数据中心 24
-      - 香港(TG@kxswa) 7
-      - 香港(TG@kxswa) 8
-      - 香港(TG@kxswa) 9
-      - "[03-20]-🇳🇱-荷兰-033-213.183.51.172"
-      - 印度(TG@kxswa)
-      - "[03-20]-🇯🇵-日本-210-jp-am48-6.eqnode.net"
-      - github.com/freefq - 美国CloudFlare公司CDN节点 32
-      - 日本 004
-      - _CN_中国->🇺🇸_US_美国
-      - 中国【付费推荐：https://v1.mk/vip】121
-      - 中国(TG@kxswa)
-      - FR_230
-      - 美国 023
-      - 美国 024
-      - 中国【付费推荐：https://v1.mk/vip】135
-      - 澳大利亚 007
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本 005
-      - 香港(TG@kxswa)
-      - 香港(TG@kxswa) 2
-      - github.com/freefq - 美国CloudFlare公司CDN节点 23
-      - github.com/freefq - 德国黑森州法兰克福Choopa数据中心 31
+      - _HK_香港_8_40
+      - 中国【付费推荐：https://tt.vg/vip】19
+      - 香港【付费推荐：https://tt.vg/vip】176
+      - 日本【付费推荐：https://tt.vg/vip】62
+      - 中国【付费推荐：https://tt.vg/vip】13
+      - v2rayfree.eu.org - 广东省广州市移动 20
+      - 中国【付费推荐：https://tt.vg/vip】150
+      - 中国【付费推荐：https://tt.vg/vip】65
+      - 乌克兰【付费推荐：https://tt.vg/vip】163
+      - _HK_香港_3_来源：快嘴科技-kkzui.com6
+      - 中国【付费推荐：https://tt.vg/vip】32
+      - 韩国【付费推荐：https://tt.vg/vip】55
+      - 日本【付费推荐：https://tt.vg/vip】63
       - _油管：全网最强白嫖
-      - "[03-20]-🇯🇵-日本-184-jp-am48-6.eqnode.net"
-      - 香港(TG@kxswa) 3
-      - github.com/freefq - 美国  15
-      - 香港(TG@kxswa) 4
-      - 香港(TG@kxswa) 5
-      - 香港(TG@kxswa) 6
-      - 中国【付费推荐：https://v1.mk/vip】115
-      - _CN_中国_2
-      - 美国 013
-      - github.com/freefq - 荷兰阿姆斯特丹Choopa数据中心 24
-      - 香港(TG@kxswa) 7
-      - 香港(TG@kxswa) 8
-      - 香港(TG@kxswa) 9
-      - "[03-20]-🇳🇱-荷兰-033-213.183.51.172"
-      - 印度(TG@kxswa)
-      - "[03-20]-🇯🇵-日本-210-jp-am48-6.eqnode.net"
-      - github.com/freefq - 美国CloudFlare公司CDN节点 32
-      - 日本 004
-      - _CN_中国->🇺🇸_US_美国
-      - 中国【付费推荐：https://v1.mk/vip】121
-      - 中国(TG@kxswa)
-      - FR_230
-      - 美国 023
-      - 美国 024
-      - 中国【付费推荐：https://v1.mk/vip】135
-      - 澳大利亚 007
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -169,164 +97,86 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本 005
-      - 香港(TG@kxswa)
-      - 香港(TG@kxswa) 2
-      - github.com/freefq - 美国CloudFlare公司CDN节点 23
-      - github.com/freefq - 德国黑森州法兰克福Choopa数据中心 31
+      - _HK_香港_8_40
+      - 中国【付费推荐：https://tt.vg/vip】19
+      - 香港【付费推荐：https://tt.vg/vip】176
+      - 日本【付费推荐：https://tt.vg/vip】62
+      - 中国【付费推荐：https://tt.vg/vip】13
+      - v2rayfree.eu.org - 广东省广州市移动 20
+      - 中国【付费推荐：https://tt.vg/vip】150
+      - 中国【付费推荐：https://tt.vg/vip】65
+      - 乌克兰【付费推荐：https://tt.vg/vip】163
+      - _HK_香港_3_来源：快嘴科技-kkzui.com6
+      - 中国【付费推荐：https://tt.vg/vip】32
+      - 韩国【付费推荐：https://tt.vg/vip】55
+      - 日本【付费推荐：https://tt.vg/vip】63
       - _油管：全网最强白嫖
-      - "[03-20]-🇯🇵-日本-184-jp-am48-6.eqnode.net"
-      - 香港(TG@kxswa) 3
-      - github.com/freefq - 美国  15
-      - 香港(TG@kxswa) 4
-      - 香港(TG@kxswa) 5
-      - 香港(TG@kxswa) 6
-      - 中国【付费推荐：https://v1.mk/vip】115
-      - _CN_中国_2
-      - 美国 013
-      - github.com/freefq - 荷兰阿姆斯特丹Choopa数据中心 24
-      - 香港(TG@kxswa) 7
-      - 香港(TG@kxswa) 8
-      - 香港(TG@kxswa) 9
-      - "[03-20]-🇳🇱-荷兰-033-213.183.51.172"
-      - 印度(TG@kxswa)
-      - "[03-20]-🇯🇵-日本-210-jp-am48-6.eqnode.net"
-      - github.com/freefq - 美国CloudFlare公司CDN节点 32
-      - 日本 004
-      - _CN_中国->🇺🇸_US_美国
-      - 中国【付费推荐：https://v1.mk/vip】121
-      - 中国(TG@kxswa)
-      - FR_230
-      - 美国 023
-      - 美国 024
-      - 中国【付费推荐：https://v1.mk/vip】135
-      - 澳大利亚 007
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港(TG@kxswa)
-      - 香港(TG@kxswa) 2
-      - 香港(TG@kxswa) 3
-      - 香港(TG@kxswa) 4
-      - 香港(TG@kxswa) 5
-      - 香港(TG@kxswa) 6
-      - 香港(TG@kxswa) 7
-      - 香港(TG@kxswa) 8
-      - 香港(TG@kxswa) 9
+      - _HK_香港_8_40
+      - 香港【付费推荐：https://tt.vg/vip】176
+      - _HK_香港_3_来源：快嘴科技-kkzui.com6
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 日本 005
-      - 香港(TG@kxswa)
-      - 香港(TG@kxswa) 2
-      - github.com/freefq - 美国CloudFlare公司CDN节点 23
-      - github.com/freefq - 德国黑森州法兰克福Choopa数据中心 31
+      - _HK_香港_8_40
+      - 中国【付费推荐：https://tt.vg/vip】19
+      - 香港【付费推荐：https://tt.vg/vip】176
+      - 日本【付费推荐：https://tt.vg/vip】62
+      - 中国【付费推荐：https://tt.vg/vip】13
+      - v2rayfree.eu.org - 广东省广州市移动 20
+      - 中国【付费推荐：https://tt.vg/vip】150
+      - 中国【付费推荐：https://tt.vg/vip】65
+      - 乌克兰【付费推荐：https://tt.vg/vip】163
+      - _HK_香港_3_来源：快嘴科技-kkzui.com6
+      - 中国【付费推荐：https://tt.vg/vip】32
+      - 韩国【付费推荐：https://tt.vg/vip】55
+      - 日本【付费推荐：https://tt.vg/vip】63
       - _油管：全网最强白嫖
-      - "[03-20]-🇯🇵-日本-184-jp-am48-6.eqnode.net"
-      - 香港(TG@kxswa) 3
-      - github.com/freefq - 美国  15
-      - 香港(TG@kxswa) 4
-      - 香港(TG@kxswa) 5
-      - 香港(TG@kxswa) 6
-      - 中国【付费推荐：https://v1.mk/vip】115
-      - _CN_中国_2
-      - 美国 013
-      - github.com/freefq - 荷兰阿姆斯特丹Choopa数据中心 24
-      - 香港(TG@kxswa) 7
-      - 香港(TG@kxswa) 8
-      - 香港(TG@kxswa) 9
-      - "[03-20]-🇳🇱-荷兰-033-213.183.51.172"
-      - 印度(TG@kxswa)
-      - "[03-20]-🇯🇵-日本-210-jp-am48-6.eqnode.net"
-      - github.com/freefq - 美国CloudFlare公司CDN节点 32
-      - 日本 004
-      - _CN_中国->🇺🇸_US_美国
-      - 中国【付费推荐：https://v1.mk/vip】121
-      - 中国(TG@kxswa)
-      - FR_230
-      - 美国 023
-      - 美国 024
-      - 中国【付费推荐：https://v1.mk/vip】135
-      - 澳大利亚 007
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 日本 005
-      - 香港(TG@kxswa)
-      - 香港(TG@kxswa) 2
-      - github.com/freefq - 美国CloudFlare公司CDN节点 23
-      - github.com/freefq - 德国黑森州法兰克福Choopa数据中心 31
+      - _HK_香港_8_40
+      - 中国【付费推荐：https://tt.vg/vip】19
+      - 香港【付费推荐：https://tt.vg/vip】176
+      - 日本【付费推荐：https://tt.vg/vip】62
+      - 中国【付费推荐：https://tt.vg/vip】13
+      - v2rayfree.eu.org - 广东省广州市移动 20
+      - 中国【付费推荐：https://tt.vg/vip】150
+      - 中国【付费推荐：https://tt.vg/vip】65
+      - 乌克兰【付费推荐：https://tt.vg/vip】163
+      - _HK_香港_3_来源：快嘴科技-kkzui.com6
+      - 中国【付费推荐：https://tt.vg/vip】32
+      - 韩国【付费推荐：https://tt.vg/vip】55
+      - 日本【付费推荐：https://tt.vg/vip】63
       - _油管：全网最强白嫖
-      - "[03-20]-🇯🇵-日本-184-jp-am48-6.eqnode.net"
-      - 香港(TG@kxswa) 3
-      - github.com/freefq - 美国  15
-      - 香港(TG@kxswa) 4
-      - 香港(TG@kxswa) 5
-      - 香港(TG@kxswa) 6
-      - 中国【付费推荐：https://v1.mk/vip】115
-      - _CN_中国_2
-      - 美国 013
-      - github.com/freefq - 荷兰阿姆斯特丹Choopa数据中心 24
-      - 香港(TG@kxswa) 7
-      - 香港(TG@kxswa) 8
-      - 香港(TG@kxswa) 9
-      - "[03-20]-🇳🇱-荷兰-033-213.183.51.172"
-      - 印度(TG@kxswa)
-      - "[03-20]-🇯🇵-日本-210-jp-am48-6.eqnode.net"
-      - github.com/freefq - 美国CloudFlare公司CDN节点 32
-      - 日本 004
-      - _CN_中国->🇺🇸_US_美国
-      - 中国【付费推荐：https://v1.mk/vip】121
-      - 中国(TG@kxswa)
-      - FR_230
-      - 美国 023
-      - 美国 024
-      - 中国【付费推荐：https://v1.mk/vip】135
-      - 澳大利亚 007
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本 005
-      - 香港(TG@kxswa)
-      - 香港(TG@kxswa) 2
-      - github.com/freefq - 美国CloudFlare公司CDN节点 23
-      - github.com/freefq - 德国黑森州法兰克福Choopa数据中心 31
+      - _HK_香港_8_40
+      - 中国【付费推荐：https://tt.vg/vip】19
+      - 香港【付费推荐：https://tt.vg/vip】176
+      - 日本【付费推荐：https://tt.vg/vip】62
+      - 中国【付费推荐：https://tt.vg/vip】13
+      - v2rayfree.eu.org - 广东省广州市移动 20
+      - 中国【付费推荐：https://tt.vg/vip】150
+      - 中国【付费推荐：https://tt.vg/vip】65
+      - 乌克兰【付费推荐：https://tt.vg/vip】163
+      - _HK_香港_3_来源：快嘴科技-kkzui.com6
+      - 中国【付费推荐：https://tt.vg/vip】32
+      - 韩国【付费推荐：https://tt.vg/vip】55
+      - 日本【付费推荐：https://tt.vg/vip】63
       - _油管：全网最强白嫖
-      - "[03-20]-🇯🇵-日本-184-jp-am48-6.eqnode.net"
-      - 香港(TG@kxswa) 3
-      - github.com/freefq - 美国  15
-      - 香港(TG@kxswa) 4
-      - 香港(TG@kxswa) 5
-      - 香港(TG@kxswa) 6
-      - 中国【付费推荐：https://v1.mk/vip】115
-      - _CN_中国_2
-      - 美国 013
-      - github.com/freefq - 荷兰阿姆斯特丹Choopa数据中心 24
-      - 香港(TG@kxswa) 7
-      - 香港(TG@kxswa) 8
-      - 香港(TG@kxswa) 9
-      - "[03-20]-🇳🇱-荷兰-033-213.183.51.172"
-      - 印度(TG@kxswa)
-      - "[03-20]-🇯🇵-日本-210-jp-am48-6.eqnode.net"
-      - github.com/freefq - 美国CloudFlare公司CDN节点 32
-      - 日本 004
-      - _CN_中国->🇺🇸_US_美国
-      - 中国【付费推荐：https://v1.mk/vip】121
-      - 中国(TG@kxswa)
-      - FR_230
-      - 美国 023
-      - 美国 024
-      - 中国【付费推荐：https://v1.mk/vip】135
-      - 澳大利亚 007
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -342,38 +192,20 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本 005
-      - 香港(TG@kxswa)
-      - 香港(TG@kxswa) 2
-      - github.com/freefq - 美国CloudFlare公司CDN节点 23
-      - github.com/freefq - 德国黑森州法兰克福Choopa数据中心 31
+      - _HK_香港_8_40
+      - 中国【付费推荐：https://tt.vg/vip】19
+      - 香港【付费推荐：https://tt.vg/vip】176
+      - 日本【付费推荐：https://tt.vg/vip】62
+      - 中国【付费推荐：https://tt.vg/vip】13
+      - v2rayfree.eu.org - 广东省广州市移动 20
+      - 中国【付费推荐：https://tt.vg/vip】150
+      - 中国【付费推荐：https://tt.vg/vip】65
+      - 乌克兰【付费推荐：https://tt.vg/vip】163
+      - _HK_香港_3_来源：快嘴科技-kkzui.com6
+      - 中国【付费推荐：https://tt.vg/vip】32
+      - 韩国【付费推荐：https://tt.vg/vip】55
+      - 日本【付费推荐：https://tt.vg/vip】63
       - _油管：全网最强白嫖
-      - "[03-20]-🇯🇵-日本-184-jp-am48-6.eqnode.net"
-      - 香港(TG@kxswa) 3
-      - github.com/freefq - 美国  15
-      - 香港(TG@kxswa) 4
-      - 香港(TG@kxswa) 5
-      - 香港(TG@kxswa) 6
-      - 中国【付费推荐：https://v1.mk/vip】115
-      - _CN_中国_2
-      - 美国 013
-      - github.com/freefq - 荷兰阿姆斯特丹Choopa数据中心 24
-      - 香港(TG@kxswa) 7
-      - 香港(TG@kxswa) 8
-      - 香港(TG@kxswa) 9
-      - "[03-20]-🇳🇱-荷兰-033-213.183.51.172"
-      - 印度(TG@kxswa)
-      - "[03-20]-🇯🇵-日本-210-jp-am48-6.eqnode.net"
-      - github.com/freefq - 美国CloudFlare公司CDN节点 32
-      - 日本 004
-      - _CN_中国->🇺🇸_US_美国
-      - 中国【付费推荐：https://v1.mk/vip】121
-      - 中国(TG@kxswa)
-      - FR_230
-      - 美国 023
-      - 美国 024
-      - 中国【付费推荐：https://v1.mk/vip】135
-      - 澳大利亚 007
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
