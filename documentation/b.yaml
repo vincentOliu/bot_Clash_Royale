@@ -6,551 +6,623 @@ mode: Rule
 log-level: info
 external-controller: 9090
 proxies:
-  - {name: 「SCP」KH-CF, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: kh1.scproxy.top}}, udp: true}
-  - {name: v2rayfree.eu.org - 美国CloudFlare公司CDN节点 26, server: sogood.linefriends.com, port: 443, type: vmess, uuid: acd17818-d434-49ae-80a6-d194bcaf6392, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vvip, headers: {Host: sgray.jagoan.vip}}, udp: true}
-  - {name: 二爷翻墙 https://1808.ga Node_106, server: holyquran1.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran1.store}}, udp: true}
-  - {name: 二爷翻墙 https://1808.ga Node_124, server: cf.noaries.de, port: 8080, type: vmess, uuid: ba1b14e5-33ad-46df-8116-a2935e712a2f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.cloudflare.quest}}, udp: true}
-  - {name: 二爷翻墙 https://1808.ga Node_127, server: holyquran15.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran15.store}}, udp: true}
-  - {name: 印度_0324079, server: in1.microsoftjs.top, port: 80, type: vmess, uuid: 0b79f35c-72d3-4071-b171-28c30914b7f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: tlu.dl.delivery.mp.microsoft.com}}, udp: true}
-  - {name: 美国【付费推荐：https://tt.vg/vip】686, server: japan.com, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
-  - {name: 日本【付费推荐：https://tt.vg/vip】122, server: jp11.microsoftjs.top, port: 443, type: vmess, uuid: 0b79f35c-72d3-4071-b171-28c30914b7f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: tlu.dl.delivery.mp.microsoft.com}}, udp: true}
-  - {name: 二爷翻墙 https://1808.ga Node_60, server: cf.noaries.de, port: 2086, type: vmess, uuid: ba1b14e5-33ad-46df-8116-a2935e712a2f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ovh.cloudflare.quest}}, udp: true}
-  - {name: 未知_0324213, server: 141.101.114.111, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
-  - {name: 未知_0324391, server: 141.101.115.111, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
-  - {name: 日本【付费推荐：https://tt.vg/vip】157, server: jp1.microsoftjs.top, port: 80, type: vmess, uuid: 0b79f35c-72d3-4071-b171-28c30914b7f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: tlu.dl.delivery.mp.microsoft.com}}, udp: true}
-  - {name: 亚美尼亚_0324004, server: 185.162.228.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
-  - {name: "@SSRSUB-V25-付费推荐:suo.yt/ssrsub", server: dp2.scproxy.top, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp2.scproxy.top}}, udp: true}
-  - {name: 二爷翻墙 https://1808.ga Node_90, server: 203.30.189.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
-  - {name: 韩国【付费推荐：https://tt.vg/vip】184, server: kr5.microsoftjs.top, port: 80, type: vmess, uuid: 0b79f35c-72d3-4071-b171-28c30914b7f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kr5.microsoftjs.top}}, udp: true}
-  - {name: v2rayfree.eu.org - 美国CloudFlare公司CDN节点 19, server: fr1.trump2023.org, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
-  - {name: 美国【付费推荐：https://tt.vg/vip】225, server: cf.noaries.de, port: 2082, type: vmess, uuid: ba1b14e5-33ad-46df-8116-a2935e712a2f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ovh.cloudflare.quest}}, udp: true}
-  - {name: 美国 023, server: jp2.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: 2be61bde-c1cf-4d74-9737-18621965f258, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 二爷翻墙 https://1808.ga Node_17, server: main.millionaireaisle.com, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
-  - {name: 荷兰_0324008, server: 188.114.97.3, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}, udp: true}
-  - {name: 新加坡【付费推荐：https://tt.vg/vip】110, server: sg20.microsoftjs.top, port: 80, type: vmess, uuid: 0b79f35c-72d3-4071-b171-28c30914b7f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: tlu.dl.delivery.mp.microsoft.com}}, udp: true}
-  - {name: 美国【付费推荐：https://tt.vg/vip】661, server: cf-topspeedvv2.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedvv2.uk}}, udp: true}
-  - {name: 新加坡A, server: 0kxedm1x8q8lksmj17.xingbayun.buzz, port: 443, type: vmess, uuid: 399004bf-eaf0-4532-b139-ca4e79c5e27b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 二爷翻墙 https://1808.ga Node_108, server: quranweb41.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb41.xyz}}, udp: true}
-  - {name: 美国【付费推荐：https://tt.vg/vip】691, server: chat.samrg.buzz, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cutin, headers: {Host: chat.samrg.buzz}}, udp: true}
-  - {name: 美国【付费推荐：https://tt.vg/vip】286, server: quranweb34.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb34.xyz}}, udp: true}
-  - {name: 日本【付费推荐：https://tt.vg/vip】123, server: jp10.microsoftjs.top, port: 80, type: vmess, uuid: 0b79f35c-72d3-4071-b171-28c30914b7f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: tlu.dl.delivery.mp.microsoft.com}}, udp: true}
-  - {name: 美国【付费推荐：https://tt.vg/vip】540, server: www.codepen.io, port: 443, type: vmess, uuid: 2cd39102-0799-4c61-abb6-2e7a258f0397, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: us-v.sshmax.xyz}}, udp: true}
-  - {name: 二爷翻墙 https://1808.ga Node_103, server: cf-topspeedonline.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedonline.uk}}, udp: true}
-  - {name: 乌克兰【付费推荐：https://tt.vg/vip】798, server: doinb.ml, port: 443, type: vmess, uuid: 7f6fdc53-27d0-4ac8-8440-715992b7aab1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dsfsdf, headers: {Host: sg1.doinb.tk}}, udp: true}
-  - {name: _SG_新加坡 2, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: ====, obfs-param: ====, udp: true}
-  - {name: 未知_0324195, server: 104.21.94.37, port: 443, type: vmess, uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.v2ray.online}}, udp: true}
-  - {name: 未知_0324141, server: quran-audio1.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quran-audio1.xyz}}, udp: true}
-  - {name: 美国【付费推荐：https://tt.vg/vip】116, server: 141.101.114.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
-  - {name: 美国(TG@kxswa), server: 143.42.110.81, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: 143.42.110.81}}, udp: true}
-  - {name: 「SCP」US-BuyVM4, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv3.sharecentrepro.org}}, udp: true}
-  - {name: https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶2-3CDN, server: 23.227.38.39, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: clash1.ssr-free2.xyz}}, udp: true}
-  - {name: 加拿大【付费推荐：https://tt.vg/vip】595, server: 23.227.38.26, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: 美国【付费推荐：https://tt.vg/vip】269, server: quranweb19.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb19.xyz}}, udp: true}
-  - {name: https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶2-2CDN, server: 188.114.99.10, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: clash1.ssr-free2.xyz}}, udp: true}
-  - {name: 美国-4CE TG频道@v2ssfly, server: quranweb12.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb12.xyz}}, udp: true}
-  - {name: 二爷翻墙 https://1808.ga Node_34, server: cdnjs.com, port: 443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.kotick.site}}, udp: true}
-  - {name: 新加坡【付费推荐：https://tt.vg/vip】308, server: sg16.microsoftjs.top, port: 80, type: vmess, uuid: 0b79f35c-72d3-4071-b171-28c30914b7f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: tlu.dl.delivery.mp.microsoft.com}}, udp: true}
-  - {name: sg-am3.eqsunshine.com:32001, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 美国【付费推荐：https://tt.vg/vip】632, server: quranweb37.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb37.xyz}}, udp: true}
-  - {name: 二爷翻墙 https://1808.ga Node_119, server: cf-topspeed.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeed.uk}}, udp: true}
-  - {name: 罗马尼亚【付费推荐：https://tt.vg/vip】330, server: ping1.yebrahimi.ir, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedone.uk}}, udp: true}
-  - {name: 美国【付费推荐：https://tt.vg/vip】610, server: quranweb15.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb15.xyz}}, udp: true}
-  - {name: 印度【付费推荐：https://tt.vg/vip】236, server: in2.microsoftjs.top, port: 80, type: vmess, uuid: 0b79f35c-72d3-4071-b171-28c30914b7f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: tlu.dl.delivery.mp.microsoft.com}}, udp: true}
-  - {name: 未知_0324156, server: quran-audio4.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quran-audio4.xyz}}, udp: true}
-  - {name: 德国【付费推荐：https://tt.vg/vip】375, server: 89.163.157.146, port: 443, type: vmess, uuid: b8aedf50-c4f5-4255-b73d-3779db661d70, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/220128071100}, udp: true}
-  - {name: 美国【付费推荐：https://tt.vg/vip】292, server: quranweb23.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb23.xyz}}, udp: true}
-  - {name: https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-3CDN, server: 23.227.38.40, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
-  - {name: 荷兰【付费推荐：https://tt.vg/vip】120, server: 188.114.97.3, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}, udp: true}
-  - {name: 韩国【付费推荐：https://tt.vg/vip】333, server: 130.162.143.109, port: 45600, type: vmess, uuid: c66fe225-648d-4d6b-8d31-94dca65268a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /www}, udp: true}
-  - {name: 韩国【付费推荐：https://tt.vg/vip】6, server: 131.186.21.62, port: 4433, type: ss, cipher: aes-256-gcm, password: yy595721, udp: true}
-  - {name: 美国【付费推荐：https://tt.vg/vip】459, server: 143.42.110.81, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time}, udp: true}
-  - {name: 未知_0324139, server: 104.21.86.52, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedone.uk}}, udp: true}
-  - {name: 台湾【付费推荐：https://tt.vg/vip】781, server: 45.121.51.103, port: 20715, type: vmess, uuid: f6406b6d-5487-46da-f793-46611269a306, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 美国【付费推荐：https://tt.vg/vip】196, server: quranweb24.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb24.xyz}}, udp: true}
-  - {name: 美国【付费推荐：https://tt.vg/vip】257, server: quran-audio1.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quran-audio1.xyz}}, udp: true}
-  - {name: 哥斯达黎加【付费推荐：https://tt.vg/vip】181, server: 190.93.245.1, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: clash1.ssr-free2.xyz}}, udp: true}
-  - {name: 日本【付费推荐：https://tt.vg/vip】322, server: jp3.microsoftjs.top, port: 80, type: vmess, uuid: 0b79f35c-72d3-4071-b171-28c30914b7f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: tlu.dl.delivery.mp.microsoft.com}}, udp: true}
-  - {name: v2rayfree.eu.org - 中国阿里云 34, server: cdn.wuki.moe, port: 80, type: vmess, uuid: 747695c7-1ed8-44d1-a1a0-6b1b162748ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/sbga?ed=2048", headers: {Host: woi-eu7.misakano.ml}}, udp: true}
-  - {name: v2rayfree.eu.org - 澳大利亚Kooweerup Secondary College 5, server: 203.30.189.1, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}, udp: true}
-  - {name: T.ME@Vpn_Filternet💥🇳🇱💥NL 3, server: 188.114.96.7, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb23.xyz}}, udp: true}
-  - {name: 狮城|tg频道@ripaojiedian, server: sgp-2.fuckjdieng.uk, port: 50300, type: trojan, password: fa57d4cd-5980-4b8d-b15f-cb66f4093be1, sni: sgp-2.fuckjdieng.uk, skip-cert-verify: true, udp: true}
-  - {name: 未知_0324192, server: 141.101.115.100, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
-  - {name: 英国【付费推荐：https://tt.vg/vip】318, server: 185.193.30.158, port: 443, type: vmess, uuid: A59E320C-BAC6-45E3-8A27-1518610708D0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Amsterdam.v2ray.online}}, udp: true}
-  - {name: 美国【付费推荐：https://tt.vg/vip】710, server: ca-nnc.ilovescp.com, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ca-nnc.ilovescp.com}}, udp: true}
-  - {name: 中国【付费推荐：https://tt.vg/vip】576, server: iplc.xiaohouzi.club, port: 20037, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24%24%24%24iplc.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://tt.vg/vip】760, server: ingress-i2.iivvppnn.info, port: 38102, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: YTB-awkj}}, udp: true}
-  - {name: 美国(TG@kxswa) 2, server: quranweb29.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb29.xyz}}, udp: true}
-  - {name: 二爷翻墙 https://1808.ga Node_86, server: uk1.scproxy.top, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: uk1.scproxy.top}}, udp: true}
-  - {name: "_MO_澳门->🇸🇬_SG_新加坡\r", server: 45.64.22.56, port: 443, type: trojan, password: !<str> 123456, sni: trojan-ctb-sg01.globalssh.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本【付费推荐：https://tt.vg/vip】858, server: 43.207.110.173, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 中国【付费推荐：https://tt.vg/vip】668, server: hnm.xiaohouzi.club, port: 18634, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 美国_0324966, server: 172.67.127.250, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
-  - {name: 美国【付费推荐：https://tt.vg/vip】645, server: quranweb26.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb26.xyz}}, udp: true}
-  - {name: 二爷翻墙 https://1808.ga Node_26, server: 185.162.228.1, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}, udp: true}
-  - {name: 阿联酋【付费推荐：https://tt.vg/vip】340, server: 20.74.251.90, port: 443, type: trojan, password: ca688b02-6c35-4b7a-9e28-3632e66e1086, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://tt.vg/vip】276, server: lv2iwahxwawhooiixzawx.occwaszxjjhwx.cyou, port: 12323, type: trojan, password: 001a5927-bcf7-368a-8a4d-cb8c2fd6aab5, sni: lv2iwahxwawhooiixzawx.occwaszxjjhwx.cyou, skip-cert-verify: true, udp: true}
-  - {name: 台湾【付费推荐：https://tt.vg/vip】153, server: azgy001.xibai6.top, port: 20791, type: trojan, password: 78af6d6d-6de7-3a1f-a969-c39077fb47bf, sni: azgy001.xibai6.top, skip-cert-verify: true, udp: true}
-  - {name: 美国 115, server: jp11.microsoftjs.top, port: 443, type: vmess, uuid: 0b79f35c-72d3-4071-b171-28c30914b7f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: jp11.microsoftjs.top}}, udp: true}
-  - {name: 日本【付费推荐：https://tt.vg/vip】317, server: jp4.microsoftjs.top, port: 443, type: vmess, uuid: 0b79f35c-72d3-4071-b171-28c30914b7f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: tlu.dl.delivery.mp.microsoft.com}}, udp: true}
-  - {name: 未知_0324156 2, server: quran-audio4.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quran-audio4.xyz}}, udp: true}
-  - {name: 日本【付费推荐：https://tt.vg/vip】353, server: jp9.microsoftjs.top, port: 443, type: vmess, uuid: 0b79f35c-72d3-4071-b171-28c30914b7f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp9.microsoftjs.top}}, udp: true}
-  - {name: 日本 002, server: 43.207.66.60, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 日本 013, server: v6.heduian.online, port: 30866, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v6.heduian.online}}, udp: true}
-  - {name: 台湾【付费推荐：https://tt.vg/vip】520, server: azgy001.xibai6.top, port: 20792, type: trojan, password: 78af6d6d-6de7-3a1f-a969-c39077fb47bf, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡【付费推荐：https://tt.vg/vip】168, server: sg5.microsoftjs.top, port: 443, type: vmess, uuid: 0b79f35c-72d3-4071-b171-28c30914b7f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: tlu.dl.delivery.mp.microsoft.com}}, udp: true}
-  - {name: 澳大利亚 004, server: 43.201.57.87, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 台湾【付费推荐：https://tt.vg/vip】581, server: azgy001.xibai6.top, port: 20713, type: trojan, password: 78af6d6d-6de7-3a1f-a969-c39077fb47bf, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: _油管：全网最强白嫖, server: in-jp-1.iivvppnn.info, port: 38301, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: 日本特殊|tg@ripaojiedian, server: 13.229.239.8, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 未知_0324158, server: 200.aquabazi.site, port: 443, type: vmess, uuid: 0b873cff-11ab-4716-c41a-04f886135091, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /suzhihan.eu.org/roewesu, headers: {Host: 200.aquabazi.site}}, udp: true}
-  - {name: 印度【付费推荐：https://tt.vg/vip】105, server: 152.70.74.66, port: 443, type: trojan, password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e, skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：https://tt.vg/vip】234, server: quranweb3.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb3.xyz}}, udp: true}
-  - {name: 台湾_0324468, server: 165.154.246.103, port: 80, type: vmess, uuid: 6108bc5a-fb6a-3f3d-a318-f44a3345b950, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /adobe}, udp: true}
-  - {name: 香港【付费推荐：https://tt.vg/vip】345, server: petal.ga, port: 443, type: vmess, uuid: b744f5cc-eab2-d2cd-f477-76646d17987f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /petalvws, headers: {Host: petal.ga}}, udp: true}
-  - {name: 伯利兹_0324047, server: 203.30.191.192, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
-  - {name: 未知_0324386, server: 190.93.246.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
-  - {name: 二爷翻墙 https://1808.ga Node_82, server: holyquran19.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran19.store}}, udp: true}
-  - {name: 台湾【付费推荐：https://tt.vg/vip】656, server: azgy001.xibai6.top, port: 20786, type: trojan, password: 78af6d6d-6de7-3a1f-a969-c39077fb47bf, sni: azgy001.xibai6.top, skip-cert-verify: true, udp: true}
-  - {name: 日本【付费推荐：https://tt.vg/vip】90, server: jp8.microsoftjs.top, port: 80, type: vmess, uuid: 0b79f35c-72d3-4071-b171-28c30914b7f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp8.microsoftjs.top}}, udp: true}
-  - {name: 美国 41, server: surongwei.eu.org, port: 443, type: vmess, uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /reffs7y26g0ua, headers: {Host: surongwei.eu.org}}, udp: true}
-  - {name: 香港【付费推荐：https://tt.vg/vip】215, server: hk9.microsoftjs.top, port: 443, type: trojan, password: 0b79f35c-72d3-4071-b171-28c30914b7f1, sni: hk9.microsoftjs.top, skip-cert-verify: true, udp: true}
-  - {name: -美国-172.67.45.184, server: 172.67.45.184, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}, udp: true}
-  - {name: 台湾【付费推荐：https//tt.vg/vip】768, server: sneed-a.v2ok.cc, port: 23000, type: vmess, uuid: 32f0c996-f0f8-3103-90a6-230b98ac384e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：https://tt.vg/vip】342, server: 172.67.147.153, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cutin, headers: {Host: chat.samrg.buzz}}, udp: true}
-  - {name: 台湾【付费推荐：https://tt.vg/vip】687, server: azgy001.xibai6.top, port: 20710, type: trojan, password: 78af6d6d-6de7-3a1f-a969-c39077fb47bf, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡B, server: 0kxedm1x8q8lksmj18.xingbayun.buzz, port: 443, type: vmess, uuid: 399004bf-eaf0-4532-b139-ca4e79c5e27b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 未知_0324143, server: cf-topspeedone.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedone.uk}}, udp: true}
-  - {name: 中国【付费推荐：https://tt.vg/vip】118, server: hk7.microsoftjs.top, port: 443, type: trojan, password: 0b79f35c-72d3-4071-b171-28c30914b7f1, sni: hk7.microsoftjs.top, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 亚太地区  6, server: 103.152.221.113, port: 4721, type: vmess, uuid: 32f0c996-f0f8-3103-90a6-230b98ac384e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 二爷翻墙 https://1808.ga Node_23, server: holyquran8.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran8.store}}, udp: true}
-  - {name: 塞浦路斯【付费推荐：https://tt.vg/vip】217, server: cf-lt.sharecentre.online, port: 2095, type: vmess, uuid: fc9bd698-6e37-4330-f691-a3334f70b1d3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /live, headers: {Host: arm.juhaohuo.tk}}, udp: true}
+  - {name: 中国【付费推荐：https://tt.vg/vip】216, server: hn.xiaohouzi.club, port: 19024, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 台湾【付费推荐：https://tt.vg/vip】455, server: azgy001.xibai6.top, port: 20712, type: trojan, password: 78af6d6d-6de7-3a1f-a969-c39077fb47bf, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: FR法国(youtube阿伟科技) 3, server: t1.teslacdn2.live, port: 443, type: trojan, password: e83fc0d1-9bed-4863-8da9-a81a6e0c4dfa, sni: t1.teslacdn2.live, skip-cert-verify: true, udp: true}
+  - {name: 美国 051, server: c.mg.us.cat77.cloud, port: 2222, type: trojan, password: cd27884b-c5af-34ec-b75f-8248077818fe, skip-cert-verify: true, udp: true}
+  - {name: 美国 040, server: e.mg.us.cat77.cloud, port: 2255, type: trojan, password: cd27884b-c5af-34ec-b75f-8248077818fe, skip-cert-verify: true, udp: true}
+  - {name: 美国 037, server: k.mg.us.cat77.cloud, port: 2255, type: trojan, password: cd27884b-c5af-34ec-b75f-8248077818fe, skip-cert-verify: true, udp: true}
+  - {name: 新加坡03, server: 4.sg.cat77.cloud, port: 2255, type: trojan, password: cd27884b-c5af-34ec-b75f-8248077818fe, sni: 4.sg.cat77.cloud, skip-cert-verify: true, udp: true}
+  - {name: _KR_电报频道@pjrjzy 7, server: 1.hg.kr.cat77.cloud, port: 8443, type: trojan, password: cd27884b-c5af-34ec-b75f-8248077818fe, skip-cert-verify: true, udp: true}
   - {name: 狮城特殊|tg@ripaojiedian, server: 43.201.29.13, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 澳大利亚 001, server: 43.207.160.88, port: 443, type: ss, cipher: aes-256-cfb, password: doub.io, udp: true}
-  - {name: 二爷翻墙 https://1808.ga Node_22, server: 148.59.74.200, port: 443, type: trojan, password: 2ea5fc44-bd38-4fb0-a9b9-88c83fc56622, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 二爷翻墙 https://1808.ga Node_24, server: hk-hytron.ilovescp.com, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}, udp: true}
-  - {name: 美国 028, server: 148.59.74.236, port: 443, type: trojan, password: 2ea5fc44-bd38-4fb0-a9b9-88c83fc56622, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 香港2|tg@ripaojiedian, server: cn-hk-package.hyperlinkvpn.xyz, port: 50180, type: trojan, password: ba5305d8-bf3e-4eee-8ebf-1c7b9a6dbed2, sni: cn-hk-package.hyperlinkvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: 美国 028, server: kr-s-1.fuckjdieng.uk, port: 50130, type: trojan, password: 96a0471e-7632-4c67-bc98-312fe38bbe63, sni: kr-s-1.fuckjdieng.uk, skip-cert-verify: true, udp: true}
   - {name: 中国【付费推荐：https://tt.vg/vip】251, server: lv3oiwdaxsaowhdnjkzxw.occwaszxjjhwx.cyou, port: 12346, type: trojan, password: 001a5927-bcf7-368a-8a4d-cb8c2fd6aab5, sni: lv3oiwdaxsaowhdnjkzxw.occwaszxjjhwx.cyou, skip-cert-verify: true, udp: true}
+  - {name: 新加坡16, server: 13.212.38.125, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 澳大利亚 001, server: 43.207.160.88, port: 443, type: ss, cipher: aes-256-cfb, password: doub.io, udp: true}
+  - {name: 美国 039, server: h.mg.us.cat77.cloud, port: 2255, type: trojan, password: cd27884b-c5af-34ec-b75f-8248077818fe, skip-cert-verify: true, udp: true}
+  - {name: 印度【付费推荐：https://tt.vg/vip】105, server: 152.70.74.66, port: 443, type: trojan, password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://tt.vg/vip】570, server: hnm.xiaohouzi.club, port: 47651, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24hnm.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 台湾【付费推荐：https://tt.vg/vip】581, server: azgy001.xibai6.top, port: 20713, type: trojan, password: 78af6d6d-6de7-3a1f-a969-c39077fb47bf, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 台湾【付费推荐：https://tt.vg/vip】153, server: azgy001.xibai6.top, port: 20791, type: trojan, password: 78af6d6d-6de7-3a1f-a969-c39077fb47bf, sni: azgy001.xibai6.top, skip-cert-verify: true, udp: true}
+  - {name: 台湾【付费推荐：https://tt.vg/vip】626, server: azgy001.xibai6.top, port: 20785, type: trojan, password: 78af6d6d-6de7-3a1f-a969-c39077fb47bf, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://tt.vg/vip】87, server: oss-cn-shanghai.westdatacloud.top, port: 20048, type: trojan, password: 626351FA-3CA6-8118-FADF-CCDBCD620871, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 台湾【付费推荐：https://tt.vg/vip】520, server: azgy001.xibai6.top, port: 20792, type: trojan, password: 78af6d6d-6de7-3a1f-a969-c39077fb47bf, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: _DE_电报频道@pjrjzy, server: b.dg.cat77.cloud, port: 5678, type: trojan, password: cd27884b-c5af-34ec-b75f-8248077818fe, skip-cert-verify: true, udp: true}
+  - {name: "|19.85Mb", server: 43.156.19.14, port: 48317, type: vmess, uuid: 98821111-93ab-4562-946a-61ba95f472f1, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sg8/getData, headers: {Host: sg8.verichains.co}}, udp: true}
+  - {name: 美国 038, server: 15.us.cat77.cloud, port: 2222, type: trojan, password: cd27884b-c5af-34ec-b75f-8248077818fe, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://tt.vg/vip】709, server: data-hk-v1.shwjfkw.cn, port: 50207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: data-hk-v1.shwjfkw.cn}}, udp: true}
+  - {name: 日本 003, server: 43.207.205.208, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 美国 049, server: 107.182.28.230, port: 80, type: vmess, uuid: dd776000-ed52-4ce9-f88c-c07d9047e687, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "@SSRSUB-V24-付费推荐:suo.yt/ssrsub", server: cf.noaries.de, port: 8080, type: vmess, uuid: 40c70043-03fe-42df-aab1-11e7226b145e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: aus.cloudflare.quest}}, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】746, server: 204.216.214.102, port: 44386, type: trojan, password: C931CWacy8, skip-cert-verify: true, udp: true}
+  - {name: "_KR_韩国\r", server: 43.201.57.87, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 新加坡07, server: 13.215.177.64, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "@SSRSUB-V08-付费推荐:suo.yt/ssrsub", server: cf.noaries.de, port: 80, type: vmess, uuid: e1baf765-ddb2-4e41-9f19-e3388543c9aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v10.asuka.buzz}}, udp: true}
+  - {name: 台湾【付费推荐：https://tt.vg/vip】556, server: azgy001.xibai6.top, port: 20783, type: trojan, password: 78af6d6d-6de7-3a1f-a969-c39077fb47bf, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 未知_0325187, server: 104.21.94.37, port: 443, type: vmess, uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.v2ray.online}}, udp: true}
+  - {name: 韩国【付费推荐：https://tt.vg/vip】6, server: 131.186.21.62, port: 4433, type: ss, cipher: aes-256-gcm, password: yy595721, udp: true}
+  - {name: 日本 005, server: jp.fuzzypn.me, port: 80, type: vmess, uuid: 2118ff25-a750-48de-a7e9-c17b454340ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fuzzypn, headers: {Host: jp.fuzzypn.me}}, udp: true}
+  - {name: "@SSRSUB-V32-付费推荐:suo.yt/ssrsub", server: cf.noaries.de, port: 8080, type: vmess, uuid: 40c70043-03fe-42df-aab1-11e7226b145e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: netherlands.cloudflare.quest}}, udp: true}
+  - {name: 美国_0325196, server: 172.67.222.57, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb22.xyz}}, udp: true}
+  - {name: 罗马尼亚【付费推荐：https://tt.vg/vip】330, server: ping1.yebrahimi.ir, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedone.uk}}, udp: true}
+  - {name: 中国【付费推荐：https://tt.vg/vip】707, server: data-hk-v2.shwjfkw.cn, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: data-hk-v2.shwjfkw.cn}}, udp: true}
+  - {name: https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-15CDN, server: 190.93.245.4, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
+  - {name: "|27.83Mb", server: 156.225.67.82, port: 56926, type: vmess, uuid: 3fd637ad-46fe-4f85-a6e8-86b00bca1122, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 082, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: kh1.scproxy.top}}, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】286, server: quranweb34.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb34.xyz}}, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】540, server: www.codepen.io, port: 443, type: vmess, uuid: 2cd39102-0799-4c61-abb6-2e7a258f0397, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: us-v.sshmax.xyz}}, udp: true}
+  - {name: "@SSRSUB-V30-付费推荐:suo.yt/ssrsub", server: cf.noaries.de, port: 2052, type: vmess, uuid: 40c70043-03fe-42df-aab1-11e7226b145e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: pl.cloudflare.quest}}, udp: true}
+  - {name: 二爷翻墙 https://1808.ga Node_104, server: holyquran11.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran11.store}}, udp: true}
+  - {name: "@SSRSUB-V35-付费推荐:suo.yt/ssrsub", server: cf.noaries.de, port: 2052, type: vmess, uuid: 40c70043-03fe-42df-aab1-11e7226b145e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: fr.cloudflare.quest}}, udp: true}
+  - {name: GB_07, server: 212.102.53.194, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: "@SSRSUB-V40-付费推荐:suo.yt/ssrsub", server: cf.noaries.de, port: 2086, type: vmess, uuid: 40c70043-03fe-42df-aab1-11e7226b145e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ovh.cloudflare.quest}}, udp: true}
+  - {name: 美国 032, server: 45.86.65.228, port: 443, type: vmess, uuid: 5b97c33f-088a-49bd-c01d-4fc9ec0f3525, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ray}, udp: true}
+  - {name: 美国_0325191, server: 172.67.194.139, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedoneplus.uk}}, udp: true}
+  - {name: Bulgaria 01 TG@nodpai, server: 1.bjly.cat77.cloud, port: 2222, type: trojan, password: cd27884b-c5af-34ec-b75f-8248077818fe, skip-cert-verify: true, udp: true}
+  - {name: "@SSRSUB-V34-付费推荐:suo.yt/ssrsub", server: cf.noaries.de, port: 8080, type: vmess, uuid: 40c70043-03fe-42df-aab1-11e7226b145e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ft.cloudflare.quest}}, udp: true}
+  - {name: _KR_电报频道@pjrjzy 8, server: 3.hg.kr.cat77.cloud, port: 8443, type: trojan, password: cd27884b-c5af-34ec-b75f-8248077818fe, skip-cert-verify: true, udp: true}
+  - {name: 美国 046, server: g.mg.us.cat77.cloud, port: 4535, type: trojan, password: cd27884b-c5af-34ec-b75f-8248077818fe, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://tt.vg/vip】782, server: 180.101.193.226, port: 10068, type: ss, cipher: aes-256-cfb, password: RsDk3peCSuo76B68, udp: true}
+  - {name: 中国【付费推荐：https://tt.vg/vip】635, server: hn.xiaohouzi.club, port: 18835, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24feilvbin.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】443, server: cf-topspeedonline.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedonline.uk}}, udp: true}
+  - {name: 未知_0325183, server: 104.21.53.66, port: 443, type: vmess, uuid: d05d144a-71a9-4720-8c4e-565257953069, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: woiden.739256.xyz}}, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】257, server: quran-audio1.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quran-audio1.xyz}}, udp: true}
+  - {name: 二爷翻墙 https://1808.ga Node_118, server: cf-topspeedoneplus.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedoneplus.uk}}, udp: true}
+  - {name: 日本【付费推荐：https://tt.vg/vip】851, server: 43.207.214.255, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 日本 006, server: 123.jieyusustc.top, port: 19647, type: trojan, password: EAuXDMn43W, skip-cert-verify: true, udp: true}
+  - {name: "@SSRSUB-V11-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: us2.sharecentrepro.com}}, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】673, server: dp2.scproxy.top, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp2.scproxy.top}}, udp: true}
+  - {name: 美国_0325191 2, server: 172.67.194.139, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedoneplus.uk}}, udp: true}
+  - {name: US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_33, server: quranweb7.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb7.xyz}}, udp: true}
+  - {name: "@SSRSUB-V36-付费推荐:suo.yt/ssrsub", server: cf.noaries.de, port: 80, type: vmess, uuid: 40c70043-03fe-42df-aab1-11e7226b145e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ovh.cloudflare.quest}}, udp: true}
+  - {name: "@SSRSUB-V25-付费推荐:suo.yt/ssrsub", server: cf.noaries.de, port: 2052, type: vmess, uuid: 40c70043-03fe-42df-aab1-11e7226b145e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: aus.cloudflare.quest}}, udp: true}
+  - {name: "@SSRSUB-V39-付费推荐:suo.yt/ssrsub", server: cf.noaries.de, port: 2052, type: vmess, uuid: 40c70043-03fe-42df-aab1-11e7226b145e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ovh.cloudflare.quest}}, udp: true}
+  - {name: "@SSRSUB-V53-付费推荐:suo.yt/ssrsub", server: cf.noaries.de, port: 2052, type: vmess, uuid: 40c70043-03fe-42df-aab1-11e7226b145e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: scw.cloudflare.quest}}, udp: true}
+  - {name: 二爷翻墙 https://1808.ga Node_83, server: holyquran18.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran18.store}}, udp: true}
+  - {name: 美国 041, server: j.mg.us.cat77.cloud, port: 443, type: trojan, password: cd27884b-c5af-34ec-b75f-8248077818fe, skip-cert-verify: true, udp: true}
+  - {name: "@SSRSUB-V26-付费推荐:suo.yt/ssrsub", server: cf.noaries.de, port: 8080, type: vmess, uuid: 40c70043-03fe-42df-aab1-11e7226b145e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.cloudflare.quest}}, udp: true}
+  - {name: 美国_0325594, server: wwwow.ir, port: 443, type: vmess, uuid: 84b4d2ac-699b-4ba5-a6b2-adaaa82b667d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /84b4d2ac-699b-4ba5-a6b2-adaaa82b667d-vm, headers: {Host: wwwow.ir}}, udp: true}
+  - {name: -美国-172.67.45.184, server: 172.67.45.184, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】121, server: quranweb22.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb22.xyz}}, udp: true}
+  - {name: 美国_0325196 2, server: 172.67.222.57, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb22.xyz}}, udp: true}
+  - {name: 日本 012, server: v6.heduian.online, port: 30866, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v6.heduian.online}}, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】207, server: 104.18.3.2, port: 80, type: vmess, uuid: 1d1c1d94-6987-4658-a4dc-8821a30fe7e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: idnusanet.vpnexecutive.my.id}}, udp: true}
+  - {name: "@SSRSUB-V37-付费推荐:suo.yt/ssrsub", server: cf.noaries.de, port: 2082, type: vmess, uuid: 40c70043-03fe-42df-aab1-11e7226b145e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ovh.cloudflare.quest}}, udp: true}
+  - {name: US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_26, server: holyquran3.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran3.store}}, udp: true}
+  - {name: 未知_0325146, server: 141.101.115.120, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {name: 美国 086, server: 185.148.104.215, port: 2053, type: vmess, uuid: 0268eba3-522d-43f2-ba0e-93674fa8017a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /Telegram-@VPNHouse_Official, headers: {Host: dl.mmdmahdi.tk}}, udp: true}
+  - {name: "@SSRSUB-V21-付费推荐:suo.yt/ssrsub", server: cf.noaries.de, port: 2052, type: vmess, uuid: 40c70043-03fe-42df-aab1-11e7226b145e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: aws-usa.cloudflare.quest}}, udp: true}
+  - {name: 美国_0325181, server: 172.67.135.103, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb3.xyz}}, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】196, server: quranweb24.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb24.xyz}}, udp: true}
+  - {name: 伯利兹【付费推荐：https://tt.vg/vip】665, server: 203.30.191.191, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: 新加坡【付费推荐：https://tt.vg/vip】289, server: vsg1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vsg1.0bad.com}}, udp: true}
+  - {name: 二爷翻墙 https://1808.ga Node_36, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: 72fd33d5-5c1a-4193-96c6-665fc20b71c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: 1076a8af.ikunxiao.top}}, udp: true}
+  - {name: https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-3CDN, server: 23.227.38.40, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
+  - {name: _TW_台湾, server: tw2.sanfen001.pics, port: 443, type: vmess, uuid: da9d5c74-a572-4cf4-a375-19b886f5ffc4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_9, server: quranweb12.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb12.xyz}}, udp: true}
+  - {name: 未知_0325147, server: 104.21.64.41, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quran-audio5.xyz}}, udp: true}
+  - {name: "@SSRSUB-V44-付费推荐:suo.yt/ssrsub", server: cf.noaries.de, port: 2052, type: vmess, uuid: 40c70043-03fe-42df-aab1-11e7226b145e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ro.cloudflare.quest}}, udp: true}
+  - {name: d2@oneclickvpnkeys, server: kiava-d2.duckdns.org, port: 8080, type: vmess, uuid: f9605fe5-dec0-4043-cbb7-1a1e0e3ecb63, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sptest.hostiran.net.prod.hosts.ooklaserver.net}}, udp: true}
+  - {name: 卢森堡_0325027, server: vps.jiegebuyao.top, port: 19790, type: vmess, uuid: dce44967-ee54-4beb-b1bf-0c51aad60e08, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: vps.jiegebuyao.top}}, udp: true}
+  - {name: 美国_0325181 2, server: 172.67.135.103, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb3.xyz}}, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】563, server: quranweb1.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb1.xyz}}, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】631, server: uk1.scproxy.top, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: uk1.scproxy.top}}, udp: true}
+  - {name: 二爷翻墙 https://1808.ga Node_34, server: cdnjs.com, port: 443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.kotick.site}}, udp: true}
+  - {name: 美国 CloudFlare节点 4, server: quranweb17.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb17.xyz}}, udp: true}
+  - {name: 未知_0325188, server: 104.16.176.44, port: 443, type: vmess, uuid: c002de50-e64e-4328-b98a-fae82bdcafa4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: de-v.sshmax.xyz}}, udp: true}
+  - {name: 二爷翻墙 https://1808.ga Node_107, server: cf-topspeedone.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedone.uk}}, udp: true}
+  - {name: 伊朗_0325004, server: join-to2.unlimiteddev.click, port: 80, type: vmess, uuid: 1f6734c1-fc44-4c86-b8d8-8e0343f50f63, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: join-to2.unlimiteddev.click}}, udp: true}
+  - {name: 美国 048, server: alibaba.rizkihdytvpnstore.me, port: 80, type: vmess, uuid: ee8f86aa-1255-449b-be1a-b885739b1b10, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: alibaba.rizkihdytvpnstore.me}}, udp: true}
+  - {name: "@SSRSUB-V31-付费推荐:suo.yt/ssrsub", server: cf.noaries.de, port: 2052, type: vmess, uuid: 40c70043-03fe-42df-aab1-11e7226b145e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ft.cloudflare.quest}}, udp: true}
+  - {name: 二爷翻墙 https://1808.ga Node_127, server: holyquran15.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran15.store}}, udp: true}
+  - {name: 荷兰_0325014, server: 188.114.96.7, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb23.xyz}}, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】592, server: holyquran19.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran19.store}}, udp: true}
+  - {name: 荷兰【付费推荐：https://tt.vg/vip】120, server: 188.114.97.3, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】247, server: quran-audio5.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quran-audio5.xyz}}, udp: true}
+  - {name: 未知_0325187 2, server: 104.21.94.37, port: 443, type: vmess, uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.v2ray.online}}, udp: true}
+  - {name: 美国_03252954, server: alibaba.rizkihdytvpnstore.me, port: 443, type: vmess, uuid: ee8f86aa-1255-449b-be1a-b885739b1b10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: alibaba.rizkihdytvpnstore.me}}, udp: true}
+  - {name: 美国_0325232, server: 172.67.209.170, port: 443, type: vmess, uuid: d05d144a-71a9-4720-8c4e-565257953069, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: woiden.739256.xyz}}, udp: true}
+  - {name: 美国 095, server: sg4.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: da9d5c74-a572-4cf4-a375-19b886f5ffc4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】609, server: quranweb4.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb4.xyz}}, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】735, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: bc08be42-471a-4149-b622-06df0862734d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: 4bb4ced4.8200860.xyz}}, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】195, server: 104.21.86.52, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedone.uk}}, udp: true}
+  - {name: 未知_0325139, server: quranweb15.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb15.xyz}}, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】594, server: freequranbook.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: freequranbook.uk}}, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】660, server: holyquran1.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran1.store}}, udp: true}
+  - {name: "@SSRSUB-V22-付费推荐:suo.yt/ssrsub", server: cf.noaries.de, port: 2052, type: vmess, uuid: 40c70043-03fe-42df-aab1-11e7226b145e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.cloudflare.quest}}, udp: true}
+  - {name: "@SSRSUB-V15-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv3.sharecentrepro.org}}, udp: true}
+  - {name: United States 08 TG@nodpai, server: 45.89.106.118, port: 443, type: vmess, uuid: bf57c52e-b355-4319-9b04-cd2f597f7b6c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ray}, udp: true}
+  - {name: "@SSRSUB-V27-付费推荐:suo.yt/ssrsub", server: cf.noaries.de, port: 2052, type: vmess, uuid: 40c70043-03fe-42df-aab1-11e7226b145e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: lsb-aries.heinu.cf}}, udp: true}
+  - {name: 二爷翻墙 https://1808.ga Node_23, server: holyquran8.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran8.store}}, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】645, server: quranweb26.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb26.xyz}}, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】644, server: quranweb29.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb29.xyz}}, udp: true}
+  - {name: 塞浦路斯【付费推荐：https://tt.vg/vip】217, server: cf-lt.sharecentre.online, port: 2095, type: vmess, uuid: fc9bd698-6e37-4330-f691-a3334f70b1d3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /live, headers: {Host: arm.juhaohuo.tk}}, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】583, server: quranweb41.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb41.xyz}}, udp: true}
+  - {name: sg-am3.eqsunshine.com:32001, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
   - {name: 中国【付费推荐：https://tt.vg/vip】354, server: 120.233.31.72, port: 39330, type: ss, cipher: aes-256-gcm, password: 294b8d95-2302-4b95-8595-d1870305cedb, udp: true}
-  - {name: 香港_0324136, server: v23.jiedian.stream, port: 80, type: vmess, uuid: 80b735b5-d009-4b53-9e27-6e8203e5e2da, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 土耳其, server: 194.146.26.40, port: 443, type: trojan, password: 2ea5fc44-bd38-4fb0-a9b9-88c83fc56622, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 中国(TG@kxswa), server: oss-cn-shanghai.westdatacloud.top, port: 20048, type: trojan, password: 626351FA-3CA6-8118-FADF-CCDBCD620871, sni: v12.kwaicdn.com, skip-cert-verify: true, udp: true}
-  - {name: 新加坡【付费推荐：https://tt.vg/vip】409, server: nf.stablize.top, port: 443, type: trojan, password: 19caa9e5-8abe-401b-84a8-27d574c14509, skip-cert-verify: true, udp: true}
-  - {name: 香港【付费推荐：https://tt.vg/vip】193, server: hk2.microsoftjs.top, port: 80, type: trojan, password: 0b79f35c-72d3-4071-b171-28c30914b7f1, sni: hk2.microsoftjs.top, skip-cert-verify: true, udp: true}
-  - {name: 香港【付费推荐：https://tt.vg/vip】98, server: hk5.microsoftjs.top, port: 443, type: trojan, password: 0b79f35c-72d3-4071-b171-28c30914b7f1, sni: hk5.microsoftjs.top, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】620, server: woiden.739256.xyz, port: 443, type: vmess, uuid: d05d144a-71a9-4720-8c4e-565257953069, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: woiden.739256.xyz}}, udp: true}
+  - {name: v2rayfree.eu.org - 美国CloudFlare公司CDN节点 26, server: sogood.linefriends.com, port: 443, type: vmess, uuid: acd17818-d434-49ae-80a6-d194bcaf6392, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vvip, headers: {Host: sgray.jagoan.vip}}, udp: true}
+  - {name: 荷兰_0325012, server: 188.114.99.0, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran4.store}}, udp: true}
+  - {name: v2rayfree.eu.org - 美国CloudFlare公司CDN节点 13, server: quranweb40.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb40.xyz}}, udp: true}
+  - {name: 美国 021, server: 156.225.67.82, port: 56926, type: vmess, uuid: 3fd637ad-46fe-4f85-a6e8-86b00bca1122, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: United States 09 TG@nodpai, server: 45.86.65.225, port: 443, type: vmess, uuid: 5b97c33f-088a-49bd-c01d-4fc9ec0f3525, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ray}, udp: true}
+  - {name: 美国 054, server: 45.89.106.128, port: 443, type: vmess, uuid: b9cd8c99-dfef-46a2-c220-ddb13b837303, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ray}, udp: true}
+  - {name: 美国 033, server: 45.89.106.101, port: 443, type: vmess, uuid: 19fc9d1f-fe78-4b76-de4f-ea79546805e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ray}, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】459, server: 143.42.110.81, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time}, udp: true}
+  - {name: United States(ChatGPT) 14 TG@nodpai, server: 45.89.106.139, port: 443, type: vmess, uuid: 8366f30c-126b-4711-d6af-79ed68a138b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ray}, udp: true}
+  - {name: "@SSRSUB-V38-付费推荐:suo.yt/ssrsub", server: cf.noaries.de, port: 8080, type: vmess, uuid: 40c70043-03fe-42df-aab1-11e7226b145e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ovh.cloudflare.quest}}, udp: true}
+  - {name: United States(ChatGPT) 07 TG@nodpai, server: 45.89.106.111, port: 443, type: vmess, uuid: a20b160a-554e-434b-b4e0-c2c204b18713, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ray}, udp: true}
+  - {name: 未知_0325151, server: quranweb22.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb22.xyz}}, udp: true}
+  - {name: "@SSRSUB-V33-付费推荐:suo.yt/ssrsub", server: cf.noaries.de, port: 8080, type: vmess, uuid: 40c70043-03fe-42df-aab1-11e7226b145e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: pl.cloudflare.quest}}, udp: true}
+  - {name: 美国(TG@kxswa), server: 143.42.110.81, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: 143.42.110.81}}, udp: true}
+  - {name: 美国 035, server: 45.89.106.117, port: 443, type: vmess, uuid: 0050e5f9-5dcf-45b3-92b0-f6ee2b95f7f8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ray}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 「SCP」KH-CF
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 26
-      - 二爷翻墙 https://1808.ga Node_106
-      - 二爷翻墙 https://1808.ga Node_124
-      - 二爷翻墙 https://1808.ga Node_127
-      - 印度_0324079
-      - 美国【付费推荐：https://tt.vg/vip】686
-      - 日本【付费推荐：https://tt.vg/vip】122
-      - 二爷翻墙 https://1808.ga Node_60
-      - 未知_0324213
-      - 未知_0324391
-      - 日本【付费推荐：https://tt.vg/vip】157
-      - 亚美尼亚_0324004
-      - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
-      - 二爷翻墙 https://1808.ga Node_90
-      - 韩国【付费推荐：https://tt.vg/vip】184
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 19
-      - 美国【付费推荐：https://tt.vg/vip】225
-      - 美国 023
-      - 二爷翻墙 https://1808.ga Node_17
-      - 荷兰_0324008
-      - 新加坡【付费推荐：https://tt.vg/vip】110
-      - 美国【付费推荐：https://tt.vg/vip】661
-      - 新加坡A
-      - 二爷翻墙 https://1808.ga Node_108
-      - 美国【付费推荐：https://tt.vg/vip】691
-      - 美国【付费推荐：https://tt.vg/vip】286
-      - 日本【付费推荐：https://tt.vg/vip】123
-      - 美国【付费推荐：https://tt.vg/vip】540
-      - 二爷翻墙 https://1808.ga Node_103
-      - 乌克兰【付费推荐：https://tt.vg/vip】798
-      - _SG_新加坡 2
-      - 未知_0324195
-      - 未知_0324141
-      - 美国【付费推荐：https://tt.vg/vip】116
-      - 美国(TG@kxswa)
-      - 「SCP」US-BuyVM4
-      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶2-3CDN
-      - 加拿大【付费推荐：https://tt.vg/vip】595
-      - 美国【付费推荐：https://tt.vg/vip】269
-      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶2-2CDN
-      - 美国-4CE TG频道@v2ssfly
-      - 二爷翻墙 https://1808.ga Node_34
-      - 新加坡【付费推荐：https://tt.vg/vip】308
-      - sg-am3.eqsunshine.com:32001
-      - 美国【付费推荐：https://tt.vg/vip】632
-      - 二爷翻墙 https://1808.ga Node_119
-      - 罗马尼亚【付费推荐：https://tt.vg/vip】330
-      - 美国【付费推荐：https://tt.vg/vip】610
-      - 印度【付费推荐：https://tt.vg/vip】236
-      - 未知_0324156
-      - 德国【付费推荐：https://tt.vg/vip】375
-      - 美国【付费推荐：https://tt.vg/vip】292
-      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-3CDN
-      - 荷兰【付费推荐：https://tt.vg/vip】120
-      - 韩国【付费推荐：https://tt.vg/vip】333
-      - 韩国【付费推荐：https://tt.vg/vip】6
-      - 美国【付费推荐：https://tt.vg/vip】459
-      - 未知_0324139
-      - 台湾【付费推荐：https://tt.vg/vip】781
-      - 美国【付费推荐：https://tt.vg/vip】196
-      - 美国【付费推荐：https://tt.vg/vip】257
-      - 哥斯达黎加【付费推荐：https://tt.vg/vip】181
-      - 日本【付费推荐：https://tt.vg/vip】322
-      - v2rayfree.eu.org - 中国阿里云 34
-      - v2rayfree.eu.org - 澳大利亚Kooweerup Secondary College 5
-      - T.ME@Vpn_Filternet💥🇳🇱💥NL 3
-      - 狮城|tg频道@ripaojiedian
-      - 未知_0324192
-      - 英国【付费推荐：https://tt.vg/vip】318
-      - 美国【付费推荐：https://tt.vg/vip】710
-      - 中国【付费推荐：https://tt.vg/vip】576
-      - 中国【付费推荐：https://tt.vg/vip】760
-      - 美国(TG@kxswa) 2
-      - 二爷翻墙 https://1808.ga Node_86
-      - "_MO_澳门->🇸🇬_SG_新加坡\r"
-      - 日本【付费推荐：https://tt.vg/vip】858
-      - 中国【付费推荐：https://tt.vg/vip】668
-      - 美国_0324966
-      - 美国【付费推荐：https://tt.vg/vip】645
-      - 二爷翻墙 https://1808.ga Node_26
-      - 阿联酋【付费推荐：https://tt.vg/vip】340
-      - 中国【付费推荐：https://tt.vg/vip】276
-      - 台湾【付费推荐：https://tt.vg/vip】153
-      - 美国 115
-      - 日本【付费推荐：https://tt.vg/vip】317
-      - 未知_0324156 2
-      - 日本【付费推荐：https://tt.vg/vip】353
-      - 日本 002
-      - 日本 013
-      - 台湾【付费推荐：https://tt.vg/vip】520
-      - 新加坡【付费推荐：https://tt.vg/vip】168
-      - 澳大利亚 004
-      - 台湾【付费推荐：https://tt.vg/vip】581
-      - _油管：全网最强白嫖
-      - 日本特殊|tg@ripaojiedian
-      - 未知_0324158
-      - 印度【付费推荐：https://tt.vg/vip】105
-      - 美国【付费推荐：https://tt.vg/vip】234
-      - 台湾_0324468
-      - 香港【付费推荐：https://tt.vg/vip】345
-      - 伯利兹_0324047
-      - 未知_0324386
-      - 二爷翻墙 https://1808.ga Node_82
-      - 台湾【付费推荐：https://tt.vg/vip】656
-      - 日本【付费推荐：https://tt.vg/vip】90
-      - 美国 41
-      - 香港【付费推荐：https://tt.vg/vip】215
-      - -美国-172.67.45.184
-      - 台湾【付费推荐：https//tt.vg/vip】768
-      - 美国【付费推荐：https://tt.vg/vip】342
-      - 台湾【付费推荐：https://tt.vg/vip】687
-      - 新加坡B
-      - 未知_0324143
-      - 中国【付费推荐：https://tt.vg/vip】118
-      - github.com/freefq - 亚太地区  6
-      - 二爷翻墙 https://1808.ga Node_23
-      - 塞浦路斯【付费推荐：https://tt.vg/vip】217
+      - 中国【付费推荐：https://tt.vg/vip】216
+      - 台湾【付费推荐：https://tt.vg/vip】455
+      - FR法国(youtube阿伟科技) 3
+      - 美国 051
+      - 美国 040
+      - 美国 037
+      - 新加坡03
+      - _KR_电报频道@pjrjzy 7
       - 狮城特殊|tg@ripaojiedian
-      - 澳大利亚 001
-      - 二爷翻墙 https://1808.ga Node_22
-      - 二爷翻墙 https://1808.ga Node_24
       - 美国 028
-      - 香港2|tg@ripaojiedian
       - 中国【付费推荐：https://tt.vg/vip】251
+      - 新加坡16
+      - 澳大利亚 001
+      - 美国 039
+      - 印度【付费推荐：https://tt.vg/vip】105
+      - 中国【付费推荐：https://tt.vg/vip】570
+      - 台湾【付费推荐：https://tt.vg/vip】581
+      - 台湾【付费推荐：https://tt.vg/vip】153
+      - 台湾【付费推荐：https://tt.vg/vip】626
+      - 中国【付费推荐：https://tt.vg/vip】87
+      - 台湾【付费推荐：https://tt.vg/vip】520
+      - _DE_电报频道@pjrjzy
+      - "|19.85Mb"
+      - 美国 038
+      - 中国【付费推荐：https://tt.vg/vip】709
+      - 日本 003
+      - 美国 049
+      - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://tt.vg/vip】746
+      - "_KR_韩国\r"
+      - 新加坡07
+      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
+      - 台湾【付费推荐：https://tt.vg/vip】556
+      - 未知_0325187
+      - 韩国【付费推荐：https://tt.vg/vip】6
+      - 日本 005
+      - "@SSRSUB-V32-付费推荐:suo.yt/ssrsub"
+      - 美国_0325196
+      - 罗马尼亚【付费推荐：https://tt.vg/vip】330
+      - 中国【付费推荐：https://tt.vg/vip】707
+      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-15CDN
+      - "|27.83Mb"
+      - 美国 082
+      - 美国【付费推荐：https://tt.vg/vip】286
+      - 美国【付费推荐：https://tt.vg/vip】540
+      - "@SSRSUB-V30-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_104
+      - "@SSRSUB-V35-付费推荐:suo.yt/ssrsub"
+      - GB_07
+      - "@SSRSUB-V40-付费推荐:suo.yt/ssrsub"
+      - 美国 032
+      - 美国_0325191
+      - Bulgaria 01 TG@nodpai
+      - "@SSRSUB-V34-付费推荐:suo.yt/ssrsub"
+      - _KR_电报频道@pjrjzy 8
+      - 美国 046
+      - 中国【付费推荐：https://tt.vg/vip】782
+      - 中国【付费推荐：https://tt.vg/vip】635
+      - 美国【付费推荐：https://tt.vg/vip】443
+      - 未知_0325183
+      - 美国【付费推荐：https://tt.vg/vip】257
+      - 二爷翻墙 https://1808.ga Node_118
+      - 日本【付费推荐：https://tt.vg/vip】851
+      - 日本 006
+      - "@SSRSUB-V11-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://tt.vg/vip】673
+      - 美国_0325191 2
+      - US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_33
+      - "@SSRSUB-V36-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V39-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V53-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_83
+      - 美国 041
+      - "@SSRSUB-V26-付费推荐:suo.yt/ssrsub"
+      - 美国_0325594
+      - -美国-172.67.45.184
+      - 美国【付费推荐：https://tt.vg/vip】121
+      - 美国_0325196 2
+      - 日本 012
+      - 美国【付费推荐：https://tt.vg/vip】207
+      - "@SSRSUB-V37-付费推荐:suo.yt/ssrsub"
+      - US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_26
+      - 未知_0325146
+      - 美国 086
+      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
+      - 美国_0325181
+      - 美国【付费推荐：https://tt.vg/vip】196
+      - 伯利兹【付费推荐：https://tt.vg/vip】665
+      - 新加坡【付费推荐：https://tt.vg/vip】289
+      - 二爷翻墙 https://1808.ga Node_36
+      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-3CDN
+      - _TW_台湾
+      - US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_9
+      - 未知_0325147
+      - "@SSRSUB-V44-付费推荐:suo.yt/ssrsub"
+      - d2@oneclickvpnkeys
+      - 卢森堡_0325027
+      - 美国_0325181 2
+      - 美国【付费推荐：https://tt.vg/vip】563
+      - 美国【付费推荐：https://tt.vg/vip】631
+      - 二爷翻墙 https://1808.ga Node_34
+      - 美国 CloudFlare节点 4
+      - 未知_0325188
+      - 二爷翻墙 https://1808.ga Node_107
+      - 伊朗_0325004
+      - 美国 048
+      - "@SSRSUB-V31-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_127
+      - 荷兰_0325014
+      - 美国【付费推荐：https://tt.vg/vip】592
+      - 荷兰【付费推荐：https://tt.vg/vip】120
+      - 美国【付费推荐：https://tt.vg/vip】247
+      - 未知_0325187 2
+      - 美国_03252954
+      - 美国_0325232
+      - 美国 095
+      - 美国【付费推荐：https://tt.vg/vip】609
+      - 美国【付费推荐：https://tt.vg/vip】735
+      - 美国【付费推荐：https://tt.vg/vip】195
+      - 未知_0325139
+      - 美国【付费推荐：https://tt.vg/vip】594
+      - 美国【付费推荐：https://tt.vg/vip】660
+      - "@SSRSUB-V22-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V15-付费推荐:suo.yt/ssrsub"
+      - United States 08 TG@nodpai
+      - "@SSRSUB-V27-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_23
+      - 美国【付费推荐：https://tt.vg/vip】645
+      - 美国【付费推荐：https://tt.vg/vip】644
+      - 塞浦路斯【付费推荐：https://tt.vg/vip】217
+      - 美国【付费推荐：https://tt.vg/vip】583
+      - sg-am3.eqsunshine.com:32001
       - 中国【付费推荐：https://tt.vg/vip】354
-      - 香港_0324136
-      - 土耳其
-      - 中国(TG@kxswa)
-      - 新加坡【付费推荐：https://tt.vg/vip】409
-      - 香港【付费推荐：https://tt.vg/vip】193
-      - 香港【付费推荐：https://tt.vg/vip】98
+      - 美国【付费推荐：https://tt.vg/vip】620
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 26
+      - 荷兰_0325012
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 13
+      - 美国 021
+      - United States 09 TG@nodpai
+      - 美国 054
+      - 美国 033
+      - 美国【付费推荐：https://tt.vg/vip】459
+      - United States(ChatGPT) 14 TG@nodpai
+      - "@SSRSUB-V38-付费推荐:suo.yt/ssrsub"
+      - United States(ChatGPT) 07 TG@nodpai
+      - 未知_0325151
+      - "@SSRSUB-V33-付费推荐:suo.yt/ssrsub"
+      - 美国(TG@kxswa)
+      - 美国 035
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - 「SCP」KH-CF
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 26
-      - 二爷翻墙 https://1808.ga Node_106
-      - 二爷翻墙 https://1808.ga Node_124
-      - 二爷翻墙 https://1808.ga Node_127
-      - 印度_0324079
-      - 美国【付费推荐：https://tt.vg/vip】686
-      - 日本【付费推荐：https://tt.vg/vip】122
-      - 二爷翻墙 https://1808.ga Node_60
-      - 未知_0324213
-      - 未知_0324391
-      - 日本【付费推荐：https://tt.vg/vip】157
-      - 亚美尼亚_0324004
-      - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
-      - 二爷翻墙 https://1808.ga Node_90
-      - 韩国【付费推荐：https://tt.vg/vip】184
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 19
-      - 美国【付费推荐：https://tt.vg/vip】225
-      - 美国 023
-      - 二爷翻墙 https://1808.ga Node_17
-      - 荷兰_0324008
-      - 新加坡【付费推荐：https://tt.vg/vip】110
-      - 美国【付费推荐：https://tt.vg/vip】661
-      - 新加坡A
-      - 二爷翻墙 https://1808.ga Node_108
-      - 美国【付费推荐：https://tt.vg/vip】691
-      - 美国【付费推荐：https://tt.vg/vip】286
-      - 日本【付费推荐：https://tt.vg/vip】123
-      - 美国【付费推荐：https://tt.vg/vip】540
-      - 二爷翻墙 https://1808.ga Node_103
-      - 乌克兰【付费推荐：https://tt.vg/vip】798
-      - _SG_新加坡 2
-      - 未知_0324195
-      - 未知_0324141
-      - 美国【付费推荐：https://tt.vg/vip】116
-      - 美国(TG@kxswa)
-      - 「SCP」US-BuyVM4
-      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶2-3CDN
-      - 加拿大【付费推荐：https://tt.vg/vip】595
-      - 美国【付费推荐：https://tt.vg/vip】269
-      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶2-2CDN
-      - 美国-4CE TG频道@v2ssfly
-      - 二爷翻墙 https://1808.ga Node_34
-      - 新加坡【付费推荐：https://tt.vg/vip】308
-      - sg-am3.eqsunshine.com:32001
-      - 美国【付费推荐：https://tt.vg/vip】632
-      - 二爷翻墙 https://1808.ga Node_119
-      - 罗马尼亚【付费推荐：https://tt.vg/vip】330
-      - 美国【付费推荐：https://tt.vg/vip】610
-      - 印度【付费推荐：https://tt.vg/vip】236
-      - 未知_0324156
-      - 德国【付费推荐：https://tt.vg/vip】375
-      - 美国【付费推荐：https://tt.vg/vip】292
-      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-3CDN
-      - 荷兰【付费推荐：https://tt.vg/vip】120
-      - 韩国【付费推荐：https://tt.vg/vip】333
-      - 韩国【付费推荐：https://tt.vg/vip】6
-      - 美国【付费推荐：https://tt.vg/vip】459
-      - 未知_0324139
-      - 台湾【付费推荐：https://tt.vg/vip】781
-      - 美国【付费推荐：https://tt.vg/vip】196
-      - 美国【付费推荐：https://tt.vg/vip】257
-      - 哥斯达黎加【付费推荐：https://tt.vg/vip】181
-      - 日本【付费推荐：https://tt.vg/vip】322
-      - v2rayfree.eu.org - 中国阿里云 34
-      - v2rayfree.eu.org - 澳大利亚Kooweerup Secondary College 5
-      - T.ME@Vpn_Filternet💥🇳🇱💥NL 3
-      - 狮城|tg频道@ripaojiedian
-      - 未知_0324192
-      - 英国【付费推荐：https://tt.vg/vip】318
-      - 美国【付费推荐：https://tt.vg/vip】710
-      - 中国【付费推荐：https://tt.vg/vip】576
-      - 中国【付费推荐：https://tt.vg/vip】760
-      - 美国(TG@kxswa) 2
-      - 二爷翻墙 https://1808.ga Node_86
-      - "_MO_澳门->🇸🇬_SG_新加坡\r"
-      - 日本【付费推荐：https://tt.vg/vip】858
-      - 中国【付费推荐：https://tt.vg/vip】668
-      - 美国_0324966
-      - 美国【付费推荐：https://tt.vg/vip】645
-      - 二爷翻墙 https://1808.ga Node_26
-      - 阿联酋【付费推荐：https://tt.vg/vip】340
-      - 中国【付费推荐：https://tt.vg/vip】276
-      - 台湾【付费推荐：https://tt.vg/vip】153
-      - 美国 115
-      - 日本【付费推荐：https://tt.vg/vip】317
-      - 未知_0324156 2
-      - 日本【付费推荐：https://tt.vg/vip】353
-      - 日本 002
-      - 日本 013
-      - 台湾【付费推荐：https://tt.vg/vip】520
-      - 新加坡【付费推荐：https://tt.vg/vip】168
-      - 澳大利亚 004
-      - 台湾【付费推荐：https://tt.vg/vip】581
-      - _油管：全网最强白嫖
-      - 日本特殊|tg@ripaojiedian
-      - 未知_0324158
-      - 印度【付费推荐：https://tt.vg/vip】105
-      - 美国【付费推荐：https://tt.vg/vip】234
-      - 台湾_0324468
-      - 香港【付费推荐：https://tt.vg/vip】345
-      - 伯利兹_0324047
-      - 未知_0324386
-      - 二爷翻墙 https://1808.ga Node_82
-      - 台湾【付费推荐：https://tt.vg/vip】656
-      - 日本【付费推荐：https://tt.vg/vip】90
-      - 美国 41
-      - 香港【付费推荐：https://tt.vg/vip】215
-      - -美国-172.67.45.184
-      - 台湾【付费推荐：https//tt.vg/vip】768
-      - 美国【付费推荐：https://tt.vg/vip】342
-      - 台湾【付费推荐：https://tt.vg/vip】687
-      - 新加坡B
-      - 未知_0324143
-      - 中国【付费推荐：https://tt.vg/vip】118
-      - github.com/freefq - 亚太地区  6
-      - 二爷翻墙 https://1808.ga Node_23
-      - 塞浦路斯【付费推荐：https://tt.vg/vip】217
+      - 中国【付费推荐：https://tt.vg/vip】216
+      - 台湾【付费推荐：https://tt.vg/vip】455
+      - FR法国(youtube阿伟科技) 3
+      - 美国 051
+      - 美国 040
+      - 美国 037
+      - 新加坡03
+      - _KR_电报频道@pjrjzy 7
       - 狮城特殊|tg@ripaojiedian
-      - 澳大利亚 001
-      - 二爷翻墙 https://1808.ga Node_22
-      - 二爷翻墙 https://1808.ga Node_24
       - 美国 028
-      - 香港2|tg@ripaojiedian
       - 中国【付费推荐：https://tt.vg/vip】251
+      - 新加坡16
+      - 澳大利亚 001
+      - 美国 039
+      - 印度【付费推荐：https://tt.vg/vip】105
+      - 中国【付费推荐：https://tt.vg/vip】570
+      - 台湾【付费推荐：https://tt.vg/vip】581
+      - 台湾【付费推荐：https://tt.vg/vip】153
+      - 台湾【付费推荐：https://tt.vg/vip】626
+      - 中国【付费推荐：https://tt.vg/vip】87
+      - 台湾【付费推荐：https://tt.vg/vip】520
+      - _DE_电报频道@pjrjzy
+      - "|19.85Mb"
+      - 美国 038
+      - 中国【付费推荐：https://tt.vg/vip】709
+      - 日本 003
+      - 美国 049
+      - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://tt.vg/vip】746
+      - "_KR_韩国\r"
+      - 新加坡07
+      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
+      - 台湾【付费推荐：https://tt.vg/vip】556
+      - 未知_0325187
+      - 韩国【付费推荐：https://tt.vg/vip】6
+      - 日本 005
+      - "@SSRSUB-V32-付费推荐:suo.yt/ssrsub"
+      - 美国_0325196
+      - 罗马尼亚【付费推荐：https://tt.vg/vip】330
+      - 中国【付费推荐：https://tt.vg/vip】707
+      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-15CDN
+      - "|27.83Mb"
+      - 美国 082
+      - 美国【付费推荐：https://tt.vg/vip】286
+      - 美国【付费推荐：https://tt.vg/vip】540
+      - "@SSRSUB-V30-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_104
+      - "@SSRSUB-V35-付费推荐:suo.yt/ssrsub"
+      - GB_07
+      - "@SSRSUB-V40-付费推荐:suo.yt/ssrsub"
+      - 美国 032
+      - 美国_0325191
+      - Bulgaria 01 TG@nodpai
+      - "@SSRSUB-V34-付费推荐:suo.yt/ssrsub"
+      - _KR_电报频道@pjrjzy 8
+      - 美国 046
+      - 中国【付费推荐：https://tt.vg/vip】782
+      - 中国【付费推荐：https://tt.vg/vip】635
+      - 美国【付费推荐：https://tt.vg/vip】443
+      - 未知_0325183
+      - 美国【付费推荐：https://tt.vg/vip】257
+      - 二爷翻墙 https://1808.ga Node_118
+      - 日本【付费推荐：https://tt.vg/vip】851
+      - 日本 006
+      - "@SSRSUB-V11-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://tt.vg/vip】673
+      - 美国_0325191 2
+      - US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_33
+      - "@SSRSUB-V36-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V39-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V53-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_83
+      - 美国 041
+      - "@SSRSUB-V26-付费推荐:suo.yt/ssrsub"
+      - 美国_0325594
+      - -美国-172.67.45.184
+      - 美国【付费推荐：https://tt.vg/vip】121
+      - 美国_0325196 2
+      - 日本 012
+      - 美国【付费推荐：https://tt.vg/vip】207
+      - "@SSRSUB-V37-付费推荐:suo.yt/ssrsub"
+      - US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_26
+      - 未知_0325146
+      - 美国 086
+      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
+      - 美国_0325181
+      - 美国【付费推荐：https://tt.vg/vip】196
+      - 伯利兹【付费推荐：https://tt.vg/vip】665
+      - 新加坡【付费推荐：https://tt.vg/vip】289
+      - 二爷翻墙 https://1808.ga Node_36
+      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-3CDN
+      - _TW_台湾
+      - US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_9
+      - 未知_0325147
+      - "@SSRSUB-V44-付费推荐:suo.yt/ssrsub"
+      - d2@oneclickvpnkeys
+      - 卢森堡_0325027
+      - 美国_0325181 2
+      - 美国【付费推荐：https://tt.vg/vip】563
+      - 美国【付费推荐：https://tt.vg/vip】631
+      - 二爷翻墙 https://1808.ga Node_34
+      - 美国 CloudFlare节点 4
+      - 未知_0325188
+      - 二爷翻墙 https://1808.ga Node_107
+      - 伊朗_0325004
+      - 美国 048
+      - "@SSRSUB-V31-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_127
+      - 荷兰_0325014
+      - 美国【付费推荐：https://tt.vg/vip】592
+      - 荷兰【付费推荐：https://tt.vg/vip】120
+      - 美国【付费推荐：https://tt.vg/vip】247
+      - 未知_0325187 2
+      - 美国_03252954
+      - 美国_0325232
+      - 美国 095
+      - 美国【付费推荐：https://tt.vg/vip】609
+      - 美国【付费推荐：https://tt.vg/vip】735
+      - 美国【付费推荐：https://tt.vg/vip】195
+      - 未知_0325139
+      - 美国【付费推荐：https://tt.vg/vip】594
+      - 美国【付费推荐：https://tt.vg/vip】660
+      - "@SSRSUB-V22-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V15-付费推荐:suo.yt/ssrsub"
+      - United States 08 TG@nodpai
+      - "@SSRSUB-V27-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_23
+      - 美国【付费推荐：https://tt.vg/vip】645
+      - 美国【付费推荐：https://tt.vg/vip】644
+      - 塞浦路斯【付费推荐：https://tt.vg/vip】217
+      - 美国【付费推荐：https://tt.vg/vip】583
+      - sg-am3.eqsunshine.com:32001
       - 中国【付费推荐：https://tt.vg/vip】354
-      - 香港_0324136
-      - 土耳其
-      - 中国(TG@kxswa)
-      - 新加坡【付费推荐：https://tt.vg/vip】409
-      - 香港【付费推荐：https://tt.vg/vip】193
-      - 香港【付费推荐：https://tt.vg/vip】98
+      - 美国【付费推荐：https://tt.vg/vip】620
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 26
+      - 荷兰_0325012
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 13
+      - 美国 021
+      - United States 09 TG@nodpai
+      - 美国 054
+      - 美国 033
+      - 美国【付费推荐：https://tt.vg/vip】459
+      - United States(ChatGPT) 14 TG@nodpai
+      - "@SSRSUB-V38-付费推荐:suo.yt/ssrsub"
+      - United States(ChatGPT) 07 TG@nodpai
+      - 未知_0325151
+      - "@SSRSUB-V33-付费推荐:suo.yt/ssrsub"
+      - 美国(TG@kxswa)
+      - 美国 035
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 「SCP」KH-CF
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 26
-      - 二爷翻墙 https://1808.ga Node_106
-      - 二爷翻墙 https://1808.ga Node_124
-      - 二爷翻墙 https://1808.ga Node_127
-      - 印度_0324079
-      - 美国【付费推荐：https://tt.vg/vip】686
-      - 日本【付费推荐：https://tt.vg/vip】122
-      - 二爷翻墙 https://1808.ga Node_60
-      - 未知_0324213
-      - 未知_0324391
-      - 日本【付费推荐：https://tt.vg/vip】157
-      - 亚美尼亚_0324004
-      - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
-      - 二爷翻墙 https://1808.ga Node_90
-      - 韩国【付费推荐：https://tt.vg/vip】184
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 19
-      - 美国【付费推荐：https://tt.vg/vip】225
-      - 美国 023
-      - 二爷翻墙 https://1808.ga Node_17
-      - 荷兰_0324008
-      - 新加坡【付费推荐：https://tt.vg/vip】110
-      - 美国【付费推荐：https://tt.vg/vip】661
-      - 新加坡A
-      - 二爷翻墙 https://1808.ga Node_108
-      - 美国【付费推荐：https://tt.vg/vip】691
-      - 美国【付费推荐：https://tt.vg/vip】286
-      - 日本【付费推荐：https://tt.vg/vip】123
-      - 美国【付费推荐：https://tt.vg/vip】540
-      - 二爷翻墙 https://1808.ga Node_103
-      - 乌克兰【付费推荐：https://tt.vg/vip】798
-      - _SG_新加坡 2
-      - 未知_0324195
-      - 未知_0324141
-      - 美国【付费推荐：https://tt.vg/vip】116
-      - 美国(TG@kxswa)
-      - 「SCP」US-BuyVM4
-      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶2-3CDN
-      - 加拿大【付费推荐：https://tt.vg/vip】595
-      - 美国【付费推荐：https://tt.vg/vip】269
-      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶2-2CDN
-      - 美国-4CE TG频道@v2ssfly
-      - 二爷翻墙 https://1808.ga Node_34
-      - 新加坡【付费推荐：https://tt.vg/vip】308
-      - sg-am3.eqsunshine.com:32001
-      - 美国【付费推荐：https://tt.vg/vip】632
-      - 二爷翻墙 https://1808.ga Node_119
-      - 罗马尼亚【付费推荐：https://tt.vg/vip】330
-      - 美国【付费推荐：https://tt.vg/vip】610
-      - 印度【付费推荐：https://tt.vg/vip】236
-      - 未知_0324156
-      - 德国【付费推荐：https://tt.vg/vip】375
-      - 美国【付费推荐：https://tt.vg/vip】292
-      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-3CDN
-      - 荷兰【付费推荐：https://tt.vg/vip】120
-      - 韩国【付费推荐：https://tt.vg/vip】333
-      - 韩国【付费推荐：https://tt.vg/vip】6
-      - 美国【付费推荐：https://tt.vg/vip】459
-      - 未知_0324139
-      - 台湾【付费推荐：https://tt.vg/vip】781
-      - 美国【付费推荐：https://tt.vg/vip】196
-      - 美国【付费推荐：https://tt.vg/vip】257
-      - 哥斯达黎加【付费推荐：https://tt.vg/vip】181
-      - 日本【付费推荐：https://tt.vg/vip】322
-      - v2rayfree.eu.org - 中国阿里云 34
-      - v2rayfree.eu.org - 澳大利亚Kooweerup Secondary College 5
-      - T.ME@Vpn_Filternet💥🇳🇱💥NL 3
-      - 狮城|tg频道@ripaojiedian
-      - 未知_0324192
-      - 英国【付费推荐：https://tt.vg/vip】318
-      - 美国【付费推荐：https://tt.vg/vip】710
-      - 中国【付费推荐：https://tt.vg/vip】576
-      - 中国【付费推荐：https://tt.vg/vip】760
-      - 美国(TG@kxswa) 2
-      - 二爷翻墙 https://1808.ga Node_86
-      - "_MO_澳门->🇸🇬_SG_新加坡\r"
-      - 日本【付费推荐：https://tt.vg/vip】858
-      - 中国【付费推荐：https://tt.vg/vip】668
-      - 美国_0324966
-      - 美国【付费推荐：https://tt.vg/vip】645
-      - 二爷翻墙 https://1808.ga Node_26
-      - 阿联酋【付费推荐：https://tt.vg/vip】340
-      - 中国【付费推荐：https://tt.vg/vip】276
-      - 台湾【付费推荐：https://tt.vg/vip】153
-      - 美国 115
-      - 日本【付费推荐：https://tt.vg/vip】317
-      - 未知_0324156 2
-      - 日本【付费推荐：https://tt.vg/vip】353
-      - 日本 002
-      - 日本 013
-      - 台湾【付费推荐：https://tt.vg/vip】520
-      - 新加坡【付费推荐：https://tt.vg/vip】168
-      - 澳大利亚 004
-      - 台湾【付费推荐：https://tt.vg/vip】581
-      - _油管：全网最强白嫖
-      - 日本特殊|tg@ripaojiedian
-      - 未知_0324158
-      - 印度【付费推荐：https://tt.vg/vip】105
-      - 美国【付费推荐：https://tt.vg/vip】234
-      - 台湾_0324468
-      - 香港【付费推荐：https://tt.vg/vip】345
-      - 伯利兹_0324047
-      - 未知_0324386
-      - 二爷翻墙 https://1808.ga Node_82
-      - 台湾【付费推荐：https://tt.vg/vip】656
-      - 日本【付费推荐：https://tt.vg/vip】90
-      - 美国 41
-      - 香港【付费推荐：https://tt.vg/vip】215
-      - -美国-172.67.45.184
-      - 台湾【付费推荐：https//tt.vg/vip】768
-      - 美国【付费推荐：https://tt.vg/vip】342
-      - 台湾【付费推荐：https://tt.vg/vip】687
-      - 新加坡B
-      - 未知_0324143
-      - 中国【付费推荐：https://tt.vg/vip】118
-      - github.com/freefq - 亚太地区  6
-      - 二爷翻墙 https://1808.ga Node_23
-      - 塞浦路斯【付费推荐：https://tt.vg/vip】217
+      - 中国【付费推荐：https://tt.vg/vip】216
+      - 台湾【付费推荐：https://tt.vg/vip】455
+      - FR法国(youtube阿伟科技) 3
+      - 美国 051
+      - 美国 040
+      - 美国 037
+      - 新加坡03
+      - _KR_电报频道@pjrjzy 7
       - 狮城特殊|tg@ripaojiedian
-      - 澳大利亚 001
-      - 二爷翻墙 https://1808.ga Node_22
-      - 二爷翻墙 https://1808.ga Node_24
       - 美国 028
-      - 香港2|tg@ripaojiedian
       - 中国【付费推荐：https://tt.vg/vip】251
+      - 新加坡16
+      - 澳大利亚 001
+      - 美国 039
+      - 印度【付费推荐：https://tt.vg/vip】105
+      - 中国【付费推荐：https://tt.vg/vip】570
+      - 台湾【付费推荐：https://tt.vg/vip】581
+      - 台湾【付费推荐：https://tt.vg/vip】153
+      - 台湾【付费推荐：https://tt.vg/vip】626
+      - 中国【付费推荐：https://tt.vg/vip】87
+      - 台湾【付费推荐：https://tt.vg/vip】520
+      - _DE_电报频道@pjrjzy
+      - "|19.85Mb"
+      - 美国 038
+      - 中国【付费推荐：https://tt.vg/vip】709
+      - 日本 003
+      - 美国 049
+      - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://tt.vg/vip】746
+      - "_KR_韩国\r"
+      - 新加坡07
+      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
+      - 台湾【付费推荐：https://tt.vg/vip】556
+      - 未知_0325187
+      - 韩国【付费推荐：https://tt.vg/vip】6
+      - 日本 005
+      - "@SSRSUB-V32-付费推荐:suo.yt/ssrsub"
+      - 美国_0325196
+      - 罗马尼亚【付费推荐：https://tt.vg/vip】330
+      - 中国【付费推荐：https://tt.vg/vip】707
+      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-15CDN
+      - "|27.83Mb"
+      - 美国 082
+      - 美国【付费推荐：https://tt.vg/vip】286
+      - 美国【付费推荐：https://tt.vg/vip】540
+      - "@SSRSUB-V30-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_104
+      - "@SSRSUB-V35-付费推荐:suo.yt/ssrsub"
+      - GB_07
+      - "@SSRSUB-V40-付费推荐:suo.yt/ssrsub"
+      - 美国 032
+      - 美国_0325191
+      - Bulgaria 01 TG@nodpai
+      - "@SSRSUB-V34-付费推荐:suo.yt/ssrsub"
+      - _KR_电报频道@pjrjzy 8
+      - 美国 046
+      - 中国【付费推荐：https://tt.vg/vip】782
+      - 中国【付费推荐：https://tt.vg/vip】635
+      - 美国【付费推荐：https://tt.vg/vip】443
+      - 未知_0325183
+      - 美国【付费推荐：https://tt.vg/vip】257
+      - 二爷翻墙 https://1808.ga Node_118
+      - 日本【付费推荐：https://tt.vg/vip】851
+      - 日本 006
+      - "@SSRSUB-V11-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://tt.vg/vip】673
+      - 美国_0325191 2
+      - US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_33
+      - "@SSRSUB-V36-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V39-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V53-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_83
+      - 美国 041
+      - "@SSRSUB-V26-付费推荐:suo.yt/ssrsub"
+      - 美国_0325594
+      - -美国-172.67.45.184
+      - 美国【付费推荐：https://tt.vg/vip】121
+      - 美国_0325196 2
+      - 日本 012
+      - 美国【付费推荐：https://tt.vg/vip】207
+      - "@SSRSUB-V37-付费推荐:suo.yt/ssrsub"
+      - US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_26
+      - 未知_0325146
+      - 美国 086
+      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
+      - 美国_0325181
+      - 美国【付费推荐：https://tt.vg/vip】196
+      - 伯利兹【付费推荐：https://tt.vg/vip】665
+      - 新加坡【付费推荐：https://tt.vg/vip】289
+      - 二爷翻墙 https://1808.ga Node_36
+      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-3CDN
+      - _TW_台湾
+      - US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_9
+      - 未知_0325147
+      - "@SSRSUB-V44-付费推荐:suo.yt/ssrsub"
+      - d2@oneclickvpnkeys
+      - 卢森堡_0325027
+      - 美国_0325181 2
+      - 美国【付费推荐：https://tt.vg/vip】563
+      - 美国【付费推荐：https://tt.vg/vip】631
+      - 二爷翻墙 https://1808.ga Node_34
+      - 美国 CloudFlare节点 4
+      - 未知_0325188
+      - 二爷翻墙 https://1808.ga Node_107
+      - 伊朗_0325004
+      - 美国 048
+      - "@SSRSUB-V31-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_127
+      - 荷兰_0325014
+      - 美国【付费推荐：https://tt.vg/vip】592
+      - 荷兰【付费推荐：https://tt.vg/vip】120
+      - 美国【付费推荐：https://tt.vg/vip】247
+      - 未知_0325187 2
+      - 美国_03252954
+      - 美国_0325232
+      - 美国 095
+      - 美国【付费推荐：https://tt.vg/vip】609
+      - 美国【付费推荐：https://tt.vg/vip】735
+      - 美国【付费推荐：https://tt.vg/vip】195
+      - 未知_0325139
+      - 美国【付费推荐：https://tt.vg/vip】594
+      - 美国【付费推荐：https://tt.vg/vip】660
+      - "@SSRSUB-V22-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V15-付费推荐:suo.yt/ssrsub"
+      - United States 08 TG@nodpai
+      - "@SSRSUB-V27-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_23
+      - 美国【付费推荐：https://tt.vg/vip】645
+      - 美国【付费推荐：https://tt.vg/vip】644
+      - 塞浦路斯【付费推荐：https://tt.vg/vip】217
+      - 美国【付费推荐：https://tt.vg/vip】583
+      - sg-am3.eqsunshine.com:32001
       - 中国【付费推荐：https://tt.vg/vip】354
-      - 香港_0324136
-      - 土耳其
-      - 中国(TG@kxswa)
-      - 新加坡【付费推荐：https://tt.vg/vip】409
-      - 香港【付费推荐：https://tt.vg/vip】193
-      - 香港【付费推荐：https://tt.vg/vip】98
+      - 美国【付费推荐：https://tt.vg/vip】620
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 26
+      - 荷兰_0325012
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 13
+      - 美国 021
+      - United States 09 TG@nodpai
+      - 美国 054
+      - 美国 033
+      - 美国【付费推荐：https://tt.vg/vip】459
+      - United States(ChatGPT) 14 TG@nodpai
+      - "@SSRSUB-V38-付费推荐:suo.yt/ssrsub"
+      - United States(ChatGPT) 07 TG@nodpai
+      - 未知_0325151
+      - "@SSRSUB-V33-付费推荐:suo.yt/ssrsub"
+      - 美国(TG@kxswa)
+      - 美国 035
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -569,569 +641,634 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 「SCP」KH-CF
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 26
-      - 二爷翻墙 https://1808.ga Node_106
-      - 二爷翻墙 https://1808.ga Node_124
-      - 二爷翻墙 https://1808.ga Node_127
-      - 印度_0324079
-      - 美国【付费推荐：https://tt.vg/vip】686
-      - 日本【付费推荐：https://tt.vg/vip】122
-      - 二爷翻墙 https://1808.ga Node_60
-      - 未知_0324213
-      - 未知_0324391
-      - 日本【付费推荐：https://tt.vg/vip】157
-      - 亚美尼亚_0324004
-      - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
-      - 二爷翻墙 https://1808.ga Node_90
-      - 韩国【付费推荐：https://tt.vg/vip】184
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 19
-      - 美国【付费推荐：https://tt.vg/vip】225
-      - 美国 023
-      - 二爷翻墙 https://1808.ga Node_17
-      - 荷兰_0324008
-      - 新加坡【付费推荐：https://tt.vg/vip】110
-      - 美国【付费推荐：https://tt.vg/vip】661
-      - 新加坡A
-      - 二爷翻墙 https://1808.ga Node_108
-      - 美国【付费推荐：https://tt.vg/vip】691
-      - 美国【付费推荐：https://tt.vg/vip】286
-      - 日本【付费推荐：https://tt.vg/vip】123
-      - 美国【付费推荐：https://tt.vg/vip】540
-      - 二爷翻墙 https://1808.ga Node_103
-      - 乌克兰【付费推荐：https://tt.vg/vip】798
-      - _SG_新加坡 2
-      - 未知_0324195
-      - 未知_0324141
-      - 美国【付费推荐：https://tt.vg/vip】116
-      - 美国(TG@kxswa)
-      - 「SCP」US-BuyVM4
-      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶2-3CDN
-      - 加拿大【付费推荐：https://tt.vg/vip】595
-      - 美国【付费推荐：https://tt.vg/vip】269
-      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶2-2CDN
-      - 美国-4CE TG频道@v2ssfly
-      - 二爷翻墙 https://1808.ga Node_34
-      - 新加坡【付费推荐：https://tt.vg/vip】308
-      - sg-am3.eqsunshine.com:32001
-      - 美国【付费推荐：https://tt.vg/vip】632
-      - 二爷翻墙 https://1808.ga Node_119
-      - 罗马尼亚【付费推荐：https://tt.vg/vip】330
-      - 美国【付费推荐：https://tt.vg/vip】610
-      - 印度【付费推荐：https://tt.vg/vip】236
-      - 未知_0324156
-      - 德国【付费推荐：https://tt.vg/vip】375
-      - 美国【付费推荐：https://tt.vg/vip】292
-      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-3CDN
-      - 荷兰【付费推荐：https://tt.vg/vip】120
-      - 韩国【付费推荐：https://tt.vg/vip】333
-      - 韩国【付费推荐：https://tt.vg/vip】6
-      - 美国【付费推荐：https://tt.vg/vip】459
-      - 未知_0324139
-      - 台湾【付费推荐：https://tt.vg/vip】781
-      - 美国【付费推荐：https://tt.vg/vip】196
-      - 美国【付费推荐：https://tt.vg/vip】257
-      - 哥斯达黎加【付费推荐：https://tt.vg/vip】181
-      - 日本【付费推荐：https://tt.vg/vip】322
-      - v2rayfree.eu.org - 中国阿里云 34
-      - v2rayfree.eu.org - 澳大利亚Kooweerup Secondary College 5
-      - T.ME@Vpn_Filternet💥🇳🇱💥NL 3
-      - 狮城|tg频道@ripaojiedian
-      - 未知_0324192
-      - 英国【付费推荐：https://tt.vg/vip】318
-      - 美国【付费推荐：https://tt.vg/vip】710
-      - 中国【付费推荐：https://tt.vg/vip】576
-      - 中国【付费推荐：https://tt.vg/vip】760
-      - 美国(TG@kxswa) 2
-      - 二爷翻墙 https://1808.ga Node_86
-      - "_MO_澳门->🇸🇬_SG_新加坡\r"
-      - 日本【付费推荐：https://tt.vg/vip】858
-      - 中国【付费推荐：https://tt.vg/vip】668
-      - 美国_0324966
-      - 美国【付费推荐：https://tt.vg/vip】645
-      - 二爷翻墙 https://1808.ga Node_26
-      - 阿联酋【付费推荐：https://tt.vg/vip】340
-      - 中国【付费推荐：https://tt.vg/vip】276
-      - 台湾【付费推荐：https://tt.vg/vip】153
-      - 美国 115
-      - 日本【付费推荐：https://tt.vg/vip】317
-      - 未知_0324156 2
-      - 日本【付费推荐：https://tt.vg/vip】353
-      - 日本 002
-      - 日本 013
-      - 台湾【付费推荐：https://tt.vg/vip】520
-      - 新加坡【付费推荐：https://tt.vg/vip】168
-      - 澳大利亚 004
-      - 台湾【付费推荐：https://tt.vg/vip】581
-      - _油管：全网最强白嫖
-      - 日本特殊|tg@ripaojiedian
-      - 未知_0324158
-      - 印度【付费推荐：https://tt.vg/vip】105
-      - 美国【付费推荐：https://tt.vg/vip】234
-      - 台湾_0324468
-      - 香港【付费推荐：https://tt.vg/vip】345
-      - 伯利兹_0324047
-      - 未知_0324386
-      - 二爷翻墙 https://1808.ga Node_82
-      - 台湾【付费推荐：https://tt.vg/vip】656
-      - 日本【付费推荐：https://tt.vg/vip】90
-      - 美国 41
-      - 香港【付费推荐：https://tt.vg/vip】215
-      - -美国-172.67.45.184
-      - 台湾【付费推荐：https//tt.vg/vip】768
-      - 美国【付费推荐：https://tt.vg/vip】342
-      - 台湾【付费推荐：https://tt.vg/vip】687
-      - 新加坡B
-      - 未知_0324143
-      - 中国【付费推荐：https://tt.vg/vip】118
-      - github.com/freefq - 亚太地区  6
-      - 二爷翻墙 https://1808.ga Node_23
-      - 塞浦路斯【付费推荐：https://tt.vg/vip】217
+      - 中国【付费推荐：https://tt.vg/vip】216
+      - 台湾【付费推荐：https://tt.vg/vip】455
+      - FR法国(youtube阿伟科技) 3
+      - 美国 051
+      - 美国 040
+      - 美国 037
+      - 新加坡03
+      - _KR_电报频道@pjrjzy 7
       - 狮城特殊|tg@ripaojiedian
-      - 澳大利亚 001
-      - 二爷翻墙 https://1808.ga Node_22
-      - 二爷翻墙 https://1808.ga Node_24
       - 美国 028
-      - 香港2|tg@ripaojiedian
       - 中国【付费推荐：https://tt.vg/vip】251
+      - 新加坡16
+      - 澳大利亚 001
+      - 美国 039
+      - 印度【付费推荐：https://tt.vg/vip】105
+      - 中国【付费推荐：https://tt.vg/vip】570
+      - 台湾【付费推荐：https://tt.vg/vip】581
+      - 台湾【付费推荐：https://tt.vg/vip】153
+      - 台湾【付费推荐：https://tt.vg/vip】626
+      - 中国【付费推荐：https://tt.vg/vip】87
+      - 台湾【付费推荐：https://tt.vg/vip】520
+      - _DE_电报频道@pjrjzy
+      - "|19.85Mb"
+      - 美国 038
+      - 中国【付费推荐：https://tt.vg/vip】709
+      - 日本 003
+      - 美国 049
+      - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://tt.vg/vip】746
+      - "_KR_韩国\r"
+      - 新加坡07
+      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
+      - 台湾【付费推荐：https://tt.vg/vip】556
+      - 未知_0325187
+      - 韩国【付费推荐：https://tt.vg/vip】6
+      - 日本 005
+      - "@SSRSUB-V32-付费推荐:suo.yt/ssrsub"
+      - 美国_0325196
+      - 罗马尼亚【付费推荐：https://tt.vg/vip】330
+      - 中国【付费推荐：https://tt.vg/vip】707
+      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-15CDN
+      - "|27.83Mb"
+      - 美国 082
+      - 美国【付费推荐：https://tt.vg/vip】286
+      - 美国【付费推荐：https://tt.vg/vip】540
+      - "@SSRSUB-V30-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_104
+      - "@SSRSUB-V35-付费推荐:suo.yt/ssrsub"
+      - GB_07
+      - "@SSRSUB-V40-付费推荐:suo.yt/ssrsub"
+      - 美国 032
+      - 美国_0325191
+      - Bulgaria 01 TG@nodpai
+      - "@SSRSUB-V34-付费推荐:suo.yt/ssrsub"
+      - _KR_电报频道@pjrjzy 8
+      - 美国 046
+      - 中国【付费推荐：https://tt.vg/vip】782
+      - 中国【付费推荐：https://tt.vg/vip】635
+      - 美国【付费推荐：https://tt.vg/vip】443
+      - 未知_0325183
+      - 美国【付费推荐：https://tt.vg/vip】257
+      - 二爷翻墙 https://1808.ga Node_118
+      - 日本【付费推荐：https://tt.vg/vip】851
+      - 日本 006
+      - "@SSRSUB-V11-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://tt.vg/vip】673
+      - 美国_0325191 2
+      - US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_33
+      - "@SSRSUB-V36-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V39-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V53-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_83
+      - 美国 041
+      - "@SSRSUB-V26-付费推荐:suo.yt/ssrsub"
+      - 美国_0325594
+      - -美国-172.67.45.184
+      - 美国【付费推荐：https://tt.vg/vip】121
+      - 美国_0325196 2
+      - 日本 012
+      - 美国【付费推荐：https://tt.vg/vip】207
+      - "@SSRSUB-V37-付费推荐:suo.yt/ssrsub"
+      - US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_26
+      - 未知_0325146
+      - 美国 086
+      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
+      - 美国_0325181
+      - 美国【付费推荐：https://tt.vg/vip】196
+      - 伯利兹【付费推荐：https://tt.vg/vip】665
+      - 新加坡【付费推荐：https://tt.vg/vip】289
+      - 二爷翻墙 https://1808.ga Node_36
+      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-3CDN
+      - _TW_台湾
+      - US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_9
+      - 未知_0325147
+      - "@SSRSUB-V44-付费推荐:suo.yt/ssrsub"
+      - d2@oneclickvpnkeys
+      - 卢森堡_0325027
+      - 美国_0325181 2
+      - 美国【付费推荐：https://tt.vg/vip】563
+      - 美国【付费推荐：https://tt.vg/vip】631
+      - 二爷翻墙 https://1808.ga Node_34
+      - 美国 CloudFlare节点 4
+      - 未知_0325188
+      - 二爷翻墙 https://1808.ga Node_107
+      - 伊朗_0325004
+      - 美国 048
+      - "@SSRSUB-V31-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_127
+      - 荷兰_0325014
+      - 美国【付费推荐：https://tt.vg/vip】592
+      - 荷兰【付费推荐：https://tt.vg/vip】120
+      - 美国【付费推荐：https://tt.vg/vip】247
+      - 未知_0325187 2
+      - 美国_03252954
+      - 美国_0325232
+      - 美国 095
+      - 美国【付费推荐：https://tt.vg/vip】609
+      - 美国【付费推荐：https://tt.vg/vip】735
+      - 美国【付费推荐：https://tt.vg/vip】195
+      - 未知_0325139
+      - 美国【付费推荐：https://tt.vg/vip】594
+      - 美国【付费推荐：https://tt.vg/vip】660
+      - "@SSRSUB-V22-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V15-付费推荐:suo.yt/ssrsub"
+      - United States 08 TG@nodpai
+      - "@SSRSUB-V27-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_23
+      - 美国【付费推荐：https://tt.vg/vip】645
+      - 美国【付费推荐：https://tt.vg/vip】644
+      - 塞浦路斯【付费推荐：https://tt.vg/vip】217
+      - 美国【付费推荐：https://tt.vg/vip】583
+      - sg-am3.eqsunshine.com:32001
       - 中国【付费推荐：https://tt.vg/vip】354
-      - 香港_0324136
-      - 土耳其
-      - 中国(TG@kxswa)
-      - 新加坡【付费推荐：https://tt.vg/vip】409
-      - 香港【付费推荐：https://tt.vg/vip】193
-      - 香港【付费推荐：https://tt.vg/vip】98
+      - 美国【付费推荐：https://tt.vg/vip】620
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 26
+      - 荷兰_0325012
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 13
+      - 美国 021
+      - United States 09 TG@nodpai
+      - 美国 054
+      - 美国 033
+      - 美国【付费推荐：https://tt.vg/vip】459
+      - United States(ChatGPT) 14 TG@nodpai
+      - "@SSRSUB-V38-付费推荐:suo.yt/ssrsub"
+      - United States(ChatGPT) 07 TG@nodpai
+      - 未知_0325151
+      - "@SSRSUB-V33-付费推荐:suo.yt/ssrsub"
+      - 美国(TG@kxswa)
+      - 美国 035
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾【付费推荐：https://tt.vg/vip】781
-      - 台湾【付费推荐：https://tt.vg/vip】153
-      - 台湾【付费推荐：https://tt.vg/vip】520
+      - 台湾【付费推荐：https://tt.vg/vip】455
       - 台湾【付费推荐：https://tt.vg/vip】581
-      - 台湾_0324468
-      - 香港【付费推荐：https://tt.vg/vip】345
-      - 台湾【付费推荐：https://tt.vg/vip】656
-      - 香港【付费推荐：https://tt.vg/vip】215
-      - 台湾【付费推荐：https//tt.vg/vip】768
-      - 台湾【付费推荐：https://tt.vg/vip】687
-      - 香港2|tg@ripaojiedian
-      - 香港_0324136
-      - 香港【付费推荐：https://tt.vg/vip】193
-      - 香港【付费推荐：https://tt.vg/vip】98
+      - 台湾【付费推荐：https://tt.vg/vip】153
+      - 台湾【付费推荐：https://tt.vg/vip】626
+      - 台湾【付费推荐：https://tt.vg/vip】520
+      - 台湾【付费推荐：https://tt.vg/vip】556
+      - _TW_台湾
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 「SCP」KH-CF
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 26
-      - 二爷翻墙 https://1808.ga Node_106
-      - 二爷翻墙 https://1808.ga Node_124
-      - 二爷翻墙 https://1808.ga Node_127
-      - 印度_0324079
-      - 美国【付费推荐：https://tt.vg/vip】686
-      - 日本【付费推荐：https://tt.vg/vip】122
-      - 二爷翻墙 https://1808.ga Node_60
-      - 未知_0324213
-      - 未知_0324391
-      - 日本【付费推荐：https://tt.vg/vip】157
-      - 亚美尼亚_0324004
-      - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
-      - 二爷翻墙 https://1808.ga Node_90
-      - 韩国【付费推荐：https://tt.vg/vip】184
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 19
-      - 美国【付费推荐：https://tt.vg/vip】225
-      - 美国 023
-      - 二爷翻墙 https://1808.ga Node_17
-      - 荷兰_0324008
-      - 新加坡【付费推荐：https://tt.vg/vip】110
-      - 美国【付费推荐：https://tt.vg/vip】661
-      - 新加坡A
-      - 二爷翻墙 https://1808.ga Node_108
-      - 美国【付费推荐：https://tt.vg/vip】691
-      - 美国【付费推荐：https://tt.vg/vip】286
-      - 日本【付费推荐：https://tt.vg/vip】123
-      - 美国【付费推荐：https://tt.vg/vip】540
-      - 二爷翻墙 https://1808.ga Node_103
-      - 乌克兰【付费推荐：https://tt.vg/vip】798
-      - _SG_新加坡 2
-      - 未知_0324195
-      - 未知_0324141
-      - 美国【付费推荐：https://tt.vg/vip】116
-      - 美国(TG@kxswa)
-      - 「SCP」US-BuyVM4
-      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶2-3CDN
-      - 加拿大【付费推荐：https://tt.vg/vip】595
-      - 美国【付费推荐：https://tt.vg/vip】269
-      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶2-2CDN
-      - 美国-4CE TG频道@v2ssfly
-      - 二爷翻墙 https://1808.ga Node_34
-      - 新加坡【付费推荐：https://tt.vg/vip】308
-      - sg-am3.eqsunshine.com:32001
-      - 美国【付费推荐：https://tt.vg/vip】632
-      - 二爷翻墙 https://1808.ga Node_119
-      - 罗马尼亚【付费推荐：https://tt.vg/vip】330
-      - 美国【付费推荐：https://tt.vg/vip】610
-      - 印度【付费推荐：https://tt.vg/vip】236
-      - 未知_0324156
-      - 德国【付费推荐：https://tt.vg/vip】375
-      - 美国【付费推荐：https://tt.vg/vip】292
-      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-3CDN
-      - 荷兰【付费推荐：https://tt.vg/vip】120
-      - 韩国【付费推荐：https://tt.vg/vip】333
-      - 韩国【付费推荐：https://tt.vg/vip】6
-      - 美国【付费推荐：https://tt.vg/vip】459
-      - 未知_0324139
-      - 台湾【付费推荐：https://tt.vg/vip】781
-      - 美国【付费推荐：https://tt.vg/vip】196
-      - 美国【付费推荐：https://tt.vg/vip】257
-      - 哥斯达黎加【付费推荐：https://tt.vg/vip】181
-      - 日本【付费推荐：https://tt.vg/vip】322
-      - v2rayfree.eu.org - 中国阿里云 34
-      - v2rayfree.eu.org - 澳大利亚Kooweerup Secondary College 5
-      - T.ME@Vpn_Filternet💥🇳🇱💥NL 3
-      - 狮城|tg频道@ripaojiedian
-      - 未知_0324192
-      - 英国【付费推荐：https://tt.vg/vip】318
-      - 美国【付费推荐：https://tt.vg/vip】710
-      - 中国【付费推荐：https://tt.vg/vip】576
-      - 中国【付费推荐：https://tt.vg/vip】760
-      - 美国(TG@kxswa) 2
-      - 二爷翻墙 https://1808.ga Node_86
-      - "_MO_澳门->🇸🇬_SG_新加坡\r"
-      - 日本【付费推荐：https://tt.vg/vip】858
-      - 中国【付费推荐：https://tt.vg/vip】668
-      - 美国_0324966
-      - 美国【付费推荐：https://tt.vg/vip】645
-      - 二爷翻墙 https://1808.ga Node_26
-      - 阿联酋【付费推荐：https://tt.vg/vip】340
-      - 中国【付费推荐：https://tt.vg/vip】276
-      - 台湾【付费推荐：https://tt.vg/vip】153
-      - 美国 115
-      - 日本【付费推荐：https://tt.vg/vip】317
-      - 未知_0324156 2
-      - 日本【付费推荐：https://tt.vg/vip】353
-      - 日本 002
-      - 日本 013
-      - 台湾【付费推荐：https://tt.vg/vip】520
-      - 新加坡【付费推荐：https://tt.vg/vip】168
-      - 澳大利亚 004
-      - 台湾【付费推荐：https://tt.vg/vip】581
-      - _油管：全网最强白嫖
-      - 日本特殊|tg@ripaojiedian
-      - 未知_0324158
-      - 印度【付费推荐：https://tt.vg/vip】105
-      - 美国【付费推荐：https://tt.vg/vip】234
-      - 台湾_0324468
-      - 香港【付费推荐：https://tt.vg/vip】345
-      - 伯利兹_0324047
-      - 未知_0324386
-      - 二爷翻墙 https://1808.ga Node_82
-      - 台湾【付费推荐：https://tt.vg/vip】656
-      - 日本【付费推荐：https://tt.vg/vip】90
-      - 美国 41
-      - 香港【付费推荐：https://tt.vg/vip】215
-      - -美国-172.67.45.184
-      - 台湾【付费推荐：https//tt.vg/vip】768
-      - 美国【付费推荐：https://tt.vg/vip】342
-      - 台湾【付费推荐：https://tt.vg/vip】687
-      - 新加坡B
-      - 未知_0324143
-      - 中国【付费推荐：https://tt.vg/vip】118
-      - github.com/freefq - 亚太地区  6
-      - 二爷翻墙 https://1808.ga Node_23
-      - 塞浦路斯【付费推荐：https://tt.vg/vip】217
+      - 中国【付费推荐：https://tt.vg/vip】216
+      - 台湾【付费推荐：https://tt.vg/vip】455
+      - FR法国(youtube阿伟科技) 3
+      - 美国 051
+      - 美国 040
+      - 美国 037
+      - 新加坡03
+      - _KR_电报频道@pjrjzy 7
       - 狮城特殊|tg@ripaojiedian
-      - 澳大利亚 001
-      - 二爷翻墙 https://1808.ga Node_22
-      - 二爷翻墙 https://1808.ga Node_24
       - 美国 028
-      - 香港2|tg@ripaojiedian
       - 中国【付费推荐：https://tt.vg/vip】251
+      - 新加坡16
+      - 澳大利亚 001
+      - 美国 039
+      - 印度【付费推荐：https://tt.vg/vip】105
+      - 中国【付费推荐：https://tt.vg/vip】570
+      - 台湾【付费推荐：https://tt.vg/vip】581
+      - 台湾【付费推荐：https://tt.vg/vip】153
+      - 台湾【付费推荐：https://tt.vg/vip】626
+      - 中国【付费推荐：https://tt.vg/vip】87
+      - 台湾【付费推荐：https://tt.vg/vip】520
+      - _DE_电报频道@pjrjzy
+      - "|19.85Mb"
+      - 美国 038
+      - 中国【付费推荐：https://tt.vg/vip】709
+      - 日本 003
+      - 美国 049
+      - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://tt.vg/vip】746
+      - "_KR_韩国\r"
+      - 新加坡07
+      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
+      - 台湾【付费推荐：https://tt.vg/vip】556
+      - 未知_0325187
+      - 韩国【付费推荐：https://tt.vg/vip】6
+      - 日本 005
+      - "@SSRSUB-V32-付费推荐:suo.yt/ssrsub"
+      - 美国_0325196
+      - 罗马尼亚【付费推荐：https://tt.vg/vip】330
+      - 中国【付费推荐：https://tt.vg/vip】707
+      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-15CDN
+      - "|27.83Mb"
+      - 美国 082
+      - 美国【付费推荐：https://tt.vg/vip】286
+      - 美国【付费推荐：https://tt.vg/vip】540
+      - "@SSRSUB-V30-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_104
+      - "@SSRSUB-V35-付费推荐:suo.yt/ssrsub"
+      - GB_07
+      - "@SSRSUB-V40-付费推荐:suo.yt/ssrsub"
+      - 美国 032
+      - 美国_0325191
+      - Bulgaria 01 TG@nodpai
+      - "@SSRSUB-V34-付费推荐:suo.yt/ssrsub"
+      - _KR_电报频道@pjrjzy 8
+      - 美国 046
+      - 中国【付费推荐：https://tt.vg/vip】782
+      - 中国【付费推荐：https://tt.vg/vip】635
+      - 美国【付费推荐：https://tt.vg/vip】443
+      - 未知_0325183
+      - 美国【付费推荐：https://tt.vg/vip】257
+      - 二爷翻墙 https://1808.ga Node_118
+      - 日本【付费推荐：https://tt.vg/vip】851
+      - 日本 006
+      - "@SSRSUB-V11-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://tt.vg/vip】673
+      - 美国_0325191 2
+      - US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_33
+      - "@SSRSUB-V36-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V39-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V53-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_83
+      - 美国 041
+      - "@SSRSUB-V26-付费推荐:suo.yt/ssrsub"
+      - 美国_0325594
+      - -美国-172.67.45.184
+      - 美国【付费推荐：https://tt.vg/vip】121
+      - 美国_0325196 2
+      - 日本 012
+      - 美国【付费推荐：https://tt.vg/vip】207
+      - "@SSRSUB-V37-付费推荐:suo.yt/ssrsub"
+      - US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_26
+      - 未知_0325146
+      - 美国 086
+      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
+      - 美国_0325181
+      - 美国【付费推荐：https://tt.vg/vip】196
+      - 伯利兹【付费推荐：https://tt.vg/vip】665
+      - 新加坡【付费推荐：https://tt.vg/vip】289
+      - 二爷翻墙 https://1808.ga Node_36
+      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-3CDN
+      - _TW_台湾
+      - US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_9
+      - 未知_0325147
+      - "@SSRSUB-V44-付费推荐:suo.yt/ssrsub"
+      - d2@oneclickvpnkeys
+      - 卢森堡_0325027
+      - 美国_0325181 2
+      - 美国【付费推荐：https://tt.vg/vip】563
+      - 美国【付费推荐：https://tt.vg/vip】631
+      - 二爷翻墙 https://1808.ga Node_34
+      - 美国 CloudFlare节点 4
+      - 未知_0325188
+      - 二爷翻墙 https://1808.ga Node_107
+      - 伊朗_0325004
+      - 美国 048
+      - "@SSRSUB-V31-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_127
+      - 荷兰_0325014
+      - 美国【付费推荐：https://tt.vg/vip】592
+      - 荷兰【付费推荐：https://tt.vg/vip】120
+      - 美国【付费推荐：https://tt.vg/vip】247
+      - 未知_0325187 2
+      - 美国_03252954
+      - 美国_0325232
+      - 美国 095
+      - 美国【付费推荐：https://tt.vg/vip】609
+      - 美国【付费推荐：https://tt.vg/vip】735
+      - 美国【付费推荐：https://tt.vg/vip】195
+      - 未知_0325139
+      - 美国【付费推荐：https://tt.vg/vip】594
+      - 美国【付费推荐：https://tt.vg/vip】660
+      - "@SSRSUB-V22-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V15-付费推荐:suo.yt/ssrsub"
+      - United States 08 TG@nodpai
+      - "@SSRSUB-V27-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_23
+      - 美国【付费推荐：https://tt.vg/vip】645
+      - 美国【付费推荐：https://tt.vg/vip】644
+      - 塞浦路斯【付费推荐：https://tt.vg/vip】217
+      - 美国【付费推荐：https://tt.vg/vip】583
+      - sg-am3.eqsunshine.com:32001
       - 中国【付费推荐：https://tt.vg/vip】354
-      - 香港_0324136
-      - 土耳其
-      - 中国(TG@kxswa)
-      - 新加坡【付费推荐：https://tt.vg/vip】409
-      - 香港【付费推荐：https://tt.vg/vip】193
-      - 香港【付费推荐：https://tt.vg/vip】98
+      - 美国【付费推荐：https://tt.vg/vip】620
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 26
+      - 荷兰_0325012
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 13
+      - 美国 021
+      - United States 09 TG@nodpai
+      - 美国 054
+      - 美国 033
+      - 美国【付费推荐：https://tt.vg/vip】459
+      - United States(ChatGPT) 14 TG@nodpai
+      - "@SSRSUB-V38-付费推荐:suo.yt/ssrsub"
+      - United States(ChatGPT) 07 TG@nodpai
+      - 未知_0325151
+      - "@SSRSUB-V33-付费推荐:suo.yt/ssrsub"
+      - 美国(TG@kxswa)
+      - 美国 035
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 「SCP」KH-CF
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 26
-      - 二爷翻墙 https://1808.ga Node_106
-      - 二爷翻墙 https://1808.ga Node_124
-      - 二爷翻墙 https://1808.ga Node_127
-      - 印度_0324079
-      - 美国【付费推荐：https://tt.vg/vip】686
-      - 日本【付费推荐：https://tt.vg/vip】122
-      - 二爷翻墙 https://1808.ga Node_60
-      - 未知_0324213
-      - 未知_0324391
-      - 日本【付费推荐：https://tt.vg/vip】157
-      - 亚美尼亚_0324004
-      - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
-      - 二爷翻墙 https://1808.ga Node_90
-      - 韩国【付费推荐：https://tt.vg/vip】184
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 19
-      - 美国【付费推荐：https://tt.vg/vip】225
-      - 美国 023
-      - 二爷翻墙 https://1808.ga Node_17
-      - 荷兰_0324008
-      - 新加坡【付费推荐：https://tt.vg/vip】110
-      - 美国【付费推荐：https://tt.vg/vip】661
-      - 新加坡A
-      - 二爷翻墙 https://1808.ga Node_108
-      - 美国【付费推荐：https://tt.vg/vip】691
-      - 美国【付费推荐：https://tt.vg/vip】286
-      - 日本【付费推荐：https://tt.vg/vip】123
-      - 美国【付费推荐：https://tt.vg/vip】540
-      - 二爷翻墙 https://1808.ga Node_103
-      - 乌克兰【付费推荐：https://tt.vg/vip】798
-      - _SG_新加坡 2
-      - 未知_0324195
-      - 未知_0324141
-      - 美国【付费推荐：https://tt.vg/vip】116
-      - 美国(TG@kxswa)
-      - 「SCP」US-BuyVM4
-      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶2-3CDN
-      - 加拿大【付费推荐：https://tt.vg/vip】595
-      - 美国【付费推荐：https://tt.vg/vip】269
-      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶2-2CDN
-      - 美国-4CE TG频道@v2ssfly
-      - 二爷翻墙 https://1808.ga Node_34
-      - 新加坡【付费推荐：https://tt.vg/vip】308
-      - sg-am3.eqsunshine.com:32001
-      - 美国【付费推荐：https://tt.vg/vip】632
-      - 二爷翻墙 https://1808.ga Node_119
-      - 罗马尼亚【付费推荐：https://tt.vg/vip】330
-      - 美国【付费推荐：https://tt.vg/vip】610
-      - 印度【付费推荐：https://tt.vg/vip】236
-      - 未知_0324156
-      - 德国【付费推荐：https://tt.vg/vip】375
-      - 美国【付费推荐：https://tt.vg/vip】292
-      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-3CDN
-      - 荷兰【付费推荐：https://tt.vg/vip】120
-      - 韩国【付费推荐：https://tt.vg/vip】333
-      - 韩国【付费推荐：https://tt.vg/vip】6
-      - 美国【付费推荐：https://tt.vg/vip】459
-      - 未知_0324139
-      - 台湾【付费推荐：https://tt.vg/vip】781
-      - 美国【付费推荐：https://tt.vg/vip】196
-      - 美国【付费推荐：https://tt.vg/vip】257
-      - 哥斯达黎加【付费推荐：https://tt.vg/vip】181
-      - 日本【付费推荐：https://tt.vg/vip】322
-      - v2rayfree.eu.org - 中国阿里云 34
-      - v2rayfree.eu.org - 澳大利亚Kooweerup Secondary College 5
-      - T.ME@Vpn_Filternet💥🇳🇱💥NL 3
-      - 狮城|tg频道@ripaojiedian
-      - 未知_0324192
-      - 英国【付费推荐：https://tt.vg/vip】318
-      - 美国【付费推荐：https://tt.vg/vip】710
-      - 中国【付费推荐：https://tt.vg/vip】576
-      - 中国【付费推荐：https://tt.vg/vip】760
-      - 美国(TG@kxswa) 2
-      - 二爷翻墙 https://1808.ga Node_86
-      - "_MO_澳门->🇸🇬_SG_新加坡\r"
-      - 日本【付费推荐：https://tt.vg/vip】858
-      - 中国【付费推荐：https://tt.vg/vip】668
-      - 美国_0324966
-      - 美国【付费推荐：https://tt.vg/vip】645
-      - 二爷翻墙 https://1808.ga Node_26
-      - 阿联酋【付费推荐：https://tt.vg/vip】340
-      - 中国【付费推荐：https://tt.vg/vip】276
-      - 台湾【付费推荐：https://tt.vg/vip】153
-      - 美国 115
-      - 日本【付费推荐：https://tt.vg/vip】317
-      - 未知_0324156 2
-      - 日本【付费推荐：https://tt.vg/vip】353
-      - 日本 002
-      - 日本 013
-      - 台湾【付费推荐：https://tt.vg/vip】520
-      - 新加坡【付费推荐：https://tt.vg/vip】168
-      - 澳大利亚 004
-      - 台湾【付费推荐：https://tt.vg/vip】581
-      - _油管：全网最强白嫖
-      - 日本特殊|tg@ripaojiedian
-      - 未知_0324158
-      - 印度【付费推荐：https://tt.vg/vip】105
-      - 美国【付费推荐：https://tt.vg/vip】234
-      - 台湾_0324468
-      - 香港【付费推荐：https://tt.vg/vip】345
-      - 伯利兹_0324047
-      - 未知_0324386
-      - 二爷翻墙 https://1808.ga Node_82
-      - 台湾【付费推荐：https://tt.vg/vip】656
-      - 日本【付费推荐：https://tt.vg/vip】90
-      - 美国 41
-      - 香港【付费推荐：https://tt.vg/vip】215
-      - -美国-172.67.45.184
-      - 台湾【付费推荐：https//tt.vg/vip】768
-      - 美国【付费推荐：https://tt.vg/vip】342
-      - 台湾【付费推荐：https://tt.vg/vip】687
-      - 新加坡B
-      - 未知_0324143
-      - 中国【付费推荐：https://tt.vg/vip】118
-      - github.com/freefq - 亚太地区  6
-      - 二爷翻墙 https://1808.ga Node_23
-      - 塞浦路斯【付费推荐：https://tt.vg/vip】217
+      - 中国【付费推荐：https://tt.vg/vip】216
+      - 台湾【付费推荐：https://tt.vg/vip】455
+      - FR法国(youtube阿伟科技) 3
+      - 美国 051
+      - 美国 040
+      - 美国 037
+      - 新加坡03
+      - _KR_电报频道@pjrjzy 7
       - 狮城特殊|tg@ripaojiedian
-      - 澳大利亚 001
-      - 二爷翻墙 https://1808.ga Node_22
-      - 二爷翻墙 https://1808.ga Node_24
       - 美国 028
-      - 香港2|tg@ripaojiedian
       - 中国【付费推荐：https://tt.vg/vip】251
+      - 新加坡16
+      - 澳大利亚 001
+      - 美国 039
+      - 印度【付费推荐：https://tt.vg/vip】105
+      - 中国【付费推荐：https://tt.vg/vip】570
+      - 台湾【付费推荐：https://tt.vg/vip】581
+      - 台湾【付费推荐：https://tt.vg/vip】153
+      - 台湾【付费推荐：https://tt.vg/vip】626
+      - 中国【付费推荐：https://tt.vg/vip】87
+      - 台湾【付费推荐：https://tt.vg/vip】520
+      - _DE_电报频道@pjrjzy
+      - "|19.85Mb"
+      - 美国 038
+      - 中国【付费推荐：https://tt.vg/vip】709
+      - 日本 003
+      - 美国 049
+      - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://tt.vg/vip】746
+      - "_KR_韩国\r"
+      - 新加坡07
+      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
+      - 台湾【付费推荐：https://tt.vg/vip】556
+      - 未知_0325187
+      - 韩国【付费推荐：https://tt.vg/vip】6
+      - 日本 005
+      - "@SSRSUB-V32-付费推荐:suo.yt/ssrsub"
+      - 美国_0325196
+      - 罗马尼亚【付费推荐：https://tt.vg/vip】330
+      - 中国【付费推荐：https://tt.vg/vip】707
+      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-15CDN
+      - "|27.83Mb"
+      - 美国 082
+      - 美国【付费推荐：https://tt.vg/vip】286
+      - 美国【付费推荐：https://tt.vg/vip】540
+      - "@SSRSUB-V30-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_104
+      - "@SSRSUB-V35-付费推荐:suo.yt/ssrsub"
+      - GB_07
+      - "@SSRSUB-V40-付费推荐:suo.yt/ssrsub"
+      - 美国 032
+      - 美国_0325191
+      - Bulgaria 01 TG@nodpai
+      - "@SSRSUB-V34-付费推荐:suo.yt/ssrsub"
+      - _KR_电报频道@pjrjzy 8
+      - 美国 046
+      - 中国【付费推荐：https://tt.vg/vip】782
+      - 中国【付费推荐：https://tt.vg/vip】635
+      - 美国【付费推荐：https://tt.vg/vip】443
+      - 未知_0325183
+      - 美国【付费推荐：https://tt.vg/vip】257
+      - 二爷翻墙 https://1808.ga Node_118
+      - 日本【付费推荐：https://tt.vg/vip】851
+      - 日本 006
+      - "@SSRSUB-V11-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://tt.vg/vip】673
+      - 美国_0325191 2
+      - US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_33
+      - "@SSRSUB-V36-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V39-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V53-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_83
+      - 美国 041
+      - "@SSRSUB-V26-付费推荐:suo.yt/ssrsub"
+      - 美国_0325594
+      - -美国-172.67.45.184
+      - 美国【付费推荐：https://tt.vg/vip】121
+      - 美国_0325196 2
+      - 日本 012
+      - 美国【付费推荐：https://tt.vg/vip】207
+      - "@SSRSUB-V37-付费推荐:suo.yt/ssrsub"
+      - US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_26
+      - 未知_0325146
+      - 美国 086
+      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
+      - 美国_0325181
+      - 美国【付费推荐：https://tt.vg/vip】196
+      - 伯利兹【付费推荐：https://tt.vg/vip】665
+      - 新加坡【付费推荐：https://tt.vg/vip】289
+      - 二爷翻墙 https://1808.ga Node_36
+      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-3CDN
+      - _TW_台湾
+      - US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_9
+      - 未知_0325147
+      - "@SSRSUB-V44-付费推荐:suo.yt/ssrsub"
+      - d2@oneclickvpnkeys
+      - 卢森堡_0325027
+      - 美国_0325181 2
+      - 美国【付费推荐：https://tt.vg/vip】563
+      - 美国【付费推荐：https://tt.vg/vip】631
+      - 二爷翻墙 https://1808.ga Node_34
+      - 美国 CloudFlare节点 4
+      - 未知_0325188
+      - 二爷翻墙 https://1808.ga Node_107
+      - 伊朗_0325004
+      - 美国 048
+      - "@SSRSUB-V31-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_127
+      - 荷兰_0325014
+      - 美国【付费推荐：https://tt.vg/vip】592
+      - 荷兰【付费推荐：https://tt.vg/vip】120
+      - 美国【付费推荐：https://tt.vg/vip】247
+      - 未知_0325187 2
+      - 美国_03252954
+      - 美国_0325232
+      - 美国 095
+      - 美国【付费推荐：https://tt.vg/vip】609
+      - 美国【付费推荐：https://tt.vg/vip】735
+      - 美国【付费推荐：https://tt.vg/vip】195
+      - 未知_0325139
+      - 美国【付费推荐：https://tt.vg/vip】594
+      - 美国【付费推荐：https://tt.vg/vip】660
+      - "@SSRSUB-V22-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V15-付费推荐:suo.yt/ssrsub"
+      - United States 08 TG@nodpai
+      - "@SSRSUB-V27-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_23
+      - 美国【付费推荐：https://tt.vg/vip】645
+      - 美国【付费推荐：https://tt.vg/vip】644
+      - 塞浦路斯【付费推荐：https://tt.vg/vip】217
+      - 美国【付费推荐：https://tt.vg/vip】583
+      - sg-am3.eqsunshine.com:32001
       - 中国【付费推荐：https://tt.vg/vip】354
-      - 香港_0324136
-      - 土耳其
-      - 中国(TG@kxswa)
-      - 新加坡【付费推荐：https://tt.vg/vip】409
-      - 香港【付费推荐：https://tt.vg/vip】193
-      - 香港【付费推荐：https://tt.vg/vip】98
+      - 美国【付费推荐：https://tt.vg/vip】620
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 26
+      - 荷兰_0325012
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 13
+      - 美国 021
+      - United States 09 TG@nodpai
+      - 美国 054
+      - 美国 033
+      - 美国【付费推荐：https://tt.vg/vip】459
+      - United States(ChatGPT) 14 TG@nodpai
+      - "@SSRSUB-V38-付费推荐:suo.yt/ssrsub"
+      - United States(ChatGPT) 07 TG@nodpai
+      - 未知_0325151
+      - "@SSRSUB-V33-付费推荐:suo.yt/ssrsub"
+      - 美国(TG@kxswa)
+      - 美国 035
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 「SCP」KH-CF
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 26
-      - 二爷翻墙 https://1808.ga Node_106
-      - 二爷翻墙 https://1808.ga Node_124
-      - 二爷翻墙 https://1808.ga Node_127
-      - 印度_0324079
-      - 美国【付费推荐：https://tt.vg/vip】686
-      - 日本【付费推荐：https://tt.vg/vip】122
-      - 二爷翻墙 https://1808.ga Node_60
-      - 未知_0324213
-      - 未知_0324391
-      - 日本【付费推荐：https://tt.vg/vip】157
-      - 亚美尼亚_0324004
-      - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
-      - 二爷翻墙 https://1808.ga Node_90
-      - 韩国【付费推荐：https://tt.vg/vip】184
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 19
-      - 美国【付费推荐：https://tt.vg/vip】225
-      - 美国 023
-      - 二爷翻墙 https://1808.ga Node_17
-      - 荷兰_0324008
-      - 新加坡【付费推荐：https://tt.vg/vip】110
-      - 美国【付费推荐：https://tt.vg/vip】661
-      - 新加坡A
-      - 二爷翻墙 https://1808.ga Node_108
-      - 美国【付费推荐：https://tt.vg/vip】691
-      - 美国【付费推荐：https://tt.vg/vip】286
-      - 日本【付费推荐：https://tt.vg/vip】123
-      - 美国【付费推荐：https://tt.vg/vip】540
-      - 二爷翻墙 https://1808.ga Node_103
-      - 乌克兰【付费推荐：https://tt.vg/vip】798
-      - _SG_新加坡 2
-      - 未知_0324195
-      - 未知_0324141
-      - 美国【付费推荐：https://tt.vg/vip】116
-      - 美国(TG@kxswa)
-      - 「SCP」US-BuyVM4
-      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶2-3CDN
-      - 加拿大【付费推荐：https://tt.vg/vip】595
-      - 美国【付费推荐：https://tt.vg/vip】269
-      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶2-2CDN
-      - 美国-4CE TG频道@v2ssfly
-      - 二爷翻墙 https://1808.ga Node_34
-      - 新加坡【付费推荐：https://tt.vg/vip】308
-      - sg-am3.eqsunshine.com:32001
-      - 美国【付费推荐：https://tt.vg/vip】632
-      - 二爷翻墙 https://1808.ga Node_119
-      - 罗马尼亚【付费推荐：https://tt.vg/vip】330
-      - 美国【付费推荐：https://tt.vg/vip】610
-      - 印度【付费推荐：https://tt.vg/vip】236
-      - 未知_0324156
-      - 德国【付费推荐：https://tt.vg/vip】375
-      - 美国【付费推荐：https://tt.vg/vip】292
-      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-3CDN
-      - 荷兰【付费推荐：https://tt.vg/vip】120
-      - 韩国【付费推荐：https://tt.vg/vip】333
-      - 韩国【付费推荐：https://tt.vg/vip】6
-      - 美国【付费推荐：https://tt.vg/vip】459
-      - 未知_0324139
-      - 台湾【付费推荐：https://tt.vg/vip】781
-      - 美国【付费推荐：https://tt.vg/vip】196
-      - 美国【付费推荐：https://tt.vg/vip】257
-      - 哥斯达黎加【付费推荐：https://tt.vg/vip】181
-      - 日本【付费推荐：https://tt.vg/vip】322
-      - v2rayfree.eu.org - 中国阿里云 34
-      - v2rayfree.eu.org - 澳大利亚Kooweerup Secondary College 5
-      - T.ME@Vpn_Filternet💥🇳🇱💥NL 3
-      - 狮城|tg频道@ripaojiedian
-      - 未知_0324192
-      - 英国【付费推荐：https://tt.vg/vip】318
-      - 美国【付费推荐：https://tt.vg/vip】710
-      - 中国【付费推荐：https://tt.vg/vip】576
-      - 中国【付费推荐：https://tt.vg/vip】760
-      - 美国(TG@kxswa) 2
-      - 二爷翻墙 https://1808.ga Node_86
-      - "_MO_澳门->🇸🇬_SG_新加坡\r"
-      - 日本【付费推荐：https://tt.vg/vip】858
-      - 中国【付费推荐：https://tt.vg/vip】668
-      - 美国_0324966
-      - 美国【付费推荐：https://tt.vg/vip】645
-      - 二爷翻墙 https://1808.ga Node_26
-      - 阿联酋【付费推荐：https://tt.vg/vip】340
-      - 中国【付费推荐：https://tt.vg/vip】276
-      - 台湾【付费推荐：https://tt.vg/vip】153
-      - 美国 115
-      - 日本【付费推荐：https://tt.vg/vip】317
-      - 未知_0324156 2
-      - 日本【付费推荐：https://tt.vg/vip】353
-      - 日本 002
-      - 日本 013
-      - 台湾【付费推荐：https://tt.vg/vip】520
-      - 新加坡【付费推荐：https://tt.vg/vip】168
-      - 澳大利亚 004
-      - 台湾【付费推荐：https://tt.vg/vip】581
-      - _油管：全网最强白嫖
-      - 日本特殊|tg@ripaojiedian
-      - 未知_0324158
-      - 印度【付费推荐：https://tt.vg/vip】105
-      - 美国【付费推荐：https://tt.vg/vip】234
-      - 台湾_0324468
-      - 香港【付费推荐：https://tt.vg/vip】345
-      - 伯利兹_0324047
-      - 未知_0324386
-      - 二爷翻墙 https://1808.ga Node_82
-      - 台湾【付费推荐：https://tt.vg/vip】656
-      - 日本【付费推荐：https://tt.vg/vip】90
-      - 美国 41
-      - 香港【付费推荐：https://tt.vg/vip】215
-      - -美国-172.67.45.184
-      - 台湾【付费推荐：https//tt.vg/vip】768
-      - 美国【付费推荐：https://tt.vg/vip】342
-      - 台湾【付费推荐：https://tt.vg/vip】687
-      - 新加坡B
-      - 未知_0324143
-      - 中国【付费推荐：https://tt.vg/vip】118
-      - github.com/freefq - 亚太地区  6
-      - 二爷翻墙 https://1808.ga Node_23
-      - 塞浦路斯【付费推荐：https://tt.vg/vip】217
+      - 中国【付费推荐：https://tt.vg/vip】216
+      - 台湾【付费推荐：https://tt.vg/vip】455
+      - FR法国(youtube阿伟科技) 3
+      - 美国 051
+      - 美国 040
+      - 美国 037
+      - 新加坡03
+      - _KR_电报频道@pjrjzy 7
       - 狮城特殊|tg@ripaojiedian
-      - 澳大利亚 001
-      - 二爷翻墙 https://1808.ga Node_22
-      - 二爷翻墙 https://1808.ga Node_24
       - 美国 028
-      - 香港2|tg@ripaojiedian
       - 中国【付费推荐：https://tt.vg/vip】251
+      - 新加坡16
+      - 澳大利亚 001
+      - 美国 039
+      - 印度【付费推荐：https://tt.vg/vip】105
+      - 中国【付费推荐：https://tt.vg/vip】570
+      - 台湾【付费推荐：https://tt.vg/vip】581
+      - 台湾【付费推荐：https://tt.vg/vip】153
+      - 台湾【付费推荐：https://tt.vg/vip】626
+      - 中国【付费推荐：https://tt.vg/vip】87
+      - 台湾【付费推荐：https://tt.vg/vip】520
+      - _DE_电报频道@pjrjzy
+      - "|19.85Mb"
+      - 美国 038
+      - 中国【付费推荐：https://tt.vg/vip】709
+      - 日本 003
+      - 美国 049
+      - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://tt.vg/vip】746
+      - "_KR_韩国\r"
+      - 新加坡07
+      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
+      - 台湾【付费推荐：https://tt.vg/vip】556
+      - 未知_0325187
+      - 韩国【付费推荐：https://tt.vg/vip】6
+      - 日本 005
+      - "@SSRSUB-V32-付费推荐:suo.yt/ssrsub"
+      - 美国_0325196
+      - 罗马尼亚【付费推荐：https://tt.vg/vip】330
+      - 中国【付费推荐：https://tt.vg/vip】707
+      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-15CDN
+      - "|27.83Mb"
+      - 美国 082
+      - 美国【付费推荐：https://tt.vg/vip】286
+      - 美国【付费推荐：https://tt.vg/vip】540
+      - "@SSRSUB-V30-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_104
+      - "@SSRSUB-V35-付费推荐:suo.yt/ssrsub"
+      - GB_07
+      - "@SSRSUB-V40-付费推荐:suo.yt/ssrsub"
+      - 美国 032
+      - 美国_0325191
+      - Bulgaria 01 TG@nodpai
+      - "@SSRSUB-V34-付费推荐:suo.yt/ssrsub"
+      - _KR_电报频道@pjrjzy 8
+      - 美国 046
+      - 中国【付费推荐：https://tt.vg/vip】782
+      - 中国【付费推荐：https://tt.vg/vip】635
+      - 美国【付费推荐：https://tt.vg/vip】443
+      - 未知_0325183
+      - 美国【付费推荐：https://tt.vg/vip】257
+      - 二爷翻墙 https://1808.ga Node_118
+      - 日本【付费推荐：https://tt.vg/vip】851
+      - 日本 006
+      - "@SSRSUB-V11-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://tt.vg/vip】673
+      - 美国_0325191 2
+      - US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_33
+      - "@SSRSUB-V36-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V39-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V53-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_83
+      - 美国 041
+      - "@SSRSUB-V26-付费推荐:suo.yt/ssrsub"
+      - 美国_0325594
+      - -美国-172.67.45.184
+      - 美国【付费推荐：https://tt.vg/vip】121
+      - 美国_0325196 2
+      - 日本 012
+      - 美国【付费推荐：https://tt.vg/vip】207
+      - "@SSRSUB-V37-付费推荐:suo.yt/ssrsub"
+      - US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_26
+      - 未知_0325146
+      - 美国 086
+      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
+      - 美国_0325181
+      - 美国【付费推荐：https://tt.vg/vip】196
+      - 伯利兹【付费推荐：https://tt.vg/vip】665
+      - 新加坡【付费推荐：https://tt.vg/vip】289
+      - 二爷翻墙 https://1808.ga Node_36
+      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-3CDN
+      - _TW_台湾
+      - US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_9
+      - 未知_0325147
+      - "@SSRSUB-V44-付费推荐:suo.yt/ssrsub"
+      - d2@oneclickvpnkeys
+      - 卢森堡_0325027
+      - 美国_0325181 2
+      - 美国【付费推荐：https://tt.vg/vip】563
+      - 美国【付费推荐：https://tt.vg/vip】631
+      - 二爷翻墙 https://1808.ga Node_34
+      - 美国 CloudFlare节点 4
+      - 未知_0325188
+      - 二爷翻墙 https://1808.ga Node_107
+      - 伊朗_0325004
+      - 美国 048
+      - "@SSRSUB-V31-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_127
+      - 荷兰_0325014
+      - 美国【付费推荐：https://tt.vg/vip】592
+      - 荷兰【付费推荐：https://tt.vg/vip】120
+      - 美国【付费推荐：https://tt.vg/vip】247
+      - 未知_0325187 2
+      - 美国_03252954
+      - 美国_0325232
+      - 美国 095
+      - 美国【付费推荐：https://tt.vg/vip】609
+      - 美国【付费推荐：https://tt.vg/vip】735
+      - 美国【付费推荐：https://tt.vg/vip】195
+      - 未知_0325139
+      - 美国【付费推荐：https://tt.vg/vip】594
+      - 美国【付费推荐：https://tt.vg/vip】660
+      - "@SSRSUB-V22-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V15-付费推荐:suo.yt/ssrsub"
+      - United States 08 TG@nodpai
+      - "@SSRSUB-V27-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_23
+      - 美国【付费推荐：https://tt.vg/vip】645
+      - 美国【付费推荐：https://tt.vg/vip】644
+      - 塞浦路斯【付费推荐：https://tt.vg/vip】217
+      - 美国【付费推荐：https://tt.vg/vip】583
+      - sg-am3.eqsunshine.com:32001
       - 中国【付费推荐：https://tt.vg/vip】354
-      - 香港_0324136
-      - 土耳其
-      - 中国(TG@kxswa)
-      - 新加坡【付费推荐：https://tt.vg/vip】409
-      - 香港【付费推荐：https://tt.vg/vip】193
-      - 香港【付费推荐：https://tt.vg/vip】98
+      - 美国【付费推荐：https://tt.vg/vip】620
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 26
+      - 荷兰_0325012
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 13
+      - 美国 021
+      - United States 09 TG@nodpai
+      - 美国 054
+      - 美国 033
+      - 美国【付费推荐：https://tt.vg/vip】459
+      - United States(ChatGPT) 14 TG@nodpai
+      - "@SSRSUB-V38-付费推荐:suo.yt/ssrsub"
+      - United States(ChatGPT) 07 TG@nodpai
+      - 未知_0325151
+      - "@SSRSUB-V33-付费推荐:suo.yt/ssrsub"
+      - 美国(TG@kxswa)
+      - 美国 035
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1147,138 +1284,156 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 「SCP」KH-CF
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 26
-      - 二爷翻墙 https://1808.ga Node_106
-      - 二爷翻墙 https://1808.ga Node_124
-      - 二爷翻墙 https://1808.ga Node_127
-      - 印度_0324079
-      - 美国【付费推荐：https://tt.vg/vip】686
-      - 日本【付费推荐：https://tt.vg/vip】122
-      - 二爷翻墙 https://1808.ga Node_60
-      - 未知_0324213
-      - 未知_0324391
-      - 日本【付费推荐：https://tt.vg/vip】157
-      - 亚美尼亚_0324004
-      - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
-      - 二爷翻墙 https://1808.ga Node_90
-      - 韩国【付费推荐：https://tt.vg/vip】184
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 19
-      - 美国【付费推荐：https://tt.vg/vip】225
-      - 美国 023
-      - 二爷翻墙 https://1808.ga Node_17
-      - 荷兰_0324008
-      - 新加坡【付费推荐：https://tt.vg/vip】110
-      - 美国【付费推荐：https://tt.vg/vip】661
-      - 新加坡A
-      - 二爷翻墙 https://1808.ga Node_108
-      - 美国【付费推荐：https://tt.vg/vip】691
-      - 美国【付费推荐：https://tt.vg/vip】286
-      - 日本【付费推荐：https://tt.vg/vip】123
-      - 美国【付费推荐：https://tt.vg/vip】540
-      - 二爷翻墙 https://1808.ga Node_103
-      - 乌克兰【付费推荐：https://tt.vg/vip】798
-      - _SG_新加坡 2
-      - 未知_0324195
-      - 未知_0324141
-      - 美国【付费推荐：https://tt.vg/vip】116
-      - 美国(TG@kxswa)
-      - 「SCP」US-BuyVM4
-      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶2-3CDN
-      - 加拿大【付费推荐：https://tt.vg/vip】595
-      - 美国【付费推荐：https://tt.vg/vip】269
-      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶2-2CDN
-      - 美国-4CE TG频道@v2ssfly
-      - 二爷翻墙 https://1808.ga Node_34
-      - 新加坡【付费推荐：https://tt.vg/vip】308
-      - sg-am3.eqsunshine.com:32001
-      - 美国【付费推荐：https://tt.vg/vip】632
-      - 二爷翻墙 https://1808.ga Node_119
-      - 罗马尼亚【付费推荐：https://tt.vg/vip】330
-      - 美国【付费推荐：https://tt.vg/vip】610
-      - 印度【付费推荐：https://tt.vg/vip】236
-      - 未知_0324156
-      - 德国【付费推荐：https://tt.vg/vip】375
-      - 美国【付费推荐：https://tt.vg/vip】292
-      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-3CDN
-      - 荷兰【付费推荐：https://tt.vg/vip】120
-      - 韩国【付费推荐：https://tt.vg/vip】333
-      - 韩国【付费推荐：https://tt.vg/vip】6
-      - 美国【付费推荐：https://tt.vg/vip】459
-      - 未知_0324139
-      - 台湾【付费推荐：https://tt.vg/vip】781
-      - 美国【付费推荐：https://tt.vg/vip】196
-      - 美国【付费推荐：https://tt.vg/vip】257
-      - 哥斯达黎加【付费推荐：https://tt.vg/vip】181
-      - 日本【付费推荐：https://tt.vg/vip】322
-      - v2rayfree.eu.org - 中国阿里云 34
-      - v2rayfree.eu.org - 澳大利亚Kooweerup Secondary College 5
-      - T.ME@Vpn_Filternet💥🇳🇱💥NL 3
-      - 狮城|tg频道@ripaojiedian
-      - 未知_0324192
-      - 英国【付费推荐：https://tt.vg/vip】318
-      - 美国【付费推荐：https://tt.vg/vip】710
-      - 中国【付费推荐：https://tt.vg/vip】576
-      - 中国【付费推荐：https://tt.vg/vip】760
-      - 美国(TG@kxswa) 2
-      - 二爷翻墙 https://1808.ga Node_86
-      - "_MO_澳门->🇸🇬_SG_新加坡\r"
-      - 日本【付费推荐：https://tt.vg/vip】858
-      - 中国【付费推荐：https://tt.vg/vip】668
-      - 美国_0324966
-      - 美国【付费推荐：https://tt.vg/vip】645
-      - 二爷翻墙 https://1808.ga Node_26
-      - 阿联酋【付费推荐：https://tt.vg/vip】340
-      - 中国【付费推荐：https://tt.vg/vip】276
-      - 台湾【付费推荐：https://tt.vg/vip】153
-      - 美国 115
-      - 日本【付费推荐：https://tt.vg/vip】317
-      - 未知_0324156 2
-      - 日本【付费推荐：https://tt.vg/vip】353
-      - 日本 002
-      - 日本 013
-      - 台湾【付费推荐：https://tt.vg/vip】520
-      - 新加坡【付费推荐：https://tt.vg/vip】168
-      - 澳大利亚 004
-      - 台湾【付费推荐：https://tt.vg/vip】581
-      - _油管：全网最强白嫖
-      - 日本特殊|tg@ripaojiedian
-      - 未知_0324158
-      - 印度【付费推荐：https://tt.vg/vip】105
-      - 美国【付费推荐：https://tt.vg/vip】234
-      - 台湾_0324468
-      - 香港【付费推荐：https://tt.vg/vip】345
-      - 伯利兹_0324047
-      - 未知_0324386
-      - 二爷翻墙 https://1808.ga Node_82
-      - 台湾【付费推荐：https://tt.vg/vip】656
-      - 日本【付费推荐：https://tt.vg/vip】90
-      - 美国 41
-      - 香港【付费推荐：https://tt.vg/vip】215
-      - -美国-172.67.45.184
-      - 台湾【付费推荐：https//tt.vg/vip】768
-      - 美国【付费推荐：https://tt.vg/vip】342
-      - 台湾【付费推荐：https://tt.vg/vip】687
-      - 新加坡B
-      - 未知_0324143
-      - 中国【付费推荐：https://tt.vg/vip】118
-      - github.com/freefq - 亚太地区  6
-      - 二爷翻墙 https://1808.ga Node_23
-      - 塞浦路斯【付费推荐：https://tt.vg/vip】217
+      - 中国【付费推荐：https://tt.vg/vip】216
+      - 台湾【付费推荐：https://tt.vg/vip】455
+      - FR法国(youtube阿伟科技) 3
+      - 美国 051
+      - 美国 040
+      - 美国 037
+      - 新加坡03
+      - _KR_电报频道@pjrjzy 7
       - 狮城特殊|tg@ripaojiedian
-      - 澳大利亚 001
-      - 二爷翻墙 https://1808.ga Node_22
-      - 二爷翻墙 https://1808.ga Node_24
       - 美国 028
-      - 香港2|tg@ripaojiedian
       - 中国【付费推荐：https://tt.vg/vip】251
+      - 新加坡16
+      - 澳大利亚 001
+      - 美国 039
+      - 印度【付费推荐：https://tt.vg/vip】105
+      - 中国【付费推荐：https://tt.vg/vip】570
+      - 台湾【付费推荐：https://tt.vg/vip】581
+      - 台湾【付费推荐：https://tt.vg/vip】153
+      - 台湾【付费推荐：https://tt.vg/vip】626
+      - 中国【付费推荐：https://tt.vg/vip】87
+      - 台湾【付费推荐：https://tt.vg/vip】520
+      - _DE_电报频道@pjrjzy
+      - "|19.85Mb"
+      - 美国 038
+      - 中国【付费推荐：https://tt.vg/vip】709
+      - 日本 003
+      - 美国 049
+      - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://tt.vg/vip】746
+      - "_KR_韩国\r"
+      - 新加坡07
+      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
+      - 台湾【付费推荐：https://tt.vg/vip】556
+      - 未知_0325187
+      - 韩国【付费推荐：https://tt.vg/vip】6
+      - 日本 005
+      - "@SSRSUB-V32-付费推荐:suo.yt/ssrsub"
+      - 美国_0325196
+      - 罗马尼亚【付费推荐：https://tt.vg/vip】330
+      - 中国【付费推荐：https://tt.vg/vip】707
+      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-15CDN
+      - "|27.83Mb"
+      - 美国 082
+      - 美国【付费推荐：https://tt.vg/vip】286
+      - 美国【付费推荐：https://tt.vg/vip】540
+      - "@SSRSUB-V30-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_104
+      - "@SSRSUB-V35-付费推荐:suo.yt/ssrsub"
+      - GB_07
+      - "@SSRSUB-V40-付费推荐:suo.yt/ssrsub"
+      - 美国 032
+      - 美国_0325191
+      - Bulgaria 01 TG@nodpai
+      - "@SSRSUB-V34-付费推荐:suo.yt/ssrsub"
+      - _KR_电报频道@pjrjzy 8
+      - 美国 046
+      - 中国【付费推荐：https://tt.vg/vip】782
+      - 中国【付费推荐：https://tt.vg/vip】635
+      - 美国【付费推荐：https://tt.vg/vip】443
+      - 未知_0325183
+      - 美国【付费推荐：https://tt.vg/vip】257
+      - 二爷翻墙 https://1808.ga Node_118
+      - 日本【付费推荐：https://tt.vg/vip】851
+      - 日本 006
+      - "@SSRSUB-V11-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：https://tt.vg/vip】673
+      - 美国_0325191 2
+      - US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_33
+      - "@SSRSUB-V36-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V25-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V39-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V53-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_83
+      - 美国 041
+      - "@SSRSUB-V26-付费推荐:suo.yt/ssrsub"
+      - 美国_0325594
+      - -美国-172.67.45.184
+      - 美国【付费推荐：https://tt.vg/vip】121
+      - 美国_0325196 2
+      - 日本 012
+      - 美国【付费推荐：https://tt.vg/vip】207
+      - "@SSRSUB-V37-付费推荐:suo.yt/ssrsub"
+      - US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_26
+      - 未知_0325146
+      - 美国 086
+      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
+      - 美国_0325181
+      - 美国【付费推荐：https://tt.vg/vip】196
+      - 伯利兹【付费推荐：https://tt.vg/vip】665
+      - 新加坡【付费推荐：https://tt.vg/vip】289
+      - 二爷翻墙 https://1808.ga Node_36
+      - https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-3CDN
+      - _TW_台湾
+      - US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_9
+      - 未知_0325147
+      - "@SSRSUB-V44-付费推荐:suo.yt/ssrsub"
+      - d2@oneclickvpnkeys
+      - 卢森堡_0325027
+      - 美国_0325181 2
+      - 美国【付费推荐：https://tt.vg/vip】563
+      - 美国【付费推荐：https://tt.vg/vip】631
+      - 二爷翻墙 https://1808.ga Node_34
+      - 美国 CloudFlare节点 4
+      - 未知_0325188
+      - 二爷翻墙 https://1808.ga Node_107
+      - 伊朗_0325004
+      - 美国 048
+      - "@SSRSUB-V31-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_127
+      - 荷兰_0325014
+      - 美国【付费推荐：https://tt.vg/vip】592
+      - 荷兰【付费推荐：https://tt.vg/vip】120
+      - 美国【付费推荐：https://tt.vg/vip】247
+      - 未知_0325187 2
+      - 美国_03252954
+      - 美国_0325232
+      - 美国 095
+      - 美国【付费推荐：https://tt.vg/vip】609
+      - 美国【付费推荐：https://tt.vg/vip】735
+      - 美国【付费推荐：https://tt.vg/vip】195
+      - 未知_0325139
+      - 美国【付费推荐：https://tt.vg/vip】594
+      - 美国【付费推荐：https://tt.vg/vip】660
+      - "@SSRSUB-V22-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V15-付费推荐:suo.yt/ssrsub"
+      - United States 08 TG@nodpai
+      - "@SSRSUB-V27-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙 https://1808.ga Node_23
+      - 美国【付费推荐：https://tt.vg/vip】645
+      - 美国【付费推荐：https://tt.vg/vip】644
+      - 塞浦路斯【付费推荐：https://tt.vg/vip】217
+      - 美国【付费推荐：https://tt.vg/vip】583
+      - sg-am3.eqsunshine.com:32001
       - 中国【付费推荐：https://tt.vg/vip】354
-      - 香港_0324136
-      - 土耳其
-      - 中国(TG@kxswa)
-      - 新加坡【付费推荐：https://tt.vg/vip】409
-      - 香港【付费推荐：https://tt.vg/vip】193
-      - 香港【付费推荐：https://tt.vg/vip】98
+      - 美国【付费推荐：https://tt.vg/vip】620
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 26
+      - 荷兰_0325012
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 13
+      - 美国 021
+      - United States 09 TG@nodpai
+      - 美国 054
+      - 美国 033
+      - 美国【付费推荐：https://tt.vg/vip】459
+      - United States(ChatGPT) 14 TG@nodpai
+      - "@SSRSUB-V38-付费推荐:suo.yt/ssrsub"
+      - United States(ChatGPT) 07 TG@nodpai
+      - 未知_0325151
+      - "@SSRSUB-V33-付费推荐:suo.yt/ssrsub"
+      - 美国(TG@kxswa)
+      - 美国 035
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
