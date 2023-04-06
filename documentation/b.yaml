@@ -6,115 +6,515 @@ mode: Rule
 log-level: info
 external-controller: 9090
 proxies:
-  - {name: 美国_0405171, server: 108.186.192.249, port: 35502, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_04053545, server: 156.225.67.228, port: 35362, type: vmess, uuid: 6e79eea4-5f72-4683-ad0e-5339f013421b, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IEPL+·+美国US+·+88+·+广港移动, server: 183.213.200.204, port: 28109, type: trojan, password: n9gghq, skip-cert-verify: true, udp: true}
-  - {name: IEPL+·+美国US+·+88+·+广港移动 2, server: 139.226.166.156, port: 28109, type: trojan, password: n9gghq, skip-cert-verify: true, udp: true}
-  - {name: 美国 040, server: aujs.stablize.top, port: 443, type: trojan, password: c0cf56d4-08a7-4436-9e6a-3feebe142706, skip-cert-verify: true, udp: true}
-  - {name: 韩国 001, server: kr-s-3.fuckjdieng.uk, port: 50328, type: trojan, password: 3195b7ff-6535-4ead-aaf0-428982a39b92, sni: kr-s-3.fuckjdieng.uk, skip-cert-verify: true, udp: true}
-  - {name: 二爷翻墙网 https://1808.ga 节点_62, server: 204.216.214.102, port: 44386, type: trojan, password: C931CWacy8, skip-cert-verify: true, udp: true}
-  - {name: 美国 048, server: 172.99.188.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国_04053416, server: 156.225.67.205, port: 47717, type: vmess, uuid: d7735058-1dac-4618-99ff-0aa0441ec2d7, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国  14, server: tk-002-001.xiaoxiaobujidao.xyz, port: 443, type: trojan, password: dae759f7-4b93-3e40-bf4d-add9860fbea5, skip-cert-verify: true, udp: true}
-  - {name: "@DeamNet_🇭🇰Tseung Kwan O-1297-492", server: 23.224.191.5, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/220128071100, headers: {Host: 23.224.191.5}}, udp: true}
-  - {name: 日本 V2CROSS.COM, server: hk6.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: da9d5c74-a572-4cf4-a375-19b886f5ffc4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
-  - {name: 中国【付费推荐：https://tt.vg/vip】237, server: 180.101.193.226, port: 10068, type: ss, cipher: aes-256-cfb, password: RsDk3peCSuo76B68, udp: true}
-  - {name: 中国 015, server: cm3.naichald.xyz, port: 38878, type: ss, cipher: chacha20-ietf-poly1305, password: 1529dad3-c7ff-4873-a95c-ab219a72e5de, udp: true}
+  - {name: 韩国 010, server: 43.201.33.242, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: GB(AzadNet.t.me)_6, server: 178.239.171.103, port: 443, type: trojan, password: e0597322-b0d8-4afb-960a-39d5cbd7bd8e, sni: wfi.sahnama.com, skip-cert-verify: true, udp: true}
+  - {name: _US_美国_14, server: 167.88.61.213, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _US_美国_17, server: 167.88.63.123, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】82, server: 167.88.61.213, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 中国 073, server: fsyy.fosi.hk, port: 31431, type: trojan, password: b065b64a-905a-494a-a25f-5e313e93cca8, sni: id08tk.ifengsoutu233.tk, skip-cert-verify: true, udp: true}
+  - {name: 中国 070, server: fsyy.fosi.hk, port: 54862, type: trojan, password: b065b64a-905a-494a-a25f-5e313e93cca8, sni: id04tk.ifengsoutu233.tk, skip-cert-verify: true, udp: true}
+  - {name: 印尼家宽04-原始节点, server: id04tk.ifengsoutu233.tk, port: 18888, type: trojan, password: b065b64a-905a-494a-a25f-5e313e93cca8, sni: id04tk.ifengsoutu233.tk, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】67, server: 167.88.61.213, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _CN_中国->🇺🇸_US_美国 4, server: oss-cn-shanghai.westdatacloud.top, port: 20048, type: trojan, password: 626351FA-3CA6-8118-FADF-CCDBCD620871, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: 04/06免费节点|TG频道@kxswa 9, server: 85.208.108.60, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】68, server: 167.88.61.213, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 澳大利亚 005, server: 43.207.160.88, port: 443, type: ss, cipher: aes-256-cfb, password: doub.io, udp: true}
+  - {name: 日本_04061050, server: 185.212.58.224, port: 32372, type: vmess, uuid: db0169ee-42b0-492d-8492-bbb4a5c41938, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _JP_日本 9, server: 85.208.108.60, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _JP_日本 4, server: 85.208.108.60, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】80, server: 167.88.61.213, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 中国 076, server: fsyy.fosi.hk, port: 36994, type: trojan, password: b065b64a-905a-494a-a25f-5e313e93cca8, sni: id09tk.ifengsoutu233.tk, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 11, server: 35.88.156.76, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 中国 081, server: 120.233.84.203, port: 32675, type: trojan, password: b065b64a-905a-494a-a25f-5e313e93cca8, sni: id03tk.ifengsoutu233.tk, skip-cert-verify: true, udp: true}
+  - {name: 韩国 011, server: 43.201.149.16, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 中国 080, server: fsyy.fosi.hk, port: 26417, type: trojan, password: b065b64a-905a-494a-a25f-5e313e93cca8, sni: id07tk.ifengsoutu233.tk, skip-cert-verify: true, udp: true}
+  - {name: 日本【付费推荐：https://tt.vg/vip】146, server: 85.208.108.60, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 台湾省_22, server: tw2.sanfen001.pics, port: 443, type: vmess, uuid: da9d5c74-a572-4cf4-a375-19b886f5ffc4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: _PL_波兰, server: 217.30.10.68, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: 佛移-印尼家宽05, server: fsyy.fosi.hk, port: 61530, type: trojan, password: b065b64a-905a-494a-a25f-5e313e93cca8, sni: id05tk.ifengsoutu233.tk, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】85, server: 167.88.61.213, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 印尼家宽07-原始节点, server: id07tk.ifengsoutu233.tk, port: 18888, type: trojan, password: b065b64a-905a-494a-a25f-5e313e93cca8, sni: id07tk.ifengsoutu233.tk, skip-cert-verify: true, udp: true}
+  - {name: _JP_日本 11, server: 85.208.108.60, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】88, server: 167.88.61.213, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: Singapore 05 TG:@nodpai, server: sgp-2.fuckjdieng.uk, port: 50132, type: trojan, password: 14dfcbc3-fb69-43f4-a1a1-d06124eb3d03, skip-cert-verify: true, udp: true}
+  - {name: 澳大利亚 008, server: 43.201.70.114, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: JP-85.208.108.60-189, server: 85.208.108.60, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】73, server: 167.88.61.213, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】81, server: 167.88.61.213, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: Pool_🇳🇱NL_110, server: 85.208.108.60, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 中国 057, server: sg.stablize.top, port: 443, type: trojan, password: a3740de6-74fc-4ab6-bc85-92d19402257c, skip-cert-verify: true, udp: true}
+  - {name: Pool_🇳🇱NL_95, server: 85.208.108.60, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 中国 071, server: fsyy.fosi.hk, port: 29650, type: trojan, password: b065b64a-905a-494a-a25f-5e313e93cca8, sni: id11tk.ifengsoutu233.tk, skip-cert-verify: true, udp: true}
+  - {name: 中国 078, server: fsyy.fosi.hk, port: 63827, type: trojan, password: b065b64a-905a-494a-a25f-5e313e93cca8, sni: id10tk.ifengsoutu233.tk, skip-cert-verify: true, udp: true}
+  - {name: _JP_日本 7, server: 85.208.108.60, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 香港频_7, server: shankh.772xx.cn, port: 17113, type: ss, cipher: chacha20-ietf-poly1305, password: a761a0c8-9466-410f-b041-9e1e308c5f71, udp: true}
+  - {name: Pool_🇳🇱NL_99, server: 85.208.108.60, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US(AzadNet.t.me)_64, server: 170.187.134.190, port: 8443, type: trojan, password: cf4295378e209e70d12c5bdd017144dfd1c772d3, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】78, server: 167.88.61.213, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
   - {name: 俄罗斯联邦 001, server: 1.hk1997.pro, port: 443, type: trojan, password: 2703fdad-d9fd-4884-a16d-00f0fd4a061c, skip-cert-verify: true, udp: true}
-  - {name: 巴基斯坦 001, server: fn600mlines021.svcline.com, port: 995, type: ss, cipher: aes-256-gcm, password: 507364fb791e, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines021.svcline.com, path: /kpnzyxsj, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: "@DeamNet_🇭🇰Tseung Kwan O-1968-508", server: 23.224.191.6, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/220128071100, headers: {Host: 23.224.191.6}}, udp: true}
-  - {name: 中国_0405039, server: 183.237.20.147, port: 40095, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: -美国-152.69.221.20, server: 152.69.221.20, port: 80, type: vmess, uuid: bd1928f2-0818-4192-d14a-0961f05c0fdf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 美国 惠普HP, server: hk1.b.bd6b6c503c93.sanfen001.pics, port: 443, type: vmess, uuid: da9d5c74-a572-4cf4-a375-19b886f5ffc4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
-  - {name: "@DeamNet_🇭🇰Tseung Kwan O-3259-501", server: 23.224.191.6, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 32, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/220128071100, headers: {Host: 23.224.191.6}}, udp: true}
+  - {name: KR-43.201.50.238-018, server: 43.201.50.238, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 沙特阿_17, server: 85.208.108.60, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 中国 077, server: fsyy.fosi.hk, port: 32540, type: trojan, password: b065b64a-905a-494a-a25f-5e313e93cca8, sni: id06tk.ifengsoutu233.tk, skip-cert-verify: true, udp: true}
+  - {name: _JP_日本 12, server: 85.208.108.60, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: "@DeamNet_🇹🇼Taipei-3298-509", server: 45.121.51.103, port: 20715, type: vmess, uuid: f6406b6d-5487-46da-f793-46611269a306, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [45.121.51.103]}}, udp: true}
+  - {name: 中国 075, server: 120.233.84.203, port: 42645, type: trojan, password: b065b64a-905a-494a-a25f-5e313e93cca8, sni: id02tk.ifengsoutu233.tk, skip-cert-verify: true, udp: true}
+  - {name: Pool_🇳🇱NL_117, server: 85.208.108.60, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 日本【付费推荐：https://tt.vg/vip】147, server: 85.208.108.60, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 日本 007, server: 43.207.205.208, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _JP_日本 2, server: 85.208.108.60, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _JP_日本 8, server: 85.208.108.60, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 中国 074, server: fsyy.fosi.hk, port: 21192, type: trojan, password: b065b64a-905a-494a-a25f-5e313e93cca8, sni: id01tk.ifengsoutu233.tk, skip-cert-verify: true, udp: true}
+  - {name: 日本 010, server: 43.207.120.229, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 香港 006, server: cm01.bestvmr.com, port: 10003, type: trojan, password: 8b82ba3f-342a-5e34-bb93-f0d677f40ab7, sni: hk01.abcspeet.com, skip-cert-verify: true, udp: true}
+  - {name: 韩国 012, server: 43.201.146.228, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 美国 040, server: aujs.stablize.top, port: 443, type: trojan, password: c0cf56d4-08a7-4436-9e6a-3feebe142706, skip-cert-verify: true, udp: true}
   - {name: 印度【付费推荐：https://tt.vg/vip】125, server: 152.70.74.66, port: 443, type: trojan, password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://tt.vg/vip】625, server: sz.cny.page, port: 31614, type: vmess, uuid: 88c6d12b-614f-485f-83fc-fb0cc57c4801, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sz.cny.page}}, udp: true}
+  - {name: _KR_韩国_3, server: 43.201.48.212, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _JP_日本, server: 85.208.108.60, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Singapore 02 TG:@nodpai, server: n1674862935.eaurlmj.cn, port: 443, type: vmess, uuid: a314da3c-e126-45bb-8a28-b28ab452d942, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: n1674862935.eaurlmj.cn}}, udp: true}
+  - {name: 233v2.com_141.147.154.56, server: 141.147.154.56, port: 30707, type: vmess, uuid: 08979e28-0ccb-4f8a-84c4-fada0618b399, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 巴拿马【付费推荐：https://tt.vg/vip】239, server: 185.143.220.25, port: 443, type: vmess, uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /6e9EtZ2dL}, udp: true}
+  - {name: _SG_新加坡_10, server: sg.421421.xyz, port: 20230, type: trojan, password: 717c3a16-6871-425c-a158-40cc37ff3543, sni: 421421.xyz, skip-cert-verify: true, udp: true}
+  - {name: _JP_日本 5, server: 85.208.108.60, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _Scaleway, server: cf.noaries.de, port: 8080, type: vmess, uuid: 01d07cdf-aa5e-4889-8cbd-bd2b88179a85, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: nls.cloudflare.quest}}, udp: true}
+  - {name: Relay 🇮🇩 Indonesia(ChatGPT)..., server: fsyy.fosi.hk, port: 13908, type: vmess, uuid: b065b64a-905a-494a-a25f-5e313e93cca8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: id16tk.ifengsoutu233.tk}}, udp: true}
+  - {name: "|18.52Mb", server: cdn.imnibaba.wiki, port: 2052, type: vmess, uuid: 82276930-fa80-47d7-c228-7f4bd68d5046, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tg@sudoxin, headers: {Host: rn-us1.imnibaba.wiki}}, udp: true}
+  - {name: github.com/freefq - 印度尼西亚  19, server: free-id.ajunstores.me, port: 80, type: vmess, uuid: 22ad3dff-66b4-4e69-b2db-bf43c4614761, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: free-id.ajunstores.me}}, udp: true}
+  - {name: Relay 🇮🇩 Indonesia(ChatGPT)... 2, server: gddx.fosi.hk, port: 55188, type: vmess, uuid: b065b64a-905a-494a-a25f-5e313e93cca8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: id12tk.ifengsoutu233.tk}}, udp: true}
+  - {name: 香港_0406733, server: 156.245.8.253, port: 46817, type: vmess, uuid: 375e70f0-5d46-476f-8d69-0fb35c5548a9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇮🇩 Indonesia(ChatGPT)... 3, server: fsyy.fosi.hk, port: 31317, type: vmess, uuid: b065b64a-905a-494a-a25f-5e313e93cca8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: id15tk.ifengsoutu233.tk}}, udp: true}
+  - {name: _JP_日本 3, server: 85.208.108.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _HK_香港_1, server: hk1.b.bd6b6c503c93.sanfen001.pics, port: 443, type: vmess, uuid: da9d5c74-a572-4cf4-a375-19b886f5ffc4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: hk1.b.bd6b6c503c93.sanfen001.pics}}, udp: true}
+  - {name: 德国_0406186, server: 91.107.241.189, port: 8080, type: vmess, uuid: e3879d98-396b-4155-d5a5-f6b64164817d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /@hashmakvpn 🇩🇪}, udp: true}
+  - {name: Relay 🇭🇰 Hong Kong 08 TG:@n..., server: data-hk-v1.shwjfkw.cn, port: 50207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: YTB-awkj}}, udp: true}
+  - {name: 日本 V2CROSS.COM, server: hk6.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: da9d5c74-a572-4cf4-a375-19b886f5ffc4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
+  - {name: 新加坡 014, server: n1676188445.ydnhhgg.cn, port: 443, type: vmess, uuid: 46fdbe0b-2a56-4da0-9aaa-9b427864ed3b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: n1676188445.ydnhhgg.cn}}, udp: true}
+  - {name: 佛移印_44, server: fsyy.fosi.hk, port: 54007, type: vmess, uuid: b065b64a-905a-494a-a25f-5e313e93cca8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: fsyy.fosi.hk}}, udp: true}
+  - {name: 荷兰_0406303, server: 46.182.107.15, port: 51192, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_52.194.183.214_04042023dee6-463ss%%, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "PT09JS%%�[�%%�", obfs-param: "PT09JS%%�[�%%�", udp: true}
+  - {name: 美国_04053552, server: 156.225.67.126, port: 43913, type: vmess, uuid: 3a3c8a9c-334e-4360-adb8-a80a57ddcbbf, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_0406232, server: 156.225.67.205, port: 47717, type: vmess, uuid: d7735058-1dac-4618-99ff-0aa0441ec2d7, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_04053552 2, server: 156.225.67.126, port: 43913, type: vmess, uuid: 3a3c8a9c-334e-4360-adb8-a80a57ddcbbf, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇺🇸_US_美国, server: 111.23.252.214, port: 45070, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_0406297, server: 156.225.67.126, port: 43913, type: vmess, uuid: 3a3c8a9c-334e-4360-adb8-a80a57ddcbbf, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 越南_0406011, server: 103.197.184.39, port: 80, type: vmess, uuid: 7bea35a3-d29c-4a33-b471-1eb63b3ecf70, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hahuutung}, udp: true}
+  - {name: 南非 V2CROSS.COM, server: 156.225.67.205, port: 47717, type: vmess, uuid: d7735058-1dac-4618-99ff-0aa0441ec2d7, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 佛移-印尼家宽17, server: fsyy.fosi.hk, port: 54007, type: vmess, uuid: b065b64a-905a-494a-a25f-5e313e93cca8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: id17tk.ifengsoutu233.tk}}, udp: true}
+  - {name: 中国 079, server: fsyy.fosi.hk, port: 23193, type: vmess, uuid: b065b64a-905a-494a-a25f-5e313e93cca8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: id14tk.ifengsoutu233.tk}}, udp: true}
+  - {name: 台湾_0406570, server: 165.154.246.103, port: 80, type: vmess, uuid: e4c1b1f4-9971-325d-9054-e905669540cc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /adobe}, udp: true}
+  - {name: 韩国 030, server: 118.193.69.158, port: 53173, type: vmess, uuid: 3b76d1a8-55fd-465e-aa04-68c39a506175, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 057, server: 156.225.67.228, port: 35362, type: vmess, uuid: 6e79eea4-5f72-4683-ad0e-5339f013421b, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://tt.vg/vip】23, server: ingress-i2.iivvppnn.info, port: 38102, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: awkj}}, udp: true}
+  - {name: 美国_0406152, server: 45.86.11.147, port: 39182, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_0406222, server: 142.4.108.57, port: 59109, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _SG_新加坡_2, server: sg4.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: da9d5c74-a572-4cf4-a375-19b886f5ffc4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 中国 019, server: 25.v2-ray.cyou, port: 23625, type: vmess, uuid: 0dd19d20-ec86-3680-b256-87237bafa89e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 25.v2-ray.cyou}}, udp: true}
+  - {name: 美国_0406296, server: 156.225.67.252, port: 59926, type: vmess, uuid: 3fd637ad-46fe-4f85-a6e8-86b00bca1122, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 越南_0406129, server: 171.244.63.44, port: 80, type: vmess, uuid: b99d3702-2f7d-46bc-aaa1-d74d5e1a3bac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tuananh4g}, udp: true}
+  - {name: 美国_04063637, server: 142.0.139.55, port: 57072, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_0406942, server: 142.4.126.72, port: 31002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 佛移-印尼家宽18, server: fsyy.fosi.hk, port: 31783, type: vmess, uuid: b065b64a-905a-494a-a25f-5e313e93cca8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: id18tk.ifengsoutu233.tk}}, udp: true}
+  - {name: 韩国 030 2, server: 118.193.69.158, port: 53173, type: vmess, uuid: 3b76d1a8-55fd-465e-aa04-68c39a506175, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_04053545, server: 156.225.67.228, port: 35362, type: vmess, uuid: 6e79eea4-5f72-4683-ad0e-5339f013421b, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_0406287, server: 198.2.203.146, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 055, server: 156.225.67.252, port: 59926, type: vmess, uuid: 3fd637ad-46fe-4f85-a6e8-86b00bca1122, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_04063637 2, server: 142.0.139.55, port: 57072, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 巴基斯坦 001, server: fn600mlines021.svcline.com, port: 995, type: ss, cipher: aes-256-gcm, password: 507364fb791e, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines021.svcline.com, path: /kpnzyxsj, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 美国【付费推荐：https://tt.vg/vip】112, server: 156.225.67.228, port: 35362, type: vmess, uuid: 6e79eea4-5f72-4683-ad0e-5339f013421b, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _SG_新加坡_2 2, server: sg4.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: da9d5c74-a572-4cf4-a375-19b886f5ffc4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 美国_0406110, server: 156.225.67.228, port: 35362, type: vmess, uuid: 6e79eea4-5f72-4683-ad0e-5339f013421b, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 荷兰_0406303 2, server: 46.182.107.15, port: 51192, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_04053549, server: 45.86.11.147, port: 39182, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 佛移印_125, server: fsyy.fosi.hk, port: 13908, type: vmess, uuid: b065b64a-905a-494a-a25f-5e313e93cca8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: fsyy.fosi.hk}}, udp: true}
+  - {name: 美国_04053545 2, server: 156.225.67.228, port: 35362, type: vmess, uuid: 6e79eea4-5f72-4683-ad0e-5339f013421b, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 惠普HP, server: hk1.b.bd6b6c503c93.sanfen001.pics, port: 443, type: vmess, uuid: da9d5c74-a572-4cf4-a375-19b886f5ffc4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
+  - {name: 德国_0406187, server: 91.107.241.189, port: 8081, type: vmess, uuid: 35acf7b9-051c-4f47-f4ab-fffa99a7ef24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /@hashmakvpn 🇩🇪, headers: {Host: bmi.ir}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国_0405171
-      - 美国_04053545
-      - IEPL+·+美国US+·+88+·+广港移动
-      - IEPL+·+美国US+·+88+·+广港移动 2
-      - 美国 040
-      - 韩国 001
-      - 二爷翻墙网 https://1808.ga 节点_62
-      - 美国 048
-      - 美国_04053416
-      - github.com/freefq - 美国  14
-      - "@DeamNet_🇭🇰Tseung Kwan O-1297-492"
-      - 日本 V2CROSS.COM
-      - 中国【付费推荐：https://tt.vg/vip】237
-      - 中国 015
+      - 韩国 010
+      - GB(AzadNet.t.me)_6
+      - _US_美国_14
+      - _US_美国_17
+      - 美国【付费推荐：https://tt.vg/vip】82
+      - 中国 073
+      - 中国 070
+      - 印尼家宽04-原始节点
+      - 美国【付费推荐：https://tt.vg/vip】67
+      - _CN_中国->🇺🇸_US_美国 4
+      - 04/06免费节点|TG频道@kxswa 9
+      - 美国【付费推荐：https://tt.vg/vip】68
+      - 澳大利亚 005
+      - 日本_04061050
+      - _JP_日本 9
+      - _JP_日本 4
+      - 美国【付费推荐：https://tt.vg/vip】80
+      - 中国 076
+      - _US_美国 11
+      - 中国 081
+      - 韩国 011
+      - 中国 080
+      - 日本【付费推荐：https://tt.vg/vip】146
+      - 台湾省_22
+      - _PL_波兰
+      - 佛移-印尼家宽05
+      - 美国【付费推荐：https://tt.vg/vip】85
+      - 印尼家宽07-原始节点
+      - _JP_日本 11
+      - 美国【付费推荐：https://tt.vg/vip】88
+      - Singapore 05 TG:@nodpai
+      - 澳大利亚 008
+      - JP-85.208.108.60-189
+      - 美国【付费推荐：https://tt.vg/vip】73
+      - 美国【付费推荐：https://tt.vg/vip】81
+      - Pool_🇳🇱NL_110
+      - 中国 057
+      - Pool_🇳🇱NL_95
+      - 中国 071
+      - 中国 078
+      - _JP_日本 7
+      - 香港频_7
+      - Pool_🇳🇱NL_99
+      - US(AzadNet.t.me)_64
+      - 美国【付费推荐：https://tt.vg/vip】78
       - 俄罗斯联邦 001
-      - 巴基斯坦 001
-      - "@DeamNet_🇭🇰Tseung Kwan O-1968-508"
-      - 中国_0405039
-      - -美国-152.69.221.20
-      - 美国 惠普HP
-      - "@DeamNet_🇭🇰Tseung Kwan O-3259-501"
+      - KR-43.201.50.238-018
+      - 沙特阿_17
+      - 中国 077
+      - _JP_日本 12
+      - "@DeamNet_🇹🇼Taipei-3298-509"
+      - 中国 075
+      - Pool_🇳🇱NL_117
+      - 日本【付费推荐：https://tt.vg/vip】147
+      - 日本 007
+      - _JP_日本 2
+      - _JP_日本 8
+      - 中国 074
+      - 日本 010
+      - 香港 006
+      - 韩国 012
+      - 美国 040
       - 印度【付费推荐：https://tt.vg/vip】125
-      - 中国【付费推荐：https://tt.vg/vip】625
+      - _KR_韩国_3
+      - _JP_日本
+      - Singapore 02 TG:@nodpai
+      - 233v2.com_141.147.154.56
+      - 巴拿马【付费推荐：https://tt.vg/vip】239
+      - _SG_新加坡_10
+      - _JP_日本 5
+      - _Scaleway
+      - Relay 🇮🇩 Indonesia(ChatGPT)...
+      - "|18.52Mb"
+      - github.com/freefq - 印度尼西亚  19
+      - Relay 🇮🇩 Indonesia(ChatGPT)... 2
+      - 香港_0406733
+      - Relay 🇮🇩 Indonesia(ChatGPT)... 3
+      - _JP_日本 3
+      - _HK_香港_1
+      - 德国_0406186
+      - Relay 🇭🇰 Hong Kong 08 TG:@n...
+      - 日本 V2CROSS.COM
+      - 新加坡 014
+      - 佛移印_44
+      - 荷兰_0406303
+      - JP_52.194.183.214_04042023dee6-463ss%%
+      - 美国_04053552
+      - 美国_0406232
+      - 美国_04053552 2
+      - _CN_中国->🇺🇸_US_美国
+      - 美国_0406297
+      - 越南_0406011
+      - 南非 V2CROSS.COM
+      - 佛移-印尼家宽17
+      - 中国 079
+      - 台湾_0406570
+      - 韩国 030
+      - 美国 057
+      - 中国【付费推荐：https://tt.vg/vip】23
+      - 美国_0406152
+      - 美国_0406222
+      - _SG_新加坡_2
+      - 中国 019
+      - 美国_0406296
+      - 越南_0406129
+      - 美国_04063637
+      - 美国_0406942
+      - 佛移-印尼家宽18
+      - 韩国 030 2
+      - 美国_04053545
+      - 美国_0406287
+      - 美国 055
+      - 美国_04063637 2
+      - 巴基斯坦 001
+      - 美国【付费推荐：https://tt.vg/vip】112
+      - _SG_新加坡_2 2
+      - 美国_0406110
+      - 荷兰_0406303 2
+      - 美国_04053549
+      - 佛移印_125
+      - 美国_04053545 2
+      - 美国 惠普HP
+      - 德国_0406187
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - 美国_0405171
-      - 美国_04053545
-      - IEPL+·+美国US+·+88+·+广港移动
-      - IEPL+·+美国US+·+88+·+广港移动 2
-      - 美国 040
-      - 韩国 001
-      - 二爷翻墙网 https://1808.ga 节点_62
-      - 美国 048
-      - 美国_04053416
-      - github.com/freefq - 美国  14
-      - "@DeamNet_🇭🇰Tseung Kwan O-1297-492"
-      - 日本 V2CROSS.COM
-      - 中国【付费推荐：https://tt.vg/vip】237
-      - 中国 015
+      - 韩国 010
+      - GB(AzadNet.t.me)_6
+      - _US_美国_14
+      - _US_美国_17
+      - 美国【付费推荐：https://tt.vg/vip】82
+      - 中国 073
+      - 中国 070
+      - 印尼家宽04-原始节点
+      - 美国【付费推荐：https://tt.vg/vip】67
+      - _CN_中国->🇺🇸_US_美国 4
+      - 04/06免费节点|TG频道@kxswa 9
+      - 美国【付费推荐：https://tt.vg/vip】68
+      - 澳大利亚 005
+      - 日本_04061050
+      - _JP_日本 9
+      - _JP_日本 4
+      - 美国【付费推荐：https://tt.vg/vip】80
+      - 中国 076
+      - _US_美国 11
+      - 中国 081
+      - 韩国 011
+      - 中国 080
+      - 日本【付费推荐：https://tt.vg/vip】146
+      - 台湾省_22
+      - _PL_波兰
+      - 佛移-印尼家宽05
+      - 美国【付费推荐：https://tt.vg/vip】85
+      - 印尼家宽07-原始节点
+      - _JP_日本 11
+      - 美国【付费推荐：https://tt.vg/vip】88
+      - Singapore 05 TG:@nodpai
+      - 澳大利亚 008
+      - JP-85.208.108.60-189
+      - 美国【付费推荐：https://tt.vg/vip】73
+      - 美国【付费推荐：https://tt.vg/vip】81
+      - Pool_🇳🇱NL_110
+      - 中国 057
+      - Pool_🇳🇱NL_95
+      - 中国 071
+      - 中国 078
+      - _JP_日本 7
+      - 香港频_7
+      - Pool_🇳🇱NL_99
+      - US(AzadNet.t.me)_64
+      - 美国【付费推荐：https://tt.vg/vip】78
       - 俄罗斯联邦 001
-      - 巴基斯坦 001
-      - "@DeamNet_🇭🇰Tseung Kwan O-1968-508"
-      - 中国_0405039
-      - -美国-152.69.221.20
-      - 美国 惠普HP
-      - "@DeamNet_🇭🇰Tseung Kwan O-3259-501"
+      - KR-43.201.50.238-018
+      - 沙特阿_17
+      - 中国 077
+      - _JP_日本 12
+      - "@DeamNet_🇹🇼Taipei-3298-509"
+      - 中国 075
+      - Pool_🇳🇱NL_117
+      - 日本【付费推荐：https://tt.vg/vip】147
+      - 日本 007
+      - _JP_日本 2
+      - _JP_日本 8
+      - 中国 074
+      - 日本 010
+      - 香港 006
+      - 韩国 012
+      - 美国 040
       - 印度【付费推荐：https://tt.vg/vip】125
-      - 中国【付费推荐：https://tt.vg/vip】625
+      - _KR_韩国_3
+      - _JP_日本
+      - Singapore 02 TG:@nodpai
+      - 233v2.com_141.147.154.56
+      - 巴拿马【付费推荐：https://tt.vg/vip】239
+      - _SG_新加坡_10
+      - _JP_日本 5
+      - _Scaleway
+      - Relay 🇮🇩 Indonesia(ChatGPT)...
+      - "|18.52Mb"
+      - github.com/freefq - 印度尼西亚  19
+      - Relay 🇮🇩 Indonesia(ChatGPT)... 2
+      - 香港_0406733
+      - Relay 🇮🇩 Indonesia(ChatGPT)... 3
+      - _JP_日本 3
+      - _HK_香港_1
+      - 德国_0406186
+      - Relay 🇭🇰 Hong Kong 08 TG:@n...
+      - 日本 V2CROSS.COM
+      - 新加坡 014
+      - 佛移印_44
+      - 荷兰_0406303
+      - JP_52.194.183.214_04042023dee6-463ss%%
+      - 美国_04053552
+      - 美国_0406232
+      - 美国_04053552 2
+      - _CN_中国->🇺🇸_US_美国
+      - 美国_0406297
+      - 越南_0406011
+      - 南非 V2CROSS.COM
+      - 佛移-印尼家宽17
+      - 中国 079
+      - 台湾_0406570
+      - 韩国 030
+      - 美国 057
+      - 中国【付费推荐：https://tt.vg/vip】23
+      - 美国_0406152
+      - 美国_0406222
+      - _SG_新加坡_2
+      - 中国 019
+      - 美国_0406296
+      - 越南_0406129
+      - 美国_04063637
+      - 美国_0406942
+      - 佛移-印尼家宽18
+      - 韩国 030 2
+      - 美国_04053545
+      - 美国_0406287
+      - 美国 055
+      - 美国_04063637 2
+      - 巴基斯坦 001
+      - 美国【付费推荐：https://tt.vg/vip】112
+      - _SG_新加坡_2 2
+      - 美国_0406110
+      - 荷兰_0406303 2
+      - 美国_04053549
+      - 佛移印_125
+      - 美国_04053545 2
+      - 美国 惠普HP
+      - 德国_0406187
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国_0405171
-      - 美国_04053545
-      - IEPL+·+美国US+·+88+·+广港移动
-      - IEPL+·+美国US+·+88+·+广港移动 2
-      - 美国 040
-      - 韩国 001
-      - 二爷翻墙网 https://1808.ga 节点_62
-      - 美国 048
-      - 美国_04053416
-      - github.com/freefq - 美国  14
-      - "@DeamNet_🇭🇰Tseung Kwan O-1297-492"
-      - 日本 V2CROSS.COM
-      - 中国【付费推荐：https://tt.vg/vip】237
-      - 中国 015
+      - 韩国 010
+      - GB(AzadNet.t.me)_6
+      - _US_美国_14
+      - _US_美国_17
+      - 美国【付费推荐：https://tt.vg/vip】82
+      - 中国 073
+      - 中国 070
+      - 印尼家宽04-原始节点
+      - 美国【付费推荐：https://tt.vg/vip】67
+      - _CN_中国->🇺🇸_US_美国 4
+      - 04/06免费节点|TG频道@kxswa 9
+      - 美国【付费推荐：https://tt.vg/vip】68
+      - 澳大利亚 005
+      - 日本_04061050
+      - _JP_日本 9
+      - _JP_日本 4
+      - 美国【付费推荐：https://tt.vg/vip】80
+      - 中国 076
+      - _US_美国 11
+      - 中国 081
+      - 韩国 011
+      - 中国 080
+      - 日本【付费推荐：https://tt.vg/vip】146
+      - 台湾省_22
+      - _PL_波兰
+      - 佛移-印尼家宽05
+      - 美国【付费推荐：https://tt.vg/vip】85
+      - 印尼家宽07-原始节点
+      - _JP_日本 11
+      - 美国【付费推荐：https://tt.vg/vip】88
+      - Singapore 05 TG:@nodpai
+      - 澳大利亚 008
+      - JP-85.208.108.60-189
+      - 美国【付费推荐：https://tt.vg/vip】73
+      - 美国【付费推荐：https://tt.vg/vip】81
+      - Pool_🇳🇱NL_110
+      - 中国 057
+      - Pool_🇳🇱NL_95
+      - 中国 071
+      - 中国 078
+      - _JP_日本 7
+      - 香港频_7
+      - Pool_🇳🇱NL_99
+      - US(AzadNet.t.me)_64
+      - 美国【付费推荐：https://tt.vg/vip】78
       - 俄罗斯联邦 001
-      - 巴基斯坦 001
-      - "@DeamNet_🇭🇰Tseung Kwan O-1968-508"
-      - 中国_0405039
-      - -美国-152.69.221.20
-      - 美国 惠普HP
-      - "@DeamNet_🇭🇰Tseung Kwan O-3259-501"
+      - KR-43.201.50.238-018
+      - 沙特阿_17
+      - 中国 077
+      - _JP_日本 12
+      - "@DeamNet_🇹🇼Taipei-3298-509"
+      - 中国 075
+      - Pool_🇳🇱NL_117
+      - 日本【付费推荐：https://tt.vg/vip】147
+      - 日本 007
+      - _JP_日本 2
+      - _JP_日本 8
+      - 中国 074
+      - 日本 010
+      - 香港 006
+      - 韩国 012
+      - 美国 040
       - 印度【付费推荐：https://tt.vg/vip】125
-      - 中国【付费推荐：https://tt.vg/vip】625
+      - _KR_韩国_3
+      - _JP_日本
+      - Singapore 02 TG:@nodpai
+      - 233v2.com_141.147.154.56
+      - 巴拿马【付费推荐：https://tt.vg/vip】239
+      - _SG_新加坡_10
+      - _JP_日本 5
+      - _Scaleway
+      - Relay 🇮🇩 Indonesia(ChatGPT)...
+      - "|18.52Mb"
+      - github.com/freefq - 印度尼西亚  19
+      - Relay 🇮🇩 Indonesia(ChatGPT)... 2
+      - 香港_0406733
+      - Relay 🇮🇩 Indonesia(ChatGPT)... 3
+      - _JP_日本 3
+      - _HK_香港_1
+      - 德国_0406186
+      - Relay 🇭🇰 Hong Kong 08 TG:@n...
+      - 日本 V2CROSS.COM
+      - 新加坡 014
+      - 佛移印_44
+      - 荷兰_0406303
+      - JP_52.194.183.214_04042023dee6-463ss%%
+      - 美国_04053552
+      - 美国_0406232
+      - 美国_04053552 2
+      - _CN_中国->🇺🇸_US_美国
+      - 美国_0406297
+      - 越南_0406011
+      - 南非 V2CROSS.COM
+      - 佛移-印尼家宽17
+      - 中国 079
+      - 台湾_0406570
+      - 韩国 030
+      - 美国 057
+      - 中国【付费推荐：https://tt.vg/vip】23
+      - 美国_0406152
+      - 美国_0406222
+      - _SG_新加坡_2
+      - 中国 019
+      - 美国_0406296
+      - 越南_0406129
+      - 美国_04063637
+      - 美国_0406942
+      - 佛移-印尼家宽18
+      - 韩国 030 2
+      - 美国_04053545
+      - 美国_0406287
+      - 美国 055
+      - 美国_04063637 2
+      - 巴基斯坦 001
+      - 美国【付费推荐：https://tt.vg/vip】112
+      - _SG_新加坡_2 2
+      - 美国_0406110
+      - 荷兰_0406303 2
+      - 美国_04053549
+      - 佛移印_125
+      - 美国_04053545 2
+      - 美国 惠普HP
+      - 德国_0406187
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -133,121 +533,525 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国_0405171
-      - 美国_04053545
-      - IEPL+·+美国US+·+88+·+广港移动
-      - IEPL+·+美国US+·+88+·+广港移动 2
-      - 美国 040
-      - 韩国 001
-      - 二爷翻墙网 https://1808.ga 节点_62
-      - 美国 048
-      - 美国_04053416
-      - github.com/freefq - 美国  14
-      - "@DeamNet_🇭🇰Tseung Kwan O-1297-492"
-      - 日本 V2CROSS.COM
-      - 中国【付费推荐：https://tt.vg/vip】237
-      - 中国 015
+      - 韩国 010
+      - GB(AzadNet.t.me)_6
+      - _US_美国_14
+      - _US_美国_17
+      - 美国【付费推荐：https://tt.vg/vip】82
+      - 中国 073
+      - 中国 070
+      - 印尼家宽04-原始节点
+      - 美国【付费推荐：https://tt.vg/vip】67
+      - _CN_中国->🇺🇸_US_美国 4
+      - 04/06免费节点|TG频道@kxswa 9
+      - 美国【付费推荐：https://tt.vg/vip】68
+      - 澳大利亚 005
+      - 日本_04061050
+      - _JP_日本 9
+      - _JP_日本 4
+      - 美国【付费推荐：https://tt.vg/vip】80
+      - 中国 076
+      - _US_美国 11
+      - 中国 081
+      - 韩国 011
+      - 中国 080
+      - 日本【付费推荐：https://tt.vg/vip】146
+      - 台湾省_22
+      - _PL_波兰
+      - 佛移-印尼家宽05
+      - 美国【付费推荐：https://tt.vg/vip】85
+      - 印尼家宽07-原始节点
+      - _JP_日本 11
+      - 美国【付费推荐：https://tt.vg/vip】88
+      - Singapore 05 TG:@nodpai
+      - 澳大利亚 008
+      - JP-85.208.108.60-189
+      - 美国【付费推荐：https://tt.vg/vip】73
+      - 美国【付费推荐：https://tt.vg/vip】81
+      - Pool_🇳🇱NL_110
+      - 中国 057
+      - Pool_🇳🇱NL_95
+      - 中国 071
+      - 中国 078
+      - _JP_日本 7
+      - 香港频_7
+      - Pool_🇳🇱NL_99
+      - US(AzadNet.t.me)_64
+      - 美国【付费推荐：https://tt.vg/vip】78
       - 俄罗斯联邦 001
-      - 巴基斯坦 001
-      - "@DeamNet_🇭🇰Tseung Kwan O-1968-508"
-      - 中国_0405039
-      - -美国-152.69.221.20
-      - 美国 惠普HP
-      - "@DeamNet_🇭🇰Tseung Kwan O-3259-501"
+      - KR-43.201.50.238-018
+      - 沙特阿_17
+      - 中国 077
+      - _JP_日本 12
+      - "@DeamNet_🇹🇼Taipei-3298-509"
+      - 中国 075
+      - Pool_🇳🇱NL_117
+      - 日本【付费推荐：https://tt.vg/vip】147
+      - 日本 007
+      - _JP_日本 2
+      - _JP_日本 8
+      - 中国 074
+      - 日本 010
+      - 香港 006
+      - 韩国 012
+      - 美国 040
       - 印度【付费推荐：https://tt.vg/vip】125
-      - 中国【付费推荐：https://tt.vg/vip】625
+      - _KR_韩国_3
+      - _JP_日本
+      - Singapore 02 TG:@nodpai
+      - 233v2.com_141.147.154.56
+      - 巴拿马【付费推荐：https://tt.vg/vip】239
+      - _SG_新加坡_10
+      - _JP_日本 5
+      - _Scaleway
+      - Relay 🇮🇩 Indonesia(ChatGPT)...
+      - "|18.52Mb"
+      - github.com/freefq - 印度尼西亚  19
+      - Relay 🇮🇩 Indonesia(ChatGPT)... 2
+      - 香港_0406733
+      - Relay 🇮🇩 Indonesia(ChatGPT)... 3
+      - _JP_日本 3
+      - _HK_香港_1
+      - 德国_0406186
+      - Relay 🇭🇰 Hong Kong 08 TG:@n...
+      - 日本 V2CROSS.COM
+      - 新加坡 014
+      - 佛移印_44
+      - 荷兰_0406303
+      - JP_52.194.183.214_04042023dee6-463ss%%
+      - 美国_04053552
+      - 美国_0406232
+      - 美国_04053552 2
+      - _CN_中国->🇺🇸_US_美国
+      - 美国_0406297
+      - 越南_0406011
+      - 南非 V2CROSS.COM
+      - 佛移-印尼家宽17
+      - 中国 079
+      - 台湾_0406570
+      - 韩国 030
+      - 美国 057
+      - 中国【付费推荐：https://tt.vg/vip】23
+      - 美国_0406152
+      - 美国_0406222
+      - _SG_新加坡_2
+      - 中国 019
+      - 美国_0406296
+      - 越南_0406129
+      - 美国_04063637
+      - 美国_0406942
+      - 佛移-印尼家宽18
+      - 韩国 030 2
+      - 美国_04053545
+      - 美国_0406287
+      - 美国 055
+      - 美国_04063637 2
+      - 巴基斯坦 001
+      - 美国【付费推荐：https://tt.vg/vip】112
+      - _SG_新加坡_2 2
+      - 美国_0406110
+      - 荷兰_0406303 2
+      - 美国_04053549
+      - 佛移印_125
+      - 美国_04053545 2
+      - 美国 惠普HP
+      - 德国_0406187
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - IEPL+·+美国US+·+88+·+广港移动
-      - IEPL+·+美国US+·+88+·+广港移动 2
+      - 台湾省_22
+      - 香港频_7
+      - 香港 006
+      - 香港_0406733
+      - _HK_香港_1
+      - 台湾_0406570
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国_0405171
-      - 美国_04053545
-      - IEPL+·+美国US+·+88+·+广港移动
-      - IEPL+·+美国US+·+88+·+广港移动 2
-      - 美国 040
-      - 韩国 001
-      - 二爷翻墙网 https://1808.ga 节点_62
-      - 美国 048
-      - 美国_04053416
-      - github.com/freefq - 美国  14
-      - "@DeamNet_🇭🇰Tseung Kwan O-1297-492"
-      - 日本 V2CROSS.COM
-      - 中国【付费推荐：https://tt.vg/vip】237
-      - 中国 015
+      - 韩国 010
+      - GB(AzadNet.t.me)_6
+      - _US_美国_14
+      - _US_美国_17
+      - 美国【付费推荐：https://tt.vg/vip】82
+      - 中国 073
+      - 中国 070
+      - 印尼家宽04-原始节点
+      - 美国【付费推荐：https://tt.vg/vip】67
+      - _CN_中国->🇺🇸_US_美国 4
+      - 04/06免费节点|TG频道@kxswa 9
+      - 美国【付费推荐：https://tt.vg/vip】68
+      - 澳大利亚 005
+      - 日本_04061050
+      - _JP_日本 9
+      - _JP_日本 4
+      - 美国【付费推荐：https://tt.vg/vip】80
+      - 中国 076
+      - _US_美国 11
+      - 中国 081
+      - 韩国 011
+      - 中国 080
+      - 日本【付费推荐：https://tt.vg/vip】146
+      - 台湾省_22
+      - _PL_波兰
+      - 佛移-印尼家宽05
+      - 美国【付费推荐：https://tt.vg/vip】85
+      - 印尼家宽07-原始节点
+      - _JP_日本 11
+      - 美国【付费推荐：https://tt.vg/vip】88
+      - Singapore 05 TG:@nodpai
+      - 澳大利亚 008
+      - JP-85.208.108.60-189
+      - 美国【付费推荐：https://tt.vg/vip】73
+      - 美国【付费推荐：https://tt.vg/vip】81
+      - Pool_🇳🇱NL_110
+      - 中国 057
+      - Pool_🇳🇱NL_95
+      - 中国 071
+      - 中国 078
+      - _JP_日本 7
+      - 香港频_7
+      - Pool_🇳🇱NL_99
+      - US(AzadNet.t.me)_64
+      - 美国【付费推荐：https://tt.vg/vip】78
       - 俄罗斯联邦 001
-      - 巴基斯坦 001
-      - "@DeamNet_🇭🇰Tseung Kwan O-1968-508"
-      - 中国_0405039
-      - -美国-152.69.221.20
-      - 美国 惠普HP
-      - "@DeamNet_🇭🇰Tseung Kwan O-3259-501"
+      - KR-43.201.50.238-018
+      - 沙特阿_17
+      - 中国 077
+      - _JP_日本 12
+      - "@DeamNet_🇹🇼Taipei-3298-509"
+      - 中国 075
+      - Pool_🇳🇱NL_117
+      - 日本【付费推荐：https://tt.vg/vip】147
+      - 日本 007
+      - _JP_日本 2
+      - _JP_日本 8
+      - 中国 074
+      - 日本 010
+      - 香港 006
+      - 韩国 012
+      - 美国 040
       - 印度【付费推荐：https://tt.vg/vip】125
-      - 中国【付费推荐：https://tt.vg/vip】625
+      - _KR_韩国_3
+      - _JP_日本
+      - Singapore 02 TG:@nodpai
+      - 233v2.com_141.147.154.56
+      - 巴拿马【付费推荐：https://tt.vg/vip】239
+      - _SG_新加坡_10
+      - _JP_日本 5
+      - _Scaleway
+      - Relay 🇮🇩 Indonesia(ChatGPT)...
+      - "|18.52Mb"
+      - github.com/freefq - 印度尼西亚  19
+      - Relay 🇮🇩 Indonesia(ChatGPT)... 2
+      - 香港_0406733
+      - Relay 🇮🇩 Indonesia(ChatGPT)... 3
+      - _JP_日本 3
+      - _HK_香港_1
+      - 德国_0406186
+      - Relay 🇭🇰 Hong Kong 08 TG:@n...
+      - 日本 V2CROSS.COM
+      - 新加坡 014
+      - 佛移印_44
+      - 荷兰_0406303
+      - JP_52.194.183.214_04042023dee6-463ss%%
+      - 美国_04053552
+      - 美国_0406232
+      - 美国_04053552 2
+      - _CN_中国->🇺🇸_US_美国
+      - 美国_0406297
+      - 越南_0406011
+      - 南非 V2CROSS.COM
+      - 佛移-印尼家宽17
+      - 中国 079
+      - 台湾_0406570
+      - 韩国 030
+      - 美国 057
+      - 中国【付费推荐：https://tt.vg/vip】23
+      - 美国_0406152
+      - 美国_0406222
+      - _SG_新加坡_2
+      - 中国 019
+      - 美国_0406296
+      - 越南_0406129
+      - 美国_04063637
+      - 美国_0406942
+      - 佛移-印尼家宽18
+      - 韩国 030 2
+      - 美国_04053545
+      - 美国_0406287
+      - 美国 055
+      - 美国_04063637 2
+      - 巴基斯坦 001
+      - 美国【付费推荐：https://tt.vg/vip】112
+      - _SG_新加坡_2 2
+      - 美国_0406110
+      - 荷兰_0406303 2
+      - 美国_04053549
+      - 佛移印_125
+      - 美国_04053545 2
+      - 美国 惠普HP
+      - 德国_0406187
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国_0405171
-      - 美国_04053545
-      - IEPL+·+美国US+·+88+·+广港移动
-      - IEPL+·+美国US+·+88+·+广港移动 2
-      - 美国 040
-      - 韩国 001
-      - 二爷翻墙网 https://1808.ga 节点_62
-      - 美国 048
-      - 美国_04053416
-      - github.com/freefq - 美国  14
-      - "@DeamNet_🇭🇰Tseung Kwan O-1297-492"
-      - 日本 V2CROSS.COM
-      - 中国【付费推荐：https://tt.vg/vip】237
-      - 中国 015
+      - 韩国 010
+      - GB(AzadNet.t.me)_6
+      - _US_美国_14
+      - _US_美国_17
+      - 美国【付费推荐：https://tt.vg/vip】82
+      - 中国 073
+      - 中国 070
+      - 印尼家宽04-原始节点
+      - 美国【付费推荐：https://tt.vg/vip】67
+      - _CN_中国->🇺🇸_US_美国 4
+      - 04/06免费节点|TG频道@kxswa 9
+      - 美国【付费推荐：https://tt.vg/vip】68
+      - 澳大利亚 005
+      - 日本_04061050
+      - _JP_日本 9
+      - _JP_日本 4
+      - 美国【付费推荐：https://tt.vg/vip】80
+      - 中国 076
+      - _US_美国 11
+      - 中国 081
+      - 韩国 011
+      - 中国 080
+      - 日本【付费推荐：https://tt.vg/vip】146
+      - 台湾省_22
+      - _PL_波兰
+      - 佛移-印尼家宽05
+      - 美国【付费推荐：https://tt.vg/vip】85
+      - 印尼家宽07-原始节点
+      - _JP_日本 11
+      - 美国【付费推荐：https://tt.vg/vip】88
+      - Singapore 05 TG:@nodpai
+      - 澳大利亚 008
+      - JP-85.208.108.60-189
+      - 美国【付费推荐：https://tt.vg/vip】73
+      - 美国【付费推荐：https://tt.vg/vip】81
+      - Pool_🇳🇱NL_110
+      - 中国 057
+      - Pool_🇳🇱NL_95
+      - 中国 071
+      - 中国 078
+      - _JP_日本 7
+      - 香港频_7
+      - Pool_🇳🇱NL_99
+      - US(AzadNet.t.me)_64
+      - 美国【付费推荐：https://tt.vg/vip】78
       - 俄罗斯联邦 001
-      - 巴基斯坦 001
-      - "@DeamNet_🇭🇰Tseung Kwan O-1968-508"
-      - 中国_0405039
-      - -美国-152.69.221.20
-      - 美国 惠普HP
-      - "@DeamNet_🇭🇰Tseung Kwan O-3259-501"
+      - KR-43.201.50.238-018
+      - 沙特阿_17
+      - 中国 077
+      - _JP_日本 12
+      - "@DeamNet_🇹🇼Taipei-3298-509"
+      - 中国 075
+      - Pool_🇳🇱NL_117
+      - 日本【付费推荐：https://tt.vg/vip】147
+      - 日本 007
+      - _JP_日本 2
+      - _JP_日本 8
+      - 中国 074
+      - 日本 010
+      - 香港 006
+      - 韩国 012
+      - 美国 040
       - 印度【付费推荐：https://tt.vg/vip】125
-      - 中国【付费推荐：https://tt.vg/vip】625
+      - _KR_韩国_3
+      - _JP_日本
+      - Singapore 02 TG:@nodpai
+      - 233v2.com_141.147.154.56
+      - 巴拿马【付费推荐：https://tt.vg/vip】239
+      - _SG_新加坡_10
+      - _JP_日本 5
+      - _Scaleway
+      - Relay 🇮🇩 Indonesia(ChatGPT)...
+      - "|18.52Mb"
+      - github.com/freefq - 印度尼西亚  19
+      - Relay 🇮🇩 Indonesia(ChatGPT)... 2
+      - 香港_0406733
+      - Relay 🇮🇩 Indonesia(ChatGPT)... 3
+      - _JP_日本 3
+      - _HK_香港_1
+      - 德国_0406186
+      - Relay 🇭🇰 Hong Kong 08 TG:@n...
+      - 日本 V2CROSS.COM
+      - 新加坡 014
+      - 佛移印_44
+      - 荷兰_0406303
+      - JP_52.194.183.214_04042023dee6-463ss%%
+      - 美国_04053552
+      - 美国_0406232
+      - 美国_04053552 2
+      - _CN_中国->🇺🇸_US_美国
+      - 美国_0406297
+      - 越南_0406011
+      - 南非 V2CROSS.COM
+      - 佛移-印尼家宽17
+      - 中国 079
+      - 台湾_0406570
+      - 韩国 030
+      - 美国 057
+      - 中国【付费推荐：https://tt.vg/vip】23
+      - 美国_0406152
+      - 美国_0406222
+      - _SG_新加坡_2
+      - 中国 019
+      - 美国_0406296
+      - 越南_0406129
+      - 美国_04063637
+      - 美国_0406942
+      - 佛移-印尼家宽18
+      - 韩国 030 2
+      - 美国_04053545
+      - 美国_0406287
+      - 美国 055
+      - 美国_04063637 2
+      - 巴基斯坦 001
+      - 美国【付费推荐：https://tt.vg/vip】112
+      - _SG_新加坡_2 2
+      - 美国_0406110
+      - 荷兰_0406303 2
+      - 美国_04053549
+      - 佛移印_125
+      - 美国_04053545 2
+      - 美国 惠普HP
+      - 德国_0406187
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国_0405171
-      - 美国_04053545
-      - IEPL+·+美国US+·+88+·+广港移动
-      - IEPL+·+美国US+·+88+·+广港移动 2
-      - 美国 040
-      - 韩国 001
-      - 二爷翻墙网 https://1808.ga 节点_62
-      - 美国 048
-      - 美国_04053416
-      - github.com/freefq - 美国  14
-      - "@DeamNet_🇭🇰Tseung Kwan O-1297-492"
-      - 日本 V2CROSS.COM
-      - 中国【付费推荐：https://tt.vg/vip】237
-      - 中国 015
+      - 韩国 010
+      - GB(AzadNet.t.me)_6
+      - _US_美国_14
+      - _US_美国_17
+      - 美国【付费推荐：https://tt.vg/vip】82
+      - 中国 073
+      - 中国 070
+      - 印尼家宽04-原始节点
+      - 美国【付费推荐：https://tt.vg/vip】67
+      - _CN_中国->🇺🇸_US_美国 4
+      - 04/06免费节点|TG频道@kxswa 9
+      - 美国【付费推荐：https://tt.vg/vip】68
+      - 澳大利亚 005
+      - 日本_04061050
+      - _JP_日本 9
+      - _JP_日本 4
+      - 美国【付费推荐：https://tt.vg/vip】80
+      - 中国 076
+      - _US_美国 11
+      - 中国 081
+      - 韩国 011
+      - 中国 080
+      - 日本【付费推荐：https://tt.vg/vip】146
+      - 台湾省_22
+      - _PL_波兰
+      - 佛移-印尼家宽05
+      - 美国【付费推荐：https://tt.vg/vip】85
+      - 印尼家宽07-原始节点
+      - _JP_日本 11
+      - 美国【付费推荐：https://tt.vg/vip】88
+      - Singapore 05 TG:@nodpai
+      - 澳大利亚 008
+      - JP-85.208.108.60-189
+      - 美国【付费推荐：https://tt.vg/vip】73
+      - 美国【付费推荐：https://tt.vg/vip】81
+      - Pool_🇳🇱NL_110
+      - 中国 057
+      - Pool_🇳🇱NL_95
+      - 中国 071
+      - 中国 078
+      - _JP_日本 7
+      - 香港频_7
+      - Pool_🇳🇱NL_99
+      - US(AzadNet.t.me)_64
+      - 美国【付费推荐：https://tt.vg/vip】78
       - 俄罗斯联邦 001
-      - 巴基斯坦 001
-      - "@DeamNet_🇭🇰Tseung Kwan O-1968-508"
-      - 中国_0405039
-      - -美国-152.69.221.20
-      - 美国 惠普HP
-      - "@DeamNet_🇭🇰Tseung Kwan O-3259-501"
+      - KR-43.201.50.238-018
+      - 沙特阿_17
+      - 中国 077
+      - _JP_日本 12
+      - "@DeamNet_🇹🇼Taipei-3298-509"
+      - 中国 075
+      - Pool_🇳🇱NL_117
+      - 日本【付费推荐：https://tt.vg/vip】147
+      - 日本 007
+      - _JP_日本 2
+      - _JP_日本 8
+      - 中国 074
+      - 日本 010
+      - 香港 006
+      - 韩国 012
+      - 美国 040
       - 印度【付费推荐：https://tt.vg/vip】125
-      - 中国【付费推荐：https://tt.vg/vip】625
+      - _KR_韩国_3
+      - _JP_日本
+      - Singapore 02 TG:@nodpai
+      - 233v2.com_141.147.154.56
+      - 巴拿马【付费推荐：https://tt.vg/vip】239
+      - _SG_新加坡_10
+      - _JP_日本 5
+      - _Scaleway
+      - Relay 🇮🇩 Indonesia(ChatGPT)...
+      - "|18.52Mb"
+      - github.com/freefq - 印度尼西亚  19
+      - Relay 🇮🇩 Indonesia(ChatGPT)... 2
+      - 香港_0406733
+      - Relay 🇮🇩 Indonesia(ChatGPT)... 3
+      - _JP_日本 3
+      - _HK_香港_1
+      - 德国_0406186
+      - Relay 🇭🇰 Hong Kong 08 TG:@n...
+      - 日本 V2CROSS.COM
+      - 新加坡 014
+      - 佛移印_44
+      - 荷兰_0406303
+      - JP_52.194.183.214_04042023dee6-463ss%%
+      - 美国_04053552
+      - 美国_0406232
+      - 美国_04053552 2
+      - _CN_中国->🇺🇸_US_美国
+      - 美国_0406297
+      - 越南_0406011
+      - 南非 V2CROSS.COM
+      - 佛移-印尼家宽17
+      - 中国 079
+      - 台湾_0406570
+      - 韩国 030
+      - 美国 057
+      - 中国【付费推荐：https://tt.vg/vip】23
+      - 美国_0406152
+      - 美国_0406222
+      - _SG_新加坡_2
+      - 中国 019
+      - 美国_0406296
+      - 越南_0406129
+      - 美国_04063637
+      - 美国_0406942
+      - 佛移-印尼家宽18
+      - 韩国 030 2
+      - 美国_04053545
+      - 美国_0406287
+      - 美国 055
+      - 美国_04063637 2
+      - 巴基斯坦 001
+      - 美国【付费推荐：https://tt.vg/vip】112
+      - _SG_新加坡_2 2
+      - 美国_0406110
+      - 荷兰_0406303 2
+      - 美国_04053549
+      - 佛移印_125
+      - 美国_04053545 2
+      - 美国 惠普HP
+      - 德国_0406187
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -263,29 +1067,129 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国_0405171
-      - 美国_04053545
-      - IEPL+·+美国US+·+88+·+广港移动
-      - IEPL+·+美国US+·+88+·+广港移动 2
-      - 美国 040
-      - 韩国 001
-      - 二爷翻墙网 https://1808.ga 节点_62
-      - 美国 048
-      - 美国_04053416
-      - github.com/freefq - 美国  14
-      - "@DeamNet_🇭🇰Tseung Kwan O-1297-492"
-      - 日本 V2CROSS.COM
-      - 中国【付费推荐：https://tt.vg/vip】237
-      - 中国 015
+      - 韩国 010
+      - GB(AzadNet.t.me)_6
+      - _US_美国_14
+      - _US_美国_17
+      - 美国【付费推荐：https://tt.vg/vip】82
+      - 中国 073
+      - 中国 070
+      - 印尼家宽04-原始节点
+      - 美国【付费推荐：https://tt.vg/vip】67
+      - _CN_中国->🇺🇸_US_美国 4
+      - 04/06免费节点|TG频道@kxswa 9
+      - 美国【付费推荐：https://tt.vg/vip】68
+      - 澳大利亚 005
+      - 日本_04061050
+      - _JP_日本 9
+      - _JP_日本 4
+      - 美国【付费推荐：https://tt.vg/vip】80
+      - 中国 076
+      - _US_美国 11
+      - 中国 081
+      - 韩国 011
+      - 中国 080
+      - 日本【付费推荐：https://tt.vg/vip】146
+      - 台湾省_22
+      - _PL_波兰
+      - 佛移-印尼家宽05
+      - 美国【付费推荐：https://tt.vg/vip】85
+      - 印尼家宽07-原始节点
+      - _JP_日本 11
+      - 美国【付费推荐：https://tt.vg/vip】88
+      - Singapore 05 TG:@nodpai
+      - 澳大利亚 008
+      - JP-85.208.108.60-189
+      - 美国【付费推荐：https://tt.vg/vip】73
+      - 美国【付费推荐：https://tt.vg/vip】81
+      - Pool_🇳🇱NL_110
+      - 中国 057
+      - Pool_🇳🇱NL_95
+      - 中国 071
+      - 中国 078
+      - _JP_日本 7
+      - 香港频_7
+      - Pool_🇳🇱NL_99
+      - US(AzadNet.t.me)_64
+      - 美国【付费推荐：https://tt.vg/vip】78
       - 俄罗斯联邦 001
-      - 巴基斯坦 001
-      - "@DeamNet_🇭🇰Tseung Kwan O-1968-508"
-      - 中国_0405039
-      - -美国-152.69.221.20
-      - 美国 惠普HP
-      - "@DeamNet_🇭🇰Tseung Kwan O-3259-501"
+      - KR-43.201.50.238-018
+      - 沙特阿_17
+      - 中国 077
+      - _JP_日本 12
+      - "@DeamNet_🇹🇼Taipei-3298-509"
+      - 中国 075
+      - Pool_🇳🇱NL_117
+      - 日本【付费推荐：https://tt.vg/vip】147
+      - 日本 007
+      - _JP_日本 2
+      - _JP_日本 8
+      - 中国 074
+      - 日本 010
+      - 香港 006
+      - 韩国 012
+      - 美国 040
       - 印度【付费推荐：https://tt.vg/vip】125
-      - 中国【付费推荐：https://tt.vg/vip】625
+      - _KR_韩国_3
+      - _JP_日本
+      - Singapore 02 TG:@nodpai
+      - 233v2.com_141.147.154.56
+      - 巴拿马【付费推荐：https://tt.vg/vip】239
+      - _SG_新加坡_10
+      - _JP_日本 5
+      - _Scaleway
+      - Relay 🇮🇩 Indonesia(ChatGPT)...
+      - "|18.52Mb"
+      - github.com/freefq - 印度尼西亚  19
+      - Relay 🇮🇩 Indonesia(ChatGPT)... 2
+      - 香港_0406733
+      - Relay 🇮🇩 Indonesia(ChatGPT)... 3
+      - _JP_日本 3
+      - _HK_香港_1
+      - 德国_0406186
+      - Relay 🇭🇰 Hong Kong 08 TG:@n...
+      - 日本 V2CROSS.COM
+      - 新加坡 014
+      - 佛移印_44
+      - 荷兰_0406303
+      - JP_52.194.183.214_04042023dee6-463ss%%
+      - 美国_04053552
+      - 美国_0406232
+      - 美国_04053552 2
+      - _CN_中国->🇺🇸_US_美国
+      - 美国_0406297
+      - 越南_0406011
+      - 南非 V2CROSS.COM
+      - 佛移-印尼家宽17
+      - 中国 079
+      - 台湾_0406570
+      - 韩国 030
+      - 美国 057
+      - 中国【付费推荐：https://tt.vg/vip】23
+      - 美国_0406152
+      - 美国_0406222
+      - _SG_新加坡_2
+      - 中国 019
+      - 美国_0406296
+      - 越南_0406129
+      - 美国_04063637
+      - 美国_0406942
+      - 佛移-印尼家宽18
+      - 韩国 030 2
+      - 美国_04053545
+      - 美国_0406287
+      - 美国 055
+      - 美国_04063637 2
+      - 巴基斯坦 001
+      - 美国【付费推荐：https://tt.vg/vip】112
+      - _SG_新加坡_2 2
+      - 美国_0406110
+      - 荷兰_0406303 2
+      - 美国_04053549
+      - 佛移印_125
+      - 美国_04053545 2
+      - 美国 惠普HP
+      - 德国_0406187
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
