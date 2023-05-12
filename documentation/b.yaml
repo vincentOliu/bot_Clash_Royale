@@ -6,219 +6,495 @@ mode: Rule
 log-level: info
 external-controller: 9090
 proxies:
-  - {name: 新加坡 001, server: 43.156.131.164, port: 43860, type: vmess, uuid: be3fdec2-86e1-4d51-969b-704b1efc3158, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sg2/getData}, udp: true}
-  - {name: 日本 059, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: PT09JS%�, obfs-param: PT09JS%�, udp: true}
-  - {name: 二爷翻墙网 https://1808.ga 节点_13, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv3.sharecentrepro.org}}, udp: true}
-  - {name: 美国 042, server: 23.224.110.183, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/080712342310}, udp: true}
-  - {name: 澳大利亚 002, server: 139.99.245.165, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 078, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 373f2d71-79ca-47a4-974f-79b2590e8c60, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v03.ssrsub.com}}, udp: true}
-  - {name: _CN_中国->🇧🇷_BR_巴西_1, server: m.lwvzmdu.cn, port: 16635, type: vmess, uuid: ad3f9bf7-d8d1-47df-a6bd-77ff50037339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: m.lwvzmdu.cn}}, udp: true}
-  - {name: JP 49 → tg@nicevpn123, server: 43.201.6.53, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 澳大利亚_0511001, server: 139.99.245.165, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】135, server: 59.36.84.180, port: 63092, type: vmess, uuid: c796ecaf-e6ca-3eba-96d3-21df44550cbc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: de01-cdn.airport-v2.com}}, udp: true}
-  - {name: _US_美国 6, server: 142.4.106.243, port: 52902, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CR_哥斯达黎加->🇺🇸_US_美国, server: 190.93.245.89, port: 80, type: vmess, uuid: cb8cbbc3-137a-4064-8d02-b0ee3ca2c18c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qazxcv, headers: {Host: tou.vtcss.top}}, udp: true}
-  - {name: 美国 075, server: 142.0.132.45, port: 50015, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港HKT|@ripaojiedian, server: sihai.cnamazon.sbs, port: 443, type: trojan, password: 3ceeafaa-7beb-4dab-bbbd-fd00509f1361, sni: tlsdata.cnamazon.sbs, skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip】6, server: 23.224.110.242, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1683715826870, headers: {Host: www.77039717.xyz}}, udp: true}
-  - {name: _TW_台湾, server: CHT.MIFJUN.ORG, port: 8082, type: vmess, uuid: c76bf073-d8c6-4d2d-aa5f-3bbdd3b6d0b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/vip】148, server: 59.36.84.180, port: 63091, type: vmess, uuid: c796ecaf-e6ca-3eba-96d3-21df44550cbc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: South Africa 01 TG:..., server: 41.203.4.34, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip】334, server: 192.74.229.194, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1683715826870, headers: {Host: www.85351920.xyz}}, udp: true}
-  - {name: _US_美国____, server: new8.huvicloud.com, port: 443, type: vmess, uuid: a11ca760-9ef9-4a63-95c9-4c5c32d56251, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: new8.huvicloud.com}}, udp: true}
-  - {name: 4Iran-491, server: 172.64.194.14, port: 80, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: lg.v2ray20.xyz}}, udp: true}
-  - {name: _AU_澳大利亚, server: 139.99.245.165, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 34, server: 172.67.6.13, port: 80, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: lg.v2ray20.xyz}}, udp: true}
-  - {name: US_youtube@资源分享师_77, server: 104.21.53.35, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: dp3.yxjnode.com}}, udp: true}
-  - {name: United States(ChatG..., server: d.pgypgykmoljklj.xyz, port: 443, type: vmess, uuid: fa4cb529-3ac9-4268-bb04-ed4253813508, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mR17oBKzZ7, headers: {Host: d.pgypgykmoljklj.xyz}}, udp: true}
-  - {name: 二爷翻墙网 https://1808.ga 节点_6, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: uk1.scproxy.top}}, udp: true}
-  - {name: 荷兰【付费推荐：https://v1.mk/vip】223, server: 154.85.1.72, port: 42294, type: vmess, uuid: 20b30916-e203-412e-8ec0-900f3acd5128, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip】231, server: 142.4.97.71, port: 44942, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 071, server: 216.52.183.242, port: 80, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, plugin: obfs, plugin-opts: {mode: http, host: ""}, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip】157, server: 171.22.134.6, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1683543024453, headers: {Host: www.28848492.xyz}}, udp: true}
-  - {name: "香港 02（一区）\r", server: aws-hk02.aikun.online, port: 443, type: trojan, password: ff81ed1c-366d-422f-9362-6d10b116d1cf, sni: aws-hk02.aikun.online, skip-cert-verify: true, udp: true}
-  - {name: 香港 1 区 | HK, server: azhk.untilmu.com, port: 16627, type: vmess, uuid: 3ee68cb2-4ae2-4d3a-b3cc-da0730e0f5fe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /azhk, headers: {Host: azhk.untilmu.com}}, udp: true}
-  - {name: 香港_0511762, server: azhk.untilmu.com, port: 16627, type: vmess, uuid: e3b634a3-7583-4f52-adef-e540015050f3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /azhk, headers: {Host: azhk.untilmu.com}}, udp: true}
-  - {name: 台湾【付费推荐：https://v1.mk/vip】297, server: CHT.MIFJUN.ORG, port: 8082, type: vmess, uuid: c76bf073-d8c6-4d2d-aa5f-3bbdd3b6d0b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 沙特阿拉伯【付费推荐：https://v1.mk/vip】96, server: 38.54.61.246, port: 10001, type: vmess, uuid: e9cd2706-ed1b-11ed-87cd-525401b3cc30, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit}, udp: true}
-  - {name: _SG_新加坡, server: 66.42.50.66, port: 80, type: trojan, password: 86523a68-b346-413c-ab61-85af7e36c3db, skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip】23, server: 198.2.200.107, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1683715826870, headers: {Host: www.54092415.xyz}}, udp: true}
-  - {name: 荷兰【付费推荐：https://v1.mk/vip】237, server: 154.85.1.78, port: 41154, type: vmess, uuid: 743bdc87-1dea-41bf-aa0b-51dfbbfec8aa, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip】226, server: 142.4.106.243, port: 52902, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港【付费推荐：https://v1.mk/vip】262, server: 43.154.76.92, port: 48527, type: vmess, uuid: 784272d2-bd2d-438a-bbd4-1271bb1f1b0d, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hk15/getData}, udp: true}
-  - {name: 罗马尼亚_0511038, server: 45.85.118.165, port: 443, type: vmess, uuid: CBDB1902-6B9B-4872-B20C-E94A3BD2F63D, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Dusseldorf.kotick.site}}, udp: true}
-  - {name: 香港_0511156, server: azhk.untilmu.com, port: 16627, type: vmess, uuid: 830f793d-8fb6-41fd-b783-1e2fcecaae10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /azhk, headers: {Host: azhk.untilmu.com}}, udp: true}
-  - {name: 卢森堡【付费推荐：https://v1.mk/vip】186, server: 185.244.208.7, port: 10001, type: vmess, uuid: 6758b57a-ed1a-11ed-8fd8-bb48c654484f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit}, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip】202, server: 140.99.48.43, port: 53102, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: -美国-kr-3.vuex.eu.org, server: kr-3.vuex.eu.org, port: 8890, type: vmess, uuid: f3a98a6c-c3d3-4851-9688-bec85d7ac899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kr-3.vuex.eu.org}}, udp: true}
-  - {name: 新加坡 016, server: aws-sg.aikun.online, port: 443, type: trojan, password: ff81ed1c-366d-422f-9362-6d10b116d1cf, skip-cert-verify: true, udp: true}
-  - {name: 香港【付费推荐：https://v1.mk/vip】171, server: hk1.c.e8bb3fc45ae6.sanfen004.me, port: 443, type: vmess, uuid: f17ae953-bb51-4932-a139-66c37122f45e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: hk1.c.e8bb3fc45ae6.sanfen004.me}}, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip】3, server: v2-ca1.silverdragon.cn, port: 443, type: vmess, uuid: e790e3bf-c553-40ed-b2b6-436afd3f5f5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ca/v2wss, headers: {Host: v2-ca1.silverdragon.cn}}, udp: true}
-  - {name: 美国 076, server: 142.0.132.45, port: 50015, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本 014, server: 43.206.255.205, port: 443, type: trojan, password: 794d739c-89a0-444c-b2e7-acce12af3042, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】184, server: 142.4.103.199, port: 45232, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US(AzadNet.t.me)_240, server: 137.175.52.22, port: 33002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https//v1.mk/vip】191, server: 45.12.112.102, port: 40002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 荷兰【付费推荐：https://v1.mk/vip】245, server: 154.85.1.56, port: 52883, type: vmess, uuid: fe5f69e7-e183-439b-950b-9661ef0651f2, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 荷兰【付费推荐：https//v1.mk/vip】239, server: 154.85.1.59, port: 40023, type: vmess, uuid: 6e79eea4-5f72-4683-ad0e-5339f013421b, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】24, server: 137.175.52.22, port: 33002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https//v1.mk/vip】89, server: 142.4.118.103, port: 51040, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https//v1.mk/vip】185, server: 137.175.54.210, port: 50502, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本【付费推荐：https://v1.mk/vip】214, server: awsjp16-data.amazon-azure.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: 美国_0512501, server: 142.4.125.48, port: 50044, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】211, server: 23.224.171.69, port: 44552, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https//v1.mk/vip】184, server: 142.4.103.199, port: 45232, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本 024, server: vpnhat.stablize.top, port: 443, type: trojan, password: 38a1b8d7-d59a-4ef0-b6aa-1d362f1fa722, sni: nf.stablize.top, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】170, server: 142.4.121.42, port: 55332, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】191, server: 45.12.112.102, port: 40002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】209, server: awshk16-data.amazon-azure.com, port: 443, type: trojan, password: 794d739c-89a0-444c-b2e7-acce12af3042, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】183, server: 45.88.176.11, port: 53332, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 荷兰【付费推荐：https://v1.mk/vip】221, server: 154.85.1.67, port: 52920, type: vmess, uuid: f9fa3a9c-f7d5-414f-88e6-6970585d9949, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】142, server: 23.224.74.82, port: 53392, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】146, server: us3.microsoft-orgwly.vip, port: 443, type: trojan, password: 75dbc152-3e44-4842-a330-47e1460e127b, sni: tls.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】237, server: 111.38.40.129, port: 12209, type: trojan, password: e4486755-be73-42eb-acde-3b2bc3500709, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: 荷兰【付费推荐：https://v1.mk/vip】241, server: 154.85.1.108, port: 51090, type: vmess, uuid: 9549a2cf-129b-43a1-88db-ef7f648de74a, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】190, server: 140.99.66.99, port: 40065, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Japan 16 TG@nodpai, server: jp04-vm0.entry.srthdw.art, port: 446, type: vmess, uuid: 22acc467-7440-386a-927a-d84be554b37e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_0512017, server: 192.74.229.215, port: 51592, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 10, server: 142.4.106.243, port: 52902, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 081, server: us2.trojanvh.xyz, port: 80, type: trojan, password: 255c924c-1314-4084-9a9e-1d1a82a5cf49, skip-cert-verify: true, udp: true}
+  - {name: US 890 → tg@nicevpn123, server: 137.175.18.86, port: 42002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】232, server: 111.38.40.129, port: 12210, type: trojan, password: e4486755-be73-42eb-acde-3b2bc3500709, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】207, server: 23.225.117.34, port: 43314, type: vmess, uuid: bb25859e-f6da-4101-989f-b4dd67a22682, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】194, server: 45.136.235.56, port: 51338, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 073, server: 142.0.132.45, port: 50015, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本 009, server: vpnpool.stablize.top, port: 443, type: trojan, password: 3bc3c859-d32e-40af-a794-4ff5b5759970, sni: usajs.stablize.top, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https//v1.mk/vip】305, server: 192.74.255.26, port: 59322, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 荷兰【付费推荐：https//v1.mk/vip】241, server: 154.85.1.108, port: 51090, type: vmess, uuid: 9549a2cf-129b-43a1-88db-ef7f648de74a, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 095, server: awssg3-data.amazon-azure.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: US(AzadNet.t.me)_344, server: 108.186.116.178, port: 55005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本 010, server: awsjp14-data.amazon-azure.com, port: 443, type: trojan, password: 794d739c-89a0-444c-b2e7-acce12af3042, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: US(AzadNet.t.me)_224, server: 142.4.106.246, port: 52902, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】144, server: 142.4.108.26, port: 55102, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https//v1.mk/vip】190, server: 140.99.66.99, port: 40065, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 荷兰【付费推荐：https://v1.mk/vip】255, server: 154.85.1.95, port: 43187, type: vmess, uuid: d3133484-f2bf-4b0c-8d38-f8e645b65687, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 西班牙【付费推荐：https://v1.mk/vip】181, server: 45.15.128.42, port: 40932, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Germany(ChatGPT) 02..., server: big.viiipking.info, port: 25968, type: trojan, password: EaklYS69k8, skip-cert-verify: true, udp: true}
+  - {name: 印度 001, server: id1.microsoft-orgwly.vip, port: 443, type: trojan, password: 4bbddc91-7b8a-412d-86b4-28ab22d4debf, sni: tls.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https//v1.mk/vip】193, server: 192.74.249.151, port: 50042, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: United States(ChatG..._____, server: 198.2.203.145, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】201, server: 104.233.153.193, port: 46712, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 087, server: 142.4.125.48, port: 50044, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 096, server: awssg17-data.amazon-azure.com, port: 443, type: trojan, password: 794d739c-89a0-444c-b2e7-acce12af3042, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https//v1.mk/vip】164, server: 107.148.203.244, port: 53986, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 荷兰【付费推荐：https://v1.mk/vip】222, server: 154.85.1.73, port: 42294, type: vmess, uuid: 20b30916-e203-412e-8ec0-900f3acd5128, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】133, server: 142.0.130.8, port: 53452, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】89, server: 142.4.118.103, port: 51040, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_0512830, server: 192.74.236.140, port: 48123, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_0512293, server: 198.2.204.251, port: 46802, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 荷兰【付费推荐：https://v1.mk/vip】226, server: 154.85.1.71, port: 35543, type: vmess, uuid: 65ea6727-4461-47a7-a5c4-fef2c67f2f79, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: -美国-108.186.116.178, server: 108.186.116.178, port: 55005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: United States 22 TG..., server: 198.2.203.145, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】135, server: 137.175.61.130, port: 46679, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US(AzadNet.t.me)_147, server: 192.74.231.175, port: 49202, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 11, server: 142.0.132.45, port: 50015, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https//v1.mk/vip】165, server: 64.32.21.246, port: 44313, type: vmess, uuid: 57f93e92-ebb9-4f16-9bdc-8225d2010995, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Taiwan(ChatGPT) 06 ..., server: 805tw.ljydw.top, port: 443, type: trojan, password: 0781e2a3-3a13-4154-8042-8de645194c19, sni: 805tw.ljydw.top, skip-cert-verify: true, udp: true}
+  - {name: 美国_05121105, server: 198.2.206.39, port: 33012, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇯🇵 Japan(ChatGPT..._, server: 8.v2-ray.cyou, port: 23608, type: vmess, uuid: 0dd19d20-ec86-3680-b256-87237bafa89e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https//v1.mk/vip】201, server: 104.233.153.193, port: 46712, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 荷兰【付费推荐：https://v1.mk/vip】206, server: 154.85.1.88, port: 30823, type: vmess, uuid: f5250c4e-f855-4eff-b73c-a02226d42fe7, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】149, server: 142.4.106.246, port: 52902, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "| 4.77Mb", server: 142.4.106.246, port: 52902, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_05121057, server: 45.86.11.231, port: 39182, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 荷兰【付费推荐：https://v1.mk/vip】233, server: 154.85.1.77, port: 49221, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca4690dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本【付费推荐：https://v1.mk/vip】287, server: 43.206.124.106, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: Taiwan(ChatGPT) 05 ..., server: 625tw.ljydw.top, port: 80, type: trojan, password: 0781e2a3-3a13-4154-8042-8de645194c19, sni: 625tw.ljydw.top, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇺🇸 United States..._, server: 103.bgynd.xyz, port: 26103, type: vmess, uuid: a5fe769e-61e1-3653-a356-696215ca85ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: India 01 TG:@SSRSUB, server: 152.70.74.66, port: 443, type: trojan, password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e, skip-cert-verify: true, udp: true}
+  - {name: 韩国【付费推荐：https://v1.mk/vip】218, server: awskr2-data.amazon-azure.com, port: 443, type: trojan, password: 794d739c-89a0-444c-b2e7-acce12af3042, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: United Arab Emirate..., server: jp1117.ljydw.top, port: 80, type: trojan, password: 0781e2a3-3a13-4154-8042-8de645194c19, sni: jp1117.ljydw.top, skip-cert-verify: true, udp: true}
+  - {name: 新加坡【付费推荐：https://v1.mk/vip】262, server: awssg13-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https//v1.mk/vip】183, server: 45.88.176.11, port: 53332, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 印度 003, server: in3.microsoft-orgwly.vip, port: 443, type: trojan, password: 4bbddc91-7b8a-412d-86b4-28ab22d4debf, sni: tls.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 美国 074, server: 198.2.206.39, port: 33012, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Japan(ChatGPT) 20 T..., server: jp05-vm0.entry.srthdw.art, port: 30593, type: vmess, uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 16, server: 192.74.236.140, port: 48123, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Taiwan 07 TG:@nodpai, server: 0309tw.ljydw.top, port: 443, type: trojan, password: 0781e2a3-3a13-4154-8042-8de645194c19, sni: 0309tw.ljydw.top, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https//v1.mk/vip】198, server: 142.4.118.123, port: 40349, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡【付费推荐：https://v1.mk/vip】260, server: awssg19-data.amazon-azure.com, port: 443, type: trojan, password: 794d739c-89a0-444c-b2e7-acce12af3042, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: India(ChatGPT) 03 T..., server: in2.microsoft-orgwly.vip, port: 443, type: trojan, password: 4bbddc91-7b8a-412d-86b4-28ab22d4debf, sni: tls.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: Taiwan(ChatGPT) 03 ..., server: 419tw.ljydw.top, port: 443, type: trojan, password: 0781e2a3-3a13-4154-8042-8de645194c19, sni: 419tw.ljydw.top, skip-cert-verify: true, udp: true}
+  - {name: US(AzadNet.t.me)_209, server: 142.4.112.12, port: 51091, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https//v1.mk/vip】194, server: 45.136.235.56, port: 51338, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本【付费推荐：https://v1.mk/vip】258, server: awsjp12-data.amazon-azure.com, port: 443, type: trojan, password: 794d739c-89a0-444c-b2e7-acce12af3042, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: 荷兰【付费推荐：https://v1.mk/vip】217, server: 154.85.1.20, port: 40298, type: vmess, uuid: 130c9f2e-42b1-4ebf-b345-e26456a061f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】185, server: 137.175.54.210, port: 50502, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】231, server: 198.2.204.251, port: 46802, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US(AzadNet.t.me)_222, server: 142.4.108.26, port: 55102, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Japan(ChatGPT) 06 T..., server: awsjp1-data.amazon-azure.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: 日本 013, server: awsjp12-data.amazon-azure.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: Singapore(ChatGPT) ...______, server: fscsg.fscloud123456789.com, port: 443, type: trojan, password: 8bb11152-99c1-4147-9f69-5dc10a7be056, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https//v1.mk/vip】211, server: 23.224.171.69, port: 44552, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Brazil(ChatGPT) 01 ..., server: br1.microsoft-orgwly.vip, port: 443, type: trojan, password: 4bbddc91-7b8a-412d-86b4-28ab22d4debf, sni: tls.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https//v1.mk/vip】178, server: 142.4.106.243, port: 52902, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】193, server: 192.74.249.151, port: 50042, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 093, server: awssg15-data.amazon-azure.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: 日本【付费推荐：https://v1.mk/vip】282, server: awsjp14-data.amazon-azure.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: 日本 012, server: 43.206.124.106, port: 443, type: trojan, password: 794d739c-89a0-444c-b2e7-acce12af3042, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: 日本 011, server: awsjp15-data.amazon-azure.com, port: 443, type: trojan, password: 794d739c-89a0-444c-b2e7-acce12af3042, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: -美国-142.4.106.243, server: 142.4.106.243, port: 52902, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】167, server: 45.86.11.231, port: 39182, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https//v1.mk/vip】133, server: 142.0.130.8, port: 53452, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 荷兰【付费推荐：https://v1.mk/vip】229, server: 154.85.1.92, port: 35426, type: vmess, uuid: 078eb24d-8d1d-4fbd-b914-ee58a897a35e, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 荷兰【付费推荐：https://v1.mk/vip】234, server: 154.85.1.79, port: 41154, type: vmess, uuid: 743bdc87-1dea-41bf-aa0b-51dfbbfec8aa, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 越南 001, server: vn1.microsoft-orgwly.vip, port: 443, type: trojan, password: 4bbddc91-7b8a-412d-86b4-28ab22d4debf, sni: tls.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: 日本 017, server: awsjp1-data.amazon-azure.com, port: 443, type: trojan, password: 794d739c-89a0-444c-b2e7-acce12af3042, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _US_美国, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】216, server: hk11.microsoft-orgwly.vip, port: 80, type: trojan, password: 75dbc152-3e44-4842-a330-47e1460e127b, sni: tls.microsoft-orgwly.vip, skip-cert-verify: true, udp: true}
+  - {name: Singapore(ChatGPT) ...____, server: awssg12-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 794d739c-89a0-444c-b2e7-acce12af3042, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 001
-      - 日本 059
-      - 二爷翻墙网 https://1808.ga 节点_13
-      - 美国 042
-      - 澳大利亚 002
-      - 美国 078
-      - _CN_中国->🇧🇷_BR_巴西_1
-      - JP 49 → tg@nicevpn123
-      - 澳大利亚_0511001
-      - 中国【付费推荐：https://v1.mk/vip】135
-      - _US_美国 6
-      - _CR_哥斯达黎加->🇺🇸_US_美国
-      - 美国 075
-      - 香港HKT|@ripaojiedian
-      - 美国【付费推荐：https://v1.mk/vip】6
-      - _TW_台湾
-      - 中国【付费推荐：https://v1.mk/vip】148
-      - South Africa 01 TG:...
-      - 美国【付费推荐：https://v1.mk/vip】334
-      - _US_美国____
-      - 4Iran-491
-      - _AU_澳大利亚
-      - 美国 34
-      - US_youtube@资源分享师_77
-      - United States(ChatG...
-      - 二爷翻墙网 https://1808.ga 节点_6
-      - 荷兰【付费推荐：https://v1.mk/vip】223
+      - 日本 014
+      - 美国【付费推荐：https://v1.mk/vip】184
+      - US(AzadNet.t.me)_240
+      - 美国【付费推荐：https//v1.mk/vip】191
+      - 荷兰【付费推荐：https://v1.mk/vip】245
+      - 荷兰【付费推荐：https//v1.mk/vip】239
+      - 美国【付费推荐：https://v1.mk/vip】24
+      - 美国【付费推荐：https//v1.mk/vip】89
+      - 美国【付费推荐：https//v1.mk/vip】185
+      - 日本【付费推荐：https://v1.mk/vip】214
+      - 美国_0512501
+      - 美国【付费推荐：https://v1.mk/vip】211
+      - 美国【付费推荐：https//v1.mk/vip】184
+      - 日本 024
+      - 美国【付费推荐：https://v1.mk/vip】170
+      - 美国【付费推荐：https://v1.mk/vip】191
+      - 中国【付费推荐：https://v1.mk/vip】209
+      - 美国【付费推荐：https://v1.mk/vip】183
+      - 荷兰【付费推荐：https://v1.mk/vip】221
+      - 美国【付费推荐：https://v1.mk/vip】142
+      - 美国【付费推荐：https://v1.mk/vip】146
+      - 中国【付费推荐：https://v1.mk/vip】237
+      - 荷兰【付费推荐：https://v1.mk/vip】241
+      - 美国【付费推荐：https://v1.mk/vip】190
+      - Japan 16 TG@nodpai
+      - 美国_0512017
+      - _US_美国 10
+      - 美国 081
+      - US 890 → tg@nicevpn123
+      - 中国【付费推荐：https://v1.mk/vip】232
+      - 美国【付费推荐：https://v1.mk/vip】207
+      - 美国【付费推荐：https://v1.mk/vip】194
+      - 美国 073
+      - 日本 009
+      - 美国【付费推荐：https//v1.mk/vip】305
+      - 荷兰【付费推荐：https//v1.mk/vip】241
+      - 美国 095
+      - US(AzadNet.t.me)_344
+      - 日本 010
+      - US(AzadNet.t.me)_224
+      - 美国【付费推荐：https://v1.mk/vip】144
+      - 美国【付费推荐：https//v1.mk/vip】190
+      - 荷兰【付费推荐：https://v1.mk/vip】255
+      - 西班牙【付费推荐：https://v1.mk/vip】181
+      - Germany(ChatGPT) 02...
+      - 印度 001
+      - 美国【付费推荐：https//v1.mk/vip】193
+      - United States(ChatG..._____
+      - 美国【付费推荐：https://v1.mk/vip】201
+      - 美国 087
+      - 美国 096
+      - 美国【付费推荐：https//v1.mk/vip】164
+      - 荷兰【付费推荐：https://v1.mk/vip】222
+      - 美国【付费推荐：https://v1.mk/vip】133
+      - 美国【付费推荐：https://v1.mk/vip】89
+      - 美国_0512830
+      - 美国_0512293
+      - 荷兰【付费推荐：https://v1.mk/vip】226
+      - -美国-108.186.116.178
+      - United States 22 TG...
+      - 美国【付费推荐：https://v1.mk/vip】135
+      - US(AzadNet.t.me)_147
+      - _US_美国 11
+      - 美国【付费推荐：https//v1.mk/vip】165
+      - Taiwan(ChatGPT) 06 ...
+      - 美国_05121105
+      - Relay 🇯🇵 Japan(ChatGPT..._
+      - 美国【付费推荐：https//v1.mk/vip】201
+      - 荷兰【付费推荐：https://v1.mk/vip】206
+      - 美国【付费推荐：https://v1.mk/vip】149
+      - "| 4.77Mb"
+      - 美国_05121057
+      - 荷兰【付费推荐：https://v1.mk/vip】233
+      - 日本【付费推荐：https://v1.mk/vip】287
+      - Taiwan(ChatGPT) 05 ...
+      - Relay 🇺🇸 United States..._
+      - India 01 TG:@SSRSUB
+      - 韩国【付费推荐：https://v1.mk/vip】218
+      - United Arab Emirate...
+      - 新加坡【付费推荐：https://v1.mk/vip】262
+      - 美国【付费推荐：https//v1.mk/vip】183
+      - 印度 003
+      - 美国 074
+      - Japan(ChatGPT) 20 T...
+      - _US_美国 16
+      - Taiwan 07 TG:@nodpai
+      - 美国【付费推荐：https//v1.mk/vip】198
+      - 新加坡【付费推荐：https://v1.mk/vip】260
+      - India(ChatGPT) 03 T...
+      - Taiwan(ChatGPT) 03 ...
+      - US(AzadNet.t.me)_209
+      - 美国【付费推荐：https//v1.mk/vip】194
+      - 日本【付费推荐：https://v1.mk/vip】258
+      - 荷兰【付费推荐：https://v1.mk/vip】217
+      - 美国【付费推荐：https://v1.mk/vip】185
       - 美国【付费推荐：https://v1.mk/vip】231
-      - 美国 071
-      - 美国【付费推荐：https://v1.mk/vip】157
-      - "香港 02（一区）\r"
-      - 香港 1 区 | HK
-      - 香港_0511762
-      - 台湾【付费推荐：https://v1.mk/vip】297
-      - 沙特阿拉伯【付费推荐：https://v1.mk/vip】96
-      - _SG_新加坡
-      - 美国【付费推荐：https://v1.mk/vip】23
-      - 荷兰【付费推荐：https://v1.mk/vip】237
-      - 美国【付费推荐：https://v1.mk/vip】226
-      - 香港【付费推荐：https://v1.mk/vip】262
-      - 罗马尼亚_0511038
-      - 香港_0511156
-      - 卢森堡【付费推荐：https://v1.mk/vip】186
-      - 美国【付费推荐：https://v1.mk/vip】202
-      - -美国-kr-3.vuex.eu.org
-      - 新加坡 016
-      - 香港【付费推荐：https://v1.mk/vip】171
-      - 美国【付费推荐：https://v1.mk/vip】3
-      - 美国 076
+      - US(AzadNet.t.me)_222
+      - Japan(ChatGPT) 06 T...
+      - 日本 013
+      - Singapore(ChatGPT) ...______
+      - 美国【付费推荐：https//v1.mk/vip】211
+      - Brazil(ChatGPT) 01 ...
+      - 美国【付费推荐：https//v1.mk/vip】178
+      - 美国【付费推荐：https://v1.mk/vip】193
+      - 美国 093
+      - 日本【付费推荐：https://v1.mk/vip】282
+      - 日本 012
+      - 日本 011
+      - -美国-142.4.106.243
+      - 美国【付费推荐：https://v1.mk/vip】167
+      - 美国【付费推荐：https//v1.mk/vip】133
+      - 荷兰【付费推荐：https://v1.mk/vip】229
+      - 荷兰【付费推荐：https://v1.mk/vip】234
+      - 越南 001
+      - 日本 017
+      - _US_美国
+      - 中国【付费推荐：https://v1.mk/vip】216
+      - Singapore(ChatGPT) ...____
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - 新加坡 001
-      - 日本 059
-      - 二爷翻墙网 https://1808.ga 节点_13
-      - 美国 042
-      - 澳大利亚 002
-      - 美国 078
-      - _CN_中国->🇧🇷_BR_巴西_1
-      - JP 49 → tg@nicevpn123
-      - 澳大利亚_0511001
-      - 中国【付费推荐：https://v1.mk/vip】135
-      - _US_美国 6
-      - _CR_哥斯达黎加->🇺🇸_US_美国
-      - 美国 075
-      - 香港HKT|@ripaojiedian
-      - 美国【付费推荐：https://v1.mk/vip】6
-      - _TW_台湾
-      - 中国【付费推荐：https://v1.mk/vip】148
-      - South Africa 01 TG:...
-      - 美国【付费推荐：https://v1.mk/vip】334
-      - _US_美国____
-      - 4Iran-491
-      - _AU_澳大利亚
-      - 美国 34
-      - US_youtube@资源分享师_77
-      - United States(ChatG...
-      - 二爷翻墙网 https://1808.ga 节点_6
-      - 荷兰【付费推荐：https://v1.mk/vip】223
+      - 日本 014
+      - 美国【付费推荐：https://v1.mk/vip】184
+      - US(AzadNet.t.me)_240
+      - 美国【付费推荐：https//v1.mk/vip】191
+      - 荷兰【付费推荐：https://v1.mk/vip】245
+      - 荷兰【付费推荐：https//v1.mk/vip】239
+      - 美国【付费推荐：https://v1.mk/vip】24
+      - 美国【付费推荐：https//v1.mk/vip】89
+      - 美国【付费推荐：https//v1.mk/vip】185
+      - 日本【付费推荐：https://v1.mk/vip】214
+      - 美国_0512501
+      - 美国【付费推荐：https://v1.mk/vip】211
+      - 美国【付费推荐：https//v1.mk/vip】184
+      - 日本 024
+      - 美国【付费推荐：https://v1.mk/vip】170
+      - 美国【付费推荐：https://v1.mk/vip】191
+      - 中国【付费推荐：https://v1.mk/vip】209
+      - 美国【付费推荐：https://v1.mk/vip】183
+      - 荷兰【付费推荐：https://v1.mk/vip】221
+      - 美国【付费推荐：https://v1.mk/vip】142
+      - 美国【付费推荐：https://v1.mk/vip】146
+      - 中国【付费推荐：https://v1.mk/vip】237
+      - 荷兰【付费推荐：https://v1.mk/vip】241
+      - 美国【付费推荐：https://v1.mk/vip】190
+      - Japan 16 TG@nodpai
+      - 美国_0512017
+      - _US_美国 10
+      - 美国 081
+      - US 890 → tg@nicevpn123
+      - 中国【付费推荐：https://v1.mk/vip】232
+      - 美国【付费推荐：https://v1.mk/vip】207
+      - 美国【付费推荐：https://v1.mk/vip】194
+      - 美国 073
+      - 日本 009
+      - 美国【付费推荐：https//v1.mk/vip】305
+      - 荷兰【付费推荐：https//v1.mk/vip】241
+      - 美国 095
+      - US(AzadNet.t.me)_344
+      - 日本 010
+      - US(AzadNet.t.me)_224
+      - 美国【付费推荐：https://v1.mk/vip】144
+      - 美国【付费推荐：https//v1.mk/vip】190
+      - 荷兰【付费推荐：https://v1.mk/vip】255
+      - 西班牙【付费推荐：https://v1.mk/vip】181
+      - Germany(ChatGPT) 02...
+      - 印度 001
+      - 美国【付费推荐：https//v1.mk/vip】193
+      - United States(ChatG..._____
+      - 美国【付费推荐：https://v1.mk/vip】201
+      - 美国 087
+      - 美国 096
+      - 美国【付费推荐：https//v1.mk/vip】164
+      - 荷兰【付费推荐：https://v1.mk/vip】222
+      - 美国【付费推荐：https://v1.mk/vip】133
+      - 美国【付费推荐：https://v1.mk/vip】89
+      - 美国_0512830
+      - 美国_0512293
+      - 荷兰【付费推荐：https://v1.mk/vip】226
+      - -美国-108.186.116.178
+      - United States 22 TG...
+      - 美国【付费推荐：https://v1.mk/vip】135
+      - US(AzadNet.t.me)_147
+      - _US_美国 11
+      - 美国【付费推荐：https//v1.mk/vip】165
+      - Taiwan(ChatGPT) 06 ...
+      - 美国_05121105
+      - Relay 🇯🇵 Japan(ChatGPT..._
+      - 美国【付费推荐：https//v1.mk/vip】201
+      - 荷兰【付费推荐：https://v1.mk/vip】206
+      - 美国【付费推荐：https://v1.mk/vip】149
+      - "| 4.77Mb"
+      - 美国_05121057
+      - 荷兰【付费推荐：https://v1.mk/vip】233
+      - 日本【付费推荐：https://v1.mk/vip】287
+      - Taiwan(ChatGPT) 05 ...
+      - Relay 🇺🇸 United States..._
+      - India 01 TG:@SSRSUB
+      - 韩国【付费推荐：https://v1.mk/vip】218
+      - United Arab Emirate...
+      - 新加坡【付费推荐：https://v1.mk/vip】262
+      - 美国【付费推荐：https//v1.mk/vip】183
+      - 印度 003
+      - 美国 074
+      - Japan(ChatGPT) 20 T...
+      - _US_美国 16
+      - Taiwan 07 TG:@nodpai
+      - 美国【付费推荐：https//v1.mk/vip】198
+      - 新加坡【付费推荐：https://v1.mk/vip】260
+      - India(ChatGPT) 03 T...
+      - Taiwan(ChatGPT) 03 ...
+      - US(AzadNet.t.me)_209
+      - 美国【付费推荐：https//v1.mk/vip】194
+      - 日本【付费推荐：https://v1.mk/vip】258
+      - 荷兰【付费推荐：https://v1.mk/vip】217
+      - 美国【付费推荐：https://v1.mk/vip】185
       - 美国【付费推荐：https://v1.mk/vip】231
-      - 美国 071
-      - 美国【付费推荐：https://v1.mk/vip】157
-      - "香港 02（一区）\r"
-      - 香港 1 区 | HK
-      - 香港_0511762
-      - 台湾【付费推荐：https://v1.mk/vip】297
-      - 沙特阿拉伯【付费推荐：https://v1.mk/vip】96
-      - _SG_新加坡
-      - 美国【付费推荐：https://v1.mk/vip】23
-      - 荷兰【付费推荐：https://v1.mk/vip】237
-      - 美国【付费推荐：https://v1.mk/vip】226
-      - 香港【付费推荐：https://v1.mk/vip】262
-      - 罗马尼亚_0511038
-      - 香港_0511156
-      - 卢森堡【付费推荐：https://v1.mk/vip】186
-      - 美国【付费推荐：https://v1.mk/vip】202
-      - -美国-kr-3.vuex.eu.org
-      - 新加坡 016
-      - 香港【付费推荐：https://v1.mk/vip】171
-      - 美国【付费推荐：https://v1.mk/vip】3
-      - 美国 076
+      - US(AzadNet.t.me)_222
+      - Japan(ChatGPT) 06 T...
+      - 日本 013
+      - Singapore(ChatGPT) ...______
+      - 美国【付费推荐：https//v1.mk/vip】211
+      - Brazil(ChatGPT) 01 ...
+      - 美国【付费推荐：https//v1.mk/vip】178
+      - 美国【付费推荐：https://v1.mk/vip】193
+      - 美国 093
+      - 日本【付费推荐：https://v1.mk/vip】282
+      - 日本 012
+      - 日本 011
+      - -美国-142.4.106.243
+      - 美国【付费推荐：https://v1.mk/vip】167
+      - 美国【付费推荐：https//v1.mk/vip】133
+      - 荷兰【付费推荐：https://v1.mk/vip】229
+      - 荷兰【付费推荐：https://v1.mk/vip】234
+      - 越南 001
+      - 日本 017
+      - _US_美国
+      - 中国【付费推荐：https://v1.mk/vip】216
+      - Singapore(ChatGPT) ...____
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 001
-      - 日本 059
-      - 二爷翻墙网 https://1808.ga 节点_13
-      - 美国 042
-      - 澳大利亚 002
-      - 美国 078
-      - _CN_中国->🇧🇷_BR_巴西_1
-      - JP 49 → tg@nicevpn123
-      - 澳大利亚_0511001
-      - 中国【付费推荐：https://v1.mk/vip】135
-      - _US_美国 6
-      - _CR_哥斯达黎加->🇺🇸_US_美国
-      - 美国 075
-      - 香港HKT|@ripaojiedian
-      - 美国【付费推荐：https://v1.mk/vip】6
-      - _TW_台湾
-      - 中国【付费推荐：https://v1.mk/vip】148
-      - South Africa 01 TG:...
-      - 美国【付费推荐：https://v1.mk/vip】334
-      - _US_美国____
-      - 4Iran-491
-      - _AU_澳大利亚
-      - 美国 34
-      - US_youtube@资源分享师_77
-      - United States(ChatG...
-      - 二爷翻墙网 https://1808.ga 节点_6
-      - 荷兰【付费推荐：https://v1.mk/vip】223
+      - 日本 014
+      - 美国【付费推荐：https://v1.mk/vip】184
+      - US(AzadNet.t.me)_240
+      - 美国【付费推荐：https//v1.mk/vip】191
+      - 荷兰【付费推荐：https://v1.mk/vip】245
+      - 荷兰【付费推荐：https//v1.mk/vip】239
+      - 美国【付费推荐：https://v1.mk/vip】24
+      - 美国【付费推荐：https//v1.mk/vip】89
+      - 美国【付费推荐：https//v1.mk/vip】185
+      - 日本【付费推荐：https://v1.mk/vip】214
+      - 美国_0512501
+      - 美国【付费推荐：https://v1.mk/vip】211
+      - 美国【付费推荐：https//v1.mk/vip】184
+      - 日本 024
+      - 美国【付费推荐：https://v1.mk/vip】170
+      - 美国【付费推荐：https://v1.mk/vip】191
+      - 中国【付费推荐：https://v1.mk/vip】209
+      - 美国【付费推荐：https://v1.mk/vip】183
+      - 荷兰【付费推荐：https://v1.mk/vip】221
+      - 美国【付费推荐：https://v1.mk/vip】142
+      - 美国【付费推荐：https://v1.mk/vip】146
+      - 中国【付费推荐：https://v1.mk/vip】237
+      - 荷兰【付费推荐：https://v1.mk/vip】241
+      - 美国【付费推荐：https://v1.mk/vip】190
+      - Japan 16 TG@nodpai
+      - 美国_0512017
+      - _US_美国 10
+      - 美国 081
+      - US 890 → tg@nicevpn123
+      - 中国【付费推荐：https://v1.mk/vip】232
+      - 美国【付费推荐：https://v1.mk/vip】207
+      - 美国【付费推荐：https://v1.mk/vip】194
+      - 美国 073
+      - 日本 009
+      - 美国【付费推荐：https//v1.mk/vip】305
+      - 荷兰【付费推荐：https//v1.mk/vip】241
+      - 美国 095
+      - US(AzadNet.t.me)_344
+      - 日本 010
+      - US(AzadNet.t.me)_224
+      - 美国【付费推荐：https://v1.mk/vip】144
+      - 美国【付费推荐：https//v1.mk/vip】190
+      - 荷兰【付费推荐：https://v1.mk/vip】255
+      - 西班牙【付费推荐：https://v1.mk/vip】181
+      - Germany(ChatGPT) 02...
+      - 印度 001
+      - 美国【付费推荐：https//v1.mk/vip】193
+      - United States(ChatG..._____
+      - 美国【付费推荐：https://v1.mk/vip】201
+      - 美国 087
+      - 美国 096
+      - 美国【付费推荐：https//v1.mk/vip】164
+      - 荷兰【付费推荐：https://v1.mk/vip】222
+      - 美国【付费推荐：https://v1.mk/vip】133
+      - 美国【付费推荐：https://v1.mk/vip】89
+      - 美国_0512830
+      - 美国_0512293
+      - 荷兰【付费推荐：https://v1.mk/vip】226
+      - -美国-108.186.116.178
+      - United States 22 TG...
+      - 美国【付费推荐：https://v1.mk/vip】135
+      - US(AzadNet.t.me)_147
+      - _US_美国 11
+      - 美国【付费推荐：https//v1.mk/vip】165
+      - Taiwan(ChatGPT) 06 ...
+      - 美国_05121105
+      - Relay 🇯🇵 Japan(ChatGPT..._
+      - 美国【付费推荐：https//v1.mk/vip】201
+      - 荷兰【付费推荐：https://v1.mk/vip】206
+      - 美国【付费推荐：https://v1.mk/vip】149
+      - "| 4.77Mb"
+      - 美国_05121057
+      - 荷兰【付费推荐：https://v1.mk/vip】233
+      - 日本【付费推荐：https://v1.mk/vip】287
+      - Taiwan(ChatGPT) 05 ...
+      - Relay 🇺🇸 United States..._
+      - India 01 TG:@SSRSUB
+      - 韩国【付费推荐：https://v1.mk/vip】218
+      - United Arab Emirate...
+      - 新加坡【付费推荐：https://v1.mk/vip】262
+      - 美国【付费推荐：https//v1.mk/vip】183
+      - 印度 003
+      - 美国 074
+      - Japan(ChatGPT) 20 T...
+      - _US_美国 16
+      - Taiwan 07 TG:@nodpai
+      - 美国【付费推荐：https//v1.mk/vip】198
+      - 新加坡【付费推荐：https://v1.mk/vip】260
+      - India(ChatGPT) 03 T...
+      - Taiwan(ChatGPT) 03 ...
+      - US(AzadNet.t.me)_209
+      - 美国【付费推荐：https//v1.mk/vip】194
+      - 日本【付费推荐：https://v1.mk/vip】258
+      - 荷兰【付费推荐：https://v1.mk/vip】217
+      - 美国【付费推荐：https://v1.mk/vip】185
       - 美国【付费推荐：https://v1.mk/vip】231
-      - 美国 071
-      - 美国【付费推荐：https://v1.mk/vip】157
-      - "香港 02（一区）\r"
-      - 香港 1 区 | HK
-      - 香港_0511762
-      - 台湾【付费推荐：https://v1.mk/vip】297
-      - 沙特阿拉伯【付费推荐：https://v1.mk/vip】96
-      - _SG_新加坡
-      - 美国【付费推荐：https://v1.mk/vip】23
-      - 荷兰【付费推荐：https://v1.mk/vip】237
-      - 美国【付费推荐：https://v1.mk/vip】226
-      - 香港【付费推荐：https://v1.mk/vip】262
-      - 罗马尼亚_0511038
-      - 香港_0511156
-      - 卢森堡【付费推荐：https://v1.mk/vip】186
-      - 美国【付费推荐：https://v1.mk/vip】202
-      - -美国-kr-3.vuex.eu.org
-      - 新加坡 016
-      - 香港【付费推荐：https://v1.mk/vip】171
-      - 美国【付费推荐：https://v1.mk/vip】3
-      - 美国 076
+      - US(AzadNet.t.me)_222
+      - Japan(ChatGPT) 06 T...
+      - 日本 013
+      - Singapore(ChatGPT) ...______
+      - 美国【付费推荐：https//v1.mk/vip】211
+      - Brazil(ChatGPT) 01 ...
+      - 美国【付费推荐：https//v1.mk/vip】178
+      - 美国【付费推荐：https://v1.mk/vip】193
+      - 美国 093
+      - 日本【付费推荐：https://v1.mk/vip】282
+      - 日本 012
+      - 日本 011
+      - -美国-142.4.106.243
+      - 美国【付费推荐：https://v1.mk/vip】167
+      - 美国【付费推荐：https//v1.mk/vip】133
+      - 荷兰【付费推荐：https://v1.mk/vip】229
+      - 荷兰【付费推荐：https://v1.mk/vip】234
+      - 越南 001
+      - 日本 017
+      - _US_美国
+      - 中国【付费推荐：https://v1.mk/vip】216
+      - Singapore(ChatGPT) ...____
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -237,232 +513,499 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 001
-      - 日本 059
-      - 二爷翻墙网 https://1808.ga 节点_13
-      - 美国 042
-      - 澳大利亚 002
-      - 美国 078
-      - _CN_中国->🇧🇷_BR_巴西_1
-      - JP 49 → tg@nicevpn123
-      - 澳大利亚_0511001
-      - 中国【付费推荐：https://v1.mk/vip】135
-      - _US_美国 6
-      - _CR_哥斯达黎加->🇺🇸_US_美国
-      - 美国 075
-      - 香港HKT|@ripaojiedian
-      - 美国【付费推荐：https://v1.mk/vip】6
-      - _TW_台湾
-      - 中国【付费推荐：https://v1.mk/vip】148
-      - South Africa 01 TG:...
-      - 美国【付费推荐：https://v1.mk/vip】334
-      - _US_美国____
-      - 4Iran-491
-      - _AU_澳大利亚
-      - 美国 34
-      - US_youtube@资源分享师_77
-      - United States(ChatG...
-      - 二爷翻墙网 https://1808.ga 节点_6
-      - 荷兰【付费推荐：https://v1.mk/vip】223
+      - 日本 014
+      - 美国【付费推荐：https://v1.mk/vip】184
+      - US(AzadNet.t.me)_240
+      - 美国【付费推荐：https//v1.mk/vip】191
+      - 荷兰【付费推荐：https://v1.mk/vip】245
+      - 荷兰【付费推荐：https//v1.mk/vip】239
+      - 美国【付费推荐：https://v1.mk/vip】24
+      - 美国【付费推荐：https//v1.mk/vip】89
+      - 美国【付费推荐：https//v1.mk/vip】185
+      - 日本【付费推荐：https://v1.mk/vip】214
+      - 美国_0512501
+      - 美国【付费推荐：https://v1.mk/vip】211
+      - 美国【付费推荐：https//v1.mk/vip】184
+      - 日本 024
+      - 美国【付费推荐：https://v1.mk/vip】170
+      - 美国【付费推荐：https://v1.mk/vip】191
+      - 中国【付费推荐：https://v1.mk/vip】209
+      - 美国【付费推荐：https://v1.mk/vip】183
+      - 荷兰【付费推荐：https://v1.mk/vip】221
+      - 美国【付费推荐：https://v1.mk/vip】142
+      - 美国【付费推荐：https://v1.mk/vip】146
+      - 中国【付费推荐：https://v1.mk/vip】237
+      - 荷兰【付费推荐：https://v1.mk/vip】241
+      - 美国【付费推荐：https://v1.mk/vip】190
+      - Japan 16 TG@nodpai
+      - 美国_0512017
+      - _US_美国 10
+      - 美国 081
+      - US 890 → tg@nicevpn123
+      - 中国【付费推荐：https://v1.mk/vip】232
+      - 美国【付费推荐：https://v1.mk/vip】207
+      - 美国【付费推荐：https://v1.mk/vip】194
+      - 美国 073
+      - 日本 009
+      - 美国【付费推荐：https//v1.mk/vip】305
+      - 荷兰【付费推荐：https//v1.mk/vip】241
+      - 美国 095
+      - US(AzadNet.t.me)_344
+      - 日本 010
+      - US(AzadNet.t.me)_224
+      - 美国【付费推荐：https://v1.mk/vip】144
+      - 美国【付费推荐：https//v1.mk/vip】190
+      - 荷兰【付费推荐：https://v1.mk/vip】255
+      - 西班牙【付费推荐：https://v1.mk/vip】181
+      - Germany(ChatGPT) 02...
+      - 印度 001
+      - 美国【付费推荐：https//v1.mk/vip】193
+      - United States(ChatG..._____
+      - 美国【付费推荐：https://v1.mk/vip】201
+      - 美国 087
+      - 美国 096
+      - 美国【付费推荐：https//v1.mk/vip】164
+      - 荷兰【付费推荐：https://v1.mk/vip】222
+      - 美国【付费推荐：https://v1.mk/vip】133
+      - 美国【付费推荐：https://v1.mk/vip】89
+      - 美国_0512830
+      - 美国_0512293
+      - 荷兰【付费推荐：https://v1.mk/vip】226
+      - -美国-108.186.116.178
+      - United States 22 TG...
+      - 美国【付费推荐：https://v1.mk/vip】135
+      - US(AzadNet.t.me)_147
+      - _US_美国 11
+      - 美国【付费推荐：https//v1.mk/vip】165
+      - Taiwan(ChatGPT) 06 ...
+      - 美国_05121105
+      - Relay 🇯🇵 Japan(ChatGPT..._
+      - 美国【付费推荐：https//v1.mk/vip】201
+      - 荷兰【付费推荐：https://v1.mk/vip】206
+      - 美国【付费推荐：https://v1.mk/vip】149
+      - "| 4.77Mb"
+      - 美国_05121057
+      - 荷兰【付费推荐：https://v1.mk/vip】233
+      - 日本【付费推荐：https://v1.mk/vip】287
+      - Taiwan(ChatGPT) 05 ...
+      - Relay 🇺🇸 United States..._
+      - India 01 TG:@SSRSUB
+      - 韩国【付费推荐：https://v1.mk/vip】218
+      - United Arab Emirate...
+      - 新加坡【付费推荐：https://v1.mk/vip】262
+      - 美国【付费推荐：https//v1.mk/vip】183
+      - 印度 003
+      - 美国 074
+      - Japan(ChatGPT) 20 T...
+      - _US_美国 16
+      - Taiwan 07 TG:@nodpai
+      - 美国【付费推荐：https//v1.mk/vip】198
+      - 新加坡【付费推荐：https://v1.mk/vip】260
+      - India(ChatGPT) 03 T...
+      - Taiwan(ChatGPT) 03 ...
+      - US(AzadNet.t.me)_209
+      - 美国【付费推荐：https//v1.mk/vip】194
+      - 日本【付费推荐：https://v1.mk/vip】258
+      - 荷兰【付费推荐：https://v1.mk/vip】217
+      - 美国【付费推荐：https://v1.mk/vip】185
       - 美国【付费推荐：https://v1.mk/vip】231
-      - 美国 071
-      - 美国【付费推荐：https://v1.mk/vip】157
-      - "香港 02（一区）\r"
-      - 香港 1 区 | HK
-      - 香港_0511762
-      - 台湾【付费推荐：https://v1.mk/vip】297
-      - 沙特阿拉伯【付费推荐：https://v1.mk/vip】96
-      - _SG_新加坡
-      - 美国【付费推荐：https://v1.mk/vip】23
-      - 荷兰【付费推荐：https://v1.mk/vip】237
-      - 美国【付费推荐：https://v1.mk/vip】226
-      - 香港【付费推荐：https://v1.mk/vip】262
-      - 罗马尼亚_0511038
-      - 香港_0511156
-      - 卢森堡【付费推荐：https://v1.mk/vip】186
-      - 美国【付费推荐：https://v1.mk/vip】202
-      - -美国-kr-3.vuex.eu.org
-      - 新加坡 016
-      - 香港【付费推荐：https://v1.mk/vip】171
-      - 美国【付费推荐：https://v1.mk/vip】3
-      - 美国 076
+      - US(AzadNet.t.me)_222
+      - Japan(ChatGPT) 06 T...
+      - 日本 013
+      - Singapore(ChatGPT) ...______
+      - 美国【付费推荐：https//v1.mk/vip】211
+      - Brazil(ChatGPT) 01 ...
+      - 美国【付费推荐：https//v1.mk/vip】178
+      - 美国【付费推荐：https://v1.mk/vip】193
+      - 美国 093
+      - 日本【付费推荐：https://v1.mk/vip】282
+      - 日本 012
+      - 日本 011
+      - -美国-142.4.106.243
+      - 美国【付费推荐：https://v1.mk/vip】167
+      - 美国【付费推荐：https//v1.mk/vip】133
+      - 荷兰【付费推荐：https://v1.mk/vip】229
+      - 荷兰【付费推荐：https://v1.mk/vip】234
+      - 越南 001
+      - 日本 017
+      - _US_美国
+      - 中国【付费推荐：https://v1.mk/vip】216
+      - Singapore(ChatGPT) ...____
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港HKT|@ripaojiedian
-      - _TW_台湾
-      - "香港 02（一区）\r"
-      - 香港 1 区 | HK
-      - 香港_0511762
-      - 台湾【付费推荐：https://v1.mk/vip】297
-      - 香港【付费推荐：https://v1.mk/vip】262
-      - 香港_0511156
-      - 香港【付费推荐：https://v1.mk/vip】171
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡 001
-      - 日本 059
-      - 二爷翻墙网 https://1808.ga 节点_13
-      - 美国 042
-      - 澳大利亚 002
-      - 美国 078
-      - _CN_中国->🇧🇷_BR_巴西_1
-      - JP 49 → tg@nicevpn123
-      - 澳大利亚_0511001
-      - 中国【付费推荐：https://v1.mk/vip】135
-      - _US_美国 6
-      - _CR_哥斯达黎加->🇺🇸_US_美国
-      - 美国 075
-      - 香港HKT|@ripaojiedian
-      - 美国【付费推荐：https://v1.mk/vip】6
-      - _TW_台湾
-      - 中国【付费推荐：https://v1.mk/vip】148
-      - South Africa 01 TG:...
-      - 美国【付费推荐：https://v1.mk/vip】334
-      - _US_美国____
-      - 4Iran-491
-      - _AU_澳大利亚
-      - 美国 34
-      - US_youtube@资源分享师_77
-      - United States(ChatG...
-      - 二爷翻墙网 https://1808.ga 节点_6
-      - 荷兰【付费推荐：https://v1.mk/vip】223
+      - 日本 014
+      - 美国【付费推荐：https://v1.mk/vip】184
+      - US(AzadNet.t.me)_240
+      - 美国【付费推荐：https//v1.mk/vip】191
+      - 荷兰【付费推荐：https://v1.mk/vip】245
+      - 荷兰【付费推荐：https//v1.mk/vip】239
+      - 美国【付费推荐：https://v1.mk/vip】24
+      - 美国【付费推荐：https//v1.mk/vip】89
+      - 美国【付费推荐：https//v1.mk/vip】185
+      - 日本【付费推荐：https://v1.mk/vip】214
+      - 美国_0512501
+      - 美国【付费推荐：https://v1.mk/vip】211
+      - 美国【付费推荐：https//v1.mk/vip】184
+      - 日本 024
+      - 美国【付费推荐：https://v1.mk/vip】170
+      - 美国【付费推荐：https://v1.mk/vip】191
+      - 中国【付费推荐：https://v1.mk/vip】209
+      - 美国【付费推荐：https://v1.mk/vip】183
+      - 荷兰【付费推荐：https://v1.mk/vip】221
+      - 美国【付费推荐：https://v1.mk/vip】142
+      - 美国【付费推荐：https://v1.mk/vip】146
+      - 中国【付费推荐：https://v1.mk/vip】237
+      - 荷兰【付费推荐：https://v1.mk/vip】241
+      - 美国【付费推荐：https://v1.mk/vip】190
+      - Japan 16 TG@nodpai
+      - 美国_0512017
+      - _US_美国 10
+      - 美国 081
+      - US 890 → tg@nicevpn123
+      - 中国【付费推荐：https://v1.mk/vip】232
+      - 美国【付费推荐：https://v1.mk/vip】207
+      - 美国【付费推荐：https://v1.mk/vip】194
+      - 美国 073
+      - 日本 009
+      - 美国【付费推荐：https//v1.mk/vip】305
+      - 荷兰【付费推荐：https//v1.mk/vip】241
+      - 美国 095
+      - US(AzadNet.t.me)_344
+      - 日本 010
+      - US(AzadNet.t.me)_224
+      - 美国【付费推荐：https://v1.mk/vip】144
+      - 美国【付费推荐：https//v1.mk/vip】190
+      - 荷兰【付费推荐：https://v1.mk/vip】255
+      - 西班牙【付费推荐：https://v1.mk/vip】181
+      - Germany(ChatGPT) 02...
+      - 印度 001
+      - 美国【付费推荐：https//v1.mk/vip】193
+      - United States(ChatG..._____
+      - 美国【付费推荐：https://v1.mk/vip】201
+      - 美国 087
+      - 美国 096
+      - 美国【付费推荐：https//v1.mk/vip】164
+      - 荷兰【付费推荐：https://v1.mk/vip】222
+      - 美国【付费推荐：https://v1.mk/vip】133
+      - 美国【付费推荐：https://v1.mk/vip】89
+      - 美国_0512830
+      - 美国_0512293
+      - 荷兰【付费推荐：https://v1.mk/vip】226
+      - -美国-108.186.116.178
+      - United States 22 TG...
+      - 美国【付费推荐：https://v1.mk/vip】135
+      - US(AzadNet.t.me)_147
+      - _US_美国 11
+      - 美国【付费推荐：https//v1.mk/vip】165
+      - Taiwan(ChatGPT) 06 ...
+      - 美国_05121105
+      - Relay 🇯🇵 Japan(ChatGPT..._
+      - 美国【付费推荐：https//v1.mk/vip】201
+      - 荷兰【付费推荐：https://v1.mk/vip】206
+      - 美国【付费推荐：https://v1.mk/vip】149
+      - "| 4.77Mb"
+      - 美国_05121057
+      - 荷兰【付费推荐：https://v1.mk/vip】233
+      - 日本【付费推荐：https://v1.mk/vip】287
+      - Taiwan(ChatGPT) 05 ...
+      - Relay 🇺🇸 United States..._
+      - India 01 TG:@SSRSUB
+      - 韩国【付费推荐：https://v1.mk/vip】218
+      - United Arab Emirate...
+      - 新加坡【付费推荐：https://v1.mk/vip】262
+      - 美国【付费推荐：https//v1.mk/vip】183
+      - 印度 003
+      - 美国 074
+      - Japan(ChatGPT) 20 T...
+      - _US_美国 16
+      - Taiwan 07 TG:@nodpai
+      - 美国【付费推荐：https//v1.mk/vip】198
+      - 新加坡【付费推荐：https://v1.mk/vip】260
+      - India(ChatGPT) 03 T...
+      - Taiwan(ChatGPT) 03 ...
+      - US(AzadNet.t.me)_209
+      - 美国【付费推荐：https//v1.mk/vip】194
+      - 日本【付费推荐：https://v1.mk/vip】258
+      - 荷兰【付费推荐：https://v1.mk/vip】217
+      - 美国【付费推荐：https://v1.mk/vip】185
       - 美国【付费推荐：https://v1.mk/vip】231
-      - 美国 071
-      - 美国【付费推荐：https://v1.mk/vip】157
-      - "香港 02（一区）\r"
-      - 香港 1 区 | HK
-      - 香港_0511762
-      - 台湾【付费推荐：https://v1.mk/vip】297
-      - 沙特阿拉伯【付费推荐：https://v1.mk/vip】96
-      - _SG_新加坡
-      - 美国【付费推荐：https://v1.mk/vip】23
-      - 荷兰【付费推荐：https://v1.mk/vip】237
-      - 美国【付费推荐：https://v1.mk/vip】226
-      - 香港【付费推荐：https://v1.mk/vip】262
-      - 罗马尼亚_0511038
-      - 香港_0511156
-      - 卢森堡【付费推荐：https://v1.mk/vip】186
-      - 美国【付费推荐：https://v1.mk/vip】202
-      - -美国-kr-3.vuex.eu.org
-      - 新加坡 016
-      - 香港【付费推荐：https://v1.mk/vip】171
-      - 美国【付费推荐：https://v1.mk/vip】3
-      - 美国 076
+      - US(AzadNet.t.me)_222
+      - Japan(ChatGPT) 06 T...
+      - 日本 013
+      - Singapore(ChatGPT) ...______
+      - 美国【付费推荐：https//v1.mk/vip】211
+      - Brazil(ChatGPT) 01 ...
+      - 美国【付费推荐：https//v1.mk/vip】178
+      - 美国【付费推荐：https://v1.mk/vip】193
+      - 美国 093
+      - 日本【付费推荐：https://v1.mk/vip】282
+      - 日本 012
+      - 日本 011
+      - -美国-142.4.106.243
+      - 美国【付费推荐：https://v1.mk/vip】167
+      - 美国【付费推荐：https//v1.mk/vip】133
+      - 荷兰【付费推荐：https://v1.mk/vip】229
+      - 荷兰【付费推荐：https://v1.mk/vip】234
+      - 越南 001
+      - 日本 017
+      - _US_美国
+      - 中国【付费推荐：https://v1.mk/vip】216
+      - Singapore(ChatGPT) ...____
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡 001
-      - 日本 059
-      - 二爷翻墙网 https://1808.ga 节点_13
-      - 美国 042
-      - 澳大利亚 002
-      - 美国 078
-      - _CN_中国->🇧🇷_BR_巴西_1
-      - JP 49 → tg@nicevpn123
-      - 澳大利亚_0511001
-      - 中国【付费推荐：https://v1.mk/vip】135
-      - _US_美国 6
-      - _CR_哥斯达黎加->🇺🇸_US_美国
-      - 美国 075
-      - 香港HKT|@ripaojiedian
-      - 美国【付费推荐：https://v1.mk/vip】6
-      - _TW_台湾
-      - 中国【付费推荐：https://v1.mk/vip】148
-      - South Africa 01 TG:...
-      - 美国【付费推荐：https://v1.mk/vip】334
-      - _US_美国____
-      - 4Iran-491
-      - _AU_澳大利亚
-      - 美国 34
-      - US_youtube@资源分享师_77
-      - United States(ChatG...
-      - 二爷翻墙网 https://1808.ga 节点_6
-      - 荷兰【付费推荐：https://v1.mk/vip】223
+      - 日本 014
+      - 美国【付费推荐：https://v1.mk/vip】184
+      - US(AzadNet.t.me)_240
+      - 美国【付费推荐：https//v1.mk/vip】191
+      - 荷兰【付费推荐：https://v1.mk/vip】245
+      - 荷兰【付费推荐：https//v1.mk/vip】239
+      - 美国【付费推荐：https://v1.mk/vip】24
+      - 美国【付费推荐：https//v1.mk/vip】89
+      - 美国【付费推荐：https//v1.mk/vip】185
+      - 日本【付费推荐：https://v1.mk/vip】214
+      - 美国_0512501
+      - 美国【付费推荐：https://v1.mk/vip】211
+      - 美国【付费推荐：https//v1.mk/vip】184
+      - 日本 024
+      - 美国【付费推荐：https://v1.mk/vip】170
+      - 美国【付费推荐：https://v1.mk/vip】191
+      - 中国【付费推荐：https://v1.mk/vip】209
+      - 美国【付费推荐：https://v1.mk/vip】183
+      - 荷兰【付费推荐：https://v1.mk/vip】221
+      - 美国【付费推荐：https://v1.mk/vip】142
+      - 美国【付费推荐：https://v1.mk/vip】146
+      - 中国【付费推荐：https://v1.mk/vip】237
+      - 荷兰【付费推荐：https://v1.mk/vip】241
+      - 美国【付费推荐：https://v1.mk/vip】190
+      - Japan 16 TG@nodpai
+      - 美国_0512017
+      - _US_美国 10
+      - 美国 081
+      - US 890 → tg@nicevpn123
+      - 中国【付费推荐：https://v1.mk/vip】232
+      - 美国【付费推荐：https://v1.mk/vip】207
+      - 美国【付费推荐：https://v1.mk/vip】194
+      - 美国 073
+      - 日本 009
+      - 美国【付费推荐：https//v1.mk/vip】305
+      - 荷兰【付费推荐：https//v1.mk/vip】241
+      - 美国 095
+      - US(AzadNet.t.me)_344
+      - 日本 010
+      - US(AzadNet.t.me)_224
+      - 美国【付费推荐：https://v1.mk/vip】144
+      - 美国【付费推荐：https//v1.mk/vip】190
+      - 荷兰【付费推荐：https://v1.mk/vip】255
+      - 西班牙【付费推荐：https://v1.mk/vip】181
+      - Germany(ChatGPT) 02...
+      - 印度 001
+      - 美国【付费推荐：https//v1.mk/vip】193
+      - United States(ChatG..._____
+      - 美国【付费推荐：https://v1.mk/vip】201
+      - 美国 087
+      - 美国 096
+      - 美国【付费推荐：https//v1.mk/vip】164
+      - 荷兰【付费推荐：https://v1.mk/vip】222
+      - 美国【付费推荐：https://v1.mk/vip】133
+      - 美国【付费推荐：https://v1.mk/vip】89
+      - 美国_0512830
+      - 美国_0512293
+      - 荷兰【付费推荐：https://v1.mk/vip】226
+      - -美国-108.186.116.178
+      - United States 22 TG...
+      - 美国【付费推荐：https://v1.mk/vip】135
+      - US(AzadNet.t.me)_147
+      - _US_美国 11
+      - 美国【付费推荐：https//v1.mk/vip】165
+      - Taiwan(ChatGPT) 06 ...
+      - 美国_05121105
+      - Relay 🇯🇵 Japan(ChatGPT..._
+      - 美国【付费推荐：https//v1.mk/vip】201
+      - 荷兰【付费推荐：https://v1.mk/vip】206
+      - 美国【付费推荐：https://v1.mk/vip】149
+      - "| 4.77Mb"
+      - 美国_05121057
+      - 荷兰【付费推荐：https://v1.mk/vip】233
+      - 日本【付费推荐：https://v1.mk/vip】287
+      - Taiwan(ChatGPT) 05 ...
+      - Relay 🇺🇸 United States..._
+      - India 01 TG:@SSRSUB
+      - 韩国【付费推荐：https://v1.mk/vip】218
+      - United Arab Emirate...
+      - 新加坡【付费推荐：https://v1.mk/vip】262
+      - 美国【付费推荐：https//v1.mk/vip】183
+      - 印度 003
+      - 美国 074
+      - Japan(ChatGPT) 20 T...
+      - _US_美国 16
+      - Taiwan 07 TG:@nodpai
+      - 美国【付费推荐：https//v1.mk/vip】198
+      - 新加坡【付费推荐：https://v1.mk/vip】260
+      - India(ChatGPT) 03 T...
+      - Taiwan(ChatGPT) 03 ...
+      - US(AzadNet.t.me)_209
+      - 美国【付费推荐：https//v1.mk/vip】194
+      - 日本【付费推荐：https://v1.mk/vip】258
+      - 荷兰【付费推荐：https://v1.mk/vip】217
+      - 美国【付费推荐：https://v1.mk/vip】185
       - 美国【付费推荐：https://v1.mk/vip】231
-      - 美国 071
-      - 美国【付费推荐：https://v1.mk/vip】157
-      - "香港 02（一区）\r"
-      - 香港 1 区 | HK
-      - 香港_0511762
-      - 台湾【付费推荐：https://v1.mk/vip】297
-      - 沙特阿拉伯【付费推荐：https://v1.mk/vip】96
-      - _SG_新加坡
-      - 美国【付费推荐：https://v1.mk/vip】23
-      - 荷兰【付费推荐：https://v1.mk/vip】237
-      - 美国【付费推荐：https://v1.mk/vip】226
-      - 香港【付费推荐：https://v1.mk/vip】262
-      - 罗马尼亚_0511038
-      - 香港_0511156
-      - 卢森堡【付费推荐：https://v1.mk/vip】186
-      - 美国【付费推荐：https://v1.mk/vip】202
-      - -美国-kr-3.vuex.eu.org
-      - 新加坡 016
-      - 香港【付费推荐：https://v1.mk/vip】171
-      - 美国【付费推荐：https://v1.mk/vip】3
-      - 美国 076
+      - US(AzadNet.t.me)_222
+      - Japan(ChatGPT) 06 T...
+      - 日本 013
+      - Singapore(ChatGPT) ...______
+      - 美国【付费推荐：https//v1.mk/vip】211
+      - Brazil(ChatGPT) 01 ...
+      - 美国【付费推荐：https//v1.mk/vip】178
+      - 美国【付费推荐：https://v1.mk/vip】193
+      - 美国 093
+      - 日本【付费推荐：https://v1.mk/vip】282
+      - 日本 012
+      - 日本 011
+      - -美国-142.4.106.243
+      - 美国【付费推荐：https://v1.mk/vip】167
+      - 美国【付费推荐：https//v1.mk/vip】133
+      - 荷兰【付费推荐：https://v1.mk/vip】229
+      - 荷兰【付费推荐：https://v1.mk/vip】234
+      - 越南 001
+      - 日本 017
+      - _US_美国
+      - 中国【付费推荐：https://v1.mk/vip】216
+      - Singapore(ChatGPT) ...____
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 001
-      - 日本 059
-      - 二爷翻墙网 https://1808.ga 节点_13
-      - 美国 042
-      - 澳大利亚 002
-      - 美国 078
-      - _CN_中国->🇧🇷_BR_巴西_1
-      - JP 49 → tg@nicevpn123
-      - 澳大利亚_0511001
-      - 中国【付费推荐：https://v1.mk/vip】135
-      - _US_美国 6
-      - _CR_哥斯达黎加->🇺🇸_US_美国
-      - 美国 075
-      - 香港HKT|@ripaojiedian
-      - 美国【付费推荐：https://v1.mk/vip】6
-      - _TW_台湾
-      - 中国【付费推荐：https://v1.mk/vip】148
-      - South Africa 01 TG:...
-      - 美国【付费推荐：https://v1.mk/vip】334
-      - _US_美国____
-      - 4Iran-491
-      - _AU_澳大利亚
-      - 美国 34
-      - US_youtube@资源分享师_77
-      - United States(ChatG...
-      - 二爷翻墙网 https://1808.ga 节点_6
-      - 荷兰【付费推荐：https://v1.mk/vip】223
+      - 日本 014
+      - 美国【付费推荐：https://v1.mk/vip】184
+      - US(AzadNet.t.me)_240
+      - 美国【付费推荐：https//v1.mk/vip】191
+      - 荷兰【付费推荐：https://v1.mk/vip】245
+      - 荷兰【付费推荐：https//v1.mk/vip】239
+      - 美国【付费推荐：https://v1.mk/vip】24
+      - 美国【付费推荐：https//v1.mk/vip】89
+      - 美国【付费推荐：https//v1.mk/vip】185
+      - 日本【付费推荐：https://v1.mk/vip】214
+      - 美国_0512501
+      - 美国【付费推荐：https://v1.mk/vip】211
+      - 美国【付费推荐：https//v1.mk/vip】184
+      - 日本 024
+      - 美国【付费推荐：https://v1.mk/vip】170
+      - 美国【付费推荐：https://v1.mk/vip】191
+      - 中国【付费推荐：https://v1.mk/vip】209
+      - 美国【付费推荐：https://v1.mk/vip】183
+      - 荷兰【付费推荐：https://v1.mk/vip】221
+      - 美国【付费推荐：https://v1.mk/vip】142
+      - 美国【付费推荐：https://v1.mk/vip】146
+      - 中国【付费推荐：https://v1.mk/vip】237
+      - 荷兰【付费推荐：https://v1.mk/vip】241
+      - 美国【付费推荐：https://v1.mk/vip】190
+      - Japan 16 TG@nodpai
+      - 美国_0512017
+      - _US_美国 10
+      - 美国 081
+      - US 890 → tg@nicevpn123
+      - 中国【付费推荐：https://v1.mk/vip】232
+      - 美国【付费推荐：https://v1.mk/vip】207
+      - 美国【付费推荐：https://v1.mk/vip】194
+      - 美国 073
+      - 日本 009
+      - 美国【付费推荐：https//v1.mk/vip】305
+      - 荷兰【付费推荐：https//v1.mk/vip】241
+      - 美国 095
+      - US(AzadNet.t.me)_344
+      - 日本 010
+      - US(AzadNet.t.me)_224
+      - 美国【付费推荐：https://v1.mk/vip】144
+      - 美国【付费推荐：https//v1.mk/vip】190
+      - 荷兰【付费推荐：https://v1.mk/vip】255
+      - 西班牙【付费推荐：https://v1.mk/vip】181
+      - Germany(ChatGPT) 02...
+      - 印度 001
+      - 美国【付费推荐：https//v1.mk/vip】193
+      - United States(ChatG..._____
+      - 美国【付费推荐：https://v1.mk/vip】201
+      - 美国 087
+      - 美国 096
+      - 美国【付费推荐：https//v1.mk/vip】164
+      - 荷兰【付费推荐：https://v1.mk/vip】222
+      - 美国【付费推荐：https://v1.mk/vip】133
+      - 美国【付费推荐：https://v1.mk/vip】89
+      - 美国_0512830
+      - 美国_0512293
+      - 荷兰【付费推荐：https://v1.mk/vip】226
+      - -美国-108.186.116.178
+      - United States 22 TG...
+      - 美国【付费推荐：https://v1.mk/vip】135
+      - US(AzadNet.t.me)_147
+      - _US_美国 11
+      - 美国【付费推荐：https//v1.mk/vip】165
+      - Taiwan(ChatGPT) 06 ...
+      - 美国_05121105
+      - Relay 🇯🇵 Japan(ChatGPT..._
+      - 美国【付费推荐：https//v1.mk/vip】201
+      - 荷兰【付费推荐：https://v1.mk/vip】206
+      - 美国【付费推荐：https://v1.mk/vip】149
+      - "| 4.77Mb"
+      - 美国_05121057
+      - 荷兰【付费推荐：https://v1.mk/vip】233
+      - 日本【付费推荐：https://v1.mk/vip】287
+      - Taiwan(ChatGPT) 05 ...
+      - Relay 🇺🇸 United States..._
+      - India 01 TG:@SSRSUB
+      - 韩国【付费推荐：https://v1.mk/vip】218
+      - United Arab Emirate...
+      - 新加坡【付费推荐：https://v1.mk/vip】262
+      - 美国【付费推荐：https//v1.mk/vip】183
+      - 印度 003
+      - 美国 074
+      - Japan(ChatGPT) 20 T...
+      - _US_美国 16
+      - Taiwan 07 TG:@nodpai
+      - 美国【付费推荐：https//v1.mk/vip】198
+      - 新加坡【付费推荐：https://v1.mk/vip】260
+      - India(ChatGPT) 03 T...
+      - Taiwan(ChatGPT) 03 ...
+      - US(AzadNet.t.me)_209
+      - 美国【付费推荐：https//v1.mk/vip】194
+      - 日本【付费推荐：https://v1.mk/vip】258
+      - 荷兰【付费推荐：https://v1.mk/vip】217
+      - 美国【付费推荐：https://v1.mk/vip】185
       - 美国【付费推荐：https://v1.mk/vip】231
-      - 美国 071
-      - 美国【付费推荐：https://v1.mk/vip】157
-      - "香港 02（一区）\r"
-      - 香港 1 区 | HK
-      - 香港_0511762
-      - 台湾【付费推荐：https://v1.mk/vip】297
-      - 沙特阿拉伯【付费推荐：https://v1.mk/vip】96
-      - _SG_新加坡
-      - 美国【付费推荐：https://v1.mk/vip】23
-      - 荷兰【付费推荐：https://v1.mk/vip】237
-      - 美国【付费推荐：https://v1.mk/vip】226
-      - 香港【付费推荐：https://v1.mk/vip】262
-      - 罗马尼亚_0511038
-      - 香港_0511156
-      - 卢森堡【付费推荐：https://v1.mk/vip】186
-      - 美国【付费推荐：https://v1.mk/vip】202
-      - -美国-kr-3.vuex.eu.org
-      - 新加坡 016
-      - 香港【付费推荐：https://v1.mk/vip】171
-      - 美国【付费推荐：https://v1.mk/vip】3
-      - 美国 076
+      - US(AzadNet.t.me)_222
+      - Japan(ChatGPT) 06 T...
+      - 日本 013
+      - Singapore(ChatGPT) ...______
+      - 美国【付费推荐：https//v1.mk/vip】211
+      - Brazil(ChatGPT) 01 ...
+      - 美国【付费推荐：https//v1.mk/vip】178
+      - 美国【付费推荐：https://v1.mk/vip】193
+      - 美国 093
+      - 日本【付费推荐：https://v1.mk/vip】282
+      - 日本 012
+      - 日本 011
+      - -美国-142.4.106.243
+      - 美国【付费推荐：https://v1.mk/vip】167
+      - 美国【付费推荐：https//v1.mk/vip】133
+      - 荷兰【付费推荐：https://v1.mk/vip】229
+      - 荷兰【付费推荐：https://v1.mk/vip】234
+      - 越南 001
+      - 日本 017
+      - _US_美国
+      - 中国【付费推荐：https://v1.mk/vip】216
+      - Singapore(ChatGPT) ...____
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -478,55 +1021,124 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 001
-      - 日本 059
-      - 二爷翻墙网 https://1808.ga 节点_13
-      - 美国 042
-      - 澳大利亚 002
-      - 美国 078
-      - _CN_中国->🇧🇷_BR_巴西_1
-      - JP 49 → tg@nicevpn123
-      - 澳大利亚_0511001
-      - 中国【付费推荐：https://v1.mk/vip】135
-      - _US_美国 6
-      - _CR_哥斯达黎加->🇺🇸_US_美国
-      - 美国 075
-      - 香港HKT|@ripaojiedian
-      - 美国【付费推荐：https://v1.mk/vip】6
-      - _TW_台湾
-      - 中国【付费推荐：https://v1.mk/vip】148
-      - South Africa 01 TG:...
-      - 美国【付费推荐：https://v1.mk/vip】334
-      - _US_美国____
-      - 4Iran-491
-      - _AU_澳大利亚
-      - 美国 34
-      - US_youtube@资源分享师_77
-      - United States(ChatG...
-      - 二爷翻墙网 https://1808.ga 节点_6
-      - 荷兰【付费推荐：https://v1.mk/vip】223
+      - 日本 014
+      - 美国【付费推荐：https://v1.mk/vip】184
+      - US(AzadNet.t.me)_240
+      - 美国【付费推荐：https//v1.mk/vip】191
+      - 荷兰【付费推荐：https://v1.mk/vip】245
+      - 荷兰【付费推荐：https//v1.mk/vip】239
+      - 美国【付费推荐：https://v1.mk/vip】24
+      - 美国【付费推荐：https//v1.mk/vip】89
+      - 美国【付费推荐：https//v1.mk/vip】185
+      - 日本【付费推荐：https://v1.mk/vip】214
+      - 美国_0512501
+      - 美国【付费推荐：https://v1.mk/vip】211
+      - 美国【付费推荐：https//v1.mk/vip】184
+      - 日本 024
+      - 美国【付费推荐：https://v1.mk/vip】170
+      - 美国【付费推荐：https://v1.mk/vip】191
+      - 中国【付费推荐：https://v1.mk/vip】209
+      - 美国【付费推荐：https://v1.mk/vip】183
+      - 荷兰【付费推荐：https://v1.mk/vip】221
+      - 美国【付费推荐：https://v1.mk/vip】142
+      - 美国【付费推荐：https://v1.mk/vip】146
+      - 中国【付费推荐：https://v1.mk/vip】237
+      - 荷兰【付费推荐：https://v1.mk/vip】241
+      - 美国【付费推荐：https://v1.mk/vip】190
+      - Japan 16 TG@nodpai
+      - 美国_0512017
+      - _US_美国 10
+      - 美国 081
+      - US 890 → tg@nicevpn123
+      - 中国【付费推荐：https://v1.mk/vip】232
+      - 美国【付费推荐：https://v1.mk/vip】207
+      - 美国【付费推荐：https://v1.mk/vip】194
+      - 美国 073
+      - 日本 009
+      - 美国【付费推荐：https//v1.mk/vip】305
+      - 荷兰【付费推荐：https//v1.mk/vip】241
+      - 美国 095
+      - US(AzadNet.t.me)_344
+      - 日本 010
+      - US(AzadNet.t.me)_224
+      - 美国【付费推荐：https://v1.mk/vip】144
+      - 美国【付费推荐：https//v1.mk/vip】190
+      - 荷兰【付费推荐：https://v1.mk/vip】255
+      - 西班牙【付费推荐：https://v1.mk/vip】181
+      - Germany(ChatGPT) 02...
+      - 印度 001
+      - 美国【付费推荐：https//v1.mk/vip】193
+      - United States(ChatG..._____
+      - 美国【付费推荐：https://v1.mk/vip】201
+      - 美国 087
+      - 美国 096
+      - 美国【付费推荐：https//v1.mk/vip】164
+      - 荷兰【付费推荐：https://v1.mk/vip】222
+      - 美国【付费推荐：https://v1.mk/vip】133
+      - 美国【付费推荐：https://v1.mk/vip】89
+      - 美国_0512830
+      - 美国_0512293
+      - 荷兰【付费推荐：https://v1.mk/vip】226
+      - -美国-108.186.116.178
+      - United States 22 TG...
+      - 美国【付费推荐：https://v1.mk/vip】135
+      - US(AzadNet.t.me)_147
+      - _US_美国 11
+      - 美国【付费推荐：https//v1.mk/vip】165
+      - Taiwan(ChatGPT) 06 ...
+      - 美国_05121105
+      - Relay 🇯🇵 Japan(ChatGPT..._
+      - 美国【付费推荐：https//v1.mk/vip】201
+      - 荷兰【付费推荐：https://v1.mk/vip】206
+      - 美国【付费推荐：https://v1.mk/vip】149
+      - "| 4.77Mb"
+      - 美国_05121057
+      - 荷兰【付费推荐：https://v1.mk/vip】233
+      - 日本【付费推荐：https://v1.mk/vip】287
+      - Taiwan(ChatGPT) 05 ...
+      - Relay 🇺🇸 United States..._
+      - India 01 TG:@SSRSUB
+      - 韩国【付费推荐：https://v1.mk/vip】218
+      - United Arab Emirate...
+      - 新加坡【付费推荐：https://v1.mk/vip】262
+      - 美国【付费推荐：https//v1.mk/vip】183
+      - 印度 003
+      - 美国 074
+      - Japan(ChatGPT) 20 T...
+      - _US_美国 16
+      - Taiwan 07 TG:@nodpai
+      - 美国【付费推荐：https//v1.mk/vip】198
+      - 新加坡【付费推荐：https://v1.mk/vip】260
+      - India(ChatGPT) 03 T...
+      - Taiwan(ChatGPT) 03 ...
+      - US(AzadNet.t.me)_209
+      - 美国【付费推荐：https//v1.mk/vip】194
+      - 日本【付费推荐：https://v1.mk/vip】258
+      - 荷兰【付费推荐：https://v1.mk/vip】217
+      - 美国【付费推荐：https://v1.mk/vip】185
       - 美国【付费推荐：https://v1.mk/vip】231
-      - 美国 071
-      - 美国【付费推荐：https://v1.mk/vip】157
-      - "香港 02（一区）\r"
-      - 香港 1 区 | HK
-      - 香港_0511762
-      - 台湾【付费推荐：https://v1.mk/vip】297
-      - 沙特阿拉伯【付费推荐：https://v1.mk/vip】96
-      - _SG_新加坡
-      - 美国【付费推荐：https://v1.mk/vip】23
-      - 荷兰【付费推荐：https://v1.mk/vip】237
-      - 美国【付费推荐：https://v1.mk/vip】226
-      - 香港【付费推荐：https://v1.mk/vip】262
-      - 罗马尼亚_0511038
-      - 香港_0511156
-      - 卢森堡【付费推荐：https://v1.mk/vip】186
-      - 美国【付费推荐：https://v1.mk/vip】202
-      - -美国-kr-3.vuex.eu.org
-      - 新加坡 016
-      - 香港【付费推荐：https://v1.mk/vip】171
-      - 美国【付费推荐：https://v1.mk/vip】3
-      - 美国 076
+      - US(AzadNet.t.me)_222
+      - Japan(ChatGPT) 06 T...
+      - 日本 013
+      - Singapore(ChatGPT) ...______
+      - 美国【付费推荐：https//v1.mk/vip】211
+      - Brazil(ChatGPT) 01 ...
+      - 美国【付费推荐：https//v1.mk/vip】178
+      - 美国【付费推荐：https://v1.mk/vip】193
+      - 美国 093
+      - 日本【付费推荐：https://v1.mk/vip】282
+      - 日本 012
+      - 日本 011
+      - -美国-142.4.106.243
+      - 美国【付费推荐：https://v1.mk/vip】167
+      - 美国【付费推荐：https//v1.mk/vip】133
+      - 荷兰【付费推荐：https://v1.mk/vip】229
+      - 荷兰【付费推荐：https://v1.mk/vip】234
+      - 越南 001
+      - 日本 017
+      - _US_美国
+      - 中国【付费推荐：https://v1.mk/vip】216
+      - Singapore(ChatGPT) ...____
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
