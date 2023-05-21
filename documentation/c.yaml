@@ -6,983 +6,559 @@ mode: Rule
 log-level: info
 external-controller: 9090
 proxies:
-  - {name: 荷兰 004, server: 95.179.190.81, port: 2083, type: vmess, uuid: ce03a832-d6bb-45a3-9121-f7bd6f189469, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: _EG_埃及, server: 41.215.242.89, port: 35679, type: vmess, uuid: ee442f43-b07a-419d-bd27-2d3456393abc, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 16|香港 006, server: 27.124.47.64, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _EG_埃及 2, server: 41.215.242.89, port: 35679, type: vmess, uuid: ee442f43-b07a-419d-bd27-2d3456393abc, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK香港(youtube阿伟科技2) 4, server: 8.217.99.62, port: 47807, type: ssr, cipher: dummy, password: 344fg4344, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 20|US_youtube@资源分享师_78, server: cdnjs.com, port: 443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.kotick.site}}, udp: true}
-  - {name: _TW_台湾 3, server: bgptw3.cnamazon.sbs, port: 443, type: trojan, password: bc2a1eb1-a706-4ee5-95a6-732a6c324142, sni: tlsdata.cnamazon.sbs, skip-cert-verify: true, udp: true}
-  - {name: 19|_🇺🇸_US_美国_由零開始_20____, server: jp1.01dj.sbs, port: 443, type: vmess, uuid: 4dc3b73e-9c0a-477c-8a29-843849e9194e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sometimesnaive, headers: {Host: jp1.01dj.sbs}}, udp: true}
-  - {name: 美国_05201401, server: 148.59.74.239, port: 443, type: trojan, password: 95da9259-6a36-4de4-9811-e85282ccae77, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 19|_🇺🇸_US_美国_由零開始_20, server: yd1.01dj.sbs, port: 443, type: vmess, uuid: 4dc3b73e-9c0a-477c-8a29-843849e9194e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sometimesnaive, headers: {Host: yd1.01dj.sbs}}, udp: true}
-  - {name: US(AzadNet.t.me)_495, server: 137.175.52.18, port: 33002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港 010, server: 27.124.47.64, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 未知_05203237, server: 198.41.199.100, port: 443, type: vmess, uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer09, headers: {Host: uyaa.vtcss.top}}, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 15, server: www.gov.tw, port: 443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.kotick.site}}, udp: true}
-  - {name: _US_美国 23, server: 129.146.247.135, port: 14021, type: vmess, uuid: 7949f11e-b1d8-4217-b259-9bc2d2af2c25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_0521299, server: 142.4.103.199, port: 45252, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US(AzadNet.t.me)_343, server: 142.4.103.199, port: 45252, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "%�\x11�%�P���_FR_法国", server: fr-am1-5.eqsunshine.com, port: 8181, type: ssr, cipher: aes-256-cfb, password: RcfVcDzzB, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: _US_美国_2, server: 142.0.133.37, port: 51412, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国_11, server: 137.175.52.18, port: 33002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_0521028, server: 107.148.5.78, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_05211455, server: 45.88.176.27, port: 41092, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US(AzadNet.t.me)_610, server: 142.0.133.53, port: 50044, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_05214908, server: 108.162.192.137, port: 80, type: vmess, uuid: c5c9844d-050e-44f1-cb6d-ec5166772631, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: zslbs.vtcss.top}}, udp: true}
+  - {name: 台湾_0521580, server: bgptw5.cnamazon.sbs, port: 443, type: trojan, password: 9de12bd7-c966-4a3b-bc91-2608e354541e, sni: tlsdata.cnamazon.sbs, skip-cert-verify: true, udp: true}
+  - {name: 美国_0521028 2, server: 107.148.5.78, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾_0521002, server: 165.154.226.138, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
+  - {name: US_FreeNode.me_174, server: 104.16.40.227, port: 443, type: vmess, uuid: 7757E99E-75C9-46D5-854D-4065BF372100, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.kotick.site}}, udp: true}
+  - {name: US(AzadNet.t.me)_561, server: 142.4.121.252, port: 45409, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾_0521008, server: scloudtw2-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
+  - {name: US(AzadNet.t.me)_250, server: 107.167.7.12, port: 41654, type: vmess, uuid: bdee202c-8fae-441f-a588-7bc4d3887019, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_05211455 2, server: 45.88.176.27, port: 41092, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: AU(AzadNet.t.me)_003, server: 139.99.245.165, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: -1|🇮🇳IN-172.105.37.119-5289, server: vin1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vin1.0bad.com}}, udp: true}
-  - {name: 美国 085, server: 137.175.1.8, port: 53403, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 20|_🇺🇸_US_美国_科网_108, server: 45.12.144.86, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1684230882527, headers: {Host: www.11232252.xyz}}, udp: true}
-  - {name: US(AzadNet.t.me)_291, server: 171.22.134.3, port: 53433, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 19|_🇺🇸_US_美国_顺丰_86, server: ziprecruiter.com, port: 443, type: vmess, uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Dusseldorf.kotick.site}}, udp: true}
-  - {name: github.com/freefq - 日本  4, server: fscus.fscloud123456789.com, port: 443, type: trojan, password: 8a7d181d-0a3c-4266-b2b1-336124d1d943, skip-cert-verify: true, udp: true}
-  - {name: 美国 084, server: cdn.chigua.tk, port: 2082, type: vmess, uuid: b36e78da-50c8-4479-87d0-7f8841aaaf57, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hostodo, headers: {Host: hostodo.galenet.online}}, udp: true}
-  - {name: 美国_0520023, server: 45.88.176.30, port: 41092, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 21, server: dallas.starsea.vip, port: 443, type: vmess, uuid: 10735fe6-6c8f-498b-b22e-8e98a57e033d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dallas.starsea.vip}}, udp: true}
-  - {name: _EG_埃及 3, server: 41.215.242.89, port: 35679, type: vmess, uuid: ee442f43-b07a-419d-bd27-2d3456393abc, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _SG_新加坡->🇹🇼_TW_台湾 2, server: scloudtw1-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
-  - {name: "12,13|🇩🇪 Germany(ChatGPT) 01 TG:@nod...", server: gercdn.bh8189.eu.org, port: 2082, type: vmess, uuid: b36e78da-50c8-4479-87d0-7f8841aaaf57, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ger-c01, headers: {Host: ger-c01.galenet.online}}, udp: true}
-  - {name: US(AzadNet.t.me)_032, server: 198.2.203.57, port: 44502, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 19|_🇺🇸_US_美国_由零開始_20___, server: us2.01dj.sbs, port: 443, type: vmess, uuid: 4dc3b73e-9c0a-477c-8a29-843849e9194e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sometimesnaive, headers: {Host: us2.01dj.sbs}}, udp: true}
-  - {name: _US_美国 7, server: 45.12.112.102, port: 40002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "12,12,13,13,16|🇦🇺 Australia 01 TG:@nodpai", server: 139.99.245.165, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 塞浦路斯_0520006, server: 203.24.108.9, port: 443, type: vmess, uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Dusseldorf.kotick.site}}, udp: true}
-  - {name: "16,19|美国 052", server: 107.167.4.122, port: 46766, type: vmess, uuid: 9838c1b4-c3fd-49b5-8a59-2ff05385f17c, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：suo.yt/ssrsub】61, server: 108.186.116.174, port: 55005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: -1|🇺🇸US-104.233.129.82-25471, server: 104.233.129.82, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/220128071100}, udp: true}
-  - {name: 德国_0520074, server: 217.79.184.18, port: 443, type: trojan, password: d59ed200-8774-4abc-820b-8aed1738a9dd, sni: download.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
-  - {name: _TW_台湾 2, server: scloudtw2-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, skip-cert-verify: true, udp: true}
-  - {name: 台湾_0520013, server: CHT.MIFJUN.ORG, port: 80, type: vmess, uuid: c76bf073-d8c6-4d2d-aa5f-3bbdd3b6d0b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_05201406, server: 163.123.192.153, port: 443, type: trojan, password: d59ed200-8774-4abc-820b-8aed1738a9dd, sni: download.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
-  - {name: 19|_🇺🇸_US_美国_由零開始_20_____, server: mg01.pmssr.xyz, port: 443, type: vmess, uuid: 4dc3b73e-9c0a-477c-8a29-843849e9194e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sometimesnaive, headers: {Host: mg01.pmssr.xyz}}, udp: true}
-  - {name: github.com/freefq - 美国  5, server: downloadvip.cfd, port: 443, type: vmess, uuid: d59ed200-8774-4abc-820b-8aed1738a9dd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /djjc/us2, headers: {Host: us2.djjc.sbs}}, udp: true}
+  - {name: 未知_0521144, server: us4.01dj.sbs, port: 443, type: vmess, uuid: 1d746ee5-ceb8-4960-88fb-d9efc4ea2328, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sometimesnaive, headers: {Host: us4.01dj.sbs}}, udp: true}
+  - {name: PS_FreeNode.me_114, server: 82.213.5.50, port: 80, type: vmess, uuid: cb8cbbc3-137a-4064-8d02-b0ee3ca2c18c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qazxcv518, headers: {Host: tou.wang66.homes}}, udp: true}
+  - {name: 加拿大_0521103, server: 23.227.38.99, port: 443, type: vmess, uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Lille.kotick.site}}, udp: true}
   - {name: 俄罗斯联邦【付费推荐：suo.yt/ssrsub】17, server: 185.133.40.192, port: 35059, type: vmess, uuid: 8d78c2a8-acaa-467d-9234-d2606624506d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本【付费推荐：https://v1.mk/vip】8, server: jp04-vm0.entry.srthdw.art, port: 448, type: vmess, uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾_0520633, server: 165.154.246.229, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
-  - {name: 台湾_0520046, server: bgptw2.cnamazon.sbs, port: 443, type: trojan, password: fe455c1d-33ab-439d-acdb-449bba167fb1, sni: tlsdata.cnamazon.sbs, skip-cert-verify: true, udp: true}
-  - {name: HK香港(youtube阿伟科技2) 3, server: 8.218.201.175, port: 45865, type: ssr, cipher: dummy, password: 345t54t4, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 20|4Jadi-941, server: 137.175.1.8, port: 53403, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 19|_🇺🇸_US_美国_由零開始_20__, server: us1.01dj.sbs, port: 443, type: vmess, uuid: 4dc3b73e-9c0a-477c-8a29-843849e9194e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sometimesnaive, headers: {Host: us1.01dj.sbs}}, udp: true}
-  - {name: 美国_05201473, server: 137.175.69.234, port: 44920, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _EG_埃及 4, server: 41.215.242.89, port: 35679, type: vmess, uuid: ee442f43-b07a-419d-bd27-2d3456393abc, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US(AzadNet.t.me)_514, server: 45.12.112.102, port: 40002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 20|🇺🇸_US_美国_@suyucom, server: 172.67.13.13, port: 80, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: lg.v2ray20.xyz}}, udp: true}
-  - {name: 土耳其【付费推荐：suo.yt/ssrsub】51, server: 185.40.86.195, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 19|_🇺🇸_US_美国_顺丰_39, server: cheatsheet.com, port: 443, type: vmess, uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Dusseldorf.kotick.site}}, udp: true}
-  - {name: -1|VIVO PRE FREE, server: 104.18.23.26, port: 8080, type: vmess, uuid: dcafb669-fefc-4994-e3a9-5f40ed6aa7cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sshtproject, headers: {Host: v2free.sshtproect.shop}}, udp: true}
-  - {name: -1|🇺🇸US-23.224.110.182-15354, server: 23.224.110.182, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/080712342310}, udp: true}
-  - {name: 土耳其_0520006, server: 141.11.127.19, port: 443, type: trojan, password: 8764f05d-8516-43cc-802c-a1ad6c67aeef, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: "|10.55Mb", server: 139.99.245.165, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "|20.74Mb", server: 198.2.203.57, port: 44502, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 16|法国 002, server: 54.36.103.107, port: 80, type: vmess, uuid: 556eddfa-7a44-43d8-82bd-7c1792fc563c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess/}, udp: true}
-  - {name: github.com/freefq - 广东省广州市移动 10, server: as.steamdownload.top, port: 36616, type: trojan, password: 016b3284-5845-4bff-a5ef-c7d87ee9b932, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：suo.yt/ssrsub】39, server: 120.226.50.68, port: 59902, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "17,20|github.com/freefq - 美国CloudFla...", server: tou.vtcss.top, port: 80, type: vmess, uuid: cb8cbbc3-137a-4064-8d02-b0ee3ca2c18c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qazxcv518, headers: {Host: tou.vtcss.top}}, udp: true}
-  - {name: 未知_0520143, server: 104.20.53.188, port: 443, type: vmess, uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /qazxcv518, headers: {Host: tou.vtcss.top}}, udp: true}
-  - {name: Taiwan(ChatGPT) 29 TG@nodpai, server: bgptw5.cnamazon.sbs, port: 443, type: trojan, password: 33114904-dfa7-4267-9996-2c5bb47b7b50, sni: tlsdata.cnamazon.sbs, skip-cert-verify: true, udp: true}
-  - {name: 美国_05201399, server: 148.59.74.238, port: 443, type: trojan, password: 39007fdd-ce3d-4d69-9db9-8434ce32d43b, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 土耳其【付费推荐：suo.yt/ssrsub】51 2, server: 185.40.86.195, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "18,22|🇯🇵日本-东京都-东京-ss-18.176.61.169:4...", server: 18.176.61.169, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: DP4, server: cf.yxjnode.com, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: dp4.yxjnode.com}}, udp: true}
-  - {name: 美国【付费推荐：suo.yt/ssrsub】37, server: 192.74.229.215, port: 51592, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 19|_🇺🇸_US_美国_由零開始_20_, server: yn1.01dj.sbs, port: 443, type: vmess, uuid: 4dc3b73e-9c0a-477c-8a29-843849e9194e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sometimesnaive, headers: {Host: yn1.01dj.sbs}}, udp: true}
-  - {name: 19|_🇺🇸_US_美国_由零開始_20______, server: us4.01dj.sbs, port: 443, type: vmess, uuid: 4dc3b73e-9c0a-477c-8a29-843849e9194e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sometimesnaive, headers: {Host: us4.01dj.sbs}}, udp: true}
-  - {name: 美国_0519472, server: 108.186.116.174, port: 55005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾_0520047, server: CHT.MIFJUN.ORG, port: 80, type: vmess, uuid: c76bf073-d8c6-4d2d-aa5f-3bbdd3b6d0b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：https://v1.mk/vip】130, server: cdn.twitter.now.cc, port: 443, type: vmess, uuid: 87283fe7-08e5-403b-a0aa-add7cd68a23e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ikun, headers: {Host: lo.twittei.me}}, udp: true}
-  - {name: 美国_05201403, server: 163.123.192.155, port: 443, type: trojan, password: d59ed200-8774-4abc-820b-8aed1738a9dd, sni: download.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
-  - {name: US(AzadNet.t.me)_105, server: 108.186.116.175, port: 55005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "-1,20|4Iran-1039", server: 142.4.118.150, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/120306182525}, udp: true}
-  - {name: 美国 086, server: microsoftdebug.com, port: 80, type: vmess, uuid: 5224a4c0-bdfe-402b-86d5-5e9e1e58888f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /windows7.ios, headers: {Host: v1.us1.microsoftdebug.com}}, udp: true}
-  - {name: AU(AzadNet.t.me)_003 2, server: 139.99.245.165, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK香港(youtube阿伟科技2), server: 8.218.187.113, port: 56452, type: ssr, cipher: dummy, password: 283464t4, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: -日本-45.88.43.136, server: 45.88.43.136, port: 50801, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_0520008, server: 23.225.176.7, port: 49812, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本_0519048, server: 45.88.43.136, port: 50801, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_FreeNode.me_172, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Lille.kotick.site}}, udp: true}
-  - {name: 美国 064, server: 216.52.183.243, port: 80, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, plugin: obfs, plugin-opts: {mode: http, host: ""}, udp: true}
-  - {name: _US_美国 10, server: 45.88.176.30, port: 41092, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "12,13,16,20|🇺🇸 United States 18 TG:@nodpai", server: 171.22.134.3, port: 53433, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_05201409, server: 163.123.192.145, port: 443, type: trojan, password: 8764f05d-8516-43cc-802c-a1ad6c67aeef, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 美国_05201398, server: 163.123.192.154, port: 443, type: trojan, password: d59ed200-8774-4abc-820b-8aed1738a9dd, sni: download.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
-  - {name: HK_FreeNode.me_2, server: hgchk.457843.xyz, port: 9998, type: trojan, password: 970107fb-50ce-45ae-ac1d-9b21aa17aa4b, skip-cert-verify: true, udp: true}
-  - {name: "11,12,18|🇺🇸 United States 18 TG:@nodpai", server: 45.12.112.102, port: 40002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯联邦【付费推荐：suo.yt/ssrsub】17 2, server: 185.133.40.192, port: 35059, type: vmess, uuid: 8d78c2a8-acaa-467d-9234-d2606624506d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 25|🇺🇸 美国A|tg频道:@ripaojiedian, server: 163.123.192.144, port: 443, type: trojan, password: 235794ca-37c5-4ad7-96ef-c2ab93ddac53, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 二爷翻墙网 https://1808.ga  节点_8, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: jp.scproxy.top}}, udp: true}
-  - {name: github.com/freefq - 广东省广州市移动 8, server: as.steamdownload.top, port: 36641, type: trojan, password: 016b3284-5845-4bff-a5ef-c7d87ee9b932, skip-cert-verify: true, udp: true}
-  - {name: _🇺🇸_US_美国_科网_18, server: 140.99.155.98, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1684492536236, headers: {Host: www.68178927.xyz}}, udp: true}
-  - {name: United States 42 TG@nodpai, server: 23.225.176.7, port: 49812, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 092, server: 45.86.11.231, port: 39182, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "25,26|🇺🇸 美国2|@ripaojiedian", server: 129.146.247.135, port: 14021, type: vmess, uuid: 7949f11e-b1d8-4217-b259-9bc2d2af2c25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_0519018, server: 45.88.176.30, port: 41092, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 荷兰 004 2, server: 154.85.1.3, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1683629314915, headers: {Host: www.42077230.xyz}}, udp: true}
-  - {name: US(AzadNet.t.me)_514 2, server: 45.12.112.102, port: 40002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 欧盟  4, server: 45.85.119.44, port: 443, type: vmess, uuid: 3E271C5F-28FF-4704-B8E5-CC2B39AB7F60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.kotick.site}}, udp: true}
-  - {name: 28|🇨🇦 CA 19 → tg@nicevpn123, server: stw6-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
-  - {name: 23|4FreeIran-860, server: 162.159.58.14, port: 80, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: lg.v2ray20.xyz}}, udp: true}
-  - {name: JP(AzadNet.t.me)_019, server: 45.88.43.239, port: 46002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 079, server: 45.88.176.30, port: 41092, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US(AzadNet.t.me)_277, server: 45.86.11.231, port: 39182, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _TW_台湾, server: 165.154.226.138, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
-  - {name: 12|🇹🇼 Taiwan(ChatGPT) 11 TG:@nodp..., server: 165.154.243.193, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
-  - {name: ES_FreeNode.me_174, server: 185.18.250.80, port: 443, type: vmess, uuid: 3E271C5F-28FF-4704-B8E5-CC2B39AB7F60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Amsterdam.kotick.site}}, udp: true}
-  - {name: "|27.70Mb", server: 171.22.134.3, port: 53433, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "25,26|🇰🇷 韩国直连|@ripaojiedian", server: 45.93.31.230, port: 25237, type: vmess, uuid: b47eb4cf-6f11-4345-b921-c2e54d2af5af, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /kor1/getData, headers: {Host: kor1.nb123.info}}, udp: true}
-  - {name: "12,28,28|🇹🇼 Taiwan(ChatGPT) 16 TG:@nodp...", server: stw7-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
-  - {name: 23|🇺🇸US美国(youtube阿伟科技2)____, server: 91.195.110.38, port: 443, type: vmess, uuid: 3E271C5F-28FF-4704-B8E5-CC2B39AB7F60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.kotick.site}}, udp: true}
-  - {name: 美国 084 2, server: 163.123.192.151, port: 443, type: trojan, password: 7f4e8527-79da-49c3-8ca8-64eef120882f, sni: download.xn--mes358acgm99l.com, skip-cert-verify: true, udp: true}
-  - {name: 美国_0520338, server: 137.175.1.8, port: 53403, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_美国 19, server: 163.123.192.152, port: 443, type: trojan, password: 7f4e8527-79da-49c3-8ca8-64eef120882f, sni: download.xn--mes358acgm99l.com, skip-cert-verify: true, udp: true}
-  - {name: 美国_0519666, server: 104.233.173.236, port: 43679, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 12|🇹🇼 Taiwan(ChatGPT) 11 TG:@nodp... 2, server: 165.154.246.207, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
-  - {name: JP(AzadNet.t.me)_017, server: 45.88.43.136, port: 50801, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US(AzadNet.t.me)_495 2, server: 137.175.52.18, port: 33002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_0519141, server: 142.4.97.77, port: 44942, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "-1,20,25,26|🇺🇸 United States(ChatGPT) 17 T...", server: 142.4.106.250, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1683715826870, headers: {Host: www.44716766.xyz}}, udp: true}
-  - {name: 美国 057, server: 23.224.110.183, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/080712342310}, udp: true}
-  - {name: India 01 TG:@SSRSUB, server: 152.70.74.66, port: 443, type: trojan, password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e, skip-cert-verify: true, udp: true}
-  - {name: "22,23|_🇺🇸_US_美国_科网_23", server: 198.2.208.182, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1684405930831, headers: {Host: www.62317155.xyz}}, udp: true}
-  - {name: US_FreeNode.me_194, server: laroza.one, port: 443, type: vmess, uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Lille.kotick.site}}, udp: true}
-  - {name: 28|🇺🇸 US 330 → tg@nicevpn123, server: azjp2.downloadvip.cfd, port: 443, type: trojan, password: 49b94b41-d483-40f7-a5e7-3801c62401b7, sni: us3.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
-  - {name: HK香港(youtube阿伟科技2) 3 2, server: 8.218.67.54, port: 46950, type: ssr, cipher: dummy, password: 2345345f34, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 美国_0519018 2, server: 45.88.176.30, port: 41092, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK香港(youtube阿伟科技2) 2, server: 8.217.89.229, port: 53659, type: ssr, cipher: dummy, password: 345u3458, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 美国【付费推荐：suo.yt/ssrsub】80, server: 198.2.203.57, port: 44502, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_美国 6, server: 129.146.247.135, port: 14021, type: vmess, uuid: 7949f11e-b1d8-4217-b259-9bc2d2af2c25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本_0517080, server: 45.88.43.136, port: 50801, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 23|🇺🇸US美国(youtube阿伟科技2)__, server: 23.227.38.39, port: 443, type: vmess, uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.kotick.site}}, udp: true}
-  - {name: _US_美国 5, server: 45.86.11.231, port: 39182, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP(AzadNet.t.me)_017 2, server: 45.88.43.136, port: 50801, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SW, server: cf.yxjnode.com, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: op.yxjnode.com}}, udp: true}
-  - {name: 香港 009, server: 43.154.38.20, port: 58568, type: ssr, cipher: dummy, password: !<str> 393473455, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 土耳其_0519003, server: 185.40.86.195, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP(AzadNet.t.me)_017 3, server: 45.88.43.136, port: 50801, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本_0518054, server: 45.88.43.239, port: 46002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 082, server: 23.224.110.242, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1683715826870, headers: {Host: www.77039717.xyz}}, udp: true}
-  - {name: 二爷翻墙网 https://1808.ga  节点_6, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}, udp: true}
-  - {name: 美国【付费推荐：suo.yt/ssrsub】95, server: tech.noaries.de, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: nl.sharecentrepro.com}}, udp: true}
-  - {name: 美国_0519018 3, server: 45.88.176.30, port: 41092, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_0519472 2, server: 108.186.116.174, port: 55005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 22|_🇺🇸_US_美国_科网_130, server: 23.225.176.7, port: 49812, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "22,28|_🇨🇦_CA_加拿大_顺丰_175", server: 199.212.90.14, port: 443, type: vmess, uuid: 6147F065-9AC0-4081-A5A3-A2EB4EBB8958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Lille.kotick.site}}, udp: true}
-  - {name: 日本_0519052, server: 45.88.43.239, port: 46002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 纳米比亚_0520001, server: 197.188.22.102, port: 80, type: vmess, uuid: cb8cbbc3-137a-4064-8d02-b0ee3ca2c18c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qazxcv518, headers: {Host: tou.wang66.homes}}, udp: true}
-  - {name: _US_美国 2 2, server: 163.123.192.150, port: 443, type: trojan, password: 7f4e8527-79da-49c3-8ca8-64eef120882f, sni: download.xn--mes358acgm99l.com, skip-cert-verify: true, udp: true}
-  - {name: 美国_05201407, server: 163.123.192.156, port: 443, type: trojan, password: d59ed200-8774-4abc-820b-8aed1738a9dd, sni: download.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
-  - {name: 日本 008, server: 45.88.43.136, port: 50801, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: RU_FreeNode.me_54, server: 185.133.40.192, port: 35059, type: vmess, uuid: 8d78c2a8-acaa-467d-9234-d2606624506d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "22,28|_🇺🇸_US_美国_科网_104", server: 45.12.144.86, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1684316790433, headers: {Host: www.11232252.xyz}}, udp: true}
-  - {name: "|14.68Mb", server: 43.154.76.92, port: 54498, type: vmess, uuid: 784272d2-bd2d-438a-bbd4-1271bb1f1b0d, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hk15/getData}, udp: true}
-  - {name: "11,12,18,25,26|🇺🇸 United States 29 TG:@nodpai", server: 45.86.11.231, port: 39182, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP(AzadNet.t.me)_019 2, server: 45.88.43.239, port: 46002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 073, server: 45.86.11.231, port: 39182, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 084 3, server: 108.186.116.174, port: 55005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_05204587, server: 108.162.193.185, port: 443, type: vmess, uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /qazxcv518, headers: {Host: tou.vtcss.top}}, udp: true}
-  - {name: 瑞士_0520021, server: 185.18.250.102, port: 443, type: vmess, uuid: 6147F065-9AC0-4081-A5A3-A2EB4EBB8958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Lille.kotick.site}}, udp: true}
-  - {name: 美国 077, server: 45.12.112.102, port: 40002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 未知_0520415, server: wibmo.com, port: 443, type: vmess, uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Amsterdam.kotick.site}}, udp: true}
-  - {name: 俄罗斯联邦_0519009, server: 185.133.40.192, port: 35059, type: vmess, uuid: 8d78c2a8-acaa-467d-9234-d2606624506d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 未知_05203257, server: 104.20.61.85, port: 443, type: vmess, uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /qazxcv518, headers: {Host: tou.vtcss.top}}, udp: true}
-  - {name: 12|Relay 🇺🇸 United States 22 TG:@..., server: ahcm.v-too.cloud, port: 10259, type: ss, cipher: chacha20-ietf-poly1305, password: 0afcc41c-8a1a-4229-82d9-c483b48d5389, udp: true}
-  - {name: 法国_0520221, server: 173.245.49.51, port: 443, type: vmess, uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /qazxcv518, headers: {Host: tou.vtcss.top}}, udp: true}
-  - {name: "12,28|🇹🇼 Taiwan(ChatGPT) 12 TG:@nodp...", server: 165.154.226.87, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
-  - {name: 中国_0520444, server: vip1.zhangxuan.best, port: 20001, type: vmess, uuid: 02a6dba7-df3f-38fc-8e80-e3e55aacfd71, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 096, server: 108.186.116.174, port: 55005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _🇺🇸_US_美国_科网_130, server: 23.225.176.7, port: 49812, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 二爷翻墙网 https://1808.ga  节点_13, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}, udp: true}
-  - {name: 日本_0517080 2, server: 45.88.43.136, port: 50801, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 二爷翻墙网 https://1808.ga  节点_4, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: do.sharecentrepro.com}}, udp: true}
-  - {name: 美国_0519018 4, server: 45.88.176.30, port: 41092, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_0517880, server: 108.186.116.175, port: 55005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国_0520232, server: 185.135.9.58, port: 443, type: vmess, uuid: 6147F065-9AC0-4081-A5A3-A2EB4EBB8958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Lille.kotick.site}}, udp: true}
-  - {name: 美国 088, server: 45.88.176.30, port: 41092, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: United States 42 TG@nodpai 2, server: 23.225.176.7, port: 49812, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 078, server: 45.88.176.30, port: 41092, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US(AzadNet.t.me)_495 3, server: 137.175.52.18, port: 33002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP(AzadNet.t.me)_017 4, server: 45.88.43.136, port: 50801, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "@SSRSUB-V16-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}, udp: true}
-  - {name: 美国 082 2, server: 23.225.176.7, port: 49812, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本_0519052 2, server: 45.88.43.239, port: 46002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国_0520228, server: 95.179.247.71, port: 443, type: vmess, uuid: 6147F065-9AC0-4081-A5A3-A2EB4EBB8958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Lille.kotick.site}}, udp: true}
-  - {name: 立陶宛_0520012, server: 89.116.250.131, port: 443, type: vmess, uuid: 6147F065-9AC0-4081-A5A3-A2EB4EBB8958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Lille.kotick.site}}, udp: true}
-  - {name: 美国_0520543, server: 108.186.116.175, port: 55005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "@SSRSUB-V14-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ny1.sharecentrepro.org}}, udp: true}
-  - {name: "11,12,30,31|🇺🇸 United States(ChatGPT) 25 T...", server: 137.175.52.18, port: 33002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: EG_FreeNode.me_58, server: 41.215.242.89, port: 35679, type: vmess, uuid: ee442f43-b07a-419d-bd27-2d3456393abc, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP(AzadNet.t.me)_017 5, server: 45.88.43.136, port: 50801, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "|13.85Mb", server: 202.79.172.53, port: 443, type: vmess, uuid: 30216206-14b7-40e7-995d-61c1219ba584, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/220128071100}, udp: true}
-  - {name: 美国 098, server: 108.186.116.174, port: 55005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US(AzadNet.t.me)_495 4, server: 137.175.52.18, port: 33002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "12,28|🇹🇼 Taiwan(ChatGPT) 03 TG:@nodp...", server: stw10-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 001, server: 185.133.40.192, port: 35059, type: vmess, uuid: 8d78c2a8-acaa-467d-9234-d2606624506d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本 008 2, server: 45.88.43.136, port: 50801, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_0519472 3, server: 108.186.116.174, port: 55005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_FreeNode.me_103, server: 1o2.ir, port: 443, type: vmess, uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Lille.kotick.site}}, udp: true}
-  - {name: JP(AzadNet.t.me)_019 3, server: 45.88.43.239, port: 46002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: v2rayfree.eu.org - 美国CloudFlare公司CDN节点 14, server: cf.yxjnode.com, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: dp1.yxjnode.com}}, udp: true}
-  - {name: "@SSRSUB-V04-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: in.sharecentrepro.com}}, udp: true}
-  - {name: "@SSRSUB-V02-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: nl.sharecentrepro.com}}, udp: true}
-  - {name: 澳大利亚-0-0-ss-43.201.1..., server: 43.201.147.86, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: V005--US-付费推荐:suo.yt/ssrsub, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: f809b651-3924-4a80-abde-6c8536fbb229, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v03.ssrsub.com}}, udp: true}
-  - {name: 未知_05203375, server: 104.16.0.18, port: 443, type: vmess, uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Lille.kotick.site}}, udp: true}
-  - {name: 28|🇷🇺 RU 5 → tg@nicevpn123, server: 45.89.52.66, port: 9065, type: ss, cipher: aes-256-cfb, password: PeHSHm5SqEjBuEXE, udp: true}
-  - {name: V003--US-付费推荐:suo.yt/ssrsub, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: f809b651-3924-4a80-abde-6c8536fbb229, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v02.ssrsub.com}}, udp: true}
-  - {name: _CA_加拿大, server: 134.195.196.44, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 立陶宛_0520003, server: 89.116.250.131, port: 443, type: vmess, uuid: 3E271C5F-28FF-4704-B8E5-CC2B39AB7F60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Amsterdam.kotick.site}}, udp: true}
+  - {name: DE(AzadNet.t.me)_033, server: 172.104.132.14, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 0r91Aj1MeFRSvoy6, udp: true}
+  - {name: US(AzadNet.t.me)_574, server: 192.74.239.28, port: 41288, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CA_加拿大, server: ca-v2ray.freevmess.com, port: 8442, type: vmess, uuid: 8b0f471d-a520-4e1d-bcfc-d0a96bb97d69, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [ca-v2ray.freevmess.com]}}, udp: true}
+  - {name: US_FreeNode.me_167, server: chartink.com, port: 443, type: vmess, uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Lille.kotick.site}}, udp: true}
+  - {name: US(AzadNet.t.me)_111, server: 107.167.29.93, port: 45585, type: vmess, uuid: 465dec1a-e09b-4bb6-9905-70f75d6035c8, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 马来西亚_0521002, server: any.isp.dpmi.cloud, port: 443, type: vmess, uuid: 245e7c23-0057-47a4-f2f0-07772e3338fa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/wss26268?ed=2048", headers: {Host: freeservice.blanku.me}}, udp: true}
+  - {name: github.com/freefq - 俄罗斯新西伯利亚ADMAN数据中心 20, server: 185.133.40.192, port: 35059, type: vmess, uuid: 8d78c2a8-acaa-467d-9234-d2606624506d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US(AzadNet.t.me)_291, server: 171.22.134.3, port: 53433, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US(AzadNet.t.me)_336, server: 142.4.99.77, port: 43379, type: vmess, uuid: b65da4af-a12a-4a59-9316-4549e12ba62c, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_05211378, server: 108.186.116.175, port: 55005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_0521289, server: 142.0.133.53, port: 50044, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾_0521092, server: 165.154.227.191, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
   - {name: 日本 009, server: 45.88.43.136, port: 50801, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 23|🇺🇸US美国(youtube阿伟科技2)___, server: 170.114.45.224, port: 443, type: vmess, uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.kotick.site}}, udp: true}
-  - {name: "@SSRSUB-V21-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp4.scproxy.top}}, udp: true}
-  - {name: US 342 → tg@nicevpn123, server: 108.186.116.174, port: 55005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：https://v1.mk/..., server: m.lwvzmdu.cn, port: 16618, type: vmess, uuid: 16925dca-05be-4d7c-b469-6bcbd8a227ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: m.lwvzmdu.cn}}, udp: true}
-  - {name: 美国_05204505, server: 45.159.219.50, port: 443, type: vmess, uuid: 6147F065-9AC0-4081-A5A3-A2EB4EBB8958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Lille.kotick.site}}, udp: true}
-  - {name: 美国 083, server: 23.225.176.7, port: 49812, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 090, server: 108.186.116.174, port: 55005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 土耳其【付费推荐：https://v1.mk/vip】51, server: 185.40.86.195, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 未知_0519175, server: 162.159.152.153, port: 8880, type: vmess, uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: csjp.iiio.wiki}}, udp: true}
-  - {name: V001--US-付费推荐:suo.yt/ssrsub, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: f809b651-3924-4a80-abde-6c8536fbb229, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.ssrsub.com}}, udp: true}
-  - {name: 美国_05171041, server: 108.186.116.174, port: 55005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK_FreeNode.me_67, server: 18.163.249.175, port: 443, type: vmess, uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Dusseldorf.kotick.site}}, udp: true}
-  - {name: US_FreeNode.me_52, server: cambridge.org, port: 443, type: vmess, uuid: 3E271C5F-28FF-4704-B8E5-CC2B39AB7F60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Lille.kotick.site}}, udp: true}
-  - {name: 日本_0518054 2, server: 45.88.43.239, port: 46002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_05204775, server: 141.193.213.20, port: 443, type: vmess, uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Amsterdam.kotick.site}}, udp: true}
-  - {name: 美国 100, server: microsoftdebug.com, port: 8880, type: vmess, uuid: 5224a4c0-bdfe-402b-86d5-5e9e1e58888f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /gqfWkjL8.gif, headers: {Host: v1.lsb1.microsoftdebug.com}}, udp: true}
-  - {name: DP3, server: cf.yxjnode.com, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: dp3.yxjnode.com}}, udp: true}
-  - {name: 日本 007, server: 45.88.43.239, port: 46002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US(AzadNet.t.me)_495, server: 137.175.52.18, port: 33002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本_0519052, server: 45.88.43.239, port: 46002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 伯利兹_0521085, server: cf4.biger.club, port: 2087, type: vmess, uuid: bc32d64d-f920-432b-ba27-b138751ba041, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cr4.biger.club}}, udp: true}
+  - {name: TW_165.154.227.239_0521202379c4-611trojan, server: 165.154.227.239, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
+  - {name: US(AzadNet.t.me)_561 2, server: 142.4.121.252, port: 45409, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "12,12,13,13,16|🇦🇺 Australia 01 TG:@nodpai", server: 139.99.245.165, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_0521856, server: 172.64.195.13, port: 8880, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: lg.trump2023.net}}, udp: true}
+  - {name: AU(AzadNet.t.me)_003 2, server: 139.99.245.165, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US(AzadNet.t.me)_291 2, server: 171.22.134.3, port: 53433, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: v2rayfree.eu.org - 美国CloudFlare节点 3, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}, udp: true}
+  - {name: HK香港(youtube阿伟科技) 4, server: 8.217.92.210, port: 60073, type: ssr, cipher: dummy, password: 23648234y4, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: JP(AzadNet.t.me)_019, server: 45.88.43.239, port: 46002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US(AzadNet.t.me)_574 2, server: 192.74.239.28, port: 41288, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: v2rayfree.eu.org - 欧盟  8, server: 45.85.119.44, port: 443, type: vmess, uuid: 3E271C5F-28FF-4704-B8E5-CC2B39AB7F60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.kotick.site}}, udp: true}
+  - {name: V005--US-付费推荐:suo.yt/ssrsub, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: f809b651-3924-4a80-abde-6c8536fbb229, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v03.ssrsub.com}}, udp: true}
+  - {name: "12,28,28|🇹🇼 Taiwan(ChatGPT) 16 TG:@nodp...", server: stw7-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
+  - {name: "-1,20|4Iran-1039", server: 142.4.118.150, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/120306182525}, udp: true}
+  - {name: US(AzadNet.t.me)_105, server: 108.186.116.175, port: 55005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：https://v1.mk/vip】5, server: v2-ca1.silverdragon.cn, port: 443, type: vmess, uuid: e790e3bf-c553-40ed-b2b6-436afd3f5f5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ca/v2wss, headers: {Host: v2-ca1.silverdragon.cn}}, udp: true}
+  - {name: JP(AzadNet.t.me)_017, server: 45.88.43.136, port: 50801, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: BuyVM1, server: cf.yxjnode.com, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: buyvm1.yxjnode.com}}, udp: true}
+  - {name: HK香港(youtube阿伟科技), server: 8.217.88.237, port: 48200, type: ssr, cipher: dummy, password: 87234y4, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: "12,28|🇹🇼 Taiwan(ChatGPT) 12 TG:@nodp...", server: 165.154.226.87, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
+  - {name: 日本_0518054, server: 45.88.43.239, port: 46002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 荷兰 004, server: 154.85.1.3, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1683629314915, headers: {Host: www.42077230.xyz}}, udp: true}
+  - {name: _SG_新加坡, server: 13.215.251.162, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: JP(AzadNet.t.me)_019 2, server: 45.88.43.239, port: 46002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 塞浦路斯【付费推荐：https://v1.mk/vip】25, server: 203.23.106.148, port: 443, type: vmess, uuid: 7757E99E-75C9-46D5-854D-4065BF372100, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Lille.kotick.site}}, udp: true}
   - {name: 二爷翻墙网 https://1808.ga  节点_5, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: uk1.scproxy.top}}, udp: true}
-  - {name: 二爷翻墙网 https://1808.ga  节点_10, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv1.sharecentrepro.org}}, udp: true}
-  - {name: "@SSRSUB-V17-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}, udp: true}
-  - {name: 中国_0520442, server: vip1.zhangxuan.best, port: 20001, type: vmess, uuid: 05266f8e-249b-3630-be8f-fc56efaa21cd, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 050, server: 107.167.4.122, port: 46766, type: vmess, uuid: 9838c1b4-c3fd-49b5-8a59-2ff05385f17c, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "@SSRSUB-V14-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ny1.sharecentrepro.org}}, udp: true}
+  - {name: 日本_0518054 2, server: 45.88.43.239, port: 46002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: v2rayfree.eu.org - 欧盟  15, server: 45.14.174.57, port: 443, type: vmess, uuid: 7757E99E-75C9-46D5-854D-4065BF372100, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.kotick.site}}, udp: true}
+  - {name: 日本_0519052 2, server: 45.88.43.239, port: 46002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "美国圣何塞-2号 | 解锁流媒体\r", server: 74.217.179.22, port: 443, type: trojan, password: 1853db3c-ce65-4dcc-80b9-8e139f6fa929, sni: glc.windowsupdatea.com, skip-cert-verify: true, udp: true}
+  - {name: 美国_05211455 3, server: 45.88.176.27, port: 41092, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US(AzadNet.t.me)_343 2, server: 142.4.103.199, port: 45252, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_0517880, server: 108.186.116.175, port: 55005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "@SSRSUB-V04-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: in.sharecentrepro.com}}, udp: true}
+  - {name: "@SSRSUB-V15-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp3.scproxy.top}}, udp: true}
+  - {name: v2rayfree.eu.org - 加拿大  22, server: 23.227.60.184, port: 443, type: vmess, uuid: 3E271C5F-28FF-4704-B8E5-CC2B39AB7F60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Dusseldorf.kotick.site}}, udp: true}
+  - {name: 二爷翻墙网 https://1808.ga  节点_8, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: jp.scproxy.top}}, udp: true}
+  - {name: 日本_0521053, server: 45.88.43.136, port: 50801, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US(AzadNet.t.me)_111 2, server: 107.167.29.93, port: 45585, type: vmess, uuid: 465dec1a-e09b-4bb6-9905-70f75d6035c8, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_FreeNode.me_52, server: cambridge.org, port: 443, type: vmess, uuid: 3E271C5F-28FF-4704-B8E5-CC2B39AB7F60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Lille.kotick.site}}, udp: true}
+  - {name: "@SSRSUB-V02-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: nl.sharecentrepro.com}}, udp: true}
+  - {name: RU_FreeNode.me_54, server: 185.133.40.192, port: 35059, type: vmess, uuid: 8d78c2a8-acaa-467d-9234-d2606624506d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: v2rayfree.eu.org - 美国  9, server: 170.114.45.224, port: 443, type: vmess, uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.kotick.site}}, udp: true}
+  - {name: 美国【付费推荐：suo.yt/ssrsub】199, server: cf.yxjnode.com, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: buyvm2.yxjnode.com}}, udp: true}
+  - {name: US(AzadNet.t.me)_574 3, server: 192.74.239.28, port: 41288, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK香港(youtube阿伟科技) 3, server: 8.217.83.192, port: 49832, type: ssr, cipher: dummy, password: 872364t464, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 美国6-ChatGPT, server: us6.01dj.sbs, port: 443, type: vmess, uuid: cb59b5eb-17d8-4b9f-9c43-6f038a9db9b0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sometimesnaive, headers: {Host: us6.01dj.sbs}}, udp: true}
+  - {name: 日本 008, server: 45.88.43.136, port: 50801, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "越南-1号\r", server: 103.173.255.21, port: 443, type: trojan, password: 1853db3c-ce65-4dcc-80b9-8e139f6fa929, sni: glc.hruqoaw.cn, skip-cert-verify: true, udp: true}
+  - {name: "@SSRSUB-V03-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sw.sharecentrepro.com}}, udp: true}
+  - {name: 美国【付费推荐：suo.yt/ssrsub】210, server: tech.noaries.de, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: nl.sharecentrepro.com}}, udp: true}
+  - {name: v2rayfree.eu.org - 美国CloudFlare节点 2, server: 172.64.194.13, port: 8880, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: lg.trump2023.net}}, udp: true}
+  - {name: 美国【付费推荐：suo.yt/ssrsub】148, server: 104.21.53.35, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: buyvm1.yxjnode.com}}, udp: true}
+  - {name: 美国 003, server: 171.22.134.3, port: 53433, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US(AzadNet.t.me)_561 3, server: 142.4.121.252, port: 45409, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP(AzadNet.t.me)_017 2, server: 45.88.43.136, port: 50801, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP(AzadNet.t.me)_017 3, server: 45.88.43.136, port: 50801, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本_0519048, server: 45.88.43.136, port: 50801, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_0520543, server: 108.186.116.175, port: 55005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 20|US_142.4.121.252_05202023286e-..., server: 142.4.121.252, port: 45409, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：https://v1.mk/vip】59, server: vip1.zhangxuan.best, port: 20001, type: vmess, uuid: 2f3f33ed-0b2c-3074-9111-33ad7011c7da, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US(AzadNet.t.me)_111 3, server: 107.167.29.93, port: 45585, type: vmess, uuid: 465dec1a-e09b-4bb6-9905-70f75d6035c8, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: DP4, server: cf.yxjnode.com, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: dp4.yxjnode.com}}, udp: true}
+  - {name: DP3@yxjnode, server: cf.yxjnode.com, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: dp3.yxjnode.com}}, udp: true}
+  - {name: 美国 064, server: 216.52.183.243, port: 80, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, plugin: obfs, plugin-opts: {mode: http, host: ""}, udp: true}
+  - {name: 英国 V2CROSS.COM, server: 171.22.134.3, port: 53433, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本_0521047, server: 45.88.43.239, port: 46002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "美国凤凰城-3号 | 解锁流媒体\r", server: 141.193.68.81, port: 443, type: trojan, password: 1853db3c-ce65-4dcc-80b9-8e139f6fa929, sni: glc.windowsupdatea.com, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 俄罗斯新西伯利亚ADMAN数据中心 11, server: 185.133.40.192, port: 35059, type: vmess, uuid: 8d78c2a8-acaa-467d-9234-d2606624506d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK香港(youtube阿伟科技) 5, server: 8.217.90.243, port: 54402, type: ssr, cipher: dummy, password: 254243r44, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: JP(AzadNet.t.me)_017 4, server: 45.88.43.136, port: 50801, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 伊朗 001, server: de63.thugiping.cloud, port: 443, type: vmess, uuid: c9a22360-3f66-48c8-89ab-13799b05a730, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 台湾_0520633, server: 165.154.246.229, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
+  - {name: 19|_🇺🇦_UA_乌克兰_顺丰_23, server: 185.158.211.186, port: 80, type: vmess, uuid: cb8cbbc3-137a-4064-8d02-b0ee3ca2c18c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qazxcv518, headers: {Host: tou.wang66.homes}}, udp: true}
+  - {name: 28|🇨🇦 CA 19 → tg@nicevpn123, server: stw6-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
+  - {name: 美国 082, server: 23.224.110.242, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1683715826870, headers: {Host: www.77039717.xyz}}, udp: true}
+  - {name: "@SSRSUB-V16-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}, udp: true}
+  - {name: "@SSRSUB-V12-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv3.sharecentrepro.org}}, udp: true}
+  - {name: 美国 085, server: 137.175.18.157, port: 58007, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本_0517080, server: 45.88.43.136, port: 50801, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: -日本-45.88.43.136, server: 45.88.43.136, port: 50801, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "@SSRSUB-V05-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: do.sharecentrepro.com}}, udp: true}
+  - {name: 俄罗斯 001, server: 185.133.40.192, port: 35059, type: vmess, uuid: 8d78c2a8-acaa-467d-9234-d2606624506d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 二爷翻墙网 https://1808.ga  节点_6, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}, udp: true}
+  - {name: Pool_Pool_Pool_ |22.16Mb, server: 142.4.121.252, port: 45409, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _SG_新加坡 2, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 美国 030, server: 142.4.99.77, port: 43379, type: vmess, uuid: b65da4af-a12a-4a59-9316-4549e12ba62c, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 19|_🇾🇪_YE_也门_顺丰_186, server: 82.114.163.146, port: 80, type: vmess, uuid: cb8cbbc3-137a-4064-8d02-b0ee3ca2c18c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qazxcv518, headers: {Host: tou.wang66.homes}}, udp: true}
+  - {name: _TW_台湾, server: scloudtw1-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
+  - {name: "16,20|美国 006", server: 142.4.99.77, port: 43379, type: vmess, uuid: b65da4af-a12a-4a59-9316-4549e12ba62c, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK香港(youtube阿伟科技) 4 2, server: 8.218.71.75, port: 52710, type: ssr, cipher: dummy, password: 234324r3, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: "|22.16Mb", server: 142.4.121.252, port: 45409, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _IR_伊朗_2, server: aparat.persianmizban.com, port: 4433, type: vmess, uuid: 88790a1b-f059-40c7-9c9d-b7c943b4420b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: "12,13,16,20|🇺🇸 United States 18 TG:@nodpai", server: 171.22.134.3, port: 53433, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "|14.05Mb", server: 142.4.99.77, port: 43379, type: vmess, uuid: b65da4af-a12a-4a59-9316-4549e12ba62c, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 荷兰 004
-      - _EG_埃及
-      - 16|香港 006
-      - _EG_埃及 2
-      - HK香港(youtube阿伟科技2) 4
-      - 20|US_youtube@资源分享师_78
-      - _TW_台湾 3
-      - 19|_🇺🇸_US_美国_由零開始_20____
-      - 美国_05201401
-      - 19|_🇺🇸_US_美国_由零開始_20
-      - US(AzadNet.t.me)_495
-      - 香港 010
-      - 未知_05203237
-      - github.com/freefq - 美国CloudFlare公司CDN节点 15
-      - _US_美国 23
+      - 美国_0521299
+      - US(AzadNet.t.me)_343
+      - "%�\x11�%�P���_FR_法国"
+      - _US_美国_2
+      - _US_美国_11
+      - 美国_0521028
+      - 美国_05211455
+      - US(AzadNet.t.me)_610
+      - 美国_05214908
+      - 台湾_0521580
+      - 美国_0521028 2
+      - 台湾_0521002
+      - US_FreeNode.me_174
+      - US(AzadNet.t.me)_561
+      - 台湾_0521008
+      - US(AzadNet.t.me)_250
+      - 美国_05211455 2
       - AU(AzadNet.t.me)_003
-      - -1|🇮🇳IN-172.105.37.119-5289
-      - 美国 085
-      - 20|_🇺🇸_US_美国_科网_108
-      - US(AzadNet.t.me)_291
-      - 19|_🇺🇸_US_美国_顺丰_86
-      - github.com/freefq - 日本  4
-      - 美国 084
-      - 美国_0520023
-      - github.com/freefq - 美国CloudFlare公司CDN节点 21
-      - _EG_埃及 3
-      - _SG_新加坡->🇹🇼_TW_台湾 2
-      - 12,13|🇩🇪 Germany(ChatGPT) 01 TG:@nod...
-      - US(AzadNet.t.me)_032
-      - 19|_🇺🇸_US_美国_由零開始_20___
-      - _US_美国 7
-      - 12,12,13,13,16|🇦🇺 Australia 01 TG:@nodpai
-      - 塞浦路斯_0520006
-      - 16,19|美国 052
-      - 美国【付费推荐：suo.yt/ssrsub】61
-      - -1|🇺🇸US-104.233.129.82-25471
-      - 德国_0520074
-      - _TW_台湾 2
-      - 台湾_0520013
-      - 美国_05201406
-      - 19|_🇺🇸_US_美国_由零開始_20_____
-      - github.com/freefq - 美国  5
+      - 未知_0521144
+      - PS_FreeNode.me_114
+      - 加拿大_0521103
       - 俄罗斯联邦【付费推荐：suo.yt/ssrsub】17
-      - 日本【付费推荐：https://v1.mk/vip】8
-      - 台湾_0520633
-      - 台湾_0520046
-      - HK香港(youtube阿伟科技2) 3
-      - 20|4Jadi-941
-      - 19|_🇺🇸_US_美国_由零開始_20__
-      - 美国_05201473
-      - _EG_埃及 4
-      - US(AzadNet.t.me)_514
-      - 20|🇺🇸_US_美国_@suyucom
-      - 土耳其【付费推荐：suo.yt/ssrsub】51
-      - 19|_🇺🇸_US_美国_顺丰_39
-      - -1|VIVO PRE FREE
-      - -1|🇺🇸US-23.224.110.182-15354
-      - 土耳其_0520006
-      - "|10.55Mb"
-      - "|20.74Mb"
-      - 16|法国 002
-      - github.com/freefq - 广东省广州市移动 10
-      - 中国【付费推荐：suo.yt/ssrsub】39
-      - 17,20|github.com/freefq - 美国CloudFla...
-      - 未知_0520143
-      - Taiwan(ChatGPT) 29 TG@nodpai
-      - 美国_05201399
-      - 土耳其【付费推荐：suo.yt/ssrsub】51 2
-      - 18,22|🇯🇵日本-东京都-东京-ss-18.176.61.169:4...
-      - DP4
-      - 美国【付费推荐：suo.yt/ssrsub】37
-      - 19|_🇺🇸_US_美国_由零開始_20_
-      - 19|_🇺🇸_US_美国_由零開始_20______
-      - 美国_0519472
-      - 台湾_0520047
-      - 美国【付费推荐：https://v1.mk/vip】130
-      - 美国_05201403
-      - US(AzadNet.t.me)_105
-      - -1,20|4Iran-1039
-      - 美国 086
-      - AU(AzadNet.t.me)_003 2
-      - HK香港(youtube阿伟科技2)
-      - -日本-45.88.43.136
-      - 美国_0520008
-      - 日本_0519048
-      - US_FreeNode.me_172
-      - 美国 064
-      - _US_美国 10
-      - 12,13,16,20|🇺🇸 United States 18 TG:@nodpai
-      - 美国_05201409
-      - 美国_05201398
-      - HK_FreeNode.me_2
-      - 11,12,18|🇺🇸 United States 18 TG:@nodpai
-      - 俄罗斯联邦【付费推荐：suo.yt/ssrsub】17 2
-      - 25|🇺🇸 美国A|tg频道:@ripaojiedian
-      - 二爷翻墙网 https://1808.ga  节点_8
-      - github.com/freefq - 广东省广州市移动 8
-      - _🇺🇸_US_美国_科网_18
-      - United States 42 TG@nodpai
-      - 美国 092
-      - 25,26|🇺🇸 美国2|@ripaojiedian
-      - 美国_0519018
-      - 荷兰 004 2
-      - US(AzadNet.t.me)_514 2
-      - github.com/freefq - 欧盟  4
-      - 28|🇨🇦 CA 19 → tg@nicevpn123
-      - 23|4FreeIran-860
-      - JP(AzadNet.t.me)_019
-      - 美国 079
-      - US(AzadNet.t.me)_277
-      - _TW_台湾
-      - 12|🇹🇼 Taiwan(ChatGPT) 11 TG:@nodp...
-      - ES_FreeNode.me_174
-      - "|27.70Mb"
-      - 25,26|🇰🇷 韩国直连|@ripaojiedian
-      - 12,28,28|🇹🇼 Taiwan(ChatGPT) 16 TG:@nodp...
-      - 23|🇺🇸US美国(youtube阿伟科技2)____
-      - 美国 084 2
-      - 美国_0520338
-      - _US_美国 19
-      - 美国_0519666
-      - 12|🇹🇼 Taiwan(ChatGPT) 11 TG:@nodp... 2
-      - JP(AzadNet.t.me)_017
-      - US(AzadNet.t.me)_495 2
-      - 美国_0519141
-      - -1,20,25,26|🇺🇸 United States(ChatGPT) 17 T...
-      - 美国 057
-      - India 01 TG:@SSRSUB
-      - 22,23|_🇺🇸_US_美国_科网_23
-      - US_FreeNode.me_194
-      - 28|🇺🇸 US 330 → tg@nicevpn123
-      - HK香港(youtube阿伟科技2) 3 2
-      - 美国_0519018 2
-      - HK香港(youtube阿伟科技2) 2
-      - 美国【付费推荐：suo.yt/ssrsub】80
-      - _US_美国 6
-      - 日本_0517080
-      - 23|🇺🇸US美国(youtube阿伟科技2)__
-      - _US_美国 5
-      - JP(AzadNet.t.me)_017 2
-      - SW
-      - 香港 009
-      - 土耳其_0519003
-      - JP(AzadNet.t.me)_017 3
-      - 日本_0518054
-      - 美国 082
-      - 二爷翻墙网 https://1808.ga  节点_6
-      - 美国【付费推荐：suo.yt/ssrsub】95
-      - 美国_0519018 3
-      - 美国_0519472 2
-      - 22|_🇺🇸_US_美国_科网_130
-      - 22,28|_🇨🇦_CA_加拿大_顺丰_175
-      - 日本_0519052
-      - 纳米比亚_0520001
-      - _US_美国 2 2
-      - 美国_05201407
-      - 日本 008
-      - RU_FreeNode.me_54
-      - 22,28|_🇺🇸_US_美国_科网_104
-      - "|14.68Mb"
-      - 11,12,18,25,26|🇺🇸 United States 29 TG:@nodpai
-      - JP(AzadNet.t.me)_019 2
-      - 美国 073
-      - 美国 084 3
-      - 美国_05204587
-      - 瑞士_0520021
-      - 美国 077
-      - 未知_0520415
-      - 俄罗斯联邦_0519009
-      - 未知_05203257
-      - 12|Relay 🇺🇸 United States 22 TG:@...
-      - 法国_0520221
-      - 12,28|🇹🇼 Taiwan(ChatGPT) 12 TG:@nodp...
-      - 中国_0520444
-      - 美国 096
-      - _🇺🇸_US_美国_科网_130
-      - 二爷翻墙网 https://1808.ga  节点_13
-      - 日本_0517080 2
-      - 二爷翻墙网 https://1808.ga  节点_4
-      - 美国_0519018 4
-      - 美国_0517880
-      - 德国_0520232
-      - 美国 088
-      - United States 42 TG@nodpai 2
-      - 美国 078
-      - US(AzadNet.t.me)_495 3
-      - JP(AzadNet.t.me)_017 4
-      - "@SSRSUB-V16-付费推荐:suo.yt/ssrsub"
-      - 美国 082 2
-      - 日本_0519052 2
-      - 德国_0520228
-      - 立陶宛_0520012
-      - 美国_0520543
-      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
-      - 11,12,30,31|🇺🇸 United States(ChatGPT) 25 T...
-      - EG_FreeNode.me_58
-      - JP(AzadNet.t.me)_017 5
-      - "|13.85Mb"
-      - 美国 098
-      - US(AzadNet.t.me)_495 4
-      - 12,28|🇹🇼 Taiwan(ChatGPT) 03 TG:@nodp...
-      - 俄罗斯 001
-      - 日本 008 2
-      - 美国_0519472 3
-      - US_FreeNode.me_103
-      - JP(AzadNet.t.me)_019 3
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 14
-      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V02-付费推荐:suo.yt/ssrsub"
-      - 澳大利亚-0-0-ss-43.201.1...
-      - V005--US-付费推荐:suo.yt/ssrsub
-      - 未知_05203375
-      - 28|🇷🇺 RU 5 → tg@nicevpn123
-      - V003--US-付费推荐:suo.yt/ssrsub
+      - DE(AzadNet.t.me)_033
+      - US(AzadNet.t.me)_574
       - _CA_加拿大
-      - 立陶宛_0520003
+      - US_FreeNode.me_167
+      - US(AzadNet.t.me)_111
+      - 马来西亚_0521002
+      - github.com/freefq - 俄罗斯新西伯利亚ADMAN数据中心 20
+      - US(AzadNet.t.me)_291
+      - US(AzadNet.t.me)_336
+      - 美国_05211378
+      - 美国_0521289
+      - 台湾_0521092
       - 日本 009
-      - 23|🇺🇸US美国(youtube阿伟科技2)___
-      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
-      - US 342 → tg@nicevpn123
-      - 中国【付费推荐：https://v1.mk/...
-      - 美国_05204505
-      - 美国 083
-      - 美国 090
-      - 土耳其【付费推荐：https://v1.mk/vip】51
-      - 未知_0519175
-      - V001--US-付费推荐:suo.yt/ssrsub
-      - 美国_05171041
-      - HK_FreeNode.me_67
-      - US_FreeNode.me_52
-      - 日本_0518054 2
-      - 美国_05204775
-      - 美国 100
-      - DP3
-      - 日本 007
+      - US(AzadNet.t.me)_495
+      - 日本_0519052
+      - 伯利兹_0521085
+      - TW_165.154.227.239_0521202379c4-611trojan
+      - US(AzadNet.t.me)_561 2
+      - 12,12,13,13,16|🇦🇺 Australia 01 TG:@nodpai
+      - 美国_0521856
+      - AU(AzadNet.t.me)_003 2
+      - US(AzadNet.t.me)_291 2
+      - v2rayfree.eu.org - 美国CloudFlare节点 3
+      - HK香港(youtube阿伟科技) 4
+      - JP(AzadNet.t.me)_019
+      - US(AzadNet.t.me)_574 2
+      - v2rayfree.eu.org - 欧盟  8
+      - V005--US-付费推荐:suo.yt/ssrsub
+      - 12,28,28|🇹🇼 Taiwan(ChatGPT) 16 TG:@nodp...
+      - -1,20|4Iran-1039
+      - US(AzadNet.t.me)_105
+      - 美国【付费推荐：https://v1.mk/vip】5
+      - JP(AzadNet.t.me)_017
+      - BuyVM1
+      - HK香港(youtube阿伟科技)
+      - 12,28|🇹🇼 Taiwan(ChatGPT) 12 TG:@nodp...
+      - 日本_0518054
+      - 荷兰 004
+      - _SG_新加坡
+      - JP(AzadNet.t.me)_019 2
+      - 塞浦路斯【付费推荐：https://v1.mk/vip】25
       - 二爷翻墙网 https://1808.ga  节点_5
-      - 二爷翻墙网 https://1808.ga  节点_10
-      - "@SSRSUB-V17-付费推荐:suo.yt/ssrsub"
-      - 中国_0520442
-      - 美国 050
+      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
+      - 日本_0518054 2
+      - v2rayfree.eu.org - 欧盟  15
+      - 日本_0519052 2
+      - "美国圣何塞-2号 | 解锁流媒体\r"
+      - 美国_05211455 3
+      - US(AzadNet.t.me)_343 2
+      - 美国_0517880
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V15-付费推荐:suo.yt/ssrsub"
+      - v2rayfree.eu.org - 加拿大  22
+      - 二爷翻墙网 https://1808.ga  节点_8
+      - 日本_0521053
+      - US(AzadNet.t.me)_111 2
+      - US_FreeNode.me_52
+      - "@SSRSUB-V02-付费推荐:suo.yt/ssrsub"
+      - RU_FreeNode.me_54
+      - v2rayfree.eu.org - 美国  9
+      - 美国【付费推荐：suo.yt/ssrsub】199
+      - US(AzadNet.t.me)_574 3
+      - HK香港(youtube阿伟科技) 3
+      - 美国6-ChatGPT
+      - 日本 008
+      - "越南-1号\r"
+      - "@SSRSUB-V03-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：suo.yt/ssrsub】210
+      - v2rayfree.eu.org - 美国CloudFlare节点 2
+      - 美国【付费推荐：suo.yt/ssrsub】148
+      - 美国 003
+      - US(AzadNet.t.me)_561 3
+      - JP(AzadNet.t.me)_017 2
+      - JP(AzadNet.t.me)_017 3
+      - 日本_0519048
+      - 美国_0520543
+      - 20|US_142.4.121.252_05202023286e-...
+      - 中国【付费推荐：https://v1.mk/vip】59
+      - US(AzadNet.t.me)_111 3
+      - DP4
+      - DP3@yxjnode
+      - 美国 064
+      - 英国 V2CROSS.COM
+      - 日本_0521047
+      - "美国凤凰城-3号 | 解锁流媒体\r"
+      - github.com/freefq - 俄罗斯新西伯利亚ADMAN数据中心 11
+      - HK香港(youtube阿伟科技) 5
+      - JP(AzadNet.t.me)_017 4
+      - 伊朗 001
+      - 台湾_0520633
+      - 19|_🇺🇦_UA_乌克兰_顺丰_23
+      - 28|🇨🇦 CA 19 → tg@nicevpn123
+      - 美国 082
+      - "@SSRSUB-V16-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
+      - 美国 085
+      - 日本_0517080
+      - -日本-45.88.43.136
+      - "@SSRSUB-V05-付费推荐:suo.yt/ssrsub"
+      - 俄罗斯 001
+      - 二爷翻墙网 https://1808.ga  节点_6
+      - Pool_Pool_Pool_ |22.16Mb
+      - _SG_新加坡 2
+      - 美国 030
+      - 19|_🇾🇪_YE_也门_顺丰_186
+      - _TW_台湾
+      - 16,20|美国 006
+      - HK香港(youtube阿伟科技) 4 2
+      - "|22.16Mb"
+      - _IR_伊朗_2
+      - 12,13,16,20|🇺🇸 United States 18 TG:@nodpai
+      - "|14.05Mb"
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - 荷兰 004
-      - _EG_埃及
-      - 16|香港 006
-      - _EG_埃及 2
-      - HK香港(youtube阿伟科技2) 4
-      - 20|US_youtube@资源分享师_78
-      - _TW_台湾 3
-      - 19|_🇺🇸_US_美国_由零開始_20____
-      - 美国_05201401
-      - 19|_🇺🇸_US_美国_由零開始_20
-      - US(AzadNet.t.me)_495
-      - 香港 010
-      - 未知_05203237
-      - github.com/freefq - 美国CloudFlare公司CDN节点 15
-      - _US_美国 23
+      - 美国_0521299
+      - US(AzadNet.t.me)_343
+      - "%�\x11�%�P���_FR_法国"
+      - _US_美国_2
+      - _US_美国_11
+      - 美国_0521028
+      - 美国_05211455
+      - US(AzadNet.t.me)_610
+      - 美国_05214908
+      - 台湾_0521580
+      - 美国_0521028 2
+      - 台湾_0521002
+      - US_FreeNode.me_174
+      - US(AzadNet.t.me)_561
+      - 台湾_0521008
+      - US(AzadNet.t.me)_250
+      - 美国_05211455 2
       - AU(AzadNet.t.me)_003
-      - -1|🇮🇳IN-172.105.37.119-5289
-      - 美国 085
-      - 20|_🇺🇸_US_美国_科网_108
-      - US(AzadNet.t.me)_291
-      - 19|_🇺🇸_US_美国_顺丰_86
-      - github.com/freefq - 日本  4
-      - 美国 084
-      - 美国_0520023
-      - github.com/freefq - 美国CloudFlare公司CDN节点 21
-      - _EG_埃及 3
-      - _SG_新加坡->🇹🇼_TW_台湾 2
-      - 12,13|🇩🇪 Germany(ChatGPT) 01 TG:@nod...
-      - US(AzadNet.t.me)_032
-      - 19|_🇺🇸_US_美国_由零開始_20___
-      - _US_美国 7
-      - 12,12,13,13,16|🇦🇺 Australia 01 TG:@nodpai
-      - 塞浦路斯_0520006
-      - 16,19|美国 052
-      - 美国【付费推荐：suo.yt/ssrsub】61
-      - -1|🇺🇸US-104.233.129.82-25471
-      - 德国_0520074
-      - _TW_台湾 2
-      - 台湾_0520013
-      - 美国_05201406
-      - 19|_🇺🇸_US_美国_由零開始_20_____
-      - github.com/freefq - 美国  5
+      - 未知_0521144
+      - PS_FreeNode.me_114
+      - 加拿大_0521103
       - 俄罗斯联邦【付费推荐：suo.yt/ssrsub】17
-      - 日本【付费推荐：https://v1.mk/vip】8
-      - 台湾_0520633
-      - 台湾_0520046
-      - HK香港(youtube阿伟科技2) 3
-      - 20|4Jadi-941
-      - 19|_🇺🇸_US_美国_由零開始_20__
-      - 美国_05201473
-      - _EG_埃及 4
-      - US(AzadNet.t.me)_514
-      - 20|🇺🇸_US_美国_@suyucom
-      - 土耳其【付费推荐：suo.yt/ssrsub】51
-      - 19|_🇺🇸_US_美国_顺丰_39
-      - -1|VIVO PRE FREE
-      - -1|🇺🇸US-23.224.110.182-15354
-      - 土耳其_0520006
-      - "|10.55Mb"
-      - "|20.74Mb"
-      - 16|法国 002
-      - github.com/freefq - 广东省广州市移动 10
-      - 中国【付费推荐：suo.yt/ssrsub】39
-      - 17,20|github.com/freefq - 美国CloudFla...
-      - 未知_0520143
-      - Taiwan(ChatGPT) 29 TG@nodpai
-      - 美国_05201399
-      - 土耳其【付费推荐：suo.yt/ssrsub】51 2
-      - 18,22|🇯🇵日本-东京都-东京-ss-18.176.61.169:4...
-      - DP4
-      - 美国【付费推荐：suo.yt/ssrsub】37
-      - 19|_🇺🇸_US_美国_由零開始_20_
-      - 19|_🇺🇸_US_美国_由零開始_20______
-      - 美国_0519472
-      - 台湾_0520047
-      - 美国【付费推荐：https://v1.mk/vip】130
-      - 美国_05201403
-      - US(AzadNet.t.me)_105
-      - -1,20|4Iran-1039
-      - 美国 086
-      - AU(AzadNet.t.me)_003 2
-      - HK香港(youtube阿伟科技2)
-      - -日本-45.88.43.136
-      - 美国_0520008
-      - 日本_0519048
-      - US_FreeNode.me_172
-      - 美国 064
-      - _US_美国 10
-      - 12,13,16,20|🇺🇸 United States 18 TG:@nodpai
-      - 美国_05201409
-      - 美国_05201398
-      - HK_FreeNode.me_2
-      - 11,12,18|🇺🇸 United States 18 TG:@nodpai
-      - 俄罗斯联邦【付费推荐：suo.yt/ssrsub】17 2
-      - 25|🇺🇸 美国A|tg频道:@ripaojiedian
-      - 二爷翻墙网 https://1808.ga  节点_8
-      - github.com/freefq - 广东省广州市移动 8
-      - _🇺🇸_US_美国_科网_18
-      - United States 42 TG@nodpai
-      - 美国 092
-      - 25,26|🇺🇸 美国2|@ripaojiedian
-      - 美国_0519018
-      - 荷兰 004 2
-      - US(AzadNet.t.me)_514 2
-      - github.com/freefq - 欧盟  4
-      - 28|🇨🇦 CA 19 → tg@nicevpn123
-      - 23|4FreeIran-860
-      - JP(AzadNet.t.me)_019
-      - 美国 079
-      - US(AzadNet.t.me)_277
-      - _TW_台湾
-      - 12|🇹🇼 Taiwan(ChatGPT) 11 TG:@nodp...
-      - ES_FreeNode.me_174
-      - "|27.70Mb"
-      - 25,26|🇰🇷 韩国直连|@ripaojiedian
-      - 12,28,28|🇹🇼 Taiwan(ChatGPT) 16 TG:@nodp...
-      - 23|🇺🇸US美国(youtube阿伟科技2)____
-      - 美国 084 2
-      - 美国_0520338
-      - _US_美国 19
-      - 美国_0519666
-      - 12|🇹🇼 Taiwan(ChatGPT) 11 TG:@nodp... 2
-      - JP(AzadNet.t.me)_017
-      - US(AzadNet.t.me)_495 2
-      - 美国_0519141
-      - -1,20,25,26|🇺🇸 United States(ChatGPT) 17 T...
-      - 美国 057
-      - India 01 TG:@SSRSUB
-      - 22,23|_🇺🇸_US_美国_科网_23
-      - US_FreeNode.me_194
-      - 28|🇺🇸 US 330 → tg@nicevpn123
-      - HK香港(youtube阿伟科技2) 3 2
-      - 美国_0519018 2
-      - HK香港(youtube阿伟科技2) 2
-      - 美国【付费推荐：suo.yt/ssrsub】80
-      - _US_美国 6
-      - 日本_0517080
-      - 23|🇺🇸US美国(youtube阿伟科技2)__
-      - _US_美国 5
-      - JP(AzadNet.t.me)_017 2
-      - SW
-      - 香港 009
-      - 土耳其_0519003
-      - JP(AzadNet.t.me)_017 3
-      - 日本_0518054
-      - 美国 082
-      - 二爷翻墙网 https://1808.ga  节点_6
-      - 美国【付费推荐：suo.yt/ssrsub】95
-      - 美国_0519018 3
-      - 美国_0519472 2
-      - 22|_🇺🇸_US_美国_科网_130
-      - 22,28|_🇨🇦_CA_加拿大_顺丰_175
-      - 日本_0519052
-      - 纳米比亚_0520001
-      - _US_美国 2 2
-      - 美国_05201407
-      - 日本 008
-      - RU_FreeNode.me_54
-      - 22,28|_🇺🇸_US_美国_科网_104
-      - "|14.68Mb"
-      - 11,12,18,25,26|🇺🇸 United States 29 TG:@nodpai
-      - JP(AzadNet.t.me)_019 2
-      - 美国 073
-      - 美国 084 3
-      - 美国_05204587
-      - 瑞士_0520021
-      - 美国 077
-      - 未知_0520415
-      - 俄罗斯联邦_0519009
-      - 未知_05203257
-      - 12|Relay 🇺🇸 United States 22 TG:@...
-      - 法国_0520221
-      - 12,28|🇹🇼 Taiwan(ChatGPT) 12 TG:@nodp...
-      - 中国_0520444
-      - 美国 096
-      - _🇺🇸_US_美国_科网_130
-      - 二爷翻墙网 https://1808.ga  节点_13
-      - 日本_0517080 2
-      - 二爷翻墙网 https://1808.ga  节点_4
-      - 美国_0519018 4
-      - 美国_0517880
-      - 德国_0520232
-      - 美国 088
-      - United States 42 TG@nodpai 2
-      - 美国 078
-      - US(AzadNet.t.me)_495 3
-      - JP(AzadNet.t.me)_017 4
-      - "@SSRSUB-V16-付费推荐:suo.yt/ssrsub"
-      - 美国 082 2
-      - 日本_0519052 2
-      - 德国_0520228
-      - 立陶宛_0520012
-      - 美国_0520543
-      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
-      - 11,12,30,31|🇺🇸 United States(ChatGPT) 25 T...
-      - EG_FreeNode.me_58
-      - JP(AzadNet.t.me)_017 5
-      - "|13.85Mb"
-      - 美国 098
-      - US(AzadNet.t.me)_495 4
-      - 12,28|🇹🇼 Taiwan(ChatGPT) 03 TG:@nodp...
-      - 俄罗斯 001
-      - 日本 008 2
-      - 美国_0519472 3
-      - US_FreeNode.me_103
-      - JP(AzadNet.t.me)_019 3
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 14
-      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V02-付费推荐:suo.yt/ssrsub"
-      - 澳大利亚-0-0-ss-43.201.1...
-      - V005--US-付费推荐:suo.yt/ssrsub
-      - 未知_05203375
-      - 28|🇷🇺 RU 5 → tg@nicevpn123
-      - V003--US-付费推荐:suo.yt/ssrsub
+      - DE(AzadNet.t.me)_033
+      - US(AzadNet.t.me)_574
       - _CA_加拿大
-      - 立陶宛_0520003
+      - US_FreeNode.me_167
+      - US(AzadNet.t.me)_111
+      - 马来西亚_0521002
+      - github.com/freefq - 俄罗斯新西伯利亚ADMAN数据中心 20
+      - US(AzadNet.t.me)_291
+      - US(AzadNet.t.me)_336
+      - 美国_05211378
+      - 美国_0521289
+      - 台湾_0521092
       - 日本 009
-      - 23|🇺🇸US美国(youtube阿伟科技2)___
-      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
-      - US 342 → tg@nicevpn123
-      - 中国【付费推荐：https://v1.mk/...
-      - 美国_05204505
-      - 美国 083
-      - 美国 090
-      - 土耳其【付费推荐：https://v1.mk/vip】51
-      - 未知_0519175
-      - V001--US-付费推荐:suo.yt/ssrsub
-      - 美国_05171041
-      - HK_FreeNode.me_67
-      - US_FreeNode.me_52
-      - 日本_0518054 2
-      - 美国_05204775
-      - 美国 100
-      - DP3
-      - 日本 007
+      - US(AzadNet.t.me)_495
+      - 日本_0519052
+      - 伯利兹_0521085
+      - TW_165.154.227.239_0521202379c4-611trojan
+      - US(AzadNet.t.me)_561 2
+      - 12,12,13,13,16|🇦🇺 Australia 01 TG:@nodpai
+      - 美国_0521856
+      - AU(AzadNet.t.me)_003 2
+      - US(AzadNet.t.me)_291 2
+      - v2rayfree.eu.org - 美国CloudFlare节点 3
+      - HK香港(youtube阿伟科技) 4
+      - JP(AzadNet.t.me)_019
+      - US(AzadNet.t.me)_574 2
+      - v2rayfree.eu.org - 欧盟  8
+      - V005--US-付费推荐:suo.yt/ssrsub
+      - 12,28,28|🇹🇼 Taiwan(ChatGPT) 16 TG:@nodp...
+      - -1,20|4Iran-1039
+      - US(AzadNet.t.me)_105
+      - 美国【付费推荐：https://v1.mk/vip】5
+      - JP(AzadNet.t.me)_017
+      - BuyVM1
+      - HK香港(youtube阿伟科技)
+      - 12,28|🇹🇼 Taiwan(ChatGPT) 12 TG:@nodp...
+      - 日本_0518054
+      - 荷兰 004
+      - _SG_新加坡
+      - JP(AzadNet.t.me)_019 2
+      - 塞浦路斯【付费推荐：https://v1.mk/vip】25
       - 二爷翻墙网 https://1808.ga  节点_5
-      - 二爷翻墙网 https://1808.ga  节点_10
-      - "@SSRSUB-V17-付费推荐:suo.yt/ssrsub"
-      - 中国_0520442
-      - 美国 050
+      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
+      - 日本_0518054 2
+      - v2rayfree.eu.org - 欧盟  15
+      - 日本_0519052 2
+      - "美国圣何塞-2号 | 解锁流媒体\r"
+      - 美国_05211455 3
+      - US(AzadNet.t.me)_343 2
+      - 美国_0517880
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V15-付费推荐:suo.yt/ssrsub"
+      - v2rayfree.eu.org - 加拿大  22
+      - 二爷翻墙网 https://1808.ga  节点_8
+      - 日本_0521053
+      - US(AzadNet.t.me)_111 2
+      - US_FreeNode.me_52
+      - "@SSRSUB-V02-付费推荐:suo.yt/ssrsub"
+      - RU_FreeNode.me_54
+      - v2rayfree.eu.org - 美国  9
+      - 美国【付费推荐：suo.yt/ssrsub】199
+      - US(AzadNet.t.me)_574 3
+      - HK香港(youtube阿伟科技) 3
+      - 美国6-ChatGPT
+      - 日本 008
+      - "越南-1号\r"
+      - "@SSRSUB-V03-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：suo.yt/ssrsub】210
+      - v2rayfree.eu.org - 美国CloudFlare节点 2
+      - 美国【付费推荐：suo.yt/ssrsub】148
+      - 美国 003
+      - US(AzadNet.t.me)_561 3
+      - JP(AzadNet.t.me)_017 2
+      - JP(AzadNet.t.me)_017 3
+      - 日本_0519048
+      - 美国_0520543
+      - 20|US_142.4.121.252_05202023286e-...
+      - 中国【付费推荐：https://v1.mk/vip】59
+      - US(AzadNet.t.me)_111 3
+      - DP4
+      - DP3@yxjnode
+      - 美国 064
+      - 英国 V2CROSS.COM
+      - 日本_0521047
+      - "美国凤凰城-3号 | 解锁流媒体\r"
+      - github.com/freefq - 俄罗斯新西伯利亚ADMAN数据中心 11
+      - HK香港(youtube阿伟科技) 5
+      - JP(AzadNet.t.me)_017 4
+      - 伊朗 001
+      - 台湾_0520633
+      - 19|_🇺🇦_UA_乌克兰_顺丰_23
+      - 28|🇨🇦 CA 19 → tg@nicevpn123
+      - 美国 082
+      - "@SSRSUB-V16-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
+      - 美国 085
+      - 日本_0517080
+      - -日本-45.88.43.136
+      - "@SSRSUB-V05-付费推荐:suo.yt/ssrsub"
+      - 俄罗斯 001
+      - 二爷翻墙网 https://1808.ga  节点_6
+      - Pool_Pool_Pool_ |22.16Mb
+      - _SG_新加坡 2
+      - 美国 030
+      - 19|_🇾🇪_YE_也门_顺丰_186
+      - _TW_台湾
+      - 16,20|美国 006
+      - HK香港(youtube阿伟科技) 4 2
+      - "|22.16Mb"
+      - _IR_伊朗_2
+      - 12,13,16,20|🇺🇸 United States 18 TG:@nodpai
+      - "|14.05Mb"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 荷兰 004
-      - _EG_埃及
-      - 16|香港 006
-      - _EG_埃及 2
-      - HK香港(youtube阿伟科技2) 4
-      - 20|US_youtube@资源分享师_78
-      - _TW_台湾 3
-      - 19|_🇺🇸_US_美国_由零開始_20____
-      - 美国_05201401
-      - 19|_🇺🇸_US_美国_由零開始_20
-      - US(AzadNet.t.me)_495
-      - 香港 010
-      - 未知_05203237
-      - github.com/freefq - 美国CloudFlare公司CDN节点 15
-      - _US_美国 23
+      - 美国_0521299
+      - US(AzadNet.t.me)_343
+      - "%�\x11�%�P���_FR_法国"
+      - _US_美国_2
+      - _US_美国_11
+      - 美国_0521028
+      - 美国_05211455
+      - US(AzadNet.t.me)_610
+      - 美国_05214908
+      - 台湾_0521580
+      - 美国_0521028 2
+      - 台湾_0521002
+      - US_FreeNode.me_174
+      - US(AzadNet.t.me)_561
+      - 台湾_0521008
+      - US(AzadNet.t.me)_250
+      - 美国_05211455 2
       - AU(AzadNet.t.me)_003
-      - -1|🇮🇳IN-172.105.37.119-5289
-      - 美国 085
-      - 20|_🇺🇸_US_美国_科网_108
-      - US(AzadNet.t.me)_291
-      - 19|_🇺🇸_US_美国_顺丰_86
-      - github.com/freefq - 日本  4
-      - 美国 084
-      - 美国_0520023
-      - github.com/freefq - 美国CloudFlare公司CDN节点 21
-      - _EG_埃及 3
-      - _SG_新加坡->🇹🇼_TW_台湾 2
-      - 12,13|🇩🇪 Germany(ChatGPT) 01 TG:@nod...
-      - US(AzadNet.t.me)_032
-      - 19|_🇺🇸_US_美国_由零開始_20___
-      - _US_美国 7
-      - 12,12,13,13,16|🇦🇺 Australia 01 TG:@nodpai
-      - 塞浦路斯_0520006
-      - 16,19|美国 052
-      - 美国【付费推荐：suo.yt/ssrsub】61
-      - -1|🇺🇸US-104.233.129.82-25471
-      - 德国_0520074
-      - _TW_台湾 2
-      - 台湾_0520013
-      - 美国_05201406
-      - 19|_🇺🇸_US_美国_由零開始_20_____
-      - github.com/freefq - 美国  5
+      - 未知_0521144
+      - PS_FreeNode.me_114
+      - 加拿大_0521103
       - 俄罗斯联邦【付费推荐：suo.yt/ssrsub】17
-      - 日本【付费推荐：https://v1.mk/vip】8
-      - 台湾_0520633
-      - 台湾_0520046
-      - HK香港(youtube阿伟科技2) 3
-      - 20|4Jadi-941
-      - 19|_🇺🇸_US_美国_由零開始_20__
-      - 美国_05201473
-      - _EG_埃及 4
-      - US(AzadNet.t.me)_514
-      - 20|🇺🇸_US_美国_@suyucom
-      - 土耳其【付费推荐：suo.yt/ssrsub】51
-      - 19|_🇺🇸_US_美国_顺丰_39
-      - -1|VIVO PRE FREE
-      - -1|🇺🇸US-23.224.110.182-15354
-      - 土耳其_0520006
-      - "|10.55Mb"
-      - "|20.74Mb"
-      - 16|法国 002
-      - github.com/freefq - 广东省广州市移动 10
-      - 中国【付费推荐：suo.yt/ssrsub】39
-      - 17,20|github.com/freefq - 美国CloudFla...
-      - 未知_0520143
-      - Taiwan(ChatGPT) 29 TG@nodpai
-      - 美国_05201399
-      - 土耳其【付费推荐：suo.yt/ssrsub】51 2
-      - 18,22|🇯🇵日本-东京都-东京-ss-18.176.61.169:4...
-      - DP4
-      - 美国【付费推荐：suo.yt/ssrsub】37
-      - 19|_🇺🇸_US_美国_由零開始_20_
-      - 19|_🇺🇸_US_美国_由零開始_20______
-      - 美国_0519472
-      - 台湾_0520047
-      - 美国【付费推荐：https://v1.mk/vip】130
-      - 美国_05201403
-      - US(AzadNet.t.me)_105
-      - -1,20|4Iran-1039
-      - 美国 086
-      - AU(AzadNet.t.me)_003 2
-      - HK香港(youtube阿伟科技2)
-      - -日本-45.88.43.136
-      - 美国_0520008
-      - 日本_0519048
-      - US_FreeNode.me_172
-      - 美国 064
-      - _US_美国 10
-      - 12,13,16,20|🇺🇸 United States 18 TG:@nodpai
-      - 美国_05201409
-      - 美国_05201398
-      - HK_FreeNode.me_2
-      - 11,12,18|🇺🇸 United States 18 TG:@nodpai
-      - 俄罗斯联邦【付费推荐：suo.yt/ssrsub】17 2
-      - 25|🇺🇸 美国A|tg频道:@ripaojiedian
-      - 二爷翻墙网 https://1808.ga  节点_8
-      - github.com/freefq - 广东省广州市移动 8
-      - _🇺🇸_US_美国_科网_18
-      - United States 42 TG@nodpai
-      - 美国 092
-      - 25,26|🇺🇸 美国2|@ripaojiedian
-      - 美国_0519018
-      - 荷兰 004 2
-      - US(AzadNet.t.me)_514 2
-      - github.com/freefq - 欧盟  4
-      - 28|🇨🇦 CA 19 → tg@nicevpn123
-      - 23|4FreeIran-860
-      - JP(AzadNet.t.me)_019
-      - 美国 079
-      - US(AzadNet.t.me)_277
-      - _TW_台湾
-      - 12|🇹🇼 Taiwan(ChatGPT) 11 TG:@nodp...
-      - ES_FreeNode.me_174
-      - "|27.70Mb"
-      - 25,26|🇰🇷 韩国直连|@ripaojiedian
-      - 12,28,28|🇹🇼 Taiwan(ChatGPT) 16 TG:@nodp...
-      - 23|🇺🇸US美国(youtube阿伟科技2)____
-      - 美国 084 2
-      - 美国_0520338
-      - _US_美国 19
-      - 美国_0519666
-      - 12|🇹🇼 Taiwan(ChatGPT) 11 TG:@nodp... 2
-      - JP(AzadNet.t.me)_017
-      - US(AzadNet.t.me)_495 2
-      - 美国_0519141
-      - -1,20,25,26|🇺🇸 United States(ChatGPT) 17 T...
-      - 美国 057
-      - India 01 TG:@SSRSUB
-      - 22,23|_🇺🇸_US_美国_科网_23
-      - US_FreeNode.me_194
-      - 28|🇺🇸 US 330 → tg@nicevpn123
-      - HK香港(youtube阿伟科技2) 3 2
-      - 美国_0519018 2
-      - HK香港(youtube阿伟科技2) 2
-      - 美国【付费推荐：suo.yt/ssrsub】80
-      - _US_美国 6
-      - 日本_0517080
-      - 23|🇺🇸US美国(youtube阿伟科技2)__
-      - _US_美国 5
-      - JP(AzadNet.t.me)_017 2
-      - SW
-      - 香港 009
-      - 土耳其_0519003
-      - JP(AzadNet.t.me)_017 3
-      - 日本_0518054
-      - 美国 082
-      - 二爷翻墙网 https://1808.ga  节点_6
-      - 美国【付费推荐：suo.yt/ssrsub】95
-      - 美国_0519018 3
-      - 美国_0519472 2
-      - 22|_🇺🇸_US_美国_科网_130
-      - 22,28|_🇨🇦_CA_加拿大_顺丰_175
-      - 日本_0519052
-      - 纳米比亚_0520001
-      - _US_美国 2 2
-      - 美国_05201407
-      - 日本 008
-      - RU_FreeNode.me_54
-      - 22,28|_🇺🇸_US_美国_科网_104
-      - "|14.68Mb"
-      - 11,12,18,25,26|🇺🇸 United States 29 TG:@nodpai
-      - JP(AzadNet.t.me)_019 2
-      - 美国 073
-      - 美国 084 3
-      - 美国_05204587
-      - 瑞士_0520021
-      - 美国 077
-      - 未知_0520415
-      - 俄罗斯联邦_0519009
-      - 未知_05203257
-      - 12|Relay 🇺🇸 United States 22 TG:@...
-      - 法国_0520221
-      - 12,28|🇹🇼 Taiwan(ChatGPT) 12 TG:@nodp...
-      - 中国_0520444
-      - 美国 096
-      - _🇺🇸_US_美国_科网_130
-      - 二爷翻墙网 https://1808.ga  节点_13
-      - 日本_0517080 2
-      - 二爷翻墙网 https://1808.ga  节点_4
-      - 美国_0519018 4
-      - 美国_0517880
-      - 德国_0520232
-      - 美国 088
-      - United States 42 TG@nodpai 2
-      - 美国 078
-      - US(AzadNet.t.me)_495 3
-      - JP(AzadNet.t.me)_017 4
-      - "@SSRSUB-V16-付费推荐:suo.yt/ssrsub"
-      - 美国 082 2
-      - 日本_0519052 2
-      - 德国_0520228
-      - 立陶宛_0520012
-      - 美国_0520543
-      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
-      - 11,12,30,31|🇺🇸 United States(ChatGPT) 25 T...
-      - EG_FreeNode.me_58
-      - JP(AzadNet.t.me)_017 5
-      - "|13.85Mb"
-      - 美国 098
-      - US(AzadNet.t.me)_495 4
-      - 12,28|🇹🇼 Taiwan(ChatGPT) 03 TG:@nodp...
-      - 俄罗斯 001
-      - 日本 008 2
-      - 美国_0519472 3
-      - US_FreeNode.me_103
-      - JP(AzadNet.t.me)_019 3
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 14
-      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V02-付费推荐:suo.yt/ssrsub"
-      - 澳大利亚-0-0-ss-43.201.1...
-      - V005--US-付费推荐:suo.yt/ssrsub
-      - 未知_05203375
-      - 28|🇷🇺 RU 5 → tg@nicevpn123
-      - V003--US-付费推荐:suo.yt/ssrsub
+      - DE(AzadNet.t.me)_033
+      - US(AzadNet.t.me)_574
       - _CA_加拿大
-      - 立陶宛_0520003
+      - US_FreeNode.me_167
+      - US(AzadNet.t.me)_111
+      - 马来西亚_0521002
+      - github.com/freefq - 俄罗斯新西伯利亚ADMAN数据中心 20
+      - US(AzadNet.t.me)_291
+      - US(AzadNet.t.me)_336
+      - 美国_05211378
+      - 美国_0521289
+      - 台湾_0521092
       - 日本 009
-      - 23|🇺🇸US美国(youtube阿伟科技2)___
-      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
-      - US 342 → tg@nicevpn123
-      - 中国【付费推荐：https://v1.mk/...
-      - 美国_05204505
-      - 美国 083
-      - 美国 090
-      - 土耳其【付费推荐：https://v1.mk/vip】51
-      - 未知_0519175
-      - V001--US-付费推荐:suo.yt/ssrsub
-      - 美国_05171041
-      - HK_FreeNode.me_67
-      - US_FreeNode.me_52
-      - 日本_0518054 2
-      - 美国_05204775
-      - 美国 100
-      - DP3
-      - 日本 007
+      - US(AzadNet.t.me)_495
+      - 日本_0519052
+      - 伯利兹_0521085
+      - TW_165.154.227.239_0521202379c4-611trojan
+      - US(AzadNet.t.me)_561 2
+      - 12,12,13,13,16|🇦🇺 Australia 01 TG:@nodpai
+      - 美国_0521856
+      - AU(AzadNet.t.me)_003 2
+      - US(AzadNet.t.me)_291 2
+      - v2rayfree.eu.org - 美国CloudFlare节点 3
+      - HK香港(youtube阿伟科技) 4
+      - JP(AzadNet.t.me)_019
+      - US(AzadNet.t.me)_574 2
+      - v2rayfree.eu.org - 欧盟  8
+      - V005--US-付费推荐:suo.yt/ssrsub
+      - 12,28,28|🇹🇼 Taiwan(ChatGPT) 16 TG:@nodp...
+      - -1,20|4Iran-1039
+      - US(AzadNet.t.me)_105
+      - 美国【付费推荐：https://v1.mk/vip】5
+      - JP(AzadNet.t.me)_017
+      - BuyVM1
+      - HK香港(youtube阿伟科技)
+      - 12,28|🇹🇼 Taiwan(ChatGPT) 12 TG:@nodp...
+      - 日本_0518054
+      - 荷兰 004
+      - _SG_新加坡
+      - JP(AzadNet.t.me)_019 2
+      - 塞浦路斯【付费推荐：https://v1.mk/vip】25
       - 二爷翻墙网 https://1808.ga  节点_5
-      - 二爷翻墙网 https://1808.ga  节点_10
-      - "@SSRSUB-V17-付费推荐:suo.yt/ssrsub"
-      - 中国_0520442
-      - 美国 050
+      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
+      - 日本_0518054 2
+      - v2rayfree.eu.org - 欧盟  15
+      - 日本_0519052 2
+      - "美国圣何塞-2号 | 解锁流媒体\r"
+      - 美国_05211455 3
+      - US(AzadNet.t.me)_343 2
+      - 美国_0517880
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V15-付费推荐:suo.yt/ssrsub"
+      - v2rayfree.eu.org - 加拿大  22
+      - 二爷翻墙网 https://1808.ga  节点_8
+      - 日本_0521053
+      - US(AzadNet.t.me)_111 2
+      - US_FreeNode.me_52
+      - "@SSRSUB-V02-付费推荐:suo.yt/ssrsub"
+      - RU_FreeNode.me_54
+      - v2rayfree.eu.org - 美国  9
+      - 美国【付费推荐：suo.yt/ssrsub】199
+      - US(AzadNet.t.me)_574 3
+      - HK香港(youtube阿伟科技) 3
+      - 美国6-ChatGPT
+      - 日本 008
+      - "越南-1号\r"
+      - "@SSRSUB-V03-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：suo.yt/ssrsub】210
+      - v2rayfree.eu.org - 美国CloudFlare节点 2
+      - 美国【付费推荐：suo.yt/ssrsub】148
+      - 美国 003
+      - US(AzadNet.t.me)_561 3
+      - JP(AzadNet.t.me)_017 2
+      - JP(AzadNet.t.me)_017 3
+      - 日本_0519048
+      - 美国_0520543
+      - 20|US_142.4.121.252_05202023286e-...
+      - 中国【付费推荐：https://v1.mk/vip】59
+      - US(AzadNet.t.me)_111 3
+      - DP4
+      - DP3@yxjnode
+      - 美国 064
+      - 英国 V2CROSS.COM
+      - 日本_0521047
+      - "美国凤凰城-3号 | 解锁流媒体\r"
+      - github.com/freefq - 俄罗斯新西伯利亚ADMAN数据中心 11
+      - HK香港(youtube阿伟科技) 5
+      - JP(AzadNet.t.me)_017 4
+      - 伊朗 001
+      - 台湾_0520633
+      - 19|_🇺🇦_UA_乌克兰_顺丰_23
+      - 28|🇨🇦 CA 19 → tg@nicevpn123
+      - 美国 082
+      - "@SSRSUB-V16-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
+      - 美国 085
+      - 日本_0517080
+      - -日本-45.88.43.136
+      - "@SSRSUB-V05-付费推荐:suo.yt/ssrsub"
+      - 俄罗斯 001
+      - 二爷翻墙网 https://1808.ga  节点_6
+      - Pool_Pool_Pool_ |22.16Mb
+      - _SG_新加坡 2
+      - 美国 030
+      - 19|_🇾🇪_YE_也门_顺丰_186
+      - _TW_台湾
+      - 16,20|美国 006
+      - HK香港(youtube阿伟科技) 4 2
+      - "|22.16Mb"
+      - _IR_伊朗_2
+      - 12,13,16,20|🇺🇸 United States 18 TG:@nodpai
+      - "|14.05Mb"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -1001,1003 +577,574 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 荷兰 004
-      - _EG_埃及
-      - 16|香港 006
-      - _EG_埃及 2
-      - HK香港(youtube阿伟科技2) 4
-      - 20|US_youtube@资源分享师_78
-      - _TW_台湾 3
-      - 19|_🇺🇸_US_美国_由零開始_20____
-      - 美国_05201401
-      - 19|_🇺🇸_US_美国_由零開始_20
-      - US(AzadNet.t.me)_495
-      - 香港 010
-      - 未知_05203237
-      - github.com/freefq - 美国CloudFlare公司CDN节点 15
-      - _US_美国 23
+      - 美国_0521299
+      - US(AzadNet.t.me)_343
+      - "%�\x11�%�P���_FR_法国"
+      - _US_美国_2
+      - _US_美国_11
+      - 美国_0521028
+      - 美国_05211455
+      - US(AzadNet.t.me)_610
+      - 美国_05214908
+      - 台湾_0521580
+      - 美国_0521028 2
+      - 台湾_0521002
+      - US_FreeNode.me_174
+      - US(AzadNet.t.me)_561
+      - 台湾_0521008
+      - US(AzadNet.t.me)_250
+      - 美国_05211455 2
       - AU(AzadNet.t.me)_003
-      - -1|🇮🇳IN-172.105.37.119-5289
-      - 美国 085
-      - 20|_🇺🇸_US_美国_科网_108
-      - US(AzadNet.t.me)_291
-      - 19|_🇺🇸_US_美国_顺丰_86
-      - github.com/freefq - 日本  4
-      - 美国 084
-      - 美国_0520023
-      - github.com/freefq - 美国CloudFlare公司CDN节点 21
-      - _EG_埃及 3
-      - _SG_新加坡->🇹🇼_TW_台湾 2
-      - 12,13|🇩🇪 Germany(ChatGPT) 01 TG:@nod...
-      - US(AzadNet.t.me)_032
-      - 19|_🇺🇸_US_美国_由零開始_20___
-      - _US_美国 7
-      - 12,12,13,13,16|🇦🇺 Australia 01 TG:@nodpai
-      - 塞浦路斯_0520006
-      - 16,19|美国 052
-      - 美国【付费推荐：suo.yt/ssrsub】61
-      - -1|🇺🇸US-104.233.129.82-25471
-      - 德国_0520074
-      - _TW_台湾 2
-      - 台湾_0520013
-      - 美国_05201406
-      - 19|_🇺🇸_US_美国_由零開始_20_____
-      - github.com/freefq - 美国  5
+      - 未知_0521144
+      - PS_FreeNode.me_114
+      - 加拿大_0521103
       - 俄罗斯联邦【付费推荐：suo.yt/ssrsub】17
-      - 日本【付费推荐：https://v1.mk/vip】8
-      - 台湾_0520633
-      - 台湾_0520046
-      - HK香港(youtube阿伟科技2) 3
-      - 20|4Jadi-941
-      - 19|_🇺🇸_US_美国_由零開始_20__
-      - 美国_05201473
-      - _EG_埃及 4
-      - US(AzadNet.t.me)_514
-      - 20|🇺🇸_US_美国_@suyucom
-      - 土耳其【付费推荐：suo.yt/ssrsub】51
-      - 19|_🇺🇸_US_美国_顺丰_39
-      - -1|VIVO PRE FREE
-      - -1|🇺🇸US-23.224.110.182-15354
-      - 土耳其_0520006
-      - "|10.55Mb"
-      - "|20.74Mb"
-      - 16|法国 002
-      - github.com/freefq - 广东省广州市移动 10
-      - 中国【付费推荐：suo.yt/ssrsub】39
-      - 17,20|github.com/freefq - 美国CloudFla...
-      - 未知_0520143
-      - Taiwan(ChatGPT) 29 TG@nodpai
-      - 美国_05201399
-      - 土耳其【付费推荐：suo.yt/ssrsub】51 2
-      - 18,22|🇯🇵日本-东京都-东京-ss-18.176.61.169:4...
-      - DP4
-      - 美国【付费推荐：suo.yt/ssrsub】37
-      - 19|_🇺🇸_US_美国_由零開始_20_
-      - 19|_🇺🇸_US_美国_由零開始_20______
-      - 美国_0519472
-      - 台湾_0520047
-      - 美国【付费推荐：https://v1.mk/vip】130
-      - 美国_05201403
-      - US(AzadNet.t.me)_105
-      - -1,20|4Iran-1039
-      - 美国 086
-      - AU(AzadNet.t.me)_003 2
-      - HK香港(youtube阿伟科技2)
-      - -日本-45.88.43.136
-      - 美国_0520008
-      - 日本_0519048
-      - US_FreeNode.me_172
-      - 美国 064
-      - _US_美国 10
-      - 12,13,16,20|🇺🇸 United States 18 TG:@nodpai
-      - 美国_05201409
-      - 美国_05201398
-      - HK_FreeNode.me_2
-      - 11,12,18|🇺🇸 United States 18 TG:@nodpai
-      - 俄罗斯联邦【付费推荐：suo.yt/ssrsub】17 2
-      - 25|🇺🇸 美国A|tg频道:@ripaojiedian
-      - 二爷翻墙网 https://1808.ga  节点_8
-      - github.com/freefq - 广东省广州市移动 8
-      - _🇺🇸_US_美国_科网_18
-      - United States 42 TG@nodpai
-      - 美国 092
-      - 25,26|🇺🇸 美国2|@ripaojiedian
-      - 美国_0519018
-      - 荷兰 004 2
-      - US(AzadNet.t.me)_514 2
-      - github.com/freefq - 欧盟  4
-      - 28|🇨🇦 CA 19 → tg@nicevpn123
-      - 23|4FreeIran-860
-      - JP(AzadNet.t.me)_019
-      - 美国 079
-      - US(AzadNet.t.me)_277
-      - _TW_台湾
-      - 12|🇹🇼 Taiwan(ChatGPT) 11 TG:@nodp...
-      - ES_FreeNode.me_174
-      - "|27.70Mb"
-      - 25,26|🇰🇷 韩国直连|@ripaojiedian
-      - 12,28,28|🇹🇼 Taiwan(ChatGPT) 16 TG:@nodp...
-      - 23|🇺🇸US美国(youtube阿伟科技2)____
-      - 美国 084 2
-      - 美国_0520338
-      - _US_美国 19
-      - 美国_0519666
-      - 12|🇹🇼 Taiwan(ChatGPT) 11 TG:@nodp... 2
-      - JP(AzadNet.t.me)_017
-      - US(AzadNet.t.me)_495 2
-      - 美国_0519141
-      - -1,20,25,26|🇺🇸 United States(ChatGPT) 17 T...
-      - 美国 057
-      - India 01 TG:@SSRSUB
-      - 22,23|_🇺🇸_US_美国_科网_23
-      - US_FreeNode.me_194
-      - 28|🇺🇸 US 330 → tg@nicevpn123
-      - HK香港(youtube阿伟科技2) 3 2
-      - 美国_0519018 2
-      - HK香港(youtube阿伟科技2) 2
-      - 美国【付费推荐：suo.yt/ssrsub】80
-      - _US_美国 6
-      - 日本_0517080
-      - 23|🇺🇸US美国(youtube阿伟科技2)__
-      - _US_美国 5
-      - JP(AzadNet.t.me)_017 2
-      - SW
-      - 香港 009
-      - 土耳其_0519003
-      - JP(AzadNet.t.me)_017 3
-      - 日本_0518054
-      - 美国 082
-      - 二爷翻墙网 https://1808.ga  节点_6
-      - 美国【付费推荐：suo.yt/ssrsub】95
-      - 美国_0519018 3
-      - 美国_0519472 2
-      - 22|_🇺🇸_US_美国_科网_130
-      - 22,28|_🇨🇦_CA_加拿大_顺丰_175
-      - 日本_0519052
-      - 纳米比亚_0520001
-      - _US_美国 2 2
-      - 美国_05201407
-      - 日本 008
-      - RU_FreeNode.me_54
-      - 22,28|_🇺🇸_US_美国_科网_104
-      - "|14.68Mb"
-      - 11,12,18,25,26|🇺🇸 United States 29 TG:@nodpai
-      - JP(AzadNet.t.me)_019 2
-      - 美国 073
-      - 美国 084 3
-      - 美国_05204587
-      - 瑞士_0520021
-      - 美国 077
-      - 未知_0520415
-      - 俄罗斯联邦_0519009
-      - 未知_05203257
-      - 12|Relay 🇺🇸 United States 22 TG:@...
-      - 法国_0520221
-      - 12,28|🇹🇼 Taiwan(ChatGPT) 12 TG:@nodp...
-      - 中国_0520444
-      - 美国 096
-      - _🇺🇸_US_美国_科网_130
-      - 二爷翻墙网 https://1808.ga  节点_13
-      - 日本_0517080 2
-      - 二爷翻墙网 https://1808.ga  节点_4
-      - 美国_0519018 4
-      - 美国_0517880
-      - 德国_0520232
-      - 美国 088
-      - United States 42 TG@nodpai 2
-      - 美国 078
-      - US(AzadNet.t.me)_495 3
-      - JP(AzadNet.t.me)_017 4
-      - "@SSRSUB-V16-付费推荐:suo.yt/ssrsub"
-      - 美国 082 2
-      - 日本_0519052 2
-      - 德国_0520228
-      - 立陶宛_0520012
-      - 美国_0520543
-      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
-      - 11,12,30,31|🇺🇸 United States(ChatGPT) 25 T...
-      - EG_FreeNode.me_58
-      - JP(AzadNet.t.me)_017 5
-      - "|13.85Mb"
-      - 美国 098
-      - US(AzadNet.t.me)_495 4
-      - 12,28|🇹🇼 Taiwan(ChatGPT) 03 TG:@nodp...
-      - 俄罗斯 001
-      - 日本 008 2
-      - 美国_0519472 3
-      - US_FreeNode.me_103
-      - JP(AzadNet.t.me)_019 3
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 14
-      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V02-付费推荐:suo.yt/ssrsub"
-      - 澳大利亚-0-0-ss-43.201.1...
-      - V005--US-付费推荐:suo.yt/ssrsub
-      - 未知_05203375
-      - 28|🇷🇺 RU 5 → tg@nicevpn123
-      - V003--US-付费推荐:suo.yt/ssrsub
+      - DE(AzadNet.t.me)_033
+      - US(AzadNet.t.me)_574
       - _CA_加拿大
-      - 立陶宛_0520003
+      - US_FreeNode.me_167
+      - US(AzadNet.t.me)_111
+      - 马来西亚_0521002
+      - github.com/freefq - 俄罗斯新西伯利亚ADMAN数据中心 20
+      - US(AzadNet.t.me)_291
+      - US(AzadNet.t.me)_336
+      - 美国_05211378
+      - 美国_0521289
+      - 台湾_0521092
       - 日本 009
-      - 23|🇺🇸US美国(youtube阿伟科技2)___
-      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
-      - US 342 → tg@nicevpn123
-      - 中国【付费推荐：https://v1.mk/...
-      - 美国_05204505
-      - 美国 083
-      - 美国 090
-      - 土耳其【付费推荐：https://v1.mk/vip】51
-      - 未知_0519175
-      - V001--US-付费推荐:suo.yt/ssrsub
-      - 美国_05171041
-      - HK_FreeNode.me_67
-      - US_FreeNode.me_52
-      - 日本_0518054 2
-      - 美国_05204775
-      - 美国 100
-      - DP3
-      - 日本 007
+      - US(AzadNet.t.me)_495
+      - 日本_0519052
+      - 伯利兹_0521085
+      - TW_165.154.227.239_0521202379c4-611trojan
+      - US(AzadNet.t.me)_561 2
+      - 12,12,13,13,16|🇦🇺 Australia 01 TG:@nodpai
+      - 美国_0521856
+      - AU(AzadNet.t.me)_003 2
+      - US(AzadNet.t.me)_291 2
+      - v2rayfree.eu.org - 美国CloudFlare节点 3
+      - HK香港(youtube阿伟科技) 4
+      - JP(AzadNet.t.me)_019
+      - US(AzadNet.t.me)_574 2
+      - v2rayfree.eu.org - 欧盟  8
+      - V005--US-付费推荐:suo.yt/ssrsub
+      - 12,28,28|🇹🇼 Taiwan(ChatGPT) 16 TG:@nodp...
+      - -1,20|4Iran-1039
+      - US(AzadNet.t.me)_105
+      - 美国【付费推荐：https://v1.mk/vip】5
+      - JP(AzadNet.t.me)_017
+      - BuyVM1
+      - HK香港(youtube阿伟科技)
+      - 12,28|🇹🇼 Taiwan(ChatGPT) 12 TG:@nodp...
+      - 日本_0518054
+      - 荷兰 004
+      - _SG_新加坡
+      - JP(AzadNet.t.me)_019 2
+      - 塞浦路斯【付费推荐：https://v1.mk/vip】25
       - 二爷翻墙网 https://1808.ga  节点_5
-      - 二爷翻墙网 https://1808.ga  节点_10
-      - "@SSRSUB-V17-付费推荐:suo.yt/ssrsub"
-      - 中国_0520442
-      - 美国 050
+      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
+      - 日本_0518054 2
+      - v2rayfree.eu.org - 欧盟  15
+      - 日本_0519052 2
+      - "美国圣何塞-2号 | 解锁流媒体\r"
+      - 美国_05211455 3
+      - US(AzadNet.t.me)_343 2
+      - 美国_0517880
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V15-付费推荐:suo.yt/ssrsub"
+      - v2rayfree.eu.org - 加拿大  22
+      - 二爷翻墙网 https://1808.ga  节点_8
+      - 日本_0521053
+      - US(AzadNet.t.me)_111 2
+      - US_FreeNode.me_52
+      - "@SSRSUB-V02-付费推荐:suo.yt/ssrsub"
+      - RU_FreeNode.me_54
+      - v2rayfree.eu.org - 美国  9
+      - 美国【付费推荐：suo.yt/ssrsub】199
+      - US(AzadNet.t.me)_574 3
+      - HK香港(youtube阿伟科技) 3
+      - 美国6-ChatGPT
+      - 日本 008
+      - "越南-1号\r"
+      - "@SSRSUB-V03-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：suo.yt/ssrsub】210
+      - v2rayfree.eu.org - 美国CloudFlare节点 2
+      - 美国【付费推荐：suo.yt/ssrsub】148
+      - 美国 003
+      - US(AzadNet.t.me)_561 3
+      - JP(AzadNet.t.me)_017 2
+      - JP(AzadNet.t.me)_017 3
+      - 日本_0519048
+      - 美国_0520543
+      - 20|US_142.4.121.252_05202023286e-...
+      - 中国【付费推荐：https://v1.mk/vip】59
+      - US(AzadNet.t.me)_111 3
+      - DP4
+      - DP3@yxjnode
+      - 美国 064
+      - 英国 V2CROSS.COM
+      - 日本_0521047
+      - "美国凤凰城-3号 | 解锁流媒体\r"
+      - github.com/freefq - 俄罗斯新西伯利亚ADMAN数据中心 11
+      - HK香港(youtube阿伟科技) 5
+      - JP(AzadNet.t.me)_017 4
+      - 伊朗 001
+      - 台湾_0520633
+      - 19|_🇺🇦_UA_乌克兰_顺丰_23
+      - 28|🇨🇦 CA 19 → tg@nicevpn123
+      - 美国 082
+      - "@SSRSUB-V16-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
+      - 美国 085
+      - 日本_0517080
+      - -日本-45.88.43.136
+      - "@SSRSUB-V05-付费推荐:suo.yt/ssrsub"
+      - 俄罗斯 001
+      - 二爷翻墙网 https://1808.ga  节点_6
+      - Pool_Pool_Pool_ |22.16Mb
+      - _SG_新加坡 2
+      - 美国 030
+      - 19|_🇾🇪_YE_也门_顺丰_186
+      - _TW_台湾
+      - 16,20|美国 006
+      - HK香港(youtube阿伟科技) 4 2
+      - "|22.16Mb"
+      - _IR_伊朗_2
+      - 12,13,16,20|🇺🇸 United States 18 TG:@nodpai
+      - "|14.05Mb"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 16|香港 006
-      - HK香港(youtube阿伟科技2) 4
-      - _TW_台湾 3
-      - 香港 010
-      - _SG_新加坡->🇹🇼_TW_台湾 2
-      - _TW_台湾 2
-      - 台湾_0520013
+      - 台湾_0521580
+      - 台湾_0521002
+      - 台湾_0521008
+      - 台湾_0521092
+      - HK香港(youtube阿伟科技) 4
+      - HK香港(youtube阿伟科技)
+      - HK香港(youtube阿伟科技) 3
+      - HK香港(youtube阿伟科技) 5
       - 台湾_0520633
-      - 台湾_0520046
-      - HK香港(youtube阿伟科技2) 3
-      - 台湾_0520047
-      - HK香港(youtube阿伟科技2)
       - _TW_台湾
-      - HK香港(youtube阿伟科技2) 3 2
-      - HK香港(youtube阿伟科技2) 2
-      - 香港 009
+      - HK香港(youtube阿伟科技) 4 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 荷兰 004
-      - _EG_埃及
-      - 16|香港 006
-      - _EG_埃及 2
-      - HK香港(youtube阿伟科技2) 4
-      - 20|US_youtube@资源分享师_78
-      - _TW_台湾 3
-      - 19|_🇺🇸_US_美国_由零開始_20____
-      - 美国_05201401
-      - 19|_🇺🇸_US_美国_由零開始_20
-      - US(AzadNet.t.me)_495
-      - 香港 010
-      - 未知_05203237
-      - github.com/freefq - 美国CloudFlare公司CDN节点 15
-      - _US_美国 23
+      - 美国_0521299
+      - US(AzadNet.t.me)_343
+      - "%�\x11�%�P���_FR_法国"
+      - _US_美国_2
+      - _US_美国_11
+      - 美国_0521028
+      - 美国_05211455
+      - US(AzadNet.t.me)_610
+      - 美国_05214908
+      - 台湾_0521580
+      - 美国_0521028 2
+      - 台湾_0521002
+      - US_FreeNode.me_174
+      - US(AzadNet.t.me)_561
+      - 台湾_0521008
+      - US(AzadNet.t.me)_250
+      - 美国_05211455 2
       - AU(AzadNet.t.me)_003
-      - -1|🇮🇳IN-172.105.37.119-5289
-      - 美国 085
-      - 20|_🇺🇸_US_美国_科网_108
-      - US(AzadNet.t.me)_291
-      - 19|_🇺🇸_US_美国_顺丰_86
-      - github.com/freefq - 日本  4
-      - 美国 084
-      - 美国_0520023
-      - github.com/freefq - 美国CloudFlare公司CDN节点 21
-      - _EG_埃及 3
-      - _SG_新加坡->🇹🇼_TW_台湾 2
-      - 12,13|🇩🇪 Germany(ChatGPT) 01 TG:@nod...
-      - US(AzadNet.t.me)_032
-      - 19|_🇺🇸_US_美国_由零開始_20___
-      - _US_美国 7
-      - 12,12,13,13,16|🇦🇺 Australia 01 TG:@nodpai
-      - 塞浦路斯_0520006
-      - 16,19|美国 052
-      - 美国【付费推荐：suo.yt/ssrsub】61
-      - -1|🇺🇸US-104.233.129.82-25471
-      - 德国_0520074
-      - _TW_台湾 2
-      - 台湾_0520013
-      - 美国_05201406
-      - 19|_🇺🇸_US_美国_由零開始_20_____
-      - github.com/freefq - 美国  5
+      - 未知_0521144
+      - PS_FreeNode.me_114
+      - 加拿大_0521103
       - 俄罗斯联邦【付费推荐：suo.yt/ssrsub】17
-      - 日本【付费推荐：https://v1.mk/vip】8
-      - 台湾_0520633
-      - 台湾_0520046
-      - HK香港(youtube阿伟科技2) 3
-      - 20|4Jadi-941
-      - 19|_🇺🇸_US_美国_由零開始_20__
-      - 美国_05201473
-      - _EG_埃及 4
-      - US(AzadNet.t.me)_514
-      - 20|🇺🇸_US_美国_@suyucom
-      - 土耳其【付费推荐：suo.yt/ssrsub】51
-      - 19|_🇺🇸_US_美国_顺丰_39
-      - -1|VIVO PRE FREE
-      - -1|🇺🇸US-23.224.110.182-15354
-      - 土耳其_0520006
-      - "|10.55Mb"
-      - "|20.74Mb"
-      - 16|法国 002
-      - github.com/freefq - 广东省广州市移动 10
-      - 中国【付费推荐：suo.yt/ssrsub】39
-      - 17,20|github.com/freefq - 美国CloudFla...
-      - 未知_0520143
-      - Taiwan(ChatGPT) 29 TG@nodpai
-      - 美国_05201399
-      - 土耳其【付费推荐：suo.yt/ssrsub】51 2
-      - 18,22|🇯🇵日本-东京都-东京-ss-18.176.61.169:4...
-      - DP4
-      - 美国【付费推荐：suo.yt/ssrsub】37
-      - 19|_🇺🇸_US_美国_由零開始_20_
-      - 19|_🇺🇸_US_美国_由零開始_20______
-      - 美国_0519472
-      - 台湾_0520047
-      - 美国【付费推荐：https://v1.mk/vip】130
-      - 美国_05201403
-      - US(AzadNet.t.me)_105
-      - -1,20|4Iran-1039
-      - 美国 086
-      - AU(AzadNet.t.me)_003 2
-      - HK香港(youtube阿伟科技2)
-      - -日本-45.88.43.136
-      - 美国_0520008
-      - 日本_0519048
-      - US_FreeNode.me_172
-      - 美国 064
-      - _US_美国 10
-      - 12,13,16,20|🇺🇸 United States 18 TG:@nodpai
-      - 美国_05201409
-      - 美国_05201398
-      - HK_FreeNode.me_2
-      - 11,12,18|🇺🇸 United States 18 TG:@nodpai
-      - 俄罗斯联邦【付费推荐：suo.yt/ssrsub】17 2
-      - 25|🇺🇸 美国A|tg频道:@ripaojiedian
-      - 二爷翻墙网 https://1808.ga  节点_8
-      - github.com/freefq - 广东省广州市移动 8
-      - _🇺🇸_US_美国_科网_18
-      - United States 42 TG@nodpai
-      - 美国 092
-      - 25,26|🇺🇸 美国2|@ripaojiedian
-      - 美国_0519018
-      - 荷兰 004 2
-      - US(AzadNet.t.me)_514 2
-      - github.com/freefq - 欧盟  4
-      - 28|🇨🇦 CA 19 → tg@nicevpn123
-      - 23|4FreeIran-860
-      - JP(AzadNet.t.me)_019
-      - 美国 079
-      - US(AzadNet.t.me)_277
-      - _TW_台湾
-      - 12|🇹🇼 Taiwan(ChatGPT) 11 TG:@nodp...
-      - ES_FreeNode.me_174
-      - "|27.70Mb"
-      - 25,26|🇰🇷 韩国直连|@ripaojiedian
-      - 12,28,28|🇹🇼 Taiwan(ChatGPT) 16 TG:@nodp...
-      - 23|🇺🇸US美国(youtube阿伟科技2)____
-      - 美国 084 2
-      - 美国_0520338
-      - _US_美国 19
-      - 美国_0519666
-      - 12|🇹🇼 Taiwan(ChatGPT) 11 TG:@nodp... 2
-      - JP(AzadNet.t.me)_017
-      - US(AzadNet.t.me)_495 2
-      - 美国_0519141
-      - -1,20,25,26|🇺🇸 United States(ChatGPT) 17 T...
-      - 美国 057
-      - India 01 TG:@SSRSUB
-      - 22,23|_🇺🇸_US_美国_科网_23
-      - US_FreeNode.me_194
-      - 28|🇺🇸 US 330 → tg@nicevpn123
-      - HK香港(youtube阿伟科技2) 3 2
-      - 美国_0519018 2
-      - HK香港(youtube阿伟科技2) 2
-      - 美国【付费推荐：suo.yt/ssrsub】80
-      - _US_美国 6
-      - 日本_0517080
-      - 23|🇺🇸US美国(youtube阿伟科技2)__
-      - _US_美国 5
-      - JP(AzadNet.t.me)_017 2
-      - SW
-      - 香港 009
-      - 土耳其_0519003
-      - JP(AzadNet.t.me)_017 3
-      - 日本_0518054
-      - 美国 082
-      - 二爷翻墙网 https://1808.ga  节点_6
-      - 美国【付费推荐：suo.yt/ssrsub】95
-      - 美国_0519018 3
-      - 美国_0519472 2
-      - 22|_🇺🇸_US_美国_科网_130
-      - 22,28|_🇨🇦_CA_加拿大_顺丰_175
-      - 日本_0519052
-      - 纳米比亚_0520001
-      - _US_美国 2 2
-      - 美国_05201407
-      - 日本 008
-      - RU_FreeNode.me_54
-      - 22,28|_🇺🇸_US_美国_科网_104
-      - "|14.68Mb"
-      - 11,12,18,25,26|🇺🇸 United States 29 TG:@nodpai
-      - JP(AzadNet.t.me)_019 2
-      - 美国 073
-      - 美国 084 3
-      - 美国_05204587
-      - 瑞士_0520021
-      - 美国 077
-      - 未知_0520415
-      - 俄罗斯联邦_0519009
-      - 未知_05203257
-      - 12|Relay 🇺🇸 United States 22 TG:@...
-      - 法国_0520221
-      - 12,28|🇹🇼 Taiwan(ChatGPT) 12 TG:@nodp...
-      - 中国_0520444
-      - 美国 096
-      - _🇺🇸_US_美国_科网_130
-      - 二爷翻墙网 https://1808.ga  节点_13
-      - 日本_0517080 2
-      - 二爷翻墙网 https://1808.ga  节点_4
-      - 美国_0519018 4
-      - 美国_0517880
-      - 德国_0520232
-      - 美国 088
-      - United States 42 TG@nodpai 2
-      - 美国 078
-      - US(AzadNet.t.me)_495 3
-      - JP(AzadNet.t.me)_017 4
-      - "@SSRSUB-V16-付费推荐:suo.yt/ssrsub"
-      - 美国 082 2
-      - 日本_0519052 2
-      - 德国_0520228
-      - 立陶宛_0520012
-      - 美国_0520543
-      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
-      - 11,12,30,31|🇺🇸 United States(ChatGPT) 25 T...
-      - EG_FreeNode.me_58
-      - JP(AzadNet.t.me)_017 5
-      - "|13.85Mb"
-      - 美国 098
-      - US(AzadNet.t.me)_495 4
-      - 12,28|🇹🇼 Taiwan(ChatGPT) 03 TG:@nodp...
-      - 俄罗斯 001
-      - 日本 008 2
-      - 美国_0519472 3
-      - US_FreeNode.me_103
-      - JP(AzadNet.t.me)_019 3
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 14
-      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V02-付费推荐:suo.yt/ssrsub"
-      - 澳大利亚-0-0-ss-43.201.1...
-      - V005--US-付费推荐:suo.yt/ssrsub
-      - 未知_05203375
-      - 28|🇷🇺 RU 5 → tg@nicevpn123
-      - V003--US-付费推荐:suo.yt/ssrsub
+      - DE(AzadNet.t.me)_033
+      - US(AzadNet.t.me)_574
       - _CA_加拿大
-      - 立陶宛_0520003
+      - US_FreeNode.me_167
+      - US(AzadNet.t.me)_111
+      - 马来西亚_0521002
+      - github.com/freefq - 俄罗斯新西伯利亚ADMAN数据中心 20
+      - US(AzadNet.t.me)_291
+      - US(AzadNet.t.me)_336
+      - 美国_05211378
+      - 美国_0521289
+      - 台湾_0521092
       - 日本 009
-      - 23|🇺🇸US美国(youtube阿伟科技2)___
-      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
-      - US 342 → tg@nicevpn123
-      - 中国【付费推荐：https://v1.mk/...
-      - 美国_05204505
-      - 美国 083
-      - 美国 090
-      - 土耳其【付费推荐：https://v1.mk/vip】51
-      - 未知_0519175
-      - V001--US-付费推荐:suo.yt/ssrsub
-      - 美国_05171041
-      - HK_FreeNode.me_67
-      - US_FreeNode.me_52
-      - 日本_0518054 2
-      - 美国_05204775
-      - 美国 100
-      - DP3
-      - 日本 007
+      - US(AzadNet.t.me)_495
+      - 日本_0519052
+      - 伯利兹_0521085
+      - TW_165.154.227.239_0521202379c4-611trojan
+      - US(AzadNet.t.me)_561 2
+      - 12,12,13,13,16|🇦🇺 Australia 01 TG:@nodpai
+      - 美国_0521856
+      - AU(AzadNet.t.me)_003 2
+      - US(AzadNet.t.me)_291 2
+      - v2rayfree.eu.org - 美国CloudFlare节点 3
+      - HK香港(youtube阿伟科技) 4
+      - JP(AzadNet.t.me)_019
+      - US(AzadNet.t.me)_574 2
+      - v2rayfree.eu.org - 欧盟  8
+      - V005--US-付费推荐:suo.yt/ssrsub
+      - 12,28,28|🇹🇼 Taiwan(ChatGPT) 16 TG:@nodp...
+      - -1,20|4Iran-1039
+      - US(AzadNet.t.me)_105
+      - 美国【付费推荐：https://v1.mk/vip】5
+      - JP(AzadNet.t.me)_017
+      - BuyVM1
+      - HK香港(youtube阿伟科技)
+      - 12,28|🇹🇼 Taiwan(ChatGPT) 12 TG:@nodp...
+      - 日本_0518054
+      - 荷兰 004
+      - _SG_新加坡
+      - JP(AzadNet.t.me)_019 2
+      - 塞浦路斯【付费推荐：https://v1.mk/vip】25
       - 二爷翻墙网 https://1808.ga  节点_5
-      - 二爷翻墙网 https://1808.ga  节点_10
-      - "@SSRSUB-V17-付费推荐:suo.yt/ssrsub"
-      - 中国_0520442
-      - 美国 050
+      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
+      - 日本_0518054 2
+      - v2rayfree.eu.org - 欧盟  15
+      - 日本_0519052 2
+      - "美国圣何塞-2号 | 解锁流媒体\r"
+      - 美国_05211455 3
+      - US(AzadNet.t.me)_343 2
+      - 美国_0517880
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V15-付费推荐:suo.yt/ssrsub"
+      - v2rayfree.eu.org - 加拿大  22
+      - 二爷翻墙网 https://1808.ga  节点_8
+      - 日本_0521053
+      - US(AzadNet.t.me)_111 2
+      - US_FreeNode.me_52
+      - "@SSRSUB-V02-付费推荐:suo.yt/ssrsub"
+      - RU_FreeNode.me_54
+      - v2rayfree.eu.org - 美国  9
+      - 美国【付费推荐：suo.yt/ssrsub】199
+      - US(AzadNet.t.me)_574 3
+      - HK香港(youtube阿伟科技) 3
+      - 美国6-ChatGPT
+      - 日本 008
+      - "越南-1号\r"
+      - "@SSRSUB-V03-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：suo.yt/ssrsub】210
+      - v2rayfree.eu.org - 美国CloudFlare节点 2
+      - 美国【付费推荐：suo.yt/ssrsub】148
+      - 美国 003
+      - US(AzadNet.t.me)_561 3
+      - JP(AzadNet.t.me)_017 2
+      - JP(AzadNet.t.me)_017 3
+      - 日本_0519048
+      - 美国_0520543
+      - 20|US_142.4.121.252_05202023286e-...
+      - 中国【付费推荐：https://v1.mk/vip】59
+      - US(AzadNet.t.me)_111 3
+      - DP4
+      - DP3@yxjnode
+      - 美国 064
+      - 英国 V2CROSS.COM
+      - 日本_0521047
+      - "美国凤凰城-3号 | 解锁流媒体\r"
+      - github.com/freefq - 俄罗斯新西伯利亚ADMAN数据中心 11
+      - HK香港(youtube阿伟科技) 5
+      - JP(AzadNet.t.me)_017 4
+      - 伊朗 001
+      - 台湾_0520633
+      - 19|_🇺🇦_UA_乌克兰_顺丰_23
+      - 28|🇨🇦 CA 19 → tg@nicevpn123
+      - 美国 082
+      - "@SSRSUB-V16-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
+      - 美国 085
+      - 日本_0517080
+      - -日本-45.88.43.136
+      - "@SSRSUB-V05-付费推荐:suo.yt/ssrsub"
+      - 俄罗斯 001
+      - 二爷翻墙网 https://1808.ga  节点_6
+      - Pool_Pool_Pool_ |22.16Mb
+      - _SG_新加坡 2
+      - 美国 030
+      - 19|_🇾🇪_YE_也门_顺丰_186
+      - _TW_台湾
+      - 16,20|美国 006
+      - HK香港(youtube阿伟科技) 4 2
+      - "|22.16Mb"
+      - _IR_伊朗_2
+      - 12,13,16,20|🇺🇸 United States 18 TG:@nodpai
+      - "|14.05Mb"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 荷兰 004
-      - _EG_埃及
-      - 16|香港 006
-      - _EG_埃及 2
-      - HK香港(youtube阿伟科技2) 4
-      - 20|US_youtube@资源分享师_78
-      - _TW_台湾 3
-      - 19|_🇺🇸_US_美国_由零開始_20____
-      - 美国_05201401
-      - 19|_🇺🇸_US_美国_由零開始_20
-      - US(AzadNet.t.me)_495
-      - 香港 010
-      - 未知_05203237
-      - github.com/freefq - 美国CloudFlare公司CDN节点 15
-      - _US_美国 23
+      - 美国_0521299
+      - US(AzadNet.t.me)_343
+      - "%�\x11�%�P���_FR_法国"
+      - _US_美国_2
+      - _US_美国_11
+      - 美国_0521028
+      - 美国_05211455
+      - US(AzadNet.t.me)_610
+      - 美国_05214908
+      - 台湾_0521580
+      - 美国_0521028 2
+      - 台湾_0521002
+      - US_FreeNode.me_174
+      - US(AzadNet.t.me)_561
+      - 台湾_0521008
+      - US(AzadNet.t.me)_250
+      - 美国_05211455 2
       - AU(AzadNet.t.me)_003
-      - -1|🇮🇳IN-172.105.37.119-5289
-      - 美国 085
-      - 20|_🇺🇸_US_美国_科网_108
-      - US(AzadNet.t.me)_291
-      - 19|_🇺🇸_US_美国_顺丰_86
-      - github.com/freefq - 日本  4
-      - 美国 084
-      - 美国_0520023
-      - github.com/freefq - 美国CloudFlare公司CDN节点 21
-      - _EG_埃及 3
-      - _SG_新加坡->🇹🇼_TW_台湾 2
-      - 12,13|🇩🇪 Germany(ChatGPT) 01 TG:@nod...
-      - US(AzadNet.t.me)_032
-      - 19|_🇺🇸_US_美国_由零開始_20___
-      - _US_美国 7
-      - 12,12,13,13,16|🇦🇺 Australia 01 TG:@nodpai
-      - 塞浦路斯_0520006
-      - 16,19|美国 052
-      - 美国【付费推荐：suo.yt/ssrsub】61
-      - -1|🇺🇸US-104.233.129.82-25471
-      - 德国_0520074
-      - _TW_台湾 2
-      - 台湾_0520013
-      - 美国_05201406
-      - 19|_🇺🇸_US_美国_由零開始_20_____
-      - github.com/freefq - 美国  5
+      - 未知_0521144
+      - PS_FreeNode.me_114
+      - 加拿大_0521103
       - 俄罗斯联邦【付费推荐：suo.yt/ssrsub】17
-      - 日本【付费推荐：https://v1.mk/vip】8
-      - 台湾_0520633
-      - 台湾_0520046
-      - HK香港(youtube阿伟科技2) 3
-      - 20|4Jadi-941
-      - 19|_🇺🇸_US_美国_由零開始_20__
-      - 美国_05201473
-      - _EG_埃及 4
-      - US(AzadNet.t.me)_514
-      - 20|🇺🇸_US_美国_@suyucom
-      - 土耳其【付费推荐：suo.yt/ssrsub】51
-      - 19|_🇺🇸_US_美国_顺丰_39
-      - -1|VIVO PRE FREE
-      - -1|🇺🇸US-23.224.110.182-15354
-      - 土耳其_0520006
-      - "|10.55Mb"
-      - "|20.74Mb"
-      - 16|法国 002
-      - github.com/freefq - 广东省广州市移动 10
-      - 中国【付费推荐：suo.yt/ssrsub】39
-      - 17,20|github.com/freefq - 美国CloudFla...
-      - 未知_0520143
-      - Taiwan(ChatGPT) 29 TG@nodpai
-      - 美国_05201399
-      - 土耳其【付费推荐：suo.yt/ssrsub】51 2
-      - 18,22|🇯🇵日本-东京都-东京-ss-18.176.61.169:4...
-      - DP4
-      - 美国【付费推荐：suo.yt/ssrsub】37
-      - 19|_🇺🇸_US_美国_由零開始_20_
-      - 19|_🇺🇸_US_美国_由零開始_20______
-      - 美国_0519472
-      - 台湾_0520047
-      - 美国【付费推荐：https://v1.mk/vip】130
-      - 美国_05201403
-      - US(AzadNet.t.me)_105
-      - -1,20|4Iran-1039
-      - 美国 086
-      - AU(AzadNet.t.me)_003 2
-      - HK香港(youtube阿伟科技2)
-      - -日本-45.88.43.136
-      - 美国_0520008
-      - 日本_0519048
-      - US_FreeNode.me_172
-      - 美国 064
-      - _US_美国 10
-      - 12,13,16,20|🇺🇸 United States 18 TG:@nodpai
-      - 美国_05201409
-      - 美国_05201398
-      - HK_FreeNode.me_2
-      - 11,12,18|🇺🇸 United States 18 TG:@nodpai
-      - 俄罗斯联邦【付费推荐：suo.yt/ssrsub】17 2
-      - 25|🇺🇸 美国A|tg频道:@ripaojiedian
-      - 二爷翻墙网 https://1808.ga  节点_8
-      - github.com/freefq - 广东省广州市移动 8
-      - _🇺🇸_US_美国_科网_18
-      - United States 42 TG@nodpai
-      - 美国 092
-      - 25,26|🇺🇸 美国2|@ripaojiedian
-      - 美国_0519018
-      - 荷兰 004 2
-      - US(AzadNet.t.me)_514 2
-      - github.com/freefq - 欧盟  4
-      - 28|🇨🇦 CA 19 → tg@nicevpn123
-      - 23|4FreeIran-860
-      - JP(AzadNet.t.me)_019
-      - 美国 079
-      - US(AzadNet.t.me)_277
-      - _TW_台湾
-      - 12|🇹🇼 Taiwan(ChatGPT) 11 TG:@nodp...
-      - ES_FreeNode.me_174
-      - "|27.70Mb"
-      - 25,26|🇰🇷 韩国直连|@ripaojiedian
-      - 12,28,28|🇹🇼 Taiwan(ChatGPT) 16 TG:@nodp...
-      - 23|🇺🇸US美国(youtube阿伟科技2)____
-      - 美国 084 2
-      - 美国_0520338
-      - _US_美国 19
-      - 美国_0519666
-      - 12|🇹🇼 Taiwan(ChatGPT) 11 TG:@nodp... 2
-      - JP(AzadNet.t.me)_017
-      - US(AzadNet.t.me)_495 2
-      - 美国_0519141
-      - -1,20,25,26|🇺🇸 United States(ChatGPT) 17 T...
-      - 美国 057
-      - India 01 TG:@SSRSUB
-      - 22,23|_🇺🇸_US_美国_科网_23
-      - US_FreeNode.me_194
-      - 28|🇺🇸 US 330 → tg@nicevpn123
-      - HK香港(youtube阿伟科技2) 3 2
-      - 美国_0519018 2
-      - HK香港(youtube阿伟科技2) 2
-      - 美国【付费推荐：suo.yt/ssrsub】80
-      - _US_美国 6
-      - 日本_0517080
-      - 23|🇺🇸US美国(youtube阿伟科技2)__
-      - _US_美国 5
-      - JP(AzadNet.t.me)_017 2
-      - SW
-      - 香港 009
-      - 土耳其_0519003
-      - JP(AzadNet.t.me)_017 3
-      - 日本_0518054
-      - 美国 082
-      - 二爷翻墙网 https://1808.ga  节点_6
-      - 美国【付费推荐：suo.yt/ssrsub】95
-      - 美国_0519018 3
-      - 美国_0519472 2
-      - 22|_🇺🇸_US_美国_科网_130
-      - 22,28|_🇨🇦_CA_加拿大_顺丰_175
-      - 日本_0519052
-      - 纳米比亚_0520001
-      - _US_美国 2 2
-      - 美国_05201407
-      - 日本 008
-      - RU_FreeNode.me_54
-      - 22,28|_🇺🇸_US_美国_科网_104
-      - "|14.68Mb"
-      - 11,12,18,25,26|🇺🇸 United States 29 TG:@nodpai
-      - JP(AzadNet.t.me)_019 2
-      - 美国 073
-      - 美国 084 3
-      - 美国_05204587
-      - 瑞士_0520021
-      - 美国 077
-      - 未知_0520415
-      - 俄罗斯联邦_0519009
-      - 未知_05203257
-      - 12|Relay 🇺🇸 United States 22 TG:@...
-      - 法国_0520221
-      - 12,28|🇹🇼 Taiwan(ChatGPT) 12 TG:@nodp...
-      - 中国_0520444
-      - 美国 096
-      - _🇺🇸_US_美国_科网_130
-      - 二爷翻墙网 https://1808.ga  节点_13
-      - 日本_0517080 2
-      - 二爷翻墙网 https://1808.ga  节点_4
-      - 美国_0519018 4
-      - 美国_0517880
-      - 德国_0520232
-      - 美国 088
-      - United States 42 TG@nodpai 2
-      - 美国 078
-      - US(AzadNet.t.me)_495 3
-      - JP(AzadNet.t.me)_017 4
-      - "@SSRSUB-V16-付费推荐:suo.yt/ssrsub"
-      - 美国 082 2
-      - 日本_0519052 2
-      - 德国_0520228
-      - 立陶宛_0520012
-      - 美国_0520543
-      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
-      - 11,12,30,31|🇺🇸 United States(ChatGPT) 25 T...
-      - EG_FreeNode.me_58
-      - JP(AzadNet.t.me)_017 5
-      - "|13.85Mb"
-      - 美国 098
-      - US(AzadNet.t.me)_495 4
-      - 12,28|🇹🇼 Taiwan(ChatGPT) 03 TG:@nodp...
-      - 俄罗斯 001
-      - 日本 008 2
-      - 美国_0519472 3
-      - US_FreeNode.me_103
-      - JP(AzadNet.t.me)_019 3
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 14
-      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V02-付费推荐:suo.yt/ssrsub"
-      - 澳大利亚-0-0-ss-43.201.1...
-      - V005--US-付费推荐:suo.yt/ssrsub
-      - 未知_05203375
-      - 28|🇷🇺 RU 5 → tg@nicevpn123
-      - V003--US-付费推荐:suo.yt/ssrsub
+      - DE(AzadNet.t.me)_033
+      - US(AzadNet.t.me)_574
       - _CA_加拿大
-      - 立陶宛_0520003
+      - US_FreeNode.me_167
+      - US(AzadNet.t.me)_111
+      - 马来西亚_0521002
+      - github.com/freefq - 俄罗斯新西伯利亚ADMAN数据中心 20
+      - US(AzadNet.t.me)_291
+      - US(AzadNet.t.me)_336
+      - 美国_05211378
+      - 美国_0521289
+      - 台湾_0521092
       - 日本 009
-      - 23|🇺🇸US美国(youtube阿伟科技2)___
-      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
-      - US 342 → tg@nicevpn123
-      - 中国【付费推荐：https://v1.mk/...
-      - 美国_05204505
-      - 美国 083
-      - 美国 090
-      - 土耳其【付费推荐：https://v1.mk/vip】51
-      - 未知_0519175
-      - V001--US-付费推荐:suo.yt/ssrsub
-      - 美国_05171041
-      - HK_FreeNode.me_67
-      - US_FreeNode.me_52
-      - 日本_0518054 2
-      - 美国_05204775
-      - 美国 100
-      - DP3
-      - 日本 007
+      - US(AzadNet.t.me)_495
+      - 日本_0519052
+      - 伯利兹_0521085
+      - TW_165.154.227.239_0521202379c4-611trojan
+      - US(AzadNet.t.me)_561 2
+      - 12,12,13,13,16|🇦🇺 Australia 01 TG:@nodpai
+      - 美国_0521856
+      - AU(AzadNet.t.me)_003 2
+      - US(AzadNet.t.me)_291 2
+      - v2rayfree.eu.org - 美国CloudFlare节点 3
+      - HK香港(youtube阿伟科技) 4
+      - JP(AzadNet.t.me)_019
+      - US(AzadNet.t.me)_574 2
+      - v2rayfree.eu.org - 欧盟  8
+      - V005--US-付费推荐:suo.yt/ssrsub
+      - 12,28,28|🇹🇼 Taiwan(ChatGPT) 16 TG:@nodp...
+      - -1,20|4Iran-1039
+      - US(AzadNet.t.me)_105
+      - 美国【付费推荐：https://v1.mk/vip】5
+      - JP(AzadNet.t.me)_017
+      - BuyVM1
+      - HK香港(youtube阿伟科技)
+      - 12,28|🇹🇼 Taiwan(ChatGPT) 12 TG:@nodp...
+      - 日本_0518054
+      - 荷兰 004
+      - _SG_新加坡
+      - JP(AzadNet.t.me)_019 2
+      - 塞浦路斯【付费推荐：https://v1.mk/vip】25
       - 二爷翻墙网 https://1808.ga  节点_5
-      - 二爷翻墙网 https://1808.ga  节点_10
-      - "@SSRSUB-V17-付费推荐:suo.yt/ssrsub"
-      - 中国_0520442
-      - 美国 050
+      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
+      - 日本_0518054 2
+      - v2rayfree.eu.org - 欧盟  15
+      - 日本_0519052 2
+      - "美国圣何塞-2号 | 解锁流媒体\r"
+      - 美国_05211455 3
+      - US(AzadNet.t.me)_343 2
+      - 美国_0517880
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V15-付费推荐:suo.yt/ssrsub"
+      - v2rayfree.eu.org - 加拿大  22
+      - 二爷翻墙网 https://1808.ga  节点_8
+      - 日本_0521053
+      - US(AzadNet.t.me)_111 2
+      - US_FreeNode.me_52
+      - "@SSRSUB-V02-付费推荐:suo.yt/ssrsub"
+      - RU_FreeNode.me_54
+      - v2rayfree.eu.org - 美国  9
+      - 美国【付费推荐：suo.yt/ssrsub】199
+      - US(AzadNet.t.me)_574 3
+      - HK香港(youtube阿伟科技) 3
+      - 美国6-ChatGPT
+      - 日本 008
+      - "越南-1号\r"
+      - "@SSRSUB-V03-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：suo.yt/ssrsub】210
+      - v2rayfree.eu.org - 美国CloudFlare节点 2
+      - 美国【付费推荐：suo.yt/ssrsub】148
+      - 美国 003
+      - US(AzadNet.t.me)_561 3
+      - JP(AzadNet.t.me)_017 2
+      - JP(AzadNet.t.me)_017 3
+      - 日本_0519048
+      - 美国_0520543
+      - 20|US_142.4.121.252_05202023286e-...
+      - 中国【付费推荐：https://v1.mk/vip】59
+      - US(AzadNet.t.me)_111 3
+      - DP4
+      - DP3@yxjnode
+      - 美国 064
+      - 英国 V2CROSS.COM
+      - 日本_0521047
+      - "美国凤凰城-3号 | 解锁流媒体\r"
+      - github.com/freefq - 俄罗斯新西伯利亚ADMAN数据中心 11
+      - HK香港(youtube阿伟科技) 5
+      - JP(AzadNet.t.me)_017 4
+      - 伊朗 001
+      - 台湾_0520633
+      - 19|_🇺🇦_UA_乌克兰_顺丰_23
+      - 28|🇨🇦 CA 19 → tg@nicevpn123
+      - 美国 082
+      - "@SSRSUB-V16-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
+      - 美国 085
+      - 日本_0517080
+      - -日本-45.88.43.136
+      - "@SSRSUB-V05-付费推荐:suo.yt/ssrsub"
+      - 俄罗斯 001
+      - 二爷翻墙网 https://1808.ga  节点_6
+      - Pool_Pool_Pool_ |22.16Mb
+      - _SG_新加坡 2
+      - 美国 030
+      - 19|_🇾🇪_YE_也门_顺丰_186
+      - _TW_台湾
+      - 16,20|美国 006
+      - HK香港(youtube阿伟科技) 4 2
+      - "|22.16Mb"
+      - _IR_伊朗_2
+      - 12,13,16,20|🇺🇸 United States 18 TG:@nodpai
+      - "|14.05Mb"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 荷兰 004
-      - _EG_埃及
-      - 16|香港 006
-      - _EG_埃及 2
-      - HK香港(youtube阿伟科技2) 4
-      - 20|US_youtube@资源分享师_78
-      - _TW_台湾 3
-      - 19|_🇺🇸_US_美国_由零開始_20____
-      - 美国_05201401
-      - 19|_🇺🇸_US_美国_由零開始_20
-      - US(AzadNet.t.me)_495
-      - 香港 010
-      - 未知_05203237
-      - github.com/freefq - 美国CloudFlare公司CDN节点 15
-      - _US_美国 23
+      - 美国_0521299
+      - US(AzadNet.t.me)_343
+      - "%�\x11�%�P���_FR_法国"
+      - _US_美国_2
+      - _US_美国_11
+      - 美国_0521028
+      - 美国_05211455
+      - US(AzadNet.t.me)_610
+      - 美国_05214908
+      - 台湾_0521580
+      - 美国_0521028 2
+      - 台湾_0521002
+      - US_FreeNode.me_174
+      - US(AzadNet.t.me)_561
+      - 台湾_0521008
+      - US(AzadNet.t.me)_250
+      - 美国_05211455 2
       - AU(AzadNet.t.me)_003
-      - -1|🇮🇳IN-172.105.37.119-5289
-      - 美国 085
-      - 20|_🇺🇸_US_美国_科网_108
-      - US(AzadNet.t.me)_291
-      - 19|_🇺🇸_US_美国_顺丰_86
-      - github.com/freefq - 日本  4
-      - 美国 084
-      - 美国_0520023
-      - github.com/freefq - 美国CloudFlare公司CDN节点 21
-      - _EG_埃及 3
-      - _SG_新加坡->🇹🇼_TW_台湾 2
-      - 12,13|🇩🇪 Germany(ChatGPT) 01 TG:@nod...
-      - US(AzadNet.t.me)_032
-      - 19|_🇺🇸_US_美国_由零開始_20___
-      - _US_美国 7
-      - 12,12,13,13,16|🇦🇺 Australia 01 TG:@nodpai
-      - 塞浦路斯_0520006
-      - 16,19|美国 052
-      - 美国【付费推荐：suo.yt/ssrsub】61
-      - -1|🇺🇸US-104.233.129.82-25471
-      - 德国_0520074
-      - _TW_台湾 2
-      - 台湾_0520013
-      - 美国_05201406
-      - 19|_🇺🇸_US_美国_由零開始_20_____
-      - github.com/freefq - 美国  5
+      - 未知_0521144
+      - PS_FreeNode.me_114
+      - 加拿大_0521103
       - 俄罗斯联邦【付费推荐：suo.yt/ssrsub】17
-      - 日本【付费推荐：https://v1.mk/vip】8
-      - 台湾_0520633
-      - 台湾_0520046
-      - HK香港(youtube阿伟科技2) 3
-      - 20|4Jadi-941
-      - 19|_🇺🇸_US_美国_由零開始_20__
-      - 美国_05201473
-      - _EG_埃及 4
-      - US(AzadNet.t.me)_514
-      - 20|🇺🇸_US_美国_@suyucom
-      - 土耳其【付费推荐：suo.yt/ssrsub】51
-      - 19|_🇺🇸_US_美国_顺丰_39
-      - -1|VIVO PRE FREE
-      - -1|🇺🇸US-23.224.110.182-15354
-      - 土耳其_0520006
-      - "|10.55Mb"
-      - "|20.74Mb"
-      - 16|法国 002
-      - github.com/freefq - 广东省广州市移动 10
-      - 中国【付费推荐：suo.yt/ssrsub】39
-      - 17,20|github.com/freefq - 美国CloudFla...
-      - 未知_0520143
-      - Taiwan(ChatGPT) 29 TG@nodpai
-      - 美国_05201399
-      - 土耳其【付费推荐：suo.yt/ssrsub】51 2
-      - 18,22|🇯🇵日本-东京都-东京-ss-18.176.61.169:4...
-      - DP4
-      - 美国【付费推荐：suo.yt/ssrsub】37
-      - 19|_🇺🇸_US_美国_由零開始_20_
-      - 19|_🇺🇸_US_美国_由零開始_20______
-      - 美国_0519472
-      - 台湾_0520047
-      - 美国【付费推荐：https://v1.mk/vip】130
-      - 美国_05201403
-      - US(AzadNet.t.me)_105
-      - -1,20|4Iran-1039
-      - 美国 086
-      - AU(AzadNet.t.me)_003 2
-      - HK香港(youtube阿伟科技2)
-      - -日本-45.88.43.136
-      - 美国_0520008
-      - 日本_0519048
-      - US_FreeNode.me_172
-      - 美国 064
-      - _US_美国 10
-      - 12,13,16,20|🇺🇸 United States 18 TG:@nodpai
-      - 美国_05201409
-      - 美国_05201398
-      - HK_FreeNode.me_2
-      - 11,12,18|🇺🇸 United States 18 TG:@nodpai
-      - 俄罗斯联邦【付费推荐：suo.yt/ssrsub】17 2
-      - 25|🇺🇸 美国A|tg频道:@ripaojiedian
-      - 二爷翻墙网 https://1808.ga  节点_8
-      - github.com/freefq - 广东省广州市移动 8
-      - _🇺🇸_US_美国_科网_18
-      - United States 42 TG@nodpai
-      - 美国 092
-      - 25,26|🇺🇸 美国2|@ripaojiedian
-      - 美国_0519018
-      - 荷兰 004 2
-      - US(AzadNet.t.me)_514 2
-      - github.com/freefq - 欧盟  4
-      - 28|🇨🇦 CA 19 → tg@nicevpn123
-      - 23|4FreeIran-860
-      - JP(AzadNet.t.me)_019
-      - 美国 079
-      - US(AzadNet.t.me)_277
-      - _TW_台湾
-      - 12|🇹🇼 Taiwan(ChatGPT) 11 TG:@nodp...
-      - ES_FreeNode.me_174
-      - "|27.70Mb"
-      - 25,26|🇰🇷 韩国直连|@ripaojiedian
-      - 12,28,28|🇹🇼 Taiwan(ChatGPT) 16 TG:@nodp...
-      - 23|🇺🇸US美国(youtube阿伟科技2)____
-      - 美国 084 2
-      - 美国_0520338
-      - _US_美国 19
-      - 美国_0519666
-      - 12|🇹🇼 Taiwan(ChatGPT) 11 TG:@nodp... 2
-      - JP(AzadNet.t.me)_017
-      - US(AzadNet.t.me)_495 2
-      - 美国_0519141
-      - -1,20,25,26|🇺🇸 United States(ChatGPT) 17 T...
-      - 美国 057
-      - India 01 TG:@SSRSUB
-      - 22,23|_🇺🇸_US_美国_科网_23
-      - US_FreeNode.me_194
-      - 28|🇺🇸 US 330 → tg@nicevpn123
-      - HK香港(youtube阿伟科技2) 3 2
-      - 美国_0519018 2
-      - HK香港(youtube阿伟科技2) 2
-      - 美国【付费推荐：suo.yt/ssrsub】80
-      - _US_美国 6
-      - 日本_0517080
-      - 23|🇺🇸US美国(youtube阿伟科技2)__
-      - _US_美国 5
-      - JP(AzadNet.t.me)_017 2
-      - SW
-      - 香港 009
-      - 土耳其_0519003
-      - JP(AzadNet.t.me)_017 3
-      - 日本_0518054
-      - 美国 082
-      - 二爷翻墙网 https://1808.ga  节点_6
-      - 美国【付费推荐：suo.yt/ssrsub】95
-      - 美国_0519018 3
-      - 美国_0519472 2
-      - 22|_🇺🇸_US_美国_科网_130
-      - 22,28|_🇨🇦_CA_加拿大_顺丰_175
-      - 日本_0519052
-      - 纳米比亚_0520001
-      - _US_美国 2 2
-      - 美国_05201407
-      - 日本 008
-      - RU_FreeNode.me_54
-      - 22,28|_🇺🇸_US_美国_科网_104
-      - "|14.68Mb"
-      - 11,12,18,25,26|🇺🇸 United States 29 TG:@nodpai
-      - JP(AzadNet.t.me)_019 2
-      - 美国 073
-      - 美国 084 3
-      - 美国_05204587
-      - 瑞士_0520021
-      - 美国 077
-      - 未知_0520415
-      - 俄罗斯联邦_0519009
-      - 未知_05203257
-      - 12|Relay 🇺🇸 United States 22 TG:@...
-      - 法国_0520221
-      - 12,28|🇹🇼 Taiwan(ChatGPT) 12 TG:@nodp...
-      - 中国_0520444
-      - 美国 096
-      - _🇺🇸_US_美国_科网_130
-      - 二爷翻墙网 https://1808.ga  节点_13
-      - 日本_0517080 2
-      - 二爷翻墙网 https://1808.ga  节点_4
-      - 美国_0519018 4
-      - 美国_0517880
-      - 德国_0520232
-      - 美国 088
-      - United States 42 TG@nodpai 2
-      - 美国 078
-      - US(AzadNet.t.me)_495 3
-      - JP(AzadNet.t.me)_017 4
-      - "@SSRSUB-V16-付费推荐:suo.yt/ssrsub"
-      - 美国 082 2
-      - 日本_0519052 2
-      - 德国_0520228
-      - 立陶宛_0520012
-      - 美国_0520543
-      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
-      - 11,12,30,31|🇺🇸 United States(ChatGPT) 25 T...
-      - EG_FreeNode.me_58
-      - JP(AzadNet.t.me)_017 5
-      - "|13.85Mb"
-      - 美国 098
-      - US(AzadNet.t.me)_495 4
-      - 12,28|🇹🇼 Taiwan(ChatGPT) 03 TG:@nodp...
-      - 俄罗斯 001
-      - 日本 008 2
-      - 美国_0519472 3
-      - US_FreeNode.me_103
-      - JP(AzadNet.t.me)_019 3
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 14
-      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V02-付费推荐:suo.yt/ssrsub"
-      - 澳大利亚-0-0-ss-43.201.1...
-      - V005--US-付费推荐:suo.yt/ssrsub
-      - 未知_05203375
-      - 28|🇷🇺 RU 5 → tg@nicevpn123
-      - V003--US-付费推荐:suo.yt/ssrsub
+      - DE(AzadNet.t.me)_033
+      - US(AzadNet.t.me)_574
       - _CA_加拿大
-      - 立陶宛_0520003
+      - US_FreeNode.me_167
+      - US(AzadNet.t.me)_111
+      - 马来西亚_0521002
+      - github.com/freefq - 俄罗斯新西伯利亚ADMAN数据中心 20
+      - US(AzadNet.t.me)_291
+      - US(AzadNet.t.me)_336
+      - 美国_05211378
+      - 美国_0521289
+      - 台湾_0521092
       - 日本 009
-      - 23|🇺🇸US美国(youtube阿伟科技2)___
-      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
-      - US 342 → tg@nicevpn123
-      - 中国【付费推荐：https://v1.mk/...
-      - 美国_05204505
-      - 美国 083
-      - 美国 090
-      - 土耳其【付费推荐：https://v1.mk/vip】51
-      - 未知_0519175
-      - V001--US-付费推荐:suo.yt/ssrsub
-      - 美国_05171041
-      - HK_FreeNode.me_67
-      - US_FreeNode.me_52
-      - 日本_0518054 2
-      - 美国_05204775
-      - 美国 100
-      - DP3
-      - 日本 007
+      - US(AzadNet.t.me)_495
+      - 日本_0519052
+      - 伯利兹_0521085
+      - TW_165.154.227.239_0521202379c4-611trojan
+      - US(AzadNet.t.me)_561 2
+      - 12,12,13,13,16|🇦🇺 Australia 01 TG:@nodpai
+      - 美国_0521856
+      - AU(AzadNet.t.me)_003 2
+      - US(AzadNet.t.me)_291 2
+      - v2rayfree.eu.org - 美国CloudFlare节点 3
+      - HK香港(youtube阿伟科技) 4
+      - JP(AzadNet.t.me)_019
+      - US(AzadNet.t.me)_574 2
+      - v2rayfree.eu.org - 欧盟  8
+      - V005--US-付费推荐:suo.yt/ssrsub
+      - 12,28,28|🇹🇼 Taiwan(ChatGPT) 16 TG:@nodp...
+      - -1,20|4Iran-1039
+      - US(AzadNet.t.me)_105
+      - 美国【付费推荐：https://v1.mk/vip】5
+      - JP(AzadNet.t.me)_017
+      - BuyVM1
+      - HK香港(youtube阿伟科技)
+      - 12,28|🇹🇼 Taiwan(ChatGPT) 12 TG:@nodp...
+      - 日本_0518054
+      - 荷兰 004
+      - _SG_新加坡
+      - JP(AzadNet.t.me)_019 2
+      - 塞浦路斯【付费推荐：https://v1.mk/vip】25
       - 二爷翻墙网 https://1808.ga  节点_5
-      - 二爷翻墙网 https://1808.ga  节点_10
-      - "@SSRSUB-V17-付费推荐:suo.yt/ssrsub"
-      - 中国_0520442
-      - 美国 050
+      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
+      - 日本_0518054 2
+      - v2rayfree.eu.org - 欧盟  15
+      - 日本_0519052 2
+      - "美国圣何塞-2号 | 解锁流媒体\r"
+      - 美国_05211455 3
+      - US(AzadNet.t.me)_343 2
+      - 美国_0517880
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V15-付费推荐:suo.yt/ssrsub"
+      - v2rayfree.eu.org - 加拿大  22
+      - 二爷翻墙网 https://1808.ga  节点_8
+      - 日本_0521053
+      - US(AzadNet.t.me)_111 2
+      - US_FreeNode.me_52
+      - "@SSRSUB-V02-付费推荐:suo.yt/ssrsub"
+      - RU_FreeNode.me_54
+      - v2rayfree.eu.org - 美国  9
+      - 美国【付费推荐：suo.yt/ssrsub】199
+      - US(AzadNet.t.me)_574 3
+      - HK香港(youtube阿伟科技) 3
+      - 美国6-ChatGPT
+      - 日本 008
+      - "越南-1号\r"
+      - "@SSRSUB-V03-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：suo.yt/ssrsub】210
+      - v2rayfree.eu.org - 美国CloudFlare节点 2
+      - 美国【付费推荐：suo.yt/ssrsub】148
+      - 美国 003
+      - US(AzadNet.t.me)_561 3
+      - JP(AzadNet.t.me)_017 2
+      - JP(AzadNet.t.me)_017 3
+      - 日本_0519048
+      - 美国_0520543
+      - 20|US_142.4.121.252_05202023286e-...
+      - 中国【付费推荐：https://v1.mk/vip】59
+      - US(AzadNet.t.me)_111 3
+      - DP4
+      - DP3@yxjnode
+      - 美国 064
+      - 英国 V2CROSS.COM
+      - 日本_0521047
+      - "美国凤凰城-3号 | 解锁流媒体\r"
+      - github.com/freefq - 俄罗斯新西伯利亚ADMAN数据中心 11
+      - HK香港(youtube阿伟科技) 5
+      - JP(AzadNet.t.me)_017 4
+      - 伊朗 001
+      - 台湾_0520633
+      - 19|_🇺🇦_UA_乌克兰_顺丰_23
+      - 28|🇨🇦 CA 19 → tg@nicevpn123
+      - 美国 082
+      - "@SSRSUB-V16-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
+      - 美国 085
+      - 日本_0517080
+      - -日本-45.88.43.136
+      - "@SSRSUB-V05-付费推荐:suo.yt/ssrsub"
+      - 俄罗斯 001
+      - 二爷翻墙网 https://1808.ga  节点_6
+      - Pool_Pool_Pool_ |22.16Mb
+      - _SG_新加坡 2
+      - 美国 030
+      - 19|_🇾🇪_YE_也门_顺丰_186
+      - _TW_台湾
+      - 16,20|美国 006
+      - HK香港(youtube阿伟科技) 4 2
+      - "|22.16Mb"
+      - _IR_伊朗_2
+      - 12,13,16,20|🇺🇸 United States 18 TG:@nodpai
+      - "|14.05Mb"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -2013,246 +1160,140 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 荷兰 004
-      - _EG_埃及
-      - 16|香港 006
-      - _EG_埃及 2
-      - HK香港(youtube阿伟科技2) 4
-      - 20|US_youtube@资源分享师_78
-      - _TW_台湾 3
-      - 19|_🇺🇸_US_美国_由零開始_20____
-      - 美国_05201401
-      - 19|_🇺🇸_US_美国_由零開始_20
-      - US(AzadNet.t.me)_495
-      - 香港 010
-      - 未知_05203237
-      - github.com/freefq - 美国CloudFlare公司CDN节点 15
-      - _US_美国 23
+      - 美国_0521299
+      - US(AzadNet.t.me)_343
+      - "%�\x11�%�P���_FR_法国"
+      - _US_美国_2
+      - _US_美国_11
+      - 美国_0521028
+      - 美国_05211455
+      - US(AzadNet.t.me)_610
+      - 美国_05214908
+      - 台湾_0521580
+      - 美国_0521028 2
+      - 台湾_0521002
+      - US_FreeNode.me_174
+      - US(AzadNet.t.me)_561
+      - 台湾_0521008
+      - US(AzadNet.t.me)_250
+      - 美国_05211455 2
       - AU(AzadNet.t.me)_003
-      - -1|🇮🇳IN-172.105.37.119-5289
-      - 美国 085
-      - 20|_🇺🇸_US_美国_科网_108
-      - US(AzadNet.t.me)_291
-      - 19|_🇺🇸_US_美国_顺丰_86
-      - github.com/freefq - 日本  4
-      - 美国 084
-      - 美国_0520023
-      - github.com/freefq - 美国CloudFlare公司CDN节点 21
-      - _EG_埃及 3
-      - _SG_新加坡->🇹🇼_TW_台湾 2
-      - 12,13|🇩🇪 Germany(ChatGPT) 01 TG:@nod...
-      - US(AzadNet.t.me)_032
-      - 19|_🇺🇸_US_美国_由零開始_20___
-      - _US_美国 7
-      - 12,12,13,13,16|🇦🇺 Australia 01 TG:@nodpai
-      - 塞浦路斯_0520006
-      - 16,19|美国 052
-      - 美国【付费推荐：suo.yt/ssrsub】61
-      - -1|🇺🇸US-104.233.129.82-25471
-      - 德国_0520074
-      - _TW_台湾 2
-      - 台湾_0520013
-      - 美国_05201406
-      - 19|_🇺🇸_US_美国_由零開始_20_____
-      - github.com/freefq - 美国  5
+      - 未知_0521144
+      - PS_FreeNode.me_114
+      - 加拿大_0521103
       - 俄罗斯联邦【付费推荐：suo.yt/ssrsub】17
-      - 日本【付费推荐：https://v1.mk/vip】8
-      - 台湾_0520633
-      - 台湾_0520046
-      - HK香港(youtube阿伟科技2) 3
-      - 20|4Jadi-941
-      - 19|_🇺🇸_US_美国_由零開始_20__
-      - 美国_05201473
-      - _EG_埃及 4
-      - US(AzadNet.t.me)_514
-      - 20|🇺🇸_US_美国_@suyucom
-      - 土耳其【付费推荐：suo.yt/ssrsub】51
-      - 19|_🇺🇸_US_美国_顺丰_39
-      - -1|VIVO PRE FREE
-      - -1|🇺🇸US-23.224.110.182-15354
-      - 土耳其_0520006
-      - "|10.55Mb"
-      - "|20.74Mb"
-      - 16|法国 002
-      - github.com/freefq - 广东省广州市移动 10
-      - 中国【付费推荐：suo.yt/ssrsub】39
-      - 17,20|github.com/freefq - 美国CloudFla...
-      - 未知_0520143
-      - Taiwan(ChatGPT) 29 TG@nodpai
-      - 美国_05201399
-      - 土耳其【付费推荐：suo.yt/ssrsub】51 2
-      - 18,22|🇯🇵日本-东京都-东京-ss-18.176.61.169:4...
-      - DP4
-      - 美国【付费推荐：suo.yt/ssrsub】37
-      - 19|_🇺🇸_US_美国_由零開始_20_
-      - 19|_🇺🇸_US_美国_由零開始_20______
-      - 美国_0519472
-      - 台湾_0520047
-      - 美国【付费推荐：https://v1.mk/vip】130
-      - 美国_05201403
-      - US(AzadNet.t.me)_105
-      - -1,20|4Iran-1039
-      - 美国 086
-      - AU(AzadNet.t.me)_003 2
-      - HK香港(youtube阿伟科技2)
-      - -日本-45.88.43.136
-      - 美国_0520008
-      - 日本_0519048
-      - US_FreeNode.me_172
-      - 美国 064
-      - _US_美国 10
-      - 12,13,16,20|🇺🇸 United States 18 TG:@nodpai
-      - 美国_05201409
-      - 美国_05201398
-      - HK_FreeNode.me_2
-      - 11,12,18|🇺🇸 United States 18 TG:@nodpai
-      - 俄罗斯联邦【付费推荐：suo.yt/ssrsub】17 2
-      - 25|🇺🇸 美国A|tg频道:@ripaojiedian
-      - 二爷翻墙网 https://1808.ga  节点_8
-      - github.com/freefq - 广东省广州市移动 8
-      - _🇺🇸_US_美国_科网_18
-      - United States 42 TG@nodpai
-      - 美国 092
-      - 25,26|🇺🇸 美国2|@ripaojiedian
-      - 美国_0519018
-      - 荷兰 004 2
-      - US(AzadNet.t.me)_514 2
-      - github.com/freefq - 欧盟  4
-      - 28|🇨🇦 CA 19 → tg@nicevpn123
-      - 23|4FreeIran-860
-      - JP(AzadNet.t.me)_019
-      - 美国 079
-      - US(AzadNet.t.me)_277
-      - _TW_台湾
-      - 12|🇹🇼 Taiwan(ChatGPT) 11 TG:@nodp...
-      - ES_FreeNode.me_174
-      - "|27.70Mb"
-      - 25,26|🇰🇷 韩国直连|@ripaojiedian
-      - 12,28,28|🇹🇼 Taiwan(ChatGPT) 16 TG:@nodp...
-      - 23|🇺🇸US美国(youtube阿伟科技2)____
-      - 美国 084 2
-      - 美国_0520338
-      - _US_美国 19
-      - 美国_0519666
-      - 12|🇹🇼 Taiwan(ChatGPT) 11 TG:@nodp... 2
-      - JP(AzadNet.t.me)_017
-      - US(AzadNet.t.me)_495 2
-      - 美国_0519141
-      - -1,20,25,26|🇺🇸 United States(ChatGPT) 17 T...
-      - 美国 057
-      - India 01 TG:@SSRSUB
-      - 22,23|_🇺🇸_US_美国_科网_23
-      - US_FreeNode.me_194
-      - 28|🇺🇸 US 330 → tg@nicevpn123
-      - HK香港(youtube阿伟科技2) 3 2
-      - 美国_0519018 2
-      - HK香港(youtube阿伟科技2) 2
-      - 美国【付费推荐：suo.yt/ssrsub】80
-      - _US_美国 6
-      - 日本_0517080
-      - 23|🇺🇸US美国(youtube阿伟科技2)__
-      - _US_美国 5
-      - JP(AzadNet.t.me)_017 2
-      - SW
-      - 香港 009
-      - 土耳其_0519003
-      - JP(AzadNet.t.me)_017 3
-      - 日本_0518054
-      - 美国 082
-      - 二爷翻墙网 https://1808.ga  节点_6
-      - 美国【付费推荐：suo.yt/ssrsub】95
-      - 美国_0519018 3
-      - 美国_0519472 2
-      - 22|_🇺🇸_US_美国_科网_130
-      - 22,28|_🇨🇦_CA_加拿大_顺丰_175
-      - 日本_0519052
-      - 纳米比亚_0520001
-      - _US_美国 2 2
-      - 美国_05201407
-      - 日本 008
-      - RU_FreeNode.me_54
-      - 22,28|_🇺🇸_US_美国_科网_104
-      - "|14.68Mb"
-      - 11,12,18,25,26|🇺🇸 United States 29 TG:@nodpai
-      - JP(AzadNet.t.me)_019 2
-      - 美国 073
-      - 美国 084 3
-      - 美国_05204587
-      - 瑞士_0520021
-      - 美国 077
-      - 未知_0520415
-      - 俄罗斯联邦_0519009
-      - 未知_05203257
-      - 12|Relay 🇺🇸 United States 22 TG:@...
-      - 法国_0520221
-      - 12,28|🇹🇼 Taiwan(ChatGPT) 12 TG:@nodp...
-      - 中国_0520444
-      - 美国 096
-      - _🇺🇸_US_美国_科网_130
-      - 二爷翻墙网 https://1808.ga  节点_13
-      - 日本_0517080 2
-      - 二爷翻墙网 https://1808.ga  节点_4
-      - 美国_0519018 4
-      - 美国_0517880
-      - 德国_0520232
-      - 美国 088
-      - United States 42 TG@nodpai 2
-      - 美国 078
-      - US(AzadNet.t.me)_495 3
-      - JP(AzadNet.t.me)_017 4
-      - "@SSRSUB-V16-付费推荐:suo.yt/ssrsub"
-      - 美国 082 2
-      - 日本_0519052 2
-      - 德国_0520228
-      - 立陶宛_0520012
-      - 美国_0520543
-      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
-      - 11,12,30,31|🇺🇸 United States(ChatGPT) 25 T...
-      - EG_FreeNode.me_58
-      - JP(AzadNet.t.me)_017 5
-      - "|13.85Mb"
-      - 美国 098
-      - US(AzadNet.t.me)_495 4
-      - 12,28|🇹🇼 Taiwan(ChatGPT) 03 TG:@nodp...
-      - 俄罗斯 001
-      - 日本 008 2
-      - 美国_0519472 3
-      - US_FreeNode.me_103
-      - JP(AzadNet.t.me)_019 3
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 14
-      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
-      - "@SSRSUB-V02-付费推荐:suo.yt/ssrsub"
-      - 澳大利亚-0-0-ss-43.201.1...
-      - V005--US-付费推荐:suo.yt/ssrsub
-      - 未知_05203375
-      - 28|🇷🇺 RU 5 → tg@nicevpn123
-      - V003--US-付费推荐:suo.yt/ssrsub
+      - DE(AzadNet.t.me)_033
+      - US(AzadNet.t.me)_574
       - _CA_加拿大
-      - 立陶宛_0520003
+      - US_FreeNode.me_167
+      - US(AzadNet.t.me)_111
+      - 马来西亚_0521002
+      - github.com/freefq - 俄罗斯新西伯利亚ADMAN数据中心 20
+      - US(AzadNet.t.me)_291
+      - US(AzadNet.t.me)_336
+      - 美国_05211378
+      - 美国_0521289
+      - 台湾_0521092
       - 日本 009
-      - 23|🇺🇸US美国(youtube阿伟科技2)___
-      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
-      - US 342 → tg@nicevpn123
-      - 中国【付费推荐：https://v1.mk/...
-      - 美国_05204505
-      - 美国 083
-      - 美国 090
-      - 土耳其【付费推荐：https://v1.mk/vip】51
-      - 未知_0519175
-      - V001--US-付费推荐:suo.yt/ssrsub
-      - 美国_05171041
-      - HK_FreeNode.me_67
-      - US_FreeNode.me_52
-      - 日本_0518054 2
-      - 美国_05204775
-      - 美国 100
-      - DP3
-      - 日本 007
+      - US(AzadNet.t.me)_495
+      - 日本_0519052
+      - 伯利兹_0521085
+      - TW_165.154.227.239_0521202379c4-611trojan
+      - US(AzadNet.t.me)_561 2
+      - 12,12,13,13,16|🇦🇺 Australia 01 TG:@nodpai
+      - 美国_0521856
+      - AU(AzadNet.t.me)_003 2
+      - US(AzadNet.t.me)_291 2
+      - v2rayfree.eu.org - 美国CloudFlare节点 3
+      - HK香港(youtube阿伟科技) 4
+      - JP(AzadNet.t.me)_019
+      - US(AzadNet.t.me)_574 2
+      - v2rayfree.eu.org - 欧盟  8
+      - V005--US-付费推荐:suo.yt/ssrsub
+      - 12,28,28|🇹🇼 Taiwan(ChatGPT) 16 TG:@nodp...
+      - -1,20|4Iran-1039
+      - US(AzadNet.t.me)_105
+      - 美国【付费推荐：https://v1.mk/vip】5
+      - JP(AzadNet.t.me)_017
+      - BuyVM1
+      - HK香港(youtube阿伟科技)
+      - 12,28|🇹🇼 Taiwan(ChatGPT) 12 TG:@nodp...
+      - 日本_0518054
+      - 荷兰 004
+      - _SG_新加坡
+      - JP(AzadNet.t.me)_019 2
+      - 塞浦路斯【付费推荐：https://v1.mk/vip】25
       - 二爷翻墙网 https://1808.ga  节点_5
-      - 二爷翻墙网 https://1808.ga  节点_10
-      - "@SSRSUB-V17-付费推荐:suo.yt/ssrsub"
-      - 中国_0520442
-      - 美国 050
+      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
+      - 日本_0518054 2
+      - v2rayfree.eu.org - 欧盟  15
+      - 日本_0519052 2
+      - "美国圣何塞-2号 | 解锁流媒体\r"
+      - 美国_05211455 3
+      - US(AzadNet.t.me)_343 2
+      - 美国_0517880
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V15-付费推荐:suo.yt/ssrsub"
+      - v2rayfree.eu.org - 加拿大  22
+      - 二爷翻墙网 https://1808.ga  节点_8
+      - 日本_0521053
+      - US(AzadNet.t.me)_111 2
+      - US_FreeNode.me_52
+      - "@SSRSUB-V02-付费推荐:suo.yt/ssrsub"
+      - RU_FreeNode.me_54
+      - v2rayfree.eu.org - 美国  9
+      - 美国【付费推荐：suo.yt/ssrsub】199
+      - US(AzadNet.t.me)_574 3
+      - HK香港(youtube阿伟科技) 3
+      - 美国6-ChatGPT
+      - 日本 008
+      - "越南-1号\r"
+      - "@SSRSUB-V03-付费推荐:suo.yt/ssrsub"
+      - 美国【付费推荐：suo.yt/ssrsub】210
+      - v2rayfree.eu.org - 美国CloudFlare节点 2
+      - 美国【付费推荐：suo.yt/ssrsub】148
+      - 美国 003
+      - US(AzadNet.t.me)_561 3
+      - JP(AzadNet.t.me)_017 2
+      - JP(AzadNet.t.me)_017 3
+      - 日本_0519048
+      - 美国_0520543
+      - 20|US_142.4.121.252_05202023286e-...
+      - 中国【付费推荐：https://v1.mk/vip】59
+      - US(AzadNet.t.me)_111 3
+      - DP4
+      - DP3@yxjnode
+      - 美国 064
+      - 英国 V2CROSS.COM
+      - 日本_0521047
+      - "美国凤凰城-3号 | 解锁流媒体\r"
+      - github.com/freefq - 俄罗斯新西伯利亚ADMAN数据中心 11
+      - HK香港(youtube阿伟科技) 5
+      - JP(AzadNet.t.me)_017 4
+      - 伊朗 001
+      - 台湾_0520633
+      - 19|_🇺🇦_UA_乌克兰_顺丰_23
+      - 28|🇨🇦 CA 19 → tg@nicevpn123
+      - 美国 082
+      - "@SSRSUB-V16-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
+      - 美国 085
+      - 日本_0517080
+      - -日本-45.88.43.136
+      - "@SSRSUB-V05-付费推荐:suo.yt/ssrsub"
+      - 俄罗斯 001
+      - 二爷翻墙网 https://1808.ga  节点_6
+      - Pool_Pool_Pool_ |22.16Mb
+      - _SG_新加坡 2
+      - 美国 030
+      - 19|_🇾🇪_YE_也门_顺丰_186
+      - _TW_台湾
+      - 16,20|美国 006
+      - HK香港(youtube阿伟科技) 4 2
+      - "|22.16Mb"
+      - _IR_伊朗_2
+      - 12,13,16,20|🇺🇸 United States 18 TG:@nodpai
+      - "|14.05Mb"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
