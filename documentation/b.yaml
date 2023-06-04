@@ -6,447 +6,615 @@ mode: Rule
 log-level: info
 external-controller: 9090
 proxies:
-  - {name: _RU_俄罗斯联邦, server: 185.133.40.192, port: 35059, type: vmess, uuid: 8d78c2a8-acaa-467d-9234-d2606624506d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 加拿大_0602083, server: dearmb.76898102.xyz, port: 2052, type: vmess, uuid: d264f990-a6a5-3832-bf37-1fccaed298dd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ancihgrt, headers: {Host: dearmb.76898102.xyz}}, udp: true}
-  - {name: _CN_中国->🇺🇸_US_美国, server: iepl2.airtcp.vip, port: 51002, type: vmess, uuid: 1a7680df-81a1-3d89-a221-db81ac4b04df, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯联邦_0603001, server: 185.133.40.192, port: 35059, type: vmess, uuid: 8d78c2a8-acaa-467d-9234-d2606624506d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：v1.mk/vip】77, server: cf.noaries.de, port: 2082, type: vmess, uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: dedipath2.iiio.wiki}}, udp: true}
-  - {name: 法国_0528026, server: 94.23.116.190, port: 443, type: ssr, cipher: aes-256-ctr, password: HowdyBypasser2022, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: _US_美国->🇸🇬_SG_新加坡, server: cdn-xjp4.cqjsl.xyz, port: 443, type: vmess, uuid: 181f2438-213e-4c2f-9915-8be5b1394f9a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cdn-xjp4.cqjsl.xyz}}, udp: true}
-  - {name: 美国_0602015, server: 137.175.29.38, port: 53986, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IEPL-AP-HK-1, server: assets.flareai.site, port: 13543, type: trojan, password: d0d24d5b-54ae-40a0-ab68-889dbd4b8a66, sni: 106-110-192-225.d.cjjd20.com, skip-cert-verify: true, udp: true}
-  - {name: "日本亚马逊\r", server: jp2.downloadvip.cfd, port: 443, type: trojan, password: 20abfcfc-c717-4ac5-8642-a0979f595474, sni: download.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯联邦_0601003, server: 185.133.40.192, port: 35059, type: vmess, uuid: 8d78c2a8-acaa-467d-9234-d2606624506d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IL_FreeNode.me_76, server: jp2.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 日本 015, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: _CN_中国->🇺🇸_US_美国_2, server: 120.226.50.76, port: 45070, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_0602646, server: 23.224.15.181, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: LU卢森堡(youtube阿伟科技), server: cf.noaries.de, port: 8080, type: vmess, uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.iiio.wiki}}, udp: true}
-  - {name: 美国【付费推荐：v1.mk/vip】87, server: beta.noaries.de, port: 2082, type: vmess, uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: contabo-jp-win.iiio.wiki}}, udp: true}
-  - {name: github.com/freefq - 以色列  3, server: us3.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：v1.mk/vip】186, server: free.themars.top, port: 32102, type: ss, cipher: chacha20-ietf-poly1305, password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2, udp: true}
-  - {name: 美国_0602015 2, server: 137.175.29.38, port: 53986, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "|94.90Mb", server: 152.70.74.66, port: 443, type: trojan, password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e, skip-cert-verify: true, udp: true}
-  - {name: "@SSRSUB-V16-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv3.sharecentrepro.org}}, udp: true}
-  - {name: 未知_0603104, server: 141.101.123.249, port: 80, type: vmess, uuid: 1eeeff8d-0028-46ec-ec2a-d39401047fbb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: tou.vtcss.top}}, udp: true}
+  - {name: "美国圣何塞|防失联直连|1x\r", server: 74.217.179.22, port: 443, type: trojan, password: 42e758fd-0f0d-4338-992a-9ad04718222c, sni: daxun.windowsupdatea.com, skip-cert-verify: true, udp: true}
+  - {name: _CA_加拿大 2, server: 199.212.90.14, port: 443, type: vmess, uuid: 6147F065-9AC0-4081-A5A3-A2EB4EBB8958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Lille.kotick.site}}, udp: true}
   - {name: 二爷翻墙https://1808.ga 节点_10, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv1.sharecentrepro.org}}, udp: true}
-  - {name: 美国_0603723, server: 172.64.132.246, port: 80, type: vmess, uuid: 4529e5be-cbed-4bbd-9917-b627d13ca1fe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: host.tgfree365.ga}}, udp: true}
-  - {name: 美国【付费推荐：v1.mk/vip】69, server: 104.24.57.207, port: 2052, type: vmess, uuid: 0227edc4-8735-4370-ac42-4e8147920f0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer10, headers: {Host: tou.vtcss.top}}, udp: true}
+  - {name: 二爷翻墙https://1808.ga 节点_2, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sw.sharecentrepro.com}}, udp: true}
+  - {name: github.com/freefq - 俄罗斯新西伯利亚ADMAN数据中心 14, server: 185.133.40.192, port: 35059, type: vmess, uuid: 8d78c2a8-acaa-467d-9234-d2606624506d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本 006, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 未知_0604481, server: 104.18.104.113, port: 443, type: vmess, uuid: 2c3a22f0-2087-4f86-b30d-664317f8c820, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: tou.vtcss.top}}, udp: true}
+  - {name: US(AzadNet.t.me)_049, server: 192.74.229.215, port: 51592, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 未知_0604460, server: 104.16.254.134, port: 8080, type: vmess, uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qazxcv00, headers: {Host: tou.vtcss.top}}, udp: true}
+  - {name: 未知_0604476, server: 104.20.189.236, port: 80, type: vmess, uuid: 1eeeff8d-0028-46ec-ec2a-d39401047fbb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: tou.vtcss.top}}, udp: true}
+  - {name: 中国【付费推荐：v1.mk/vip】186, server: free.themars.top, port: 32102, type: ss, cipher: chacha20-ietf-poly1305, password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2, udp: true}
+  - {name: 美国_0604400, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: 882f3f11-02bc-4ecf-96b6-2da1bebcd7e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /wmIMRWSrsFRTES3pFURTK72T, headers: {Host: de9.irteh.fun}}, udp: true}
+  - {name: _🇺🇸_US_美国_科网_03, server: 74.217.179.187, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1684907511842, headers: {Host: www.39960822.xyz}}, udp: true}
+  - {name: 美国_0604830, server: 172.67.137.76, port: 80, type: vmess, uuid: 1eeeff8d-0028-46ec-ec2a-d39401047fbb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: tou.vtcss.top}}, udp: true}
   - {name: _US_美国->🇱🇺_LU_卢森堡 6, server: beta.noaries.de, port: 2052, type: vmess, uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.iiio.wiki}}, udp: true}
-  - {name: 美国_0603823, server: 23.224.15.181, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 035, server: dejs.stablize.top, port: 443, type: trojan, password: 159ab107-bfed-49b0-981d-5facd7e5e1c2, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 以色列  7, server: uk1.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 美国_06034662, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: 8abe9496-5e24-4e49-b566-dcf86116017d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /i99LgvSaslbsPLLQQ7j6Z, headers: {Host: de5.irteh.fun}}, udp: true}
-  - {name: 美国【付费推荐：v1.mk/vip】60, server: tech.noaries.de, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: nl.sharecentrepro.com}}, udp: true}
-  - {name: 俄罗斯联邦_0602010, server: 185.133.40.192, port: 35059, type: vmess, uuid: 8d78c2a8-acaa-467d-9234-d2606624506d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_FreeNode.me_77, server: cf.noaries.de, port: 8880, type: vmess, uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: vnpt.iiio.wiki}}, udp: true}
-  - {name: 巴勒斯坦_0603002, server: 82.213.5.50, port: 80, type: vmess, uuid: 1eeeff8d-0028-46ec-ec2a-d39401047fbb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: tou.wang66.homes}}, udp: true}
+  - {name: 美国_0604780 2, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: 8abe9496-5e24-4e49-b566-dcf86116017d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /i99LgvSaslbsPLLQQ7j6Z, headers: {Host: de5.irteh.fun}}, udp: true}
+  - {name: 美国_0604079, server: 45.58.186.83, port: 51140, type: vmess, uuid: 4a138e19-0595-4d51-83c6-fd276cf7d307, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：v1.mk/vip】128, server: 104.21.91.92, port: 2083, type: vmess, uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer02, headers: {Host: uyaa.vtcss.top}}, udp: true}
+  - {name: "@SSRSUB-V56-付费推荐:dlj.tf/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv3.sharecentrepro.org}}, udp: true}
+  - {name: 中国_0604277, server: 111.6.86.76, port: 21322, type: vmess, uuid: dbbde4f0-802a-3024-8814-7f6a132940d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港08, server: downloadvip.cfd, port: 443, type: vmess, uuid: 363f868f-0374-46ab-a58e-ea108d06abe3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /djjc/de1, headers: {Host: de1.djjc.sbs}}, udp: true}
+  - {name: 美国_0604768 2, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: 57c6b55e-d0dc-47de-ab85-0c17b79a3a86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /d3QyW1VhYbXYnWiYkDe, headers: {Host: de10.irteh.fun}}, udp: true}
+  - {name: 美国_0604836, server: 23.224.15.181, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国  30, server: downloadvip.cfd, port: 443, type: vmess, uuid: 92622695-8087-4f81-97ea-1bd9cfeddfcf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /djjc/us4, headers: {Host: us4.djjc.sbs}}, udp: true}
+  - {name: "|11.81Mb", server: h961359.waihuizhibiaowang.com, port: 13543, type: trojan, password: d0d24d5b-54ae-40a0-ab68-889dbd4b8a66, skip-cert-verify: true, udp: true}
+  - {name: _US_美国_欢迎订阅yui科技_199, server: uyaa.vtcss.top, port: 8080, type: vmess, uuid: d7cf7b64-bf1c-46bd-cf39-90a31393843b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: uyaa.vtcss.top}}, udp: true}
+  - {name: github.com/freefq - 美国Microsoft数据中心 32, server: sg.stablize.top, port: 443, type: trojan, password: 159ab107-bfed-49b0-981d-5facd7e5e1c2, skip-cert-verify: true, udp: true}
+  - {name: "@SSRSUB-V47-付费推荐:dlj.tf/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sw.sharecentrepro.com}}, udp: true}
+  - {name: 伯利兹_0604223, server: ldauvycer.76898102.xyz, port: 2086, type: vmess, uuid: bbe033d3-d3be-3110-b81a-4fed343e2fc2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /opengtc, headers: {Host: ldauvycer.76898102.xyz}}, udp: true}
+  - {name: 美国_0604397, server: 137.175.29.38, port: 53986, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_0604230, server: 137.175.18.91, port: 42002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 乌克兰 002, server: freenodecdn.ikuan.dev, port: 2052, type: vmess, uuid: 3185c2f3-4246-49c4-ba8a-5ea8fb2ef6b8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /FreeForGFW, headers: {Host: freeforgfw.ikuan.dev}}, udp: true}
+  - {name: github.com/freefq - 以色列  3, server: us3.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 香港06, server: 163.123.192.156, port: 443, type: trojan, password: 363f868f-0374-46ab-a58e-ea108d06abe3, sni: download.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
+  - {name: 防失效github SubCrawler中国_0604010, server: g7z35c66m.ns28bdh90.y2hd6jq1t.soabgo.com, port: 26001, type: vmess, uuid: FF5D3BF5-1296-FB0A-4596-B3CD0C884200, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: US_FreeNode.me_17, server: beta.noaries.de, port: 8880, type: vmess, uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: contabo-uk.iiio.wiki}}, udp: true}
-  - {name: _🇺🇸_US_美国_顺丰_8, server: us2.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, sni: us2.chuqiangtou.net, skip-cert-verify: true, udp: true}
-  - {name: 未知_0603106, server: 104.16.254.134, port: 8080, type: vmess, uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qazxcv00, headers: {Host: tou.vtcss.top}}, udp: true}
-  - {name: 二爷翻墙 https://1808.ga 节点_4, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: gcore.ilovescp.com}}, udp: true}
-  - {name: 未知_06033510, server: 104.22.52.83, port: 8880, type: vmess, uuid: cb8cbbc3-137a-4064-8d02-b0ee3ca2c18c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qazxcv00, headers: {Host: tou.vtcss.top}}, udp: true}
-  - {name: 美国_0603009, server: 137.175.29.38, port: 53986, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 东京直连|@ripaojiedian, server: trs20.bolab.net, port: 443, type: trojan, password: 7a73f1dc97a70905870c0c0484b12145, sni: trs20.bolab.net, skip-cert-verify: true, udp: true}
-  - {name: "美国2号-0.1x\r", server: 163.123.192.155, port: 443, type: trojan, password: 20abfcfc-c717-4ac5-8642-a0979f595474, sni: download.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
-  - {name: 美国_06034680, server: 104.24.43.177, port: 2053, type: vmess, uuid: 4fe1cbfe-7569-4ee9-9196-b1c230a6ae70, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: x1.vtcss.top}}, udp: true}
-  - {name: 未知_06033488, server: 198.41.217.182, port: 443, type: vmess, uuid: 4ebdd868-845c-407c-f027-d6b92013f4aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: x1.vtcss.top}}, udp: true}
-  - {name: 未知_0603117, server: 190.93.246.196, port: 8080, type: vmess, uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qazxcv00, headers: {Host: tou.vtcss.top}}, udp: true}
-  - {name: 未知_06033493, server: 104.18.112.248, port: 80, type: vmess, uuid: 66d6266e-812c-4969-9f02-8d33e3265cae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: x1.vtcss.top}}, udp: true}
-  - {name: 爱尔兰_0603002, server: 34.249.226.195, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
-  - {name: 美国_0603708, server: 104.24.181.229, port: 8080, type: vmess, uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qazxcv00, headers: {Host: tou.vtcss.top}}, udp: true}
-  - {name: 新加坡_0603001, server: 202.79.174.157, port: 55264, type: vmess, uuid: 121c9c89-7d11-4f49-9112-dc1e85363f6f, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国|@ripaojiedian, server: 23.225.41.74, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国_0603101, server: g7z35c66m.ns28bdh90.y2hd6jq1t.soabgo.com, port: 26001, type: vmess, uuid: FF5D3BF5-1296-FB0A-4596-B3CD0C884200, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CA_3.96.12.243_060220231d39-564ss%%, server: z0115.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 日本直连|@ripaojiedian, server: trs22.bolab.net, port: 443, type: trojan, password: 7a73f1dc97a70905870c0c0484b12145, sni: trs22.bolab.net, skip-cert-verify: true, udp: true}
-  - {name: "德国1号\r", server: 217.79.184.18, port: 443, type: trojan, password: 20abfcfc-c717-4ac5-8642-a0979f595474, sni: download.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
-  - {name: 美国_0603002, server: 23.224.15.181, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：v1.mk/vip】49, server: 198.41.208.112, port: 2052, type: vmess, uuid: 0227edc4-8735-4370-ac42-4e8147920f0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer10, headers: {Host: tou.vtcss.top}}, udp: true}
-  - {name: 美国【付费推荐：v1.mk/vip】84, server: 104.16.45.208, port: 2052, type: vmess, uuid: 0227edc4-8735-4370-ac42-4e8147920f0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer10, headers: {Host: tou.vtcss.top}}, udp: true}
-  - {name: 台湾_0603001, server: 61.220.198.99, port: 58002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港A|@ripaojiedian, server: microsoft-hk.85413.xyz, port: 443, type: trojan, password: 6aa31a86-e2bd-4ede-b2be-095310b77ad5, sni: microsoft-hk.85413.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：v1.mk/vip】38, server: 198.41.196.233, port: 2052, type: vmess, uuid: 0227edc4-8735-4370-ac42-4e8147920f0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer10, headers: {Host: tou.vtcss.top}}, udp: true}
-  - {name: 美国_0603009 2, server: 137.175.29.38, port: 53986, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 法国_0603222, server: 173.245.49.127, port: 443, type: vmess, uuid: 4ebdd868-845c-407c-f027-d6b92013f4aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: x1.vtcss.top}}, udp: true}
-  - {name: HK|tg频道@ripaojiedian, server: trs13hk.bolab.net, port: 443, type: trojan, password: 7a73f1dc97a70905870c0c0484b12145, sni: trs13hk.bolab.net, skip-cert-verify: true, udp: true}
-  - {name: 未知_06033514, server: 104.19.171.190, port: 8880, type: vmess, uuid: 8ab00262-6a69-4f32-933e-f58a020279f8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: x1.vtcss.top}}, udp: true}
-  - {name: 新加坡_06021050, server: sg2.downloadvip.cfd, port: 443, type: trojan, password: 5fffb39e-7308-4fdb-9d27-7d8b16e6b80e, sni: download.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
-  - {name: US(AzadNet.t.me)_234, server: 38.63.17.179, port: 50702, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡_06031032, server: freenode.nirezzvpn.my.id, port: 443, type: vmess, uuid: 32388295-b10f-409e-a61e-ebd03666899b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmessws, headers: {Host: freenode.nirezzvpn.my.id}}, udp: true}
-  - {name: 未知_06033520, server: 104.20.171.95, port: 8880, type: vmess, uuid: 8ab00262-6a69-4f32-933e-f58a020279f8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: x1.vtcss.top}}, udp: true}
-  - {name: 中国_0603101 2, server: g7z35c66m.ns28bdh90.y2hd6jq1t.soabgo.com, port: 26001, type: vmess, uuid: FF5D3BF5-1296-FB0A-4596-B3CD0C884200, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 未知_0603103, server: 190.93.244.243, port: 8880, type: vmess, uuid: cb8cbbc3-137a-4064-8d02-b0ee3ca2c18c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qazxcv00, headers: {Host: tou.vtcss.top}}, udp: true}
-  - {name: 美国_06034697, server: 173.245.59.244, port: 2053, type: vmess, uuid: 4fe1cbfe-7569-4ee9-9196-b1c230a6ae70, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: x1.vtcss.top}}, udp: true}
-  - {name: 未知_06033512, server: 104.18.111.210, port: 443, type: vmess, uuid: 4ebdd868-845c-407c-f027-d6b92013f4aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: x1.vtcss.top}}, udp: true}
-  - {name: 台湾_0603001 2, server: 61.220.198.99, port: 58002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 法国_0603215, server: 173.245.49.219, port: 80, type: vmess, uuid: 66d6266e-812c-4969-9f02-8d33e3265cae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: x1.vtcss.top}}, udp: true}
-  - {name: 美国_0602646 2, server: 23.224.15.181, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK香港(youtube阿伟科技) 2, server: 8.217.92.210, port: 53645, type: ssr, cipher: dummy, password: 62374y354, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 卢森堡_0603048, server: 92.38.159.4, port: 80, type: vmess, uuid: 1eeeff8d-0028-46ec-ec2a-d39401047fbb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: tou.wang66.homes}}, udp: true}
-  - {name: IL_FreeNode.me_7, server: hk1.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 香港-1, server: azjp2.downloadvip.cfd, port: 443, type: trojan, password: 363f868f-0374-46ab-a58e-ea108d06abe3, sni: us3.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
-  - {name: 中国【付费推荐：v1.mk/vip】146, server: iepl2.airtcp.vip, port: 51002, type: vmess, uuid: 1a7680df-81a1-3d89-a221-db81ac4b04df, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港-9, server: downloadvip.cfd, port: 443, type: vmess, uuid: 363f868f-0374-46ab-a58e-ea108d06abe3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /djjc/us4, headers: {Host: us4.djjc.sbs}}, udp: true}
-  - {name: "@SSRSUB-V04-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}, udp: true}
+  - {name: 美国_0604774, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: 4f859149-2b2f-4b90-9a2c-8c0fe15c8c4c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ozX9aUPiJVtoLavjTW, headers: {Host: de14.irteh.fun}}, udp: true}
+  - {name: US(AzadNet.t.me)_166, server: 45.58.186.83, port: 51140, type: vmess, uuid: 4a138e19-0595-4d51-83c6-fd276cf7d307, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 以色列【付费推荐：v1.mk/vip】204, server: au3.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
   - {name: "|27.97Mb", server: 185.133.40.192, port: 35059, type: vmess, uuid: 8d78c2a8-acaa-467d-9234-d2606624506d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IEPL-AP-TW-1, server: assets.flareai.site, port: 13343, type: trojan, password: d0d24d5b-54ae-40a0-ab68-889dbd4b8a66, sni: 106-110-192-225.d.cjjd20.com, skip-cert-verify: true, udp: true}
-  - {name: "@SSRSUB-V08-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: gcore.ilovescp.com}}, udp: true}
-  - {name: 俄罗斯联邦_0602001, server: 185.133.40.192, port: 35059, type: vmess, uuid: 8d78c2a8-acaa-467d-9234-d2606624506d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：v1.mk/vip】8, server: 140.99.94.42, port: 51338, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US(AzadNet.t.me)_234 2, server: 38.63.17.179, port: 50702, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾_0602001, server: 61.220.198.99, port: 58002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：v1.mk/vip】31, server: 38.63.17.179, port: 50702, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _JP_日本, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: PT09PQ======, obfs-param: PT09PQ======, udp: true}
-  - {name: 中国【付费推荐：v1.mk/vip】114, server: ieplhk.lanyunshi.top, port: 51004, type: vmess, uuid: 1a7680df-81a1-3d89-a221-db81ac4b04df, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "@SSRSUB-V06-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sw.sharecentrepro.com}}, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 16, server: cf.yxjnode.com, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: dp4.yxjnode.com}}, udp: true}
-  - {name: US_FreeNode.me_43, server: beta.noaries.de, port: 8880, type: vmess, uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: contabo-au.iiio.wiki}}, udp: true}
-  - {name: 美国_0602785, server: 104.27.65.218, port: 8880, type: vmess, uuid: cb8cbbc3-137a-4064-8d02-b0ee3ca2c18c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qazxcv00, headers: {Host: tou.vtcss.top}}, udp: true}
-  - {name: 美国【付费推荐：v1.mk/vip】118, server: beta.noaries.de, port: 8880, type: vmess, uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ovh.iiio.wiki}}, udp: true}
-  - {name: US_FreeNode.me_5, server: beta.noaries.de, port: 2052, type: vmess, uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: contabo-us2.iiio.wiki}}, udp: true}
-  - {name: 以色列【付费推荐：v1.mk/vip】21, server: us1.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, sni: us1.chuqiangtou.net, skip-cert-verify: true, udp: true}
-  - {name: "@SSRSUB-V12-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare节点 16, server: cf.noaries.de, port: 2052, type: vmess, uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: scw-fr.iiio.wiki}}, udp: true}
+  - {name: HK香港(youtube阿伟科技) 2, server: 8.217.83.192, port: 62346, type: ssr, cipher: dummy, password: 23423er33, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: _FR_法国, server: fr-am1-5.eqsunshine.com, port: 8181, type: ssr, cipher: aes-256-cfb, password: RcfVcDzzB, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: "@SSRSUB-V46-付费推荐:dlj.tf/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: nl.sharecentrepro.com}}, udp: true}
+  - {name: 美国【付费推荐：v1.mk/vip】60, server: tech.noaries.de, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: nl.sharecentrepro.com}}, udp: true}
+  - {name: _US_美国_欢迎订阅yui科技_131, server: tou.vtcss.top, port: 443, type: vmess, uuid: 2c3a22f0-2087-4f86-b30d-664317f8c820, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: tou.vtcss.top}}, udp: true}
+  - {name: US_FreeNode.me_94, server: beta.noaries.de, port: 2052, type: vmess, uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: csjp.iiio.wiki}}, udp: true}
+  - {name: 台湾_0604287, server: 013.AP.POP.node-for-smallairport.win, port: 1521, type: vmess, uuid: 132da563-3590-4203-9d93-cb3b52a4b51b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "%�\x11�<'����ӗ�.+yf�KO�'��<%�\x11����%�Z\"�yf%�", server: en.vfun.icu, port: 443, type: ssr, cipher: aes-256-cfb, password: vyunme, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17422:TTp0SX, obfs-param: ab93117422.jd.h%%, udp: true}
+  - {name: _KR_韩国 3 2, server: 43.201.250.192, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 美国_0604771, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: 2fcc2939-7dcf-4741-aa03-825bc40e23fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /CZfczvtieCZXdOlgWhgDLX, headers: {Host: de3.irteh.fun}}, udp: true}
+  - {name: 美国_06041337, server: 104.24.181.229, port: 8080, type: vmess, uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qazxcv00, headers: {Host: tou.vtcss.top}}, udp: true}
+  - {name: 美国 058, server: 45.58.186.83, port: 51140, type: vmess, uuid: 4a138e19-0595-4d51-83c6-fd276cf7d307, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：v1.mk/vip】54, server: 198.41.219.56, port: 2083, type: vmess, uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer02, headers: {Host: uyaa.vtcss.top}}, udp: true}
+  - {name: 美国【付费推荐：v1.mk/vip】63, server: 104.21.53.35, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: buyvm1.yxjnode.com}}, udp: true}
+  - {name: github.com/freefq - 以色列  10, server: us2.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: "@SSRSUB-V69-付费推荐:dlj.tf/ssrsub", server: cdn.ikuan.dev, port: 2052, type: vmess, uuid: 3185c2f3-4246-49c4-ba8a-5ea8fb2ef6b8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /FreeForGFW, headers: {Host: freeforgfw.ikuan.dev}}, udp: true}
+  - {name: "|11.22Mb", server: nl1.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 日本 014, server: trs20.bolab.net, port: 443, type: trojan, password: 7a73f1dc97a70905870c0c0484b12145, sni: trs20.bolab.net, skip-cert-verify: true, udp: true}
+  - {name: "美国凤凰城3号 | 0.1x\r", server: 163.123.192.151, port: 443, type: trojan, password: eb04af08-a11b-422a-8dfa-710238d91625, sni: download.xn--mes358acgm99l.com, skip-cert-verify: true, udp: true}
+  - {name: US(AzadNet.t.me)_110, server: 107.167.4.122, port: 46766, type: vmess, uuid: 9838c1b4-c3fd-49b5-8a59-2ff05385f17c, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 新加坡Linode数据中心 26, server: freenode.nirezzvpn.my.id, port: 80, type: vmess, uuid: 32388295-b10f-409e-a61e-ebd03666899b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: freenode.nirezzvpn.my.id}}, udp: true}
+  - {name: 未知_0604467, server: 198.41.217.103, port: 8080, type: vmess, uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qazxcv00, headers: {Host: tou.vtcss.top}}, udp: true}
+  - {name: 香港09, server: downloadvip.cfd, port: 443, type: vmess, uuid: 363f868f-0374-46ab-a58e-ea108d06abe3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /djjc/us2, headers: {Host: us2.djjc.sbs}}, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: cdnjs.com, port: 443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Lille.kotick.site}}, udp: true}
+  - {name: 美国【付费推荐：v1.mk/vip】112, server: beta.noaries.de, port: 8080, type: vmess, uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: contabo-sg.iiio.wiki}}, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 27, server: 104.21.94.37, port: 443, type: vmess, uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.v2ray.online}}, udp: true}
+  - {name: github.com/freefq - 辽宁省鞍山市电信 18, server: free.themars.top, port: 32103, type: ss, cipher: chacha20-ietf-poly1305, password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2, udp: true}
+  - {name: 未知_0604461, server: 104.18.65.225, port: 80, type: vmess, uuid: 1eeeff8d-0028-46ec-ec2a-d39401047fbb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: tou.vtcss.top}}, udp: true}
+  - {name: 美国_0604794, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: a6457d28-e328-4202-99fe-0606d7ad69a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6rXqecLmchrWkX7cy1ilLjMBLUC, headers: {Host: de18.irteh.fun}}, udp: true}
+  - {name: US(AzadNet.t.me)_284, server: 137.175.18.91, port: 42002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 未知_0604466, server: 198.41.209.107, port: 8880, type: vmess, uuid: cb8cbbc3-137a-4064-8d02-b0ee3ca2c18c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qazxcv00, headers: {Host: tou.vtcss.top}}, udp: true}
+  - {name: 香港04, server: 163.123.192.154, port: 443, type: trojan, password: 363f868f-0374-46ab-a58e-ea108d06abe3, sni: download.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
+  - {name: 美国_06041338, server: 104.24.48.132, port: 80, type: vmess, uuid: 1eeeff8d-0028-46ec-ec2a-d39401047fbb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: tou.vtcss.top}}, udp: true}
+  - {name: 美国【付费推荐：v1.mk/vip】156, server: cf.noaries.de, port: 8880, type: vmess, uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: vnpt.iiio.wiki}}, udp: true}
+  - {name: 美国【付费推荐：v1.mk/vip】174, server: cf-dx-dns.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}, udp: true}
+  - {name: _CN_中国_欢迎订阅yui科技_226, server: 111.6.86.76, port: 21322, type: vmess, uuid: dbbde4f0-802a-3024-8814-7f6a132940d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_0603101, server: g7z35c66m.ns28bdh90.y2hd6jq1t.soabgo.com, port: 26001, type: vmess, uuid: FF5D3BF5-1296-FB0A-4596-B3CD0C884200, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _SG_新加坡_欢迎订阅yui科技_246, server: sg2.f163ab0f2c74.sanfen004.me, port: 443, type: vmess, uuid: 6d31bd0b-81df-4bb0-b9ea-e00bab2e06d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
   - {name: 美国【付费推荐：v1.mk/vip】5, server: 23.224.15.181, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国  34, server: downloadvip.cfd, port: 443, type: vmess, uuid: 92622695-8087-4f81-97ea-1bd9cfeddfcf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /djjc/us4, headers: {Host: us4.djjc.sbs}}, udp: true}
-  - {name: 台湾_0601009, server: 61.220.198.99, port: 58002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 013, server: freenode.nirezzvpn.my.id, port: 80, type: vmess, uuid: 32388295-b10f-409e-a61e-ebd03666899b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmessws, headers: {Host: freenode.nirezzvpn.my.id}}, udp: true}
+  - {name: 以色列【付费推荐：v1.mk/vip】195, server: us1.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, sni: us1.chuqiangtou.net, skip-cert-verify: true, udp: true}
+  - {name: 二爷翻墙https://1808.ga 节点_1, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: nl.sharecentrepro.com}}, udp: true}
+  - {name: 新加坡_0604073, server: freenode.nirezzvpn.my.id, port: 443, type: vmess, uuid: 32388295-b10f-409e-a61e-ebd03666899b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmessws, headers: {Host: freenode.nirezzvpn.my.id}}, udp: true}
+  - {name: 俄罗斯联邦_0601003, server: 185.133.40.192, port: 35059, type: vmess, uuid: 8d78c2a8-acaa-467d-9234-d2606624506d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_0603865, server: 104.27.83.57, port: 8080, type: vmess, uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qazxcv00, headers: {Host: tou.vtcss.top}}, udp: true}
+  - {name: "@SSRSUB-V07-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: in.sharecentrepro.com}}, udp: true}
+  - {name: 二爷翻墙https://1808.ga 节点_3, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: in.sharecentrepro.com}}, udp: true}
+  - {name: 美国【付费推荐：v1.mk/vip】87, server: beta.noaries.de, port: 2082, type: vmess, uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: contabo-jp-win.iiio.wiki}}, udp: true}
+  - {name: 印度尼西亚_0604002, server: banterbener.my.id, port: 80, type: vmess, uuid: 5d956feb-4605-4523-a866-2a8b45f1216f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /xrayvws, headers: {Host: banterbener.my.id}}, udp: true}
+  - {name: "@SSRSUB-V54-付费推荐:dlj.tf/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv1.sharecentrepro.org}}, udp: true}
+  - {name: 俄罗斯联邦_0602001, server: 185.133.40.192, port: 35059, type: vmess, uuid: 8d78c2a8-acaa-467d-9234-d2606624506d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 二爷翻墙https://1808.ga 节点_5, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: do.sharecentrepro.com}}, udp: true}
+  - {name: 美国【付费推荐：v1.mk/vip】27, server: cf-dx-dns.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: in.sharecentrepro.com}}, udp: true}
+  - {name: 未知_0604464, server: 198.41.200.220, port: 80, type: vmess, uuid: 1eeeff8d-0028-46ec-ec2a-d39401047fbb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: tou.vtcss.top}}, udp: true}
+  - {name: 美国【付费推荐：v1.mk/vip】14, server: cf.noaries.de, port: 2082, type: vmess, uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: dedipath2.iiio.wiki}}, udp: true}
+  - {name: 法国_0604020, server: 156.249.18.9, port: 50709, type: vmess, uuid: 5a4d69ad-20a9-4941-b223-87bbd09f5f52, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国Microsoft数据中心 26, server: usajs.stablize.top, port: 443, type: trojan, password: b88edfd4-23eb-4544-9bbc-a68914952905, skip-cert-verify: true, udp: true}
+  - {name: "|94.90Mb", server: 152.70.74.66, port: 443, type: trojan, password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：v1.mk/vip】103, server: cf.noaries.de, port: 8080, type: vmess, uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.iiio.wiki}}, udp: true}
+  - {name: 中国_0604277 2, server: 111.6.86.76, port: 21322, type: vmess, uuid: dbbde4f0-802a-3024-8814-7f6a132940d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国【付费推荐：v1.mk/vip】180, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}, udp: true}
+  - {name: 香港-1, server: azjp2.downloadvip.cfd, port: 443, type: trojan, password: 363f868f-0374-46ab-a58e-ea108d06abe3, sni: us3.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡_06021050, server: sg2.downloadvip.cfd, port: 443, type: trojan, password: 5fffb39e-7308-4fdb-9d27-7d8b16e6b80e, sni: download.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
+  - {name: 中国【付费推荐：v1.mk/vip】146, server: iepl2.airtcp.vip, port: 51002, type: vmess, uuid: 1a7680df-81a1-3d89-a221-db81ac4b04df, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: IL_FreeNode.me_7, server: hk1.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 008, server: sg3.f163ab0f2c74.sanfen004.me, port: 443, type: vmess, uuid: 6d31bd0b-81df-4bb0-b9ea-e00bab2e06d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: "@SSRSUB-V62-付费推荐:dlj.tf/ssrsub", server: cdncf.scyu.app, port: 80, type: vmess, uuid: c07a7268-6b25-4952-be6d-e9fb3beacedc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.ssrsub.com}}, udp: true}
+  - {name: 德国【付费推荐：v1.mk/vip】117, server: cdn.anycast.eu.org, port: 443, type: vmess, uuid: dddd0b29-1576-4003-9990-d7cea34264db, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /835757, headers: {Host: dedi2.1808.cf}}, udp: true}
   - {name: github.com/freefq - 澳大利亚Northcote Secondary College 21, server: bx.weizai2023.uk.eu.org, port: 443, type: vmess, uuid: e7d1e562-2af9-40ac-9fad-d1d4806ff1e9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/mioooo?ed=2048", headers: {Host: 2bh.unioreo.rip}}, udp: true}
+  - {name: 加拿大【付费推荐：v1.mk/vip】170, server: 23.227.38.99, port: 443, type: vmess, uuid: 86d37526-5758-4cec-862f-df404b313086, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /3G6WPDL7, headers: {Host: 1.freek1.xyz}}, udp: true}
+  - {name: "|29.34Mb", server: 43.154.76.92, port: 49035, type: vmess, uuid: 784272d2-bd2d-438a-bbd4-1271bb1f1b0d, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hk15/getData}, udp: true}
+  - {name: 二爷翻墙https://1808.ga 节点_13, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}, udp: true}
+  - {name: "@SSRSUB-V67-付费推荐:dlj.tf/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}, udp: true}
+  - {name: 未知_0604459, server: 190.93.244.243, port: 8880, type: vmess, uuid: cb8cbbc3-137a-4064-8d02-b0ee3ca2c18c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qazxcv00, headers: {Host: tou.vtcss.top}}, udp: true}
+  - {name: _CN_中国->🇺🇸_US_美国, server: iepl2.airtcp.vip, port: 51002, type: vmess, uuid: 1a7680df-81a1-3d89-a221-db81ac4b04df, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "@SSRSUB-V50-付费推荐:dlj.tf/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: do.sharecentrepro.com}}, udp: true}
+  - {name: 俄罗斯 001, server: 185.133.40.192, port: 35059, type: vmess, uuid: 8d78c2a8-acaa-467d-9234-d2606624506d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK香港(youtube阿伟科技), server: 8.218.71.75, port: 50835, type: ssr, cipher: dummy, password: 3453453tr4, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 二爷翻墙https://1808.ga 节点_4, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: gcore.ilovescp.com}}, udp: true}
+  - {name: 以色列【付费推荐：v1.mk/vip】192, server: uk1.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 未知_06043654, server: cdn.noice.id, port: 80, type: vmess, uuid: 641a1a24-7d4c-447d-9005-cc43bfc4da8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tunnelvmess, headers: {Host: sgaws1.tunnel.systems}}, udp: true}
+  - {name: _RU_俄罗斯联邦_欢迎订阅yui科技_161, server: 185.133.40.192, port: 35059, type: vmess, uuid: 8d78c2a8-acaa-467d-9234-d2606624506d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_FreeNode.me_43, server: beta.noaries.de, port: 8880, type: vmess, uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: contabo-au.iiio.wiki}}, udp: true}
+  - {name: "@SSRSUB-V61-付费推荐:dlj.tf/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: c07a7268-6b25-4952-be6d-e9fb3beacedc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.ssrsub.com}}, udp: true}
+  - {name: "@SSRSUB-V52-付费推荐:dlj.tf/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}, udp: true}
+  - {name: "@SSRSUB-V34-付费推荐:dlj.tf/ssrsub", server: 185.133.40.192, port: 35059, type: vmess, uuid: 8d78c2a8-acaa-467d-9234-d2606624506d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _DE_德国, server: 167.235.61.163, port: 3456, type: vmess, uuid: 68424231-aedd-466b-a171-5571c8183c57, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 美国_06041327, server: 192.74.229.215, port: 51592, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "@SSRSUB-V64-付费推荐:dlj.tf/ssrsub", server: cdncf.scyu.app, port: 80, type: vmess, uuid: c07a7268-6b25-4952-be6d-e9fb3beacedc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v02.ssrsub.com}}, udp: true}
+  - {name: "@SSRSUB-V63-付费推荐:dlj.tf/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: c07a7268-6b25-4952-be6d-e9fb3beacedc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v02.ssrsub.com}}, udp: true}
+  - {name: 伯利兹_0604105, server: fldsubgigtujuy.76898102.xyz, port: 2095, type: vmess, uuid: bbe033d3-d3be-3110-b81a-4fed343e2fc2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /miaoGK, headers: {Host: fldsubgigtujuy.76898102.xyz}}, udp: true}
+  - {name: 中国【付费推荐：v1.mk/vip】111, server: 8.v2-ray.cyou, port: 23608, type: vmess, uuid: 0dd19d20-ec86-3680-b256-87237bafa89e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡_0604059, server: freenode.nirezzvpn.my.id, port: 80, type: vmess, uuid: 32388295-b10f-409e-a61e-ebd03666899b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmessws, headers: {Host: freenode.nirezzvpn.my.id}}, udp: true}
+  - {name: 新加坡 009, server: aws-sg.aikun.online, port: 443, type: trojan, password: dd9dd241-e231-4552-87ba-bd9cc1dd13b8, sni: cdn-65135431546231.78321.xyz, skip-cert-verify: true, udp: true}
+  - {name: 法国_0604036, server: 94.23.116.190, port: 443, type: ssr, cipher: aes-256-ctr, password: HowdyBypasser2022, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: US(AzadNet.t.me)_049 2, server: 192.74.229.215, port: 51592, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "@SSRSUB-V04-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}, udp: true}
+  - {name: 美国_06041371, server: aa.hk1997.pro, port: 8443, type: vmess, uuid: fdf6caf1-88e0-4eca-b7b6-a60b70aa1e93, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hk1997-aimwp, headers: {Host: aa.hk1997.pro}}, udp: true}
+  - {name: github.com/freefq - 以色列  17, server: au1.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: "@SSRSUB-V17-付费推荐:dlj.tf/ssrsub", server: 23.224.15.181, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 未知_0603102, server: 198.41.193.174, port: 8880, type: vmess, uuid: cb8cbbc3-137a-4064-8d02-b0ee3ca2c18c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qazxcv00, headers: {Host: tou.vtcss.top}}, udp: true}
+  - {name: 二爷翻墙https://1808.ga 节点_11, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}, udp: true}
+  - {name: 香港-8, server: downloadvip.cfd, port: 443, type: vmess, uuid: 363f868f-0374-46ab-a58e-ea108d06abe3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /djjc/us3, headers: {Host: us3.djjc.sbs}}, udp: true}
+  - {name: 伯利兹_0604100, server: jpnewacs.114514782.xyz, port: 2052, type: vmess, uuid: bbe033d3-d3be-3110-b81a-4fed343e2fc2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vvfdgtrh, headers: {Host: jpnewacs.114514782.xyz}}, udp: true}
+  - {name: 美国_0602646, server: 23.224.15.181, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 二爷翻墙https://1808.ga 节点_7, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}, udp: true}
+  - {name: "@SSRSUB-V10-付费推荐:suo.yt/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: uk1.scproxy.top}}, udp: true}
+  - {name: "|19.57Mb", server: 43.154.76.92, port: 48336, type: vmess, uuid: 784272d2-bd2d-438a-bbd4-1271bb1f1b0d, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hk15/getData}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _RU_俄罗斯联邦
-      - 加拿大_0602083
-      - _CN_中国->🇺🇸_US_美国
-      - 俄罗斯联邦_0603001
-      - 美国【付费推荐：v1.mk/vip】77
-      - 法国_0528026
-      - _US_美国->🇸🇬_SG_新加坡
-      - 美国_0602015
-      - IEPL-AP-HK-1
-      - "日本亚马逊\r"
-      - 俄罗斯联邦_0601003
-      - IL_FreeNode.me_76
-      - 日本 015
-      - _CN_中国->🇺🇸_US_美国_2
-      - 美国_0602646
-      - LU卢森堡(youtube阿伟科技)
-      - 美国【付费推荐：v1.mk/vip】87
-      - github.com/freefq - 以色列  3
-      - 中国【付费推荐：v1.mk/vip】186
-      - 美国_0602015 2
-      - "|94.90Mb"
-      - "@SSRSUB-V16-付费推荐:suo.yt/ssrsub"
-      - 未知_0603104
+      - "美国圣何塞|防失联直连|1x\r"
+      - _CA_加拿大 2
       - 二爷翻墙https://1808.ga 节点_10
-      - 美国_0603723
-      - 美国【付费推荐：v1.mk/vip】69
+      - 二爷翻墙https://1808.ga 节点_2
+      - github.com/freefq - 俄罗斯新西伯利亚ADMAN数据中心 14
+      - 日本 006
+      - 未知_0604481
+      - US(AzadNet.t.me)_049
+      - 未知_0604460
+      - 未知_0604476
+      - 中国【付费推荐：v1.mk/vip】186
+      - 美国_0604400
+      - _🇺🇸_US_美国_科网_03
+      - 美国_0604830
       - _US_美国->🇱🇺_LU_卢森堡 6
-      - 美国_0603823
-      - 美国 035
-      - github.com/freefq - 以色列  7
-      - 美国_06034662
-      - 美国【付费推荐：v1.mk/vip】60
-      - 俄罗斯联邦_0602010
-      - US_FreeNode.me_77
-      - 巴勒斯坦_0603002
+      - 美国_0604780 2
+      - 美国_0604079
+      - 美国【付费推荐：v1.mk/vip】128
+      - "@SSRSUB-V56-付费推荐:dlj.tf/ssrsub"
+      - 中国_0604277
+      - 香港08
+      - 美国_0604768 2
+      - 美国_0604836
+      - github.com/freefq - 美国  30
+      - "|11.81Mb"
+      - _US_美国_欢迎订阅yui科技_199
+      - github.com/freefq - 美国Microsoft数据中心 32
+      - "@SSRSUB-V47-付费推荐:dlj.tf/ssrsub"
+      - 伯利兹_0604223
+      - 美国_0604397
+      - 美国_0604230
+      - 乌克兰 002
+      - github.com/freefq - 以色列  3
+      - 香港06
+      - 防失效github SubCrawler中国_0604010
       - US_FreeNode.me_17
-      - _🇺🇸_US_美国_顺丰_8
-      - 未知_0603106
-      - 二爷翻墙 https://1808.ga 节点_4
-      - 未知_06033510
-      - 美国_0603009
-      - 东京直连|@ripaojiedian
-      - "美国2号-0.1x\r"
-      - 美国_06034680
-      - 未知_06033488
-      - 未知_0603117
-      - 未知_06033493
-      - 爱尔兰_0603002
-      - 美国_0603708
-      - 新加坡_0603001
-      - 美国|@ripaojiedian
-      - 中国_0603101
-      - CA_3.96.12.243_060220231d39-564ss%%
-      - 日本直连|@ripaojiedian
-      - "德国1号\r"
-      - 美国_0603002
-      - 美国【付费推荐：v1.mk/vip】49
-      - 美国【付费推荐：v1.mk/vip】84
-      - 台湾_0603001
-      - 香港A|@ripaojiedian
-      - 美国【付费推荐：v1.mk/vip】38
-      - 美国_0603009 2
-      - 法国_0603222
-      - HK|tg频道@ripaojiedian
-      - 未知_06033514
-      - 新加坡_06021050
-      - US(AzadNet.t.me)_234
-      - 新加坡_06031032
-      - 未知_06033520
-      - 中国_0603101 2
-      - 未知_0603103
-      - 美国_06034697
-      - 未知_06033512
-      - 台湾_0603001 2
-      - 法国_0603215
-      - 美国_0602646 2
-      - HK香港(youtube阿伟科技) 2
-      - 卢森堡_0603048
-      - IL_FreeNode.me_7
-      - 香港-1
-      - 中国【付费推荐：v1.mk/vip】146
-      - 香港-9
-      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - 美国_0604774
+      - US(AzadNet.t.me)_166
+      - 以色列【付费推荐：v1.mk/vip】204
       - "|27.97Mb"
-      - IEPL-AP-TW-1
-      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
-      - 俄罗斯联邦_0602001
-      - 美国【付费推荐：v1.mk/vip】8
-      - US(AzadNet.t.me)_234 2
-      - 台湾_0602001
-      - 美国【付费推荐：v1.mk/vip】31
-      - _JP_日本
-      - 中国【付费推荐：v1.mk/vip】114
-      - "@SSRSUB-V06-付费推荐:suo.yt/ssrsub"
-      - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - US_FreeNode.me_43
-      - 美国_0602785
-      - 美国【付费推荐：v1.mk/vip】118
-      - US_FreeNode.me_5
-      - 以色列【付费推荐：v1.mk/vip】21
-      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
-      - github.com/freefq - 美国CloudFlare节点 16
+      - HK香港(youtube阿伟科技) 2
+      - _FR_法国
+      - "@SSRSUB-V46-付费推荐:dlj.tf/ssrsub"
+      - 美国【付费推荐：v1.mk/vip】60
+      - _US_美国_欢迎订阅yui科技_131
+      - US_FreeNode.me_94
+      - 台湾_0604287
+      - "%�\x11�<'����ӗ�.+yf�KO�'��<%�\x11����%�Z\"�yf%�"
+      - _KR_韩国 3 2
+      - 美国_0604771
+      - 美国_06041337
+      - 美国 058
+      - 美国【付费推荐：v1.mk/vip】54
+      - 美国【付费推荐：v1.mk/vip】63
+      - github.com/freefq - 以色列  10
+      - "@SSRSUB-V69-付费推荐:dlj.tf/ssrsub"
+      - "|11.22Mb"
+      - 日本 014
+      - "美国凤凰城3号 | 0.1x\r"
+      - US(AzadNet.t.me)_110
+      - github.com/freefq - 新加坡Linode数据中心 26
+      - 未知_0604467
+      - 香港09
+      - 美国 CloudFlare节点 3
+      - 美国【付费推荐：v1.mk/vip】112
+      - github.com/freefq - 美国CloudFlare公司CDN节点 27
+      - github.com/freefq - 辽宁省鞍山市电信 18
+      - 未知_0604461
+      - 美国_0604794
+      - US(AzadNet.t.me)_284
+      - 未知_0604466
+      - 香港04
+      - 美国_06041338
+      - 美国【付费推荐：v1.mk/vip】156
+      - 美国【付费推荐：v1.mk/vip】174
+      - _CN_中国_欢迎订阅yui科技_226
+      - 中国_0603101
+      - _SG_新加坡_欢迎订阅yui科技_246
       - 美国【付费推荐：v1.mk/vip】5
-      - github.com/freefq - 美国  34
-      - 台湾_0601009
+      - 新加坡 013
+      - 以色列【付费推荐：v1.mk/vip】195
+      - 二爷翻墙https://1808.ga 节点_1
+      - 新加坡_0604073
+      - 俄罗斯联邦_0601003
+      - 美国_0603865
+      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙https://1808.ga 节点_3
+      - 美国【付费推荐：v1.mk/vip】87
+      - 印度尼西亚_0604002
+      - "@SSRSUB-V54-付费推荐:dlj.tf/ssrsub"
+      - 俄罗斯联邦_0602001
+      - 二爷翻墙https://1808.ga 节点_5
+      - 美国【付费推荐：v1.mk/vip】27
+      - 未知_0604464
+      - 美国【付费推荐：v1.mk/vip】14
+      - 法国_0604020
+      - github.com/freefq - 美国Microsoft数据中心 26
+      - "|94.90Mb"
+      - 美国【付费推荐：v1.mk/vip】103
+      - 中国_0604277 2
+      - 美国【付费推荐：v1.mk/vip】180
+      - 香港-1
+      - 新加坡_06021050
+      - 中国【付费推荐：v1.mk/vip】146
+      - IL_FreeNode.me_7
+      - 新加坡 008
+      - "@SSRSUB-V62-付费推荐:dlj.tf/ssrsub"
+      - 德国【付费推荐：v1.mk/vip】117
       - github.com/freefq - 澳大利亚Northcote Secondary College 21
+      - 加拿大【付费推荐：v1.mk/vip】170
+      - "|29.34Mb"
+      - 二爷翻墙https://1808.ga 节点_13
+      - "@SSRSUB-V67-付费推荐:dlj.tf/ssrsub"
+      - 未知_0604459
+      - _CN_中国->🇺🇸_US_美国
+      - "@SSRSUB-V50-付费推荐:dlj.tf/ssrsub"
+      - 俄罗斯 001
+      - HK香港(youtube阿伟科技)
+      - 二爷翻墙https://1808.ga 节点_4
+      - 以色列【付费推荐：v1.mk/vip】192
+      - 未知_06043654
+      - _RU_俄罗斯联邦_欢迎订阅yui科技_161
+      - US_FreeNode.me_43
+      - "@SSRSUB-V61-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V52-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V34-付费推荐:dlj.tf/ssrsub"
+      - _DE_德国
+      - 美国_06041327
+      - "@SSRSUB-V64-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V63-付费推荐:dlj.tf/ssrsub"
+      - 伯利兹_0604105
+      - 中国【付费推荐：v1.mk/vip】111
+      - 新加坡_0604059
+      - 新加坡 009
+      - 法国_0604036
+      - US(AzadNet.t.me)_049 2
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - 美国_06041371
+      - github.com/freefq - 以色列  17
+      - "@SSRSUB-V17-付费推荐:dlj.tf/ssrsub"
+      - 未知_0603102
+      - 二爷翻墙https://1808.ga 节点_11
+      - 香港-8
+      - 伯利兹_0604100
+      - 美国_0602646
+      - 二爷翻墙https://1808.ga 节点_7
+      - "@SSRSUB-V10-付费推荐:suo.yt/ssrsub"
+      - "|19.57Mb"
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - _RU_俄罗斯联邦
-      - 加拿大_0602083
-      - _CN_中国->🇺🇸_US_美国
-      - 俄罗斯联邦_0603001
-      - 美国【付费推荐：v1.mk/vip】77
-      - 法国_0528026
-      - _US_美国->🇸🇬_SG_新加坡
-      - 美国_0602015
-      - IEPL-AP-HK-1
-      - "日本亚马逊\r"
-      - 俄罗斯联邦_0601003
-      - IL_FreeNode.me_76
-      - 日本 015
-      - _CN_中国->🇺🇸_US_美国_2
-      - 美国_0602646
-      - LU卢森堡(youtube阿伟科技)
-      - 美国【付费推荐：v1.mk/vip】87
-      - github.com/freefq - 以色列  3
-      - 中国【付费推荐：v1.mk/vip】186
-      - 美国_0602015 2
-      - "|94.90Mb"
-      - "@SSRSUB-V16-付费推荐:suo.yt/ssrsub"
-      - 未知_0603104
+      - "美国圣何塞|防失联直连|1x\r"
+      - _CA_加拿大 2
       - 二爷翻墙https://1808.ga 节点_10
-      - 美国_0603723
-      - 美国【付费推荐：v1.mk/vip】69
+      - 二爷翻墙https://1808.ga 节点_2
+      - github.com/freefq - 俄罗斯新西伯利亚ADMAN数据中心 14
+      - 日本 006
+      - 未知_0604481
+      - US(AzadNet.t.me)_049
+      - 未知_0604460
+      - 未知_0604476
+      - 中国【付费推荐：v1.mk/vip】186
+      - 美国_0604400
+      - _🇺🇸_US_美国_科网_03
+      - 美国_0604830
       - _US_美国->🇱🇺_LU_卢森堡 6
-      - 美国_0603823
-      - 美国 035
-      - github.com/freefq - 以色列  7
-      - 美国_06034662
-      - 美国【付费推荐：v1.mk/vip】60
-      - 俄罗斯联邦_0602010
-      - US_FreeNode.me_77
-      - 巴勒斯坦_0603002
+      - 美国_0604780 2
+      - 美国_0604079
+      - 美国【付费推荐：v1.mk/vip】128
+      - "@SSRSUB-V56-付费推荐:dlj.tf/ssrsub"
+      - 中国_0604277
+      - 香港08
+      - 美国_0604768 2
+      - 美国_0604836
+      - github.com/freefq - 美国  30
+      - "|11.81Mb"
+      - _US_美国_欢迎订阅yui科技_199
+      - github.com/freefq - 美国Microsoft数据中心 32
+      - "@SSRSUB-V47-付费推荐:dlj.tf/ssrsub"
+      - 伯利兹_0604223
+      - 美国_0604397
+      - 美国_0604230
+      - 乌克兰 002
+      - github.com/freefq - 以色列  3
+      - 香港06
+      - 防失效github SubCrawler中国_0604010
       - US_FreeNode.me_17
-      - _🇺🇸_US_美国_顺丰_8
-      - 未知_0603106
-      - 二爷翻墙 https://1808.ga 节点_4
-      - 未知_06033510
-      - 美国_0603009
-      - 东京直连|@ripaojiedian
-      - "美国2号-0.1x\r"
-      - 美国_06034680
-      - 未知_06033488
-      - 未知_0603117
-      - 未知_06033493
-      - 爱尔兰_0603002
-      - 美国_0603708
-      - 新加坡_0603001
-      - 美国|@ripaojiedian
-      - 中国_0603101
-      - CA_3.96.12.243_060220231d39-564ss%%
-      - 日本直连|@ripaojiedian
-      - "德国1号\r"
-      - 美国_0603002
-      - 美国【付费推荐：v1.mk/vip】49
-      - 美国【付费推荐：v1.mk/vip】84
-      - 台湾_0603001
-      - 香港A|@ripaojiedian
-      - 美国【付费推荐：v1.mk/vip】38
-      - 美国_0603009 2
-      - 法国_0603222
-      - HK|tg频道@ripaojiedian
-      - 未知_06033514
-      - 新加坡_06021050
-      - US(AzadNet.t.me)_234
-      - 新加坡_06031032
-      - 未知_06033520
-      - 中国_0603101 2
-      - 未知_0603103
-      - 美国_06034697
-      - 未知_06033512
-      - 台湾_0603001 2
-      - 法国_0603215
-      - 美国_0602646 2
-      - HK香港(youtube阿伟科技) 2
-      - 卢森堡_0603048
-      - IL_FreeNode.me_7
-      - 香港-1
-      - 中国【付费推荐：v1.mk/vip】146
-      - 香港-9
-      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - 美国_0604774
+      - US(AzadNet.t.me)_166
+      - 以色列【付费推荐：v1.mk/vip】204
       - "|27.97Mb"
-      - IEPL-AP-TW-1
-      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
-      - 俄罗斯联邦_0602001
-      - 美国【付费推荐：v1.mk/vip】8
-      - US(AzadNet.t.me)_234 2
-      - 台湾_0602001
-      - 美国【付费推荐：v1.mk/vip】31
-      - _JP_日本
-      - 中国【付费推荐：v1.mk/vip】114
-      - "@SSRSUB-V06-付费推荐:suo.yt/ssrsub"
-      - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - US_FreeNode.me_43
-      - 美国_0602785
-      - 美国【付费推荐：v1.mk/vip】118
-      - US_FreeNode.me_5
-      - 以色列【付费推荐：v1.mk/vip】21
-      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
-      - github.com/freefq - 美国CloudFlare节点 16
+      - HK香港(youtube阿伟科技) 2
+      - _FR_法国
+      - "@SSRSUB-V46-付费推荐:dlj.tf/ssrsub"
+      - 美国【付费推荐：v1.mk/vip】60
+      - _US_美国_欢迎订阅yui科技_131
+      - US_FreeNode.me_94
+      - 台湾_0604287
+      - "%�\x11�<'����ӗ�.+yf�KO�'��<%�\x11����%�Z\"�yf%�"
+      - _KR_韩国 3 2
+      - 美国_0604771
+      - 美国_06041337
+      - 美国 058
+      - 美国【付费推荐：v1.mk/vip】54
+      - 美国【付费推荐：v1.mk/vip】63
+      - github.com/freefq - 以色列  10
+      - "@SSRSUB-V69-付费推荐:dlj.tf/ssrsub"
+      - "|11.22Mb"
+      - 日本 014
+      - "美国凤凰城3号 | 0.1x\r"
+      - US(AzadNet.t.me)_110
+      - github.com/freefq - 新加坡Linode数据中心 26
+      - 未知_0604467
+      - 香港09
+      - 美国 CloudFlare节点 3
+      - 美国【付费推荐：v1.mk/vip】112
+      - github.com/freefq - 美国CloudFlare公司CDN节点 27
+      - github.com/freefq - 辽宁省鞍山市电信 18
+      - 未知_0604461
+      - 美国_0604794
+      - US(AzadNet.t.me)_284
+      - 未知_0604466
+      - 香港04
+      - 美国_06041338
+      - 美国【付费推荐：v1.mk/vip】156
+      - 美国【付费推荐：v1.mk/vip】174
+      - _CN_中国_欢迎订阅yui科技_226
+      - 中国_0603101
+      - _SG_新加坡_欢迎订阅yui科技_246
       - 美国【付费推荐：v1.mk/vip】5
-      - github.com/freefq - 美国  34
-      - 台湾_0601009
+      - 新加坡 013
+      - 以色列【付费推荐：v1.mk/vip】195
+      - 二爷翻墙https://1808.ga 节点_1
+      - 新加坡_0604073
+      - 俄罗斯联邦_0601003
+      - 美国_0603865
+      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙https://1808.ga 节点_3
+      - 美国【付费推荐：v1.mk/vip】87
+      - 印度尼西亚_0604002
+      - "@SSRSUB-V54-付费推荐:dlj.tf/ssrsub"
+      - 俄罗斯联邦_0602001
+      - 二爷翻墙https://1808.ga 节点_5
+      - 美国【付费推荐：v1.mk/vip】27
+      - 未知_0604464
+      - 美国【付费推荐：v1.mk/vip】14
+      - 法国_0604020
+      - github.com/freefq - 美国Microsoft数据中心 26
+      - "|94.90Mb"
+      - 美国【付费推荐：v1.mk/vip】103
+      - 中国_0604277 2
+      - 美国【付费推荐：v1.mk/vip】180
+      - 香港-1
+      - 新加坡_06021050
+      - 中国【付费推荐：v1.mk/vip】146
+      - IL_FreeNode.me_7
+      - 新加坡 008
+      - "@SSRSUB-V62-付费推荐:dlj.tf/ssrsub"
+      - 德国【付费推荐：v1.mk/vip】117
       - github.com/freefq - 澳大利亚Northcote Secondary College 21
+      - 加拿大【付费推荐：v1.mk/vip】170
+      - "|29.34Mb"
+      - 二爷翻墙https://1808.ga 节点_13
+      - "@SSRSUB-V67-付费推荐:dlj.tf/ssrsub"
+      - 未知_0604459
+      - _CN_中国->🇺🇸_US_美国
+      - "@SSRSUB-V50-付费推荐:dlj.tf/ssrsub"
+      - 俄罗斯 001
+      - HK香港(youtube阿伟科技)
+      - 二爷翻墙https://1808.ga 节点_4
+      - 以色列【付费推荐：v1.mk/vip】192
+      - 未知_06043654
+      - _RU_俄罗斯联邦_欢迎订阅yui科技_161
+      - US_FreeNode.me_43
+      - "@SSRSUB-V61-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V52-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V34-付费推荐:dlj.tf/ssrsub"
+      - _DE_德国
+      - 美国_06041327
+      - "@SSRSUB-V64-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V63-付费推荐:dlj.tf/ssrsub"
+      - 伯利兹_0604105
+      - 中国【付费推荐：v1.mk/vip】111
+      - 新加坡_0604059
+      - 新加坡 009
+      - 法国_0604036
+      - US(AzadNet.t.me)_049 2
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - 美国_06041371
+      - github.com/freefq - 以色列  17
+      - "@SSRSUB-V17-付费推荐:dlj.tf/ssrsub"
+      - 未知_0603102
+      - 二爷翻墙https://1808.ga 节点_11
+      - 香港-8
+      - 伯利兹_0604100
+      - 美国_0602646
+      - 二爷翻墙https://1808.ga 节点_7
+      - "@SSRSUB-V10-付费推荐:suo.yt/ssrsub"
+      - "|19.57Mb"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _RU_俄罗斯联邦
-      - 加拿大_0602083
-      - _CN_中国->🇺🇸_US_美国
-      - 俄罗斯联邦_0603001
-      - 美国【付费推荐：v1.mk/vip】77
-      - 法国_0528026
-      - _US_美国->🇸🇬_SG_新加坡
-      - 美国_0602015
-      - IEPL-AP-HK-1
-      - "日本亚马逊\r"
-      - 俄罗斯联邦_0601003
-      - IL_FreeNode.me_76
-      - 日本 015
-      - _CN_中国->🇺🇸_US_美国_2
-      - 美国_0602646
-      - LU卢森堡(youtube阿伟科技)
-      - 美国【付费推荐：v1.mk/vip】87
-      - github.com/freefq - 以色列  3
-      - 中国【付费推荐：v1.mk/vip】186
-      - 美国_0602015 2
-      - "|94.90Mb"
-      - "@SSRSUB-V16-付费推荐:suo.yt/ssrsub"
-      - 未知_0603104
+      - "美国圣何塞|防失联直连|1x\r"
+      - _CA_加拿大 2
       - 二爷翻墙https://1808.ga 节点_10
-      - 美国_0603723
-      - 美国【付费推荐：v1.mk/vip】69
+      - 二爷翻墙https://1808.ga 节点_2
+      - github.com/freefq - 俄罗斯新西伯利亚ADMAN数据中心 14
+      - 日本 006
+      - 未知_0604481
+      - US(AzadNet.t.me)_049
+      - 未知_0604460
+      - 未知_0604476
+      - 中国【付费推荐：v1.mk/vip】186
+      - 美国_0604400
+      - _🇺🇸_US_美国_科网_03
+      - 美国_0604830
       - _US_美国->🇱🇺_LU_卢森堡 6
-      - 美国_0603823
-      - 美国 035
-      - github.com/freefq - 以色列  7
-      - 美国_06034662
-      - 美国【付费推荐：v1.mk/vip】60
-      - 俄罗斯联邦_0602010
-      - US_FreeNode.me_77
-      - 巴勒斯坦_0603002
+      - 美国_0604780 2
+      - 美国_0604079
+      - 美国【付费推荐：v1.mk/vip】128
+      - "@SSRSUB-V56-付费推荐:dlj.tf/ssrsub"
+      - 中国_0604277
+      - 香港08
+      - 美国_0604768 2
+      - 美国_0604836
+      - github.com/freefq - 美国  30
+      - "|11.81Mb"
+      - _US_美国_欢迎订阅yui科技_199
+      - github.com/freefq - 美国Microsoft数据中心 32
+      - "@SSRSUB-V47-付费推荐:dlj.tf/ssrsub"
+      - 伯利兹_0604223
+      - 美国_0604397
+      - 美国_0604230
+      - 乌克兰 002
+      - github.com/freefq - 以色列  3
+      - 香港06
+      - 防失效github SubCrawler中国_0604010
       - US_FreeNode.me_17
-      - _🇺🇸_US_美国_顺丰_8
-      - 未知_0603106
-      - 二爷翻墙 https://1808.ga 节点_4
-      - 未知_06033510
-      - 美国_0603009
-      - 东京直连|@ripaojiedian
-      - "美国2号-0.1x\r"
-      - 美国_06034680
-      - 未知_06033488
-      - 未知_0603117
-      - 未知_06033493
-      - 爱尔兰_0603002
-      - 美国_0603708
-      - 新加坡_0603001
-      - 美国|@ripaojiedian
-      - 中国_0603101
-      - CA_3.96.12.243_060220231d39-564ss%%
-      - 日本直连|@ripaojiedian
-      - "德国1号\r"
-      - 美国_0603002
-      - 美国【付费推荐：v1.mk/vip】49
-      - 美国【付费推荐：v1.mk/vip】84
-      - 台湾_0603001
-      - 香港A|@ripaojiedian
-      - 美国【付费推荐：v1.mk/vip】38
-      - 美国_0603009 2
-      - 法国_0603222
-      - HK|tg频道@ripaojiedian
-      - 未知_06033514
-      - 新加坡_06021050
-      - US(AzadNet.t.me)_234
-      - 新加坡_06031032
-      - 未知_06033520
-      - 中国_0603101 2
-      - 未知_0603103
-      - 美国_06034697
-      - 未知_06033512
-      - 台湾_0603001 2
-      - 法国_0603215
-      - 美国_0602646 2
-      - HK香港(youtube阿伟科技) 2
-      - 卢森堡_0603048
-      - IL_FreeNode.me_7
-      - 香港-1
-      - 中国【付费推荐：v1.mk/vip】146
-      - 香港-9
-      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - 美国_0604774
+      - US(AzadNet.t.me)_166
+      - 以色列【付费推荐：v1.mk/vip】204
       - "|27.97Mb"
-      - IEPL-AP-TW-1
-      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
-      - 俄罗斯联邦_0602001
-      - 美国【付费推荐：v1.mk/vip】8
-      - US(AzadNet.t.me)_234 2
-      - 台湾_0602001
-      - 美国【付费推荐：v1.mk/vip】31
-      - _JP_日本
-      - 中国【付费推荐：v1.mk/vip】114
-      - "@SSRSUB-V06-付费推荐:suo.yt/ssrsub"
-      - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - US_FreeNode.me_43
-      - 美国_0602785
-      - 美国【付费推荐：v1.mk/vip】118
-      - US_FreeNode.me_5
-      - 以色列【付费推荐：v1.mk/vip】21
-      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
-      - github.com/freefq - 美国CloudFlare节点 16
+      - HK香港(youtube阿伟科技) 2
+      - _FR_法国
+      - "@SSRSUB-V46-付费推荐:dlj.tf/ssrsub"
+      - 美国【付费推荐：v1.mk/vip】60
+      - _US_美国_欢迎订阅yui科技_131
+      - US_FreeNode.me_94
+      - 台湾_0604287
+      - "%�\x11�<'����ӗ�.+yf�KO�'��<%�\x11����%�Z\"�yf%�"
+      - _KR_韩国 3 2
+      - 美国_0604771
+      - 美国_06041337
+      - 美国 058
+      - 美国【付费推荐：v1.mk/vip】54
+      - 美国【付费推荐：v1.mk/vip】63
+      - github.com/freefq - 以色列  10
+      - "@SSRSUB-V69-付费推荐:dlj.tf/ssrsub"
+      - "|11.22Mb"
+      - 日本 014
+      - "美国凤凰城3号 | 0.1x\r"
+      - US(AzadNet.t.me)_110
+      - github.com/freefq - 新加坡Linode数据中心 26
+      - 未知_0604467
+      - 香港09
+      - 美国 CloudFlare节点 3
+      - 美国【付费推荐：v1.mk/vip】112
+      - github.com/freefq - 美国CloudFlare公司CDN节点 27
+      - github.com/freefq - 辽宁省鞍山市电信 18
+      - 未知_0604461
+      - 美国_0604794
+      - US(AzadNet.t.me)_284
+      - 未知_0604466
+      - 香港04
+      - 美国_06041338
+      - 美国【付费推荐：v1.mk/vip】156
+      - 美国【付费推荐：v1.mk/vip】174
+      - _CN_中国_欢迎订阅yui科技_226
+      - 中国_0603101
+      - _SG_新加坡_欢迎订阅yui科技_246
       - 美国【付费推荐：v1.mk/vip】5
-      - github.com/freefq - 美国  34
-      - 台湾_0601009
+      - 新加坡 013
+      - 以色列【付费推荐：v1.mk/vip】195
+      - 二爷翻墙https://1808.ga 节点_1
+      - 新加坡_0604073
+      - 俄罗斯联邦_0601003
+      - 美国_0603865
+      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙https://1808.ga 节点_3
+      - 美国【付费推荐：v1.mk/vip】87
+      - 印度尼西亚_0604002
+      - "@SSRSUB-V54-付费推荐:dlj.tf/ssrsub"
+      - 俄罗斯联邦_0602001
+      - 二爷翻墙https://1808.ga 节点_5
+      - 美国【付费推荐：v1.mk/vip】27
+      - 未知_0604464
+      - 美国【付费推荐：v1.mk/vip】14
+      - 法国_0604020
+      - github.com/freefq - 美国Microsoft数据中心 26
+      - "|94.90Mb"
+      - 美国【付费推荐：v1.mk/vip】103
+      - 中国_0604277 2
+      - 美国【付费推荐：v1.mk/vip】180
+      - 香港-1
+      - 新加坡_06021050
+      - 中国【付费推荐：v1.mk/vip】146
+      - IL_FreeNode.me_7
+      - 新加坡 008
+      - "@SSRSUB-V62-付费推荐:dlj.tf/ssrsub"
+      - 德国【付费推荐：v1.mk/vip】117
       - github.com/freefq - 澳大利亚Northcote Secondary College 21
+      - 加拿大【付费推荐：v1.mk/vip】170
+      - "|29.34Mb"
+      - 二爷翻墙https://1808.ga 节点_13
+      - "@SSRSUB-V67-付费推荐:dlj.tf/ssrsub"
+      - 未知_0604459
+      - _CN_中国->🇺🇸_US_美国
+      - "@SSRSUB-V50-付费推荐:dlj.tf/ssrsub"
+      - 俄罗斯 001
+      - HK香港(youtube阿伟科技)
+      - 二爷翻墙https://1808.ga 节点_4
+      - 以色列【付费推荐：v1.mk/vip】192
+      - 未知_06043654
+      - _RU_俄罗斯联邦_欢迎订阅yui科技_161
+      - US_FreeNode.me_43
+      - "@SSRSUB-V61-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V52-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V34-付费推荐:dlj.tf/ssrsub"
+      - _DE_德国
+      - 美国_06041327
+      - "@SSRSUB-V64-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V63-付费推荐:dlj.tf/ssrsub"
+      - 伯利兹_0604105
+      - 中国【付费推荐：v1.mk/vip】111
+      - 新加坡_0604059
+      - 新加坡 009
+      - 法国_0604036
+      - US(AzadNet.t.me)_049 2
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - 美国_06041371
+      - github.com/freefq - 以色列  17
+      - "@SSRSUB-V17-付费推荐:dlj.tf/ssrsub"
+      - 未知_0603102
+      - 二爷翻墙https://1808.ga 节点_11
+      - 香港-8
+      - 伯利兹_0604100
+      - 美国_0602646
+      - 二爷翻墙https://1808.ga 节点_7
+      - "@SSRSUB-V10-付费推荐:suo.yt/ssrsub"
+      - "|19.57Mb"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -465,459 +633,628 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _RU_俄罗斯联邦
-      - 加拿大_0602083
-      - _CN_中国->🇺🇸_US_美国
-      - 俄罗斯联邦_0603001
-      - 美国【付费推荐：v1.mk/vip】77
-      - 法国_0528026
-      - _US_美国->🇸🇬_SG_新加坡
-      - 美国_0602015
-      - IEPL-AP-HK-1
-      - "日本亚马逊\r"
-      - 俄罗斯联邦_0601003
-      - IL_FreeNode.me_76
-      - 日本 015
-      - _CN_中国->🇺🇸_US_美国_2
-      - 美国_0602646
-      - LU卢森堡(youtube阿伟科技)
-      - 美国【付费推荐：v1.mk/vip】87
-      - github.com/freefq - 以色列  3
-      - 中国【付费推荐：v1.mk/vip】186
-      - 美国_0602015 2
-      - "|94.90Mb"
-      - "@SSRSUB-V16-付费推荐:suo.yt/ssrsub"
-      - 未知_0603104
+      - "美国圣何塞|防失联直连|1x\r"
+      - _CA_加拿大 2
       - 二爷翻墙https://1808.ga 节点_10
-      - 美国_0603723
-      - 美国【付费推荐：v1.mk/vip】69
+      - 二爷翻墙https://1808.ga 节点_2
+      - github.com/freefq - 俄罗斯新西伯利亚ADMAN数据中心 14
+      - 日本 006
+      - 未知_0604481
+      - US(AzadNet.t.me)_049
+      - 未知_0604460
+      - 未知_0604476
+      - 中国【付费推荐：v1.mk/vip】186
+      - 美国_0604400
+      - _🇺🇸_US_美国_科网_03
+      - 美国_0604830
       - _US_美国->🇱🇺_LU_卢森堡 6
-      - 美国_0603823
-      - 美国 035
-      - github.com/freefq - 以色列  7
-      - 美国_06034662
-      - 美国【付费推荐：v1.mk/vip】60
-      - 俄罗斯联邦_0602010
-      - US_FreeNode.me_77
-      - 巴勒斯坦_0603002
+      - 美国_0604780 2
+      - 美国_0604079
+      - 美国【付费推荐：v1.mk/vip】128
+      - "@SSRSUB-V56-付费推荐:dlj.tf/ssrsub"
+      - 中国_0604277
+      - 香港08
+      - 美国_0604768 2
+      - 美国_0604836
+      - github.com/freefq - 美国  30
+      - "|11.81Mb"
+      - _US_美国_欢迎订阅yui科技_199
+      - github.com/freefq - 美国Microsoft数据中心 32
+      - "@SSRSUB-V47-付费推荐:dlj.tf/ssrsub"
+      - 伯利兹_0604223
+      - 美国_0604397
+      - 美国_0604230
+      - 乌克兰 002
+      - github.com/freefq - 以色列  3
+      - 香港06
+      - 防失效github SubCrawler中国_0604010
       - US_FreeNode.me_17
-      - _🇺🇸_US_美国_顺丰_8
-      - 未知_0603106
-      - 二爷翻墙 https://1808.ga 节点_4
-      - 未知_06033510
-      - 美国_0603009
-      - 东京直连|@ripaojiedian
-      - "美国2号-0.1x\r"
-      - 美国_06034680
-      - 未知_06033488
-      - 未知_0603117
-      - 未知_06033493
-      - 爱尔兰_0603002
-      - 美国_0603708
-      - 新加坡_0603001
-      - 美国|@ripaojiedian
-      - 中国_0603101
-      - CA_3.96.12.243_060220231d39-564ss%%
-      - 日本直连|@ripaojiedian
-      - "德国1号\r"
-      - 美国_0603002
-      - 美国【付费推荐：v1.mk/vip】49
-      - 美国【付费推荐：v1.mk/vip】84
-      - 台湾_0603001
-      - 香港A|@ripaojiedian
-      - 美国【付费推荐：v1.mk/vip】38
-      - 美国_0603009 2
-      - 法国_0603222
-      - HK|tg频道@ripaojiedian
-      - 未知_06033514
-      - 新加坡_06021050
-      - US(AzadNet.t.me)_234
-      - 新加坡_06031032
-      - 未知_06033520
-      - 中国_0603101 2
-      - 未知_0603103
-      - 美国_06034697
-      - 未知_06033512
-      - 台湾_0603001 2
-      - 法国_0603215
-      - 美国_0602646 2
-      - HK香港(youtube阿伟科技) 2
-      - 卢森堡_0603048
-      - IL_FreeNode.me_7
-      - 香港-1
-      - 中国【付费推荐：v1.mk/vip】146
-      - 香港-9
-      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - 美国_0604774
+      - US(AzadNet.t.me)_166
+      - 以色列【付费推荐：v1.mk/vip】204
       - "|27.97Mb"
-      - IEPL-AP-TW-1
-      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
-      - 俄罗斯联邦_0602001
-      - 美国【付费推荐：v1.mk/vip】8
-      - US(AzadNet.t.me)_234 2
-      - 台湾_0602001
-      - 美国【付费推荐：v1.mk/vip】31
-      - _JP_日本
-      - 中国【付费推荐：v1.mk/vip】114
-      - "@SSRSUB-V06-付费推荐:suo.yt/ssrsub"
-      - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - US_FreeNode.me_43
-      - 美国_0602785
-      - 美国【付费推荐：v1.mk/vip】118
-      - US_FreeNode.me_5
-      - 以色列【付费推荐：v1.mk/vip】21
-      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
-      - github.com/freefq - 美国CloudFlare节点 16
+      - HK香港(youtube阿伟科技) 2
+      - _FR_法国
+      - "@SSRSUB-V46-付费推荐:dlj.tf/ssrsub"
+      - 美国【付费推荐：v1.mk/vip】60
+      - _US_美国_欢迎订阅yui科技_131
+      - US_FreeNode.me_94
+      - 台湾_0604287
+      - "%�\x11�<'����ӗ�.+yf�KO�'��<%�\x11����%�Z\"�yf%�"
+      - _KR_韩国 3 2
+      - 美国_0604771
+      - 美国_06041337
+      - 美国 058
+      - 美国【付费推荐：v1.mk/vip】54
+      - 美国【付费推荐：v1.mk/vip】63
+      - github.com/freefq - 以色列  10
+      - "@SSRSUB-V69-付费推荐:dlj.tf/ssrsub"
+      - "|11.22Mb"
+      - 日本 014
+      - "美国凤凰城3号 | 0.1x\r"
+      - US(AzadNet.t.me)_110
+      - github.com/freefq - 新加坡Linode数据中心 26
+      - 未知_0604467
+      - 香港09
+      - 美国 CloudFlare节点 3
+      - 美国【付费推荐：v1.mk/vip】112
+      - github.com/freefq - 美国CloudFlare公司CDN节点 27
+      - github.com/freefq - 辽宁省鞍山市电信 18
+      - 未知_0604461
+      - 美国_0604794
+      - US(AzadNet.t.me)_284
+      - 未知_0604466
+      - 香港04
+      - 美国_06041338
+      - 美国【付费推荐：v1.mk/vip】156
+      - 美国【付费推荐：v1.mk/vip】174
+      - _CN_中国_欢迎订阅yui科技_226
+      - 中国_0603101
+      - _SG_新加坡_欢迎订阅yui科技_246
       - 美国【付费推荐：v1.mk/vip】5
-      - github.com/freefq - 美国  34
-      - 台湾_0601009
+      - 新加坡 013
+      - 以色列【付费推荐：v1.mk/vip】195
+      - 二爷翻墙https://1808.ga 节点_1
+      - 新加坡_0604073
+      - 俄罗斯联邦_0601003
+      - 美国_0603865
+      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙https://1808.ga 节点_3
+      - 美国【付费推荐：v1.mk/vip】87
+      - 印度尼西亚_0604002
+      - "@SSRSUB-V54-付费推荐:dlj.tf/ssrsub"
+      - 俄罗斯联邦_0602001
+      - 二爷翻墙https://1808.ga 节点_5
+      - 美国【付费推荐：v1.mk/vip】27
+      - 未知_0604464
+      - 美国【付费推荐：v1.mk/vip】14
+      - 法国_0604020
+      - github.com/freefq - 美国Microsoft数据中心 26
+      - "|94.90Mb"
+      - 美国【付费推荐：v1.mk/vip】103
+      - 中国_0604277 2
+      - 美国【付费推荐：v1.mk/vip】180
+      - 香港-1
+      - 新加坡_06021050
+      - 中国【付费推荐：v1.mk/vip】146
+      - IL_FreeNode.me_7
+      - 新加坡 008
+      - "@SSRSUB-V62-付费推荐:dlj.tf/ssrsub"
+      - 德国【付费推荐：v1.mk/vip】117
       - github.com/freefq - 澳大利亚Northcote Secondary College 21
+      - 加拿大【付费推荐：v1.mk/vip】170
+      - "|29.34Mb"
+      - 二爷翻墙https://1808.ga 节点_13
+      - "@SSRSUB-V67-付费推荐:dlj.tf/ssrsub"
+      - 未知_0604459
+      - _CN_中国->🇺🇸_US_美国
+      - "@SSRSUB-V50-付费推荐:dlj.tf/ssrsub"
+      - 俄罗斯 001
+      - HK香港(youtube阿伟科技)
+      - 二爷翻墙https://1808.ga 节点_4
+      - 以色列【付费推荐：v1.mk/vip】192
+      - 未知_06043654
+      - _RU_俄罗斯联邦_欢迎订阅yui科技_161
+      - US_FreeNode.me_43
+      - "@SSRSUB-V61-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V52-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V34-付费推荐:dlj.tf/ssrsub"
+      - _DE_德国
+      - 美国_06041327
+      - "@SSRSUB-V64-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V63-付费推荐:dlj.tf/ssrsub"
+      - 伯利兹_0604105
+      - 中国【付费推荐：v1.mk/vip】111
+      - 新加坡_0604059
+      - 新加坡 009
+      - 法国_0604036
+      - US(AzadNet.t.me)_049 2
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - 美国_06041371
+      - github.com/freefq - 以色列  17
+      - "@SSRSUB-V17-付费推荐:dlj.tf/ssrsub"
+      - 未知_0603102
+      - 二爷翻墙https://1808.ga 节点_11
+      - 香港-8
+      - 伯利兹_0604100
+      - 美国_0602646
+      - 二爷翻墙https://1808.ga 节点_7
+      - "@SSRSUB-V10-付费推荐:suo.yt/ssrsub"
+      - "|19.57Mb"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾_0603001
-      - 香港A|@ripaojiedian
-      - 台湾_0603001 2
+      - 香港08
+      - 香港06
       - HK香港(youtube阿伟科技) 2
+      - 台湾_0604287
+      - 香港09
+      - 香港04
       - 香港-1
-      - 香港-9
-      - 台湾_0602001
-      - 台湾_0601009
+      - HK香港(youtube阿伟科技)
+      - 香港-8
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _RU_俄罗斯联邦
-      - 加拿大_0602083
-      - _CN_中国->🇺🇸_US_美国
-      - 俄罗斯联邦_0603001
-      - 美国【付费推荐：v1.mk/vip】77
-      - 法国_0528026
-      - _US_美国->🇸🇬_SG_新加坡
-      - 美国_0602015
-      - IEPL-AP-HK-1
-      - "日本亚马逊\r"
-      - 俄罗斯联邦_0601003
-      - IL_FreeNode.me_76
-      - 日本 015
-      - _CN_中国->🇺🇸_US_美国_2
-      - 美国_0602646
-      - LU卢森堡(youtube阿伟科技)
-      - 美国【付费推荐：v1.mk/vip】87
-      - github.com/freefq - 以色列  3
-      - 中国【付费推荐：v1.mk/vip】186
-      - 美国_0602015 2
-      - "|94.90Mb"
-      - "@SSRSUB-V16-付费推荐:suo.yt/ssrsub"
-      - 未知_0603104
+      - "美国圣何塞|防失联直连|1x\r"
+      - _CA_加拿大 2
       - 二爷翻墙https://1808.ga 节点_10
-      - 美国_0603723
-      - 美国【付费推荐：v1.mk/vip】69
+      - 二爷翻墙https://1808.ga 节点_2
+      - github.com/freefq - 俄罗斯新西伯利亚ADMAN数据中心 14
+      - 日本 006
+      - 未知_0604481
+      - US(AzadNet.t.me)_049
+      - 未知_0604460
+      - 未知_0604476
+      - 中国【付费推荐：v1.mk/vip】186
+      - 美国_0604400
+      - _🇺🇸_US_美国_科网_03
+      - 美国_0604830
       - _US_美国->🇱🇺_LU_卢森堡 6
-      - 美国_0603823
-      - 美国 035
-      - github.com/freefq - 以色列  7
-      - 美国_06034662
-      - 美国【付费推荐：v1.mk/vip】60
-      - 俄罗斯联邦_0602010
-      - US_FreeNode.me_77
-      - 巴勒斯坦_0603002
+      - 美国_0604780 2
+      - 美国_0604079
+      - 美国【付费推荐：v1.mk/vip】128
+      - "@SSRSUB-V56-付费推荐:dlj.tf/ssrsub"
+      - 中国_0604277
+      - 香港08
+      - 美国_0604768 2
+      - 美国_0604836
+      - github.com/freefq - 美国  30
+      - "|11.81Mb"
+      - _US_美国_欢迎订阅yui科技_199
+      - github.com/freefq - 美国Microsoft数据中心 32
+      - "@SSRSUB-V47-付费推荐:dlj.tf/ssrsub"
+      - 伯利兹_0604223
+      - 美国_0604397
+      - 美国_0604230
+      - 乌克兰 002
+      - github.com/freefq - 以色列  3
+      - 香港06
+      - 防失效github SubCrawler中国_0604010
       - US_FreeNode.me_17
-      - _🇺🇸_US_美国_顺丰_8
-      - 未知_0603106
-      - 二爷翻墙 https://1808.ga 节点_4
-      - 未知_06033510
-      - 美国_0603009
-      - 东京直连|@ripaojiedian
-      - "美国2号-0.1x\r"
-      - 美国_06034680
-      - 未知_06033488
-      - 未知_0603117
-      - 未知_06033493
-      - 爱尔兰_0603002
-      - 美国_0603708
-      - 新加坡_0603001
-      - 美国|@ripaojiedian
-      - 中国_0603101
-      - CA_3.96.12.243_060220231d39-564ss%%
-      - 日本直连|@ripaojiedian
-      - "德国1号\r"
-      - 美国_0603002
-      - 美国【付费推荐：v1.mk/vip】49
-      - 美国【付费推荐：v1.mk/vip】84
-      - 台湾_0603001
-      - 香港A|@ripaojiedian
-      - 美国【付费推荐：v1.mk/vip】38
-      - 美国_0603009 2
-      - 法国_0603222
-      - HK|tg频道@ripaojiedian
-      - 未知_06033514
-      - 新加坡_06021050
-      - US(AzadNet.t.me)_234
-      - 新加坡_06031032
-      - 未知_06033520
-      - 中国_0603101 2
-      - 未知_0603103
-      - 美国_06034697
-      - 未知_06033512
-      - 台湾_0603001 2
-      - 法国_0603215
-      - 美国_0602646 2
-      - HK香港(youtube阿伟科技) 2
-      - 卢森堡_0603048
-      - IL_FreeNode.me_7
-      - 香港-1
-      - 中国【付费推荐：v1.mk/vip】146
-      - 香港-9
-      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - 美国_0604774
+      - US(AzadNet.t.me)_166
+      - 以色列【付费推荐：v1.mk/vip】204
       - "|27.97Mb"
-      - IEPL-AP-TW-1
-      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
-      - 俄罗斯联邦_0602001
-      - 美国【付费推荐：v1.mk/vip】8
-      - US(AzadNet.t.me)_234 2
-      - 台湾_0602001
-      - 美国【付费推荐：v1.mk/vip】31
-      - _JP_日本
-      - 中国【付费推荐：v1.mk/vip】114
-      - "@SSRSUB-V06-付费推荐:suo.yt/ssrsub"
-      - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - US_FreeNode.me_43
-      - 美国_0602785
-      - 美国【付费推荐：v1.mk/vip】118
-      - US_FreeNode.me_5
-      - 以色列【付费推荐：v1.mk/vip】21
-      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
-      - github.com/freefq - 美国CloudFlare节点 16
+      - HK香港(youtube阿伟科技) 2
+      - _FR_法国
+      - "@SSRSUB-V46-付费推荐:dlj.tf/ssrsub"
+      - 美国【付费推荐：v1.mk/vip】60
+      - _US_美国_欢迎订阅yui科技_131
+      - US_FreeNode.me_94
+      - 台湾_0604287
+      - "%�\x11�<'����ӗ�.+yf�KO�'��<%�\x11����%�Z\"�yf%�"
+      - _KR_韩国 3 2
+      - 美国_0604771
+      - 美国_06041337
+      - 美国 058
+      - 美国【付费推荐：v1.mk/vip】54
+      - 美国【付费推荐：v1.mk/vip】63
+      - github.com/freefq - 以色列  10
+      - "@SSRSUB-V69-付费推荐:dlj.tf/ssrsub"
+      - "|11.22Mb"
+      - 日本 014
+      - "美国凤凰城3号 | 0.1x\r"
+      - US(AzadNet.t.me)_110
+      - github.com/freefq - 新加坡Linode数据中心 26
+      - 未知_0604467
+      - 香港09
+      - 美国 CloudFlare节点 3
+      - 美国【付费推荐：v1.mk/vip】112
+      - github.com/freefq - 美国CloudFlare公司CDN节点 27
+      - github.com/freefq - 辽宁省鞍山市电信 18
+      - 未知_0604461
+      - 美国_0604794
+      - US(AzadNet.t.me)_284
+      - 未知_0604466
+      - 香港04
+      - 美国_06041338
+      - 美国【付费推荐：v1.mk/vip】156
+      - 美国【付费推荐：v1.mk/vip】174
+      - _CN_中国_欢迎订阅yui科技_226
+      - 中国_0603101
+      - _SG_新加坡_欢迎订阅yui科技_246
       - 美国【付费推荐：v1.mk/vip】5
-      - github.com/freefq - 美国  34
-      - 台湾_0601009
+      - 新加坡 013
+      - 以色列【付费推荐：v1.mk/vip】195
+      - 二爷翻墙https://1808.ga 节点_1
+      - 新加坡_0604073
+      - 俄罗斯联邦_0601003
+      - 美国_0603865
+      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙https://1808.ga 节点_3
+      - 美国【付费推荐：v1.mk/vip】87
+      - 印度尼西亚_0604002
+      - "@SSRSUB-V54-付费推荐:dlj.tf/ssrsub"
+      - 俄罗斯联邦_0602001
+      - 二爷翻墙https://1808.ga 节点_5
+      - 美国【付费推荐：v1.mk/vip】27
+      - 未知_0604464
+      - 美国【付费推荐：v1.mk/vip】14
+      - 法国_0604020
+      - github.com/freefq - 美国Microsoft数据中心 26
+      - "|94.90Mb"
+      - 美国【付费推荐：v1.mk/vip】103
+      - 中国_0604277 2
+      - 美国【付费推荐：v1.mk/vip】180
+      - 香港-1
+      - 新加坡_06021050
+      - 中国【付费推荐：v1.mk/vip】146
+      - IL_FreeNode.me_7
+      - 新加坡 008
+      - "@SSRSUB-V62-付费推荐:dlj.tf/ssrsub"
+      - 德国【付费推荐：v1.mk/vip】117
       - github.com/freefq - 澳大利亚Northcote Secondary College 21
+      - 加拿大【付费推荐：v1.mk/vip】170
+      - "|29.34Mb"
+      - 二爷翻墙https://1808.ga 节点_13
+      - "@SSRSUB-V67-付费推荐:dlj.tf/ssrsub"
+      - 未知_0604459
+      - _CN_中国->🇺🇸_US_美国
+      - "@SSRSUB-V50-付费推荐:dlj.tf/ssrsub"
+      - 俄罗斯 001
+      - HK香港(youtube阿伟科技)
+      - 二爷翻墙https://1808.ga 节点_4
+      - 以色列【付费推荐：v1.mk/vip】192
+      - 未知_06043654
+      - _RU_俄罗斯联邦_欢迎订阅yui科技_161
+      - US_FreeNode.me_43
+      - "@SSRSUB-V61-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V52-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V34-付费推荐:dlj.tf/ssrsub"
+      - _DE_德国
+      - 美国_06041327
+      - "@SSRSUB-V64-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V63-付费推荐:dlj.tf/ssrsub"
+      - 伯利兹_0604105
+      - 中国【付费推荐：v1.mk/vip】111
+      - 新加坡_0604059
+      - 新加坡 009
+      - 法国_0604036
+      - US(AzadNet.t.me)_049 2
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - 美国_06041371
+      - github.com/freefq - 以色列  17
+      - "@SSRSUB-V17-付费推荐:dlj.tf/ssrsub"
+      - 未知_0603102
+      - 二爷翻墙https://1808.ga 节点_11
+      - 香港-8
+      - 伯利兹_0604100
+      - 美国_0602646
+      - 二爷翻墙https://1808.ga 节点_7
+      - "@SSRSUB-V10-付费推荐:suo.yt/ssrsub"
+      - "|19.57Mb"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _RU_俄罗斯联邦
-      - 加拿大_0602083
-      - _CN_中国->🇺🇸_US_美国
-      - 俄罗斯联邦_0603001
-      - 美国【付费推荐：v1.mk/vip】77
-      - 法国_0528026
-      - _US_美国->🇸🇬_SG_新加坡
-      - 美国_0602015
-      - IEPL-AP-HK-1
-      - "日本亚马逊\r"
-      - 俄罗斯联邦_0601003
-      - IL_FreeNode.me_76
-      - 日本 015
-      - _CN_中国->🇺🇸_US_美国_2
-      - 美国_0602646
-      - LU卢森堡(youtube阿伟科技)
-      - 美国【付费推荐：v1.mk/vip】87
-      - github.com/freefq - 以色列  3
-      - 中国【付费推荐：v1.mk/vip】186
-      - 美国_0602015 2
-      - "|94.90Mb"
-      - "@SSRSUB-V16-付费推荐:suo.yt/ssrsub"
-      - 未知_0603104
+      - "美国圣何塞|防失联直连|1x\r"
+      - _CA_加拿大 2
       - 二爷翻墙https://1808.ga 节点_10
-      - 美国_0603723
-      - 美国【付费推荐：v1.mk/vip】69
+      - 二爷翻墙https://1808.ga 节点_2
+      - github.com/freefq - 俄罗斯新西伯利亚ADMAN数据中心 14
+      - 日本 006
+      - 未知_0604481
+      - US(AzadNet.t.me)_049
+      - 未知_0604460
+      - 未知_0604476
+      - 中国【付费推荐：v1.mk/vip】186
+      - 美国_0604400
+      - _🇺🇸_US_美国_科网_03
+      - 美国_0604830
       - _US_美国->🇱🇺_LU_卢森堡 6
-      - 美国_0603823
-      - 美国 035
-      - github.com/freefq - 以色列  7
-      - 美国_06034662
-      - 美国【付费推荐：v1.mk/vip】60
-      - 俄罗斯联邦_0602010
-      - US_FreeNode.me_77
-      - 巴勒斯坦_0603002
+      - 美国_0604780 2
+      - 美国_0604079
+      - 美国【付费推荐：v1.mk/vip】128
+      - "@SSRSUB-V56-付费推荐:dlj.tf/ssrsub"
+      - 中国_0604277
+      - 香港08
+      - 美国_0604768 2
+      - 美国_0604836
+      - github.com/freefq - 美国  30
+      - "|11.81Mb"
+      - _US_美国_欢迎订阅yui科技_199
+      - github.com/freefq - 美国Microsoft数据中心 32
+      - "@SSRSUB-V47-付费推荐:dlj.tf/ssrsub"
+      - 伯利兹_0604223
+      - 美国_0604397
+      - 美国_0604230
+      - 乌克兰 002
+      - github.com/freefq - 以色列  3
+      - 香港06
+      - 防失效github SubCrawler中国_0604010
       - US_FreeNode.me_17
-      - _🇺🇸_US_美国_顺丰_8
-      - 未知_0603106
-      - 二爷翻墙 https://1808.ga 节点_4
-      - 未知_06033510
-      - 美国_0603009
-      - 东京直连|@ripaojiedian
-      - "美国2号-0.1x\r"
-      - 美国_06034680
-      - 未知_06033488
-      - 未知_0603117
-      - 未知_06033493
-      - 爱尔兰_0603002
-      - 美国_0603708
-      - 新加坡_0603001
-      - 美国|@ripaojiedian
-      - 中国_0603101
-      - CA_3.96.12.243_060220231d39-564ss%%
-      - 日本直连|@ripaojiedian
-      - "德国1号\r"
-      - 美国_0603002
-      - 美国【付费推荐：v1.mk/vip】49
-      - 美国【付费推荐：v1.mk/vip】84
-      - 台湾_0603001
-      - 香港A|@ripaojiedian
-      - 美国【付费推荐：v1.mk/vip】38
-      - 美国_0603009 2
-      - 法国_0603222
-      - HK|tg频道@ripaojiedian
-      - 未知_06033514
-      - 新加坡_06021050
-      - US(AzadNet.t.me)_234
-      - 新加坡_06031032
-      - 未知_06033520
-      - 中国_0603101 2
-      - 未知_0603103
-      - 美国_06034697
-      - 未知_06033512
-      - 台湾_0603001 2
-      - 法国_0603215
-      - 美国_0602646 2
-      - HK香港(youtube阿伟科技) 2
-      - 卢森堡_0603048
-      - IL_FreeNode.me_7
-      - 香港-1
-      - 中国【付费推荐：v1.mk/vip】146
-      - 香港-9
-      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - 美国_0604774
+      - US(AzadNet.t.me)_166
+      - 以色列【付费推荐：v1.mk/vip】204
       - "|27.97Mb"
-      - IEPL-AP-TW-1
-      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
-      - 俄罗斯联邦_0602001
-      - 美国【付费推荐：v1.mk/vip】8
-      - US(AzadNet.t.me)_234 2
-      - 台湾_0602001
-      - 美国【付费推荐：v1.mk/vip】31
-      - _JP_日本
-      - 中国【付费推荐：v1.mk/vip】114
-      - "@SSRSUB-V06-付费推荐:suo.yt/ssrsub"
-      - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - US_FreeNode.me_43
-      - 美国_0602785
-      - 美国【付费推荐：v1.mk/vip】118
-      - US_FreeNode.me_5
-      - 以色列【付费推荐：v1.mk/vip】21
-      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
-      - github.com/freefq - 美国CloudFlare节点 16
+      - HK香港(youtube阿伟科技) 2
+      - _FR_法国
+      - "@SSRSUB-V46-付费推荐:dlj.tf/ssrsub"
+      - 美国【付费推荐：v1.mk/vip】60
+      - _US_美国_欢迎订阅yui科技_131
+      - US_FreeNode.me_94
+      - 台湾_0604287
+      - "%�\x11�<'����ӗ�.+yf�KO�'��<%�\x11����%�Z\"�yf%�"
+      - _KR_韩国 3 2
+      - 美国_0604771
+      - 美国_06041337
+      - 美国 058
+      - 美国【付费推荐：v1.mk/vip】54
+      - 美国【付费推荐：v1.mk/vip】63
+      - github.com/freefq - 以色列  10
+      - "@SSRSUB-V69-付费推荐:dlj.tf/ssrsub"
+      - "|11.22Mb"
+      - 日本 014
+      - "美国凤凰城3号 | 0.1x\r"
+      - US(AzadNet.t.me)_110
+      - github.com/freefq - 新加坡Linode数据中心 26
+      - 未知_0604467
+      - 香港09
+      - 美国 CloudFlare节点 3
+      - 美国【付费推荐：v1.mk/vip】112
+      - github.com/freefq - 美国CloudFlare公司CDN节点 27
+      - github.com/freefq - 辽宁省鞍山市电信 18
+      - 未知_0604461
+      - 美国_0604794
+      - US(AzadNet.t.me)_284
+      - 未知_0604466
+      - 香港04
+      - 美国_06041338
+      - 美国【付费推荐：v1.mk/vip】156
+      - 美国【付费推荐：v1.mk/vip】174
+      - _CN_中国_欢迎订阅yui科技_226
+      - 中国_0603101
+      - _SG_新加坡_欢迎订阅yui科技_246
       - 美国【付费推荐：v1.mk/vip】5
-      - github.com/freefq - 美国  34
-      - 台湾_0601009
+      - 新加坡 013
+      - 以色列【付费推荐：v1.mk/vip】195
+      - 二爷翻墙https://1808.ga 节点_1
+      - 新加坡_0604073
+      - 俄罗斯联邦_0601003
+      - 美国_0603865
+      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙https://1808.ga 节点_3
+      - 美国【付费推荐：v1.mk/vip】87
+      - 印度尼西亚_0604002
+      - "@SSRSUB-V54-付费推荐:dlj.tf/ssrsub"
+      - 俄罗斯联邦_0602001
+      - 二爷翻墙https://1808.ga 节点_5
+      - 美国【付费推荐：v1.mk/vip】27
+      - 未知_0604464
+      - 美国【付费推荐：v1.mk/vip】14
+      - 法国_0604020
+      - github.com/freefq - 美国Microsoft数据中心 26
+      - "|94.90Mb"
+      - 美国【付费推荐：v1.mk/vip】103
+      - 中国_0604277 2
+      - 美国【付费推荐：v1.mk/vip】180
+      - 香港-1
+      - 新加坡_06021050
+      - 中国【付费推荐：v1.mk/vip】146
+      - IL_FreeNode.me_7
+      - 新加坡 008
+      - "@SSRSUB-V62-付费推荐:dlj.tf/ssrsub"
+      - 德国【付费推荐：v1.mk/vip】117
       - github.com/freefq - 澳大利亚Northcote Secondary College 21
+      - 加拿大【付费推荐：v1.mk/vip】170
+      - "|29.34Mb"
+      - 二爷翻墙https://1808.ga 节点_13
+      - "@SSRSUB-V67-付费推荐:dlj.tf/ssrsub"
+      - 未知_0604459
+      - _CN_中国->🇺🇸_US_美国
+      - "@SSRSUB-V50-付费推荐:dlj.tf/ssrsub"
+      - 俄罗斯 001
+      - HK香港(youtube阿伟科技)
+      - 二爷翻墙https://1808.ga 节点_4
+      - 以色列【付费推荐：v1.mk/vip】192
+      - 未知_06043654
+      - _RU_俄罗斯联邦_欢迎订阅yui科技_161
+      - US_FreeNode.me_43
+      - "@SSRSUB-V61-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V52-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V34-付费推荐:dlj.tf/ssrsub"
+      - _DE_德国
+      - 美国_06041327
+      - "@SSRSUB-V64-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V63-付费推荐:dlj.tf/ssrsub"
+      - 伯利兹_0604105
+      - 中国【付费推荐：v1.mk/vip】111
+      - 新加坡_0604059
+      - 新加坡 009
+      - 法国_0604036
+      - US(AzadNet.t.me)_049 2
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - 美国_06041371
+      - github.com/freefq - 以色列  17
+      - "@SSRSUB-V17-付费推荐:dlj.tf/ssrsub"
+      - 未知_0603102
+      - 二爷翻墙https://1808.ga 节点_11
+      - 香港-8
+      - 伯利兹_0604100
+      - 美国_0602646
+      - 二爷翻墙https://1808.ga 节点_7
+      - "@SSRSUB-V10-付费推荐:suo.yt/ssrsub"
+      - "|19.57Mb"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _RU_俄罗斯联邦
-      - 加拿大_0602083
-      - _CN_中国->🇺🇸_US_美国
-      - 俄罗斯联邦_0603001
-      - 美国【付费推荐：v1.mk/vip】77
-      - 法国_0528026
-      - _US_美国->🇸🇬_SG_新加坡
-      - 美国_0602015
-      - IEPL-AP-HK-1
-      - "日本亚马逊\r"
-      - 俄罗斯联邦_0601003
-      - IL_FreeNode.me_76
-      - 日本 015
-      - _CN_中国->🇺🇸_US_美国_2
-      - 美国_0602646
-      - LU卢森堡(youtube阿伟科技)
-      - 美国【付费推荐：v1.mk/vip】87
-      - github.com/freefq - 以色列  3
-      - 中国【付费推荐：v1.mk/vip】186
-      - 美国_0602015 2
-      - "|94.90Mb"
-      - "@SSRSUB-V16-付费推荐:suo.yt/ssrsub"
-      - 未知_0603104
+      - "美国圣何塞|防失联直连|1x\r"
+      - _CA_加拿大 2
       - 二爷翻墙https://1808.ga 节点_10
-      - 美国_0603723
-      - 美国【付费推荐：v1.mk/vip】69
+      - 二爷翻墙https://1808.ga 节点_2
+      - github.com/freefq - 俄罗斯新西伯利亚ADMAN数据中心 14
+      - 日本 006
+      - 未知_0604481
+      - US(AzadNet.t.me)_049
+      - 未知_0604460
+      - 未知_0604476
+      - 中国【付费推荐：v1.mk/vip】186
+      - 美国_0604400
+      - _🇺🇸_US_美国_科网_03
+      - 美国_0604830
       - _US_美国->🇱🇺_LU_卢森堡 6
-      - 美国_0603823
-      - 美国 035
-      - github.com/freefq - 以色列  7
-      - 美国_06034662
-      - 美国【付费推荐：v1.mk/vip】60
-      - 俄罗斯联邦_0602010
-      - US_FreeNode.me_77
-      - 巴勒斯坦_0603002
+      - 美国_0604780 2
+      - 美国_0604079
+      - 美国【付费推荐：v1.mk/vip】128
+      - "@SSRSUB-V56-付费推荐:dlj.tf/ssrsub"
+      - 中国_0604277
+      - 香港08
+      - 美国_0604768 2
+      - 美国_0604836
+      - github.com/freefq - 美国  30
+      - "|11.81Mb"
+      - _US_美国_欢迎订阅yui科技_199
+      - github.com/freefq - 美国Microsoft数据中心 32
+      - "@SSRSUB-V47-付费推荐:dlj.tf/ssrsub"
+      - 伯利兹_0604223
+      - 美国_0604397
+      - 美国_0604230
+      - 乌克兰 002
+      - github.com/freefq - 以色列  3
+      - 香港06
+      - 防失效github SubCrawler中国_0604010
       - US_FreeNode.me_17
-      - _🇺🇸_US_美国_顺丰_8
-      - 未知_0603106
-      - 二爷翻墙 https://1808.ga 节点_4
-      - 未知_06033510
-      - 美国_0603009
-      - 东京直连|@ripaojiedian
-      - "美国2号-0.1x\r"
-      - 美国_06034680
-      - 未知_06033488
-      - 未知_0603117
-      - 未知_06033493
-      - 爱尔兰_0603002
-      - 美国_0603708
-      - 新加坡_0603001
-      - 美国|@ripaojiedian
-      - 中国_0603101
-      - CA_3.96.12.243_060220231d39-564ss%%
-      - 日本直连|@ripaojiedian
-      - "德国1号\r"
-      - 美国_0603002
-      - 美国【付费推荐：v1.mk/vip】49
-      - 美国【付费推荐：v1.mk/vip】84
-      - 台湾_0603001
-      - 香港A|@ripaojiedian
-      - 美国【付费推荐：v1.mk/vip】38
-      - 美国_0603009 2
-      - 法国_0603222
-      - HK|tg频道@ripaojiedian
-      - 未知_06033514
-      - 新加坡_06021050
-      - US(AzadNet.t.me)_234
-      - 新加坡_06031032
-      - 未知_06033520
-      - 中国_0603101 2
-      - 未知_0603103
-      - 美国_06034697
-      - 未知_06033512
-      - 台湾_0603001 2
-      - 法国_0603215
-      - 美国_0602646 2
-      - HK香港(youtube阿伟科技) 2
-      - 卢森堡_0603048
-      - IL_FreeNode.me_7
-      - 香港-1
-      - 中国【付费推荐：v1.mk/vip】146
-      - 香港-9
-      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - 美国_0604774
+      - US(AzadNet.t.me)_166
+      - 以色列【付费推荐：v1.mk/vip】204
       - "|27.97Mb"
-      - IEPL-AP-TW-1
-      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
-      - 俄罗斯联邦_0602001
-      - 美国【付费推荐：v1.mk/vip】8
-      - US(AzadNet.t.me)_234 2
-      - 台湾_0602001
-      - 美国【付费推荐：v1.mk/vip】31
-      - _JP_日本
-      - 中国【付费推荐：v1.mk/vip】114
-      - "@SSRSUB-V06-付费推荐:suo.yt/ssrsub"
-      - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - US_FreeNode.me_43
-      - 美国_0602785
-      - 美国【付费推荐：v1.mk/vip】118
-      - US_FreeNode.me_5
-      - 以色列【付费推荐：v1.mk/vip】21
-      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
-      - github.com/freefq - 美国CloudFlare节点 16
+      - HK香港(youtube阿伟科技) 2
+      - _FR_法国
+      - "@SSRSUB-V46-付费推荐:dlj.tf/ssrsub"
+      - 美国【付费推荐：v1.mk/vip】60
+      - _US_美国_欢迎订阅yui科技_131
+      - US_FreeNode.me_94
+      - 台湾_0604287
+      - "%�\x11�<'����ӗ�.+yf�KO�'��<%�\x11����%�Z\"�yf%�"
+      - _KR_韩国 3 2
+      - 美国_0604771
+      - 美国_06041337
+      - 美国 058
+      - 美国【付费推荐：v1.mk/vip】54
+      - 美国【付费推荐：v1.mk/vip】63
+      - github.com/freefq - 以色列  10
+      - "@SSRSUB-V69-付费推荐:dlj.tf/ssrsub"
+      - "|11.22Mb"
+      - 日本 014
+      - "美国凤凰城3号 | 0.1x\r"
+      - US(AzadNet.t.me)_110
+      - github.com/freefq - 新加坡Linode数据中心 26
+      - 未知_0604467
+      - 香港09
+      - 美国 CloudFlare节点 3
+      - 美国【付费推荐：v1.mk/vip】112
+      - github.com/freefq - 美国CloudFlare公司CDN节点 27
+      - github.com/freefq - 辽宁省鞍山市电信 18
+      - 未知_0604461
+      - 美国_0604794
+      - US(AzadNet.t.me)_284
+      - 未知_0604466
+      - 香港04
+      - 美国_06041338
+      - 美国【付费推荐：v1.mk/vip】156
+      - 美国【付费推荐：v1.mk/vip】174
+      - _CN_中国_欢迎订阅yui科技_226
+      - 中国_0603101
+      - _SG_新加坡_欢迎订阅yui科技_246
       - 美国【付费推荐：v1.mk/vip】5
-      - github.com/freefq - 美国  34
-      - 台湾_0601009
+      - 新加坡 013
+      - 以色列【付费推荐：v1.mk/vip】195
+      - 二爷翻墙https://1808.ga 节点_1
+      - 新加坡_0604073
+      - 俄罗斯联邦_0601003
+      - 美国_0603865
+      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙https://1808.ga 节点_3
+      - 美国【付费推荐：v1.mk/vip】87
+      - 印度尼西亚_0604002
+      - "@SSRSUB-V54-付费推荐:dlj.tf/ssrsub"
+      - 俄罗斯联邦_0602001
+      - 二爷翻墙https://1808.ga 节点_5
+      - 美国【付费推荐：v1.mk/vip】27
+      - 未知_0604464
+      - 美国【付费推荐：v1.mk/vip】14
+      - 法国_0604020
+      - github.com/freefq - 美国Microsoft数据中心 26
+      - "|94.90Mb"
+      - 美国【付费推荐：v1.mk/vip】103
+      - 中国_0604277 2
+      - 美国【付费推荐：v1.mk/vip】180
+      - 香港-1
+      - 新加坡_06021050
+      - 中国【付费推荐：v1.mk/vip】146
+      - IL_FreeNode.me_7
+      - 新加坡 008
+      - "@SSRSUB-V62-付费推荐:dlj.tf/ssrsub"
+      - 德国【付费推荐：v1.mk/vip】117
       - github.com/freefq - 澳大利亚Northcote Secondary College 21
+      - 加拿大【付费推荐：v1.mk/vip】170
+      - "|29.34Mb"
+      - 二爷翻墙https://1808.ga 节点_13
+      - "@SSRSUB-V67-付费推荐:dlj.tf/ssrsub"
+      - 未知_0604459
+      - _CN_中国->🇺🇸_US_美国
+      - "@SSRSUB-V50-付费推荐:dlj.tf/ssrsub"
+      - 俄罗斯 001
+      - HK香港(youtube阿伟科技)
+      - 二爷翻墙https://1808.ga 节点_4
+      - 以色列【付费推荐：v1.mk/vip】192
+      - 未知_06043654
+      - _RU_俄罗斯联邦_欢迎订阅yui科技_161
+      - US_FreeNode.me_43
+      - "@SSRSUB-V61-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V52-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V34-付费推荐:dlj.tf/ssrsub"
+      - _DE_德国
+      - 美国_06041327
+      - "@SSRSUB-V64-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V63-付费推荐:dlj.tf/ssrsub"
+      - 伯利兹_0604105
+      - 中国【付费推荐：v1.mk/vip】111
+      - 新加坡_0604059
+      - 新加坡 009
+      - 法国_0604036
+      - US(AzadNet.t.me)_049 2
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - 美国_06041371
+      - github.com/freefq - 以色列  17
+      - "@SSRSUB-V17-付费推荐:dlj.tf/ssrsub"
+      - 未知_0603102
+      - 二爷翻墙https://1808.ga 节点_11
+      - 香港-8
+      - 伯利兹_0604100
+      - 美国_0602646
+      - 二爷翻墙https://1808.ga 节点_7
+      - "@SSRSUB-V10-付费推荐:suo.yt/ssrsub"
+      - "|19.57Mb"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -933,112 +1270,154 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _RU_俄罗斯联邦
-      - 加拿大_0602083
-      - _CN_中国->🇺🇸_US_美国
-      - 俄罗斯联邦_0603001
-      - 美国【付费推荐：v1.mk/vip】77
-      - 法国_0528026
-      - _US_美国->🇸🇬_SG_新加坡
-      - 美国_0602015
-      - IEPL-AP-HK-1
-      - "日本亚马逊\r"
-      - 俄罗斯联邦_0601003
-      - IL_FreeNode.me_76
-      - 日本 015
-      - _CN_中国->🇺🇸_US_美国_2
-      - 美国_0602646
-      - LU卢森堡(youtube阿伟科技)
-      - 美国【付费推荐：v1.mk/vip】87
-      - github.com/freefq - 以色列  3
-      - 中国【付费推荐：v1.mk/vip】186
-      - 美国_0602015 2
-      - "|94.90Mb"
-      - "@SSRSUB-V16-付费推荐:suo.yt/ssrsub"
-      - 未知_0603104
+      - "美国圣何塞|防失联直连|1x\r"
+      - _CA_加拿大 2
       - 二爷翻墙https://1808.ga 节点_10
-      - 美国_0603723
-      - 美国【付费推荐：v1.mk/vip】69
+      - 二爷翻墙https://1808.ga 节点_2
+      - github.com/freefq - 俄罗斯新西伯利亚ADMAN数据中心 14
+      - 日本 006
+      - 未知_0604481
+      - US(AzadNet.t.me)_049
+      - 未知_0604460
+      - 未知_0604476
+      - 中国【付费推荐：v1.mk/vip】186
+      - 美国_0604400
+      - _🇺🇸_US_美国_科网_03
+      - 美国_0604830
       - _US_美国->🇱🇺_LU_卢森堡 6
-      - 美国_0603823
-      - 美国 035
-      - github.com/freefq - 以色列  7
-      - 美国_06034662
-      - 美国【付费推荐：v1.mk/vip】60
-      - 俄罗斯联邦_0602010
-      - US_FreeNode.me_77
-      - 巴勒斯坦_0603002
+      - 美国_0604780 2
+      - 美国_0604079
+      - 美国【付费推荐：v1.mk/vip】128
+      - "@SSRSUB-V56-付费推荐:dlj.tf/ssrsub"
+      - 中国_0604277
+      - 香港08
+      - 美国_0604768 2
+      - 美国_0604836
+      - github.com/freefq - 美国  30
+      - "|11.81Mb"
+      - _US_美国_欢迎订阅yui科技_199
+      - github.com/freefq - 美国Microsoft数据中心 32
+      - "@SSRSUB-V47-付费推荐:dlj.tf/ssrsub"
+      - 伯利兹_0604223
+      - 美国_0604397
+      - 美国_0604230
+      - 乌克兰 002
+      - github.com/freefq - 以色列  3
+      - 香港06
+      - 防失效github SubCrawler中国_0604010
       - US_FreeNode.me_17
-      - _🇺🇸_US_美国_顺丰_8
-      - 未知_0603106
-      - 二爷翻墙 https://1808.ga 节点_4
-      - 未知_06033510
-      - 美国_0603009
-      - 东京直连|@ripaojiedian
-      - "美国2号-0.1x\r"
-      - 美国_06034680
-      - 未知_06033488
-      - 未知_0603117
-      - 未知_06033493
-      - 爱尔兰_0603002
-      - 美国_0603708
-      - 新加坡_0603001
-      - 美国|@ripaojiedian
-      - 中国_0603101
-      - CA_3.96.12.243_060220231d39-564ss%%
-      - 日本直连|@ripaojiedian
-      - "德国1号\r"
-      - 美国_0603002
-      - 美国【付费推荐：v1.mk/vip】49
-      - 美国【付费推荐：v1.mk/vip】84
-      - 台湾_0603001
-      - 香港A|@ripaojiedian
-      - 美国【付费推荐：v1.mk/vip】38
-      - 美国_0603009 2
-      - 法国_0603222
-      - HK|tg频道@ripaojiedian
-      - 未知_06033514
-      - 新加坡_06021050
-      - US(AzadNet.t.me)_234
-      - 新加坡_06031032
-      - 未知_06033520
-      - 中国_0603101 2
-      - 未知_0603103
-      - 美国_06034697
-      - 未知_06033512
-      - 台湾_0603001 2
-      - 法国_0603215
-      - 美国_0602646 2
-      - HK香港(youtube阿伟科技) 2
-      - 卢森堡_0603048
-      - IL_FreeNode.me_7
-      - 香港-1
-      - 中国【付费推荐：v1.mk/vip】146
-      - 香港-9
-      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - 美国_0604774
+      - US(AzadNet.t.me)_166
+      - 以色列【付费推荐：v1.mk/vip】204
       - "|27.97Mb"
-      - IEPL-AP-TW-1
-      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
-      - 俄罗斯联邦_0602001
-      - 美国【付费推荐：v1.mk/vip】8
-      - US(AzadNet.t.me)_234 2
-      - 台湾_0602001
-      - 美国【付费推荐：v1.mk/vip】31
-      - _JP_日本
-      - 中国【付费推荐：v1.mk/vip】114
-      - "@SSRSUB-V06-付费推荐:suo.yt/ssrsub"
-      - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - US_FreeNode.me_43
-      - 美国_0602785
-      - 美国【付费推荐：v1.mk/vip】118
-      - US_FreeNode.me_5
-      - 以色列【付费推荐：v1.mk/vip】21
-      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
-      - github.com/freefq - 美国CloudFlare节点 16
+      - HK香港(youtube阿伟科技) 2
+      - _FR_法国
+      - "@SSRSUB-V46-付费推荐:dlj.tf/ssrsub"
+      - 美国【付费推荐：v1.mk/vip】60
+      - _US_美国_欢迎订阅yui科技_131
+      - US_FreeNode.me_94
+      - 台湾_0604287
+      - "%�\x11�<'����ӗ�.+yf�KO�'��<%�\x11����%�Z\"�yf%�"
+      - _KR_韩国 3 2
+      - 美国_0604771
+      - 美国_06041337
+      - 美国 058
+      - 美国【付费推荐：v1.mk/vip】54
+      - 美国【付费推荐：v1.mk/vip】63
+      - github.com/freefq - 以色列  10
+      - "@SSRSUB-V69-付费推荐:dlj.tf/ssrsub"
+      - "|11.22Mb"
+      - 日本 014
+      - "美国凤凰城3号 | 0.1x\r"
+      - US(AzadNet.t.me)_110
+      - github.com/freefq - 新加坡Linode数据中心 26
+      - 未知_0604467
+      - 香港09
+      - 美国 CloudFlare节点 3
+      - 美国【付费推荐：v1.mk/vip】112
+      - github.com/freefq - 美国CloudFlare公司CDN节点 27
+      - github.com/freefq - 辽宁省鞍山市电信 18
+      - 未知_0604461
+      - 美国_0604794
+      - US(AzadNet.t.me)_284
+      - 未知_0604466
+      - 香港04
+      - 美国_06041338
+      - 美国【付费推荐：v1.mk/vip】156
+      - 美国【付费推荐：v1.mk/vip】174
+      - _CN_中国_欢迎订阅yui科技_226
+      - 中国_0603101
+      - _SG_新加坡_欢迎订阅yui科技_246
       - 美国【付费推荐：v1.mk/vip】5
-      - github.com/freefq - 美国  34
-      - 台湾_0601009
+      - 新加坡 013
+      - 以色列【付费推荐：v1.mk/vip】195
+      - 二爷翻墙https://1808.ga 节点_1
+      - 新加坡_0604073
+      - 俄罗斯联邦_0601003
+      - 美国_0603865
+      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
+      - 二爷翻墙https://1808.ga 节点_3
+      - 美国【付费推荐：v1.mk/vip】87
+      - 印度尼西亚_0604002
+      - "@SSRSUB-V54-付费推荐:dlj.tf/ssrsub"
+      - 俄罗斯联邦_0602001
+      - 二爷翻墙https://1808.ga 节点_5
+      - 美国【付费推荐：v1.mk/vip】27
+      - 未知_0604464
+      - 美国【付费推荐：v1.mk/vip】14
+      - 法国_0604020
+      - github.com/freefq - 美国Microsoft数据中心 26
+      - "|94.90Mb"
+      - 美国【付费推荐：v1.mk/vip】103
+      - 中国_0604277 2
+      - 美国【付费推荐：v1.mk/vip】180
+      - 香港-1
+      - 新加坡_06021050
+      - 中国【付费推荐：v1.mk/vip】146
+      - IL_FreeNode.me_7
+      - 新加坡 008
+      - "@SSRSUB-V62-付费推荐:dlj.tf/ssrsub"
+      - 德国【付费推荐：v1.mk/vip】117
       - github.com/freefq - 澳大利亚Northcote Secondary College 21
+      - 加拿大【付费推荐：v1.mk/vip】170
+      - "|29.34Mb"
+      - 二爷翻墙https://1808.ga 节点_13
+      - "@SSRSUB-V67-付费推荐:dlj.tf/ssrsub"
+      - 未知_0604459
+      - _CN_中国->🇺🇸_US_美国
+      - "@SSRSUB-V50-付费推荐:dlj.tf/ssrsub"
+      - 俄罗斯 001
+      - HK香港(youtube阿伟科技)
+      - 二爷翻墙https://1808.ga 节点_4
+      - 以色列【付费推荐：v1.mk/vip】192
+      - 未知_06043654
+      - _RU_俄罗斯联邦_欢迎订阅yui科技_161
+      - US_FreeNode.me_43
+      - "@SSRSUB-V61-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V52-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V34-付费推荐:dlj.tf/ssrsub"
+      - _DE_德国
+      - 美国_06041327
+      - "@SSRSUB-V64-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V63-付费推荐:dlj.tf/ssrsub"
+      - 伯利兹_0604105
+      - 中国【付费推荐：v1.mk/vip】111
+      - 新加坡_0604059
+      - 新加坡 009
+      - 法国_0604036
+      - US(AzadNet.t.me)_049 2
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - 美国_06041371
+      - github.com/freefq - 以色列  17
+      - "@SSRSUB-V17-付费推荐:dlj.tf/ssrsub"
+      - 未知_0603102
+      - 二爷翻墙https://1808.ga 节点_11
+      - 香港-8
+      - 伯利兹_0604100
+      - 美国_0602646
+      - 二爷翻墙https://1808.ga 节点_7
+      - "@SSRSUB-V10-付费推荐:suo.yt/ssrsub"
+      - "|19.57Mb"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
