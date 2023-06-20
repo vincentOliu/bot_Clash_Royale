@@ -6,495 +6,923 @@ mode: Rule
 log-level: info
 external-controller: 9090
 proxies:
-  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 9, server: smt.ircf.space, port: 443, type: vmess, uuid: 3bcbd5cd-e791-4770-8bc7-7b1d941c9513, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /S4PSg9xqUClN2kJ4SOPKqC6, headers: {Host: wfi.sahnama.com}}, udp: true}
-  - {name: US_149.50.69.127_06152023ba3b-1428trojan, server: 149.50.69.127, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: US_speednode_0107, server: 23.225.9.196, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 荷兰_0618280, server: sdttkza.76898102.xyz, port: 2082, type: vmess, uuid: 78fd41e5-346a-3bf4-b942-be0fad711979, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /funsdfrh, headers: {Host: sdttkz.76898102.xyz}}, udp: true}
-  - {name: 美国_06173935, server: 108.165.216.227, port: 443, type: vmess, uuid: 65811756-10E7-4C57-8F9C-83D702F8BA9D, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Amsterdam.kotick.site}}, udp: true}
-  - {name: 美国_06183890 2, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: 2fcc2939-7dcf-4741-aa03-825bc40e23fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /CZfczvtieCZXdOlgWhgDLX, headers: {Host: de3.irteh.fun}}, udp: true}
-  - {name: 荷兰_0617004, server: sdttkza.76898102.xyz, port: 2082, type: vmess, uuid: 4896559c-c94e-342a-b208-6107ec292652, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /funsdfrh, headers: {Host: sdttkz.76898102.xyz}}, udp: true}
-  - {name: SG_speednode_0055, server: sg.stablize.top, port: 443, type: trojan, password: 5b51e0af-08af-4208-b834-6d6ac5721837, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0011, server: free.themars.top, port: 32101, type: ss, cipher: chacha20-ietf-poly1305, password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2, udp: true}
-  - {name: "6,8,24,26|_IL_以色列->🇦🇺_AU_澳大利亚", server: 149.50.83.40, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0012, server: free.themars.top, port: 32102, type: ss, cipher: chacha20-ietf-poly1305, password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2, udp: true}
-  - {name: 美国_06173909 2, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: 4f859149-2b2f-4b90-9a2c-8c0fe15c8c4c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ozX9aUPiJVtoLavjTW, headers: {Host: de14.irteh.fun}}, udp: true}
-  - {name: V005--US-付费推荐:dlj.tf/ssrsub, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 25b280df-e990-4495-80e3-48ec3c83da77, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v03.ssrsub.com}}, udp: true}
-  - {name: "@DeamNet_🇨🇦Toronto-1911", server: lahestan.esmahdi9.org, port: 8080, type: vmess, uuid: 66435540-e7c7-4436-a0bc-b1072afd905a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /MNeOJN4jgWe9gmEbv, headers: {Host: lahestan.esmahdi9.org}}, udp: true}
-  - {name: DE_speednode_0010, server: 159.69.37.238, port: 8080, type: vmess, uuid: 16ee15a6-f257-4fd2-b1c6-aa577030e8b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [🇩🇪DE德国(youtube阿伟科技2)]}}, udp: true}
-  - {name: _IL_以色列->🇯🇵_JP_日本, server: 149.50.71.124, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: "-1,7,8,9,10,25,26,27,28|_CN_中国->🇭🇰_HK_香港", server: 2f36c18cfe76.sanfen004.me, port: 10775, type: vmess, uuid: 15cedb1e-b6e7-4dd8-ac65-422e1a322972, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IL_speednode_0016, server: 149.50.66.124, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 未知_0619165, server: 104.18.38.42, port: 2052, type: vmess, uuid: 243240f9-9f5b-4f98-dd5c-e19784d19631, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /youlingkaishi, headers: {Host: uyaa.vtcss.top}}, udp: true}
-  - {name: IL_speednode_0032, server: 149.50.71.155, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: "@SSRSUB-V18-付费推荐:dlj.tf/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp4.scproxy.top}}, udp: true}
-  - {name: github.com/freefq - 以色列  5, server: de2.nigirocloud.com, port: 4003, type: trojan, password: PlF471nxneY0YevI, skip-cert-verify: true, udp: true}
-  - {name: _IL_以色列, server: 149.50.75.104, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: "@DeamNet_🇳🇱Amsterdam-2703", server: 188.114.96.169, port: 8080, type: vmess, uuid: a67679a6-a186-4d62-f84e-f3f00dc7745e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /youlingkaishi01, headers: {Host: tou.vtcss.top}}, udp: true}
-  - {name: 塞浦路斯_0619009, server: 203.28.8.162, port: 443, type: vmess, uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /P6kpn5UKG40MNLK2, headers: {Host: 9GS4VWNaRecTqOQ.janbaroon.com}}, udp: true}
-  - {name: "-1,19,22,23|_🇭🇰_HK_香港_17", server: 120.233.43.68, port: 51004, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_speednode_0050, server: tk-007.xiaoxiaobujidao.xyz, port: 50003, type: trojan, password: de2c1b4f-851e-3730-af83-9981917b7883, sni: tk-007.xiaoxiaobujidao.xyz, skip-cert-verify: true, udp: true}
-  - {name: 中国_0619336, server: 183.240.221.73, port: 38801, type: trojan, password: e958b47d-3510-445a-99cb-dc98d227e29e, skip-cert-verify: true, udp: true}
-  - {name: IL_speednode_0036, server: 149.50.75.90, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 以色列  23, server: de3.nigirocloud.com, port: 4003, type: trojan, password: PlF471nxneY0YevI, skip-cert-verify: true, udp: true}
-  - {name: 以色列_0619028, server: 149.50.84.32, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 美国_06196494, server: 23.225.9.196, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: India 01 TG:@SSRSUB, server: 152.70.74.66, port: 443, type: trojan, password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e, skip-cert-verify: true, udp: true}
-  - {name: "-1,19,19|_🇭🇰_HK_香港_由零開始_18", server: 2f36c18cfe76.sanfen004.me, port: 10775, type: vmess, uuid: 15cedb1e-b6e7-4dd8-ac65-422e1a322972, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IL_speednode_0034, server: 149.50.70.83, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 英国-3, server: 163.123.192.60, port: 443, type: trojan, password: b25cbc3a-d7e8-4fe4-b7a0-d3d18985bcf4, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: Japan 01|CMCC, server: datacenter.cm.02.biqibao.site, port: 2052, type: vmess, uuid: 0cab2bd0-fc0e-47d0-a87d-2ae0b20b0b3e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /public, headers: {Host: gcore.japan.biqibao.site}}, udp: true}
-  - {name: 以色列_0619024, server: 149.50.71.120, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: "@SSRSUB-V14-付费推荐:dlj.tf/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}, udp: true}
-  - {name: _IL_以色列->🇦🇺_AU_澳大利亚, server: 149.50.66.99, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: JP_speednode_0054, server: tk-004.xiaoxiaobujidao.xyz, port: 8443, type: trojan, password: de2c1b4f-851e-3730-af83-9981917b7883, sni: tk-004.xiaoxiaobujidao.xyz, skip-cert-verify: true, udp: true}
-  - {name: "@DeamNet_🇳🇱Amsterdam-2225", server: 188.114.96.37, port: 2052, type: vmess, uuid: 19c6ec1b-2230-41d4-ff1c-c8449dc1ed5f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yulingkaishi01, headers: {Host: tou.vtcss.top}}, udp: true}
-  - {name: "@DeamNet_🇺🇸New York-1753", server: 104.18.178.57, port: 2052, type: vmess, uuid: 19c6ec1b-2230-41d4-ff1c-c8449dc1ed5f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yulingkaishi01, headers: {Host: tou.vtcss.top}}, udp: true}
-  - {name: _IL_以色列->🇳🇱_NL_荷兰, server: 149.50.75.100, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 未知_0619011, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 25b280df-e990-4495-80e3-48ec3c83da77, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v03.ssrsub.com}}, udp: true}
-  - {name: _IL_以色列->🇬🇧_GB_英国, server: 149.50.77.125, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: NU_speednode_0069, server: dubawtgfnewi.76898102.xyz, port: 2052, type: vmess, uuid: 78fd41e5-346a-3bf4-b942-be0fad711979, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /flkfhzz, headers: {Host: dubawtgfnewi.76898102.xyz}}, udp: true}
-  - {name: 未知_0619144, server: 104.19.139.78, port: 2052, type: vmess, uuid: 243240f9-9f5b-4f98-dd5c-e19784d19631, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /youlingkaishi, headers: {Host: uyaa.vtcss.top}}, udp: true}
-  - {name: 美国_06196505, server: 45.12.144.89, port: 47127, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_06173910, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: a6457d28-e328-4202-99fe-0606d7ad69a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6rXqecLmchrWkX7cy1ilLjMBLUC, headers: {Host: de18.irteh.fun}}, udp: true}
-  - {name: "6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3", server: 149.50.70.107, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: TW_speednode_0085, server: 103.177.33.180, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9e44e9ffe5c2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: wtw1000mline004.chilines.club, path: /isaifqaagpi, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 28|🇬🇧 _IL_以色列->🇬🇧_GB_英国 3_, server: 149.50.77.108, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 以色列  18, server: de1.nigirocloud.com, port: 4003, type: trojan, password: PlF471nxneY0YevI, skip-cert-verify: true, udp: true}
-  - {name: v2rayfree.eu.org - 美国CloudFlare公司CDN节点 9, server: 104.31.16.28, port: 80, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2, headers: {Host: ca4.tehme2.fun}}, udp: true}
-  - {name: 未知_0619149, server: 104.21.38.26, port: 8880, type: vmess, uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /youlingkaishi, headers: {Host: uyaa.vtcss.top}}, udp: true}
-  - {name: 阿曼_0616035, server: 134.0.219.37, port: 443, type: vmess, uuid: 44c5de7f-0be4-4e96-c73c-f4c94c15e8af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mehdi, headers: {Host: parasto01.ddns.net}}, udp: true}
-  - {name: 未知_0619156, server: 141.101.120.205, port: 2052, type: vmess, uuid: 243240f9-9f5b-4f98-dd5c-e19784d19631, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /youlingkaishi, headers: {Host: uyaa.vtcss.top}}, udp: true}
-  - {name: v2rayfree.eu.org - 以色列  8, server: nl3.barbecuepie.com, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: _US_美国, server: 141.193.68.93, port: 443, type: trojan, password: b25cbc3a-d7e8-4fe4-b7a0-d3d18985bcf4, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 未知_0619150, server: 198.41.193.39, port: 8880, type: vmess, uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /youlingkaishi, headers: {Host: uyaa.vtcss.top}}, udp: true}
-  - {name: HK香港(youtube阿伟科技2), server: iplc-xiang.mielink-dns2.com, port: 668, type: ssr, cipher: rc4-md5, password: miejump.com, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 105860:2020931d-1126-3ea1-b931-b750f3ca563d, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: SG-4.193.245.7-182, server: 4.193.245.7, port: 443, type: trojan, password: a9213bf3-3e08-4f25-b5af-7b80fbf3acfa, sni: sg.mjt001.com, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0008, server: 120.233.43.68, port: 51004, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IL_speednode_0030, server: 149.50.75.197, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 美国 090, server: dl6.v001sssv.pw, port: 80, type: vmess, uuid: 8eece2e1-cfc1-4f84-803e-1a66650982ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dl6.v001sssv.pw}}, udp: true}
-  - {name: "@SSRSUB-V09-付费推荐:dlj.tf/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: nl.sharecentrepro.com}}, udp: true}
-  - {name: IL_speednode_0031, server: 149.50.83.120, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: "6,8,24,26|_IL_以色列->🇬🇧_GB_英国", server: uk1.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, sni: CrV2ray.info, skip-cert-verify: true, udp: true}
-  - {name: "6,8,24,26|_IL_以色列->🇯🇵_JP_日本 4", server: 149.50.70.87, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0009, server: free.themars.top, port: 32104, type: ss, cipher: chacha20-ietf-poly1305, password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2, udp: true}
-  - {name: 未知_0619125, server: 104.16.183.101, port: 443, type: vmess, uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /P6kpn5UKG40MNLK2, headers: {Host: pWghljmnknq.janbaroon.com}}, udp: true}
-  - {name: JP_speednode_0075, server: tk-007.xiaoxiaobujidao.xyz, port: 50005, type: vmess, uuid: de2c1b4f-851e-3730-af83-9981917b7883, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/xiaodao?ed=2048", headers: {Host: tk-007.xiaoxiaobujidao.xyz}}, udp: true}
-  - {name: "5,6,16|美国【付费推荐：https://tt.vg/vip】97", server: 104.31.16.27, port: 80, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2, headers: {Host: ca5.tehme2.fun}}, udp: true}
-  - {name: 未知_0619164, server: 104.21.69.97, port: 8880, type: vmess, uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /youlingkaishi, headers: {Host: uyaa.vtcss.top}}, udp: true}
-  - {name: "-1,19,22,23|_🇭🇰_HK_香港_17 2", server: 120.233.43.68, port: 51004, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: IL_speednode_0029, server: 149.50.92.74, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: _IL_以色列->🇯🇵_JP_日本 2, server: 149.50.70.72, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: V001--US-付费推荐:dlj.tf/ssrsub, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 25b280df-e990-4495-80e3-48ec3c83da77, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.ssrsub.com}}, udp: true}
+  - {name: _IL_以色列->🇬🇧_GB_英国, server: 149.50.77.108, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: "16,16,20|🇨🇳中国-江苏-南京-ss-cttw1.createmofa...", server: cttw1.createmofa.xyz, port: 34999, type: ss, cipher: chacha20-ietf-poly1305, password: d8802921-8f08-4130-b4d0-e28715087e57, udp: true}
+  - {name: "17,18|_🇺🇸_US_美国_科网_19__________", server: 142.4.100.44, port: 45009, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: -1|🇺🇸_US_美国_由快嘴科技提供：kkzui.com1_47, server: 38.26.135.6, port: 44942, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "17,18|_🇺🇸_US_美国_科网_19___", server: 107.167.16.102, port: 47074, type: vmess, uuid: b74f4afa-1a57-4aff-b7e5-8ad5ea33566f, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 17|_🇺🇸_US_美国_yui科技_169, server: 104.25.137.57, port: 2083, type: vmess, uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /youlingkaishi, headers: {Host: uyaa.vtcss.top}}, udp: true}
+  - {name: 17|_🇺🇸_US_美国_由零開始_19_, server: 104.27.17.155, port: 8880, type: vmess, uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /youlingkaishi, headers: {Host: uyaa.vtcss.top}}, udp: true}
+  - {name: 17|_🇺🇸_US_美国_yui科技_200, server: 104.20.90.178, port: 2083, type: vmess, uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /youlingkaishi, headers: {Host: uyaa.vtcss.top}}, udp: true}
+  - {name: US_speednode_0107, server: 23.225.9.196, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 塞浦路斯_0619106, server: sbn.ircf.space, port: 443, type: vmess, uuid: 3bcbd5cd-e791-4770-8bc7-7b1d941c9513, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /S4PSg9xqUClN2kJ4SOPKqC6, headers: {Host: wfi.sahnama.com}}, udp: true}
-  - {name: IL_speednode_0029 2, server: 149.50.66.127, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: "@DeamNet_🇨🇦Toronto-4565", server: lahestan.esmahdi9.org, port: 8880, type: vmess, uuid: 66435540-e7c7-4436-a0bc-b1072afd905a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /MNeOJN4jgWe9gmEbv, headers: {Host: lahestan.esmahdi9.org}}, udp: true}
-  - {name: _IL_以色列->🇬🇧_GB_英国 2, server: 149.50.77.95, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 美国 021, server: doinbtimes.cf, port: 443, type: vmess, uuid: 16702ec2-3808-46e6-a7b5-582c062be13d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /aslpop, headers: {Host: jpnat1.doinb.tk}}, udp: true}
-  - {name: "美国圣何塞 | 允许长期跑满带宽-0.1x\r", server: 74.217.179.36, port: 443, type: trojan, password: 746b6774-e899-4205-a097-3da55c26f5b3, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: US_speednode_0109, server: 216.52.183.242, port: 80, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, plugin: obfs, plugin-opts: {mode: http, host: None}, udp: true}
-  - {name: _IL_以色列->🇬🇧_GB_英国 3, server: 149.50.77.97, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 6, server: www.digitalocean.com, port: 80, type: vmess, uuid: 25b280df-e990-4495-80e3-48ec3c83da77, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.ssrsub.com}}, udp: true}
-  - {name: "@DeamNet_🇨🇦Toronto-3726", server: 198.41.212.122, port: 8080, type: vmess, uuid: a67679a6-a186-4d62-f84e-f3f00dc7745e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /youlingkaishi01, headers: {Host: tou.vtcss.top}}, udp: true}
-  - {name: 以色列_0615022, server: 149.50.89.78, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, sni: telewebion.com, skip-cert-verify: true, udp: true}
-  - {name: NU_speednode_0086, server: cdn.noice.id, port: 80, type: vmess, uuid: 641a1a24-7d4c-447d-9005-cc43bfc4da8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tunnelvmess, headers: {Host: sgf1.hijinetwork.cloud}}, udp: true}
-  - {name: IL_speednode_0037, server: 149.50.75.76, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: "-1,19,19|_🇭🇰_HK_香港_由零開始_18 2", server: 2f36c18cfe76.sanfen004.me, port: 10775, type: vmess, uuid: 15cedb1e-b6e7-4dd8-ac65-422e1a322972, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚", server: 149.50.83.49, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 16, server: dl.v001sssv.pw, port: 80, type: vmess, uuid: a4bb7f93-cee6-43d7-b2dd-fa9c70b88233, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dl.v001sssv.pw}}, udp: true}
-  - {name: _US_美国->🇹🇼_TW_台湾, server: akrab2.v-pn.my.id, port: 443, type: vmess, uuid: b07a349b-5e3c-4b17-aabe-d1dc63376ecf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: idc8.vpn-akcelluler.my.id}}, udp: true}
-  - {name: IL_speednode_0060, server: 149.50.77.109, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 英国-2, server: 148.59.74.52, port: 443, type: trojan, password: b25cbc3a-d7e8-4fe4-b7a0-d3d18985bcf4, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇭🇰_HK_香港, server: 2f36c18cfe76.sanfen004.me, port: 10775, type: vmess, uuid: 15cedb1e-b6e7-4dd8-ac65-422e1a322972, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IL_speednode_0027, server: 149.50.75.89, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 未知_0619168, server: 104.17.74.170, port: 8880, type: vmess, uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /youlingkaishi, headers: {Host: uyaa.vtcss.top}}, udp: true}
-  - {name: 未知_0619142, server: 198.41.216.218, port: 8880, type: vmess, uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /youlingkaishi, headers: {Host: uyaa.vtcss.top}}, udp: true}
-  - {name: "-1,22,23|移动专线A", server: 120.233.43.68, port: 51004, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _IL_以色列->🇳🇱_NL_荷兰 2, server: 149.50.75.81, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 英国-1, server: 163.123.192.57, port: 443, type: trojan, password: b25cbc3a-d7e8-4fe4-b7a0-d3d18985bcf4, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: DP2, server: cf.yxjnode.com, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: dp2.yxjnode.com}}, udp: true}
-  - {name: 阿曼_0617021, server: 134.0.219.37, port: 443, type: vmess, uuid: 336ae92f-b745-40dc-cc4d-01e8313a5d51, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mehdi, headers: {Host: vizooooo.ddns.net}}, udp: true}
-  - {name: 新加坡_0619854, server: sg4.zingfast.vn, port: 80, type: vmess, uuid: 533724ad-58ef-4147-88dc-9da523c15fc4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /anti13.zingfast.vn, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
-  - {name: V006--US-付费推荐:dlj.tf/ssrsub, server: www.digitalocean.com, port: 80, type: vmess, uuid: 25b280df-e990-4495-80e3-48ec3c83da77, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v03.ssrsub.com}}, udp: true}
-  - {name: US_speednode_0104, server: 216.52.183.243, port: 80, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, plugin: obfs, plugin-opts: {mode: http, host: None}, udp: true}
-  - {name: JP_speednode_0061, server: ap.stablize.top, port: 443, type: trojan, password: 1e8db890-68da-4dff-8a16-ded8fabcb3c3, skip-cert-verify: true, udp: true}
-  - {name: IL 25 → tg@nicevpn123, server: 149.50.69.131, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_speednode_0009, server: 149.50.69.109, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 009, server: sg4.zingfast.vn, port: 80, type: vmess, uuid: 533724ad-58ef-4147-88dc-9da523c15fc4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /anti13.zingfast.vn, headers: {Host: sg4.zingfast.vn}}, udp: true}
-  - {name: CN_speednode_0004, server: zf.heigouyunzf.xyz, port: 38803, type: trojan, password: e958b47d-3510-445a-99cb-dc98d227e29e, skip-cert-verify: true, udp: true}
+  - {name: 日本_0619008, server: trs21.bolab.net, port: 443, type: trojan, password: 7a73f1dc97a70905870c0c0484b12145, sni: trs21.bolab.net, skip-cert-verify: true, udp: true}
+  - {name: 未知_06194145, server: 162.159.152.95, port: 443, type: vmess, uuid: dddd0b29-1576-4003-9990-d7cea34264db, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /835757, headers: {Host: dedi2.1808.cf}}, udp: true}
+  - {name: 美国_06196494, server: 23.225.9.196, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "德国3\r", server: 84.252.121.218, port: 443, type: trojan, password: 746b6774-e899-4205-a097-3da55c26f5b3, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: SK_speednode_0080, server: 185.48.248.126, port: 444, type: ss, cipher: chacha20-ietf-poly1305, password: Onsheypy, udp: true}
+  - {name: 未知_0619108, server: quiz.vidio.com, port: 443, type: vmess, uuid: f677fa16-164f-42f9-ad9b-7e08c53e1d3e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /worryfree, headers: {Host: v2ray2.udpgw.com}}, udp: true}
+  - {name: IL_speednode_0040, server: 149.50.70.83, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 未知_0619118, server: 104.18.115.31, port: 2053, type: vmess, uuid: 0404bc28-9cfc-4fbb-9e4c-c3f3ba87f384, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /blue01, headers: {Host: x1.ylks01.eu.org}}, udp: true}
+  - {name: US-163.123.192.154-182, server: 163.123.192.154, port: 443, type: trojan, password: 997a9caa-5950-476f-8614-462fb2e0ed18, skip-cert-verify: true, udp: true}
+  - {name: "SG, Singapore", server: 13.213.66.163, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: US_speednode_0111, server: 185.47.255.219, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: _DE_德国 2, server: 217.79.184.76, port: 443, type: trojan, password: 746b6774-e899-4205-a097-3da55c26f5b3, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: 以色列_0619025, server: 149.50.75.170, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: "20,21|🇭🇰 香港", server: 47.kccic2pa.xyz, port: 50047, type: vmess, uuid: 7271b7c6-f38e-45b8-8998-5a068d3b3086, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 防失效github SubCrawler中国_0619011, server: 120.233.43.68, port: 51004, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-14.18.103.121-086, server: gzyd.jcnode.top, port: 23005, type: trojan, password: 18d95b18-e2b4-4410-b51d-ff58f54deaf2, sni: sg03.ckcloud.info, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0101, server: 142.0.138.130, port: 55502, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "US, Dallas 2", server: 54.190.212.115, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: TR_speednode_0081, server: 45.89.52.66, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: 未知_0619010, server: eddf.keeeeeeir.me, port: 443, type: vmess, uuid: FF8A5176-6E92-4DC5-A98D-A56238B83687, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /login, headers: {Host: eddf.keeeeeeir.me}}, udp: true}
+  - {name: 17|_🇺🇸_US_美国_顺丰_16, server: cf-dx-dns.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp4.scproxy.top}}, udp: true}
+  - {name: 18|🇺🇸US美国(youtube阿伟科技2)_______, server: 198.2.207.150, port: 55337, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SG_speednode_0073, server: 13.229.124.173, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: DE_speednode_0010, server: 159.69.37.238, port: 8080, type: vmess, uuid: 16ee15a6-f257-4fd2-b1c6-aa577030e8b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [🇩🇪DE德国(youtube阿伟科技2)]}}, udp: true}
+  - {name: "@SSRSUB-V17-付费推荐:dlj.tf/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp3.scproxy.top}}, udp: true}
+  - {name: v2rayfree.eu.org - 美国CloudFlare公司CDN节点 12, server: 104.16.150.9, port: 443, type: vmess, uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /P6kpn5UKG40MNLK2, headers: {Host: XWOp2D.janbaroon.com}}, udp: true}
+  - {name: 台湾_0619277, server: tw03.jfjfhg.com, port: 80, type: vmess, uuid: ee005c40-c59a-3561-81ec-40cc21902024, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn/download, headers: {Host: tw03.jfjfhg.com}}, udp: true}
+  - {name: 20|🇺🇸 美国_06196495, server: 140.99.57.40, port: 54002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0113, server: 172.105.135.250, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat}, udp: true}
+  - {name: "@DeamNet_🇩🇪Frankfurt am Main-2300", server: vde1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vde1.0bad.com}}, udp: true}
   - {name: IL_speednode_0013, server: 149.50.70.76, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: "4,11|🇸🇬 新加坡【付费推荐：https://tt.vg/vip】...", server: jp.stablize.top, port: 443, type: trojan, password: 40297165-0545-4f8f-abc4-3ee25e6cfb87, skip-cert-verify: true, udp: true}
+  - {name: LY_speednode_0065, server: 41.208.71.4, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: "@DeamNet_🇺🇸New York-2276", server: ger.digires.shop, port: 443, type: vmess, uuid: f988dd2c-0d1a-49d0-cabc-a1288d72d183, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /14161, headers: {Host: ger.digires.shop}}, udp: true}
+  - {name: CN_speednode_0007, server: zf.heigouyunzf.xyz, port: 38805, type: trojan, password: e958b47d-3510-445a-99cb-dc98d227e29e, skip-cert-verify: true, udp: true}
+  - {name: AWS新加坡2, server: sg1.gsjc.cfd, port: 443, type: trojan, password: f5075d6e-c65b-4133-b4fa-301ce5ba1fa9, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: "19,20|_🇺🇸_US_美国_科网_19___", server: 107.167.16.102, port: 47074, type: vmess, uuid: b74f4afa-1a57-4aff-b7e5-8ad5ea33566f, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_speednode_0004, server: zf.heigouyunzf.xyz, port: 38803, type: trojan, password: e958b47d-3510-445a-99cb-dc98d227e29e, skip-cert-verify: true, udp: true}
+  - {name: 美国4, server: 163.123.192.157, port: 443, type: trojan, password: f5075d6e-c65b-4133-b4fa-301ce5ba1fa9, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: TR_speednode_0083, server: 45.89.52.66, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: 4|🇺🇲 美国【付费推荐：https://tt.vg/vip】1..., server: us.blazeppn.info, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, udp: true}
+  - {name: 18|🇺🇸US美国(youtube阿伟科技2)_, server: 142.4.112.150, port: 44667, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国, server: 104.18.83.10, port: 443, type: vmess, uuid: dddd0b29-1576-4003-9990-d7cea34264db, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /835757, headers: {Host: dedi2.1808.cf}}, udp: true}
+  - {name: 以色列_0619023, server: 149.50.69.99, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 美国_06196502, server: 156.225.67.73, port: 47723, type: vmess, uuid: 21155efd-8e29-43d2-95bc-fe3190ecb1c6, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_speednode_0052, server: 18.183.168.162, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: CN_speednode_0008, server: jp2.vfun.icu, port: 443, type: ssr, cipher: aes-256-cfb, password: vyunme, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17422:TTp0SX, obfs-param: ab93117422.jd.hk, udp: true}
+  - {name: AWS | SG | IPLC专线1号, server: pqawssg1.gsjc.cfd, port: 443, type: trojan, password: 746b6774-e899-4205-a097-3da55c26f5b3, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: 英国-1, server: 163.123.192.57, port: 443, type: trojan, password: b25cbc3a-d7e8-4fe4-b7a0-d3d18985bcf4, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: 18|🇺🇸US美国(youtube阿伟科技2)___, server: 137.175.9.202, port: 57902, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 20|🇮🇳IN印度(youtube阿伟科技2), server: 45.12.144.89, port: 47127, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "CA, Vancouver", server: 52.35.87.249, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 美国_06191635, server: 140.99.57.18, port: 41212, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 17|_🇺🇸_US_美国_yui科技_164, server: 104.27.113.212, port: 2052, type: vmess, uuid: 243240f9-9f5b-4f98-dd5c-e19784d19631, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /youlingkaishi, headers: {Host: uyaa.vtcss.top}}, udp: true}
+  - {name: 19|_🇺🇸_US_美国_科网_19, server: 137.175.9.181, port: 32890, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "@DeamNet_ðŸ‡³ðŸ‡±Amsterdam-4450", server: 149.50.75.105, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: _IL_以色列->🇳🇱_NL_荷兰, server: 149.50.89.108, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: "@SSRSUB-V14-付费推荐:dlj.tf/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}, udp: true}
+  - {name: 19|_🇺🇸_US_美国_由零開始_19, server: 173.245.58.38, port: 2053, type: vmess, uuid: 0404bc28-9cfc-4fbb-9e4c-c3f3ba87f384, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /blue01, headers: {Host: x1.ylks01.eu.org}}, udp: true}
+  - {name: v2rayfree.eu.org - 美国CloudFlare公司CDN节点 21, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: 8abe9496-5e24-4e49-b566-dcf86116017d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /i99LgvSaslbsPLLQQ7j6Z, headers: {Host: de5.irteh.fun}}, udp: true}
+  - {name: sg-am3.eqsunshine.com:32001, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: v2rayfree.eu.org - 美国CloudFlare公司CDN节点 22, server: 104.31.16.45, port: 80, type: vmess, uuid: 2fcc2939-7dcf-4741-aa03-825bc40e23fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /CZfczvtieCZXdOlgWhgDLX, headers: {Host: de3.irteh.fun}}, udp: true}
+  - {name: 英国-2, server: 148.59.74.52, port: 443, type: trojan, password: b25cbc3a-d7e8-4fe4-b7a0-d3d18985bcf4, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: "@DeamNet_🇰🇷Seoul-1917", server: 202.79.172.78, port: 443, type: vmess, uuid: d71ae8be-c664-4d25-9909-f9e2b28aa7d9, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/243535322906, headers: {Host: www.38785208.xyz}}, udp: true}
+  - {name: "19,20|_🇺🇸_US_美国_科网_19_______", server: 156.225.67.111, port: 40023, type: vmess, uuid: b8df3ef1-887f-4ee4-855f-4f80416c2464, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "-1,0,1,16,19,19|🇹🇼 _US_美国->🇹🇼_TW_台湾", server: akrab2.v-pn.my.id, port: 443, type: vmess, uuid: b07a349b-5e3c-4b17-aabe-d1dc63376ecf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: idc8.vpn-akcelluler.my.id}}, udp: true}
+  - {name: "@SSRSUB-V04-付费推荐:dlj.tf/ssrsub", server: cf-yd-dns.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp3.scproxy.top}}, udp: true}
+  - {name: "@SSRSUB-V07-付费推荐:dlj.tf/ssrsub", server: 23.227.38.99, port: 443, type: vmess, uuid: 86d37526-5758-4cec-862f-df404b313086, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /3G6WPDL7, headers: {Host: 1.freek1.xyz}}, udp: true}
+  - {name: IL_speednode_0046, server: 149.50.77.97, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 以色列_0619030, server: 149.50.92.73, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 未知_06194374, server: 104.17.3.81, port: 443, type: vmess, uuid: af34de1b-3893-41e1-a6dd-68909f9f126b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /worryfree, headers: {Host: v2ray2.udpgw.com}}, udp: true}
+  - {name: AWS香港4, server: hk2.gsjc.cfd, port: 443, type: trojan, password: f5075d6e-c65b-4133-b4fa-301ce5ba1fa9, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: India 01 TG:@SSRSUB, server: 152.70.74.66, port: 443, type: trojan, password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e, skip-cert-verify: true, udp: true}
+  - {name: _IL_以色列->🇳🇱_NL_荷兰 2, server: 149.50.75.81, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: v2rayfree.eu.org - 美国CloudFlare公司CDN节点 16, server: dl.v001sssv.pw, port: 80, type: vmess, uuid: a4bb7f93-cee6-43d7-b2dd-fa9c70b88233, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dl.v001sssv.pw}}, udp: true}
+  - {name: github.com/freefq - 以色列  5, server: de2.nigirocloud.com, port: 4003, type: trojan, password: PlF471nxneY0YevI, skip-cert-verify: true, udp: true}
+  - {name: SG_speednode_0075, server: 54.255.237.136, port: 2333, type: ss, cipher: aes-256-cfb, password: doub.io, udp: true}
+  - {name: IL_speednode_0033, server: uk1.nigirocloud.com, port: 4003, type: trojan, password: PlF471nxneY0YevI, sni: uk1.nigirocloud.com, skip-cert-verify: true, udp: true}
+  - {name: "-1,19,20,22,23|_🇭🇰_HK_香港_破解君_19", server: 120.233.43.68, port: 51004, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 未知_06193871, server: 141.101.121.211, port: 2052, type: vmess, uuid: 243240f9-9f5b-4f98-dd5c-e19784d19631, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /youlingkaishi, headers: {Host: uyaa.vtcss.top}}, udp: true}
+  - {name: 17|_🇺🇸_US_美国_科网_18, server: 198.2.218.205, port: 51203, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 未知_0619011, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 25b280df-e990-4495-80e3-48ec3c83da77, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v03.ssrsub.com}}, udp: true}
+  - {name: "@SSRSUB-V05-付费推荐:dlj.tf/ssrsub", server: 104.31.16.28, port: 80, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2, headers: {Host: ca4.tehme2.fun}}, udp: true}
+  - {name: GB_speednode_0015, server: 121.127.46.147, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: "HK, Kowloon", server: 54.250.245.73, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "19,20|_🇺🇸_US_美国_科网_19______", server: 45.58.180.70, port: 44802, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "@DeamNet_🇺🇸New York-1753", server: 104.18.178.57, port: 2052, type: vmess, uuid: 19c6ec1b-2230-41d4-ff1c-c8449dc1ed5f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yulingkaishi01, headers: {Host: tou.vtcss.top}}, udp: true}
+  - {name: 1|🇬🇧 _IL_以色列->🇬🇧_GB_英国, server: 149.50.77.109, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 未知_0619110, server: 104.19.224.212, port: 2053, type: vmess, uuid: 0404bc28-9cfc-4fbb-9e4c-c3f3ba87f384, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /blue01, headers: {Host: x1.ylks01.eu.org}}, udp: true}
+  - {name: github.com/freefq - 以色列  7, server: nl3.nigirocloud.com, port: 4003, type: trojan, password: PlF471nxneY0YevI, skip-cert-verify: true, udp: true}
+  - {name: V005--US-付费推荐:dlj.tf/ssrsub, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 25b280df-e990-4495-80e3-48ec3c83da77, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v03.ssrsub.com}}, udp: true}
+  - {name: KR_speednode_0063, server: 43.202.64.174, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: V003--US-付费推荐:dlj.tf/ssrsub, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 25b280df-e990-4495-80e3-48ec3c83da77, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v02.ssrsub.com}}, udp: true}
+  - {name: IL_speednode_0027, server: 149.50.66.124, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
   - {name: CN_speednode_0005, server: zf.heigouyunzf.xyz, port: 38801, type: trojan, password: e958b47d-3510-445a-99cb-dc98d227e29e, sni: zf.heigouyunzf.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN-14.18.89.198-052, server: gzyd.jcnode.top, port: 29200, type: trojan, password: 18d95b18-e2b4-4410-b51d-ff58f54deaf2, sni: vn01.ckcloud.info, skip-cert-verify: true, udp: true}
+  - {name: NO_speednode_0067, server: 185.90.61.153, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 20|🇰🇷 韩国特殊|@ripaojiedian, server: 3.38.211.225, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "德国\r", server: 217.79.184.22, port: 443, type: trojan, password: 746b6774-e899-4205-a097-3da55c26f5b3, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: "@DeamNet_🇴🇲Muscat-4547", server: 134.0.219.37, port: 443, type: vmess, uuid: a1a0bbfd-390b-437c-e8aa-3f61654fc7a8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mehdi, headers: {Host: lovebinahayat.ddns.net}}, udp: true}
+  - {name: V001--US-付费推荐:dlj.tf/ssrsub, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 25b280df-e990-4495-80e3-48ec3c83da77, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.ssrsub.com}}, udp: true}
+  - {name: IL_speednode_0037, server: 149.50.92.76, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: AWS | JP | IPLC专线3号, server: pqawsjp3.gsjc.cfd, port: 443, type: trojan, password: 746b6774-e899-4205-a097-3da55c26f5b3, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: 以色列_0615022, server: 149.50.89.78, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, sni: telewebion.com, skip-cert-verify: true, udp: true}
+  - {name: "@DeamNet_🇺🇸New York-2111", server: 104.21.234.189, port: 443, type: vmess, uuid: dddd0b29-1576-4003-9990-d7cea34264db, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /835757, headers: {Host: dedi2.1808.cf}}, udp: true}
+  - {name: 以色列_0619026, server: 149.50.75.79, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: "20,21|🇸🇬 新加坡", server: sg4.f163ab0f2c75.sanfen004.me, port: 443, type: vmess, uuid: aa2c8122-d188-489f-88b9-b4af51b9ab9b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: AWS日本3, server: jp2.gsjc.cfd, port: 443, type: trojan, password: f5075d6e-c65b-4133-b4fa-301ce5ba1fa9, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: 19|_🇭🇰_HK_香港_科网_19, server: 156.245.8.206, port: 49823, type: vmess, uuid: 3fd637ad-46fe-4f85-a6e8-86b00bca1122, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "美国凤凰城2号-0.01x\r", server: 141.193.68.93, port: 443, type: trojan, password: 746b6774-e899-4205-a097-3da55c26f5b3, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
   - {name: IL_speednode_0038, server: 149.50.83.42, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: IL_speednode_0009, server: 149.50.69.109, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 2, server: 141.193.68.93, port: 443, type: trojan, password: b25cbc3a-d7e8-4fe4-b7a0-d3d18985bcf4, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: 未知_0619115, server: 190.93.245.33, port: 2083, type: vmess, uuid: 3abe40d0-dbe1-481a-9427-9f4d8c646d34, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /blue, headers: {Host: x1.ylks01.eu.org}}, udp: true}
+  - {name: "美国凤凰城3号-0.01x\r", server: 141.193.68.19, port: 443, type: trojan, password: 746b6774-e899-4205-a097-3da55c26f5b3, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: _IL_以色列->🇦🇺_AU_澳大利亚, server: 149.50.66.127, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 以色列  23, server: de3.nigirocloud.com, port: 4003, type: trojan, password: PlF471nxneY0YevI, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0109, server: 216.52.183.242, port: 80, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, plugin: obfs, plugin-opts: {mode: http, host: None}, udp: true}
+  - {name: IL_speednode_0030, server: 149.50.75.197, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: "美国圣何塞 | 允许长期跑满带宽-0.1x\r", server: 74.217.179.36, port: 443, type: trojan, password: 746b6774-e899-4205-a097-3da55c26f5b3, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡_0619852, server: v2ray2.udpgw.com, port: 443, type: vmess, uuid: 2198f853-c33a-463a-bc27-6199520f810d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /worryfree, headers: {Host: v2ray2.udpgw.com}}, udp: true}
+  - {name: 以色列_0619029, server: 149.50.89.86, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 美国 090, server: dl6.v001sssv.pw, port: 80, type: vmess, uuid: 8eece2e1-cfc1-4f84-803e-1a66650982ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dl6.v001sssv.pw}}, udp: true}
+  - {name: IM_speednode_0047, server: 192.71.211.161, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: "@SSRSUB-V30-付费推荐:dlj.tf/ssrsub", server: 162.159.243.235, port: 443, type: vmess, uuid: dddd0b29-1576-4003-9990-d7cea34264db, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /835757, headers: {Host: dedi2.1808.cf}}, udp: true}
+  - {name: 未知_0619113, server: 141.101.123.209, port: 2083, type: vmess, uuid: 3abe40d0-dbe1-481a-9427-9f4d8c646d34, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /blue, headers: {Host: x1.ylks01.eu.org}}, udp: true}
+  - {name: 20|🇺🇸US美国(youtube阿伟科技2)_, server: 140.99.49.52, port: 55002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "6,8,24,26|_IL_以色列->🇯🇵_JP_日本 4", server: 149.50.70.87, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: FI_speednode_0011, server: 95.217.17.96, port: 46746, type: vmess, uuid: 27850e8c-5a1d-4238-e0c1-8dd1a8261cd6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [🇩🇪DE德国(youtube阿伟科技2)]}}, udp: true}
+  - {name: _IL_以色列->🇪🇪_EE_爱沙尼亚, server: 149.50.92.75, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: US_149.50.69.127_06152023ba3b-1428trojan, server: 149.50.69.127, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: _JP_日本, server: trs19.bolab.net, port: 443, type: trojan, password: 7a73f1dc97a70905870c0c0484b12145, sni: trs19.bolab.net, skip-cert-verify: true, udp: true}
+  - {name: 英国-3, server: 163.123.192.60, port: 443, type: trojan, password: b25cbc3a-d7e8-4fe4-b7a0-d3d18985bcf4, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: AWS新加坡3, server: sg2.gsjc.cfd, port: 443, type: trojan, password: f5075d6e-c65b-4133-b4fa-301ce5ba1fa9, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: _IL_以色列->🇯🇵_JP_日本, server: 149.50.70.72, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: AWS香港1, server: hk1.gsjc.cfd, port: 443, type: trojan, password: f5075d6e-c65b-4133-b4fa-301ce5ba1fa9, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: JP_speednode_0049, server: tk-006.xiaoxiaobujidao.xyz, port: 20001, type: trojan, password: de2c1b4f-851e-3730-af83-9981917b7883, sni: tk-006.xiaoxiaobujidao.xyz, skip-cert-verify: true, udp: true}
+  - {name: IL_speednode_0036, server: 149.50.77.129, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: v2rayfree.eu.org - 美国CloudFlare公司CDN节点 19, server: www.noice.id, port: 443, type: vmess, uuid: af34de1b-3893-41e1-a6dd-68909f9f126b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /worryfree, headers: {Host: v2ray2.udpgw.com}}, udp: true}
+  - {name: 以色列【付费推荐：https://tt.vg/vip】187, server: uk1.barbecuepie.com, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: SG_speednode_0055, server: sg.stablize.top, port: 443, type: trojan, password: 5b51e0af-08af-4208-b834-6d6ac5721837, skip-cert-verify: true, udp: true}
+  - {name: 22|🇯🇵 日本特殊|@ripaojiedian, server: 18.183.217.240, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: JP_speednode_0054, server: tk-004.xiaoxiaobujidao.xyz, port: 8443, type: trojan, password: de2c1b4f-851e-3730-af83-9981917b7883, sni: tk-004.xiaoxiaobujidao.xyz, skip-cert-verify: true, udp: true}
+  - {name: 美国_06183890 2, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: 2fcc2939-7dcf-4741-aa03-825bc40e23fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /CZfczvtieCZXdOlgWhgDLX, headers: {Host: de3.irteh.fun}}, udp: true}
+  - {name: _IL_以色列, server: 149.50.75.104, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: IL_speednode_0037 2, server: 149.50.75.76, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 19|_🇺🇸_US_美国_科网_19 2, server: 137.175.9.181, port: 32890, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 未知_0619111, server: 104.20.141.20, port: 2083, type: vmess, uuid: 3abe40d0-dbe1-481a-9427-9f4d8c646d34, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /blue, headers: {Host: x1.ylks01.eu.org}}, udp: true}
+  - {name: IL_speednode_0023, server: 149.50.77.125, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: "JP, Tokyo", server: 54.151.179.33, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "@SSRSUB-V15-付费推荐:dlj.tf/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv3.sharecentrepro.org}}, udp: true}
+  - {name: 19|_🇺🇸_US_美国_顺丰_121, server: 104.24.146.174, port: 2083, type: vmess, uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /youlingkaishi, headers: {Host: uyaa.vtcss.top}}, udp: true}
+  - {name: 19|_🇭🇰_HK_香港_科网_19 2, server: 156.245.8.206, port: 49823, type: vmess, uuid: 3fd637ad-46fe-4f85-a6e8-86b00bca1122, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 以色列_0619028, server: 149.50.84.32, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: IL_speednode_0032, server: 149.50.71.155, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 3, server: smt.ircf.space, port: 443, type: vmess, uuid: 3bcbd5cd-e791-4770-8bc7-7b1d941c9513, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /S4PSg9xqUClN2kJ4SOPKqC6, headers: {Host: wfi.sahnama.com}}, udp: true}
+  - {name: v2rayfree.eu.org - 美国CloudFlare公司CDN节点 15, server: www.noice.id, port: 443, type: vmess, uuid: 2198f853-c33a-463a-bc27-6199520f810d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /worryfree, headers: {Host: v2ray2.udpgw.com}}, udp: true}
+  - {name: 未知_0619123, server: 104.20.14.88, port: 2096, type: vmess, uuid: f387a0af-4b70-4a40-e2c3-2f22472df0cb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /blue01, headers: {Host: x1.ylks01.eu.org}}, udp: true}
+  - {name: "@DeamNet_🇨🇦Toronto-3726", server: 198.41.212.122, port: 8080, type: vmess, uuid: a67679a6-a186-4d62-f84e-f3f00dc7745e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /youlingkaishi01, headers: {Host: tou.vtcss.top}}, udp: true}
+  - {name: IL_speednode_0022, server: 149.50.75.90, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: TR_speednode_0082, server: 45.89.52.66, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: 19|_🇺🇸_US_美国_顺丰_63, server: 104.17.3.81, port: 443, type: vmess, uuid: 2198f853-c33a-463a-bc27-6199520f810d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /worryfree, headers: {Host: v2ray2.udpgw.com}}, udp: true}
+  - {name: IL_speednode_0031, server: 149.50.83.120, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: "19,20|_🇫🇷_FR_法国_科网_19", server: 156.249.18.37, port: 49800, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "AWS | JP | IPLC专线1号\r", server: pqawsjp1.gsjc.cfd, port: 443, type: trojan, password: 746b6774-e899-4205-a097-3da55c26f5b3, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: 美国_06196494 2, server: 23.225.9.196, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: V002--US-付费推荐:dlj.tf/ssrsub, server: www.digitalocean.com, port: 80, type: vmess, uuid: 25b280df-e990-4495-80e3-48ec3c83da77, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.ssrsub.com}}, udp: true}
+  - {name: IL 25 → tg@nicevpn123, server: 149.50.69.131, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: AWS | JP | IPLC专线4号, server: pqawsjp4.gsjc.cfd, port: 443, type: trojan, password: 746b6774-e899-4205-a097-3da55c26f5b3, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: "6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3", server: 149.50.70.107, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: "JP, Tokyo 2", server: 18.139.163.228, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 未知_0619114, server: 162.159.51.134, port: 2083, type: vmess, uuid: 3abe40d0-dbe1-481a-9427-9f4d8c646d34, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /blue, headers: {Host: x1.ylks01.eu.org}}, udp: true}
+  - {name: 19|_🇺🇸_US_美国_科网_19__________, server: 156.225.67.123, port: 443, type: vmess, uuid: 3a3c8a9c-334e-4360-adb8-a80a57ddcbbf, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1687080002777, headers: {Host: www.16046626.xyz}}, udp: true}
+  - {name: 以色列_0619024, server: 149.50.71.120, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 未知_0619142, server: 198.41.216.218, port: 8880, type: vmess, uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /youlingkaishi, headers: {Host: uyaa.vtcss.top}}, udp: true}
+  - {name: 美国_06196505, server: 45.12.144.89, port: 47127, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_speednode_0075, server: tk-007.xiaoxiaobujidao.xyz, port: 50005, type: vmess, uuid: de2c1b4f-851e-3730-af83-9981917b7883, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/xiaodao?ed=2048", headers: {Host: tk-007.xiaoxiaobujidao.xyz}}, udp: true}
+  - {name: 未知_0619150, server: 198.41.193.39, port: 8880, type: vmess, uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /youlingkaishi, headers: {Host: uyaa.vtcss.top}}, udp: true}
+  - {name: github.com/freefq - 日本  15, server: trs22.bolab.net, port: 443, type: trojan, password: 7a73f1dc97a70905870c0c0484b12145, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0104, server: 216.52.183.243, port: 80, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, plugin: obfs, plugin-opts: {mode: http, host: None}, udp: true}
+  - {name: GB_speednode_0014, server: 51.132.13.37, port: 36238, type: ss, cipher: chacha20-ietf-poly1305, password: 3Diipf4YghZG06rzdRO6SH, udp: true}
+  - {name: "@SSRSUB-V18-付费推荐:dlj.tf/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp4.scproxy.top}}, udp: true}
+  - {name: 20|🇮🇳IN印度(youtube阿伟科技2) 2, server: 45.12.144.89, port: 47127, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _IL_以色列->🇯🇵_JP_日本 2, server: 149.50.71.124, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 上海市电信 21, server: free.themars.top, port: 32102, type: ss, cipher: chacha20-ietf-poly1305, password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2, udp: true}
+  - {name: _IL_以色列->🇩🇪_DE_德国, server: de1.nigirocloud.com, port: 4003, type: trojan, password: PlF471nxneY0YevI, skip-cert-verify: true, udp: true}
+  - {name: 20|🇺🇸US美国(youtube阿伟科技2)_ 2, server: 140.99.49.52, port: 55002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: v2rayfree.eu.org - 美国CloudFlare节点 13, server: dl6.v001sssv.pw, port: 80, type: vmess, uuid: 8eece2e1-cfc1-4f84-803e-1a66650982ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dl6.v001sssv.pw}}, udp: true}
+  - {name: "6,8,24,26|_IL_以色列->🇦🇺_AU_澳大利亚", server: 149.50.83.40, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: v2rayfree.eu.org - 以色列  8, server: nl3.barbecuepie.com, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: JP_speednode_0061, server: ap.stablize.top, port: 443, type: trojan, password: 1e8db890-68da-4dff-8a16-ded8fabcb3c3, skip-cert-verify: true, udp: true}
+  - {name: IL_speednode_0027 2, server: 149.50.75.89, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: "1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚", server: 149.50.83.49, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: "5,6,16|美国【付费推荐：https://tt.vg/vip】97", server: 104.31.16.27, port: 80, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2, headers: {Host: ca5.tehme2.fun}}, udp: true}
+  - {name: "@SSRSUB-V09-付费推荐:dlj.tf/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: nl.sharecentrepro.com}}, udp: true}
+  - {name: "19,20|_🇫🇷_FR_法国_科网_19 2", server: 156.249.18.37, port: 49800, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0106, server: 64.42.182.226, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 美国_06196494 3, server: 23.225.9.196, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: IL_speednode_0032 2, server: 149.50.77.95, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 美国_06173910, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: a6457d28-e328-4202-99fe-0606d7ad69a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /6rXqecLmchrWkX7cy1ilLjMBLUC, headers: {Host: de18.irteh.fun}}, udp: true}
+  - {name: _US_美国->🇬🇧_GB_英国, server: 104.16.32.142, port: 443, type: vmess, uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /P6kpn5UKG40MNLK2, headers: {Host: QkGxa2MSvmu.janbaroon.com}}, udp: true}
+  - {name: _UA_乌克兰->🇬🇧_GB_英国, server: 212.110.134.7, port: 443, type: vmess, uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /P6kpn5UKG40MNLK2, headers: {Host: zHGKLbqn6UM.janbaroon.com}}, udp: true}
+  - {name: "19,20|_🇺🇸_US_美国_科网_19______ 2", server: 45.58.180.70, port: 44802, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_speednode_0050, server: tk-007.xiaoxiaobujidao.xyz, port: 50003, type: trojan, password: de2c1b4f-851e-3730-af83-9981917b7883, sni: tk-007.xiaoxiaobujidao.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_speednode_0085, server: 103.177.33.180, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9e44e9ffe5c2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: wtw1000mline004.chilines.club, path: /isaifqaagpi, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 中国_0619336, server: 183.240.221.73, port: 38801, type: trojan, password: e958b47d-3510-445a-99cb-dc98d227e29e, skip-cert-verify: true, udp: true}
+  - {name: DP2, server: cf.yxjnode.com, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: dp2.yxjnode.com}}, udp: true}
+  - {name: V006--US-付费推荐:dlj.tf/ssrsub, server: www.digitalocean.com, port: 80, type: vmess, uuid: 25b280df-e990-4495-80e3-48ec3c83da77, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v03.ssrsub.com}}, udp: true}
+  - {name: _IL_以色列->🇯🇵_JP_日本 3, server: 149.50.71.164, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: _IL_以色列->🇦🇺_AU_澳大利亚 2, server: 149.50.66.99, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 17|_🇺🇸_US_美国_由零開始_19__, server: 108.162.194.103, port: 2052, type: vmess, uuid: 243240f9-9f5b-4f98-dd5c-e19784d19631, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /youlingkaishi, headers: {Host: uyaa.vtcss.top}}, udp: true}
+  - {name: 19|_🇺🇸_US_美国_分享师_171, server: cdn.noice.id, port: 80, type: vmess, uuid: 641a1a24-7d4c-447d-9005-cc43bfc4da8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tunnelvmess, headers: {Host: sgf1.hijinetwork.cloud}}, udp: true}
+  - {name: 20|🇺🇸 美国特殊|@ripaojiedian, server: 52.12.89.177, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 18|🇺🇸US美国(youtube阿伟科技2)______, server: 45.92.160.22, port: 47839, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - github.com/freefq - 美国CloudFlare公司CDN节点 9
-      - US_149.50.69.127_06152023ba3b-1428trojan
-      - US_speednode_0107
-      - 荷兰_0618280
-      - 美国_06173935
-      - 美国_06183890 2
-      - 荷兰_0617004
-      - SG_speednode_0055
-      - CN_speednode_0011
-      - 6,8,24,26|_IL_以色列->🇦🇺_AU_澳大利亚
-      - CN_speednode_0012
-      - 美国_06173909 2
-      - V005--US-付费推荐:dlj.tf/ssrsub
-      - "@DeamNet_🇨🇦Toronto-1911"
-      - DE_speednode_0010
-      - _IL_以色列->🇯🇵_JP_日本
-      - -1,7,8,9,10,25,26,27,28|_CN_中国->🇭🇰_HK_香港
-      - IL_speednode_0016
-      - 未知_0619165
-      - IL_speednode_0032
-      - "@SSRSUB-V18-付费推荐:dlj.tf/ssrsub"
-      - github.com/freefq - 以色列  5
-      - _IL_以色列
-      - "@DeamNet_🇳🇱Amsterdam-2703"
-      - 塞浦路斯_0619009
-      - -1,19,22,23|_🇭🇰_HK_香港_17
-      - JP_speednode_0050
-      - 中国_0619336
-      - IL_speednode_0036
-      - github.com/freefq - 以色列  23
-      - 以色列_0619028
-      - 美国_06196494
-      - India 01 TG:@SSRSUB
-      - -1,19,19|_🇭🇰_HK_香港_由零開始_18
-      - IL_speednode_0034
-      - 英国-3
-      - Japan 01|CMCC
-      - 以色列_0619024
-      - "@SSRSUB-V14-付费推荐:dlj.tf/ssrsub"
-      - _IL_以色列->🇦🇺_AU_澳大利亚
-      - JP_speednode_0054
-      - "@DeamNet_🇳🇱Amsterdam-2225"
-      - "@DeamNet_🇺🇸New York-1753"
-      - _IL_以色列->🇳🇱_NL_荷兰
-      - 未知_0619011
-      - _IL_以色列->🇬🇧_GB_英国
-      - NU_speednode_0069
-      - 未知_0619144
-      - 美国_06196505
-      - 美国_06173910
-      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
-      - TW_speednode_0085
-      - 28|🇬🇧 _IL_以色列->🇬🇧_GB_英国 3_
-      - github.com/freefq - 以色列  18
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 9
-      - 未知_0619149
-      - 阿曼_0616035
-      - 未知_0619156
-      - v2rayfree.eu.org - 以色列  8
-      - _US_美国
-      - 未知_0619150
-      - HK香港(youtube阿伟科技2)
-      - SG-4.193.245.7-182
-      - CN_speednode_0008
-      - IL_speednode_0030
-      - 美国 090
-      - "@SSRSUB-V09-付费推荐:dlj.tf/ssrsub"
-      - IL_speednode_0031
-      - 6,8,24,26|_IL_以色列->🇬🇧_GB_英国
-      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 4
-      - CN_speednode_0009
-      - 未知_0619125
-      - JP_speednode_0075
-      - 5,6,16|美国【付费推荐：https://tt.vg/vip】97
-      - 未知_0619164
-      - -1,19,22,23|_🇭🇰_HK_香港_17 2
       - IL_speednode_0029
-      - _IL_以色列->🇯🇵_JP_日本 2
-      - V001--US-付费推荐:dlj.tf/ssrsub
+      - _IL_以色列->🇬🇧_GB_英国
+      - 16,16,20|🇨🇳中国-江苏-南京-ss-cttw1.createmofa...
+      - 17,18|_🇺🇸_US_美国_科网_19__________
+      - -1|🇺🇸_US_美国_由快嘴科技提供：kkzui.com1_47
+      - 17,18|_🇺🇸_US_美国_科网_19___
+      - 17|_🇺🇸_US_美国_yui科技_169
+      - 17|_🇺🇸_US_美国_由零開始_19_
+      - 17|_🇺🇸_US_美国_yui科技_200
+      - US_speednode_0107
       - 塞浦路斯_0619106
-      - IL_speednode_0029 2
-      - "@DeamNet_🇨🇦Toronto-4565"
-      - _IL_以色列->🇬🇧_GB_英国 2
-      - 美国 021
-      - "美国圣何塞 | 允许长期跑满带宽-0.1x\r"
-      - US_speednode_0109
-      - _IL_以色列->🇬🇧_GB_英国 3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 6
-      - "@DeamNet_🇨🇦Toronto-3726"
-      - 以色列_0615022
-      - NU_speednode_0086
-      - IL_speednode_0037
-      - -1,19,19|_🇭🇰_HK_香港_由零開始_18 2
-      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
-      - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - _US_美国->🇹🇼_TW_台湾
-      - IL_speednode_0060
-      - 英国-2
-      - _CN_中国->🇭🇰_HK_香港
-      - IL_speednode_0027
-      - 未知_0619168
-      - 未知_0619142
-      - -1,22,23|移动专线A
-      - _IL_以色列->🇳🇱_NL_荷兰 2
-      - 英国-1
-      - DP2
-      - 阿曼_0617021
-      - 新加坡_0619854
-      - V006--US-付费推荐:dlj.tf/ssrsub
-      - US_speednode_0104
-      - JP_speednode_0061
-      - IL 25 → tg@nicevpn123
-      - IL_speednode_0009
-      - 新加坡 009
-      - CN_speednode_0004
+      - 日本_0619008
+      - 未知_06194145
+      - 美国_06196494
+      - "德国3\r"
+      - SK_speednode_0080
+      - 未知_0619108
+      - IL_speednode_0040
+      - 未知_0619118
+      - US-163.123.192.154-182
+      - SG, Singapore
+      - US_speednode_0111
+      - _DE_德国 2
+      - 以色列_0619025
+      - 20,21|🇭🇰 香港
+      - 防失效github SubCrawler中国_0619011
+      - CN-14.18.103.121-086
+      - US_speednode_0101
+      - US, Dallas 2
+      - TR_speednode_0081
+      - 未知_0619010
+      - 17|_🇺🇸_US_美国_顺丰_16
+      - 18|🇺🇸US美国(youtube阿伟科技2)_______
+      - SG_speednode_0073
+      - DE_speednode_0010
+      - "@SSRSUB-V17-付费推荐:dlj.tf/ssrsub"
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 12
+      - 台湾_0619277
+      - 20|🇺🇸 美国_06196495
+      - US_speednode_0113
+      - "@DeamNet_🇩🇪Frankfurt am Main-2300"
       - IL_speednode_0013
+      - 4,11|🇸🇬 新加坡【付费推荐：https://tt.vg/vip】...
+      - LY_speednode_0065
+      - "@DeamNet_🇺🇸New York-2276"
+      - CN_speednode_0007
+      - AWS新加坡2
+      - 19,20|_🇺🇸_US_美国_科网_19___
+      - CN_speednode_0004
+      - 美国4
+      - TR_speednode_0083
+      - 4|🇺🇲 美国【付费推荐：https://tt.vg/vip】1...
+      - 18|🇺🇸US美国(youtube阿伟科技2)_
+      - _US_美国
+      - 以色列_0619023
+      - 美国_06196502
+      - JP_speednode_0052
+      - CN_speednode_0008
+      - AWS | SG | IPLC专线1号
+      - 英国-1
+      - 18|🇺🇸US美国(youtube阿伟科技2)___
+      - 20|🇮🇳IN印度(youtube阿伟科技2)
+      - CA, Vancouver
+      - 美国_06191635
+      - 17|_🇺🇸_US_美国_yui科技_164
+      - 19|_🇺🇸_US_美国_科网_19
+      - "@DeamNet_ðŸ‡³ðŸ‡±Amsterdam-4450"
+      - _IL_以色列->🇳🇱_NL_荷兰
+      - "@SSRSUB-V14-付费推荐:dlj.tf/ssrsub"
+      - 19|_🇺🇸_US_美国_由零開始_19
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 21
+      - sg-am3.eqsunshine.com:32001
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 22
+      - 英国-2
+      - "@DeamNet_🇰🇷Seoul-1917"
+      - 19,20|_🇺🇸_US_美国_科网_19_______
+      - -1,0,1,16,19,19|🇹🇼 _US_美国->🇹🇼_TW_台湾
+      - "@SSRSUB-V04-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V07-付费推荐:dlj.tf/ssrsub"
+      - IL_speednode_0046
+      - 以色列_0619030
+      - 未知_06194374
+      - AWS香港4
+      - India 01 TG:@SSRSUB
+      - _IL_以色列->🇳🇱_NL_荷兰 2
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 16
+      - github.com/freefq - 以色列  5
+      - SG_speednode_0075
+      - IL_speednode_0033
+      - -1,19,20,22,23|_🇭🇰_HK_香港_破解君_19
+      - 未知_06193871
+      - 17|_🇺🇸_US_美国_科网_18
+      - 未知_0619011
+      - "@SSRSUB-V05-付费推荐:dlj.tf/ssrsub"
+      - GB_speednode_0015
+      - HK, Kowloon
+      - 19,20|_🇺🇸_US_美国_科网_19______
+      - "@DeamNet_🇺🇸New York-1753"
+      - 1|🇬🇧 _IL_以色列->🇬🇧_GB_英国
+      - 未知_0619110
+      - github.com/freefq - 以色列  7
+      - V005--US-付费推荐:dlj.tf/ssrsub
+      - KR_speednode_0063
+      - V003--US-付费推荐:dlj.tf/ssrsub
+      - IL_speednode_0027
       - CN_speednode_0005
+      - CN-14.18.89.198-052
+      - NO_speednode_0067
+      - 20|🇰🇷 韩国特殊|@ripaojiedian
+      - "德国\r"
+      - "@DeamNet_🇴🇲Muscat-4547"
+      - V001--US-付费推荐:dlj.tf/ssrsub
+      - IL_speednode_0037
+      - AWS | JP | IPLC专线3号
+      - 以色列_0615022
+      - "@DeamNet_🇺🇸New York-2111"
+      - 以色列_0619026
+      - 20,21|🇸🇬 新加坡
+      - AWS日本3
+      - 19|_🇭🇰_HK_香港_科网_19
+      - "美国凤凰城2号-0.01x\r"
       - IL_speednode_0038
+      - IL_speednode_0009
+      - _US_美国 2
+      - 未知_0619115
+      - "美国凤凰城3号-0.01x\r"
+      - _IL_以色列->🇦🇺_AU_澳大利亚
+      - github.com/freefq - 以色列  23
+      - US_speednode_0109
+      - IL_speednode_0030
+      - "美国圣何塞 | 允许长期跑满带宽-0.1x\r"
+      - 新加坡_0619852
+      - 以色列_0619029
+      - 美国 090
+      - IM_speednode_0047
+      - "@SSRSUB-V30-付费推荐:dlj.tf/ssrsub"
+      - 未知_0619113
+      - 20|🇺🇸US美国(youtube阿伟科技2)_
+      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 4
+      - FI_speednode_0011
+      - _IL_以色列->🇪🇪_EE_爱沙尼亚
+      - US_149.50.69.127_06152023ba3b-1428trojan
+      - _JP_日本
+      - 英国-3
+      - AWS新加坡3
+      - _IL_以色列->🇯🇵_JP_日本
+      - AWS香港1
+      - JP_speednode_0049
+      - IL_speednode_0036
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 19
+      - 以色列【付费推荐：https://tt.vg/vip】187
+      - SG_speednode_0055
+      - 22|🇯🇵 日本特殊|@ripaojiedian
+      - JP_speednode_0054
+      - 美国_06183890 2
+      - _IL_以色列
+      - IL_speednode_0037 2
+      - 19|_🇺🇸_US_美国_科网_19 2
+      - 未知_0619111
+      - IL_speednode_0023
+      - JP, Tokyo
+      - "@SSRSUB-V15-付费推荐:dlj.tf/ssrsub"
+      - 19|_🇺🇸_US_美国_顺丰_121
+      - 19|_🇭🇰_HK_香港_科网_19 2
+      - 以色列_0619028
+      - IL_speednode_0032
+      - _US_美国 3
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 15
+      - 未知_0619123
+      - "@DeamNet_🇨🇦Toronto-3726"
+      - IL_speednode_0022
+      - TR_speednode_0082
+      - 19|_🇺🇸_US_美国_顺丰_63
+      - IL_speednode_0031
+      - 19,20|_🇫🇷_FR_法国_科网_19
+      - "AWS | JP | IPLC专线1号\r"
+      - 美国_06196494 2
+      - V002--US-付费推荐:dlj.tf/ssrsub
+      - IL 25 → tg@nicevpn123
+      - AWS | JP | IPLC专线4号
+      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
+      - JP, Tokyo 2
+      - 未知_0619114
+      - 19|_🇺🇸_US_美国_科网_19__________
+      - 以色列_0619024
+      - 未知_0619142
+      - 美国_06196505
+      - JP_speednode_0075
+      - 未知_0619150
+      - github.com/freefq - 日本  15
+      - US_speednode_0104
+      - GB_speednode_0014
+      - "@SSRSUB-V18-付费推荐:dlj.tf/ssrsub"
+      - 20|🇮🇳IN印度(youtube阿伟科技2) 2
+      - _IL_以色列->🇯🇵_JP_日本 2
+      - github.com/freefq - 上海市电信 21
+      - _IL_以色列->🇩🇪_DE_德国
+      - 20|🇺🇸US美国(youtube阿伟科技2)_ 2
+      - v2rayfree.eu.org - 美国CloudFlare节点 13
+      - 6,8,24,26|_IL_以色列->🇦🇺_AU_澳大利亚
+      - v2rayfree.eu.org - 以色列  8
+      - JP_speednode_0061
+      - IL_speednode_0027 2
+      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
+      - 5,6,16|美国【付费推荐：https://tt.vg/vip】97
+      - "@SSRSUB-V09-付费推荐:dlj.tf/ssrsub"
+      - 19,20|_🇫🇷_FR_法国_科网_19 2
+      - US_speednode_0106
+      - 美国_06196494 3
+      - IL_speednode_0032 2
+      - 美国_06173910
+      - _US_美国->🇬🇧_GB_英国
+      - _UA_乌克兰->🇬🇧_GB_英国
+      - 19,20|_🇺🇸_US_美国_科网_19______ 2
+      - JP_speednode_0050
+      - TW_speednode_0085
+      - 中国_0619336
+      - DP2
+      - V006--US-付费推荐:dlj.tf/ssrsub
+      - _IL_以色列->🇯🇵_JP_日本 3
+      - _IL_以色列->🇦🇺_AU_澳大利亚 2
+      - 17|_🇺🇸_US_美国_由零開始_19__
+      - 19|_🇺🇸_US_美国_分享师_171
+      - 20|🇺🇸 美国特殊|@ripaojiedian
+      - 18|🇺🇸US美国(youtube阿伟科技2)______
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - github.com/freefq - 美国CloudFlare公司CDN节点 9
-      - US_149.50.69.127_06152023ba3b-1428trojan
-      - US_speednode_0107
-      - 荷兰_0618280
-      - 美国_06173935
-      - 美国_06183890 2
-      - 荷兰_0617004
-      - SG_speednode_0055
-      - CN_speednode_0011
-      - 6,8,24,26|_IL_以色列->🇦🇺_AU_澳大利亚
-      - CN_speednode_0012
-      - 美国_06173909 2
-      - V005--US-付费推荐:dlj.tf/ssrsub
-      - "@DeamNet_🇨🇦Toronto-1911"
-      - DE_speednode_0010
-      - _IL_以色列->🇯🇵_JP_日本
-      - -1,7,8,9,10,25,26,27,28|_CN_中国->🇭🇰_HK_香港
-      - IL_speednode_0016
-      - 未知_0619165
-      - IL_speednode_0032
-      - "@SSRSUB-V18-付费推荐:dlj.tf/ssrsub"
-      - github.com/freefq - 以色列  5
-      - _IL_以色列
-      - "@DeamNet_🇳🇱Amsterdam-2703"
-      - 塞浦路斯_0619009
-      - -1,19,22,23|_🇭🇰_HK_香港_17
-      - JP_speednode_0050
-      - 中国_0619336
-      - IL_speednode_0036
-      - github.com/freefq - 以色列  23
-      - 以色列_0619028
-      - 美国_06196494
-      - India 01 TG:@SSRSUB
-      - -1,19,19|_🇭🇰_HK_香港_由零開始_18
-      - IL_speednode_0034
-      - 英国-3
-      - Japan 01|CMCC
-      - 以色列_0619024
-      - "@SSRSUB-V14-付费推荐:dlj.tf/ssrsub"
-      - _IL_以色列->🇦🇺_AU_澳大利亚
-      - JP_speednode_0054
-      - "@DeamNet_🇳🇱Amsterdam-2225"
-      - "@DeamNet_🇺🇸New York-1753"
-      - _IL_以色列->🇳🇱_NL_荷兰
-      - 未知_0619011
-      - _IL_以色列->🇬🇧_GB_英国
-      - NU_speednode_0069
-      - 未知_0619144
-      - 美国_06196505
-      - 美国_06173910
-      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
-      - TW_speednode_0085
-      - 28|🇬🇧 _IL_以色列->🇬🇧_GB_英国 3_
-      - github.com/freefq - 以色列  18
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 9
-      - 未知_0619149
-      - 阿曼_0616035
-      - 未知_0619156
-      - v2rayfree.eu.org - 以色列  8
-      - _US_美国
-      - 未知_0619150
-      - HK香港(youtube阿伟科技2)
-      - SG-4.193.245.7-182
-      - CN_speednode_0008
-      - IL_speednode_0030
-      - 美国 090
-      - "@SSRSUB-V09-付费推荐:dlj.tf/ssrsub"
-      - IL_speednode_0031
-      - 6,8,24,26|_IL_以色列->🇬🇧_GB_英国
-      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 4
-      - CN_speednode_0009
-      - 未知_0619125
-      - JP_speednode_0075
-      - 5,6,16|美国【付费推荐：https://tt.vg/vip】97
-      - 未知_0619164
-      - -1,19,22,23|_🇭🇰_HK_香港_17 2
       - IL_speednode_0029
-      - _IL_以色列->🇯🇵_JP_日本 2
-      - V001--US-付费推荐:dlj.tf/ssrsub
+      - _IL_以色列->🇬🇧_GB_英国
+      - 16,16,20|🇨🇳中国-江苏-南京-ss-cttw1.createmofa...
+      - 17,18|_🇺🇸_US_美国_科网_19__________
+      - -1|🇺🇸_US_美国_由快嘴科技提供：kkzui.com1_47
+      - 17,18|_🇺🇸_US_美国_科网_19___
+      - 17|_🇺🇸_US_美国_yui科技_169
+      - 17|_🇺🇸_US_美国_由零開始_19_
+      - 17|_🇺🇸_US_美国_yui科技_200
+      - US_speednode_0107
       - 塞浦路斯_0619106
-      - IL_speednode_0029 2
-      - "@DeamNet_🇨🇦Toronto-4565"
-      - _IL_以色列->🇬🇧_GB_英国 2
-      - 美国 021
-      - "美国圣何塞 | 允许长期跑满带宽-0.1x\r"
-      - US_speednode_0109
-      - _IL_以色列->🇬🇧_GB_英国 3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 6
-      - "@DeamNet_🇨🇦Toronto-3726"
-      - 以色列_0615022
-      - NU_speednode_0086
-      - IL_speednode_0037
-      - -1,19,19|_🇭🇰_HK_香港_由零開始_18 2
-      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
-      - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - _US_美国->🇹🇼_TW_台湾
-      - IL_speednode_0060
-      - 英国-2
-      - _CN_中国->🇭🇰_HK_香港
-      - IL_speednode_0027
-      - 未知_0619168
-      - 未知_0619142
-      - -1,22,23|移动专线A
-      - _IL_以色列->🇳🇱_NL_荷兰 2
-      - 英国-1
-      - DP2
-      - 阿曼_0617021
-      - 新加坡_0619854
-      - V006--US-付费推荐:dlj.tf/ssrsub
-      - US_speednode_0104
-      - JP_speednode_0061
-      - IL 25 → tg@nicevpn123
-      - IL_speednode_0009
-      - 新加坡 009
-      - CN_speednode_0004
+      - 日本_0619008
+      - 未知_06194145
+      - 美国_06196494
+      - "德国3\r"
+      - SK_speednode_0080
+      - 未知_0619108
+      - IL_speednode_0040
+      - 未知_0619118
+      - US-163.123.192.154-182
+      - SG, Singapore
+      - US_speednode_0111
+      - _DE_德国 2
+      - 以色列_0619025
+      - 20,21|🇭🇰 香港
+      - 防失效github SubCrawler中国_0619011
+      - CN-14.18.103.121-086
+      - US_speednode_0101
+      - US, Dallas 2
+      - TR_speednode_0081
+      - 未知_0619010
+      - 17|_🇺🇸_US_美国_顺丰_16
+      - 18|🇺🇸US美国(youtube阿伟科技2)_______
+      - SG_speednode_0073
+      - DE_speednode_0010
+      - "@SSRSUB-V17-付费推荐:dlj.tf/ssrsub"
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 12
+      - 台湾_0619277
+      - 20|🇺🇸 美国_06196495
+      - US_speednode_0113
+      - "@DeamNet_🇩🇪Frankfurt am Main-2300"
       - IL_speednode_0013
+      - 4,11|🇸🇬 新加坡【付费推荐：https://tt.vg/vip】...
+      - LY_speednode_0065
+      - "@DeamNet_🇺🇸New York-2276"
+      - CN_speednode_0007
+      - AWS新加坡2
+      - 19,20|_🇺🇸_US_美国_科网_19___
+      - CN_speednode_0004
+      - 美国4
+      - TR_speednode_0083
+      - 4|🇺🇲 美国【付费推荐：https://tt.vg/vip】1...
+      - 18|🇺🇸US美国(youtube阿伟科技2)_
+      - _US_美国
+      - 以色列_0619023
+      - 美国_06196502
+      - JP_speednode_0052
+      - CN_speednode_0008
+      - AWS | SG | IPLC专线1号
+      - 英国-1
+      - 18|🇺🇸US美国(youtube阿伟科技2)___
+      - 20|🇮🇳IN印度(youtube阿伟科技2)
+      - CA, Vancouver
+      - 美国_06191635
+      - 17|_🇺🇸_US_美国_yui科技_164
+      - 19|_🇺🇸_US_美国_科网_19
+      - "@DeamNet_ðŸ‡³ðŸ‡±Amsterdam-4450"
+      - _IL_以色列->🇳🇱_NL_荷兰
+      - "@SSRSUB-V14-付费推荐:dlj.tf/ssrsub"
+      - 19|_🇺🇸_US_美国_由零開始_19
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 21
+      - sg-am3.eqsunshine.com:32001
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 22
+      - 英国-2
+      - "@DeamNet_🇰🇷Seoul-1917"
+      - 19,20|_🇺🇸_US_美国_科网_19_______
+      - -1,0,1,16,19,19|🇹🇼 _US_美国->🇹🇼_TW_台湾
+      - "@SSRSUB-V04-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V07-付费推荐:dlj.tf/ssrsub"
+      - IL_speednode_0046
+      - 以色列_0619030
+      - 未知_06194374
+      - AWS香港4
+      - India 01 TG:@SSRSUB
+      - _IL_以色列->🇳🇱_NL_荷兰 2
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 16
+      - github.com/freefq - 以色列  5
+      - SG_speednode_0075
+      - IL_speednode_0033
+      - -1,19,20,22,23|_🇭🇰_HK_香港_破解君_19
+      - 未知_06193871
+      - 17|_🇺🇸_US_美国_科网_18
+      - 未知_0619011
+      - "@SSRSUB-V05-付费推荐:dlj.tf/ssrsub"
+      - GB_speednode_0015
+      - HK, Kowloon
+      - 19,20|_🇺🇸_US_美国_科网_19______
+      - "@DeamNet_🇺🇸New York-1753"
+      - 1|🇬🇧 _IL_以色列->🇬🇧_GB_英国
+      - 未知_0619110
+      - github.com/freefq - 以色列  7
+      - V005--US-付费推荐:dlj.tf/ssrsub
+      - KR_speednode_0063
+      - V003--US-付费推荐:dlj.tf/ssrsub
+      - IL_speednode_0027
       - CN_speednode_0005
+      - CN-14.18.89.198-052
+      - NO_speednode_0067
+      - 20|🇰🇷 韩国特殊|@ripaojiedian
+      - "德国\r"
+      - "@DeamNet_🇴🇲Muscat-4547"
+      - V001--US-付费推荐:dlj.tf/ssrsub
+      - IL_speednode_0037
+      - AWS | JP | IPLC专线3号
+      - 以色列_0615022
+      - "@DeamNet_🇺🇸New York-2111"
+      - 以色列_0619026
+      - 20,21|🇸🇬 新加坡
+      - AWS日本3
+      - 19|_🇭🇰_HK_香港_科网_19
+      - "美国凤凰城2号-0.01x\r"
       - IL_speednode_0038
+      - IL_speednode_0009
+      - _US_美国 2
+      - 未知_0619115
+      - "美国凤凰城3号-0.01x\r"
+      - _IL_以色列->🇦🇺_AU_澳大利亚
+      - github.com/freefq - 以色列  23
+      - US_speednode_0109
+      - IL_speednode_0030
+      - "美国圣何塞 | 允许长期跑满带宽-0.1x\r"
+      - 新加坡_0619852
+      - 以色列_0619029
+      - 美国 090
+      - IM_speednode_0047
+      - "@SSRSUB-V30-付费推荐:dlj.tf/ssrsub"
+      - 未知_0619113
+      - 20|🇺🇸US美国(youtube阿伟科技2)_
+      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 4
+      - FI_speednode_0011
+      - _IL_以色列->🇪🇪_EE_爱沙尼亚
+      - US_149.50.69.127_06152023ba3b-1428trojan
+      - _JP_日本
+      - 英国-3
+      - AWS新加坡3
+      - _IL_以色列->🇯🇵_JP_日本
+      - AWS香港1
+      - JP_speednode_0049
+      - IL_speednode_0036
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 19
+      - 以色列【付费推荐：https://tt.vg/vip】187
+      - SG_speednode_0055
+      - 22|🇯🇵 日本特殊|@ripaojiedian
+      - JP_speednode_0054
+      - 美国_06183890 2
+      - _IL_以色列
+      - IL_speednode_0037 2
+      - 19|_🇺🇸_US_美国_科网_19 2
+      - 未知_0619111
+      - IL_speednode_0023
+      - JP, Tokyo
+      - "@SSRSUB-V15-付费推荐:dlj.tf/ssrsub"
+      - 19|_🇺🇸_US_美国_顺丰_121
+      - 19|_🇭🇰_HK_香港_科网_19 2
+      - 以色列_0619028
+      - IL_speednode_0032
+      - _US_美国 3
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 15
+      - 未知_0619123
+      - "@DeamNet_🇨🇦Toronto-3726"
+      - IL_speednode_0022
+      - TR_speednode_0082
+      - 19|_🇺🇸_US_美国_顺丰_63
+      - IL_speednode_0031
+      - 19,20|_🇫🇷_FR_法国_科网_19
+      - "AWS | JP | IPLC专线1号\r"
+      - 美国_06196494 2
+      - V002--US-付费推荐:dlj.tf/ssrsub
+      - IL 25 → tg@nicevpn123
+      - AWS | JP | IPLC专线4号
+      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
+      - JP, Tokyo 2
+      - 未知_0619114
+      - 19|_🇺🇸_US_美国_科网_19__________
+      - 以色列_0619024
+      - 未知_0619142
+      - 美国_06196505
+      - JP_speednode_0075
+      - 未知_0619150
+      - github.com/freefq - 日本  15
+      - US_speednode_0104
+      - GB_speednode_0014
+      - "@SSRSUB-V18-付费推荐:dlj.tf/ssrsub"
+      - 20|🇮🇳IN印度(youtube阿伟科技2) 2
+      - _IL_以色列->🇯🇵_JP_日本 2
+      - github.com/freefq - 上海市电信 21
+      - _IL_以色列->🇩🇪_DE_德国
+      - 20|🇺🇸US美国(youtube阿伟科技2)_ 2
+      - v2rayfree.eu.org - 美国CloudFlare节点 13
+      - 6,8,24,26|_IL_以色列->🇦🇺_AU_澳大利亚
+      - v2rayfree.eu.org - 以色列  8
+      - JP_speednode_0061
+      - IL_speednode_0027 2
+      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
+      - 5,6,16|美国【付费推荐：https://tt.vg/vip】97
+      - "@SSRSUB-V09-付费推荐:dlj.tf/ssrsub"
+      - 19,20|_🇫🇷_FR_法国_科网_19 2
+      - US_speednode_0106
+      - 美国_06196494 3
+      - IL_speednode_0032 2
+      - 美国_06173910
+      - _US_美国->🇬🇧_GB_英国
+      - _UA_乌克兰->🇬🇧_GB_英国
+      - 19,20|_🇺🇸_US_美国_科网_19______ 2
+      - JP_speednode_0050
+      - TW_speednode_0085
+      - 中国_0619336
+      - DP2
+      - V006--US-付费推荐:dlj.tf/ssrsub
+      - _IL_以色列->🇯🇵_JP_日本 3
+      - _IL_以色列->🇦🇺_AU_澳大利亚 2
+      - 17|_🇺🇸_US_美国_由零開始_19__
+      - 19|_🇺🇸_US_美国_分享师_171
+      - 20|🇺🇸 美国特殊|@ripaojiedian
+      - 18|🇺🇸US美国(youtube阿伟科技2)______
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - github.com/freefq - 美国CloudFlare公司CDN节点 9
-      - US_149.50.69.127_06152023ba3b-1428trojan
-      - US_speednode_0107
-      - 荷兰_0618280
-      - 美国_06173935
-      - 美国_06183890 2
-      - 荷兰_0617004
-      - SG_speednode_0055
-      - CN_speednode_0011
-      - 6,8,24,26|_IL_以色列->🇦🇺_AU_澳大利亚
-      - CN_speednode_0012
-      - 美国_06173909 2
-      - V005--US-付费推荐:dlj.tf/ssrsub
-      - "@DeamNet_🇨🇦Toronto-1911"
-      - DE_speednode_0010
-      - _IL_以色列->🇯🇵_JP_日本
-      - -1,7,8,9,10,25,26,27,28|_CN_中国->🇭🇰_HK_香港
-      - IL_speednode_0016
-      - 未知_0619165
-      - IL_speednode_0032
-      - "@SSRSUB-V18-付费推荐:dlj.tf/ssrsub"
-      - github.com/freefq - 以色列  5
-      - _IL_以色列
-      - "@DeamNet_🇳🇱Amsterdam-2703"
-      - 塞浦路斯_0619009
-      - -1,19,22,23|_🇭🇰_HK_香港_17
-      - JP_speednode_0050
-      - 中国_0619336
-      - IL_speednode_0036
-      - github.com/freefq - 以色列  23
-      - 以色列_0619028
-      - 美国_06196494
-      - India 01 TG:@SSRSUB
-      - -1,19,19|_🇭🇰_HK_香港_由零開始_18
-      - IL_speednode_0034
-      - 英国-3
-      - Japan 01|CMCC
-      - 以色列_0619024
-      - "@SSRSUB-V14-付费推荐:dlj.tf/ssrsub"
-      - _IL_以色列->🇦🇺_AU_澳大利亚
-      - JP_speednode_0054
-      - "@DeamNet_🇳🇱Amsterdam-2225"
-      - "@DeamNet_🇺🇸New York-1753"
-      - _IL_以色列->🇳🇱_NL_荷兰
-      - 未知_0619011
-      - _IL_以色列->🇬🇧_GB_英国
-      - NU_speednode_0069
-      - 未知_0619144
-      - 美国_06196505
-      - 美国_06173910
-      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
-      - TW_speednode_0085
-      - 28|🇬🇧 _IL_以色列->🇬🇧_GB_英国 3_
-      - github.com/freefq - 以色列  18
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 9
-      - 未知_0619149
-      - 阿曼_0616035
-      - 未知_0619156
-      - v2rayfree.eu.org - 以色列  8
-      - _US_美国
-      - 未知_0619150
-      - HK香港(youtube阿伟科技2)
-      - SG-4.193.245.7-182
-      - CN_speednode_0008
-      - IL_speednode_0030
-      - 美国 090
-      - "@SSRSUB-V09-付费推荐:dlj.tf/ssrsub"
-      - IL_speednode_0031
-      - 6,8,24,26|_IL_以色列->🇬🇧_GB_英国
-      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 4
-      - CN_speednode_0009
-      - 未知_0619125
-      - JP_speednode_0075
-      - 5,6,16|美国【付费推荐：https://tt.vg/vip】97
-      - 未知_0619164
-      - -1,19,22,23|_🇭🇰_HK_香港_17 2
       - IL_speednode_0029
-      - _IL_以色列->🇯🇵_JP_日本 2
-      - V001--US-付费推荐:dlj.tf/ssrsub
+      - _IL_以色列->🇬🇧_GB_英国
+      - 16,16,20|🇨🇳中国-江苏-南京-ss-cttw1.createmofa...
+      - 17,18|_🇺🇸_US_美国_科网_19__________
+      - -1|🇺🇸_US_美国_由快嘴科技提供：kkzui.com1_47
+      - 17,18|_🇺🇸_US_美国_科网_19___
+      - 17|_🇺🇸_US_美国_yui科技_169
+      - 17|_🇺🇸_US_美国_由零開始_19_
+      - 17|_🇺🇸_US_美国_yui科技_200
+      - US_speednode_0107
       - 塞浦路斯_0619106
-      - IL_speednode_0029 2
-      - "@DeamNet_🇨🇦Toronto-4565"
-      - _IL_以色列->🇬🇧_GB_英国 2
-      - 美国 021
-      - "美国圣何塞 | 允许长期跑满带宽-0.1x\r"
-      - US_speednode_0109
-      - _IL_以色列->🇬🇧_GB_英国 3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 6
-      - "@DeamNet_🇨🇦Toronto-3726"
-      - 以色列_0615022
-      - NU_speednode_0086
-      - IL_speednode_0037
-      - -1,19,19|_🇭🇰_HK_香港_由零開始_18 2
-      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
-      - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - _US_美国->🇹🇼_TW_台湾
-      - IL_speednode_0060
-      - 英国-2
-      - _CN_中国->🇭🇰_HK_香港
-      - IL_speednode_0027
-      - 未知_0619168
-      - 未知_0619142
-      - -1,22,23|移动专线A
-      - _IL_以色列->🇳🇱_NL_荷兰 2
-      - 英国-1
-      - DP2
-      - 阿曼_0617021
-      - 新加坡_0619854
-      - V006--US-付费推荐:dlj.tf/ssrsub
-      - US_speednode_0104
-      - JP_speednode_0061
-      - IL 25 → tg@nicevpn123
-      - IL_speednode_0009
-      - 新加坡 009
-      - CN_speednode_0004
+      - 日本_0619008
+      - 未知_06194145
+      - 美国_06196494
+      - "德国3\r"
+      - SK_speednode_0080
+      - 未知_0619108
+      - IL_speednode_0040
+      - 未知_0619118
+      - US-163.123.192.154-182
+      - SG, Singapore
+      - US_speednode_0111
+      - _DE_德国 2
+      - 以色列_0619025
+      - 20,21|🇭🇰 香港
+      - 防失效github SubCrawler中国_0619011
+      - CN-14.18.103.121-086
+      - US_speednode_0101
+      - US, Dallas 2
+      - TR_speednode_0081
+      - 未知_0619010
+      - 17|_🇺🇸_US_美国_顺丰_16
+      - 18|🇺🇸US美国(youtube阿伟科技2)_______
+      - SG_speednode_0073
+      - DE_speednode_0010
+      - "@SSRSUB-V17-付费推荐:dlj.tf/ssrsub"
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 12
+      - 台湾_0619277
+      - 20|🇺🇸 美国_06196495
+      - US_speednode_0113
+      - "@DeamNet_🇩🇪Frankfurt am Main-2300"
       - IL_speednode_0013
+      - 4,11|🇸🇬 新加坡【付费推荐：https://tt.vg/vip】...
+      - LY_speednode_0065
+      - "@DeamNet_🇺🇸New York-2276"
+      - CN_speednode_0007
+      - AWS新加坡2
+      - 19,20|_🇺🇸_US_美国_科网_19___
+      - CN_speednode_0004
+      - 美国4
+      - TR_speednode_0083
+      - 4|🇺🇲 美国【付费推荐：https://tt.vg/vip】1...
+      - 18|🇺🇸US美国(youtube阿伟科技2)_
+      - _US_美国
+      - 以色列_0619023
+      - 美国_06196502
+      - JP_speednode_0052
+      - CN_speednode_0008
+      - AWS | SG | IPLC专线1号
+      - 英国-1
+      - 18|🇺🇸US美国(youtube阿伟科技2)___
+      - 20|🇮🇳IN印度(youtube阿伟科技2)
+      - CA, Vancouver
+      - 美国_06191635
+      - 17|_🇺🇸_US_美国_yui科技_164
+      - 19|_🇺🇸_US_美国_科网_19
+      - "@DeamNet_ðŸ‡³ðŸ‡±Amsterdam-4450"
+      - _IL_以色列->🇳🇱_NL_荷兰
+      - "@SSRSUB-V14-付费推荐:dlj.tf/ssrsub"
+      - 19|_🇺🇸_US_美国_由零開始_19
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 21
+      - sg-am3.eqsunshine.com:32001
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 22
+      - 英国-2
+      - "@DeamNet_🇰🇷Seoul-1917"
+      - 19,20|_🇺🇸_US_美国_科网_19_______
+      - -1,0,1,16,19,19|🇹🇼 _US_美国->🇹🇼_TW_台湾
+      - "@SSRSUB-V04-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V07-付费推荐:dlj.tf/ssrsub"
+      - IL_speednode_0046
+      - 以色列_0619030
+      - 未知_06194374
+      - AWS香港4
+      - India 01 TG:@SSRSUB
+      - _IL_以色列->🇳🇱_NL_荷兰 2
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 16
+      - github.com/freefq - 以色列  5
+      - SG_speednode_0075
+      - IL_speednode_0033
+      - -1,19,20,22,23|_🇭🇰_HK_香港_破解君_19
+      - 未知_06193871
+      - 17|_🇺🇸_US_美国_科网_18
+      - 未知_0619011
+      - "@SSRSUB-V05-付费推荐:dlj.tf/ssrsub"
+      - GB_speednode_0015
+      - HK, Kowloon
+      - 19,20|_🇺🇸_US_美国_科网_19______
+      - "@DeamNet_🇺🇸New York-1753"
+      - 1|🇬🇧 _IL_以色列->🇬🇧_GB_英国
+      - 未知_0619110
+      - github.com/freefq - 以色列  7
+      - V005--US-付费推荐:dlj.tf/ssrsub
+      - KR_speednode_0063
+      - V003--US-付费推荐:dlj.tf/ssrsub
+      - IL_speednode_0027
       - CN_speednode_0005
+      - CN-14.18.89.198-052
+      - NO_speednode_0067
+      - 20|🇰🇷 韩国特殊|@ripaojiedian
+      - "德国\r"
+      - "@DeamNet_🇴🇲Muscat-4547"
+      - V001--US-付费推荐:dlj.tf/ssrsub
+      - IL_speednode_0037
+      - AWS | JP | IPLC专线3号
+      - 以色列_0615022
+      - "@DeamNet_🇺🇸New York-2111"
+      - 以色列_0619026
+      - 20,21|🇸🇬 新加坡
+      - AWS日本3
+      - 19|_🇭🇰_HK_香港_科网_19
+      - "美国凤凰城2号-0.01x\r"
       - IL_speednode_0038
+      - IL_speednode_0009
+      - _US_美国 2
+      - 未知_0619115
+      - "美国凤凰城3号-0.01x\r"
+      - _IL_以色列->🇦🇺_AU_澳大利亚
+      - github.com/freefq - 以色列  23
+      - US_speednode_0109
+      - IL_speednode_0030
+      - "美国圣何塞 | 允许长期跑满带宽-0.1x\r"
+      - 新加坡_0619852
+      - 以色列_0619029
+      - 美国 090
+      - IM_speednode_0047
+      - "@SSRSUB-V30-付费推荐:dlj.tf/ssrsub"
+      - 未知_0619113
+      - 20|🇺🇸US美国(youtube阿伟科技2)_
+      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 4
+      - FI_speednode_0011
+      - _IL_以色列->🇪🇪_EE_爱沙尼亚
+      - US_149.50.69.127_06152023ba3b-1428trojan
+      - _JP_日本
+      - 英国-3
+      - AWS新加坡3
+      - _IL_以色列->🇯🇵_JP_日本
+      - AWS香港1
+      - JP_speednode_0049
+      - IL_speednode_0036
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 19
+      - 以色列【付费推荐：https://tt.vg/vip】187
+      - SG_speednode_0055
+      - 22|🇯🇵 日本特殊|@ripaojiedian
+      - JP_speednode_0054
+      - 美国_06183890 2
+      - _IL_以色列
+      - IL_speednode_0037 2
+      - 19|_🇺🇸_US_美国_科网_19 2
+      - 未知_0619111
+      - IL_speednode_0023
+      - JP, Tokyo
+      - "@SSRSUB-V15-付费推荐:dlj.tf/ssrsub"
+      - 19|_🇺🇸_US_美国_顺丰_121
+      - 19|_🇭🇰_HK_香港_科网_19 2
+      - 以色列_0619028
+      - IL_speednode_0032
+      - _US_美国 3
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 15
+      - 未知_0619123
+      - "@DeamNet_🇨🇦Toronto-3726"
+      - IL_speednode_0022
+      - TR_speednode_0082
+      - 19|_🇺🇸_US_美国_顺丰_63
+      - IL_speednode_0031
+      - 19,20|_🇫🇷_FR_法国_科网_19
+      - "AWS | JP | IPLC专线1号\r"
+      - 美国_06196494 2
+      - V002--US-付费推荐:dlj.tf/ssrsub
+      - IL 25 → tg@nicevpn123
+      - AWS | JP | IPLC专线4号
+      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
+      - JP, Tokyo 2
+      - 未知_0619114
+      - 19|_🇺🇸_US_美国_科网_19__________
+      - 以色列_0619024
+      - 未知_0619142
+      - 美国_06196505
+      - JP_speednode_0075
+      - 未知_0619150
+      - github.com/freefq - 日本  15
+      - US_speednode_0104
+      - GB_speednode_0014
+      - "@SSRSUB-V18-付费推荐:dlj.tf/ssrsub"
+      - 20|🇮🇳IN印度(youtube阿伟科技2) 2
+      - _IL_以色列->🇯🇵_JP_日本 2
+      - github.com/freefq - 上海市电信 21
+      - _IL_以色列->🇩🇪_DE_德国
+      - 20|🇺🇸US美国(youtube阿伟科技2)_ 2
+      - v2rayfree.eu.org - 美国CloudFlare节点 13
+      - 6,8,24,26|_IL_以色列->🇦🇺_AU_澳大利亚
+      - v2rayfree.eu.org - 以色列  8
+      - JP_speednode_0061
+      - IL_speednode_0027 2
+      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
+      - 5,6,16|美国【付费推荐：https://tt.vg/vip】97
+      - "@SSRSUB-V09-付费推荐:dlj.tf/ssrsub"
+      - 19,20|_🇫🇷_FR_法国_科网_19 2
+      - US_speednode_0106
+      - 美国_06196494 3
+      - IL_speednode_0032 2
+      - 美国_06173910
+      - _US_美国->🇬🇧_GB_英国
+      - _UA_乌克兰->🇬🇧_GB_英国
+      - 19,20|_🇺🇸_US_美国_科网_19______ 2
+      - JP_speednode_0050
+      - TW_speednode_0085
+      - 中国_0619336
+      - DP2
+      - V006--US-付费推荐:dlj.tf/ssrsub
+      - _IL_以色列->🇯🇵_JP_日本 3
+      - _IL_以色列->🇦🇺_AU_澳大利亚 2
+      - 17|_🇺🇸_US_美国_由零開始_19__
+      - 19|_🇺🇸_US_美国_分享师_171
+      - 20|🇺🇸 美国特殊|@ripaojiedian
+      - 18|🇺🇸US美国(youtube阿伟科技2)______
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -513,507 +941,936 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - github.com/freefq - 美国CloudFlare公司CDN节点 9
-      - US_149.50.69.127_06152023ba3b-1428trojan
-      - US_speednode_0107
-      - 荷兰_0618280
-      - 美国_06173935
-      - 美国_06183890 2
-      - 荷兰_0617004
-      - SG_speednode_0055
-      - CN_speednode_0011
-      - 6,8,24,26|_IL_以色列->🇦🇺_AU_澳大利亚
-      - CN_speednode_0012
-      - 美国_06173909 2
-      - V005--US-付费推荐:dlj.tf/ssrsub
-      - "@DeamNet_🇨🇦Toronto-1911"
-      - DE_speednode_0010
-      - _IL_以色列->🇯🇵_JP_日本
-      - -1,7,8,9,10,25,26,27,28|_CN_中国->🇭🇰_HK_香港
-      - IL_speednode_0016
-      - 未知_0619165
-      - IL_speednode_0032
-      - "@SSRSUB-V18-付费推荐:dlj.tf/ssrsub"
-      - github.com/freefq - 以色列  5
-      - _IL_以色列
-      - "@DeamNet_🇳🇱Amsterdam-2703"
-      - 塞浦路斯_0619009
-      - -1,19,22,23|_🇭🇰_HK_香港_17
-      - JP_speednode_0050
-      - 中国_0619336
-      - IL_speednode_0036
-      - github.com/freefq - 以色列  23
-      - 以色列_0619028
-      - 美国_06196494
-      - India 01 TG:@SSRSUB
-      - -1,19,19|_🇭🇰_HK_香港_由零開始_18
-      - IL_speednode_0034
-      - 英国-3
-      - Japan 01|CMCC
-      - 以色列_0619024
-      - "@SSRSUB-V14-付费推荐:dlj.tf/ssrsub"
-      - _IL_以色列->🇦🇺_AU_澳大利亚
-      - JP_speednode_0054
-      - "@DeamNet_🇳🇱Amsterdam-2225"
-      - "@DeamNet_🇺🇸New York-1753"
-      - _IL_以色列->🇳🇱_NL_荷兰
-      - 未知_0619011
-      - _IL_以色列->🇬🇧_GB_英国
-      - NU_speednode_0069
-      - 未知_0619144
-      - 美国_06196505
-      - 美国_06173910
-      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
-      - TW_speednode_0085
-      - 28|🇬🇧 _IL_以色列->🇬🇧_GB_英国 3_
-      - github.com/freefq - 以色列  18
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 9
-      - 未知_0619149
-      - 阿曼_0616035
-      - 未知_0619156
-      - v2rayfree.eu.org - 以色列  8
-      - _US_美国
-      - 未知_0619150
-      - HK香港(youtube阿伟科技2)
-      - SG-4.193.245.7-182
-      - CN_speednode_0008
-      - IL_speednode_0030
-      - 美国 090
-      - "@SSRSUB-V09-付费推荐:dlj.tf/ssrsub"
-      - IL_speednode_0031
-      - 6,8,24,26|_IL_以色列->🇬🇧_GB_英国
-      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 4
-      - CN_speednode_0009
-      - 未知_0619125
-      - JP_speednode_0075
-      - 5,6,16|美国【付费推荐：https://tt.vg/vip】97
-      - 未知_0619164
-      - -1,19,22,23|_🇭🇰_HK_香港_17 2
       - IL_speednode_0029
-      - _IL_以色列->🇯🇵_JP_日本 2
-      - V001--US-付费推荐:dlj.tf/ssrsub
+      - _IL_以色列->🇬🇧_GB_英国
+      - 16,16,20|🇨🇳中国-江苏-南京-ss-cttw1.createmofa...
+      - 17,18|_🇺🇸_US_美国_科网_19__________
+      - -1|🇺🇸_US_美国_由快嘴科技提供：kkzui.com1_47
+      - 17,18|_🇺🇸_US_美国_科网_19___
+      - 17|_🇺🇸_US_美国_yui科技_169
+      - 17|_🇺🇸_US_美国_由零開始_19_
+      - 17|_🇺🇸_US_美国_yui科技_200
+      - US_speednode_0107
       - 塞浦路斯_0619106
-      - IL_speednode_0029 2
-      - "@DeamNet_🇨🇦Toronto-4565"
-      - _IL_以色列->🇬🇧_GB_英国 2
-      - 美国 021
-      - "美国圣何塞 | 允许长期跑满带宽-0.1x\r"
-      - US_speednode_0109
-      - _IL_以色列->🇬🇧_GB_英国 3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 6
-      - "@DeamNet_🇨🇦Toronto-3726"
-      - 以色列_0615022
-      - NU_speednode_0086
-      - IL_speednode_0037
-      - -1,19,19|_🇭🇰_HK_香港_由零開始_18 2
-      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
-      - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - _US_美国->🇹🇼_TW_台湾
-      - IL_speednode_0060
-      - 英国-2
-      - _CN_中国->🇭🇰_HK_香港
-      - IL_speednode_0027
-      - 未知_0619168
-      - 未知_0619142
-      - -1,22,23|移动专线A
-      - _IL_以色列->🇳🇱_NL_荷兰 2
-      - 英国-1
-      - DP2
-      - 阿曼_0617021
-      - 新加坡_0619854
-      - V006--US-付费推荐:dlj.tf/ssrsub
-      - US_speednode_0104
-      - JP_speednode_0061
-      - IL 25 → tg@nicevpn123
-      - IL_speednode_0009
-      - 新加坡 009
-      - CN_speednode_0004
+      - 日本_0619008
+      - 未知_06194145
+      - 美国_06196494
+      - "德国3\r"
+      - SK_speednode_0080
+      - 未知_0619108
+      - IL_speednode_0040
+      - 未知_0619118
+      - US-163.123.192.154-182
+      - SG, Singapore
+      - US_speednode_0111
+      - _DE_德国 2
+      - 以色列_0619025
+      - 20,21|🇭🇰 香港
+      - 防失效github SubCrawler中国_0619011
+      - CN-14.18.103.121-086
+      - US_speednode_0101
+      - US, Dallas 2
+      - TR_speednode_0081
+      - 未知_0619010
+      - 17|_🇺🇸_US_美国_顺丰_16
+      - 18|🇺🇸US美国(youtube阿伟科技2)_______
+      - SG_speednode_0073
+      - DE_speednode_0010
+      - "@SSRSUB-V17-付费推荐:dlj.tf/ssrsub"
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 12
+      - 台湾_0619277
+      - 20|🇺🇸 美国_06196495
+      - US_speednode_0113
+      - "@DeamNet_🇩🇪Frankfurt am Main-2300"
       - IL_speednode_0013
+      - 4,11|🇸🇬 新加坡【付费推荐：https://tt.vg/vip】...
+      - LY_speednode_0065
+      - "@DeamNet_🇺🇸New York-2276"
+      - CN_speednode_0007
+      - AWS新加坡2
+      - 19,20|_🇺🇸_US_美国_科网_19___
+      - CN_speednode_0004
+      - 美国4
+      - TR_speednode_0083
+      - 4|🇺🇲 美国【付费推荐：https://tt.vg/vip】1...
+      - 18|🇺🇸US美国(youtube阿伟科技2)_
+      - _US_美国
+      - 以色列_0619023
+      - 美国_06196502
+      - JP_speednode_0052
+      - CN_speednode_0008
+      - AWS | SG | IPLC专线1号
+      - 英国-1
+      - 18|🇺🇸US美国(youtube阿伟科技2)___
+      - 20|🇮🇳IN印度(youtube阿伟科技2)
+      - CA, Vancouver
+      - 美国_06191635
+      - 17|_🇺🇸_US_美国_yui科技_164
+      - 19|_🇺🇸_US_美国_科网_19
+      - "@DeamNet_ðŸ‡³ðŸ‡±Amsterdam-4450"
+      - _IL_以色列->🇳🇱_NL_荷兰
+      - "@SSRSUB-V14-付费推荐:dlj.tf/ssrsub"
+      - 19|_🇺🇸_US_美国_由零開始_19
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 21
+      - sg-am3.eqsunshine.com:32001
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 22
+      - 英国-2
+      - "@DeamNet_🇰🇷Seoul-1917"
+      - 19,20|_🇺🇸_US_美国_科网_19_______
+      - -1,0,1,16,19,19|🇹🇼 _US_美国->🇹🇼_TW_台湾
+      - "@SSRSUB-V04-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V07-付费推荐:dlj.tf/ssrsub"
+      - IL_speednode_0046
+      - 以色列_0619030
+      - 未知_06194374
+      - AWS香港4
+      - India 01 TG:@SSRSUB
+      - _IL_以色列->🇳🇱_NL_荷兰 2
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 16
+      - github.com/freefq - 以色列  5
+      - SG_speednode_0075
+      - IL_speednode_0033
+      - -1,19,20,22,23|_🇭🇰_HK_香港_破解君_19
+      - 未知_06193871
+      - 17|_🇺🇸_US_美国_科网_18
+      - 未知_0619011
+      - "@SSRSUB-V05-付费推荐:dlj.tf/ssrsub"
+      - GB_speednode_0015
+      - HK, Kowloon
+      - 19,20|_🇺🇸_US_美国_科网_19______
+      - "@DeamNet_🇺🇸New York-1753"
+      - 1|🇬🇧 _IL_以色列->🇬🇧_GB_英国
+      - 未知_0619110
+      - github.com/freefq - 以色列  7
+      - V005--US-付费推荐:dlj.tf/ssrsub
+      - KR_speednode_0063
+      - V003--US-付费推荐:dlj.tf/ssrsub
+      - IL_speednode_0027
       - CN_speednode_0005
+      - CN-14.18.89.198-052
+      - NO_speednode_0067
+      - 20|🇰🇷 韩国特殊|@ripaojiedian
+      - "德国\r"
+      - "@DeamNet_🇴🇲Muscat-4547"
+      - V001--US-付费推荐:dlj.tf/ssrsub
+      - IL_speednode_0037
+      - AWS | JP | IPLC专线3号
+      - 以色列_0615022
+      - "@DeamNet_🇺🇸New York-2111"
+      - 以色列_0619026
+      - 20,21|🇸🇬 新加坡
+      - AWS日本3
+      - 19|_🇭🇰_HK_香港_科网_19
+      - "美国凤凰城2号-0.01x\r"
       - IL_speednode_0038
+      - IL_speednode_0009
+      - _US_美国 2
+      - 未知_0619115
+      - "美国凤凰城3号-0.01x\r"
+      - _IL_以色列->🇦🇺_AU_澳大利亚
+      - github.com/freefq - 以色列  23
+      - US_speednode_0109
+      - IL_speednode_0030
+      - "美国圣何塞 | 允许长期跑满带宽-0.1x\r"
+      - 新加坡_0619852
+      - 以色列_0619029
+      - 美国 090
+      - IM_speednode_0047
+      - "@SSRSUB-V30-付费推荐:dlj.tf/ssrsub"
+      - 未知_0619113
+      - 20|🇺🇸US美国(youtube阿伟科技2)_
+      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 4
+      - FI_speednode_0011
+      - _IL_以色列->🇪🇪_EE_爱沙尼亚
+      - US_149.50.69.127_06152023ba3b-1428trojan
+      - _JP_日本
+      - 英国-3
+      - AWS新加坡3
+      - _IL_以色列->🇯🇵_JP_日本
+      - AWS香港1
+      - JP_speednode_0049
+      - IL_speednode_0036
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 19
+      - 以色列【付费推荐：https://tt.vg/vip】187
+      - SG_speednode_0055
+      - 22|🇯🇵 日本特殊|@ripaojiedian
+      - JP_speednode_0054
+      - 美国_06183890 2
+      - _IL_以色列
+      - IL_speednode_0037 2
+      - 19|_🇺🇸_US_美国_科网_19 2
+      - 未知_0619111
+      - IL_speednode_0023
+      - JP, Tokyo
+      - "@SSRSUB-V15-付费推荐:dlj.tf/ssrsub"
+      - 19|_🇺🇸_US_美国_顺丰_121
+      - 19|_🇭🇰_HK_香港_科网_19 2
+      - 以色列_0619028
+      - IL_speednode_0032
+      - _US_美国 3
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 15
+      - 未知_0619123
+      - "@DeamNet_🇨🇦Toronto-3726"
+      - IL_speednode_0022
+      - TR_speednode_0082
+      - 19|_🇺🇸_US_美国_顺丰_63
+      - IL_speednode_0031
+      - 19,20|_🇫🇷_FR_法国_科网_19
+      - "AWS | JP | IPLC专线1号\r"
+      - 美国_06196494 2
+      - V002--US-付费推荐:dlj.tf/ssrsub
+      - IL 25 → tg@nicevpn123
+      - AWS | JP | IPLC专线4号
+      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
+      - JP, Tokyo 2
+      - 未知_0619114
+      - 19|_🇺🇸_US_美国_科网_19__________
+      - 以色列_0619024
+      - 未知_0619142
+      - 美国_06196505
+      - JP_speednode_0075
+      - 未知_0619150
+      - github.com/freefq - 日本  15
+      - US_speednode_0104
+      - GB_speednode_0014
+      - "@SSRSUB-V18-付费推荐:dlj.tf/ssrsub"
+      - 20|🇮🇳IN印度(youtube阿伟科技2) 2
+      - _IL_以色列->🇯🇵_JP_日本 2
+      - github.com/freefq - 上海市电信 21
+      - _IL_以色列->🇩🇪_DE_德国
+      - 20|🇺🇸US美国(youtube阿伟科技2)_ 2
+      - v2rayfree.eu.org - 美国CloudFlare节点 13
+      - 6,8,24,26|_IL_以色列->🇦🇺_AU_澳大利亚
+      - v2rayfree.eu.org - 以色列  8
+      - JP_speednode_0061
+      - IL_speednode_0027 2
+      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
+      - 5,6,16|美国【付费推荐：https://tt.vg/vip】97
+      - "@SSRSUB-V09-付费推荐:dlj.tf/ssrsub"
+      - 19,20|_🇫🇷_FR_法国_科网_19 2
+      - US_speednode_0106
+      - 美国_06196494 3
+      - IL_speednode_0032 2
+      - 美国_06173910
+      - _US_美国->🇬🇧_GB_英国
+      - _UA_乌克兰->🇬🇧_GB_英国
+      - 19,20|_🇺🇸_US_美国_科网_19______ 2
+      - JP_speednode_0050
+      - TW_speednode_0085
+      - 中国_0619336
+      - DP2
+      - V006--US-付费推荐:dlj.tf/ssrsub
+      - _IL_以色列->🇯🇵_JP_日本 3
+      - _IL_以色列->🇦🇺_AU_澳大利亚 2
+      - 17|_🇺🇸_US_美国_由零開始_19__
+      - 19|_🇺🇸_US_美国_分享师_171
+      - 20|🇺🇸 美国特殊|@ripaojiedian
+      - 18|🇺🇸US美国(youtube阿伟科技2)______
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - -1,7,8,9,10,25,26,27,28|_CN_中国->🇭🇰_HK_香港
-      - -1,19,22,23|_🇭🇰_HK_香港_17
-      - -1,19,19|_🇭🇰_HK_香港_由零開始_18
-      - HK香港(youtube阿伟科技2)
-      - -1,19,22,23|_🇭🇰_HK_香港_17 2
-      - -1,19,19|_🇭🇰_HK_香港_由零開始_18 2
-      - _US_美国->🇹🇼_TW_台湾
-      - _CN_中国->🇭🇰_HK_香港
+      - 16,16,20|🇨🇳中国-江苏-南京-ss-cttw1.createmofa...
+      - 20,21|🇭🇰 香港
+      - 台湾_0619277
+      - -1,0,1,16,19,19|🇹🇼 _US_美国->🇹🇼_TW_台湾
+      - AWS香港4
+      - -1,19,20,22,23|_🇭🇰_HK_香港_破解君_19
+      - 19|_🇭🇰_HK_香港_科网_19
+      - AWS香港1
+      - 19|_🇭🇰_HK_香港_科网_19 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - github.com/freefq - 美国CloudFlare公司CDN节点 9
-      - US_149.50.69.127_06152023ba3b-1428trojan
-      - US_speednode_0107
-      - 荷兰_0618280
-      - 美国_06173935
-      - 美国_06183890 2
-      - 荷兰_0617004
-      - SG_speednode_0055
-      - CN_speednode_0011
-      - 6,8,24,26|_IL_以色列->🇦🇺_AU_澳大利亚
-      - CN_speednode_0012
-      - 美国_06173909 2
-      - V005--US-付费推荐:dlj.tf/ssrsub
-      - "@DeamNet_🇨🇦Toronto-1911"
-      - DE_speednode_0010
-      - _IL_以色列->🇯🇵_JP_日本
-      - -1,7,8,9,10,25,26,27,28|_CN_中国->🇭🇰_HK_香港
-      - IL_speednode_0016
-      - 未知_0619165
-      - IL_speednode_0032
-      - "@SSRSUB-V18-付费推荐:dlj.tf/ssrsub"
-      - github.com/freefq - 以色列  5
-      - _IL_以色列
-      - "@DeamNet_🇳🇱Amsterdam-2703"
-      - 塞浦路斯_0619009
-      - -1,19,22,23|_🇭🇰_HK_香港_17
-      - JP_speednode_0050
-      - 中国_0619336
-      - IL_speednode_0036
-      - github.com/freefq - 以色列  23
-      - 以色列_0619028
-      - 美国_06196494
-      - India 01 TG:@SSRSUB
-      - -1,19,19|_🇭🇰_HK_香港_由零開始_18
-      - IL_speednode_0034
-      - 英国-3
-      - Japan 01|CMCC
-      - 以色列_0619024
-      - "@SSRSUB-V14-付费推荐:dlj.tf/ssrsub"
-      - _IL_以色列->🇦🇺_AU_澳大利亚
-      - JP_speednode_0054
-      - "@DeamNet_🇳🇱Amsterdam-2225"
-      - "@DeamNet_🇺🇸New York-1753"
-      - _IL_以色列->🇳🇱_NL_荷兰
-      - 未知_0619011
-      - _IL_以色列->🇬🇧_GB_英国
-      - NU_speednode_0069
-      - 未知_0619144
-      - 美国_06196505
-      - 美国_06173910
-      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
-      - TW_speednode_0085
-      - 28|🇬🇧 _IL_以色列->🇬🇧_GB_英国 3_
-      - github.com/freefq - 以色列  18
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 9
-      - 未知_0619149
-      - 阿曼_0616035
-      - 未知_0619156
-      - v2rayfree.eu.org - 以色列  8
-      - _US_美国
-      - 未知_0619150
-      - HK香港(youtube阿伟科技2)
-      - SG-4.193.245.7-182
-      - CN_speednode_0008
-      - IL_speednode_0030
-      - 美国 090
-      - "@SSRSUB-V09-付费推荐:dlj.tf/ssrsub"
-      - IL_speednode_0031
-      - 6,8,24,26|_IL_以色列->🇬🇧_GB_英国
-      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 4
-      - CN_speednode_0009
-      - 未知_0619125
-      - JP_speednode_0075
-      - 5,6,16|美国【付费推荐：https://tt.vg/vip】97
-      - 未知_0619164
-      - -1,19,22,23|_🇭🇰_HK_香港_17 2
       - IL_speednode_0029
-      - _IL_以色列->🇯🇵_JP_日本 2
-      - V001--US-付费推荐:dlj.tf/ssrsub
+      - _IL_以色列->🇬🇧_GB_英国
+      - 16,16,20|🇨🇳中国-江苏-南京-ss-cttw1.createmofa...
+      - 17,18|_🇺🇸_US_美国_科网_19__________
+      - -1|🇺🇸_US_美国_由快嘴科技提供：kkzui.com1_47
+      - 17,18|_🇺🇸_US_美国_科网_19___
+      - 17|_🇺🇸_US_美国_yui科技_169
+      - 17|_🇺🇸_US_美国_由零開始_19_
+      - 17|_🇺🇸_US_美国_yui科技_200
+      - US_speednode_0107
       - 塞浦路斯_0619106
-      - IL_speednode_0029 2
-      - "@DeamNet_🇨🇦Toronto-4565"
-      - _IL_以色列->🇬🇧_GB_英国 2
-      - 美国 021
-      - "美国圣何塞 | 允许长期跑满带宽-0.1x\r"
-      - US_speednode_0109
-      - _IL_以色列->🇬🇧_GB_英国 3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 6
-      - "@DeamNet_🇨🇦Toronto-3726"
-      - 以色列_0615022
-      - NU_speednode_0086
-      - IL_speednode_0037
-      - -1,19,19|_🇭🇰_HK_香港_由零開始_18 2
-      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
-      - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - _US_美国->🇹🇼_TW_台湾
-      - IL_speednode_0060
-      - 英国-2
-      - _CN_中国->🇭🇰_HK_香港
-      - IL_speednode_0027
-      - 未知_0619168
-      - 未知_0619142
-      - -1,22,23|移动专线A
-      - _IL_以色列->🇳🇱_NL_荷兰 2
-      - 英国-1
-      - DP2
-      - 阿曼_0617021
-      - 新加坡_0619854
-      - V006--US-付费推荐:dlj.tf/ssrsub
-      - US_speednode_0104
-      - JP_speednode_0061
-      - IL 25 → tg@nicevpn123
-      - IL_speednode_0009
-      - 新加坡 009
-      - CN_speednode_0004
+      - 日本_0619008
+      - 未知_06194145
+      - 美国_06196494
+      - "德国3\r"
+      - SK_speednode_0080
+      - 未知_0619108
+      - IL_speednode_0040
+      - 未知_0619118
+      - US-163.123.192.154-182
+      - SG, Singapore
+      - US_speednode_0111
+      - _DE_德国 2
+      - 以色列_0619025
+      - 20,21|🇭🇰 香港
+      - 防失效github SubCrawler中国_0619011
+      - CN-14.18.103.121-086
+      - US_speednode_0101
+      - US, Dallas 2
+      - TR_speednode_0081
+      - 未知_0619010
+      - 17|_🇺🇸_US_美国_顺丰_16
+      - 18|🇺🇸US美国(youtube阿伟科技2)_______
+      - SG_speednode_0073
+      - DE_speednode_0010
+      - "@SSRSUB-V17-付费推荐:dlj.tf/ssrsub"
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 12
+      - 台湾_0619277
+      - 20|🇺🇸 美国_06196495
+      - US_speednode_0113
+      - "@DeamNet_🇩🇪Frankfurt am Main-2300"
       - IL_speednode_0013
+      - 4,11|🇸🇬 新加坡【付费推荐：https://tt.vg/vip】...
+      - LY_speednode_0065
+      - "@DeamNet_🇺🇸New York-2276"
+      - CN_speednode_0007
+      - AWS新加坡2
+      - 19,20|_🇺🇸_US_美国_科网_19___
+      - CN_speednode_0004
+      - 美国4
+      - TR_speednode_0083
+      - 4|🇺🇲 美国【付费推荐：https://tt.vg/vip】1...
+      - 18|🇺🇸US美国(youtube阿伟科技2)_
+      - _US_美国
+      - 以色列_0619023
+      - 美国_06196502
+      - JP_speednode_0052
+      - CN_speednode_0008
+      - AWS | SG | IPLC专线1号
+      - 英国-1
+      - 18|🇺🇸US美国(youtube阿伟科技2)___
+      - 20|🇮🇳IN印度(youtube阿伟科技2)
+      - CA, Vancouver
+      - 美国_06191635
+      - 17|_🇺🇸_US_美国_yui科技_164
+      - 19|_🇺🇸_US_美国_科网_19
+      - "@DeamNet_ðŸ‡³ðŸ‡±Amsterdam-4450"
+      - _IL_以色列->🇳🇱_NL_荷兰
+      - "@SSRSUB-V14-付费推荐:dlj.tf/ssrsub"
+      - 19|_🇺🇸_US_美国_由零開始_19
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 21
+      - sg-am3.eqsunshine.com:32001
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 22
+      - 英国-2
+      - "@DeamNet_🇰🇷Seoul-1917"
+      - 19,20|_🇺🇸_US_美国_科网_19_______
+      - -1,0,1,16,19,19|🇹🇼 _US_美国->🇹🇼_TW_台湾
+      - "@SSRSUB-V04-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V07-付费推荐:dlj.tf/ssrsub"
+      - IL_speednode_0046
+      - 以色列_0619030
+      - 未知_06194374
+      - AWS香港4
+      - India 01 TG:@SSRSUB
+      - _IL_以色列->🇳🇱_NL_荷兰 2
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 16
+      - github.com/freefq - 以色列  5
+      - SG_speednode_0075
+      - IL_speednode_0033
+      - -1,19,20,22,23|_🇭🇰_HK_香港_破解君_19
+      - 未知_06193871
+      - 17|_🇺🇸_US_美国_科网_18
+      - 未知_0619011
+      - "@SSRSUB-V05-付费推荐:dlj.tf/ssrsub"
+      - GB_speednode_0015
+      - HK, Kowloon
+      - 19,20|_🇺🇸_US_美国_科网_19______
+      - "@DeamNet_🇺🇸New York-1753"
+      - 1|🇬🇧 _IL_以色列->🇬🇧_GB_英国
+      - 未知_0619110
+      - github.com/freefq - 以色列  7
+      - V005--US-付费推荐:dlj.tf/ssrsub
+      - KR_speednode_0063
+      - V003--US-付费推荐:dlj.tf/ssrsub
+      - IL_speednode_0027
       - CN_speednode_0005
+      - CN-14.18.89.198-052
+      - NO_speednode_0067
+      - 20|🇰🇷 韩国特殊|@ripaojiedian
+      - "德国\r"
+      - "@DeamNet_🇴🇲Muscat-4547"
+      - V001--US-付费推荐:dlj.tf/ssrsub
+      - IL_speednode_0037
+      - AWS | JP | IPLC专线3号
+      - 以色列_0615022
+      - "@DeamNet_🇺🇸New York-2111"
+      - 以色列_0619026
+      - 20,21|🇸🇬 新加坡
+      - AWS日本3
+      - 19|_🇭🇰_HK_香港_科网_19
+      - "美国凤凰城2号-0.01x\r"
       - IL_speednode_0038
+      - IL_speednode_0009
+      - _US_美国 2
+      - 未知_0619115
+      - "美国凤凰城3号-0.01x\r"
+      - _IL_以色列->🇦🇺_AU_澳大利亚
+      - github.com/freefq - 以色列  23
+      - US_speednode_0109
+      - IL_speednode_0030
+      - "美国圣何塞 | 允许长期跑满带宽-0.1x\r"
+      - 新加坡_0619852
+      - 以色列_0619029
+      - 美国 090
+      - IM_speednode_0047
+      - "@SSRSUB-V30-付费推荐:dlj.tf/ssrsub"
+      - 未知_0619113
+      - 20|🇺🇸US美国(youtube阿伟科技2)_
+      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 4
+      - FI_speednode_0011
+      - _IL_以色列->🇪🇪_EE_爱沙尼亚
+      - US_149.50.69.127_06152023ba3b-1428trojan
+      - _JP_日本
+      - 英国-3
+      - AWS新加坡3
+      - _IL_以色列->🇯🇵_JP_日本
+      - AWS香港1
+      - JP_speednode_0049
+      - IL_speednode_0036
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 19
+      - 以色列【付费推荐：https://tt.vg/vip】187
+      - SG_speednode_0055
+      - 22|🇯🇵 日本特殊|@ripaojiedian
+      - JP_speednode_0054
+      - 美国_06183890 2
+      - _IL_以色列
+      - IL_speednode_0037 2
+      - 19|_🇺🇸_US_美国_科网_19 2
+      - 未知_0619111
+      - IL_speednode_0023
+      - JP, Tokyo
+      - "@SSRSUB-V15-付费推荐:dlj.tf/ssrsub"
+      - 19|_🇺🇸_US_美国_顺丰_121
+      - 19|_🇭🇰_HK_香港_科网_19 2
+      - 以色列_0619028
+      - IL_speednode_0032
+      - _US_美国 3
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 15
+      - 未知_0619123
+      - "@DeamNet_🇨🇦Toronto-3726"
+      - IL_speednode_0022
+      - TR_speednode_0082
+      - 19|_🇺🇸_US_美国_顺丰_63
+      - IL_speednode_0031
+      - 19,20|_🇫🇷_FR_法国_科网_19
+      - "AWS | JP | IPLC专线1号\r"
+      - 美国_06196494 2
+      - V002--US-付费推荐:dlj.tf/ssrsub
+      - IL 25 → tg@nicevpn123
+      - AWS | JP | IPLC专线4号
+      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
+      - JP, Tokyo 2
+      - 未知_0619114
+      - 19|_🇺🇸_US_美国_科网_19__________
+      - 以色列_0619024
+      - 未知_0619142
+      - 美国_06196505
+      - JP_speednode_0075
+      - 未知_0619150
+      - github.com/freefq - 日本  15
+      - US_speednode_0104
+      - GB_speednode_0014
+      - "@SSRSUB-V18-付费推荐:dlj.tf/ssrsub"
+      - 20|🇮🇳IN印度(youtube阿伟科技2) 2
+      - _IL_以色列->🇯🇵_JP_日本 2
+      - github.com/freefq - 上海市电信 21
+      - _IL_以色列->🇩🇪_DE_德国
+      - 20|🇺🇸US美国(youtube阿伟科技2)_ 2
+      - v2rayfree.eu.org - 美国CloudFlare节点 13
+      - 6,8,24,26|_IL_以色列->🇦🇺_AU_澳大利亚
+      - v2rayfree.eu.org - 以色列  8
+      - JP_speednode_0061
+      - IL_speednode_0027 2
+      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
+      - 5,6,16|美国【付费推荐：https://tt.vg/vip】97
+      - "@SSRSUB-V09-付费推荐:dlj.tf/ssrsub"
+      - 19,20|_🇫🇷_FR_法国_科网_19 2
+      - US_speednode_0106
+      - 美国_06196494 3
+      - IL_speednode_0032 2
+      - 美国_06173910
+      - _US_美国->🇬🇧_GB_英国
+      - _UA_乌克兰->🇬🇧_GB_英国
+      - 19,20|_🇺🇸_US_美国_科网_19______ 2
+      - JP_speednode_0050
+      - TW_speednode_0085
+      - 中国_0619336
+      - DP2
+      - V006--US-付费推荐:dlj.tf/ssrsub
+      - _IL_以色列->🇯🇵_JP_日本 3
+      - _IL_以色列->🇦🇺_AU_澳大利亚 2
+      - 17|_🇺🇸_US_美国_由零開始_19__
+      - 19|_🇺🇸_US_美国_分享师_171
+      - 20|🇺🇸 美国特殊|@ripaojiedian
+      - 18|🇺🇸US美国(youtube阿伟科技2)______
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - github.com/freefq - 美国CloudFlare公司CDN节点 9
-      - US_149.50.69.127_06152023ba3b-1428trojan
-      - US_speednode_0107
-      - 荷兰_0618280
-      - 美国_06173935
-      - 美国_06183890 2
-      - 荷兰_0617004
-      - SG_speednode_0055
-      - CN_speednode_0011
-      - 6,8,24,26|_IL_以色列->🇦🇺_AU_澳大利亚
-      - CN_speednode_0012
-      - 美国_06173909 2
-      - V005--US-付费推荐:dlj.tf/ssrsub
-      - "@DeamNet_🇨🇦Toronto-1911"
-      - DE_speednode_0010
-      - _IL_以色列->🇯🇵_JP_日本
-      - -1,7,8,9,10,25,26,27,28|_CN_中国->🇭🇰_HK_香港
-      - IL_speednode_0016
-      - 未知_0619165
-      - IL_speednode_0032
-      - "@SSRSUB-V18-付费推荐:dlj.tf/ssrsub"
-      - github.com/freefq - 以色列  5
-      - _IL_以色列
-      - "@DeamNet_🇳🇱Amsterdam-2703"
-      - 塞浦路斯_0619009
-      - -1,19,22,23|_🇭🇰_HK_香港_17
-      - JP_speednode_0050
-      - 中国_0619336
-      - IL_speednode_0036
-      - github.com/freefq - 以色列  23
-      - 以色列_0619028
-      - 美国_06196494
-      - India 01 TG:@SSRSUB
-      - -1,19,19|_🇭🇰_HK_香港_由零開始_18
-      - IL_speednode_0034
-      - 英国-3
-      - Japan 01|CMCC
-      - 以色列_0619024
-      - "@SSRSUB-V14-付费推荐:dlj.tf/ssrsub"
-      - _IL_以色列->🇦🇺_AU_澳大利亚
-      - JP_speednode_0054
-      - "@DeamNet_🇳🇱Amsterdam-2225"
-      - "@DeamNet_🇺🇸New York-1753"
-      - _IL_以色列->🇳🇱_NL_荷兰
-      - 未知_0619011
-      - _IL_以色列->🇬🇧_GB_英国
-      - NU_speednode_0069
-      - 未知_0619144
-      - 美国_06196505
-      - 美国_06173910
-      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
-      - TW_speednode_0085
-      - 28|🇬🇧 _IL_以色列->🇬🇧_GB_英国 3_
-      - github.com/freefq - 以色列  18
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 9
-      - 未知_0619149
-      - 阿曼_0616035
-      - 未知_0619156
-      - v2rayfree.eu.org - 以色列  8
-      - _US_美国
-      - 未知_0619150
-      - HK香港(youtube阿伟科技2)
-      - SG-4.193.245.7-182
-      - CN_speednode_0008
-      - IL_speednode_0030
-      - 美国 090
-      - "@SSRSUB-V09-付费推荐:dlj.tf/ssrsub"
-      - IL_speednode_0031
-      - 6,8,24,26|_IL_以色列->🇬🇧_GB_英国
-      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 4
-      - CN_speednode_0009
-      - 未知_0619125
-      - JP_speednode_0075
-      - 5,6,16|美国【付费推荐：https://tt.vg/vip】97
-      - 未知_0619164
-      - -1,19,22,23|_🇭🇰_HK_香港_17 2
       - IL_speednode_0029
-      - _IL_以色列->🇯🇵_JP_日本 2
-      - V001--US-付费推荐:dlj.tf/ssrsub
+      - _IL_以色列->🇬🇧_GB_英国
+      - 16,16,20|🇨🇳中国-江苏-南京-ss-cttw1.createmofa...
+      - 17,18|_🇺🇸_US_美国_科网_19__________
+      - -1|🇺🇸_US_美国_由快嘴科技提供：kkzui.com1_47
+      - 17,18|_🇺🇸_US_美国_科网_19___
+      - 17|_🇺🇸_US_美国_yui科技_169
+      - 17|_🇺🇸_US_美国_由零開始_19_
+      - 17|_🇺🇸_US_美国_yui科技_200
+      - US_speednode_0107
       - 塞浦路斯_0619106
-      - IL_speednode_0029 2
-      - "@DeamNet_🇨🇦Toronto-4565"
-      - _IL_以色列->🇬🇧_GB_英国 2
-      - 美国 021
-      - "美国圣何塞 | 允许长期跑满带宽-0.1x\r"
-      - US_speednode_0109
-      - _IL_以色列->🇬🇧_GB_英国 3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 6
-      - "@DeamNet_🇨🇦Toronto-3726"
-      - 以色列_0615022
-      - NU_speednode_0086
-      - IL_speednode_0037
-      - -1,19,19|_🇭🇰_HK_香港_由零開始_18 2
-      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
-      - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - _US_美国->🇹🇼_TW_台湾
-      - IL_speednode_0060
-      - 英国-2
-      - _CN_中国->🇭🇰_HK_香港
-      - IL_speednode_0027
-      - 未知_0619168
-      - 未知_0619142
-      - -1,22,23|移动专线A
-      - _IL_以色列->🇳🇱_NL_荷兰 2
-      - 英国-1
-      - DP2
-      - 阿曼_0617021
-      - 新加坡_0619854
-      - V006--US-付费推荐:dlj.tf/ssrsub
-      - US_speednode_0104
-      - JP_speednode_0061
-      - IL 25 → tg@nicevpn123
-      - IL_speednode_0009
-      - 新加坡 009
-      - CN_speednode_0004
+      - 日本_0619008
+      - 未知_06194145
+      - 美国_06196494
+      - "德国3\r"
+      - SK_speednode_0080
+      - 未知_0619108
+      - IL_speednode_0040
+      - 未知_0619118
+      - US-163.123.192.154-182
+      - SG, Singapore
+      - US_speednode_0111
+      - _DE_德国 2
+      - 以色列_0619025
+      - 20,21|🇭🇰 香港
+      - 防失效github SubCrawler中国_0619011
+      - CN-14.18.103.121-086
+      - US_speednode_0101
+      - US, Dallas 2
+      - TR_speednode_0081
+      - 未知_0619010
+      - 17|_🇺🇸_US_美国_顺丰_16
+      - 18|🇺🇸US美国(youtube阿伟科技2)_______
+      - SG_speednode_0073
+      - DE_speednode_0010
+      - "@SSRSUB-V17-付费推荐:dlj.tf/ssrsub"
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 12
+      - 台湾_0619277
+      - 20|🇺🇸 美国_06196495
+      - US_speednode_0113
+      - "@DeamNet_🇩🇪Frankfurt am Main-2300"
       - IL_speednode_0013
+      - 4,11|🇸🇬 新加坡【付费推荐：https://tt.vg/vip】...
+      - LY_speednode_0065
+      - "@DeamNet_🇺🇸New York-2276"
+      - CN_speednode_0007
+      - AWS新加坡2
+      - 19,20|_🇺🇸_US_美国_科网_19___
+      - CN_speednode_0004
+      - 美国4
+      - TR_speednode_0083
+      - 4|🇺🇲 美国【付费推荐：https://tt.vg/vip】1...
+      - 18|🇺🇸US美国(youtube阿伟科技2)_
+      - _US_美国
+      - 以色列_0619023
+      - 美国_06196502
+      - JP_speednode_0052
+      - CN_speednode_0008
+      - AWS | SG | IPLC专线1号
+      - 英国-1
+      - 18|🇺🇸US美国(youtube阿伟科技2)___
+      - 20|🇮🇳IN印度(youtube阿伟科技2)
+      - CA, Vancouver
+      - 美国_06191635
+      - 17|_🇺🇸_US_美国_yui科技_164
+      - 19|_🇺🇸_US_美国_科网_19
+      - "@DeamNet_ðŸ‡³ðŸ‡±Amsterdam-4450"
+      - _IL_以色列->🇳🇱_NL_荷兰
+      - "@SSRSUB-V14-付费推荐:dlj.tf/ssrsub"
+      - 19|_🇺🇸_US_美国_由零開始_19
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 21
+      - sg-am3.eqsunshine.com:32001
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 22
+      - 英国-2
+      - "@DeamNet_🇰🇷Seoul-1917"
+      - 19,20|_🇺🇸_US_美国_科网_19_______
+      - -1,0,1,16,19,19|🇹🇼 _US_美国->🇹🇼_TW_台湾
+      - "@SSRSUB-V04-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V07-付费推荐:dlj.tf/ssrsub"
+      - IL_speednode_0046
+      - 以色列_0619030
+      - 未知_06194374
+      - AWS香港4
+      - India 01 TG:@SSRSUB
+      - _IL_以色列->🇳🇱_NL_荷兰 2
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 16
+      - github.com/freefq - 以色列  5
+      - SG_speednode_0075
+      - IL_speednode_0033
+      - -1,19,20,22,23|_🇭🇰_HK_香港_破解君_19
+      - 未知_06193871
+      - 17|_🇺🇸_US_美国_科网_18
+      - 未知_0619011
+      - "@SSRSUB-V05-付费推荐:dlj.tf/ssrsub"
+      - GB_speednode_0015
+      - HK, Kowloon
+      - 19,20|_🇺🇸_US_美国_科网_19______
+      - "@DeamNet_🇺🇸New York-1753"
+      - 1|🇬🇧 _IL_以色列->🇬🇧_GB_英国
+      - 未知_0619110
+      - github.com/freefq - 以色列  7
+      - V005--US-付费推荐:dlj.tf/ssrsub
+      - KR_speednode_0063
+      - V003--US-付费推荐:dlj.tf/ssrsub
+      - IL_speednode_0027
       - CN_speednode_0005
+      - CN-14.18.89.198-052
+      - NO_speednode_0067
+      - 20|🇰🇷 韩国特殊|@ripaojiedian
+      - "德国\r"
+      - "@DeamNet_🇴🇲Muscat-4547"
+      - V001--US-付费推荐:dlj.tf/ssrsub
+      - IL_speednode_0037
+      - AWS | JP | IPLC专线3号
+      - 以色列_0615022
+      - "@DeamNet_🇺🇸New York-2111"
+      - 以色列_0619026
+      - 20,21|🇸🇬 新加坡
+      - AWS日本3
+      - 19|_🇭🇰_HK_香港_科网_19
+      - "美国凤凰城2号-0.01x\r"
       - IL_speednode_0038
+      - IL_speednode_0009
+      - _US_美国 2
+      - 未知_0619115
+      - "美国凤凰城3号-0.01x\r"
+      - _IL_以色列->🇦🇺_AU_澳大利亚
+      - github.com/freefq - 以色列  23
+      - US_speednode_0109
+      - IL_speednode_0030
+      - "美国圣何塞 | 允许长期跑满带宽-0.1x\r"
+      - 新加坡_0619852
+      - 以色列_0619029
+      - 美国 090
+      - IM_speednode_0047
+      - "@SSRSUB-V30-付费推荐:dlj.tf/ssrsub"
+      - 未知_0619113
+      - 20|🇺🇸US美国(youtube阿伟科技2)_
+      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 4
+      - FI_speednode_0011
+      - _IL_以色列->🇪🇪_EE_爱沙尼亚
+      - US_149.50.69.127_06152023ba3b-1428trojan
+      - _JP_日本
+      - 英国-3
+      - AWS新加坡3
+      - _IL_以色列->🇯🇵_JP_日本
+      - AWS香港1
+      - JP_speednode_0049
+      - IL_speednode_0036
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 19
+      - 以色列【付费推荐：https://tt.vg/vip】187
+      - SG_speednode_0055
+      - 22|🇯🇵 日本特殊|@ripaojiedian
+      - JP_speednode_0054
+      - 美国_06183890 2
+      - _IL_以色列
+      - IL_speednode_0037 2
+      - 19|_🇺🇸_US_美国_科网_19 2
+      - 未知_0619111
+      - IL_speednode_0023
+      - JP, Tokyo
+      - "@SSRSUB-V15-付费推荐:dlj.tf/ssrsub"
+      - 19|_🇺🇸_US_美国_顺丰_121
+      - 19|_🇭🇰_HK_香港_科网_19 2
+      - 以色列_0619028
+      - IL_speednode_0032
+      - _US_美国 3
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 15
+      - 未知_0619123
+      - "@DeamNet_🇨🇦Toronto-3726"
+      - IL_speednode_0022
+      - TR_speednode_0082
+      - 19|_🇺🇸_US_美国_顺丰_63
+      - IL_speednode_0031
+      - 19,20|_🇫🇷_FR_法国_科网_19
+      - "AWS | JP | IPLC专线1号\r"
+      - 美国_06196494 2
+      - V002--US-付费推荐:dlj.tf/ssrsub
+      - IL 25 → tg@nicevpn123
+      - AWS | JP | IPLC专线4号
+      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
+      - JP, Tokyo 2
+      - 未知_0619114
+      - 19|_🇺🇸_US_美国_科网_19__________
+      - 以色列_0619024
+      - 未知_0619142
+      - 美国_06196505
+      - JP_speednode_0075
+      - 未知_0619150
+      - github.com/freefq - 日本  15
+      - US_speednode_0104
+      - GB_speednode_0014
+      - "@SSRSUB-V18-付费推荐:dlj.tf/ssrsub"
+      - 20|🇮🇳IN印度(youtube阿伟科技2) 2
+      - _IL_以色列->🇯🇵_JP_日本 2
+      - github.com/freefq - 上海市电信 21
+      - _IL_以色列->🇩🇪_DE_德国
+      - 20|🇺🇸US美国(youtube阿伟科技2)_ 2
+      - v2rayfree.eu.org - 美国CloudFlare节点 13
+      - 6,8,24,26|_IL_以色列->🇦🇺_AU_澳大利亚
+      - v2rayfree.eu.org - 以色列  8
+      - JP_speednode_0061
+      - IL_speednode_0027 2
+      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
+      - 5,6,16|美国【付费推荐：https://tt.vg/vip】97
+      - "@SSRSUB-V09-付费推荐:dlj.tf/ssrsub"
+      - 19,20|_🇫🇷_FR_法国_科网_19 2
+      - US_speednode_0106
+      - 美国_06196494 3
+      - IL_speednode_0032 2
+      - 美国_06173910
+      - _US_美国->🇬🇧_GB_英国
+      - _UA_乌克兰->🇬🇧_GB_英国
+      - 19,20|_🇺🇸_US_美国_科网_19______ 2
+      - JP_speednode_0050
+      - TW_speednode_0085
+      - 中国_0619336
+      - DP2
+      - V006--US-付费推荐:dlj.tf/ssrsub
+      - _IL_以色列->🇯🇵_JP_日本 3
+      - _IL_以色列->🇦🇺_AU_澳大利亚 2
+      - 17|_🇺🇸_US_美国_由零開始_19__
+      - 19|_🇺🇸_US_美国_分享师_171
+      - 20|🇺🇸 美国特殊|@ripaojiedian
+      - 18|🇺🇸US美国(youtube阿伟科技2)______
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - github.com/freefq - 美国CloudFlare公司CDN节点 9
-      - US_149.50.69.127_06152023ba3b-1428trojan
-      - US_speednode_0107
-      - 荷兰_0618280
-      - 美国_06173935
-      - 美国_06183890 2
-      - 荷兰_0617004
-      - SG_speednode_0055
-      - CN_speednode_0011
-      - 6,8,24,26|_IL_以色列->🇦🇺_AU_澳大利亚
-      - CN_speednode_0012
-      - 美国_06173909 2
-      - V005--US-付费推荐:dlj.tf/ssrsub
-      - "@DeamNet_🇨🇦Toronto-1911"
-      - DE_speednode_0010
-      - _IL_以色列->🇯🇵_JP_日本
-      - -1,7,8,9,10,25,26,27,28|_CN_中国->🇭🇰_HK_香港
-      - IL_speednode_0016
-      - 未知_0619165
-      - IL_speednode_0032
-      - "@SSRSUB-V18-付费推荐:dlj.tf/ssrsub"
-      - github.com/freefq - 以色列  5
-      - _IL_以色列
-      - "@DeamNet_🇳🇱Amsterdam-2703"
-      - 塞浦路斯_0619009
-      - -1,19,22,23|_🇭🇰_HK_香港_17
-      - JP_speednode_0050
-      - 中国_0619336
-      - IL_speednode_0036
-      - github.com/freefq - 以色列  23
-      - 以色列_0619028
-      - 美国_06196494
-      - India 01 TG:@SSRSUB
-      - -1,19,19|_🇭🇰_HK_香港_由零開始_18
-      - IL_speednode_0034
-      - 英国-3
-      - Japan 01|CMCC
-      - 以色列_0619024
-      - "@SSRSUB-V14-付费推荐:dlj.tf/ssrsub"
-      - _IL_以色列->🇦🇺_AU_澳大利亚
-      - JP_speednode_0054
-      - "@DeamNet_🇳🇱Amsterdam-2225"
-      - "@DeamNet_🇺🇸New York-1753"
-      - _IL_以色列->🇳🇱_NL_荷兰
-      - 未知_0619011
-      - _IL_以色列->🇬🇧_GB_英国
-      - NU_speednode_0069
-      - 未知_0619144
-      - 美国_06196505
-      - 美国_06173910
-      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
-      - TW_speednode_0085
-      - 28|🇬🇧 _IL_以色列->🇬🇧_GB_英国 3_
-      - github.com/freefq - 以色列  18
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 9
-      - 未知_0619149
-      - 阿曼_0616035
-      - 未知_0619156
-      - v2rayfree.eu.org - 以色列  8
-      - _US_美国
-      - 未知_0619150
-      - HK香港(youtube阿伟科技2)
-      - SG-4.193.245.7-182
-      - CN_speednode_0008
-      - IL_speednode_0030
-      - 美国 090
-      - "@SSRSUB-V09-付费推荐:dlj.tf/ssrsub"
-      - IL_speednode_0031
-      - 6,8,24,26|_IL_以色列->🇬🇧_GB_英国
-      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 4
-      - CN_speednode_0009
-      - 未知_0619125
-      - JP_speednode_0075
-      - 5,6,16|美国【付费推荐：https://tt.vg/vip】97
-      - 未知_0619164
-      - -1,19,22,23|_🇭🇰_HK_香港_17 2
       - IL_speednode_0029
-      - _IL_以色列->🇯🇵_JP_日本 2
-      - V001--US-付费推荐:dlj.tf/ssrsub
+      - _IL_以色列->🇬🇧_GB_英国
+      - 16,16,20|🇨🇳中国-江苏-南京-ss-cttw1.createmofa...
+      - 17,18|_🇺🇸_US_美国_科网_19__________
+      - -1|🇺🇸_US_美国_由快嘴科技提供：kkzui.com1_47
+      - 17,18|_🇺🇸_US_美国_科网_19___
+      - 17|_🇺🇸_US_美国_yui科技_169
+      - 17|_🇺🇸_US_美国_由零開始_19_
+      - 17|_🇺🇸_US_美国_yui科技_200
+      - US_speednode_0107
       - 塞浦路斯_0619106
-      - IL_speednode_0029 2
-      - "@DeamNet_🇨🇦Toronto-4565"
-      - _IL_以色列->🇬🇧_GB_英国 2
-      - 美国 021
-      - "美国圣何塞 | 允许长期跑满带宽-0.1x\r"
-      - US_speednode_0109
-      - _IL_以色列->🇬🇧_GB_英国 3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 6
-      - "@DeamNet_🇨🇦Toronto-3726"
-      - 以色列_0615022
-      - NU_speednode_0086
-      - IL_speednode_0037
-      - -1,19,19|_🇭🇰_HK_香港_由零開始_18 2
-      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
-      - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - _US_美国->🇹🇼_TW_台湾
-      - IL_speednode_0060
-      - 英国-2
-      - _CN_中国->🇭🇰_HK_香港
-      - IL_speednode_0027
-      - 未知_0619168
-      - 未知_0619142
-      - -1,22,23|移动专线A
-      - _IL_以色列->🇳🇱_NL_荷兰 2
-      - 英国-1
-      - DP2
-      - 阿曼_0617021
-      - 新加坡_0619854
-      - V006--US-付费推荐:dlj.tf/ssrsub
-      - US_speednode_0104
-      - JP_speednode_0061
-      - IL 25 → tg@nicevpn123
-      - IL_speednode_0009
-      - 新加坡 009
-      - CN_speednode_0004
+      - 日本_0619008
+      - 未知_06194145
+      - 美国_06196494
+      - "德国3\r"
+      - SK_speednode_0080
+      - 未知_0619108
+      - IL_speednode_0040
+      - 未知_0619118
+      - US-163.123.192.154-182
+      - SG, Singapore
+      - US_speednode_0111
+      - _DE_德国 2
+      - 以色列_0619025
+      - 20,21|🇭🇰 香港
+      - 防失效github SubCrawler中国_0619011
+      - CN-14.18.103.121-086
+      - US_speednode_0101
+      - US, Dallas 2
+      - TR_speednode_0081
+      - 未知_0619010
+      - 17|_🇺🇸_US_美国_顺丰_16
+      - 18|🇺🇸US美国(youtube阿伟科技2)_______
+      - SG_speednode_0073
+      - DE_speednode_0010
+      - "@SSRSUB-V17-付费推荐:dlj.tf/ssrsub"
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 12
+      - 台湾_0619277
+      - 20|🇺🇸 美国_06196495
+      - US_speednode_0113
+      - "@DeamNet_🇩🇪Frankfurt am Main-2300"
       - IL_speednode_0013
+      - 4,11|🇸🇬 新加坡【付费推荐：https://tt.vg/vip】...
+      - LY_speednode_0065
+      - "@DeamNet_🇺🇸New York-2276"
+      - CN_speednode_0007
+      - AWS新加坡2
+      - 19,20|_🇺🇸_US_美国_科网_19___
+      - CN_speednode_0004
+      - 美国4
+      - TR_speednode_0083
+      - 4|🇺🇲 美国【付费推荐：https://tt.vg/vip】1...
+      - 18|🇺🇸US美国(youtube阿伟科技2)_
+      - _US_美国
+      - 以色列_0619023
+      - 美国_06196502
+      - JP_speednode_0052
+      - CN_speednode_0008
+      - AWS | SG | IPLC专线1号
+      - 英国-1
+      - 18|🇺🇸US美国(youtube阿伟科技2)___
+      - 20|🇮🇳IN印度(youtube阿伟科技2)
+      - CA, Vancouver
+      - 美国_06191635
+      - 17|_🇺🇸_US_美国_yui科技_164
+      - 19|_🇺🇸_US_美国_科网_19
+      - "@DeamNet_ðŸ‡³ðŸ‡±Amsterdam-4450"
+      - _IL_以色列->🇳🇱_NL_荷兰
+      - "@SSRSUB-V14-付费推荐:dlj.tf/ssrsub"
+      - 19|_🇺🇸_US_美国_由零開始_19
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 21
+      - sg-am3.eqsunshine.com:32001
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 22
+      - 英国-2
+      - "@DeamNet_🇰🇷Seoul-1917"
+      - 19,20|_🇺🇸_US_美国_科网_19_______
+      - -1,0,1,16,19,19|🇹🇼 _US_美国->🇹🇼_TW_台湾
+      - "@SSRSUB-V04-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V07-付费推荐:dlj.tf/ssrsub"
+      - IL_speednode_0046
+      - 以色列_0619030
+      - 未知_06194374
+      - AWS香港4
+      - India 01 TG:@SSRSUB
+      - _IL_以色列->🇳🇱_NL_荷兰 2
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 16
+      - github.com/freefq - 以色列  5
+      - SG_speednode_0075
+      - IL_speednode_0033
+      - -1,19,20,22,23|_🇭🇰_HK_香港_破解君_19
+      - 未知_06193871
+      - 17|_🇺🇸_US_美国_科网_18
+      - 未知_0619011
+      - "@SSRSUB-V05-付费推荐:dlj.tf/ssrsub"
+      - GB_speednode_0015
+      - HK, Kowloon
+      - 19,20|_🇺🇸_US_美国_科网_19______
+      - "@DeamNet_🇺🇸New York-1753"
+      - 1|🇬🇧 _IL_以色列->🇬🇧_GB_英国
+      - 未知_0619110
+      - github.com/freefq - 以色列  7
+      - V005--US-付费推荐:dlj.tf/ssrsub
+      - KR_speednode_0063
+      - V003--US-付费推荐:dlj.tf/ssrsub
+      - IL_speednode_0027
       - CN_speednode_0005
+      - CN-14.18.89.198-052
+      - NO_speednode_0067
+      - 20|🇰🇷 韩国特殊|@ripaojiedian
+      - "德国\r"
+      - "@DeamNet_🇴🇲Muscat-4547"
+      - V001--US-付费推荐:dlj.tf/ssrsub
+      - IL_speednode_0037
+      - AWS | JP | IPLC专线3号
+      - 以色列_0615022
+      - "@DeamNet_🇺🇸New York-2111"
+      - 以色列_0619026
+      - 20,21|🇸🇬 新加坡
+      - AWS日本3
+      - 19|_🇭🇰_HK_香港_科网_19
+      - "美国凤凰城2号-0.01x\r"
       - IL_speednode_0038
+      - IL_speednode_0009
+      - _US_美国 2
+      - 未知_0619115
+      - "美国凤凰城3号-0.01x\r"
+      - _IL_以色列->🇦🇺_AU_澳大利亚
+      - github.com/freefq - 以色列  23
+      - US_speednode_0109
+      - IL_speednode_0030
+      - "美国圣何塞 | 允许长期跑满带宽-0.1x\r"
+      - 新加坡_0619852
+      - 以色列_0619029
+      - 美国 090
+      - IM_speednode_0047
+      - "@SSRSUB-V30-付费推荐:dlj.tf/ssrsub"
+      - 未知_0619113
+      - 20|🇺🇸US美国(youtube阿伟科技2)_
+      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 4
+      - FI_speednode_0011
+      - _IL_以色列->🇪🇪_EE_爱沙尼亚
+      - US_149.50.69.127_06152023ba3b-1428trojan
+      - _JP_日本
+      - 英国-3
+      - AWS新加坡3
+      - _IL_以色列->🇯🇵_JP_日本
+      - AWS香港1
+      - JP_speednode_0049
+      - IL_speednode_0036
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 19
+      - 以色列【付费推荐：https://tt.vg/vip】187
+      - SG_speednode_0055
+      - 22|🇯🇵 日本特殊|@ripaojiedian
+      - JP_speednode_0054
+      - 美国_06183890 2
+      - _IL_以色列
+      - IL_speednode_0037 2
+      - 19|_🇺🇸_US_美国_科网_19 2
+      - 未知_0619111
+      - IL_speednode_0023
+      - JP, Tokyo
+      - "@SSRSUB-V15-付费推荐:dlj.tf/ssrsub"
+      - 19|_🇺🇸_US_美国_顺丰_121
+      - 19|_🇭🇰_HK_香港_科网_19 2
+      - 以色列_0619028
+      - IL_speednode_0032
+      - _US_美国 3
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 15
+      - 未知_0619123
+      - "@DeamNet_🇨🇦Toronto-3726"
+      - IL_speednode_0022
+      - TR_speednode_0082
+      - 19|_🇺🇸_US_美国_顺丰_63
+      - IL_speednode_0031
+      - 19,20|_🇫🇷_FR_法国_科网_19
+      - "AWS | JP | IPLC专线1号\r"
+      - 美国_06196494 2
+      - V002--US-付费推荐:dlj.tf/ssrsub
+      - IL 25 → tg@nicevpn123
+      - AWS | JP | IPLC专线4号
+      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
+      - JP, Tokyo 2
+      - 未知_0619114
+      - 19|_🇺🇸_US_美国_科网_19__________
+      - 以色列_0619024
+      - 未知_0619142
+      - 美国_06196505
+      - JP_speednode_0075
+      - 未知_0619150
+      - github.com/freefq - 日本  15
+      - US_speednode_0104
+      - GB_speednode_0014
+      - "@SSRSUB-V18-付费推荐:dlj.tf/ssrsub"
+      - 20|🇮🇳IN印度(youtube阿伟科技2) 2
+      - _IL_以色列->🇯🇵_JP_日本 2
+      - github.com/freefq - 上海市电信 21
+      - _IL_以色列->🇩🇪_DE_德国
+      - 20|🇺🇸US美国(youtube阿伟科技2)_ 2
+      - v2rayfree.eu.org - 美国CloudFlare节点 13
+      - 6,8,24,26|_IL_以色列->🇦🇺_AU_澳大利亚
+      - v2rayfree.eu.org - 以色列  8
+      - JP_speednode_0061
+      - IL_speednode_0027 2
+      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
+      - 5,6,16|美国【付费推荐：https://tt.vg/vip】97
+      - "@SSRSUB-V09-付费推荐:dlj.tf/ssrsub"
+      - 19,20|_🇫🇷_FR_法国_科网_19 2
+      - US_speednode_0106
+      - 美国_06196494 3
+      - IL_speednode_0032 2
+      - 美国_06173910
+      - _US_美国->🇬🇧_GB_英国
+      - _UA_乌克兰->🇬🇧_GB_英国
+      - 19,20|_🇺🇸_US_美国_科网_19______ 2
+      - JP_speednode_0050
+      - TW_speednode_0085
+      - 中国_0619336
+      - DP2
+      - V006--US-付费推荐:dlj.tf/ssrsub
+      - _IL_以色列->🇯🇵_JP_日本 3
+      - _IL_以色列->🇦🇺_AU_澳大利亚 2
+      - 17|_🇺🇸_US_美国_由零開始_19__
+      - 19|_🇺🇸_US_美国_分享师_171
+      - 20|🇺🇸 美国特殊|@ripaojiedian
+      - 18|🇺🇸US美国(youtube阿伟科技2)______
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1029,124 +1886,231 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - github.com/freefq - 美国CloudFlare公司CDN节点 9
-      - US_149.50.69.127_06152023ba3b-1428trojan
-      - US_speednode_0107
-      - 荷兰_0618280
-      - 美国_06173935
-      - 美国_06183890 2
-      - 荷兰_0617004
-      - SG_speednode_0055
-      - CN_speednode_0011
-      - 6,8,24,26|_IL_以色列->🇦🇺_AU_澳大利亚
-      - CN_speednode_0012
-      - 美国_06173909 2
-      - V005--US-付费推荐:dlj.tf/ssrsub
-      - "@DeamNet_🇨🇦Toronto-1911"
-      - DE_speednode_0010
-      - _IL_以色列->🇯🇵_JP_日本
-      - -1,7,8,9,10,25,26,27,28|_CN_中国->🇭🇰_HK_香港
-      - IL_speednode_0016
-      - 未知_0619165
-      - IL_speednode_0032
-      - "@SSRSUB-V18-付费推荐:dlj.tf/ssrsub"
-      - github.com/freefq - 以色列  5
-      - _IL_以色列
-      - "@DeamNet_🇳🇱Amsterdam-2703"
-      - 塞浦路斯_0619009
-      - -1,19,22,23|_🇭🇰_HK_香港_17
-      - JP_speednode_0050
-      - 中国_0619336
-      - IL_speednode_0036
-      - github.com/freefq - 以色列  23
-      - 以色列_0619028
-      - 美国_06196494
-      - India 01 TG:@SSRSUB
-      - -1,19,19|_🇭🇰_HK_香港_由零開始_18
-      - IL_speednode_0034
-      - 英国-3
-      - Japan 01|CMCC
-      - 以色列_0619024
-      - "@SSRSUB-V14-付费推荐:dlj.tf/ssrsub"
-      - _IL_以色列->🇦🇺_AU_澳大利亚
-      - JP_speednode_0054
-      - "@DeamNet_🇳🇱Amsterdam-2225"
-      - "@DeamNet_🇺🇸New York-1753"
-      - _IL_以色列->🇳🇱_NL_荷兰
-      - 未知_0619011
-      - _IL_以色列->🇬🇧_GB_英国
-      - NU_speednode_0069
-      - 未知_0619144
-      - 美国_06196505
-      - 美国_06173910
-      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
-      - TW_speednode_0085
-      - 28|🇬🇧 _IL_以色列->🇬🇧_GB_英国 3_
-      - github.com/freefq - 以色列  18
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 9
-      - 未知_0619149
-      - 阿曼_0616035
-      - 未知_0619156
-      - v2rayfree.eu.org - 以色列  8
-      - _US_美国
-      - 未知_0619150
-      - HK香港(youtube阿伟科技2)
-      - SG-4.193.245.7-182
-      - CN_speednode_0008
-      - IL_speednode_0030
-      - 美国 090
-      - "@SSRSUB-V09-付费推荐:dlj.tf/ssrsub"
-      - IL_speednode_0031
-      - 6,8,24,26|_IL_以色列->🇬🇧_GB_英国
-      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 4
-      - CN_speednode_0009
-      - 未知_0619125
-      - JP_speednode_0075
-      - 5,6,16|美国【付费推荐：https://tt.vg/vip】97
-      - 未知_0619164
-      - -1,19,22,23|_🇭🇰_HK_香港_17 2
       - IL_speednode_0029
-      - _IL_以色列->🇯🇵_JP_日本 2
-      - V001--US-付费推荐:dlj.tf/ssrsub
+      - _IL_以色列->🇬🇧_GB_英国
+      - 16,16,20|🇨🇳中国-江苏-南京-ss-cttw1.createmofa...
+      - 17,18|_🇺🇸_US_美国_科网_19__________
+      - -1|🇺🇸_US_美国_由快嘴科技提供：kkzui.com1_47
+      - 17,18|_🇺🇸_US_美国_科网_19___
+      - 17|_🇺🇸_US_美国_yui科技_169
+      - 17|_🇺🇸_US_美国_由零開始_19_
+      - 17|_🇺🇸_US_美国_yui科技_200
+      - US_speednode_0107
       - 塞浦路斯_0619106
-      - IL_speednode_0029 2
-      - "@DeamNet_🇨🇦Toronto-4565"
-      - _IL_以色列->🇬🇧_GB_英国 2
-      - 美国 021
-      - "美国圣何塞 | 允许长期跑满带宽-0.1x\r"
-      - US_speednode_0109
-      - _IL_以色列->🇬🇧_GB_英国 3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 6
-      - "@DeamNet_🇨🇦Toronto-3726"
-      - 以色列_0615022
-      - NU_speednode_0086
-      - IL_speednode_0037
-      - -1,19,19|_🇭🇰_HK_香港_由零開始_18 2
-      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
-      - github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - _US_美国->🇹🇼_TW_台湾
-      - IL_speednode_0060
-      - 英国-2
-      - _CN_中国->🇭🇰_HK_香港
-      - IL_speednode_0027
-      - 未知_0619168
-      - 未知_0619142
-      - -1,22,23|移动专线A
-      - _IL_以色列->🇳🇱_NL_荷兰 2
-      - 英国-1
-      - DP2
-      - 阿曼_0617021
-      - 新加坡_0619854
-      - V006--US-付费推荐:dlj.tf/ssrsub
-      - US_speednode_0104
-      - JP_speednode_0061
-      - IL 25 → tg@nicevpn123
-      - IL_speednode_0009
-      - 新加坡 009
-      - CN_speednode_0004
+      - 日本_0619008
+      - 未知_06194145
+      - 美国_06196494
+      - "德国3\r"
+      - SK_speednode_0080
+      - 未知_0619108
+      - IL_speednode_0040
+      - 未知_0619118
+      - US-163.123.192.154-182
+      - SG, Singapore
+      - US_speednode_0111
+      - _DE_德国 2
+      - 以色列_0619025
+      - 20,21|🇭🇰 香港
+      - 防失效github SubCrawler中国_0619011
+      - CN-14.18.103.121-086
+      - US_speednode_0101
+      - US, Dallas 2
+      - TR_speednode_0081
+      - 未知_0619010
+      - 17|_🇺🇸_US_美国_顺丰_16
+      - 18|🇺🇸US美国(youtube阿伟科技2)_______
+      - SG_speednode_0073
+      - DE_speednode_0010
+      - "@SSRSUB-V17-付费推荐:dlj.tf/ssrsub"
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 12
+      - 台湾_0619277
+      - 20|🇺🇸 美国_06196495
+      - US_speednode_0113
+      - "@DeamNet_🇩🇪Frankfurt am Main-2300"
       - IL_speednode_0013
+      - 4,11|🇸🇬 新加坡【付费推荐：https://tt.vg/vip】...
+      - LY_speednode_0065
+      - "@DeamNet_🇺🇸New York-2276"
+      - CN_speednode_0007
+      - AWS新加坡2
+      - 19,20|_🇺🇸_US_美国_科网_19___
+      - CN_speednode_0004
+      - 美国4
+      - TR_speednode_0083
+      - 4|🇺🇲 美国【付费推荐：https://tt.vg/vip】1...
+      - 18|🇺🇸US美国(youtube阿伟科技2)_
+      - _US_美国
+      - 以色列_0619023
+      - 美国_06196502
+      - JP_speednode_0052
+      - CN_speednode_0008
+      - AWS | SG | IPLC专线1号
+      - 英国-1
+      - 18|🇺🇸US美国(youtube阿伟科技2)___
+      - 20|🇮🇳IN印度(youtube阿伟科技2)
+      - CA, Vancouver
+      - 美国_06191635
+      - 17|_🇺🇸_US_美国_yui科技_164
+      - 19|_🇺🇸_US_美国_科网_19
+      - "@DeamNet_ðŸ‡³ðŸ‡±Amsterdam-4450"
+      - _IL_以色列->🇳🇱_NL_荷兰
+      - "@SSRSUB-V14-付费推荐:dlj.tf/ssrsub"
+      - 19|_🇺🇸_US_美国_由零開始_19
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 21
+      - sg-am3.eqsunshine.com:32001
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 22
+      - 英国-2
+      - "@DeamNet_🇰🇷Seoul-1917"
+      - 19,20|_🇺🇸_US_美国_科网_19_______
+      - -1,0,1,16,19,19|🇹🇼 _US_美国->🇹🇼_TW_台湾
+      - "@SSRSUB-V04-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-V07-付费推荐:dlj.tf/ssrsub"
+      - IL_speednode_0046
+      - 以色列_0619030
+      - 未知_06194374
+      - AWS香港4
+      - India 01 TG:@SSRSUB
+      - _IL_以色列->🇳🇱_NL_荷兰 2
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 16
+      - github.com/freefq - 以色列  5
+      - SG_speednode_0075
+      - IL_speednode_0033
+      - -1,19,20,22,23|_🇭🇰_HK_香港_破解君_19
+      - 未知_06193871
+      - 17|_🇺🇸_US_美国_科网_18
+      - 未知_0619011
+      - "@SSRSUB-V05-付费推荐:dlj.tf/ssrsub"
+      - GB_speednode_0015
+      - HK, Kowloon
+      - 19,20|_🇺🇸_US_美国_科网_19______
+      - "@DeamNet_🇺🇸New York-1753"
+      - 1|🇬🇧 _IL_以色列->🇬🇧_GB_英国
+      - 未知_0619110
+      - github.com/freefq - 以色列  7
+      - V005--US-付费推荐:dlj.tf/ssrsub
+      - KR_speednode_0063
+      - V003--US-付费推荐:dlj.tf/ssrsub
+      - IL_speednode_0027
       - CN_speednode_0005
+      - CN-14.18.89.198-052
+      - NO_speednode_0067
+      - 20|🇰🇷 韩国特殊|@ripaojiedian
+      - "德国\r"
+      - "@DeamNet_🇴🇲Muscat-4547"
+      - V001--US-付费推荐:dlj.tf/ssrsub
+      - IL_speednode_0037
+      - AWS | JP | IPLC专线3号
+      - 以色列_0615022
+      - "@DeamNet_🇺🇸New York-2111"
+      - 以色列_0619026
+      - 20,21|🇸🇬 新加坡
+      - AWS日本3
+      - 19|_🇭🇰_HK_香港_科网_19
+      - "美国凤凰城2号-0.01x\r"
       - IL_speednode_0038
+      - IL_speednode_0009
+      - _US_美国 2
+      - 未知_0619115
+      - "美国凤凰城3号-0.01x\r"
+      - _IL_以色列->🇦🇺_AU_澳大利亚
+      - github.com/freefq - 以色列  23
+      - US_speednode_0109
+      - IL_speednode_0030
+      - "美国圣何塞 | 允许长期跑满带宽-0.1x\r"
+      - 新加坡_0619852
+      - 以色列_0619029
+      - 美国 090
+      - IM_speednode_0047
+      - "@SSRSUB-V30-付费推荐:dlj.tf/ssrsub"
+      - 未知_0619113
+      - 20|🇺🇸US美国(youtube阿伟科技2)_
+      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 4
+      - FI_speednode_0011
+      - _IL_以色列->🇪🇪_EE_爱沙尼亚
+      - US_149.50.69.127_06152023ba3b-1428trojan
+      - _JP_日本
+      - 英国-3
+      - AWS新加坡3
+      - _IL_以色列->🇯🇵_JP_日本
+      - AWS香港1
+      - JP_speednode_0049
+      - IL_speednode_0036
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 19
+      - 以色列【付费推荐：https://tt.vg/vip】187
+      - SG_speednode_0055
+      - 22|🇯🇵 日本特殊|@ripaojiedian
+      - JP_speednode_0054
+      - 美国_06183890 2
+      - _IL_以色列
+      - IL_speednode_0037 2
+      - 19|_🇺🇸_US_美国_科网_19 2
+      - 未知_0619111
+      - IL_speednode_0023
+      - JP, Tokyo
+      - "@SSRSUB-V15-付费推荐:dlj.tf/ssrsub"
+      - 19|_🇺🇸_US_美国_顺丰_121
+      - 19|_🇭🇰_HK_香港_科网_19 2
+      - 以色列_0619028
+      - IL_speednode_0032
+      - _US_美国 3
+      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 15
+      - 未知_0619123
+      - "@DeamNet_🇨🇦Toronto-3726"
+      - IL_speednode_0022
+      - TR_speednode_0082
+      - 19|_🇺🇸_US_美国_顺丰_63
+      - IL_speednode_0031
+      - 19,20|_🇫🇷_FR_法国_科网_19
+      - "AWS | JP | IPLC专线1号\r"
+      - 美国_06196494 2
+      - V002--US-付费推荐:dlj.tf/ssrsub
+      - IL 25 → tg@nicevpn123
+      - AWS | JP | IPLC专线4号
+      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
+      - JP, Tokyo 2
+      - 未知_0619114
+      - 19|_🇺🇸_US_美国_科网_19__________
+      - 以色列_0619024
+      - 未知_0619142
+      - 美国_06196505
+      - JP_speednode_0075
+      - 未知_0619150
+      - github.com/freefq - 日本  15
+      - US_speednode_0104
+      - GB_speednode_0014
+      - "@SSRSUB-V18-付费推荐:dlj.tf/ssrsub"
+      - 20|🇮🇳IN印度(youtube阿伟科技2) 2
+      - _IL_以色列->🇯🇵_JP_日本 2
+      - github.com/freefq - 上海市电信 21
+      - _IL_以色列->🇩🇪_DE_德国
+      - 20|🇺🇸US美国(youtube阿伟科技2)_ 2
+      - v2rayfree.eu.org - 美国CloudFlare节点 13
+      - 6,8,24,26|_IL_以色列->🇦🇺_AU_澳大利亚
+      - v2rayfree.eu.org - 以色列  8
+      - JP_speednode_0061
+      - IL_speednode_0027 2
+      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
+      - 5,6,16|美国【付费推荐：https://tt.vg/vip】97
+      - "@SSRSUB-V09-付费推荐:dlj.tf/ssrsub"
+      - 19,20|_🇫🇷_FR_法国_科网_19 2
+      - US_speednode_0106
+      - 美国_06196494 3
+      - IL_speednode_0032 2
+      - 美国_06173910
+      - _US_美国->🇬🇧_GB_英国
+      - _UA_乌克兰->🇬🇧_GB_英国
+      - 19,20|_🇺🇸_US_美国_科网_19______ 2
+      - JP_speednode_0050
+      - TW_speednode_0085
+      - 中国_0619336
+      - DP2
+      - V006--US-付费推荐:dlj.tf/ssrsub
+      - _IL_以色列->🇯🇵_JP_日本 3
+      - _IL_以色列->🇦🇺_AU_澳大利亚 2
+      - 17|_🇺🇸_US_美国_由零開始_19__
+      - 19|_🇺🇸_US_美国_分享师_171
+      - 20|🇺🇸 美国特殊|@ripaojiedian
+      - 18|🇺🇸US美国(youtube阿伟科技2)______
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
