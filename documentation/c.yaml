@@ -6,735 +6,519 @@ mode: Rule
 log-level: info
 external-controller: 9090
 proxies:
-  - {name: 日本_0621101, server: fsctw.fscloud123456789.com, port: 443, type: trojan, password: 5057f49b-3038-4683-a5d9-8d9657caef3c, sni: fsctw.fscloud123456789.com, skip-cert-verify: true, udp: true}
-  - {name: _IL_以色列->🇬🇧_GB_英国, server: 149.50.77.102, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: AWS | JP | IPLC专线4号, server: pqawsjp4.gsjc.cfd, port: 443, type: trojan, password: b25cbc3a-d7e8-4fe4-b7a0-d3d18985bcf4, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: _IL_以色列->🇪🇪_EE_爱沙尼亚, server: 149.50.92.75, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: "6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3", server: 149.50.70.107, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_speednode_0029, server: 149.50.92.74, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: HU_speednode_0020, server: 5.181.77.86, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 以色列_0619030, server: 149.50.92.73, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 美国_06201147, server: 108.186.116.174, port: 55005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: v2rayfree.eu.org - 美国CloudFlare公司CDN节点 1, server: cf-dx-dns.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp4.scproxy.top}}, udp: true}
-  - {name: 以色列【付费推荐：https://tt.vg/vip】105, server: de2.nigirocloud.com, port: 4003, type: trojan, password: PlF471nxneY0YevI, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 以色列  7, server: nl3.nigirocloud.com, port: 4003, type: trojan, password: PlF471nxneY0YevI, skip-cert-verify: true, udp: true}
-  - {name: IL_speednode_0027, server: 149.50.66.124, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 以色列_0621034, server: 149.50.89.118, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_speednode_0037, server: 149.50.75.76, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_speednode_0031, server: 149.50.89.110, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: India 01 TG:@SSRSUB, server: 152.70.74.66, port: 443, type: trojan, password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e, skip-cert-verify: true, udp: true}
-  - {name: _IL_以色列->🇬🇧_GB_英国 2, server: 149.50.77.134, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 中国_0620038, server: us-08-cz2dg2.ferryhwp8ebm.com, port: 7308, type: trojan, password: 97d557df-6f6a-5bad-9483-600aba02da3a, sni: us-08-650.duuk.info, skip-cert-verify: true, udp: true}
-  - {name: 以色列_0619026, server: 149.50.75.79, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_speednode_0035, server: 149.50.89.86, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: _US_美国->🇸🇬_SG_新加坡, server: 173.245.58.167, port: 2053, type: vmess, uuid: 0404bc28-9cfc-4fbb-9e4c-c3f3ba87f384, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /blue01, headers: {Host: x1.ylks01.eu.org}}, udp: true}
-  - {name: 美国凤凰城1号, server: 163.123.192.146, port: 443, type: trojan, password: 4211a65d-7862-4d08-ac62-221a048c1a1f, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: IL_speednode_0037 2, server: 149.50.92.76, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_speednode_0029 2, server: 149.50.77.137, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: "16,20|🇨🇳中国-江苏-镇江-ss2-120.195.181.142...", server: 120.195.181.142, port: 13972, type: ss, cipher: aes-256-gcm, password: a83ecf95-9efe-479f-bbaa-4e41b0308fb8, udp: true}
-  - {name: US_speednode_0111, server: 185.47.255.219, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: _SG_新加坡, server: 18.139.163.228, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _IL_以色列->🇳🇱_NL_荷兰 5, server: 149.50.89.108, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 以色列_0619023, server: 149.50.69.99, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 以色列_0619024, server: 149.50.71.120, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: "@SSRSUB-V22-付费推荐:dlj.tf/ssrsub", server: ovhsdza.76898102.xyz, port: 2052, type: vmess, uuid: 78fd41e5-346a-3bf4-b942-be0fad711979, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /funsdfrh, headers: {Host: ovhsdz.76898102.xyz}}, udp: true}
-  - {name: "20,21|移动专线B", server: 112.29.94.76, port: 47589, type: vmess, uuid: 83a424d8-4bcb-4cee-b016-2c8f1db4a921, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_06201147 2, server: 108.186.116.174, port: 55005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IL 25 → tg@nicevpn123, server: 149.50.69.131, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: US_speednode_0109, server: 216.52.183.242, port: 80, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, plugin: obfs, plugin-opts: {mode: http, host: None}, udp: true}
-  - {name: 美国_06205551, server: cf.yxjnode.com, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: dp2.yxjnode.com}}, udp: true}
-  - {name: "1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚", server: 149.50.83.49, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: _US_美国->🇳🇱_NL_荷兰, server: 156.225.67.125, port: 52808, type: vmess, uuid: 3a3c8a9c-334e-4360-adb8-a80a57ddcbbf, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: v2rayfree.eu.org - 美国加利福尼亚州洛杉矶Level3通信(DIA) 25, server: sg.stablize.top, port: 443, type: trojan, password: 5b51e0af-08af-4208-b834-6d6ac5721837, skip-cert-verify: true, udp: true}
-  - {name: AWS | JP | IPLC专线2号, server: pqawsjp2.gsjc.cfd, port: 443, type: trojan, password: b25cbc3a-d7e8-4fe4-b7a0-d3d18985bcf4, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 英国-1, server: 163.123.192.57, port: 443, type: trojan, password: b25cbc3a-d7e8-4fe4-b7a0-d3d18985bcf4, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: v2rayfree.eu.org - 以色列  8, server: nl3.barbecuepie.com, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 以色列_0620025, server: 149.50.84.32, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国Xerox 5, server: sg0001.170203.xyz, port: 45363, type: trojan, password: 535b9369-31d4-4685-9bb5-7c223d383524, skip-cert-verify: true, udp: true}
-  - {name: _IL_以色列->🇬🇧_GB_英国 3, server: 149.50.77.108, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: _KR_韩国, server: ko1.lianpi.xyz, port: 51256, type: trojan, password: ab204b2d-dac8-4cf4-8239-d46d49d9cad5, skip-cert-verify: true, udp: true}
-  - {name: IL_speednode_0045, server: 149.50.75.104, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: _IL_以色列->🇬🇧_GB_英国 4, server: uk1.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, sni: magnetadservices.com, skip-cert-verify: true, udp: true}
-  - {name: IL_speednode_0031 2, server: 149.50.83.120, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: US_speednode_0135, server: zfc.windowsupdate1.com, port: 80, type: vmess, uuid: 01925169-e2ff-483c-89f2-6e778dcdd450, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-1.acyun.cf}}, udp: true}
-  - {name: _IL_以色列->🇦🇺_AU_澳大利亚, server: 149.50.66.99, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_speednode_0025, server: 149.50.69.127, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: "JP, Tokyo", server: 54.151.179.33, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: IL_speednode_0027 2, server: 149.50.75.89, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 以色列【付费推荐：https://tt.vg/vip】5, server: de3.nigirocloud.com, port: 4003, type: trojan, password: PlF471nxneY0YevI, skip-cert-verify: true, udp: true}
-  - {name: _JP_日本, server: 3.112.28.34, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "20,21|移动专线B 2", server: 112.29.94.76, port: 47589, type: vmess, uuid: 83a424d8-4bcb-4cee-b016-2c8f1db4a921, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 以色列_0620024, server: 149.50.77.99, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_speednode_0040, server: 149.50.70.83, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: _IL_以色列->🇩🇪_DE_德国, server: de1.nigirocloud.com, port: 4003, type: trojan, password: PlF471nxneY0YevI, skip-cert-verify: true, udp: true}
-  - {name: GB_speednode_0015, server: 121.127.46.147, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 美国_0621063, server: 23.224.15.181, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "@SSRSUB-V13-付费推荐:dlj.tf/ssrsub", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv1.sharecentrepro.org}}, udp: true}
-  - {name: 1|🇬🇧 _IL_以色列->🇬🇧_GB_英国, server: 149.50.77.109, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: "6,8,24,26|_IL_以色列->🇦🇺_AU_澳大利亚", server: 149.50.83.40, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: _IL_以色列->🇩🇪_DE_德国 2, server: 149.50.76.85, port: 4003, type: trojan, password: PlF471nxneY0YevI, sni: de2.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: _KR_韩国 2, server: ko2.lianpi.xyz, port: 64123, type: trojan, password: 7e319f7a-4c47-4606-8008-ce6c92634dd8, sni: ko2.lianpi.xyz, skip-cert-verify: true, udp: true}
-  - {name: 以色列【付费推荐：https://tt.vg/vip】187, server: uk1.barbecuepie.com, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 美国_06201115, server: 171.22.134.8, port: 53433, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "20,21|移动专线B 3", server: 112.29.94.76, port: 47589, type: vmess, uuid: 83a424d8-4bcb-4cee-b016-2c8f1db4a921, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SK_speednode_0080, server: 185.48.248.126, port: 444, type: ss, cipher: chacha20-ietf-poly1305, password: Onsheypy, udp: true}
-  - {name: AWS | JP | IPLC专线3号, server: pqawsjp3.gsjc.cfd, port: 443, type: trojan, password: b25cbc3a-d7e8-4fe4-b7a0-d3d18985bcf4, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 以色列_0620037, server: 149.50.66.110, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, sni: getandroid.com, skip-cert-verify: true, udp: true}
-  - {name: "17,18|_🇭🇰_HK_香港_科网_20", server: 156.245.8.225, port: 49823, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 以色列_0621032, server: 149.50.75.112, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: US_speednode_0104, server: 216.52.183.243, port: 80, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, plugin: obfs, plugin-opts: {mode: http, host: None}, udp: true}
-  - {name: 亚马逊日本3, server: awsjp2.gsjc.cfd, port: 443, type: trojan, password: 4211a65d-7862-4d08-ac62-221a048c1a1f, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 4, server: cfcdn.sanfencdn.net, port: 443, type: vmess, uuid: 698115e4-1494-4f4a-85a9-76cd011d3ac6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: us1.sanfencdn1.com}}, udp: true}
-  - {name: _KR_韩国 3, server: 3.38.211.225, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 美国凤凰城2号, server: 163.123.192.145, port: 443, type: trojan, password: 4211a65d-7862-4d08-ac62-221a048c1a1f, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 以色列_0615022, server: 149.50.89.78, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, sni: telewebion.com, skip-cert-verify: true, udp: true}
-  - {name: 美国_06201115 2, server: 171.22.134.8, port: 53433, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 阿曼_0620050, server: 134.0.219.37, port: 443, type: vmess, uuid: 44c5de7f-0be4-4e96-c73c-f4c94c15e8af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mehdi, headers: {Host: parasto01.ddns.net}}, udp: true}
-  - {name: IL_speednode_0017, server: 149.50.71.164, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_speednode_0032, server: 149.50.71.155, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_speednode_0009, server: 149.50.69.109, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 以色列_0620035, server: 149.50.77.135, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: _SG_新加坡 2, server: 13.212.181.221, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: IL_speednode_0022, server: 149.50.75.90, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_speednode_0023, server: 149.50.77.125, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: US_speednode_0114, server: 192.74.228.189, port: 42857, type: vmess, uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IL_speednode_0013, server: 149.50.70.76, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 新加坡Amazon数据中心 1, server: sgmax06.170203.xyz, port: 443, type: trojan, password: 535b9369-31d4-4685-9bb5-7c223d383524, skip-cert-verify: true, udp: true}
-  - {name: 德国-1, server: 141.193.68.19, port: 443, type: trojan, password: b25cbc3a-d7e8-4fe4-b7a0-d3d18985bcf4, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: AWS | SG | IPLC专线1号, server: pqawssg1.gsjc.cfd, port: 443, type: trojan, password: b25cbc3a-d7e8-4fe4-b7a0-d3d18985bcf4, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0007, server: 2f36c18cfe76.sanfen004.me, port: 46518, type: vmess, uuid: 698115e4-1494-4f4a-85a9-76cd011d3ac6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国4, server: 163.123.192.157, port: 443, type: trojan, password: f5075d6e-c65b-4133-b4fa-301ce5ba1fa9, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: _IL_以色列->🇳🇱_NL_荷兰, server: 149.50.75.100, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 14|美国 066, server: 51.195.35.151, port: 49982, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "14,15|香港 002", server: hkgkgb.76898102.xyz, port: 2082, type: vmess, uuid: 285bfc27-2341-3c7a-be0e-360cedd5e209, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /funsdfrh, headers: {Host: hkg.76898102.xyz}}, udp: true}
-  - {name: AWS新加坡2, server: sg1.gsjc.cfd, port: 443, type: trojan, password: f5075d6e-c65b-4133-b4fa-301ce5ba1fa9, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: 以色列_0620031, server: 149.50.67.151, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: FR_speednode_0018, server: 15.188.73.133, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
-  - {name: US_speednode_0112, server: 198.2.203.155, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "0,1,17|🇺🇸 _US_美国->🇳🇱_NL_荷兰_", server: 156.225.67.125, port: 52808, type: vmess, uuid: 3a3c8a9c-334e-4360-adb8-a80a57ddcbbf, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK_speednode_0025, server: 156.245.8.225, port: 49823, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0003, server: gd-cm.baidu-cdn-78.xyz, port: 29562, type: vmess, uuid: 8e328e84-2845-4f13-b521-78ddb79c9f3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "20,21|🇺🇸 美国2|@ripaojiedian", server: 192.74.228.189, port: 42857, type: vmess, uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本 V2CROSS.COM 2, server: jp04.170203.xyz, port: 43534, type: trojan, password: 535b9369-31d4-4685-9bb5-7c223d383524, sni: jp04.170203.xyz, skip-cert-verify: true, udp: true}
-  - {name: IL_speednode_0048, server: 149.50.75.197, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: _US_美国, server: 52.35.87.249, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: SG_speednode_0094, server: hk2.gsjc.cfd, port: 443, type: trojan, password: f5075d6e-c65b-4133-b4fa-301ce5ba1fa9, sni: hk2.gsjc.cfd, skip-cert-verify: true, udp: true}
-  - {name: SG_speednode_0096, server: sg1.zingfast.vn, port: 80, type: vmess, uuid: 533724ad-58ef-4147-88dc-9da523c15fc4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /anti13.zingfast.vn, headers: {Host: sg1.zingfast.vn}}, udp: true}
-  - {name: 18|未知_06193847, server: x.leonard.eu.org, port: 443, type: vmess, uuid: 1441af41-5cee-497e-a47c-c26af169f9ff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: x.leonard.eu.org}}, udp: true}
-  - {name: TR_speednode_0099, server: 45.89.52.66, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: "9,20,21|🇹🇼_TW_台湾", server: hinettw1.applebench.tech, port: 56568, type: vmess, uuid: 1f3d67b4-6929-4598-90ca-84a841bf02e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: DE_speednode_0013, server: 52.28.217.62, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
-  - {name: _KR_韩国->🇸🇬_SG_新加坡, server: 43.200.216.127, port: 443, type: ssr, cipher: aes-256-cfb, password: vyunme, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17422:TTp0SX, obfs-param: ab93117422.jd.hk, udp: true}
-  - {name: US_speednode_0124, server: 67.21.95.73, port: 53314, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 18|🇺🇸_US_美国_1, server: 107.167.16.90, port: 45689, type: vmess, uuid: 7640a1e7-9701-428e-a4b2-19b3e7dd6f9f, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IL_speednode_0074, server: 149.50.75.81, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 20|🇯🇵 东京特殊|@ripaojiedian, server: 43.207.139.238, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: TR_speednode_0100, server: 45.89.52.66, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: 美国_06211783, server: 23.26.98.185, port: 21442, type: vmess, uuid: 339d28cd-b3c2-46ef-9263-0385f811dc07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 23.26.98.185}}, udp: true}
-  - {name: 17|_🇭🇰_HK_香港_科网_20, server: 156.245.8.130, port: 31920, type: vmess, uuid: bd249e37-7359-41ee-84a7-09e49e0ec5c4, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 20|🇭🇰 香港|tg频道:@ripaojiedian, server: cthk3.createmofa.xyz, port: 35997, type: ss, cipher: chacha20-ietf-poly1305, password: b312f9e6-7a7e-4ce3-9a65-e3cfffa61895, udp: true}
-  - {name: LY_speednode_0085, server: 41.208.71.4, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 以色列_0622035, server: 149.50.75.109, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 以色列_0622038, server: 149.50.77.144, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
   - {name: 以色列_0621031, server: 149.50.75.110, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: "20,21|🇺🇸 美国2|@ripaojiedian 2", server: 192.74.228.189, port: 42857, type: vmess, uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 17|_🇭🇰_HK_香港_科网_20 2, server: 156.245.8.130, port: 31920, type: vmess, uuid: bd249e37-7359-41ee-84a7-09e49e0ec5c4, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "20,21|🇹🇼 台湾2|@ripaojiedian", server: gd-cm.baidu-cdn-78.xyz, port: 29562, type: vmess, uuid: 8e328e84-2845-4f13-b521-78ddb79c9f3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: KR_speednode_0082, server: 43.202.64.174, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 荷兰 035, server: 156.245.8.225, port: 49823, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 18|🇺🇸_US_美国_1 2, server: 107.167.16.90, port: 45689, type: vmess, uuid: 7640a1e7-9701-428e-a4b2-19b3e7dd6f9f, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "@SSRSUB-V08-付费推荐:dlj.tf/ssrsub", server: cf-dx-dns.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}, udp: true}
-  - {name: TW_speednode_0102, server: 103.177.33.180, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9e44e9ffe5c2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: wtw1000mline004.chilines.club, path: /isaifqaagpi, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: https://1808.cf 二爷翻墙_2, server: 202.108.15.135, port: 443, type: vmess, uuid: 06a28663-4320-4a31-ab98-0ef8c1ef546b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cec6f2, headers: {Host: ttk.731808.tk}}, udp: true}
-  - {name: IL_speednode_0037 3, server: 149.50.75.170, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0005, server: 112.29.94.76, port: 47589, type: vmess, uuid: 83a424d8-4bcb-4cee-b016-2c8f1db4a921, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IM_speednode_0076, server: 192.71.211.161, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 美国 003, server: 104.31.16.27, port: 80, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2, headers: {Host: ca5.tehme2.fun}}, udp: true}
-  - {name: 17|_🇺🇸_US_美国_科网_20, server: 192.74.229.200, port: 51592, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 防失效github SubCrawler中国_0621007, server: 112.29.94.76, port: 47589, type: vmess, uuid: 83a424d8-4bcb-4cee-b016-2c8f1db4a921, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "5,6,7,8,23,24,25,26|_US_美国___", server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: b25cbc3a-d7e8-4fe4-b7a0-d3d18985bcf4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/pq/usfh3?ed=2048", headers: {Host: usfh3.pqjc.buzz}}, udp: true}
-  - {name: JP_speednode_0077, server: fsctw.fscloud123456789.com, port: 443, type: trojan, password: ba32e2e0-3a35-4a38-869c-c8c71576c62c, sni: fsctw.fscloud123456789.com, skip-cert-verify: true, udp: true}
-  - {name: _TW_台湾, server: hinettw1.applebench.tech, port: 56568, type: vmess, uuid: 1f3d67b4-6929-4598-90ca-84a841bf02e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_speednode_0078, server: tk-006.xiaoxiaobujidao.xyz, port: 20001, type: trojan, password: 567fc98e-f73c-3f00-b011-8e9cf6b873e8, sni: tk-006.xiaoxiaobujidao.xyz, skip-cert-verify: true, udp: true}
-  - {name: HK_speednode_0029, server: hk7.yihaobao.xyz, port: 443, type: trojan, password: a8a8be69-8200-4e5e-a767-b7f8cef791fe, sni: tls.yihaobao.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本 V2CROSS.COM, server: kr01.170203.xyz, port: 443, type: trojan, password: 535b9369-31d4-4685-9bb5-7c223d383524, sni: kr01.170203.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN-14.29.167.168-120, server: gzyd.jcnode.top, port: 23005, type: trojan, password: a3b405f4-e6ce-4478-91b2-49537adc3ca1, sni: sg03.ckcloud.info, skip-cert-verify: true, udp: true}
-  - {name: 美国_0621063 2, server: 23.224.15.181, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 以色列_0621028, server: 149.50.75.181, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, sni: getandroid.com, skip-cert-verify: true, udp: true}
-  - {name: TR_speednode_0101, server: 45.89.52.66, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: 美国_0620944, server: 171.22.134.8, port: 53433, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "6,8,9,9,24,26|_CN_中国->🇹🇷_TR_土耳其", server: cn-guangzhou.applebench.tech, port: 11451, type: ss, cipher: chacha20-ietf-poly1305, password: 7e319f7a-4c47-4606-8008-ce6c92634dd8, udp: true}
-  - {name: CN_speednode_0002, server: usa1.vfun.icu, port: 443, type: ssr, cipher: aes-256-cfb, password: vyunme, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17422:TTp0SX, obfs-param: ab93117422.jd.hk, udp: true}
-  - {name: https://1808.cf 二爷翻墙_4, server: 162.159.243.233, port: 443, type: vmess, uuid: 06a28663-4320-4a31-ab98-0ef8c1ef546b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cec6f2, headers: {Host: ttk.731808.tk}}, udp: true}
-  - {name: SG_speednode_0093, server: ap.stablize.top, port: 443, type: trojan, password: 2b2d6a27-6e72-4090-bb53-26f45558a0bc, sni: ap.stablize.top, skip-cert-verify: true, udp: true}
-  - {name: 日本_0621163, server: fsctw.fscloud123456789.com, port: 443, type: trojan, password: 2de6f621-4397-4622-8dad-9df790a66bdb, skip-cert-verify: true, udp: true}
-  - {name: CN-14.29.167.168-103, server: gzyd.jcnode.top, port: 26000, type: trojan, password: a3b405f4-e6ce-4478-91b2-49537adc3ca1, sni: uk01.ckcloud.info, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 以色列  15, server: uk1.nigirocloud.com, port: 4003, type: trojan, password: PlF471nxneY0YevI, skip-cert-verify: true, udp: true}
-  - {name: "14,17,18|美国 079", server: 198.2.203.155, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "14,17,18|荷兰 035", server: 156.245.8.225, port: 49823, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 以色列_0619026, server: 149.50.75.79, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
   - {name: 以色列_0621033, server: 149.50.75.208, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: "14,17,18|美国 074", server: 171.22.134.8, port: 53433, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IL_speednode_0031 3, server: 149.50.71.124, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: CN-14.18.103.121-086, server: gzyd.jcnode.top, port: 29200, type: trojan, password: a3b405f4-e6ce-4478-91b2-49537adc3ca1, sni: vn01.ckcloud.info, skip-cert-verify: true, udp: true}
+  - {name: 以色列_0621028, server: 149.50.75.181, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, sni: getandroid.com, skip-cert-verify: true, udp: true}
+  - {name: 以色列_0619024, server: 149.50.71.120, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 以色列_0622037, server: 149.50.84.90, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 以色列_0621032, server: 149.50.75.112, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 以色列_0622036, server: 149.50.77.139, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 以色列_0621034, server: 149.50.89.118, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 以色列_0621025, server: 149.50.77.138, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 以色列_0620025, server: 149.50.84.32, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 以色列【付费推荐：https://tt.vg/vip】105, server: de2.nigirocloud.com, port: 4003, type: trojan, password: PlF471nxneY0YevI, skip-cert-verify: true, udp: true}
+  - {name: 以色列_0620031, server: 149.50.67.151, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 以色列_0619030, server: 149.50.92.73, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 20|🇯🇵 日本特殊|@ripaojiedian, server: 3.112.73.233, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: IL_speednode_0055, server: 149.50.66.110, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, sni: getandroid.com, skip-cert-verify: true, udp: true}
+  - {name: _IL_以色列->🇦🇺_AU_澳大利亚, server: 149.50.66.99, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: _KR_韩国, server: 52.78.217.18, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: IL_speednode_0048, server: 149.50.75.197, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 新加坡【付费推荐：https://tt.vg/vip】44, server: jp.stablize.top, port: 443, type: trojan, password: 40297165-0545-4f8f-abc4-3ee25e6cfb87, skip-cert-verify: true, udp: true}
+  - {name: IL_speednode_0063, server: 149.50.77.97, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: IL_speednode_0037, server: 149.50.92.76, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
   - {name: IL_speednode_0041, server: 149.50.70.72, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: _SG_新加坡 3, server: 13.215.175.189, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 18|关注电报https://t.me/aifenxiang202...___, server: 23.224.15.181, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 未知_0621011, server: www.digitalocean.com, port: 80, type: vmess, uuid: 25b280df-e990-4495-80e3-48ec3c83da77, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.ssrsub.com}}, udp: true}
-  - {name: _IL_以色列->🇦🇺_AU_澳大利亚 2, server: 149.50.66.127, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: IL_speednode_0035, server: 149.50.89.86, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 美国_0622730, server: 137.175.9.201, port: 57902, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: AZ_speednode_0001, server: 180.149.44.120, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
   - {name: CN_speednode_0004, server: au-01-gh3fg1.ferryhwp8ebm.com, port: 42103, type: trojan, password: 97d557df-6f6a-5bad-9483-600aba02da3a, sni: au-01-651.duuk.info, skip-cert-verify: true, udp: true}
+  - {name: IL_speednode_0041 2, server: 149.50.77.131, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: TW_speednode_0147, server: hinet2.downloadvip.cfd, port: 443, type: trojan, password: ac46c92f-fa67-4954-b9a1-18d2b7fb16cb, sni: download.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
+  - {name: KR_speednode_0106, server: ko1.lianpi.xyz, port: 51256, type: trojan, password: 7e319f7a-4c47-4606-8008-ce6c92634dd8, sni: ko1.lianpi.xyz, skip-cert-verify: true, udp: true}
+  - {name: 以色列_0619023, server: 149.50.69.99, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: TR_speednode_0099, server: 45.89.52.66, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: _IL_以色列->🇦🇺_AU_澳大利亚 2, server: 149.50.66.127, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: UA_speednode_0154, server: 5.188.6.8, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: _JP_日本, server: 3.112.28.34, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: PL_speednode_0113, server: 5.188.108.10, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: _US_美国, server: 52.35.87.249, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: IL_speednode_0058, server: 149.50.75.105, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: IL_speednode_0037 2, server: 149.50.75.76, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: "TW, Taipei", server: 43.202.64.174, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: IL_speednode_0032, server: 149.50.71.155, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: _IL_以色列->🇩🇪_DE_德国, server: 149.50.76.85, port: 4003, type: trojan, password: PlF471nxneY0YevI, sni: de2.nigirocloud.com, skip-cert-verify: true, udp: true}
+  - {name: _IL_以色列->🇯🇵_JP_日本 2 3, server: 149.50.70.87, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: _RU_俄罗斯联邦, server: 45.130.146.86, port: 443, type: ssr, cipher: aes-256-cfb, password: vyunme, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17422:TTp0SX, obfs-param: ab93117422.jd.hk, udp: true}
+  - {name: "6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3", server: 149.50.70.107, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国Microsoft公司 15, server: fsctw.fscloud123456789.com, port: 443, type: trojan, password: 5057f49b-3038-4683-a5d9-8d9657caef3c, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0109, server: 216.52.183.242, port: 80, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, plugin: obfs, plugin-opts: {mode: http, host: None}, udp: true}
+  - {name: _IL_以色列->🇳🇱_NL_荷兰, server: 149.50.75.100, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 美国_0622730 2, server: 137.175.9.201, port: 57902, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _KR_韩国 2, server: 43.202.52.108, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: PL_speednode_0112, server: 217.30.10.70, port: 9044, type: ss, cipher: aes-256-cfb, password: KBGjZYcy4SyRShmA, udp: true}
   - {name: CN_speednode_0008, server: cn-guangzhou.applebench.tech, port: 19198, type: ss, cipher: chacha20-ietf-poly1305, password: 7e319f7a-4c47-4606-8008-ce6c92634dd8, udp: true}
-  - {name: 18|关注电报https://t.me/aifenxiang202...___ 2, server: 23.224.15.181, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IL_speednode_0041 2, server: 149.50.83.42, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0007 2, server: 2f36c18cfe76.sanfen004.me, port: 10775, type: vmess, uuid: 698115e4-1494-4f4a-85a9-76cd011d3ac6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_speednode_0096, server: 103.75.118.27, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: IL_speednode_0037 3, server: 149.50.75.170, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: India 01 TG:@SSRSUB, server: 152.70.74.66, port: 443, type: trojan, password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e, skip-cert-verify: true, udp: true}
+  - {name: IL_speednode_0045, server: 149.50.75.104, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 美国_0622730 3, server: 137.175.9.201, port: 57902, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本_0622060, server: 45.88.43.230, port: 46202, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _IL_以色列->🇬🇧_GB_英国 4 2, server: 149.50.77.95, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: JP_speednode_0090, server: hk2.downloadvip.cfd, port: 443, type: trojan, password: 9fb3183e-8d93-46d4-aba0-4c1769b6c079, sni: download.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
+  - {name: IL_speednode_0074, server: 149.50.75.81, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: _IL_以色列->🇩🇪_DE_德国 2, server: de1.nigirocloud.com, port: 4003, type: trojan, password: PlF471nxneY0YevI, skip-cert-verify: true, udp: true}
+  - {name: _IL_以色列->🇬🇧_GB_英国, server: 149.50.77.129, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: IL_speednode_0013, server: 149.50.70.76, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: TR_speednode_0100, server: 45.89.52.66, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: GB_speednode_0015, server: 121.127.46.147, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: IL_speednode_0017, server: 149.50.71.164, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: _IL_以色列->🇪🇪_EE_爱沙尼亚, server: 149.50.92.75, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: "1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚", server: 149.50.83.49, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: _KR_韩国 2 2, server: 43.200.1.53, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 日本_0622060 2, server: 45.88.43.230, port: 46202, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港_0622026, server: 156.245.8.130, port: 31920, type: vmess, uuid: bd249e37-7359-41ee-84a7-09e49e0ec5c4, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_0622993, server: 142.4.104.193, port: 56002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: IL_speednode_0009, server: 149.50.69.109, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: IT_speednode_0075, server: 5.188.226.187, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: IL_speednode_0023, server: 149.50.77.125, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: _KR_韩国 3, server: ko2.lianpi.xyz, port: 64123, type: trojan, password: 7e319f7a-4c47-4606-8008-ce6c92634dd8, sni: ko2.lianpi.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0104, server: 216.52.183.243, port: 80, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, plugin: obfs, plugin-opts: {mode: http, host: None}, udp: true}
+  - {name: IM_speednode_0076, server: 192.71.211.161, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 日本 V2CROSS.COM, server: 43.207.218.193, port: 443, type: trojan, password: b2ac46e0-cf21-4dd3-bf99-60eeb18a1cee, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 以色列  7, server: nl3.nigirocloud.com, port: 4003, type: trojan, password: PlF471nxneY0YevI, skip-cert-verify: true, udp: true}
+  - {name: 香港_0622026 2, server: 156.245.8.130, port: 31920, type: vmess, uuid: bd249e37-7359-41ee-84a7-09e49e0ec5c4, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: DE_speednode_0008, server: 217.79.184.18, port: 443, type: trojan, password: 9fb3183e-8d93-46d4-aba0-4c1769b6c079, skip-cert-verify: true, udp: true}
+  - {name: NO_speednode_0108, server: 185.90.61.153, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: _IL_以色列->🇳🇱_NL_荷兰 5, server: 149.50.89.108, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: KR_speednode_0100, server: ko1.lianpi.xyz, port: 51256, type: trojan, password: ab204b2d-dac8-4cf4-8239-d46d49d9cad5, skip-cert-verify: true, udp: true}
+  - {name: IL_speednode_0022, server: 149.50.75.90, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: IL 25 → tg@nicevpn123, server: 149.50.69.131, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: IL_speednode_0031, server: 149.50.71.124, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: IL_speednode_0031 2, server: 149.50.89.110, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: IL_speednode_0025, server: 149.50.69.127, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 防失效github SubCrawler中国_0622008, server: 112.29.94.76, port: 47589, type: vmess, uuid: 83a424d8-4bcb-4cee-b016-2c8f1db4a921, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _IL_以色列->🇬🇧_GB_英国 2, server: 149.50.77.102, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: IL_speednode_0029, server: 149.50.92.74, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: JP_speednode_0092, server: fsctw.fscloud123456789.com, port: 443, type: trojan, password: 2de6f621-4397-4622-8dad-9df790a66bdb, sni: fsctw.fscloud123456789.com, skip-cert-verify: true, udp: true}
+  - {name: HU_speednode_0012, server: 5.181.77.86, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: LY_speednode_0085, server: 41.208.71.4, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: DE_speednode_0006, server: 172.105.251.205, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 0r91Aj1MeFRSvoy6, udp: true}
+  - {name: TW_speednode_0149, server: hinet2.downloadvip.cfd, port: 443, type: trojan, password: bab079c9-bc60-4ed4-9b94-043dee75d1b9, sni: download.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
+  - {name: IL_speednode_0027, server: 149.50.66.124, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0162, server: 138.124.183.93, port: 27542, type: ss, cipher: chacha20-ietf-poly1305, password: 3f0Gag5bPSpDYwLMahAgp8, udp: true}
+  - {name: TW_speednode_0148, server: hinet2.downloadvip.cfd, port: 443, type: trojan, password: 9fb3183e-8d93-46d4-aba0-4c1769b6c079, sni: download.xn--mes358a9urctx.com, skip-cert-verify: true, udp: true}
+  - {name: IL_speednode_0040, server: 149.50.70.83, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: IL_speednode_0027 2, server: 149.50.75.89, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: JP_speednode_0078, server: tk-006.xiaoxiaobujidao.xyz, port: 20001, type: trojan, password: 567fc98e-f73c-3f00-b011-8e9cf6b873e8, sni: tk-006.xiaoxiaobujidao.xyz, skip-cert-verify: true, udp: true}
+  - {name: 防失效github SubCrawler中国_0622008 2, server: 112.29.94.76, port: 47589, type: vmess, uuid: 83a424d8-4bcb-4cee-b016-2c8f1db4a921, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: IL_speednode_0031 3, server: 149.50.83.120, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: 美国_06226119, server: 140.99.57.18, port: 41212, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: GB_speednode_0022, server: 51.132.13.37, port: 36238, type: ss, cipher: chacha20-ietf-poly1305, password: 3Diipf4YghZG06rzdRO6SH, udp: true}
+  - {name: DE_speednode_0007, server: 172.104.132.14, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 0r91Aj1MeFRSvoy6, udp: true}
+  - {name: US_speednode_0165, server: 185.47.255.219, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 防失效github SubCrawler中国_0621007, server: 112.29.94.76, port: 47589, type: vmess, uuid: 83a424d8-4bcb-4cee-b016-2c8f1db4a921, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 防失效github SubCrawler中国_0621007 2, server: 112.29.94.76, port: 47589, type: vmess, uuid: 83a424d8-4bcb-4cee-b016-2c8f1db4a921, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "20,21|移动专线B", server: 112.29.94.76, port: 47589, type: vmess, uuid: 83a424d8-4bcb-4cee-b016-2c8f1db4a921, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _IL_以色列->🇬🇧_GB_英国 3, server: 149.50.77.108, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: "0,1,20,21|🇬🇧 _CN_中国->🇬🇧_GB_英国", server: 112.29.94.76, port: 47589, type: vmess, uuid: 83a424d8-4bcb-4cee-b016-2c8f1db4a921, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: v2rayfree.eu.org - 以色列  8, server: nl3.barbecuepie.com, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
+  - {name: "20,21|移动专线B 2", server: 112.29.94.76, port: 47589, type: vmess, uuid: 83a424d8-4bcb-4cee-b016-2c8f1db4a921, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TW_speednode_0102, server: 103.177.33.180, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9e44e9ffe5c2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: wtw1000mline004.chilines.club, path: /isaifqaagpi, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: SG_speednode_0142, server: sgp1.looooooongnet.lol, port: 8443, type: vmess, uuid: c6bfb3e1-1fb9-48f6-a91a-5be5f53a5a57, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sgp1.looooooongnet.lol}}, udp: true}
+  - {name: 18|🇺🇸_US_美国_6_15@11, server: 23.225.33.171, port: 56662, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "20,21|移动专线B 3", server: 112.29.94.76, port: 47589, type: vmess, uuid: 83a424d8-4bcb-4cee-b016-2c8f1db4a921, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本_0621101
-      - _IL_以色列->🇬🇧_GB_英国
-      - AWS | JP | IPLC专线4号
-      - _IL_以色列->🇪🇪_EE_爱沙尼亚
-      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
-      - IL_speednode_0029
-      - HU_speednode_0020
-      - 以色列_0619030
-      - 美国_06201147
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 1
-      - 以色列【付费推荐：https://tt.vg/vip】105
-      - github.com/freefq - 以色列  7
-      - IL_speednode_0027
-      - 以色列_0621034
-      - IL_speednode_0037
-      - IL_speednode_0031
-      - India 01 TG:@SSRSUB
-      - _IL_以色列->🇬🇧_GB_英国 2
-      - 中国_0620038
-      - 以色列_0619026
-      - IL_speednode_0035
-      - _US_美国->🇸🇬_SG_新加坡
-      - 美国凤凰城1号
-      - IL_speednode_0037 2
-      - IL_speednode_0029 2
-      - 16,20|🇨🇳中国-江苏-镇江-ss2-120.195.181.142...
-      - US_speednode_0111
-      - _SG_新加坡
-      - _IL_以色列->🇳🇱_NL_荷兰 5
-      - 以色列_0619023
-      - 以色列_0619024
-      - "@SSRSUB-V22-付费推荐:dlj.tf/ssrsub"
-      - 20,21|移动专线B
-      - 美国_06201147 2
-      - IL 25 → tg@nicevpn123
-      - US_speednode_0109
-      - 美国_06205551
-      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
-      - _US_美国->🇳🇱_NL_荷兰
-      - v2rayfree.eu.org - 美国加利福尼亚州洛杉矶Level3通信(DIA) 25
-      - AWS | JP | IPLC专线2号
-      - 英国-1
-      - v2rayfree.eu.org - 以色列  8
-      - 以色列_0620025
-      - github.com/freefq - 美国Xerox 5
-      - _IL_以色列->🇬🇧_GB_英国 3
-      - _KR_韩国
-      - IL_speednode_0045
-      - _IL_以色列->🇬🇧_GB_英国 4
-      - IL_speednode_0031 2
-      - US_speednode_0135
-      - _IL_以色列->🇦🇺_AU_澳大利亚
-      - IL_speednode_0025
-      - JP, Tokyo
-      - IL_speednode_0027 2
-      - 以色列【付费推荐：https://tt.vg/vip】5
-      - _JP_日本
-      - 20,21|移动专线B 2
-      - 以色列_0620024
-      - IL_speednode_0040
-      - _IL_以色列->🇩🇪_DE_德国
-      - GB_speednode_0015
-      - 美国_0621063
-      - "@SSRSUB-V13-付费推荐:dlj.tf/ssrsub"
-      - 1|🇬🇧 _IL_以色列->🇬🇧_GB_英国
-      - 6,8,24,26|_IL_以色列->🇦🇺_AU_澳大利亚
-      - _IL_以色列->🇩🇪_DE_德国 2
-      - _KR_韩国 2
-      - 以色列【付费推荐：https://tt.vg/vip】187
-      - 美国_06201115
-      - 20,21|移动专线B 3
-      - SK_speednode_0080
-      - AWS | JP | IPLC专线3号
-      - 以色列_0620037
-      - 17,18|_🇭🇰_HK_香港_科网_20
-      - 以色列_0621032
-      - US_speednode_0104
-      - 亚马逊日本3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - _KR_韩国 3
-      - 美国凤凰城2号
-      - 以色列_0615022
-      - 美国_06201115 2
-      - 阿曼_0620050
-      - IL_speednode_0017
-      - IL_speednode_0032
-      - IL_speednode_0009
-      - 以色列_0620035
-      - _SG_新加坡 2
-      - IL_speednode_0022
-      - IL_speednode_0023
-      - US_speednode_0114
-      - IL_speednode_0013
-      - github.com/freefq - 新加坡Amazon数据中心 1
-      - 德国-1
-      - AWS | SG | IPLC专线1号
-      - CN_speednode_0007
-      - 美国4
-      - _IL_以色列->🇳🇱_NL_荷兰
-      - 14|美国 066
-      - 14,15|香港 002
-      - AWS新加坡2
-      - 以色列_0620031
-      - FR_speednode_0018
-      - US_speednode_0112
-      - 0,1,17|🇺🇸 _US_美国->🇳🇱_NL_荷兰_
-      - HK_speednode_0025
-      - CN_speednode_0003
-      - 20,21|🇺🇸 美国2|@ripaojiedian
-      - 日本 V2CROSS.COM 2
-      - IL_speednode_0048
-      - _US_美国
-      - SG_speednode_0094
-      - SG_speednode_0096
-      - 18|未知_06193847
-      - TR_speednode_0099
-      - 9,20,21|🇹🇼_TW_台湾
-      - DE_speednode_0013
-      - _KR_韩国->🇸🇬_SG_新加坡
-      - US_speednode_0124
-      - 18|🇺🇸_US_美国_1
-      - IL_speednode_0074
-      - 20|🇯🇵 东京特殊|@ripaojiedian
-      - TR_speednode_0100
-      - 美国_06211783
-      - 17|_🇭🇰_HK_香港_科网_20
-      - 20|🇭🇰 香港|tg频道:@ripaojiedian
-      - LY_speednode_0085
+      - 以色列_0622035
+      - 以色列_0622038
       - 以色列_0621031
-      - 20,21|🇺🇸 美国2|@ripaojiedian 2
-      - 17|_🇭🇰_HK_香港_科网_20 2
-      - 20,21|🇹🇼 台湾2|@ripaojiedian
-      - KR_speednode_0082
-      - 荷兰 035
-      - 18|🇺🇸_US_美国_1 2
-      - "@SSRSUB-V08-付费推荐:dlj.tf/ssrsub"
-      - TW_speednode_0102
-      - https://1808.cf 二爷翻墙_2
-      - IL_speednode_0037 3
-      - CN_speednode_0005
-      - IM_speednode_0076
-      - 美国 003
-      - 17|_🇺🇸_US_美国_科网_20
-      - 防失效github SubCrawler中国_0621007
-      - 5,6,7,8,23,24,25,26|_US_美国___
-      - JP_speednode_0077
-      - _TW_台湾
-      - JP_speednode_0078
-      - HK_speednode_0029
-      - 日本 V2CROSS.COM
-      - CN-14.29.167.168-120
-      - 美国_0621063 2
-      - 以色列_0621028
-      - TR_speednode_0101
-      - 美国_0620944
-      - 6,8,9,9,24,26|_CN_中国->🇹🇷_TR_土耳其
-      - CN_speednode_0002
-      - https://1808.cf 二爷翻墙_4
-      - SG_speednode_0093
-      - 日本_0621163
-      - CN-14.29.167.168-103
-      - github.com/freefq - 以色列  15
-      - 14,17,18|美国 079
-      - 14,17,18|荷兰 035
+      - 以色列_0619026
       - 以色列_0621033
-      - 14,17,18|美国 074
-      - IL_speednode_0031 3
-      - CN-14.18.103.121-086
+      - 以色列_0621028
+      - 以色列_0619024
+      - 以色列_0622037
+      - 以色列_0621032
+      - 以色列_0622036
+      - 以色列_0621034
+      - 以色列_0621025
+      - 以色列_0620025
+      - 以色列【付费推荐：https://tt.vg/vip】105
+      - 以色列_0620031
+      - 以色列_0619030
+      - 20|🇯🇵 日本特殊|@ripaojiedian
+      - IL_speednode_0055
+      - _IL_以色列->🇦🇺_AU_澳大利亚
+      - _KR_韩国
+      - IL_speednode_0048
+      - 新加坡【付费推荐：https://tt.vg/vip】44
+      - IL_speednode_0063
+      - IL_speednode_0037
       - IL_speednode_0041
-      - _SG_新加坡 3
-      - 18|关注电报https://t.me/aifenxiang202...___
-      - 未知_0621011
-      - _IL_以色列->🇦🇺_AU_澳大利亚 2
+      - IL_speednode_0035
+      - 美国_0622730
+      - AZ_speednode_0001
       - CN_speednode_0004
-      - CN_speednode_0008
-      - 18|关注电报https://t.me/aifenxiang202...___ 2
       - IL_speednode_0041 2
-      - CN_speednode_0007 2
+      - TW_speednode_0147
+      - KR_speednode_0106
+      - 以色列_0619023
+      - TR_speednode_0099
+      - _IL_以色列->🇦🇺_AU_澳大利亚 2
+      - UA_speednode_0154
+      - _JP_日本
+      - PL_speednode_0113
+      - _US_美国
+      - IL_speednode_0058
+      - IL_speednode_0037 2
+      - TW, Taipei
+      - IL_speednode_0032
+      - _IL_以色列->🇩🇪_DE_德国
+      - _IL_以色列->🇯🇵_JP_日本 2 3
+      - _RU_俄罗斯联邦
+      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
+      - github.com/freefq - 美国Microsoft公司 15
+      - US_speednode_0109
+      - _IL_以色列->🇳🇱_NL_荷兰
+      - 美国_0622730 2
+      - _KR_韩国 2
+      - PL_speednode_0112
+      - CN_speednode_0008
+      - JP_speednode_0096
+      - IL_speednode_0037 3
+      - India 01 TG:@SSRSUB
+      - IL_speednode_0045
+      - 美国_0622730 3
+      - 日本_0622060
+      - _IL_以色列->🇬🇧_GB_英国 4 2
+      - JP_speednode_0090
+      - IL_speednode_0074
+      - _IL_以色列->🇩🇪_DE_德国 2
+      - _IL_以色列->🇬🇧_GB_英国
+      - IL_speednode_0013
+      - TR_speednode_0100
+      - GB_speednode_0015
+      - IL_speednode_0017
+      - _IL_以色列->🇪🇪_EE_爱沙尼亚
+      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
+      - _KR_韩国 2 2
+      - 日本_0622060 2
+      - 香港_0622026
+      - 美国_0622993
+      - IL_speednode_0009
+      - IT_speednode_0075
+      - IL_speednode_0023
+      - _KR_韩国 3
+      - US_speednode_0104
+      - IM_speednode_0076
+      - 日本 V2CROSS.COM
+      - github.com/freefq - 以色列  7
+      - 香港_0622026 2
+      - DE_speednode_0008
+      - NO_speednode_0108
+      - _IL_以色列->🇳🇱_NL_荷兰 5
+      - KR_speednode_0100
+      - IL_speednode_0022
+      - IL 25 → tg@nicevpn123
+      - IL_speednode_0031
+      - IL_speednode_0031 2
+      - IL_speednode_0025
+      - 防失效github SubCrawler中国_0622008
+      - _IL_以色列->🇬🇧_GB_英国 2
+      - IL_speednode_0029
+      - JP_speednode_0092
+      - HU_speednode_0012
+      - LY_speednode_0085
+      - DE_speednode_0006
+      - TW_speednode_0149
+      - IL_speednode_0027
+      - US_speednode_0162
+      - TW_speednode_0148
+      - IL_speednode_0040
+      - IL_speednode_0027 2
+      - JP_speednode_0078
+      - 防失效github SubCrawler中国_0622008 2
+      - IL_speednode_0031 3
+      - 美国_06226119
+      - GB_speednode_0022
+      - DE_speednode_0007
+      - US_speednode_0165
+      - 防失效github SubCrawler中国_0621007
+      - 防失效github SubCrawler中国_0621007 2
+      - 20,21|移动专线B
+      - _IL_以色列->🇬🇧_GB_英国 3
+      - 0,1,20,21|🇬🇧 _CN_中国->🇬🇧_GB_英国
+      - v2rayfree.eu.org - 以色列  8
+      - 20,21|移动专线B 2
+      - TW_speednode_0102
+      - SG_speednode_0142
+      - 18|🇺🇸_US_美国_6_15@11
+      - 20,21|移动专线B 3
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - 日本_0621101
-      - _IL_以色列->🇬🇧_GB_英国
-      - AWS | JP | IPLC专线4号
-      - _IL_以色列->🇪🇪_EE_爱沙尼亚
-      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
-      - IL_speednode_0029
-      - HU_speednode_0020
-      - 以色列_0619030
-      - 美国_06201147
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 1
-      - 以色列【付费推荐：https://tt.vg/vip】105
-      - github.com/freefq - 以色列  7
-      - IL_speednode_0027
-      - 以色列_0621034
-      - IL_speednode_0037
-      - IL_speednode_0031
-      - India 01 TG:@SSRSUB
-      - _IL_以色列->🇬🇧_GB_英国 2
-      - 中国_0620038
-      - 以色列_0619026
-      - IL_speednode_0035
-      - _US_美国->🇸🇬_SG_新加坡
-      - 美国凤凰城1号
-      - IL_speednode_0037 2
-      - IL_speednode_0029 2
-      - 16,20|🇨🇳中国-江苏-镇江-ss2-120.195.181.142...
-      - US_speednode_0111
-      - _SG_新加坡
-      - _IL_以色列->🇳🇱_NL_荷兰 5
-      - 以色列_0619023
-      - 以色列_0619024
-      - "@SSRSUB-V22-付费推荐:dlj.tf/ssrsub"
-      - 20,21|移动专线B
-      - 美国_06201147 2
-      - IL 25 → tg@nicevpn123
-      - US_speednode_0109
-      - 美国_06205551
-      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
-      - _US_美国->🇳🇱_NL_荷兰
-      - v2rayfree.eu.org - 美国加利福尼亚州洛杉矶Level3通信(DIA) 25
-      - AWS | JP | IPLC专线2号
-      - 英国-1
-      - v2rayfree.eu.org - 以色列  8
-      - 以色列_0620025
-      - github.com/freefq - 美国Xerox 5
-      - _IL_以色列->🇬🇧_GB_英国 3
-      - _KR_韩国
-      - IL_speednode_0045
-      - _IL_以色列->🇬🇧_GB_英国 4
-      - IL_speednode_0031 2
-      - US_speednode_0135
-      - _IL_以色列->🇦🇺_AU_澳大利亚
-      - IL_speednode_0025
-      - JP, Tokyo
-      - IL_speednode_0027 2
-      - 以色列【付费推荐：https://tt.vg/vip】5
-      - _JP_日本
-      - 20,21|移动专线B 2
-      - 以色列_0620024
-      - IL_speednode_0040
-      - _IL_以色列->🇩🇪_DE_德国
-      - GB_speednode_0015
-      - 美国_0621063
-      - "@SSRSUB-V13-付费推荐:dlj.tf/ssrsub"
-      - 1|🇬🇧 _IL_以色列->🇬🇧_GB_英国
-      - 6,8,24,26|_IL_以色列->🇦🇺_AU_澳大利亚
-      - _IL_以色列->🇩🇪_DE_德国 2
-      - _KR_韩国 2
-      - 以色列【付费推荐：https://tt.vg/vip】187
-      - 美国_06201115
-      - 20,21|移动专线B 3
-      - SK_speednode_0080
-      - AWS | JP | IPLC专线3号
-      - 以色列_0620037
-      - 17,18|_🇭🇰_HK_香港_科网_20
-      - 以色列_0621032
-      - US_speednode_0104
-      - 亚马逊日本3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - _KR_韩国 3
-      - 美国凤凰城2号
-      - 以色列_0615022
-      - 美国_06201115 2
-      - 阿曼_0620050
-      - IL_speednode_0017
-      - IL_speednode_0032
-      - IL_speednode_0009
-      - 以色列_0620035
-      - _SG_新加坡 2
-      - IL_speednode_0022
-      - IL_speednode_0023
-      - US_speednode_0114
-      - IL_speednode_0013
-      - github.com/freefq - 新加坡Amazon数据中心 1
-      - 德国-1
-      - AWS | SG | IPLC专线1号
-      - CN_speednode_0007
-      - 美国4
-      - _IL_以色列->🇳🇱_NL_荷兰
-      - 14|美国 066
-      - 14,15|香港 002
-      - AWS新加坡2
-      - 以色列_0620031
-      - FR_speednode_0018
-      - US_speednode_0112
-      - 0,1,17|🇺🇸 _US_美国->🇳🇱_NL_荷兰_
-      - HK_speednode_0025
-      - CN_speednode_0003
-      - 20,21|🇺🇸 美国2|@ripaojiedian
-      - 日本 V2CROSS.COM 2
-      - IL_speednode_0048
-      - _US_美国
-      - SG_speednode_0094
-      - SG_speednode_0096
-      - 18|未知_06193847
-      - TR_speednode_0099
-      - 9,20,21|🇹🇼_TW_台湾
-      - DE_speednode_0013
-      - _KR_韩国->🇸🇬_SG_新加坡
-      - US_speednode_0124
-      - 18|🇺🇸_US_美国_1
-      - IL_speednode_0074
-      - 20|🇯🇵 东京特殊|@ripaojiedian
-      - TR_speednode_0100
-      - 美国_06211783
-      - 17|_🇭🇰_HK_香港_科网_20
-      - 20|🇭🇰 香港|tg频道:@ripaojiedian
-      - LY_speednode_0085
+      - 以色列_0622035
+      - 以色列_0622038
       - 以色列_0621031
-      - 20,21|🇺🇸 美国2|@ripaojiedian 2
-      - 17|_🇭🇰_HK_香港_科网_20 2
-      - 20,21|🇹🇼 台湾2|@ripaojiedian
-      - KR_speednode_0082
-      - 荷兰 035
-      - 18|🇺🇸_US_美国_1 2
-      - "@SSRSUB-V08-付费推荐:dlj.tf/ssrsub"
-      - TW_speednode_0102
-      - https://1808.cf 二爷翻墙_2
-      - IL_speednode_0037 3
-      - CN_speednode_0005
-      - IM_speednode_0076
-      - 美国 003
-      - 17|_🇺🇸_US_美国_科网_20
-      - 防失效github SubCrawler中国_0621007
-      - 5,6,7,8,23,24,25,26|_US_美国___
-      - JP_speednode_0077
-      - _TW_台湾
-      - JP_speednode_0078
-      - HK_speednode_0029
-      - 日本 V2CROSS.COM
-      - CN-14.29.167.168-120
-      - 美国_0621063 2
-      - 以色列_0621028
-      - TR_speednode_0101
-      - 美国_0620944
-      - 6,8,9,9,24,26|_CN_中国->🇹🇷_TR_土耳其
-      - CN_speednode_0002
-      - https://1808.cf 二爷翻墙_4
-      - SG_speednode_0093
-      - 日本_0621163
-      - CN-14.29.167.168-103
-      - github.com/freefq - 以色列  15
-      - 14,17,18|美国 079
-      - 14,17,18|荷兰 035
+      - 以色列_0619026
       - 以色列_0621033
-      - 14,17,18|美国 074
-      - IL_speednode_0031 3
-      - CN-14.18.103.121-086
+      - 以色列_0621028
+      - 以色列_0619024
+      - 以色列_0622037
+      - 以色列_0621032
+      - 以色列_0622036
+      - 以色列_0621034
+      - 以色列_0621025
+      - 以色列_0620025
+      - 以色列【付费推荐：https://tt.vg/vip】105
+      - 以色列_0620031
+      - 以色列_0619030
+      - 20|🇯🇵 日本特殊|@ripaojiedian
+      - IL_speednode_0055
+      - _IL_以色列->🇦🇺_AU_澳大利亚
+      - _KR_韩国
+      - IL_speednode_0048
+      - 新加坡【付费推荐：https://tt.vg/vip】44
+      - IL_speednode_0063
+      - IL_speednode_0037
       - IL_speednode_0041
-      - _SG_新加坡 3
-      - 18|关注电报https://t.me/aifenxiang202...___
-      - 未知_0621011
-      - _IL_以色列->🇦🇺_AU_澳大利亚 2
+      - IL_speednode_0035
+      - 美国_0622730
+      - AZ_speednode_0001
       - CN_speednode_0004
-      - CN_speednode_0008
-      - 18|关注电报https://t.me/aifenxiang202...___ 2
       - IL_speednode_0041 2
-      - CN_speednode_0007 2
+      - TW_speednode_0147
+      - KR_speednode_0106
+      - 以色列_0619023
+      - TR_speednode_0099
+      - _IL_以色列->🇦🇺_AU_澳大利亚 2
+      - UA_speednode_0154
+      - _JP_日本
+      - PL_speednode_0113
+      - _US_美国
+      - IL_speednode_0058
+      - IL_speednode_0037 2
+      - TW, Taipei
+      - IL_speednode_0032
+      - _IL_以色列->🇩🇪_DE_德国
+      - _IL_以色列->🇯🇵_JP_日本 2 3
+      - _RU_俄罗斯联邦
+      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
+      - github.com/freefq - 美国Microsoft公司 15
+      - US_speednode_0109
+      - _IL_以色列->🇳🇱_NL_荷兰
+      - 美国_0622730 2
+      - _KR_韩国 2
+      - PL_speednode_0112
+      - CN_speednode_0008
+      - JP_speednode_0096
+      - IL_speednode_0037 3
+      - India 01 TG:@SSRSUB
+      - IL_speednode_0045
+      - 美国_0622730 3
+      - 日本_0622060
+      - _IL_以色列->🇬🇧_GB_英国 4 2
+      - JP_speednode_0090
+      - IL_speednode_0074
+      - _IL_以色列->🇩🇪_DE_德国 2
+      - _IL_以色列->🇬🇧_GB_英国
+      - IL_speednode_0013
+      - TR_speednode_0100
+      - GB_speednode_0015
+      - IL_speednode_0017
+      - _IL_以色列->🇪🇪_EE_爱沙尼亚
+      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
+      - _KR_韩国 2 2
+      - 日本_0622060 2
+      - 香港_0622026
+      - 美国_0622993
+      - IL_speednode_0009
+      - IT_speednode_0075
+      - IL_speednode_0023
+      - _KR_韩国 3
+      - US_speednode_0104
+      - IM_speednode_0076
+      - 日本 V2CROSS.COM
+      - github.com/freefq - 以色列  7
+      - 香港_0622026 2
+      - DE_speednode_0008
+      - NO_speednode_0108
+      - _IL_以色列->🇳🇱_NL_荷兰 5
+      - KR_speednode_0100
+      - IL_speednode_0022
+      - IL 25 → tg@nicevpn123
+      - IL_speednode_0031
+      - IL_speednode_0031 2
+      - IL_speednode_0025
+      - 防失效github SubCrawler中国_0622008
+      - _IL_以色列->🇬🇧_GB_英国 2
+      - IL_speednode_0029
+      - JP_speednode_0092
+      - HU_speednode_0012
+      - LY_speednode_0085
+      - DE_speednode_0006
+      - TW_speednode_0149
+      - IL_speednode_0027
+      - US_speednode_0162
+      - TW_speednode_0148
+      - IL_speednode_0040
+      - IL_speednode_0027 2
+      - JP_speednode_0078
+      - 防失效github SubCrawler中国_0622008 2
+      - IL_speednode_0031 3
+      - 美国_06226119
+      - GB_speednode_0022
+      - DE_speednode_0007
+      - US_speednode_0165
+      - 防失效github SubCrawler中国_0621007
+      - 防失效github SubCrawler中国_0621007 2
+      - 20,21|移动专线B
+      - _IL_以色列->🇬🇧_GB_英国 3
+      - 0,1,20,21|🇬🇧 _CN_中国->🇬🇧_GB_英国
+      - v2rayfree.eu.org - 以色列  8
+      - 20,21|移动专线B 2
+      - TW_speednode_0102
+      - SG_speednode_0142
+      - 18|🇺🇸_US_美国_6_15@11
+      - 20,21|移动专线B 3
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本_0621101
-      - _IL_以色列->🇬🇧_GB_英国
-      - AWS | JP | IPLC专线4号
-      - _IL_以色列->🇪🇪_EE_爱沙尼亚
-      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
-      - IL_speednode_0029
-      - HU_speednode_0020
-      - 以色列_0619030
-      - 美国_06201147
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 1
-      - 以色列【付费推荐：https://tt.vg/vip】105
-      - github.com/freefq - 以色列  7
-      - IL_speednode_0027
-      - 以色列_0621034
-      - IL_speednode_0037
-      - IL_speednode_0031
-      - India 01 TG:@SSRSUB
-      - _IL_以色列->🇬🇧_GB_英国 2
-      - 中国_0620038
-      - 以色列_0619026
-      - IL_speednode_0035
-      - _US_美国->🇸🇬_SG_新加坡
-      - 美国凤凰城1号
-      - IL_speednode_0037 2
-      - IL_speednode_0029 2
-      - 16,20|🇨🇳中国-江苏-镇江-ss2-120.195.181.142...
-      - US_speednode_0111
-      - _SG_新加坡
-      - _IL_以色列->🇳🇱_NL_荷兰 5
-      - 以色列_0619023
-      - 以色列_0619024
-      - "@SSRSUB-V22-付费推荐:dlj.tf/ssrsub"
-      - 20,21|移动专线B
-      - 美国_06201147 2
-      - IL 25 → tg@nicevpn123
-      - US_speednode_0109
-      - 美国_06205551
-      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
-      - _US_美国->🇳🇱_NL_荷兰
-      - v2rayfree.eu.org - 美国加利福尼亚州洛杉矶Level3通信(DIA) 25
-      - AWS | JP | IPLC专线2号
-      - 英国-1
-      - v2rayfree.eu.org - 以色列  8
-      - 以色列_0620025
-      - github.com/freefq - 美国Xerox 5
-      - _IL_以色列->🇬🇧_GB_英国 3
-      - _KR_韩国
-      - IL_speednode_0045
-      - _IL_以色列->🇬🇧_GB_英国 4
-      - IL_speednode_0031 2
-      - US_speednode_0135
-      - _IL_以色列->🇦🇺_AU_澳大利亚
-      - IL_speednode_0025
-      - JP, Tokyo
-      - IL_speednode_0027 2
-      - 以色列【付费推荐：https://tt.vg/vip】5
-      - _JP_日本
-      - 20,21|移动专线B 2
-      - 以色列_0620024
-      - IL_speednode_0040
-      - _IL_以色列->🇩🇪_DE_德国
-      - GB_speednode_0015
-      - 美国_0621063
-      - "@SSRSUB-V13-付费推荐:dlj.tf/ssrsub"
-      - 1|🇬🇧 _IL_以色列->🇬🇧_GB_英国
-      - 6,8,24,26|_IL_以色列->🇦🇺_AU_澳大利亚
-      - _IL_以色列->🇩🇪_DE_德国 2
-      - _KR_韩国 2
-      - 以色列【付费推荐：https://tt.vg/vip】187
-      - 美国_06201115
-      - 20,21|移动专线B 3
-      - SK_speednode_0080
-      - AWS | JP | IPLC专线3号
-      - 以色列_0620037
-      - 17,18|_🇭🇰_HK_香港_科网_20
-      - 以色列_0621032
-      - US_speednode_0104
-      - 亚马逊日本3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - _KR_韩国 3
-      - 美国凤凰城2号
-      - 以色列_0615022
-      - 美国_06201115 2
-      - 阿曼_0620050
-      - IL_speednode_0017
-      - IL_speednode_0032
-      - IL_speednode_0009
-      - 以色列_0620035
-      - _SG_新加坡 2
-      - IL_speednode_0022
-      - IL_speednode_0023
-      - US_speednode_0114
-      - IL_speednode_0013
-      - github.com/freefq - 新加坡Amazon数据中心 1
-      - 德国-1
-      - AWS | SG | IPLC专线1号
-      - CN_speednode_0007
-      - 美国4
-      - _IL_以色列->🇳🇱_NL_荷兰
-      - 14|美国 066
-      - 14,15|香港 002
-      - AWS新加坡2
-      - 以色列_0620031
-      - FR_speednode_0018
-      - US_speednode_0112
-      - 0,1,17|🇺🇸 _US_美国->🇳🇱_NL_荷兰_
-      - HK_speednode_0025
-      - CN_speednode_0003
-      - 20,21|🇺🇸 美国2|@ripaojiedian
-      - 日本 V2CROSS.COM 2
-      - IL_speednode_0048
-      - _US_美国
-      - SG_speednode_0094
-      - SG_speednode_0096
-      - 18|未知_06193847
-      - TR_speednode_0099
-      - 9,20,21|🇹🇼_TW_台湾
-      - DE_speednode_0013
-      - _KR_韩国->🇸🇬_SG_新加坡
-      - US_speednode_0124
-      - 18|🇺🇸_US_美国_1
-      - IL_speednode_0074
-      - 20|🇯🇵 东京特殊|@ripaojiedian
-      - TR_speednode_0100
-      - 美国_06211783
-      - 17|_🇭🇰_HK_香港_科网_20
-      - 20|🇭🇰 香港|tg频道:@ripaojiedian
-      - LY_speednode_0085
+      - 以色列_0622035
+      - 以色列_0622038
       - 以色列_0621031
-      - 20,21|🇺🇸 美国2|@ripaojiedian 2
-      - 17|_🇭🇰_HK_香港_科网_20 2
-      - 20,21|🇹🇼 台湾2|@ripaojiedian
-      - KR_speednode_0082
-      - 荷兰 035
-      - 18|🇺🇸_US_美国_1 2
-      - "@SSRSUB-V08-付费推荐:dlj.tf/ssrsub"
-      - TW_speednode_0102
-      - https://1808.cf 二爷翻墙_2
-      - IL_speednode_0037 3
-      - CN_speednode_0005
-      - IM_speednode_0076
-      - 美国 003
-      - 17|_🇺🇸_US_美国_科网_20
-      - 防失效github SubCrawler中国_0621007
-      - 5,6,7,8,23,24,25,26|_US_美国___
-      - JP_speednode_0077
-      - _TW_台湾
-      - JP_speednode_0078
-      - HK_speednode_0029
-      - 日本 V2CROSS.COM
-      - CN-14.29.167.168-120
-      - 美国_0621063 2
-      - 以色列_0621028
-      - TR_speednode_0101
-      - 美国_0620944
-      - 6,8,9,9,24,26|_CN_中国->🇹🇷_TR_土耳其
-      - CN_speednode_0002
-      - https://1808.cf 二爷翻墙_4
-      - SG_speednode_0093
-      - 日本_0621163
-      - CN-14.29.167.168-103
-      - github.com/freefq - 以色列  15
-      - 14,17,18|美国 079
-      - 14,17,18|荷兰 035
+      - 以色列_0619026
       - 以色列_0621033
-      - 14,17,18|美国 074
-      - IL_speednode_0031 3
-      - CN-14.18.103.121-086
+      - 以色列_0621028
+      - 以色列_0619024
+      - 以色列_0622037
+      - 以色列_0621032
+      - 以色列_0622036
+      - 以色列_0621034
+      - 以色列_0621025
+      - 以色列_0620025
+      - 以色列【付费推荐：https://tt.vg/vip】105
+      - 以色列_0620031
+      - 以色列_0619030
+      - 20|🇯🇵 日本特殊|@ripaojiedian
+      - IL_speednode_0055
+      - _IL_以色列->🇦🇺_AU_澳大利亚
+      - _KR_韩国
+      - IL_speednode_0048
+      - 新加坡【付费推荐：https://tt.vg/vip】44
+      - IL_speednode_0063
+      - IL_speednode_0037
       - IL_speednode_0041
-      - _SG_新加坡 3
-      - 18|关注电报https://t.me/aifenxiang202...___
-      - 未知_0621011
-      - _IL_以色列->🇦🇺_AU_澳大利亚 2
+      - IL_speednode_0035
+      - 美国_0622730
+      - AZ_speednode_0001
       - CN_speednode_0004
-      - CN_speednode_0008
-      - 18|关注电报https://t.me/aifenxiang202...___ 2
       - IL_speednode_0041 2
-      - CN_speednode_0007 2
+      - TW_speednode_0147
+      - KR_speednode_0106
+      - 以色列_0619023
+      - TR_speednode_0099
+      - _IL_以色列->🇦🇺_AU_澳大利亚 2
+      - UA_speednode_0154
+      - _JP_日本
+      - PL_speednode_0113
+      - _US_美国
+      - IL_speednode_0058
+      - IL_speednode_0037 2
+      - TW, Taipei
+      - IL_speednode_0032
+      - _IL_以色列->🇩🇪_DE_德国
+      - _IL_以色列->🇯🇵_JP_日本 2 3
+      - _RU_俄罗斯联邦
+      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
+      - github.com/freefq - 美国Microsoft公司 15
+      - US_speednode_0109
+      - _IL_以色列->🇳🇱_NL_荷兰
+      - 美国_0622730 2
+      - _KR_韩国 2
+      - PL_speednode_0112
+      - CN_speednode_0008
+      - JP_speednode_0096
+      - IL_speednode_0037 3
+      - India 01 TG:@SSRSUB
+      - IL_speednode_0045
+      - 美国_0622730 3
+      - 日本_0622060
+      - _IL_以色列->🇬🇧_GB_英国 4 2
+      - JP_speednode_0090
+      - IL_speednode_0074
+      - _IL_以色列->🇩🇪_DE_德国 2
+      - _IL_以色列->🇬🇧_GB_英国
+      - IL_speednode_0013
+      - TR_speednode_0100
+      - GB_speednode_0015
+      - IL_speednode_0017
+      - _IL_以色列->🇪🇪_EE_爱沙尼亚
+      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
+      - _KR_韩国 2 2
+      - 日本_0622060 2
+      - 香港_0622026
+      - 美国_0622993
+      - IL_speednode_0009
+      - IT_speednode_0075
+      - IL_speednode_0023
+      - _KR_韩国 3
+      - US_speednode_0104
+      - IM_speednode_0076
+      - 日本 V2CROSS.COM
+      - github.com/freefq - 以色列  7
+      - 香港_0622026 2
+      - DE_speednode_0008
+      - NO_speednode_0108
+      - _IL_以色列->🇳🇱_NL_荷兰 5
+      - KR_speednode_0100
+      - IL_speednode_0022
+      - IL 25 → tg@nicevpn123
+      - IL_speednode_0031
+      - IL_speednode_0031 2
+      - IL_speednode_0025
+      - 防失效github SubCrawler中国_0622008
+      - _IL_以色列->🇬🇧_GB_英国 2
+      - IL_speednode_0029
+      - JP_speednode_0092
+      - HU_speednode_0012
+      - LY_speednode_0085
+      - DE_speednode_0006
+      - TW_speednode_0149
+      - IL_speednode_0027
+      - US_speednode_0162
+      - TW_speednode_0148
+      - IL_speednode_0040
+      - IL_speednode_0027 2
+      - JP_speednode_0078
+      - 防失效github SubCrawler中国_0622008 2
+      - IL_speednode_0031 3
+      - 美国_06226119
+      - GB_speednode_0022
+      - DE_speednode_0007
+      - US_speednode_0165
+      - 防失效github SubCrawler中国_0621007
+      - 防失效github SubCrawler中国_0621007 2
+      - 20,21|移动专线B
+      - _IL_以色列->🇬🇧_GB_英国 3
+      - 0,1,20,21|🇬🇧 _CN_中国->🇬🇧_GB_英国
+      - v2rayfree.eu.org - 以色列  8
+      - 20,21|移动专线B 2
+      - TW_speednode_0102
+      - SG_speednode_0142
+      - 18|🇺🇸_US_美国_6_15@11
+      - 20,21|移动专线B 3
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -753,747 +537,525 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本_0621101
-      - _IL_以色列->🇬🇧_GB_英国
-      - AWS | JP | IPLC专线4号
-      - _IL_以色列->🇪🇪_EE_爱沙尼亚
-      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
-      - IL_speednode_0029
-      - HU_speednode_0020
-      - 以色列_0619030
-      - 美国_06201147
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 1
-      - 以色列【付费推荐：https://tt.vg/vip】105
-      - github.com/freefq - 以色列  7
-      - IL_speednode_0027
-      - 以色列_0621034
-      - IL_speednode_0037
-      - IL_speednode_0031
-      - India 01 TG:@SSRSUB
-      - _IL_以色列->🇬🇧_GB_英国 2
-      - 中国_0620038
-      - 以色列_0619026
-      - IL_speednode_0035
-      - _US_美国->🇸🇬_SG_新加坡
-      - 美国凤凰城1号
-      - IL_speednode_0037 2
-      - IL_speednode_0029 2
-      - 16,20|🇨🇳中国-江苏-镇江-ss2-120.195.181.142...
-      - US_speednode_0111
-      - _SG_新加坡
-      - _IL_以色列->🇳🇱_NL_荷兰 5
-      - 以色列_0619023
-      - 以色列_0619024
-      - "@SSRSUB-V22-付费推荐:dlj.tf/ssrsub"
-      - 20,21|移动专线B
-      - 美国_06201147 2
-      - IL 25 → tg@nicevpn123
-      - US_speednode_0109
-      - 美国_06205551
-      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
-      - _US_美国->🇳🇱_NL_荷兰
-      - v2rayfree.eu.org - 美国加利福尼亚州洛杉矶Level3通信(DIA) 25
-      - AWS | JP | IPLC专线2号
-      - 英国-1
-      - v2rayfree.eu.org - 以色列  8
-      - 以色列_0620025
-      - github.com/freefq - 美国Xerox 5
-      - _IL_以色列->🇬🇧_GB_英国 3
-      - _KR_韩国
-      - IL_speednode_0045
-      - _IL_以色列->🇬🇧_GB_英国 4
-      - IL_speednode_0031 2
-      - US_speednode_0135
-      - _IL_以色列->🇦🇺_AU_澳大利亚
-      - IL_speednode_0025
-      - JP, Tokyo
-      - IL_speednode_0027 2
-      - 以色列【付费推荐：https://tt.vg/vip】5
-      - _JP_日本
-      - 20,21|移动专线B 2
-      - 以色列_0620024
-      - IL_speednode_0040
-      - _IL_以色列->🇩🇪_DE_德国
-      - GB_speednode_0015
-      - 美国_0621063
-      - "@SSRSUB-V13-付费推荐:dlj.tf/ssrsub"
-      - 1|🇬🇧 _IL_以色列->🇬🇧_GB_英国
-      - 6,8,24,26|_IL_以色列->🇦🇺_AU_澳大利亚
-      - _IL_以色列->🇩🇪_DE_德国 2
-      - _KR_韩国 2
-      - 以色列【付费推荐：https://tt.vg/vip】187
-      - 美国_06201115
-      - 20,21|移动专线B 3
-      - SK_speednode_0080
-      - AWS | JP | IPLC专线3号
-      - 以色列_0620037
-      - 17,18|_🇭🇰_HK_香港_科网_20
-      - 以色列_0621032
-      - US_speednode_0104
-      - 亚马逊日本3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - _KR_韩国 3
-      - 美国凤凰城2号
-      - 以色列_0615022
-      - 美国_06201115 2
-      - 阿曼_0620050
-      - IL_speednode_0017
-      - IL_speednode_0032
-      - IL_speednode_0009
-      - 以色列_0620035
-      - _SG_新加坡 2
-      - IL_speednode_0022
-      - IL_speednode_0023
-      - US_speednode_0114
-      - IL_speednode_0013
-      - github.com/freefq - 新加坡Amazon数据中心 1
-      - 德国-1
-      - AWS | SG | IPLC专线1号
-      - CN_speednode_0007
-      - 美国4
-      - _IL_以色列->🇳🇱_NL_荷兰
-      - 14|美国 066
-      - 14,15|香港 002
-      - AWS新加坡2
-      - 以色列_0620031
-      - FR_speednode_0018
-      - US_speednode_0112
-      - 0,1,17|🇺🇸 _US_美国->🇳🇱_NL_荷兰_
-      - HK_speednode_0025
-      - CN_speednode_0003
-      - 20,21|🇺🇸 美国2|@ripaojiedian
-      - 日本 V2CROSS.COM 2
-      - IL_speednode_0048
-      - _US_美国
-      - SG_speednode_0094
-      - SG_speednode_0096
-      - 18|未知_06193847
-      - TR_speednode_0099
-      - 9,20,21|🇹🇼_TW_台湾
-      - DE_speednode_0013
-      - _KR_韩国->🇸🇬_SG_新加坡
-      - US_speednode_0124
-      - 18|🇺🇸_US_美国_1
-      - IL_speednode_0074
-      - 20|🇯🇵 东京特殊|@ripaojiedian
-      - TR_speednode_0100
-      - 美国_06211783
-      - 17|_🇭🇰_HK_香港_科网_20
-      - 20|🇭🇰 香港|tg频道:@ripaojiedian
-      - LY_speednode_0085
+      - 以色列_0622035
+      - 以色列_0622038
       - 以色列_0621031
-      - 20,21|🇺🇸 美国2|@ripaojiedian 2
-      - 17|_🇭🇰_HK_香港_科网_20 2
-      - 20,21|🇹🇼 台湾2|@ripaojiedian
-      - KR_speednode_0082
-      - 荷兰 035
-      - 18|🇺🇸_US_美国_1 2
-      - "@SSRSUB-V08-付费推荐:dlj.tf/ssrsub"
-      - TW_speednode_0102
-      - https://1808.cf 二爷翻墙_2
-      - IL_speednode_0037 3
-      - CN_speednode_0005
-      - IM_speednode_0076
-      - 美国 003
-      - 17|_🇺🇸_US_美国_科网_20
-      - 防失效github SubCrawler中国_0621007
-      - 5,6,7,8,23,24,25,26|_US_美国___
-      - JP_speednode_0077
-      - _TW_台湾
-      - JP_speednode_0078
-      - HK_speednode_0029
-      - 日本 V2CROSS.COM
-      - CN-14.29.167.168-120
-      - 美国_0621063 2
-      - 以色列_0621028
-      - TR_speednode_0101
-      - 美国_0620944
-      - 6,8,9,9,24,26|_CN_中国->🇹🇷_TR_土耳其
-      - CN_speednode_0002
-      - https://1808.cf 二爷翻墙_4
-      - SG_speednode_0093
-      - 日本_0621163
-      - CN-14.29.167.168-103
-      - github.com/freefq - 以色列  15
-      - 14,17,18|美国 079
-      - 14,17,18|荷兰 035
+      - 以色列_0619026
       - 以色列_0621033
-      - 14,17,18|美国 074
-      - IL_speednode_0031 3
-      - CN-14.18.103.121-086
+      - 以色列_0621028
+      - 以色列_0619024
+      - 以色列_0622037
+      - 以色列_0621032
+      - 以色列_0622036
+      - 以色列_0621034
+      - 以色列_0621025
+      - 以色列_0620025
+      - 以色列【付费推荐：https://tt.vg/vip】105
+      - 以色列_0620031
+      - 以色列_0619030
+      - 20|🇯🇵 日本特殊|@ripaojiedian
+      - IL_speednode_0055
+      - _IL_以色列->🇦🇺_AU_澳大利亚
+      - _KR_韩国
+      - IL_speednode_0048
+      - 新加坡【付费推荐：https://tt.vg/vip】44
+      - IL_speednode_0063
+      - IL_speednode_0037
       - IL_speednode_0041
-      - _SG_新加坡 3
-      - 18|关注电报https://t.me/aifenxiang202...___
-      - 未知_0621011
-      - _IL_以色列->🇦🇺_AU_澳大利亚 2
+      - IL_speednode_0035
+      - 美国_0622730
+      - AZ_speednode_0001
       - CN_speednode_0004
-      - CN_speednode_0008
-      - 18|关注电报https://t.me/aifenxiang202...___ 2
       - IL_speednode_0041 2
-      - CN_speednode_0007 2
+      - TW_speednode_0147
+      - KR_speednode_0106
+      - 以色列_0619023
+      - TR_speednode_0099
+      - _IL_以色列->🇦🇺_AU_澳大利亚 2
+      - UA_speednode_0154
+      - _JP_日本
+      - PL_speednode_0113
+      - _US_美国
+      - IL_speednode_0058
+      - IL_speednode_0037 2
+      - TW, Taipei
+      - IL_speednode_0032
+      - _IL_以色列->🇩🇪_DE_德国
+      - _IL_以色列->🇯🇵_JP_日本 2 3
+      - _RU_俄罗斯联邦
+      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
+      - github.com/freefq - 美国Microsoft公司 15
+      - US_speednode_0109
+      - _IL_以色列->🇳🇱_NL_荷兰
+      - 美国_0622730 2
+      - _KR_韩国 2
+      - PL_speednode_0112
+      - CN_speednode_0008
+      - JP_speednode_0096
+      - IL_speednode_0037 3
+      - India 01 TG:@SSRSUB
+      - IL_speednode_0045
+      - 美国_0622730 3
+      - 日本_0622060
+      - _IL_以色列->🇬🇧_GB_英国 4 2
+      - JP_speednode_0090
+      - IL_speednode_0074
+      - _IL_以色列->🇩🇪_DE_德国 2
+      - _IL_以色列->🇬🇧_GB_英国
+      - IL_speednode_0013
+      - TR_speednode_0100
+      - GB_speednode_0015
+      - IL_speednode_0017
+      - _IL_以色列->🇪🇪_EE_爱沙尼亚
+      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
+      - _KR_韩国 2 2
+      - 日本_0622060 2
+      - 香港_0622026
+      - 美国_0622993
+      - IL_speednode_0009
+      - IT_speednode_0075
+      - IL_speednode_0023
+      - _KR_韩国 3
+      - US_speednode_0104
+      - IM_speednode_0076
+      - 日本 V2CROSS.COM
+      - github.com/freefq - 以色列  7
+      - 香港_0622026 2
+      - DE_speednode_0008
+      - NO_speednode_0108
+      - _IL_以色列->🇳🇱_NL_荷兰 5
+      - KR_speednode_0100
+      - IL_speednode_0022
+      - IL 25 → tg@nicevpn123
+      - IL_speednode_0031
+      - IL_speednode_0031 2
+      - IL_speednode_0025
+      - 防失效github SubCrawler中国_0622008
+      - _IL_以色列->🇬🇧_GB_英国 2
+      - IL_speednode_0029
+      - JP_speednode_0092
+      - HU_speednode_0012
+      - LY_speednode_0085
+      - DE_speednode_0006
+      - TW_speednode_0149
+      - IL_speednode_0027
+      - US_speednode_0162
+      - TW_speednode_0148
+      - IL_speednode_0040
+      - IL_speednode_0027 2
+      - JP_speednode_0078
+      - 防失效github SubCrawler中国_0622008 2
+      - IL_speednode_0031 3
+      - 美国_06226119
+      - GB_speednode_0022
+      - DE_speednode_0007
+      - US_speednode_0165
+      - 防失效github SubCrawler中国_0621007
+      - 防失效github SubCrawler中国_0621007 2
+      - 20,21|移动专线B
+      - _IL_以色列->🇬🇧_GB_英国 3
+      - 0,1,20,21|🇬🇧 _CN_中国->🇬🇧_GB_英国
+      - v2rayfree.eu.org - 以色列  8
+      - 20,21|移动专线B 2
+      - TW_speednode_0102
+      - SG_speednode_0142
+      - 18|🇺🇸_US_美国_6_15@11
+      - 20,21|移动专线B 3
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 17,18|_🇭🇰_HK_香港_科网_20
-      - 14,15|香港 002
-      - 9,20,21|🇹🇼_TW_台湾
-      - 17|_🇭🇰_HK_香港_科网_20
-      - 20|🇭🇰 香港|tg频道:@ripaojiedian
-      - 17|_🇭🇰_HK_香港_科网_20 2
-      - 20,21|🇹🇼 台湾2|@ripaojiedian
-      - _TW_台湾
+      - 香港_0622026
+      - 香港_0622026 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 日本_0621101
-      - _IL_以色列->🇬🇧_GB_英国
-      - AWS | JP | IPLC专线4号
-      - _IL_以色列->🇪🇪_EE_爱沙尼亚
-      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
-      - IL_speednode_0029
-      - HU_speednode_0020
-      - 以色列_0619030
-      - 美国_06201147
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 1
-      - 以色列【付费推荐：https://tt.vg/vip】105
-      - github.com/freefq - 以色列  7
-      - IL_speednode_0027
-      - 以色列_0621034
-      - IL_speednode_0037
-      - IL_speednode_0031
-      - India 01 TG:@SSRSUB
-      - _IL_以色列->🇬🇧_GB_英国 2
-      - 中国_0620038
-      - 以色列_0619026
-      - IL_speednode_0035
-      - _US_美国->🇸🇬_SG_新加坡
-      - 美国凤凰城1号
-      - IL_speednode_0037 2
-      - IL_speednode_0029 2
-      - 16,20|🇨🇳中国-江苏-镇江-ss2-120.195.181.142...
-      - US_speednode_0111
-      - _SG_新加坡
-      - _IL_以色列->🇳🇱_NL_荷兰 5
-      - 以色列_0619023
-      - 以色列_0619024
-      - "@SSRSUB-V22-付费推荐:dlj.tf/ssrsub"
-      - 20,21|移动专线B
-      - 美国_06201147 2
-      - IL 25 → tg@nicevpn123
-      - US_speednode_0109
-      - 美国_06205551
-      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
-      - _US_美国->🇳🇱_NL_荷兰
-      - v2rayfree.eu.org - 美国加利福尼亚州洛杉矶Level3通信(DIA) 25
-      - AWS | JP | IPLC专线2号
-      - 英国-1
-      - v2rayfree.eu.org - 以色列  8
-      - 以色列_0620025
-      - github.com/freefq - 美国Xerox 5
-      - _IL_以色列->🇬🇧_GB_英国 3
-      - _KR_韩国
-      - IL_speednode_0045
-      - _IL_以色列->🇬🇧_GB_英国 4
-      - IL_speednode_0031 2
-      - US_speednode_0135
-      - _IL_以色列->🇦🇺_AU_澳大利亚
-      - IL_speednode_0025
-      - JP, Tokyo
-      - IL_speednode_0027 2
-      - 以色列【付费推荐：https://tt.vg/vip】5
-      - _JP_日本
-      - 20,21|移动专线B 2
-      - 以色列_0620024
-      - IL_speednode_0040
-      - _IL_以色列->🇩🇪_DE_德国
-      - GB_speednode_0015
-      - 美国_0621063
-      - "@SSRSUB-V13-付费推荐:dlj.tf/ssrsub"
-      - 1|🇬🇧 _IL_以色列->🇬🇧_GB_英国
-      - 6,8,24,26|_IL_以色列->🇦🇺_AU_澳大利亚
-      - _IL_以色列->🇩🇪_DE_德国 2
-      - _KR_韩国 2
-      - 以色列【付费推荐：https://tt.vg/vip】187
-      - 美国_06201115
-      - 20,21|移动专线B 3
-      - SK_speednode_0080
-      - AWS | JP | IPLC专线3号
-      - 以色列_0620037
-      - 17,18|_🇭🇰_HK_香港_科网_20
-      - 以色列_0621032
-      - US_speednode_0104
-      - 亚马逊日本3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - _KR_韩国 3
-      - 美国凤凰城2号
-      - 以色列_0615022
-      - 美国_06201115 2
-      - 阿曼_0620050
-      - IL_speednode_0017
-      - IL_speednode_0032
-      - IL_speednode_0009
-      - 以色列_0620035
-      - _SG_新加坡 2
-      - IL_speednode_0022
-      - IL_speednode_0023
-      - US_speednode_0114
-      - IL_speednode_0013
-      - github.com/freefq - 新加坡Amazon数据中心 1
-      - 德国-1
-      - AWS | SG | IPLC专线1号
-      - CN_speednode_0007
-      - 美国4
-      - _IL_以色列->🇳🇱_NL_荷兰
-      - 14|美国 066
-      - 14,15|香港 002
-      - AWS新加坡2
-      - 以色列_0620031
-      - FR_speednode_0018
-      - US_speednode_0112
-      - 0,1,17|🇺🇸 _US_美国->🇳🇱_NL_荷兰_
-      - HK_speednode_0025
-      - CN_speednode_0003
-      - 20,21|🇺🇸 美国2|@ripaojiedian
-      - 日本 V2CROSS.COM 2
-      - IL_speednode_0048
-      - _US_美国
-      - SG_speednode_0094
-      - SG_speednode_0096
-      - 18|未知_06193847
-      - TR_speednode_0099
-      - 9,20,21|🇹🇼_TW_台湾
-      - DE_speednode_0013
-      - _KR_韩国->🇸🇬_SG_新加坡
-      - US_speednode_0124
-      - 18|🇺🇸_US_美国_1
-      - IL_speednode_0074
-      - 20|🇯🇵 东京特殊|@ripaojiedian
-      - TR_speednode_0100
-      - 美国_06211783
-      - 17|_🇭🇰_HK_香港_科网_20
-      - 20|🇭🇰 香港|tg频道:@ripaojiedian
-      - LY_speednode_0085
+      - 以色列_0622035
+      - 以色列_0622038
       - 以色列_0621031
-      - 20,21|🇺🇸 美国2|@ripaojiedian 2
-      - 17|_🇭🇰_HK_香港_科网_20 2
-      - 20,21|🇹🇼 台湾2|@ripaojiedian
-      - KR_speednode_0082
-      - 荷兰 035
-      - 18|🇺🇸_US_美国_1 2
-      - "@SSRSUB-V08-付费推荐:dlj.tf/ssrsub"
-      - TW_speednode_0102
-      - https://1808.cf 二爷翻墙_2
-      - IL_speednode_0037 3
-      - CN_speednode_0005
-      - IM_speednode_0076
-      - 美国 003
-      - 17|_🇺🇸_US_美国_科网_20
-      - 防失效github SubCrawler中国_0621007
-      - 5,6,7,8,23,24,25,26|_US_美国___
-      - JP_speednode_0077
-      - _TW_台湾
-      - JP_speednode_0078
-      - HK_speednode_0029
-      - 日本 V2CROSS.COM
-      - CN-14.29.167.168-120
-      - 美国_0621063 2
-      - 以色列_0621028
-      - TR_speednode_0101
-      - 美国_0620944
-      - 6,8,9,9,24,26|_CN_中国->🇹🇷_TR_土耳其
-      - CN_speednode_0002
-      - https://1808.cf 二爷翻墙_4
-      - SG_speednode_0093
-      - 日本_0621163
-      - CN-14.29.167.168-103
-      - github.com/freefq - 以色列  15
-      - 14,17,18|美国 079
-      - 14,17,18|荷兰 035
+      - 以色列_0619026
       - 以色列_0621033
-      - 14,17,18|美国 074
-      - IL_speednode_0031 3
-      - CN-14.18.103.121-086
+      - 以色列_0621028
+      - 以色列_0619024
+      - 以色列_0622037
+      - 以色列_0621032
+      - 以色列_0622036
+      - 以色列_0621034
+      - 以色列_0621025
+      - 以色列_0620025
+      - 以色列【付费推荐：https://tt.vg/vip】105
+      - 以色列_0620031
+      - 以色列_0619030
+      - 20|🇯🇵 日本特殊|@ripaojiedian
+      - IL_speednode_0055
+      - _IL_以色列->🇦🇺_AU_澳大利亚
+      - _KR_韩国
+      - IL_speednode_0048
+      - 新加坡【付费推荐：https://tt.vg/vip】44
+      - IL_speednode_0063
+      - IL_speednode_0037
       - IL_speednode_0041
-      - _SG_新加坡 3
-      - 18|关注电报https://t.me/aifenxiang202...___
-      - 未知_0621011
-      - _IL_以色列->🇦🇺_AU_澳大利亚 2
+      - IL_speednode_0035
+      - 美国_0622730
+      - AZ_speednode_0001
       - CN_speednode_0004
-      - CN_speednode_0008
-      - 18|关注电报https://t.me/aifenxiang202...___ 2
       - IL_speednode_0041 2
-      - CN_speednode_0007 2
+      - TW_speednode_0147
+      - KR_speednode_0106
+      - 以色列_0619023
+      - TR_speednode_0099
+      - _IL_以色列->🇦🇺_AU_澳大利亚 2
+      - UA_speednode_0154
+      - _JP_日本
+      - PL_speednode_0113
+      - _US_美国
+      - IL_speednode_0058
+      - IL_speednode_0037 2
+      - TW, Taipei
+      - IL_speednode_0032
+      - _IL_以色列->🇩🇪_DE_德国
+      - _IL_以色列->🇯🇵_JP_日本 2 3
+      - _RU_俄罗斯联邦
+      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
+      - github.com/freefq - 美国Microsoft公司 15
+      - US_speednode_0109
+      - _IL_以色列->🇳🇱_NL_荷兰
+      - 美国_0622730 2
+      - _KR_韩国 2
+      - PL_speednode_0112
+      - CN_speednode_0008
+      - JP_speednode_0096
+      - IL_speednode_0037 3
+      - India 01 TG:@SSRSUB
+      - IL_speednode_0045
+      - 美国_0622730 3
+      - 日本_0622060
+      - _IL_以色列->🇬🇧_GB_英国 4 2
+      - JP_speednode_0090
+      - IL_speednode_0074
+      - _IL_以色列->🇩🇪_DE_德国 2
+      - _IL_以色列->🇬🇧_GB_英国
+      - IL_speednode_0013
+      - TR_speednode_0100
+      - GB_speednode_0015
+      - IL_speednode_0017
+      - _IL_以色列->🇪🇪_EE_爱沙尼亚
+      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
+      - _KR_韩国 2 2
+      - 日本_0622060 2
+      - 香港_0622026
+      - 美国_0622993
+      - IL_speednode_0009
+      - IT_speednode_0075
+      - IL_speednode_0023
+      - _KR_韩国 3
+      - US_speednode_0104
+      - IM_speednode_0076
+      - 日本 V2CROSS.COM
+      - github.com/freefq - 以色列  7
+      - 香港_0622026 2
+      - DE_speednode_0008
+      - NO_speednode_0108
+      - _IL_以色列->🇳🇱_NL_荷兰 5
+      - KR_speednode_0100
+      - IL_speednode_0022
+      - IL 25 → tg@nicevpn123
+      - IL_speednode_0031
+      - IL_speednode_0031 2
+      - IL_speednode_0025
+      - 防失效github SubCrawler中国_0622008
+      - _IL_以色列->🇬🇧_GB_英国 2
+      - IL_speednode_0029
+      - JP_speednode_0092
+      - HU_speednode_0012
+      - LY_speednode_0085
+      - DE_speednode_0006
+      - TW_speednode_0149
+      - IL_speednode_0027
+      - US_speednode_0162
+      - TW_speednode_0148
+      - IL_speednode_0040
+      - IL_speednode_0027 2
+      - JP_speednode_0078
+      - 防失效github SubCrawler中国_0622008 2
+      - IL_speednode_0031 3
+      - 美国_06226119
+      - GB_speednode_0022
+      - DE_speednode_0007
+      - US_speednode_0165
+      - 防失效github SubCrawler中国_0621007
+      - 防失效github SubCrawler中国_0621007 2
+      - 20,21|移动专线B
+      - _IL_以色列->🇬🇧_GB_英国 3
+      - 0,1,20,21|🇬🇧 _CN_中国->🇬🇧_GB_英国
+      - v2rayfree.eu.org - 以色列  8
+      - 20,21|移动专线B 2
+      - TW_speednode_0102
+      - SG_speednode_0142
+      - 18|🇺🇸_US_美国_6_15@11
+      - 20,21|移动专线B 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 日本_0621101
-      - _IL_以色列->🇬🇧_GB_英国
-      - AWS | JP | IPLC专线4号
-      - _IL_以色列->🇪🇪_EE_爱沙尼亚
-      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
-      - IL_speednode_0029
-      - HU_speednode_0020
-      - 以色列_0619030
-      - 美国_06201147
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 1
-      - 以色列【付费推荐：https://tt.vg/vip】105
-      - github.com/freefq - 以色列  7
-      - IL_speednode_0027
-      - 以色列_0621034
-      - IL_speednode_0037
-      - IL_speednode_0031
-      - India 01 TG:@SSRSUB
-      - _IL_以色列->🇬🇧_GB_英国 2
-      - 中国_0620038
-      - 以色列_0619026
-      - IL_speednode_0035
-      - _US_美国->🇸🇬_SG_新加坡
-      - 美国凤凰城1号
-      - IL_speednode_0037 2
-      - IL_speednode_0029 2
-      - 16,20|🇨🇳中国-江苏-镇江-ss2-120.195.181.142...
-      - US_speednode_0111
-      - _SG_新加坡
-      - _IL_以色列->🇳🇱_NL_荷兰 5
-      - 以色列_0619023
-      - 以色列_0619024
-      - "@SSRSUB-V22-付费推荐:dlj.tf/ssrsub"
-      - 20,21|移动专线B
-      - 美国_06201147 2
-      - IL 25 → tg@nicevpn123
-      - US_speednode_0109
-      - 美国_06205551
-      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
-      - _US_美国->🇳🇱_NL_荷兰
-      - v2rayfree.eu.org - 美国加利福尼亚州洛杉矶Level3通信(DIA) 25
-      - AWS | JP | IPLC专线2号
-      - 英国-1
-      - v2rayfree.eu.org - 以色列  8
-      - 以色列_0620025
-      - github.com/freefq - 美国Xerox 5
-      - _IL_以色列->🇬🇧_GB_英国 3
-      - _KR_韩国
-      - IL_speednode_0045
-      - _IL_以色列->🇬🇧_GB_英国 4
-      - IL_speednode_0031 2
-      - US_speednode_0135
-      - _IL_以色列->🇦🇺_AU_澳大利亚
-      - IL_speednode_0025
-      - JP, Tokyo
-      - IL_speednode_0027 2
-      - 以色列【付费推荐：https://tt.vg/vip】5
-      - _JP_日本
-      - 20,21|移动专线B 2
-      - 以色列_0620024
-      - IL_speednode_0040
-      - _IL_以色列->🇩🇪_DE_德国
-      - GB_speednode_0015
-      - 美国_0621063
-      - "@SSRSUB-V13-付费推荐:dlj.tf/ssrsub"
-      - 1|🇬🇧 _IL_以色列->🇬🇧_GB_英国
-      - 6,8,24,26|_IL_以色列->🇦🇺_AU_澳大利亚
-      - _IL_以色列->🇩🇪_DE_德国 2
-      - _KR_韩国 2
-      - 以色列【付费推荐：https://tt.vg/vip】187
-      - 美国_06201115
-      - 20,21|移动专线B 3
-      - SK_speednode_0080
-      - AWS | JP | IPLC专线3号
-      - 以色列_0620037
-      - 17,18|_🇭🇰_HK_香港_科网_20
-      - 以色列_0621032
-      - US_speednode_0104
-      - 亚马逊日本3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - _KR_韩国 3
-      - 美国凤凰城2号
-      - 以色列_0615022
-      - 美国_06201115 2
-      - 阿曼_0620050
-      - IL_speednode_0017
-      - IL_speednode_0032
-      - IL_speednode_0009
-      - 以色列_0620035
-      - _SG_新加坡 2
-      - IL_speednode_0022
-      - IL_speednode_0023
-      - US_speednode_0114
-      - IL_speednode_0013
-      - github.com/freefq - 新加坡Amazon数据中心 1
-      - 德国-1
-      - AWS | SG | IPLC专线1号
-      - CN_speednode_0007
-      - 美国4
-      - _IL_以色列->🇳🇱_NL_荷兰
-      - 14|美国 066
-      - 14,15|香港 002
-      - AWS新加坡2
-      - 以色列_0620031
-      - FR_speednode_0018
-      - US_speednode_0112
-      - 0,1,17|🇺🇸 _US_美国->🇳🇱_NL_荷兰_
-      - HK_speednode_0025
-      - CN_speednode_0003
-      - 20,21|🇺🇸 美国2|@ripaojiedian
-      - 日本 V2CROSS.COM 2
-      - IL_speednode_0048
-      - _US_美国
-      - SG_speednode_0094
-      - SG_speednode_0096
-      - 18|未知_06193847
-      - TR_speednode_0099
-      - 9,20,21|🇹🇼_TW_台湾
-      - DE_speednode_0013
-      - _KR_韩国->🇸🇬_SG_新加坡
-      - US_speednode_0124
-      - 18|🇺🇸_US_美国_1
-      - IL_speednode_0074
-      - 20|🇯🇵 东京特殊|@ripaojiedian
-      - TR_speednode_0100
-      - 美国_06211783
-      - 17|_🇭🇰_HK_香港_科网_20
-      - 20|🇭🇰 香港|tg频道:@ripaojiedian
-      - LY_speednode_0085
+      - 以色列_0622035
+      - 以色列_0622038
       - 以色列_0621031
-      - 20,21|🇺🇸 美国2|@ripaojiedian 2
-      - 17|_🇭🇰_HK_香港_科网_20 2
-      - 20,21|🇹🇼 台湾2|@ripaojiedian
-      - KR_speednode_0082
-      - 荷兰 035
-      - 18|🇺🇸_US_美国_1 2
-      - "@SSRSUB-V08-付费推荐:dlj.tf/ssrsub"
-      - TW_speednode_0102
-      - https://1808.cf 二爷翻墙_2
-      - IL_speednode_0037 3
-      - CN_speednode_0005
-      - IM_speednode_0076
-      - 美国 003
-      - 17|_🇺🇸_US_美国_科网_20
-      - 防失效github SubCrawler中国_0621007
-      - 5,6,7,8,23,24,25,26|_US_美国___
-      - JP_speednode_0077
-      - _TW_台湾
-      - JP_speednode_0078
-      - HK_speednode_0029
-      - 日本 V2CROSS.COM
-      - CN-14.29.167.168-120
-      - 美国_0621063 2
-      - 以色列_0621028
-      - TR_speednode_0101
-      - 美国_0620944
-      - 6,8,9,9,24,26|_CN_中国->🇹🇷_TR_土耳其
-      - CN_speednode_0002
-      - https://1808.cf 二爷翻墙_4
-      - SG_speednode_0093
-      - 日本_0621163
-      - CN-14.29.167.168-103
-      - github.com/freefq - 以色列  15
-      - 14,17,18|美国 079
-      - 14,17,18|荷兰 035
+      - 以色列_0619026
       - 以色列_0621033
-      - 14,17,18|美国 074
-      - IL_speednode_0031 3
-      - CN-14.18.103.121-086
+      - 以色列_0621028
+      - 以色列_0619024
+      - 以色列_0622037
+      - 以色列_0621032
+      - 以色列_0622036
+      - 以色列_0621034
+      - 以色列_0621025
+      - 以色列_0620025
+      - 以色列【付费推荐：https://tt.vg/vip】105
+      - 以色列_0620031
+      - 以色列_0619030
+      - 20|🇯🇵 日本特殊|@ripaojiedian
+      - IL_speednode_0055
+      - _IL_以色列->🇦🇺_AU_澳大利亚
+      - _KR_韩国
+      - IL_speednode_0048
+      - 新加坡【付费推荐：https://tt.vg/vip】44
+      - IL_speednode_0063
+      - IL_speednode_0037
       - IL_speednode_0041
-      - _SG_新加坡 3
-      - 18|关注电报https://t.me/aifenxiang202...___
-      - 未知_0621011
-      - _IL_以色列->🇦🇺_AU_澳大利亚 2
+      - IL_speednode_0035
+      - 美国_0622730
+      - AZ_speednode_0001
       - CN_speednode_0004
-      - CN_speednode_0008
-      - 18|关注电报https://t.me/aifenxiang202...___ 2
       - IL_speednode_0041 2
-      - CN_speednode_0007 2
+      - TW_speednode_0147
+      - KR_speednode_0106
+      - 以色列_0619023
+      - TR_speednode_0099
+      - _IL_以色列->🇦🇺_AU_澳大利亚 2
+      - UA_speednode_0154
+      - _JP_日本
+      - PL_speednode_0113
+      - _US_美国
+      - IL_speednode_0058
+      - IL_speednode_0037 2
+      - TW, Taipei
+      - IL_speednode_0032
+      - _IL_以色列->🇩🇪_DE_德国
+      - _IL_以色列->🇯🇵_JP_日本 2 3
+      - _RU_俄罗斯联邦
+      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
+      - github.com/freefq - 美国Microsoft公司 15
+      - US_speednode_0109
+      - _IL_以色列->🇳🇱_NL_荷兰
+      - 美国_0622730 2
+      - _KR_韩国 2
+      - PL_speednode_0112
+      - CN_speednode_0008
+      - JP_speednode_0096
+      - IL_speednode_0037 3
+      - India 01 TG:@SSRSUB
+      - IL_speednode_0045
+      - 美国_0622730 3
+      - 日本_0622060
+      - _IL_以色列->🇬🇧_GB_英国 4 2
+      - JP_speednode_0090
+      - IL_speednode_0074
+      - _IL_以色列->🇩🇪_DE_德国 2
+      - _IL_以色列->🇬🇧_GB_英国
+      - IL_speednode_0013
+      - TR_speednode_0100
+      - GB_speednode_0015
+      - IL_speednode_0017
+      - _IL_以色列->🇪🇪_EE_爱沙尼亚
+      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
+      - _KR_韩国 2 2
+      - 日本_0622060 2
+      - 香港_0622026
+      - 美国_0622993
+      - IL_speednode_0009
+      - IT_speednode_0075
+      - IL_speednode_0023
+      - _KR_韩国 3
+      - US_speednode_0104
+      - IM_speednode_0076
+      - 日本 V2CROSS.COM
+      - github.com/freefq - 以色列  7
+      - 香港_0622026 2
+      - DE_speednode_0008
+      - NO_speednode_0108
+      - _IL_以色列->🇳🇱_NL_荷兰 5
+      - KR_speednode_0100
+      - IL_speednode_0022
+      - IL 25 → tg@nicevpn123
+      - IL_speednode_0031
+      - IL_speednode_0031 2
+      - IL_speednode_0025
+      - 防失效github SubCrawler中国_0622008
+      - _IL_以色列->🇬🇧_GB_英国 2
+      - IL_speednode_0029
+      - JP_speednode_0092
+      - HU_speednode_0012
+      - LY_speednode_0085
+      - DE_speednode_0006
+      - TW_speednode_0149
+      - IL_speednode_0027
+      - US_speednode_0162
+      - TW_speednode_0148
+      - IL_speednode_0040
+      - IL_speednode_0027 2
+      - JP_speednode_0078
+      - 防失效github SubCrawler中国_0622008 2
+      - IL_speednode_0031 3
+      - 美国_06226119
+      - GB_speednode_0022
+      - DE_speednode_0007
+      - US_speednode_0165
+      - 防失效github SubCrawler中国_0621007
+      - 防失效github SubCrawler中国_0621007 2
+      - 20,21|移动专线B
+      - _IL_以色列->🇬🇧_GB_英国 3
+      - 0,1,20,21|🇬🇧 _CN_中国->🇬🇧_GB_英国
+      - v2rayfree.eu.org - 以色列  8
+      - 20,21|移动专线B 2
+      - TW_speednode_0102
+      - SG_speednode_0142
+      - 18|🇺🇸_US_美国_6_15@11
+      - 20,21|移动专线B 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本_0621101
-      - _IL_以色列->🇬🇧_GB_英国
-      - AWS | JP | IPLC专线4号
-      - _IL_以色列->🇪🇪_EE_爱沙尼亚
-      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
-      - IL_speednode_0029
-      - HU_speednode_0020
-      - 以色列_0619030
-      - 美国_06201147
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 1
-      - 以色列【付费推荐：https://tt.vg/vip】105
-      - github.com/freefq - 以色列  7
-      - IL_speednode_0027
-      - 以色列_0621034
-      - IL_speednode_0037
-      - IL_speednode_0031
-      - India 01 TG:@SSRSUB
-      - _IL_以色列->🇬🇧_GB_英国 2
-      - 中国_0620038
-      - 以色列_0619026
-      - IL_speednode_0035
-      - _US_美国->🇸🇬_SG_新加坡
-      - 美国凤凰城1号
-      - IL_speednode_0037 2
-      - IL_speednode_0029 2
-      - 16,20|🇨🇳中国-江苏-镇江-ss2-120.195.181.142...
-      - US_speednode_0111
-      - _SG_新加坡
-      - _IL_以色列->🇳🇱_NL_荷兰 5
-      - 以色列_0619023
-      - 以色列_0619024
-      - "@SSRSUB-V22-付费推荐:dlj.tf/ssrsub"
-      - 20,21|移动专线B
-      - 美国_06201147 2
-      - IL 25 → tg@nicevpn123
-      - US_speednode_0109
-      - 美国_06205551
-      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
-      - _US_美国->🇳🇱_NL_荷兰
-      - v2rayfree.eu.org - 美国加利福尼亚州洛杉矶Level3通信(DIA) 25
-      - AWS | JP | IPLC专线2号
-      - 英国-1
-      - v2rayfree.eu.org - 以色列  8
-      - 以色列_0620025
-      - github.com/freefq - 美国Xerox 5
-      - _IL_以色列->🇬🇧_GB_英国 3
-      - _KR_韩国
-      - IL_speednode_0045
-      - _IL_以色列->🇬🇧_GB_英国 4
-      - IL_speednode_0031 2
-      - US_speednode_0135
-      - _IL_以色列->🇦🇺_AU_澳大利亚
-      - IL_speednode_0025
-      - JP, Tokyo
-      - IL_speednode_0027 2
-      - 以色列【付费推荐：https://tt.vg/vip】5
-      - _JP_日本
-      - 20,21|移动专线B 2
-      - 以色列_0620024
-      - IL_speednode_0040
-      - _IL_以色列->🇩🇪_DE_德国
-      - GB_speednode_0015
-      - 美国_0621063
-      - "@SSRSUB-V13-付费推荐:dlj.tf/ssrsub"
-      - 1|🇬🇧 _IL_以色列->🇬🇧_GB_英国
-      - 6,8,24,26|_IL_以色列->🇦🇺_AU_澳大利亚
-      - _IL_以色列->🇩🇪_DE_德国 2
-      - _KR_韩国 2
-      - 以色列【付费推荐：https://tt.vg/vip】187
-      - 美国_06201115
-      - 20,21|移动专线B 3
-      - SK_speednode_0080
-      - AWS | JP | IPLC专线3号
-      - 以色列_0620037
-      - 17,18|_🇭🇰_HK_香港_科网_20
-      - 以色列_0621032
-      - US_speednode_0104
-      - 亚马逊日本3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - _KR_韩国 3
-      - 美国凤凰城2号
-      - 以色列_0615022
-      - 美国_06201115 2
-      - 阿曼_0620050
-      - IL_speednode_0017
-      - IL_speednode_0032
-      - IL_speednode_0009
-      - 以色列_0620035
-      - _SG_新加坡 2
-      - IL_speednode_0022
-      - IL_speednode_0023
-      - US_speednode_0114
-      - IL_speednode_0013
-      - github.com/freefq - 新加坡Amazon数据中心 1
-      - 德国-1
-      - AWS | SG | IPLC专线1号
-      - CN_speednode_0007
-      - 美国4
-      - _IL_以色列->🇳🇱_NL_荷兰
-      - 14|美国 066
-      - 14,15|香港 002
-      - AWS新加坡2
-      - 以色列_0620031
-      - FR_speednode_0018
-      - US_speednode_0112
-      - 0,1,17|🇺🇸 _US_美国->🇳🇱_NL_荷兰_
-      - HK_speednode_0025
-      - CN_speednode_0003
-      - 20,21|🇺🇸 美国2|@ripaojiedian
-      - 日本 V2CROSS.COM 2
-      - IL_speednode_0048
-      - _US_美国
-      - SG_speednode_0094
-      - SG_speednode_0096
-      - 18|未知_06193847
-      - TR_speednode_0099
-      - 9,20,21|🇹🇼_TW_台湾
-      - DE_speednode_0013
-      - _KR_韩国->🇸🇬_SG_新加坡
-      - US_speednode_0124
-      - 18|🇺🇸_US_美国_1
-      - IL_speednode_0074
-      - 20|🇯🇵 东京特殊|@ripaojiedian
-      - TR_speednode_0100
-      - 美国_06211783
-      - 17|_🇭🇰_HK_香港_科网_20
-      - 20|🇭🇰 香港|tg频道:@ripaojiedian
-      - LY_speednode_0085
+      - 以色列_0622035
+      - 以色列_0622038
       - 以色列_0621031
-      - 20,21|🇺🇸 美国2|@ripaojiedian 2
-      - 17|_🇭🇰_HK_香港_科网_20 2
-      - 20,21|🇹🇼 台湾2|@ripaojiedian
-      - KR_speednode_0082
-      - 荷兰 035
-      - 18|🇺🇸_US_美国_1 2
-      - "@SSRSUB-V08-付费推荐:dlj.tf/ssrsub"
-      - TW_speednode_0102
-      - https://1808.cf 二爷翻墙_2
-      - IL_speednode_0037 3
-      - CN_speednode_0005
-      - IM_speednode_0076
-      - 美国 003
-      - 17|_🇺🇸_US_美国_科网_20
-      - 防失效github SubCrawler中国_0621007
-      - 5,6,7,8,23,24,25,26|_US_美国___
-      - JP_speednode_0077
-      - _TW_台湾
-      - JP_speednode_0078
-      - HK_speednode_0029
-      - 日本 V2CROSS.COM
-      - CN-14.29.167.168-120
-      - 美国_0621063 2
-      - 以色列_0621028
-      - TR_speednode_0101
-      - 美国_0620944
-      - 6,8,9,9,24,26|_CN_中国->🇹🇷_TR_土耳其
-      - CN_speednode_0002
-      - https://1808.cf 二爷翻墙_4
-      - SG_speednode_0093
-      - 日本_0621163
-      - CN-14.29.167.168-103
-      - github.com/freefq - 以色列  15
-      - 14,17,18|美国 079
-      - 14,17,18|荷兰 035
+      - 以色列_0619026
       - 以色列_0621033
-      - 14,17,18|美国 074
-      - IL_speednode_0031 3
-      - CN-14.18.103.121-086
+      - 以色列_0621028
+      - 以色列_0619024
+      - 以色列_0622037
+      - 以色列_0621032
+      - 以色列_0622036
+      - 以色列_0621034
+      - 以色列_0621025
+      - 以色列_0620025
+      - 以色列【付费推荐：https://tt.vg/vip】105
+      - 以色列_0620031
+      - 以色列_0619030
+      - 20|🇯🇵 日本特殊|@ripaojiedian
+      - IL_speednode_0055
+      - _IL_以色列->🇦🇺_AU_澳大利亚
+      - _KR_韩国
+      - IL_speednode_0048
+      - 新加坡【付费推荐：https://tt.vg/vip】44
+      - IL_speednode_0063
+      - IL_speednode_0037
       - IL_speednode_0041
-      - _SG_新加坡 3
-      - 18|关注电报https://t.me/aifenxiang202...___
-      - 未知_0621011
-      - _IL_以色列->🇦🇺_AU_澳大利亚 2
+      - IL_speednode_0035
+      - 美国_0622730
+      - AZ_speednode_0001
       - CN_speednode_0004
-      - CN_speednode_0008
-      - 18|关注电报https://t.me/aifenxiang202...___ 2
       - IL_speednode_0041 2
-      - CN_speednode_0007 2
+      - TW_speednode_0147
+      - KR_speednode_0106
+      - 以色列_0619023
+      - TR_speednode_0099
+      - _IL_以色列->🇦🇺_AU_澳大利亚 2
+      - UA_speednode_0154
+      - _JP_日本
+      - PL_speednode_0113
+      - _US_美国
+      - IL_speednode_0058
+      - IL_speednode_0037 2
+      - TW, Taipei
+      - IL_speednode_0032
+      - _IL_以色列->🇩🇪_DE_德国
+      - _IL_以色列->🇯🇵_JP_日本 2 3
+      - _RU_俄罗斯联邦
+      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
+      - github.com/freefq - 美国Microsoft公司 15
+      - US_speednode_0109
+      - _IL_以色列->🇳🇱_NL_荷兰
+      - 美国_0622730 2
+      - _KR_韩国 2
+      - PL_speednode_0112
+      - CN_speednode_0008
+      - JP_speednode_0096
+      - IL_speednode_0037 3
+      - India 01 TG:@SSRSUB
+      - IL_speednode_0045
+      - 美国_0622730 3
+      - 日本_0622060
+      - _IL_以色列->🇬🇧_GB_英国 4 2
+      - JP_speednode_0090
+      - IL_speednode_0074
+      - _IL_以色列->🇩🇪_DE_德国 2
+      - _IL_以色列->🇬🇧_GB_英国
+      - IL_speednode_0013
+      - TR_speednode_0100
+      - GB_speednode_0015
+      - IL_speednode_0017
+      - _IL_以色列->🇪🇪_EE_爱沙尼亚
+      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
+      - _KR_韩国 2 2
+      - 日本_0622060 2
+      - 香港_0622026
+      - 美国_0622993
+      - IL_speednode_0009
+      - IT_speednode_0075
+      - IL_speednode_0023
+      - _KR_韩国 3
+      - US_speednode_0104
+      - IM_speednode_0076
+      - 日本 V2CROSS.COM
+      - github.com/freefq - 以色列  7
+      - 香港_0622026 2
+      - DE_speednode_0008
+      - NO_speednode_0108
+      - _IL_以色列->🇳🇱_NL_荷兰 5
+      - KR_speednode_0100
+      - IL_speednode_0022
+      - IL 25 → tg@nicevpn123
+      - IL_speednode_0031
+      - IL_speednode_0031 2
+      - IL_speednode_0025
+      - 防失效github SubCrawler中国_0622008
+      - _IL_以色列->🇬🇧_GB_英国 2
+      - IL_speednode_0029
+      - JP_speednode_0092
+      - HU_speednode_0012
+      - LY_speednode_0085
+      - DE_speednode_0006
+      - TW_speednode_0149
+      - IL_speednode_0027
+      - US_speednode_0162
+      - TW_speednode_0148
+      - IL_speednode_0040
+      - IL_speednode_0027 2
+      - JP_speednode_0078
+      - 防失效github SubCrawler中国_0622008 2
+      - IL_speednode_0031 3
+      - 美国_06226119
+      - GB_speednode_0022
+      - DE_speednode_0007
+      - US_speednode_0165
+      - 防失效github SubCrawler中国_0621007
+      - 防失效github SubCrawler中国_0621007 2
+      - 20,21|移动专线B
+      - _IL_以色列->🇬🇧_GB_英国 3
+      - 0,1,20,21|🇬🇧 _CN_中国->🇬🇧_GB_英国
+      - v2rayfree.eu.org - 以色列  8
+      - 20,21|移动专线B 2
+      - TW_speednode_0102
+      - SG_speednode_0142
+      - 18|🇺🇸_US_美国_6_15@11
+      - 20,21|移动专线B 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1509,184 +1071,130 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本_0621101
-      - _IL_以色列->🇬🇧_GB_英国
-      - AWS | JP | IPLC专线4号
-      - _IL_以色列->🇪🇪_EE_爱沙尼亚
-      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
-      - IL_speednode_0029
-      - HU_speednode_0020
-      - 以色列_0619030
-      - 美国_06201147
-      - v2rayfree.eu.org - 美国CloudFlare公司CDN节点 1
-      - 以色列【付费推荐：https://tt.vg/vip】105
-      - github.com/freefq - 以色列  7
-      - IL_speednode_0027
-      - 以色列_0621034
-      - IL_speednode_0037
-      - IL_speednode_0031
-      - India 01 TG:@SSRSUB
-      - _IL_以色列->🇬🇧_GB_英国 2
-      - 中国_0620038
-      - 以色列_0619026
-      - IL_speednode_0035
-      - _US_美国->🇸🇬_SG_新加坡
-      - 美国凤凰城1号
-      - IL_speednode_0037 2
-      - IL_speednode_0029 2
-      - 16,20|🇨🇳中国-江苏-镇江-ss2-120.195.181.142...
-      - US_speednode_0111
-      - _SG_新加坡
-      - _IL_以色列->🇳🇱_NL_荷兰 5
-      - 以色列_0619023
-      - 以色列_0619024
-      - "@SSRSUB-V22-付费推荐:dlj.tf/ssrsub"
-      - 20,21|移动专线B
-      - 美国_06201147 2
-      - IL 25 → tg@nicevpn123
-      - US_speednode_0109
-      - 美国_06205551
-      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
-      - _US_美国->🇳🇱_NL_荷兰
-      - v2rayfree.eu.org - 美国加利福尼亚州洛杉矶Level3通信(DIA) 25
-      - AWS | JP | IPLC专线2号
-      - 英国-1
-      - v2rayfree.eu.org - 以色列  8
-      - 以色列_0620025
-      - github.com/freefq - 美国Xerox 5
-      - _IL_以色列->🇬🇧_GB_英国 3
-      - _KR_韩国
-      - IL_speednode_0045
-      - _IL_以色列->🇬🇧_GB_英国 4
-      - IL_speednode_0031 2
-      - US_speednode_0135
-      - _IL_以色列->🇦🇺_AU_澳大利亚
-      - IL_speednode_0025
-      - JP, Tokyo
-      - IL_speednode_0027 2
-      - 以色列【付费推荐：https://tt.vg/vip】5
-      - _JP_日本
-      - 20,21|移动专线B 2
-      - 以色列_0620024
-      - IL_speednode_0040
-      - _IL_以色列->🇩🇪_DE_德国
-      - GB_speednode_0015
-      - 美国_0621063
-      - "@SSRSUB-V13-付费推荐:dlj.tf/ssrsub"
-      - 1|🇬🇧 _IL_以色列->🇬🇧_GB_英国
-      - 6,8,24,26|_IL_以色列->🇦🇺_AU_澳大利亚
-      - _IL_以色列->🇩🇪_DE_德国 2
-      - _KR_韩国 2
-      - 以色列【付费推荐：https://tt.vg/vip】187
-      - 美国_06201115
-      - 20,21|移动专线B 3
-      - SK_speednode_0080
-      - AWS | JP | IPLC专线3号
-      - 以色列_0620037
-      - 17,18|_🇭🇰_HK_香港_科网_20
-      - 以色列_0621032
-      - US_speednode_0104
-      - 亚马逊日本3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - _KR_韩国 3
-      - 美国凤凰城2号
-      - 以色列_0615022
-      - 美国_06201115 2
-      - 阿曼_0620050
-      - IL_speednode_0017
-      - IL_speednode_0032
-      - IL_speednode_0009
-      - 以色列_0620035
-      - _SG_新加坡 2
-      - IL_speednode_0022
-      - IL_speednode_0023
-      - US_speednode_0114
-      - IL_speednode_0013
-      - github.com/freefq - 新加坡Amazon数据中心 1
-      - 德国-1
-      - AWS | SG | IPLC专线1号
-      - CN_speednode_0007
-      - 美国4
-      - _IL_以色列->🇳🇱_NL_荷兰
-      - 14|美国 066
-      - 14,15|香港 002
-      - AWS新加坡2
-      - 以色列_0620031
-      - FR_speednode_0018
-      - US_speednode_0112
-      - 0,1,17|🇺🇸 _US_美国->🇳🇱_NL_荷兰_
-      - HK_speednode_0025
-      - CN_speednode_0003
-      - 20,21|🇺🇸 美国2|@ripaojiedian
-      - 日本 V2CROSS.COM 2
-      - IL_speednode_0048
-      - _US_美国
-      - SG_speednode_0094
-      - SG_speednode_0096
-      - 18|未知_06193847
-      - TR_speednode_0099
-      - 9,20,21|🇹🇼_TW_台湾
-      - DE_speednode_0013
-      - _KR_韩国->🇸🇬_SG_新加坡
-      - US_speednode_0124
-      - 18|🇺🇸_US_美国_1
-      - IL_speednode_0074
-      - 20|🇯🇵 东京特殊|@ripaojiedian
-      - TR_speednode_0100
-      - 美国_06211783
-      - 17|_🇭🇰_HK_香港_科网_20
-      - 20|🇭🇰 香港|tg频道:@ripaojiedian
-      - LY_speednode_0085
+      - 以色列_0622035
+      - 以色列_0622038
       - 以色列_0621031
-      - 20,21|🇺🇸 美国2|@ripaojiedian 2
-      - 17|_🇭🇰_HK_香港_科网_20 2
-      - 20,21|🇹🇼 台湾2|@ripaojiedian
-      - KR_speednode_0082
-      - 荷兰 035
-      - 18|🇺🇸_US_美国_1 2
-      - "@SSRSUB-V08-付费推荐:dlj.tf/ssrsub"
-      - TW_speednode_0102
-      - https://1808.cf 二爷翻墙_2
-      - IL_speednode_0037 3
-      - CN_speednode_0005
-      - IM_speednode_0076
-      - 美国 003
-      - 17|_🇺🇸_US_美国_科网_20
-      - 防失效github SubCrawler中国_0621007
-      - 5,6,7,8,23,24,25,26|_US_美国___
-      - JP_speednode_0077
-      - _TW_台湾
-      - JP_speednode_0078
-      - HK_speednode_0029
-      - 日本 V2CROSS.COM
-      - CN-14.29.167.168-120
-      - 美国_0621063 2
-      - 以色列_0621028
-      - TR_speednode_0101
-      - 美国_0620944
-      - 6,8,9,9,24,26|_CN_中国->🇹🇷_TR_土耳其
-      - CN_speednode_0002
-      - https://1808.cf 二爷翻墙_4
-      - SG_speednode_0093
-      - 日本_0621163
-      - CN-14.29.167.168-103
-      - github.com/freefq - 以色列  15
-      - 14,17,18|美国 079
-      - 14,17,18|荷兰 035
+      - 以色列_0619026
       - 以色列_0621033
-      - 14,17,18|美国 074
-      - IL_speednode_0031 3
-      - CN-14.18.103.121-086
+      - 以色列_0621028
+      - 以色列_0619024
+      - 以色列_0622037
+      - 以色列_0621032
+      - 以色列_0622036
+      - 以色列_0621034
+      - 以色列_0621025
+      - 以色列_0620025
+      - 以色列【付费推荐：https://tt.vg/vip】105
+      - 以色列_0620031
+      - 以色列_0619030
+      - 20|🇯🇵 日本特殊|@ripaojiedian
+      - IL_speednode_0055
+      - _IL_以色列->🇦🇺_AU_澳大利亚
+      - _KR_韩国
+      - IL_speednode_0048
+      - 新加坡【付费推荐：https://tt.vg/vip】44
+      - IL_speednode_0063
+      - IL_speednode_0037
       - IL_speednode_0041
-      - _SG_新加坡 3
-      - 18|关注电报https://t.me/aifenxiang202...___
-      - 未知_0621011
-      - _IL_以色列->🇦🇺_AU_澳大利亚 2
+      - IL_speednode_0035
+      - 美国_0622730
+      - AZ_speednode_0001
       - CN_speednode_0004
-      - CN_speednode_0008
-      - 18|关注电报https://t.me/aifenxiang202...___ 2
       - IL_speednode_0041 2
-      - CN_speednode_0007 2
+      - TW_speednode_0147
+      - KR_speednode_0106
+      - 以色列_0619023
+      - TR_speednode_0099
+      - _IL_以色列->🇦🇺_AU_澳大利亚 2
+      - UA_speednode_0154
+      - _JP_日本
+      - PL_speednode_0113
+      - _US_美国
+      - IL_speednode_0058
+      - IL_speednode_0037 2
+      - TW, Taipei
+      - IL_speednode_0032
+      - _IL_以色列->🇩🇪_DE_德国
+      - _IL_以色列->🇯🇵_JP_日本 2 3
+      - _RU_俄罗斯联邦
+      - 6,8,24,26|_IL_以色列->🇯🇵_JP_日本 3
+      - github.com/freefq - 美国Microsoft公司 15
+      - US_speednode_0109
+      - _IL_以色列->🇳🇱_NL_荷兰
+      - 美国_0622730 2
+      - _KR_韩国 2
+      - PL_speednode_0112
+      - CN_speednode_0008
+      - JP_speednode_0096
+      - IL_speednode_0037 3
+      - India 01 TG:@SSRSUB
+      - IL_speednode_0045
+      - 美国_0622730 3
+      - 日本_0622060
+      - _IL_以色列->🇬🇧_GB_英国 4 2
+      - JP_speednode_0090
+      - IL_speednode_0074
+      - _IL_以色列->🇩🇪_DE_德国 2
+      - _IL_以色列->🇬🇧_GB_英国
+      - IL_speednode_0013
+      - TR_speednode_0100
+      - GB_speednode_0015
+      - IL_speednode_0017
+      - _IL_以色列->🇪🇪_EE_爱沙尼亚
+      - 1,8,10,26,28|🇦🇺 _IL_以色列->🇦🇺_AU_澳大利亚
+      - _KR_韩国 2 2
+      - 日本_0622060 2
+      - 香港_0622026
+      - 美国_0622993
+      - IL_speednode_0009
+      - IT_speednode_0075
+      - IL_speednode_0023
+      - _KR_韩国 3
+      - US_speednode_0104
+      - IM_speednode_0076
+      - 日本 V2CROSS.COM
+      - github.com/freefq - 以色列  7
+      - 香港_0622026 2
+      - DE_speednode_0008
+      - NO_speednode_0108
+      - _IL_以色列->🇳🇱_NL_荷兰 5
+      - KR_speednode_0100
+      - IL_speednode_0022
+      - IL 25 → tg@nicevpn123
+      - IL_speednode_0031
+      - IL_speednode_0031 2
+      - IL_speednode_0025
+      - 防失效github SubCrawler中国_0622008
+      - _IL_以色列->🇬🇧_GB_英国 2
+      - IL_speednode_0029
+      - JP_speednode_0092
+      - HU_speednode_0012
+      - LY_speednode_0085
+      - DE_speednode_0006
+      - TW_speednode_0149
+      - IL_speednode_0027
+      - US_speednode_0162
+      - TW_speednode_0148
+      - IL_speednode_0040
+      - IL_speednode_0027 2
+      - JP_speednode_0078
+      - 防失效github SubCrawler中国_0622008 2
+      - IL_speednode_0031 3
+      - 美国_06226119
+      - GB_speednode_0022
+      - DE_speednode_0007
+      - US_speednode_0165
+      - 防失效github SubCrawler中国_0621007
+      - 防失效github SubCrawler中国_0621007 2
+      - 20,21|移动专线B
+      - _IL_以色列->🇬🇧_GB_英国 3
+      - 0,1,20,21|🇬🇧 _CN_中国->🇬🇧_GB_英国
+      - v2rayfree.eu.org - 以色列  8
+      - 20,21|移动专线B 2
+      - TW_speednode_0102
+      - SG_speednode_0142
+      - 18|🇺🇸_US_美国_6_15@11
+      - 20,21|移动专线B 3
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
