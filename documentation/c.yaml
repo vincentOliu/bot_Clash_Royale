@@ -1,348 +1,652 @@
+mixed-port: 7890
 port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
-external-controller: :9090
+external-controller: 9090
 proxies:
-  - {name: github.com/freefq - 香港  8, server: 156.245.8.83, port: 48123, type: vmess, uuid: d7735058-1dac-4618-99ff-0aa0441ec2d7, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港【付费推荐：https//tt.vg/vip】52, server: hk2.yihaobao.xyz, port: 10023, type: trojan, password: eeeebdd2-5aa5-4325-b69f-5b8b2c16d9a0, sni: tls.yihaobao.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本 v2rayfree.eu.org, server: kr3.jb7ueoq73.xyz, port: 443, type: vmess, uuid: 929421c2-501a-4204-b843-968b67c7ae6e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kr3.jb7ueoq73.xyz}}, udp: true}
-  - {name: 台湾_0714015, server: hinet111.gfwisbest.xyz, port: 224, type: vmess, uuid: eb885fb1-1dbf-3447-81d8-f9992cd58817, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 台湾省宜兰县中华电信 27, server: twpaopao4.dskjahf.xyz, port: 228, type: vmess, uuid: eb885fb1-1dbf-3447-81d8-f9992cd58817, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 台湾省新竹市中华电信 26, server: twpaopao3.dskjahf.xyz, port: 230, type: vmess, uuid: eb885fb1-1dbf-3447-81d8-f9992cd58817, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾_0714023, server: ddns3.airtcp.vip, port: 10001, type: vmess, uuid: 737dcd75-021f-3e1e-a2f6-6dadd91f86c3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心, server: 107.167.12.29, port: 41707, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_07142199, server: 170.178.167.140, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US(AzadNet.t.me)_482, server: 107.167.29.235, port: 46321, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_0714107, server: 107.167.30.132, port: 43900, type: vmess, uuid: 58e560b4-bba6-4843-be5f-83321022fa0d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_0714351, server: 137.175.18.91, port: 42002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_07141748, server: 137.175.18.89, port: 42002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US(AzadNet.t.me)_488, server: 107.167.16.217, port: 33589, type: vmess, uuid: 8c679b81-84fc-43ce-9553-ddca575a6949, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US(AzadNet.t.me)_449, server: 170.178.167.149, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_0714027, server: 137.175.54.216, port: 50502, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：https//tt.vg/vip】53, server: 156.225.67.131, port: 50884, type: vmess, uuid: 515bcb4d-0ba1-4cae-87cf-a047007eec54, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US(AzadNet.t.me)_356, server: 23.224.190.237, port: 58022, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 3, server: 107.167.16.102, port: 47074, type: vmess, uuid: b74f4afa-1a57-4aff-b7e5-8ad5ea33566f, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：https//tt.vg/vip】63, server: 156.225.67.233, port: 48123, type: vmess, uuid: 93503dd5-245a-4eb1-ae2a-57ab9f2b3c29, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US(AzadNet.t.me)_344, server: 23.225.211.18, port: 42941, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_美国_7, server: 107.148.194.238, port: 55504, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国Cloudinnovation数据中心 5, server: 154.85.1.123, port: 40298, type: vmess, uuid: 130c9f2e-42b1-4ebf-b345-e26456a061f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US(AzadNet.t.me)_059, server: linkedin.disnet.gq, port: 443, type: vmess, uuid: a869c557-5c7d-426f-9039-0279c16352bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: linkedin.disnet.gq}}, udp: true}
-  - {name: 美国_0714010, server: 142.4.112.16, port: 51091, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_0714015, server: 198.2.203.57, port: 44672, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 加拿大【付费推荐：https//tt.vg/vip】169, server: 15.156.207.16, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：https//tt.vg/vip】199, server: 104.194.233.43, port: 51302, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国【付费推荐：https//tt.vg/vip】32, server: 142.4.112.17, port: 51091, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_美国_10, server: 142.4.112.12, port: 51091, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CA_加拿大->🇺🇸_US_美国 3, server: dongtaiwang2.com, port: 443, type: vmess, uuid: 012c4549-17d2-475e-b1c1-a3b19cf36622, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 2.freek1.xyz}}, udp: true}
-  - {name: US(AzadNet.t.me)_465, server: 142.4.99.93, port: 43379, type: vmess, uuid: b65da4af-a12a-4a59-9316-4549e12ba62c, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US(AzadNet.t.me)_428, server: 198.2.218.206, port: 51203, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_07144062, server: 142.4.126.48, port: 44392, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_0714061, server: 142.4.110.24, port: 52908, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_0714126, server: 142.4.106.242, port: 52908, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_0714333, server: 142.4.126.44, port: 44392, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: AF(AzadNet.t.me), server: 121.127.46.147, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: CN-14.116.193.79-025, server: gzyd.jcnode.top, port: 44891, type: trojan, password: 04ee11bd-e383-47e8-9f9d-8c250ed0a9d7, sni: jp02.ckcloud.info, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0037, server: 216.52.183.245, port: 80, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, plugin: obfs, plugin-opts: {mode: http, host: None}, udp: true}
+  - {name: 美国_0715339, server: 137.175.58.77, port: 40071, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-14.18.89.198-005, server: gzdx.jcnode.top, port: 35257, type: trojan, password: 04ee11bd-e383-47e8-9f9d-8c250ed0a9d7, sni: hk05.ckcloud.info, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0039, server: 45.199.138.171, port: 42008, type: vmess, uuid: 20b30916-e203-412e-8ec0-900f3acd5128, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-14.116.193.79-034, server: gzyd.jcnode.top, port: 16242, type: trojan, password: 04ee11bd-e383-47e8-9f9d-8c250ed0a9d7, sni: vn01.ckcloud.info, skip-cert-verify: true, udp: true}
+  - {name: 16|🇺🇸 美国 246, server: 140.99.149.46, port: 53082, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0047, server: 156.225.67.38, port: 44860, type: vmess, uuid: de491802-233e-47f2-8c6c-d19bcf5bd56b, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 法国_0715032, server: 156.249.18.36, port: 48222, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "15|🇺🇸_US_美国_科网_15 #18", server: 45.199.138.148, port: 47493, type: vmess, uuid: f9fa3a9c-f7d5-414f-88e6-6970585d9949, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 16|🇺🇸 US(AzadNet.t.me)_482, server: 107.167.29.235, port: 46321, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "15,24|🇺🇸_US_美国_科网_15 #21", server: 156.225.67.152, port: 46433, type: vmess, uuid: a7fa8f14-4fb6-4280-9005-d6bbe99c5da9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 法国 001, server: 156.249.18.36, port: 48222, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_07151096, server: 45.199.138.171, port: 42008, type: vmess, uuid: 20b30916-e203-412e-8ec0-900f3acd5128, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 越南_0715019, server: vn7.gachcloud.net, port: 80, type: vmess, uuid: 54f30e91-8184-49ee-aa9a-bcd64941a4bf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /gachcraft, headers: {Host: vn7.gachcloud.net}}, udp: true}
+  - {name: "15|🇺🇸_US_美国_科网_15 #25", server: 192.74.234.91, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1689402073093, headers: {Host: www.14278907.xyz}}, udp: true}
+  - {name: US_speednode_0032, server: 173.82.59.228, port: 49720, type: vmess, uuid: 169fb64d-208d-4e06-bfc1-6f96554ca3ef, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_ |22.04Mb, server: 142.4.112.27, port: 51091, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0061, server: us49.encrypted.my.id, port: 80, type: vmess, uuid: 86f8f25d-9d26-41a6-a75b-e0ef992cc74a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /rxrsOUmNbuTJCk4izFEHWrb9qm, headers: {Host: us49.encrypted.my.id}}, udp: true}
+  - {name: 美国_07151206, server: 107.148.194.242, port: 55504, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "0,1,2,3,4,24|🇺🇸 _US_美国 #27", server: 107.148.194.233, port: 55504, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国_7, server: 140.99.149.46, port: 53082, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "15|🇺🇸_US_美国_科网_15 #10", server: 137.175.58.132, port: 53999, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "0,11,16,24|🇺🇸 _US_美国->🇳🇱_NL_荷兰 #2", server: 156.225.67.17, port: 49901, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0038, server: 45.199.138.165, port: 55016, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-14.116.193.79-020, server: gzyd.jcnode.top, port: 55199, type: trojan, password: 04ee11bd-e383-47e8-9f9d-8c250ed0a9d7, sni: id01.ckcloud.info, skip-cert-verify: true, udp: true}
+  - {name: "15|🇺🇸_US_美国_科网_15 #18 2", server: 45.199.138.148, port: 47493, type: vmess, uuid: f9fa3a9c-f7d5-414f-88e6-6970585d9949, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 15|🇭🇰_HK_香港_科网_15, server: 156.245.8.248, port: 43390, type: vmess, uuid: 964bf499-9ec0-4378-92b6-87d8d861b2d0, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "15|🇺🇸_US_美国_科网_15 #24", server: 142.4.106.244, port: 52908, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 法国_0715032 2, server: 156.249.18.36, port: 48222, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: GB(AzadNet.t.me)_039, server: 51.89.74.241, port: 51102, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚【付费推荐：https//tt.vg/vip】149, server: 139.99.245.164, port: 49921, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 机场地址：254254.xyz, server: pqawszf.aiopen.cfd, port: 443, type: trojan, password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d, sni: us2.pqjc.site, skip-cert-verify: true, udp: true}
-  - {name: "%�\x11�%�P��� _FR%�\x16���%%�", server: fr-am1-5.eqsunshine.com, port: 8181, type: ssr, cipher: aes-256-cfb, password: RcfVcDzzB, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: IS(AzadNet.t.me)_002, server: 37.235.49.152, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 新加坡【付费推荐：https//tt.vg/vip】165, server: vpnpool.stablize.top, port: 443, type: trojan, password: 2f8b959c-6b33-48ad-9ca6-0622c2de705b, sni: ca.stablize.top, skip-cert-verify: true, udp: true}
-  - {name: 18|🇸🇬 狮城特殊|@ripaojiedian, server: 13.213.53.130, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 1|_KR_韩国 4, server: 43.202.49.224, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 香港【付费推荐：https//tt.vg/vip】166, server: vpnhat.stablize.top, port: 443, type: trojan, password: 2f8b959c-6b33-48ad-9ca6-0622c2de705b, sni: esjs.stablize.top, skip-cert-verify: true, udp: true}
-  - {name: CN-14.116.193.79-312, server: gzyd.jcnode.top, port: 29200, type: trojan, password: 31ae0f6f-bce4-43b5-8ba5-dca2caad4bc3, sni: vn01.ckcloud.info, skip-cert-verify: true, udp: true}
-  - {name: "6,7,24|美国【付费推荐：https://tt.vg/vip】243", server: 108.186.192.228, port: 45502, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "1,2,3,4,6,7|_US_美国 3", server: 38.26.135.2, port: 44942, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 7|🇸🇬 新加坡【付费推荐：https://tt.vg/vip】..., server: pqawszf.aiopen.cfd, port: 443, type: trojan, password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d, sni: us1.pqjc.site, skip-cert-verify: true, udp: true}
-  - {name: "6,7,16|美国【付费推荐：https://tt.vg/vip】86", server: 142.0.135.181, port: 59009, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "6,7,11,13,15,16|塞浦路斯【付费推荐：https://tt.vg/vip】19...", server: 203.23.104.190, port: 443, type: vmess, uuid: EF6EE694-3B07-4D0A-9955-043FD235F6D3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: Dusseldorf.kotick.site}}, udp: true}
-  - {name: "8,24|🇺🇸_US_美国->🇮🇩_ID_印度尼西亚", server: zendesk1.shopee.sg, port: 443, type: vmess, uuid: 0b3b165f-ba8f-4cb5-8d3c-ad6e2f9216f6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: idmws.mainssh.xyz}}, udp: true}
-  - {name: "1,2,3,4,6,7,12,16|_US_美国 14", server: 142.4.118.227, port: 48902, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "0,6,7,15|🇺🇸 _US_美国 #25", server: 108.186.192.229, port: 45502, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 7|🇨🇦 加拿大【付费推荐：https://tt.vg/vip】..., server: 35.183.69.58, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
+  - {name: US_FreeNode.me_32, server: 142.4.97.77, port: 44942, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 法国_0715032 3, server: 156.249.18.36, port: 48222, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "15|🇺🇸_US_美国_科网_15 #18 3", server: 45.199.138.148, port: 47493, type: vmess, uuid: f9fa3a9c-f7d5-414f-88e6-6970585d9949, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "12,16|法国 001", server: 156.249.18.36, port: 48222, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "1,2,3,4,6,7,23|_US_美国 20", server: 142.4.110.24, port: 52908, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: FR_speednode_0006, server: 156.249.18.159, port: 48113, type: vmess, uuid: 63b4b829-7f01-4e26-b037-f04b1f098765, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _GB_英国, server: 51.89.74.241, port: 51102, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "18,19|🇺🇸 美国|@ripaojiedian", server: 142.4.126.49, port: 44392, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0054, server: 140.99.49.58, port: 55602, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 16|🇺🇸 US(AzadNet.t.me)_621, server: 64.32.4.40, port: 43166, type: vmess, uuid: 8653004f-de67-44c2-9cce-e0830933fb03, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 20, server: 142.4.110.24, port: 52908, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0046, server: 216.52.183.243, port: 80, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, plugin: obfs, plugin-opts: {mode: http, host: None}, udp: true}
+  - {name: CN-14.116.193.79-031, server: gzyd.jcnode.top, port: 22084, type: trojan, password: 04ee11bd-e383-47e8-9f9d-8c250ed0a9d7, sni: rctw02.ckcloud.info, skip-cert-verify: true, udp: true}
+  - {name: CN-14.116.193.79-011, server: gzyd.jcnode.top, port: 22174, type: trojan, password: 04ee11bd-e383-47e8-9f9d-8c250ed0a9d7, sni: hk02.ckcloud.info, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0043, server: 140.99.149.46, port: 53082, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0038 2, server: 216.52.183.242, port: 80, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, plugin: obfs, plugin-opts: {mode: http, host: None}, udp: true}
+  - {name: _US_美国_24, server: 142.4.110.24, port: 52908, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0041, server: 107.167.29.235, port: 46321, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-14.18.103.121-012, server: gzdx.jcnode.top, port: 36564, type: trojan, password: 04ee11bd-e383-47e8-9f9d-8c250ed0a9d7, sni: hk02.ckcloud.info, skip-cert-verify: true, udp: true}
+  - {name: CN-14.116.193.79-008, server: gzyd.jcnode.top, port: 11936, type: trojan, password: 04ee11bd-e383-47e8-9f9d-8c250ed0a9d7, sni: hk03.ckcloud.info, skip-cert-verify: true, udp: true}
+  - {name: 下单地址：254254.xyz, server: 163.123.192.60, port: 443, type: trojan, password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d, sni: 20-24-33-134.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: "1,2,3,4,6,7,16|_US_美国 16", server: 107.167.29.235, port: 46321, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_0715339 2, server: 137.175.58.77, port: 40071, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "0,1,1,2,2,3,3,4,4,12,24|🇺🇸 _US_美国 #14", server: 137.175.18.89, port: 42002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 亚太地区 v2rayfree.eu.org, server: 163.123.192.60, port: 443, type: trojan, password: 41bec492-cd79-4b57-9a15-7d2bb00fcfca, skip-cert-verify: true, udp: true}
+  - {name: "6,7|中国【付费推荐：https://tt.vg/vip】185", server: qzcn2-01.dajuzi.cc, port: 15596, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 15|🇭🇰_HK_香港_科网_15 2, server: 156.245.8.248, port: 43390, type: vmess, uuid: 964bf499-9ec0-4378-92b6-87d8d861b2d0, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 16, server: 107.167.29.235, port: 46321, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US(AzadNet.t.me)_450, server: 170.178.167.144, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 15|🇫🇷_FR_法国_科网_15, server: 156.249.18.40, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1689402073093, headers: {Host: www.58174467.xyz}}, udp: true}
+  - {name: _US_美国, server: 107.148.194.233, port: 55504, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_0714027, server: 137.175.54.216, port: 50502, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 13, server: 142.4.126.44, port: 44392, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0037 2, server: 45.199.138.143, port: 30404, type: vmess, uuid: 6fa560d4-35c5-4968-adfc-812c52878b84, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0030, server: 156.225.67.17, port: 49901, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0048, server: 45.199.138.136, port: 48344, type: vmess, uuid: 743bdc87-1dea-41bf-aa0b-51dfbbfec8aa, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-14.116.193.79-000, server: gzyd.jcnode.top, port: 29200, type: trojan, password: 04ee11bd-e383-47e8-9f9d-8c250ed0a9d7, sni: vn01.ckcloud.info, skip-cert-verify: true, udp: true}
+  - {name: "0,12,24|🇺🇸 _US_美国 #6", server: 198.2.218.204, port: 51203, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-14.116.193.79-040, server: gzyd.jcnode.top, port: 20707, type: trojan, password: 04ee11bd-e383-47e8-9f9d-8c250ed0a9d7, sni: sg03.ckcloud.info, skip-cert-verify: true, udp: true}
   - {name: 16|🇳🇱 荷兰 325, server: 156.225.67.17, port: 49901, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "6,7|美国【付费推荐：https://tt.vg/vip】44", server: 23.108.100.101, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: "1,1,2,2,3,3,4,4,6,7|_CN_中国->🇱🇺_LU_卢森堡", server: cn-guangzhou.applebench.tech, port: 18353, type: vmess, uuid: 08cc54d6-7283-4f27-872c-d9d5e221dd40, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "6,7,12|美国【付费推荐：https://tt.vg/vip】58", server: 38.26.135.8, port: 44942, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "6,7|美国【付费推荐：https://tt.vg/vip】258", server: cf5.992688.xyz, port: 8080, type: vmess, uuid: b0b12ae2-346c-488b-8d1e-9f3afb8fead5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hax.992688.xyz}}, udp: true}
-  - {name: 7|🇺🇲 美国【付费推荐：https://tt.vg/vip】1..., server: 163.123.192.57, port: 443, type: trojan, password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d, sni: 20-24-33-134.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: "0,6,7|🇺🇸 _US_美国 #29", server: 142.0.135.179, port: 59009, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "18,19|🇹🇼 台湾|@ripaojiedian", server: twpaopao.gfwisbest.xyz, port: 22373, type: vmess, uuid: eb885fb1-1dbf-3447-81d8-f9992cd58817, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: FR_法国 2, server: 54.36.115.241, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: US_美国 18 (DUP-2), server: 163.123.192.57, port: 443, type: trojan, password: 41bec492-cd79-4b57-9a15-7d2bb00fcfca, skip-cert-verify: true, udp: true}
-  - {name: 亚洲(油管:破解资源君) 4, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dp4.scproxy.top}}, udp: true}
-  - {name: 亚洲(油管:破解资源君) 5, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca.ilovescp.com}}, udp: true}
-  - {name: 美国(油管:破解资源君) 21, server: cf1.992688.xyz, port: 8080, type: vmess, uuid: 6b056a2c-b821-44b2-cf66-59a1126f6c95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: o1.992688.xyz}}, udp: true}
-  - {name: US 10 → tg@nicevpn123, server: 107.148.194.233, port: 55504, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: DK_speednode_0003, server: 192.36.27.116, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: EG_speednode_0004, server: 38.54.59.99, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: HK_speednode_0010, server: hk1.looooooongnet.lol, port: 10001, type: vmess, uuid: 41b5599f-8de0-4a7e-813d-ff70021d552b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IE_speednode_0011, server: 23.92.127.134, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: JP_speednode_0012, server: 45.78.58.171, port: 58802, type: vmess, uuid: b1d5d262-33b5-49d7-84e4-a3d101980706, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_speednode_0014, server: sphk.1234567890spcloud.com, port: 443, type: trojan, password: 47ca6a80-7bee-4c82-9d91-25159789079a, sni: sphk.1234567890spcloud.com, skip-cert-verify: true, udp: true}
-  - {name: LV_speednode_0020, server: 185.135.86.86, port: 51348, type: ss, cipher: chacha20-ietf-poly1305, password: PhilEhgKJQ540MNK7mNoim, udp: true}
-  - {name: US_speednode_0061, server: ust1.greenssh.xyz, port: 80, type: trojan, password: 7ea37e4f-325b-416f-901a-67012367307f, sni: ust1.greenssh.xyz, skip-cert-verify: true, udp: true}
-  - {name: US_speednode_0062, server: 185.47.255.219, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: ZA_speednode_0065, server: 41.203.4.34, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: "15|🇳🇱_NL_荷兰_科网_15 #1", server: 154.84.1.115, port: 47852, type: vmess, uuid: 5a4d69ad-20a9-4941-b223-87bbd09f5f52, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: FR_speednode_0008, server: 156.249.18.36, port: 48222, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0041 2, server: 216.52.183.244, port: 80, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, plugin: obfs, plugin-opts: {mode: http, host: None}, udp: true}
+  - {name: 网站地址：254254.xyz, server: 163.123.192.57, port: 443, type: trojan, password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d, sni: 20-24-33-134.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: 美国_0715339 3, server: 137.175.58.77, port: 40071, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-14.116.193.79-027, server: gzyd.jcnode.top, port: 55345, type: trojan, password: 04ee11bd-e383-47e8-9f9d-8c250ed0a9d7, sni: rctw01.ckcloud.info, skip-cert-verify: true, udp: true}
+  - {name: "15|🇳🇱_NL_荷兰_科网_15 #1 2", server: 154.84.1.115, port: 47852, type: vmess, uuid: 5a4d69ad-20a9-4941-b223-87bbd09f5f52, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 16|🇳🇱 荷兰 325 2, server: 156.225.67.17, port: 49901, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "1,2,3,4|_HK_香港->🇸🇬_SG_新加坡", server: 219.76.13.169, port: 443, type: vmess, uuid: 29cccaaf-6044-3029-ab76-b24fe1577fdb, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /db, headers: {Host: b.cn-db.top}}, udp: true}
+  - {name: 24|🇺🇸_US_美国_4_9, server: 64.32.4.39, port: 43166, type: vmess, uuid: 8653004f-de67-44c2-9cce-e0830933fb03, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "15|🇺🇸_US_美国_科网_15 #26", server: 45.199.138.171, port: 42008, type: vmess, uuid: 20b30916-e203-412e-8ec0-900f3acd5128, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_0714333, server: 142.4.126.44, port: 44392, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_ |23.36Mb, server: 64.32.4.40, port: 43166, type: vmess, uuid: 8653004f-de67-44c2-9cce-e0830933fb03, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "1,2,3,4,6,7,15|_CN_中国->🇭🇰_HK_香港", server: qzcn2-01.dajuzi.cc, port: 15596, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_07151096 2, server: 45.199.138.171, port: 42008, type: vmess, uuid: 20b30916-e203-412e-8ec0-900f3acd5128, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "6,7,16,18,19|美国【付费推荐：https://tt.vg/vip】203", server: 140.99.149.46, port: 53082, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 荷兰 325, server: 156.225.67.17, port: 49901, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 21, server: 163.123.192.57, port: 443, type: trojan, password: 41bec492-cd79-4b57-9a15-7d2bb00fcfca, sni: 18-140-66-207.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: 法国_0715032 4, server: 156.249.18.36, port: 48222, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 24|🇺🇸_US_美国_7_由快嘴科技提供：kkzui.com7, server: 64.32.4.40, port: 43166, type: vmess, uuid: 8653004f-de67-44c2-9cce-e0830933fb03, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "15|🇺🇸_US_美国_科网_15 #10 2", server: 137.175.58.132, port: 53999, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "15|🇺🇸_US_美国_科网_15 #2", server: 140.99.120.171, port: 57172, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_0714351, server: 137.175.18.91, port: 42002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_07151172, server: 140.99.128.114, port: 58455, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "12,24|中国 011", server: 137.175.58.77, port: 40071, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_07151114, server: 45.199.138.143, port: 30404, type: vmess, uuid: 6fa560d4-35c5-4968-adfc-812c52878b84, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "15|🇺🇸_US_美国_科网_15 #10 3", server: 137.175.58.132, port: 53999, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _GB_英国 2, server: 51.89.74.241, port: 51102, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "15|🇺🇸_US_美国_科网_15 #9", server: 45.199.138.165, port: 55016, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "15|🇺🇸_US_美国_科网_15 #3", server: 45.199.138.124, port: 47778, type: vmess, uuid: 37c29f42-b7c7-40c7-9da9-743dcc4895bc, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 16|🇳🇱NL荷兰(youtube阿伟科技), server: 156.225.67.132, port: 50884, type: vmess, uuid: 515bcb4d-0ba1-4cae-87cf-a047007eec54, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "15|🇺🇸_US_美国_科网_15 #17", server: 107.148.194.244, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1689241126044, headers: {Host: www.13364896.xyz}}, udp: true}
+  - {name: "15|🇺🇸_US_美国_科网_15 #3 2", server: 45.199.138.124, port: 47778, type: vmess, uuid: 37c29f42-b7c7-40c7-9da9-743dcc4895bc, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-14.18.89.198-044, server: gzdx.jcnode.top, port: 28204, type: vmess, uuid: 04ee11bd-e383-47e8-9f9d-8c250ed0a9d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}, udp: true}
+  - {name: "6,7,15,24,24|中国【付费推荐：https://tt.vg/vip】135", server: cn-guangzhou.applebench.tech, port: 18353, type: vmess, uuid: 08cc54d6-7283-4f27-872c-d9d5e221dd40, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 24|🇺🇸_US_美国_5_由快嘴科技提供：kkzui.com2, server: 107.148.194.242, port: 55504, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "1,2,3,4|_HK_香港->🇸🇬_SG_新加坡 2", server: 219.76.13.164, port: 443, type: vmess, uuid: 29cccaaf-6044-3029-ab76-b24fe1577fdb, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /db, headers: {Host: d.cn-db.top}}, udp: true}
+  - {name: CN-14.116.193.79-045, server: gzyd.jcnode.top, port: 28001, type: vmess, uuid: 04ee11bd-e383-47e8-9f9d-8c250ed0a9d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}, udp: true}
+  - {name: "0,6,7,15,16,24|🇺🇸 _US_美国 #12", server: 142.4.110.24, port: 52908, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_0715025, server: 156.225.67.132, port: 50884, type: vmess, uuid: 515bcb4d-0ba1-4cae-87cf-a047007eec54, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 16|🇳🇱NL荷兰(youtube阿伟科技) 2, server: 156.225.67.132, port: 50884, type: vmess, uuid: 515bcb4d-0ba1-4cae-87cf-a047007eec54, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "6,7|中国【付费推荐：https://tt.vg/vip】185 2", server: qzcn2-01.dajuzi.cc, port: 15596, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "15|🇺🇸_US_美国_科网_15 #6", server: 198.2.204.250, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1689402073093, headers: {Host: www.11141292.xyz}}, udp: true}
+  - {name: 美国 Datability, server: 140.99.157.84, port: 47839, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_0714351 2, server: 137.175.18.91, port: 42002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 15|🇳🇱_NL_荷兰_科网_15, server: 45.153.203.91, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1689402073093, headers: {Host: www.72470068.xyz}}, udp: true}
+  - {name: Relay_ |27.69Mb, server: 140.99.128.114, port: 58455, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0060, server: us51.encrypted.my.id, port: 80, type: vmess, uuid: 6cc722d0-f6b5-4179-be13-c15cb9e75dd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /84BxD2shFYFpsiRGXACUPqWt, headers: {Host: us51.encrypted.my.id}}, udp: true}
+  - {name: "15|🇺🇸_US_美国_科网_15 #3 3", server: 45.199.138.124, port: 47778, type: vmess, uuid: 37c29f42-b7c7-40c7-9da9-743dcc4895bc, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-14.116.193.79-039, server: gzyd.jcnode.top, port: 21425, type: trojan, password: 04ee11bd-e383-47e8-9f9d-8c250ed0a9d7, sni: sg01.ckcloud.info, skip-cert-verify: true, udp: true}
+  - {name: "15,15|🇺🇸_US_美国_科网_15 #22", server: 104.233.249.242, port: 443, type: vmess, uuid: b65da4af-a12a-4a59-9316-4549e12ba62c, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1689326360096, headers: {Host: www.73332463.xyz}}, udp: true}
+  - {name: 美国_0715018, server: 108.186.192.228, port: 45502, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 南非  5, server: 156.225.67.132, port: 50884, type: vmess, uuid: 515bcb4d-0ba1-4cae-87cf-a047007eec54, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "15|🇺🇸_US_美国_科网_15 #1", server: 74.217.179.134, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1689068934789, headers: {Host: www.80817644.xyz}}, udp: true}
+  - {name: "15|🇺🇸_US_美国_科网_15 #24 2", server: 142.4.106.244, port: 52908, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "15|🇺🇸_US_美国_科网_15 #16", server: 74.217.179.150, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1689241126044, headers: {Host: www.71322451.xyz}}, udp: true}
+  - {name: US_speednode_0044, server: ust1.greenssh.xyz, port: 80, type: trojan, password: 7ea37e4f-325b-416f-901a-67012367307f, sni: ust1.greenssh.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN-14.18.89.198-006, server: gzdx.jcnode.top, port: 41390, type: trojan, password: 04ee11bd-e383-47e8-9f9d-8c250ed0a9d7, sni: hk05.ckcloud.info, skip-cert-verify: true, udp: true}
+  - {name: CN-14.116.193.79-017, server: gzyd.jcnode.top, port: 15431, type: trojan, password: 04ee11bd-e383-47e8-9f9d-8c250ed0a9d7, sni: de01.ckcloud.info, skip-cert-verify: true, udp: true}
+  - {name: 美国_0715094, server: 107.148.194.233, port: 55504, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "15|🇺🇸_US_美国_科网_15 #4", server: 74.217.179.157, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1689402073093, headers: {Host: www.43752841.xyz}}, udp: true}
+  - {name: 23|🇺🇸_US_美国_29_44, server: 108.186.192.228, port: 45502, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "15,15|🇺🇸_US_美国_科网_15 #8", server: 137.175.58.148, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1689157081858, headers: {Host: www.87606143.xyz}}, udp: true}
+  - {name: "11,13,24|南非  5", server: 156.225.67.132, port: 50884, type: vmess, uuid: 515bcb4d-0ba1-4cae-87cf-a047007eec54, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "@SSRSUB-V04-付费推荐:dlj.tf/ssrsub", server: 156.225.67.132, port: 50884, type: vmess, uuid: 515bcb4d-0ba1-4cae-87cf-a047007eec54, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "1,2,3,4,6,7,15|_CN_中国->🇭🇰_HK_香港 2", server: qzcn2-01.dajuzi.cc, port: 15596, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0065, server: us46.encrypted.my.id, port: 80, type: vmess, uuid: e9dc5466-3768-4d45-8fd0-f1181139bb4e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /4DJIP58JF6JTq4HIG0yr, headers: {Host: us46.encrypted.my.id}}, udp: true}
+  - {name: CN-14.116.193.79-043, server: gzyd.jcnode.top, port: 38381, type: vmess, uuid: 04ee11bd-e383-47e8-9f9d-8c250ed0a9d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}, udp: true}
+  - {name: "15|🇺🇸_US_美国_科网_15 #5", server: 45.86.8.116, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1689326360096, headers: {Host: www.65307519.xyz}}, udp: true}
+  - {name: CN-14.18.89.198-021, server: gzdx.jcnode.top, port: 52758, type: trojan, password: 04ee11bd-e383-47e8-9f9d-8c250ed0a9d7, sni: uk01.ckcloud.info, skip-cert-verify: true, udp: true}
+  - {name: "15|🇺🇸_US_美国_科网_15 #2 2", server: 140.99.120.171, port: 57172, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN-14.116.193.79-033, server: gzyd.jcnode.top, port: 46541, type: trojan, password: 04ee11bd-e383-47e8-9f9d-8c250ed0a9d7, sni: tur01.ckcloud.info, skip-cert-verify: true, udp: true}
+  - {name: CN-14.116.193.79-002, server: gzyd.jcnode.top, port: 64761, type: trojan, password: 04ee11bd-e383-47e8-9f9d-8c250ed0a9d7, sni: sk01.ckcloud.info, skip-cert-verify: true, udp: true}
+  - {name: CN-14.116.193.79-022, server: gzyd.jcnode.top, port: 24662, type: trojan, password: 04ee11bd-e383-47e8-9f9d-8c250ed0a9d7, sni: uk01.ckcloud.info, skip-cert-verify: true, udp: true}
+  - {name: 美国_0715037, server: 137.175.54.216, port: 50502, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "15|🇺🇸_US_美国_科网_15 #7", server: 107.148.195.6, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1689402073093, headers: {Host: www.14154322.xyz}}, udp: true}
+  - {name: 16|🇺🇸_US_美国_19, server: 142.4.126.69, port: 52212, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "0,6,7,15|🇺🇸 _US_美国 #24", server: 108.186.192.228, port: 45502, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 15|🇺🇸_US_美国_科网_15, server: 198.2.208.69, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1689326360096, headers: {Host: www.71653718.xyz}}, udp: true}
+  - {name: "6,7|中国【付费推荐：https://tt.vg/vip】135", server: cn-guangzhou.applebench.tech, port: 18353, type: vmess, uuid: 08cc54d6-7283-4f27-872c-d9d5e221dd40, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "15|🇺🇸_US_美国_科网_15 #20", server: 142.4.121.228, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1689402073093, headers: {Host: www.26167530.xyz}}, udp: true}
+  - {name: 16|🇺🇸_US_美国_19 2, server: 142.4.126.69, port: 52212, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "15,15|🇺🇸_US_美国_科网_15 #12", server: 74.217.182.98, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1689402073093, headers: {Host: www.59197212.xyz}}, udp: true}
+  - {name: Relay_ |19.47Mb, server: 156.225.67.132, port: 50884, type: vmess, uuid: 515bcb4d-0ba1-4cae-87cf-a047007eec54, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NL荷兰(youtube阿伟科技), server: 156.225.67.132, port: 50884, type: vmess, uuid: 515bcb4d-0ba1-4cae-87cf-a047007eec54, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - github.com/freefq - 香港  8
-      - 香港【付费推荐：https//tt.vg/vip】52
-      - 日本 v2rayfree.eu.org
-      - 台湾_0714015
-      - github.com/freefq - 台湾省宜兰县中华电信 27
-      - github.com/freefq - 台湾省新竹市中华电信 26
-      - 台湾_0714023
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 美国_07142199
-      - US(AzadNet.t.me)_482
-      - 美国_0714107
-      - 美国_0714351
-      - 美国_07141748
-      - US(AzadNet.t.me)_488
-      - US(AzadNet.t.me)_449
-      - 美国_0714027
-      - 美国【付费推荐：https//tt.vg/vip】53
-      - US(AzadNet.t.me)_356
-      - github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 3
-      - 美国【付费推荐：https//tt.vg/vip】63
-      - US(AzadNet.t.me)_344
-      - _US_美国_7
-      - github.com/freefq - 美国Cloudinnovation数据中心 5
-      - US(AzadNet.t.me)_059
-      - 美国_0714010
-      - 美国_0714015
-      - 加拿大【付费推荐：https//tt.vg/vip】169
-      - 美国【付费推荐：https//tt.vg/vip】199
-      - 美国【付费推荐：https//tt.vg/vip】32
-      - _US_美国_10
-      - _CA_加拿大->🇺🇸_US_美国 3
-      - US(AzadNet.t.me)_465
-      - US(AzadNet.t.me)_428
-      - 美国_07144062
-      - 美国_0714061
-      - 美国_0714126
-      - 美国_0714333
-      - AF(AzadNet.t.me)
-      - GB(AzadNet.t.me)_039
-      - 澳大利亚【付费推荐：https//tt.vg/vip】149
-      - 机场地址：254254.xyz
-      - IS(AzadNet.t.me)_002
-      - 新加坡【付费推荐：https//tt.vg/vip】165
-      - 18|🇸🇬 狮城特殊|@ripaojiedian
-      - 1|_KR_韩国 4
-      - 香港【付费推荐：https//tt.vg/vip】166
-      - CN-14.116.193.79-312
-      - 6,7,24|美国【付费推荐：https://tt.vg/vip】243
-      - 1,2,3,4,6,7|_US_美国 3
-      - 7|🇸🇬 新加坡【付费推荐：https://tt.vg/vip】...
-      - 6,7,16|美国【付费推荐：https://tt.vg/vip】86
-      - 6,7,11,13,15,16|塞浦路斯【付费推荐：https://tt.vg/vip】19...
-      - 8,24|🇺🇸_US_美国->🇮🇩_ID_印度尼西亚
-      - 1,2,3,4,6,7,12,16|_US_美国 14
-      - "0,6,7,15|🇺🇸 _US_美国 #25"
-      - 7|🇨🇦 加拿大【付费推荐：https://tt.vg/vip】...
-      - 16|🇳🇱 荷兰 325
-      - 6,7|美国【付费推荐：https://tt.vg/vip】44
-      - 1,1,2,2,3,3,4,4,6,7|_CN_中国->🇱🇺_LU_卢森堡
-      - 6,7,12|美国【付费推荐：https://tt.vg/vip】58
-      - 6,7|美国【付费推荐：https://tt.vg/vip】258
-      - 7|🇺🇲 美国【付费推荐：https://tt.vg/vip】1...
-      - "0,6,7|🇺🇸 _US_美国 #29"
-      - 18,19|🇹🇼 台湾|@ripaojiedian
-      - FR_法国 2
-      - US_美国 18 (DUP-2)
-      - 亚洲(油管:破解资源君) 4
-      - 亚洲(油管:破解资源君) 5
-      - 美国(油管:破解资源君) 21
-      - US 10 → tg@nicevpn123
-      - DK_speednode_0003
-      - EG_speednode_0004
-      - HK_speednode_0010
-      - IE_speednode_0011
-      - JP_speednode_0012
-      - JP_speednode_0014
-      - LV_speednode_0020
+      - CN-14.116.193.79-025
+      - US_speednode_0037
+      - 美国_0715339
+      - CN-14.18.89.198-005
+      - US_speednode_0039
+      - CN-14.116.193.79-034
+      - 16|🇺🇸 美国 246
+      - US_speednode_0047
+      - 法国_0715032
+      - "15|🇺🇸_US_美国_科网_15 #18"
+      - 16|🇺🇸 US(AzadNet.t.me)_482
+      - "15,24|🇺🇸_US_美国_科网_15 #21"
+      - 法国 001
+      - 美国_07151096
+      - 越南_0715019
+      - "15|🇺🇸_US_美国_科网_15 #25"
+      - US_speednode_0032
+      - Relay_ |22.04Mb
       - US_speednode_0061
-      - US_speednode_0062
-      - ZA_speednode_0065
+      - 美国_07151206
+      - "0,1,2,3,4,24|🇺🇸 _US_美国 #27"
+      - _US_美国_7
+      - "15|🇺🇸_US_美国_科网_15 #10"
+      - "0,11,16,24|🇺🇸 _US_美国->🇳🇱_NL_荷兰 #2"
+      - US_speednode_0038
+      - CN-14.116.193.79-020
+      - "15|🇺🇸_US_美国_科网_15 #18 2"
+      - 15|🇭🇰_HK_香港_科网_15
+      - "15|🇺🇸_US_美国_科网_15 #24"
+      - 法国_0715032 2
+      - GB(AzadNet.t.me)_039
+      - US_FreeNode.me_32
+      - 法国_0715032 3
+      - "15|🇺🇸_US_美国_科网_15 #18 3"
+      - 12,16|法国 001
+      - 1,2,3,4,6,7,23|_US_美国 20
+      - FR_speednode_0006
+      - _GB_英国
+      - 18,19|🇺🇸 美国|@ripaojiedian
+      - US_speednode_0054
+      - 16|🇺🇸 US(AzadNet.t.me)_621
+      - _US_美国 20
+      - US_speednode_0046
+      - CN-14.116.193.79-031
+      - CN-14.116.193.79-011
+      - US_speednode_0043
+      - US_speednode_0038 2
+      - _US_美国_24
+      - US_speednode_0041
+      - CN-14.18.103.121-012
+      - CN-14.116.193.79-008
+      - 下单地址：254254.xyz
+      - 1,2,3,4,6,7,16|_US_美国 16
+      - 美国_0715339 2
+      - "0,1,1,2,2,3,3,4,4,12,24|🇺🇸 _US_美国 #14"
+      - 亚太地区 v2rayfree.eu.org
+      - 6,7|中国【付费推荐：https://tt.vg/vip】185
+      - 15|🇭🇰_HK_香港_科网_15 2
+      - _US_美国 16
+      - US(AzadNet.t.me)_450
+      - 15|🇫🇷_FR_法国_科网_15
+      - _US_美国
+      - 美国_0714027
+      - _US_美国 13
+      - US_speednode_0037 2
+      - US_speednode_0030
+      - US_speednode_0048
+      - CN-14.116.193.79-000
+      - "0,12,24|🇺🇸 _US_美国 #6"
+      - CN-14.116.193.79-040
+      - 16|🇳🇱 荷兰 325
+      - "15|🇳🇱_NL_荷兰_科网_15 #1"
+      - FR_speednode_0008
+      - US_speednode_0041 2
+      - 网站地址：254254.xyz
+      - 美国_0715339 3
+      - CN-14.116.193.79-027
+      - "15|🇳🇱_NL_荷兰_科网_15 #1 2"
+      - 16|🇳🇱 荷兰 325 2
+      - 1,2,3,4|_HK_香港->🇸🇬_SG_新加坡
+      - 24|🇺🇸_US_美国_4_9
+      - "15|🇺🇸_US_美国_科网_15 #26"
+      - 美国_0714333
+      - Relay_ |23.36Mb
+      - 1,2,3,4,6,7,15|_CN_中国->🇭🇰_HK_香港
+      - 美国_07151096 2
+      - 6,7,16,18,19|美国【付费推荐：https://tt.vg/vip】203
+      - 荷兰 325
+      - _US_美国 21
+      - 法国_0715032 4
+      - 24|🇺🇸_US_美国_7_由快嘴科技提供：kkzui.com7
+      - "15|🇺🇸_US_美国_科网_15 #10 2"
+      - "15|🇺🇸_US_美国_科网_15 #2"
+      - 美国_0714351
+      - 美国_07151172
+      - 12,24|中国 011
+      - 美国_07151114
+      - "15|🇺🇸_US_美国_科网_15 #10 3"
+      - _GB_英国 2
+      - "15|🇺🇸_US_美国_科网_15 #9"
+      - "15|🇺🇸_US_美国_科网_15 #3"
+      - 16|🇳🇱NL荷兰(youtube阿伟科技)
+      - "15|🇺🇸_US_美国_科网_15 #17"
+      - "15|🇺🇸_US_美国_科网_15 #3 2"
+      - CN-14.18.89.198-044
+      - 6,7,15,24,24|中国【付费推荐：https://tt.vg/vip】135
+      - 24|🇺🇸_US_美国_5_由快嘴科技提供：kkzui.com2
+      - 1,2,3,4|_HK_香港->🇸🇬_SG_新加坡 2
+      - CN-14.116.193.79-045
+      - "0,6,7,15,16,24|🇺🇸 _US_美国 #12"
+      - 美国_0715025
+      - 16|🇳🇱NL荷兰(youtube阿伟科技) 2
+      - 6,7|中国【付费推荐：https://tt.vg/vip】185 2
+      - "15|🇺🇸_US_美国_科网_15 #6"
+      - 美国 Datability
+      - 美国_0714351 2
+      - 15|🇳🇱_NL_荷兰_科网_15
+      - Relay_ |27.69Mb
+      - US_speednode_0060
+      - "15|🇺🇸_US_美国_科网_15 #3 3"
+      - CN-14.116.193.79-039
+      - "15,15|🇺🇸_US_美国_科网_15 #22"
+      - 美国_0715018
+      - github.com/freefq - 南非  5
+      - "15|🇺🇸_US_美国_科网_15 #1"
+      - "15|🇺🇸_US_美国_科网_15 #24 2"
+      - "15|🇺🇸_US_美国_科网_15 #16"
+      - US_speednode_0044
+      - CN-14.18.89.198-006
+      - CN-14.116.193.79-017
+      - 美国_0715094
+      - "15|🇺🇸_US_美国_科网_15 #4"
+      - 23|🇺🇸_US_美国_29_44
+      - "15,15|🇺🇸_US_美国_科网_15 #8"
+      - 11,13,24|南非  5
+      - "@SSRSUB-V04-付费推荐:dlj.tf/ssrsub"
+      - 1,2,3,4,6,7,15|_CN_中国->🇭🇰_HK_香港 2
+      - US_speednode_0065
+      - CN-14.116.193.79-043
+      - "15|🇺🇸_US_美国_科网_15 #5"
+      - CN-14.18.89.198-021
+      - "15|🇺🇸_US_美国_科网_15 #2 2"
+      - CN-14.116.193.79-033
+      - CN-14.116.193.79-002
+      - CN-14.116.193.79-022
+      - 美国_0715037
+      - "15|🇺🇸_US_美国_科网_15 #7"
+      - 16|🇺🇸_US_美国_19
+      - "0,6,7,15|🇺🇸 _US_美国 #24"
+      - 15|🇺🇸_US_美国_科网_15
+      - 6,7|中国【付费推荐：https://tt.vg/vip】135
+      - "15|🇺🇸_US_美国_科网_15 #20"
+      - 16|🇺🇸_US_美国_19 2
+      - "15,15|🇺🇸_US_美国_科网_15 #12"
+      - Relay_ |19.47Mb
+      - NL荷兰(youtube阿伟科技)
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - github.com/freefq - 香港  8
-      - 香港【付费推荐：https//tt.vg/vip】52
-      - 日本 v2rayfree.eu.org
-      - 台湾_0714015
-      - github.com/freefq - 台湾省宜兰县中华电信 27
-      - github.com/freefq - 台湾省新竹市中华电信 26
-      - 台湾_0714023
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 美国_07142199
-      - US(AzadNet.t.me)_482
-      - 美国_0714107
-      - 美国_0714351
-      - 美国_07141748
-      - US(AzadNet.t.me)_488
-      - US(AzadNet.t.me)_449
-      - 美国_0714027
-      - 美国【付费推荐：https//tt.vg/vip】53
-      - US(AzadNet.t.me)_356
-      - github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 3
-      - 美国【付费推荐：https//tt.vg/vip】63
-      - US(AzadNet.t.me)_344
-      - _US_美国_7
-      - github.com/freefq - 美国Cloudinnovation数据中心 5
-      - US(AzadNet.t.me)_059
-      - 美国_0714010
-      - 美国_0714015
-      - 加拿大【付费推荐：https//tt.vg/vip】169
-      - 美国【付费推荐：https//tt.vg/vip】199
-      - 美国【付费推荐：https//tt.vg/vip】32
-      - _US_美国_10
-      - _CA_加拿大->🇺🇸_US_美国 3
-      - US(AzadNet.t.me)_465
-      - US(AzadNet.t.me)_428
-      - 美国_07144062
-      - 美国_0714061
-      - 美国_0714126
-      - 美国_0714333
-      - AF(AzadNet.t.me)
-      - GB(AzadNet.t.me)_039
-      - 澳大利亚【付费推荐：https//tt.vg/vip】149
-      - 机场地址：254254.xyz
-      - IS(AzadNet.t.me)_002
-      - 新加坡【付费推荐：https//tt.vg/vip】165
-      - 18|🇸🇬 狮城特殊|@ripaojiedian
-      - 1|_KR_韩国 4
-      - 香港【付费推荐：https//tt.vg/vip】166
-      - CN-14.116.193.79-312
-      - 6,7,24|美国【付费推荐：https://tt.vg/vip】243
-      - 1,2,3,4,6,7|_US_美国 3
-      - 7|🇸🇬 新加坡【付费推荐：https://tt.vg/vip】...
-      - 6,7,16|美国【付费推荐：https://tt.vg/vip】86
-      - 6,7,11,13,15,16|塞浦路斯【付费推荐：https://tt.vg/vip】19...
-      - 8,24|🇺🇸_US_美国->🇮🇩_ID_印度尼西亚
-      - 1,2,3,4,6,7,12,16|_US_美国 14
-      - "0,6,7,15|🇺🇸 _US_美国 #25"
-      - 7|🇨🇦 加拿大【付费推荐：https://tt.vg/vip】...
-      - 16|🇳🇱 荷兰 325
-      - 6,7|美国【付费推荐：https://tt.vg/vip】44
-      - 1,1,2,2,3,3,4,4,6,7|_CN_中国->🇱🇺_LU_卢森堡
-      - 6,7,12|美国【付费推荐：https://tt.vg/vip】58
-      - 6,7|美国【付费推荐：https://tt.vg/vip】258
-      - 7|🇺🇲 美国【付费推荐：https://tt.vg/vip】1...
-      - "0,6,7|🇺🇸 _US_美国 #29"
-      - 18,19|🇹🇼 台湾|@ripaojiedian
-      - FR_法国 2
-      - US_美国 18 (DUP-2)
-      - 亚洲(油管:破解资源君) 4
-      - 亚洲(油管:破解资源君) 5
-      - 美国(油管:破解资源君) 21
-      - US 10 → tg@nicevpn123
-      - DK_speednode_0003
-      - EG_speednode_0004
-      - HK_speednode_0010
-      - IE_speednode_0011
-      - JP_speednode_0012
-      - JP_speednode_0014
-      - LV_speednode_0020
+      - CN-14.116.193.79-025
+      - US_speednode_0037
+      - 美国_0715339
+      - CN-14.18.89.198-005
+      - US_speednode_0039
+      - CN-14.116.193.79-034
+      - 16|🇺🇸 美国 246
+      - US_speednode_0047
+      - 法国_0715032
+      - "15|🇺🇸_US_美国_科网_15 #18"
+      - 16|🇺🇸 US(AzadNet.t.me)_482
+      - "15,24|🇺🇸_US_美国_科网_15 #21"
+      - 法国 001
+      - 美国_07151096
+      - 越南_0715019
+      - "15|🇺🇸_US_美国_科网_15 #25"
+      - US_speednode_0032
+      - Relay_ |22.04Mb
       - US_speednode_0061
-      - US_speednode_0062
-      - ZA_speednode_0065
+      - 美国_07151206
+      - "0,1,2,3,4,24|🇺🇸 _US_美国 #27"
+      - _US_美国_7
+      - "15|🇺🇸_US_美国_科网_15 #10"
+      - "0,11,16,24|🇺🇸 _US_美国->🇳🇱_NL_荷兰 #2"
+      - US_speednode_0038
+      - CN-14.116.193.79-020
+      - "15|🇺🇸_US_美国_科网_15 #18 2"
+      - 15|🇭🇰_HK_香港_科网_15
+      - "15|🇺🇸_US_美国_科网_15 #24"
+      - 法国_0715032 2
+      - GB(AzadNet.t.me)_039
+      - US_FreeNode.me_32
+      - 法国_0715032 3
+      - "15|🇺🇸_US_美国_科网_15 #18 3"
+      - 12,16|法国 001
+      - 1,2,3,4,6,7,23|_US_美国 20
+      - FR_speednode_0006
+      - _GB_英国
+      - 18,19|🇺🇸 美国|@ripaojiedian
+      - US_speednode_0054
+      - 16|🇺🇸 US(AzadNet.t.me)_621
+      - _US_美国 20
+      - US_speednode_0046
+      - CN-14.116.193.79-031
+      - CN-14.116.193.79-011
+      - US_speednode_0043
+      - US_speednode_0038 2
+      - _US_美国_24
+      - US_speednode_0041
+      - CN-14.18.103.121-012
+      - CN-14.116.193.79-008
+      - 下单地址：254254.xyz
+      - 1,2,3,4,6,7,16|_US_美国 16
+      - 美国_0715339 2
+      - "0,1,1,2,2,3,3,4,4,12,24|🇺🇸 _US_美国 #14"
+      - 亚太地区 v2rayfree.eu.org
+      - 6,7|中国【付费推荐：https://tt.vg/vip】185
+      - 15|🇭🇰_HK_香港_科网_15 2
+      - _US_美国 16
+      - US(AzadNet.t.me)_450
+      - 15|🇫🇷_FR_法国_科网_15
+      - _US_美国
+      - 美国_0714027
+      - _US_美国 13
+      - US_speednode_0037 2
+      - US_speednode_0030
+      - US_speednode_0048
+      - CN-14.116.193.79-000
+      - "0,12,24|🇺🇸 _US_美国 #6"
+      - CN-14.116.193.79-040
+      - 16|🇳🇱 荷兰 325
+      - "15|🇳🇱_NL_荷兰_科网_15 #1"
+      - FR_speednode_0008
+      - US_speednode_0041 2
+      - 网站地址：254254.xyz
+      - 美国_0715339 3
+      - CN-14.116.193.79-027
+      - "15|🇳🇱_NL_荷兰_科网_15 #1 2"
+      - 16|🇳🇱 荷兰 325 2
+      - 1,2,3,4|_HK_香港->🇸🇬_SG_新加坡
+      - 24|🇺🇸_US_美国_4_9
+      - "15|🇺🇸_US_美国_科网_15 #26"
+      - 美国_0714333
+      - Relay_ |23.36Mb
+      - 1,2,3,4,6,7,15|_CN_中国->🇭🇰_HK_香港
+      - 美国_07151096 2
+      - 6,7,16,18,19|美国【付费推荐：https://tt.vg/vip】203
+      - 荷兰 325
+      - _US_美国 21
+      - 法国_0715032 4
+      - 24|🇺🇸_US_美国_7_由快嘴科技提供：kkzui.com7
+      - "15|🇺🇸_US_美国_科网_15 #10 2"
+      - "15|🇺🇸_US_美国_科网_15 #2"
+      - 美国_0714351
+      - 美国_07151172
+      - 12,24|中国 011
+      - 美国_07151114
+      - "15|🇺🇸_US_美国_科网_15 #10 3"
+      - _GB_英国 2
+      - "15|🇺🇸_US_美国_科网_15 #9"
+      - "15|🇺🇸_US_美国_科网_15 #3"
+      - 16|🇳🇱NL荷兰(youtube阿伟科技)
+      - "15|🇺🇸_US_美国_科网_15 #17"
+      - "15|🇺🇸_US_美国_科网_15 #3 2"
+      - CN-14.18.89.198-044
+      - 6,7,15,24,24|中国【付费推荐：https://tt.vg/vip】135
+      - 24|🇺🇸_US_美国_5_由快嘴科技提供：kkzui.com2
+      - 1,2,3,4|_HK_香港->🇸🇬_SG_新加坡 2
+      - CN-14.116.193.79-045
+      - "0,6,7,15,16,24|🇺🇸 _US_美国 #12"
+      - 美国_0715025
+      - 16|🇳🇱NL荷兰(youtube阿伟科技) 2
+      - 6,7|中国【付费推荐：https://tt.vg/vip】185 2
+      - "15|🇺🇸_US_美国_科网_15 #6"
+      - 美国 Datability
+      - 美国_0714351 2
+      - 15|🇳🇱_NL_荷兰_科网_15
+      - Relay_ |27.69Mb
+      - US_speednode_0060
+      - "15|🇺🇸_US_美国_科网_15 #3 3"
+      - CN-14.116.193.79-039
+      - "15,15|🇺🇸_US_美国_科网_15 #22"
+      - 美国_0715018
+      - github.com/freefq - 南非  5
+      - "15|🇺🇸_US_美国_科网_15 #1"
+      - "15|🇺🇸_US_美国_科网_15 #24 2"
+      - "15|🇺🇸_US_美国_科网_15 #16"
+      - US_speednode_0044
+      - CN-14.18.89.198-006
+      - CN-14.116.193.79-017
+      - 美国_0715094
+      - "15|🇺🇸_US_美国_科网_15 #4"
+      - 23|🇺🇸_US_美国_29_44
+      - "15,15|🇺🇸_US_美国_科网_15 #8"
+      - 11,13,24|南非  5
+      - "@SSRSUB-V04-付费推荐:dlj.tf/ssrsub"
+      - 1,2,3,4,6,7,15|_CN_中国->🇭🇰_HK_香港 2
+      - US_speednode_0065
+      - CN-14.116.193.79-043
+      - "15|🇺🇸_US_美国_科网_15 #5"
+      - CN-14.18.89.198-021
+      - "15|🇺🇸_US_美国_科网_15 #2 2"
+      - CN-14.116.193.79-033
+      - CN-14.116.193.79-002
+      - CN-14.116.193.79-022
+      - 美国_0715037
+      - "15|🇺🇸_US_美国_科网_15 #7"
+      - 16|🇺🇸_US_美国_19
+      - "0,6,7,15|🇺🇸 _US_美国 #24"
+      - 15|🇺🇸_US_美国_科网_15
+      - 6,7|中国【付费推荐：https://tt.vg/vip】135
+      - "15|🇺🇸_US_美国_科网_15 #20"
+      - 16|🇺🇸_US_美国_19 2
+      - "15,15|🇺🇸_US_美国_科网_15 #12"
+      - Relay_ |19.47Mb
+      - NL荷兰(youtube阿伟科技)
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - github.com/freefq - 香港  8
-      - 香港【付费推荐：https//tt.vg/vip】52
-      - 日本 v2rayfree.eu.org
-      - 台湾_0714015
-      - github.com/freefq - 台湾省宜兰县中华电信 27
-      - github.com/freefq - 台湾省新竹市中华电信 26
-      - 台湾_0714023
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 美国_07142199
-      - US(AzadNet.t.me)_482
-      - 美国_0714107
-      - 美国_0714351
-      - 美国_07141748
-      - US(AzadNet.t.me)_488
-      - US(AzadNet.t.me)_449
-      - 美国_0714027
-      - 美国【付费推荐：https//tt.vg/vip】53
-      - US(AzadNet.t.me)_356
-      - github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 3
-      - 美国【付费推荐：https//tt.vg/vip】63
-      - US(AzadNet.t.me)_344
-      - _US_美国_7
-      - github.com/freefq - 美国Cloudinnovation数据中心 5
-      - US(AzadNet.t.me)_059
-      - 美国_0714010
-      - 美国_0714015
-      - 加拿大【付费推荐：https//tt.vg/vip】169
-      - 美国【付费推荐：https//tt.vg/vip】199
-      - 美国【付费推荐：https//tt.vg/vip】32
-      - _US_美国_10
-      - _CA_加拿大->🇺🇸_US_美国 3
-      - US(AzadNet.t.me)_465
-      - US(AzadNet.t.me)_428
-      - 美国_07144062
-      - 美国_0714061
-      - 美国_0714126
-      - 美国_0714333
-      - AF(AzadNet.t.me)
-      - GB(AzadNet.t.me)_039
-      - 澳大利亚【付费推荐：https//tt.vg/vip】149
-      - 机场地址：254254.xyz
-      - IS(AzadNet.t.me)_002
-      - 新加坡【付费推荐：https//tt.vg/vip】165
-      - 18|🇸🇬 狮城特殊|@ripaojiedian
-      - 1|_KR_韩国 4
-      - 香港【付费推荐：https//tt.vg/vip】166
-      - CN-14.116.193.79-312
-      - 6,7,24|美国【付费推荐：https://tt.vg/vip】243
-      - 1,2,3,4,6,7|_US_美国 3
-      - 7|🇸🇬 新加坡【付费推荐：https://tt.vg/vip】...
-      - 6,7,16|美国【付费推荐：https://tt.vg/vip】86
-      - 6,7,11,13,15,16|塞浦路斯【付费推荐：https://tt.vg/vip】19...
-      - 8,24|🇺🇸_US_美国->🇮🇩_ID_印度尼西亚
-      - 1,2,3,4,6,7,12,16|_US_美国 14
-      - "0,6,7,15|🇺🇸 _US_美国 #25"
-      - 7|🇨🇦 加拿大【付费推荐：https://tt.vg/vip】...
-      - 16|🇳🇱 荷兰 325
-      - 6,7|美国【付费推荐：https://tt.vg/vip】44
-      - 1,1,2,2,3,3,4,4,6,7|_CN_中国->🇱🇺_LU_卢森堡
-      - 6,7,12|美国【付费推荐：https://tt.vg/vip】58
-      - 6,7|美国【付费推荐：https://tt.vg/vip】258
-      - 7|🇺🇲 美国【付费推荐：https://tt.vg/vip】1...
-      - "0,6,7|🇺🇸 _US_美国 #29"
-      - 18,19|🇹🇼 台湾|@ripaojiedian
-      - FR_法国 2
-      - US_美国 18 (DUP-2)
-      - 亚洲(油管:破解资源君) 4
-      - 亚洲(油管:破解资源君) 5
-      - 美国(油管:破解资源君) 21
-      - US 10 → tg@nicevpn123
-      - DK_speednode_0003
-      - EG_speednode_0004
-      - HK_speednode_0010
-      - IE_speednode_0011
-      - JP_speednode_0012
-      - JP_speednode_0014
-      - LV_speednode_0020
+      - CN-14.116.193.79-025
+      - US_speednode_0037
+      - 美国_0715339
+      - CN-14.18.89.198-005
+      - US_speednode_0039
+      - CN-14.116.193.79-034
+      - 16|🇺🇸 美国 246
+      - US_speednode_0047
+      - 法国_0715032
+      - "15|🇺🇸_US_美国_科网_15 #18"
+      - 16|🇺🇸 US(AzadNet.t.me)_482
+      - "15,24|🇺🇸_US_美国_科网_15 #21"
+      - 法国 001
+      - 美国_07151096
+      - 越南_0715019
+      - "15|🇺🇸_US_美国_科网_15 #25"
+      - US_speednode_0032
+      - Relay_ |22.04Mb
       - US_speednode_0061
-      - US_speednode_0062
-      - ZA_speednode_0065
+      - 美国_07151206
+      - "0,1,2,3,4,24|🇺🇸 _US_美国 #27"
+      - _US_美国_7
+      - "15|🇺🇸_US_美国_科网_15 #10"
+      - "0,11,16,24|🇺🇸 _US_美国->🇳🇱_NL_荷兰 #2"
+      - US_speednode_0038
+      - CN-14.116.193.79-020
+      - "15|🇺🇸_US_美国_科网_15 #18 2"
+      - 15|🇭🇰_HK_香港_科网_15
+      - "15|🇺🇸_US_美国_科网_15 #24"
+      - 法国_0715032 2
+      - GB(AzadNet.t.me)_039
+      - US_FreeNode.me_32
+      - 法国_0715032 3
+      - "15|🇺🇸_US_美国_科网_15 #18 3"
+      - 12,16|法国 001
+      - 1,2,3,4,6,7,23|_US_美国 20
+      - FR_speednode_0006
+      - _GB_英国
+      - 18,19|🇺🇸 美国|@ripaojiedian
+      - US_speednode_0054
+      - 16|🇺🇸 US(AzadNet.t.me)_621
+      - _US_美国 20
+      - US_speednode_0046
+      - CN-14.116.193.79-031
+      - CN-14.116.193.79-011
+      - US_speednode_0043
+      - US_speednode_0038 2
+      - _US_美国_24
+      - US_speednode_0041
+      - CN-14.18.103.121-012
+      - CN-14.116.193.79-008
+      - 下单地址：254254.xyz
+      - 1,2,3,4,6,7,16|_US_美国 16
+      - 美国_0715339 2
+      - "0,1,1,2,2,3,3,4,4,12,24|🇺🇸 _US_美国 #14"
+      - 亚太地区 v2rayfree.eu.org
+      - 6,7|中国【付费推荐：https://tt.vg/vip】185
+      - 15|🇭🇰_HK_香港_科网_15 2
+      - _US_美国 16
+      - US(AzadNet.t.me)_450
+      - 15|🇫🇷_FR_法国_科网_15
+      - _US_美国
+      - 美国_0714027
+      - _US_美国 13
+      - US_speednode_0037 2
+      - US_speednode_0030
+      - US_speednode_0048
+      - CN-14.116.193.79-000
+      - "0,12,24|🇺🇸 _US_美国 #6"
+      - CN-14.116.193.79-040
+      - 16|🇳🇱 荷兰 325
+      - "15|🇳🇱_NL_荷兰_科网_15 #1"
+      - FR_speednode_0008
+      - US_speednode_0041 2
+      - 网站地址：254254.xyz
+      - 美国_0715339 3
+      - CN-14.116.193.79-027
+      - "15|🇳🇱_NL_荷兰_科网_15 #1 2"
+      - 16|🇳🇱 荷兰 325 2
+      - 1,2,3,4|_HK_香港->🇸🇬_SG_新加坡
+      - 24|🇺🇸_US_美国_4_9
+      - "15|🇺🇸_US_美国_科网_15 #26"
+      - 美国_0714333
+      - Relay_ |23.36Mb
+      - 1,2,3,4,6,7,15|_CN_中国->🇭🇰_HK_香港
+      - 美国_07151096 2
+      - 6,7,16,18,19|美国【付费推荐：https://tt.vg/vip】203
+      - 荷兰 325
+      - _US_美国 21
+      - 法国_0715032 4
+      - 24|🇺🇸_US_美国_7_由快嘴科技提供：kkzui.com7
+      - "15|🇺🇸_US_美国_科网_15 #10 2"
+      - "15|🇺🇸_US_美国_科网_15 #2"
+      - 美国_0714351
+      - 美国_07151172
+      - 12,24|中国 011
+      - 美国_07151114
+      - "15|🇺🇸_US_美国_科网_15 #10 3"
+      - _GB_英国 2
+      - "15|🇺🇸_US_美国_科网_15 #9"
+      - "15|🇺🇸_US_美国_科网_15 #3"
+      - 16|🇳🇱NL荷兰(youtube阿伟科技)
+      - "15|🇺🇸_US_美国_科网_15 #17"
+      - "15|🇺🇸_US_美国_科网_15 #3 2"
+      - CN-14.18.89.198-044
+      - 6,7,15,24,24|中国【付费推荐：https://tt.vg/vip】135
+      - 24|🇺🇸_US_美国_5_由快嘴科技提供：kkzui.com2
+      - 1,2,3,4|_HK_香港->🇸🇬_SG_新加坡 2
+      - CN-14.116.193.79-045
+      - "0,6,7,15,16,24|🇺🇸 _US_美国 #12"
+      - 美国_0715025
+      - 16|🇳🇱NL荷兰(youtube阿伟科技) 2
+      - 6,7|中国【付费推荐：https://tt.vg/vip】185 2
+      - "15|🇺🇸_US_美国_科网_15 #6"
+      - 美国 Datability
+      - 美国_0714351 2
+      - 15|🇳🇱_NL_荷兰_科网_15
+      - Relay_ |27.69Mb
+      - US_speednode_0060
+      - "15|🇺🇸_US_美国_科网_15 #3 3"
+      - CN-14.116.193.79-039
+      - "15,15|🇺🇸_US_美国_科网_15 #22"
+      - 美国_0715018
+      - github.com/freefq - 南非  5
+      - "15|🇺🇸_US_美国_科网_15 #1"
+      - "15|🇺🇸_US_美国_科网_15 #24 2"
+      - "15|🇺🇸_US_美国_科网_15 #16"
+      - US_speednode_0044
+      - CN-14.18.89.198-006
+      - CN-14.116.193.79-017
+      - 美国_0715094
+      - "15|🇺🇸_US_美国_科网_15 #4"
+      - 23|🇺🇸_US_美国_29_44
+      - "15,15|🇺🇸_US_美国_科网_15 #8"
+      - 11,13,24|南非  5
+      - "@SSRSUB-V04-付费推荐:dlj.tf/ssrsub"
+      - 1,2,3,4,6,7,15|_CN_中国->🇭🇰_HK_香港 2
+      - US_speednode_0065
+      - CN-14.116.193.79-043
+      - "15|🇺🇸_US_美国_科网_15 #5"
+      - CN-14.18.89.198-021
+      - "15|🇺🇸_US_美国_科网_15 #2 2"
+      - CN-14.116.193.79-033
+      - CN-14.116.193.79-002
+      - CN-14.116.193.79-022
+      - 美国_0715037
+      - "15|🇺🇸_US_美国_科网_15 #7"
+      - 16|🇺🇸_US_美国_19
+      - "0,6,7,15|🇺🇸 _US_美国 #24"
+      - 15|🇺🇸_US_美国_科网_15
+      - 6,7|中国【付费推荐：https://tt.vg/vip】135
+      - "15|🇺🇸_US_美国_科网_15 #20"
+      - 16|🇺🇸_US_美国_19 2
+      - "15,15|🇺🇸_US_美国_科网_15 #12"
+      - Relay_ |19.47Mb
+      - NL荷兰(youtube阿伟科技)
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -361,355 +665,657 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - github.com/freefq - 香港  8
-      - 香港【付费推荐：https//tt.vg/vip】52
-      - 日本 v2rayfree.eu.org
-      - 台湾_0714015
-      - github.com/freefq - 台湾省宜兰县中华电信 27
-      - github.com/freefq - 台湾省新竹市中华电信 26
-      - 台湾_0714023
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 美国_07142199
-      - US(AzadNet.t.me)_482
-      - 美国_0714107
-      - 美国_0714351
-      - 美国_07141748
-      - US(AzadNet.t.me)_488
-      - US(AzadNet.t.me)_449
-      - 美国_0714027
-      - 美国【付费推荐：https//tt.vg/vip】53
-      - US(AzadNet.t.me)_356
-      - github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 3
-      - 美国【付费推荐：https//tt.vg/vip】63
-      - US(AzadNet.t.me)_344
-      - _US_美国_7
-      - github.com/freefq - 美国Cloudinnovation数据中心 5
-      - US(AzadNet.t.me)_059
-      - 美国_0714010
-      - 美国_0714015
-      - 加拿大【付费推荐：https//tt.vg/vip】169
-      - 美国【付费推荐：https//tt.vg/vip】199
-      - 美国【付费推荐：https//tt.vg/vip】32
-      - _US_美国_10
-      - _CA_加拿大->🇺🇸_US_美国 3
-      - US(AzadNet.t.me)_465
-      - US(AzadNet.t.me)_428
-      - 美国_07144062
-      - 美国_0714061
-      - 美国_0714126
-      - 美国_0714333
-      - AF(AzadNet.t.me)
-      - GB(AzadNet.t.me)_039
-      - 澳大利亚【付费推荐：https//tt.vg/vip】149
-      - 机场地址：254254.xyz
-      - IS(AzadNet.t.me)_002
-      - 新加坡【付费推荐：https//tt.vg/vip】165
-      - 18|🇸🇬 狮城特殊|@ripaojiedian
-      - 1|_KR_韩国 4
-      - 香港【付费推荐：https//tt.vg/vip】166
-      - CN-14.116.193.79-312
-      - 6,7,24|美国【付费推荐：https://tt.vg/vip】243
-      - 1,2,3,4,6,7|_US_美国 3
-      - 7|🇸🇬 新加坡【付费推荐：https://tt.vg/vip】...
-      - 6,7,16|美国【付费推荐：https://tt.vg/vip】86
-      - 6,7,11,13,15,16|塞浦路斯【付费推荐：https://tt.vg/vip】19...
-      - 8,24|🇺🇸_US_美国->🇮🇩_ID_印度尼西亚
-      - 1,2,3,4,6,7,12,16|_US_美国 14
-      - "0,6,7,15|🇺🇸 _US_美国 #25"
-      - 7|🇨🇦 加拿大【付费推荐：https://tt.vg/vip】...
-      - 16|🇳🇱 荷兰 325
-      - 6,7|美国【付费推荐：https://tt.vg/vip】44
-      - 1,1,2,2,3,3,4,4,6,7|_CN_中国->🇱🇺_LU_卢森堡
-      - 6,7,12|美国【付费推荐：https://tt.vg/vip】58
-      - 6,7|美国【付费推荐：https://tt.vg/vip】258
-      - 7|🇺🇲 美国【付费推荐：https://tt.vg/vip】1...
-      - "0,6,7|🇺🇸 _US_美国 #29"
-      - 18,19|🇹🇼 台湾|@ripaojiedian
-      - FR_法国 2
-      - US_美国 18 (DUP-2)
-      - 亚洲(油管:破解资源君) 4
-      - 亚洲(油管:破解资源君) 5
-      - 美国(油管:破解资源君) 21
-      - US 10 → tg@nicevpn123
-      - DK_speednode_0003
-      - EG_speednode_0004
-      - HK_speednode_0010
-      - IE_speednode_0011
-      - JP_speednode_0012
-      - JP_speednode_0014
-      - LV_speednode_0020
+      - CN-14.116.193.79-025
+      - US_speednode_0037
+      - 美国_0715339
+      - CN-14.18.89.198-005
+      - US_speednode_0039
+      - CN-14.116.193.79-034
+      - 16|🇺🇸 美国 246
+      - US_speednode_0047
+      - 法国_0715032
+      - "15|🇺🇸_US_美国_科网_15 #18"
+      - 16|🇺🇸 US(AzadNet.t.me)_482
+      - "15,24|🇺🇸_US_美国_科网_15 #21"
+      - 法国 001
+      - 美国_07151096
+      - 越南_0715019
+      - "15|🇺🇸_US_美国_科网_15 #25"
+      - US_speednode_0032
+      - Relay_ |22.04Mb
       - US_speednode_0061
-      - US_speednode_0062
-      - ZA_speednode_0065
+      - 美国_07151206
+      - "0,1,2,3,4,24|🇺🇸 _US_美国 #27"
+      - _US_美国_7
+      - "15|🇺🇸_US_美国_科网_15 #10"
+      - "0,11,16,24|🇺🇸 _US_美国->🇳🇱_NL_荷兰 #2"
+      - US_speednode_0038
+      - CN-14.116.193.79-020
+      - "15|🇺🇸_US_美国_科网_15 #18 2"
+      - 15|🇭🇰_HK_香港_科网_15
+      - "15|🇺🇸_US_美国_科网_15 #24"
+      - 法国_0715032 2
+      - GB(AzadNet.t.me)_039
+      - US_FreeNode.me_32
+      - 法国_0715032 3
+      - "15|🇺🇸_US_美国_科网_15 #18 3"
+      - 12,16|法国 001
+      - 1,2,3,4,6,7,23|_US_美国 20
+      - FR_speednode_0006
+      - _GB_英国
+      - 18,19|🇺🇸 美国|@ripaojiedian
+      - US_speednode_0054
+      - 16|🇺🇸 US(AzadNet.t.me)_621
+      - _US_美国 20
+      - US_speednode_0046
+      - CN-14.116.193.79-031
+      - CN-14.116.193.79-011
+      - US_speednode_0043
+      - US_speednode_0038 2
+      - _US_美国_24
+      - US_speednode_0041
+      - CN-14.18.103.121-012
+      - CN-14.116.193.79-008
+      - 下单地址：254254.xyz
+      - 1,2,3,4,6,7,16|_US_美国 16
+      - 美国_0715339 2
+      - "0,1,1,2,2,3,3,4,4,12,24|🇺🇸 _US_美国 #14"
+      - 亚太地区 v2rayfree.eu.org
+      - 6,7|中国【付费推荐：https://tt.vg/vip】185
+      - 15|🇭🇰_HK_香港_科网_15 2
+      - _US_美国 16
+      - US(AzadNet.t.me)_450
+      - 15|🇫🇷_FR_法国_科网_15
+      - _US_美国
+      - 美国_0714027
+      - _US_美国 13
+      - US_speednode_0037 2
+      - US_speednode_0030
+      - US_speednode_0048
+      - CN-14.116.193.79-000
+      - "0,12,24|🇺🇸 _US_美国 #6"
+      - CN-14.116.193.79-040
+      - 16|🇳🇱 荷兰 325
+      - "15|🇳🇱_NL_荷兰_科网_15 #1"
+      - FR_speednode_0008
+      - US_speednode_0041 2
+      - 网站地址：254254.xyz
+      - 美国_0715339 3
+      - CN-14.116.193.79-027
+      - "15|🇳🇱_NL_荷兰_科网_15 #1 2"
+      - 16|🇳🇱 荷兰 325 2
+      - 1,2,3,4|_HK_香港->🇸🇬_SG_新加坡
+      - 24|🇺🇸_US_美国_4_9
+      - "15|🇺🇸_US_美国_科网_15 #26"
+      - 美国_0714333
+      - Relay_ |23.36Mb
+      - 1,2,3,4,6,7,15|_CN_中国->🇭🇰_HK_香港
+      - 美国_07151096 2
+      - 6,7,16,18,19|美国【付费推荐：https://tt.vg/vip】203
+      - 荷兰 325
+      - _US_美国 21
+      - 法国_0715032 4
+      - 24|🇺🇸_US_美国_7_由快嘴科技提供：kkzui.com7
+      - "15|🇺🇸_US_美国_科网_15 #10 2"
+      - "15|🇺🇸_US_美国_科网_15 #2"
+      - 美国_0714351
+      - 美国_07151172
+      - 12,24|中国 011
+      - 美国_07151114
+      - "15|🇺🇸_US_美国_科网_15 #10 3"
+      - _GB_英国 2
+      - "15|🇺🇸_US_美国_科网_15 #9"
+      - "15|🇺🇸_US_美国_科网_15 #3"
+      - 16|🇳🇱NL荷兰(youtube阿伟科技)
+      - "15|🇺🇸_US_美国_科网_15 #17"
+      - "15|🇺🇸_US_美国_科网_15 #3 2"
+      - CN-14.18.89.198-044
+      - 6,7,15,24,24|中国【付费推荐：https://tt.vg/vip】135
+      - 24|🇺🇸_US_美国_5_由快嘴科技提供：kkzui.com2
+      - 1,2,3,4|_HK_香港->🇸🇬_SG_新加坡 2
+      - CN-14.116.193.79-045
+      - "0,6,7,15,16,24|🇺🇸 _US_美国 #12"
+      - 美国_0715025
+      - 16|🇳🇱NL荷兰(youtube阿伟科技) 2
+      - 6,7|中国【付费推荐：https://tt.vg/vip】185 2
+      - "15|🇺🇸_US_美国_科网_15 #6"
+      - 美国 Datability
+      - 美国_0714351 2
+      - 15|🇳🇱_NL_荷兰_科网_15
+      - Relay_ |27.69Mb
+      - US_speednode_0060
+      - "15|🇺🇸_US_美国_科网_15 #3 3"
+      - CN-14.116.193.79-039
+      - "15,15|🇺🇸_US_美国_科网_15 #22"
+      - 美国_0715018
+      - github.com/freefq - 南非  5
+      - "15|🇺🇸_US_美国_科网_15 #1"
+      - "15|🇺🇸_US_美国_科网_15 #24 2"
+      - "15|🇺🇸_US_美国_科网_15 #16"
+      - US_speednode_0044
+      - CN-14.18.89.198-006
+      - CN-14.116.193.79-017
+      - 美国_0715094
+      - "15|🇺🇸_US_美国_科网_15 #4"
+      - 23|🇺🇸_US_美国_29_44
+      - "15,15|🇺🇸_US_美国_科网_15 #8"
+      - 11,13,24|南非  5
+      - "@SSRSUB-V04-付费推荐:dlj.tf/ssrsub"
+      - 1,2,3,4,6,7,15|_CN_中国->🇭🇰_HK_香港 2
+      - US_speednode_0065
+      - CN-14.116.193.79-043
+      - "15|🇺🇸_US_美国_科网_15 #5"
+      - CN-14.18.89.198-021
+      - "15|🇺🇸_US_美国_科网_15 #2 2"
+      - CN-14.116.193.79-033
+      - CN-14.116.193.79-002
+      - CN-14.116.193.79-022
+      - 美国_0715037
+      - "15|🇺🇸_US_美国_科网_15 #7"
+      - 16|🇺🇸_US_美国_19
+      - "0,6,7,15|🇺🇸 _US_美国 #24"
+      - 15|🇺🇸_US_美国_科网_15
+      - 6,7|中国【付费推荐：https://tt.vg/vip】135
+      - "15|🇺🇸_US_美国_科网_15 #20"
+      - 16|🇺🇸_US_美国_19 2
+      - "15,15|🇺🇸_US_美国_科网_15 #12"
+      - Relay_ |19.47Mb
+      - NL荷兰(youtube阿伟科技)
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - github.com/freefq - 香港  8
-      - 香港【付费推荐：https//tt.vg/vip】52
-      - 台湾_0714015
-      - github.com/freefq - 台湾省宜兰县中华电信 27
-      - github.com/freefq - 台湾省新竹市中华电信 26
-      - 台湾_0714023
-      - 香港【付费推荐：https//tt.vg/vip】166
-      - 18,19|🇹🇼 台湾|@ripaojiedian
+      - 15|🇭🇰_HK_香港_科网_15
+      - 15|🇭🇰_HK_香港_科网_15 2
+      - 1,2,3,4|_HK_香港->🇸🇬_SG_新加坡
+      - 1,2,3,4,6,7,15|_CN_中国->🇭🇰_HK_香港
+      - 1,2,3,4|_HK_香港->🇸🇬_SG_新加坡 2
+      - 1,2,3,4,6,7,15|_CN_中国->🇭🇰_HK_香港 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - github.com/freefq - 香港  8
-      - 香港【付费推荐：https//tt.vg/vip】52
-      - 日本 v2rayfree.eu.org
-      - 台湾_0714015
-      - github.com/freefq - 台湾省宜兰县中华电信 27
-      - github.com/freefq - 台湾省新竹市中华电信 26
-      - 台湾_0714023
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 美国_07142199
-      - US(AzadNet.t.me)_482
-      - 美国_0714107
-      - 美国_0714351
-      - 美国_07141748
-      - US(AzadNet.t.me)_488
-      - US(AzadNet.t.me)_449
-      - 美国_0714027
-      - 美国【付费推荐：https//tt.vg/vip】53
-      - US(AzadNet.t.me)_356
-      - github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 3
-      - 美国【付费推荐：https//tt.vg/vip】63
-      - US(AzadNet.t.me)_344
-      - _US_美国_7
-      - github.com/freefq - 美国Cloudinnovation数据中心 5
-      - US(AzadNet.t.me)_059
-      - 美国_0714010
-      - 美国_0714015
-      - 加拿大【付费推荐：https//tt.vg/vip】169
-      - 美国【付费推荐：https//tt.vg/vip】199
-      - 美国【付费推荐：https//tt.vg/vip】32
-      - _US_美国_10
-      - _CA_加拿大->🇺🇸_US_美国 3
-      - US(AzadNet.t.me)_465
-      - US(AzadNet.t.me)_428
-      - 美国_07144062
-      - 美国_0714061
-      - 美国_0714126
-      - 美国_0714333
-      - AF(AzadNet.t.me)
-      - GB(AzadNet.t.me)_039
-      - 澳大利亚【付费推荐：https//tt.vg/vip】149
-      - 机场地址：254254.xyz
-      - IS(AzadNet.t.me)_002
-      - 新加坡【付费推荐：https//tt.vg/vip】165
-      - 18|🇸🇬 狮城特殊|@ripaojiedian
-      - 1|_KR_韩国 4
-      - 香港【付费推荐：https//tt.vg/vip】166
-      - CN-14.116.193.79-312
-      - 6,7,24|美国【付费推荐：https://tt.vg/vip】243
-      - 1,2,3,4,6,7|_US_美国 3
-      - 7|🇸🇬 新加坡【付费推荐：https://tt.vg/vip】...
-      - 6,7,16|美国【付费推荐：https://tt.vg/vip】86
-      - 6,7,11,13,15,16|塞浦路斯【付费推荐：https://tt.vg/vip】19...
-      - 8,24|🇺🇸_US_美国->🇮🇩_ID_印度尼西亚
-      - 1,2,3,4,6,7,12,16|_US_美国 14
-      - "0,6,7,15|🇺🇸 _US_美国 #25"
-      - 7|🇨🇦 加拿大【付费推荐：https://tt.vg/vip】...
-      - 16|🇳🇱 荷兰 325
-      - 6,7|美国【付费推荐：https://tt.vg/vip】44
-      - 1,1,2,2,3,3,4,4,6,7|_CN_中国->🇱🇺_LU_卢森堡
-      - 6,7,12|美国【付费推荐：https://tt.vg/vip】58
-      - 6,7|美国【付费推荐：https://tt.vg/vip】258
-      - 7|🇺🇲 美国【付费推荐：https://tt.vg/vip】1...
-      - "0,6,7|🇺🇸 _US_美国 #29"
-      - 18,19|🇹🇼 台湾|@ripaojiedian
-      - FR_法国 2
-      - US_美国 18 (DUP-2)
-      - 亚洲(油管:破解资源君) 4
-      - 亚洲(油管:破解资源君) 5
-      - 美国(油管:破解资源君) 21
-      - US 10 → tg@nicevpn123
-      - DK_speednode_0003
-      - EG_speednode_0004
-      - HK_speednode_0010
-      - IE_speednode_0011
-      - JP_speednode_0012
-      - JP_speednode_0014
-      - LV_speednode_0020
+      - CN-14.116.193.79-025
+      - US_speednode_0037
+      - 美国_0715339
+      - CN-14.18.89.198-005
+      - US_speednode_0039
+      - CN-14.116.193.79-034
+      - 16|🇺🇸 美国 246
+      - US_speednode_0047
+      - 法国_0715032
+      - "15|🇺🇸_US_美国_科网_15 #18"
+      - 16|🇺🇸 US(AzadNet.t.me)_482
+      - "15,24|🇺🇸_US_美国_科网_15 #21"
+      - 法国 001
+      - 美国_07151096
+      - 越南_0715019
+      - "15|🇺🇸_US_美国_科网_15 #25"
+      - US_speednode_0032
+      - Relay_ |22.04Mb
       - US_speednode_0061
-      - US_speednode_0062
-      - ZA_speednode_0065
+      - 美国_07151206
+      - "0,1,2,3,4,24|🇺🇸 _US_美国 #27"
+      - _US_美国_7
+      - "15|🇺🇸_US_美国_科网_15 #10"
+      - "0,11,16,24|🇺🇸 _US_美国->🇳🇱_NL_荷兰 #2"
+      - US_speednode_0038
+      - CN-14.116.193.79-020
+      - "15|🇺🇸_US_美国_科网_15 #18 2"
+      - 15|🇭🇰_HK_香港_科网_15
+      - "15|🇺🇸_US_美国_科网_15 #24"
+      - 法国_0715032 2
+      - GB(AzadNet.t.me)_039
+      - US_FreeNode.me_32
+      - 法国_0715032 3
+      - "15|🇺🇸_US_美国_科网_15 #18 3"
+      - 12,16|法国 001
+      - 1,2,3,4,6,7,23|_US_美国 20
+      - FR_speednode_0006
+      - _GB_英国
+      - 18,19|🇺🇸 美国|@ripaojiedian
+      - US_speednode_0054
+      - 16|🇺🇸 US(AzadNet.t.me)_621
+      - _US_美国 20
+      - US_speednode_0046
+      - CN-14.116.193.79-031
+      - CN-14.116.193.79-011
+      - US_speednode_0043
+      - US_speednode_0038 2
+      - _US_美国_24
+      - US_speednode_0041
+      - CN-14.18.103.121-012
+      - CN-14.116.193.79-008
+      - 下单地址：254254.xyz
+      - 1,2,3,4,6,7,16|_US_美国 16
+      - 美国_0715339 2
+      - "0,1,1,2,2,3,3,4,4,12,24|🇺🇸 _US_美国 #14"
+      - 亚太地区 v2rayfree.eu.org
+      - 6,7|中国【付费推荐：https://tt.vg/vip】185
+      - 15|🇭🇰_HK_香港_科网_15 2
+      - _US_美国 16
+      - US(AzadNet.t.me)_450
+      - 15|🇫🇷_FR_法国_科网_15
+      - _US_美国
+      - 美国_0714027
+      - _US_美国 13
+      - US_speednode_0037 2
+      - US_speednode_0030
+      - US_speednode_0048
+      - CN-14.116.193.79-000
+      - "0,12,24|🇺🇸 _US_美国 #6"
+      - CN-14.116.193.79-040
+      - 16|🇳🇱 荷兰 325
+      - "15|🇳🇱_NL_荷兰_科网_15 #1"
+      - FR_speednode_0008
+      - US_speednode_0041 2
+      - 网站地址：254254.xyz
+      - 美国_0715339 3
+      - CN-14.116.193.79-027
+      - "15|🇳🇱_NL_荷兰_科网_15 #1 2"
+      - 16|🇳🇱 荷兰 325 2
+      - 1,2,3,4|_HK_香港->🇸🇬_SG_新加坡
+      - 24|🇺🇸_US_美国_4_9
+      - "15|🇺🇸_US_美国_科网_15 #26"
+      - 美国_0714333
+      - Relay_ |23.36Mb
+      - 1,2,3,4,6,7,15|_CN_中国->🇭🇰_HK_香港
+      - 美国_07151096 2
+      - 6,7,16,18,19|美国【付费推荐：https://tt.vg/vip】203
+      - 荷兰 325
+      - _US_美国 21
+      - 法国_0715032 4
+      - 24|🇺🇸_US_美国_7_由快嘴科技提供：kkzui.com7
+      - "15|🇺🇸_US_美国_科网_15 #10 2"
+      - "15|🇺🇸_US_美国_科网_15 #2"
+      - 美国_0714351
+      - 美国_07151172
+      - 12,24|中国 011
+      - 美国_07151114
+      - "15|🇺🇸_US_美国_科网_15 #10 3"
+      - _GB_英国 2
+      - "15|🇺🇸_US_美国_科网_15 #9"
+      - "15|🇺🇸_US_美国_科网_15 #3"
+      - 16|🇳🇱NL荷兰(youtube阿伟科技)
+      - "15|🇺🇸_US_美国_科网_15 #17"
+      - "15|🇺🇸_US_美国_科网_15 #3 2"
+      - CN-14.18.89.198-044
+      - 6,7,15,24,24|中国【付费推荐：https://tt.vg/vip】135
+      - 24|🇺🇸_US_美国_5_由快嘴科技提供：kkzui.com2
+      - 1,2,3,4|_HK_香港->🇸🇬_SG_新加坡 2
+      - CN-14.116.193.79-045
+      - "0,6,7,15,16,24|🇺🇸 _US_美国 #12"
+      - 美国_0715025
+      - 16|🇳🇱NL荷兰(youtube阿伟科技) 2
+      - 6,7|中国【付费推荐：https://tt.vg/vip】185 2
+      - "15|🇺🇸_US_美国_科网_15 #6"
+      - 美国 Datability
+      - 美国_0714351 2
+      - 15|🇳🇱_NL_荷兰_科网_15
+      - Relay_ |27.69Mb
+      - US_speednode_0060
+      - "15|🇺🇸_US_美国_科网_15 #3 3"
+      - CN-14.116.193.79-039
+      - "15,15|🇺🇸_US_美国_科网_15 #22"
+      - 美国_0715018
+      - github.com/freefq - 南非  5
+      - "15|🇺🇸_US_美国_科网_15 #1"
+      - "15|🇺🇸_US_美国_科网_15 #24 2"
+      - "15|🇺🇸_US_美国_科网_15 #16"
+      - US_speednode_0044
+      - CN-14.18.89.198-006
+      - CN-14.116.193.79-017
+      - 美国_0715094
+      - "15|🇺🇸_US_美国_科网_15 #4"
+      - 23|🇺🇸_US_美国_29_44
+      - "15,15|🇺🇸_US_美国_科网_15 #8"
+      - 11,13,24|南非  5
+      - "@SSRSUB-V04-付费推荐:dlj.tf/ssrsub"
+      - 1,2,3,4,6,7,15|_CN_中国->🇭🇰_HK_香港 2
+      - US_speednode_0065
+      - CN-14.116.193.79-043
+      - "15|🇺🇸_US_美国_科网_15 #5"
+      - CN-14.18.89.198-021
+      - "15|🇺🇸_US_美国_科网_15 #2 2"
+      - CN-14.116.193.79-033
+      - CN-14.116.193.79-002
+      - CN-14.116.193.79-022
+      - 美国_0715037
+      - "15|🇺🇸_US_美国_科网_15 #7"
+      - 16|🇺🇸_US_美国_19
+      - "0,6,7,15|🇺🇸 _US_美国 #24"
+      - 15|🇺🇸_US_美国_科网_15
+      - 6,7|中国【付费推荐：https://tt.vg/vip】135
+      - "15|🇺🇸_US_美国_科网_15 #20"
+      - 16|🇺🇸_US_美国_19 2
+      - "15,15|🇺🇸_US_美国_科网_15 #12"
+      - Relay_ |19.47Mb
+      - NL荷兰(youtube阿伟科技)
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - github.com/freefq - 香港  8
-      - 香港【付费推荐：https//tt.vg/vip】52
-      - 日本 v2rayfree.eu.org
-      - 台湾_0714015
-      - github.com/freefq - 台湾省宜兰县中华电信 27
-      - github.com/freefq - 台湾省新竹市中华电信 26
-      - 台湾_0714023
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 美国_07142199
-      - US(AzadNet.t.me)_482
-      - 美国_0714107
-      - 美国_0714351
-      - 美国_07141748
-      - US(AzadNet.t.me)_488
-      - US(AzadNet.t.me)_449
-      - 美国_0714027
-      - 美国【付费推荐：https//tt.vg/vip】53
-      - US(AzadNet.t.me)_356
-      - github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 3
-      - 美国【付费推荐：https//tt.vg/vip】63
-      - US(AzadNet.t.me)_344
-      - _US_美国_7
-      - github.com/freefq - 美国Cloudinnovation数据中心 5
-      - US(AzadNet.t.me)_059
-      - 美国_0714010
-      - 美国_0714015
-      - 加拿大【付费推荐：https//tt.vg/vip】169
-      - 美国【付费推荐：https//tt.vg/vip】199
-      - 美国【付费推荐：https//tt.vg/vip】32
-      - _US_美国_10
-      - _CA_加拿大->🇺🇸_US_美国 3
-      - US(AzadNet.t.me)_465
-      - US(AzadNet.t.me)_428
-      - 美国_07144062
-      - 美国_0714061
-      - 美国_0714126
-      - 美国_0714333
-      - AF(AzadNet.t.me)
-      - GB(AzadNet.t.me)_039
-      - 澳大利亚【付费推荐：https//tt.vg/vip】149
-      - 机场地址：254254.xyz
-      - IS(AzadNet.t.me)_002
-      - 新加坡【付费推荐：https//tt.vg/vip】165
-      - 18|🇸🇬 狮城特殊|@ripaojiedian
-      - 1|_KR_韩国 4
-      - 香港【付费推荐：https//tt.vg/vip】166
-      - CN-14.116.193.79-312
-      - 6,7,24|美国【付费推荐：https://tt.vg/vip】243
-      - 1,2,3,4,6,7|_US_美国 3
-      - 7|🇸🇬 新加坡【付费推荐：https://tt.vg/vip】...
-      - 6,7,16|美国【付费推荐：https://tt.vg/vip】86
-      - 6,7,11,13,15,16|塞浦路斯【付费推荐：https://tt.vg/vip】19...
-      - 8,24|🇺🇸_US_美国->🇮🇩_ID_印度尼西亚
-      - 1,2,3,4,6,7,12,16|_US_美国 14
-      - "0,6,7,15|🇺🇸 _US_美国 #25"
-      - 7|🇨🇦 加拿大【付费推荐：https://tt.vg/vip】...
-      - 16|🇳🇱 荷兰 325
-      - 6,7|美国【付费推荐：https://tt.vg/vip】44
-      - 1,1,2,2,3,3,4,4,6,7|_CN_中国->🇱🇺_LU_卢森堡
-      - 6,7,12|美国【付费推荐：https://tt.vg/vip】58
-      - 6,7|美国【付费推荐：https://tt.vg/vip】258
-      - 7|🇺🇲 美国【付费推荐：https://tt.vg/vip】1...
-      - "0,6,7|🇺🇸 _US_美国 #29"
-      - 18,19|🇹🇼 台湾|@ripaojiedian
-      - FR_法国 2
-      - US_美国 18 (DUP-2)
-      - 亚洲(油管:破解资源君) 4
-      - 亚洲(油管:破解资源君) 5
-      - 美国(油管:破解资源君) 21
-      - US 10 → tg@nicevpn123
-      - DK_speednode_0003
-      - EG_speednode_0004
-      - HK_speednode_0010
-      - IE_speednode_0011
-      - JP_speednode_0012
-      - JP_speednode_0014
-      - LV_speednode_0020
+      - CN-14.116.193.79-025
+      - US_speednode_0037
+      - 美国_0715339
+      - CN-14.18.89.198-005
+      - US_speednode_0039
+      - CN-14.116.193.79-034
+      - 16|🇺🇸 美国 246
+      - US_speednode_0047
+      - 法国_0715032
+      - "15|🇺🇸_US_美国_科网_15 #18"
+      - 16|🇺🇸 US(AzadNet.t.me)_482
+      - "15,24|🇺🇸_US_美国_科网_15 #21"
+      - 法国 001
+      - 美国_07151096
+      - 越南_0715019
+      - "15|🇺🇸_US_美国_科网_15 #25"
+      - US_speednode_0032
+      - Relay_ |22.04Mb
       - US_speednode_0061
-      - US_speednode_0062
-      - ZA_speednode_0065
+      - 美国_07151206
+      - "0,1,2,3,4,24|🇺🇸 _US_美国 #27"
+      - _US_美国_7
+      - "15|🇺🇸_US_美国_科网_15 #10"
+      - "0,11,16,24|🇺🇸 _US_美国->🇳🇱_NL_荷兰 #2"
+      - US_speednode_0038
+      - CN-14.116.193.79-020
+      - "15|🇺🇸_US_美国_科网_15 #18 2"
+      - 15|🇭🇰_HK_香港_科网_15
+      - "15|🇺🇸_US_美国_科网_15 #24"
+      - 法国_0715032 2
+      - GB(AzadNet.t.me)_039
+      - US_FreeNode.me_32
+      - 法国_0715032 3
+      - "15|🇺🇸_US_美国_科网_15 #18 3"
+      - 12,16|法国 001
+      - 1,2,3,4,6,7,23|_US_美国 20
+      - FR_speednode_0006
+      - _GB_英国
+      - 18,19|🇺🇸 美国|@ripaojiedian
+      - US_speednode_0054
+      - 16|🇺🇸 US(AzadNet.t.me)_621
+      - _US_美国 20
+      - US_speednode_0046
+      - CN-14.116.193.79-031
+      - CN-14.116.193.79-011
+      - US_speednode_0043
+      - US_speednode_0038 2
+      - _US_美国_24
+      - US_speednode_0041
+      - CN-14.18.103.121-012
+      - CN-14.116.193.79-008
+      - 下单地址：254254.xyz
+      - 1,2,3,4,6,7,16|_US_美国 16
+      - 美国_0715339 2
+      - "0,1,1,2,2,3,3,4,4,12,24|🇺🇸 _US_美国 #14"
+      - 亚太地区 v2rayfree.eu.org
+      - 6,7|中国【付费推荐：https://tt.vg/vip】185
+      - 15|🇭🇰_HK_香港_科网_15 2
+      - _US_美国 16
+      - US(AzadNet.t.me)_450
+      - 15|🇫🇷_FR_法国_科网_15
+      - _US_美国
+      - 美国_0714027
+      - _US_美国 13
+      - US_speednode_0037 2
+      - US_speednode_0030
+      - US_speednode_0048
+      - CN-14.116.193.79-000
+      - "0,12,24|🇺🇸 _US_美国 #6"
+      - CN-14.116.193.79-040
+      - 16|🇳🇱 荷兰 325
+      - "15|🇳🇱_NL_荷兰_科网_15 #1"
+      - FR_speednode_0008
+      - US_speednode_0041 2
+      - 网站地址：254254.xyz
+      - 美国_0715339 3
+      - CN-14.116.193.79-027
+      - "15|🇳🇱_NL_荷兰_科网_15 #1 2"
+      - 16|🇳🇱 荷兰 325 2
+      - 1,2,3,4|_HK_香港->🇸🇬_SG_新加坡
+      - 24|🇺🇸_US_美国_4_9
+      - "15|🇺🇸_US_美国_科网_15 #26"
+      - 美国_0714333
+      - Relay_ |23.36Mb
+      - 1,2,3,4,6,7,15|_CN_中国->🇭🇰_HK_香港
+      - 美国_07151096 2
+      - 6,7,16,18,19|美国【付费推荐：https://tt.vg/vip】203
+      - 荷兰 325
+      - _US_美国 21
+      - 法国_0715032 4
+      - 24|🇺🇸_US_美国_7_由快嘴科技提供：kkzui.com7
+      - "15|🇺🇸_US_美国_科网_15 #10 2"
+      - "15|🇺🇸_US_美国_科网_15 #2"
+      - 美国_0714351
+      - 美国_07151172
+      - 12,24|中国 011
+      - 美国_07151114
+      - "15|🇺🇸_US_美国_科网_15 #10 3"
+      - _GB_英国 2
+      - "15|🇺🇸_US_美国_科网_15 #9"
+      - "15|🇺🇸_US_美国_科网_15 #3"
+      - 16|🇳🇱NL荷兰(youtube阿伟科技)
+      - "15|🇺🇸_US_美国_科网_15 #17"
+      - "15|🇺🇸_US_美国_科网_15 #3 2"
+      - CN-14.18.89.198-044
+      - 6,7,15,24,24|中国【付费推荐：https://tt.vg/vip】135
+      - 24|🇺🇸_US_美国_5_由快嘴科技提供：kkzui.com2
+      - 1,2,3,4|_HK_香港->🇸🇬_SG_新加坡 2
+      - CN-14.116.193.79-045
+      - "0,6,7,15,16,24|🇺🇸 _US_美国 #12"
+      - 美国_0715025
+      - 16|🇳🇱NL荷兰(youtube阿伟科技) 2
+      - 6,7|中国【付费推荐：https://tt.vg/vip】185 2
+      - "15|🇺🇸_US_美国_科网_15 #6"
+      - 美国 Datability
+      - 美国_0714351 2
+      - 15|🇳🇱_NL_荷兰_科网_15
+      - Relay_ |27.69Mb
+      - US_speednode_0060
+      - "15|🇺🇸_US_美国_科网_15 #3 3"
+      - CN-14.116.193.79-039
+      - "15,15|🇺🇸_US_美国_科网_15 #22"
+      - 美国_0715018
+      - github.com/freefq - 南非  5
+      - "15|🇺🇸_US_美国_科网_15 #1"
+      - "15|🇺🇸_US_美国_科网_15 #24 2"
+      - "15|🇺🇸_US_美国_科网_15 #16"
+      - US_speednode_0044
+      - CN-14.18.89.198-006
+      - CN-14.116.193.79-017
+      - 美国_0715094
+      - "15|🇺🇸_US_美国_科网_15 #4"
+      - 23|🇺🇸_US_美国_29_44
+      - "15,15|🇺🇸_US_美国_科网_15 #8"
+      - 11,13,24|南非  5
+      - "@SSRSUB-V04-付费推荐:dlj.tf/ssrsub"
+      - 1,2,3,4,6,7,15|_CN_中国->🇭🇰_HK_香港 2
+      - US_speednode_0065
+      - CN-14.116.193.79-043
+      - "15|🇺🇸_US_美国_科网_15 #5"
+      - CN-14.18.89.198-021
+      - "15|🇺🇸_US_美国_科网_15 #2 2"
+      - CN-14.116.193.79-033
+      - CN-14.116.193.79-002
+      - CN-14.116.193.79-022
+      - 美国_0715037
+      - "15|🇺🇸_US_美国_科网_15 #7"
+      - 16|🇺🇸_US_美国_19
+      - "0,6,7,15|🇺🇸 _US_美国 #24"
+      - 15|🇺🇸_US_美国_科网_15
+      - 6,7|中国【付费推荐：https://tt.vg/vip】135
+      - "15|🇺🇸_US_美国_科网_15 #20"
+      - 16|🇺🇸_US_美国_19 2
+      - "15,15|🇺🇸_US_美国_科网_15 #12"
+      - Relay_ |19.47Mb
+      - NL荷兰(youtube阿伟科技)
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - github.com/freefq - 香港  8
-      - 香港【付费推荐：https//tt.vg/vip】52
-      - 日本 v2rayfree.eu.org
-      - 台湾_0714015
-      - github.com/freefq - 台湾省宜兰县中华电信 27
-      - github.com/freefq - 台湾省新竹市中华电信 26
-      - 台湾_0714023
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 美国_07142199
-      - US(AzadNet.t.me)_482
-      - 美国_0714107
-      - 美国_0714351
-      - 美国_07141748
-      - US(AzadNet.t.me)_488
-      - US(AzadNet.t.me)_449
-      - 美国_0714027
-      - 美国【付费推荐：https//tt.vg/vip】53
-      - US(AzadNet.t.me)_356
-      - github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 3
-      - 美国【付费推荐：https//tt.vg/vip】63
-      - US(AzadNet.t.me)_344
-      - _US_美国_7
-      - github.com/freefq - 美国Cloudinnovation数据中心 5
-      - US(AzadNet.t.me)_059
-      - 美国_0714010
-      - 美国_0714015
-      - 加拿大【付费推荐：https//tt.vg/vip】169
-      - 美国【付费推荐：https//tt.vg/vip】199
-      - 美国【付费推荐：https//tt.vg/vip】32
-      - _US_美国_10
-      - _CA_加拿大->🇺🇸_US_美国 3
-      - US(AzadNet.t.me)_465
-      - US(AzadNet.t.me)_428
-      - 美国_07144062
-      - 美国_0714061
-      - 美国_0714126
-      - 美国_0714333
-      - AF(AzadNet.t.me)
-      - GB(AzadNet.t.me)_039
-      - 澳大利亚【付费推荐：https//tt.vg/vip】149
-      - 机场地址：254254.xyz
-      - IS(AzadNet.t.me)_002
-      - 新加坡【付费推荐：https//tt.vg/vip】165
-      - 18|🇸🇬 狮城特殊|@ripaojiedian
-      - 1|_KR_韩国 4
-      - 香港【付费推荐：https//tt.vg/vip】166
-      - CN-14.116.193.79-312
-      - 6,7,24|美国【付费推荐：https://tt.vg/vip】243
-      - 1,2,3,4,6,7|_US_美国 3
-      - 7|🇸🇬 新加坡【付费推荐：https://tt.vg/vip】...
-      - 6,7,16|美国【付费推荐：https://tt.vg/vip】86
-      - 6,7,11,13,15,16|塞浦路斯【付费推荐：https://tt.vg/vip】19...
-      - 8,24|🇺🇸_US_美国->🇮🇩_ID_印度尼西亚
-      - 1,2,3,4,6,7,12,16|_US_美国 14
-      - "0,6,7,15|🇺🇸 _US_美国 #25"
-      - 7|🇨🇦 加拿大【付费推荐：https://tt.vg/vip】...
-      - 16|🇳🇱 荷兰 325
-      - 6,7|美国【付费推荐：https://tt.vg/vip】44
-      - 1,1,2,2,3,3,4,4,6,7|_CN_中国->🇱🇺_LU_卢森堡
-      - 6,7,12|美国【付费推荐：https://tt.vg/vip】58
-      - 6,7|美国【付费推荐：https://tt.vg/vip】258
-      - 7|🇺🇲 美国【付费推荐：https://tt.vg/vip】1...
-      - "0,6,7|🇺🇸 _US_美国 #29"
-      - 18,19|🇹🇼 台湾|@ripaojiedian
-      - FR_法国 2
-      - US_美国 18 (DUP-2)
-      - 亚洲(油管:破解资源君) 4
-      - 亚洲(油管:破解资源君) 5
-      - 美国(油管:破解资源君) 21
-      - US 10 → tg@nicevpn123
-      - DK_speednode_0003
-      - EG_speednode_0004
-      - HK_speednode_0010
-      - IE_speednode_0011
-      - JP_speednode_0012
-      - JP_speednode_0014
-      - LV_speednode_0020
+      - CN-14.116.193.79-025
+      - US_speednode_0037
+      - 美国_0715339
+      - CN-14.18.89.198-005
+      - US_speednode_0039
+      - CN-14.116.193.79-034
+      - 16|🇺🇸 美国 246
+      - US_speednode_0047
+      - 法国_0715032
+      - "15|🇺🇸_US_美国_科网_15 #18"
+      - 16|🇺🇸 US(AzadNet.t.me)_482
+      - "15,24|🇺🇸_US_美国_科网_15 #21"
+      - 法国 001
+      - 美国_07151096
+      - 越南_0715019
+      - "15|🇺🇸_US_美国_科网_15 #25"
+      - US_speednode_0032
+      - Relay_ |22.04Mb
       - US_speednode_0061
-      - US_speednode_0062
-      - ZA_speednode_0065
+      - 美国_07151206
+      - "0,1,2,3,4,24|🇺🇸 _US_美国 #27"
+      - _US_美国_7
+      - "15|🇺🇸_US_美国_科网_15 #10"
+      - "0,11,16,24|🇺🇸 _US_美国->🇳🇱_NL_荷兰 #2"
+      - US_speednode_0038
+      - CN-14.116.193.79-020
+      - "15|🇺🇸_US_美国_科网_15 #18 2"
+      - 15|🇭🇰_HK_香港_科网_15
+      - "15|🇺🇸_US_美国_科网_15 #24"
+      - 法国_0715032 2
+      - GB(AzadNet.t.me)_039
+      - US_FreeNode.me_32
+      - 法国_0715032 3
+      - "15|🇺🇸_US_美国_科网_15 #18 3"
+      - 12,16|法国 001
+      - 1,2,3,4,6,7,23|_US_美国 20
+      - FR_speednode_0006
+      - _GB_英国
+      - 18,19|🇺🇸 美国|@ripaojiedian
+      - US_speednode_0054
+      - 16|🇺🇸 US(AzadNet.t.me)_621
+      - _US_美国 20
+      - US_speednode_0046
+      - CN-14.116.193.79-031
+      - CN-14.116.193.79-011
+      - US_speednode_0043
+      - US_speednode_0038 2
+      - _US_美国_24
+      - US_speednode_0041
+      - CN-14.18.103.121-012
+      - CN-14.116.193.79-008
+      - 下单地址：254254.xyz
+      - 1,2,3,4,6,7,16|_US_美国 16
+      - 美国_0715339 2
+      - "0,1,1,2,2,3,3,4,4,12,24|🇺🇸 _US_美国 #14"
+      - 亚太地区 v2rayfree.eu.org
+      - 6,7|中国【付费推荐：https://tt.vg/vip】185
+      - 15|🇭🇰_HK_香港_科网_15 2
+      - _US_美国 16
+      - US(AzadNet.t.me)_450
+      - 15|🇫🇷_FR_法国_科网_15
+      - _US_美国
+      - 美国_0714027
+      - _US_美国 13
+      - US_speednode_0037 2
+      - US_speednode_0030
+      - US_speednode_0048
+      - CN-14.116.193.79-000
+      - "0,12,24|🇺🇸 _US_美国 #6"
+      - CN-14.116.193.79-040
+      - 16|🇳🇱 荷兰 325
+      - "15|🇳🇱_NL_荷兰_科网_15 #1"
+      - FR_speednode_0008
+      - US_speednode_0041 2
+      - 网站地址：254254.xyz
+      - 美国_0715339 3
+      - CN-14.116.193.79-027
+      - "15|🇳🇱_NL_荷兰_科网_15 #1 2"
+      - 16|🇳🇱 荷兰 325 2
+      - 1,2,3,4|_HK_香港->🇸🇬_SG_新加坡
+      - 24|🇺🇸_US_美国_4_9
+      - "15|🇺🇸_US_美国_科网_15 #26"
+      - 美国_0714333
+      - Relay_ |23.36Mb
+      - 1,2,3,4,6,7,15|_CN_中国->🇭🇰_HK_香港
+      - 美国_07151096 2
+      - 6,7,16,18,19|美国【付费推荐：https://tt.vg/vip】203
+      - 荷兰 325
+      - _US_美国 21
+      - 法国_0715032 4
+      - 24|🇺🇸_US_美国_7_由快嘴科技提供：kkzui.com7
+      - "15|🇺🇸_US_美国_科网_15 #10 2"
+      - "15|🇺🇸_US_美国_科网_15 #2"
+      - 美国_0714351
+      - 美国_07151172
+      - 12,24|中国 011
+      - 美国_07151114
+      - "15|🇺🇸_US_美国_科网_15 #10 3"
+      - _GB_英国 2
+      - "15|🇺🇸_US_美国_科网_15 #9"
+      - "15|🇺🇸_US_美国_科网_15 #3"
+      - 16|🇳🇱NL荷兰(youtube阿伟科技)
+      - "15|🇺🇸_US_美国_科网_15 #17"
+      - "15|🇺🇸_US_美国_科网_15 #3 2"
+      - CN-14.18.89.198-044
+      - 6,7,15,24,24|中国【付费推荐：https://tt.vg/vip】135
+      - 24|🇺🇸_US_美国_5_由快嘴科技提供：kkzui.com2
+      - 1,2,3,4|_HK_香港->🇸🇬_SG_新加坡 2
+      - CN-14.116.193.79-045
+      - "0,6,7,15,16,24|🇺🇸 _US_美国 #12"
+      - 美国_0715025
+      - 16|🇳🇱NL荷兰(youtube阿伟科技) 2
+      - 6,7|中国【付费推荐：https://tt.vg/vip】185 2
+      - "15|🇺🇸_US_美国_科网_15 #6"
+      - 美国 Datability
+      - 美国_0714351 2
+      - 15|🇳🇱_NL_荷兰_科网_15
+      - Relay_ |27.69Mb
+      - US_speednode_0060
+      - "15|🇺🇸_US_美国_科网_15 #3 3"
+      - CN-14.116.193.79-039
+      - "15,15|🇺🇸_US_美国_科网_15 #22"
+      - 美国_0715018
+      - github.com/freefq - 南非  5
+      - "15|🇺🇸_US_美国_科网_15 #1"
+      - "15|🇺🇸_US_美国_科网_15 #24 2"
+      - "15|🇺🇸_US_美国_科网_15 #16"
+      - US_speednode_0044
+      - CN-14.18.89.198-006
+      - CN-14.116.193.79-017
+      - 美国_0715094
+      - "15|🇺🇸_US_美国_科网_15 #4"
+      - 23|🇺🇸_US_美国_29_44
+      - "15,15|🇺🇸_US_美国_科网_15 #8"
+      - 11,13,24|南非  5
+      - "@SSRSUB-V04-付费推荐:dlj.tf/ssrsub"
+      - 1,2,3,4,6,7,15|_CN_中国->🇭🇰_HK_香港 2
+      - US_speednode_0065
+      - CN-14.116.193.79-043
+      - "15|🇺🇸_US_美国_科网_15 #5"
+      - CN-14.18.89.198-021
+      - "15|🇺🇸_US_美国_科网_15 #2 2"
+      - CN-14.116.193.79-033
+      - CN-14.116.193.79-002
+      - CN-14.116.193.79-022
+      - 美国_0715037
+      - "15|🇺🇸_US_美国_科网_15 #7"
+      - 16|🇺🇸_US_美国_19
+      - "0,6,7,15|🇺🇸 _US_美国 #24"
+      - 15|🇺🇸_US_美国_科网_15
+      - 6,7|中国【付费推荐：https://tt.vg/vip】135
+      - "15|🇺🇸_US_美国_科网_15 #20"
+      - 16|🇺🇸_US_美国_19 2
+      - "15,15|🇺🇸_US_美国_科网_15 #12"
+      - Relay_ |19.47Mb
+      - NL荷兰(youtube阿伟科技)
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -725,86 +1331,162 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - github.com/freefq - 香港  8
-      - 香港【付费推荐：https//tt.vg/vip】52
-      - 日本 v2rayfree.eu.org
-      - 台湾_0714015
-      - github.com/freefq - 台湾省宜兰县中华电信 27
-      - github.com/freefq - 台湾省新竹市中华电信 26
-      - 台湾_0714023
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 美国_07142199
-      - US(AzadNet.t.me)_482
-      - 美国_0714107
-      - 美国_0714351
-      - 美国_07141748
-      - US(AzadNet.t.me)_488
-      - US(AzadNet.t.me)_449
-      - 美国_0714027
-      - 美国【付费推荐：https//tt.vg/vip】53
-      - US(AzadNet.t.me)_356
-      - github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 3
-      - 美国【付费推荐：https//tt.vg/vip】63
-      - US(AzadNet.t.me)_344
-      - _US_美国_7
-      - github.com/freefq - 美国Cloudinnovation数据中心 5
-      - US(AzadNet.t.me)_059
-      - 美国_0714010
-      - 美国_0714015
-      - 加拿大【付费推荐：https//tt.vg/vip】169
-      - 美国【付费推荐：https//tt.vg/vip】199
-      - 美国【付费推荐：https//tt.vg/vip】32
-      - _US_美国_10
-      - _CA_加拿大->🇺🇸_US_美国 3
-      - US(AzadNet.t.me)_465
-      - US(AzadNet.t.me)_428
-      - 美国_07144062
-      - 美国_0714061
-      - 美国_0714126
-      - 美国_0714333
-      - AF(AzadNet.t.me)
-      - GB(AzadNet.t.me)_039
-      - 澳大利亚【付费推荐：https//tt.vg/vip】149
-      - 机场地址：254254.xyz
-      - IS(AzadNet.t.me)_002
-      - 新加坡【付费推荐：https//tt.vg/vip】165
-      - 18|🇸🇬 狮城特殊|@ripaojiedian
-      - 1|_KR_韩国 4
-      - 香港【付费推荐：https//tt.vg/vip】166
-      - CN-14.116.193.79-312
-      - 6,7,24|美国【付费推荐：https://tt.vg/vip】243
-      - 1,2,3,4,6,7|_US_美国 3
-      - 7|🇸🇬 新加坡【付费推荐：https://tt.vg/vip】...
-      - 6,7,16|美国【付费推荐：https://tt.vg/vip】86
-      - 6,7,11,13,15,16|塞浦路斯【付费推荐：https://tt.vg/vip】19...
-      - 8,24|🇺🇸_US_美国->🇮🇩_ID_印度尼西亚
-      - 1,2,3,4,6,7,12,16|_US_美国 14
-      - "0,6,7,15|🇺🇸 _US_美国 #25"
-      - 7|🇨🇦 加拿大【付费推荐：https://tt.vg/vip】...
-      - 16|🇳🇱 荷兰 325
-      - 6,7|美国【付费推荐：https://tt.vg/vip】44
-      - 1,1,2,2,3,3,4,4,6,7|_CN_中国->🇱🇺_LU_卢森堡
-      - 6,7,12|美国【付费推荐：https://tt.vg/vip】58
-      - 6,7|美国【付费推荐：https://tt.vg/vip】258
-      - 7|🇺🇲 美国【付费推荐：https://tt.vg/vip】1...
-      - "0,6,7|🇺🇸 _US_美国 #29"
-      - 18,19|🇹🇼 台湾|@ripaojiedian
-      - FR_法国 2
-      - US_美国 18 (DUP-2)
-      - 亚洲(油管:破解资源君) 4
-      - 亚洲(油管:破解资源君) 5
-      - 美国(油管:破解资源君) 21
-      - US 10 → tg@nicevpn123
-      - DK_speednode_0003
-      - EG_speednode_0004
-      - HK_speednode_0010
-      - IE_speednode_0011
-      - JP_speednode_0012
-      - JP_speednode_0014
-      - LV_speednode_0020
+      - CN-14.116.193.79-025
+      - US_speednode_0037
+      - 美国_0715339
+      - CN-14.18.89.198-005
+      - US_speednode_0039
+      - CN-14.116.193.79-034
+      - 16|🇺🇸 美国 246
+      - US_speednode_0047
+      - 法国_0715032
+      - "15|🇺🇸_US_美国_科网_15 #18"
+      - 16|🇺🇸 US(AzadNet.t.me)_482
+      - "15,24|🇺🇸_US_美国_科网_15 #21"
+      - 法国 001
+      - 美国_07151096
+      - 越南_0715019
+      - "15|🇺🇸_US_美国_科网_15 #25"
+      - US_speednode_0032
+      - Relay_ |22.04Mb
       - US_speednode_0061
-      - US_speednode_0062
-      - ZA_speednode_0065
+      - 美国_07151206
+      - "0,1,2,3,4,24|🇺🇸 _US_美国 #27"
+      - _US_美国_7
+      - "15|🇺🇸_US_美国_科网_15 #10"
+      - "0,11,16,24|🇺🇸 _US_美国->🇳🇱_NL_荷兰 #2"
+      - US_speednode_0038
+      - CN-14.116.193.79-020
+      - "15|🇺🇸_US_美国_科网_15 #18 2"
+      - 15|🇭🇰_HK_香港_科网_15
+      - "15|🇺🇸_US_美国_科网_15 #24"
+      - 法国_0715032 2
+      - GB(AzadNet.t.me)_039
+      - US_FreeNode.me_32
+      - 法国_0715032 3
+      - "15|🇺🇸_US_美国_科网_15 #18 3"
+      - 12,16|法国 001
+      - 1,2,3,4,6,7,23|_US_美国 20
+      - FR_speednode_0006
+      - _GB_英国
+      - 18,19|🇺🇸 美国|@ripaojiedian
+      - US_speednode_0054
+      - 16|🇺🇸 US(AzadNet.t.me)_621
+      - _US_美国 20
+      - US_speednode_0046
+      - CN-14.116.193.79-031
+      - CN-14.116.193.79-011
+      - US_speednode_0043
+      - US_speednode_0038 2
+      - _US_美国_24
+      - US_speednode_0041
+      - CN-14.18.103.121-012
+      - CN-14.116.193.79-008
+      - 下单地址：254254.xyz
+      - 1,2,3,4,6,7,16|_US_美国 16
+      - 美国_0715339 2
+      - "0,1,1,2,2,3,3,4,4,12,24|🇺🇸 _US_美国 #14"
+      - 亚太地区 v2rayfree.eu.org
+      - 6,7|中国【付费推荐：https://tt.vg/vip】185
+      - 15|🇭🇰_HK_香港_科网_15 2
+      - _US_美国 16
+      - US(AzadNet.t.me)_450
+      - 15|🇫🇷_FR_法国_科网_15
+      - _US_美国
+      - 美国_0714027
+      - _US_美国 13
+      - US_speednode_0037 2
+      - US_speednode_0030
+      - US_speednode_0048
+      - CN-14.116.193.79-000
+      - "0,12,24|🇺🇸 _US_美国 #6"
+      - CN-14.116.193.79-040
+      - 16|🇳🇱 荷兰 325
+      - "15|🇳🇱_NL_荷兰_科网_15 #1"
+      - FR_speednode_0008
+      - US_speednode_0041 2
+      - 网站地址：254254.xyz
+      - 美国_0715339 3
+      - CN-14.116.193.79-027
+      - "15|🇳🇱_NL_荷兰_科网_15 #1 2"
+      - 16|🇳🇱 荷兰 325 2
+      - 1,2,3,4|_HK_香港->🇸🇬_SG_新加坡
+      - 24|🇺🇸_US_美国_4_9
+      - "15|🇺🇸_US_美国_科网_15 #26"
+      - 美国_0714333
+      - Relay_ |23.36Mb
+      - 1,2,3,4,6,7,15|_CN_中国->🇭🇰_HK_香港
+      - 美国_07151096 2
+      - 6,7,16,18,19|美国【付费推荐：https://tt.vg/vip】203
+      - 荷兰 325
+      - _US_美国 21
+      - 法国_0715032 4
+      - 24|🇺🇸_US_美国_7_由快嘴科技提供：kkzui.com7
+      - "15|🇺🇸_US_美国_科网_15 #10 2"
+      - "15|🇺🇸_US_美国_科网_15 #2"
+      - 美国_0714351
+      - 美国_07151172
+      - 12,24|中国 011
+      - 美国_07151114
+      - "15|🇺🇸_US_美国_科网_15 #10 3"
+      - _GB_英国 2
+      - "15|🇺🇸_US_美国_科网_15 #9"
+      - "15|🇺🇸_US_美国_科网_15 #3"
+      - 16|🇳🇱NL荷兰(youtube阿伟科技)
+      - "15|🇺🇸_US_美国_科网_15 #17"
+      - "15|🇺🇸_US_美国_科网_15 #3 2"
+      - CN-14.18.89.198-044
+      - 6,7,15,24,24|中国【付费推荐：https://tt.vg/vip】135
+      - 24|🇺🇸_US_美国_5_由快嘴科技提供：kkzui.com2
+      - 1,2,3,4|_HK_香港->🇸🇬_SG_新加坡 2
+      - CN-14.116.193.79-045
+      - "0,6,7,15,16,24|🇺🇸 _US_美国 #12"
+      - 美国_0715025
+      - 16|🇳🇱NL荷兰(youtube阿伟科技) 2
+      - 6,7|中国【付费推荐：https://tt.vg/vip】185 2
+      - "15|🇺🇸_US_美国_科网_15 #6"
+      - 美国 Datability
+      - 美国_0714351 2
+      - 15|🇳🇱_NL_荷兰_科网_15
+      - Relay_ |27.69Mb
+      - US_speednode_0060
+      - "15|🇺🇸_US_美国_科网_15 #3 3"
+      - CN-14.116.193.79-039
+      - "15,15|🇺🇸_US_美国_科网_15 #22"
+      - 美国_0715018
+      - github.com/freefq - 南非  5
+      - "15|🇺🇸_US_美国_科网_15 #1"
+      - "15|🇺🇸_US_美国_科网_15 #24 2"
+      - "15|🇺🇸_US_美国_科网_15 #16"
+      - US_speednode_0044
+      - CN-14.18.89.198-006
+      - CN-14.116.193.79-017
+      - 美国_0715094
+      - "15|🇺🇸_US_美国_科网_15 #4"
+      - 23|🇺🇸_US_美国_29_44
+      - "15,15|🇺🇸_US_美国_科网_15 #8"
+      - 11,13,24|南非  5
+      - "@SSRSUB-V04-付费推荐:dlj.tf/ssrsub"
+      - 1,2,3,4,6,7,15|_CN_中国->🇭🇰_HK_香港 2
+      - US_speednode_0065
+      - CN-14.116.193.79-043
+      - "15|🇺🇸_US_美国_科网_15 #5"
+      - CN-14.18.89.198-021
+      - "15|🇺🇸_US_美国_科网_15 #2 2"
+      - CN-14.116.193.79-033
+      - CN-14.116.193.79-002
+      - CN-14.116.193.79-022
+      - 美国_0715037
+      - "15|🇺🇸_US_美国_科网_15 #7"
+      - 16|🇺🇸_US_美国_19
+      - "0,6,7,15|🇺🇸 _US_美国 #24"
+      - 15|🇺🇸_US_美国_科网_15
+      - 6,7|中国【付费推荐：https://tt.vg/vip】135
+      - "15|🇺🇸_US_美国_科网_15 #20"
+      - 16|🇺🇸_US_美国_19 2
+      - "15,15|🇺🇸_US_美国_科网_15 #12"
+      - Relay_ |19.47Mb
+      - NL荷兰(youtube阿伟科技)
 rules:
  - PROCESS-NAME,GalaxyClient.exe,🔰 节点选择
  - PROCESS-NAME,Gwent.exe,🔰 节点选择
@@ -894,6 +1576,7 @@ rules:
  - DOMAIN-SUFFIX,wunderlist.com,Ⓜ️ 微软服务
  - DOMAIN-SUFFIX,yammer.com,Ⓜ️ 微软服务
  - DOMAIN-SUFFIX,yammerusercontent.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,bingapis.com,Ⓜ️ 微软服务
  - DOMAIN,app.adjust.com,🎯 全球直连
  - DOMAIN,bdtj.tagtic.cn,🎯 全球直连
  - DOMAIN,log.mmstat.com,🎯 全球直连
