@@ -5,251 +5,233 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: JP_158.101.86.128_07232023528f-634trojan, server: tk-005.xiaoxiaobujidao.xyz, port: 8443, type: trojan, password: 0a78837f-c9ad-3d6a-92dc-9d7cf813a0d4, skip-cert-verify: true, udp: true}
-  - {name: JP_speednode_0012, server: tk-006.xiaoxiaobujidao.xyz, port: 20001, type: trojan, password: 0a78837f-c9ad-3d6a-92dc-9d7cf813a0d4, sni: tk-006.xiaoxiaobujidao.xyz, skip-cert-verify: true, udp: true}
-  - {name: _US_美国->🇸🇬_SG_新加坡, server: cfcdn3.sanfencdn.net, port: 2052, type: vmess, uuid: 0e1215e4-aa7a-47ac-bbf9-27b84565eee5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg4.sanfencdn2.com}}, udp: true}
-  - {name: US(AzadNet.t.me)_487, server: 107.167.16.34, port: 45592, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_0723116, server: 198.2.203.51, port: 44672, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_0723686, server: 104.27.72.22, port: 8880, type: vmess, uuid: 006023f6-6d17-4ec6-af24-bcc5f7c44e35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ecc.vtcss.top}}, udp: true}
-  - {name: 美国_0723155, server: 156.225.67.126, port: 52801, type: vmess, uuid: 3a3c8a9c-334e-4360-adb8-a80a57ddcbbf, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_0723156, server: 156.225.67.47, port: 48123, type: vmess, uuid: 3ca912da-6ac2-418f-b9cf-45b6f694579b, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_0723694, server: 104.24.64.151, port: 8880, type: vmess, uuid: 006023f6-6d17-4ec6-af24-bcc5f7c44e35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ecc.vtcss.top}}, udp: true}
-  - {name: 美国_0723729, server: 104.25.191.215, port: 8880, type: vmess, uuid: 006023f6-6d17-4ec6-af24-bcc5f7c44e35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ecc.vtcss.top}}, udp: true}
-  - {name: 美国_0723681, server: 104.27.68.211, port: 8880, type: vmess, uuid: 006023f6-6d17-4ec6-af24-bcc5f7c44e35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ecc.vtcss.top}}, udp: true}
-  - {name: 美国_0723679, server: 104.25.103.144, port: 8880, type: vmess, uuid: 006023f6-6d17-4ec6-af24-bcc5f7c44e35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ecc.vtcss.top}}, udp: true}
-  - {name: 美国_0723707, server: 108.162.196.192, port: 8880, type: vmess, uuid: 006023f6-6d17-4ec6-af24-bcc5f7c44e35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ecc.vtcss.top}}, udp: true}
-  - {name: 美国_0723692, server: 104.25.138.162, port: 8880, type: vmess, uuid: 006023f6-6d17-4ec6-af24-bcc5f7c44e35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ecc.vtcss.top}}, udp: true}
-  - {name: 美国_0723058, server: 137.175.18.90, port: 42002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 加拿大_0723002, server: dongtaiwang3.com, port: 443, type: vmess, uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: d.freeh1.xyz}}, udp: true}
-  - {name: "1,2,3,4,24|_US_美国 18", server: cfcdn2.sanfencdn.net, port: 443, type: vmess, uuid: 0e1215e4-aa7a-47ac-bbf9-27b84565eee5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us2.sanfencdn1.com}}, udp: true}
-  - {name: github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 3, server: 107.167.16.102, port: 47074, type: vmess, uuid: b74f4afa-1a57-4aff-b7e5-8ad5ea33566f, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_0723055, server: 107.167.16.101, port: 47074, type: vmess, uuid: b74f4afa-1a57-4aff-b7e5-8ad5ea33566f, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "%�\x11�'��\b\x15T�f�J\x1e[�]\x1dX�zf/%�\x14�%�\x17���%�", server: 154.9.204.54, port: 60000, type: ssr, cipher: dummy, password: 52*wentermethod, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 加拿大【付费推荐：https//tt.vg/vip】145, server: dongtaiwang2.com, port: 443, type: vmess, uuid: 25a9f3b9-1e6d-40bd-968b-e0818c1b196f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 2.freek1.xyz}}, udp: true}
-  - {name: US(AzadNet.t.me)_344, server: 23.225.211.18, port: 42941, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国加利福尼亚州洛杉矶CeraNetworks数据中心 4, server: 23.225.211.21, port: 42941, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_0723266, server: us57.encrypted.my.id, port: 80, type: vmess, uuid: 18351862-d953-4ab9-afae-4998dcd56f8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us57.encrypted.my.id}}, udp: true}
-  - {name: 美国_0723827, server: us51.encrypted.my.id, port: 80, type: vmess, uuid: 6cc722d0-f6b5-4179-be13-c15cb9e75dd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us51.encrypted.my.id}}, udp: true}
-  - {name: 法国_0723063, server: 57.128.173.6, port: 443, type: trojan, password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d, sni: www.speedtest.net, skip-cert-verify: true, udp: true}
-  - {name: "%%�[%�\x1fG%%�[�%%�[�%%�[�����^�%�\x1fG�\tI%%�[վ���R^%%�[վ���R^%%�[վ���^�%�\x1f@����I{%�\x1fG�II%%�[վ���R^%%�[վ��֞�%�\x1f{%�\x1f{%�\x1fE%%�[�@%�R^�%�\x1fV%%%�[�R^�%�\x1f", server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 法国_0723057, server: 173.245.49.187, port: 8880, type: vmess, uuid: 006023f6-6d17-4ec6-af24-bcc5f7c44e35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ecc.vtcss.top}}, udp: true}
-  - {name: 塞浦路斯【付费推荐：https//tt.vg/vip】10, server: 203.28.8.207, port: 443, type: vmess, uuid: a128a5af-518a-4bc8-851e-b1f68b2c49d2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 4.saintink.eu.org}}, udp: true}
-  - {name: 荷兰【付费推荐：https//tt.vg/vip】31, server: 185.88.141.175, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: qGjmI8WQlF0tfhDbkLqGdN, udp: true}
-  - {name: github.com/freefq - 荷兰北荷兰省阿姆斯特丹Sharktech数据中心 1, server: 45.58.186.81, port: 51140, type: vmess, uuid: 4a138e19-0595-4d51-83c6-fd276cf7d307, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IS(AzadNet.t.me)_002, server: 37.235.49.152, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: CN-14.18.89.198-187, server: gzdx.jcnode.top, port: 17022, type: trojan, password: fc7d986e-34b0-4e05-a9b4-5b4d4a4e8dc6, sni: vn01.ckcloud.info, skip-cert-verify: true, udp: true}
-  - {name: CN-14.18.89.198-283, server: gzdx.jcnode.top, port: 17022, type: trojan, password: 23a734f0-13f7-4791-8ee6-99c07acd4a19, sni: vn01.ckcloud.info, skip-cert-verify: true, udp: true}
-  - {name: "1,2,3,4,6,7,16|_AU_澳大利亚", server: 139.99.245.164, port: 49921, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "6,7,11,12|哥斯达黎加【付费推荐：https://tt.vg/vip】1... #2", server: 190.93.245.21, port: 8880, type: vmess, uuid: 006023f6-6d17-4ec6-af24-bcc5f7c44e35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ecc.vtcss.top}}, udp: true}
-  - {name: "0,6,7,15,16,24|🇺🇸 _US_美国->🇳🇱_NL_荷兰", server: 156.225.67.103, port: 51792, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: KR_韩国, server: 221.150.109.69, port: 2003, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: SG_新加坡 3 (DUP-2%%�, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: "%�\x11�%�P��� _FR%�\x16���%%�", server: fr-am1-5.eqsunshine.com, port: 8181, type: ssr, cipher: aes-256-cfb, password: RcfVcDzzB, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 美国(油管:破解资源君) 14, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca.ilovescp.com}}, udp: true}
-  - {name: CN 10 → tg@nicevpn123, server: relay-eu.292228.xyz, port: 30062, type: vmess, uuid: 53cec899-dc98-4c9a-af58-81507f8ebe07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 102 → tg@nicevpn123, server: relay-eco-hk.292228.xyz, port: 30061, type: vmess, uuid: 53cec899-dc98-4c9a-af58-81507f8ebe07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 105 → tg@nicevpn123, server: relay-aq-elite.292228.xyz, port: 30072, type: vmess, uuid: 53cec899-dc98-4c9a-af58-81507f8ebe07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 112 → tg@nicevpn123, server: ap-jp-tunnel.292228.xyz, port: 30045, type: vmess, uuid: 53cec899-dc98-4c9a-af58-81507f8ebe07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 113 → tg@nicevpn123, server: relay-us.292228.xyz, port: 30052, type: vmess, uuid: 53cec899-dc98-4c9a-af58-81507f8ebe07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 114 → tg@nicevpn123, server: relay-eco-hk.292228.xyz, port: 30063, type: vmess, uuid: 53cec899-dc98-4c9a-af58-81507f8ebe07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 115 → tg@nicevpn123, server: gzyda.821111.xyz, port: 30072, type: vmess, uuid: 53cec899-dc98-4c9a-af58-81507f8ebe07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: DK_speednode_0004, server: 192.36.27.116, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: IE_speednode_0008, server: 23.92.127.134, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: JP_speednode_0010, server: tk-005.xiaoxiaobujidao.xyz, port: 8443, type: trojan, password: 0a78837f-c9ad-3d6a-92dc-9d7cf813a0d4, sni: tk-005.xiaoxiaobujidao.xyz, skip-cert-verify: true, udp: true}
-  - {name: LV_speednode_0017, server: 185.135.86.86, port: 51348, type: ss, cipher: chacha20-ietf-poly1305, password: PhilEhgKJQ540MNK7mNoim, udp: true}
-  - {name: SG_speednode_0022, server: weo-sg-2.laowufly.cf, port: 1234, type: ss, cipher: aes-256-gcm, password: NodeByTG@Weoworks/GFW绕过我吧..., udp: true}
-  - {name: US_speednode_0029, server: 147.182.216.10, port: 443, type: trojan, password: 71148cca-0963-4abe-ab01-7cea982c1513, sni: us02web.zoom.us, skip-cert-verify: true, udp: true}
-  - {name: US_speednode_0030, server: weo-sg-1.laowufly.cf, port: 23333, type: ss, cipher: aes-256-gcm, password: NodeByTG@Weoworks/GFW绕过我吧..., udp: true}
-  - {name: US_speednode_0031, server: 147.182.216.10, port: 443, type: trojan, password: 71148cca-0963-4abe-ab01-7cea982c1513, sni: getandroid.com, skip-cert-verify: true, udp: true}
-  - {name: US_speednode_0035, server: 185.47.255.219, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: US_speednode_0036, server: px-002.xiaoxiaobujidao.xyz, port: 12002, type: vmess, uuid: 0a78837f-c9ad-3d6a-92dc-9d7cf813a0d4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: px-002.xiaoxiaobujidao.xyz}}, udp: true}
-  - {name: US_speednode_0038, server: weo-sg-1.laowufly.cf, port: 2333, type: ss, cipher: aes-256-gcm, password: NodeByTG@Weoworks/GFW绕过我吧..., udp: true}
-  - {name: US_speednode_0039, server: px-000.xiaoxiaobujidao.xyz, port: 18443, type: trojan, password: 0a78837f-c9ad-3d6a-92dc-9d7cf813a0d4, sni: px-000.xiaoxiaobujidao.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[SSR] %�\x11�%�P��� _JP%�\x16��本_1_5@%�", server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: "[SSR] %�\x11�'��\b\x17�T�%%�\x18�Y��\x03\x13\x00%%�", server: 128.254.207.15, port: 443, type: ssr, cipher: aes-256-cfb, password: vyunme, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17422:TTp0SX, obfs-param: "t.me/vpnh%%�[�%%�", udp: true}
+  - {name: "[SS] DK_speednode_0002", server: 192.36.27.116, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: "[SS] LV_speednode_0010", server: 185.135.86.86, port: 51348, type: ss, cipher: chacha20-ietf-poly1305, password: PhilEhgKJQ540MNK7mNoim, udp: true}
+  - {name: "[SS] US_speednode_0020", server: weo-sg-1.laowufly.cf, port: 23333, type: ss, cipher: aes-256-gcm, password: NodeByTG@Weoworks/GFW绕过我吧..., udp: true}
+  - {name: "[SS] US_speednode_0025", server: 185.47.255.219, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: "[Trojan] VN_speednode_0030", server: 103.173.255.21, port: 443, type: trojan, password: a2cc8c63-3e75-44db-8230-08dbf5aeda17, skip-cert-verify: false, udp: true}
+  - {name: "[Trojan] VN_speednode_0031", server: 103.173.255.21, port: 443, type: trojan, password: 851a6dba-e7c9-4973-a16d-1ca7bc813574, skip-cert-verify: false, udp: true}
+  - {name: "[SS] ZA_speednode_0032", server: 41.203.4.34, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: "[SS] 🇦🇹 _FR_法国->🇦🇹_AT_奥地利", server: 135.125.244.103, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: "[Trojan] 🇨🇳 CN 11 → tg@nicevpn123", server: iplc-enter-tw-xe.fib-sys.xyz, port: 11451, type: trojan, password: 11a4e5be-3c87-37d2-aac8-00b85ef0fcdc, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇨🇳 中国_0724143", server: 103.184.45.62, port: 80, type: vmess, uuid: 62433eb1-131f-4d3c-877c-192914a2d45c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: uxx.vtcss.top}}, udp: true}
+  - {name: "[VMess] 🇨🇳 中国_0724146", server: 103.184.45.185, port: 80, type: vmess, uuid: 62433eb1-131f-4d3c-877c-192914a2d45c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: uxx.vtcss.top}}, udp: true}
+  - {name: "[VMess] 🇨🇳 中国_0724197", server: 103.184.44.40, port: 80, type: vmess, uuid: 62433eb1-131f-4d3c-877c-192914a2d45c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: uxx.vtcss.top}}, udp: true}
+  - {name: "[VMess] 🇩🇪 15,16,16|🇩🇪DE德国 7.4MB/s", server: shm.ircf.space, port: 443, type: vmess, uuid: 93ed0514-854b-4e6c-9967-f8dc4b40db8a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: hdfycdn1.cpionline.co, network: ws, ws-opts: {path: /, headers: {Host: hdfycdn1.cpionline.co}}, udp: true}
+  - {name: "[VMess] 🇫🇷 法国_0724030", server: 156.249.18.36, port: 48222, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇬🇧 GB(AzadNet.t.me)_039", server: 51.89.74.241, port: 51102, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[Trojan] 🇬🇧 英国 368", server: 57.128.173.6, port: 443, type: trojan, password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d, sni: www.speedtest.net, skip-cert-verify: false, udp: true}
+  - {name: "[SS] 🇮🇪 _IE_爱尔兰", server: 23.92.127.134, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: "[SS] 🇮🇸 IS(AzadNet.t.me)_002", server: 37.235.49.152, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: "[VMess] 🇯🇵 16|JP 36 → tg@nicevpn123", server: kr.2022app.xyz, port: 443, type: vmess, uuid: 2e361419-b3fd-4a2a-bb65-27c171bf2540, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: kr.2022app.xyz}}, udp: true}
+  - {name: "[SS] 🇯🇵 18|🇯🇵 日本特殊|@ripaojiedian", server: 3.112.232.18, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "[SS] 🇰🇷 18|🇰🇷 首尔特殊|@ripaojiedian", server: 43.200.6.48, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "[SS] 🇰🇷 KR_韩国 (DUP-1)", server: 221.150.109.69, port: 2003, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: "[VMess] 🇺🇸 1,2,3,4,6,7,11,11,13,15|_US_美国->🇩🇪_DE_德国", server: amszxc.66666654.xyz, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: "[VMess] 🇺🇸 15|🇺🇸_US_美国_25 #1", server: 103.184.44.202, port: 443, type: vmess, uuid: 62433eb1-131f-4d3c-877c-192914a2d45c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: uxx.vtcss.top}}, udp: true}
+  - {name: "[VMess] 🇺🇸 15|🇺🇸_US_美国_yui科技_180", server: 199.188.111.49, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.62317155.xyz}}, udp: true}
+  - {name: "[VMess] 🇺🇸 15|🇺🇸_US_美国_yui科技_208", server: 142.4.109.169, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.33337768.xyz}}, udp: true}
+  - {name: "[SS] 🇺🇸 18|🇺🇸 美国特殊|@ripaojiedian", server: 34.223.228.213, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US |28.03Mb", server: 108.166.203.181, port: 44945, type: vmess, uuid: 268a491b-764c-44d1-81a4-30de16130867, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇺🇸 US(AzadNet.t.me)_482", server: 107.167.29.235, port: 46321, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇺🇸 US-DediPath-Los Angeles 01 444", server: 103.160.204.17, port: 443, type: vmess, uuid: a2284cc1-20d8-4c78-a622-3e3cca767a70, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dedi2.1808.cf}}, udp: true}
+  - {name: "[VMess] 🇺🇸 US-DediPath-Los Angeles 01 462", server: 103.160.204.19, port: 443, type: vmess, uuid: a2284cc1-20d8-4c78-a622-3e3cca767a70, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dedi2.1808.cf}}, udp: true}
+  - {name: "[VMess] 🇺🇸 US-DediPath-Los Angeles 01 530", server: 103.160.204.7, port: 443, type: vmess, uuid: a2284cc1-20d8-4c78-a622-3e3cca767a70, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dedi2.1808.cf}}, udp: true}
+  - {name: "[VMess] 🇺🇸 US美国(youtube阿伟科技) 11", server: 45.199.138.154, port: 40200, type: vmess, uuid: 130c9f2e-42b1-4ebf-b345-e26456a061f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇺🇸 US美国(youtube阿伟科技) 6", server: 45.199.138.149, port: 47477, type: vmess, uuid: f9fa3a9c-f7d5-414f-88e6-6970585d9949, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇺🇸 US美国(youtube阿伟科技) 7", server: 45.199.138.90, port: 41144, type: vmess, uuid: 078eb24d-8d1d-4fbd-b914-ee58a897a35e, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇺🇸 US美国(youtube阿伟科技) 8", server: 45.199.138.98, port: 43132, type: vmess, uuid: d3133484-f2bf-4b0c-8d38-f8e645b65687, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_1", server: 120.233.43.30, port: 51002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_2", server: 120.233.43.74, port: 41273, type: vmess, uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇺🇸 _US_美国_yui科技_125", server: 45.199.138.158, port: 49234, type: vmess, uuid: f5250c4e-f855-4eff-b73c-a02226d42fe7, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇺🇸 _US_美国_yui科技_162", server: 45.199.138.174, port: 30404, type: vmess, uuid: 6fa560d4-35c5-4968-adfc-812c52878b84, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇺🇸 _US_美国_顺丰_44", server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: 789dfa0d-2028-4d53-a4db-252ea75d863e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ssrsub.v01.ssrsub.com}}, udp: true}
+  - {name: "[VMess] 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶CeraNetworks数据中心 3", server: 23.225.211.21, port: 42941, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇺🇸 美国 加利福尼亚州圣何塞MULTACOM机房", server: 45.199.138.145, port: 42111, type: vmess, uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇺🇸 美国_0724030", server: 156.225.67.47, port: 48123, type: vmess, uuid: 3ca912da-6ac2-418f-b9cf-45b6f694579b, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇺🇸 美国_0724093", server: 137.175.18.91, port: 42002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇺🇸 美国_0724111", server: 45.199.138.165, port: 55016, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇺🇸 美国_0724128", server: 137.175.18.90, port: 42002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇺🇸 美国_0724148", server: 142.4.126.70, port: 52212, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇺🇸 美国_0724172", server: 45.199.138.124, port: 47778, type: vmess, uuid: 37c29f42-b7c7-40c7-9da9-743dcc4895bc, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇺🇸 美国_0724173", server: 137.175.58.77, port: 40071, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇺🇸 美国_0724265", server: 137.175.18.89, port: 42002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇺🇸 美国_0724965", server: 156.225.67.126, port: 52801, type: vmess, uuid: 3a3c8a9c-334e-4360-adb8-a80a57ddcbbf, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_158.101.86.128_07232023528f-634trojan
-      - JP_speednode_0012
-      - _US_美国->🇸🇬_SG_新加坡
-      - US(AzadNet.t.me)_487
-      - 美国_0723116
-      - 美国_0723686
-      - 美国_0723155
-      - 美国_0723156
-      - 美国_0723694
-      - 美国_0723729
-      - 美国_0723681
-      - 美国_0723679
-      - 美国_0723707
-      - 美国_0723692
-      - 美国_0723058
-      - 加拿大_0723002
-      - 1,2,3,4,24|_US_美国 18
-      - github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 3
-      - 美国_0723055
-      - 加拿大【付费推荐：https//tt.vg/vip】145
-      - US(AzadNet.t.me)_344
-      - github.com/freefq - 美国加利福尼亚州洛杉矶CeraNetworks数据中心 4
-      - 美国_0723266
-      - 美国_0723827
-      - 法国_0723063
-      - 法国_0723057
-      - 塞浦路斯【付费推荐：https//tt.vg/vip】10
-      - 荷兰【付费推荐：https//tt.vg/vip】31
-      - github.com/freefq - 荷兰北荷兰省阿姆斯特丹Sharktech数据中心 1
-      - IS(AzadNet.t.me)_002
-      - CN-14.18.89.198-187
-      - CN-14.18.89.198-283
-      - 1,2,3,4,6,7,16|_AU_澳大利亚
-      - "6,7,11,12|哥斯达黎加【付费推荐：https://tt.vg/vip】1... #2"
-      - 0,6,7,15,16,24|🇺🇸 _US_美国->🇳🇱_NL_荷兰
-      - KR_韩国
-      - 美国(油管:破解资源君) 14
-      - CN 10 → tg@nicevpn123
-      - CN 102 → tg@nicevpn123
-      - CN 105 → tg@nicevpn123
-      - CN 112 → tg@nicevpn123
-      - CN 113 → tg@nicevpn123
-      - CN 114 → tg@nicevpn123
-      - CN 115 → tg@nicevpn123
-      - DK_speednode_0004
-      - IE_speednode_0008
-      - JP_speednode_0010
-      - LV_speednode_0017
-      - SG_speednode_0022
-      - US_speednode_0029
-      - US_speednode_0030
-      - US_speednode_0031
-      - US_speednode_0035
-      - US_speednode_0036
-      - US_speednode_0038
-      - US_speednode_0039
+      - "[SS] DK_speednode_0002"
+      - "[SS] LV_speednode_0010"
+      - "[SS] US_speednode_0020"
+      - "[SS] US_speednode_0025"
+      - "[Trojan] VN_speednode_0030"
+      - "[Trojan] VN_speednode_0031"
+      - "[SS] ZA_speednode_0032"
+      - "[SS] 🇦🇹 _FR_法国->🇦🇹_AT_奥地利"
+      - "[Trojan] 🇨🇳 CN 11 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 中国_0724143"
+      - "[VMess] 🇨🇳 中国_0724146"
+      - "[VMess] 🇨🇳 中国_0724197"
+      - "[VMess] 🇩🇪 15,16,16|🇩🇪DE德国 7.4MB/s"
+      - "[VMess] 🇫🇷 法国_0724030"
+      - "[VMess] 🇬🇧 GB(AzadNet.t.me)_039"
+      - "[Trojan] 🇬🇧 英国 368"
+      - "[SS] 🇮🇪 _IE_爱尔兰"
+      - "[SS] 🇮🇸 IS(AzadNet.t.me)_002"
+      - "[VMess] 🇯🇵 16|JP 36 → tg@nicevpn123"
+      - "[SS] 🇯🇵 18|🇯🇵 日本特殊|@ripaojiedian"
+      - "[SS] 🇰🇷 18|🇰🇷 首尔特殊|@ripaojiedian"
+      - "[SS] 🇰🇷 KR_韩国 (DUP-1)"
+      - "[VMess] 🇺🇸 1,2,3,4,6,7,11,11,13,15|_US_美国->🇩🇪_DE_德国"
+      - "[VMess] 🇺🇸 15|🇺🇸_US_美国_25 #1"
+      - "[VMess] 🇺🇸 15|🇺🇸_US_美国_yui科技_180"
+      - "[VMess] 🇺🇸 15|🇺🇸_US_美国_yui科技_208"
+      - "[SS] 🇺🇸 18|🇺🇸 美国特殊|@ripaojiedian"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US |28.03Mb"
+      - "[VMess] 🇺🇸 US(AzadNet.t.me)_482"
+      - "[VMess] 🇺🇸 US-DediPath-Los Angeles 01 444"
+      - "[VMess] 🇺🇸 US-DediPath-Los Angeles 01 462"
+      - "[VMess] 🇺🇸 US-DediPath-Los Angeles 01 530"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 11"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 6"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 7"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 8"
+      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_1"
+      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_2"
+      - "[VMess] 🇺🇸 _US_美国_yui科技_125"
+      - "[VMess] 🇺🇸 _US_美国_yui科技_162"
+      - "[VMess] 🇺🇸 _US_美国_顺丰_44"
+      - "[VMess] 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶CeraNetworks数据中心 3"
+      - "[VMess] 🇺🇸 美国 加利福尼亚州圣何塞MULTACOM机房"
+      - "[VMess] 🇺🇸 美国_0724030"
+      - "[VMess] 🇺🇸 美国_0724093"
+      - "[VMess] 🇺🇸 美国_0724111"
+      - "[VMess] 🇺🇸 美国_0724128"
+      - "[VMess] 🇺🇸 美国_0724148"
+      - "[VMess] 🇺🇸 美国_0724172"
+      - "[VMess] 🇺🇸 美国_0724173"
+      - "[VMess] 🇺🇸 美国_0724265"
+      - "[VMess] 🇺🇸 美国_0724965"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - JP_158.101.86.128_07232023528f-634trojan
-      - JP_speednode_0012
-      - _US_美国->🇸🇬_SG_新加坡
-      - US(AzadNet.t.me)_487
-      - 美国_0723116
-      - 美国_0723686
-      - 美国_0723155
-      - 美国_0723156
-      - 美国_0723694
-      - 美国_0723729
-      - 美国_0723681
-      - 美国_0723679
-      - 美国_0723707
-      - 美国_0723692
-      - 美国_0723058
-      - 加拿大_0723002
-      - 1,2,3,4,24|_US_美国 18
-      - github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 3
-      - 美国_0723055
-      - 加拿大【付费推荐：https//tt.vg/vip】145
-      - US(AzadNet.t.me)_344
-      - github.com/freefq - 美国加利福尼亚州洛杉矶CeraNetworks数据中心 4
-      - 美国_0723266
-      - 美国_0723827
-      - 法国_0723063
-      - 法国_0723057
-      - 塞浦路斯【付费推荐：https//tt.vg/vip】10
-      - 荷兰【付费推荐：https//tt.vg/vip】31
-      - github.com/freefq - 荷兰北荷兰省阿姆斯特丹Sharktech数据中心 1
-      - IS(AzadNet.t.me)_002
-      - CN-14.18.89.198-187
-      - CN-14.18.89.198-283
-      - 1,2,3,4,6,7,16|_AU_澳大利亚
-      - "6,7,11,12|哥斯达黎加【付费推荐：https://tt.vg/vip】1... #2"
-      - 0,6,7,15,16,24|🇺🇸 _US_美国->🇳🇱_NL_荷兰
-      - KR_韩国
-      - 美国(油管:破解资源君) 14
-      - CN 10 → tg@nicevpn123
-      - CN 102 → tg@nicevpn123
-      - CN 105 → tg@nicevpn123
-      - CN 112 → tg@nicevpn123
-      - CN 113 → tg@nicevpn123
-      - CN 114 → tg@nicevpn123
-      - CN 115 → tg@nicevpn123
-      - DK_speednode_0004
-      - IE_speednode_0008
-      - JP_speednode_0010
-      - LV_speednode_0017
-      - SG_speednode_0022
-      - US_speednode_0029
-      - US_speednode_0030
-      - US_speednode_0031
-      - US_speednode_0035
-      - US_speednode_0036
-      - US_speednode_0038
-      - US_speednode_0039
+      - "[SS] DK_speednode_0002"
+      - "[SS] LV_speednode_0010"
+      - "[SS] US_speednode_0020"
+      - "[SS] US_speednode_0025"
+      - "[Trojan] VN_speednode_0030"
+      - "[Trojan] VN_speednode_0031"
+      - "[SS] ZA_speednode_0032"
+      - "[SS] 🇦🇹 _FR_法国->🇦🇹_AT_奥地利"
+      - "[Trojan] 🇨🇳 CN 11 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 中国_0724143"
+      - "[VMess] 🇨🇳 中国_0724146"
+      - "[VMess] 🇨🇳 中国_0724197"
+      - "[VMess] 🇩🇪 15,16,16|🇩🇪DE德国 7.4MB/s"
+      - "[VMess] 🇫🇷 法国_0724030"
+      - "[VMess] 🇬🇧 GB(AzadNet.t.me)_039"
+      - "[Trojan] 🇬🇧 英国 368"
+      - "[SS] 🇮🇪 _IE_爱尔兰"
+      - "[SS] 🇮🇸 IS(AzadNet.t.me)_002"
+      - "[VMess] 🇯🇵 16|JP 36 → tg@nicevpn123"
+      - "[SS] 🇯🇵 18|🇯🇵 日本特殊|@ripaojiedian"
+      - "[SS] 🇰🇷 18|🇰🇷 首尔特殊|@ripaojiedian"
+      - "[SS] 🇰🇷 KR_韩国 (DUP-1)"
+      - "[VMess] 🇺🇸 1,2,3,4,6,7,11,11,13,15|_US_美国->🇩🇪_DE_德国"
+      - "[VMess] 🇺🇸 15|🇺🇸_US_美国_25 #1"
+      - "[VMess] 🇺🇸 15|🇺🇸_US_美国_yui科技_180"
+      - "[VMess] 🇺🇸 15|🇺🇸_US_美国_yui科技_208"
+      - "[SS] 🇺🇸 18|🇺🇸 美国特殊|@ripaojiedian"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US |28.03Mb"
+      - "[VMess] 🇺🇸 US(AzadNet.t.me)_482"
+      - "[VMess] 🇺🇸 US-DediPath-Los Angeles 01 444"
+      - "[VMess] 🇺🇸 US-DediPath-Los Angeles 01 462"
+      - "[VMess] 🇺🇸 US-DediPath-Los Angeles 01 530"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 11"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 6"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 7"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 8"
+      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_1"
+      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_2"
+      - "[VMess] 🇺🇸 _US_美国_yui科技_125"
+      - "[VMess] 🇺🇸 _US_美国_yui科技_162"
+      - "[VMess] 🇺🇸 _US_美国_顺丰_44"
+      - "[VMess] 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶CeraNetworks数据中心 3"
+      - "[VMess] 🇺🇸 美国 加利福尼亚州圣何塞MULTACOM机房"
+      - "[VMess] 🇺🇸 美国_0724030"
+      - "[VMess] 🇺🇸 美国_0724093"
+      - "[VMess] 🇺🇸 美国_0724111"
+      - "[VMess] 🇺🇸 美国_0724128"
+      - "[VMess] 🇺🇸 美国_0724148"
+      - "[VMess] 🇺🇸 美国_0724172"
+      - "[VMess] 🇺🇸 美国_0724173"
+      - "[VMess] 🇺🇸 美国_0724265"
+      - "[VMess] 🇺🇸 美国_0724965"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_158.101.86.128_07232023528f-634trojan
-      - JP_speednode_0012
-      - _US_美国->🇸🇬_SG_新加坡
-      - US(AzadNet.t.me)_487
-      - 美国_0723116
-      - 美国_0723686
-      - 美国_0723155
-      - 美国_0723156
-      - 美国_0723694
-      - 美国_0723729
-      - 美国_0723681
-      - 美国_0723679
-      - 美国_0723707
-      - 美国_0723692
-      - 美国_0723058
-      - 加拿大_0723002
-      - 1,2,3,4,24|_US_美国 18
-      - github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 3
-      - 美国_0723055
-      - 加拿大【付费推荐：https//tt.vg/vip】145
-      - US(AzadNet.t.me)_344
-      - github.com/freefq - 美国加利福尼亚州洛杉矶CeraNetworks数据中心 4
-      - 美国_0723266
-      - 美国_0723827
-      - 法国_0723063
-      - 法国_0723057
-      - 塞浦路斯【付费推荐：https//tt.vg/vip】10
-      - 荷兰【付费推荐：https//tt.vg/vip】31
-      - github.com/freefq - 荷兰北荷兰省阿姆斯特丹Sharktech数据中心 1
-      - IS(AzadNet.t.me)_002
-      - CN-14.18.89.198-187
-      - CN-14.18.89.198-283
-      - 1,2,3,4,6,7,16|_AU_澳大利亚
-      - "6,7,11,12|哥斯达黎加【付费推荐：https://tt.vg/vip】1... #2"
-      - 0,6,7,15,16,24|🇺🇸 _US_美国->🇳🇱_NL_荷兰
-      - KR_韩国
-      - 美国(油管:破解资源君) 14
-      - CN 10 → tg@nicevpn123
-      - CN 102 → tg@nicevpn123
-      - CN 105 → tg@nicevpn123
-      - CN 112 → tg@nicevpn123
-      - CN 113 → tg@nicevpn123
-      - CN 114 → tg@nicevpn123
-      - CN 115 → tg@nicevpn123
-      - DK_speednode_0004
-      - IE_speednode_0008
-      - JP_speednode_0010
-      - LV_speednode_0017
-      - SG_speednode_0022
-      - US_speednode_0029
-      - US_speednode_0030
-      - US_speednode_0031
-      - US_speednode_0035
-      - US_speednode_0036
-      - US_speednode_0038
-      - US_speednode_0039
+      - "[SS] DK_speednode_0002"
+      - "[SS] LV_speednode_0010"
+      - "[SS] US_speednode_0020"
+      - "[SS] US_speednode_0025"
+      - "[Trojan] VN_speednode_0030"
+      - "[Trojan] VN_speednode_0031"
+      - "[SS] ZA_speednode_0032"
+      - "[SS] 🇦🇹 _FR_法国->🇦🇹_AT_奥地利"
+      - "[Trojan] 🇨🇳 CN 11 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 中国_0724143"
+      - "[VMess] 🇨🇳 中国_0724146"
+      - "[VMess] 🇨🇳 中国_0724197"
+      - "[VMess] 🇩🇪 15,16,16|🇩🇪DE德国 7.4MB/s"
+      - "[VMess] 🇫🇷 法国_0724030"
+      - "[VMess] 🇬🇧 GB(AzadNet.t.me)_039"
+      - "[Trojan] 🇬🇧 英国 368"
+      - "[SS] 🇮🇪 _IE_爱尔兰"
+      - "[SS] 🇮🇸 IS(AzadNet.t.me)_002"
+      - "[VMess] 🇯🇵 16|JP 36 → tg@nicevpn123"
+      - "[SS] 🇯🇵 18|🇯🇵 日本特殊|@ripaojiedian"
+      - "[SS] 🇰🇷 18|🇰🇷 首尔特殊|@ripaojiedian"
+      - "[SS] 🇰🇷 KR_韩国 (DUP-1)"
+      - "[VMess] 🇺🇸 1,2,3,4,6,7,11,11,13,15|_US_美国->🇩🇪_DE_德国"
+      - "[VMess] 🇺🇸 15|🇺🇸_US_美国_25 #1"
+      - "[VMess] 🇺🇸 15|🇺🇸_US_美国_yui科技_180"
+      - "[VMess] 🇺🇸 15|🇺🇸_US_美国_yui科技_208"
+      - "[SS] 🇺🇸 18|🇺🇸 美国特殊|@ripaojiedian"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US |28.03Mb"
+      - "[VMess] 🇺🇸 US(AzadNet.t.me)_482"
+      - "[VMess] 🇺🇸 US-DediPath-Los Angeles 01 444"
+      - "[VMess] 🇺🇸 US-DediPath-Los Angeles 01 462"
+      - "[VMess] 🇺🇸 US-DediPath-Los Angeles 01 530"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 11"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 6"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 7"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 8"
+      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_1"
+      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_2"
+      - "[VMess] 🇺🇸 _US_美国_yui科技_125"
+      - "[VMess] 🇺🇸 _US_美国_yui科技_162"
+      - "[VMess] 🇺🇸 _US_美国_顺丰_44"
+      - "[VMess] 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶CeraNetworks数据中心 3"
+      - "[VMess] 🇺🇸 美国 加利福尼亚州圣何塞MULTACOM机房"
+      - "[VMess] 🇺🇸 美国_0724030"
+      - "[VMess] 🇺🇸 美国_0724093"
+      - "[VMess] 🇺🇸 美国_0724111"
+      - "[VMess] 🇺🇸 美国_0724128"
+      - "[VMess] 🇺🇸 美国_0724148"
+      - "[VMess] 🇺🇸 美国_0724172"
+      - "[VMess] 🇺🇸 美国_0724173"
+      - "[VMess] 🇺🇸 美国_0724265"
+      - "[VMess] 🇺🇸 美国_0724965"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -268,252 +250,236 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_158.101.86.128_07232023528f-634trojan
-      - JP_speednode_0012
-      - _US_美国->🇸🇬_SG_新加坡
-      - US(AzadNet.t.me)_487
-      - 美国_0723116
-      - 美国_0723686
-      - 美国_0723155
-      - 美国_0723156
-      - 美国_0723694
-      - 美国_0723729
-      - 美国_0723681
-      - 美国_0723679
-      - 美国_0723707
-      - 美国_0723692
-      - 美国_0723058
-      - 加拿大_0723002
-      - 1,2,3,4,24|_US_美国 18
-      - github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 3
-      - 美国_0723055
-      - 加拿大【付费推荐：https//tt.vg/vip】145
-      - US(AzadNet.t.me)_344
-      - github.com/freefq - 美国加利福尼亚州洛杉矶CeraNetworks数据中心 4
-      - 美国_0723266
-      - 美国_0723827
-      - 法国_0723063
-      - 法国_0723057
-      - 塞浦路斯【付费推荐：https//tt.vg/vip】10
-      - 荷兰【付费推荐：https//tt.vg/vip】31
-      - github.com/freefq - 荷兰北荷兰省阿姆斯特丹Sharktech数据中心 1
-      - IS(AzadNet.t.me)_002
-      - CN-14.18.89.198-187
-      - CN-14.18.89.198-283
-      - 1,2,3,4,6,7,16|_AU_澳大利亚
-      - "6,7,11,12|哥斯达黎加【付费推荐：https://tt.vg/vip】1... #2"
-      - 0,6,7,15,16,24|🇺🇸 _US_美国->🇳🇱_NL_荷兰
-      - KR_韩国
-      - 美国(油管:破解资源君) 14
-      - CN 10 → tg@nicevpn123
-      - CN 102 → tg@nicevpn123
-      - CN 105 → tg@nicevpn123
-      - CN 112 → tg@nicevpn123
-      - CN 113 → tg@nicevpn123
-      - CN 114 → tg@nicevpn123
-      - CN 115 → tg@nicevpn123
-      - DK_speednode_0004
-      - IE_speednode_0008
-      - JP_speednode_0010
-      - LV_speednode_0017
-      - SG_speednode_0022
-      - US_speednode_0029
-      - US_speednode_0030
-      - US_speednode_0031
-      - US_speednode_0035
-      - US_speednode_0036
-      - US_speednode_0038
-      - US_speednode_0039
+      - "[SS] DK_speednode_0002"
+      - "[SS] LV_speednode_0010"
+      - "[SS] US_speednode_0020"
+      - "[SS] US_speednode_0025"
+      - "[Trojan] VN_speednode_0030"
+      - "[Trojan] VN_speednode_0031"
+      - "[SS] ZA_speednode_0032"
+      - "[SS] 🇦🇹 _FR_法国->🇦🇹_AT_奥地利"
+      - "[Trojan] 🇨🇳 CN 11 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 中国_0724143"
+      - "[VMess] 🇨🇳 中国_0724146"
+      - "[VMess] 🇨🇳 中国_0724197"
+      - "[VMess] 🇩🇪 15,16,16|🇩🇪DE德国 7.4MB/s"
+      - "[VMess] 🇫🇷 法国_0724030"
+      - "[VMess] 🇬🇧 GB(AzadNet.t.me)_039"
+      - "[Trojan] 🇬🇧 英国 368"
+      - "[SS] 🇮🇪 _IE_爱尔兰"
+      - "[SS] 🇮🇸 IS(AzadNet.t.me)_002"
+      - "[VMess] 🇯🇵 16|JP 36 → tg@nicevpn123"
+      - "[SS] 🇯🇵 18|🇯🇵 日本特殊|@ripaojiedian"
+      - "[SS] 🇰🇷 18|🇰🇷 首尔特殊|@ripaojiedian"
+      - "[SS] 🇰🇷 KR_韩国 (DUP-1)"
+      - "[VMess] 🇺🇸 1,2,3,4,6,7,11,11,13,15|_US_美国->🇩🇪_DE_德国"
+      - "[VMess] 🇺🇸 15|🇺🇸_US_美国_25 #1"
+      - "[VMess] 🇺🇸 15|🇺🇸_US_美国_yui科技_180"
+      - "[VMess] 🇺🇸 15|🇺🇸_US_美国_yui科技_208"
+      - "[SS] 🇺🇸 18|🇺🇸 美国特殊|@ripaojiedian"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US |28.03Mb"
+      - "[VMess] 🇺🇸 US(AzadNet.t.me)_482"
+      - "[VMess] 🇺🇸 US-DediPath-Los Angeles 01 444"
+      - "[VMess] 🇺🇸 US-DediPath-Los Angeles 01 462"
+      - "[VMess] 🇺🇸 US-DediPath-Los Angeles 01 530"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 11"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 6"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 7"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 8"
+      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_1"
+      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_2"
+      - "[VMess] 🇺🇸 _US_美国_yui科技_125"
+      - "[VMess] 🇺🇸 _US_美国_yui科技_162"
+      - "[VMess] 🇺🇸 _US_美国_顺丰_44"
+      - "[VMess] 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶CeraNetworks数据中心 3"
+      - "[VMess] 🇺🇸 美国 加利福尼亚州圣何塞MULTACOM机房"
+      - "[VMess] 🇺🇸 美国_0724030"
+      - "[VMess] 🇺🇸 美国_0724093"
+      - "[VMess] 🇺🇸 美国_0724111"
+      - "[VMess] 🇺🇸 美国_0724128"
+      - "[VMess] 🇺🇸 美国_0724148"
+      - "[VMess] 🇺🇸 美国_0724172"
+      - "[VMess] 🇺🇸 美国_0724173"
+      - "[VMess] 🇺🇸 美国_0724265"
+      - "[VMess] 🇺🇸 美国_0724965"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - github.com/freefq - 美国加利福尼亚州洛杉矶CeraNetworks数据中心 4
+      - "[VMess] 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶CeraNetworks数据中心 3"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - JP_158.101.86.128_07232023528f-634trojan
-      - JP_speednode_0012
-      - _US_美国->🇸🇬_SG_新加坡
-      - US(AzadNet.t.me)_487
-      - 美国_0723116
-      - 美国_0723686
-      - 美国_0723155
-      - 美国_0723156
-      - 美国_0723694
-      - 美国_0723729
-      - 美国_0723681
-      - 美国_0723679
-      - 美国_0723707
-      - 美国_0723692
-      - 美国_0723058
-      - 加拿大_0723002
-      - 1,2,3,4,24|_US_美国 18
-      - github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 3
-      - 美国_0723055
-      - 加拿大【付费推荐：https//tt.vg/vip】145
-      - US(AzadNet.t.me)_344
-      - github.com/freefq - 美国加利福尼亚州洛杉矶CeraNetworks数据中心 4
-      - 美国_0723266
-      - 美国_0723827
-      - 法国_0723063
-      - 法国_0723057
-      - 塞浦路斯【付费推荐：https//tt.vg/vip】10
-      - 荷兰【付费推荐：https//tt.vg/vip】31
-      - github.com/freefq - 荷兰北荷兰省阿姆斯特丹Sharktech数据中心 1
-      - IS(AzadNet.t.me)_002
-      - CN-14.18.89.198-187
-      - CN-14.18.89.198-283
-      - 1,2,3,4,6,7,16|_AU_澳大利亚
-      - "6,7,11,12|哥斯达黎加【付费推荐：https://tt.vg/vip】1... #2"
-      - 0,6,7,15,16,24|🇺🇸 _US_美国->🇳🇱_NL_荷兰
-      - KR_韩国
-      - 美国(油管:破解资源君) 14
-      - CN 10 → tg@nicevpn123
-      - CN 102 → tg@nicevpn123
-      - CN 105 → tg@nicevpn123
-      - CN 112 → tg@nicevpn123
-      - CN 113 → tg@nicevpn123
-      - CN 114 → tg@nicevpn123
-      - CN 115 → tg@nicevpn123
-      - DK_speednode_0004
-      - IE_speednode_0008
-      - JP_speednode_0010
-      - LV_speednode_0017
-      - SG_speednode_0022
-      - US_speednode_0029
-      - US_speednode_0030
-      - US_speednode_0031
-      - US_speednode_0035
-      - US_speednode_0036
-      - US_speednode_0038
-      - US_speednode_0039
+      - "[SS] DK_speednode_0002"
+      - "[SS] LV_speednode_0010"
+      - "[SS] US_speednode_0020"
+      - "[SS] US_speednode_0025"
+      - "[Trojan] VN_speednode_0030"
+      - "[Trojan] VN_speednode_0031"
+      - "[SS] ZA_speednode_0032"
+      - "[SS] 🇦🇹 _FR_法国->🇦🇹_AT_奥地利"
+      - "[Trojan] 🇨🇳 CN 11 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 中国_0724143"
+      - "[VMess] 🇨🇳 中国_0724146"
+      - "[VMess] 🇨🇳 中国_0724197"
+      - "[VMess] 🇩🇪 15,16,16|🇩🇪DE德国 7.4MB/s"
+      - "[VMess] 🇫🇷 法国_0724030"
+      - "[VMess] 🇬🇧 GB(AzadNet.t.me)_039"
+      - "[Trojan] 🇬🇧 英国 368"
+      - "[SS] 🇮🇪 _IE_爱尔兰"
+      - "[SS] 🇮🇸 IS(AzadNet.t.me)_002"
+      - "[VMess] 🇯🇵 16|JP 36 → tg@nicevpn123"
+      - "[SS] 🇯🇵 18|🇯🇵 日本特殊|@ripaojiedian"
+      - "[SS] 🇰🇷 18|🇰🇷 首尔特殊|@ripaojiedian"
+      - "[SS] 🇰🇷 KR_韩国 (DUP-1)"
+      - "[VMess] 🇺🇸 1,2,3,4,6,7,11,11,13,15|_US_美国->🇩🇪_DE_德国"
+      - "[VMess] 🇺🇸 15|🇺🇸_US_美国_25 #1"
+      - "[VMess] 🇺🇸 15|🇺🇸_US_美国_yui科技_180"
+      - "[VMess] 🇺🇸 15|🇺🇸_US_美国_yui科技_208"
+      - "[SS] 🇺🇸 18|🇺🇸 美国特殊|@ripaojiedian"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US |28.03Mb"
+      - "[VMess] 🇺🇸 US(AzadNet.t.me)_482"
+      - "[VMess] 🇺🇸 US-DediPath-Los Angeles 01 444"
+      - "[VMess] 🇺🇸 US-DediPath-Los Angeles 01 462"
+      - "[VMess] 🇺🇸 US-DediPath-Los Angeles 01 530"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 11"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 6"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 7"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 8"
+      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_1"
+      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_2"
+      - "[VMess] 🇺🇸 _US_美国_yui科技_125"
+      - "[VMess] 🇺🇸 _US_美国_yui科技_162"
+      - "[VMess] 🇺🇸 _US_美国_顺丰_44"
+      - "[VMess] 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶CeraNetworks数据中心 3"
+      - "[VMess] 🇺🇸 美国 加利福尼亚州圣何塞MULTACOM机房"
+      - "[VMess] 🇺🇸 美国_0724030"
+      - "[VMess] 🇺🇸 美国_0724093"
+      - "[VMess] 🇺🇸 美国_0724111"
+      - "[VMess] 🇺🇸 美国_0724128"
+      - "[VMess] 🇺🇸 美国_0724148"
+      - "[VMess] 🇺🇸 美国_0724172"
+      - "[VMess] 🇺🇸 美国_0724173"
+      - "[VMess] 🇺🇸 美国_0724265"
+      - "[VMess] 🇺🇸 美国_0724965"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - JP_158.101.86.128_07232023528f-634trojan
-      - JP_speednode_0012
-      - _US_美国->🇸🇬_SG_新加坡
-      - US(AzadNet.t.me)_487
-      - 美国_0723116
-      - 美国_0723686
-      - 美国_0723155
-      - 美国_0723156
-      - 美国_0723694
-      - 美国_0723729
-      - 美国_0723681
-      - 美国_0723679
-      - 美国_0723707
-      - 美国_0723692
-      - 美国_0723058
-      - 加拿大_0723002
-      - 1,2,3,4,24|_US_美国 18
-      - github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 3
-      - 美国_0723055
-      - 加拿大【付费推荐：https//tt.vg/vip】145
-      - US(AzadNet.t.me)_344
-      - github.com/freefq - 美国加利福尼亚州洛杉矶CeraNetworks数据中心 4
-      - 美国_0723266
-      - 美国_0723827
-      - 法国_0723063
-      - 法国_0723057
-      - 塞浦路斯【付费推荐：https//tt.vg/vip】10
-      - 荷兰【付费推荐：https//tt.vg/vip】31
-      - github.com/freefq - 荷兰北荷兰省阿姆斯特丹Sharktech数据中心 1
-      - IS(AzadNet.t.me)_002
-      - CN-14.18.89.198-187
-      - CN-14.18.89.198-283
-      - 1,2,3,4,6,7,16|_AU_澳大利亚
-      - "6,7,11,12|哥斯达黎加【付费推荐：https://tt.vg/vip】1... #2"
-      - 0,6,7,15,16,24|🇺🇸 _US_美国->🇳🇱_NL_荷兰
-      - KR_韩国
-      - 美国(油管:破解资源君) 14
-      - CN 10 → tg@nicevpn123
-      - CN 102 → tg@nicevpn123
-      - CN 105 → tg@nicevpn123
-      - CN 112 → tg@nicevpn123
-      - CN 113 → tg@nicevpn123
-      - CN 114 → tg@nicevpn123
-      - CN 115 → tg@nicevpn123
-      - DK_speednode_0004
-      - IE_speednode_0008
-      - JP_speednode_0010
-      - LV_speednode_0017
-      - SG_speednode_0022
-      - US_speednode_0029
-      - US_speednode_0030
-      - US_speednode_0031
-      - US_speednode_0035
-      - US_speednode_0036
-      - US_speednode_0038
-      - US_speednode_0039
+      - "[SS] DK_speednode_0002"
+      - "[SS] LV_speednode_0010"
+      - "[SS] US_speednode_0020"
+      - "[SS] US_speednode_0025"
+      - "[Trojan] VN_speednode_0030"
+      - "[Trojan] VN_speednode_0031"
+      - "[SS] ZA_speednode_0032"
+      - "[SS] 🇦🇹 _FR_法国->🇦🇹_AT_奥地利"
+      - "[Trojan] 🇨🇳 CN 11 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 中国_0724143"
+      - "[VMess] 🇨🇳 中国_0724146"
+      - "[VMess] 🇨🇳 中国_0724197"
+      - "[VMess] 🇩🇪 15,16,16|🇩🇪DE德国 7.4MB/s"
+      - "[VMess] 🇫🇷 法国_0724030"
+      - "[VMess] 🇬🇧 GB(AzadNet.t.me)_039"
+      - "[Trojan] 🇬🇧 英国 368"
+      - "[SS] 🇮🇪 _IE_爱尔兰"
+      - "[SS] 🇮🇸 IS(AzadNet.t.me)_002"
+      - "[VMess] 🇯🇵 16|JP 36 → tg@nicevpn123"
+      - "[SS] 🇯🇵 18|🇯🇵 日本特殊|@ripaojiedian"
+      - "[SS] 🇰🇷 18|🇰🇷 首尔特殊|@ripaojiedian"
+      - "[SS] 🇰🇷 KR_韩国 (DUP-1)"
+      - "[VMess] 🇺🇸 1,2,3,4,6,7,11,11,13,15|_US_美国->🇩🇪_DE_德国"
+      - "[VMess] 🇺🇸 15|🇺🇸_US_美国_25 #1"
+      - "[VMess] 🇺🇸 15|🇺🇸_US_美国_yui科技_180"
+      - "[VMess] 🇺🇸 15|🇺🇸_US_美国_yui科技_208"
+      - "[SS] 🇺🇸 18|🇺🇸 美国特殊|@ripaojiedian"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US |28.03Mb"
+      - "[VMess] 🇺🇸 US(AzadNet.t.me)_482"
+      - "[VMess] 🇺🇸 US-DediPath-Los Angeles 01 444"
+      - "[VMess] 🇺🇸 US-DediPath-Los Angeles 01 462"
+      - "[VMess] 🇺🇸 US-DediPath-Los Angeles 01 530"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 11"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 6"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 7"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 8"
+      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_1"
+      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_2"
+      - "[VMess] 🇺🇸 _US_美国_yui科技_125"
+      - "[VMess] 🇺🇸 _US_美国_yui科技_162"
+      - "[VMess] 🇺🇸 _US_美国_顺丰_44"
+      - "[VMess] 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶CeraNetworks数据中心 3"
+      - "[VMess] 🇺🇸 美国 加利福尼亚州圣何塞MULTACOM机房"
+      - "[VMess] 🇺🇸 美国_0724030"
+      - "[VMess] 🇺🇸 美国_0724093"
+      - "[VMess] 🇺🇸 美国_0724111"
+      - "[VMess] 🇺🇸 美国_0724128"
+      - "[VMess] 🇺🇸 美国_0724148"
+      - "[VMess] 🇺🇸 美国_0724172"
+      - "[VMess] 🇺🇸 美国_0724173"
+      - "[VMess] 🇺🇸 美国_0724265"
+      - "[VMess] 🇺🇸 美国_0724965"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP_158.101.86.128_07232023528f-634trojan
-      - JP_speednode_0012
-      - _US_美国->🇸🇬_SG_新加坡
-      - US(AzadNet.t.me)_487
-      - 美国_0723116
-      - 美国_0723686
-      - 美国_0723155
-      - 美国_0723156
-      - 美国_0723694
-      - 美国_0723729
-      - 美国_0723681
-      - 美国_0723679
-      - 美国_0723707
-      - 美国_0723692
-      - 美国_0723058
-      - 加拿大_0723002
-      - 1,2,3,4,24|_US_美国 18
-      - github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 3
-      - 美国_0723055
-      - 加拿大【付费推荐：https//tt.vg/vip】145
-      - US(AzadNet.t.me)_344
-      - github.com/freefq - 美国加利福尼亚州洛杉矶CeraNetworks数据中心 4
-      - 美国_0723266
-      - 美国_0723827
-      - 法国_0723063
-      - 法国_0723057
-      - 塞浦路斯【付费推荐：https//tt.vg/vip】10
-      - 荷兰【付费推荐：https//tt.vg/vip】31
-      - github.com/freefq - 荷兰北荷兰省阿姆斯特丹Sharktech数据中心 1
-      - IS(AzadNet.t.me)_002
-      - CN-14.18.89.198-187
-      - CN-14.18.89.198-283
-      - 1,2,3,4,6,7,16|_AU_澳大利亚
-      - "6,7,11,12|哥斯达黎加【付费推荐：https://tt.vg/vip】1... #2"
-      - 0,6,7,15,16,24|🇺🇸 _US_美国->🇳🇱_NL_荷兰
-      - KR_韩国
-      - 美国(油管:破解资源君) 14
-      - CN 10 → tg@nicevpn123
-      - CN 102 → tg@nicevpn123
-      - CN 105 → tg@nicevpn123
-      - CN 112 → tg@nicevpn123
-      - CN 113 → tg@nicevpn123
-      - CN 114 → tg@nicevpn123
-      - CN 115 → tg@nicevpn123
-      - DK_speednode_0004
-      - IE_speednode_0008
-      - JP_speednode_0010
-      - LV_speednode_0017
-      - SG_speednode_0022
-      - US_speednode_0029
-      - US_speednode_0030
-      - US_speednode_0031
-      - US_speednode_0035
-      - US_speednode_0036
-      - US_speednode_0038
-      - US_speednode_0039
+      - "[SS] DK_speednode_0002"
+      - "[SS] LV_speednode_0010"
+      - "[SS] US_speednode_0020"
+      - "[SS] US_speednode_0025"
+      - "[Trojan] VN_speednode_0030"
+      - "[Trojan] VN_speednode_0031"
+      - "[SS] ZA_speednode_0032"
+      - "[SS] 🇦🇹 _FR_法国->🇦🇹_AT_奥地利"
+      - "[Trojan] 🇨🇳 CN 11 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 中国_0724143"
+      - "[VMess] 🇨🇳 中国_0724146"
+      - "[VMess] 🇨🇳 中国_0724197"
+      - "[VMess] 🇩🇪 15,16,16|🇩🇪DE德国 7.4MB/s"
+      - "[VMess] 🇫🇷 法国_0724030"
+      - "[VMess] 🇬🇧 GB(AzadNet.t.me)_039"
+      - "[Trojan] 🇬🇧 英国 368"
+      - "[SS] 🇮🇪 _IE_爱尔兰"
+      - "[SS] 🇮🇸 IS(AzadNet.t.me)_002"
+      - "[VMess] 🇯🇵 16|JP 36 → tg@nicevpn123"
+      - "[SS] 🇯🇵 18|🇯🇵 日本特殊|@ripaojiedian"
+      - "[SS] 🇰🇷 18|🇰🇷 首尔特殊|@ripaojiedian"
+      - "[SS] 🇰🇷 KR_韩国 (DUP-1)"
+      - "[VMess] 🇺🇸 1,2,3,4,6,7,11,11,13,15|_US_美国->🇩🇪_DE_德国"
+      - "[VMess] 🇺🇸 15|🇺🇸_US_美国_25 #1"
+      - "[VMess] 🇺🇸 15|🇺🇸_US_美国_yui科技_180"
+      - "[VMess] 🇺🇸 15|🇺🇸_US_美国_yui科技_208"
+      - "[SS] 🇺🇸 18|🇺🇸 美国特殊|@ripaojiedian"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US |28.03Mb"
+      - "[VMess] 🇺🇸 US(AzadNet.t.me)_482"
+      - "[VMess] 🇺🇸 US-DediPath-Los Angeles 01 444"
+      - "[VMess] 🇺🇸 US-DediPath-Los Angeles 01 462"
+      - "[VMess] 🇺🇸 US-DediPath-Los Angeles 01 530"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 11"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 6"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 7"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 8"
+      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_1"
+      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_2"
+      - "[VMess] 🇺🇸 _US_美国_yui科技_125"
+      - "[VMess] 🇺🇸 _US_美国_yui科技_162"
+      - "[VMess] 🇺🇸 _US_美国_顺丰_44"
+      - "[VMess] 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶CeraNetworks数据中心 3"
+      - "[VMess] 🇺🇸 美国 加利福尼亚州圣何塞MULTACOM机房"
+      - "[VMess] 🇺🇸 美国_0724030"
+      - "[VMess] 🇺🇸 美国_0724093"
+      - "[VMess] 🇺🇸 美国_0724111"
+      - "[VMess] 🇺🇸 美国_0724128"
+      - "[VMess] 🇺🇸 美国_0724148"
+      - "[VMess] 🇺🇸 美国_0724172"
+      - "[VMess] 🇺🇸 美国_0724173"
+      - "[VMess] 🇺🇸 美国_0724265"
+      - "[VMess] 🇺🇸 美国_0724965"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -529,67 +495,65 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP_158.101.86.128_07232023528f-634trojan
-      - JP_speednode_0012
-      - _US_美国->🇸🇬_SG_新加坡
-      - US(AzadNet.t.me)_487
-      - 美国_0723116
-      - 美国_0723686
-      - 美国_0723155
-      - 美国_0723156
-      - 美国_0723694
-      - 美国_0723729
-      - 美国_0723681
-      - 美国_0723679
-      - 美国_0723707
-      - 美国_0723692
-      - 美国_0723058
-      - 加拿大_0723002
-      - 1,2,3,4,24|_US_美国 18
-      - github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 3
-      - 美国_0723055
-      - 加拿大【付费推荐：https//tt.vg/vip】145
-      - US(AzadNet.t.me)_344
-      - github.com/freefq - 美国加利福尼亚州洛杉矶CeraNetworks数据中心 4
-      - 美国_0723266
-      - 美国_0723827
-      - 法国_0723063
-      - 法国_0723057
-      - 塞浦路斯【付费推荐：https//tt.vg/vip】10
-      - 荷兰【付费推荐：https//tt.vg/vip】31
-      - github.com/freefq - 荷兰北荷兰省阿姆斯特丹Sharktech数据中心 1
-      - IS(AzadNet.t.me)_002
-      - CN-14.18.89.198-187
-      - CN-14.18.89.198-283
-      - 1,2,3,4,6,7,16|_AU_澳大利亚
-      - "6,7,11,12|哥斯达黎加【付费推荐：https://tt.vg/vip】1... #2"
-      - 0,6,7,15,16,24|🇺🇸 _US_美国->🇳🇱_NL_荷兰
-      - KR_韩国
-      - 美国(油管:破解资源君) 14
-      - CN 10 → tg@nicevpn123
-      - CN 102 → tg@nicevpn123
-      - CN 105 → tg@nicevpn123
-      - CN 112 → tg@nicevpn123
-      - CN 113 → tg@nicevpn123
-      - CN 114 → tg@nicevpn123
-      - CN 115 → tg@nicevpn123
-      - DK_speednode_0004
-      - IE_speednode_0008
-      - JP_speednode_0010
-      - LV_speednode_0017
-      - SG_speednode_0022
-      - US_speednode_0029
-      - US_speednode_0030
-      - US_speednode_0031
-      - US_speednode_0035
-      - US_speednode_0036
-      - US_speednode_0038
-      - US_speednode_0039
+      - "[SS] DK_speednode_0002"
+      - "[SS] LV_speednode_0010"
+      - "[SS] US_speednode_0020"
+      - "[SS] US_speednode_0025"
+      - "[Trojan] VN_speednode_0030"
+      - "[Trojan] VN_speednode_0031"
+      - "[SS] ZA_speednode_0032"
+      - "[SS] 🇦🇹 _FR_法国->🇦🇹_AT_奥地利"
+      - "[Trojan] 🇨🇳 CN 11 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 中国_0724143"
+      - "[VMess] 🇨🇳 中国_0724146"
+      - "[VMess] 🇨🇳 中国_0724197"
+      - "[VMess] 🇩🇪 15,16,16|🇩🇪DE德国 7.4MB/s"
+      - "[VMess] 🇫🇷 法国_0724030"
+      - "[VMess] 🇬🇧 GB(AzadNet.t.me)_039"
+      - "[Trojan] 🇬🇧 英国 368"
+      - "[SS] 🇮🇪 _IE_爱尔兰"
+      - "[SS] 🇮🇸 IS(AzadNet.t.me)_002"
+      - "[VMess] 🇯🇵 16|JP 36 → tg@nicevpn123"
+      - "[SS] 🇯🇵 18|🇯🇵 日本特殊|@ripaojiedian"
+      - "[SS] 🇰🇷 18|🇰🇷 首尔特殊|@ripaojiedian"
+      - "[SS] 🇰🇷 KR_韩国 (DUP-1)"
+      - "[VMess] 🇺🇸 1,2,3,4,6,7,11,11,13,15|_US_美国->🇩🇪_DE_德国"
+      - "[VMess] 🇺🇸 15|🇺🇸_US_美国_25 #1"
+      - "[VMess] 🇺🇸 15|🇺🇸_US_美国_yui科技_180"
+      - "[VMess] 🇺🇸 15|🇺🇸_US_美国_yui科技_208"
+      - "[SS] 🇺🇸 18|🇺🇸 美国特殊|@ripaojiedian"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US |28.03Mb"
+      - "[VMess] 🇺🇸 US(AzadNet.t.me)_482"
+      - "[VMess] 🇺🇸 US-DediPath-Los Angeles 01 444"
+      - "[VMess] 🇺🇸 US-DediPath-Los Angeles 01 462"
+      - "[VMess] 🇺🇸 US-DediPath-Los Angeles 01 530"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 11"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 6"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 7"
+      - "[VMess] 🇺🇸 US美国(youtube阿伟科技) 8"
+      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_1"
+      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_2"
+      - "[VMess] 🇺🇸 _US_美国_yui科技_125"
+      - "[VMess] 🇺🇸 _US_美国_yui科技_162"
+      - "[VMess] 🇺🇸 _US_美国_顺丰_44"
+      - "[VMess] 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶CeraNetworks数据中心 3"
+      - "[VMess] 🇺🇸 美国 加利福尼亚州圣何塞MULTACOM机房"
+      - "[VMess] 🇺🇸 美国_0724030"
+      - "[VMess] 🇺🇸 美国_0724093"
+      - "[VMess] 🇺🇸 美国_0724111"
+      - "[VMess] 🇺🇸 美国_0724128"
+      - "[VMess] 🇺🇸 美国_0724148"
+      - "[VMess] 🇺🇸 美国_0724172"
+      - "[VMess] 🇺🇸 美国_0724173"
+      - "[VMess] 🇺🇸 美国_0724265"
+      - "[VMess] 🇺🇸 美国_0724965"
 rules:
  - PROCESS-NAME,GalaxyClient,🔰 节点选择
  - PROCESS-NAME,Gwent,🔰 节点选择
  - PROCESS-NAME,Steam,🔰 节点选择
+ - PROCESS-NAME,clash-config-manager Helper,🔰 节点选择
  - PROCESS-NAME,clash-config-manager,🔰 节点选择
+ - PROCESS-NAME,iTerm2,🔰 节点选择
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
  - IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
