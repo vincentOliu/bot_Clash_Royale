@@ -6,247 +6,643 @@ mode: Rule
 log-level: info
 external-controller: 9090
 proxies:
-  - {name: 中国_0922066, server: 120.226.50.94, port: 40702, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "7,15,18|中转 🇹🇼 Taiwan 01 @nodpai", server: tw1549.131jsq.one, port: 32002, type: vmess, uuid: 47d31242-26c7-42ab-8647-8c36e32cadcb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 14|🇺🇸 美国1|@ripaojiedian, server: 45.59.170.13, port: 443, type: ss, cipher: aes-256-ctr, password: VNewBypasser2023, udp: true}
-  - {name: Relay_🇫🇷FR-🇫🇷FR_24 | 8.19Mb, server: ukt-2.opensvr.net, port: 443, type: trojan, password: opentunnel.net-imohammad93, skip-cert-verify: true, udp: true}
-  - {name: 7|中转 🇯🇵 Japan 03 @nodpai, server: jp1074.131jsq.one, port: 32003, type: vmess, uuid: 47d31242-26c7-42ab-8647-8c36e32cadcb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_speednode_0019, server: 216.52.183.245, port: 80, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, plugin: obfs, plugin-opts: {mode: http, host: ""}, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_90 |20.33Mb, server: tempest-us.aikun.online, port: 443, type: trojan, password: 11e247e5-136d-45f1-844a-a7f054d36bab, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇭🇰HK-🇹🇼TW_32 |71.88Mb, server: tw01.trojanyyds.xyz, port: 443, type: trojan, password: 0c188781-2971-4bd9-ad72-73eb860d115f, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇯🇵_JP_日本, server: ihine-1083-v2-1.r-kcd-b.tuil.xyz, port: 29968, type: vmess, uuid: a590e692-4c8d-42dd-ba80-b1765a34f699, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: ihine-1083-v2-1.r-kcd-b.tuil.xyz}}, udp: true}
-  - {name: Relay_🇸🇬SG-🇨🇭CH_39 |15.53Mb, server: chjs.stablize.top, port: 443, type: trojan, password: 8008b06e-2d1d-421c-9cdc-20af1f59093a, skip-cert-verify: true, udp: true}
-  - {name: 1|_JP_, server: 103.168.154.90, port: 889, type: trojan, password: LYaOvuNXdQGTZNonhlRUKqOJcKVihzKY, sni: cdn.cjhh.lol, skip-cert-verify: true, udp: true}
-  - {name: "7,15|「蛋挞云,流媒体全解锁」🇹🇼 TW 01", server: tw1549.131jsq.one, port: 32002, type: vmess, uuid: 47d31242-26c7-42ab-8647-8c36e32cadcb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇸🇬_SG_新加坡, server: free.node.kk-proxy.pro, port: 24961, type: ss, cipher: chacha20-ietf-poly1305, password: f149711f-19fd-4af5-92ea-524b1c4efcac, udp: true}
-  - {name: Relay_🇯🇵JP-🇺🇸US_35 |51.03Mb, server: sg.stablize.top, port: 443, type: trojan, password: 83dc79d6-1216-4c94-a00a-4bd953e58398, skip-cert-verify: true, udp: true}
-  - {name: ZZ_110, server: 5.44.249.44, port: 3306, type: trojan, password: d02058f4f819dced, skip-cert-verify: true, udp: true}
-  - {name: "8,14|「蛋挞云,流媒体全解锁」🇹🇼 TW 01 #1", server: tw1549.131jsq.one, port: 32002, type: vmess, uuid: 47d31242-26c7-42ab-8647-8c36e32cadcb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 12|@hkaa0 |美国, server: free2.6114514.xyz, port: 2052, type: vmess, uuid: 8204f631-8a71-4f6a-821d-6c117edaf0fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: downloads2.6114514.xyz}}, udp: true}
-  - {name: "8|「蛋挞云,流媒体全解锁」🇺🇸 US 01", server: 64.31.55.47, port: 12345, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, udp: true}
-  - {name: Relay_🇭🇰HK-🇭🇰HK_30 |35.27Mb, server: hk02.trojanyyds.xyz, port: 443, type: trojan, password: ae4da236-bfec-4673-9e1e-bbbd942162a8, skip-cert-verify: true, udp: true}
-  - {name: _JP_日本->🇸🇬_SG_新加坡, server: 1gzdx2.156786.xyz, port: 37905, type: trojan, password: 98bae868-4f00-40e0-9603-8d848644ec44, sni: hkmax06.170203.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇸🇬SG_91 | 5.33Mb, server: sg.stablize.top, port: 443, type: trojan, password: 1937d8c5-77f3-4eec-b1f7-914806a3bfb8, skip-cert-verify: true, udp: true}
-  - {name: "7,11|中转 🇺🇸 United States 02 @nodpai", server: us1698.131jsq.one, port: 32005, type: vmess, uuid: 47d31242-26c7-42ab-8647-8c36e32cadcb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇯🇵JP-🇮🇪IE_34 | 0.01Mb, server: esjs.stablize.top, port: 443, type: trojan, password: 4565bf4a-951a-4981-9b60-4b1a496c9cbc, skip-cert-verify: true, udp: true}
-  - {name: 美国_09221054, server: 45.58.180.126, port: 54002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国_0922003, server: 120.226.50.94, port: 53300, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_93, server: jp2.twincloud.xyz, port: 443, type: trojan, password: 6455f944-7c07-4ab0-b88f-440e581f41d9, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇸🇬SG_102 | 1.14Mb, server: sg.stablize.top, port: 443, type: trojan, password: 254a29d6-51ff-4c89-8bef-03ca2de19abe, skip-cert-verify: true, udp: true}
-  - {name: 7|🇫🇮 Finland 01 @nodpai, server: 78.39.56.7, port: 17681, type: vmess, uuid: d5982bd4-d74c-43b6-9dc2-b42be1cc9223, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "12,15|免费梯子https://t.me/mftizi", server: 45.199.138.209, port: 50447, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca4690dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 14|🇰🇷 首尔特殊|@ripaojiedian, server: 43.202.63.42, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: US_speednode_0018, server: 216.52.183.245, port: 80, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, plugin: obfs, plugin-opts: {mode: http, host: None}, udp: true}
-  - {name: _CN_中国->🇸🇬_SG_新加坡 2, server: free.node.kk-proxy.pro, port: 55928, type: ss, cipher: chacha20-ietf-poly1305, password: f149711f-19fd-4af5-92ea-524b1c4efcac, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_88 | 4.45Mb, server: brjs.stablize.top, port: 443, type: trojan, password: 4565bf4a-951a-4981-9b60-4b1a496c9cbc, skip-cert-verify: true, udp: true}
-  - {name: ZZ_111, server: 5.44.249.53, port: 3306, type: trojan, password: 70face6dd320ea29, skip-cert-verify: true, udp: true}
-  - {name: 美国_0922054, server: 172.67.74.237, port: 80, type: vmess, uuid: 0ba28c05-7bd9-4cad-c329-482386a8e7a3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /TG:@hkaa0, headers: {Host: sg.wyhkaa0.cf}}, udp: true}
-  - {name: 美国_0922132, server: 45.58.180.126, port: 54002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_82 | 1.16Mb, server: usa.stablize.top, port: 443, type: trojan, password: e81c0cf0-d4f4-402e-81ee-4eb19a832ffa, skip-cert-verify: true, udp: true}
-  - {name: US_speednode_0016, server: 156.225.67.102, port: 52792, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "0,1,2,3,4,15,18|🇺🇸 _CN_中国->🇺🇸_US_美国 #2", server: 183.240.232.81, port: 33271, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇭🇰HK-🇭🇰HK_29 |69.59Mb, server: home-hkt-2.strongpipe.live, port: 29444, type: trojan, password: 7f831d7a-4890-4443-9db6-d3ae18d782a1, skip-cert-verify: true, udp: true}
-  - {name: US_87, server: hk02.trojanyyds.xyz, port: 443, type: trojan, password: 9bb27128-e6d2-4cac-bbd3-beb46c4417f8, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0057, server: 198.2.223.3, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695344553049}, udp: true}
+  - {name: 12|🇫🇷_FR_法国_fd_59, server: 156.249.18.50, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.69414502.xyz}}, udp: true}
+  - {name: US_speednode_0046, server: 156.225.67.25, port: 51381, type: vmess, uuid: 375e70f0-5d46-476f-8d69-0fb35c5548a9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "0,1,2,3,4,6,12|🇺🇸 _US_美国->🇳🇱_NL_荷兰", server: 45.199.138.180, port: 54885, type: vmess, uuid: d3133484-f2bf-4b0c-8d38-f8e645b65687, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0044, server: 45.199.138.221, port: 30022, type: vmess, uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_56, server: 198.2.208.81, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.71653718.xyz}}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_110, server: 45.199.138.212, port: 53636, type: vmess, uuid: 6fa560d4-35c5-4968-adfc-812c52878b84, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_145, server: 45.199.138.138, port: 30448, type: vmess, uuid: fe5f69e7-e183-439b-950b-9661ef0651f2, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇭🇰_HK_香港_fd_41, server: 156.245.8.174, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.49291261.xyz}}, udp: true}
+  - {name: "0,1,2,3,4,6,12,18|🇺🇸 _US_美国 #4", server: 156.225.67.48, port: 45493, type: vmess, uuid: 3ca912da-6ac2-418f-b9cf-45b6f694579b, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_87, server: 45.199.138.148, port: 47005, type: vmess, uuid: f9fa3a9c-f7d5-414f-88e6-6970585d9949, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_137, server: 198.2.218.28, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.51360818.xyz}}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_37, server: 156.225.67.206, port: 443, type: vmess, uuid: d7735058-1dac-4618-99ff-0aa0441ec2d7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.20163322.xyz}}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_124, server: 142.0.128.105, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.63084332.xyz}}, udp: true}
+  - {name: 12|🇺🇸 美国 335, server: 104.31.16.120, port: 8880, type: vmess, uuid: 67a341a7-5ae7-4d92-edad-9e8db87ce165, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: vcus1.vpn66.eu.org}}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_85, server: 198.200.56.108, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.62618992.xyz}}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_105, server: 45.199.138.221, port: 30022, type: vmess, uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 14|🇰🇷 韩国特殊|@ripaojiedian, server: 43.202.67.172, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "0,1,2,3,4,11,15,18|🇺🇸 _US_美国 #1", server: 45.199.138.209, port: 50447, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca4690dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_110 2, server: 45.199.138.212, port: 53636, type: vmess, uuid: 6fa560d4-35c5-4968-adfc-812c52878b84, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_0923347, server: 172.67.69.247, port: 8880, type: vmess, uuid: 67a341a7-5ae7-4d92-edad-9e8db87ce165, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: vcus1.vpn66.eu.org}}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_61, server: 198.2.216.198, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.29303416.xyz}}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_30, server: 156.225.67.55, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695344553049, headers: {Host: www.52326732.xyz}}, udp: true}
+  - {name: 12|🇭🇰_HK_香港_fd_125, server: 156.245.8.146, port: 42952, type: vmess, uuid: 63b4b829-7f01-4e26-b037-f04b1f098765, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_111, server: 45.199.138.160, port: 38722, type: vmess, uuid: 9549a2cf-129b-43a1-88db-ef7f648de74a, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0065, server: 137.175.22.147, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_10, server: 198.2.215.118, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.72795025.xyz}}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_114, server: 45.199.138.190, port: 30387, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_104, server: 45.199.138.168, port: 42725, type: vmess, uuid: 6e79eea4-5f72-4683-ad0e-5339f013421b, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0042, server: 198.2.208.81, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751}, udp: true}
+  - {name: US_speednode_0035, server: 192.74.228.187, port: 443, type: vmess, uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/140319000216}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_105 2, server: 45.199.138.221, port: 30022, type: vmess, uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "7,8|🇺🇸 United States 06 @nodpai", server: 108.181.10.17, port: 8080, type: vmess, uuid: b2e93e40-5553-11ee-b033-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_89, server: 198.2.244.8, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.40735439.xyz}}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_152, server: 137.175.49.210, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.36443410.xyz}}, udp: true}
+  - {name: US_speednode_0045, server: 45.199.138.194, port: 39351, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国1号机, server: dx1.992688.xyz, port: 8880, type: vmess, uuid: 67a341a7-5ae7-4d92-edad-9e8db87ce165, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: vcus1.vpn66.eu.org}}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_116, server: 107.148.203.113, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.46039636.xyz}}, udp: true}
+  - {name: "7|「蛋挞云,流媒体全解锁」🇯🇵 JP 01", server: jp6.lianpi.xyz, port: 23234, type: vmess, uuid: 1f3d67b4-6929-4598-90ca-84a841bf02e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_147, server: 142.4.100.201, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.22567471.xyz}}, udp: true}
+  - {name: _US_美国->🇳🇱_NL_荷兰, server: 45.199.138.180, port: 54885, type: vmess, uuid: d3133484-f2bf-4b0c-8d38-f8e645b65687, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_44, server: 156.225.67.16, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695293899027, headers: {Host: www.84938863.xyz}}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_122, server: 142.0.130.245, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.38259423.xyz}}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_87 2, server: 45.199.138.148, port: 47005, type: vmess, uuid: f9fa3a9c-f7d5-414f-88e6-6970585d9949, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_156, server: 137.175.96.25, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.20973848.xyz}}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_111 2, server: 45.199.138.160, port: 38722, type: vmess, uuid: 9549a2cf-129b-43a1-88db-ef7f648de74a, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_107, server: 137.175.22.147, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.82078541.xyz}}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_54, server: 142.4.122.68, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.28820006.xyz}}, udp: true}
+  - {name: 12|🇳🇱_NL_荷兰_fd_99, server: 154.85.1.244, port: 54982, type: vmess, uuid: 1d474f0b-e78d-4af9-bc4a-a467467bc7a7, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_86, server: 192.74.224.162, port: 53986, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0056, server: 198.2.216.198, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751}, udp: true}
+  - {name: 未知_0923022, server: db.shabijichang.com, port: 80, type: vmess, uuid: 53701585-591f-48a3-9515-8831ed0524ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: db.shabijichang.com}}, udp: true}
+  - {name: _US_美国_1, server: 156.225.67.48, port: 45493, type: vmess, uuid: 3ca912da-6ac2-418f-b9cf-45b6f694579b, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇺🇸_US_美国_3, server: 183.240.232.81, port: 33271, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "8,14|「蛋挞云,流媒体全解锁」🇯🇵 JP 01 #1", server: jp6.lianpi.xyz, port: 23234, type: vmess, uuid: 1f3d67b4-6929-4598-90ca-84a841bf02e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 频道34@wxgqlfx, server: 18.135.201.169, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_27, server: 156.225.67.114, port: 443, type: vmess, uuid: b8df3ef1-887f-4ee4-855f-4f80416c2464, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.12460158.xyz}}, udp: true}
+  - {name: _US_美国_2, server: 45.199.138.164, port: 48944, type: vmess, uuid: 65ea6727-4461-47a7-a5c4-fef2c67f2f79, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_86 2, server: 192.74.224.162, port: 53986, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_140, server: 192.74.234.220, port: 31315, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0050, server: 45.199.138.202, port: 46670, type: vmess, uuid: de491802-233e-47f2-8c6c-d19bcf5bd56b, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇭🇰_HK_香港_fd_14, server: 156.245.8.142, port: 443, type: vmess, uuid: 6193116d-96f9-4d7a-9be5-5bb06a69af0b, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.92873889.xyz}}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_98, server: 45.199.138.219, port: 55007, type: vmess, uuid: 130c9f2e-42b1-4ebf-b345-e26456a061f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 频道30@wxgqlfx, server: 3.13.210.200, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0048, server: 45.199.138.160, port: 38722, type: vmess, uuid: 9549a2cf-129b-43a1-88db-ef7f648de74a, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_50, server: 198.2.223.3, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695344553049, headers: {Host: www.45202449.xyz}}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_145 2, server: 45.199.138.138, port: 30448, type: vmess, uuid: fe5f69e7-e183-439b-950b-9661ef0651f2, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0039, server: 156.225.67.48, port: 45493, type: vmess, uuid: 3ca912da-6ac2-418f-b9cf-45b6f694579b, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "8,14|「蛋挞云,流媒体全解锁」🇯🇵 JP 01 #1 2", server: jp6.lianpi.xyz, port: 23234, type: vmess, uuid: 1f3d67b4-6929-4598-90ca-84a841bf02e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_57, server: 199.188.105.144, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.26167530.xyz}}, udp: true}
+  - {name: "0,1,2,3,4,18|🇺🇸 _US_美国 #3", server: 156.225.67.102, port: 52792, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_0923025, server: 45.199.138.180, port: 54885, type: vmess, uuid: d3133484-f2bf-4b0c-8d38-f8e645b65687, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_09231063, server: yhnsb.shabijichang.com, port: 80, type: vmess, uuid: 53701585-591f-48a3-9515-8831ed0524ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: yhnsb.shabijichang.com}}, udp: true}
+  - {name: US_speednode_0040, server: 45.199.138.223, port: 49922, type: vmess, uuid: bd249e37-7359-41ee-84a7-09e49e0ec5c4, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_150, server: 198.2.213.155, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.42438779.xyz}}, udp: true}
+  - {name: 美国 157, server: 45.199.138.209, port: 50447, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca4690dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_138, server: 198.2.207.101, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695293899027, headers: {Host: www.27790575.xyz}}, udp: true}
+  - {name: US_speednode_0052, server: 199.188.105.144, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_96, server: 45.199.138.223, port: 49922, type: vmess, uuid: bd249e37-7359-41ee-84a7-09e49e0ec5c4, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_143, server: 137.175.29.82, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.85830864.xyz}}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_102, server: 137.175.38.232, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.23896072.xyz}}, udp: true}
+  - {name: "12,15|免费梯子https://t.me/mftizi", server: 45.58.180.126, port: 54002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇭🇰_HK_香港_fd_125 2, server: 156.245.8.146, port: 42952, type: vmess, uuid: 63b4b829-7f01-4e26-b037-f04b1f098765, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0055, server: 156.225.67.80, port: 443, type: vmess, uuid: 3fd637ad-46fe-4f85-a6e8-86b00bca1122, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_32, server: 156.225.67.167, port: 443, type: vmess, uuid: ebec2adf-e940-446f-bed4-d8c91143b54a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.16658180.xyz}}, udp: true}
+  - {name: US_speednode_0049, server: 156.225.67.206, port: 443, type: vmess, uuid: d7735058-1dac-4618-99ff-0aa0441ec2d7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_121, server: 137.175.18.84, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695293899027, headers: {Host: www.66273264.xyz}}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_103, server: 192.74.240.28, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.70812236.xyz}}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_112, server: 45.199.138.202, port: 46670, type: vmess, uuid: de491802-233e-47f2-8c6c-d19bcf5bd56b, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_104 2, server: 45.199.138.168, port: 42725, type: vmess, uuid: 6e79eea4-5f72-4683-ad0e-5339f013421b, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 频道19@wxgqlfx, server: 15.236.184.78, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_71, server: 156.225.67.80, port: 443, type: vmess, uuid: 3fd637ad-46fe-4f85-a6e8-86b00bca1122, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.13340198.xyz}}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_96 2, server: 45.199.138.223, port: 49922, type: vmess, uuid: bd249e37-7359-41ee-84a7-09e49e0ec5c4, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "3|_CN_中国 #1", server: v4.heduian.online, port: 30866, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v4.heduian.online}}, udp: true}
+  - {name: 8|中转 🇸🇬 Singapore 03 @nodpai, server: free.node.kk-proxy.pro, port: 54455, type: ss, cipher: chacha20-ietf-poly1305, password: d2258ec0-2c7b-4dbc-9355-4dade1943e84, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_74, server: 198.2.208.176, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695344553049, headers: {Host: www.62317155.xyz}}, udp: true}
+  - {name: "0,1,2,3,4,6,15|🇸🇬 _CN_中国->🇸🇬_SG_新加坡", server: 120.226.50.94, port: 40702, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_149, server: 137.175.88.217, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.33337768.xyz}}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_112 2, server: 45.199.138.202, port: 46670, type: vmess, uuid: de491802-233e-47f2-8c6c-d19bcf5bd56b, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_100, server: 45.199.138.214, port: 44478, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_155, server: 142.4.110.144, port: 443, type: vmess, uuid: 68d238ce-3ca1-46dc-b833-a0916c829ad3, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.28251658.xyz}}, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_114 2, server: 45.199.138.190, port: 30387, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_102, server: in.stablize.top, port: 443, type: trojan, password: 7f5e1438-0c8f-46d2-baf4-7025c264532e, skip-cert-verify: true, udp: true}
+  - {name: US_108, server: hk02.trojanyyds.xyz, port: 443, type: trojan, password: 9bb27128-e6d2-4cac-bbd3-beb46c4417f8, skip-cert-verify: true, udp: true}
+  - {name: HK_speednode_0018, server: 156.245.8.174, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751}, udp: true}
+  - {name: Relay_🇺🇸US-🇸🇬SG_98 | 1.14Mb, server: sg.stablize.top, port: 443, type: trojan, password: 254a29d6-51ff-4c89-8bef-03ca2de19abe, skip-cert-verify: true, udp: true}
+  - {name: ZZ_119, server: 5.44.249.44, port: 3306, type: trojan, password: d02058f4f819dced, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0025, server: 216.52.183.245, port: 80, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, plugin: obfs, plugin-opts: {mode: http, host: None}, udp: true}
+  - {name: NL_speednode_0022, server: 46.182.107.217, port: 443, type: vmess, uuid: 3e016c4d-986e-42df-838c-6046f3d89ecf, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751}, udp: true}
+  - {name: ZZ_120, server: 5.44.249.42, port: 3306, type: trojan, password: d4e41ff772c7fd45, skip-cert-verify: true, udp: true}
+  - {name: FR_speednode_0013, server: 156.249.18.50, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751}, udp: true}
+  - {name: HK_speednode_0016, server: 156.245.8.248, port: 41671, type: vmess, uuid: 964bf499-9ec0-4378-92b6-87d8d861b2d0, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 8|中转 🇸🇬 Singapore 02 @nodpai, server: free.node.kk-proxy.pro, port: 55928, type: ss, cipher: chacha20-ietf-poly1305, password: d2258ec0-2c7b-4dbc-9355-4dade1943e84, udp: true}
+  - {name: 12|🇭🇰_HK_香港_fd_113, server: 156.245.8.248, port: 41671, type: vmess, uuid: 964bf499-9ec0-4378-92b6-87d8d861b2d0, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_45, server: 142.4.112.133, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695293899027, headers: {Host: www.80128693.xyz}}, udp: true}
+  - {name: 加拿大 180, server: fx3-108.181.10.17.nip.io, port: 2082, type: vmess, uuid: f37f7ce0-5550-11ee-b133-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2rayyngvpn, headers: {Host: fx3-108.181.10.17.nip.io}}, udp: true}
+  - {name: US_speednode_0027, server: 156.225.67.114, port: 443, type: vmess, uuid: b8df3ef1-887f-4ee4-855f-4f80416c2464, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751}, udp: true}
+  - {name: US_111, server: jp2.twincloud.xyz, port: 443, type: trojan, password: 6455f944-7c07-4ab0-b88f-440e581f41d9, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_6, server: 137.175.86.132, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.46074906.xyz}}, udp: true}
+  - {name: Relay_🇸🇬SG-🇦🇺AU_44 |49.22Mb, server: in.stablize.top, port: 443, type: trojan, password: da88864b-6aa5-4d18-8e36-ac809a24c571, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇸🇬SG_101 | 5.33Mb, server: sg.stablize.top, port: 443, type: trojan, password: 1937d8c5-77f3-4eec-b1f7-914806a3bfb8, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0024, server: 156.225.67.102, port: 52792, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_106 | 4.45Mb, server: brjs.stablize.top, port: 443, type: trojan, password: 4565bf4a-951a-4981-9b60-4b1a496c9cbc, skip-cert-verify: true, udp: true}
+  - {name: CN_14, server: official.taipeicitygovernment.kiev.ua, port: 8443, type: trojan, password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇮🇳IN_93 |68.04Mb, server: in01.trojanyyds.xyz, port: 443, type: trojan, password: 36d48ba9-7445-4b41-b210-58f4e07a627a, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0030, server: 137.175.0.148, port: 48813, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇫🇷FR-🇫🇷FR_26 | 8.19Mb, server: ukt-2.opensvr.net, port: 443, type: trojan, password: opentunnel.net-imohammad93, skip-cert-verify: true, udp: true}
+  - {name: 法国+格拉沃利讷OVH数据中心, server: 54.36.174.181, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国, server: 45.199.138.164, port: 48944, type: vmess, uuid: 65ea6727-4461-47a7-a5c4-fef2c67f2f79, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇭🇰HK-🇹🇼TW_35 |71.88Mb, server: tw01.trojanyyds.xyz, port: 443, type: trojan, password: 0c188781-2971-4bd9-ad72-73eb860d115f, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇸🇬SG-🇨🇭CH_43 |15.53Mb, server: chjs.stablize.top, port: 443, type: trojan, password: 8008b06e-2d1d-421c-9cdc-20af1f59093a, skip-cert-verify: true, udp: true}
+  - {name: CN_speednode_0010, server: free.node.kk-proxy.pro, port: 24962, type: ss, cipher: chacha20-ietf-poly1305, password: d2258ec0-2c7b-4dbc-9355-4dade1943e84, udp: true}
+  - {name: Relay_ |21.94Mb, server: 107.167.16.85, port: 443, type: vmess, uuid: 7640a1e7-9701-428e-a4b2-19b3e7dd6f9f, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/080822272914, headers: {Host: www.51109057.xyz}}, udp: true}
+  - {name: _RE_留尼汪, server: 45.59.170.13, port: 443, type: ss, cipher: aes-256-ctr, password: VNewBypasser2023, udp: true}
+  - {name: "|11.44Mb", server: 45.199.138.209, port: 50447, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca4690dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇭🇰HK-🇭🇰HK_34 |35.27Mb, server: hk02.trojanyyds.xyz, port: 443, type: trojan, password: ae4da236-bfec-4673-9e1e-bbbd942162a8, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0034, server: 45.199.138.219, port: 55007, type: vmess, uuid: 130c9f2e-42b1-4ebf-b345-e26456a061f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_98 2, server: 45.199.138.219, port: 55007, type: vmess, uuid: 130c9f2e-42b1-4ebf-b345-e26456a061f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 12, server: 45.199.138.209, port: 50447, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca4690dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: "0,1,2,3,4,12|🇺🇸 _US_美国 #24", server: 45.199.138.164, port: 48944, type: vmess, uuid: 65ea6727-4461-47a7-a5c4-fef2c67f2f79, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 12|🇺🇸_US_美国_欢迎订阅yui科技_89, server: 137.175.29.82, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695204567237, headers: {Host: www.85830864.xyz}}, udp: true}
-  - {name: Relay_🇺🇸US-🇮🇳IN_81 |68.04Mb, server: in01.trojanyyds.xyz, port: 443, type: trojan, password: 36d48ba9-7445-4b41-b210-58f4e07a627a, skip-cert-verify: true, udp: true}
-  - {name: ZZ_109, server: 5.44.249.42, port: 3306, type: trojan, password: d4e41ff772c7fd45, skip-cert-verify: true, udp: true}
-  - {name: IR_speednode_0012, server: 78.39.56.7, port: 17681, type: vmess, uuid: d5982bd4-d74c-43b6-9dc2-b42be1cc9223, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_0922049, server: 45.199.138.209, port: 50447, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca4690dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: KR_speednode_0015, server: 13.125.112.9, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 美国_0922024, server: db.shabijichang.com, port: 80, type: vmess, uuid: 53701585-591f-48a3-9515-8831ed0524ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: db.shabijichang.com}}, udp: true}
-  - {name: US_86, server: hk01.trojanyyds.xyz, port: 443, type: trojan, password: 9bb27128-e6d2-4cac-bbd3-beb46c4417f8, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇹🇼TW_84 |64.68Mb, server: tw02.trojanyyds.xyz, port: 443, type: trojan, password: 9bb27128-e6d2-4cac-bbd3-beb46c4417f8, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 荷兰  4, server: 46.182.107.217, port: 443, type: vmess, uuid: 3e016c4d-986e-42df-838c-6046f3d89ecf, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1695380351751, headers: {Host: www.56427994.xyz}}, udp: true}
+  - {name: 中国_0922066, server: 120.226.50.94, port: 40702, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: US_83, server: sk01.trojanyyds.xyz, port: 443, type: trojan, password: 9bb27128-e6d2-4cac-bbd3-beb46c4417f8, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇭🇰HK-🇭🇰HK_33 |69.59Mb, server: home-hkt-2.strongpipe.live, port: 29444, type: trojan, password: 7f831d7a-4890-4443-9db6-d3ae18d782a1, skip-cert-verify: true, udp: true}
   - {name: IR_speednode_0011, server: 78.39.56.7, port: 38566, type: vmess, uuid: ea8cb574-173f-4300-c924-cc9e17687031, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "12,15|关注电报https://t.me/mftizi", server: 120.226.50.94, port: 53300, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: ZZ_121, server: 5.44.249.53, port: 3306, type: trojan, password: 70face6dd320ea29, skip-cert-verify: true, udp: true}
+  - {name: US_speednode_0032, server: 45.199.138.148, port: 47005, type: vmess, uuid: f9fa3a9c-f7d5-414f-88e6-6970585d9949, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国_2 2, server: 45.199.138.164, port: 48944, type: vmess, uuid: 65ea6727-4461-47a7-a5c4-fef2c67f2f79, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 15|美国A|@ripaojiedian, server: 45.58.180.126, port: 54002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK_speednode_0009, server: 47.243.48.200, port: 443, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}, udp: true}
   - {name: FR_speednode_0014, server: 51.15.25.187, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 美国_0922131, server: 45.199.138.180, port: 54885, type: vmess, uuid: d3133484-f2bf-4b0c-8d38-f8e645b65687, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 172, server: 156.225.67.102, port: 52792, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇺🇸_US_美国_fd_100 2, server: 45.199.138.214, port: 44478, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 12|🇭🇰_HK_香港_fd_113 2, server: 156.245.8.248, port: 41671, type: vmess, uuid: 964bf499-9ec0-4378-92b6-87d8d861b2d0, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 173, server: 156.225.67.48, port: 45493, type: vmess, uuid: 3ca912da-6ac2-418f-b9cf-45b6f694579b, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国_0922066
-      - 7,15,18|中转 🇹🇼 Taiwan 01 @nodpai
-      - 14|🇺🇸 美国1|@ripaojiedian
-      - Relay_🇫🇷FR-🇫🇷FR_24 | 8.19Mb
-      - 7|中转 🇯🇵 Japan 03 @nodpai
-      - US_speednode_0019
-      - Relay_🇺🇸US-🇺🇸US_90 |20.33Mb
-      - Relay_🇭🇰HK-🇹🇼TW_32 |71.88Mb
-      - _CN_中国->🇯🇵_JP_日本
-      - Relay_🇸🇬SG-🇨🇭CH_39 |15.53Mb
-      - 1|_JP_
-      - 7,15|「蛋挞云,流媒体全解锁」🇹🇼 TW 01
-      - _CN_中国->🇸🇬_SG_新加坡
-      - Relay_🇯🇵JP-🇺🇸US_35 |51.03Mb
-      - ZZ_110
-      - "8,14|「蛋挞云,流媒体全解锁」🇹🇼 TW 01 #1"
-      - 12|@hkaa0 |美国
-      - 8|「蛋挞云,流媒体全解锁」🇺🇸 US 01
-      - Relay_🇭🇰HK-🇭🇰HK_30 |35.27Mb
-      - _JP_日本->🇸🇬_SG_新加坡
-      - Relay_🇺🇸US-🇸🇬SG_91 | 5.33Mb
-      - 7,11|中转 🇺🇸 United States 02 @nodpai
-      - Relay_🇯🇵JP-🇮🇪IE_34 | 0.01Mb
-      - 美国_09221054
-      - 中国_0922003
-      - US_93
-      - Relay_🇺🇸US-🇸🇬SG_102 | 1.14Mb
-      - 7|🇫🇮 Finland 01 @nodpai
+      - US_speednode_0057
+      - 12|🇫🇷_FR_法国_fd_59
+      - US_speednode_0046
+      - 0,1,2,3,4,6,12|🇺🇸 _US_美国->🇳🇱_NL_荷兰
+      - US_speednode_0044
+      - 12|🇺🇸_US_美国_fd_56
+      - 12|🇺🇸_US_美国_fd_110
+      - 12|🇺🇸_US_美国_fd_145
+      - 12|🇭🇰_HK_香港_fd_41
+      - "0,1,2,3,4,6,12,18|🇺🇸 _US_美国 #4"
+      - 12|🇺🇸_US_美国_fd_87
+      - 12|🇺🇸_US_美国_fd_137
+      - 12|🇺🇸_US_美国_fd_37
+      - 12|🇺🇸_US_美国_fd_124
+      - 12|🇺🇸 美国 335
+      - 12|🇺🇸_US_美国_fd_85
+      - 12|🇺🇸_US_美国_fd_105
+      - 14|🇰🇷 韩国特殊|@ripaojiedian
+      - "0,1,2,3,4,11,15,18|🇺🇸 _US_美国 #1"
+      - 12|🇺🇸_US_美国_fd_110 2
+      - 美国_0923347
+      - 12|🇺🇸_US_美国_fd_61
+      - 12|🇺🇸_US_美国_fd_30
+      - 12|🇭🇰_HK_香港_fd_125
+      - 12|🇺🇸_US_美国_fd_111
+      - US_speednode_0065
+      - 12|🇺🇸_US_美国_fd_10
+      - 12|🇺🇸_US_美国_fd_114
+      - 12|🇺🇸_US_美国_fd_104
+      - US_speednode_0042
+      - US_speednode_0035
+      - 12|🇺🇸_US_美国_fd_105 2
+      - 7,8|🇺🇸 United States 06 @nodpai
+      - 12|🇺🇸_US_美国_fd_89
+      - 12|🇺🇸_US_美国_fd_152
+      - US_speednode_0045
+      - 美国1号机
+      - 12|🇺🇸_US_美国_fd_116
+      - 7|「蛋挞云,流媒体全解锁」🇯🇵 JP 01
+      - 12|🇺🇸_US_美国_fd_147
+      - _US_美国->🇳🇱_NL_荷兰
+      - 12|🇺🇸_US_美国_fd_44
+      - 12|🇺🇸_US_美国_fd_122
+      - 12|🇺🇸_US_美国_fd_87 2
+      - 12|🇺🇸_US_美国_fd_156
+      - 12|🇺🇸_US_美国_fd_111 2
+      - 12|🇺🇸_US_美国_fd_107
+      - 12|🇺🇸_US_美国_fd_54
+      - 12|🇳🇱_NL_荷兰_fd_99
+      - 12|🇺🇸_US_美国_fd_86
+      - US_speednode_0056
+      - 未知_0923022
+      - _US_美国_1
+      - _CN_中国->🇺🇸_US_美国_3
+      - "8,14|「蛋挞云,流媒体全解锁」🇯🇵 JP 01 #1"
+      - 频道34@wxgqlfx
+      - 12|🇺🇸_US_美国_fd_27
+      - _US_美国_2
+      - 12|🇺🇸_US_美国_fd_86 2
+      - 12|🇺🇸_US_美国_fd_140
+      - US_speednode_0050
+      - 12|🇭🇰_HK_香港_fd_14
+      - 12|🇺🇸_US_美国_fd_98
+      - 频道30@wxgqlfx
+      - US_speednode_0048
+      - 12|🇺🇸_US_美国_fd_50
+      - 12|🇺🇸_US_美国_fd_145 2
+      - US_speednode_0039
+      - "8,14|「蛋挞云,流媒体全解锁」🇯🇵 JP 01 #1 2"
+      - 12|🇺🇸_US_美国_fd_57
+      - "0,1,2,3,4,18|🇺🇸 _US_美国 #3"
+      - 美国_0923025
+      - 美国_09231063
+      - US_speednode_0040
+      - 12|🇺🇸_US_美国_fd_150
+      - 美国 157
+      - 12|🇺🇸_US_美国_fd_138
+      - US_speednode_0052
+      - 12|🇺🇸_US_美国_fd_96
+      - 12|🇺🇸_US_美国_fd_143
+      - 12|🇺🇸_US_美国_fd_102
       - 12,15|免费梯子https://t.me/mftizi
-      - 14|🇰🇷 首尔特殊|@ripaojiedian
-      - US_speednode_0018
-      - _CN_中国->🇸🇬_SG_新加坡 2
-      - Relay_🇺🇸US-🇺🇸US_88 | 4.45Mb
-      - ZZ_111
-      - 美国_0922054
-      - 美国_0922132
-      - Relay_🇺🇸US-🇺🇸US_82 | 1.16Mb
-      - US_speednode_0016
-      - "0,1,2,3,4,15,18|🇺🇸 _CN_中国->🇺🇸_US_美国 #2"
-      - Relay_🇭🇰HK-🇭🇰HK_29 |69.59Mb
-      - US_87
+      - 12|🇭🇰_HK_香港_fd_125 2
+      - US_speednode_0055
+      - 12|🇺🇸_US_美国_fd_32
+      - US_speednode_0049
+      - 12|🇺🇸_US_美国_fd_121
+      - 12|🇺🇸_US_美国_fd_103
+      - 12|🇺🇸_US_美国_fd_112
+      - 12|🇺🇸_US_美国_fd_104 2
+      - 频道19@wxgqlfx
+      - 12|🇺🇸_US_美国_fd_71
+      - 12|🇺🇸_US_美国_fd_96 2
+      - "3|_CN_中国 #1"
+      - 8|中转 🇸🇬 Singapore 03 @nodpai
+      - 12|🇺🇸_US_美国_fd_74
+      - 0,1,2,3,4,6,15|🇸🇬 _CN_中国->🇸🇬_SG_新加坡
+      - 12|🇺🇸_US_美国_fd_149
+      - 12|🇺🇸_US_美国_fd_112 2
+      - 12|🇺🇸_US_美国_fd_100
+      - 12|🇺🇸_US_美国_fd_155
+      - 12|🇺🇸_US_美国_fd_114 2
+      - US_102
+      - US_108
+      - HK_speednode_0018
+      - Relay_🇺🇸US-🇸🇬SG_98 | 1.14Mb
+      - ZZ_119
+      - US_speednode_0025
+      - NL_speednode_0022
+      - ZZ_120
+      - FR_speednode_0013
+      - HK_speednode_0016
+      - 8|中转 🇸🇬 Singapore 02 @nodpai
+      - 12|🇭🇰_HK_香港_fd_113
+      - 12|🇺🇸_US_美国_fd_45
+      - 加拿大 180
+      - US_speednode_0027
+      - US_111
+      - 12|🇺🇸_US_美国_fd_6
+      - Relay_🇸🇬SG-🇦🇺AU_44 |49.22Mb
+      - Relay_🇺🇸US-🇸🇬SG_101 | 5.33Mb
+      - US_speednode_0024
+      - Relay_🇺🇸US-🇺🇸US_106 | 4.45Mb
+      - CN_14
+      - Relay_🇺🇸US-🇮🇳IN_93 |68.04Mb
+      - US_speednode_0030
+      - Relay_🇫🇷FR-🇫🇷FR_26 | 8.19Mb
+      - 法国+格拉沃利讷OVH数据中心
+      - _US_美国
+      - Relay_🇭🇰HK-🇹🇼TW_35 |71.88Mb
+      - Relay_🇸🇬SG-🇨🇭CH_43 |15.53Mb
+      - CN_speednode_0010
+      - Relay_ |21.94Mb
+      - _RE_留尼汪
+      - "|11.44Mb"
+      - Relay_🇭🇰HK-🇭🇰HK_34 |35.27Mb
+      - US_speednode_0034
+      - 12|🇺🇸_US_美国_fd_98 2
+      - github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 12
       - "0,1,2,3,4,12|🇺🇸 _US_美国 #24"
-      - 12|🇺🇸_US_美国_欢迎订阅yui科技_89
-      - Relay_🇺🇸US-🇮🇳IN_81 |68.04Mb
-      - ZZ_109
-      - IR_speednode_0012
-      - 美国_0922049
-      - KR_speednode_0015
-      - 美国_0922024
-      - US_86
-      - Relay_🇺🇸US-🇹🇼TW_84 |64.68Mb
+      - github.com/freefq - 荷兰  4
+      - 中国_0922066
       - US_83
+      - Relay_🇭🇰HK-🇭🇰HK_33 |69.59Mb
       - IR_speednode_0011
-      - 12,15|关注电报https://t.me/mftizi
+      - ZZ_121
+      - US_speednode_0032
+      - _US_美国_2 2
+      - 15|美国A|@ripaojiedian
+      - HK_speednode_0009
       - FR_speednode_0014
-      - 美国_0922131
+      - 美国 172
+      - 12|🇺🇸_US_美国_fd_100 2
+      - 12|🇭🇰_HK_香港_fd_113 2
+      - 美国 173
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - 中国_0922066
-      - 7,15,18|中转 🇹🇼 Taiwan 01 @nodpai
-      - 14|🇺🇸 美国1|@ripaojiedian
-      - Relay_🇫🇷FR-🇫🇷FR_24 | 8.19Mb
-      - 7|中转 🇯🇵 Japan 03 @nodpai
-      - US_speednode_0019
-      - Relay_🇺🇸US-🇺🇸US_90 |20.33Mb
-      - Relay_🇭🇰HK-🇹🇼TW_32 |71.88Mb
-      - _CN_中国->🇯🇵_JP_日本
-      - Relay_🇸🇬SG-🇨🇭CH_39 |15.53Mb
-      - 1|_JP_
-      - 7,15|「蛋挞云,流媒体全解锁」🇹🇼 TW 01
-      - _CN_中国->🇸🇬_SG_新加坡
-      - Relay_🇯🇵JP-🇺🇸US_35 |51.03Mb
-      - ZZ_110
-      - "8,14|「蛋挞云,流媒体全解锁」🇹🇼 TW 01 #1"
-      - 12|@hkaa0 |美国
-      - 8|「蛋挞云,流媒体全解锁」🇺🇸 US 01
-      - Relay_🇭🇰HK-🇭🇰HK_30 |35.27Mb
-      - _JP_日本->🇸🇬_SG_新加坡
-      - Relay_🇺🇸US-🇸🇬SG_91 | 5.33Mb
-      - 7,11|中转 🇺🇸 United States 02 @nodpai
-      - Relay_🇯🇵JP-🇮🇪IE_34 | 0.01Mb
-      - 美国_09221054
-      - 中国_0922003
-      - US_93
-      - Relay_🇺🇸US-🇸🇬SG_102 | 1.14Mb
-      - 7|🇫🇮 Finland 01 @nodpai
+      - US_speednode_0057
+      - 12|🇫🇷_FR_法国_fd_59
+      - US_speednode_0046
+      - 0,1,2,3,4,6,12|🇺🇸 _US_美国->🇳🇱_NL_荷兰
+      - US_speednode_0044
+      - 12|🇺🇸_US_美国_fd_56
+      - 12|🇺🇸_US_美国_fd_110
+      - 12|🇺🇸_US_美国_fd_145
+      - 12|🇭🇰_HK_香港_fd_41
+      - "0,1,2,3,4,6,12,18|🇺🇸 _US_美国 #4"
+      - 12|🇺🇸_US_美国_fd_87
+      - 12|🇺🇸_US_美国_fd_137
+      - 12|🇺🇸_US_美国_fd_37
+      - 12|🇺🇸_US_美国_fd_124
+      - 12|🇺🇸 美国 335
+      - 12|🇺🇸_US_美国_fd_85
+      - 12|🇺🇸_US_美国_fd_105
+      - 14|🇰🇷 韩国特殊|@ripaojiedian
+      - "0,1,2,3,4,11,15,18|🇺🇸 _US_美国 #1"
+      - 12|🇺🇸_US_美国_fd_110 2
+      - 美国_0923347
+      - 12|🇺🇸_US_美国_fd_61
+      - 12|🇺🇸_US_美国_fd_30
+      - 12|🇭🇰_HK_香港_fd_125
+      - 12|🇺🇸_US_美国_fd_111
+      - US_speednode_0065
+      - 12|🇺🇸_US_美国_fd_10
+      - 12|🇺🇸_US_美国_fd_114
+      - 12|🇺🇸_US_美国_fd_104
+      - US_speednode_0042
+      - US_speednode_0035
+      - 12|🇺🇸_US_美国_fd_105 2
+      - 7,8|🇺🇸 United States 06 @nodpai
+      - 12|🇺🇸_US_美国_fd_89
+      - 12|🇺🇸_US_美国_fd_152
+      - US_speednode_0045
+      - 美国1号机
+      - 12|🇺🇸_US_美国_fd_116
+      - 7|「蛋挞云,流媒体全解锁」🇯🇵 JP 01
+      - 12|🇺🇸_US_美国_fd_147
+      - _US_美国->🇳🇱_NL_荷兰
+      - 12|🇺🇸_US_美国_fd_44
+      - 12|🇺🇸_US_美国_fd_122
+      - 12|🇺🇸_US_美国_fd_87 2
+      - 12|🇺🇸_US_美国_fd_156
+      - 12|🇺🇸_US_美国_fd_111 2
+      - 12|🇺🇸_US_美国_fd_107
+      - 12|🇺🇸_US_美国_fd_54
+      - 12|🇳🇱_NL_荷兰_fd_99
+      - 12|🇺🇸_US_美国_fd_86
+      - US_speednode_0056
+      - 未知_0923022
+      - _US_美国_1
+      - _CN_中国->🇺🇸_US_美国_3
+      - "8,14|「蛋挞云,流媒体全解锁」🇯🇵 JP 01 #1"
+      - 频道34@wxgqlfx
+      - 12|🇺🇸_US_美国_fd_27
+      - _US_美国_2
+      - 12|🇺🇸_US_美国_fd_86 2
+      - 12|🇺🇸_US_美国_fd_140
+      - US_speednode_0050
+      - 12|🇭🇰_HK_香港_fd_14
+      - 12|🇺🇸_US_美国_fd_98
+      - 频道30@wxgqlfx
+      - US_speednode_0048
+      - 12|🇺🇸_US_美国_fd_50
+      - 12|🇺🇸_US_美国_fd_145 2
+      - US_speednode_0039
+      - "8,14|「蛋挞云,流媒体全解锁」🇯🇵 JP 01 #1 2"
+      - 12|🇺🇸_US_美国_fd_57
+      - "0,1,2,3,4,18|🇺🇸 _US_美国 #3"
+      - 美国_0923025
+      - 美国_09231063
+      - US_speednode_0040
+      - 12|🇺🇸_US_美国_fd_150
+      - 美国 157
+      - 12|🇺🇸_US_美国_fd_138
+      - US_speednode_0052
+      - 12|🇺🇸_US_美国_fd_96
+      - 12|🇺🇸_US_美国_fd_143
+      - 12|🇺🇸_US_美国_fd_102
       - 12,15|免费梯子https://t.me/mftizi
-      - 14|🇰🇷 首尔特殊|@ripaojiedian
-      - US_speednode_0018
-      - _CN_中国->🇸🇬_SG_新加坡 2
-      - Relay_🇺🇸US-🇺🇸US_88 | 4.45Mb
-      - ZZ_111
-      - 美国_0922054
-      - 美国_0922132
-      - Relay_🇺🇸US-🇺🇸US_82 | 1.16Mb
-      - US_speednode_0016
-      - "0,1,2,3,4,15,18|🇺🇸 _CN_中国->🇺🇸_US_美国 #2"
-      - Relay_🇭🇰HK-🇭🇰HK_29 |69.59Mb
-      - US_87
+      - 12|🇭🇰_HK_香港_fd_125 2
+      - US_speednode_0055
+      - 12|🇺🇸_US_美国_fd_32
+      - US_speednode_0049
+      - 12|🇺🇸_US_美国_fd_121
+      - 12|🇺🇸_US_美国_fd_103
+      - 12|🇺🇸_US_美国_fd_112
+      - 12|🇺🇸_US_美国_fd_104 2
+      - 频道19@wxgqlfx
+      - 12|🇺🇸_US_美国_fd_71
+      - 12|🇺🇸_US_美国_fd_96 2
+      - "3|_CN_中国 #1"
+      - 8|中转 🇸🇬 Singapore 03 @nodpai
+      - 12|🇺🇸_US_美国_fd_74
+      - 0,1,2,3,4,6,15|🇸🇬 _CN_中国->🇸🇬_SG_新加坡
+      - 12|🇺🇸_US_美国_fd_149
+      - 12|🇺🇸_US_美国_fd_112 2
+      - 12|🇺🇸_US_美国_fd_100
+      - 12|🇺🇸_US_美国_fd_155
+      - 12|🇺🇸_US_美国_fd_114 2
+      - US_102
+      - US_108
+      - HK_speednode_0018
+      - Relay_🇺🇸US-🇸🇬SG_98 | 1.14Mb
+      - ZZ_119
+      - US_speednode_0025
+      - NL_speednode_0022
+      - ZZ_120
+      - FR_speednode_0013
+      - HK_speednode_0016
+      - 8|中转 🇸🇬 Singapore 02 @nodpai
+      - 12|🇭🇰_HK_香港_fd_113
+      - 12|🇺🇸_US_美国_fd_45
+      - 加拿大 180
+      - US_speednode_0027
+      - US_111
+      - 12|🇺🇸_US_美国_fd_6
+      - Relay_🇸🇬SG-🇦🇺AU_44 |49.22Mb
+      - Relay_🇺🇸US-🇸🇬SG_101 | 5.33Mb
+      - US_speednode_0024
+      - Relay_🇺🇸US-🇺🇸US_106 | 4.45Mb
+      - CN_14
+      - Relay_🇺🇸US-🇮🇳IN_93 |68.04Mb
+      - US_speednode_0030
+      - Relay_🇫🇷FR-🇫🇷FR_26 | 8.19Mb
+      - 法国+格拉沃利讷OVH数据中心
+      - _US_美国
+      - Relay_🇭🇰HK-🇹🇼TW_35 |71.88Mb
+      - Relay_🇸🇬SG-🇨🇭CH_43 |15.53Mb
+      - CN_speednode_0010
+      - Relay_ |21.94Mb
+      - _RE_留尼汪
+      - "|11.44Mb"
+      - Relay_🇭🇰HK-🇭🇰HK_34 |35.27Mb
+      - US_speednode_0034
+      - 12|🇺🇸_US_美国_fd_98 2
+      - github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 12
       - "0,1,2,3,4,12|🇺🇸 _US_美国 #24"
-      - 12|🇺🇸_US_美国_欢迎订阅yui科技_89
-      - Relay_🇺🇸US-🇮🇳IN_81 |68.04Mb
-      - ZZ_109
-      - IR_speednode_0012
-      - 美国_0922049
-      - KR_speednode_0015
-      - 美国_0922024
-      - US_86
-      - Relay_🇺🇸US-🇹🇼TW_84 |64.68Mb
+      - github.com/freefq - 荷兰  4
+      - 中国_0922066
       - US_83
+      - Relay_🇭🇰HK-🇭🇰HK_33 |69.59Mb
       - IR_speednode_0011
-      - 12,15|关注电报https://t.me/mftizi
+      - ZZ_121
+      - US_speednode_0032
+      - _US_美国_2 2
+      - 15|美国A|@ripaojiedian
+      - HK_speednode_0009
       - FR_speednode_0014
-      - 美国_0922131
+      - 美国 172
+      - 12|🇺🇸_US_美国_fd_100 2
+      - 12|🇭🇰_HK_香港_fd_113 2
+      - 美国 173
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国_0922066
-      - 7,15,18|中转 🇹🇼 Taiwan 01 @nodpai
-      - 14|🇺🇸 美国1|@ripaojiedian
-      - Relay_🇫🇷FR-🇫🇷FR_24 | 8.19Mb
-      - 7|中转 🇯🇵 Japan 03 @nodpai
-      - US_speednode_0019
-      - Relay_🇺🇸US-🇺🇸US_90 |20.33Mb
-      - Relay_🇭🇰HK-🇹🇼TW_32 |71.88Mb
-      - _CN_中国->🇯🇵_JP_日本
-      - Relay_🇸🇬SG-🇨🇭CH_39 |15.53Mb
-      - 1|_JP_
-      - 7,15|「蛋挞云,流媒体全解锁」🇹🇼 TW 01
-      - _CN_中国->🇸🇬_SG_新加坡
-      - Relay_🇯🇵JP-🇺🇸US_35 |51.03Mb
-      - ZZ_110
-      - "8,14|「蛋挞云,流媒体全解锁」🇹🇼 TW 01 #1"
-      - 12|@hkaa0 |美国
-      - 8|「蛋挞云,流媒体全解锁」🇺🇸 US 01
-      - Relay_🇭🇰HK-🇭🇰HK_30 |35.27Mb
-      - _JP_日本->🇸🇬_SG_新加坡
-      - Relay_🇺🇸US-🇸🇬SG_91 | 5.33Mb
-      - 7,11|中转 🇺🇸 United States 02 @nodpai
-      - Relay_🇯🇵JP-🇮🇪IE_34 | 0.01Mb
-      - 美国_09221054
-      - 中国_0922003
-      - US_93
-      - Relay_🇺🇸US-🇸🇬SG_102 | 1.14Mb
-      - 7|🇫🇮 Finland 01 @nodpai
+      - US_speednode_0057
+      - 12|🇫🇷_FR_法国_fd_59
+      - US_speednode_0046
+      - 0,1,2,3,4,6,12|🇺🇸 _US_美国->🇳🇱_NL_荷兰
+      - US_speednode_0044
+      - 12|🇺🇸_US_美国_fd_56
+      - 12|🇺🇸_US_美国_fd_110
+      - 12|🇺🇸_US_美国_fd_145
+      - 12|🇭🇰_HK_香港_fd_41
+      - "0,1,2,3,4,6,12,18|🇺🇸 _US_美国 #4"
+      - 12|🇺🇸_US_美国_fd_87
+      - 12|🇺🇸_US_美国_fd_137
+      - 12|🇺🇸_US_美国_fd_37
+      - 12|🇺🇸_US_美国_fd_124
+      - 12|🇺🇸 美国 335
+      - 12|🇺🇸_US_美国_fd_85
+      - 12|🇺🇸_US_美国_fd_105
+      - 14|🇰🇷 韩国特殊|@ripaojiedian
+      - "0,1,2,3,4,11,15,18|🇺🇸 _US_美国 #1"
+      - 12|🇺🇸_US_美国_fd_110 2
+      - 美国_0923347
+      - 12|🇺🇸_US_美国_fd_61
+      - 12|🇺🇸_US_美国_fd_30
+      - 12|🇭🇰_HK_香港_fd_125
+      - 12|🇺🇸_US_美国_fd_111
+      - US_speednode_0065
+      - 12|🇺🇸_US_美国_fd_10
+      - 12|🇺🇸_US_美国_fd_114
+      - 12|🇺🇸_US_美国_fd_104
+      - US_speednode_0042
+      - US_speednode_0035
+      - 12|🇺🇸_US_美国_fd_105 2
+      - 7,8|🇺🇸 United States 06 @nodpai
+      - 12|🇺🇸_US_美国_fd_89
+      - 12|🇺🇸_US_美国_fd_152
+      - US_speednode_0045
+      - 美国1号机
+      - 12|🇺🇸_US_美国_fd_116
+      - 7|「蛋挞云,流媒体全解锁」🇯🇵 JP 01
+      - 12|🇺🇸_US_美国_fd_147
+      - _US_美国->🇳🇱_NL_荷兰
+      - 12|🇺🇸_US_美国_fd_44
+      - 12|🇺🇸_US_美国_fd_122
+      - 12|🇺🇸_US_美国_fd_87 2
+      - 12|🇺🇸_US_美国_fd_156
+      - 12|🇺🇸_US_美国_fd_111 2
+      - 12|🇺🇸_US_美国_fd_107
+      - 12|🇺🇸_US_美国_fd_54
+      - 12|🇳🇱_NL_荷兰_fd_99
+      - 12|🇺🇸_US_美国_fd_86
+      - US_speednode_0056
+      - 未知_0923022
+      - _US_美国_1
+      - _CN_中国->🇺🇸_US_美国_3
+      - "8,14|「蛋挞云,流媒体全解锁」🇯🇵 JP 01 #1"
+      - 频道34@wxgqlfx
+      - 12|🇺🇸_US_美国_fd_27
+      - _US_美国_2
+      - 12|🇺🇸_US_美国_fd_86 2
+      - 12|🇺🇸_US_美国_fd_140
+      - US_speednode_0050
+      - 12|🇭🇰_HK_香港_fd_14
+      - 12|🇺🇸_US_美国_fd_98
+      - 频道30@wxgqlfx
+      - US_speednode_0048
+      - 12|🇺🇸_US_美国_fd_50
+      - 12|🇺🇸_US_美国_fd_145 2
+      - US_speednode_0039
+      - "8,14|「蛋挞云,流媒体全解锁」🇯🇵 JP 01 #1 2"
+      - 12|🇺🇸_US_美国_fd_57
+      - "0,1,2,3,4,18|🇺🇸 _US_美国 #3"
+      - 美国_0923025
+      - 美国_09231063
+      - US_speednode_0040
+      - 12|🇺🇸_US_美国_fd_150
+      - 美国 157
+      - 12|🇺🇸_US_美国_fd_138
+      - US_speednode_0052
+      - 12|🇺🇸_US_美国_fd_96
+      - 12|🇺🇸_US_美国_fd_143
+      - 12|🇺🇸_US_美国_fd_102
       - 12,15|免费梯子https://t.me/mftizi
-      - 14|🇰🇷 首尔特殊|@ripaojiedian
-      - US_speednode_0018
-      - _CN_中国->🇸🇬_SG_新加坡 2
-      - Relay_🇺🇸US-🇺🇸US_88 | 4.45Mb
-      - ZZ_111
-      - 美国_0922054
-      - 美国_0922132
-      - Relay_🇺🇸US-🇺🇸US_82 | 1.16Mb
-      - US_speednode_0016
-      - "0,1,2,3,4,15,18|🇺🇸 _CN_中国->🇺🇸_US_美国 #2"
-      - Relay_🇭🇰HK-🇭🇰HK_29 |69.59Mb
-      - US_87
+      - 12|🇭🇰_HK_香港_fd_125 2
+      - US_speednode_0055
+      - 12|🇺🇸_US_美国_fd_32
+      - US_speednode_0049
+      - 12|🇺🇸_US_美国_fd_121
+      - 12|🇺🇸_US_美国_fd_103
+      - 12|🇺🇸_US_美国_fd_112
+      - 12|🇺🇸_US_美国_fd_104 2
+      - 频道19@wxgqlfx
+      - 12|🇺🇸_US_美国_fd_71
+      - 12|🇺🇸_US_美国_fd_96 2
+      - "3|_CN_中国 #1"
+      - 8|中转 🇸🇬 Singapore 03 @nodpai
+      - 12|🇺🇸_US_美国_fd_74
+      - 0,1,2,3,4,6,15|🇸🇬 _CN_中国->🇸🇬_SG_新加坡
+      - 12|🇺🇸_US_美国_fd_149
+      - 12|🇺🇸_US_美国_fd_112 2
+      - 12|🇺🇸_US_美国_fd_100
+      - 12|🇺🇸_US_美国_fd_155
+      - 12|🇺🇸_US_美国_fd_114 2
+      - US_102
+      - US_108
+      - HK_speednode_0018
+      - Relay_🇺🇸US-🇸🇬SG_98 | 1.14Mb
+      - ZZ_119
+      - US_speednode_0025
+      - NL_speednode_0022
+      - ZZ_120
+      - FR_speednode_0013
+      - HK_speednode_0016
+      - 8|中转 🇸🇬 Singapore 02 @nodpai
+      - 12|🇭🇰_HK_香港_fd_113
+      - 12|🇺🇸_US_美国_fd_45
+      - 加拿大 180
+      - US_speednode_0027
+      - US_111
+      - 12|🇺🇸_US_美国_fd_6
+      - Relay_🇸🇬SG-🇦🇺AU_44 |49.22Mb
+      - Relay_🇺🇸US-🇸🇬SG_101 | 5.33Mb
+      - US_speednode_0024
+      - Relay_🇺🇸US-🇺🇸US_106 | 4.45Mb
+      - CN_14
+      - Relay_🇺🇸US-🇮🇳IN_93 |68.04Mb
+      - US_speednode_0030
+      - Relay_🇫🇷FR-🇫🇷FR_26 | 8.19Mb
+      - 法国+格拉沃利讷OVH数据中心
+      - _US_美国
+      - Relay_🇭🇰HK-🇹🇼TW_35 |71.88Mb
+      - Relay_🇸🇬SG-🇨🇭CH_43 |15.53Mb
+      - CN_speednode_0010
+      - Relay_ |21.94Mb
+      - _RE_留尼汪
+      - "|11.44Mb"
+      - Relay_🇭🇰HK-🇭🇰HK_34 |35.27Mb
+      - US_speednode_0034
+      - 12|🇺🇸_US_美国_fd_98 2
+      - github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 12
       - "0,1,2,3,4,12|🇺🇸 _US_美国 #24"
-      - 12|🇺🇸_US_美国_欢迎订阅yui科技_89
-      - Relay_🇺🇸US-🇮🇳IN_81 |68.04Mb
-      - ZZ_109
-      - IR_speednode_0012
-      - 美国_0922049
-      - KR_speednode_0015
-      - 美国_0922024
-      - US_86
-      - Relay_🇺🇸US-🇹🇼TW_84 |64.68Mb
+      - github.com/freefq - 荷兰  4
+      - 中国_0922066
       - US_83
+      - Relay_🇭🇰HK-🇭🇰HK_33 |69.59Mb
       - IR_speednode_0011
-      - 12,15|关注电报https://t.me/mftizi
+      - ZZ_121
+      - US_speednode_0032
+      - _US_美国_2 2
+      - 15|美国A|@ripaojiedian
+      - HK_speednode_0009
       - FR_speednode_0014
-      - 美国_0922131
+      - 美国 172
+      - 12|🇺🇸_US_美国_fd_100 2
+      - 12|🇭🇰_HK_香港_fd_113 2
+      - 美国 173
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -265,252 +661,653 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国_0922066
-      - 7,15,18|中转 🇹🇼 Taiwan 01 @nodpai
-      - 14|🇺🇸 美国1|@ripaojiedian
-      - Relay_🇫🇷FR-🇫🇷FR_24 | 8.19Mb
-      - 7|中转 🇯🇵 Japan 03 @nodpai
-      - US_speednode_0019
-      - Relay_🇺🇸US-🇺🇸US_90 |20.33Mb
-      - Relay_🇭🇰HK-🇹🇼TW_32 |71.88Mb
-      - _CN_中国->🇯🇵_JP_日本
-      - Relay_🇸🇬SG-🇨🇭CH_39 |15.53Mb
-      - 1|_JP_
-      - 7,15|「蛋挞云,流媒体全解锁」🇹🇼 TW 01
-      - _CN_中国->🇸🇬_SG_新加坡
-      - Relay_🇯🇵JP-🇺🇸US_35 |51.03Mb
-      - ZZ_110
-      - "8,14|「蛋挞云,流媒体全解锁」🇹🇼 TW 01 #1"
-      - 12|@hkaa0 |美国
-      - 8|「蛋挞云,流媒体全解锁」🇺🇸 US 01
-      - Relay_🇭🇰HK-🇭🇰HK_30 |35.27Mb
-      - _JP_日本->🇸🇬_SG_新加坡
-      - Relay_🇺🇸US-🇸🇬SG_91 | 5.33Mb
-      - 7,11|中转 🇺🇸 United States 02 @nodpai
-      - Relay_🇯🇵JP-🇮🇪IE_34 | 0.01Mb
-      - 美国_09221054
-      - 中国_0922003
-      - US_93
-      - Relay_🇺🇸US-🇸🇬SG_102 | 1.14Mb
-      - 7|🇫🇮 Finland 01 @nodpai
+      - US_speednode_0057
+      - 12|🇫🇷_FR_法国_fd_59
+      - US_speednode_0046
+      - 0,1,2,3,4,6,12|🇺🇸 _US_美国->🇳🇱_NL_荷兰
+      - US_speednode_0044
+      - 12|🇺🇸_US_美国_fd_56
+      - 12|🇺🇸_US_美国_fd_110
+      - 12|🇺🇸_US_美国_fd_145
+      - 12|🇭🇰_HK_香港_fd_41
+      - "0,1,2,3,4,6,12,18|🇺🇸 _US_美国 #4"
+      - 12|🇺🇸_US_美国_fd_87
+      - 12|🇺🇸_US_美国_fd_137
+      - 12|🇺🇸_US_美国_fd_37
+      - 12|🇺🇸_US_美国_fd_124
+      - 12|🇺🇸 美国 335
+      - 12|🇺🇸_US_美国_fd_85
+      - 12|🇺🇸_US_美国_fd_105
+      - 14|🇰🇷 韩国特殊|@ripaojiedian
+      - "0,1,2,3,4,11,15,18|🇺🇸 _US_美国 #1"
+      - 12|🇺🇸_US_美国_fd_110 2
+      - 美国_0923347
+      - 12|🇺🇸_US_美国_fd_61
+      - 12|🇺🇸_US_美国_fd_30
+      - 12|🇭🇰_HK_香港_fd_125
+      - 12|🇺🇸_US_美国_fd_111
+      - US_speednode_0065
+      - 12|🇺🇸_US_美国_fd_10
+      - 12|🇺🇸_US_美国_fd_114
+      - 12|🇺🇸_US_美国_fd_104
+      - US_speednode_0042
+      - US_speednode_0035
+      - 12|🇺🇸_US_美国_fd_105 2
+      - 7,8|🇺🇸 United States 06 @nodpai
+      - 12|🇺🇸_US_美国_fd_89
+      - 12|🇺🇸_US_美国_fd_152
+      - US_speednode_0045
+      - 美国1号机
+      - 12|🇺🇸_US_美国_fd_116
+      - 7|「蛋挞云,流媒体全解锁」🇯🇵 JP 01
+      - 12|🇺🇸_US_美国_fd_147
+      - _US_美国->🇳🇱_NL_荷兰
+      - 12|🇺🇸_US_美国_fd_44
+      - 12|🇺🇸_US_美国_fd_122
+      - 12|🇺🇸_US_美国_fd_87 2
+      - 12|🇺🇸_US_美国_fd_156
+      - 12|🇺🇸_US_美国_fd_111 2
+      - 12|🇺🇸_US_美国_fd_107
+      - 12|🇺🇸_US_美国_fd_54
+      - 12|🇳🇱_NL_荷兰_fd_99
+      - 12|🇺🇸_US_美国_fd_86
+      - US_speednode_0056
+      - 未知_0923022
+      - _US_美国_1
+      - _CN_中国->🇺🇸_US_美国_3
+      - "8,14|「蛋挞云,流媒体全解锁」🇯🇵 JP 01 #1"
+      - 频道34@wxgqlfx
+      - 12|🇺🇸_US_美国_fd_27
+      - _US_美国_2
+      - 12|🇺🇸_US_美国_fd_86 2
+      - 12|🇺🇸_US_美国_fd_140
+      - US_speednode_0050
+      - 12|🇭🇰_HK_香港_fd_14
+      - 12|🇺🇸_US_美国_fd_98
+      - 频道30@wxgqlfx
+      - US_speednode_0048
+      - 12|🇺🇸_US_美国_fd_50
+      - 12|🇺🇸_US_美国_fd_145 2
+      - US_speednode_0039
+      - "8,14|「蛋挞云,流媒体全解锁」🇯🇵 JP 01 #1 2"
+      - 12|🇺🇸_US_美国_fd_57
+      - "0,1,2,3,4,18|🇺🇸 _US_美国 #3"
+      - 美国_0923025
+      - 美国_09231063
+      - US_speednode_0040
+      - 12|🇺🇸_US_美国_fd_150
+      - 美国 157
+      - 12|🇺🇸_US_美国_fd_138
+      - US_speednode_0052
+      - 12|🇺🇸_US_美国_fd_96
+      - 12|🇺🇸_US_美国_fd_143
+      - 12|🇺🇸_US_美国_fd_102
       - 12,15|免费梯子https://t.me/mftizi
-      - 14|🇰🇷 首尔特殊|@ripaojiedian
-      - US_speednode_0018
-      - _CN_中国->🇸🇬_SG_新加坡 2
-      - Relay_🇺🇸US-🇺🇸US_88 | 4.45Mb
-      - ZZ_111
-      - 美国_0922054
-      - 美国_0922132
-      - Relay_🇺🇸US-🇺🇸US_82 | 1.16Mb
-      - US_speednode_0016
-      - "0,1,2,3,4,15,18|🇺🇸 _CN_中国->🇺🇸_US_美国 #2"
-      - Relay_🇭🇰HK-🇭🇰HK_29 |69.59Mb
-      - US_87
+      - 12|🇭🇰_HK_香港_fd_125 2
+      - US_speednode_0055
+      - 12|🇺🇸_US_美国_fd_32
+      - US_speednode_0049
+      - 12|🇺🇸_US_美国_fd_121
+      - 12|🇺🇸_US_美国_fd_103
+      - 12|🇺🇸_US_美国_fd_112
+      - 12|🇺🇸_US_美国_fd_104 2
+      - 频道19@wxgqlfx
+      - 12|🇺🇸_US_美国_fd_71
+      - 12|🇺🇸_US_美国_fd_96 2
+      - "3|_CN_中国 #1"
+      - 8|中转 🇸🇬 Singapore 03 @nodpai
+      - 12|🇺🇸_US_美国_fd_74
+      - 0,1,2,3,4,6,15|🇸🇬 _CN_中国->🇸🇬_SG_新加坡
+      - 12|🇺🇸_US_美国_fd_149
+      - 12|🇺🇸_US_美国_fd_112 2
+      - 12|🇺🇸_US_美国_fd_100
+      - 12|🇺🇸_US_美国_fd_155
+      - 12|🇺🇸_US_美国_fd_114 2
+      - US_102
+      - US_108
+      - HK_speednode_0018
+      - Relay_🇺🇸US-🇸🇬SG_98 | 1.14Mb
+      - ZZ_119
+      - US_speednode_0025
+      - NL_speednode_0022
+      - ZZ_120
+      - FR_speednode_0013
+      - HK_speednode_0016
+      - 8|中转 🇸🇬 Singapore 02 @nodpai
+      - 12|🇭🇰_HK_香港_fd_113
+      - 12|🇺🇸_US_美国_fd_45
+      - 加拿大 180
+      - US_speednode_0027
+      - US_111
+      - 12|🇺🇸_US_美国_fd_6
+      - Relay_🇸🇬SG-🇦🇺AU_44 |49.22Mb
+      - Relay_🇺🇸US-🇸🇬SG_101 | 5.33Mb
+      - US_speednode_0024
+      - Relay_🇺🇸US-🇺🇸US_106 | 4.45Mb
+      - CN_14
+      - Relay_🇺🇸US-🇮🇳IN_93 |68.04Mb
+      - US_speednode_0030
+      - Relay_🇫🇷FR-🇫🇷FR_26 | 8.19Mb
+      - 法国+格拉沃利讷OVH数据中心
+      - _US_美国
+      - Relay_🇭🇰HK-🇹🇼TW_35 |71.88Mb
+      - Relay_🇸🇬SG-🇨🇭CH_43 |15.53Mb
+      - CN_speednode_0010
+      - Relay_ |21.94Mb
+      - _RE_留尼汪
+      - "|11.44Mb"
+      - Relay_🇭🇰HK-🇭🇰HK_34 |35.27Mb
+      - US_speednode_0034
+      - 12|🇺🇸_US_美国_fd_98 2
+      - github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 12
       - "0,1,2,3,4,12|🇺🇸 _US_美国 #24"
-      - 12|🇺🇸_US_美国_欢迎订阅yui科技_89
-      - Relay_🇺🇸US-🇮🇳IN_81 |68.04Mb
-      - ZZ_109
-      - IR_speednode_0012
-      - 美国_0922049
-      - KR_speednode_0015
-      - 美国_0922024
-      - US_86
-      - Relay_🇺🇸US-🇹🇼TW_84 |64.68Mb
+      - github.com/freefq - 荷兰  4
+      - 中国_0922066
       - US_83
+      - Relay_🇭🇰HK-🇭🇰HK_33 |69.59Mb
       - IR_speednode_0011
-      - 12,15|关注电报https://t.me/mftizi
+      - ZZ_121
+      - US_speednode_0032
+      - _US_美国_2 2
+      - 15|美国A|@ripaojiedian
+      - HK_speednode_0009
       - FR_speednode_0014
-      - 美国_0922131
+      - 美国 172
+      - 12|🇺🇸_US_美国_fd_100 2
+      - 12|🇭🇰_HK_香港_fd_113 2
+      - 美国 173
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 12|@hkaa0 |美国
+      - 12|🇭🇰_HK_香港_fd_41
+      - 12|🇭🇰_HK_香港_fd_125
+      - 12|🇭🇰_HK_香港_fd_14
+      - 12|🇭🇰_HK_香港_fd_125 2
+      - 12|🇭🇰_HK_香港_fd_113
+      - 12|🇭🇰_HK_香港_fd_113 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 中国_0922066
-      - 7,15,18|中转 🇹🇼 Taiwan 01 @nodpai
-      - 14|🇺🇸 美国1|@ripaojiedian
-      - Relay_🇫🇷FR-🇫🇷FR_24 | 8.19Mb
-      - 7|中转 🇯🇵 Japan 03 @nodpai
-      - US_speednode_0019
-      - Relay_🇺🇸US-🇺🇸US_90 |20.33Mb
-      - Relay_🇭🇰HK-🇹🇼TW_32 |71.88Mb
-      - _CN_中国->🇯🇵_JP_日本
-      - Relay_🇸🇬SG-🇨🇭CH_39 |15.53Mb
-      - 1|_JP_
-      - 7,15|「蛋挞云,流媒体全解锁」🇹🇼 TW 01
-      - _CN_中国->🇸🇬_SG_新加坡
-      - Relay_🇯🇵JP-🇺🇸US_35 |51.03Mb
-      - ZZ_110
-      - "8,14|「蛋挞云,流媒体全解锁」🇹🇼 TW 01 #1"
-      - 12|@hkaa0 |美国
-      - 8|「蛋挞云,流媒体全解锁」🇺🇸 US 01
-      - Relay_🇭🇰HK-🇭🇰HK_30 |35.27Mb
-      - _JP_日本->🇸🇬_SG_新加坡
-      - Relay_🇺🇸US-🇸🇬SG_91 | 5.33Mb
-      - 7,11|中转 🇺🇸 United States 02 @nodpai
-      - Relay_🇯🇵JP-🇮🇪IE_34 | 0.01Mb
-      - 美国_09221054
-      - 中国_0922003
-      - US_93
-      - Relay_🇺🇸US-🇸🇬SG_102 | 1.14Mb
-      - 7|🇫🇮 Finland 01 @nodpai
+      - US_speednode_0057
+      - 12|🇫🇷_FR_法国_fd_59
+      - US_speednode_0046
+      - 0,1,2,3,4,6,12|🇺🇸 _US_美国->🇳🇱_NL_荷兰
+      - US_speednode_0044
+      - 12|🇺🇸_US_美国_fd_56
+      - 12|🇺🇸_US_美国_fd_110
+      - 12|🇺🇸_US_美国_fd_145
+      - 12|🇭🇰_HK_香港_fd_41
+      - "0,1,2,3,4,6,12,18|🇺🇸 _US_美国 #4"
+      - 12|🇺🇸_US_美国_fd_87
+      - 12|🇺🇸_US_美国_fd_137
+      - 12|🇺🇸_US_美国_fd_37
+      - 12|🇺🇸_US_美国_fd_124
+      - 12|🇺🇸 美国 335
+      - 12|🇺🇸_US_美国_fd_85
+      - 12|🇺🇸_US_美国_fd_105
+      - 14|🇰🇷 韩国特殊|@ripaojiedian
+      - "0,1,2,3,4,11,15,18|🇺🇸 _US_美国 #1"
+      - 12|🇺🇸_US_美国_fd_110 2
+      - 美国_0923347
+      - 12|🇺🇸_US_美国_fd_61
+      - 12|🇺🇸_US_美国_fd_30
+      - 12|🇭🇰_HK_香港_fd_125
+      - 12|🇺🇸_US_美国_fd_111
+      - US_speednode_0065
+      - 12|🇺🇸_US_美国_fd_10
+      - 12|🇺🇸_US_美国_fd_114
+      - 12|🇺🇸_US_美国_fd_104
+      - US_speednode_0042
+      - US_speednode_0035
+      - 12|🇺🇸_US_美国_fd_105 2
+      - 7,8|🇺🇸 United States 06 @nodpai
+      - 12|🇺🇸_US_美国_fd_89
+      - 12|🇺🇸_US_美国_fd_152
+      - US_speednode_0045
+      - 美国1号机
+      - 12|🇺🇸_US_美国_fd_116
+      - 7|「蛋挞云,流媒体全解锁」🇯🇵 JP 01
+      - 12|🇺🇸_US_美国_fd_147
+      - _US_美国->🇳🇱_NL_荷兰
+      - 12|🇺🇸_US_美国_fd_44
+      - 12|🇺🇸_US_美国_fd_122
+      - 12|🇺🇸_US_美国_fd_87 2
+      - 12|🇺🇸_US_美国_fd_156
+      - 12|🇺🇸_US_美国_fd_111 2
+      - 12|🇺🇸_US_美国_fd_107
+      - 12|🇺🇸_US_美国_fd_54
+      - 12|🇳🇱_NL_荷兰_fd_99
+      - 12|🇺🇸_US_美国_fd_86
+      - US_speednode_0056
+      - 未知_0923022
+      - _US_美国_1
+      - _CN_中国->🇺🇸_US_美国_3
+      - "8,14|「蛋挞云,流媒体全解锁」🇯🇵 JP 01 #1"
+      - 频道34@wxgqlfx
+      - 12|🇺🇸_US_美国_fd_27
+      - _US_美国_2
+      - 12|🇺🇸_US_美国_fd_86 2
+      - 12|🇺🇸_US_美国_fd_140
+      - US_speednode_0050
+      - 12|🇭🇰_HK_香港_fd_14
+      - 12|🇺🇸_US_美国_fd_98
+      - 频道30@wxgqlfx
+      - US_speednode_0048
+      - 12|🇺🇸_US_美国_fd_50
+      - 12|🇺🇸_US_美国_fd_145 2
+      - US_speednode_0039
+      - "8,14|「蛋挞云,流媒体全解锁」🇯🇵 JP 01 #1 2"
+      - 12|🇺🇸_US_美国_fd_57
+      - "0,1,2,3,4,18|🇺🇸 _US_美国 #3"
+      - 美国_0923025
+      - 美国_09231063
+      - US_speednode_0040
+      - 12|🇺🇸_US_美国_fd_150
+      - 美国 157
+      - 12|🇺🇸_US_美国_fd_138
+      - US_speednode_0052
+      - 12|🇺🇸_US_美国_fd_96
+      - 12|🇺🇸_US_美国_fd_143
+      - 12|🇺🇸_US_美国_fd_102
       - 12,15|免费梯子https://t.me/mftizi
-      - 14|🇰🇷 首尔特殊|@ripaojiedian
-      - US_speednode_0018
-      - _CN_中国->🇸🇬_SG_新加坡 2
-      - Relay_🇺🇸US-🇺🇸US_88 | 4.45Mb
-      - ZZ_111
-      - 美国_0922054
-      - 美国_0922132
-      - Relay_🇺🇸US-🇺🇸US_82 | 1.16Mb
-      - US_speednode_0016
-      - "0,1,2,3,4,15,18|🇺🇸 _CN_中国->🇺🇸_US_美国 #2"
-      - Relay_🇭🇰HK-🇭🇰HK_29 |69.59Mb
-      - US_87
+      - 12|🇭🇰_HK_香港_fd_125 2
+      - US_speednode_0055
+      - 12|🇺🇸_US_美国_fd_32
+      - US_speednode_0049
+      - 12|🇺🇸_US_美国_fd_121
+      - 12|🇺🇸_US_美国_fd_103
+      - 12|🇺🇸_US_美国_fd_112
+      - 12|🇺🇸_US_美国_fd_104 2
+      - 频道19@wxgqlfx
+      - 12|🇺🇸_US_美国_fd_71
+      - 12|🇺🇸_US_美国_fd_96 2
+      - "3|_CN_中国 #1"
+      - 8|中转 🇸🇬 Singapore 03 @nodpai
+      - 12|🇺🇸_US_美国_fd_74
+      - 0,1,2,3,4,6,15|🇸🇬 _CN_中国->🇸🇬_SG_新加坡
+      - 12|🇺🇸_US_美国_fd_149
+      - 12|🇺🇸_US_美国_fd_112 2
+      - 12|🇺🇸_US_美国_fd_100
+      - 12|🇺🇸_US_美国_fd_155
+      - 12|🇺🇸_US_美国_fd_114 2
+      - US_102
+      - US_108
+      - HK_speednode_0018
+      - Relay_🇺🇸US-🇸🇬SG_98 | 1.14Mb
+      - ZZ_119
+      - US_speednode_0025
+      - NL_speednode_0022
+      - ZZ_120
+      - FR_speednode_0013
+      - HK_speednode_0016
+      - 8|中转 🇸🇬 Singapore 02 @nodpai
+      - 12|🇭🇰_HK_香港_fd_113
+      - 12|🇺🇸_US_美国_fd_45
+      - 加拿大 180
+      - US_speednode_0027
+      - US_111
+      - 12|🇺🇸_US_美国_fd_6
+      - Relay_🇸🇬SG-🇦🇺AU_44 |49.22Mb
+      - Relay_🇺🇸US-🇸🇬SG_101 | 5.33Mb
+      - US_speednode_0024
+      - Relay_🇺🇸US-🇺🇸US_106 | 4.45Mb
+      - CN_14
+      - Relay_🇺🇸US-🇮🇳IN_93 |68.04Mb
+      - US_speednode_0030
+      - Relay_🇫🇷FR-🇫🇷FR_26 | 8.19Mb
+      - 法国+格拉沃利讷OVH数据中心
+      - _US_美国
+      - Relay_🇭🇰HK-🇹🇼TW_35 |71.88Mb
+      - Relay_🇸🇬SG-🇨🇭CH_43 |15.53Mb
+      - CN_speednode_0010
+      - Relay_ |21.94Mb
+      - _RE_留尼汪
+      - "|11.44Mb"
+      - Relay_🇭🇰HK-🇭🇰HK_34 |35.27Mb
+      - US_speednode_0034
+      - 12|🇺🇸_US_美国_fd_98 2
+      - github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 12
       - "0,1,2,3,4,12|🇺🇸 _US_美国 #24"
-      - 12|🇺🇸_US_美国_欢迎订阅yui科技_89
-      - Relay_🇺🇸US-🇮🇳IN_81 |68.04Mb
-      - ZZ_109
-      - IR_speednode_0012
-      - 美国_0922049
-      - KR_speednode_0015
-      - 美国_0922024
-      - US_86
-      - Relay_🇺🇸US-🇹🇼TW_84 |64.68Mb
+      - github.com/freefq - 荷兰  4
+      - 中国_0922066
       - US_83
+      - Relay_🇭🇰HK-🇭🇰HK_33 |69.59Mb
       - IR_speednode_0011
-      - 12,15|关注电报https://t.me/mftizi
+      - ZZ_121
+      - US_speednode_0032
+      - _US_美国_2 2
+      - 15|美国A|@ripaojiedian
+      - HK_speednode_0009
       - FR_speednode_0014
-      - 美国_0922131
+      - 美国 172
+      - 12|🇺🇸_US_美国_fd_100 2
+      - 12|🇭🇰_HK_香港_fd_113 2
+      - 美国 173
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 中国_0922066
-      - 7,15,18|中转 🇹🇼 Taiwan 01 @nodpai
-      - 14|🇺🇸 美国1|@ripaojiedian
-      - Relay_🇫🇷FR-🇫🇷FR_24 | 8.19Mb
-      - 7|中转 🇯🇵 Japan 03 @nodpai
-      - US_speednode_0019
-      - Relay_🇺🇸US-🇺🇸US_90 |20.33Mb
-      - Relay_🇭🇰HK-🇹🇼TW_32 |71.88Mb
-      - _CN_中国->🇯🇵_JP_日本
-      - Relay_🇸🇬SG-🇨🇭CH_39 |15.53Mb
-      - 1|_JP_
-      - 7,15|「蛋挞云,流媒体全解锁」🇹🇼 TW 01
-      - _CN_中国->🇸🇬_SG_新加坡
-      - Relay_🇯🇵JP-🇺🇸US_35 |51.03Mb
-      - ZZ_110
-      - "8,14|「蛋挞云,流媒体全解锁」🇹🇼 TW 01 #1"
-      - 12|@hkaa0 |美国
-      - 8|「蛋挞云,流媒体全解锁」🇺🇸 US 01
-      - Relay_🇭🇰HK-🇭🇰HK_30 |35.27Mb
-      - _JP_日本->🇸🇬_SG_新加坡
-      - Relay_🇺🇸US-🇸🇬SG_91 | 5.33Mb
-      - 7,11|中转 🇺🇸 United States 02 @nodpai
-      - Relay_🇯🇵JP-🇮🇪IE_34 | 0.01Mb
-      - 美国_09221054
-      - 中国_0922003
-      - US_93
-      - Relay_🇺🇸US-🇸🇬SG_102 | 1.14Mb
-      - 7|🇫🇮 Finland 01 @nodpai
+      - US_speednode_0057
+      - 12|🇫🇷_FR_法国_fd_59
+      - US_speednode_0046
+      - 0,1,2,3,4,6,12|🇺🇸 _US_美国->🇳🇱_NL_荷兰
+      - US_speednode_0044
+      - 12|🇺🇸_US_美国_fd_56
+      - 12|🇺🇸_US_美国_fd_110
+      - 12|🇺🇸_US_美国_fd_145
+      - 12|🇭🇰_HK_香港_fd_41
+      - "0,1,2,3,4,6,12,18|🇺🇸 _US_美国 #4"
+      - 12|🇺🇸_US_美国_fd_87
+      - 12|🇺🇸_US_美国_fd_137
+      - 12|🇺🇸_US_美国_fd_37
+      - 12|🇺🇸_US_美国_fd_124
+      - 12|🇺🇸 美国 335
+      - 12|🇺🇸_US_美国_fd_85
+      - 12|🇺🇸_US_美国_fd_105
+      - 14|🇰🇷 韩国特殊|@ripaojiedian
+      - "0,1,2,3,4,11,15,18|🇺🇸 _US_美国 #1"
+      - 12|🇺🇸_US_美国_fd_110 2
+      - 美国_0923347
+      - 12|🇺🇸_US_美国_fd_61
+      - 12|🇺🇸_US_美国_fd_30
+      - 12|🇭🇰_HK_香港_fd_125
+      - 12|🇺🇸_US_美国_fd_111
+      - US_speednode_0065
+      - 12|🇺🇸_US_美国_fd_10
+      - 12|🇺🇸_US_美国_fd_114
+      - 12|🇺🇸_US_美国_fd_104
+      - US_speednode_0042
+      - US_speednode_0035
+      - 12|🇺🇸_US_美国_fd_105 2
+      - 7,8|🇺🇸 United States 06 @nodpai
+      - 12|🇺🇸_US_美国_fd_89
+      - 12|🇺🇸_US_美国_fd_152
+      - US_speednode_0045
+      - 美国1号机
+      - 12|🇺🇸_US_美国_fd_116
+      - 7|「蛋挞云,流媒体全解锁」🇯🇵 JP 01
+      - 12|🇺🇸_US_美国_fd_147
+      - _US_美国->🇳🇱_NL_荷兰
+      - 12|🇺🇸_US_美国_fd_44
+      - 12|🇺🇸_US_美国_fd_122
+      - 12|🇺🇸_US_美国_fd_87 2
+      - 12|🇺🇸_US_美国_fd_156
+      - 12|🇺🇸_US_美国_fd_111 2
+      - 12|🇺🇸_US_美国_fd_107
+      - 12|🇺🇸_US_美国_fd_54
+      - 12|🇳🇱_NL_荷兰_fd_99
+      - 12|🇺🇸_US_美国_fd_86
+      - US_speednode_0056
+      - 未知_0923022
+      - _US_美国_1
+      - _CN_中国->🇺🇸_US_美国_3
+      - "8,14|「蛋挞云,流媒体全解锁」🇯🇵 JP 01 #1"
+      - 频道34@wxgqlfx
+      - 12|🇺🇸_US_美国_fd_27
+      - _US_美国_2
+      - 12|🇺🇸_US_美国_fd_86 2
+      - 12|🇺🇸_US_美国_fd_140
+      - US_speednode_0050
+      - 12|🇭🇰_HK_香港_fd_14
+      - 12|🇺🇸_US_美国_fd_98
+      - 频道30@wxgqlfx
+      - US_speednode_0048
+      - 12|🇺🇸_US_美国_fd_50
+      - 12|🇺🇸_US_美国_fd_145 2
+      - US_speednode_0039
+      - "8,14|「蛋挞云,流媒体全解锁」🇯🇵 JP 01 #1 2"
+      - 12|🇺🇸_US_美国_fd_57
+      - "0,1,2,3,4,18|🇺🇸 _US_美国 #3"
+      - 美国_0923025
+      - 美国_09231063
+      - US_speednode_0040
+      - 12|🇺🇸_US_美国_fd_150
+      - 美国 157
+      - 12|🇺🇸_US_美国_fd_138
+      - US_speednode_0052
+      - 12|🇺🇸_US_美国_fd_96
+      - 12|🇺🇸_US_美国_fd_143
+      - 12|🇺🇸_US_美国_fd_102
       - 12,15|免费梯子https://t.me/mftizi
-      - 14|🇰🇷 首尔特殊|@ripaojiedian
-      - US_speednode_0018
-      - _CN_中国->🇸🇬_SG_新加坡 2
-      - Relay_🇺🇸US-🇺🇸US_88 | 4.45Mb
-      - ZZ_111
-      - 美国_0922054
-      - 美国_0922132
-      - Relay_🇺🇸US-🇺🇸US_82 | 1.16Mb
-      - US_speednode_0016
-      - "0,1,2,3,4,15,18|🇺🇸 _CN_中国->🇺🇸_US_美国 #2"
-      - Relay_🇭🇰HK-🇭🇰HK_29 |69.59Mb
-      - US_87
+      - 12|🇭🇰_HK_香港_fd_125 2
+      - US_speednode_0055
+      - 12|🇺🇸_US_美国_fd_32
+      - US_speednode_0049
+      - 12|🇺🇸_US_美国_fd_121
+      - 12|🇺🇸_US_美国_fd_103
+      - 12|🇺🇸_US_美国_fd_112
+      - 12|🇺🇸_US_美国_fd_104 2
+      - 频道19@wxgqlfx
+      - 12|🇺🇸_US_美国_fd_71
+      - 12|🇺🇸_US_美国_fd_96 2
+      - "3|_CN_中国 #1"
+      - 8|中转 🇸🇬 Singapore 03 @nodpai
+      - 12|🇺🇸_US_美国_fd_74
+      - 0,1,2,3,4,6,15|🇸🇬 _CN_中国->🇸🇬_SG_新加坡
+      - 12|🇺🇸_US_美国_fd_149
+      - 12|🇺🇸_US_美国_fd_112 2
+      - 12|🇺🇸_US_美国_fd_100
+      - 12|🇺🇸_US_美国_fd_155
+      - 12|🇺🇸_US_美国_fd_114 2
+      - US_102
+      - US_108
+      - HK_speednode_0018
+      - Relay_🇺🇸US-🇸🇬SG_98 | 1.14Mb
+      - ZZ_119
+      - US_speednode_0025
+      - NL_speednode_0022
+      - ZZ_120
+      - FR_speednode_0013
+      - HK_speednode_0016
+      - 8|中转 🇸🇬 Singapore 02 @nodpai
+      - 12|🇭🇰_HK_香港_fd_113
+      - 12|🇺🇸_US_美国_fd_45
+      - 加拿大 180
+      - US_speednode_0027
+      - US_111
+      - 12|🇺🇸_US_美国_fd_6
+      - Relay_🇸🇬SG-🇦🇺AU_44 |49.22Mb
+      - Relay_🇺🇸US-🇸🇬SG_101 | 5.33Mb
+      - US_speednode_0024
+      - Relay_🇺🇸US-🇺🇸US_106 | 4.45Mb
+      - CN_14
+      - Relay_🇺🇸US-🇮🇳IN_93 |68.04Mb
+      - US_speednode_0030
+      - Relay_🇫🇷FR-🇫🇷FR_26 | 8.19Mb
+      - 法国+格拉沃利讷OVH数据中心
+      - _US_美国
+      - Relay_🇭🇰HK-🇹🇼TW_35 |71.88Mb
+      - Relay_🇸🇬SG-🇨🇭CH_43 |15.53Mb
+      - CN_speednode_0010
+      - Relay_ |21.94Mb
+      - _RE_留尼汪
+      - "|11.44Mb"
+      - Relay_🇭🇰HK-🇭🇰HK_34 |35.27Mb
+      - US_speednode_0034
+      - 12|🇺🇸_US_美国_fd_98 2
+      - github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 12
       - "0,1,2,3,4,12|🇺🇸 _US_美国 #24"
-      - 12|🇺🇸_US_美国_欢迎订阅yui科技_89
-      - Relay_🇺🇸US-🇮🇳IN_81 |68.04Mb
-      - ZZ_109
-      - IR_speednode_0012
-      - 美国_0922049
-      - KR_speednode_0015
-      - 美国_0922024
-      - US_86
-      - Relay_🇺🇸US-🇹🇼TW_84 |64.68Mb
+      - github.com/freefq - 荷兰  4
+      - 中国_0922066
       - US_83
+      - Relay_🇭🇰HK-🇭🇰HK_33 |69.59Mb
       - IR_speednode_0011
-      - 12,15|关注电报https://t.me/mftizi
+      - ZZ_121
+      - US_speednode_0032
+      - _US_美国_2 2
+      - 15|美国A|@ripaojiedian
+      - HK_speednode_0009
       - FR_speednode_0014
-      - 美国_0922131
+      - 美国 172
+      - 12|🇺🇸_US_美国_fd_100 2
+      - 12|🇭🇰_HK_香港_fd_113 2
+      - 美国 173
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国_0922066
-      - 7,15,18|中转 🇹🇼 Taiwan 01 @nodpai
-      - 14|🇺🇸 美国1|@ripaojiedian
-      - Relay_🇫🇷FR-🇫🇷FR_24 | 8.19Mb
-      - 7|中转 🇯🇵 Japan 03 @nodpai
-      - US_speednode_0019
-      - Relay_🇺🇸US-🇺🇸US_90 |20.33Mb
-      - Relay_🇭🇰HK-🇹🇼TW_32 |71.88Mb
-      - _CN_中国->🇯🇵_JP_日本
-      - Relay_🇸🇬SG-🇨🇭CH_39 |15.53Mb
-      - 1|_JP_
-      - 7,15|「蛋挞云,流媒体全解锁」🇹🇼 TW 01
-      - _CN_中国->🇸🇬_SG_新加坡
-      - Relay_🇯🇵JP-🇺🇸US_35 |51.03Mb
-      - ZZ_110
-      - "8,14|「蛋挞云,流媒体全解锁」🇹🇼 TW 01 #1"
-      - 12|@hkaa0 |美国
-      - 8|「蛋挞云,流媒体全解锁」🇺🇸 US 01
-      - Relay_🇭🇰HK-🇭🇰HK_30 |35.27Mb
-      - _JP_日本->🇸🇬_SG_新加坡
-      - Relay_🇺🇸US-🇸🇬SG_91 | 5.33Mb
-      - 7,11|中转 🇺🇸 United States 02 @nodpai
-      - Relay_🇯🇵JP-🇮🇪IE_34 | 0.01Mb
-      - 美国_09221054
-      - 中国_0922003
-      - US_93
-      - Relay_🇺🇸US-🇸🇬SG_102 | 1.14Mb
-      - 7|🇫🇮 Finland 01 @nodpai
+      - US_speednode_0057
+      - 12|🇫🇷_FR_法国_fd_59
+      - US_speednode_0046
+      - 0,1,2,3,4,6,12|🇺🇸 _US_美国->🇳🇱_NL_荷兰
+      - US_speednode_0044
+      - 12|🇺🇸_US_美国_fd_56
+      - 12|🇺🇸_US_美国_fd_110
+      - 12|🇺🇸_US_美国_fd_145
+      - 12|🇭🇰_HK_香港_fd_41
+      - "0,1,2,3,4,6,12,18|🇺🇸 _US_美国 #4"
+      - 12|🇺🇸_US_美国_fd_87
+      - 12|🇺🇸_US_美国_fd_137
+      - 12|🇺🇸_US_美国_fd_37
+      - 12|🇺🇸_US_美国_fd_124
+      - 12|🇺🇸 美国 335
+      - 12|🇺🇸_US_美国_fd_85
+      - 12|🇺🇸_US_美国_fd_105
+      - 14|🇰🇷 韩国特殊|@ripaojiedian
+      - "0,1,2,3,4,11,15,18|🇺🇸 _US_美国 #1"
+      - 12|🇺🇸_US_美国_fd_110 2
+      - 美国_0923347
+      - 12|🇺🇸_US_美国_fd_61
+      - 12|🇺🇸_US_美国_fd_30
+      - 12|🇭🇰_HK_香港_fd_125
+      - 12|🇺🇸_US_美国_fd_111
+      - US_speednode_0065
+      - 12|🇺🇸_US_美国_fd_10
+      - 12|🇺🇸_US_美国_fd_114
+      - 12|🇺🇸_US_美国_fd_104
+      - US_speednode_0042
+      - US_speednode_0035
+      - 12|🇺🇸_US_美国_fd_105 2
+      - 7,8|🇺🇸 United States 06 @nodpai
+      - 12|🇺🇸_US_美国_fd_89
+      - 12|🇺🇸_US_美国_fd_152
+      - US_speednode_0045
+      - 美国1号机
+      - 12|🇺🇸_US_美国_fd_116
+      - 7|「蛋挞云,流媒体全解锁」🇯🇵 JP 01
+      - 12|🇺🇸_US_美国_fd_147
+      - _US_美国->🇳🇱_NL_荷兰
+      - 12|🇺🇸_US_美国_fd_44
+      - 12|🇺🇸_US_美国_fd_122
+      - 12|🇺🇸_US_美国_fd_87 2
+      - 12|🇺🇸_US_美国_fd_156
+      - 12|🇺🇸_US_美国_fd_111 2
+      - 12|🇺🇸_US_美国_fd_107
+      - 12|🇺🇸_US_美国_fd_54
+      - 12|🇳🇱_NL_荷兰_fd_99
+      - 12|🇺🇸_US_美国_fd_86
+      - US_speednode_0056
+      - 未知_0923022
+      - _US_美国_1
+      - _CN_中国->🇺🇸_US_美国_3
+      - "8,14|「蛋挞云,流媒体全解锁」🇯🇵 JP 01 #1"
+      - 频道34@wxgqlfx
+      - 12|🇺🇸_US_美国_fd_27
+      - _US_美国_2
+      - 12|🇺🇸_US_美国_fd_86 2
+      - 12|🇺🇸_US_美国_fd_140
+      - US_speednode_0050
+      - 12|🇭🇰_HK_香港_fd_14
+      - 12|🇺🇸_US_美国_fd_98
+      - 频道30@wxgqlfx
+      - US_speednode_0048
+      - 12|🇺🇸_US_美国_fd_50
+      - 12|🇺🇸_US_美国_fd_145 2
+      - US_speednode_0039
+      - "8,14|「蛋挞云,流媒体全解锁」🇯🇵 JP 01 #1 2"
+      - 12|🇺🇸_US_美国_fd_57
+      - "0,1,2,3,4,18|🇺🇸 _US_美国 #3"
+      - 美国_0923025
+      - 美国_09231063
+      - US_speednode_0040
+      - 12|🇺🇸_US_美国_fd_150
+      - 美国 157
+      - 12|🇺🇸_US_美国_fd_138
+      - US_speednode_0052
+      - 12|🇺🇸_US_美国_fd_96
+      - 12|🇺🇸_US_美国_fd_143
+      - 12|🇺🇸_US_美国_fd_102
       - 12,15|免费梯子https://t.me/mftizi
-      - 14|🇰🇷 首尔特殊|@ripaojiedian
-      - US_speednode_0018
-      - _CN_中国->🇸🇬_SG_新加坡 2
-      - Relay_🇺🇸US-🇺🇸US_88 | 4.45Mb
-      - ZZ_111
-      - 美国_0922054
-      - 美国_0922132
-      - Relay_🇺🇸US-🇺🇸US_82 | 1.16Mb
-      - US_speednode_0016
-      - "0,1,2,3,4,15,18|🇺🇸 _CN_中国->🇺🇸_US_美国 #2"
-      - Relay_🇭🇰HK-🇭🇰HK_29 |69.59Mb
-      - US_87
+      - 12|🇭🇰_HK_香港_fd_125 2
+      - US_speednode_0055
+      - 12|🇺🇸_US_美国_fd_32
+      - US_speednode_0049
+      - 12|🇺🇸_US_美国_fd_121
+      - 12|🇺🇸_US_美国_fd_103
+      - 12|🇺🇸_US_美国_fd_112
+      - 12|🇺🇸_US_美国_fd_104 2
+      - 频道19@wxgqlfx
+      - 12|🇺🇸_US_美国_fd_71
+      - 12|🇺🇸_US_美国_fd_96 2
+      - "3|_CN_中国 #1"
+      - 8|中转 🇸🇬 Singapore 03 @nodpai
+      - 12|🇺🇸_US_美国_fd_74
+      - 0,1,2,3,4,6,15|🇸🇬 _CN_中国->🇸🇬_SG_新加坡
+      - 12|🇺🇸_US_美国_fd_149
+      - 12|🇺🇸_US_美国_fd_112 2
+      - 12|🇺🇸_US_美国_fd_100
+      - 12|🇺🇸_US_美国_fd_155
+      - 12|🇺🇸_US_美国_fd_114 2
+      - US_102
+      - US_108
+      - HK_speednode_0018
+      - Relay_🇺🇸US-🇸🇬SG_98 | 1.14Mb
+      - ZZ_119
+      - US_speednode_0025
+      - NL_speednode_0022
+      - ZZ_120
+      - FR_speednode_0013
+      - HK_speednode_0016
+      - 8|中转 🇸🇬 Singapore 02 @nodpai
+      - 12|🇭🇰_HK_香港_fd_113
+      - 12|🇺🇸_US_美国_fd_45
+      - 加拿大 180
+      - US_speednode_0027
+      - US_111
+      - 12|🇺🇸_US_美国_fd_6
+      - Relay_🇸🇬SG-🇦🇺AU_44 |49.22Mb
+      - Relay_🇺🇸US-🇸🇬SG_101 | 5.33Mb
+      - US_speednode_0024
+      - Relay_🇺🇸US-🇺🇸US_106 | 4.45Mb
+      - CN_14
+      - Relay_🇺🇸US-🇮🇳IN_93 |68.04Mb
+      - US_speednode_0030
+      - Relay_🇫🇷FR-🇫🇷FR_26 | 8.19Mb
+      - 法国+格拉沃利讷OVH数据中心
+      - _US_美国
+      - Relay_🇭🇰HK-🇹🇼TW_35 |71.88Mb
+      - Relay_🇸🇬SG-🇨🇭CH_43 |15.53Mb
+      - CN_speednode_0010
+      - Relay_ |21.94Mb
+      - _RE_留尼汪
+      - "|11.44Mb"
+      - Relay_🇭🇰HK-🇭🇰HK_34 |35.27Mb
+      - US_speednode_0034
+      - 12|🇺🇸_US_美国_fd_98 2
+      - github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 12
       - "0,1,2,3,4,12|🇺🇸 _US_美国 #24"
-      - 12|🇺🇸_US_美国_欢迎订阅yui科技_89
-      - Relay_🇺🇸US-🇮🇳IN_81 |68.04Mb
-      - ZZ_109
-      - IR_speednode_0012
-      - 美国_0922049
-      - KR_speednode_0015
-      - 美国_0922024
-      - US_86
-      - Relay_🇺🇸US-🇹🇼TW_84 |64.68Mb
+      - github.com/freefq - 荷兰  4
+      - 中国_0922066
       - US_83
+      - Relay_🇭🇰HK-🇭🇰HK_33 |69.59Mb
       - IR_speednode_0011
-      - 12,15|关注电报https://t.me/mftizi
+      - ZZ_121
+      - US_speednode_0032
+      - _US_美国_2 2
+      - 15|美国A|@ripaojiedian
+      - HK_speednode_0009
       - FR_speednode_0014
-      - 美国_0922131
+      - 美国 172
+      - 12|🇺🇸_US_美国_fd_100 2
+      - 12|🇭🇰_HK_香港_fd_113 2
+      - 美国 173
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -526,62 +1323,161 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国_0922066
-      - 7,15,18|中转 🇹🇼 Taiwan 01 @nodpai
-      - 14|🇺🇸 美国1|@ripaojiedian
-      - Relay_🇫🇷FR-🇫🇷FR_24 | 8.19Mb
-      - 7|中转 🇯🇵 Japan 03 @nodpai
-      - US_speednode_0019
-      - Relay_🇺🇸US-🇺🇸US_90 |20.33Mb
-      - Relay_🇭🇰HK-🇹🇼TW_32 |71.88Mb
-      - _CN_中国->🇯🇵_JP_日本
-      - Relay_🇸🇬SG-🇨🇭CH_39 |15.53Mb
-      - 1|_JP_
-      - 7,15|「蛋挞云,流媒体全解锁」🇹🇼 TW 01
-      - _CN_中国->🇸🇬_SG_新加坡
-      - Relay_🇯🇵JP-🇺🇸US_35 |51.03Mb
-      - ZZ_110
-      - "8,14|「蛋挞云,流媒体全解锁」🇹🇼 TW 01 #1"
-      - 12|@hkaa0 |美国
-      - 8|「蛋挞云,流媒体全解锁」🇺🇸 US 01
-      - Relay_🇭🇰HK-🇭🇰HK_30 |35.27Mb
-      - _JP_日本->🇸🇬_SG_新加坡
-      - Relay_🇺🇸US-🇸🇬SG_91 | 5.33Mb
-      - 7,11|中转 🇺🇸 United States 02 @nodpai
-      - Relay_🇯🇵JP-🇮🇪IE_34 | 0.01Mb
-      - 美国_09221054
-      - 中国_0922003
-      - US_93
-      - Relay_🇺🇸US-🇸🇬SG_102 | 1.14Mb
-      - 7|🇫🇮 Finland 01 @nodpai
+      - US_speednode_0057
+      - 12|🇫🇷_FR_法国_fd_59
+      - US_speednode_0046
+      - 0,1,2,3,4,6,12|🇺🇸 _US_美国->🇳🇱_NL_荷兰
+      - US_speednode_0044
+      - 12|🇺🇸_US_美国_fd_56
+      - 12|🇺🇸_US_美国_fd_110
+      - 12|🇺🇸_US_美国_fd_145
+      - 12|🇭🇰_HK_香港_fd_41
+      - "0,1,2,3,4,6,12,18|🇺🇸 _US_美国 #4"
+      - 12|🇺🇸_US_美国_fd_87
+      - 12|🇺🇸_US_美国_fd_137
+      - 12|🇺🇸_US_美国_fd_37
+      - 12|🇺🇸_US_美国_fd_124
+      - 12|🇺🇸 美国 335
+      - 12|🇺🇸_US_美国_fd_85
+      - 12|🇺🇸_US_美国_fd_105
+      - 14|🇰🇷 韩国特殊|@ripaojiedian
+      - "0,1,2,3,4,11,15,18|🇺🇸 _US_美国 #1"
+      - 12|🇺🇸_US_美国_fd_110 2
+      - 美国_0923347
+      - 12|🇺🇸_US_美国_fd_61
+      - 12|🇺🇸_US_美国_fd_30
+      - 12|🇭🇰_HK_香港_fd_125
+      - 12|🇺🇸_US_美国_fd_111
+      - US_speednode_0065
+      - 12|🇺🇸_US_美国_fd_10
+      - 12|🇺🇸_US_美国_fd_114
+      - 12|🇺🇸_US_美国_fd_104
+      - US_speednode_0042
+      - US_speednode_0035
+      - 12|🇺🇸_US_美国_fd_105 2
+      - 7,8|🇺🇸 United States 06 @nodpai
+      - 12|🇺🇸_US_美国_fd_89
+      - 12|🇺🇸_US_美国_fd_152
+      - US_speednode_0045
+      - 美国1号机
+      - 12|🇺🇸_US_美国_fd_116
+      - 7|「蛋挞云,流媒体全解锁」🇯🇵 JP 01
+      - 12|🇺🇸_US_美国_fd_147
+      - _US_美国->🇳🇱_NL_荷兰
+      - 12|🇺🇸_US_美国_fd_44
+      - 12|🇺🇸_US_美国_fd_122
+      - 12|🇺🇸_US_美国_fd_87 2
+      - 12|🇺🇸_US_美国_fd_156
+      - 12|🇺🇸_US_美国_fd_111 2
+      - 12|🇺🇸_US_美国_fd_107
+      - 12|🇺🇸_US_美国_fd_54
+      - 12|🇳🇱_NL_荷兰_fd_99
+      - 12|🇺🇸_US_美国_fd_86
+      - US_speednode_0056
+      - 未知_0923022
+      - _US_美国_1
+      - _CN_中国->🇺🇸_US_美国_3
+      - "8,14|「蛋挞云,流媒体全解锁」🇯🇵 JP 01 #1"
+      - 频道34@wxgqlfx
+      - 12|🇺🇸_US_美国_fd_27
+      - _US_美国_2
+      - 12|🇺🇸_US_美国_fd_86 2
+      - 12|🇺🇸_US_美国_fd_140
+      - US_speednode_0050
+      - 12|🇭🇰_HK_香港_fd_14
+      - 12|🇺🇸_US_美国_fd_98
+      - 频道30@wxgqlfx
+      - US_speednode_0048
+      - 12|🇺🇸_US_美国_fd_50
+      - 12|🇺🇸_US_美国_fd_145 2
+      - US_speednode_0039
+      - "8,14|「蛋挞云,流媒体全解锁」🇯🇵 JP 01 #1 2"
+      - 12|🇺🇸_US_美国_fd_57
+      - "0,1,2,3,4,18|🇺🇸 _US_美国 #3"
+      - 美国_0923025
+      - 美国_09231063
+      - US_speednode_0040
+      - 12|🇺🇸_US_美国_fd_150
+      - 美国 157
+      - 12|🇺🇸_US_美国_fd_138
+      - US_speednode_0052
+      - 12|🇺🇸_US_美国_fd_96
+      - 12|🇺🇸_US_美国_fd_143
+      - 12|🇺🇸_US_美国_fd_102
       - 12,15|免费梯子https://t.me/mftizi
-      - 14|🇰🇷 首尔特殊|@ripaojiedian
-      - US_speednode_0018
-      - _CN_中国->🇸🇬_SG_新加坡 2
-      - Relay_🇺🇸US-🇺🇸US_88 | 4.45Mb
-      - ZZ_111
-      - 美国_0922054
-      - 美国_0922132
-      - Relay_🇺🇸US-🇺🇸US_82 | 1.16Mb
-      - US_speednode_0016
-      - "0,1,2,3,4,15,18|🇺🇸 _CN_中国->🇺🇸_US_美国 #2"
-      - Relay_🇭🇰HK-🇭🇰HK_29 |69.59Mb
-      - US_87
+      - 12|🇭🇰_HK_香港_fd_125 2
+      - US_speednode_0055
+      - 12|🇺🇸_US_美国_fd_32
+      - US_speednode_0049
+      - 12|🇺🇸_US_美国_fd_121
+      - 12|🇺🇸_US_美国_fd_103
+      - 12|🇺🇸_US_美国_fd_112
+      - 12|🇺🇸_US_美国_fd_104 2
+      - 频道19@wxgqlfx
+      - 12|🇺🇸_US_美国_fd_71
+      - 12|🇺🇸_US_美国_fd_96 2
+      - "3|_CN_中国 #1"
+      - 8|中转 🇸🇬 Singapore 03 @nodpai
+      - 12|🇺🇸_US_美国_fd_74
+      - 0,1,2,3,4,6,15|🇸🇬 _CN_中国->🇸🇬_SG_新加坡
+      - 12|🇺🇸_US_美国_fd_149
+      - 12|🇺🇸_US_美国_fd_112 2
+      - 12|🇺🇸_US_美国_fd_100
+      - 12|🇺🇸_US_美国_fd_155
+      - 12|🇺🇸_US_美国_fd_114 2
+      - US_102
+      - US_108
+      - HK_speednode_0018
+      - Relay_🇺🇸US-🇸🇬SG_98 | 1.14Mb
+      - ZZ_119
+      - US_speednode_0025
+      - NL_speednode_0022
+      - ZZ_120
+      - FR_speednode_0013
+      - HK_speednode_0016
+      - 8|中转 🇸🇬 Singapore 02 @nodpai
+      - 12|🇭🇰_HK_香港_fd_113
+      - 12|🇺🇸_US_美国_fd_45
+      - 加拿大 180
+      - US_speednode_0027
+      - US_111
+      - 12|🇺🇸_US_美国_fd_6
+      - Relay_🇸🇬SG-🇦🇺AU_44 |49.22Mb
+      - Relay_🇺🇸US-🇸🇬SG_101 | 5.33Mb
+      - US_speednode_0024
+      - Relay_🇺🇸US-🇺🇸US_106 | 4.45Mb
+      - CN_14
+      - Relay_🇺🇸US-🇮🇳IN_93 |68.04Mb
+      - US_speednode_0030
+      - Relay_🇫🇷FR-🇫🇷FR_26 | 8.19Mb
+      - 法国+格拉沃利讷OVH数据中心
+      - _US_美国
+      - Relay_🇭🇰HK-🇹🇼TW_35 |71.88Mb
+      - Relay_🇸🇬SG-🇨🇭CH_43 |15.53Mb
+      - CN_speednode_0010
+      - Relay_ |21.94Mb
+      - _RE_留尼汪
+      - "|11.44Mb"
+      - Relay_🇭🇰HK-🇭🇰HK_34 |35.27Mb
+      - US_speednode_0034
+      - 12|🇺🇸_US_美国_fd_98 2
+      - github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 12
       - "0,1,2,3,4,12|🇺🇸 _US_美国 #24"
-      - 12|🇺🇸_US_美国_欢迎订阅yui科技_89
-      - Relay_🇺🇸US-🇮🇳IN_81 |68.04Mb
-      - ZZ_109
-      - IR_speednode_0012
-      - 美国_0922049
-      - KR_speednode_0015
-      - 美国_0922024
-      - US_86
-      - Relay_🇺🇸US-🇹🇼TW_84 |64.68Mb
+      - github.com/freefq - 荷兰  4
+      - 中国_0922066
       - US_83
+      - Relay_🇭🇰HK-🇭🇰HK_33 |69.59Mb
       - IR_speednode_0011
-      - 12,15|关注电报https://t.me/mftizi
+      - ZZ_121
+      - US_speednode_0032
+      - _US_美国_2 2
+      - 15|美国A|@ripaojiedian
+      - HK_speednode_0009
       - FR_speednode_0014
-      - 美国_0922131
+      - 美国 172
+      - 12|🇺🇸_US_美国_fd_100 2
+      - 12|🇭🇰_HK_香港_fd_113 2
+      - 美国 173
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
