@@ -6,675 +6,347 @@ mode: Rule
 log-level: info
 external-controller: 9090
 proxies:
-  - {name: IR_speednode_0070, server: 31.7.64.196, port: 8080, type: vmess, uuid: a39a6efe-54cf-41b4-a467-b1b741ca8a81, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [31.7.64.196]}}, udp: true}
-  - {name: 台湾 001, server: 45.121.48.196, port: 10001, type: vmess, uuid: 0ed35629-919a-4891-ba0f-13cd198f863b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: TW-45.121.48.196-328, server: 45.121.48.196, port: 10001, type: vmess, uuid: 0ed35629-919a-4891-ba0f-13cd198f863b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: RU-46.29.166.237-043, server: 46.29.166.237, port: 47555, type: vmess, uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 111@SSRSUB, server: 47.236.18.250, port: 9220, type: vmess, uuid: 1d1a3d65-edd6-43af-e63f-c87a89897f95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: SG-47.236.18.250-179, server: 47.236.18.250, port: 9220, type: vmess, uuid: 1d1a3d65-edd6-43af-e63f-c87a89897f95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 47.236.18.250}}, udp: true}
-  - {name: 12|@ZDYZ2_🇹🇼_TW_123, server: 61.228.180.26, port: 443, type: vmess, uuid: 8e53b838-e5a4-45fb-94c2-f5dd7f7f729a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /b21}, udp: true}
-  - {name: DE-62.133.60.134-320, server: 62.133.60.134, port: 10001, type: vmess, uuid: 998d0aea-9540-11ee-9111-3fe7c1d34d71, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: 62.133.60.134}}, udp: true}
-  - {name: US_171 |17.46Mb, server: 64.176.42.137, port: 20886, type: vmess, uuid: f574b237-3ebf-405c-d540-541530fe5ed7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 叶莎1-日@SSRSUB, server: 64.176.58.15, port: 46154, type: vmess, uuid: adcbe160-3010-483d-b438-d6057f465b1d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_speednode_0116, server: 64.176.58.15, port: 46154, type: vmess, uuid: adcbe160-3010-483d-b438-d6057f465b1d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 097, server: 64.176.58.15, port: 46154, type: vmess, uuid: adcbe160-3010-483d-b438-d6057f465b1d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP-64.176.58.7-299, server: 64.176.58.7, port: 14431, type: vmess, uuid: ff681ba6-55f5-4e79-8f40-ad6bbdf14044, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CA_加拿大, server: 74.48.130.248, port: 20426, type: vmess, uuid: 67234df6-8d1d-409e-c263-f17742a6151c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US-74.48.130.248-013, server: 74.48.130.248, port: 20426, type: vmess, uuid: 67234df6-8d1d-409e-c263-f17742a6151c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US-74.48.130.248-339, server: 74.48.130.248, port: 20426, type: vmess, uuid: 67234df6-8d1d-409e-c263-f17742a6151c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CA_131 |33.99Mb, server: 74.48.130.248, port: 20426, type: vmess, uuid: 67234df6-8d1d-409e-c263-f17742a6151c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SG-8.222.187.112-217, server: 8.222.187.112, port: 44574, type: vmess, uuid: b18dc5ba-62b7-4423-aacc-f184da15c033, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_1209201104, server: ca-new01.gujuji.top, port: 8080, type: vmess, uuid: 9d4d56af-8e40-4d94-841d-12c1940f15ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca-new01.gujuji.top}}, udp: true}
-  - {name: 美国_1209201128, server: cdnikuan.ikuan.dev, port: 8880, type: vmess, uuid: 5fa78c97-6bd6-4b9d-adc2-156511e428f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/microsoft?ed=1024", headers: {Host: losangeles.freenode.pro}}, udp: true}
-  - {name: 未知_120920769, server: cdnikuan3.ikuan.dev, port: 8880, type: vmess, uuid: 5fa78c97-6bd6-4b9d-adc2-156511e428f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/microsoft?ed=1024", headers: {Host: losangeles.freenode.pro}}, udp: true}
-  - {name: 美国_1209201129, server: cdnikuancdnikuan.ikuan.dev, port: 8880, type: vmess, uuid: 5fa78c97-6bd6-4b9d-adc2-156511e428f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/microsoft?ed=1024", headers: {Host: losangeles.freenode.pro}}, udp: true}
-  - {name: 美国_1209201130, server: cdnikuancdnikuan.ikuan.dev, port: 8080, type: vmess, uuid: 5fa78c97-6bd6-4b9d-adc2-156511e428f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/Onlinemedicallearningvideos/HEAC*?ed=2048", headers: {Host: usopenvz3-52026022940dc1234123455cf1.freenode.pro}}, udp: true}
-  - {name: 美国_1209201131, server: cdnikuancdnikuan.ikuan.dev, port: 2052, type: vmess, uuid: 5fa78c97-6bd6-4b9d-adc2-156511e428f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/Onlinemedicallearningvideos/HEAC*?ed=2048", headers: {Host: usopenvz2-10726022940b71234123487d70001.freenode.pro}}, udp: true}
-  - {name: V006--US-付费推荐:dlj.tf/ssrsub, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v03.ssrsub.com}}, udp: true}
-  - {name: V012--US-付费推荐:dlj.tf/ssrsub, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v004.ssrsub.com}}, udp: true}
-  - {name: V015--US-付费推荐:dlj.tf/ssrsub, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v005.ssrsub.com}}, udp: true}
-  - {name: NU_speednode_0091, server: channel.freev2alpha.cfd, port: 2096, type: vmess, uuid: fbae0911-5e4c-4bf4-8b37-3a2721e0da85, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: channel.freev2alpha.cfd, grpc-opts: {grpc-service-name: "@V2ray_Alpha @V2ray_Alpha @V2ray_Alpha"}, udp: true}
-  - {name: 未知_120920773, server: dl1.doushimeng.com, port: 80, type: vmess, uuid: 8233b10e-354a-405d-a1cb-0b151f4a5e06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /asdas, headers: {Host: cf-tww.doushimeng.com}}, udp: true}
-  - {name: 未知_120920777, server: dl1.doushimeng.com, port: 2082, type: vmess, uuid: 8233b10e-354a-405d-a1cb-0b151f4a5e06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /asdas, headers: {Host: cf-nlss.nicehand.top}}, udp: true}
-  - {name: 未知_120920775, server: dl3.doushimeng.com, port: 2082, type: vmess, uuid: 8233b10e-354a-405d-a1cb-0b151f4a5e06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /asdas, headers: {Host: cf-de2ss.doushimeng.com}}, udp: true}
-  - {name: 未知_120920772, server: dl4.doushimeng.com, port: 2086, type: vmess, uuid: 8233b10e-354a-405d-a1cb-0b151f4a5e06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /asdas, headers: {Host: cf-kr2s.doushimeng.com}}, udp: true}
-  - {name: 未知_120920771, server: dl6.doushimeng.com, port: 80, type: vmess, uuid: 8233b10e-354a-405d-a1cb-0b151f4a5e06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /asdas, headers: {Host: cf-kr.doushimeng.free.hr}}, udp: true}
-  - {name: 12|日本 - 东京 - Oracle Corporation, server: jpdj6.ip8.shop, port: 20202, type: vmess, uuid: a5de5eb3-5760-488a-9211-e5fbd9388905, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点, server: moon.chanell.mci.v-x4ssd.space, port: 8080, type: vmess, uuid: 6ad7afd7-6958-478e-9fff-88f16f9a2008, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: moon.chanell.mci.v-x4ssd.space}}, udp: true}
-  - {name: V014--US-付费推荐:dlj.tf/ssrsub, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v005.ssrsub.com}}, udp: true}
-  - {name: V013--US-付费推荐:dlj.tf/ssrsub, server: singapore.com, port: 80, type: vmess, uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v005.ssrsub.com}}, udp: true}
-  - {name: V001--US-付费推荐:dlj.tf/ssrsub, server: singapore.com, port: 80, type: vmess, uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v006.ssrsub.com}}, udp: true}
-  - {name: 未知_120920679, server: us-01.jikuai.xyz, port: 2082, type: vmess, uuid: 5d3e67f9-b611-4076-9136-cc64fd234806, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-01.jikuai.xyz}}, udp: true}
-  - {name: 美国_1209201105, server: us-new01.gujuji.top, port: 8080, type: vmess, uuid: 9d4d56af-8e40-4d94-841d-12c1940f15ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-new01.gujuji.top}}, udp: true}
-  - {name: 未知_120920760, server: us-new02.gujuji.top, port: 8080, type: vmess, uuid: 9d4d56af-8e40-4d94-841d-12c1940f15ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-new02.gujuji.top}}, udp: true}
-  - {name: 美国_1209201106, server: us-new03.gujuji.top, port: 8080, type: vmess, uuid: 9d4d56af-8e40-4d94-841d-12c1940f15ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-new03.gujuji.top}}, udp: true}
-  - {name: github.com/freefq - 乌克兰  6, server: 94.131.14.177, port: 80, type: vmess, uuid: 2c5fee13-f08b-4ba8-86db-27dd51cb9781, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: lt2-vmess.sshmax.xyz}}, udp: true}
-  - {name: 185.151.146.169@SSRSUB, server: 185.151.146.169, port: 38935, type: ss, cipher: aes-256-gcm, password: chG0C20Pab, udp: true}
-  - {name: _US_美国, server: us2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 443, type: trojan, password: 7b01f853-1c72-47db-8f57-151d491b3bf9, sni: 206.237.5.220, skip-cert-verify: true, udp: true}
-  - {name: 12|🇨🇦加拿大2丨电报群@bp520, server: 162.159.142.212, port: 80, type: vmess, uuid: 5c36dba4-de68-42be-a07f-937d9f920357, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca3.889611.com}}, udp: true}
-  - {name: KR_speednode_0086, server: 43.201.5.239, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 未知_120920653, server: 104.18.62.248, port: 2052, type: vmess, uuid: 5081e895-00ec-4ef5-9005-e63dc56a02f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/public?ed=2048", headers: {Host: uk1.vvv123.store}}, udp: true}
-  - {name: _US_美国 2, server: 2.58.85.44, port: 444, type: vmess, uuid: aa606a23-5454-4b3b-fee6-e4ab981df030, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 12|🇬🇧英国2丨白嫖机场.com, server: 162.159.142.242, port: 80, type: vmess, uuid: 5c36dba4-de68-42be-a07f-937d9f920357, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: uk3.889611.com}}, udp: true}
-  - {name: 12|Youtube破解广告5, server: 162.159.142.205, port: 80, type: vmess, uuid: 5c36dba4-de68-42be-a07f-937d9f920357, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: er3.889611.com}}, udp: true}
-  - {name: CN_speednode_0004, server: gd-cn.jdyzyjd.xyz, port: 19287, type: ss, cipher: chacha20-ietf-poly1305, password: 2ba0a418-7db9-4440-a08c-f1ea0be75bd4, udp: true}
-  - {name: 12|🇨🇦加拿大5丨电报群@bp520, server: 162.159.142.215, port: 80, type: vmess, uuid: 5c36dba4-de68-42be-a07f-937d9f920357, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca3.889611.com}}, udp: true}
-  - {name: Relay_🇨🇳CN-🇸🇬SG_214 |14.56Mb, server: cm03.newcome.xyz, port: 6704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: twg4|频道 t.me/SSRSUB, server: 103.159.206.35, port: 31945, type: vmess, uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 亚太地区 002, server: 103.180.161.47, port: 23898, type: vmess, uuid: aac30c4d-12f8-4dde-fd22-0d2eeeb9ce89, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SG_speednode_0096, server: 13.213.1.132, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: SG_speednode_0097, server: 13.215.194.232, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: vmess@SSRSUB, server: 148.135.72.169, port: 8080, type: vmess, uuid: e514c3c9-703d-4e94-e71f-73f9f34897ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 12|🇬🇧英国3丨白嫖机场.com, server: 162.159.142.243, port: 80, type: vmess, uuid: 5c36dba4-de68-42be-a07f-937d9f920357, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: uk3.889611.com}}, udp: true}
-  - {name: CN-183.240.232.93-361, server: 183.240.232.93, port: 34001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_speednode_0113, server: 3.129.250.63, port: 56333, type: vmess, uuid: 610fcb1f-ffa6-4819-d313-cd530be44a3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [3.129.250.63]}}, udp: true}
-  - {name: TW-210.61.206.229-290, server: 210.61.206.229, port: 21433, type: vmess, uuid: 39d39017-f955-4b10-b269-d166ec6b17c9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0021, server: 183.240.222.171, port: 32024, type: ss, cipher: aes-128-gcm, password: e3a44078-5669-4232-a306-ffcd627f717b, udp: true}
-  - {name: 美国_120920044, server: 148.135.72.169, port: 8080, type: vmess, uuid: e514c3c9-703d-4e94-e71f-73f9f34897ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 148.135.72.169}}, udp: true}
-  - {name: 美国 108, server: 173.245.59.101, port: 2095, type: vmess, uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /Jnv8ViZOUVgijjOh0p5uGjHnXIiY, headers: {Host: fr4.v2-teh.fun}}, udp: true}
-  - {name: CN_speednode_0002, server: 125.88.212.59, port: 33567, type: ss, cipher: chacha20-ietf-poly1305, password: 56633687-3c35-4bae-9a15-efff8eb67f98, udp: true}
-  - {name: 14|🇸🇬 新加坡3|浏览器输入 翻墙.com, server: service.ouluyun9803.com, port: 20009, type: ss, cipher: chacha20-ietf-poly1305, password: d89ca371-e94b-4dfe-ad6f-02bd13edf7c4, udp: true}
-  - {name: 美国CloudFlare节点 38, server: 162.159.142.204, port: 80, type: vmess, uuid: 5c36dba4-de68-42be-a07f-937d9f920357, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: er3.889611.com}}, udp: true}
-  - {name: TW-210.61.206.196-211, server: 210.61.206.196, port: 18206, type: vmess, uuid: 32c29370-cff3-49be-a565-b3f16dfbb85d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: TW-210.61.206.229-206, server: 210.61.206.229, port: 21433, type: vmess, uuid: 39d39017-f955-4b10-b269-d166ec6b17c9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾13@SSRSUB, server: 210.61.206.229, port: 21433, type: vmess, uuid: 39d39017-f955-4b10-b269-d166ec6b17c9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: KR_speednode_0085, server: 43.200.253.6, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 14|🇸🇬 新加坡3|浏览器输入 翻墙.com 2, server: service.ouluyun9803.com, port: 26601, type: ss, cipher: chacha20-ietf-poly1305, password: d89ca371-e94b-4dfe-ad6f-02bd13edf7c4, udp: true}
-  - {name: CN_speednode_0014, server: cm03.newcome.xyz, port: 6701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: CN_speednode_0020, server: 183.240.222.171, port: 32001, type: ss, cipher: aes-256-gcm, password: e3a44078-5669-4232-a306-ffcd627f717b, udp: true}
-  - {name: 14|🇯🇵 日本|@ripaojiedian, server: service.ouluyun9803.com, port: 20007, type: ss, cipher: chacha20-ietf-poly1305, password: d89ca371-e94b-4dfe-ad6f-02bd13edf7c4, udp: true}
-  - {name: 12|Youtube破解广告1, server: 162.159.142.201, port: 80, type: vmess, uuid: 5c36dba4-de68-42be-a07f-937d9f920357, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: er3.889611.com}}, udp: true}
-  - {name: 香港5|@ripaojiedian, server: 183.240.232.93, port: 34001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾_120920002, server: 103.159.206.35, port: 31945, type: vmess, uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 103.159.206.35}}, udp: true}
-  - {name: CN_speednode_0018, server: 183.240.222.171, port: 33563, type: vmess, uuid: e3a44078-5669-4232-a306-ffcd627f717b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /awssgB}, udp: true}
-  - {name: 广东省 移动, server: 183.240.232.93, port: 34001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Pool_ |297.00Mb, server: 150.107.46.21, port: 8083, type: ssr, cipher: aes-256-cfb, password: iFqnzSscN, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: cloudfront.net, udp: true}
-  - {name: IR-193.151.151.227-218, server: 193.151.151.227, port: 18904, type: vmess, uuid: 270ce474-6850-4102-85af-5a77fc660350, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 广东省广州市+移动, server: service.ouluyun9803.com, port: 26666, type: ss, cipher: chacha20-ietf-poly1305, password: d89ca371-e94b-4dfe-ad6f-02bd13edf7c4, udp: true}
-  - {name: CN_speednode_0019, server: 183.240.222.171, port: 32002, type: ss, cipher: chacha20-ietf-poly1305, password: e3a44078-5669-4232-a306-ffcd627f717b, udp: true}
-  - {name: CN_speednode_0024, server: 112.30.145.47, port: 22133, type: vmess, uuid: e3a44078-5669-4232-a306-ffcd627f717b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0025, server: 112.30.145.47, port: 22131, type: vmess, uuid: e3a44078-5669-4232-a306-ffcd627f717b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇸🇬SG_217 |18.60Mb, server: zx02.endhigh.xyz, port: 6703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: CN_speednode_0036, server: 183.240.222.171, port: 32010, type: ss, cipher: chacha20-ietf-poly1305, password: e3a44078-5669-4232-a306-ffcd627f717b, udp: true}
-  - {name: CN_speednode_0039, server: 112.30.145.47, port: 32008, type: ss, cipher: aes-128-gcm, password: e3a44078-5669-4232-a306-ffcd627f717b, udp: true}
-  - {name: CN_speednode_0034, server: 183.240.222.171, port: 32019, type: ss, cipher: chacha20-ietf-poly1305, password: e3a44078-5669-4232-a306-ffcd627f717b, udp: true}
-  - {name: 台湾_120920046, server: tw.doushimeng.com, port: 46661, type: ss, cipher: chacha20-ietf-poly1305, password: 8233b10e-354a-405d-a1cb-0b151f4a5e06, udp: true}
-  - {name: _55 |17.46Mb, server: 43.207.86.238, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 广东省移动 5, server: 183.240.222.171, port: 33561, type: vmess, uuid: e3a44078-5669-4232-a306-ffcd627f717b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /awsjpB, headers: {Host: 183.240.222.171}}, udp: true}
-  - {name: CN_speednode_0031, server: 112.30.145.47, port: 32007, type: ss, cipher: chacha20-ietf-poly1305, password: e3a44078-5669-4232-a306-ffcd627f717b, udp: true}
-  - {name: BD_speednode_0002, server: 103.99.11.137, port: 53052, type: vmess, uuid: ecc4a0a7-40bc-4159-e70b-057483bee244, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 103.99.11.137}}, udp: true}
-  - {name: CN_speednode_0037, server: 183.240.222.171, port: 32023, type: ss, cipher: chacha20-ietf-poly1305, password: e3a44078-5669-4232-a306-ffcd627f717b, udp: true}
-  - {name: CN_speednode_0028, server: 112.30.145.47, port: 33563, type: vmess, uuid: e3a44078-5669-4232-a306-ffcd627f717b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /awssgB}, udp: true}
-  - {name: 台湾3|@ripaojiedian, server: wtw1000mline004.chilines.club, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 4d1e8cd03847, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: wtw1000mline004.chilines.club, path: /wlkldrkdzet, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: CN_speednode_0015, server: cm03.newcome.xyz, port: 6708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 12|🇭🇰香港1丨白嫖机场.com, server: 162.159.142.211, port: 80, type: vmess, uuid: 5c36dba4-de68-42be-a07f-937d9f920357, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk3.889611.com}}, udp: true}
-  - {name: 韩国_120920058, server: 146.56.179.67, port: 40003, type: trojan, password: cc05b267-2e17-4e73-92f0-2cf603aa5997, skip-cert-verify: true, udp: true}
-  - {name: 法国_120920145, server: 15.236.100.212, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 德国_120920095, server: 3.125.188.184, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0033, server: 112.30.145.47, port: 33565, type: vmess, uuid: e3a44078-5669-4232-a306-ffcd627f717b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: sakura8}, udp: true}
-  - {name: CN_speednode_0006, server: 139.227.182.207, port: 10011, type: ss, cipher: aes-128-gcm, password: "g12sQi#ss#&1", plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: CN_speednode_0042, server: 112.30.145.47, port: 32028, type: ss, cipher: chacha20-ietf-poly1305, password: e3a44078-5669-4232-a306-ffcd627f717b, udp: true}
-  - {name: 爱尔兰_120920002, server: 52.51.114.1, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇰🇷KR-🇭🇰HK_593 |14.70Mb, server: frontend.kuangbiaoyun.com, port: 40001, type: trojan, password: 57edfecf-5694-4a34-8072-54a4f0636a62, sni: frontend.kuangbiaoyun.com, skip-cert-verify: true, udp: true}
-  - {name: 美国_1209201123, server: usshs2.ip8.shop, port: 25955, type: ss, cipher: aes-256-gcm, password: bf018cdd-8268-4af3-9835-3c6ef4ad7eeb, udp: true}
-  - {name: CN_speednode_0048, server: 183.240.222.171, port: 32017, type: ss, cipher: aes-256-gcm, password: e3a44078-5669-4232-a306-ffcd627f717b, udp: true}
-  - {name: CN_speednode_0044, server: 183.240.222.171, port: 32031, type: ss, cipher: chacha20-ietf-poly1305, password: e3a44078-5669-4232-a306-ffcd627f717b, udp: true}
-  - {name: 12|🇯🇵日本4丨电报群@bp520, server: 162.159.142.234, port: 80, type: vmess, uuid: 5c36dba4-de68-42be-a07f-937d9f920357, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp3.889611.com}}, udp: true}
-  - {name: CN_speednode_0035, server: 112.30.145.47, port: 33561, type: vmess, uuid: e3a44078-5669-4232-a306-ffcd627f717b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /awsjpB}, udp: true}
-  - {name: CN_speednode_0045, server: 112.30.145.47, port: 32023, type: ss, cipher: chacha20-ietf-poly1305, password: e3a44078-5669-4232-a306-ffcd627f717b, udp: true}
-  - {name: CN_speednode_0012, server: cm03.newcome.xyz, port: 6707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: CN_speednode_0050, server: 183.240.222.171, port: 32015, type: ss, cipher: aes-256-gcm, password: e3a44078-5669-4232-a306-ffcd627f717b, udp: true}
-  - {name: 12|🇯🇵日本6丨电报群@bp520, server: 162.159.142.236, port: 80, type: vmess, uuid: 5c36dba4-de68-42be-a07f-937d9f920357, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp3.visaapp.top}}, udp: true}
-  - {name: US_speednode_0112, server: 172.232.157.47, port: 443, type: trojan, password: 2e23dfc2-fd4d-45f3-9022-f2319c5314c8, sni: cms.accuweather.com, skip-cert-verify: true, udp: true}
-  - {name: 美国 v2rayfree.eu.org, server: unlk1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 20152, type: trojan, password: 7b01f853-1c72-47db-8f57-151d491b3bf9, sni: 13-231-155-134.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0038, server: 112.30.145.47, port: 33562, type: vmess, uuid: e3a44078-5669-4232-a306-ffcd627f717b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /awskrB}, udp: true}
-  - {name: IN_speednode_0069, server: 103.114.201.44, port: 45233, type: vmess, uuid: 8e87821e-c22a-44c6-c741-43ab791f47b6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 103.114.201.44}}, udp: true}
-  - {name: 韩国_120920067, server: 146.56.179.67, port: 40006, type: trojan, password: cc05b267-2e17-4e73-92f0-2cf603aa5997, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0049, server: 183.240.222.171, port: 32027, type: ss, cipher: chacha20-ietf-poly1305, password: e3a44078-5669-4232-a306-ffcd627f717b, udp: true}
-  - {name: 德国_120920124, server: 18.158.50.250, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0026, server: 112.30.145.47, port: 32001, type: ss, cipher: aes-256-gcm, password: e3a44078-5669-4232-a306-ffcd627f717b, udp: true}
-  - {name: 韩国_120920037, server: 146.56.179.67, port: 40004, type: trojan, password: cc05b267-2e17-4e73-92f0-2cf603aa5997, skip-cert-verify: true, udp: true}
-  - {name: 1|_KR_->_AU_, server: frontend.kuangbiaoyun.com, port: 40005, type: trojan, password: 57edfecf-5694-4a34-8072-54a4f0636a62, sni: frontend.kuangbiaoyun.com, skip-cert-verify: true, udp: true}
-  - {name: 新加坡2|浏览器输入 翻墙.com, server: frontend.kuangbiaoyun.com, port: 40006, type: trojan, password: 57edfecf-5694-4a34-8072-54a4f0636a62, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0059, server: 112.30.145.47, port: 32029, type: ss, cipher: chacha20-ietf-poly1305, password: e3a44078-5669-4232-a306-ffcd627f717b, udp: true}
-  - {name: Relay_🇰🇷KR-🇺🇸US_594 |48.87Mb, server: frontend.kuangbiaoyun.com, port: 40007, type: trojan, password: 57edfecf-5694-4a34-8072-54a4f0636a62, sni: frontend.kuangbiaoyun.com, skip-cert-verify: true, udp: true}
-  - {name: 韩国_120920059, server: 146.56.179.67, port: 40001, type: trojan, password: cc05b267-2e17-4e73-92f0-2cf603aa5997, skip-cert-verify: true, udp: true}
-  - {name: KR_speednode_0076, server: 146.56.179.67, port: 40001, type: trojan, password: 57edfecf-5694-4a34-8072-54a4f0636a62, sni: frontend.kuangbiaoyun.com, skip-cert-verify: true, udp: true}
   - {name: _FR_法国_6, server: 135.125.172.153, port: 443, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
-  - {name: CN_speednode_0051, server: 183.240.222.171, port: 32007, type: ss, cipher: chacha20-ietf-poly1305, password: e3a44078-5669-4232-a306-ffcd627f717b, udp: true}
-  - {name: CN_speednode_0057, server: 112.30.145.47, port: 32012, type: ss, cipher: chacha20-ietf-poly1305, password: e3a44078-5669-4232-a306-ffcd627f717b, udp: true}
-  - {name: 104.234.202.187@SSRSUB, server: 104.234.202.187, port: 24422, type: ss, cipher: aes-256-gcm, password: qw7lnQ2zj3, udp: true}
-  - {name: 12|🇭🇰香港3丨白嫖机场.com, server: 162.159.142.213, port: 80, type: vmess, uuid: 5c36dba4-de68-42be-a07f-937d9f920357, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk3.889611.com}}, udp: true}
-  - {name: CN_speednode_0054, server: 112.30.145.47, port: 32016, type: ss, cipher: chacha20-ietf-poly1305, password: e3a44078-5669-4232-a306-ffcd627f717b, udp: true}
-  - {name: ID-103.177.94.138-303, server: 103.177.94.138, port: 22843, type: vmess, uuid: 009bae05-80bb-4e27-d2c1-efea629e95ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_1209201134, server: us.doushimeng.com, port: 20603, type: ss, cipher: chacha20-ietf-poly1305, password: 8233b10e-354a-405d-a1cb-0b151f4a5e06, udp: true}
-  - {name: 61.111.251.85@SSRSUB, server: 61.111.251.85, port: 49679, type: vmess, uuid: 71d13959-80e6-4791-9728-fbb7291f23df, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0056, server: 183.240.222.171, port: 32013, type: ss, cipher: chacha20-ietf-poly1305, password: e3a44078-5669-4232-a306-ffcd627f717b, udp: true}
-  - {name: ID_speednode_0067, server: 103.177.94.138, port: 22843, type: vmess, uuid: 009bae05-80bb-4e27-d2c1-efea629e95ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "|23.22Mb", server: 103.177.94.138, port: 22843, type: vmess, uuid: 009bae05-80bb-4e27-d2c1-efea629e95ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0060, server: 112.30.145.47, port: 32011, type: ss, cipher: chacha20-ietf-poly1305, password: e3a44078-5669-4232-a306-ffcd627f717b, udp: true}
-  - {name: ID-103.177.94.138-370, server: 103.177.94.138, port: 22843, type: vmess, uuid: 009bae05-80bb-4e27-d2c1-efea629e95ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0011, server: cm03.newcome.xyz, port: 6705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: CN_speednode_0013, server: zx02.endhigh.xyz, port: 6706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: 12|🇬🇧英国1丨白嫖机场.com, server: 162.159.142.241, port: 80, type: vmess, uuid: 5c36dba4-de68-42be-a07f-937d9f920357, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: uk3.889611.com}}, udp: true}
+  - {name: 1|_KR_->_AU_, server: frontend.kuangbiaoyun.com, port: 40005, type: trojan, password: 57edfecf-5694-4a34-8072-54a4f0636a62, sni: frontend.kuangbiaoyun.com, skip-cert-verify: true, udp: true}
+  - {name: 14|🇯🇵 日本|@ripaojiedian, server: service.ouluyun9803.com, port: 20007, type: ss, cipher: chacha20-ietf-poly1305, password: d89ca371-e94b-4dfe-ad6f-02bd13edf7c4, udp: true}
+  - {name: 14|🇸🇬 新加坡3|浏览器输入 翻墙.com, server: service.ouluyun9803.com, port: 20009, type: ss, cipher: chacha20-ietf-poly1305, password: d89ca371-e94b-4dfe-ad6f-02bd13edf7c4, udp: true}
+  - {name: AU_92 |33.17Mb, server: au.colacloud.site, port: 20262, type: ss, cipher: chacha20-ietf-poly1305, password: 64182c2b-8d2c-4b9f-a8eb-aa2742d59f3f, udp: true}
+  - {name: FR_speednode_0046, server: 135.125.172.139, port: 443, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
+  - {name: GB_536 |47.12Mb, server: sg.colacloud.site, port: 20153, type: ss, cipher: chacha20-ietf-poly1305, password: 64182c2b-8d2c-4b9f-a8eb-aa2742d59f3f, udp: true}
+  - {name: GB_553 |49.14Mb, server: sg.colacloud.site, port: 20152, type: ss, cipher: chacha20-ietf-poly1305, password: 64182c2b-8d2c-4b9f-a8eb-aa2742d59f3f, udp: true}
+  - {name: github.com/freefq - 乌克兰  3, server: 94.131.12.58, port: 26669, type: ss, cipher: chacha20-ietf-poly1305, password: B0ry56X2AxfFgcgI7sHDWD, udp: true}
+  - {name: JP_speednode_0054, server: 43.206.212.255, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: KR_speednode_0058, server: tg_mfbpn_atw2.52vpn.eu.org, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: KR_speednode_0059, server: tg_mfbpn_ajp1.52vpn.eu.org, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: KR_speednode_0060, server: tg_mfbpn_akr1.52vpn.eu.org, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: Relay_🇰🇷KR-🇺🇸US_594 |48.87Mb, server: frontend.kuangbiaoyun.com, port: 40007, type: trojan, password: 57edfecf-5694-4a34-8072-54a4f0636a62, sni: frontend.kuangbiaoyun.com, skip-cert-verify: true, udp: true}
+  - {name: SG_speednode_0097, server: 13.215.194.232, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: US_speednode_0096, server: 35.87.39.181, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 广东省广州市+移动, server: service.ouluyun9803.com, port: 26666, type: ss, cipher: chacha20-ietf-poly1305, password: d89ca371-e94b-4dfe-ad6f-02bd13edf7c4, udp: true}
+  - {name: 韩国_121020095, server: kr.colacloud.site, port: 20352, type: ss, cipher: chacha20-ietf-poly1305, password: 64182c2b-8d2c-4b9f-a8eb-aa2742d59f3f, udp: true}
+  - {name: 美国  11, server: 45.144.30.202, port: 28490, type: ss, cipher: chacha20-ietf-poly1305, password: yZdRgske85Hou96z2dRdtH, udp: true}
   - {name: 未知_120920596, server: 103.158.74.24, port: 8881, type: ss, cipher: aes-128-gcm, password: c44b01a6-2a53-4913-95e2-8df1f61869f7, udp: true}
-  - {name: 12|🇸🇬新加坡4丨电报群@bp520, server: 162.159.142.214, port: 80, type: vmess, uuid: 5c36dba4-de68-42be-a07f-937d9f920357, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg3.889611.com}}, udp: true}
-  - {name: 12|🇬🇧英国4丨白嫖机场.com, server: 162.159.142.244, port: 80, type: vmess, uuid: 5c36dba4-de68-42be-a07f-937d9f920357, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: uk3.889611.com}}, udp: true}
-  - {name: CN_speednode_0058, server: 112.30.145.47, port: 33567, type: vmess, uuid: e3a44078-5669-4232-a306-ffcd627f717b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ruB}, udp: true}
-  - {name: KR-61.111.251.85-342, server: 61.111.251.85, port: 49679, type: vmess, uuid: 71d13959-80e6-4791-9728-fbb7291f23df, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本_120920137, server: jp.doushimeng.com, port: 21853, type: ss, cipher: chacha20-ietf-poly1305, password: 8233b10e-354a-405d-a1cb-0b151f4a5e06, udp: true}
-  - {name: 印度_120920001, server: 103.106.230.153, port: 32732, type: vmess, uuid: eb931108-646b-4ceb-a741-d32490cb00f4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 103.106.230.153}}, udp: true}
-  - {name: CN_speednode_0032, server: 183.240.222.171, port: 32020, type: ss, cipher: chacha20-ietf-poly1305, password: e3a44078-5669-4232-a306-ffcd627f717b, udp: true}
-  - {name: CN_speednode_0016, server: zx02.endhigh.xyz, port: 6701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
-  - {name: CN_speednode_0055, server: 183.240.222.171, port: 32033, type: ss, cipher: chacha20-ietf-poly1305, password: e3a44078-5669-4232-a306-ffcd627f717b, udp: true}
+  - {name: 乌克兰  6, server: 94.131.115.129, port: 38108, type: ss, cipher: chacha20-ietf-poly1305, password: bNUe0jR9rzsvLEzfPmI4Of, udp: true}
+  - {name: _10 |11.11Mb, server: 8.210.85.62, port: 80, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: obfs, plugin-opts: {mode: http, host: ""}, udp: true}
+  - {name: CN_speednode_0013, server: zx02.endhigh.xyz, port: 6706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: CN_speednode_0014, server: cm03.newcome.xyz, port: 6701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: CN_speednode_0015, server: cm03.newcome.xyz, port: 6708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: CN_speednode_0019, server: cm01.newcome.xyz, port: 5703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: CN_speednode_0022, server: cm03.newcome.xyz, port: 6703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: CN_speednode_0027, server: zx02.endhigh.xyz, port: 6705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: CN_speednode_0028, server: cm01.newcome.xyz, port: 7700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: CN_speednode_0029, server: cm01.newcome.xyz, port: 7703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: Relay_🇨🇳CN-🇸🇬SG_217 |18.60Mb, server: zx02.endhigh.xyz, port: 6703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: _US_美国_14, server: 157.254.231.45, port: 38461, type: vmess, uuid: 8f53d96b-cb13-4197-cd44-37db95809de5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "|23.22Mb", server: 103.177.94.138, port: 22843, type: vmess, uuid: 009bae05-80bb-4e27-d2c1-efea629e95ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "|46.08Mb", server: 45.121.48.172, port: 10001, type: vmess, uuid: dba51a2e-a788-43b7-9ac4-9f7cc1255f15, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "12,13,14|🇮🇩|ID|印度尼西亚|@wxgqlfx|36", server: 103.177.94.138, port: 22843, type: vmess, uuid: 009bae05-80bb-4e27-d2c1-efea629e95ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "12,13|github.com/freefq - 亚太地区  33", server: 103.180.161.47, port: 23898, type: vmess, uuid: aac30c4d-12f8-4dde-fd22-0d2eeeb9ce89, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "12|美国 加利福尼亚 #2", server: 64.176.42.137, port: 20886, type: vmess, uuid: f574b237-3ebf-405c-d540-541530fe5ed7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: ID_speednode_0067, server: 103.177.94.138, port: 22843, type: vmess, uuid: 009bae05-80bb-4e27-d2c1-efea629e95ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: ID-103.177.94.138-303, server: 103.177.94.138, port: 22843, type: vmess, uuid: 009bae05-80bb-4e27-d2c1-efea629e95ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 广东省移动 42, server: 183.240.232.93, port: 34001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 马来西亚 001, server: 103.159.132.59, port: 46923, type: vmess, uuid: 198add4a-25eb-4340-c28e-b960a2558cda, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 115, server: 64.176.37.216, port: 45930, type: vmess, uuid: b2930b0d-02b4-45dc-8025-a3c19879d4ab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 加利福尼亚 3, server: 64.176.42.137, port: 20886, type: vmess, uuid: f574b237-3ebf-405c-d540-541530fe5ed7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国加利福尼亚 46, server: 64.176.37.216, port: 45930, type: vmess, uuid: b2930b0d-02b4-45dc-8025-a3c19879d4ab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港|低价实惠 翻墙.com, server: 115.126.50.111, port: 16399, type: vmess, uuid: 0a824660-8b17-4665-d2b4-a86c7f15d32a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港科盈电信集团有限公司(打砖坪街49-53号华基工业大厦二座8层C室) 30, server: 115.126.50.111, port: 16399, type: vmess, uuid: 0a824660-8b17-4665-d2b4-a86c7f15d32a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 亚太地区 v2rayfree.eu.org 2, server: 103.177.94.138, port: 22843, type: vmess, uuid: 009bae05-80bb-4e27-d2c1-efea629e95ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 印尼 001, server: 103.177.94.138, port: 22843, type: vmess, uuid: 009bae05-80bb-4e27-d2c1-efea629e95ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Pool_ |297.00Mb, server: 150.107.46.21, port: 8083, type: ssr, cipher: aes-256-cfb, password: iFqnzSscN, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: cloudfront.net, udp: true}
+  - {name: CN_speednode_0006, server: 139.227.182.207, port: 10011, type: ss, cipher: aes-128-gcm, password: "g12sQi#ss#&1", plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: CN_speednode_0012, server: 139.227.182.207, port: 10013, type: ss, cipher: aes-128-gcm, password: "g12sQi#ss#&1", plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 日本KT2|@ripaojiedian, server: 139.227.182.207, port: 10016, type: ss, cipher: aes-128-gcm, password: "g12sQi#ss#&1", plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 台湾3|@ripaojiedian, server: wtw1000mline004.chilines.club, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 4d1e8cd03847, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: wtw1000mline004.chilines.club, path: /wlkldrkdzet, tls: true, mux: true, skip-cert-verify: true}, udp: true}
   - {name: _GB_英国, server: 172.99.190.109, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws}, udp: true}
-  - {name: Relay_🇨🇳CN-🇨🇳CN_173 |157.00Mb, server: cm01.newcome.xyz, port: 5704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 84263:3gj7aB, obfs-param: TG@wangcai_1, udp: true}
+  - {name: "12,13|github.com/freefq - 印度  45", server: 103.114.201.44, port: 45233, type: vmess, uuid: 8e87821e-c22a-44c6-c741-43ab791f47b6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "12,14|德国 - 法兰克福 - Global Internet So...", server: 62.133.60.134, port: 10001, type: vmess, uuid: 998d0aea-9540-11ee-9111-3fe7c1d34d71, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit}, udp: true}
+  - {name: 14|LV_youtube@资源分享师_142, server: 93.123.38.5, port: 443, type: vmess, uuid: 15eaa579-cf84-4792-8612-3f76fb1b6315, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@FORWARDV2RAY, headers: {Host: software.myftp.biz}}, udp: true}
+  - {name: 14|PL_youtube@资源分享师_78, server: 92.223.92.26, port: 443, type: vmess, uuid: d6d76607-603b-450f-b156-b3367f1b4558, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@FORWARDV2RAY, headers: {Host: teletv.onthewifi.com}}, udp: true}
+  - {name: 14|SE_youtube@资源分享师_136, server: 80.240.113.9, port: 443, type: vmess, uuid: 15eaa579-cf84-4792-8612-3f76fb1b6315, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@FORWARDV2RAY, headers: {Host: software.myftp.biz}}, udp: true}
+  - {name: "14|美国 #1", server: scadn.yydsii.com, port: 8080, type: vmess, uuid: f32fb637-67eb-48be-9f29-4523c4720de7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kryx.651568.xyz}}, udp: true}
+  - {name: 21|🇺🇸_US_美国_3_由快嘴科技提供:kkzui.com1_..., server: singapore.com, port: 80, type: vmess, uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v03.ssrsub.com}}, udp: true}
+  - {name: DE-62.133.60.134-320, server: 62.133.60.134, port: 10001, type: vmess, uuid: 998d0aea-9540-11ee-9111-3fe7c1d34d71, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: 62.133.60.134}}, udp: true}
+  - {name: SG-47.236.18.250-179, server: 47.236.18.250, port: 9220, type: vmess, uuid: 1d1a3d65-edd6-43af-e63f-c87a89897f95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 47.236.18.250}}, udp: true}
+  - {name: V001--US-付费推荐:dlj.tf/ssrsub, server: singapore.com, port: 80, type: vmess, uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v006.ssrsub.com}}, udp: true}
+  - {name: V015--US-付费推荐:dlj.tf/ssrsub, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v005.ssrsub.com}}, udp: true}
+  - {name: 捷克_121020001, server: 92.223.74.21, port: 443, type: vmess, uuid: 15eaa579-cf84-4792-8612-3f76fb1b6315, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@FORWARDV2RAY, headers: {Host: software.myftp.biz}}, udp: true}
+  - {name: 立陶宛 003, server: 94.131.14.177, port: 8880, type: vmess, uuid: 2c5fee13-f08b-4ba8-86db-27dd51cb9781, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 94.131.14.177}}, udp: true}
+  - {name: 卢森堡_121020004, server: 79.133.108.9, port: 443, type: vmess, uuid: 15eaa579-cf84-4792-8612-3f76fb1b6315, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@FORWARDV2RAY, headers: {Host: software.myftp.biz}}, udp: true}
+  - {name: 美国 CloudFlare节点, server: cf2.492745.xyz, port: 8080, type: vmess, uuid: 579fd6f1-7618-4fff-8635-9dba4a61df96, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cc.992688.xyz}}, udp: true}
+  - {name: 美国_120920044, server: 148.135.72.169, port: 8080, type: vmess, uuid: e514c3c9-703d-4e94-e71f-73f9f34897ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 148.135.72.169}}, udp: true}
+  - {name: 美国_1209201104, server: ca-new01.gujuji.top, port: 8080, type: vmess, uuid: 9d4d56af-8e40-4d94-841d-12c1940f15ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca-new01.gujuji.top}}, udp: true}
+  - {name: 美国_1209201105, server: us-new01.gujuji.top, port: 8080, type: vmess, uuid: 9d4d56af-8e40-4d94-841d-12c1940f15ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-new01.gujuji.top}}, udp: true}
+  - {name: 美国_1209201106, server: us-new03.gujuji.top, port: 8080, type: vmess, uuid: 9d4d56af-8e40-4d94-841d-12c1940f15ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-new03.gujuji.top}}, udp: true}
+  - {name: 美国_1210201069, server: cdnikuancdnikuan.ikuan.dev, port: 8880, type: vmess, uuid: f4892ad7-5bb9-4976-9086-99f1086241c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/microsoft?ed=1024", headers: {Host: losangeles.freenode.pro}}, udp: true}
+  - {name: 美国_1210201070, server: cdnikuancdnikuan.ikuan.dev, port: 8080, type: vmess, uuid: f4892ad7-5bb9-4976-9086-99f1086241c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/Onlinemedicallearningvideos/HEAC*?ed=2048", headers: {Host: usopenvz3-52026022940dc1234123455cf1.freenode.pro}}, udp: true}
+  - {name: 美国_1210201072, server: cdnikuancdnikuan.ikuan.dev, port: 2095, type: vmess, uuid: f4892ad7-5bb9-4976-9086-99f1086241c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/cloudvideo?ed=1024", headers: {Host: de-data-02.ikuan.dev}}, udp: true}
+  - {name: 美国CloudFlare节点 20, server: us-new03.gujuji.top, port: 8080, type: vmess, uuid: 9d4d56af-8e40-4d94-841d-12c1940f15ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-new03.gujuji.top}}, udp: true}
+  - {name: 未知_120920760, server: us-new02.gujuji.top, port: 8080, type: vmess, uuid: 9d4d56af-8e40-4d94-841d-12c1940f15ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-new02.gujuji.top}}, udp: true}
+  - {name: 未知_121020766, server: cdnikuan.ikuan.dev, port: 8880, type: vmess, uuid: f4892ad7-5bb9-4976-9086-99f1086241c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/microsoft?ed=1024", headers: {Host: losangeles.freenode.pro}}, udp: true}
+  - {name: 未知_121020767, server: cdnikuan3.ikuan.dev, port: 8880, type: vmess, uuid: f4892ad7-5bb9-4976-9086-99f1086241c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/microsoft?ed=1024", headers: {Host: losangeles.freenode.pro}}, udp: true}
+  - {name: 印度_120920001, server: 103.106.230.153, port: 32732, type: vmess, uuid: eb931108-646b-4ceb-a741-d32490cb00f4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 103.106.230.153}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - IR_speednode_0070
-      - 台湾 001
-      - TW-45.121.48.196-328
-      - RU-46.29.166.237-043
-      - 111@SSRSUB
-      - SG-47.236.18.250-179
-      - 12|@ZDYZ2_🇹🇼_TW_123
-      - DE-62.133.60.134-320
-      - US_171 |17.46Mb
-      - 叶莎1-日@SSRSUB
-      - US_speednode_0116
-      - 美国 097
-      - JP-64.176.58.7-299
-      - _CA_加拿大
-      - US-74.48.130.248-013
-      - US-74.48.130.248-339
-      - CA_131 |33.99Mb
-      - SG-8.222.187.112-217
-      - 美国_1209201104
-      - 美国_1209201128
-      - 未知_120920769
-      - 美国_1209201129
-      - 美国_1209201130
-      - 美国_1209201131
-      - V006--US-付费推荐:dlj.tf/ssrsub
-      - V012--US-付费推荐:dlj.tf/ssrsub
-      - V015--US-付费推荐:dlj.tf/ssrsub
-      - NU_speednode_0091
-      - 未知_120920773
-      - 未知_120920777
-      - 未知_120920775
-      - 未知_120920772
-      - 未知_120920771
-      - 12|日本 - 东京 - Oracle Corporation
-      - 美国 CloudFlare节点
-      - V014--US-付费推荐:dlj.tf/ssrsub
-      - V013--US-付费推荐:dlj.tf/ssrsub
-      - V001--US-付费推荐:dlj.tf/ssrsub
-      - 未知_120920679
-      - 美国_1209201105
-      - 未知_120920760
-      - 美国_1209201106
-      - github.com/freefq - 乌克兰  6
-      - 185.151.146.169@SSRSUB
-      - _US_美国
-      - 12|🇨🇦加拿大2丨电报群@bp520
-      - KR_speednode_0086
-      - 未知_120920653
-      - _US_美国 2
-      - 12|🇬🇧英国2丨白嫖机场.com
-      - 12|Youtube破解广告5
-      - CN_speednode_0004
-      - 12|🇨🇦加拿大5丨电报群@bp520
-      - Relay_🇨🇳CN-🇸🇬SG_214 |14.56Mb
-      - twg4|频道 t.me/SSRSUB
-      - 亚太地区 002
-      - SG_speednode_0096
-      - SG_speednode_0097
-      - vmess@SSRSUB
-      - 12|🇬🇧英国3丨白嫖机场.com
-      - CN-183.240.232.93-361
-      - US_speednode_0113
-      - TW-210.61.206.229-290
-      - CN_speednode_0021
-      - 美国_120920044
-      - 美国 108
-      - CN_speednode_0002
-      - 14|🇸🇬 新加坡3|浏览器输入 翻墙.com
-      - 美国CloudFlare节点 38
-      - TW-210.61.206.196-211
-      - TW-210.61.206.229-206
-      - 台湾13@SSRSUB
-      - KR_speednode_0085
-      - 14|🇸🇬 新加坡3|浏览器输入 翻墙.com 2
-      - CN_speednode_0014
-      - CN_speednode_0020
-      - 14|🇯🇵 日本|@ripaojiedian
-      - 12|Youtube破解广告1
-      - 香港5|@ripaojiedian
-      - 台湾_120920002
-      - CN_speednode_0018
-      - 广东省 移动
-      - Pool_ |297.00Mb
-      - IR-193.151.151.227-218
-      - 广东省广州市+移动
-      - CN_speednode_0019
-      - CN_speednode_0024
-      - CN_speednode_0025
-      - Relay_🇨🇳CN-🇸🇬SG_217 |18.60Mb
-      - CN_speednode_0036
-      - CN_speednode_0039
-      - CN_speednode_0034
-      - 台湾_120920046
-      - _55 |17.46Mb
-      - 广东省移动 5
-      - CN_speednode_0031
-      - BD_speednode_0002
-      - CN_speednode_0037
-      - CN_speednode_0028
-      - 台湾3|@ripaojiedian
-      - CN_speednode_0015
-      - 12|🇭🇰香港1丨白嫖机场.com
-      - 韩国_120920058
-      - 法国_120920145
-      - 德国_120920095
-      - CN_speednode_0033
-      - CN_speednode_0006
-      - CN_speednode_0042
-      - 爱尔兰_120920002
-      - Relay_🇰🇷KR-🇭🇰HK_593 |14.70Mb
-      - 美国_1209201123
-      - CN_speednode_0048
-      - CN_speednode_0044
-      - 12|🇯🇵日本4丨电报群@bp520
-      - CN_speednode_0035
-      - CN_speednode_0045
-      - CN_speednode_0012
-      - CN_speednode_0050
-      - 12|🇯🇵日本6丨电报群@bp520
-      - US_speednode_0112
-      - 美国 v2rayfree.eu.org
-      - CN_speednode_0038
-      - IN_speednode_0069
-      - 韩国_120920067
-      - CN_speednode_0049
-      - 德国_120920124
-      - CN_speednode_0026
-      - 韩国_120920037
-      - 1|_KR_->_AU_
-      - 新加坡2|浏览器输入 翻墙.com
-      - CN_speednode_0059
-      - Relay_🇰🇷KR-🇺🇸US_594 |48.87Mb
-      - 韩国_120920059
-      - KR_speednode_0076
       - _FR_法国_6
-      - CN_speednode_0051
-      - CN_speednode_0057
-      - 104.234.202.187@SSRSUB
-      - 12|🇭🇰香港3丨白嫖机场.com
-      - CN_speednode_0054
-      - ID-103.177.94.138-303
-      - 美国_1209201134
-      - 61.111.251.85@SSRSUB
-      - CN_speednode_0056
-      - ID_speednode_0067
-      - "|23.22Mb"
-      - CN_speednode_0060
-      - ID-103.177.94.138-370
-      - CN_speednode_0011
-      - CN_speednode_0013
-      - 12|🇬🇧英国1丨白嫖机场.com
+      - 1|_KR_->_AU_
+      - 14|🇯🇵 日本|@ripaojiedian
+      - 14|🇸🇬 新加坡3|浏览器输入 翻墙.com
+      - AU_92 |33.17Mb
+      - FR_speednode_0046
+      - GB_536 |47.12Mb
+      - GB_553 |49.14Mb
+      - github.com/freefq - 乌克兰  3
+      - JP_speednode_0054
+      - KR_speednode_0058
+      - KR_speednode_0059
+      - KR_speednode_0060
+      - Relay_🇰🇷KR-🇺🇸US_594 |48.87Mb
+      - SG_speednode_0097
+      - US_speednode_0096
+      - 广东省广州市+移动
+      - 韩国_121020095
+      - 美国  11
       - 未知_120920596
-      - 12|🇸🇬新加坡4丨电报群@bp520
-      - 12|🇬🇧英国4丨白嫖机场.com
-      - CN_speednode_0058
-      - KR-61.111.251.85-342
-      - 日本_120920137
-      - 印度_120920001
-      - CN_speednode_0032
-      - CN_speednode_0016
-      - CN_speednode_0055
+      - 乌克兰  6
+      - _10 |11.11Mb
+      - CN_speednode_0013
+      - CN_speednode_0014
+      - CN_speednode_0015
+      - CN_speednode_0019
+      - CN_speednode_0022
+      - CN_speednode_0027
+      - CN_speednode_0028
+      - CN_speednode_0029
+      - Relay_🇨🇳CN-🇸🇬SG_217 |18.60Mb
+      - _US_美国_14
+      - "|23.22Mb"
+      - "|46.08Mb"
+      - 12,13,14|🇮🇩|ID|印度尼西亚|@wxgqlfx|36
+      - 12,13|github.com/freefq - 亚太地区  33
+      - "12|美国 加利福尼亚 #2"
+      - ID_speednode_0067
+      - ID-103.177.94.138-303
+      - 广东省移动 42
+      - 马来西亚 001
+      - 美国 115
+      - 美国 加利福尼亚 3
+      - 美国加利福尼亚 46
+      - 香港|低价实惠 翻墙.com
+      - 香港科盈电信集团有限公司(打砖坪街49-53号华基工业大厦二座8层C室) 30
+      - 亚太地区 v2rayfree.eu.org 2
+      - 印尼 001
+      - Pool_ |297.00Mb
+      - CN_speednode_0006
+      - CN_speednode_0012
+      - 日本KT2|@ripaojiedian
+      - 台湾3|@ripaojiedian
       - _GB_英国
-      - Relay_🇨🇳CN-🇨🇳CN_173 |157.00Mb
+      - 12,13|github.com/freefq - 印度  45
+      - 12,14|德国 - 法兰克福 - Global Internet So...
+      - 14|LV_youtube@资源分享师_142
+      - 14|PL_youtube@资源分享师_78
+      - 14|SE_youtube@资源分享师_136
+      - "14|美国 #1"
+      - 21|🇺🇸_US_美国_3_由快嘴科技提供:kkzui.com1_...
+      - DE-62.133.60.134-320
+      - SG-47.236.18.250-179
+      - V001--US-付费推荐:dlj.tf/ssrsub
+      - V015--US-付费推荐:dlj.tf/ssrsub
+      - 捷克_121020001
+      - 立陶宛 003
+      - 卢森堡_121020004
+      - 美国 CloudFlare节点
+      - 美国_120920044
+      - 美国_1209201104
+      - 美国_1209201105
+      - 美国_1209201106
+      - 美国_1210201069
+      - 美国_1210201070
+      - 美国_1210201072
+      - 美国CloudFlare节点 20
+      - 未知_120920760
+      - 未知_121020766
+      - 未知_121020767
+      - 印度_120920001
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - IR_speednode_0070
-      - 台湾 001
-      - TW-45.121.48.196-328
-      - RU-46.29.166.237-043
-      - 111@SSRSUB
-      - SG-47.236.18.250-179
-      - 12|@ZDYZ2_🇹🇼_TW_123
-      - DE-62.133.60.134-320
-      - US_171 |17.46Mb
-      - 叶莎1-日@SSRSUB
-      - US_speednode_0116
-      - 美国 097
-      - JP-64.176.58.7-299
-      - _CA_加拿大
-      - US-74.48.130.248-013
-      - US-74.48.130.248-339
-      - CA_131 |33.99Mb
-      - SG-8.222.187.112-217
-      - 美国_1209201104
-      - 美国_1209201128
-      - 未知_120920769
-      - 美国_1209201129
-      - 美国_1209201130
-      - 美国_1209201131
-      - V006--US-付费推荐:dlj.tf/ssrsub
-      - V012--US-付费推荐:dlj.tf/ssrsub
-      - V015--US-付费推荐:dlj.tf/ssrsub
-      - NU_speednode_0091
-      - 未知_120920773
-      - 未知_120920777
-      - 未知_120920775
-      - 未知_120920772
-      - 未知_120920771
-      - 12|日本 - 东京 - Oracle Corporation
-      - 美国 CloudFlare节点
-      - V014--US-付费推荐:dlj.tf/ssrsub
-      - V013--US-付费推荐:dlj.tf/ssrsub
-      - V001--US-付费推荐:dlj.tf/ssrsub
-      - 未知_120920679
-      - 美国_1209201105
-      - 未知_120920760
-      - 美国_1209201106
-      - github.com/freefq - 乌克兰  6
-      - 185.151.146.169@SSRSUB
-      - _US_美国
-      - 12|🇨🇦加拿大2丨电报群@bp520
-      - KR_speednode_0086
-      - 未知_120920653
-      - _US_美国 2
-      - 12|🇬🇧英国2丨白嫖机场.com
-      - 12|Youtube破解广告5
-      - CN_speednode_0004
-      - 12|🇨🇦加拿大5丨电报群@bp520
-      - Relay_🇨🇳CN-🇸🇬SG_214 |14.56Mb
-      - twg4|频道 t.me/SSRSUB
-      - 亚太地区 002
-      - SG_speednode_0096
-      - SG_speednode_0097
-      - vmess@SSRSUB
-      - 12|🇬🇧英国3丨白嫖机场.com
-      - CN-183.240.232.93-361
-      - US_speednode_0113
-      - TW-210.61.206.229-290
-      - CN_speednode_0021
-      - 美国_120920044
-      - 美国 108
-      - CN_speednode_0002
-      - 14|🇸🇬 新加坡3|浏览器输入 翻墙.com
-      - 美国CloudFlare节点 38
-      - TW-210.61.206.196-211
-      - TW-210.61.206.229-206
-      - 台湾13@SSRSUB
-      - KR_speednode_0085
-      - 14|🇸🇬 新加坡3|浏览器输入 翻墙.com 2
-      - CN_speednode_0014
-      - CN_speednode_0020
-      - 14|🇯🇵 日本|@ripaojiedian
-      - 12|Youtube破解广告1
-      - 香港5|@ripaojiedian
-      - 台湾_120920002
-      - CN_speednode_0018
-      - 广东省 移动
-      - Pool_ |297.00Mb
-      - IR-193.151.151.227-218
-      - 广东省广州市+移动
-      - CN_speednode_0019
-      - CN_speednode_0024
-      - CN_speednode_0025
-      - Relay_🇨🇳CN-🇸🇬SG_217 |18.60Mb
-      - CN_speednode_0036
-      - CN_speednode_0039
-      - CN_speednode_0034
-      - 台湾_120920046
-      - _55 |17.46Mb
-      - 广东省移动 5
-      - CN_speednode_0031
-      - BD_speednode_0002
-      - CN_speednode_0037
-      - CN_speednode_0028
-      - 台湾3|@ripaojiedian
-      - CN_speednode_0015
-      - 12|🇭🇰香港1丨白嫖机场.com
-      - 韩国_120920058
-      - 法国_120920145
-      - 德国_120920095
-      - CN_speednode_0033
-      - CN_speednode_0006
-      - CN_speednode_0042
-      - 爱尔兰_120920002
-      - Relay_🇰🇷KR-🇭🇰HK_593 |14.70Mb
-      - 美国_1209201123
-      - CN_speednode_0048
-      - CN_speednode_0044
-      - 12|🇯🇵日本4丨电报群@bp520
-      - CN_speednode_0035
-      - CN_speednode_0045
-      - CN_speednode_0012
-      - CN_speednode_0050
-      - 12|🇯🇵日本6丨电报群@bp520
-      - US_speednode_0112
-      - 美国 v2rayfree.eu.org
-      - CN_speednode_0038
-      - IN_speednode_0069
-      - 韩国_120920067
-      - CN_speednode_0049
-      - 德国_120920124
-      - CN_speednode_0026
-      - 韩国_120920037
-      - 1|_KR_->_AU_
-      - 新加坡2|浏览器输入 翻墙.com
-      - CN_speednode_0059
-      - Relay_🇰🇷KR-🇺🇸US_594 |48.87Mb
-      - 韩国_120920059
-      - KR_speednode_0076
       - _FR_法国_6
-      - CN_speednode_0051
-      - CN_speednode_0057
-      - 104.234.202.187@SSRSUB
-      - 12|🇭🇰香港3丨白嫖机场.com
-      - CN_speednode_0054
-      - ID-103.177.94.138-303
-      - 美国_1209201134
-      - 61.111.251.85@SSRSUB
-      - CN_speednode_0056
-      - ID_speednode_0067
-      - "|23.22Mb"
-      - CN_speednode_0060
-      - ID-103.177.94.138-370
-      - CN_speednode_0011
-      - CN_speednode_0013
-      - 12|🇬🇧英国1丨白嫖机场.com
+      - 1|_KR_->_AU_
+      - 14|🇯🇵 日本|@ripaojiedian
+      - 14|🇸🇬 新加坡3|浏览器输入 翻墙.com
+      - AU_92 |33.17Mb
+      - FR_speednode_0046
+      - GB_536 |47.12Mb
+      - GB_553 |49.14Mb
+      - github.com/freefq - 乌克兰  3
+      - JP_speednode_0054
+      - KR_speednode_0058
+      - KR_speednode_0059
+      - KR_speednode_0060
+      - Relay_🇰🇷KR-🇺🇸US_594 |48.87Mb
+      - SG_speednode_0097
+      - US_speednode_0096
+      - 广东省广州市+移动
+      - 韩国_121020095
+      - 美国  11
       - 未知_120920596
-      - 12|🇸🇬新加坡4丨电报群@bp520
-      - 12|🇬🇧英国4丨白嫖机场.com
-      - CN_speednode_0058
-      - KR-61.111.251.85-342
-      - 日本_120920137
-      - 印度_120920001
-      - CN_speednode_0032
-      - CN_speednode_0016
-      - CN_speednode_0055
+      - 乌克兰  6
+      - _10 |11.11Mb
+      - CN_speednode_0013
+      - CN_speednode_0014
+      - CN_speednode_0015
+      - CN_speednode_0019
+      - CN_speednode_0022
+      - CN_speednode_0027
+      - CN_speednode_0028
+      - CN_speednode_0029
+      - Relay_🇨🇳CN-🇸🇬SG_217 |18.60Mb
+      - _US_美国_14
+      - "|23.22Mb"
+      - "|46.08Mb"
+      - 12,13,14|🇮🇩|ID|印度尼西亚|@wxgqlfx|36
+      - 12,13|github.com/freefq - 亚太地区  33
+      - "12|美国 加利福尼亚 #2"
+      - ID_speednode_0067
+      - ID-103.177.94.138-303
+      - 广东省移动 42
+      - 马来西亚 001
+      - 美国 115
+      - 美国 加利福尼亚 3
+      - 美国加利福尼亚 46
+      - 香港|低价实惠 翻墙.com
+      - 香港科盈电信集团有限公司(打砖坪街49-53号华基工业大厦二座8层C室) 30
+      - 亚太地区 v2rayfree.eu.org 2
+      - 印尼 001
+      - Pool_ |297.00Mb
+      - CN_speednode_0006
+      - CN_speednode_0012
+      - 日本KT2|@ripaojiedian
+      - 台湾3|@ripaojiedian
       - _GB_英国
-      - Relay_🇨🇳CN-🇨🇳CN_173 |157.00Mb
+      - 12,13|github.com/freefq - 印度  45
+      - 12,14|德国 - 法兰克福 - Global Internet So...
+      - 14|LV_youtube@资源分享师_142
+      - 14|PL_youtube@资源分享师_78
+      - 14|SE_youtube@资源分享师_136
+      - "14|美国 #1"
+      - 21|🇺🇸_US_美国_3_由快嘴科技提供:kkzui.com1_...
+      - DE-62.133.60.134-320
+      - SG-47.236.18.250-179
+      - V001--US-付费推荐:dlj.tf/ssrsub
+      - V015--US-付费推荐:dlj.tf/ssrsub
+      - 捷克_121020001
+      - 立陶宛 003
+      - 卢森堡_121020004
+      - 美国 CloudFlare节点
+      - 美国_120920044
+      - 美国_1209201104
+      - 美国_1209201105
+      - 美国_1209201106
+      - 美国_1210201069
+      - 美国_1210201070
+      - 美国_1210201072
+      - 美国CloudFlare节点 20
+      - 未知_120920760
+      - 未知_121020766
+      - 未知_121020767
+      - 印度_120920001
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - IR_speednode_0070
-      - 台湾 001
-      - TW-45.121.48.196-328
-      - RU-46.29.166.237-043
-      - 111@SSRSUB
-      - SG-47.236.18.250-179
-      - 12|@ZDYZ2_🇹🇼_TW_123
-      - DE-62.133.60.134-320
-      - US_171 |17.46Mb
-      - 叶莎1-日@SSRSUB
-      - US_speednode_0116
-      - 美国 097
-      - JP-64.176.58.7-299
-      - _CA_加拿大
-      - US-74.48.130.248-013
-      - US-74.48.130.248-339
-      - CA_131 |33.99Mb
-      - SG-8.222.187.112-217
-      - 美国_1209201104
-      - 美国_1209201128
-      - 未知_120920769
-      - 美国_1209201129
-      - 美国_1209201130
-      - 美国_1209201131
-      - V006--US-付费推荐:dlj.tf/ssrsub
-      - V012--US-付费推荐:dlj.tf/ssrsub
-      - V015--US-付费推荐:dlj.tf/ssrsub
-      - NU_speednode_0091
-      - 未知_120920773
-      - 未知_120920777
-      - 未知_120920775
-      - 未知_120920772
-      - 未知_120920771
-      - 12|日本 - 东京 - Oracle Corporation
-      - 美国 CloudFlare节点
-      - V014--US-付费推荐:dlj.tf/ssrsub
-      - V013--US-付费推荐:dlj.tf/ssrsub
-      - V001--US-付费推荐:dlj.tf/ssrsub
-      - 未知_120920679
-      - 美国_1209201105
-      - 未知_120920760
-      - 美国_1209201106
-      - github.com/freefq - 乌克兰  6
-      - 185.151.146.169@SSRSUB
-      - _US_美国
-      - 12|🇨🇦加拿大2丨电报群@bp520
-      - KR_speednode_0086
-      - 未知_120920653
-      - _US_美国 2
-      - 12|🇬🇧英国2丨白嫖机场.com
-      - 12|Youtube破解广告5
-      - CN_speednode_0004
-      - 12|🇨🇦加拿大5丨电报群@bp520
-      - Relay_🇨🇳CN-🇸🇬SG_214 |14.56Mb
-      - twg4|频道 t.me/SSRSUB
-      - 亚太地区 002
-      - SG_speednode_0096
-      - SG_speednode_0097
-      - vmess@SSRSUB
-      - 12|🇬🇧英国3丨白嫖机场.com
-      - CN-183.240.232.93-361
-      - US_speednode_0113
-      - TW-210.61.206.229-290
-      - CN_speednode_0021
-      - 美国_120920044
-      - 美国 108
-      - CN_speednode_0002
-      - 14|🇸🇬 新加坡3|浏览器输入 翻墙.com
-      - 美国CloudFlare节点 38
-      - TW-210.61.206.196-211
-      - TW-210.61.206.229-206
-      - 台湾13@SSRSUB
-      - KR_speednode_0085
-      - 14|🇸🇬 新加坡3|浏览器输入 翻墙.com 2
-      - CN_speednode_0014
-      - CN_speednode_0020
-      - 14|🇯🇵 日本|@ripaojiedian
-      - 12|Youtube破解广告1
-      - 香港5|@ripaojiedian
-      - 台湾_120920002
-      - CN_speednode_0018
-      - 广东省 移动
-      - Pool_ |297.00Mb
-      - IR-193.151.151.227-218
-      - 广东省广州市+移动
-      - CN_speednode_0019
-      - CN_speednode_0024
-      - CN_speednode_0025
-      - Relay_🇨🇳CN-🇸🇬SG_217 |18.60Mb
-      - CN_speednode_0036
-      - CN_speednode_0039
-      - CN_speednode_0034
-      - 台湾_120920046
-      - _55 |17.46Mb
-      - 广东省移动 5
-      - CN_speednode_0031
-      - BD_speednode_0002
-      - CN_speednode_0037
-      - CN_speednode_0028
-      - 台湾3|@ripaojiedian
-      - CN_speednode_0015
-      - 12|🇭🇰香港1丨白嫖机场.com
-      - 韩国_120920058
-      - 法国_120920145
-      - 德国_120920095
-      - CN_speednode_0033
-      - CN_speednode_0006
-      - CN_speednode_0042
-      - 爱尔兰_120920002
-      - Relay_🇰🇷KR-🇭🇰HK_593 |14.70Mb
-      - 美国_1209201123
-      - CN_speednode_0048
-      - CN_speednode_0044
-      - 12|🇯🇵日本4丨电报群@bp520
-      - CN_speednode_0035
-      - CN_speednode_0045
-      - CN_speednode_0012
-      - CN_speednode_0050
-      - 12|🇯🇵日本6丨电报群@bp520
-      - US_speednode_0112
-      - 美国 v2rayfree.eu.org
-      - CN_speednode_0038
-      - IN_speednode_0069
-      - 韩国_120920067
-      - CN_speednode_0049
-      - 德国_120920124
-      - CN_speednode_0026
-      - 韩国_120920037
-      - 1|_KR_->_AU_
-      - 新加坡2|浏览器输入 翻墙.com
-      - CN_speednode_0059
-      - Relay_🇰🇷KR-🇺🇸US_594 |48.87Mb
-      - 韩国_120920059
-      - KR_speednode_0076
       - _FR_法国_6
-      - CN_speednode_0051
-      - CN_speednode_0057
-      - 104.234.202.187@SSRSUB
-      - 12|🇭🇰香港3丨白嫖机场.com
-      - CN_speednode_0054
-      - ID-103.177.94.138-303
-      - 美国_1209201134
-      - 61.111.251.85@SSRSUB
-      - CN_speednode_0056
-      - ID_speednode_0067
-      - "|23.22Mb"
-      - CN_speednode_0060
-      - ID-103.177.94.138-370
-      - CN_speednode_0011
-      - CN_speednode_0013
-      - 12|🇬🇧英国1丨白嫖机场.com
+      - 1|_KR_->_AU_
+      - 14|🇯🇵 日本|@ripaojiedian
+      - 14|🇸🇬 新加坡3|浏览器输入 翻墙.com
+      - AU_92 |33.17Mb
+      - FR_speednode_0046
+      - GB_536 |47.12Mb
+      - GB_553 |49.14Mb
+      - github.com/freefq - 乌克兰  3
+      - JP_speednode_0054
+      - KR_speednode_0058
+      - KR_speednode_0059
+      - KR_speednode_0060
+      - Relay_🇰🇷KR-🇺🇸US_594 |48.87Mb
+      - SG_speednode_0097
+      - US_speednode_0096
+      - 广东省广州市+移动
+      - 韩国_121020095
+      - 美国  11
       - 未知_120920596
-      - 12|🇸🇬新加坡4丨电报群@bp520
-      - 12|🇬🇧英国4丨白嫖机场.com
-      - CN_speednode_0058
-      - KR-61.111.251.85-342
-      - 日本_120920137
-      - 印度_120920001
-      - CN_speednode_0032
-      - CN_speednode_0016
-      - CN_speednode_0055
+      - 乌克兰  6
+      - _10 |11.11Mb
+      - CN_speednode_0013
+      - CN_speednode_0014
+      - CN_speednode_0015
+      - CN_speednode_0019
+      - CN_speednode_0022
+      - CN_speednode_0027
+      - CN_speednode_0028
+      - CN_speednode_0029
+      - Relay_🇨🇳CN-🇸🇬SG_217 |18.60Mb
+      - _US_美国_14
+      - "|23.22Mb"
+      - "|46.08Mb"
+      - 12,13,14|🇮🇩|ID|印度尼西亚|@wxgqlfx|36
+      - 12,13|github.com/freefq - 亚太地区  33
+      - "12|美国 加利福尼亚 #2"
+      - ID_speednode_0067
+      - ID-103.177.94.138-303
+      - 广东省移动 42
+      - 马来西亚 001
+      - 美国 115
+      - 美国 加利福尼亚 3
+      - 美国加利福尼亚 46
+      - 香港|低价实惠 翻墙.com
+      - 香港科盈电信集团有限公司(打砖坪街49-53号华基工业大厦二座8层C室) 30
+      - 亚太地区 v2rayfree.eu.org 2
+      - 印尼 001
+      - Pool_ |297.00Mb
+      - CN_speednode_0006
+      - CN_speednode_0012
+      - 日本KT2|@ripaojiedian
+      - 台湾3|@ripaojiedian
       - _GB_英国
-      - Relay_🇨🇳CN-🇨🇳CN_173 |157.00Mb
+      - 12,13|github.com/freefq - 印度  45
+      - 12,14|德国 - 法兰克福 - Global Internet So...
+      - 14|LV_youtube@资源分享师_142
+      - 14|PL_youtube@资源分享师_78
+      - 14|SE_youtube@资源分享师_136
+      - "14|美国 #1"
+      - 21|🇺🇸_US_美国_3_由快嘴科技提供:kkzui.com1_...
+      - DE-62.133.60.134-320
+      - SG-47.236.18.250-179
+      - V001--US-付费推荐:dlj.tf/ssrsub
+      - V015--US-付费推荐:dlj.tf/ssrsub
+      - 捷克_121020001
+      - 立陶宛 003
+      - 卢森堡_121020004
+      - 美国 CloudFlare节点
+      - 美国_120920044
+      - 美国_1209201104
+      - 美国_1209201105
+      - 美国_1209201106
+      - 美国_1210201069
+      - 美国_1210201070
+      - 美国_1210201072
+      - 美国CloudFlare节点 20
+      - 未知_120920760
+      - 未知_121020766
+      - 未知_121020767
+      - 印度_120920001
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -693,688 +365,354 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - IR_speednode_0070
-      - 台湾 001
-      - TW-45.121.48.196-328
-      - RU-46.29.166.237-043
-      - 111@SSRSUB
-      - SG-47.236.18.250-179
-      - 12|@ZDYZ2_🇹🇼_TW_123
-      - DE-62.133.60.134-320
-      - US_171 |17.46Mb
-      - 叶莎1-日@SSRSUB
-      - US_speednode_0116
-      - 美国 097
-      - JP-64.176.58.7-299
-      - _CA_加拿大
-      - US-74.48.130.248-013
-      - US-74.48.130.248-339
-      - CA_131 |33.99Mb
-      - SG-8.222.187.112-217
-      - 美国_1209201104
-      - 美国_1209201128
-      - 未知_120920769
-      - 美国_1209201129
-      - 美国_1209201130
-      - 美国_1209201131
-      - V006--US-付费推荐:dlj.tf/ssrsub
-      - V012--US-付费推荐:dlj.tf/ssrsub
-      - V015--US-付费推荐:dlj.tf/ssrsub
-      - NU_speednode_0091
-      - 未知_120920773
-      - 未知_120920777
-      - 未知_120920775
-      - 未知_120920772
-      - 未知_120920771
-      - 12|日本 - 东京 - Oracle Corporation
-      - 美国 CloudFlare节点
-      - V014--US-付费推荐:dlj.tf/ssrsub
-      - V013--US-付费推荐:dlj.tf/ssrsub
-      - V001--US-付费推荐:dlj.tf/ssrsub
-      - 未知_120920679
-      - 美国_1209201105
-      - 未知_120920760
-      - 美国_1209201106
-      - github.com/freefq - 乌克兰  6
-      - 185.151.146.169@SSRSUB
-      - _US_美国
-      - 12|🇨🇦加拿大2丨电报群@bp520
-      - KR_speednode_0086
-      - 未知_120920653
-      - _US_美国 2
-      - 12|🇬🇧英国2丨白嫖机场.com
-      - 12|Youtube破解广告5
-      - CN_speednode_0004
-      - 12|🇨🇦加拿大5丨电报群@bp520
-      - Relay_🇨🇳CN-🇸🇬SG_214 |14.56Mb
-      - twg4|频道 t.me/SSRSUB
-      - 亚太地区 002
-      - SG_speednode_0096
-      - SG_speednode_0097
-      - vmess@SSRSUB
-      - 12|🇬🇧英国3丨白嫖机场.com
-      - CN-183.240.232.93-361
-      - US_speednode_0113
-      - TW-210.61.206.229-290
-      - CN_speednode_0021
-      - 美国_120920044
-      - 美国 108
-      - CN_speednode_0002
-      - 14|🇸🇬 新加坡3|浏览器输入 翻墙.com
-      - 美国CloudFlare节点 38
-      - TW-210.61.206.196-211
-      - TW-210.61.206.229-206
-      - 台湾13@SSRSUB
-      - KR_speednode_0085
-      - 14|🇸🇬 新加坡3|浏览器输入 翻墙.com 2
-      - CN_speednode_0014
-      - CN_speednode_0020
-      - 14|🇯🇵 日本|@ripaojiedian
-      - 12|Youtube破解广告1
-      - 香港5|@ripaojiedian
-      - 台湾_120920002
-      - CN_speednode_0018
-      - 广东省 移动
-      - Pool_ |297.00Mb
-      - IR-193.151.151.227-218
-      - 广东省广州市+移动
-      - CN_speednode_0019
-      - CN_speednode_0024
-      - CN_speednode_0025
-      - Relay_🇨🇳CN-🇸🇬SG_217 |18.60Mb
-      - CN_speednode_0036
-      - CN_speednode_0039
-      - CN_speednode_0034
-      - 台湾_120920046
-      - _55 |17.46Mb
-      - 广东省移动 5
-      - CN_speednode_0031
-      - BD_speednode_0002
-      - CN_speednode_0037
-      - CN_speednode_0028
-      - 台湾3|@ripaojiedian
-      - CN_speednode_0015
-      - 12|🇭🇰香港1丨白嫖机场.com
-      - 韩国_120920058
-      - 法国_120920145
-      - 德国_120920095
-      - CN_speednode_0033
-      - CN_speednode_0006
-      - CN_speednode_0042
-      - 爱尔兰_120920002
-      - Relay_🇰🇷KR-🇭🇰HK_593 |14.70Mb
-      - 美国_1209201123
-      - CN_speednode_0048
-      - CN_speednode_0044
-      - 12|🇯🇵日本4丨电报群@bp520
-      - CN_speednode_0035
-      - CN_speednode_0045
-      - CN_speednode_0012
-      - CN_speednode_0050
-      - 12|🇯🇵日本6丨电报群@bp520
-      - US_speednode_0112
-      - 美国 v2rayfree.eu.org
-      - CN_speednode_0038
-      - IN_speednode_0069
-      - 韩国_120920067
-      - CN_speednode_0049
-      - 德国_120920124
-      - CN_speednode_0026
-      - 韩国_120920037
-      - 1|_KR_->_AU_
-      - 新加坡2|浏览器输入 翻墙.com
-      - CN_speednode_0059
-      - Relay_🇰🇷KR-🇺🇸US_594 |48.87Mb
-      - 韩国_120920059
-      - KR_speednode_0076
       - _FR_法国_6
-      - CN_speednode_0051
-      - CN_speednode_0057
-      - 104.234.202.187@SSRSUB
-      - 12|🇭🇰香港3丨白嫖机场.com
-      - CN_speednode_0054
-      - ID-103.177.94.138-303
-      - 美国_1209201134
-      - 61.111.251.85@SSRSUB
-      - CN_speednode_0056
-      - ID_speednode_0067
-      - "|23.22Mb"
-      - CN_speednode_0060
-      - ID-103.177.94.138-370
-      - CN_speednode_0011
-      - CN_speednode_0013
-      - 12|🇬🇧英国1丨白嫖机场.com
+      - 1|_KR_->_AU_
+      - 14|🇯🇵 日本|@ripaojiedian
+      - 14|🇸🇬 新加坡3|浏览器输入 翻墙.com
+      - AU_92 |33.17Mb
+      - FR_speednode_0046
+      - GB_536 |47.12Mb
+      - GB_553 |49.14Mb
+      - github.com/freefq - 乌克兰  3
+      - JP_speednode_0054
+      - KR_speednode_0058
+      - KR_speednode_0059
+      - KR_speednode_0060
+      - Relay_🇰🇷KR-🇺🇸US_594 |48.87Mb
+      - SG_speednode_0097
+      - US_speednode_0096
+      - 广东省广州市+移动
+      - 韩国_121020095
+      - 美国  11
       - 未知_120920596
-      - 12|🇸🇬新加坡4丨电报群@bp520
-      - 12|🇬🇧英国4丨白嫖机场.com
-      - CN_speednode_0058
-      - KR-61.111.251.85-342
-      - 日本_120920137
-      - 印度_120920001
-      - CN_speednode_0032
-      - CN_speednode_0016
-      - CN_speednode_0055
+      - 乌克兰  6
+      - _10 |11.11Mb
+      - CN_speednode_0013
+      - CN_speednode_0014
+      - CN_speednode_0015
+      - CN_speednode_0019
+      - CN_speednode_0022
+      - CN_speednode_0027
+      - CN_speednode_0028
+      - CN_speednode_0029
+      - Relay_🇨🇳CN-🇸🇬SG_217 |18.60Mb
+      - _US_美国_14
+      - "|23.22Mb"
+      - "|46.08Mb"
+      - 12,13,14|🇮🇩|ID|印度尼西亚|@wxgqlfx|36
+      - 12,13|github.com/freefq - 亚太地区  33
+      - "12|美国 加利福尼亚 #2"
+      - ID_speednode_0067
+      - ID-103.177.94.138-303
+      - 广东省移动 42
+      - 马来西亚 001
+      - 美国 115
+      - 美国 加利福尼亚 3
+      - 美国加利福尼亚 46
+      - 香港|低价实惠 翻墙.com
+      - 香港科盈电信集团有限公司(打砖坪街49-53号华基工业大厦二座8层C室) 30
+      - 亚太地区 v2rayfree.eu.org 2
+      - 印尼 001
+      - Pool_ |297.00Mb
+      - CN_speednode_0006
+      - CN_speednode_0012
+      - 日本KT2|@ripaojiedian
+      - 台湾3|@ripaojiedian
       - _GB_英国
-      - Relay_🇨🇳CN-🇨🇳CN_173 |157.00Mb
+      - 12,13|github.com/freefq - 印度  45
+      - 12,14|德国 - 法兰克福 - Global Internet So...
+      - 14|LV_youtube@资源分享师_142
+      - 14|PL_youtube@资源分享师_78
+      - 14|SE_youtube@资源分享师_136
+      - "14|美国 #1"
+      - 21|🇺🇸_US_美国_3_由快嘴科技提供:kkzui.com1_...
+      - DE-62.133.60.134-320
+      - SG-47.236.18.250-179
+      - V001--US-付费推荐:dlj.tf/ssrsub
+      - V015--US-付费推荐:dlj.tf/ssrsub
+      - 捷克_121020001
+      - 立陶宛 003
+      - 卢森堡_121020004
+      - 美国 CloudFlare节点
+      - 美国_120920044
+      - 美国_1209201104
+      - 美国_1209201105
+      - 美国_1209201106
+      - 美国_1210201069
+      - 美国_1210201070
+      - 美国_1210201072
+      - 美国CloudFlare节点 20
+      - 未知_120920760
+      - 未知_121020766
+      - 未知_121020767
+      - 印度_120920001
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾 001
-      - twg4|频道 t.me/SSRSUB
-      - 台湾13@SSRSUB
-      - 香港5|@ripaojiedian
-      - 台湾_120920002
-      - 台湾_120920046
+      - 香港|低价实惠 翻墙.com
+      - 香港科盈电信集团有限公司(打砖坪街49-53号华基工业大厦二座8层C室) 30
       - 台湾3|@ripaojiedian
-      - 12|🇭🇰香港1丨白嫖机场.com
-      - 12|🇭🇰香港3丨白嫖机场.com
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - IR_speednode_0070
-      - 台湾 001
-      - TW-45.121.48.196-328
-      - RU-46.29.166.237-043
-      - 111@SSRSUB
-      - SG-47.236.18.250-179
-      - 12|@ZDYZ2_🇹🇼_TW_123
-      - DE-62.133.60.134-320
-      - US_171 |17.46Mb
-      - 叶莎1-日@SSRSUB
-      - US_speednode_0116
-      - 美国 097
-      - JP-64.176.58.7-299
-      - _CA_加拿大
-      - US-74.48.130.248-013
-      - US-74.48.130.248-339
-      - CA_131 |33.99Mb
-      - SG-8.222.187.112-217
-      - 美国_1209201104
-      - 美国_1209201128
-      - 未知_120920769
-      - 美国_1209201129
-      - 美国_1209201130
-      - 美国_1209201131
-      - V006--US-付费推荐:dlj.tf/ssrsub
-      - V012--US-付费推荐:dlj.tf/ssrsub
-      - V015--US-付费推荐:dlj.tf/ssrsub
-      - NU_speednode_0091
-      - 未知_120920773
-      - 未知_120920777
-      - 未知_120920775
-      - 未知_120920772
-      - 未知_120920771
-      - 12|日本 - 东京 - Oracle Corporation
-      - 美国 CloudFlare节点
-      - V014--US-付费推荐:dlj.tf/ssrsub
-      - V013--US-付费推荐:dlj.tf/ssrsub
-      - V001--US-付费推荐:dlj.tf/ssrsub
-      - 未知_120920679
-      - 美国_1209201105
-      - 未知_120920760
-      - 美国_1209201106
-      - github.com/freefq - 乌克兰  6
-      - 185.151.146.169@SSRSUB
-      - _US_美国
-      - 12|🇨🇦加拿大2丨电报群@bp520
-      - KR_speednode_0086
-      - 未知_120920653
-      - _US_美国 2
-      - 12|🇬🇧英国2丨白嫖机场.com
-      - 12|Youtube破解广告5
-      - CN_speednode_0004
-      - 12|🇨🇦加拿大5丨电报群@bp520
-      - Relay_🇨🇳CN-🇸🇬SG_214 |14.56Mb
-      - twg4|频道 t.me/SSRSUB
-      - 亚太地区 002
-      - SG_speednode_0096
-      - SG_speednode_0097
-      - vmess@SSRSUB
-      - 12|🇬🇧英国3丨白嫖机场.com
-      - CN-183.240.232.93-361
-      - US_speednode_0113
-      - TW-210.61.206.229-290
-      - CN_speednode_0021
-      - 美国_120920044
-      - 美国 108
-      - CN_speednode_0002
-      - 14|🇸🇬 新加坡3|浏览器输入 翻墙.com
-      - 美国CloudFlare节点 38
-      - TW-210.61.206.196-211
-      - TW-210.61.206.229-206
-      - 台湾13@SSRSUB
-      - KR_speednode_0085
-      - 14|🇸🇬 新加坡3|浏览器输入 翻墙.com 2
-      - CN_speednode_0014
-      - CN_speednode_0020
-      - 14|🇯🇵 日本|@ripaojiedian
-      - 12|Youtube破解广告1
-      - 香港5|@ripaojiedian
-      - 台湾_120920002
-      - CN_speednode_0018
-      - 广东省 移动
-      - Pool_ |297.00Mb
-      - IR-193.151.151.227-218
-      - 广东省广州市+移动
-      - CN_speednode_0019
-      - CN_speednode_0024
-      - CN_speednode_0025
-      - Relay_🇨🇳CN-🇸🇬SG_217 |18.60Mb
-      - CN_speednode_0036
-      - CN_speednode_0039
-      - CN_speednode_0034
-      - 台湾_120920046
-      - _55 |17.46Mb
-      - 广东省移动 5
-      - CN_speednode_0031
-      - BD_speednode_0002
-      - CN_speednode_0037
-      - CN_speednode_0028
-      - 台湾3|@ripaojiedian
-      - CN_speednode_0015
-      - 12|🇭🇰香港1丨白嫖机场.com
-      - 韩国_120920058
-      - 法国_120920145
-      - 德国_120920095
-      - CN_speednode_0033
-      - CN_speednode_0006
-      - CN_speednode_0042
-      - 爱尔兰_120920002
-      - Relay_🇰🇷KR-🇭🇰HK_593 |14.70Mb
-      - 美国_1209201123
-      - CN_speednode_0048
-      - CN_speednode_0044
-      - 12|🇯🇵日本4丨电报群@bp520
-      - CN_speednode_0035
-      - CN_speednode_0045
-      - CN_speednode_0012
-      - CN_speednode_0050
-      - 12|🇯🇵日本6丨电报群@bp520
-      - US_speednode_0112
-      - 美国 v2rayfree.eu.org
-      - CN_speednode_0038
-      - IN_speednode_0069
-      - 韩国_120920067
-      - CN_speednode_0049
-      - 德国_120920124
-      - CN_speednode_0026
-      - 韩国_120920037
-      - 1|_KR_->_AU_
-      - 新加坡2|浏览器输入 翻墙.com
-      - CN_speednode_0059
-      - Relay_🇰🇷KR-🇺🇸US_594 |48.87Mb
-      - 韩国_120920059
-      - KR_speednode_0076
       - _FR_法国_6
-      - CN_speednode_0051
-      - CN_speednode_0057
-      - 104.234.202.187@SSRSUB
-      - 12|🇭🇰香港3丨白嫖机场.com
-      - CN_speednode_0054
-      - ID-103.177.94.138-303
-      - 美国_1209201134
-      - 61.111.251.85@SSRSUB
-      - CN_speednode_0056
-      - ID_speednode_0067
-      - "|23.22Mb"
-      - CN_speednode_0060
-      - ID-103.177.94.138-370
-      - CN_speednode_0011
-      - CN_speednode_0013
-      - 12|🇬🇧英国1丨白嫖机场.com
+      - 1|_KR_->_AU_
+      - 14|🇯🇵 日本|@ripaojiedian
+      - 14|🇸🇬 新加坡3|浏览器输入 翻墙.com
+      - AU_92 |33.17Mb
+      - FR_speednode_0046
+      - GB_536 |47.12Mb
+      - GB_553 |49.14Mb
+      - github.com/freefq - 乌克兰  3
+      - JP_speednode_0054
+      - KR_speednode_0058
+      - KR_speednode_0059
+      - KR_speednode_0060
+      - Relay_🇰🇷KR-🇺🇸US_594 |48.87Mb
+      - SG_speednode_0097
+      - US_speednode_0096
+      - 广东省广州市+移动
+      - 韩国_121020095
+      - 美国  11
       - 未知_120920596
-      - 12|🇸🇬新加坡4丨电报群@bp520
-      - 12|🇬🇧英国4丨白嫖机场.com
-      - CN_speednode_0058
-      - KR-61.111.251.85-342
-      - 日本_120920137
-      - 印度_120920001
-      - CN_speednode_0032
-      - CN_speednode_0016
-      - CN_speednode_0055
+      - 乌克兰  6
+      - _10 |11.11Mb
+      - CN_speednode_0013
+      - CN_speednode_0014
+      - CN_speednode_0015
+      - CN_speednode_0019
+      - CN_speednode_0022
+      - CN_speednode_0027
+      - CN_speednode_0028
+      - CN_speednode_0029
+      - Relay_🇨🇳CN-🇸🇬SG_217 |18.60Mb
+      - _US_美国_14
+      - "|23.22Mb"
+      - "|46.08Mb"
+      - 12,13,14|🇮🇩|ID|印度尼西亚|@wxgqlfx|36
+      - 12,13|github.com/freefq - 亚太地区  33
+      - "12|美国 加利福尼亚 #2"
+      - ID_speednode_0067
+      - ID-103.177.94.138-303
+      - 广东省移动 42
+      - 马来西亚 001
+      - 美国 115
+      - 美国 加利福尼亚 3
+      - 美国加利福尼亚 46
+      - 香港|低价实惠 翻墙.com
+      - 香港科盈电信集团有限公司(打砖坪街49-53号华基工业大厦二座8层C室) 30
+      - 亚太地区 v2rayfree.eu.org 2
+      - 印尼 001
+      - Pool_ |297.00Mb
+      - CN_speednode_0006
+      - CN_speednode_0012
+      - 日本KT2|@ripaojiedian
+      - 台湾3|@ripaojiedian
       - _GB_英国
-      - Relay_🇨🇳CN-🇨🇳CN_173 |157.00Mb
+      - 12,13|github.com/freefq - 印度  45
+      - 12,14|德国 - 法兰克福 - Global Internet So...
+      - 14|LV_youtube@资源分享师_142
+      - 14|PL_youtube@资源分享师_78
+      - 14|SE_youtube@资源分享师_136
+      - "14|美国 #1"
+      - 21|🇺🇸_US_美国_3_由快嘴科技提供:kkzui.com1_...
+      - DE-62.133.60.134-320
+      - SG-47.236.18.250-179
+      - V001--US-付费推荐:dlj.tf/ssrsub
+      - V015--US-付费推荐:dlj.tf/ssrsub
+      - 捷克_121020001
+      - 立陶宛 003
+      - 卢森堡_121020004
+      - 美国 CloudFlare节点
+      - 美国_120920044
+      - 美国_1209201104
+      - 美国_1209201105
+      - 美国_1209201106
+      - 美国_1210201069
+      - 美国_1210201070
+      - 美国_1210201072
+      - 美国CloudFlare节点 20
+      - 未知_120920760
+      - 未知_121020766
+      - 未知_121020767
+      - 印度_120920001
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - IR_speednode_0070
-      - 台湾 001
-      - TW-45.121.48.196-328
-      - RU-46.29.166.237-043
-      - 111@SSRSUB
-      - SG-47.236.18.250-179
-      - 12|@ZDYZ2_🇹🇼_TW_123
-      - DE-62.133.60.134-320
-      - US_171 |17.46Mb
-      - 叶莎1-日@SSRSUB
-      - US_speednode_0116
-      - 美国 097
-      - JP-64.176.58.7-299
-      - _CA_加拿大
-      - US-74.48.130.248-013
-      - US-74.48.130.248-339
-      - CA_131 |33.99Mb
-      - SG-8.222.187.112-217
-      - 美国_1209201104
-      - 美国_1209201128
-      - 未知_120920769
-      - 美国_1209201129
-      - 美国_1209201130
-      - 美国_1209201131
-      - V006--US-付费推荐:dlj.tf/ssrsub
-      - V012--US-付费推荐:dlj.tf/ssrsub
-      - V015--US-付费推荐:dlj.tf/ssrsub
-      - NU_speednode_0091
-      - 未知_120920773
-      - 未知_120920777
-      - 未知_120920775
-      - 未知_120920772
-      - 未知_120920771
-      - 12|日本 - 东京 - Oracle Corporation
-      - 美国 CloudFlare节点
-      - V014--US-付费推荐:dlj.tf/ssrsub
-      - V013--US-付费推荐:dlj.tf/ssrsub
-      - V001--US-付费推荐:dlj.tf/ssrsub
-      - 未知_120920679
-      - 美国_1209201105
-      - 未知_120920760
-      - 美国_1209201106
-      - github.com/freefq - 乌克兰  6
-      - 185.151.146.169@SSRSUB
-      - _US_美国
-      - 12|🇨🇦加拿大2丨电报群@bp520
-      - KR_speednode_0086
-      - 未知_120920653
-      - _US_美国 2
-      - 12|🇬🇧英国2丨白嫖机场.com
-      - 12|Youtube破解广告5
-      - CN_speednode_0004
-      - 12|🇨🇦加拿大5丨电报群@bp520
-      - Relay_🇨🇳CN-🇸🇬SG_214 |14.56Mb
-      - twg4|频道 t.me/SSRSUB
-      - 亚太地区 002
-      - SG_speednode_0096
-      - SG_speednode_0097
-      - vmess@SSRSUB
-      - 12|🇬🇧英国3丨白嫖机场.com
-      - CN-183.240.232.93-361
-      - US_speednode_0113
-      - TW-210.61.206.229-290
-      - CN_speednode_0021
-      - 美国_120920044
-      - 美国 108
-      - CN_speednode_0002
-      - 14|🇸🇬 新加坡3|浏览器输入 翻墙.com
-      - 美国CloudFlare节点 38
-      - TW-210.61.206.196-211
-      - TW-210.61.206.229-206
-      - 台湾13@SSRSUB
-      - KR_speednode_0085
-      - 14|🇸🇬 新加坡3|浏览器输入 翻墙.com 2
-      - CN_speednode_0014
-      - CN_speednode_0020
-      - 14|🇯🇵 日本|@ripaojiedian
-      - 12|Youtube破解广告1
-      - 香港5|@ripaojiedian
-      - 台湾_120920002
-      - CN_speednode_0018
-      - 广东省 移动
-      - Pool_ |297.00Mb
-      - IR-193.151.151.227-218
-      - 广东省广州市+移动
-      - CN_speednode_0019
-      - CN_speednode_0024
-      - CN_speednode_0025
-      - Relay_🇨🇳CN-🇸🇬SG_217 |18.60Mb
-      - CN_speednode_0036
-      - CN_speednode_0039
-      - CN_speednode_0034
-      - 台湾_120920046
-      - _55 |17.46Mb
-      - 广东省移动 5
-      - CN_speednode_0031
-      - BD_speednode_0002
-      - CN_speednode_0037
-      - CN_speednode_0028
-      - 台湾3|@ripaojiedian
-      - CN_speednode_0015
-      - 12|🇭🇰香港1丨白嫖机场.com
-      - 韩国_120920058
-      - 法国_120920145
-      - 德国_120920095
-      - CN_speednode_0033
-      - CN_speednode_0006
-      - CN_speednode_0042
-      - 爱尔兰_120920002
-      - Relay_🇰🇷KR-🇭🇰HK_593 |14.70Mb
-      - 美国_1209201123
-      - CN_speednode_0048
-      - CN_speednode_0044
-      - 12|🇯🇵日本4丨电报群@bp520
-      - CN_speednode_0035
-      - CN_speednode_0045
-      - CN_speednode_0012
-      - CN_speednode_0050
-      - 12|🇯🇵日本6丨电报群@bp520
-      - US_speednode_0112
-      - 美国 v2rayfree.eu.org
-      - CN_speednode_0038
-      - IN_speednode_0069
-      - 韩国_120920067
-      - CN_speednode_0049
-      - 德国_120920124
-      - CN_speednode_0026
-      - 韩国_120920037
-      - 1|_KR_->_AU_
-      - 新加坡2|浏览器输入 翻墙.com
-      - CN_speednode_0059
-      - Relay_🇰🇷KR-🇺🇸US_594 |48.87Mb
-      - 韩国_120920059
-      - KR_speednode_0076
       - _FR_法国_6
-      - CN_speednode_0051
-      - CN_speednode_0057
-      - 104.234.202.187@SSRSUB
-      - 12|🇭🇰香港3丨白嫖机场.com
-      - CN_speednode_0054
-      - ID-103.177.94.138-303
-      - 美国_1209201134
-      - 61.111.251.85@SSRSUB
-      - CN_speednode_0056
-      - ID_speednode_0067
-      - "|23.22Mb"
-      - CN_speednode_0060
-      - ID-103.177.94.138-370
-      - CN_speednode_0011
-      - CN_speednode_0013
-      - 12|🇬🇧英国1丨白嫖机场.com
+      - 1|_KR_->_AU_
+      - 14|🇯🇵 日本|@ripaojiedian
+      - 14|🇸🇬 新加坡3|浏览器输入 翻墙.com
+      - AU_92 |33.17Mb
+      - FR_speednode_0046
+      - GB_536 |47.12Mb
+      - GB_553 |49.14Mb
+      - github.com/freefq - 乌克兰  3
+      - JP_speednode_0054
+      - KR_speednode_0058
+      - KR_speednode_0059
+      - KR_speednode_0060
+      - Relay_🇰🇷KR-🇺🇸US_594 |48.87Mb
+      - SG_speednode_0097
+      - US_speednode_0096
+      - 广东省广州市+移动
+      - 韩国_121020095
+      - 美国  11
       - 未知_120920596
-      - 12|🇸🇬新加坡4丨电报群@bp520
-      - 12|🇬🇧英国4丨白嫖机场.com
-      - CN_speednode_0058
-      - KR-61.111.251.85-342
-      - 日本_120920137
-      - 印度_120920001
-      - CN_speednode_0032
-      - CN_speednode_0016
-      - CN_speednode_0055
+      - 乌克兰  6
+      - _10 |11.11Mb
+      - CN_speednode_0013
+      - CN_speednode_0014
+      - CN_speednode_0015
+      - CN_speednode_0019
+      - CN_speednode_0022
+      - CN_speednode_0027
+      - CN_speednode_0028
+      - CN_speednode_0029
+      - Relay_🇨🇳CN-🇸🇬SG_217 |18.60Mb
+      - _US_美国_14
+      - "|23.22Mb"
+      - "|46.08Mb"
+      - 12,13,14|🇮🇩|ID|印度尼西亚|@wxgqlfx|36
+      - 12,13|github.com/freefq - 亚太地区  33
+      - "12|美国 加利福尼亚 #2"
+      - ID_speednode_0067
+      - ID-103.177.94.138-303
+      - 广东省移动 42
+      - 马来西亚 001
+      - 美国 115
+      - 美国 加利福尼亚 3
+      - 美国加利福尼亚 46
+      - 香港|低价实惠 翻墙.com
+      - 香港科盈电信集团有限公司(打砖坪街49-53号华基工业大厦二座8层C室) 30
+      - 亚太地区 v2rayfree.eu.org 2
+      - 印尼 001
+      - Pool_ |297.00Mb
+      - CN_speednode_0006
+      - CN_speednode_0012
+      - 日本KT2|@ripaojiedian
+      - 台湾3|@ripaojiedian
       - _GB_英国
-      - Relay_🇨🇳CN-🇨🇳CN_173 |157.00Mb
+      - 12,13|github.com/freefq - 印度  45
+      - 12,14|德国 - 法兰克福 - Global Internet So...
+      - 14|LV_youtube@资源分享师_142
+      - 14|PL_youtube@资源分享师_78
+      - 14|SE_youtube@资源分享师_136
+      - "14|美国 #1"
+      - 21|🇺🇸_US_美国_3_由快嘴科技提供:kkzui.com1_...
+      - DE-62.133.60.134-320
+      - SG-47.236.18.250-179
+      - V001--US-付费推荐:dlj.tf/ssrsub
+      - V015--US-付费推荐:dlj.tf/ssrsub
+      - 捷克_121020001
+      - 立陶宛 003
+      - 卢森堡_121020004
+      - 美国 CloudFlare节点
+      - 美国_120920044
+      - 美国_1209201104
+      - 美国_1209201105
+      - 美国_1209201106
+      - 美国_1210201069
+      - 美国_1210201070
+      - 美国_1210201072
+      - 美国CloudFlare节点 20
+      - 未知_120920760
+      - 未知_121020766
+      - 未知_121020767
+      - 印度_120920001
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - IR_speednode_0070
-      - 台湾 001
-      - TW-45.121.48.196-328
-      - RU-46.29.166.237-043
-      - 111@SSRSUB
-      - SG-47.236.18.250-179
-      - 12|@ZDYZ2_🇹🇼_TW_123
-      - DE-62.133.60.134-320
-      - US_171 |17.46Mb
-      - 叶莎1-日@SSRSUB
-      - US_speednode_0116
-      - 美国 097
-      - JP-64.176.58.7-299
-      - _CA_加拿大
-      - US-74.48.130.248-013
-      - US-74.48.130.248-339
-      - CA_131 |33.99Mb
-      - SG-8.222.187.112-217
-      - 美国_1209201104
-      - 美国_1209201128
-      - 未知_120920769
-      - 美国_1209201129
-      - 美国_1209201130
-      - 美国_1209201131
-      - V006--US-付费推荐:dlj.tf/ssrsub
-      - V012--US-付费推荐:dlj.tf/ssrsub
-      - V015--US-付费推荐:dlj.tf/ssrsub
-      - NU_speednode_0091
-      - 未知_120920773
-      - 未知_120920777
-      - 未知_120920775
-      - 未知_120920772
-      - 未知_120920771
-      - 12|日本 - 东京 - Oracle Corporation
-      - 美国 CloudFlare节点
-      - V014--US-付费推荐:dlj.tf/ssrsub
-      - V013--US-付费推荐:dlj.tf/ssrsub
-      - V001--US-付费推荐:dlj.tf/ssrsub
-      - 未知_120920679
-      - 美国_1209201105
-      - 未知_120920760
-      - 美国_1209201106
-      - github.com/freefq - 乌克兰  6
-      - 185.151.146.169@SSRSUB
-      - _US_美国
-      - 12|🇨🇦加拿大2丨电报群@bp520
-      - KR_speednode_0086
-      - 未知_120920653
-      - _US_美国 2
-      - 12|🇬🇧英国2丨白嫖机场.com
-      - 12|Youtube破解广告5
-      - CN_speednode_0004
-      - 12|🇨🇦加拿大5丨电报群@bp520
-      - Relay_🇨🇳CN-🇸🇬SG_214 |14.56Mb
-      - twg4|频道 t.me/SSRSUB
-      - 亚太地区 002
-      - SG_speednode_0096
-      - SG_speednode_0097
-      - vmess@SSRSUB
-      - 12|🇬🇧英国3丨白嫖机场.com
-      - CN-183.240.232.93-361
-      - US_speednode_0113
-      - TW-210.61.206.229-290
-      - CN_speednode_0021
-      - 美国_120920044
-      - 美国 108
-      - CN_speednode_0002
-      - 14|🇸🇬 新加坡3|浏览器输入 翻墙.com
-      - 美国CloudFlare节点 38
-      - TW-210.61.206.196-211
-      - TW-210.61.206.229-206
-      - 台湾13@SSRSUB
-      - KR_speednode_0085
-      - 14|🇸🇬 新加坡3|浏览器输入 翻墙.com 2
-      - CN_speednode_0014
-      - CN_speednode_0020
-      - 14|🇯🇵 日本|@ripaojiedian
-      - 12|Youtube破解广告1
-      - 香港5|@ripaojiedian
-      - 台湾_120920002
-      - CN_speednode_0018
-      - 广东省 移动
-      - Pool_ |297.00Mb
-      - IR-193.151.151.227-218
-      - 广东省广州市+移动
-      - CN_speednode_0019
-      - CN_speednode_0024
-      - CN_speednode_0025
-      - Relay_🇨🇳CN-🇸🇬SG_217 |18.60Mb
-      - CN_speednode_0036
-      - CN_speednode_0039
-      - CN_speednode_0034
-      - 台湾_120920046
-      - _55 |17.46Mb
-      - 广东省移动 5
-      - CN_speednode_0031
-      - BD_speednode_0002
-      - CN_speednode_0037
-      - CN_speednode_0028
-      - 台湾3|@ripaojiedian
-      - CN_speednode_0015
-      - 12|🇭🇰香港1丨白嫖机场.com
-      - 韩国_120920058
-      - 法国_120920145
-      - 德国_120920095
-      - CN_speednode_0033
-      - CN_speednode_0006
-      - CN_speednode_0042
-      - 爱尔兰_120920002
-      - Relay_🇰🇷KR-🇭🇰HK_593 |14.70Mb
-      - 美国_1209201123
-      - CN_speednode_0048
-      - CN_speednode_0044
-      - 12|🇯🇵日本4丨电报群@bp520
-      - CN_speednode_0035
-      - CN_speednode_0045
-      - CN_speednode_0012
-      - CN_speednode_0050
-      - 12|🇯🇵日本6丨电报群@bp520
-      - US_speednode_0112
-      - 美国 v2rayfree.eu.org
-      - CN_speednode_0038
-      - IN_speednode_0069
-      - 韩国_120920067
-      - CN_speednode_0049
-      - 德国_120920124
-      - CN_speednode_0026
-      - 韩国_120920037
-      - 1|_KR_->_AU_
-      - 新加坡2|浏览器输入 翻墙.com
-      - CN_speednode_0059
-      - Relay_🇰🇷KR-🇺🇸US_594 |48.87Mb
-      - 韩国_120920059
-      - KR_speednode_0076
       - _FR_法国_6
-      - CN_speednode_0051
-      - CN_speednode_0057
-      - 104.234.202.187@SSRSUB
-      - 12|🇭🇰香港3丨白嫖机场.com
-      - CN_speednode_0054
-      - ID-103.177.94.138-303
-      - 美国_1209201134
-      - 61.111.251.85@SSRSUB
-      - CN_speednode_0056
-      - ID_speednode_0067
-      - "|23.22Mb"
-      - CN_speednode_0060
-      - ID-103.177.94.138-370
-      - CN_speednode_0011
-      - CN_speednode_0013
-      - 12|🇬🇧英国1丨白嫖机场.com
+      - 1|_KR_->_AU_
+      - 14|🇯🇵 日本|@ripaojiedian
+      - 14|🇸🇬 新加坡3|浏览器输入 翻墙.com
+      - AU_92 |33.17Mb
+      - FR_speednode_0046
+      - GB_536 |47.12Mb
+      - GB_553 |49.14Mb
+      - github.com/freefq - 乌克兰  3
+      - JP_speednode_0054
+      - KR_speednode_0058
+      - KR_speednode_0059
+      - KR_speednode_0060
+      - Relay_🇰🇷KR-🇺🇸US_594 |48.87Mb
+      - SG_speednode_0097
+      - US_speednode_0096
+      - 广东省广州市+移动
+      - 韩国_121020095
+      - 美国  11
       - 未知_120920596
-      - 12|🇸🇬新加坡4丨电报群@bp520
-      - 12|🇬🇧英国4丨白嫖机场.com
-      - CN_speednode_0058
-      - KR-61.111.251.85-342
-      - 日本_120920137
-      - 印度_120920001
-      - CN_speednode_0032
-      - CN_speednode_0016
-      - CN_speednode_0055
+      - 乌克兰  6
+      - _10 |11.11Mb
+      - CN_speednode_0013
+      - CN_speednode_0014
+      - CN_speednode_0015
+      - CN_speednode_0019
+      - CN_speednode_0022
+      - CN_speednode_0027
+      - CN_speednode_0028
+      - CN_speednode_0029
+      - Relay_🇨🇳CN-🇸🇬SG_217 |18.60Mb
+      - _US_美国_14
+      - "|23.22Mb"
+      - "|46.08Mb"
+      - 12,13,14|🇮🇩|ID|印度尼西亚|@wxgqlfx|36
+      - 12,13|github.com/freefq - 亚太地区  33
+      - "12|美国 加利福尼亚 #2"
+      - ID_speednode_0067
+      - ID-103.177.94.138-303
+      - 广东省移动 42
+      - 马来西亚 001
+      - 美国 115
+      - 美国 加利福尼亚 3
+      - 美国加利福尼亚 46
+      - 香港|低价实惠 翻墙.com
+      - 香港科盈电信集团有限公司(打砖坪街49-53号华基工业大厦二座8层C室) 30
+      - 亚太地区 v2rayfree.eu.org 2
+      - 印尼 001
+      - Pool_ |297.00Mb
+      - CN_speednode_0006
+      - CN_speednode_0012
+      - 日本KT2|@ripaojiedian
+      - 台湾3|@ripaojiedian
       - _GB_英国
-      - Relay_🇨🇳CN-🇨🇳CN_173 |157.00Mb
+      - 12,13|github.com/freefq - 印度  45
+      - 12,14|德国 - 法兰克福 - Global Internet So...
+      - 14|LV_youtube@资源分享师_142
+      - 14|PL_youtube@资源分享师_78
+      - 14|SE_youtube@资源分享师_136
+      - "14|美国 #1"
+      - 21|🇺🇸_US_美国_3_由快嘴科技提供:kkzui.com1_...
+      - DE-62.133.60.134-320
+      - SG-47.236.18.250-179
+      - V001--US-付费推荐:dlj.tf/ssrsub
+      - V015--US-付费推荐:dlj.tf/ssrsub
+      - 捷克_121020001
+      - 立陶宛 003
+      - 卢森堡_121020004
+      - 美国 CloudFlare节点
+      - 美国_120920044
+      - 美国_1209201104
+      - 美国_1209201105
+      - 美国_1209201106
+      - 美国_1210201069
+      - 美国_1210201070
+      - 美国_1210201072
+      - 美国CloudFlare节点 20
+      - 未知_120920760
+      - 未知_121020766
+      - 未知_121020767
+      - 印度_120920001
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1390,169 +728,87 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - IR_speednode_0070
-      - 台湾 001
-      - TW-45.121.48.196-328
-      - RU-46.29.166.237-043
-      - 111@SSRSUB
-      - SG-47.236.18.250-179
-      - 12|@ZDYZ2_🇹🇼_TW_123
-      - DE-62.133.60.134-320
-      - US_171 |17.46Mb
-      - 叶莎1-日@SSRSUB
-      - US_speednode_0116
-      - 美国 097
-      - JP-64.176.58.7-299
-      - _CA_加拿大
-      - US-74.48.130.248-013
-      - US-74.48.130.248-339
-      - CA_131 |33.99Mb
-      - SG-8.222.187.112-217
-      - 美国_1209201104
-      - 美国_1209201128
-      - 未知_120920769
-      - 美国_1209201129
-      - 美国_1209201130
-      - 美国_1209201131
-      - V006--US-付费推荐:dlj.tf/ssrsub
-      - V012--US-付费推荐:dlj.tf/ssrsub
-      - V015--US-付费推荐:dlj.tf/ssrsub
-      - NU_speednode_0091
-      - 未知_120920773
-      - 未知_120920777
-      - 未知_120920775
-      - 未知_120920772
-      - 未知_120920771
-      - 12|日本 - 东京 - Oracle Corporation
-      - 美国 CloudFlare节点
-      - V014--US-付费推荐:dlj.tf/ssrsub
-      - V013--US-付费推荐:dlj.tf/ssrsub
-      - V001--US-付费推荐:dlj.tf/ssrsub
-      - 未知_120920679
-      - 美国_1209201105
-      - 未知_120920760
-      - 美国_1209201106
-      - github.com/freefq - 乌克兰  6
-      - 185.151.146.169@SSRSUB
-      - _US_美国
-      - 12|🇨🇦加拿大2丨电报群@bp520
-      - KR_speednode_0086
-      - 未知_120920653
-      - _US_美国 2
-      - 12|🇬🇧英国2丨白嫖机场.com
-      - 12|Youtube破解广告5
-      - CN_speednode_0004
-      - 12|🇨🇦加拿大5丨电报群@bp520
-      - Relay_🇨🇳CN-🇸🇬SG_214 |14.56Mb
-      - twg4|频道 t.me/SSRSUB
-      - 亚太地区 002
-      - SG_speednode_0096
-      - SG_speednode_0097
-      - vmess@SSRSUB
-      - 12|🇬🇧英国3丨白嫖机场.com
-      - CN-183.240.232.93-361
-      - US_speednode_0113
-      - TW-210.61.206.229-290
-      - CN_speednode_0021
-      - 美国_120920044
-      - 美国 108
-      - CN_speednode_0002
-      - 14|🇸🇬 新加坡3|浏览器输入 翻墙.com
-      - 美国CloudFlare节点 38
-      - TW-210.61.206.196-211
-      - TW-210.61.206.229-206
-      - 台湾13@SSRSUB
-      - KR_speednode_0085
-      - 14|🇸🇬 新加坡3|浏览器输入 翻墙.com 2
-      - CN_speednode_0014
-      - CN_speednode_0020
-      - 14|🇯🇵 日本|@ripaojiedian
-      - 12|Youtube破解广告1
-      - 香港5|@ripaojiedian
-      - 台湾_120920002
-      - CN_speednode_0018
-      - 广东省 移动
-      - Pool_ |297.00Mb
-      - IR-193.151.151.227-218
-      - 广东省广州市+移动
-      - CN_speednode_0019
-      - CN_speednode_0024
-      - CN_speednode_0025
-      - Relay_🇨🇳CN-🇸🇬SG_217 |18.60Mb
-      - CN_speednode_0036
-      - CN_speednode_0039
-      - CN_speednode_0034
-      - 台湾_120920046
-      - _55 |17.46Mb
-      - 广东省移动 5
-      - CN_speednode_0031
-      - BD_speednode_0002
-      - CN_speednode_0037
-      - CN_speednode_0028
-      - 台湾3|@ripaojiedian
-      - CN_speednode_0015
-      - 12|🇭🇰香港1丨白嫖机场.com
-      - 韩国_120920058
-      - 法国_120920145
-      - 德国_120920095
-      - CN_speednode_0033
-      - CN_speednode_0006
-      - CN_speednode_0042
-      - 爱尔兰_120920002
-      - Relay_🇰🇷KR-🇭🇰HK_593 |14.70Mb
-      - 美国_1209201123
-      - CN_speednode_0048
-      - CN_speednode_0044
-      - 12|🇯🇵日本4丨电报群@bp520
-      - CN_speednode_0035
-      - CN_speednode_0045
-      - CN_speednode_0012
-      - CN_speednode_0050
-      - 12|🇯🇵日本6丨电报群@bp520
-      - US_speednode_0112
-      - 美国 v2rayfree.eu.org
-      - CN_speednode_0038
-      - IN_speednode_0069
-      - 韩国_120920067
-      - CN_speednode_0049
-      - 德国_120920124
-      - CN_speednode_0026
-      - 韩国_120920037
-      - 1|_KR_->_AU_
-      - 新加坡2|浏览器输入 翻墙.com
-      - CN_speednode_0059
-      - Relay_🇰🇷KR-🇺🇸US_594 |48.87Mb
-      - 韩国_120920059
-      - KR_speednode_0076
       - _FR_法国_6
-      - CN_speednode_0051
-      - CN_speednode_0057
-      - 104.234.202.187@SSRSUB
-      - 12|🇭🇰香港3丨白嫖机场.com
-      - CN_speednode_0054
-      - ID-103.177.94.138-303
-      - 美国_1209201134
-      - 61.111.251.85@SSRSUB
-      - CN_speednode_0056
-      - ID_speednode_0067
-      - "|23.22Mb"
-      - CN_speednode_0060
-      - ID-103.177.94.138-370
-      - CN_speednode_0011
-      - CN_speednode_0013
-      - 12|🇬🇧英国1丨白嫖机场.com
+      - 1|_KR_->_AU_
+      - 14|🇯🇵 日本|@ripaojiedian
+      - 14|🇸🇬 新加坡3|浏览器输入 翻墙.com
+      - AU_92 |33.17Mb
+      - FR_speednode_0046
+      - GB_536 |47.12Mb
+      - GB_553 |49.14Mb
+      - github.com/freefq - 乌克兰  3
+      - JP_speednode_0054
+      - KR_speednode_0058
+      - KR_speednode_0059
+      - KR_speednode_0060
+      - Relay_🇰🇷KR-🇺🇸US_594 |48.87Mb
+      - SG_speednode_0097
+      - US_speednode_0096
+      - 广东省广州市+移动
+      - 韩国_121020095
+      - 美国  11
       - 未知_120920596
-      - 12|🇸🇬新加坡4丨电报群@bp520
-      - 12|🇬🇧英国4丨白嫖机场.com
-      - CN_speednode_0058
-      - KR-61.111.251.85-342
-      - 日本_120920137
-      - 印度_120920001
-      - CN_speednode_0032
-      - CN_speednode_0016
-      - CN_speednode_0055
+      - 乌克兰  6
+      - _10 |11.11Mb
+      - CN_speednode_0013
+      - CN_speednode_0014
+      - CN_speednode_0015
+      - CN_speednode_0019
+      - CN_speednode_0022
+      - CN_speednode_0027
+      - CN_speednode_0028
+      - CN_speednode_0029
+      - Relay_🇨🇳CN-🇸🇬SG_217 |18.60Mb
+      - _US_美国_14
+      - "|23.22Mb"
+      - "|46.08Mb"
+      - 12,13,14|🇮🇩|ID|印度尼西亚|@wxgqlfx|36
+      - 12,13|github.com/freefq - 亚太地区  33
+      - "12|美国 加利福尼亚 #2"
+      - ID_speednode_0067
+      - ID-103.177.94.138-303
+      - 广东省移动 42
+      - 马来西亚 001
+      - 美国 115
+      - 美国 加利福尼亚 3
+      - 美国加利福尼亚 46
+      - 香港|低价实惠 翻墙.com
+      - 香港科盈电信集团有限公司(打砖坪街49-53号华基工业大厦二座8层C室) 30
+      - 亚太地区 v2rayfree.eu.org 2
+      - 印尼 001
+      - Pool_ |297.00Mb
+      - CN_speednode_0006
+      - CN_speednode_0012
+      - 日本KT2|@ripaojiedian
+      - 台湾3|@ripaojiedian
       - _GB_英国
-      - Relay_🇨🇳CN-🇨🇳CN_173 |157.00Mb
+      - 12,13|github.com/freefq - 印度  45
+      - 12,14|德国 - 法兰克福 - Global Internet So...
+      - 14|LV_youtube@资源分享师_142
+      - 14|PL_youtube@资源分享师_78
+      - 14|SE_youtube@资源分享师_136
+      - "14|美国 #1"
+      - 21|🇺🇸_US_美国_3_由快嘴科技提供:kkzui.com1_...
+      - DE-62.133.60.134-320
+      - SG-47.236.18.250-179
+      - V001--US-付费推荐:dlj.tf/ssrsub
+      - V015--US-付费推荐:dlj.tf/ssrsub
+      - 捷克_121020001
+      - 立陶宛 003
+      - 卢森堡_121020004
+      - 美国 CloudFlare节点
+      - 美国_120920044
+      - 美国_1209201104
+      - 美国_1209201105
+      - 美国_1209201106
+      - 美国_1210201069
+      - 美国_1210201070
+      - 美国_1210201072
+      - 美国CloudFlare节点 20
+      - 未知_120920760
+      - 未知_121020766
+      - 未知_121020767
+      - 印度_120920001
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
