@@ -1,642 +1,412 @@
+mixed-port: 7890
 port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
-external-controller: :9090
+external-controller: 9090
 proxies:
-  - {name: 英国_012218034, server: uk1.test3.net, port: 443, type: trojan, password: dcee8e40-b185-11ee-86de-1239d0255272, sni: uk1.test3.net, skip-cert-verify: true, udp: true}
-  - {name: 未知_012218011, server: cfcdn3.sanfencdn9.com, port: 80, type: vmess, uuid: d0a3e08a-d26f-45bd-ba3c-6387f9182633, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video/ibCT6z55, ws-headers: {Host: agzbjszujp4.yofnhkfc.xyz}, udp: true}
-  - {name: 俄罗斯 004_3@539, server: ru01.333210.xyz, port: 80, type: vmess, uuid: 892e4ff3-f8bb-42ac-9bd5-e103f235fc78, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: RU_775, server: 193.104.57.136, port: 80, type: vmess, uuid: 892e4ff3-f8bb-42ac-9bd5-e103f235fc78, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: US 204 → tg@nicevpn123, server: 65.20.102.54, port: 443, type: trojan, password: 4fc77152e665415b9986d5b9b8f43601, skip-cert-verify: true, udp: true}
-  - {name: 英国_012218033, server: v1.arvancode.eu.org, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: mps3FwmDjLrWaOVg, udp: true}
-  - {name: CN_speednode_0067, server: 183.236.51.6, port: 10802, type: trojan, password: 17f47376-1c4e-4684-892e-887b21d16573, skip-cert-verify: true, udp: true}
-  - {name: 美国-108.9KB/s, server: cfcdn3.sanfencdn9.com, port: 80, type: vmess, uuid: d0a3e08a-d26f-45bd-ba3c-6387f9182633, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video/ibCT6z55, ws-headers: {Host: agzbjszujp4.yofnhkfc.xyz}, udp: true}
-  - {name: KR_649, server: 125.141.26.7, port: 2020, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: CN_speednode_0049, server: 183.236.51.7, port: 10807, type: trojan, password: aa002102-5e81-4c47-ba3c-f78ebbfa0d59, skip-cert-verify: true, udp: true}
-  - {name: 台湾KT|@ripaojiedian, server: 122.118.169.225, port: 443, type: ss, cipher: aes-128-gcm, password: oiwym4ovI4Yb, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: _CN_中国->🇺🇸_US_美国, server: xibaozi.19890604.day, port: 10847, type: trojan, password: c71b7574-aeaa-40f0-989b-47f3fe7ac85a, sni: xibaozi.19890604.day, skip-cert-verify: true, udp: true}
-  - {name: 加拿大_012218150, server: frontend.yijianlian.app, port: 54000, type: trojan, password: ec8a45ab-afcc-46ad-95b4-3f8ede2b8b5c, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0051, server: 183.236.51.6, port: 10804, type: trojan, password: 17f47376-1c4e-4684-892e-887b21d16573, skip-cert-verify: true, udp: true}
-  - {name: US_1275, server: 146.190.103.39, port: 2023, type: vmess, uuid: 8e82b259-dcf8-466c-acd1-02616af34386, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /FREE-not_for_sale, ws-headers: {Host: 146.190.103.39}, udp: true}
-  - {name: 日本3|@ripaojiedian, server: zhejiang.52vpn.top, port: 19444, type: ss, cipher: chacha20-ietf-poly1305, password: 432fe02f-b649-4bdc-91d8-f91ae87002f7, udp: true}
-  - {name: -US-001, server: cfcdn2.sanfencdn9.com, port: 2052, type: vmess, uuid: d0a3e08a-d26f-45bd-ba3c-6387f9182633, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video/c9efxRCi, ws-headers: {Host: 7nAi74jJsg1.yofnhkfc.xyz}, udp: true}
-  - {name: Relay_-🇺🇸US_42, server: 18.176.215.63, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: (TG@WangCai_8)7112bba:140737}, udp: true}
-  - {name: CN_speednode_0042, server: 183.236.51.7, port: 10808, type: trojan, password: 17f47376-1c4e-4684-892e-887b21d16573, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0064, server: 183.236.51.6, port: 10803, type: trojan, password: 17f47376-1c4e-4684-892e-887b21d16573, skip-cert-verify: true, udp: true}
-  - {name: 韩国_012218031, server: 64.110.90.139, port: 54000, type: trojan, password: ec8a45ab-afcc-46ad-95b4-3f8ede2b8b5c, skip-cert-verify: true, udp: true}
-  - {name: CN 97 → tg@nicevpn123, server: official.taipeicitygovernment.if.ua, port: 8443, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, sni: official.taipeicitygovernment.if.ua, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0084, server: 183.236.51.7, port: 10806, type: trojan, password: e4eb7e68-c18c-40b9-ba4e-73d779473a75, skip-cert-verify: true, udp: true}
-  - {name: US 50 → tg@nicevpn123, server: us1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 443, type: trojan, password: 37d2266b-d239-47ea-8d26-35583da9e3d5, sni: us1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, skip-cert-verify: true, udp: true}
-  - {name: US 1228 → tg@nicevpn123, server: frontend.yijianlian.app, port: 54530, type: trojan, password: 85ba209b-54d1-4aad-871e-98df4eb224bf, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0059, server: 183.236.51.6, port: 10804, type: trojan, password: e4eb7e68-c18c-40b9-ba4e-73d779473a75, skip-cert-verify: true, udp: true}
-  - {name: US 1156 → tg@nicevpn123, server: us1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 443, type: trojan, password: d56cb8dc-e932-4d57-bd90-1381a1245f90, sni: us1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0065, server: 183.236.51.7, port: 10834, type: trojan, password: e4eb7e68-c18c-40b9-ba4e-73d779473a75, skip-cert-verify: true, udp: true}
-  - {name: 香港KT|@ripaojiedian, server: 1.65.223.223, port: 443, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: CN_speednode_0040, server: 183.236.51.6, port: 10803, type: trojan, password: e4eb7e68-c18c-40b9-ba4e-73d779473a75, skip-cert-verify: true, udp: true}
-  - {name: HK 16 → tg@nicevpn123, server: 118.142.55.54, port: 443, type: trojan, password: e4818e8930644822aa7d15cc805e3fd7, skip-cert-verify: true, udp: true}
-  - {name: US 1192 → tg@nicevpn123, server: frontend.kuangbiaoyun.com, port: 40019, type: trojan, password: ad953998-e8ea-4d5b-8b2f-e63edd9d375d, sni: frontend.kuangbiaoyun.com, skip-cert-verify: true, udp: true}
-  - {name: RU 75 → tg@nicevpn123, server: 185.4.64.225, port: 443, type: trojan, password: e4818e8930644822aa7d15cc805e3fd7, skip-cert-verify: true, udp: true}
-  - {name: HK 5 → tg@nicevpn123, server: 183.179.168.53, port: 443, type: trojan, password: e4818e8930644822aa7d15cc805e3fd7, skip-cert-verify: true, udp: true}
-  - {name: AL_248, server: 31.171.153.182, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: CN_speednode_0017, server: tw04.network-cdn-gw.cc, port: 46604, type: ss, cipher: chacha20-ietf-poly1305, password: 7184dbdc-14b2-49a8-becd-ecde0be9047c, udp: true}
-  - {name: 英国_012218110, server: 51.38.65.155, port: 443, type: trojan, password: dcee8e40-b185-11ee-86de-1239d0255272, skip-cert-verify: true, udp: true}
-  - {name: GB_526, server: 51.104.229.3, port: 20843, type: ss, cipher: chacha20-ietf-poly1305, password: 9AxuisOgNqoWZw76Ue9nUK, udp: true}
-  - {name: US 1332 → tg@nicevpn123, server: frontend.kuangbiaoyun.com, port: 40005, type: trojan, password: 57edfecf-5694-4a34-8072-54a4f0636a62, sni: frontend.kuangbiaoyun.com, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0055, server: 183.236.51.7, port: 10834, type: trojan, password: aa002102-5e81-4c47-ba3c-f78ebbfa0d59, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0063, server: 183.236.51.7, port: 10808, type: trojan, password: e4eb7e68-c18c-40b9-ba4e-73d779473a75, skip-cert-verify: true, udp: true}
-  - {name: HK_573, server: 203.198.16.176, port: 4201, type: trojan, password: 901a6458-7c68-47c9-8500-75e73c4365a8, skip-cert-verify: true, udp: true}
-  - {name: 加拿大_012218148, server: frontend.yijianlian.app, port: 54000, type: trojan, password: 23bc2961-b507-41d0-878a-5204d578f286, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
-  - {name: 荷兰_012218025, server: 146.190.237.193, port: 55362, type: ss, cipher: chacha20-ietf-poly1305, password: DwB8qIL30ZyF5thpnCEhSv, udp: true}
-  - {name: US 501 → tg@nicevpn123, server: us1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 443, type: trojan, password: 7b01f853-1c72-47db-8f57-151d491b3bf9, sni: us1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, skip-cert-verify: true, udp: true}
-  - {name: GB 54 → tg@nicevpn123, server: 51.38.65.155, port: 443, type: trojan, password: 6cb44390-9425-11ee-8e61-1239d0255272, skip-cert-verify: true, udp: true}
-  - {name: 韩国_012218033, server: 64.110.90.139, port: 54000, type: trojan, password: fd119d80-5029-45bf-85c6-bd0b3080cb25, skip-cert-verify: true, udp: true}
-  - {name: CN_303, server: music.desperadoj.com, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_etg0, udp: true}
-  - {name: HK 1 → tg@nicevpn123, server: 118.142.17.238, port: 443, type: trojan, password: e4818e8930644822aa7d15cc805e3fd7, skip-cert-verify: true, udp: true}
-  - {name: 加拿大 300_3@533, server: 104.21.73.14, port: 8880, type: vmess, uuid: 45f63e92-f782-4cac-84b8-e61cb5a5bfd0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /adenc35.fixedlfoat.top/linkws, ws-headers: {Host: yaghoob55freenodes.repaco69437403.workers.dev}, udp: true}
-  - {name: 加拿大_012218146, server: frontend.yijianlian.app, port: 54000, type: trojan, password: fd119d80-5029-45bf-85c6-bd0b3080cb25, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
-  - {name: Relay_-🇺🇸US_224, server: usa.maxprovpn.com, port: 80, type: vmess, uuid: b02a3331-8f9f-4f4c-a042-a1632eedf5bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /maxprovpn.com, ws-headers: {Host: usa.maxprovpn.com}, udp: true}
-  - {name: US 1622 → tg@nicevpn123, server: frontend.kuangbiaoyun.com, port: 40005, type: trojan, password: ad953998-e8ea-4d5b-8b2f-e63edd9d375d, sni: frontend.kuangbiaoyun.com, skip-cert-verify: true, udp: true}
-  - {name: US 1 → tg@nicevpn123, server: tj2.dalazhi.cyou, port: 443, type: trojan, password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1, sni: tj2.dalazhi.cyou, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇷🇺RU-🇰🇿KZ_784, server: kz-v2ray.ipracevpn.com, port: 8443, type: vmess, uuid: f3a14df7-6140-45d7-9b36-9cbac435c0a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: NL_698, server: 91.242.229.77, port: 80, type: vmess, uuid: 56890326-df58-432d-be1e-67064e2b4355, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vmess, ws-headers: {Host: 91.242.229.77}, udp: true}
-  - {name: -KR-007, server: p220.panda001.net, port: 53258, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: Relay_🇫🇷FR-🇮🇸IS_445, server: 163.172.64.22, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: CN_speednode_0066, server: 183.236.51.6, port: 10802, type: trojan, password: aa002102-5e81-4c47-ba3c-f78ebbfa0d59, skip-cert-verify: true, udp: true}
-  - {name: FR 46 → tg@nicevpn123, server: fr1.test3.net, port: 443, type: trojan, password: 4ce98ed0-97d7-11ee-afbd-1239d0255272, sni: fr1.test3.net, skip-cert-verify: true, udp: true}
-  - {name: Trojan|韩国A01--直连节点
-, server: tro.at678.top, port: 4205, type: trojan, password: 901a6458-7c68-47c9-8500-75e73c4365a8, sni: tro.at678.top, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇩🇪DE-🇩🇪DE_333 |22.98Mb, server: 5.104.108.109, port: 443, type: trojan, password: 9a47ef97-0ec3-4679-9a64-3657b1e5d4b6, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0052, server: 183.236.51.6, port: 10804, type: trojan, password: aa002102-5e81-4c47-ba3c-f78ebbfa0d59, skip-cert-verify: true, udp: true}
-  - {name: JP 19 → tg@nicevpn123, server: 172.105.230.133, port: 3306, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: true, udp: true}
-  - {name: JP_speednode_0096, server: 18.176.215.63, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: (TG@kkouokk)7112bba:140737}, udp: true}
-  - {name: CN_speednode_0050, server: 183.236.51.6, port: 10803, type: trojan, password: aa002102-5e81-4c47-ba3c-f78ebbfa0d59, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇬🇧GB-🇬🇧GB_513, server: series-a2.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: AfnG4AAYWZ0axveq, udp: true}
-  - {name: -VN-002, server: skyht2.vpndata.vn, port: 80, type: vmess, uuid: fbccfed7-1aeb-416a-a4fd-7af1747f9f3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /VPNDATA.VPN, ws-headers: {Host: lienquan.garena.vn}, udp: true}
-  - {name: 日本2|@ripaojiedian, server: service.ouluyun9803.com, port: 26668, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, udp: true}
-  - {name: netflix_HK 2, server: 203.198.16.176, port: 4205, type: trojan, password: 901a6458-7c68-47c9-8500-75e73c4365a8, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0037, server: 183.236.51.6, port: 10801, type: trojan, password: aa002102-5e81-4c47-ba3c-f78ebbfa0d59, skip-cert-verify: true, udp: true}
-  - {name: TR_speednode_0097, server: 185.123.101.241, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: US 397 → tg@nicevpn123, server: 20.210.234.145, port: 443, type: trojan, password: 7d0f1f83-0f2f-4b90-930e-de44ac233fef, skip-cert-verify: true, udp: true}
-  - {name: US 394 → tg@nicevpn123, server: 129.146.147.170, port: 443, type: trojan, password: 6aWFNbrFDs, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0014, server: tw01.network-cdn-gw.cc, port: 46601, type: ss, cipher: chacha20-ietf-poly1305, password: 7184dbdc-14b2-49a8-becd-ecde0be9047c, udp: true}
-  - {name: CN_speednode_0045, server: 183.236.51.7, port: 10806, type: trojan, password: 17f47376-1c4e-4684-892e-887b21d16573, skip-cert-verify: true, udp: true}
-  - {name: -KR-006, server: 43.201.55.242, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 英国|tg频道:@ripaojiedian, server: service.ouluyun9803.com, port: 50002, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, udp: true}
-  - {name: CN_speednode_0009, server: sgp03.network-cdn-gw.cc, port: 45508, type: ss, cipher: chacha20-ietf-poly1305, password: 7184dbdc-14b2-49a8-becd-ecde0be9047c, udp: true}
-  - {name: HK_speednode_0095, server: 1.65.139.54, port: 443, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: /, tls: false, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 18|台湾|@ripaojiedian, server: tw1-vds3.anyhk.co, port: 21353, type: vmess, uuid: 71618f91-d149-4b45-91c9-f94dd4e2499a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: DE 58 → tg@nicevpn123, server: 5.104.108.109, port: 443, type: trojan, password: 097f6b5f-bcf9-4a24-9f0d-d1feaa638d86, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0039, server: 183.236.51.7, port: 10807, type: trojan, password: 17f47376-1c4e-4684-892e-887b21d16573, skip-cert-verify: true, udp: true}
-  - {name: Trojan|香港A01--直连节点
-, server: tro.at678.top, port: 4201, type: trojan, password: 901a6458-7c68-47c9-8500-75e73c4365a8, sni: tro.at678.top, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0044, server: 183.236.51.6, port: 10801, type: trojan, password: 17f47376-1c4e-4684-892e-887b21d16573, skip-cert-verify: true, udp: true}
-  - {name: 韩国_012218032, server: 64.110.90.139, port: 54000, type: trojan, password: eaadcee8-f807-4365-89b2-07c890c2120e, skip-cert-verify: true, udp: true}
-  - {name: US 1261 → tg@nicevpn123, server: 192.46.223.61, port: 443, type: trojan, password: fe62cb68-6891-4e96-8fb9-e39f0ee53b7e, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0089, server: 183.236.51.7, port: 10835, type: trojan, password: e4eb7e68-c18c-40b9-ba4e-73d779473a75, skip-cert-verify: true, udp: true}
-  - {name: 荷兰 004_3@218, server: 91.242.229.77, port: 80, type: vmess, uuid: 56890326-df58-432d-be1e-67064e2b4355, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: nl2.xv2ray.net}, udp: true}
-  - {name: 狮城特殊|@ripaojiedian, server: 57.180.11.33, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: CH 2 → tg@nicevpn123, server: 194.147.16.123, port: 52560, type: trojan, password: 06a8765e-ccd0-3cdb-ab8d-c1d92e6b5f54, skip-cert-verify: true, udp: true}
-  - {name: "Channel id: @ShadowProxy66🇺🇲", server: 173.245.58.51, port: 443, type: vmess, uuid: 5c6fb3c8-4f46-4d63-9849-7c76f07f05c4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ariuvws, ws-headers: {Host: 4fungame.colocrossing.sbs}, udp: true}
-  - {name: CN_speednode_0082, server: 183.236.51.7, port: 10835, type: trojan, password: 17f47376-1c4e-4684-892e-887b21d16573, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0011, server: sgp04.network-cdn-gw.cc, port: 45509, type: ss, cipher: chacha20-ietf-poly1305, password: 7184dbdc-14b2-49a8-becd-ecde0be9047c, udp: true}
-  - {name: CN_speednode_0043, server: 183.236.51.6, port: 10805, type: trojan, password: 17f47376-1c4e-4684-892e-887b21d16573, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0004, server: sgp01.network-cdn-gw.cc, port: 45506, type: ss, cipher: chacha20-ietf-poly1305, password: 7184dbdc-14b2-49a8-becd-ecde0be9047c, udp: true}
-  - {name: HK 21 → tg@nicevpn123, server: 118.142.55.62, port: 443, type: trojan, password: e4818e8930644822aa7d15cc805e3fd7, skip-cert-verify: true, udp: true}
-  - {name: ES_西班牙, server: 65.20.102.54, port: 443, type: trojan, password: 842b5f9dd11e458d8613c907c4cc5723, skip-cert-verify: true, udp: true}
-  - {name: TW 17 → tg@nicevpn123, server: 60.248.114.187, port: 3306, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: true, udp: true}
-  - {name: netflix_JP, server: 203.198.16.176, port: 4202, type: trojan, password: 901a6458-7c68-47c9-8500-75e73c4365a8, skip-cert-verify: true, udp: true}
-  - {name: 20|baipaovpn台湾省新竹市, server: 114.37.155.245, port: 12002, type: vmess, uuid: ef3841cf-2556-4d9c-ac8d-c0e5e978ab86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 20|baipaovpn美国, server: 45.159.250.78, port: 8443, type: vmess, uuid: f3a14df7-6140-45d7-9b36-9cbac435c0a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 加拿大_012218144, server: frontend.yijianlian.app, port: 54000, type: trojan, password: f161523b-fb5e-4d67-9bdc-96284bd817f9, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
-  - {name: 加拿大_012218147, server: frontend.yijianlian.app, port: 54000, type: trojan, password: ef981ea0-b812-4e31-9127-3364a7f9c7fa, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
-  - {name: 加拿大_012218145, server: frontend.yijianlian.app, port: 54000, type: trojan, password: 078f4183-2897-4720-a561-66ddbfb396c8, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
-  - {name: 未知_012218267, server: bs2.loadingip.com, port: 80, type: vmess, uuid: 5278f5d3-f001-4459-94b6-7e0915238998, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /bs, ws-headers: {Host: bs2.loadingip.com}, udp: true}
-  - {name: HK 19 → tg@nicevpn123, server: 220.246.88.144, port: 443, type: trojan, password: e4818e8930644822aa7d15cc805e3fd7, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0074, server: 183.236.51.6, port: 10801, type: trojan, password: e4eb7e68-c18c-40b9-ba4e-73d779473a75, skip-cert-verify: true, udp: true}
-  - {name: UA_943, server: 95.164.46.154, port: 80, type: vmess, uuid: 431fda16-e0f8-4884-b4fd-965f03f86471, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vmess, ws-headers: {Host: 95.164.46.154}, udp: true}
-  - {name: KR_661, server: 125.141.31.70, port: 53258, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: 越南_012218017, server: 103.149.87.45, port: 443, type: trojan, password: fbccfed7-1aeb-416a-a4fd-7af1747f9f3b, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0062, server: 183.236.51.7, port: 10834, type: trojan, password: 17f47376-1c4e-4684-892e-887b21d16573, skip-cert-verify: true, udp: true}
-  - {name: US 308 → tg@nicevpn123, server: 15.204.9.172, port: 443, type: trojan, password: opentunnel.net-12qwe, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇦🇹_AT_奥地利, server: xibaozi.19890604.day, port: 10848, type: trojan, password: c71b7574-aeaa-40f0-989b-47f3fe7ac85a, sni: xibaozi.19890604.day, skip-cert-verify: true, udp: true}
-  - {name: -GB-002, server: 45.154.14.209, port: 48852, type: vmess, uuid: 557769ba-e085-49ef-8ac6-96cf3d1a9730, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [45.154.14.209]}}, udp: true}
-  - {name: CN_speednode_0047, server: 183.236.51.7, port: 10806, type: trojan, password: aa002102-5e81-4c47-ba3c-f78ebbfa0d59, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇬🇧GB-🇬🇧GB_521, server: series-a2.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: FzBnWpFK3Dw5lYMC, udp: true}
-  - {name: 加拿大_012218013, server: frontend.yijianlian.app, port: 54000, type: trojan, password: fece85e6-5b58-4e77-9667-663d9ae0ff86, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
-  - {name: RU 65 → tg@nicevpn123, server: 89.221.224.50, port: 38860, type: trojan, password: 5107fc37-835b-3e10-9b00-b7b9f3f392c8, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0048, server: 183.236.51.7, port: 10808, type: trojan, password: aa002102-5e81-4c47-ba3c-f78ebbfa0d59, skip-cert-verify: true, udp: true}
-  - {name: "|US|美国|@wxgqlfx|31", server: 146.190.103.39, port: 2023, type: vmess, uuid: 8e82b259-dcf8-466c-acd1-02616af34386, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /FREE-not_for_sale, ws-headers: {Host: imo.im}, udp: true}
-  - {name: CN_speednode_0016, server: tw03.network-cdn-gw.cc, port: 46603, type: ss, cipher: chacha20-ietf-poly1305, password: 7184dbdc-14b2-49a8-becd-ecde0be9047c, udp: true}
-  - {name: 加拿大_012218155, server: frontend.yijianlian.app, port: 54000, type: trojan, password: 16b78fa4-5eb8-4a5f-a7cb-1b10934c7e5a, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
-  - {name: 加拿大_012218014, server: frontend.yijianlian.app, port: 54000, type: trojan, password: c75da6ec-2151-4191-bcde-1778a5c12cf7, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
-  - {name: US 1450 → tg@nicevpn123, server: hongkong-01.uudai4g.com, port: 80, type: vmess, uuid: 054c82f7-9b61-4223-86a4-c231e9fafcf0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hongkong-01.uudai4g.com}, udp: true}
-  - {name: "Channel id: @ShadowProxy66🇺🇲 2", server: 173.245.58.51, port: 443, type: vmess, uuid: 12d7e57b-9fc8-41e0-9b32-f503dce10c1c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /fdczvws, ws-headers: {Host: godofwar2020.colocrossing.sbs}, udp: true}
-  - {name: Relay_🇻🇳VN-🇻🇳VN_1326, server: skyht2.vpndata.vn, port: 80, type: vmess, uuid: fbccfed7-1aeb-416a-a4fd-7af1747f9f3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /VPNDATA.VPN, ws-headers: {Host: skyht2.vpndata.vn}, udp: true}
-  - {name: Relay_-🇷🇺RU_194, server: ru01.333210.xyz, port: 80, type: vmess, uuid: 892e4ff3-f8bb-42ac-9bd5-e103f235fc78, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: "7,15|美国【TG：@ccbaohe】定时更新节点订阅 4", server: cf.openxai.link, port: 8080, type: vmess, uuid: 5e203864-6170-4056-fa90-b1fdbda3a3ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: eu4.openxai.link}, udp: true}
-  - {name: CN_speednode_0018, server: sgp05.network-cdn-gw.cc, port: 45510, type: ss, cipher: chacha20-ietf-poly1305, password: 7184dbdc-14b2-49a8-becd-ecde0be9047c, udp: true}
-  - {name: 狮城特殊2|@ripaojiedian, server: 13.231.164.174, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: YD|www.zyw.asia ZYW免费节点, server: data-us-v1.shwjfkw.cn, port: 20401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /debian, ws-headers: {Host: data-us-v1.shwjfkw.cn}, udp: true}
-  - {name: CN_speednode_0015, server: tw05.network-cdn-gw.cc, port: 46605, type: ss, cipher: chacha20-ietf-poly1305, password: 7184dbdc-14b2-49a8-becd-ecde0be9047c, udp: true}
-  - {name: 加拿大_012218012, server: frontend.yijianlian.app, port: 54000, type: trojan, password: 5f3ece03-3ef6-43b4-a898-6b9523c7e634, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
-  - {name: RU 34 → tg@nicevpn123, server: is-gy.115cloud.link, port: 38860, type: trojan, password: ba794e09-999e-3907-8527-04634df673a8, sni: is-gy.115cloud.link, skip-cert-verify: true, udp: true}
-  - {name: US 1388 → tg@nicevpn123, server: 140.238.12.83, port: 443, type: trojan, password: a1718180-d616-4b71-9bb6-3e96ba20f921, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇰🇷KR-🇰🇷KR_651, server: p227.panda004.net, port: 2020, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: CN_speednode_0077, server: 183.236.51.6, port: 10805, type: trojan, password: e4eb7e68-c18c-40b9-ba4e-73d779473a75, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0073, server: 183.236.51.7, port: 10835, type: trojan, password: aa002102-5e81-4c47-ba3c-f78ebbfa0d59, skip-cert-verify: true, udp: true}
-  - {name: 加拿大_012218143, server: frontend.yijianlian.app, port: 54000, type: trojan, password: f140e127-1eb6-464c-a389-734121f96b20, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
-  - {name: TW 14 → tg@nicevpn123, server: 60.248.114.184, port: 3306, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0058, server: 183.236.51.7, port: 10807, type: trojan, password: e4eb7e68-c18c-40b9-ba4e-73d779473a75, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0005, server: sgp02.network-cdn-gw.cc, port: 45507, type: ss, cipher: chacha20-ietf-poly1305, password: 7184dbdc-14b2-49a8-becd-ecde0be9047c, udp: true}
-  - {name: CH 3 → tg@nicevpn123, server: uk-gy.115cloud.link, port: 52560, type: trojan, password: 17547927-ed10-318e-a6f9-97931e36a52a, sni: uk-gy.115cloud.link, skip-cert-verify: true, udp: true}
-  - {name: CN_304, server: music.desperadoj.com, port: 30001, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_etg0, udp: true}
-  - {name: Trojan|日本A01--直连节点
-, server: tro.at678.top, port: 4202, type: trojan, password: 901a6458-7c68-47c9-8500-75e73c4365a8, sni: tro.at678.top, skip-cert-verify: true, udp: true}
-  - {name: US 1581 → tg@nicevpn123, server: 185.212.56.168, port: 443, type: trojan, password: share.mjj-home.com, skip-cert-verify: true, udp: true}
-  - {name: US_1064, server: 146.19.196.197, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: 3eece3a7-de31-4455-84c9-7bae797d8629, udp: true}
-  - {name: TW 15 → tg@nicevpn123, server: 60.248.114.185, port: 3306, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0070, server: 183.236.51.6, port: 10802, type: trojan, password: e4eb7e68-c18c-40b9-ba4e-73d779473a75, skip-cert-verify: true, udp: true}
-  - {name: 香港KT2|@ripaojiedian, server: 47.243.59.144, port: 443, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 美国2|@ripaojiedian, server: service.ouluyun9803.com, port: 20003, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, udp: true}
-  - {name: TW 16 → tg@nicevpn123, server: 60.248.114.186, port: 3306, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: true, udp: true}
+  - {name: 中转节点-3.15MB/s, server: 231103.level3.sdl-sz.com, port: 2212, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dj23gsa", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 11275:KWQHheqWo8, obfs-param: d300c11275.microsoft.com, udp: true}
+  - {name: 英国-3.65MB/s, server: series-a2.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: mps3FwmDjLrWaOVg, udp: true}
+  - {name: 英国-3.62MB/s, server: series-a1.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: W74XFALLLuw6m5IA, udp: true}
+  - {name: 新加坡-155.4KB/s, server: 103.172.116.94, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: 日本 007, server: A003.STANDARD-NODES-CHICKENFARMS.TOP, port: 18693, type: vmess, uuid: e6cdc6e9-0faf-4aeb-b8b3-a1350f64f4a2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 韩国-6.45MB/s, server: p222.panda001.net, port: 54345, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 韩国-2.69MB/s, server: p225.panda004.net, port: 51194, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: ZZ_907 |25.13Mb, server: 103.172.116.79, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: ZZ_1035, server: 103.154.63.16, port: 443, type: trojan, password: 5bae27f5-3b8e-48f3-b91f-30fc680ea78f, sni: lienquan.garena.vn, skip-cert-verify: true, udp: true}
+  - {name: ZZ_1011, server: 103.172.116.94, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: ZZ_1010, server: 103.172.116.94, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: ZZ_1009, server: 103.172.116.94, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: ZZ |17.25Mb, server: 103.172.116.79, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: ZZ |12.89Mb, server: 103.172.116.79, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: ZZ |11.79Mb, server: 103.172.116.90, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: ZZ |11.61Mb, server: 103.172.116.79, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: ZZ |10.39Mb, server: 103.172.116.79, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: ZZ |10.01Mb, server: 103.172.116.79, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: YD|www.zyw.asia ZYW免费节点, server: 185.48.136.150, port: 443, type: vmess, uuid: 14bb927f-a4ec-4de7-90fb-388c1f69dbc1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@forwardv2ray, headers: {Host: sazgar22.zapto.org}}, udp: true}
+  - {name: US_874, server: 43.203.119.237, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: TW-61.228.177.15-164, server: nb22.ntbq.dynu.net, port: 12002, type: vmess, uuid: b6cd1e64-484a-431a-90c2-41bb0d579ee6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TW-36.232.142.100-135, server: c12.twtc.dynu.net, port: 6122, type: vmess, uuid: b6cd1e64-484a-431a-90c2-41bb0d579ee6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TW_251, server: 61.228.177.15, port: 12002, type: vmess, uuid: b6cd1e64-484a-431a-90c2-41bb0d579ee6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0087, server: 183.236.51.6, port: 10835, type: trojan, password: bdae6064-fa82-4add-93f4-1db2c1958d10, skip-cert-verify: true, udp: true}
+  - {name: speednode_0084, server: 183.236.51.7, port: 10813, type: trojan, password: bdae6064-fa82-4add-93f4-1db2c1958d10, skip-cert-verify: true, udp: true}
+  - {name: speednode_0081, server: 183.236.51.6, port: 10815, type: trojan, password: bdae6064-fa82-4add-93f4-1db2c1958d10, skip-cert-verify: true, udp: true}
+  - {name: speednode_0080, server: 183.236.51.6, port: 10812, type: trojan, password: bdae6064-fa82-4add-93f4-1db2c1958d10, skip-cert-verify: true, udp: true}
+  - {name: speednode_0064, server: xibaozi.19890604.day, port: 10848, type: trojan, password: 6030b240-5ded-4c47-bef8-127fbede965a, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
+  - {name: speednode_0062, server: xibaozi.19890604.day, port: 10839, type: trojan, password: 6030b240-5ded-4c47-bef8-127fbede965a, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
+  - {name: speednode_0059, server: falungong.19890604.day, port: 10825, type: trojan, password: 6030b240-5ded-4c47-bef8-127fbede965a, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
+  - {name: speednode_0057, server: falungong.19890604.day, port: 10823, type: trojan, password: 6030b240-5ded-4c47-bef8-127fbede965a, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
+  - {name: speednode_0055, server: falungong.19890604.day, port: 10822, type: trojan, password: 6030b240-5ded-4c47-bef8-127fbede965a, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
+  - {name: speednode_0053, server: falungong.19890604.day, port: 10820, type: trojan, password: 6030b240-5ded-4c47-bef8-127fbede965a, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
+  - {name: speednode_0048, server: 180.152.132.122, port: 64096, type: vmess, uuid: fe0346d9-a972-3d8a-bac7-310604fa108f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: speednode_0017, server: p220.panda001.net, port: 53258, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: SG_674, server: 103.172.116.94, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: SG_670, server: 103.172.116.94, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: SG_669, server: 103.172.116.94, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: SG_666, server: 103.172.116.94, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: SG_665, server: 103.172.116.79, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: SG_661, server: 46.137.227.248, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: SG_659, server: 103.172.116.79, port: 9044, type: ss, cipher: aes-256-cfb, password: KBGjZYcy4SyRShmA, udp: true}
+  - {name: SG_658, server: 103.172.116.94, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: SG_654, server: 103.172.116.94, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: SG_653, server: 103.172.116.94, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: SG_652, server: 103.172.116.79, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: SG_643, server: 103.172.116.94, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: SG_642, server: 103.172.116.90, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: SG_638, server: 8.217.53.93, port: 80, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: obfs, plugin-opts: {mode: http, host: ""}, udp: true}
+  - {name: SG_636, server: 103.172.116.94, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: SG_631, server: 103.172.116.94, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: RU_594, server: 23.90.128.82, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: Relay_🇹🇼TW-🇹🇼TW_711, server: c12.twtc.dynu.net, port: 6122, type: vmess, uuid: 867b8e57-9355-40dc-a696-9ca2518b091e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇹🇼TW_192, server: tw1-vds3.anyhk.co, port: 21353, type: vmess, uuid: c24b520b-e0c6-4bb0-b951-dd87cc07a518, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇹🇼TW_181, server: nb22.ntbq.dynu.net, port: 12002, type: vmess, uuid: b6cd1e64-484a-431a-90c2-41bb0d579ee6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇰🇷KR_46, server: tg_mfbpn_asg2.52vpn.eu.org, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: Relay_-🇯🇵JP_32, server: jp.doushimeng.com, port: 21853, type: ss, cipher: chacha20-ietf-poly1305, password: 11047069-8ff8-4428-84d9-e42f95deff87, udp: true}
+  - {name: Relay_🇫🇷FR-🇱🇺LU_394, server: 163.172.64.22, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: netflix_US 4, server: hk1.c8898496-adb6-4073-9ee4-ff4e4984415b.polycdn.com, port: 80, type: vmess, uuid: 1e27df2b-5900-4f31-8d42-d404c3b8dd0a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk1.c8898496-adb6-4073-9ee4-ff4e4984415b.polycdn.com}}, udp: true}
+  - {name: netflix_TW 6, server: sg1.c8898496-adb6-4073-9ee4-ff4e4984415b.polycdn.com, port: 80, type: vmess, uuid: 1e27df2b-5900-4f31-8d42-d404c3b8dd0a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg1.c8898496-adb6-4073-9ee4-ff4e4984415b.polycdn.com}}, udp: true}
+  - {name: netflix_TW 4, server: c12.twtc.dynu.net, port: 6122, type: vmess, uuid: b6cd1e64-484a-431a-90c2-41bb0d579ee6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: netflix_TW 10, server: nb22.ntbq.dynu.net, port: 12002, type: vmess, uuid: c64adf03-3bfe-47e0-b38b-870a9f8032e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_501, server: 13.231.78.35, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: disney_netflix_KR 4, server: 221.150.109.81, port: 59084, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: CN-120.232.242.91-155, server: 120.232.242.91, port: 41492, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: AL_223, server: 31.171.153.182, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 16|香港|@ripaojiedian, server: 120.232.242.91, port: 41492, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "12,13|🇹🇼|TW|台湾|@wxgqlfx|11", server: nb22.ntbq.dynu.net, port: 12002, type: vmess, uuid: b6cd1e64-484a-431a-90c2-41bb0d579ee6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "12,13|speednode_0029", server: 94.131.8.32, port: 2095, type: vmess, uuid: 57e37a74-badc-4b71-87c7-5b9e20879b58, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: "|46.15Mb", server: 54.64.183.76, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "|21.91Mb", server: 18.142.250.63, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "|13.10Mb", server: 122.118.172.100, port: 443, type: ss, cipher: aes-128-gcm, password: oiwym4ovI4Yb, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: _GI_直布罗陀, server: 95.164.69.27, port: 80, type: vmess, uuid: cd4a6d0d-4b26-4ee1-8a42-c2878b5c3b2a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: internet.life.com.by}}, udp: true}
+  - {name: _GI_直布罗陀 2, server: 95.164.69.27, port: 80, type: vmess, uuid: cd4a6d0d-4b26-4ee1-8a42-c2878b5c3b2a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: _90, server: 103.172.116.90, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
+  - {name: _86, server: 103.172.116.90, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: _84, server: 103.172.116.79, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: _40, server: 103.172.116.79, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: _39, server: 103.172.116.79, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: _37, server: 103.172.116.90, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: _24, server: 103.172.116.79, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
+  - {name: _21, server: 103.172.116.79, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: _18, server: 8.217.135.205, port: 443, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: _17, server: 103.172.116.79, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: _160, server: 103.172.116.79, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: _157, server: 103.172.116.90, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: _156, server: 103.172.116.79, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+  - {name: _147, server: 103.172.116.90, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: _141, server: 103.172.116.90, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: _136, server: 103.172.116.90, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: _128, server: 103.172.116.79, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: _125, server: 103.172.116.90, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: _103, server: 103.172.116.90, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: _100, server: 43.201.55.242, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _10, server: 103.172.116.79, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: _08, server: 103.172.116.79, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 英国_012218034
-      - 未知_012218011
-      - 俄罗斯 004_3@539
-      - RU_775
-      - US 204 → tg@nicevpn123
-      - 英国_012218033
-      - CN_speednode_0067
-      - 美国-108.9KB/s
-      - KR_649
-      - CN_speednode_0049
-      - 台湾KT|@ripaojiedian
-      - _CN_中国->🇺🇸_US_美国
-      - 加拿大_012218150
-      - CN_speednode_0051
-      - US_1275
-      - 日本3|@ripaojiedian
-      - -US-001
-      - Relay_-🇺🇸US_42
-      - CN_speednode_0042
-      - CN_speednode_0064
-      - 韩国_012218031
-      - CN 97 → tg@nicevpn123
-      - CN_speednode_0084
-      - US 50 → tg@nicevpn123
-      - US 1228 → tg@nicevpn123
-      - CN_speednode_0059
-      - US 1156 → tg@nicevpn123
-      - CN_speednode_0065
-      - 香港KT|@ripaojiedian
-      - CN_speednode_0040
-      - HK 16 → tg@nicevpn123
-      - US 1192 → tg@nicevpn123
-      - RU 75 → tg@nicevpn123
-      - HK 5 → tg@nicevpn123
-      - AL_248
-      - CN_speednode_0017
-      - 英国_012218110
-      - GB_526
-      - US 1332 → tg@nicevpn123
-      - CN_speednode_0055
-      - CN_speednode_0063
-      - HK_573
-      - 加拿大_012218148
-      - 荷兰_012218025
-      - US 501 → tg@nicevpn123
-      - GB 54 → tg@nicevpn123
-      - 韩国_012218033
-      - CN_303
-      - HK 1 → tg@nicevpn123
-      - 加拿大 300_3@533
-      - 加拿大_012218146
-      - Relay_-🇺🇸US_224
-      - US 1622 → tg@nicevpn123
-      - US 1 → tg@nicevpn123
-      - Relay_🇷🇺RU-🇰🇿KZ_784
-      - NL_698
-      - -KR-007
-      - Relay_🇫🇷FR-🇮🇸IS_445
-      - CN_speednode_0066
-      - FR 46 → tg@nicevpn123
-      - Trojan|韩国A01--直连节点
-      - Relay_🇩🇪DE-🇩🇪DE_333 |22.98Mb
-      - CN_speednode_0052
-      - JP 19 → tg@nicevpn123
-      - JP_speednode_0096
-      - CN_speednode_0050
-      - Relay_🇬🇧GB-🇬🇧GB_513
-      - -VN-002
-      - 日本2|@ripaojiedian
-      - netflix_HK 2
-      - CN_speednode_0037
-      - TR_speednode_0097
-      - US 397 → tg@nicevpn123
-      - US 394 → tg@nicevpn123
-      - CN_speednode_0014
-      - CN_speednode_0045
-      - -KR-006
-      - 英国|tg频道:@ripaojiedian
-      - CN_speednode_0009
-      - HK_speednode_0095
-      - 18|台湾|@ripaojiedian
-      - DE 58 → tg@nicevpn123
-      - CN_speednode_0039
-      - Trojan|香港A01--直连节点
-      - CN_speednode_0044
-      - 韩国_012218032
-      - US 1261 → tg@nicevpn123
-      - CN_speednode_0089
-      - 荷兰 004_3@218
-      - 狮城特殊|@ripaojiedian
-      - CH 2 → tg@nicevpn123
-      - "Channel id: @ShadowProxy66🇺🇲"
-      - CN_speednode_0082
-      - CN_speednode_0011
-      - CN_speednode_0043
-      - CN_speednode_0004
-      - HK 21 → tg@nicevpn123
-      - ES_西班牙
-      - TW 17 → tg@nicevpn123
-      - netflix_JP
-      - 20|baipaovpn台湾省新竹市
-      - 20|baipaovpn美国
-      - 加拿大_012218144
-      - 加拿大_012218147
-      - 加拿大_012218145
-      - 未知_012218267
-      - HK 19 → tg@nicevpn123
-      - CN_speednode_0074
-      - UA_943
-      - KR_661
-      - 越南_012218017
-      - CN_speednode_0062
-      - US 308 → tg@nicevpn123
-      - _CN_中国->🇦🇹_AT_奥地利
-      - -GB-002
-      - CN_speednode_0047
-      - Relay_🇬🇧GB-🇬🇧GB_521
-      - 加拿大_012218013
-      - RU 65 → tg@nicevpn123
-      - CN_speednode_0048
-      - "|US|美国|@wxgqlfx|31"
-      - CN_speednode_0016
-      - 加拿大_012218155
-      - 加拿大_012218014
-      - US 1450 → tg@nicevpn123
-      - "Channel id: @ShadowProxy66🇺🇲 2"
-      - Relay_🇻🇳VN-🇻🇳VN_1326
-      - Relay_-🇷🇺RU_194
-      - 7,15|美国【TG：@ccbaohe】定时更新节点订阅 4
-      - CN_speednode_0018
-      - 狮城特殊2|@ripaojiedian
+      - 中转节点-3.15MB/s
+      - 英国-3.65MB/s
+      - 英国-3.62MB/s
+      - 新加坡-155.4KB/s
+      - 日本 007
+      - 韩国-6.45MB/s
+      - 韩国-2.69MB/s
+      - ZZ_907 |25.13Mb
+      - ZZ_1035
+      - ZZ_1011
+      - ZZ_1010
+      - ZZ_1009
+      - ZZ |17.25Mb
+      - ZZ |12.89Mb
+      - ZZ |11.79Mb
+      - ZZ |11.61Mb
+      - ZZ |10.39Mb
+      - ZZ |10.01Mb
       - YD|www.zyw.asia ZYW免费节点
-      - CN_speednode_0015
-      - 加拿大_012218012
-      - RU 34 → tg@nicevpn123
-      - US 1388 → tg@nicevpn123
-      - Relay_🇰🇷KR-🇰🇷KR_651
-      - CN_speednode_0077
-      - CN_speednode_0073
-      - 加拿大_012218143
-      - TW 14 → tg@nicevpn123
-      - CN_speednode_0058
-      - CN_speednode_0005
-      - CH 3 → tg@nicevpn123
-      - CN_304
-      - Trojan|日本A01--直连节点
-      - US 1581 → tg@nicevpn123
-      - US_1064
-      - TW 15 → tg@nicevpn123
-      - CN_speednode_0070
-      - 香港KT2|@ripaojiedian
-      - 美国2|@ripaojiedian
-      - TW 16 → tg@nicevpn123
+      - US_874
+      - TW-61.228.177.15-164
+      - TW-36.232.142.100-135
+      - TW_251
+      - speednode_0087
+      - speednode_0084
+      - speednode_0081
+      - speednode_0080
+      - speednode_0064
+      - speednode_0062
+      - speednode_0059
+      - speednode_0057
+      - speednode_0055
+      - speednode_0053
+      - speednode_0048
+      - speednode_0017
+      - SG_674
+      - SG_670
+      - SG_669
+      - SG_666
+      - SG_665
+      - SG_661
+      - SG_659
+      - SG_658
+      - SG_654
+      - SG_653
+      - SG_652
+      - SG_643
+      - SG_642
+      - SG_638
+      - SG_636
+      - SG_631
+      - RU_594
+      - Relay_🇹🇼TW-🇹🇼TW_711
+      - Relay_-🇹🇼TW_192
+      - Relay_-🇹🇼TW_181
+      - Relay_-🇰🇷KR_46
+      - Relay_-🇯🇵JP_32
+      - Relay_🇫🇷FR-🇱🇺LU_394
+      - netflix_US 4
+      - netflix_TW 6
+      - netflix_TW 4
+      - netflix_TW 10
+      - JP_501
+      - disney_netflix_KR 4
+      - CN-120.232.242.91-155
+      - AL_223
+      - 16|香港|@ripaojiedian
+      - 12,13|🇹🇼|TW|台湾|@wxgqlfx|11
+      - 12,13|speednode_0029
+      - "|46.15Mb"
+      - "|21.91Mb"
+      - "|13.10Mb"
+      - _GI_直布罗陀
+      - _GI_直布罗陀 2
+      - _90
+      - _86
+      - _84
+      - _40
+      - _39
+      - _37
+      - _24
+      - _21
+      - _18
+      - _17
+      - _160
+      - _157
+      - _156
+      - _147
+      - _141
+      - _136
+      - _128
+      - _125
+      - _103
+      - _100
+      - _10
+      - _08
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - 英国_012218034
-      - 未知_012218011
-      - 俄罗斯 004_3@539
-      - RU_775
-      - US 204 → tg@nicevpn123
-      - 英国_012218033
-      - CN_speednode_0067
-      - 美国-108.9KB/s
-      - KR_649
-      - CN_speednode_0049
-      - 台湾KT|@ripaojiedian
-      - _CN_中国->🇺🇸_US_美国
-      - 加拿大_012218150
-      - CN_speednode_0051
-      - US_1275
-      - 日本3|@ripaojiedian
-      - -US-001
-      - Relay_-🇺🇸US_42
-      - CN_speednode_0042
-      - CN_speednode_0064
-      - 韩国_012218031
-      - CN 97 → tg@nicevpn123
-      - CN_speednode_0084
-      - US 50 → tg@nicevpn123
-      - US 1228 → tg@nicevpn123
-      - CN_speednode_0059
-      - US 1156 → tg@nicevpn123
-      - CN_speednode_0065
-      - 香港KT|@ripaojiedian
-      - CN_speednode_0040
-      - HK 16 → tg@nicevpn123
-      - US 1192 → tg@nicevpn123
-      - RU 75 → tg@nicevpn123
-      - HK 5 → tg@nicevpn123
-      - AL_248
-      - CN_speednode_0017
-      - 英国_012218110
-      - GB_526
-      - US 1332 → tg@nicevpn123
-      - CN_speednode_0055
-      - CN_speednode_0063
-      - HK_573
-      - 加拿大_012218148
-      - 荷兰_012218025
-      - US 501 → tg@nicevpn123
-      - GB 54 → tg@nicevpn123
-      - 韩国_012218033
-      - CN_303
-      - HK 1 → tg@nicevpn123
-      - 加拿大 300_3@533
-      - 加拿大_012218146
-      - Relay_-🇺🇸US_224
-      - US 1622 → tg@nicevpn123
-      - US 1 → tg@nicevpn123
-      - Relay_🇷🇺RU-🇰🇿KZ_784
-      - NL_698
-      - -KR-007
-      - Relay_🇫🇷FR-🇮🇸IS_445
-      - CN_speednode_0066
-      - FR 46 → tg@nicevpn123
-      - Trojan|韩国A01--直连节点
-      - Relay_🇩🇪DE-🇩🇪DE_333 |22.98Mb
-      - CN_speednode_0052
-      - JP 19 → tg@nicevpn123
-      - JP_speednode_0096
-      - CN_speednode_0050
-      - Relay_🇬🇧GB-🇬🇧GB_513
-      - -VN-002
-      - 日本2|@ripaojiedian
-      - netflix_HK 2
-      - CN_speednode_0037
-      - TR_speednode_0097
-      - US 397 → tg@nicevpn123
-      - US 394 → tg@nicevpn123
-      - CN_speednode_0014
-      - CN_speednode_0045
-      - -KR-006
-      - 英国|tg频道:@ripaojiedian
-      - CN_speednode_0009
-      - HK_speednode_0095
-      - 18|台湾|@ripaojiedian
-      - DE 58 → tg@nicevpn123
-      - CN_speednode_0039
-      - Trojan|香港A01--直连节点
-      - CN_speednode_0044
-      - 韩国_012218032
-      - US 1261 → tg@nicevpn123
-      - CN_speednode_0089
-      - 荷兰 004_3@218
-      - 狮城特殊|@ripaojiedian
-      - CH 2 → tg@nicevpn123
-      - "Channel id: @ShadowProxy66🇺🇲"
-      - CN_speednode_0082
-      - CN_speednode_0011
-      - CN_speednode_0043
-      - CN_speednode_0004
-      - HK 21 → tg@nicevpn123
-      - ES_西班牙
-      - TW 17 → tg@nicevpn123
-      - netflix_JP
-      - 20|baipaovpn台湾省新竹市
-      - 20|baipaovpn美国
-      - 加拿大_012218144
-      - 加拿大_012218147
-      - 加拿大_012218145
-      - 未知_012218267
-      - HK 19 → tg@nicevpn123
-      - CN_speednode_0074
-      - UA_943
-      - KR_661
-      - 越南_012218017
-      - CN_speednode_0062
-      - US 308 → tg@nicevpn123
-      - _CN_中国->🇦🇹_AT_奥地利
-      - -GB-002
-      - CN_speednode_0047
-      - Relay_🇬🇧GB-🇬🇧GB_521
-      - 加拿大_012218013
-      - RU 65 → tg@nicevpn123
-      - CN_speednode_0048
-      - "|US|美国|@wxgqlfx|31"
-      - CN_speednode_0016
-      - 加拿大_012218155
-      - 加拿大_012218014
-      - US 1450 → tg@nicevpn123
-      - "Channel id: @ShadowProxy66🇺🇲 2"
-      - Relay_🇻🇳VN-🇻🇳VN_1326
-      - Relay_-🇷🇺RU_194
-      - 7,15|美国【TG：@ccbaohe】定时更新节点订阅 4
-      - CN_speednode_0018
-      - 狮城特殊2|@ripaojiedian
+      - 中转节点-3.15MB/s
+      - 英国-3.65MB/s
+      - 英国-3.62MB/s
+      - 新加坡-155.4KB/s
+      - 日本 007
+      - 韩国-6.45MB/s
+      - 韩国-2.69MB/s
+      - ZZ_907 |25.13Mb
+      - ZZ_1035
+      - ZZ_1011
+      - ZZ_1010
+      - ZZ_1009
+      - ZZ |17.25Mb
+      - ZZ |12.89Mb
+      - ZZ |11.79Mb
+      - ZZ |11.61Mb
+      - ZZ |10.39Mb
+      - ZZ |10.01Mb
       - YD|www.zyw.asia ZYW免费节点
-      - CN_speednode_0015
-      - 加拿大_012218012
-      - RU 34 → tg@nicevpn123
-      - US 1388 → tg@nicevpn123
-      - Relay_🇰🇷KR-🇰🇷KR_651
-      - CN_speednode_0077
-      - CN_speednode_0073
-      - 加拿大_012218143
-      - TW 14 → tg@nicevpn123
-      - CN_speednode_0058
-      - CN_speednode_0005
-      - CH 3 → tg@nicevpn123
-      - CN_304
-      - Trojan|日本A01--直连节点
-      - US 1581 → tg@nicevpn123
-      - US_1064
-      - TW 15 → tg@nicevpn123
-      - CN_speednode_0070
-      - 香港KT2|@ripaojiedian
-      - 美国2|@ripaojiedian
-      - TW 16 → tg@nicevpn123
+      - US_874
+      - TW-61.228.177.15-164
+      - TW-36.232.142.100-135
+      - TW_251
+      - speednode_0087
+      - speednode_0084
+      - speednode_0081
+      - speednode_0080
+      - speednode_0064
+      - speednode_0062
+      - speednode_0059
+      - speednode_0057
+      - speednode_0055
+      - speednode_0053
+      - speednode_0048
+      - speednode_0017
+      - SG_674
+      - SG_670
+      - SG_669
+      - SG_666
+      - SG_665
+      - SG_661
+      - SG_659
+      - SG_658
+      - SG_654
+      - SG_653
+      - SG_652
+      - SG_643
+      - SG_642
+      - SG_638
+      - SG_636
+      - SG_631
+      - RU_594
+      - Relay_🇹🇼TW-🇹🇼TW_711
+      - Relay_-🇹🇼TW_192
+      - Relay_-🇹🇼TW_181
+      - Relay_-🇰🇷KR_46
+      - Relay_-🇯🇵JP_32
+      - Relay_🇫🇷FR-🇱🇺LU_394
+      - netflix_US 4
+      - netflix_TW 6
+      - netflix_TW 4
+      - netflix_TW 10
+      - JP_501
+      - disney_netflix_KR 4
+      - CN-120.232.242.91-155
+      - AL_223
+      - 16|香港|@ripaojiedian
+      - 12,13|🇹🇼|TW|台湾|@wxgqlfx|11
+      - 12,13|speednode_0029
+      - "|46.15Mb"
+      - "|21.91Mb"
+      - "|13.10Mb"
+      - _GI_直布罗陀
+      - _GI_直布罗陀 2
+      - _90
+      - _86
+      - _84
+      - _40
+      - _39
+      - _37
+      - _24
+      - _21
+      - _18
+      - _17
+      - _160
+      - _157
+      - _156
+      - _147
+      - _141
+      - _136
+      - _128
+      - _125
+      - _103
+      - _100
+      - _10
+      - _08
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 英国_012218034
-      - 未知_012218011
-      - 俄罗斯 004_3@539
-      - RU_775
-      - US 204 → tg@nicevpn123
-      - 英国_012218033
-      - CN_speednode_0067
-      - 美国-108.9KB/s
-      - KR_649
-      - CN_speednode_0049
-      - 台湾KT|@ripaojiedian
-      - _CN_中国->🇺🇸_US_美国
-      - 加拿大_012218150
-      - CN_speednode_0051
-      - US_1275
-      - 日本3|@ripaojiedian
-      - -US-001
-      - Relay_-🇺🇸US_42
-      - CN_speednode_0042
-      - CN_speednode_0064
-      - 韩国_012218031
-      - CN 97 → tg@nicevpn123
-      - CN_speednode_0084
-      - US 50 → tg@nicevpn123
-      - US 1228 → tg@nicevpn123
-      - CN_speednode_0059
-      - US 1156 → tg@nicevpn123
-      - CN_speednode_0065
-      - 香港KT|@ripaojiedian
-      - CN_speednode_0040
-      - HK 16 → tg@nicevpn123
-      - US 1192 → tg@nicevpn123
-      - RU 75 → tg@nicevpn123
-      - HK 5 → tg@nicevpn123
-      - AL_248
-      - CN_speednode_0017
-      - 英国_012218110
-      - GB_526
-      - US 1332 → tg@nicevpn123
-      - CN_speednode_0055
-      - CN_speednode_0063
-      - HK_573
-      - 加拿大_012218148
-      - 荷兰_012218025
-      - US 501 → tg@nicevpn123
-      - GB 54 → tg@nicevpn123
-      - 韩国_012218033
-      - CN_303
-      - HK 1 → tg@nicevpn123
-      - 加拿大 300_3@533
-      - 加拿大_012218146
-      - Relay_-🇺🇸US_224
-      - US 1622 → tg@nicevpn123
-      - US 1 → tg@nicevpn123
-      - Relay_🇷🇺RU-🇰🇿KZ_784
-      - NL_698
-      - -KR-007
-      - Relay_🇫🇷FR-🇮🇸IS_445
-      - CN_speednode_0066
-      - FR 46 → tg@nicevpn123
-      - Trojan|韩国A01--直连节点
-      - Relay_🇩🇪DE-🇩🇪DE_333 |22.98Mb
-      - CN_speednode_0052
-      - JP 19 → tg@nicevpn123
-      - JP_speednode_0096
-      - CN_speednode_0050
-      - Relay_🇬🇧GB-🇬🇧GB_513
-      - -VN-002
-      - 日本2|@ripaojiedian
-      - netflix_HK 2
-      - CN_speednode_0037
-      - TR_speednode_0097
-      - US 397 → tg@nicevpn123
-      - US 394 → tg@nicevpn123
-      - CN_speednode_0014
-      - CN_speednode_0045
-      - -KR-006
-      - 英国|tg频道:@ripaojiedian
-      - CN_speednode_0009
-      - HK_speednode_0095
-      - 18|台湾|@ripaojiedian
-      - DE 58 → tg@nicevpn123
-      - CN_speednode_0039
-      - Trojan|香港A01--直连节点
-      - CN_speednode_0044
-      - 韩国_012218032
-      - US 1261 → tg@nicevpn123
-      - CN_speednode_0089
-      - 荷兰 004_3@218
-      - 狮城特殊|@ripaojiedian
-      - CH 2 → tg@nicevpn123
-      - "Channel id: @ShadowProxy66🇺🇲"
-      - CN_speednode_0082
-      - CN_speednode_0011
-      - CN_speednode_0043
-      - CN_speednode_0004
-      - HK 21 → tg@nicevpn123
-      - ES_西班牙
-      - TW 17 → tg@nicevpn123
-      - netflix_JP
-      - 20|baipaovpn台湾省新竹市
-      - 20|baipaovpn美国
-      - 加拿大_012218144
-      - 加拿大_012218147
-      - 加拿大_012218145
-      - 未知_012218267
-      - HK 19 → tg@nicevpn123
-      - CN_speednode_0074
-      - UA_943
-      - KR_661
-      - 越南_012218017
-      - CN_speednode_0062
-      - US 308 → tg@nicevpn123
-      - _CN_中国->🇦🇹_AT_奥地利
-      - -GB-002
-      - CN_speednode_0047
-      - Relay_🇬🇧GB-🇬🇧GB_521
-      - 加拿大_012218013
-      - RU 65 → tg@nicevpn123
-      - CN_speednode_0048
-      - "|US|美国|@wxgqlfx|31"
-      - CN_speednode_0016
-      - 加拿大_012218155
-      - 加拿大_012218014
-      - US 1450 → tg@nicevpn123
-      - "Channel id: @ShadowProxy66🇺🇲 2"
-      - Relay_🇻🇳VN-🇻🇳VN_1326
-      - Relay_-🇷🇺RU_194
-      - 7,15|美国【TG：@ccbaohe】定时更新节点订阅 4
-      - CN_speednode_0018
-      - 狮城特殊2|@ripaojiedian
+      - 中转节点-3.15MB/s
+      - 英国-3.65MB/s
+      - 英国-3.62MB/s
+      - 新加坡-155.4KB/s
+      - 日本 007
+      - 韩国-6.45MB/s
+      - 韩国-2.69MB/s
+      - ZZ_907 |25.13Mb
+      - ZZ_1035
+      - ZZ_1011
+      - ZZ_1010
+      - ZZ_1009
+      - ZZ |17.25Mb
+      - ZZ |12.89Mb
+      - ZZ |11.79Mb
+      - ZZ |11.61Mb
+      - ZZ |10.39Mb
+      - ZZ |10.01Mb
       - YD|www.zyw.asia ZYW免费节点
-      - CN_speednode_0015
-      - 加拿大_012218012
-      - RU 34 → tg@nicevpn123
-      - US 1388 → tg@nicevpn123
-      - Relay_🇰🇷KR-🇰🇷KR_651
-      - CN_speednode_0077
-      - CN_speednode_0073
-      - 加拿大_012218143
-      - TW 14 → tg@nicevpn123
-      - CN_speednode_0058
-      - CN_speednode_0005
-      - CH 3 → tg@nicevpn123
-      - CN_304
-      - Trojan|日本A01--直连节点
-      - US 1581 → tg@nicevpn123
-      - US_1064
-      - TW 15 → tg@nicevpn123
-      - CN_speednode_0070
-      - 香港KT2|@ripaojiedian
-      - 美国2|@ripaojiedian
-      - TW 16 → tg@nicevpn123
+      - US_874
+      - TW-61.228.177.15-164
+      - TW-36.232.142.100-135
+      - TW_251
+      - speednode_0087
+      - speednode_0084
+      - speednode_0081
+      - speednode_0080
+      - speednode_0064
+      - speednode_0062
+      - speednode_0059
+      - speednode_0057
+      - speednode_0055
+      - speednode_0053
+      - speednode_0048
+      - speednode_0017
+      - SG_674
+      - SG_670
+      - SG_669
+      - SG_666
+      - SG_665
+      - SG_661
+      - SG_659
+      - SG_658
+      - SG_654
+      - SG_653
+      - SG_652
+      - SG_643
+      - SG_642
+      - SG_638
+      - SG_636
+      - SG_631
+      - RU_594
+      - Relay_🇹🇼TW-🇹🇼TW_711
+      - Relay_-🇹🇼TW_192
+      - Relay_-🇹🇼TW_181
+      - Relay_-🇰🇷KR_46
+      - Relay_-🇯🇵JP_32
+      - Relay_🇫🇷FR-🇱🇺LU_394
+      - netflix_US 4
+      - netflix_TW 6
+      - netflix_TW 4
+      - netflix_TW 10
+      - JP_501
+      - disney_netflix_KR 4
+      - CN-120.232.242.91-155
+      - AL_223
+      - 16|香港|@ripaojiedian
+      - 12,13|🇹🇼|TW|台湾|@wxgqlfx|11
+      - 12,13|speednode_0029
+      - "|46.15Mb"
+      - "|21.91Mb"
+      - "|13.10Mb"
+      - _GI_直布罗陀
+      - _GI_直布罗陀 2
+      - _90
+      - _86
+      - _84
+      - _40
+      - _39
+      - _37
+      - _24
+      - _21
+      - _18
+      - _17
+      - _160
+      - _157
+      - _156
+      - _147
+      - _141
+      - _136
+      - _128
+      - _125
+      - _103
+      - _100
+      - _10
+      - _08
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -655,645 +425,413 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 英国_012218034
-      - 未知_012218011
-      - 俄罗斯 004_3@539
-      - RU_775
-      - US 204 → tg@nicevpn123
-      - 英国_012218033
-      - CN_speednode_0067
-      - 美国-108.9KB/s
-      - KR_649
-      - CN_speednode_0049
-      - 台湾KT|@ripaojiedian
-      - _CN_中国->🇺🇸_US_美国
-      - 加拿大_012218150
-      - CN_speednode_0051
-      - US_1275
-      - 日本3|@ripaojiedian
-      - -US-001
-      - Relay_-🇺🇸US_42
-      - CN_speednode_0042
-      - CN_speednode_0064
-      - 韩国_012218031
-      - CN 97 → tg@nicevpn123
-      - CN_speednode_0084
-      - US 50 → tg@nicevpn123
-      - US 1228 → tg@nicevpn123
-      - CN_speednode_0059
-      - US 1156 → tg@nicevpn123
-      - CN_speednode_0065
-      - 香港KT|@ripaojiedian
-      - CN_speednode_0040
-      - HK 16 → tg@nicevpn123
-      - US 1192 → tg@nicevpn123
-      - RU 75 → tg@nicevpn123
-      - HK 5 → tg@nicevpn123
-      - AL_248
-      - CN_speednode_0017
-      - 英国_012218110
-      - GB_526
-      - US 1332 → tg@nicevpn123
-      - CN_speednode_0055
-      - CN_speednode_0063
-      - HK_573
-      - 加拿大_012218148
-      - 荷兰_012218025
-      - US 501 → tg@nicevpn123
-      - GB 54 → tg@nicevpn123
-      - 韩国_012218033
-      - CN_303
-      - HK 1 → tg@nicevpn123
-      - 加拿大 300_3@533
-      - 加拿大_012218146
-      - Relay_-🇺🇸US_224
-      - US 1622 → tg@nicevpn123
-      - US 1 → tg@nicevpn123
-      - Relay_🇷🇺RU-🇰🇿KZ_784
-      - NL_698
-      - -KR-007
-      - Relay_🇫🇷FR-🇮🇸IS_445
-      - CN_speednode_0066
-      - FR 46 → tg@nicevpn123
-      - Trojan|韩国A01--直连节点
-      - Relay_🇩🇪DE-🇩🇪DE_333 |22.98Mb
-      - CN_speednode_0052
-      - JP 19 → tg@nicevpn123
-      - JP_speednode_0096
-      - CN_speednode_0050
-      - Relay_🇬🇧GB-🇬🇧GB_513
-      - -VN-002
-      - 日本2|@ripaojiedian
-      - netflix_HK 2
-      - CN_speednode_0037
-      - TR_speednode_0097
-      - US 397 → tg@nicevpn123
-      - US 394 → tg@nicevpn123
-      - CN_speednode_0014
-      - CN_speednode_0045
-      - -KR-006
-      - 英国|tg频道:@ripaojiedian
-      - CN_speednode_0009
-      - HK_speednode_0095
-      - 18|台湾|@ripaojiedian
-      - DE 58 → tg@nicevpn123
-      - CN_speednode_0039
-      - Trojan|香港A01--直连节点
-      - CN_speednode_0044
-      - 韩国_012218032
-      - US 1261 → tg@nicevpn123
-      - CN_speednode_0089
-      - 荷兰 004_3@218
-      - 狮城特殊|@ripaojiedian
-      - CH 2 → tg@nicevpn123
-      - "Channel id: @ShadowProxy66🇺🇲"
-      - CN_speednode_0082
-      - CN_speednode_0011
-      - CN_speednode_0043
-      - CN_speednode_0004
-      - HK 21 → tg@nicevpn123
-      - ES_西班牙
-      - TW 17 → tg@nicevpn123
-      - netflix_JP
-      - 20|baipaovpn台湾省新竹市
-      - 20|baipaovpn美国
-      - 加拿大_012218144
-      - 加拿大_012218147
-      - 加拿大_012218145
-      - 未知_012218267
-      - HK 19 → tg@nicevpn123
-      - CN_speednode_0074
-      - UA_943
-      - KR_661
-      - 越南_012218017
-      - CN_speednode_0062
-      - US 308 → tg@nicevpn123
-      - _CN_中国->🇦🇹_AT_奥地利
-      - -GB-002
-      - CN_speednode_0047
-      - Relay_🇬🇧GB-🇬🇧GB_521
-      - 加拿大_012218013
-      - RU 65 → tg@nicevpn123
-      - CN_speednode_0048
-      - "|US|美国|@wxgqlfx|31"
-      - CN_speednode_0016
-      - 加拿大_012218155
-      - 加拿大_012218014
-      - US 1450 → tg@nicevpn123
-      - "Channel id: @ShadowProxy66🇺🇲 2"
-      - Relay_🇻🇳VN-🇻🇳VN_1326
-      - Relay_-🇷🇺RU_194
-      - 7,15|美国【TG：@ccbaohe】定时更新节点订阅 4
-      - CN_speednode_0018
-      - 狮城特殊2|@ripaojiedian
+      - 中转节点-3.15MB/s
+      - 英国-3.65MB/s
+      - 英国-3.62MB/s
+      - 新加坡-155.4KB/s
+      - 日本 007
+      - 韩国-6.45MB/s
+      - 韩国-2.69MB/s
+      - ZZ_907 |25.13Mb
+      - ZZ_1035
+      - ZZ_1011
+      - ZZ_1010
+      - ZZ_1009
+      - ZZ |17.25Mb
+      - ZZ |12.89Mb
+      - ZZ |11.79Mb
+      - ZZ |11.61Mb
+      - ZZ |10.39Mb
+      - ZZ |10.01Mb
       - YD|www.zyw.asia ZYW免费节点
-      - CN_speednode_0015
-      - 加拿大_012218012
-      - RU 34 → tg@nicevpn123
-      - US 1388 → tg@nicevpn123
-      - Relay_🇰🇷KR-🇰🇷KR_651
-      - CN_speednode_0077
-      - CN_speednode_0073
-      - 加拿大_012218143
-      - TW 14 → tg@nicevpn123
-      - CN_speednode_0058
-      - CN_speednode_0005
-      - CH 3 → tg@nicevpn123
-      - CN_304
-      - Trojan|日本A01--直连节点
-      - US 1581 → tg@nicevpn123
-      - US_1064
-      - TW 15 → tg@nicevpn123
-      - CN_speednode_0070
-      - 香港KT2|@ripaojiedian
-      - 美国2|@ripaojiedian
-      - TW 16 → tg@nicevpn123
+      - US_874
+      - TW-61.228.177.15-164
+      - TW-36.232.142.100-135
+      - TW_251
+      - speednode_0087
+      - speednode_0084
+      - speednode_0081
+      - speednode_0080
+      - speednode_0064
+      - speednode_0062
+      - speednode_0059
+      - speednode_0057
+      - speednode_0055
+      - speednode_0053
+      - speednode_0048
+      - speednode_0017
+      - SG_674
+      - SG_670
+      - SG_669
+      - SG_666
+      - SG_665
+      - SG_661
+      - SG_659
+      - SG_658
+      - SG_654
+      - SG_653
+      - SG_652
+      - SG_643
+      - SG_642
+      - SG_638
+      - SG_636
+      - SG_631
+      - RU_594
+      - Relay_🇹🇼TW-🇹🇼TW_711
+      - Relay_-🇹🇼TW_192
+      - Relay_-🇹🇼TW_181
+      - Relay_-🇰🇷KR_46
+      - Relay_-🇯🇵JP_32
+      - Relay_🇫🇷FR-🇱🇺LU_394
+      - netflix_US 4
+      - netflix_TW 6
+      - netflix_TW 4
+      - netflix_TW 10
+      - JP_501
+      - disney_netflix_KR 4
+      - CN-120.232.242.91-155
+      - AL_223
+      - 16|香港|@ripaojiedian
+      - 12,13|🇹🇼|TW|台湾|@wxgqlfx|11
+      - 12,13|speednode_0029
+      - "|46.15Mb"
+      - "|21.91Mb"
+      - "|13.10Mb"
+      - _GI_直布罗陀
+      - _GI_直布罗陀 2
+      - _90
+      - _86
+      - _84
+      - _40
+      - _39
+      - _37
+      - _24
+      - _21
+      - _18
+      - _17
+      - _160
+      - _157
+      - _156
+      - _147
+      - _141
+      - _136
+      - _128
+      - _125
+      - _103
+      - _100
+      - _10
+      - _08
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾KT|@ripaojiedian
-      - 香港KT|@ripaojiedian
-      - 18|台湾|@ripaojiedian
-      - Trojan|香港A01--直连节点
-      - 20|baipaovpn台湾省新竹市
-      - 香港KT2|@ripaojiedian
+      - 16|香港|@ripaojiedian
+      - 12,13|🇹🇼|TW|台湾|@wxgqlfx|11
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 英国_012218034
-      - 未知_012218011
-      - 俄罗斯 004_3@539
-      - RU_775
-      - US 204 → tg@nicevpn123
-      - 英国_012218033
-      - CN_speednode_0067
-      - 美国-108.9KB/s
-      - KR_649
-      - CN_speednode_0049
-      - 台湾KT|@ripaojiedian
-      - _CN_中国->🇺🇸_US_美国
-      - 加拿大_012218150
-      - CN_speednode_0051
-      - US_1275
-      - 日本3|@ripaojiedian
-      - -US-001
-      - Relay_-🇺🇸US_42
-      - CN_speednode_0042
-      - CN_speednode_0064
-      - 韩国_012218031
-      - CN 97 → tg@nicevpn123
-      - CN_speednode_0084
-      - US 50 → tg@nicevpn123
-      - US 1228 → tg@nicevpn123
-      - CN_speednode_0059
-      - US 1156 → tg@nicevpn123
-      - CN_speednode_0065
-      - 香港KT|@ripaojiedian
-      - CN_speednode_0040
-      - HK 16 → tg@nicevpn123
-      - US 1192 → tg@nicevpn123
-      - RU 75 → tg@nicevpn123
-      - HK 5 → tg@nicevpn123
-      - AL_248
-      - CN_speednode_0017
-      - 英国_012218110
-      - GB_526
-      - US 1332 → tg@nicevpn123
-      - CN_speednode_0055
-      - CN_speednode_0063
-      - HK_573
-      - 加拿大_012218148
-      - 荷兰_012218025
-      - US 501 → tg@nicevpn123
-      - GB 54 → tg@nicevpn123
-      - 韩国_012218033
-      - CN_303
-      - HK 1 → tg@nicevpn123
-      - 加拿大 300_3@533
-      - 加拿大_012218146
-      - Relay_-🇺🇸US_224
-      - US 1622 → tg@nicevpn123
-      - US 1 → tg@nicevpn123
-      - Relay_🇷🇺RU-🇰🇿KZ_784
-      - NL_698
-      - -KR-007
-      - Relay_🇫🇷FR-🇮🇸IS_445
-      - CN_speednode_0066
-      - FR 46 → tg@nicevpn123
-      - Trojan|韩国A01--直连节点
-      - Relay_🇩🇪DE-🇩🇪DE_333 |22.98Mb
-      - CN_speednode_0052
-      - JP 19 → tg@nicevpn123
-      - JP_speednode_0096
-      - CN_speednode_0050
-      - Relay_🇬🇧GB-🇬🇧GB_513
-      - -VN-002
-      - 日本2|@ripaojiedian
-      - netflix_HK 2
-      - CN_speednode_0037
-      - TR_speednode_0097
-      - US 397 → tg@nicevpn123
-      - US 394 → tg@nicevpn123
-      - CN_speednode_0014
-      - CN_speednode_0045
-      - -KR-006
-      - 英国|tg频道:@ripaojiedian
-      - CN_speednode_0009
-      - HK_speednode_0095
-      - 18|台湾|@ripaojiedian
-      - DE 58 → tg@nicevpn123
-      - CN_speednode_0039
-      - Trojan|香港A01--直连节点
-      - CN_speednode_0044
-      - 韩国_012218032
-      - US 1261 → tg@nicevpn123
-      - CN_speednode_0089
-      - 荷兰 004_3@218
-      - 狮城特殊|@ripaojiedian
-      - CH 2 → tg@nicevpn123
-      - "Channel id: @ShadowProxy66🇺🇲"
-      - CN_speednode_0082
-      - CN_speednode_0011
-      - CN_speednode_0043
-      - CN_speednode_0004
-      - HK 21 → tg@nicevpn123
-      - ES_西班牙
-      - TW 17 → tg@nicevpn123
-      - netflix_JP
-      - 20|baipaovpn台湾省新竹市
-      - 20|baipaovpn美国
-      - 加拿大_012218144
-      - 加拿大_012218147
-      - 加拿大_012218145
-      - 未知_012218267
-      - HK 19 → tg@nicevpn123
-      - CN_speednode_0074
-      - UA_943
-      - KR_661
-      - 越南_012218017
-      - CN_speednode_0062
-      - US 308 → tg@nicevpn123
-      - _CN_中国->🇦🇹_AT_奥地利
-      - -GB-002
-      - CN_speednode_0047
-      - Relay_🇬🇧GB-🇬🇧GB_521
-      - 加拿大_012218013
-      - RU 65 → tg@nicevpn123
-      - CN_speednode_0048
-      - "|US|美国|@wxgqlfx|31"
-      - CN_speednode_0016
-      - 加拿大_012218155
-      - 加拿大_012218014
-      - US 1450 → tg@nicevpn123
-      - "Channel id: @ShadowProxy66🇺🇲 2"
-      - Relay_🇻🇳VN-🇻🇳VN_1326
-      - Relay_-🇷🇺RU_194
-      - 7,15|美国【TG：@ccbaohe】定时更新节点订阅 4
-      - CN_speednode_0018
-      - 狮城特殊2|@ripaojiedian
+      - 中转节点-3.15MB/s
+      - 英国-3.65MB/s
+      - 英国-3.62MB/s
+      - 新加坡-155.4KB/s
+      - 日本 007
+      - 韩国-6.45MB/s
+      - 韩国-2.69MB/s
+      - ZZ_907 |25.13Mb
+      - ZZ_1035
+      - ZZ_1011
+      - ZZ_1010
+      - ZZ_1009
+      - ZZ |17.25Mb
+      - ZZ |12.89Mb
+      - ZZ |11.79Mb
+      - ZZ |11.61Mb
+      - ZZ |10.39Mb
+      - ZZ |10.01Mb
       - YD|www.zyw.asia ZYW免费节点
-      - CN_speednode_0015
-      - 加拿大_012218012
-      - RU 34 → tg@nicevpn123
-      - US 1388 → tg@nicevpn123
-      - Relay_🇰🇷KR-🇰🇷KR_651
-      - CN_speednode_0077
-      - CN_speednode_0073
-      - 加拿大_012218143
-      - TW 14 → tg@nicevpn123
-      - CN_speednode_0058
-      - CN_speednode_0005
-      - CH 3 → tg@nicevpn123
-      - CN_304
-      - Trojan|日本A01--直连节点
-      - US 1581 → tg@nicevpn123
-      - US_1064
-      - TW 15 → tg@nicevpn123
-      - CN_speednode_0070
-      - 香港KT2|@ripaojiedian
-      - 美国2|@ripaojiedian
-      - TW 16 → tg@nicevpn123
+      - US_874
+      - TW-61.228.177.15-164
+      - TW-36.232.142.100-135
+      - TW_251
+      - speednode_0087
+      - speednode_0084
+      - speednode_0081
+      - speednode_0080
+      - speednode_0064
+      - speednode_0062
+      - speednode_0059
+      - speednode_0057
+      - speednode_0055
+      - speednode_0053
+      - speednode_0048
+      - speednode_0017
+      - SG_674
+      - SG_670
+      - SG_669
+      - SG_666
+      - SG_665
+      - SG_661
+      - SG_659
+      - SG_658
+      - SG_654
+      - SG_653
+      - SG_652
+      - SG_643
+      - SG_642
+      - SG_638
+      - SG_636
+      - SG_631
+      - RU_594
+      - Relay_🇹🇼TW-🇹🇼TW_711
+      - Relay_-🇹🇼TW_192
+      - Relay_-🇹🇼TW_181
+      - Relay_-🇰🇷KR_46
+      - Relay_-🇯🇵JP_32
+      - Relay_🇫🇷FR-🇱🇺LU_394
+      - netflix_US 4
+      - netflix_TW 6
+      - netflix_TW 4
+      - netflix_TW 10
+      - JP_501
+      - disney_netflix_KR 4
+      - CN-120.232.242.91-155
+      - AL_223
+      - 16|香港|@ripaojiedian
+      - 12,13|🇹🇼|TW|台湾|@wxgqlfx|11
+      - 12,13|speednode_0029
+      - "|46.15Mb"
+      - "|21.91Mb"
+      - "|13.10Mb"
+      - _GI_直布罗陀
+      - _GI_直布罗陀 2
+      - _90
+      - _86
+      - _84
+      - _40
+      - _39
+      - _37
+      - _24
+      - _21
+      - _18
+      - _17
+      - _160
+      - _157
+      - _156
+      - _147
+      - _141
+      - _136
+      - _128
+      - _125
+      - _103
+      - _100
+      - _10
+      - _08
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 英国_012218034
-      - 未知_012218011
-      - 俄罗斯 004_3@539
-      - RU_775
-      - US 204 → tg@nicevpn123
-      - 英国_012218033
-      - CN_speednode_0067
-      - 美国-108.9KB/s
-      - KR_649
-      - CN_speednode_0049
-      - 台湾KT|@ripaojiedian
-      - _CN_中国->🇺🇸_US_美国
-      - 加拿大_012218150
-      - CN_speednode_0051
-      - US_1275
-      - 日本3|@ripaojiedian
-      - -US-001
-      - Relay_-🇺🇸US_42
-      - CN_speednode_0042
-      - CN_speednode_0064
-      - 韩国_012218031
-      - CN 97 → tg@nicevpn123
-      - CN_speednode_0084
-      - US 50 → tg@nicevpn123
-      - US 1228 → tg@nicevpn123
-      - CN_speednode_0059
-      - US 1156 → tg@nicevpn123
-      - CN_speednode_0065
-      - 香港KT|@ripaojiedian
-      - CN_speednode_0040
-      - HK 16 → tg@nicevpn123
-      - US 1192 → tg@nicevpn123
-      - RU 75 → tg@nicevpn123
-      - HK 5 → tg@nicevpn123
-      - AL_248
-      - CN_speednode_0017
-      - 英国_012218110
-      - GB_526
-      - US 1332 → tg@nicevpn123
-      - CN_speednode_0055
-      - CN_speednode_0063
-      - HK_573
-      - 加拿大_012218148
-      - 荷兰_012218025
-      - US 501 → tg@nicevpn123
-      - GB 54 → tg@nicevpn123
-      - 韩国_012218033
-      - CN_303
-      - HK 1 → tg@nicevpn123
-      - 加拿大 300_3@533
-      - 加拿大_012218146
-      - Relay_-🇺🇸US_224
-      - US 1622 → tg@nicevpn123
-      - US 1 → tg@nicevpn123
-      - Relay_🇷🇺RU-🇰🇿KZ_784
-      - NL_698
-      - -KR-007
-      - Relay_🇫🇷FR-🇮🇸IS_445
-      - CN_speednode_0066
-      - FR 46 → tg@nicevpn123
-      - Trojan|韩国A01--直连节点
-      - Relay_🇩🇪DE-🇩🇪DE_333 |22.98Mb
-      - CN_speednode_0052
-      - JP 19 → tg@nicevpn123
-      - JP_speednode_0096
-      - CN_speednode_0050
-      - Relay_🇬🇧GB-🇬🇧GB_513
-      - -VN-002
-      - 日本2|@ripaojiedian
-      - netflix_HK 2
-      - CN_speednode_0037
-      - TR_speednode_0097
-      - US 397 → tg@nicevpn123
-      - US 394 → tg@nicevpn123
-      - CN_speednode_0014
-      - CN_speednode_0045
-      - -KR-006
-      - 英国|tg频道:@ripaojiedian
-      - CN_speednode_0009
-      - HK_speednode_0095
-      - 18|台湾|@ripaojiedian
-      - DE 58 → tg@nicevpn123
-      - CN_speednode_0039
-      - Trojan|香港A01--直连节点
-      - CN_speednode_0044
-      - 韩国_012218032
-      - US 1261 → tg@nicevpn123
-      - CN_speednode_0089
-      - 荷兰 004_3@218
-      - 狮城特殊|@ripaojiedian
-      - CH 2 → tg@nicevpn123
-      - "Channel id: @ShadowProxy66🇺🇲"
-      - CN_speednode_0082
-      - CN_speednode_0011
-      - CN_speednode_0043
-      - CN_speednode_0004
-      - HK 21 → tg@nicevpn123
-      - ES_西班牙
-      - TW 17 → tg@nicevpn123
-      - netflix_JP
-      - 20|baipaovpn台湾省新竹市
-      - 20|baipaovpn美国
-      - 加拿大_012218144
-      - 加拿大_012218147
-      - 加拿大_012218145
-      - 未知_012218267
-      - HK 19 → tg@nicevpn123
-      - CN_speednode_0074
-      - UA_943
-      - KR_661
-      - 越南_012218017
-      - CN_speednode_0062
-      - US 308 → tg@nicevpn123
-      - _CN_中国->🇦🇹_AT_奥地利
-      - -GB-002
-      - CN_speednode_0047
-      - Relay_🇬🇧GB-🇬🇧GB_521
-      - 加拿大_012218013
-      - RU 65 → tg@nicevpn123
-      - CN_speednode_0048
-      - "|US|美国|@wxgqlfx|31"
-      - CN_speednode_0016
-      - 加拿大_012218155
-      - 加拿大_012218014
-      - US 1450 → tg@nicevpn123
-      - "Channel id: @ShadowProxy66🇺🇲 2"
-      - Relay_🇻🇳VN-🇻🇳VN_1326
-      - Relay_-🇷🇺RU_194
-      - 7,15|美国【TG：@ccbaohe】定时更新节点订阅 4
-      - CN_speednode_0018
-      - 狮城特殊2|@ripaojiedian
+      - 中转节点-3.15MB/s
+      - 英国-3.65MB/s
+      - 英国-3.62MB/s
+      - 新加坡-155.4KB/s
+      - 日本 007
+      - 韩国-6.45MB/s
+      - 韩国-2.69MB/s
+      - ZZ_907 |25.13Mb
+      - ZZ_1035
+      - ZZ_1011
+      - ZZ_1010
+      - ZZ_1009
+      - ZZ |17.25Mb
+      - ZZ |12.89Mb
+      - ZZ |11.79Mb
+      - ZZ |11.61Mb
+      - ZZ |10.39Mb
+      - ZZ |10.01Mb
       - YD|www.zyw.asia ZYW免费节点
-      - CN_speednode_0015
-      - 加拿大_012218012
-      - RU 34 → tg@nicevpn123
-      - US 1388 → tg@nicevpn123
-      - Relay_🇰🇷KR-🇰🇷KR_651
-      - CN_speednode_0077
-      - CN_speednode_0073
-      - 加拿大_012218143
-      - TW 14 → tg@nicevpn123
-      - CN_speednode_0058
-      - CN_speednode_0005
-      - CH 3 → tg@nicevpn123
-      - CN_304
-      - Trojan|日本A01--直连节点
-      - US 1581 → tg@nicevpn123
-      - US_1064
-      - TW 15 → tg@nicevpn123
-      - CN_speednode_0070
-      - 香港KT2|@ripaojiedian
-      - 美国2|@ripaojiedian
-      - TW 16 → tg@nicevpn123
+      - US_874
+      - TW-61.228.177.15-164
+      - TW-36.232.142.100-135
+      - TW_251
+      - speednode_0087
+      - speednode_0084
+      - speednode_0081
+      - speednode_0080
+      - speednode_0064
+      - speednode_0062
+      - speednode_0059
+      - speednode_0057
+      - speednode_0055
+      - speednode_0053
+      - speednode_0048
+      - speednode_0017
+      - SG_674
+      - SG_670
+      - SG_669
+      - SG_666
+      - SG_665
+      - SG_661
+      - SG_659
+      - SG_658
+      - SG_654
+      - SG_653
+      - SG_652
+      - SG_643
+      - SG_642
+      - SG_638
+      - SG_636
+      - SG_631
+      - RU_594
+      - Relay_🇹🇼TW-🇹🇼TW_711
+      - Relay_-🇹🇼TW_192
+      - Relay_-🇹🇼TW_181
+      - Relay_-🇰🇷KR_46
+      - Relay_-🇯🇵JP_32
+      - Relay_🇫🇷FR-🇱🇺LU_394
+      - netflix_US 4
+      - netflix_TW 6
+      - netflix_TW 4
+      - netflix_TW 10
+      - JP_501
+      - disney_netflix_KR 4
+      - CN-120.232.242.91-155
+      - AL_223
+      - 16|香港|@ripaojiedian
+      - 12,13|🇹🇼|TW|台湾|@wxgqlfx|11
+      - 12,13|speednode_0029
+      - "|46.15Mb"
+      - "|21.91Mb"
+      - "|13.10Mb"
+      - _GI_直布罗陀
+      - _GI_直布罗陀 2
+      - _90
+      - _86
+      - _84
+      - _40
+      - _39
+      - _37
+      - _24
+      - _21
+      - _18
+      - _17
+      - _160
+      - _157
+      - _156
+      - _147
+      - _141
+      - _136
+      - _128
+      - _125
+      - _103
+      - _100
+      - _10
+      - _08
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 英国_012218034
-      - 未知_012218011
-      - 俄罗斯 004_3@539
-      - RU_775
-      - US 204 → tg@nicevpn123
-      - 英国_012218033
-      - CN_speednode_0067
-      - 美国-108.9KB/s
-      - KR_649
-      - CN_speednode_0049
-      - 台湾KT|@ripaojiedian
-      - _CN_中国->🇺🇸_US_美国
-      - 加拿大_012218150
-      - CN_speednode_0051
-      - US_1275
-      - 日本3|@ripaojiedian
-      - -US-001
-      - Relay_-🇺🇸US_42
-      - CN_speednode_0042
-      - CN_speednode_0064
-      - 韩国_012218031
-      - CN 97 → tg@nicevpn123
-      - CN_speednode_0084
-      - US 50 → tg@nicevpn123
-      - US 1228 → tg@nicevpn123
-      - CN_speednode_0059
-      - US 1156 → tg@nicevpn123
-      - CN_speednode_0065
-      - 香港KT|@ripaojiedian
-      - CN_speednode_0040
-      - HK 16 → tg@nicevpn123
-      - US 1192 → tg@nicevpn123
-      - RU 75 → tg@nicevpn123
-      - HK 5 → tg@nicevpn123
-      - AL_248
-      - CN_speednode_0017
-      - 英国_012218110
-      - GB_526
-      - US 1332 → tg@nicevpn123
-      - CN_speednode_0055
-      - CN_speednode_0063
-      - HK_573
-      - 加拿大_012218148
-      - 荷兰_012218025
-      - US 501 → tg@nicevpn123
-      - GB 54 → tg@nicevpn123
-      - 韩国_012218033
-      - CN_303
-      - HK 1 → tg@nicevpn123
-      - 加拿大 300_3@533
-      - 加拿大_012218146
-      - Relay_-🇺🇸US_224
-      - US 1622 → tg@nicevpn123
-      - US 1 → tg@nicevpn123
-      - Relay_🇷🇺RU-🇰🇿KZ_784
-      - NL_698
-      - -KR-007
-      - Relay_🇫🇷FR-🇮🇸IS_445
-      - CN_speednode_0066
-      - FR 46 → tg@nicevpn123
-      - Trojan|韩国A01--直连节点
-      - Relay_🇩🇪DE-🇩🇪DE_333 |22.98Mb
-      - CN_speednode_0052
-      - JP 19 → tg@nicevpn123
-      - JP_speednode_0096
-      - CN_speednode_0050
-      - Relay_🇬🇧GB-🇬🇧GB_513
-      - -VN-002
-      - 日本2|@ripaojiedian
-      - netflix_HK 2
-      - CN_speednode_0037
-      - TR_speednode_0097
-      - US 397 → tg@nicevpn123
-      - US 394 → tg@nicevpn123
-      - CN_speednode_0014
-      - CN_speednode_0045
-      - -KR-006
-      - 英国|tg频道:@ripaojiedian
-      - CN_speednode_0009
-      - HK_speednode_0095
-      - 18|台湾|@ripaojiedian
-      - DE 58 → tg@nicevpn123
-      - CN_speednode_0039
-      - Trojan|香港A01--直连节点
-      - CN_speednode_0044
-      - 韩国_012218032
-      - US 1261 → tg@nicevpn123
-      - CN_speednode_0089
-      - 荷兰 004_3@218
-      - 狮城特殊|@ripaojiedian
-      - CH 2 → tg@nicevpn123
-      - "Channel id: @ShadowProxy66🇺🇲"
-      - CN_speednode_0082
-      - CN_speednode_0011
-      - CN_speednode_0043
-      - CN_speednode_0004
-      - HK 21 → tg@nicevpn123
-      - ES_西班牙
-      - TW 17 → tg@nicevpn123
-      - netflix_JP
-      - 20|baipaovpn台湾省新竹市
-      - 20|baipaovpn美国
-      - 加拿大_012218144
-      - 加拿大_012218147
-      - 加拿大_012218145
-      - 未知_012218267
-      - HK 19 → tg@nicevpn123
-      - CN_speednode_0074
-      - UA_943
-      - KR_661
-      - 越南_012218017
-      - CN_speednode_0062
-      - US 308 → tg@nicevpn123
-      - _CN_中国->🇦🇹_AT_奥地利
-      - -GB-002
-      - CN_speednode_0047
-      - Relay_🇬🇧GB-🇬🇧GB_521
-      - 加拿大_012218013
-      - RU 65 → tg@nicevpn123
-      - CN_speednode_0048
-      - "|US|美国|@wxgqlfx|31"
-      - CN_speednode_0016
-      - 加拿大_012218155
-      - 加拿大_012218014
-      - US 1450 → tg@nicevpn123
-      - "Channel id: @ShadowProxy66🇺🇲 2"
-      - Relay_🇻🇳VN-🇻🇳VN_1326
-      - Relay_-🇷🇺RU_194
-      - 7,15|美国【TG：@ccbaohe】定时更新节点订阅 4
-      - CN_speednode_0018
-      - 狮城特殊2|@ripaojiedian
+      - 中转节点-3.15MB/s
+      - 英国-3.65MB/s
+      - 英国-3.62MB/s
+      - 新加坡-155.4KB/s
+      - 日本 007
+      - 韩国-6.45MB/s
+      - 韩国-2.69MB/s
+      - ZZ_907 |25.13Mb
+      - ZZ_1035
+      - ZZ_1011
+      - ZZ_1010
+      - ZZ_1009
+      - ZZ |17.25Mb
+      - ZZ |12.89Mb
+      - ZZ |11.79Mb
+      - ZZ |11.61Mb
+      - ZZ |10.39Mb
+      - ZZ |10.01Mb
       - YD|www.zyw.asia ZYW免费节点
-      - CN_speednode_0015
-      - 加拿大_012218012
-      - RU 34 → tg@nicevpn123
-      - US 1388 → tg@nicevpn123
-      - Relay_🇰🇷KR-🇰🇷KR_651
-      - CN_speednode_0077
-      - CN_speednode_0073
-      - 加拿大_012218143
-      - TW 14 → tg@nicevpn123
-      - CN_speednode_0058
-      - CN_speednode_0005
-      - CH 3 → tg@nicevpn123
-      - CN_304
-      - Trojan|日本A01--直连节点
-      - US 1581 → tg@nicevpn123
-      - US_1064
-      - TW 15 → tg@nicevpn123
-      - CN_speednode_0070
-      - 香港KT2|@ripaojiedian
-      - 美国2|@ripaojiedian
-      - TW 16 → tg@nicevpn123
+      - US_874
+      - TW-61.228.177.15-164
+      - TW-36.232.142.100-135
+      - TW_251
+      - speednode_0087
+      - speednode_0084
+      - speednode_0081
+      - speednode_0080
+      - speednode_0064
+      - speednode_0062
+      - speednode_0059
+      - speednode_0057
+      - speednode_0055
+      - speednode_0053
+      - speednode_0048
+      - speednode_0017
+      - SG_674
+      - SG_670
+      - SG_669
+      - SG_666
+      - SG_665
+      - SG_661
+      - SG_659
+      - SG_658
+      - SG_654
+      - SG_653
+      - SG_652
+      - SG_643
+      - SG_642
+      - SG_638
+      - SG_636
+      - SG_631
+      - RU_594
+      - Relay_🇹🇼TW-🇹🇼TW_711
+      - Relay_-🇹🇼TW_192
+      - Relay_-🇹🇼TW_181
+      - Relay_-🇰🇷KR_46
+      - Relay_-🇯🇵JP_32
+      - Relay_🇫🇷FR-🇱🇺LU_394
+      - netflix_US 4
+      - netflix_TW 6
+      - netflix_TW 4
+      - netflix_TW 10
+      - JP_501
+      - disney_netflix_KR 4
+      - CN-120.232.242.91-155
+      - AL_223
+      - 16|香港|@ripaojiedian
+      - 12,13|🇹🇼|TW|台湾|@wxgqlfx|11
+      - 12,13|speednode_0029
+      - "|46.15Mb"
+      - "|21.91Mb"
+      - "|13.10Mb"
+      - _GI_直布罗陀
+      - _GI_直布罗陀 2
+      - _90
+      - _86
+      - _84
+      - _40
+      - _39
+      - _37
+      - _24
+      - _21
+      - _18
+      - _17
+      - _160
+      - _157
+      - _156
+      - _147
+      - _141
+      - _136
+      - _128
+      - _125
+      - _103
+      - _100
+      - _10
+      - _08
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1309,159 +847,102 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 英国_012218034
-      - 未知_012218011
-      - 俄罗斯 004_3@539
-      - RU_775
-      - US 204 → tg@nicevpn123
-      - 英国_012218033
-      - CN_speednode_0067
-      - 美国-108.9KB/s
-      - KR_649
-      - CN_speednode_0049
-      - 台湾KT|@ripaojiedian
-      - _CN_中国->🇺🇸_US_美国
-      - 加拿大_012218150
-      - CN_speednode_0051
-      - US_1275
-      - 日本3|@ripaojiedian
-      - -US-001
-      - Relay_-🇺🇸US_42
-      - CN_speednode_0042
-      - CN_speednode_0064
-      - 韩国_012218031
-      - CN 97 → tg@nicevpn123
-      - CN_speednode_0084
-      - US 50 → tg@nicevpn123
-      - US 1228 → tg@nicevpn123
-      - CN_speednode_0059
-      - US 1156 → tg@nicevpn123
-      - CN_speednode_0065
-      - 香港KT|@ripaojiedian
-      - CN_speednode_0040
-      - HK 16 → tg@nicevpn123
-      - US 1192 → tg@nicevpn123
-      - RU 75 → tg@nicevpn123
-      - HK 5 → tg@nicevpn123
-      - AL_248
-      - CN_speednode_0017
-      - 英国_012218110
-      - GB_526
-      - US 1332 → tg@nicevpn123
-      - CN_speednode_0055
-      - CN_speednode_0063
-      - HK_573
-      - 加拿大_012218148
-      - 荷兰_012218025
-      - US 501 → tg@nicevpn123
-      - GB 54 → tg@nicevpn123
-      - 韩国_012218033
-      - CN_303
-      - HK 1 → tg@nicevpn123
-      - 加拿大 300_3@533
-      - 加拿大_012218146
-      - Relay_-🇺🇸US_224
-      - US 1622 → tg@nicevpn123
-      - US 1 → tg@nicevpn123
-      - Relay_🇷🇺RU-🇰🇿KZ_784
-      - NL_698
-      - -KR-007
-      - Relay_🇫🇷FR-🇮🇸IS_445
-      - CN_speednode_0066
-      - FR 46 → tg@nicevpn123
-      - Trojan|韩国A01--直连节点
-      - Relay_🇩🇪DE-🇩🇪DE_333 |22.98Mb
-      - CN_speednode_0052
-      - JP 19 → tg@nicevpn123
-      - JP_speednode_0096
-      - CN_speednode_0050
-      - Relay_🇬🇧GB-🇬🇧GB_513
-      - -VN-002
-      - 日本2|@ripaojiedian
-      - netflix_HK 2
-      - CN_speednode_0037
-      - TR_speednode_0097
-      - US 397 → tg@nicevpn123
-      - US 394 → tg@nicevpn123
-      - CN_speednode_0014
-      - CN_speednode_0045
-      - -KR-006
-      - 英国|tg频道:@ripaojiedian
-      - CN_speednode_0009
-      - HK_speednode_0095
-      - 18|台湾|@ripaojiedian
-      - DE 58 → tg@nicevpn123
-      - CN_speednode_0039
-      - Trojan|香港A01--直连节点
-      - CN_speednode_0044
-      - 韩国_012218032
-      - US 1261 → tg@nicevpn123
-      - CN_speednode_0089
-      - 荷兰 004_3@218
-      - 狮城特殊|@ripaojiedian
-      - CH 2 → tg@nicevpn123
-      - "Channel id: @ShadowProxy66🇺🇲"
-      - CN_speednode_0082
-      - CN_speednode_0011
-      - CN_speednode_0043
-      - CN_speednode_0004
-      - HK 21 → tg@nicevpn123
-      - ES_西班牙
-      - TW 17 → tg@nicevpn123
-      - netflix_JP
-      - 20|baipaovpn台湾省新竹市
-      - 20|baipaovpn美国
-      - 加拿大_012218144
-      - 加拿大_012218147
-      - 加拿大_012218145
-      - 未知_012218267
-      - HK 19 → tg@nicevpn123
-      - CN_speednode_0074
-      - UA_943
-      - KR_661
-      - 越南_012218017
-      - CN_speednode_0062
-      - US 308 → tg@nicevpn123
-      - _CN_中国->🇦🇹_AT_奥地利
-      - -GB-002
-      - CN_speednode_0047
-      - Relay_🇬🇧GB-🇬🇧GB_521
-      - 加拿大_012218013
-      - RU 65 → tg@nicevpn123
-      - CN_speednode_0048
-      - "|US|美国|@wxgqlfx|31"
-      - CN_speednode_0016
-      - 加拿大_012218155
-      - 加拿大_012218014
-      - US 1450 → tg@nicevpn123
-      - "Channel id: @ShadowProxy66🇺🇲 2"
-      - Relay_🇻🇳VN-🇻🇳VN_1326
-      - Relay_-🇷🇺RU_194
-      - 7,15|美国【TG：@ccbaohe】定时更新节点订阅 4
-      - CN_speednode_0018
-      - 狮城特殊2|@ripaojiedian
+      - 中转节点-3.15MB/s
+      - 英国-3.65MB/s
+      - 英国-3.62MB/s
+      - 新加坡-155.4KB/s
+      - 日本 007
+      - 韩国-6.45MB/s
+      - 韩国-2.69MB/s
+      - ZZ_907 |25.13Mb
+      - ZZ_1035
+      - ZZ_1011
+      - ZZ_1010
+      - ZZ_1009
+      - ZZ |17.25Mb
+      - ZZ |12.89Mb
+      - ZZ |11.79Mb
+      - ZZ |11.61Mb
+      - ZZ |10.39Mb
+      - ZZ |10.01Mb
       - YD|www.zyw.asia ZYW免费节点
-      - CN_speednode_0015
-      - 加拿大_012218012
-      - RU 34 → tg@nicevpn123
-      - US 1388 → tg@nicevpn123
-      - Relay_🇰🇷KR-🇰🇷KR_651
-      - CN_speednode_0077
-      - CN_speednode_0073
-      - 加拿大_012218143
-      - TW 14 → tg@nicevpn123
-      - CN_speednode_0058
-      - CN_speednode_0005
-      - CH 3 → tg@nicevpn123
-      - CN_304
-      - Trojan|日本A01--直连节点
-      - US 1581 → tg@nicevpn123
-      - US_1064
-      - TW 15 → tg@nicevpn123
-      - CN_speednode_0070
-      - 香港KT2|@ripaojiedian
-      - 美国2|@ripaojiedian
-      - TW 16 → tg@nicevpn123
+      - US_874
+      - TW-61.228.177.15-164
+      - TW-36.232.142.100-135
+      - TW_251
+      - speednode_0087
+      - speednode_0084
+      - speednode_0081
+      - speednode_0080
+      - speednode_0064
+      - speednode_0062
+      - speednode_0059
+      - speednode_0057
+      - speednode_0055
+      - speednode_0053
+      - speednode_0048
+      - speednode_0017
+      - SG_674
+      - SG_670
+      - SG_669
+      - SG_666
+      - SG_665
+      - SG_661
+      - SG_659
+      - SG_658
+      - SG_654
+      - SG_653
+      - SG_652
+      - SG_643
+      - SG_642
+      - SG_638
+      - SG_636
+      - SG_631
+      - RU_594
+      - Relay_🇹🇼TW-🇹🇼TW_711
+      - Relay_-🇹🇼TW_192
+      - Relay_-🇹🇼TW_181
+      - Relay_-🇰🇷KR_46
+      - Relay_-🇯🇵JP_32
+      - Relay_🇫🇷FR-🇱🇺LU_394
+      - netflix_US 4
+      - netflix_TW 6
+      - netflix_TW 4
+      - netflix_TW 10
+      - JP_501
+      - disney_netflix_KR 4
+      - CN-120.232.242.91-155
+      - AL_223
+      - 16|香港|@ripaojiedian
+      - 12,13|🇹🇼|TW|台湾|@wxgqlfx|11
+      - 12,13|speednode_0029
+      - "|46.15Mb"
+      - "|21.91Mb"
+      - "|13.10Mb"
+      - _GI_直布罗陀
+      - _GI_直布罗陀 2
+      - _90
+      - _86
+      - _84
+      - _40
+      - _39
+      - _37
+      - _24
+      - _21
+      - _18
+      - _17
+      - _160
+      - _157
+      - _156
+      - _147
+      - _141
+      - _136
+      - _128
+      - _125
+      - _103
+      - _100
+      - _10
+      - _08
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -1548,6 +1029,7 @@ rules:
  - DOMAIN-SUFFIX,wunderlist.com,Ⓜ️ 微软服务
  - DOMAIN-SUFFIX,yammer.com,Ⓜ️ 微软服务
  - DOMAIN-SUFFIX,yammerusercontent.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,bingapis.com,Ⓜ️ 微软服务
  - DOMAIN,app.adjust.com,🎯 全球直连
  - DOMAIN,bdtj.tagtic.cn,🎯 全球直连
  - DOMAIN,log.mmstat.com,🎯 全球直连
@@ -10418,6 +9900,8 @@ rules:
  - DOMAIN-SUFFIX,hypeapp.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,hypersnap.net,🛑 全球拦截
  - DOMAIN-SUFFIX,iconworkshop.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,idmchina.net,🛑 全球拦截
+ - DOMAIN-SUFFIX,imazingchina.com,🛑 全球拦截
  - DOMAIN-SUFFIX,imindmap.cc,🛑 全球拦截
  - DOMAIN-SUFFIX,jihehuaban.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,keyshot.cc,🛑 全球拦截
@@ -10487,6 +9971,8 @@ rules:
  - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
  - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
  - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
+ - DOMAIN,radio.itunes.apple.com,🌍 国外媒体
+ - DOMAIN,tv.applemusic.com,🌍 国外媒体
  - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
  - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
@@ -10531,6 +10017,7 @@ rules:
  - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
  - DOMAIN,linear.tv.apple.com,🌍 国外媒体
  - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
+ - DOMAIN,uts-api.itunes.apple.com,🌍 国外媒体
  - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
  - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
  - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
@@ -10617,6 +10104,7 @@ rules:
  - IP-CIDR,203.74.95.153/32,🌍 国外媒体,no-resolve
  - IP-CIDR,203.211.4.169/32,🌍 国外媒体,no-resolve
  - IP-CIDR,203.211.4.193/32,🌍 国外媒体,no-resolve
+ - IP-CIDR,210.71.227.200/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.71.227.202/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.201.32.8/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.201.32.11/32,🌍 国外媒体,no-resolve
@@ -10717,15 +10205,14 @@ rules:
  - DOMAIN-SUFFIX,acg.tv,🌏 国内媒体
  - DOMAIN-SUFFIX,acgvideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,b23.tv,🌏 国内媒体
- - DOMAIN-SUFFIX,biliapi.com,🌏 国内媒体
- - DOMAIN-SUFFIX,biliapi.net,🌏 国内媒体
  - DOMAIN-SUFFIX,bilibili.com,🌏 国内媒体
- - DOMAIN-SUFFIX,biligame.com,🌏 国内媒体
- - DOMAIN-SUFFIX,biligame.net,🌏 国内媒体
+ - DOMAIN-SUFFIX,bilibili.tv,🌏 国内媒体
+ - DOMAIN-SUFFIX,biliapi.net,🌏 国内媒体
+ - DOMAIN-SUFFIX,biliapi.com,🌏 国内媒体
  - DOMAIN-SUFFIX,bilivideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,hdslb.com,🌏 国内媒体
- - DOMAIN-SUFFIX,im9.com,🌏 国内媒体
- - DOMAIN-SUFFIX,smtcdns.net,🌏 国内媒体
+ - DOMAIN,upos-hz-mirrorakam.akamaized.net,🌏 国内媒体
+ - DOMAIN,apiintl.biliapi.net,🌏 国内媒体
  - DOMAIN,intel-cache.m.iqiyi.com,🌏 国内媒体
  - DOMAIN,intel-cache.video.iqiyi.com,🌏 国内媒体
  - DOMAIN,intl-rcd.iqiyi.com,🌏 国内媒体
@@ -10743,6 +10230,7 @@ rules:
  - DOMAIN-SUFFIX,api.mob.app.letv.com,🌏 国内媒体
  - DOMAIN-SUFFIX,v.smtcdns.com,🌏 国内媒体
  - DOMAIN-SUFFIX,vv.video.qq.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,youku.com,🌏 国内媒体
  - IP-CIDR,106.11.0.0/16,🌏 国内媒体,no-resolve
  - DOMAIN-SUFFIX,t.me,📲 电报信息
  - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
@@ -10756,11 +10244,14 @@ rules:
  - IP-CIDR,91.108.16.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.20.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.56.0/22,📲 电报信息,no-resolve
- - IP-CIDR,95.161.64.0/20,📲 电报信息,no-resolve
+ - IP-CIDR,91.105.192.0/23,📲 电报信息,no-resolve
  - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
+ - IP-CIDR,185.76.151.0/24,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
+ - IP-CIDR6,2001:b28:f23c::/48,📲 电报信息,no-resolve
+ - IP-CIDR6,2a0a:f280::/32,📲 电报信息,no-resolve
  - PROCESS-NAME,GalaxyClient,🔰 节点选择
  - PROCESS-NAME,Gwent,🔰 节点选择
  - PROCESS-NAME,Steam,🔰 节点选择
@@ -10778,16 +10269,36 @@ rules:
  - DOMAIN,a248.e.akamai.net,🔰 节点选择
  - DOMAIN,a771.dscq.akamai.net,🔰 节点选择
  - DOMAIN,testflight.apple.com,🔰 节点选择
+ - DOMAIN-SUFFIX,clubhouseapi.com,🔰 节点选择
+ - DOMAIN-SUFFIX,joinclubhouse.com,🔰 节点选择
+ - DOMAIN,clubhouse.pubnubapi.com,🔰 节点选择
  - DOMAIN-SUFFIX,aex.com,🔰 节点选择
  - DOMAIN-SUFFIX,bibox.com,🔰 节点选择
  - DOMAIN-SUFFIX,binance.cc,🔰 节点选择
  - DOMAIN-SUFFIX,binance.com,🔰 节点选择
+ - DOMAIN-SUFFIX,binance.us,🔰 节点选择
  - DOMAIN-SUFFIX,bitcointalk.org,🔰 节点选择
  - DOMAIN-SUFFIX,bitfinex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bithumb.com,🔰 节点选择
  - DOMAIN-SUFFIX,bitmex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bitstamp.net,🔰 节点选择
+ - DOMAIN-SUFFIX,bittrex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bybit.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coinbase.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coincheck.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coingecko.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coinmarketcap.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coinone.co.kr,🔰 节点选择
+ - DOMAIN-SUFFIX,ftx.com,🔰 节点选择
  - DOMAIN-SUFFIX,gate.io,🔰 节点选择
+ - DOMAIN-SUFFIX,gemini.com,🔰 节点选择
  - DOMAIN-SUFFIX,huobi.com,🔰 节点选择
+ - DOMAIN-SUFFIX,korbit.co.kr,🔰 节点选择
+ - DOMAIN-SUFFIX,kraken.com,🔰 节点选择
+ - DOMAIN-SUFFIX,kucoin.com,🔰 节点选择
+ - DOMAIN-SUFFIX,liquid.com,🔰 节点选择
  - DOMAIN-SUFFIX,okex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,poloniex.com,🔰 节点选择
  - DOMAIN-SUFFIX,uniswap.org,🔰 节点选择
  - DOMAIN-SUFFIX,zb.com,🔰 节点选择
  - DOMAIN-SUFFIX,discord.com,🔰 节点选择
@@ -10820,6 +10331,7 @@ rules:
  - DOMAIN-SUFFIX,blogger.com,🔰 节点选择
  - DOMAIN-SUFFIX,getoutline.org,🔰 节点选择
  - DOMAIN-SUFFIX,gvt0.com,🔰 节点选择
+ - DOMAIN-SUFFIX,gvt1.com,🔰 节点选择
  - DOMAIN-SUFFIX,gvt3.com,🔰 节点选择
  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🔰 节点选择
  - DOMAIN-SUFFIX,ytimg.com,🔰 节点选择
@@ -10870,11 +10382,14 @@ rules:
  - IP-CIDR,91.108.16.0/22,🔰 节点选择,no-resolve
  - IP-CIDR,91.108.20.0/22,🔰 节点选择,no-resolve
  - IP-CIDR,91.108.56.0/22,🔰 节点选择,no-resolve
- - IP-CIDR,95.161.64.0/20,🔰 节点选择,no-resolve
+ - IP-CIDR,91.105.192.0/23,🔰 节点选择,no-resolve
  - IP-CIDR,149.154.160.0/20,🔰 节点选择,no-resolve
+ - IP-CIDR,185.76.151.0/24,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:67c:4e8::/48,🔰 节点选择,no-resolve
+ - IP-CIDR6,2001:b28:f23c::/48,🔰 节点选择,no-resolve
+ - IP-CIDR6,2a0a:f280::/32,🔰 节点选择,no-resolve
  - DOMAIN-SUFFIX,pscp.tv,🔰 节点选择
  - DOMAIN-SUFFIX,periscope.tv,🔰 节点选择
  - DOMAIN-SUFFIX,t.co,🔰 节点选择
@@ -10943,7 +10458,6 @@ rules:
  - DOMAIN-SUFFIX,ck101.com,🔰 节点选择
  - DOMAIN-SUFFIX,clarionproject.org,🔰 节点选择
  - DOMAIN-SUFFIX,cloudcone.com,🔰 节点选择
- - DOMAIN-SUFFIX,clubhouseapi.com,🔰 节点选择
  - DOMAIN-SUFFIX,clyp.it,🔰 节点选择
  - DOMAIN-SUFFIX,cna.com.tw,🔰 节点选择
  - DOMAIN-SUFFIX,comparitech.com,🔰 节点选择
@@ -11037,7 +10551,6 @@ rules:
  - DOMAIN-SUFFIX,jiji.com,🔰 节点选择
  - DOMAIN-SUFFIX,jinx.com,🔰 节点选择
  - DOMAIN-SUFFIX,jkforum.net,🔰 节点选择
- - DOMAIN-SUFFIX,joinclubhouse.com,🔰 节点选择
  - DOMAIN-SUFFIX,joinmastodon.org,🔰 节点选择
  - DOMAIN-SUFFIX,justmysocks.net,🔰 节点选择
  - DOMAIN-SUFFIX,justpaste.it,🔰 节点选择
@@ -11063,6 +10576,7 @@ rules:
  - DOMAIN-SUFFIX,marc.info,🔰 节点选择
  - DOMAIN-SUFFIX,matters.news,🔰 节点选择
  - DOMAIN-SUFFIX,maying.co,🔰 节点选择
+ - DOMAIN-SUFFIX,medibang.com,🔰 节点选择
  - DOMAIN-SUFFIX,medium.com,🔰 节点选择
  - DOMAIN-SUFFIX,mega.nz,🔰 节点选择
  - DOMAIN-SUFFIX,mergersandinquisitions.com,🔰 节点选择
@@ -11152,6 +10666,7 @@ rules:
  - DOMAIN-SUFFIX,streamable.com,🔰 节点选择
  - DOMAIN-SUFFIX,streema.com,🔰 节点选择
  - DOMAIN-SUFFIX,substack.com,🔰 节点选择
+ - DOMAIN-SUFFIX,substack.com,🔰 节点选择
  - DOMAIN-SUFFIX,t66y.com,🔰 节点选择
  - DOMAIN-SUFFIX,tapatalk.com,🔰 节点选择
  - DOMAIN-SUFFIX,teco-hk.org,🔰 节点选择
@@ -11167,6 +10682,7 @@ rules:
  - DOMAIN-SUFFIX,tiny.cc,🔰 节点选择
  - DOMAIN-SUFFIX,tinyurl.com,🔰 节点选择
  - DOMAIN-SUFFIX,torproject.org,🔰 节点选择
+ - DOMAIN-SUFFIX,tradingview.com,🔰 节点选择
  - DOMAIN-SUFFIX,tumblr.com,🔰 节点选择
  - DOMAIN-SUFFIX,turbobit.net,🔰 节点选择
  - DOMAIN-SUFFIX,tutanota.com,🔰 节点选择
@@ -11283,20 +10799,33 @@ rules:
  - DOMAIN-SUFFIX,twitter.jp,🔰 节点选择
  - DOMAIN-SUFFIX,appsto.re,🔰 节点选择
  - DOMAIN,books.itunes.apple.com,🔰 节点选择
- - DOMAIN,api-glb-sea.smoot.apple.com,🔰 节点选择
- - DOMAIN,beta.music.apple.com,🔰 节点选择
- - DOMAIN,tv.apple.com,🔰 节点选择
- - DOMAIN,apps.apple.com,🔰 节点选择
- - DOMAIN,itunes.apple.com,🔰 节点选择
  - DOMAIN-SUFFIX,smoot.apple.com,🔰 节点选择
+ - DOMAIN,beta.music.apple.com,🔰 节点选择
  - DOMAIN,lookup-api.apple.com,🔰 节点选择
+ - DOMAIN,apps.apple.com,🔰 节点选择
+ - DOMAIN,books.apple.com,🔰 节点选择
+ - DOMAIN,itunes.apple.com,🔰 节点选择
+ - DOMAIN,tv.apple.com,🔰 节点选择
+ - DOMAIN,amp-api.podcasts.apple.com,🔰 节点选择
+ - DOMAIN,bookkeeper.itunes.apple.com,🔰 节点选择
+ - DOMAIN,gateway.icloud.com,🔰 节点选择
+ - DOMAIN-SUFFIX,apple.news,🔰 节点选择
+ - DOMAIN,news-assets.apple.com,🔰 节点选择
+ - DOMAIN,news-client.apple.com,🔰 节点选择
+ - DOMAIN,news-client-search.apple.com,🔰 节点选择
+ - DOMAIN,news-edge.apple.com,🔰 节点选择
+ - DOMAIN,news-events.apple.com,🔰 节点选择
+ - DOMAIN,apple.comscoreresearch.com,🔰 节点选择
  - DOMAIN-SUFFIX,go.dev,🔰 节点选择
  - DOMAIN-SUFFIX,golang.org,🔰 节点选择
+ - DOMAIN-SUFFIX,aicoin.com,🔰 节点选择
+ - DOMAIN-SUFFIX,aimoon.com,🔰 节点选择
  - DOMAIN-SUFFIX,bing.com,🔰 节点选择
  - DOMAIN-SUFFIX,cccat.io,🔰 节点选择
  - DOMAIN-SUFFIX,dubox.com,🔰 节点选择
  - DOMAIN-SUFFIX,duboxcdn.com,🔰 节点选择
  - DOMAIN-SUFFIX,ifixit.com,🔰 节点选择
+ - DOMAIN-SUFFIX,linkedin.com,🔰 节点选择
  - DOMAIN-SUFFIX,mangakakalot.com,🔰 节点选择
  - DOMAIN-SUFFIX,shopeemobile.com,🔰 节点选择
  - DOMAIN-SUFFIX,sushi.com,🔰 节点选择
@@ -11304,12 +10833,10 @@ rules:
  - DOMAIN,developer.apple.com,🔰 节点选择
  - DOMAIN,www.icloud.com,🔰 节点选择
  - DOMAIN,ocsp.apple.com,🔰 节点选择
- - DOMAIN,xp.apple.com,🔰 节点选择
  - DOMAIN,cacerts.digicert.com,🔰 节点选择
  - DOMAIN,crl3.digicert.com,🔰 节点选择
  - DOMAIN,crl4.digicert.com,🔰 节点选择
  - DOMAIN,ocsp.digicert.com,🔰 节点选择
- - DOMAIN-SUFFIX,cloudcone.com.cn,🔰 节点选择
  - DOMAIN-SUFFIX,inkbunny.net,🔰 节点选择
  - DOMAIN-SUFFIX,metapix.net,🔰 节点选择
  - DOMAIN-SUFFIX,s3.amazonaws.com,🔰 节点选择
@@ -11465,19 +10992,11 @@ rules:
  - DOMAIN-SUFFIX,qqmail.com,🎯 全球直连
  - DOMAIN-SUFFIX,servicewechat.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent.com,🎯 全球直连
+ - DOMAIN-SUFFIX,tencent-cloud.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent-cloud.net,🎯 全球直连
  - DOMAIN-SUFFIX,tenpay.com,🎯 全球直连
  - DOMAIN-SUFFIX,wechat.com,🎯 全球直连
  - DOMAIN,file-igamecj.akamaized.net,🎯 全球直连
- - IP-CIDR,101.32.104.4/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.104.41/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.104.56/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.118.25/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.133.16/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.133.53/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.133.209/32,🎯 全球直连,no-resolve
- - IP-CIDR,129.226.3.47/32,🎯 全球直连,no-resolve
- - IP-CIDR,129.226.107.244/32,🎯 全球直连,no-resolve
  - IP-CIDR,182.254.116.0/24,🎯 全球直连,no-resolve
  - IP-CIDR,203.205.254.0/23,🎯 全球直连,no-resolve
  - DOMAIN-SUFFIX,ccgslb.com,🎯 全球直连
@@ -11557,6 +11076,7 @@ rules:
  - DOMAIN-SUFFIX,chinaso.com,🎯 全球直连
  - DOMAIN-SUFFIX,chuimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,chunyu.mobi,🎯 全球直连
+ - DOMAIN-SUFFIX,cibntv.net,🎯 全球直连
  - DOMAIN-SUFFIX,cmbchina.com,🎯 全球直连
  - DOMAIN-SUFFIX,cmbimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,coolapk.com,🎯 全球直连
@@ -11601,8 +11121,6 @@ rules:
  - DOMAIN-SUFFIX,keepcdn.com,🎯 全球直连
  - DOMAIN-SUFFIX,kkmh.com,🎯 全球直连
  - DOMAIN-SUFFIX,lanzous.com,🎯 全球直连
- - DOMAIN-SUFFIX,licdn.com,🎯 全球直连
- - DOMAIN-SUFFIX,linkedin.com,🎯 全球直连
  - DOMAIN-SUFFIX,luojilab.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyan.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyun.tv,🎯 全球直连
@@ -11625,6 +11143,7 @@ rules:
  - DOMAIN-SUFFIX,ruguoapp.com,🎯 全球直连
  - DOMAIN-SUFFIX,sankuai.com,🎯 全球直连
  - DOMAIN-SUFFIX,scomper.me,🎯 全球直连
+ - DOMAIN-SUFFIX,shouqianba.com,🎯 全球直连
  - DOMAIN-SUFFIX,sm.ms,🎯 全球直连
  - DOMAIN-SUFFIX,smzdm.com,🎯 全球直连
  - DOMAIN-SUFFIX,snapdrop.net,🎯 全球直连
