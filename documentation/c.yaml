@@ -1,412 +1,171 @@
-mixed-port: 7890
 port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
-external-controller: 9090
+external-controller: :9090
 proxies:
-  - {name: 中转节点-3.15MB/s, server: 231103.level3.sdl-sz.com, port: 2212, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dj23gsa", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 11275:KWQHheqWo8, obfs-param: d300c11275.microsoft.com, udp: true}
-  - {name: 英国-3.65MB/s, server: series-a2.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: mps3FwmDjLrWaOVg, udp: true}
-  - {name: 英国-3.62MB/s, server: series-a1.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: W74XFALLLuw6m5IA, udp: true}
-  - {name: 新加坡-155.4KB/s, server: 103.172.116.94, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: 日本 007, server: A003.STANDARD-NODES-CHICKENFARMS.TOP, port: 18693, type: vmess, uuid: e6cdc6e9-0faf-4aeb-b8b3-a1350f64f4a2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 韩国-6.45MB/s, server: p222.panda001.net, port: 54345, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: 韩国-2.69MB/s, server: p225.panda004.net, port: 51194, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: ZZ_907 |25.13Mb, server: 103.172.116.79, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: ZZ_1035, server: 103.154.63.16, port: 443, type: trojan, password: 5bae27f5-3b8e-48f3-b91f-30fc680ea78f, sni: lienquan.garena.vn, skip-cert-verify: true, udp: true}
-  - {name: ZZ_1011, server: 103.172.116.94, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: ZZ_1010, server: 103.172.116.94, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: ZZ_1009, server: 103.172.116.94, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: ZZ |17.25Mb, server: 103.172.116.79, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: ZZ |12.89Mb, server: 103.172.116.79, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: ZZ |11.79Mb, server: 103.172.116.90, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: ZZ |11.61Mb, server: 103.172.116.79, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: ZZ |10.39Mb, server: 103.172.116.79, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: ZZ |10.01Mb, server: 103.172.116.79, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: YD|www.zyw.asia ZYW免费节点, server: 185.48.136.150, port: 443, type: vmess, uuid: 14bb927f-a4ec-4de7-90fb-388c1f69dbc1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@forwardv2ray, headers: {Host: sazgar22.zapto.org}}, udp: true}
-  - {name: US_874, server: 43.203.119.237, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: TW-61.228.177.15-164, server: nb22.ntbq.dynu.net, port: 12002, type: vmess, uuid: b6cd1e64-484a-431a-90c2-41bb0d579ee6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: TW-36.232.142.100-135, server: c12.twtc.dynu.net, port: 6122, type: vmess, uuid: b6cd1e64-484a-431a-90c2-41bb0d579ee6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: TW_251, server: 61.228.177.15, port: 12002, type: vmess, uuid: b6cd1e64-484a-431a-90c2-41bb0d579ee6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: speednode_0087, server: 183.236.51.6, port: 10835, type: trojan, password: bdae6064-fa82-4add-93f4-1db2c1958d10, skip-cert-verify: true, udp: true}
-  - {name: speednode_0084, server: 183.236.51.7, port: 10813, type: trojan, password: bdae6064-fa82-4add-93f4-1db2c1958d10, skip-cert-verify: true, udp: true}
-  - {name: speednode_0081, server: 183.236.51.6, port: 10815, type: trojan, password: bdae6064-fa82-4add-93f4-1db2c1958d10, skip-cert-verify: true, udp: true}
-  - {name: speednode_0080, server: 183.236.51.6, port: 10812, type: trojan, password: bdae6064-fa82-4add-93f4-1db2c1958d10, skip-cert-verify: true, udp: true}
-  - {name: speednode_0064, server: xibaozi.19890604.day, port: 10848, type: trojan, password: 6030b240-5ded-4c47-bef8-127fbede965a, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
-  - {name: speednode_0062, server: xibaozi.19890604.day, port: 10839, type: trojan, password: 6030b240-5ded-4c47-bef8-127fbede965a, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
-  - {name: speednode_0059, server: falungong.19890604.day, port: 10825, type: trojan, password: 6030b240-5ded-4c47-bef8-127fbede965a, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
-  - {name: speednode_0057, server: falungong.19890604.day, port: 10823, type: trojan, password: 6030b240-5ded-4c47-bef8-127fbede965a, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
-  - {name: speednode_0055, server: falungong.19890604.day, port: 10822, type: trojan, password: 6030b240-5ded-4c47-bef8-127fbede965a, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
-  - {name: speednode_0053, server: falungong.19890604.day, port: 10820, type: trojan, password: 6030b240-5ded-4c47-bef8-127fbede965a, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
-  - {name: speednode_0048, server: 180.152.132.122, port: 64096, type: vmess, uuid: fe0346d9-a972-3d8a-bac7-310604fa108f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: speednode_0017, server: p220.panda001.net, port: 53258, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: SG_674, server: 103.172.116.94, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: SG_670, server: 103.172.116.94, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: SG_669, server: 103.172.116.94, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: SG_666, server: 103.172.116.94, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: SG_665, server: 103.172.116.79, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
-  - {name: SG_661, server: 46.137.227.248, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: SG_659, server: 103.172.116.79, port: 9044, type: ss, cipher: aes-256-cfb, password: KBGjZYcy4SyRShmA, udp: true}
-  - {name: SG_658, server: 103.172.116.94, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: SG_654, server: 103.172.116.94, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: SG_653, server: 103.172.116.94, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: SG_652, server: 103.172.116.79, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: SG_643, server: 103.172.116.94, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: SG_642, server: 103.172.116.90, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: SG_638, server: 8.217.53.93, port: 80, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: obfs, plugin-opts: {mode: http, host: ""}, udp: true}
-  - {name: SG_636, server: 103.172.116.94, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: SG_631, server: 103.172.116.94, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: RU_594, server: 23.90.128.82, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: Relay_🇹🇼TW-🇹🇼TW_711, server: c12.twtc.dynu.net, port: 6122, type: vmess, uuid: 867b8e57-9355-40dc-a696-9ca2518b091e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_-🇹🇼TW_192, server: tw1-vds3.anyhk.co, port: 21353, type: vmess, uuid: c24b520b-e0c6-4bb0-b951-dd87cc07a518, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_-🇹🇼TW_181, server: nb22.ntbq.dynu.net, port: 12002, type: vmess, uuid: b6cd1e64-484a-431a-90c2-41bb0d579ee6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_-🇰🇷KR_46, server: tg_mfbpn_asg2.52vpn.eu.org, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: Relay_-🇯🇵JP_32, server: jp.doushimeng.com, port: 21853, type: ss, cipher: chacha20-ietf-poly1305, password: 11047069-8ff8-4428-84d9-e42f95deff87, udp: true}
-  - {name: Relay_🇫🇷FR-🇱🇺LU_394, server: 163.172.64.22, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: netflix_US 4, server: hk1.c8898496-adb6-4073-9ee4-ff4e4984415b.polycdn.com, port: 80, type: vmess, uuid: 1e27df2b-5900-4f31-8d42-d404c3b8dd0a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk1.c8898496-adb6-4073-9ee4-ff4e4984415b.polycdn.com}}, udp: true}
-  - {name: netflix_TW 6, server: sg1.c8898496-adb6-4073-9ee4-ff4e4984415b.polycdn.com, port: 80, type: vmess, uuid: 1e27df2b-5900-4f31-8d42-d404c3b8dd0a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg1.c8898496-adb6-4073-9ee4-ff4e4984415b.polycdn.com}}, udp: true}
-  - {name: netflix_TW 4, server: c12.twtc.dynu.net, port: 6122, type: vmess, uuid: b6cd1e64-484a-431a-90c2-41bb0d579ee6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: netflix_TW 10, server: nb22.ntbq.dynu.net, port: 12002, type: vmess, uuid: c64adf03-3bfe-47e0-b38b-870a9f8032e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_501, server: 13.231.78.35, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: disney_netflix_KR 4, server: 221.150.109.81, port: 59084, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: CN-120.232.242.91-155, server: 120.232.242.91, port: 41492, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: AL_223, server: 31.171.153.182, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 16|香港|@ripaojiedian, server: 120.232.242.91, port: 41492, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "12,13|🇹🇼|TW|台湾|@wxgqlfx|11", server: nb22.ntbq.dynu.net, port: 12002, type: vmess, uuid: b6cd1e64-484a-431a-90c2-41bb0d579ee6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "12,13|speednode_0029", server: 94.131.8.32, port: 2095, type: vmess, uuid: 57e37a74-badc-4b71-87c7-5b9e20879b58, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: "|46.15Mb", server: 54.64.183.76, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "|21.91Mb", server: 18.142.250.63, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "|13.10Mb", server: 122.118.172.100, port: 443, type: ss, cipher: aes-128-gcm, password: oiwym4ovI4Yb, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: _GI_直布罗陀, server: 95.164.69.27, port: 80, type: vmess, uuid: cd4a6d0d-4b26-4ee1-8a42-c2878b5c3b2a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: internet.life.com.by}}, udp: true}
-  - {name: _GI_直布罗陀 2, server: 95.164.69.27, port: 80, type: vmess, uuid: cd4a6d0d-4b26-4ee1-8a42-c2878b5c3b2a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: _90, server: 103.172.116.90, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
-  - {name: _86, server: 103.172.116.90, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: _84, server: 103.172.116.79, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: _40, server: 103.172.116.79, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: _39, server: 103.172.116.79, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: _37, server: 103.172.116.90, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: _24, server: 103.172.116.79, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
-  - {name: _21, server: 103.172.116.79, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: _18, server: 8.217.135.205, port: 443, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: _17, server: 103.172.116.79, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: _160, server: 103.172.116.79, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: _157, server: 103.172.116.90, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: _156, server: 103.172.116.79, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: _147, server: 103.172.116.90, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: _141, server: 103.172.116.90, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: _136, server: 103.172.116.90, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: _128, server: 103.172.116.79, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: _125, server: 103.172.116.90, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: _103, server: 103.172.116.90, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: _100, server: 43.201.55.242, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _10, server: 103.172.116.79, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: _08, server: 103.172.116.79, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: 🇺🇸 _US_美国_5, server: www.coldstone.club, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.coldstone.club}}, udp: true}
+  - {name: 🇺🇸 _US_美国_8, server: www.blueberrywindow.online, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.blueberrywindow.online}}, udp: true}
+  - {name: 🇺🇸 _US_美国->🇮🇷_IR_伊朗_1, server: www.darkroom.lol, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.darkroom.lol}}, udp: true}
+  - {name: 🇺🇸 _US_美国_9, server: www.crispyrainbow.online, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.online}}, udp: true}
+  - {name: 🇺🇸 _US_美国->🇮🇷_IR_伊朗_2, server: www.crispyrainbow.biz, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.biz}}, udp: true}
+  - {name: 🇮🇪 IE爱尔兰 183.4KB/s, server: 51.104.230.134, port: 60156, type: ss, cipher: chacha20-ietf-poly1305, password: cWKqgZ2YrNWTOLhDMtJn2R, udp: true}
+  - {name: 🇨🇳 台湾|@ripaojiedian, server: c12.twtc.dynu.net, port: 6122, type: vmess, uuid: f4595480-44d4-4d55-a37e-a5b1e0ec64d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 狮城特殊2|@ripaojiedian, server: 43.201.100.232, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇩🇪 _DE_德国_1, server: 5.104.108.109, port: 443, type: trojan, password: 877347fb-3c6e-4d44-b2c8-5c63e97c0521, sni: 20-24-33-134.nhost.00cdn.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国_3, server: xibaozi.19890604.day, port: 10837, type: trojan, password: 17e82f43-a0c6-4518-9d1f-3ac454429c3d, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国_4, server: xibaozi.19890604.day, port: 10847, type: trojan, password: 17e82f43-a0c6-4518-9d1f-3ac454429c3d, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 TW-114.37.139.157-161_2@161, server: 114.37.139.157, port: 2024, type: vmess, uuid: 38ff99d8-dbaf-430a-867e-200b89f4c70a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 DE-3.79.143.41-209_2@209, server: 3.79.143.41, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.miwan.co.uk, skip-cert-verify: false, udp: true}
+  - {name: SE-51.20.214.153-216_2@216, server: 51.20.214.153, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trj.rollingnext.co.uk, skip-cert-verify: false, udp: true}
+  - {name: 🇫🇷 FR-13.39.38.92-237_2@236, server: 13.39.38.92, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.miwan.co.uk, skip-cert-verify: false, udp: true}
+  - {name: IE-52.31.120.72-240_2@239, server: 52.31.120.72, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.miwan.co.uk, skip-cert-verify: false, udp: true}
+  - {name: "🇺🇸 0,3,4,21,25|🇺🇸 _US_美国 #18", server: 104.21.23.176, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.biz}}, udp: true}
+  - {name: "🇺🇸 0,3,4,9,21,25|🇺🇸 _US_美国 #22", server: 172.67.166.190, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.online}}, udp: true}
+  - {name: 6|-https://t.me/MrXbin-2, server: p225.panda004.net, port: 51194, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 6|-https://t.me/MrXbin-12, server: 13.250.25.60, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 6|-https://t.me/MrXbin-14, server: p235.panda004.net, port: 2212, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 6|-https://t.me/MrXbin-15, server: 18.179.13.191, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 6|-https://t.me/MrXbin-17, server: p234.panda004.net, port: 56906, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 6|-https://t.me/MrXbin-19, server: 103.172.116.79, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: 6|-https://t.me/MrXbin-2%%� 2, server: 103.172.116.79, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
+  - {name: 6|-https://t.me/MrXbin-4%%� 4, server: 103.172.116.79, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: 6|-https://t.me/MrXbin-5%%� 2, server: 103.172.116.79, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: 6|-https://t.me/MrXbin-120, server: p232.panda004.net, port: 4398, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 6|-https://t.me/MrXbin-121, server: 222.112.15.140, port: 56906, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 6|-https://t.me/MrXbin-125, server: 13.213.1.132, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "🇺🇸 9,19,21,29|🇺🇸_US_美国_8_24", server: 172.67.217.144, port: 80, type: vmess, uuid: 85674552-ce41-44d9-bb2a-50f76450b3d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: lv1.xv2ray.net}}, udp: true}
+  - {name: "🇨🇳 21,26|baipaovpn台湾省", server: 125.224.144.24, port: 6122, type: vmess, uuid: f4595480-44d4-4d55-a37e-a5b1e0ec64d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0015, server: xibaozi.19890604.day, port: 10849, type: trojan, password: 8b824a66-9779-430f-95e6-5d09de8cfb5b, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: TW_speednode_0055, server: c12.twtc.dynu.net, port: 6122, type: vmess, uuid: 6b2e0602-bc1a-4ec3-88da-4238a6955ddd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: TW_speednode_0056, server: 125.224.144.24, port: 6122, type: vmess, uuid: 6b2e0602-bc1a-4ec3-88da-4238a6955ddd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 -SG-010, server: 103.172.116.94, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中转节点-3.15MB/s
-      - 英国-3.65MB/s
-      - 英国-3.62MB/s
-      - 新加坡-155.4KB/s
-      - 日本 007
-      - 韩国-6.45MB/s
-      - 韩国-2.69MB/s
-      - ZZ_907 |25.13Mb
-      - ZZ_1035
-      - ZZ_1011
-      - ZZ_1010
-      - ZZ_1009
-      - ZZ |17.25Mb
-      - ZZ |12.89Mb
-      - ZZ |11.79Mb
-      - ZZ |11.61Mb
-      - ZZ |10.39Mb
-      - ZZ |10.01Mb
-      - YD|www.zyw.asia ZYW免费节点
-      - US_874
-      - TW-61.228.177.15-164
-      - TW-36.232.142.100-135
-      - TW_251
-      - speednode_0087
-      - speednode_0084
-      - speednode_0081
-      - speednode_0080
-      - speednode_0064
-      - speednode_0062
-      - speednode_0059
-      - speednode_0057
-      - speednode_0055
-      - speednode_0053
-      - speednode_0048
-      - speednode_0017
-      - SG_674
-      - SG_670
-      - SG_669
-      - SG_666
-      - SG_665
-      - SG_661
-      - SG_659
-      - SG_658
-      - SG_654
-      - SG_653
-      - SG_652
-      - SG_643
-      - SG_642
-      - SG_638
-      - SG_636
-      - SG_631
-      - RU_594
-      - Relay_🇹🇼TW-🇹🇼TW_711
-      - Relay_-🇹🇼TW_192
-      - Relay_-🇹🇼TW_181
-      - Relay_-🇰🇷KR_46
-      - Relay_-🇯🇵JP_32
-      - Relay_🇫🇷FR-🇱🇺LU_394
-      - netflix_US 4
-      - netflix_TW 6
-      - netflix_TW 4
-      - netflix_TW 10
-      - JP_501
-      - disney_netflix_KR 4
-      - CN-120.232.242.91-155
-      - AL_223
-      - 16|香港|@ripaojiedian
-      - 12,13|🇹🇼|TW|台湾|@wxgqlfx|11
-      - 12,13|speednode_0029
-      - "|46.15Mb"
-      - "|21.91Mb"
-      - "|13.10Mb"
-      - _GI_直布罗陀
-      - _GI_直布罗陀 2
-      - _90
-      - _86
-      - _84
-      - _40
-      - _39
-      - _37
-      - _24
-      - _21
-      - _18
-      - _17
-      - _160
-      - _157
-      - _156
-      - _147
-      - _141
-      - _136
-      - _128
-      - _125
-      - _103
-      - _100
-      - _10
-      - _08
+      - 🇺🇸 _US_美国_5
+      - 🇺🇸 _US_美国_8
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗_1
+      - 🇺🇸 _US_美国_9
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗_2
+      - 🇮🇪 IE爱尔兰 183.4KB/s
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇸🇬 狮城特殊2|@ripaojiedian
+      - 🇩🇪 _DE_德国_1
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_4
+      - 🇨🇳 TW-114.37.139.157-161_2@161
+      - 🇩🇪 DE-3.79.143.41-209_2@209
+      - SE-51.20.214.153-216_2@216
+      - 🇫🇷 FR-13.39.38.92-237_2@236
+      - IE-52.31.120.72-240_2@239
+      - "🇺🇸 0,3,4,21,25|🇺🇸 _US_美国 #18"
+      - "🇺🇸 0,3,4,9,21,25|🇺🇸 _US_美国 #22"
+      - 6|-https://t.me/MrXbin-2
+      - 6|-https://t.me/MrXbin-12
+      - 6|-https://t.me/MrXbin-14
+      - 6|-https://t.me/MrXbin-15
+      - 6|-https://t.me/MrXbin-17
+      - 6|-https://t.me/MrXbin-19
+      - 6|-https://t.me/MrXbin-2%%� 2
+      - 6|-https://t.me/MrXbin-4%%� 4
+      - 6|-https://t.me/MrXbin-5%%� 2
+      - 6|-https://t.me/MrXbin-120
+      - 6|-https://t.me/MrXbin-121
+      - 6|-https://t.me/MrXbin-125
+      - 🇺🇸 9,19,21,29|🇺🇸_US_美国_8_24
+      - 🇨🇳 21,26|baipaovpn台湾省
+      - CN_speednode_0015
+      - TW_speednode_0055
+      - TW_speednode_0056
+      - 🇸🇬 -SG-010
   - name: ♻️ 自动选择
     type: url-test
-    url: https://www.youtube.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 中转节点-3.15MB/s
-      - 英国-3.65MB/s
-      - 英国-3.62MB/s
-      - 新加坡-155.4KB/s
-      - 日本 007
-      - 韩国-6.45MB/s
-      - 韩国-2.69MB/s
-      - ZZ_907 |25.13Mb
-      - ZZ_1035
-      - ZZ_1011
-      - ZZ_1010
-      - ZZ_1009
-      - ZZ |17.25Mb
-      - ZZ |12.89Mb
-      - ZZ |11.79Mb
-      - ZZ |11.61Mb
-      - ZZ |10.39Mb
-      - ZZ |10.01Mb
-      - YD|www.zyw.asia ZYW免费节点
-      - US_874
-      - TW-61.228.177.15-164
-      - TW-36.232.142.100-135
-      - TW_251
-      - speednode_0087
-      - speednode_0084
-      - speednode_0081
-      - speednode_0080
-      - speednode_0064
-      - speednode_0062
-      - speednode_0059
-      - speednode_0057
-      - speednode_0055
-      - speednode_0053
-      - speednode_0048
-      - speednode_0017
-      - SG_674
-      - SG_670
-      - SG_669
-      - SG_666
-      - SG_665
-      - SG_661
-      - SG_659
-      - SG_658
-      - SG_654
-      - SG_653
-      - SG_652
-      - SG_643
-      - SG_642
-      - SG_638
-      - SG_636
-      - SG_631
-      - RU_594
-      - Relay_🇹🇼TW-🇹🇼TW_711
-      - Relay_-🇹🇼TW_192
-      - Relay_-🇹🇼TW_181
-      - Relay_-🇰🇷KR_46
-      - Relay_-🇯🇵JP_32
-      - Relay_🇫🇷FR-🇱🇺LU_394
-      - netflix_US 4
-      - netflix_TW 6
-      - netflix_TW 4
-      - netflix_TW 10
-      - JP_501
-      - disney_netflix_KR 4
-      - CN-120.232.242.91-155
-      - AL_223
-      - 16|香港|@ripaojiedian
-      - 12,13|🇹🇼|TW|台湾|@wxgqlfx|11
-      - 12,13|speednode_0029
-      - "|46.15Mb"
-      - "|21.91Mb"
-      - "|13.10Mb"
-      - _GI_直布罗陀
-      - _GI_直布罗陀 2
-      - _90
-      - _86
-      - _84
-      - _40
-      - _39
-      - _37
-      - _24
-      - _21
-      - _18
-      - _17
-      - _160
-      - _157
-      - _156
-      - _147
-      - _141
-      - _136
-      - _128
-      - _125
-      - _103
-      - _100
-      - _10
-      - _08
+      - 🇺🇸 _US_美国_5
+      - 🇺🇸 _US_美国_8
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗_1
+      - 🇺🇸 _US_美国_9
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗_2
+      - 🇮🇪 IE爱尔兰 183.4KB/s
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇸🇬 狮城特殊2|@ripaojiedian
+      - 🇩🇪 _DE_德国_1
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_4
+      - 🇨🇳 TW-114.37.139.157-161_2@161
+      - 🇩🇪 DE-3.79.143.41-209_2@209
+      - SE-51.20.214.153-216_2@216
+      - 🇫🇷 FR-13.39.38.92-237_2@236
+      - IE-52.31.120.72-240_2@239
+      - "🇺🇸 0,3,4,21,25|🇺🇸 _US_美国 #18"
+      - "🇺🇸 0,3,4,9,21,25|🇺🇸 _US_美国 #22"
+      - 6|-https://t.me/MrXbin-2
+      - 6|-https://t.me/MrXbin-12
+      - 6|-https://t.me/MrXbin-14
+      - 6|-https://t.me/MrXbin-15
+      - 6|-https://t.me/MrXbin-17
+      - 6|-https://t.me/MrXbin-19
+      - 6|-https://t.me/MrXbin-2%%� 2
+      - 6|-https://t.me/MrXbin-4%%� 4
+      - 6|-https://t.me/MrXbin-5%%� 2
+      - 6|-https://t.me/MrXbin-120
+      - 6|-https://t.me/MrXbin-121
+      - 6|-https://t.me/MrXbin-125
+      - 🇺🇸 9,19,21,29|🇺🇸_US_美国_8_24
+      - 🇨🇳 21,26|baipaovpn台湾省
+      - CN_speednode_0015
+      - TW_speednode_0055
+      - TW_speednode_0056
+      - 🇸🇬 -SG-010
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中转节点-3.15MB/s
-      - 英国-3.65MB/s
-      - 英国-3.62MB/s
-      - 新加坡-155.4KB/s
-      - 日本 007
-      - 韩国-6.45MB/s
-      - 韩国-2.69MB/s
-      - ZZ_907 |25.13Mb
-      - ZZ_1035
-      - ZZ_1011
-      - ZZ_1010
-      - ZZ_1009
-      - ZZ |17.25Mb
-      - ZZ |12.89Mb
-      - ZZ |11.79Mb
-      - ZZ |11.61Mb
-      - ZZ |10.39Mb
-      - ZZ |10.01Mb
-      - YD|www.zyw.asia ZYW免费节点
-      - US_874
-      - TW-61.228.177.15-164
-      - TW-36.232.142.100-135
-      - TW_251
-      - speednode_0087
-      - speednode_0084
-      - speednode_0081
-      - speednode_0080
-      - speednode_0064
-      - speednode_0062
-      - speednode_0059
-      - speednode_0057
-      - speednode_0055
-      - speednode_0053
-      - speednode_0048
-      - speednode_0017
-      - SG_674
-      - SG_670
-      - SG_669
-      - SG_666
-      - SG_665
-      - SG_661
-      - SG_659
-      - SG_658
-      - SG_654
-      - SG_653
-      - SG_652
-      - SG_643
-      - SG_642
-      - SG_638
-      - SG_636
-      - SG_631
-      - RU_594
-      - Relay_🇹🇼TW-🇹🇼TW_711
-      - Relay_-🇹🇼TW_192
-      - Relay_-🇹🇼TW_181
-      - Relay_-🇰🇷KR_46
-      - Relay_-🇯🇵JP_32
-      - Relay_🇫🇷FR-🇱🇺LU_394
-      - netflix_US 4
-      - netflix_TW 6
-      - netflix_TW 4
-      - netflix_TW 10
-      - JP_501
-      - disney_netflix_KR 4
-      - CN-120.232.242.91-155
-      - AL_223
-      - 16|香港|@ripaojiedian
-      - 12,13|🇹🇼|TW|台湾|@wxgqlfx|11
-      - 12,13|speednode_0029
-      - "|46.15Mb"
-      - "|21.91Mb"
-      - "|13.10Mb"
-      - _GI_直布罗陀
-      - _GI_直布罗陀 2
-      - _90
-      - _86
-      - _84
-      - _40
-      - _39
-      - _37
-      - _24
-      - _21
-      - _18
-      - _17
-      - _160
-      - _157
-      - _156
-      - _147
-      - _141
-      - _136
-      - _128
-      - _125
-      - _103
-      - _100
-      - _10
-      - _08
+      - 🇺🇸 _US_美国_5
+      - 🇺🇸 _US_美国_8
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗_1
+      - 🇺🇸 _US_美国_9
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗_2
+      - 🇮🇪 IE爱尔兰 183.4KB/s
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇸🇬 狮城特殊2|@ripaojiedian
+      - 🇩🇪 _DE_德国_1
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_4
+      - 🇨🇳 TW-114.37.139.157-161_2@161
+      - 🇩🇪 DE-3.79.143.41-209_2@209
+      - SE-51.20.214.153-216_2@216
+      - 🇫🇷 FR-13.39.38.92-237_2@236
+      - IE-52.31.120.72-240_2@239
+      - "🇺🇸 0,3,4,21,25|🇺🇸 _US_美国 #18"
+      - "🇺🇸 0,3,4,9,21,25|🇺🇸 _US_美国 #22"
+      - 6|-https://t.me/MrXbin-2
+      - 6|-https://t.me/MrXbin-12
+      - 6|-https://t.me/MrXbin-14
+      - 6|-https://t.me/MrXbin-15
+      - 6|-https://t.me/MrXbin-17
+      - 6|-https://t.me/MrXbin-19
+      - 6|-https://t.me/MrXbin-2%%� 2
+      - 6|-https://t.me/MrXbin-4%%� 4
+      - 6|-https://t.me/MrXbin-5%%� 2
+      - 6|-https://t.me/MrXbin-120
+      - 6|-https://t.me/MrXbin-121
+      - 6|-https://t.me/MrXbin-125
+      - 🇺🇸 9,19,21,29|🇺🇸_US_美国_8_24
+      - 🇨🇳 21,26|baipaovpn台湾省
+      - CN_speednode_0015
+      - TW_speednode_0055
+      - TW_speednode_0056
+      - 🇸🇬 -SG-010
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -425,413 +184,173 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中转节点-3.15MB/s
-      - 英国-3.65MB/s
-      - 英国-3.62MB/s
-      - 新加坡-155.4KB/s
-      - 日本 007
-      - 韩国-6.45MB/s
-      - 韩国-2.69MB/s
-      - ZZ_907 |25.13Mb
-      - ZZ_1035
-      - ZZ_1011
-      - ZZ_1010
-      - ZZ_1009
-      - ZZ |17.25Mb
-      - ZZ |12.89Mb
-      - ZZ |11.79Mb
-      - ZZ |11.61Mb
-      - ZZ |10.39Mb
-      - ZZ |10.01Mb
-      - YD|www.zyw.asia ZYW免费节点
-      - US_874
-      - TW-61.228.177.15-164
-      - TW-36.232.142.100-135
-      - TW_251
-      - speednode_0087
-      - speednode_0084
-      - speednode_0081
-      - speednode_0080
-      - speednode_0064
-      - speednode_0062
-      - speednode_0059
-      - speednode_0057
-      - speednode_0055
-      - speednode_0053
-      - speednode_0048
-      - speednode_0017
-      - SG_674
-      - SG_670
-      - SG_669
-      - SG_666
-      - SG_665
-      - SG_661
-      - SG_659
-      - SG_658
-      - SG_654
-      - SG_653
-      - SG_652
-      - SG_643
-      - SG_642
-      - SG_638
-      - SG_636
-      - SG_631
-      - RU_594
-      - Relay_🇹🇼TW-🇹🇼TW_711
-      - Relay_-🇹🇼TW_192
-      - Relay_-🇹🇼TW_181
-      - Relay_-🇰🇷KR_46
-      - Relay_-🇯🇵JP_32
-      - Relay_🇫🇷FR-🇱🇺LU_394
-      - netflix_US 4
-      - netflix_TW 6
-      - netflix_TW 4
-      - netflix_TW 10
-      - JP_501
-      - disney_netflix_KR 4
-      - CN-120.232.242.91-155
-      - AL_223
-      - 16|香港|@ripaojiedian
-      - 12,13|🇹🇼|TW|台湾|@wxgqlfx|11
-      - 12,13|speednode_0029
-      - "|46.15Mb"
-      - "|21.91Mb"
-      - "|13.10Mb"
-      - _GI_直布罗陀
-      - _GI_直布罗陀 2
-      - _90
-      - _86
-      - _84
-      - _40
-      - _39
-      - _37
-      - _24
-      - _21
-      - _18
-      - _17
-      - _160
-      - _157
-      - _156
-      - _147
-      - _141
-      - _136
-      - _128
-      - _125
-      - _103
-      - _100
-      - _10
-      - _08
+      - 🇺🇸 _US_美国_5
+      - 🇺🇸 _US_美国_8
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗_1
+      - 🇺🇸 _US_美国_9
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗_2
+      - 🇮🇪 IE爱尔兰 183.4KB/s
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇸🇬 狮城特殊2|@ripaojiedian
+      - 🇩🇪 _DE_德国_1
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_4
+      - 🇨🇳 TW-114.37.139.157-161_2@161
+      - 🇩🇪 DE-3.79.143.41-209_2@209
+      - SE-51.20.214.153-216_2@216
+      - 🇫🇷 FR-13.39.38.92-237_2@236
+      - IE-52.31.120.72-240_2@239
+      - "🇺🇸 0,3,4,21,25|🇺🇸 _US_美国 #18"
+      - "🇺🇸 0,3,4,9,21,25|🇺🇸 _US_美国 #22"
+      - 6|-https://t.me/MrXbin-2
+      - 6|-https://t.me/MrXbin-12
+      - 6|-https://t.me/MrXbin-14
+      - 6|-https://t.me/MrXbin-15
+      - 6|-https://t.me/MrXbin-17
+      - 6|-https://t.me/MrXbin-19
+      - 6|-https://t.me/MrXbin-2%%� 2
+      - 6|-https://t.me/MrXbin-4%%� 4
+      - 6|-https://t.me/MrXbin-5%%� 2
+      - 6|-https://t.me/MrXbin-120
+      - 6|-https://t.me/MrXbin-121
+      - 6|-https://t.me/MrXbin-125
+      - 🇺🇸 9,19,21,29|🇺🇸_US_美国_8_24
+      - 🇨🇳 21,26|baipaovpn台湾省
+      - CN_speednode_0015
+      - TW_speednode_0055
+      - TW_speednode_0056
+      - 🇸🇬 -SG-010
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 16|香港|@ripaojiedian
-      - 12,13|🇹🇼|TW|台湾|@wxgqlfx|11
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇨🇳 21,26|baipaovpn台湾省
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 中转节点-3.15MB/s
-      - 英国-3.65MB/s
-      - 英国-3.62MB/s
-      - 新加坡-155.4KB/s
-      - 日本 007
-      - 韩国-6.45MB/s
-      - 韩国-2.69MB/s
-      - ZZ_907 |25.13Mb
-      - ZZ_1035
-      - ZZ_1011
-      - ZZ_1010
-      - ZZ_1009
-      - ZZ |17.25Mb
-      - ZZ |12.89Mb
-      - ZZ |11.79Mb
-      - ZZ |11.61Mb
-      - ZZ |10.39Mb
-      - ZZ |10.01Mb
-      - YD|www.zyw.asia ZYW免费节点
-      - US_874
-      - TW-61.228.177.15-164
-      - TW-36.232.142.100-135
-      - TW_251
-      - speednode_0087
-      - speednode_0084
-      - speednode_0081
-      - speednode_0080
-      - speednode_0064
-      - speednode_0062
-      - speednode_0059
-      - speednode_0057
-      - speednode_0055
-      - speednode_0053
-      - speednode_0048
-      - speednode_0017
-      - SG_674
-      - SG_670
-      - SG_669
-      - SG_666
-      - SG_665
-      - SG_661
-      - SG_659
-      - SG_658
-      - SG_654
-      - SG_653
-      - SG_652
-      - SG_643
-      - SG_642
-      - SG_638
-      - SG_636
-      - SG_631
-      - RU_594
-      - Relay_🇹🇼TW-🇹🇼TW_711
-      - Relay_-🇹🇼TW_192
-      - Relay_-🇹🇼TW_181
-      - Relay_-🇰🇷KR_46
-      - Relay_-🇯🇵JP_32
-      - Relay_🇫🇷FR-🇱🇺LU_394
-      - netflix_US 4
-      - netflix_TW 6
-      - netflix_TW 4
-      - netflix_TW 10
-      - JP_501
-      - disney_netflix_KR 4
-      - CN-120.232.242.91-155
-      - AL_223
-      - 16|香港|@ripaojiedian
-      - 12,13|🇹🇼|TW|台湾|@wxgqlfx|11
-      - 12,13|speednode_0029
-      - "|46.15Mb"
-      - "|21.91Mb"
-      - "|13.10Mb"
-      - _GI_直布罗陀
-      - _GI_直布罗陀 2
-      - _90
-      - _86
-      - _84
-      - _40
-      - _39
-      - _37
-      - _24
-      - _21
-      - _18
-      - _17
-      - _160
-      - _157
-      - _156
-      - _147
-      - _141
-      - _136
-      - _128
-      - _125
-      - _103
-      - _100
-      - _10
-      - _08
+      - 🇺🇸 _US_美国_5
+      - 🇺🇸 _US_美国_8
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗_1
+      - 🇺🇸 _US_美国_9
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗_2
+      - 🇮🇪 IE爱尔兰 183.4KB/s
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇸🇬 狮城特殊2|@ripaojiedian
+      - 🇩🇪 _DE_德国_1
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_4
+      - 🇨🇳 TW-114.37.139.157-161_2@161
+      - 🇩🇪 DE-3.79.143.41-209_2@209
+      - SE-51.20.214.153-216_2@216
+      - 🇫🇷 FR-13.39.38.92-237_2@236
+      - IE-52.31.120.72-240_2@239
+      - "🇺🇸 0,3,4,21,25|🇺🇸 _US_美国 #18"
+      - "🇺🇸 0,3,4,9,21,25|🇺🇸 _US_美国 #22"
+      - 6|-https://t.me/MrXbin-2
+      - 6|-https://t.me/MrXbin-12
+      - 6|-https://t.me/MrXbin-14
+      - 6|-https://t.me/MrXbin-15
+      - 6|-https://t.me/MrXbin-17
+      - 6|-https://t.me/MrXbin-19
+      - 6|-https://t.me/MrXbin-2%%� 2
+      - 6|-https://t.me/MrXbin-4%%� 4
+      - 6|-https://t.me/MrXbin-5%%� 2
+      - 6|-https://t.me/MrXbin-120
+      - 6|-https://t.me/MrXbin-121
+      - 6|-https://t.me/MrXbin-125
+      - 🇺🇸 9,19,21,29|🇺🇸_US_美国_8_24
+      - 🇨🇳 21,26|baipaovpn台湾省
+      - CN_speednode_0015
+      - TW_speednode_0055
+      - TW_speednode_0056
+      - 🇸🇬 -SG-010
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 中转节点-3.15MB/s
-      - 英国-3.65MB/s
-      - 英国-3.62MB/s
-      - 新加坡-155.4KB/s
-      - 日本 007
-      - 韩国-6.45MB/s
-      - 韩国-2.69MB/s
-      - ZZ_907 |25.13Mb
-      - ZZ_1035
-      - ZZ_1011
-      - ZZ_1010
-      - ZZ_1009
-      - ZZ |17.25Mb
-      - ZZ |12.89Mb
-      - ZZ |11.79Mb
-      - ZZ |11.61Mb
-      - ZZ |10.39Mb
-      - ZZ |10.01Mb
-      - YD|www.zyw.asia ZYW免费节点
-      - US_874
-      - TW-61.228.177.15-164
-      - TW-36.232.142.100-135
-      - TW_251
-      - speednode_0087
-      - speednode_0084
-      - speednode_0081
-      - speednode_0080
-      - speednode_0064
-      - speednode_0062
-      - speednode_0059
-      - speednode_0057
-      - speednode_0055
-      - speednode_0053
-      - speednode_0048
-      - speednode_0017
-      - SG_674
-      - SG_670
-      - SG_669
-      - SG_666
-      - SG_665
-      - SG_661
-      - SG_659
-      - SG_658
-      - SG_654
-      - SG_653
-      - SG_652
-      - SG_643
-      - SG_642
-      - SG_638
-      - SG_636
-      - SG_631
-      - RU_594
-      - Relay_🇹🇼TW-🇹🇼TW_711
-      - Relay_-🇹🇼TW_192
-      - Relay_-🇹🇼TW_181
-      - Relay_-🇰🇷KR_46
-      - Relay_-🇯🇵JP_32
-      - Relay_🇫🇷FR-🇱🇺LU_394
-      - netflix_US 4
-      - netflix_TW 6
-      - netflix_TW 4
-      - netflix_TW 10
-      - JP_501
-      - disney_netflix_KR 4
-      - CN-120.232.242.91-155
-      - AL_223
-      - 16|香港|@ripaojiedian
-      - 12,13|🇹🇼|TW|台湾|@wxgqlfx|11
-      - 12,13|speednode_0029
-      - "|46.15Mb"
-      - "|21.91Mb"
-      - "|13.10Mb"
-      - _GI_直布罗陀
-      - _GI_直布罗陀 2
-      - _90
-      - _86
-      - _84
-      - _40
-      - _39
-      - _37
-      - _24
-      - _21
-      - _18
-      - _17
-      - _160
-      - _157
-      - _156
-      - _147
-      - _141
-      - _136
-      - _128
-      - _125
-      - _103
-      - _100
-      - _10
-      - _08
+      - 🇺🇸 _US_美国_5
+      - 🇺🇸 _US_美国_8
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗_1
+      - 🇺🇸 _US_美国_9
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗_2
+      - 🇮🇪 IE爱尔兰 183.4KB/s
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇸🇬 狮城特殊2|@ripaojiedian
+      - 🇩🇪 _DE_德国_1
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_4
+      - 🇨🇳 TW-114.37.139.157-161_2@161
+      - 🇩🇪 DE-3.79.143.41-209_2@209
+      - SE-51.20.214.153-216_2@216
+      - 🇫🇷 FR-13.39.38.92-237_2@236
+      - IE-52.31.120.72-240_2@239
+      - "🇺🇸 0,3,4,21,25|🇺🇸 _US_美国 #18"
+      - "🇺🇸 0,3,4,9,21,25|🇺🇸 _US_美国 #22"
+      - 6|-https://t.me/MrXbin-2
+      - 6|-https://t.me/MrXbin-12
+      - 6|-https://t.me/MrXbin-14
+      - 6|-https://t.me/MrXbin-15
+      - 6|-https://t.me/MrXbin-17
+      - 6|-https://t.me/MrXbin-19
+      - 6|-https://t.me/MrXbin-2%%� 2
+      - 6|-https://t.me/MrXbin-4%%� 4
+      - 6|-https://t.me/MrXbin-5%%� 2
+      - 6|-https://t.me/MrXbin-120
+      - 6|-https://t.me/MrXbin-121
+      - 6|-https://t.me/MrXbin-125
+      - 🇺🇸 9,19,21,29|🇺🇸_US_美国_8_24
+      - 🇨🇳 21,26|baipaovpn台湾省
+      - CN_speednode_0015
+      - TW_speednode_0055
+      - TW_speednode_0056
+      - 🇸🇬 -SG-010
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中转节点-3.15MB/s
-      - 英国-3.65MB/s
-      - 英国-3.62MB/s
-      - 新加坡-155.4KB/s
-      - 日本 007
-      - 韩国-6.45MB/s
-      - 韩国-2.69MB/s
-      - ZZ_907 |25.13Mb
-      - ZZ_1035
-      - ZZ_1011
-      - ZZ_1010
-      - ZZ_1009
-      - ZZ |17.25Mb
-      - ZZ |12.89Mb
-      - ZZ |11.79Mb
-      - ZZ |11.61Mb
-      - ZZ |10.39Mb
-      - ZZ |10.01Mb
-      - YD|www.zyw.asia ZYW免费节点
-      - US_874
-      - TW-61.228.177.15-164
-      - TW-36.232.142.100-135
-      - TW_251
-      - speednode_0087
-      - speednode_0084
-      - speednode_0081
-      - speednode_0080
-      - speednode_0064
-      - speednode_0062
-      - speednode_0059
-      - speednode_0057
-      - speednode_0055
-      - speednode_0053
-      - speednode_0048
-      - speednode_0017
-      - SG_674
-      - SG_670
-      - SG_669
-      - SG_666
-      - SG_665
-      - SG_661
-      - SG_659
-      - SG_658
-      - SG_654
-      - SG_653
-      - SG_652
-      - SG_643
-      - SG_642
-      - SG_638
-      - SG_636
-      - SG_631
-      - RU_594
-      - Relay_🇹🇼TW-🇹🇼TW_711
-      - Relay_-🇹🇼TW_192
-      - Relay_-🇹🇼TW_181
-      - Relay_-🇰🇷KR_46
-      - Relay_-🇯🇵JP_32
-      - Relay_🇫🇷FR-🇱🇺LU_394
-      - netflix_US 4
-      - netflix_TW 6
-      - netflix_TW 4
-      - netflix_TW 10
-      - JP_501
-      - disney_netflix_KR 4
-      - CN-120.232.242.91-155
-      - AL_223
-      - 16|香港|@ripaojiedian
-      - 12,13|🇹🇼|TW|台湾|@wxgqlfx|11
-      - 12,13|speednode_0029
-      - "|46.15Mb"
-      - "|21.91Mb"
-      - "|13.10Mb"
-      - _GI_直布罗陀
-      - _GI_直布罗陀 2
-      - _90
-      - _86
-      - _84
-      - _40
-      - _39
-      - _37
-      - _24
-      - _21
-      - _18
-      - _17
-      - _160
-      - _157
-      - _156
-      - _147
-      - _141
-      - _136
-      - _128
-      - _125
-      - _103
-      - _100
-      - _10
-      - _08
+      - 🇺🇸 _US_美国_5
+      - 🇺🇸 _US_美国_8
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗_1
+      - 🇺🇸 _US_美国_9
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗_2
+      - 🇮🇪 IE爱尔兰 183.4KB/s
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇸🇬 狮城特殊2|@ripaojiedian
+      - 🇩🇪 _DE_德国_1
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_4
+      - 🇨🇳 TW-114.37.139.157-161_2@161
+      - 🇩🇪 DE-3.79.143.41-209_2@209
+      - SE-51.20.214.153-216_2@216
+      - 🇫🇷 FR-13.39.38.92-237_2@236
+      - IE-52.31.120.72-240_2@239
+      - "🇺🇸 0,3,4,21,25|🇺🇸 _US_美国 #18"
+      - "🇺🇸 0,3,4,9,21,25|🇺🇸 _US_美国 #22"
+      - 6|-https://t.me/MrXbin-2
+      - 6|-https://t.me/MrXbin-12
+      - 6|-https://t.me/MrXbin-14
+      - 6|-https://t.me/MrXbin-15
+      - 6|-https://t.me/MrXbin-17
+      - 6|-https://t.me/MrXbin-19
+      - 6|-https://t.me/MrXbin-2%%� 2
+      - 6|-https://t.me/MrXbin-4%%� 4
+      - 6|-https://t.me/MrXbin-5%%� 2
+      - 6|-https://t.me/MrXbin-120
+      - 6|-https://t.me/MrXbin-121
+      - 6|-https://t.me/MrXbin-125
+      - 🇺🇸 9,19,21,29|🇺🇸_US_美国_8_24
+      - 🇨🇳 21,26|baipaovpn台湾省
+      - CN_speednode_0015
+      - TW_speednode_0055
+      - TW_speednode_0056
+      - 🇸🇬 -SG-010
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -847,102 +366,42 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中转节点-3.15MB/s
-      - 英国-3.65MB/s
-      - 英国-3.62MB/s
-      - 新加坡-155.4KB/s
-      - 日本 007
-      - 韩国-6.45MB/s
-      - 韩国-2.69MB/s
-      - ZZ_907 |25.13Mb
-      - ZZ_1035
-      - ZZ_1011
-      - ZZ_1010
-      - ZZ_1009
-      - ZZ |17.25Mb
-      - ZZ |12.89Mb
-      - ZZ |11.79Mb
-      - ZZ |11.61Mb
-      - ZZ |10.39Mb
-      - ZZ |10.01Mb
-      - YD|www.zyw.asia ZYW免费节点
-      - US_874
-      - TW-61.228.177.15-164
-      - TW-36.232.142.100-135
-      - TW_251
-      - speednode_0087
-      - speednode_0084
-      - speednode_0081
-      - speednode_0080
-      - speednode_0064
-      - speednode_0062
-      - speednode_0059
-      - speednode_0057
-      - speednode_0055
-      - speednode_0053
-      - speednode_0048
-      - speednode_0017
-      - SG_674
-      - SG_670
-      - SG_669
-      - SG_666
-      - SG_665
-      - SG_661
-      - SG_659
-      - SG_658
-      - SG_654
-      - SG_653
-      - SG_652
-      - SG_643
-      - SG_642
-      - SG_638
-      - SG_636
-      - SG_631
-      - RU_594
-      - Relay_🇹🇼TW-🇹🇼TW_711
-      - Relay_-🇹🇼TW_192
-      - Relay_-🇹🇼TW_181
-      - Relay_-🇰🇷KR_46
-      - Relay_-🇯🇵JP_32
-      - Relay_🇫🇷FR-🇱🇺LU_394
-      - netflix_US 4
-      - netflix_TW 6
-      - netflix_TW 4
-      - netflix_TW 10
-      - JP_501
-      - disney_netflix_KR 4
-      - CN-120.232.242.91-155
-      - AL_223
-      - 16|香港|@ripaojiedian
-      - 12,13|🇹🇼|TW|台湾|@wxgqlfx|11
-      - 12,13|speednode_0029
-      - "|46.15Mb"
-      - "|21.91Mb"
-      - "|13.10Mb"
-      - _GI_直布罗陀
-      - _GI_直布罗陀 2
-      - _90
-      - _86
-      - _84
-      - _40
-      - _39
-      - _37
-      - _24
-      - _21
-      - _18
-      - _17
-      - _160
-      - _157
-      - _156
-      - _147
-      - _141
-      - _136
-      - _128
-      - _125
-      - _103
-      - _100
-      - _10
-      - _08
+      - 🇺🇸 _US_美国_5
+      - 🇺🇸 _US_美国_8
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗_1
+      - 🇺🇸 _US_美国_9
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗_2
+      - 🇮🇪 IE爱尔兰 183.4KB/s
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇸🇬 狮城特殊2|@ripaojiedian
+      - 🇩🇪 _DE_德国_1
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_4
+      - 🇨🇳 TW-114.37.139.157-161_2@161
+      - 🇩🇪 DE-3.79.143.41-209_2@209
+      - SE-51.20.214.153-216_2@216
+      - 🇫🇷 FR-13.39.38.92-237_2@236
+      - IE-52.31.120.72-240_2@239
+      - "🇺🇸 0,3,4,21,25|🇺🇸 _US_美国 #18"
+      - "🇺🇸 0,3,4,9,21,25|🇺🇸 _US_美国 #22"
+      - 6|-https://t.me/MrXbin-2
+      - 6|-https://t.me/MrXbin-12
+      - 6|-https://t.me/MrXbin-14
+      - 6|-https://t.me/MrXbin-15
+      - 6|-https://t.me/MrXbin-17
+      - 6|-https://t.me/MrXbin-19
+      - 6|-https://t.me/MrXbin-2%%� 2
+      - 6|-https://t.me/MrXbin-4%%� 4
+      - 6|-https://t.me/MrXbin-5%%� 2
+      - 6|-https://t.me/MrXbin-120
+      - 6|-https://t.me/MrXbin-121
+      - 6|-https://t.me/MrXbin-125
+      - 🇺🇸 9,19,21,29|🇺🇸_US_美国_8_24
+      - 🇨🇳 21,26|baipaovpn台湾省
+      - CN_speednode_0015
+      - TW_speednode_0055
+      - TW_speednode_0056
+      - 🇸🇬 -SG-010
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -1029,7 +488,6 @@ rules:
  - DOMAIN-SUFFIX,wunderlist.com,Ⓜ️ 微软服务
  - DOMAIN-SUFFIX,yammer.com,Ⓜ️ 微软服务
  - DOMAIN-SUFFIX,yammerusercontent.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,bingapis.com,Ⓜ️ 微软服务
  - DOMAIN,app.adjust.com,🎯 全球直连
  - DOMAIN,bdtj.tagtic.cn,🎯 全球直连
  - DOMAIN,log.mmstat.com,🎯 全球直连
@@ -10252,15 +9710,6 @@ rules:
  - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23c::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2a0a:f280::/32,📲 电报信息,no-resolve
- - PROCESS-NAME,GalaxyClient,🔰 节点选择
- - PROCESS-NAME,Gwent,🔰 节点选择
- - PROCESS-NAME,Steam,🔰 节点选择
- - PROCESS-NAME,iTerm2,🔰 节点选择
- - PROCESS-NAME,Microsoft To Do,🔰 节点选择
- - PROCESS-NAME,clash-config-manager,🔰 节点选择
- - PROCESS-NAME,clash-config-manager Helper,🔰 节点选择
- - PROCESS-NAME,clash-config-manager Helper(GPU),🔰 节点选择
- - PROCESS-NAME,clash-config-manager Helper(Renderer),🔰 节点选择
  - DOMAIN-SUFFIX,amazon.co.jp,🔰 节点选择
  - DOMAIN,d3c33hcgiwev3.cloudfront.net,🔰 节点选择
  - DOMAIN,payments-jp.amazon.com,🔰 节点选择
