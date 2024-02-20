@@ -6,423 +6,296 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇷🇺 俄罗斯 莫斯科JustHost, server: 185.22.154.254, port: 30005, type: trojan, password: f8d8882f-6b0f-4790-b951-fe6704ed4a92, sni: ru01.bsawc.shop, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台湾省台北市 中华电信, server: 114.43.162.29, port: 443, type: trojan, password: 7b4066ae-accc-11eb-a8bf-f23c91cfbbc9, sni: 85d7bf8d-s95wg0-0-zzkl.tw3.p5pv.com, skip-cert-verify: false, udp: true}
-  - {name: 🇬🇧 英国+伦敦Amazon数据中心, server: series-a2-mec.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: u17T3BvpYaaiuW2c, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 4, server: 104.21.73.14, port: 8880, type: vmess, uuid: 45f63e92-f782-4cac-84b8-e61cb5a5bfd0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: yaghoob55freenodes.repaco69437403.workers.dev}}, udp: true}
-  - {name: 🇺🇦 乌克兰 v2rayfree.eu.org, server: cz2-vmess.sshmax.xyz, port: 80, type: vmess, uuid: 3669d547-ee0c-477d-8e47-c4400965db74, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cz2-vmess.sshmax.xyz}}, udp: true}
-  - {name: 🇬🇧 英国+伦敦Amazon数据中心 2, server: series-a2-me.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Bog0ELmMM9DSxDdQ, udp: true}
-  - {name: 🇱🇻 拉脱维亚+v2rayfree.eu.org, server: 185.77.217.121, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: FR6M7fkghS4hhHXKxVQMxW, udp: true}
-  - {name: 🇷🇺 俄罗斯+v2rayfree.eu.org, server: 89.23.103.224, port: 5614, type: ss, cipher: chacha20-ietf-poly1305, password: 3--VIGPSL7RrGE5KkA-9Sg, udp: true}
-  - {name: 🇺🇸 美国+v2rayfree.eu.org, server: 23.165.104.186, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Ms96ocgN4v7egLXx1wgw9J, udp: true}
-  - {name: 🇺🇦 乌克兰 v2rayfree.eu.org 2, server: ee2-vmess.sshmax.xyz, port: 80, type: vmess, uuid: c1ebe8c7-bdd9-4aca-a2f7-01bea79279b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ee2-vmess.sshmax.xyz}}, udp: true}
-  - {name: netflix_TW, server: c11.twtc.dynu.net, port: 16711, type: ss, cipher: chacha20-ietf-poly1305, password: de9558f3-d11b-410e-ab27-26956dde256d, udp: true}
-  - {name: netflix_TW 3, server: b13.ntbq.dynu.net, port: 9255, type: ss, cipher: chacha20-ietf-poly1305, password: de9558f3-d11b-410e-ab27-26956dde256d, udp: true}
-  - {name: _74, server: 103.172.116.103, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: _112, server: 103.172.116.103, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: netflix_TW 5, server: b23.ntbq.dynu.net, port: 5681, type: vmess, uuid: de9558f3-d11b-410e-ab27-26956dde256d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: Relay_-🇹🇼TW_148, server: c12.twtc.dynu.net, port: 14431, type: vmess, uuid: de9558f3-d11b-410e-ab27-26956dde256d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: Relay_-🇱🇺LU_194, server: 206.238.236.36, port: 2082, type: vmess, uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: mysan2.jaquay22.workers.dev}}, udp: true}
-  - {name: Relay_-🇩🇪DE_216, server: dl3s.doushimeng.com, port: 2082, type: vmess, uuid: 31b2ab69-0500-4525-b030-3dad9a0f5f22, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cf-de11.doushimeng.com}}, udp: true}
-  - {name: Relay_-🇹🇼TW_227, server: nb24.ntbq.dynu.net, port: 3278, type: vmess, uuid: de9558f3-d11b-410e-ab27-26956dde256d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: AE_299, server: 139.185.48.248, port: 37902, type: trojan, password: 46fac810-0332-471a-a074-bdca7824211e, sni: ua01.bsawc.shop, skip-cert-verify: false, udp: true}
-  - {name: AL_300, server: 31.171.153.182, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: CA_331, server: 142.171.174.206, port: 8880, type: vmess, uuid: b46cb204-5849-4b86-852d-8154fb8eb580, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: 142.171.174.206, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: CA_342, server: 52.60.249.88, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.miwan.co.uk, skip-cert-verify: false, udp: true}
-  - {name: netflix_JP, server: 112.82.241.172, port: 3087, type: ss, cipher: rc4-md5, password: lcG63z, udp: true}
-  - {name: netflix_JP 2, server: 112.82.241.171, port: 3087, type: ss, cipher: rc4-md5, password: lcG63z, udp: true}
-  - {name: DE_397, server: 3.124.84.140, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.miwan.co.uk, skip-cert-verify: false, udp: true}
-  - {name: DE_398, server: 54.38.156.210, port: 443, type: trojan, password: 09eee540-ce43-11ee-841a-1239d0255272, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 Relay_🇩🇪DE-🇩🇪DE_401, server: 5.104.108.120, port: 443, type: trojan, password: 45a8d20d-9a78-4be4-a74a-ab3b9e84e34e, sni: 20-24-33-134.nhost.00cdn.com, skip-cert-verify: false, udp: true}
-  - {name: DE_402, server: 51.75.77.237, port: 443, type: trojan, password: 3b55497a-d10f-44b7-bb0a-6e93ade3bb73, skip-cert-verify: false, udp: true}
-  - {name: EE_408, server: 95.164.8.106, port: 80, type: vmess, uuid: c1ebe8c7-bdd9-4aca-a2f7-01bea79279b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: Relay_🇫🇮FI-🇫🇮FI_422, server: fl3.dart-vpn.com, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: FR6M7fkghS4hhHXKxVQMxW, udp: true}
-  - {name: FR_525, server: 35.181.185.128, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.miwan.co.uk, skip-cert-verify: false, udp: true}
-  - {name: FR_528, server: 52.47.153.161, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.miwan.co.uk, skip-cert-verify: false, udp: true}
-  - {name: 🇬🇧 Relay_🇬🇧 GB-🇬🇧GB_542, server: wxwctxxx.arvancode.eu.org, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: u17T3BvpYaaiuW2c, udp: true}
-  - {name: 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_563, server: jseyu.arvancode.eu.Org, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Bog0ELmMM9DSxDdQ, udp: true}
-  - {name: 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_565, server: series-a2-mec.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: O5APdoqlticuupE1, udp: true}
-  - {name: 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_570, server: series-a2-me.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 2LVVFxxHJSBMdGdl, udp: true}
-  - {name: 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_571, server: jseyu.arvancode.eu.org, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Bog0ELmMM9DSxDdQ, udp: true}
-  - {name: netflix_US 14, server: 89.213.182.230, port: 12345, type: vmess, uuid: 51c1bc49-35c6-411c-8355-21ee5c6075da, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: GI_581, server: 95.164.9.144, port: 2927, type: ss, cipher: chacha20-ietf-poly1305, password: ug4Fu79SEREdFGlt2sUyT4, udp: true}
-  - {name: IE_606, server: 3.251.42.249, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.miwan.co.uk, skip-cert-verify: false, udp: true}
-  - {name: IE_608, server: 52.215.102.103, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.miwan.co.uk, skip-cert-verify: false, udp: true}
-  - {name: KR_652, server: 125.141.26.7, port: 2020, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: 🇰🇷 Relay_🇰🇷 KR-🇰🇷KR_654, server: p227.panda004.net, port: 2020, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: disney_netflix_KR 5, server: p234.panda004.net, port: 56906, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: KR_661, server: 125.141.31.72, port: 54345, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: 🇳🇱 Relay_🇳🇱NL-🇳🇱NL_692, server: nl.vansky.online, port: 5614, type: ss, cipher: chacha20-ietf-poly1305, password: 3--VIGPSL7RrGE5KkA-9Sg, udp: true}
-  - {name: netflix_GB 3, server: 89.185.84.30, port: 20228, type: ss, cipher: chacha20-ietf-poly1305, password: QCT5IEwTgJilykO9sOs7VW, udp: true}
-  - {name: SG_793, server: 103.172.116.103, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: SG_794, server: 103.172.116.103, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: SG_796, server: 103.172.116.103, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: SG_800, server: 103.172.116.103, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: SG_814, server: 103.172.116.103, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: SG_816, server: 103.172.116.103, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: SG_848, server: 103.172.116.103, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: SG_867, server: 103.172.116.103, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: SG_870, server: 103.172.116.103, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: SG_871, server: 103.172.116.103, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: SG_879, server: 192.124.176.154, port: 31548, type: vmess, uuid: 1e1a3389-8ef6-411d-dc3c-17bee9fd19e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_895, server: sg05.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: false, udp: true}
-  - {name: TR_910, server: 185.123.101.241, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: netflix_TW 10, server: c11.twtc.dynu.net, port: 16711, type: ss, cipher: chacha20-ietf-poly1305, password: b534a780-d521-402d-9a68-aea33e47a5de, udp: true}
-  - {name: netflix_TW 13, server: 36.233.211.220, port: 16711, type: ss, cipher: chacha20-ietf-poly1305, password: de9558f3-d11b-410e-ab27-26956dde256d, udp: true}
-  - {name: netflix_TW 14, server: b13.ntbq.dynu.net, port: 9255, type: ss, cipher: chacha20-ietf-poly1305, password: b534a780-d521-402d-9a68-aea33e47a5de, udp: true}
-  - {name: TW_950, server: 36.232.170.53, port: 14431, type: vmess, uuid: b534a780-d521-402d-9a68-aea33e47a5de, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_960, server: nb24.ntbq.dynu.net, port: 3278, type: vmess, uuid: b534a780-d521-402d-9a68-aea33e47a5de, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: netflix_TW 18, server: c12.twtc.dynu.net, port: 14431, type: vmess, uuid: b534a780-d521-402d-9a68-aea33e47a5de, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇦 UA_972, server: be3-vmess.sshmax.xyz, port: 2052, type: vmess, uuid: 81e08848-0baa-4712-9e9b-301b77d0627b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: be3-vmess.sshmax.xyz, network: ws, ws-opts: {path: /, headers: {Host: be3-vmess.sshmax.xyz}}, udp: true}
-  - {name: 🇺🇦 UA_974, server: 95.164.62.229, port: 2052, type: vmess, uuid: 81e08848-0baa-4712-9e9b-301b77d0627b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: be3-vmess.sshmax.xyz, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: netflix_US 18, server: us5.dart-vpn.com, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Ms96ocgN4v7egLXx1wgw9J, udp: true}
-  - {name: netflix_NL 8, server: 45.158.171.10, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
-  - {name: netflix_NL 10, server: 141.11.189.55, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
-  - {name: 🇺🇸 Relay_🇺🇸US-🇩🇪DE_1231, server: de-01.cloudlion.me, port: 8080, type: vmess, uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: de-01.cloudlion.me, network: ws, ws-opts: {path: /, headers: {Host: de-01.cloudlion.me}}, udp: true}
-  - {name: US_1307, server: 94.131.97.127, port: 80, type: vmess, uuid: 3669d547-ee0c-477d-8e47-c4400965db74, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: cz2-vmess.sshmax.xyz, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: Relay_🏁ZZ-🇺🇸US_1343, server: www.ywnouvbale.biz, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.ywnouvbale.biz}}, udp: true}
-  - {name: Relay_🏁ZZ-🇻🇳VN_1358, server: bs2.loadingip.com, port: 80, type: vmess, uuid: 5278f5d3-f001-4459-94b6-7e0915238998, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: bs2.loadingip.com, network: ws, ws-opts: {path: /, headers: {Host: bs2.loadingip.com}}, udp: true}
-  - {name: Relay_🏁ZZ-🇺🇸US_1364, server: www.velvetmountain.xyz, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.velvetmountain.xyz}}, udp: true}
-  - {name: ZZ_1377, server: 103.252.94.224, port: 80, type: vmess, uuid: 5278f5d3-f001-4459-94b6-7e0915238998, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: bs2.loadingip.com, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: netflix_DE 2, server: fr-01.cloudlion.me, port: 8080, type: vmess, uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: fr-01.cloudlion.me, network: ws, ws-opts: {path: /, headers: {Host: fr-01.cloudlion.me}}, udp: true}
-  - {name: netflix_US 33, server: 23.142.200.175, port: 443, type: trojan, password: 27876_t7d7f4e3f, sni: los16.ttddd.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港4|@ripaojiedian, server: c.skrspc.org, port: 29126, type: ss, cipher: aes-256-gcm, password: f3b7ba7a-e0ae-4b81-8e26-29369bb4958d, udp: true}
-  - {name: 🇨🇳 台湾2|@ripaojiedian, server: service.ouluyun9803.com, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: 2770a662-61db-40ed-a17c-783e521084ce, udp: true}
+  - {name: 🇬🇧 英国+伦敦Amazon数据中心, server: series-a2-me.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Bog0ELmMM9DSxDdQ, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.18.15.150, port: 80, type: vmess, uuid: 91fe996b-5f1b-42b5-9554-a892be98bc31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us3.889611.com}}, udp: true}
+  - {name: 🇺🇸 美国 Amazon数据中心 2, server: 13.37.209.10, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.miwan.co.uk, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇦 乌克兰 v2rayfree.eu.org, server: be3-vmess.sshmax.xyz, port: 2052, type: vmess, uuid: 81e08848-0baa-4712-9e9b-301b77d0627b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: be3-vmess.sshmax.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 4, server: www.velvetmountain.shop, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.velvetmountain.shop}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 6, server: 104.21.30.249, port: 2052, type: vmess, uuid: 284d74d8-4775-4144-bd7b-e27f310c99e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 237f1c11e3e9e373.Tiderace.gately.info}}, udp: true}
+  - {name: netflix_TW, server: c11.twtc.dynu.net, port: 16711, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd62189-aebd-4b36-9dfd-335457d70420, udp: true}
+  - {name: netflix_TW 3, server: ty11.twty.dynu.net, port: 13651, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd62189-aebd-4b36-9dfd-335457d70420, udp: true}
+  - {name: Relay_-🇹🇼TW_152, server: b23.ntbq.dynu.net, port: 5681, type: vmess, uuid: 3bd62189-aebd-4b36-9dfd-335457d70420, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: netflix_TW 6, server: c12.twtc.dynu.net, port: 14431, type: vmess, uuid: 3bd62189-aebd-4b36-9dfd-335457d70420, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: AL_326, server: 31.171.153.182, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇨🇦 Relay_🇨🇦CA-🇺🇸US_362, server: 74.48.172.136, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, servername: www.30121911.xyz, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: CZ_387, server: cz2-vmess.sshmax.xyz, port: 80, type: vmess, uuid: 3669d547-ee0c-477d-8e47-c4400965db74, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: cz2-vmess.sshmax.xyz, network: ws, ws-opts: {path: /, headers: {Host: cz2-vmess.sshmax.xyz}}, udp: true}
+  - {name: 🇬🇧 Relay_🇬🇧 GB-🇬🇧GB_561, server: series-a2-mec.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: u17T3BvpYaaiuW2c, udp: true}
+  - {name: 🇬🇧 Relay_🇬🇧 GB-🇬🇧GB_565, server: wxwctxxx.arvancode.eu.org, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: u17T3BvpYaaiuW2c, udp: true}
+  - {name: 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_575, server: series-a2-mec.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: O5APdoqlticuupE1, udp: true}
+  - {name: 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_576, server: series-a2-me.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 2LVVFxxHJSBMdGdl, udp: true}
+  - {name: netflix_KR 3, server: 27.255.82.42, port: 7818, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_659, server: p230.panda004.net, port: 10122, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: Relay_🇸🇪SE-🇺🇸US_756, server: 148.135.12.172, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, servername: www.15986187.xyz, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: SG_788, server: 103.172.116.103, port: 9030, type: ss, cipher: aes-256-cfb, password: GeregetR8cvQHzYr, udp: true}
+  - {name: SG_876, server: 103.172.116.103, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: netflix_NL 12, server: 154.85.0.18, port: 41000, type: vmess, uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, servername: www.72281149.xyz, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 Relay_🇺🇸US-🇺🇸US_1194, server: 172.111.57.130, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, servername: www.88268904.xyz, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: Relay_🏁ZZ-🇺🇸US_1368, server: www.nahck.site, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.nahck.site}}, udp: true}
+  - {name: ZZ_97 |14.64Mb, server: 103.172.116.103, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: 🇺🇸 _US_美国_2, server: www.ywnouvbale.biz, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.ywnouvbale.biz}}, udp: true}
+  - {name: 🇺🇸 _US_美国_2 (DUP-2), server: www.velvetmountain.shop, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.velvetmountain.shop}}, udp: true}
   - {name: 🇯🇵 日本3|@ripaojiedian, server: cfcdn3.sanfencdn9.com, port: 80, type: vmess, uuid: 9a557d02-12ff-4da8-8669-1824cfdefe1f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: GWYp69Yujp2.yofnhkfc.xyz}}, udp: true}
-  - {name: 🇯🇵 日本2|@ripaojiedian, server: service.ouluyun9803.com, port: 50005, type: ss, cipher: chacha20-ietf-poly1305, password: 2770a662-61db-40ed-a17c-783e521084ce, udp: true}
-  - {name: 🇰🇷 韩国1|@ripaojiedian, server: service.ouluyun9803.com, port: 21004, type: ss, cipher: chacha20-ietf-poly1305, password: 2770a662-61db-40ed-a17c-783e521084ce, udp: true}
-  - {name: _GI_直布罗陀_2_1@13, server: ee2-vmess.sshmax.xyz, port: 80, type: vmess, uuid: c1ebe8c7-bdd9-4aca-a2f7-01bea79279b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ee2-vmess.sshmax.xyz}}, udp: true}
-  - {name: SE-51.20.149.248-243_2@243, server: 51.20.149.248, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.miwan.co.uk, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇦 加拿大 012_3@22, server: 104.21.30.249, port: 2052, type: vmess, uuid: 284d74d8-4775-4144-bd7b-e27f310c99e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 237f1c11e3e9e373.Tiderace.gately.info}}, udp: true}
-  - {name: 🇨🇦 加拿大 155_3@208, server: 104.17.123.55, port: 8080, type: vmess, uuid: 1d47288a-699d-45ca-b4f0-4e5b36940e6f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: pq.kmoljklj.top}}, udp: true}
-  - {name: 🇨🇿 捷克【付费推荐：https://jdyvip.link/】187_9@64, server: 94.131.97.127, port: 80, type: vmess, uuid: 3669d547-ee0c-477d-8e47-c4400965db74, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cz2-vmess.sshmax.xyz}}, udp: true}
-  - {name: 6|-https://t.me/MrXbin-7, server: p220.panda001.net, port: 53258, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: 🇩🇪 7|德国1, server: cf.openxai.link, port: 8080, type: vmess, uuid: c18beb85-c67b-46ed-b8cc-4cbfeae5f194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: eu1.openxai.link}}, udp: true}
-  - {name: 🇩🇪 7|德国2, server: cf.openxai.link, port: 8080, type: vmess, uuid: aa1dbb68-bfb5-4484-f7e7-7335eac3988c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: eu2.openxai.link}}, udp: true}
-  - {name: "🇺🇦 26|baipaovpn乌克兰 #1", server: 95.164.8.106, port: 80, type: vmess, uuid: c1ebe8c7-bdd9-4aca-a2f7-01bea79279b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ee2-vmess.sshmax.xyz}}, udp: true}
-  - {name: CN_speednode_0016, server: data-hk-v1.shwjfkw.cn, port: 20207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: data-hk-v1.shwjfkw.cn}}, udp: true}
-  - {name: CZ 1 → tg@nicevpn123, server: 93.170.73.104, port: 51348, type: ss, cipher: chacha20-ietf-poly1305, password: AGr56G65GFgl7phobMoits, udp: true}
-  - {name: 🇯🇵 -JP-005, server: jp.littleqqq.co, port: 62193, type: vmess, uuid: e61074c6-df4b-41f1-99d8-b6765d8ce25b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.tmall.com}}, udp: true}
-  - {name: 🇸🇬 -SG-005, server: sg.colacloud.site, port: 20152, type: ss, cipher: chacha20-ietf-poly1305, password: 58c378f6-3855-49ac-8594-b09334b2bbba, udp: true}
-  - {name: 🇺🇸 -US-012, server: us.littleqqq.co, port: 21859, type: vmess, uuid: e61074c6-df4b-41f1-99d8-b6765d8ce25b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.tmall.com}}, udp: true}
-  - {name: 🇺🇸 -US-013, server: us01.h.csznet.eu.org, port: 443, type: vmess, uuid: 073bc51e-dd59-4113-8751-8acb6e85ec49, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us01.h.csznet.eu.org}}, udp: true}
+  - {name: 🇸🇬 新加坡|@ripaojiedian, server: service.ouluyun9803.com, port: 26602, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, udp: true}
+  - {name: 🇸🇬 狮城特殊|@ripaojiedian, server: 15.164.244.104, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "%�\x11�|'��\b9%�\x1c9%�\x15'�\x07&�\x06\x16�VF�\x16", server: mysql.accessconnect.cc, port: 6502, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 83013:lrh5bO, obfs-param: 8443f83013.www.gov.hk, udp: true}
+  - {name: 🇭🇰 香港A, server: 183.237.20.153, port: 34602, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: RELAY-172.67.224.245-147_2@147, server: cf.openxai.link, port: 8080, type: vmess, uuid: c18beb85-c67b-46ed-b8cc-4cbfeae5f194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: eu1.openxai.link}}, udp: true}
+  - {name: 🇬🇧 GB-18.135.168.97-151_2@151, server: series-a1.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: W74XFALLLuw6m5IA, udp: true}
+  - {name: CZ-94.131.97.127-166_2@166, server: 94.131.97.127, port: 80, type: vmess, uuid: 3669d547-ee0c-477d-8e47-c4400965db74, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cz2-vmess.sshmax.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 030_3@355, server: 38.11.50.239, port: 36000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.70173865.xyz}}, udp: true}
+  - {name: 🇨🇦 加拿大 289_3@364, server: 162.159.200.6, port: 80, type: vmess, uuid: 91fe996b-5f1b-42b5-9554-a892be98bc31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: er3.889611.com}}, udp: true}
+  - {name: 🇨🇦 加拿大 291_3@367, server: 104.18.154.42, port: 80, type: vmess, uuid: 91fe996b-5f1b-42b5-9554-a892be98bc31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us3.visaapp.top}}, udp: true}
+  - {name: 🇨🇦 加拿大 292_3@368, server: 162.159.200.7, port: 80, type: vmess, uuid: 91fe996b-5f1b-42b5-9554-a892be98bc31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: er3.visaapp.top}}, udp: true}
+  - {name: 🇨🇦 加拿大 293_3@369, server: 104.18.15.149, port: 80, type: vmess, uuid: 91fe996b-5f1b-42b5-9554-a892be98bc31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: er3.visaapp.top}}, udp: true}
+  - {name: 🇳🇱 荷兰 008_3@376, server: 91.228.56.194, port: 80, type: vmess, uuid: b106699a-9de4-4316-90b5-0cd55835fafb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇺🇸 美国 038_3@387, server: 38.11.74.146, port: 38000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.37445571.xyz}}, udp: true}
+  - {name: 🇳🇱 荷兰 009_3@388, server: 46.182.107.16, port: 41002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.42077230.xyz}}, udp: true}
+  - {name: "🇺🇸 4,8|🇺🇸_US_美国 #6", server: 104.21.31.244, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.nahck.site}}, udp: true}
+  - {name: 6|-https://t.me/MrXbin-1, server: p220.panda001.net, port: 53258, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: "🇺🇸 9|🇺🇸_US_美国 #14", server: 172.67.180.248, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.nahck.site}}, udp: true}
+  - {name: 🇺🇸 12|美国西雅圖|Github搜索TrojanLinks, server: 172.111.57.130, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.88268904.xyz}}, udp: true}
+  - {name: 🇳🇱 12|荷兰阿姆斯特丹|Github搜索TrojanLinks, server: 154.85.0.18, port: 41000, type: vmess, uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.72281149.xyz}}, udp: true}
+  - {name: 🇳🇱 12|荷兰乌得勒支|Github搜索TrojanLinks, server: 46.182.107.45, port: 41000, type: vmess, uuid: fe5f69e7-e183-439b-950b-9661ef0651f2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.43747414.xyz}}, udp: true}
+  - {name: "🇺🇸 12|美国洛杉矶|Github搜索TrojanLinks #2", server: 74.48.172.136, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.30121911.xyz}}, udp: true}
+  - {name: 16|Youtube破解广告1, server: 104.18.15.147, port: 80, type: vmess, uuid: 91fe996b-5f1b-42b5-9554-a892be98bc31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: er3.889611.com}}, udp: true}
+  - {name: 🇨🇳 台湾-优化, server: yes.cnmjcn.net, port: 16616, type: vmess, uuid: c99074bd-bacd-48b5-9561-da069c481602, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fe5be62428b65a2ce7a22d9997b4c9d0.mobgslb.tbcache.com}}, udp: true}
+  - {name: 🇺🇸 美国LA-优化-GPT, server: yes.cnmjcn.net, port: 16648, type: vmess, uuid: e418915e-6459-414d-bc76-bbcbda621f0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 1e85f722cb07adf2cffdbcd31ee19a14.mobgslb.tbcache.com}}, udp: true}
+  - {name: 🇬🇧 英国-优化, server: yes.cnmjcn.net, port: 16645, type: vmess, uuid: c99074bd-bacd-48b5-9561-da069c481602, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fe5be62428b65a2ce7a22d9997b4c9d0.mobgslb.tbcache.com}}, udp: true}
+  - {name: 🇭🇰 香港WAP-优化2 2, server: m.cnmjcn.com, port: 16622, type: vmess, uuid: c99074bd-bacd-48b5-9561-da069c481602, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fe5be62428b65a2ce7a22d9997b4c9d0.mobgslb.tbcache.com}}, udp: true}
+  - {name: 🇯🇵 日本 6, server: east.eeeeeef998.buzz, port: 13002, type: trojan, password: f47274d5-f44b-442e-add0-891d81d69df9, sni: data.steamdownload.top, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港HY-优化, server: yes.cnmjcn.net, port: 16632, type: vmess, uuid: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com}}, udp: true}
+  - {name: 🇭🇰 香港WAP-优化, server: yes.cnmjcn.net, port: 16622, type: vmess, uuid: e418915e-6459-414d-bc76-bbcbda621f0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 1e85f722cb07adf2cffdbcd31ee19a14.mobgslb.tbcache.com}}, udp: true}
+  - {name: 🇰🇵 朝鲜-优化2, server: m.cnmjcn.com, port: 16628, type: vmess, uuid: c99074bd-bacd-48b5-9561-da069c481602, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fe5be62428b65a2ce7a22d9997b4c9d0.mobgslb.tbcache.com}}, udp: true}
+  - {name: 🇨🇳 台湾 2, server: south.eeeeeef998.buzz, port: 12002, type: trojan, password: f47274d5-f44b-442e-add0-891d81d69df9, sni: data.steamdownload.top, skip-cert-verify: false, udp: true}
+  - {name: 🇦🇪 阿联酋, server: south.eeeeeef998.buzz, port: 16106, type: trojan, password: f47274d5-f44b-442e-add0-891d81d69df9, sni: data.steamdownload.top, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港 3, server: south.eeeeeef998.buzz, port: 11003, type: trojan, password: f47274d5-f44b-442e-add0-891d81d69df9, sni: data.steamdownload.top, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港HY-优化2, server: m.cnmjcn.com, port: 16632, type: vmess, uuid: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com}}, udp: true}
+  - {name: 🇮🇳 印度-优化, server: yes.cnmjcn.net, port: 16626, type: vmess, uuid: e418915e-6459-414d-bc76-bbcbda621f0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 1e85f722cb07adf2cffdbcd31ee19a14.mobgslb.tbcache.com}}, udp: true}
+  - {name: 🇸🇬 新加坡 1, server: south.eeeeeef998.buzz, port: 14001, type: trojan, password: f47274d5-f44b-442e-add0-891d81d69df9, sni: data.steamdownload.top, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港HY-优化2 2, server: m.cnmjcn.com, port: 16632, type: vmess, uuid: e418915e-6459-414d-bc76-bbcbda621f0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 1e85f722cb07adf2cffdbcd31ee19a14.mobgslb.tbcache.com}}, udp: true}
+  - {name: 🇰🇵 朝鲜-优化2 2, server: m.cnmjcn.com, port: 16628, type: vmess, uuid: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com}}, udp: true}
+  - {name: -BE-001, server: 95.164.62.229, port: 2052, type: vmess, uuid: 81e08848-0baa-4712-9e9b-301b77d0627b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 🇨🇳 台湾省台北市 中华电信
       - 🇬🇧 英国+伦敦Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 Amazon数据中心 2
       - 🇺🇦 乌克兰 v2rayfree.eu.org
-      - 🇬🇧 英国+伦敦Amazon数据中心 2
-      - 🇱🇻 拉脱维亚+v2rayfree.eu.org
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org
-      - 🇺🇸 美国+v2rayfree.eu.org
-      - 🇺🇦 乌克兰 v2rayfree.eu.org 2
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 6
       - netflix_TW
       - netflix_TW 3
-      - _74
-      - _112
-      - netflix_TW 5
-      - Relay_-🇹🇼TW_148
-      - Relay_-🇱🇺LU_194
-      - Relay_-🇩🇪DE_216
-      - Relay_-🇹🇼TW_227
-      - AE_299
-      - AL_300
-      - CA_331
-      - CA_342
-      - netflix_JP
-      - netflix_JP 2
-      - DE_397
-      - DE_398
-      - 🇩🇪 Relay_🇩🇪DE-🇩🇪DE_401
-      - DE_402
-      - EE_408
-      - Relay_🇫🇮FI-🇫🇮FI_422
-      - FR_525
-      - FR_528
-      - 🇬🇧 Relay_🇬🇧 GB-🇬🇧GB_542
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_563
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_565
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_570
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_571
-      - netflix_US 14
-      - GI_581
-      - IE_606
-      - IE_608
-      - KR_652
-      - 🇰🇷 Relay_🇰🇷 KR-🇰🇷KR_654
-      - disney_netflix_KR 5
-      - KR_661
-      - 🇳🇱 Relay_🇳🇱NL-🇳🇱NL_692
-      - netflix_GB 3
-      - SG_793
-      - SG_794
-      - SG_796
-      - SG_800
-      - SG_814
-      - SG_816
-      - SG_848
-      - SG_867
-      - SG_870
-      - SG_871
-      - SG_879
-      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_895
-      - TR_910
-      - netflix_TW 10
-      - netflix_TW 13
-      - netflix_TW 14
-      - TW_950
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_960
-      - netflix_TW 18
-      - 🇺🇦 UA_972
-      - 🇺🇦 UA_974
-      - netflix_US 18
-      - netflix_NL 8
-      - netflix_NL 10
-      - 🇺🇸 Relay_🇺🇸US-🇩🇪DE_1231
-      - US_1307
-      - Relay_🏁ZZ-🇺🇸US_1343
-      - Relay_🏁ZZ-🇻🇳VN_1358
-      - Relay_🏁ZZ-🇺🇸US_1364
-      - ZZ_1377
-      - netflix_DE 2
-      - netflix_US 33
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇨🇳 台湾2|@ripaojiedian
+      - Relay_-🇹🇼TW_152
+      - netflix_TW 6
+      - AL_326
+      - 🇨🇦 Relay_🇨🇦CA-🇺🇸US_362
+      - CZ_387
+      - 🇬🇧 Relay_🇬🇧 GB-🇬🇧GB_561
+      - 🇬🇧 Relay_🇬🇧 GB-🇬🇧GB_565
+      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_575
+      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_576
+      - netflix_KR 3
+      - 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_659
+      - Relay_🇸🇪SE-🇺🇸US_756
+      - SG_788
+      - SG_876
+      - netflix_NL 12
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1194
+      - Relay_🏁ZZ-🇺🇸US_1368
+      - ZZ_97 |14.64Mb
+      - 🇺🇸 _US_美国_2
+      - 🇺🇸 _US_美国_2 (DUP-2)
       - 🇯🇵 日本3|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇰🇷 韩国1|@ripaojiedian
-      - _GI_直布罗陀_2_1@13
-      - SE-51.20.149.248-243_2@243
-      - 🇨🇦 加拿大 012_3@22
-      - 🇨🇦 加拿大 155_3@208
-      - 🇨🇿 捷克【付费推荐：https://jdyvip.link/】187_9@64
-      - 6|-https://t.me/MrXbin-7
-      - 🇩🇪 7|德国1
-      - 🇩🇪 7|德国2
-      - "🇺🇦 26|baipaovpn乌克兰 #1"
-      - CN_speednode_0016
-      - CZ 1 → tg@nicevpn123
-      - 🇯🇵 -JP-005
-      - 🇸🇬 -SG-005
-      - 🇺🇸 -US-012
-      - 🇺🇸 -US-013
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇭🇰 香港A
+      - RELAY-172.67.224.245-147_2@147
+      - 🇬🇧 GB-18.135.168.97-151_2@151
+      - CZ-94.131.97.127-166_2@166
+      - 🇺🇸 美国 030_3@355
+      - 🇨🇦 加拿大 289_3@364
+      - 🇨🇦 加拿大 291_3@367
+      - 🇨🇦 加拿大 292_3@368
+      - 🇨🇦 加拿大 293_3@369
+      - 🇳🇱 荷兰 008_3@376
+      - 🇺🇸 美国 038_3@387
+      - 🇳🇱 荷兰 009_3@388
+      - "🇺🇸 4,8|🇺🇸_US_美国 #6"
+      - 6|-https://t.me/MrXbin-1
+      - "🇺🇸 9|🇺🇸_US_美国 #14"
+      - 🇺🇸 12|美国西雅圖|Github搜索TrojanLinks
+      - 🇳🇱 12|荷兰阿姆斯特丹|Github搜索TrojanLinks
+      - 🇳🇱 12|荷兰乌得勒支|Github搜索TrojanLinks
+      - "🇺🇸 12|美国洛杉矶|Github搜索TrojanLinks #2"
+      - 16|Youtube破解广告1
+      - 🇨🇳 台湾-优化
+      - 🇺🇸 美国LA-优化-GPT
+      - 🇬🇧 英国-优化
+      - 🇭🇰 香港WAP-优化2 2
+      - 🇯🇵 日本 6
+      - 🇭🇰 香港HY-优化
+      - 🇭🇰 香港WAP-优化
+      - 🇰🇵 朝鲜-优化2
+      - 🇨🇳 台湾 2
+      - 🇦🇪 阿联酋
+      - 🇭🇰 香港 3
+      - 🇭🇰 香港HY-优化2
+      - 🇮🇳 印度-优化
+      - 🇸🇬 新加坡 1
+      - 🇭🇰 香港HY-优化2 2
+      - 🇰🇵 朝鲜-优化2 2
+      - -BE-001
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 🇨🇳 台湾省台北市 中华电信
       - 🇬🇧 英国+伦敦Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 Amazon数据中心 2
       - 🇺🇦 乌克兰 v2rayfree.eu.org
-      - 🇬🇧 英国+伦敦Amazon数据中心 2
-      - 🇱🇻 拉脱维亚+v2rayfree.eu.org
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org
-      - 🇺🇸 美国+v2rayfree.eu.org
-      - 🇺🇦 乌克兰 v2rayfree.eu.org 2
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 6
       - netflix_TW
       - netflix_TW 3
-      - _74
-      - _112
-      - netflix_TW 5
-      - Relay_-🇹🇼TW_148
-      - Relay_-🇱🇺LU_194
-      - Relay_-🇩🇪DE_216
-      - Relay_-🇹🇼TW_227
-      - AE_299
-      - AL_300
-      - CA_331
-      - CA_342
-      - netflix_JP
-      - netflix_JP 2
-      - DE_397
-      - DE_398
-      - 🇩🇪 Relay_🇩🇪DE-🇩🇪DE_401
-      - DE_402
-      - EE_408
-      - Relay_🇫🇮FI-🇫🇮FI_422
-      - FR_525
-      - FR_528
-      - 🇬🇧 Relay_🇬🇧 GB-🇬🇧GB_542
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_563
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_565
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_570
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_571
-      - netflix_US 14
-      - GI_581
-      - IE_606
-      - IE_608
-      - KR_652
-      - 🇰🇷 Relay_🇰🇷 KR-🇰🇷KR_654
-      - disney_netflix_KR 5
-      - KR_661
-      - 🇳🇱 Relay_🇳🇱NL-🇳🇱NL_692
-      - netflix_GB 3
-      - SG_793
-      - SG_794
-      - SG_796
-      - SG_800
-      - SG_814
-      - SG_816
-      - SG_848
-      - SG_867
-      - SG_870
-      - SG_871
-      - SG_879
-      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_895
-      - TR_910
-      - netflix_TW 10
-      - netflix_TW 13
-      - netflix_TW 14
-      - TW_950
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_960
-      - netflix_TW 18
-      - 🇺🇦 UA_972
-      - 🇺🇦 UA_974
-      - netflix_US 18
-      - netflix_NL 8
-      - netflix_NL 10
-      - 🇺🇸 Relay_🇺🇸US-🇩🇪DE_1231
-      - US_1307
-      - Relay_🏁ZZ-🇺🇸US_1343
-      - Relay_🏁ZZ-🇻🇳VN_1358
-      - Relay_🏁ZZ-🇺🇸US_1364
-      - ZZ_1377
-      - netflix_DE 2
-      - netflix_US 33
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇨🇳 台湾2|@ripaojiedian
+      - Relay_-🇹🇼TW_152
+      - netflix_TW 6
+      - AL_326
+      - 🇨🇦 Relay_🇨🇦CA-🇺🇸US_362
+      - CZ_387
+      - 🇬🇧 Relay_🇬🇧 GB-🇬🇧GB_561
+      - 🇬🇧 Relay_🇬🇧 GB-🇬🇧GB_565
+      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_575
+      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_576
+      - netflix_KR 3
+      - 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_659
+      - Relay_🇸🇪SE-🇺🇸US_756
+      - SG_788
+      - SG_876
+      - netflix_NL 12
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1194
+      - Relay_🏁ZZ-🇺🇸US_1368
+      - ZZ_97 |14.64Mb
+      - 🇺🇸 _US_美国_2
+      - 🇺🇸 _US_美国_2 (DUP-2)
       - 🇯🇵 日本3|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇰🇷 韩国1|@ripaojiedian
-      - _GI_直布罗陀_2_1@13
-      - SE-51.20.149.248-243_2@243
-      - 🇨🇦 加拿大 012_3@22
-      - 🇨🇦 加拿大 155_3@208
-      - 🇨🇿 捷克【付费推荐：https://jdyvip.link/】187_9@64
-      - 6|-https://t.me/MrXbin-7
-      - 🇩🇪 7|德国1
-      - 🇩🇪 7|德国2
-      - "🇺🇦 26|baipaovpn乌克兰 #1"
-      - CN_speednode_0016
-      - CZ 1 → tg@nicevpn123
-      - 🇯🇵 -JP-005
-      - 🇸🇬 -SG-005
-      - 🇺🇸 -US-012
-      - 🇺🇸 -US-013
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇭🇰 香港A
+      - RELAY-172.67.224.245-147_2@147
+      - 🇬🇧 GB-18.135.168.97-151_2@151
+      - CZ-94.131.97.127-166_2@166
+      - 🇺🇸 美国 030_3@355
+      - 🇨🇦 加拿大 289_3@364
+      - 🇨🇦 加拿大 291_3@367
+      - 🇨🇦 加拿大 292_3@368
+      - 🇨🇦 加拿大 293_3@369
+      - 🇳🇱 荷兰 008_3@376
+      - 🇺🇸 美国 038_3@387
+      - 🇳🇱 荷兰 009_3@388
+      - "🇺🇸 4,8|🇺🇸_US_美国 #6"
+      - 6|-https://t.me/MrXbin-1
+      - "🇺🇸 9|🇺🇸_US_美国 #14"
+      - 🇺🇸 12|美国西雅圖|Github搜索TrojanLinks
+      - 🇳🇱 12|荷兰阿姆斯特丹|Github搜索TrojanLinks
+      - 🇳🇱 12|荷兰乌得勒支|Github搜索TrojanLinks
+      - "🇺🇸 12|美国洛杉矶|Github搜索TrojanLinks #2"
+      - 16|Youtube破解广告1
+      - 🇨🇳 台湾-优化
+      - 🇺🇸 美国LA-优化-GPT
+      - 🇬🇧 英国-优化
+      - 🇭🇰 香港WAP-优化2 2
+      - 🇯🇵 日本 6
+      - 🇭🇰 香港HY-优化
+      - 🇭🇰 香港WAP-优化
+      - 🇰🇵 朝鲜-优化2
+      - 🇨🇳 台湾 2
+      - 🇦🇪 阿联酋
+      - 🇭🇰 香港 3
+      - 🇭🇰 香港HY-优化2
+      - 🇮🇳 印度-优化
+      - 🇸🇬 新加坡 1
+      - 🇭🇰 香港HY-优化2 2
+      - 🇰🇵 朝鲜-优化2 2
+      - -BE-001
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 🇨🇳 台湾省台北市 中华电信
       - 🇬🇧 英国+伦敦Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 Amazon数据中心 2
       - 🇺🇦 乌克兰 v2rayfree.eu.org
-      - 🇬🇧 英国+伦敦Amazon数据中心 2
-      - 🇱🇻 拉脱维亚+v2rayfree.eu.org
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org
-      - 🇺🇸 美国+v2rayfree.eu.org
-      - 🇺🇦 乌克兰 v2rayfree.eu.org 2
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 6
       - netflix_TW
       - netflix_TW 3
-      - _74
-      - _112
-      - netflix_TW 5
-      - Relay_-🇹🇼TW_148
-      - Relay_-🇱🇺LU_194
-      - Relay_-🇩🇪DE_216
-      - Relay_-🇹🇼TW_227
-      - AE_299
-      - AL_300
-      - CA_331
-      - CA_342
-      - netflix_JP
-      - netflix_JP 2
-      - DE_397
-      - DE_398
-      - 🇩🇪 Relay_🇩🇪DE-🇩🇪DE_401
-      - DE_402
-      - EE_408
-      - Relay_🇫🇮FI-🇫🇮FI_422
-      - FR_525
-      - FR_528
-      - 🇬🇧 Relay_🇬🇧 GB-🇬🇧GB_542
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_563
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_565
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_570
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_571
-      - netflix_US 14
-      - GI_581
-      - IE_606
-      - IE_608
-      - KR_652
-      - 🇰🇷 Relay_🇰🇷 KR-🇰🇷KR_654
-      - disney_netflix_KR 5
-      - KR_661
-      - 🇳🇱 Relay_🇳🇱NL-🇳🇱NL_692
-      - netflix_GB 3
-      - SG_793
-      - SG_794
-      - SG_796
-      - SG_800
-      - SG_814
-      - SG_816
-      - SG_848
-      - SG_867
-      - SG_870
-      - SG_871
-      - SG_879
-      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_895
-      - TR_910
-      - netflix_TW 10
-      - netflix_TW 13
-      - netflix_TW 14
-      - TW_950
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_960
-      - netflix_TW 18
-      - 🇺🇦 UA_972
-      - 🇺🇦 UA_974
-      - netflix_US 18
-      - netflix_NL 8
-      - netflix_NL 10
-      - 🇺🇸 Relay_🇺🇸US-🇩🇪DE_1231
-      - US_1307
-      - Relay_🏁ZZ-🇺🇸US_1343
-      - Relay_🏁ZZ-🇻🇳VN_1358
-      - Relay_🏁ZZ-🇺🇸US_1364
-      - ZZ_1377
-      - netflix_DE 2
-      - netflix_US 33
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇨🇳 台湾2|@ripaojiedian
+      - Relay_-🇹🇼TW_152
+      - netflix_TW 6
+      - AL_326
+      - 🇨🇦 Relay_🇨🇦CA-🇺🇸US_362
+      - CZ_387
+      - 🇬🇧 Relay_🇬🇧 GB-🇬🇧GB_561
+      - 🇬🇧 Relay_🇬🇧 GB-🇬🇧GB_565
+      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_575
+      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_576
+      - netflix_KR 3
+      - 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_659
+      - Relay_🇸🇪SE-🇺🇸US_756
+      - SG_788
+      - SG_876
+      - netflix_NL 12
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1194
+      - Relay_🏁ZZ-🇺🇸US_1368
+      - ZZ_97 |14.64Mb
+      - 🇺🇸 _US_美国_2
+      - 🇺🇸 _US_美国_2 (DUP-2)
       - 🇯🇵 日本3|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇰🇷 韩国1|@ripaojiedian
-      - _GI_直布罗陀_2_1@13
-      - SE-51.20.149.248-243_2@243
-      - 🇨🇦 加拿大 012_3@22
-      - 🇨🇦 加拿大 155_3@208
-      - 🇨🇿 捷克【付费推荐：https://jdyvip.link/】187_9@64
-      - 6|-https://t.me/MrXbin-7
-      - 🇩🇪 7|德国1
-      - 🇩🇪 7|德国2
-      - "🇺🇦 26|baipaovpn乌克兰 #1"
-      - CN_speednode_0016
-      - CZ 1 → tg@nicevpn123
-      - 🇯🇵 -JP-005
-      - 🇸🇬 -SG-005
-      - 🇺🇸 -US-012
-      - 🇺🇸 -US-013
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇭🇰 香港A
+      - RELAY-172.67.224.245-147_2@147
+      - 🇬🇧 GB-18.135.168.97-151_2@151
+      - CZ-94.131.97.127-166_2@166
+      - 🇺🇸 美国 030_3@355
+      - 🇨🇦 加拿大 289_3@364
+      - 🇨🇦 加拿大 291_3@367
+      - 🇨🇦 加拿大 292_3@368
+      - 🇨🇦 加拿大 293_3@369
+      - 🇳🇱 荷兰 008_3@376
+      - 🇺🇸 美国 038_3@387
+      - 🇳🇱 荷兰 009_3@388
+      - "🇺🇸 4,8|🇺🇸_US_美国 #6"
+      - 6|-https://t.me/MrXbin-1
+      - "🇺🇸 9|🇺🇸_US_美国 #14"
+      - 🇺🇸 12|美国西雅圖|Github搜索TrojanLinks
+      - 🇳🇱 12|荷兰阿姆斯特丹|Github搜索TrojanLinks
+      - 🇳🇱 12|荷兰乌得勒支|Github搜索TrojanLinks
+      - "🇺🇸 12|美国洛杉矶|Github搜索TrojanLinks #2"
+      - 16|Youtube破解广告1
+      - 🇨🇳 台湾-优化
+      - 🇺🇸 美国LA-优化-GPT
+      - 🇬🇧 英国-优化
+      - 🇭🇰 香港WAP-优化2 2
+      - 🇯🇵 日本 6
+      - 🇭🇰 香港HY-优化
+      - 🇭🇰 香港WAP-优化
+      - 🇰🇵 朝鲜-优化2
+      - 🇨🇳 台湾 2
+      - 🇦🇪 阿联酋
+      - 🇭🇰 香港 3
+      - 🇭🇰 香港HY-优化2
+      - 🇮🇳 印度-优化
+      - 🇸🇬 新加坡 1
+      - 🇭🇰 香港HY-优化2 2
+      - 🇰🇵 朝鲜-优化2 2
+      - -BE-001
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -441,430 +314,308 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 🇨🇳 台湾省台北市 中华电信
       - 🇬🇧 英国+伦敦Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 Amazon数据中心 2
       - 🇺🇦 乌克兰 v2rayfree.eu.org
-      - 🇬🇧 英国+伦敦Amazon数据中心 2
-      - 🇱🇻 拉脱维亚+v2rayfree.eu.org
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org
-      - 🇺🇸 美国+v2rayfree.eu.org
-      - 🇺🇦 乌克兰 v2rayfree.eu.org 2
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 6
       - netflix_TW
       - netflix_TW 3
-      - _74
-      - _112
-      - netflix_TW 5
-      - Relay_-🇹🇼TW_148
-      - Relay_-🇱🇺LU_194
-      - Relay_-🇩🇪DE_216
-      - Relay_-🇹🇼TW_227
-      - AE_299
-      - AL_300
-      - CA_331
-      - CA_342
-      - netflix_JP
-      - netflix_JP 2
-      - DE_397
-      - DE_398
-      - 🇩🇪 Relay_🇩🇪DE-🇩🇪DE_401
-      - DE_402
-      - EE_408
-      - Relay_🇫🇮FI-🇫🇮FI_422
-      - FR_525
-      - FR_528
-      - 🇬🇧 Relay_🇬🇧 GB-🇬🇧GB_542
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_563
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_565
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_570
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_571
-      - netflix_US 14
-      - GI_581
-      - IE_606
-      - IE_608
-      - KR_652
-      - 🇰🇷 Relay_🇰🇷 KR-🇰🇷KR_654
-      - disney_netflix_KR 5
-      - KR_661
-      - 🇳🇱 Relay_🇳🇱NL-🇳🇱NL_692
-      - netflix_GB 3
-      - SG_793
-      - SG_794
-      - SG_796
-      - SG_800
-      - SG_814
-      - SG_816
-      - SG_848
-      - SG_867
-      - SG_870
-      - SG_871
-      - SG_879
-      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_895
-      - TR_910
-      - netflix_TW 10
-      - netflix_TW 13
-      - netflix_TW 14
-      - TW_950
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_960
-      - netflix_TW 18
-      - 🇺🇦 UA_972
-      - 🇺🇦 UA_974
-      - netflix_US 18
-      - netflix_NL 8
-      - netflix_NL 10
-      - 🇺🇸 Relay_🇺🇸US-🇩🇪DE_1231
-      - US_1307
-      - Relay_🏁ZZ-🇺🇸US_1343
-      - Relay_🏁ZZ-🇻🇳VN_1358
-      - Relay_🏁ZZ-🇺🇸US_1364
-      - ZZ_1377
-      - netflix_DE 2
-      - netflix_US 33
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇨🇳 台湾2|@ripaojiedian
+      - Relay_-🇹🇼TW_152
+      - netflix_TW 6
+      - AL_326
+      - 🇨🇦 Relay_🇨🇦CA-🇺🇸US_362
+      - CZ_387
+      - 🇬🇧 Relay_🇬🇧 GB-🇬🇧GB_561
+      - 🇬🇧 Relay_🇬🇧 GB-🇬🇧GB_565
+      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_575
+      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_576
+      - netflix_KR 3
+      - 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_659
+      - Relay_🇸🇪SE-🇺🇸US_756
+      - SG_788
+      - SG_876
+      - netflix_NL 12
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1194
+      - Relay_🏁ZZ-🇺🇸US_1368
+      - ZZ_97 |14.64Mb
+      - 🇺🇸 _US_美国_2
+      - 🇺🇸 _US_美国_2 (DUP-2)
       - 🇯🇵 日本3|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇰🇷 韩国1|@ripaojiedian
-      - _GI_直布罗陀_2_1@13
-      - SE-51.20.149.248-243_2@243
-      - 🇨🇦 加拿大 012_3@22
-      - 🇨🇦 加拿大 155_3@208
-      - 🇨🇿 捷克【付费推荐：https://jdyvip.link/】187_9@64
-      - 6|-https://t.me/MrXbin-7
-      - 🇩🇪 7|德国1
-      - 🇩🇪 7|德国2
-      - "🇺🇦 26|baipaovpn乌克兰 #1"
-      - CN_speednode_0016
-      - CZ 1 → tg@nicevpn123
-      - 🇯🇵 -JP-005
-      - 🇸🇬 -SG-005
-      - 🇺🇸 -US-012
-      - 🇺🇸 -US-013
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇭🇰 香港A
+      - RELAY-172.67.224.245-147_2@147
+      - 🇬🇧 GB-18.135.168.97-151_2@151
+      - CZ-94.131.97.127-166_2@166
+      - 🇺🇸 美国 030_3@355
+      - 🇨🇦 加拿大 289_3@364
+      - 🇨🇦 加拿大 291_3@367
+      - 🇨🇦 加拿大 292_3@368
+      - 🇨🇦 加拿大 293_3@369
+      - 🇳🇱 荷兰 008_3@376
+      - 🇺🇸 美国 038_3@387
+      - 🇳🇱 荷兰 009_3@388
+      - "🇺🇸 4,8|🇺🇸_US_美国 #6"
+      - 6|-https://t.me/MrXbin-1
+      - "🇺🇸 9|🇺🇸_US_美国 #14"
+      - 🇺🇸 12|美国西雅圖|Github搜索TrojanLinks
+      - 🇳🇱 12|荷兰阿姆斯特丹|Github搜索TrojanLinks
+      - 🇳🇱 12|荷兰乌得勒支|Github搜索TrojanLinks
+      - "🇺🇸 12|美国洛杉矶|Github搜索TrojanLinks #2"
+      - 16|Youtube破解广告1
+      - 🇨🇳 台湾-优化
+      - 🇺🇸 美国LA-优化-GPT
+      - 🇬🇧 英国-优化
+      - 🇭🇰 香港WAP-优化2 2
+      - 🇯🇵 日本 6
+      - 🇭🇰 香港HY-优化
+      - 🇭🇰 香港WAP-优化
+      - 🇰🇵 朝鲜-优化2
+      - 🇨🇳 台湾 2
+      - 🇦🇪 阿联酋
+      - 🇭🇰 香港 3
+      - 🇭🇰 香港HY-优化2
+      - 🇮🇳 印度-优化
+      - 🇸🇬 新加坡 1
+      - 🇭🇰 香港HY-优化2 2
+      - 🇰🇵 朝鲜-优化2 2
+      - -BE-001
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇨🇳 台湾省台北市 中华电信
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇨🇳 台湾2|@ripaojiedian
+      - 🇭🇰 香港A
+      - 🇨🇳 台湾-优化
+      - 🇭🇰 香港WAP-优化2 2
+      - 🇭🇰 香港HY-优化
+      - 🇭🇰 香港WAP-优化
+      - 🇨🇳 台湾 2
+      - 🇭🇰 香港 3
+      - 🇭🇰 香港HY-优化2
+      - 🇭🇰 香港HY-优化2 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 🇨🇳 台湾省台北市 中华电信
       - 🇬🇧 英国+伦敦Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 Amazon数据中心 2
       - 🇺🇦 乌克兰 v2rayfree.eu.org
-      - 🇬🇧 英国+伦敦Amazon数据中心 2
-      - 🇱🇻 拉脱维亚+v2rayfree.eu.org
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org
-      - 🇺🇸 美国+v2rayfree.eu.org
-      - 🇺🇦 乌克兰 v2rayfree.eu.org 2
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 6
       - netflix_TW
       - netflix_TW 3
-      - _74
-      - _112
-      - netflix_TW 5
-      - Relay_-🇹🇼TW_148
-      - Relay_-🇱🇺LU_194
-      - Relay_-🇩🇪DE_216
-      - Relay_-🇹🇼TW_227
-      - AE_299
-      - AL_300
-      - CA_331
-      - CA_342
-      - netflix_JP
-      - netflix_JP 2
-      - DE_397
-      - DE_398
-      - 🇩🇪 Relay_🇩🇪DE-🇩🇪DE_401
-      - DE_402
-      - EE_408
-      - Relay_🇫🇮FI-🇫🇮FI_422
-      - FR_525
-      - FR_528
-      - 🇬🇧 Relay_🇬🇧 GB-🇬🇧GB_542
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_563
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_565
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_570
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_571
-      - netflix_US 14
-      - GI_581
-      - IE_606
-      - IE_608
-      - KR_652
-      - 🇰🇷 Relay_🇰🇷 KR-🇰🇷KR_654
-      - disney_netflix_KR 5
-      - KR_661
-      - 🇳🇱 Relay_🇳🇱NL-🇳🇱NL_692
-      - netflix_GB 3
-      - SG_793
-      - SG_794
-      - SG_796
-      - SG_800
-      - SG_814
-      - SG_816
-      - SG_848
-      - SG_867
-      - SG_870
-      - SG_871
-      - SG_879
-      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_895
-      - TR_910
-      - netflix_TW 10
-      - netflix_TW 13
-      - netflix_TW 14
-      - TW_950
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_960
-      - netflix_TW 18
-      - 🇺🇦 UA_972
-      - 🇺🇦 UA_974
-      - netflix_US 18
-      - netflix_NL 8
-      - netflix_NL 10
-      - 🇺🇸 Relay_🇺🇸US-🇩🇪DE_1231
-      - US_1307
-      - Relay_🏁ZZ-🇺🇸US_1343
-      - Relay_🏁ZZ-🇻🇳VN_1358
-      - Relay_🏁ZZ-🇺🇸US_1364
-      - ZZ_1377
-      - netflix_DE 2
-      - netflix_US 33
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇨🇳 台湾2|@ripaojiedian
+      - Relay_-🇹🇼TW_152
+      - netflix_TW 6
+      - AL_326
+      - 🇨🇦 Relay_🇨🇦CA-🇺🇸US_362
+      - CZ_387
+      - 🇬🇧 Relay_🇬🇧 GB-🇬🇧GB_561
+      - 🇬🇧 Relay_🇬🇧 GB-🇬🇧GB_565
+      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_575
+      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_576
+      - netflix_KR 3
+      - 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_659
+      - Relay_🇸🇪SE-🇺🇸US_756
+      - SG_788
+      - SG_876
+      - netflix_NL 12
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1194
+      - Relay_🏁ZZ-🇺🇸US_1368
+      - ZZ_97 |14.64Mb
+      - 🇺🇸 _US_美国_2
+      - 🇺🇸 _US_美国_2 (DUP-2)
       - 🇯🇵 日本3|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇰🇷 韩国1|@ripaojiedian
-      - _GI_直布罗陀_2_1@13
-      - SE-51.20.149.248-243_2@243
-      - 🇨🇦 加拿大 012_3@22
-      - 🇨🇦 加拿大 155_3@208
-      - 🇨🇿 捷克【付费推荐：https://jdyvip.link/】187_9@64
-      - 6|-https://t.me/MrXbin-7
-      - 🇩🇪 7|德国1
-      - 🇩🇪 7|德国2
-      - "🇺🇦 26|baipaovpn乌克兰 #1"
-      - CN_speednode_0016
-      - CZ 1 → tg@nicevpn123
-      - 🇯🇵 -JP-005
-      - 🇸🇬 -SG-005
-      - 🇺🇸 -US-012
-      - 🇺🇸 -US-013
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇭🇰 香港A
+      - RELAY-172.67.224.245-147_2@147
+      - 🇬🇧 GB-18.135.168.97-151_2@151
+      - CZ-94.131.97.127-166_2@166
+      - 🇺🇸 美国 030_3@355
+      - 🇨🇦 加拿大 289_3@364
+      - 🇨🇦 加拿大 291_3@367
+      - 🇨🇦 加拿大 292_3@368
+      - 🇨🇦 加拿大 293_3@369
+      - 🇳🇱 荷兰 008_3@376
+      - 🇺🇸 美国 038_3@387
+      - 🇳🇱 荷兰 009_3@388
+      - "🇺🇸 4,8|🇺🇸_US_美国 #6"
+      - 6|-https://t.me/MrXbin-1
+      - "🇺🇸 9|🇺🇸_US_美国 #14"
+      - 🇺🇸 12|美国西雅圖|Github搜索TrojanLinks
+      - 🇳🇱 12|荷兰阿姆斯特丹|Github搜索TrojanLinks
+      - 🇳🇱 12|荷兰乌得勒支|Github搜索TrojanLinks
+      - "🇺🇸 12|美国洛杉矶|Github搜索TrojanLinks #2"
+      - 16|Youtube破解广告1
+      - 🇨🇳 台湾-优化
+      - 🇺🇸 美国LA-优化-GPT
+      - 🇬🇧 英国-优化
+      - 🇭🇰 香港WAP-优化2 2
+      - 🇯🇵 日本 6
+      - 🇭🇰 香港HY-优化
+      - 🇭🇰 香港WAP-优化
+      - 🇰🇵 朝鲜-优化2
+      - 🇨🇳 台湾 2
+      - 🇦🇪 阿联酋
+      - 🇭🇰 香港 3
+      - 🇭🇰 香港HY-优化2
+      - 🇮🇳 印度-优化
+      - 🇸🇬 新加坡 1
+      - 🇭🇰 香港HY-优化2 2
+      - 🇰🇵 朝鲜-优化2 2
+      - -BE-001
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 🇨🇳 台湾省台北市 中华电信
       - 🇬🇧 英国+伦敦Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 Amazon数据中心 2
       - 🇺🇦 乌克兰 v2rayfree.eu.org
-      - 🇬🇧 英国+伦敦Amazon数据中心 2
-      - 🇱🇻 拉脱维亚+v2rayfree.eu.org
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org
-      - 🇺🇸 美国+v2rayfree.eu.org
-      - 🇺🇦 乌克兰 v2rayfree.eu.org 2
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 6
       - netflix_TW
       - netflix_TW 3
-      - _74
-      - _112
-      - netflix_TW 5
-      - Relay_-🇹🇼TW_148
-      - Relay_-🇱🇺LU_194
-      - Relay_-🇩🇪DE_216
-      - Relay_-🇹🇼TW_227
-      - AE_299
-      - AL_300
-      - CA_331
-      - CA_342
-      - netflix_JP
-      - netflix_JP 2
-      - DE_397
-      - DE_398
-      - 🇩🇪 Relay_🇩🇪DE-🇩🇪DE_401
-      - DE_402
-      - EE_408
-      - Relay_🇫🇮FI-🇫🇮FI_422
-      - FR_525
-      - FR_528
-      - 🇬🇧 Relay_🇬🇧 GB-🇬🇧GB_542
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_563
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_565
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_570
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_571
-      - netflix_US 14
-      - GI_581
-      - IE_606
-      - IE_608
-      - KR_652
-      - 🇰🇷 Relay_🇰🇷 KR-🇰🇷KR_654
-      - disney_netflix_KR 5
-      - KR_661
-      - 🇳🇱 Relay_🇳🇱NL-🇳🇱NL_692
-      - netflix_GB 3
-      - SG_793
-      - SG_794
-      - SG_796
-      - SG_800
-      - SG_814
-      - SG_816
-      - SG_848
-      - SG_867
-      - SG_870
-      - SG_871
-      - SG_879
-      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_895
-      - TR_910
-      - netflix_TW 10
-      - netflix_TW 13
-      - netflix_TW 14
-      - TW_950
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_960
-      - netflix_TW 18
-      - 🇺🇦 UA_972
-      - 🇺🇦 UA_974
-      - netflix_US 18
-      - netflix_NL 8
-      - netflix_NL 10
-      - 🇺🇸 Relay_🇺🇸US-🇩🇪DE_1231
-      - US_1307
-      - Relay_🏁ZZ-🇺🇸US_1343
-      - Relay_🏁ZZ-🇻🇳VN_1358
-      - Relay_🏁ZZ-🇺🇸US_1364
-      - ZZ_1377
-      - netflix_DE 2
-      - netflix_US 33
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇨🇳 台湾2|@ripaojiedian
+      - Relay_-🇹🇼TW_152
+      - netflix_TW 6
+      - AL_326
+      - 🇨🇦 Relay_🇨🇦CA-🇺🇸US_362
+      - CZ_387
+      - 🇬🇧 Relay_🇬🇧 GB-🇬🇧GB_561
+      - 🇬🇧 Relay_🇬🇧 GB-🇬🇧GB_565
+      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_575
+      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_576
+      - netflix_KR 3
+      - 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_659
+      - Relay_🇸🇪SE-🇺🇸US_756
+      - SG_788
+      - SG_876
+      - netflix_NL 12
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1194
+      - Relay_🏁ZZ-🇺🇸US_1368
+      - ZZ_97 |14.64Mb
+      - 🇺🇸 _US_美国_2
+      - 🇺🇸 _US_美国_2 (DUP-2)
       - 🇯🇵 日本3|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇰🇷 韩国1|@ripaojiedian
-      - _GI_直布罗陀_2_1@13
-      - SE-51.20.149.248-243_2@243
-      - 🇨🇦 加拿大 012_3@22
-      - 🇨🇦 加拿大 155_3@208
-      - 🇨🇿 捷克【付费推荐：https://jdyvip.link/】187_9@64
-      - 6|-https://t.me/MrXbin-7
-      - 🇩🇪 7|德国1
-      - 🇩🇪 7|德国2
-      - "🇺🇦 26|baipaovpn乌克兰 #1"
-      - CN_speednode_0016
-      - CZ 1 → tg@nicevpn123
-      - 🇯🇵 -JP-005
-      - 🇸🇬 -SG-005
-      - 🇺🇸 -US-012
-      - 🇺🇸 -US-013
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇭🇰 香港A
+      - RELAY-172.67.224.245-147_2@147
+      - 🇬🇧 GB-18.135.168.97-151_2@151
+      - CZ-94.131.97.127-166_2@166
+      - 🇺🇸 美国 030_3@355
+      - 🇨🇦 加拿大 289_3@364
+      - 🇨🇦 加拿大 291_3@367
+      - 🇨🇦 加拿大 292_3@368
+      - 🇨🇦 加拿大 293_3@369
+      - 🇳🇱 荷兰 008_3@376
+      - 🇺🇸 美国 038_3@387
+      - 🇳🇱 荷兰 009_3@388
+      - "🇺🇸 4,8|🇺🇸_US_美国 #6"
+      - 6|-https://t.me/MrXbin-1
+      - "🇺🇸 9|🇺🇸_US_美国 #14"
+      - 🇺🇸 12|美国西雅圖|Github搜索TrojanLinks
+      - 🇳🇱 12|荷兰阿姆斯特丹|Github搜索TrojanLinks
+      - 🇳🇱 12|荷兰乌得勒支|Github搜索TrojanLinks
+      - "🇺🇸 12|美国洛杉矶|Github搜索TrojanLinks #2"
+      - 16|Youtube破解广告1
+      - 🇨🇳 台湾-优化
+      - 🇺🇸 美国LA-优化-GPT
+      - 🇬🇧 英国-优化
+      - 🇭🇰 香港WAP-优化2 2
+      - 🇯🇵 日本 6
+      - 🇭🇰 香港HY-优化
+      - 🇭🇰 香港WAP-优化
+      - 🇰🇵 朝鲜-优化2
+      - 🇨🇳 台湾 2
+      - 🇦🇪 阿联酋
+      - 🇭🇰 香港 3
+      - 🇭🇰 香港HY-优化2
+      - 🇮🇳 印度-优化
+      - 🇸🇬 新加坡 1
+      - 🇭🇰 香港HY-优化2 2
+      - 🇰🇵 朝鲜-优化2 2
+      - -BE-001
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 🇨🇳 台湾省台北市 中华电信
       - 🇬🇧 英国+伦敦Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 Amazon数据中心 2
       - 🇺🇦 乌克兰 v2rayfree.eu.org
-      - 🇬🇧 英国+伦敦Amazon数据中心 2
-      - 🇱🇻 拉脱维亚+v2rayfree.eu.org
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org
-      - 🇺🇸 美国+v2rayfree.eu.org
-      - 🇺🇦 乌克兰 v2rayfree.eu.org 2
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 6
       - netflix_TW
       - netflix_TW 3
-      - _74
-      - _112
-      - netflix_TW 5
-      - Relay_-🇹🇼TW_148
-      - Relay_-🇱🇺LU_194
-      - Relay_-🇩🇪DE_216
-      - Relay_-🇹🇼TW_227
-      - AE_299
-      - AL_300
-      - CA_331
-      - CA_342
-      - netflix_JP
-      - netflix_JP 2
-      - DE_397
-      - DE_398
-      - 🇩🇪 Relay_🇩🇪DE-🇩🇪DE_401
-      - DE_402
-      - EE_408
-      - Relay_🇫🇮FI-🇫🇮FI_422
-      - FR_525
-      - FR_528
-      - 🇬🇧 Relay_🇬🇧 GB-🇬🇧GB_542
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_563
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_565
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_570
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_571
-      - netflix_US 14
-      - GI_581
-      - IE_606
-      - IE_608
-      - KR_652
-      - 🇰🇷 Relay_🇰🇷 KR-🇰🇷KR_654
-      - disney_netflix_KR 5
-      - KR_661
-      - 🇳🇱 Relay_🇳🇱NL-🇳🇱NL_692
-      - netflix_GB 3
-      - SG_793
-      - SG_794
-      - SG_796
-      - SG_800
-      - SG_814
-      - SG_816
-      - SG_848
-      - SG_867
-      - SG_870
-      - SG_871
-      - SG_879
-      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_895
-      - TR_910
-      - netflix_TW 10
-      - netflix_TW 13
-      - netflix_TW 14
-      - TW_950
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_960
-      - netflix_TW 18
-      - 🇺🇦 UA_972
-      - 🇺🇦 UA_974
-      - netflix_US 18
-      - netflix_NL 8
-      - netflix_NL 10
-      - 🇺🇸 Relay_🇺🇸US-🇩🇪DE_1231
-      - US_1307
-      - Relay_🏁ZZ-🇺🇸US_1343
-      - Relay_🏁ZZ-🇻🇳VN_1358
-      - Relay_🏁ZZ-🇺🇸US_1364
-      - ZZ_1377
-      - netflix_DE 2
-      - netflix_US 33
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇨🇳 台湾2|@ripaojiedian
+      - Relay_-🇹🇼TW_152
+      - netflix_TW 6
+      - AL_326
+      - 🇨🇦 Relay_🇨🇦CA-🇺🇸US_362
+      - CZ_387
+      - 🇬🇧 Relay_🇬🇧 GB-🇬🇧GB_561
+      - 🇬🇧 Relay_🇬🇧 GB-🇬🇧GB_565
+      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_575
+      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_576
+      - netflix_KR 3
+      - 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_659
+      - Relay_🇸🇪SE-🇺🇸US_756
+      - SG_788
+      - SG_876
+      - netflix_NL 12
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1194
+      - Relay_🏁ZZ-🇺🇸US_1368
+      - ZZ_97 |14.64Mb
+      - 🇺🇸 _US_美国_2
+      - 🇺🇸 _US_美国_2 (DUP-2)
       - 🇯🇵 日本3|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇰🇷 韩国1|@ripaojiedian
-      - _GI_直布罗陀_2_1@13
-      - SE-51.20.149.248-243_2@243
-      - 🇨🇦 加拿大 012_3@22
-      - 🇨🇦 加拿大 155_3@208
-      - 🇨🇿 捷克【付费推荐：https://jdyvip.link/】187_9@64
-      - 6|-https://t.me/MrXbin-7
-      - 🇩🇪 7|德国1
-      - 🇩🇪 7|德国2
-      - "🇺🇦 26|baipaovpn乌克兰 #1"
-      - CN_speednode_0016
-      - CZ 1 → tg@nicevpn123
-      - 🇯🇵 -JP-005
-      - 🇸🇬 -SG-005
-      - 🇺🇸 -US-012
-      - 🇺🇸 -US-013
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇭🇰 香港A
+      - RELAY-172.67.224.245-147_2@147
+      - 🇬🇧 GB-18.135.168.97-151_2@151
+      - CZ-94.131.97.127-166_2@166
+      - 🇺🇸 美国 030_3@355
+      - 🇨🇦 加拿大 289_3@364
+      - 🇨🇦 加拿大 291_3@367
+      - 🇨🇦 加拿大 292_3@368
+      - 🇨🇦 加拿大 293_3@369
+      - 🇳🇱 荷兰 008_3@376
+      - 🇺🇸 美国 038_3@387
+      - 🇳🇱 荷兰 009_3@388
+      - "🇺🇸 4,8|🇺🇸_US_美国 #6"
+      - 6|-https://t.me/MrXbin-1
+      - "🇺🇸 9|🇺🇸_US_美国 #14"
+      - 🇺🇸 12|美国西雅圖|Github搜索TrojanLinks
+      - 🇳🇱 12|荷兰阿姆斯特丹|Github搜索TrojanLinks
+      - 🇳🇱 12|荷兰乌得勒支|Github搜索TrojanLinks
+      - "🇺🇸 12|美国洛杉矶|Github搜索TrojanLinks #2"
+      - 16|Youtube破解广告1
+      - 🇨🇳 台湾-优化
+      - 🇺🇸 美国LA-优化-GPT
+      - 🇬🇧 英国-优化
+      - 🇭🇰 香港WAP-优化2 2
+      - 🇯🇵 日本 6
+      - 🇭🇰 香港HY-优化
+      - 🇭🇰 香港WAP-优化
+      - 🇰🇵 朝鲜-优化2
+      - 🇨🇳 台湾 2
+      - 🇦🇪 阿联酋
+      - 🇭🇰 香港 3
+      - 🇭🇰 香港HY-优化2
+      - 🇮🇳 印度-优化
+      - 🇸🇬 新加坡 1
+      - 🇭🇰 香港HY-优化2 2
+      - 🇰🇵 朝鲜-优化2 2
+      - -BE-001
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -880,106 +631,74 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 🇨🇳 台湾省台北市 中华电信
       - 🇬🇧 英国+伦敦Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 Amazon数据中心 2
       - 🇺🇦 乌克兰 v2rayfree.eu.org
-      - 🇬🇧 英国+伦敦Amazon数据中心 2
-      - 🇱🇻 拉脱维亚+v2rayfree.eu.org
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org
-      - 🇺🇸 美国+v2rayfree.eu.org
-      - 🇺🇦 乌克兰 v2rayfree.eu.org 2
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 6
       - netflix_TW
       - netflix_TW 3
-      - _74
-      - _112
-      - netflix_TW 5
-      - Relay_-🇹🇼TW_148
-      - Relay_-🇱🇺LU_194
-      - Relay_-🇩🇪DE_216
-      - Relay_-🇹🇼TW_227
-      - AE_299
-      - AL_300
-      - CA_331
-      - CA_342
-      - netflix_JP
-      - netflix_JP 2
-      - DE_397
-      - DE_398
-      - 🇩🇪 Relay_🇩🇪DE-🇩🇪DE_401
-      - DE_402
-      - EE_408
-      - Relay_🇫🇮FI-🇫🇮FI_422
-      - FR_525
-      - FR_528
-      - 🇬🇧 Relay_🇬🇧 GB-🇬🇧GB_542
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_563
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_565
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_570
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_571
-      - netflix_US 14
-      - GI_581
-      - IE_606
-      - IE_608
-      - KR_652
-      - 🇰🇷 Relay_🇰🇷 KR-🇰🇷KR_654
-      - disney_netflix_KR 5
-      - KR_661
-      - 🇳🇱 Relay_🇳🇱NL-🇳🇱NL_692
-      - netflix_GB 3
-      - SG_793
-      - SG_794
-      - SG_796
-      - SG_800
-      - SG_814
-      - SG_816
-      - SG_848
-      - SG_867
-      - SG_870
-      - SG_871
-      - SG_879
-      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_895
-      - TR_910
-      - netflix_TW 10
-      - netflix_TW 13
-      - netflix_TW 14
-      - TW_950
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_960
-      - netflix_TW 18
-      - 🇺🇦 UA_972
-      - 🇺🇦 UA_974
-      - netflix_US 18
-      - netflix_NL 8
-      - netflix_NL 10
-      - 🇺🇸 Relay_🇺🇸US-🇩🇪DE_1231
-      - US_1307
-      - Relay_🏁ZZ-🇺🇸US_1343
-      - Relay_🏁ZZ-🇻🇳VN_1358
-      - Relay_🏁ZZ-🇺🇸US_1364
-      - ZZ_1377
-      - netflix_DE 2
-      - netflix_US 33
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇨🇳 台湾2|@ripaojiedian
+      - Relay_-🇹🇼TW_152
+      - netflix_TW 6
+      - AL_326
+      - 🇨🇦 Relay_🇨🇦CA-🇺🇸US_362
+      - CZ_387
+      - 🇬🇧 Relay_🇬🇧 GB-🇬🇧GB_561
+      - 🇬🇧 Relay_🇬🇧 GB-🇬🇧GB_565
+      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_575
+      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_576
+      - netflix_KR 3
+      - 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_659
+      - Relay_🇸🇪SE-🇺🇸US_756
+      - SG_788
+      - SG_876
+      - netflix_NL 12
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1194
+      - Relay_🏁ZZ-🇺🇸US_1368
+      - ZZ_97 |14.64Mb
+      - 🇺🇸 _US_美国_2
+      - 🇺🇸 _US_美国_2 (DUP-2)
       - 🇯🇵 日本3|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇰🇷 韩国1|@ripaojiedian
-      - _GI_直布罗陀_2_1@13
-      - SE-51.20.149.248-243_2@243
-      - 🇨🇦 加拿大 012_3@22
-      - 🇨🇦 加拿大 155_3@208
-      - 🇨🇿 捷克【付费推荐：https://jdyvip.link/】187_9@64
-      - 6|-https://t.me/MrXbin-7
-      - 🇩🇪 7|德国1
-      - 🇩🇪 7|德国2
-      - "🇺🇦 26|baipaovpn乌克兰 #1"
-      - CN_speednode_0016
-      - CZ 1 → tg@nicevpn123
-      - 🇯🇵 -JP-005
-      - 🇸🇬 -SG-005
-      - 🇺🇸 -US-012
-      - 🇺🇸 -US-013
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇭🇰 香港A
+      - RELAY-172.67.224.245-147_2@147
+      - 🇬🇧 GB-18.135.168.97-151_2@151
+      - CZ-94.131.97.127-166_2@166
+      - 🇺🇸 美国 030_3@355
+      - 🇨🇦 加拿大 289_3@364
+      - 🇨🇦 加拿大 291_3@367
+      - 🇨🇦 加拿大 292_3@368
+      - 🇨🇦 加拿大 293_3@369
+      - 🇳🇱 荷兰 008_3@376
+      - 🇺🇸 美国 038_3@387
+      - 🇳🇱 荷兰 009_3@388
+      - "🇺🇸 4,8|🇺🇸_US_美国 #6"
+      - 6|-https://t.me/MrXbin-1
+      - "🇺🇸 9|🇺🇸_US_美国 #14"
+      - 🇺🇸 12|美国西雅圖|Github搜索TrojanLinks
+      - 🇳🇱 12|荷兰阿姆斯特丹|Github搜索TrojanLinks
+      - 🇳🇱 12|荷兰乌得勒支|Github搜索TrojanLinks
+      - "🇺🇸 12|美国洛杉矶|Github搜索TrojanLinks #2"
+      - 16|Youtube破解广告1
+      - 🇨🇳 台湾-优化
+      - 🇺🇸 美国LA-优化-GPT
+      - 🇬🇧 英国-优化
+      - 🇭🇰 香港WAP-优化2 2
+      - 🇯🇵 日本 6
+      - 🇭🇰 香港HY-优化
+      - 🇭🇰 香港WAP-优化
+      - 🇰🇵 朝鲜-优化2
+      - 🇨🇳 台湾 2
+      - 🇦🇪 阿联酋
+      - 🇭🇰 香港 3
+      - 🇭🇰 香港HY-优化2
+      - 🇮🇳 印度-优化
+      - 🇸🇬 新加坡 1
+      - 🇭🇰 香港HY-优化2 2
+      - 🇰🇵 朝鲜-优化2 2
+      - -BE-001
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
