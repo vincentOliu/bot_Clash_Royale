@@ -6,403 +6,103 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 美国 CloudFlare节点 20, server: www.velvetmountain.shop, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.velvetmountain.shop}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 21, server: 172.67.217.144, port: 80, type: vmess, uuid: 85674552-ce41-44d9-bb2a-50f76450b3d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: lv1.xv2ray.net}}, udp: true}
-  - {name: 🇨🇳 广东省 移动, server: m.cnmjcn.com, port: 16620, type: vmess, uuid: c99074bd-bacd-48b5-9561-da069c481602, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fe5be62428b65a2ce7a22d9997b4c9d0.mobgslb.tbcache.com}}, udp: true}
-  - {name: 🇨🇳 江苏省镇江市 联通IDC机房, server: data-us-v1.shwjfkw.cn, port: 20401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: data-us-v1.shwjfkw.cn}}, udp: true}
-  - {name: 🇨🇳 广东省江门市+移动 2, server: service.ouluyun9803.com, port: 21005, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, udp: true}
-  - {name: 🇺🇸 美国+Amazon数据中心, server: wxwctxxx.arvancode.eu.org, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: u17T3BvpYaaiuW2c, udp: true}
-  - {name: _60, server: 38.107.226.49, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: Relay_-🇱🇺LU_74, server: 163.172.64.22, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: Relay_-🇩🇪DE_138, server: 172.67.188.193, port: 8080, type: vmess, uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: eu3.openxai.link}}, udp: true}
-  - {name: disney_netflix_US 25, server: 104.17.123.56, port: 443, type: vmess, uuid: 1d47288a-699d-45ca-b4f0-4e5b36940e6f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: pq.kmoljklj.top}}, udp: true}
-  - {name: Relay_-🇩🇪DE_758, server: 5.104.108.109, port: 443, type: trojan, password: 45a8d20d-9a78-4be4-a74a-ab3b9e84e34e, sni: 20-24-33-134.nhost.00cdn.com, skip-cert-verify: false, udp: true}
-  - {name: Relay_-🇸🇬SG_762, server: sg02.bsawc.shop, port: 54952, type: trojan, password: 301caac8-edc6-4058-9f6a-78bc8a5a675b, sni: sg02.bsawc.shop, skip-cert-verify: false, udp: true}
-  - {name: Relay_-🇰🇷KR_763, server: kr02.bsawc.shop, port: 57602, type: trojan, password: 301caac8-edc6-4058-9f6a-78bc8a5a675b, sni: kr02.bsawc.shop, skip-cert-verify: false, udp: true}
-  - {name: Relay_-🇰🇷KR_765, server: kr01.bsawc.shop, port: 34952, type: trojan, password: 301caac8-edc6-4058-9f6a-78bc8a5a675b, sni: kr01.bsawc.shop, skip-cert-verify: false, udp: true}
-  - {name: BE_781, server: 57.180.43.220, port: 15334, type: trojan, password: XGne5ECSa(bq, sni: www.myethblog.com, skip-cert-verify: false, udp: true}
-  - {name: Pool_🇧🇷BR_789, server: 144.22.197.64, port: 7702, type: ss, cipher: aes-256-gcm, password: 89e196a9-d204-4366-90f2-0276cd158c7e, udp: true}
-  - {name: CA_810, server: 3.97.11.236, port: 15327, type: trojan, password: n83XQXW5Oipc, sni: www.myethblog.com, skip-cert-verify: false, udp: true}
-  - {name: CA_813, server: 3.96.199.237, port: 15332, type: trojan, password: OM5eUTVy39aI, sni: www.myethblog.com, skip-cert-verify: false, udp: true}
-  - {name: CH_817, server: 64.110.82.18, port: 57602, type: trojan, password: 301caac8-edc6-4058-9f6a-78bc8a5a675b, sni: kr02.bsawc.shop, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇸🇬SG_823, server: 36.249.162.214, port: 21398, type: ss, cipher: aes-128-gcm, password: 281697da-92ff-4ccb-b52d-4e713a7144a0, udp: true}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇺🇸US_824, server: p1.bxy-fun3.com, port: 26106, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db, udp: true}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇸🇬SG_826, server: 086c.e2s.buzz, port: 21398, type: ss, cipher: aes-128-gcm, password: 281697da-92ff-4ccb-b52d-4e713a7144a0, udp: true}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_827, server: 36.249.162.214, port: 12372, type: ss, cipher: aes-128-gcm, password: 281697da-92ff-4ccb-b52d-4e713a7144a0, udp: true}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_828, server: 4cc3.e2s.buzz, port: 12372, type: ss, cipher: aes-128-gcm, password: 281697da-92ff-4ccb-b52d-4e713a7144a0, udp: true}
-  - {name: DE_872, server: 3.79.56.77, port: 15332, type: trojan, password: (T0P)3QoEQkP, sni: www.myethblog.com, skip-cert-verify: false, udp: true}
-  - {name: DE_873, server: 3.126.231.21, port: 15335, type: trojan, password: vpnPmmTXaOEM, sni: www.myethblog.com, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 Relay_🇩🇪DE-🇩🇪DE_876, server: 5.104.108.120, port: 443, type: trojan, password: 45a8d20d-9a78-4be4-a74a-ab3b9e84e34e, sni: 20-24-33-134.nhost.00cdn.com, skip-cert-verify: false, udp: true}
-  - {name: DE_877, server: 18.153.144.117, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.miwan.co.uk, skip-cert-verify: false, udp: true}
-  - {name: FI_884, server: 65.21.150.14, port: 36869, type: vmess, uuid: c9eb3f04-e919-4024-fbe4-5579e127dc90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: FR_954, server: 35.180.224.224, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.miwan.co.uk, skip-cert-verify: false, udp: true}
-  - {name: FR_959, server: 15.237.216.156, port: 15327, type: trojan, password: 38NsnDKOuc2S, sni: www.myethblog.com, skip-cert-verify: false, udp: true}
-  - {name: GB_974, server: 51.143.138.178, port: 33028, type: ss, cipher: chacha20-ietf-poly1305, password: LQBrLz4luy9e1qg5S7NWHM, udp: true}
-  - {name: 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_984, server: series-a2-mec.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: O5APdoqlticuupE1, udp: true}
-  - {name: 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_996, server: 3.8.14.193, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: u17T3BvpYaaiuW2c, udp: true}
-  - {name: 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_999, server: 3.8.254.223, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: u17T3BvpYaaiuW2c, udp: true}
-  - {name: GB_1003, server: 18.169.157.148, port: 15327, type: trojan, password: YfDk1Q)L7E)C, sni: www.myethblog.com, skip-cert-verify: false, udp: true}
-  - {name: GB_1004, server: 18.171.148.176, port: 15317, type: trojan, password: xabc11ZUg7AT, sni: www.myethblog.com, skip-cert-verify: false, udp: true}
-  - {name: GB_1005, server: 35.177.209.14, port: 15332, type: trojan, password: fa1jri7xamZZ, sni: www.myethblog.com, skip-cert-verify: false, udp: true}
-  - {name: GB_1007, server: 18.132.100.141, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.miwan.co.uk, skip-cert-verify: false, udp: true}
-  - {name: GI_1009, server: 95.164.114.43, port: 443, type: trojan, password: 180c7f40-c29e-445d-8056-ae92f3b451d7, skip-cert-verify: false, udp: true}
-  - {name: IE_1021, server: 54.77.189.37, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.miwan.co.uk, skip-cert-verify: false, udp: true}
-  - {name: IE_1022, server: 52.211.171.95, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.miwan.co.uk, skip-cert-verify: false, udp: true}
-  - {name: Relay_🇮🇷IR-🇩🇪DE_1036, server: 88.135.44.234, port: 25871, type: vmess, uuid: 7e13cade-c409-4c15-8479-3e102afa2299, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: JP_1046, server: 18.177.140.59, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: KR_1058, server: 125.141.26.7, port: 2020, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: KR_1059, server: 211.201.169.70, port: 54345, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: netflix_KR 4, server: p080.panda001.net, port: 7818, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_1062, server: p110.panda001.net, port: 54345, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: netflix_KR 5, server: 27.255.82.135, port: 7818, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: KR_1065, server: 13.209.18.35, port: 15322, type: trojan, password: 7nCeSYw4fJ6B, sni: www.myethblog.com, skip-cert-verify: false, udp: true}
-  - {name: KR_1066, server: 146.56.146.167, port: 34952, type: trojan, password: 301caac8-edc6-4058-9f6a-78bc8a5a675b, sni: kr01.bsawc.shop, skip-cert-verify: false, udp: true}
-  - {name: LT_1070, server: 89.117.109.97, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: rhnAUMfOWIgjT917yYCG7u, udp: true}
-  - {name: 🇳🇱 Relay_🇳🇱NL-🇳🇱NL_1094, server: 154.85.1.130, port: 41002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, servername: www.42077230.xyz, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: SE_1150, server: 16.171.183.42, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.miwan.co.uk, skip-cert-verify: false, udp: true}
-  - {name: SE_1151, server: 13.48.93.56, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.miwan.co.uk, skip-cert-verify: false, udp: true}
-  - {name: SE_1152, server: 51.20.235.58, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.miwan.co.uk, skip-cert-verify: false, udp: true}
-  - {name: SG_1322, server: 54.254.42.92, port: 15328, type: trojan, password: ((yuQ(z4(JFl, sni: www.myethblog.com, skip-cert-verify: false, udp: true}
-  - {name: SG_1323, server: 13.229.63.146, port: 15335, type: trojan, password: q0Uphp8U0DIP, sni: www.myethblog.com, skip-cert-verify: false, udp: true}
-  - {name: TW_1343, server: 36.232.170.118, port: 14431, type: vmess, uuid: 927d3649-6f6d-4111-a726-5fb16d5401bf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: netflix_TW 5, server: 61.228.166.29, port: 3278, type: vmess, uuid: 927d3649-6f6d-4111-a726-5fb16d5401bf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_1346, server: nb24.ntbq.dynu.net, port: 3278, type: vmess, uuid: 927d3649-6f6d-4111-a726-5fb16d5401bf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: netflix_TW 6, server: 114.43.154.103, port: 443, type: trojan, password: 7b4066ae-accc-11eb-a8bf-f23c91cfbbc9, sni: 4ebc180e-s9kps0-0-zzkl.tw3.p5pv.com, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇦 Relay_🇺🇦UA-🇮🇹IT_1366, server: it-full.privateip.net, port: 443, type: vmess, uuid: 955eb65b-e318-41f7-a084-5eb0c2a623e6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: it-full.privateip.net}}, udp: true}
-  - {name: 🇺🇦 UA_1367, server: 95.164.46.235, port: 443, type: trojan, password: 915dc116-70c6-403b-8a03-18d885c311bf, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇦 Relay_🇺🇦UA-🇮🇹IT_1368, server: it-full.privateip.net, port: 443, type: trojan, password: 915dc116-70c6-403b-8a03-18d885c311bf, sni: it-full.privateip.net, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 Relay_🇺🇸US-🇺🇸US_1531, server: uk1.dart-vpn.com, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: rhnAUMfOWIgjT917yYCG7u, udp: true}
-  - {name: US_1721, server: 129.80.151.246, port: 40059, type: vmess, uuid: 1b359f51-72df-4435-81df-b92cf75262d9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: US_1725, server: 18.190.42.108, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.miwan.co.uk, skip-cert-verify: false, udp: true}
-  - {name: US_1729, server: 94.131.117.240, port: 443, type: trojan, password: b556587e-6b3a-4cca-b379-714bfae91515, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 Relay_🇺🇸US-🇪🇸ES_1735, server: es-full.privateip.net, port: 443, type: trojan, password: b556587e-6b3a-4cca-b379-714bfae91515, sni: es-full.privateip.net, skip-cert-verify: false, udp: true}
-  - {name: disney_netflix_US 69, server: 3.226.241.106, port: 15330, type: trojan, password: 4tF1x1QUtIU), sni: www.myethblog.com, skip-cert-verify: false, udp: true}
-  - {name: US_1744, server: 43.203.197.212, port: 15334, type: trojan, password: MA8GVPXmjlWo, sni: www.myethblog.com, skip-cert-verify: false, udp: true}
-  - {name: disney_netflix_US 71, server: 18.119.129.115, port: 15323, type: trojan, password: nc)63y12lVjD, sni: www.myethblog.com, skip-cert-verify: false, udp: true}
-  - {name: US_1753, server: 138.2.93.20, port: 54952, type: trojan, password: 301caac8-edc6-4058-9f6a-78bc8a5a675b, sni: sg02.bsawc.shop, skip-cert-verify: false, udp: true}
-  - {name: ZZ_1815, server: 103.252.94.224, port: 80, type: vmess, uuid: 5278f5d3-f001-4459-94b6-7e0915238998, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: bs2.loadingip.com, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 _US_美国_2 (DUP-1), server: www.velvetmountain.shop, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.velvetmountain.shop}}, udp: true}
-  - {name: 甘肃, server: 36.140.180.162, port: 10029, type: ss, cipher: aes-128-gcm, password: 7A78E173-F183-4E8F-A389-277F8C272140, udp: true}
-  - {name: 🇯🇵 日本|@ripaojiedian, server: service.ouluyun9803.com, port: 26668, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, udp: true}
-  - {name: 🇨🇳 台湾2|@ripaojiedian, server: service.ouluyun9803.com, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, udp: true}
-  - {name: 🇰🇷 韩国|@ripaojiedian, server: service.ouluyun9803.com, port: 21004, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, udp: true}
-  - {name: 🇸🇬 新加坡2|@ripaojiedian, server: service.ouluyun9803.com, port: 20009, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, udp: true}
-  - {name: 🇺🇸 美国1|@ripaojiedian, server: cloudflare.cfgo.cc, port: 80, type: vmess, uuid: 22a13aa2-4854-44cb-e090-ec71ab84b1ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: wap.hostmjj.com}}, udp: true}
-  - {name: 🇰🇷 韩国特殊|@ripaojiedian, server: 13.231.106.137, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇮🇳 印度|@ripaojiedian, server: service.ouluyun9803.com, port: 21003, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, udp: true}
-  - {name: 🇮🇳 印度2|@ripaojiedian, server: yes.cnmjcn.net, port: 16626, type: vmess, uuid: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com}}, udp: true}
-  - {name: 🇷🇺 _RU_俄罗斯联邦, server: 45.144.2.113, port: 80, type: vmess, uuid: 1cb996c8-e5bf-40d2-9a3c-149b3b721c5f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: RELAY-104.17.123.55-180_2@180, server: 104.17.123.55, port: 8080, type: vmess, uuid: 1d47288a-699d-45ca-b4f0-4e5b36940e6f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: pq.kmoljklj.top}}, udp: true}
-  - {name: RELAY-162.159.137.31-215_2@215, server: 162.159.137.31, port: 8080, type: vmess, uuid: ac750859-79e7-4507-ba93-e92584ac49e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: per-essex-patterns-bowling.trycloudflare.com}}, udp: true}
-  - {name: 🇬🇧 GB-3.8.14.193-244_2@244, server: series-a2-mec.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: u17T3BvpYaaiuW2c, udp: true}
-  - {name: 🇨🇳 中国【付费推荐：https://jdyvip.link/】35_9@16, server: m.cnmjcn.com, port: 16628, type: vmess, uuid: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com}}, udp: true}
-  - {name: "🇦🇪 0,3,4,8,9,20|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #4", server: 94.140.0.110, port: 8880, type: vmess, uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: food.zhaal.ir}}, udp: true}
-  - {name: "🇷🇺 6,9|🇷🇺_RU_俄罗斯联邦", server: 45.144.2.113, port: 80, type: vmess, uuid: 1cb996c8-e5bf-40d2-9a3c-149b3b721c5f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 45.144.2.113}}, udp: true}
-  - {name: "🇳🇱 12|荷兰阿姆斯特丹|Github搜索TrojanLinks #3", server: 154.85.1.130, port: 41002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.42077230.xyz}}, udp: true}
-  - {name: 🇨🇳 21|baipaovpn湖南省, server: 116.162.172.120, port: 16626, type: vmess, uuid: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com}}, udp: true}
-  - {name: 🇨🇳 CN 6 → tg@nicevpn123, server: annie51.ceoiii.com, port: 36802, type: vmess, uuid: c0ad0b4b-5372-3ab8-9d43-5f8022a0f1ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: annie51.ceoiii.com}}, udp: true}
+  - {name: 俄罗斯+v2rayfree.eu.org, server: 89.23.113.158, port: 25365, type: ss, cipher: aes-128-gcm, password: TELEGRAM:@ZEDMODEON, udp: true}
+  - {name: 广东省江门市+移动, server: service.ouluyun9803.com, port: 26666, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, udp: true}
+  - {name: 美国 华盛顿Cogent通信公司, server: 38.14.107.229, port: 38100, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.23179753.xyz}}, udp: true}
+  - {name: "[VMess] 🇨🇦 加拿大 003", server: 104.21.30.249, port: 2052, type: vmess, uuid: 284d74d8-4775-4144-bd7b-e27f310c99e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 237f1c11e3e9e373.Tiderace.gately.info}}, udp: true}
+  - {name: "[VMess] 🇳🇱 荷兰 006", server: 156.225.67.99, port: 41003, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.42077230.xyz}}, udp: true}
+  - {name: "[VMess] 🇺🇸 美国 017", server: sgcft01.xqc.best, port: 443, type: vmess, uuid: 8c80cb0d-5ec1-48b5-bd6a-7bdc4d2e1d0a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: d17d3pnxztlslv.cloudfront.net}}, udp: true}
+  - {name: "[VMess] 🇺🇸 美国 Nokia", server: xray.cheeshon.cyou, port: 19344, type: vmess, uuid: ac9dd407-d053-4c67-e44e-31d6a5833ff4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: xray.cheeshon.cyou}}, udp: true}
+  - {name: UA乌克兰2 173.9KB/s, server: kz-full.privateip.net, port: 443, type: trojan, password: 62011b3d-2706-4a97-98b7-9986003c5fe0, skip-cert-verify: true, udp: true}
+  - {name: 韩国|@ripaojiedian, server: 0kr02.156786.xyz, port: 668, type: trojan, password: a831f80f-76e3-496b-b7d4-1551ffa93519, sni: 0kr02.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: 美国5|@ripaojiedian, server: fbi.gov, port: 8080, type: vmess, uuid: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: larger-marketing-amounts-skin.trycloudflare.com}}, udp: true}
+  - {name: KZ-95.164.114.43-115_2@115, server: 95.164.114.43, port: 443, type: trojan, password: 62011b3d-2706-4a97-98b7-9986003c5fe0, skip-cert-verify: true, udp: true}
+  - {name: 英国【付费推荐：https://jdyvip.link/】76_9@24, server: 51.143.138.98, port: 47763, type: ss, cipher: chacha20-ietf-poly1305, password: hzXn7UYop5msnpf3DyzcYT, udp: true}
+  - {name: 7|德国2, server: cf.openxai.link, port: 8080, type: vmess, uuid: aa1dbb68-bfb5-4484-f7e7-7335eac3988c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eu2.openxai.link}}, udp: true}
+  - {name: 16|美国【TG：@ccbaohe】定时更新节点订阅 36, server: fbi.gov, port: 8080, type: vmess, uuid: b36723eb-5493-456d-8cbc-001ee3e9d696, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: contacting-lp-leads-greece.trycloudflare.com}}, udp: true}
+  - {name: Hong Kong Media 01, server: cb56dd690da64a74880b91e1224f5ec6.1.ss03.net, port: 12380, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
+  - {name: Hong Kong 15, server: cb56dd690da64a74880b91e1224f5ec6.1.ss03.net, port: 22396, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
+  - {name: Hong Kong 17, server: cb56dd690da64a74880b91e1224f5ec6.1.ss03.net, port: 22363, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
+  - {name: CN_speednode_0016, server: data-hk-v1.shwjfkw.cn, port: 20207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: data-hk-v1.shwjfkw.cn}}, udp: true}
+  - {name: CN 32 → tg@nicevpn123, server: annie51.ceoiii.com, port: 36802, type: vmess, uuid: c0ad0b4b-5372-3ab8-9d43-5f8022a0f1ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: annie51.ceoiii.com}}, udp: true}
+  - {name: -US-006, server: 172.67.169.158, port: 8080, type: vmess, uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: fr-01.cloudlion.me}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国 CloudFlare节点 20
-      - 🇺🇸 美国 CloudFlare节点 21
-      - 🇨🇳 广东省 移动
-      - 🇨🇳 江苏省镇江市 联通IDC机房
-      - 🇨🇳 广东省江门市+移动 2
-      - 🇺🇸 美国+Amazon数据中心
-      - _60
-      - Relay_-🇱🇺LU_74
-      - Relay_-🇩🇪DE_138
-      - disney_netflix_US 25
-      - Relay_-🇩🇪DE_758
-      - Relay_-🇸🇬SG_762
-      - Relay_-🇰🇷KR_763
-      - Relay_-🇰🇷KR_765
-      - BE_781
-      - Pool_🇧🇷BR_789
-      - CA_810
-      - CA_813
-      - CH_817
-      - 🇨🇳 Relay_🇨🇳CN-🇸🇬SG_823
-      - 🇨🇳 Relay_🇨🇳CN-🇺🇸US_824
-      - 🇨🇳 Relay_🇨🇳CN-🇸🇬SG_826
-      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_827
-      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_828
-      - DE_872
-      - DE_873
-      - 🇩🇪 Relay_🇩🇪DE-🇩🇪DE_876
-      - DE_877
-      - FI_884
-      - FR_954
-      - FR_959
-      - GB_974
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_984
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_996
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_999
-      - GB_1003
-      - GB_1004
-      - GB_1005
-      - GB_1007
-      - GI_1009
-      - IE_1021
-      - IE_1022
-      - Relay_🇮🇷IR-🇩🇪DE_1036
-      - JP_1046
-      - KR_1058
-      - KR_1059
-      - netflix_KR 4
-      - 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_1062
-      - netflix_KR 5
-      - KR_1065
-      - KR_1066
-      - LT_1070
-      - 🇳🇱 Relay_🇳🇱NL-🇳🇱NL_1094
-      - SE_1150
-      - SE_1151
-      - SE_1152
-      - SG_1322
-      - SG_1323
-      - TW_1343
-      - netflix_TW 5
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_1346
-      - netflix_TW 6
-      - 🇺🇦 Relay_🇺🇦UA-🇮🇹IT_1366
-      - 🇺🇦 UA_1367
-      - 🇺🇦 Relay_🇺🇦UA-🇮🇹IT_1368
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1531
-      - US_1721
-      - US_1725
-      - US_1729
-      - 🇺🇸 Relay_🇺🇸US-🇪🇸ES_1735
-      - disney_netflix_US 69
-      - US_1744
-      - disney_netflix_US 71
-      - US_1753
-      - ZZ_1815
-      - 🇺🇸 _US_美国_2 (DUP-1)
-      - 甘肃
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 🇰🇷 韩国|@ripaojiedian
-      - 🇸🇬 新加坡2|@ripaojiedian
-      - 🇺🇸 美国1|@ripaojiedian
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇮🇳 印度|@ripaojiedian
-      - 🇮🇳 印度2|@ripaojiedian
-      - 🇷🇺 _RU_俄罗斯联邦
-      - RELAY-104.17.123.55-180_2@180
-      - RELAY-162.159.137.31-215_2@215
-      - 🇬🇧 GB-3.8.14.193-244_2@244
-      - 🇨🇳 中国【付费推荐：https://jdyvip.link/】35_9@16
-      - "🇦🇪 0,3,4,8,9,20|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #4"
-      - 🇷🇺 6,9|🇷🇺_RU_俄罗斯联邦
-      - "🇳🇱 12|荷兰阿姆斯特丹|Github搜索TrojanLinks #3"
-      - 🇨🇳 21|baipaovpn湖南省
-      - 🇨🇳 CN 6 → tg@nicevpn123
+      - 俄罗斯+v2rayfree.eu.org
+      - 广东省江门市+移动
+      - 美国 华盛顿Cogent通信公司
+      - "[VMess] 🇨🇦 加拿大 003"
+      - "[VMess] 🇳🇱 荷兰 006"
+      - "[VMess] 🇺🇸 美国 017"
+      - "[VMess] 🇺🇸 美国 Nokia"
+      - UA乌克兰2 173.9KB/s
+      - 韩国|@ripaojiedian
+      - 美国5|@ripaojiedian
+      - KZ-95.164.114.43-115_2@115
+      - 英国【付费推荐：https://jdyvip.link/】76_9@24
+      - 7|德国2
+      - 16|美国【TG：@ccbaohe】定时更新节点订阅 36
+      - Hong Kong Media 01
+      - Hong Kong 15
+      - Hong Kong 17
+      - CN_speednode_0016
+      - CN 32 → tg@nicevpn123
+      - -US-006
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - 🇺🇸 美国 CloudFlare节点 20
-      - 🇺🇸 美国 CloudFlare节点 21
-      - 🇨🇳 广东省 移动
-      - 🇨🇳 江苏省镇江市 联通IDC机房
-      - 🇨🇳 广东省江门市+移动 2
-      - 🇺🇸 美国+Amazon数据中心
-      - _60
-      - Relay_-🇱🇺LU_74
-      - Relay_-🇩🇪DE_138
-      - disney_netflix_US 25
-      - Relay_-🇩🇪DE_758
-      - Relay_-🇸🇬SG_762
-      - Relay_-🇰🇷KR_763
-      - Relay_-🇰🇷KR_765
-      - BE_781
-      - Pool_🇧🇷BR_789
-      - CA_810
-      - CA_813
-      - CH_817
-      - 🇨🇳 Relay_🇨🇳CN-🇸🇬SG_823
-      - 🇨🇳 Relay_🇨🇳CN-🇺🇸US_824
-      - 🇨🇳 Relay_🇨🇳CN-🇸🇬SG_826
-      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_827
-      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_828
-      - DE_872
-      - DE_873
-      - 🇩🇪 Relay_🇩🇪DE-🇩🇪DE_876
-      - DE_877
-      - FI_884
-      - FR_954
-      - FR_959
-      - GB_974
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_984
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_996
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_999
-      - GB_1003
-      - GB_1004
-      - GB_1005
-      - GB_1007
-      - GI_1009
-      - IE_1021
-      - IE_1022
-      - Relay_🇮🇷IR-🇩🇪DE_1036
-      - JP_1046
-      - KR_1058
-      - KR_1059
-      - netflix_KR 4
-      - 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_1062
-      - netflix_KR 5
-      - KR_1065
-      - KR_1066
-      - LT_1070
-      - 🇳🇱 Relay_🇳🇱NL-🇳🇱NL_1094
-      - SE_1150
-      - SE_1151
-      - SE_1152
-      - SG_1322
-      - SG_1323
-      - TW_1343
-      - netflix_TW 5
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_1346
-      - netflix_TW 6
-      - 🇺🇦 Relay_🇺🇦UA-🇮🇹IT_1366
-      - 🇺🇦 UA_1367
-      - 🇺🇦 Relay_🇺🇦UA-🇮🇹IT_1368
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1531
-      - US_1721
-      - US_1725
-      - US_1729
-      - 🇺🇸 Relay_🇺🇸US-🇪🇸ES_1735
-      - disney_netflix_US 69
-      - US_1744
-      - disney_netflix_US 71
-      - US_1753
-      - ZZ_1815
-      - 🇺🇸 _US_美国_2 (DUP-1)
-      - 甘肃
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 🇰🇷 韩国|@ripaojiedian
-      - 🇸🇬 新加坡2|@ripaojiedian
-      - 🇺🇸 美国1|@ripaojiedian
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇮🇳 印度|@ripaojiedian
-      - 🇮🇳 印度2|@ripaojiedian
-      - 🇷🇺 _RU_俄罗斯联邦
-      - RELAY-104.17.123.55-180_2@180
-      - RELAY-162.159.137.31-215_2@215
-      - 🇬🇧 GB-3.8.14.193-244_2@244
-      - 🇨🇳 中国【付费推荐：https://jdyvip.link/】35_9@16
-      - "🇦🇪 0,3,4,8,9,20|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #4"
-      - 🇷🇺 6,9|🇷🇺_RU_俄罗斯联邦
-      - "🇳🇱 12|荷兰阿姆斯特丹|Github搜索TrojanLinks #3"
-      - 🇨🇳 21|baipaovpn湖南省
-      - 🇨🇳 CN 6 → tg@nicevpn123
+      - 俄罗斯+v2rayfree.eu.org
+      - 广东省江门市+移动
+      - 美国 华盛顿Cogent通信公司
+      - "[VMess] 🇨🇦 加拿大 003"
+      - "[VMess] 🇳🇱 荷兰 006"
+      - "[VMess] 🇺🇸 美国 017"
+      - "[VMess] 🇺🇸 美国 Nokia"
+      - UA乌克兰2 173.9KB/s
+      - 韩国|@ripaojiedian
+      - 美国5|@ripaojiedian
+      - KZ-95.164.114.43-115_2@115
+      - 英国【付费推荐：https://jdyvip.link/】76_9@24
+      - 7|德国2
+      - 16|美国【TG：@ccbaohe】定时更新节点订阅 36
+      - Hong Kong Media 01
+      - Hong Kong 15
+      - Hong Kong 17
+      - CN_speednode_0016
+      - CN 32 → tg@nicevpn123
+      - -US-006
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国 CloudFlare节点 20
-      - 🇺🇸 美国 CloudFlare节点 21
-      - 🇨🇳 广东省 移动
-      - 🇨🇳 江苏省镇江市 联通IDC机房
-      - 🇨🇳 广东省江门市+移动 2
-      - 🇺🇸 美国+Amazon数据中心
-      - _60
-      - Relay_-🇱🇺LU_74
-      - Relay_-🇩🇪DE_138
-      - disney_netflix_US 25
-      - Relay_-🇩🇪DE_758
-      - Relay_-🇸🇬SG_762
-      - Relay_-🇰🇷KR_763
-      - Relay_-🇰🇷KR_765
-      - BE_781
-      - Pool_🇧🇷BR_789
-      - CA_810
-      - CA_813
-      - CH_817
-      - 🇨🇳 Relay_🇨🇳CN-🇸🇬SG_823
-      - 🇨🇳 Relay_🇨🇳CN-🇺🇸US_824
-      - 🇨🇳 Relay_🇨🇳CN-🇸🇬SG_826
-      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_827
-      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_828
-      - DE_872
-      - DE_873
-      - 🇩🇪 Relay_🇩🇪DE-🇩🇪DE_876
-      - DE_877
-      - FI_884
-      - FR_954
-      - FR_959
-      - GB_974
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_984
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_996
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_999
-      - GB_1003
-      - GB_1004
-      - GB_1005
-      - GB_1007
-      - GI_1009
-      - IE_1021
-      - IE_1022
-      - Relay_🇮🇷IR-🇩🇪DE_1036
-      - JP_1046
-      - KR_1058
-      - KR_1059
-      - netflix_KR 4
-      - 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_1062
-      - netflix_KR 5
-      - KR_1065
-      - KR_1066
-      - LT_1070
-      - 🇳🇱 Relay_🇳🇱NL-🇳🇱NL_1094
-      - SE_1150
-      - SE_1151
-      - SE_1152
-      - SG_1322
-      - SG_1323
-      - TW_1343
-      - netflix_TW 5
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_1346
-      - netflix_TW 6
-      - 🇺🇦 Relay_🇺🇦UA-🇮🇹IT_1366
-      - 🇺🇦 UA_1367
-      - 🇺🇦 Relay_🇺🇦UA-🇮🇹IT_1368
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1531
-      - US_1721
-      - US_1725
-      - US_1729
-      - 🇺🇸 Relay_🇺🇸US-🇪🇸ES_1735
-      - disney_netflix_US 69
-      - US_1744
-      - disney_netflix_US 71
-      - US_1753
-      - ZZ_1815
-      - 🇺🇸 _US_美国_2 (DUP-1)
-      - 甘肃
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 🇰🇷 韩国|@ripaojiedian
-      - 🇸🇬 新加坡2|@ripaojiedian
-      - 🇺🇸 美国1|@ripaojiedian
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇮🇳 印度|@ripaojiedian
-      - 🇮🇳 印度2|@ripaojiedian
-      - 🇷🇺 _RU_俄罗斯联邦
-      - RELAY-104.17.123.55-180_2@180
-      - RELAY-162.159.137.31-215_2@215
-      - 🇬🇧 GB-3.8.14.193-244_2@244
-      - 🇨🇳 中国【付费推荐：https://jdyvip.link/】35_9@16
-      - "🇦🇪 0,3,4,8,9,20|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #4"
-      - 🇷🇺 6,9|🇷🇺_RU_俄罗斯联邦
-      - "🇳🇱 12|荷兰阿姆斯特丹|Github搜索TrojanLinks #3"
-      - 🇨🇳 21|baipaovpn湖南省
-      - 🇨🇳 CN 6 → tg@nicevpn123
+      - 俄罗斯+v2rayfree.eu.org
+      - 广东省江门市+移动
+      - 美国 华盛顿Cogent通信公司
+      - "[VMess] 🇨🇦 加拿大 003"
+      - "[VMess] 🇳🇱 荷兰 006"
+      - "[VMess] 🇺🇸 美国 017"
+      - "[VMess] 🇺🇸 美国 Nokia"
+      - UA乌克兰2 173.9KB/s
+      - 韩国|@ripaojiedian
+      - 美国5|@ripaojiedian
+      - KZ-95.164.114.43-115_2@115
+      - 英国【付费推荐：https://jdyvip.link/】76_9@24
+      - 7|德国2
+      - 16|美国【TG：@ccbaohe】定时更新节点订阅 36
+      - Hong Kong Media 01
+      - Hong Kong 15
+      - Hong Kong 17
+      - CN_speednode_0016
+      - CN 32 → tg@nicevpn123
+      - -US-006
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -421,408 +121,107 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国 CloudFlare节点 20
-      - 🇺🇸 美国 CloudFlare节点 21
-      - 🇨🇳 广东省 移动
-      - 🇨🇳 江苏省镇江市 联通IDC机房
-      - 🇨🇳 广东省江门市+移动 2
-      - 🇺🇸 美国+Amazon数据中心
-      - _60
-      - Relay_-🇱🇺LU_74
-      - Relay_-🇩🇪DE_138
-      - disney_netflix_US 25
-      - Relay_-🇩🇪DE_758
-      - Relay_-🇸🇬SG_762
-      - Relay_-🇰🇷KR_763
-      - Relay_-🇰🇷KR_765
-      - BE_781
-      - Pool_🇧🇷BR_789
-      - CA_810
-      - CA_813
-      - CH_817
-      - 🇨🇳 Relay_🇨🇳CN-🇸🇬SG_823
-      - 🇨🇳 Relay_🇨🇳CN-🇺🇸US_824
-      - 🇨🇳 Relay_🇨🇳CN-🇸🇬SG_826
-      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_827
-      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_828
-      - DE_872
-      - DE_873
-      - 🇩🇪 Relay_🇩🇪DE-🇩🇪DE_876
-      - DE_877
-      - FI_884
-      - FR_954
-      - FR_959
-      - GB_974
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_984
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_996
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_999
-      - GB_1003
-      - GB_1004
-      - GB_1005
-      - GB_1007
-      - GI_1009
-      - IE_1021
-      - IE_1022
-      - Relay_🇮🇷IR-🇩🇪DE_1036
-      - JP_1046
-      - KR_1058
-      - KR_1059
-      - netflix_KR 4
-      - 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_1062
-      - netflix_KR 5
-      - KR_1065
-      - KR_1066
-      - LT_1070
-      - 🇳🇱 Relay_🇳🇱NL-🇳🇱NL_1094
-      - SE_1150
-      - SE_1151
-      - SE_1152
-      - SG_1322
-      - SG_1323
-      - TW_1343
-      - netflix_TW 5
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_1346
-      - netflix_TW 6
-      - 🇺🇦 Relay_🇺🇦UA-🇮🇹IT_1366
-      - 🇺🇦 UA_1367
-      - 🇺🇦 Relay_🇺🇦UA-🇮🇹IT_1368
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1531
-      - US_1721
-      - US_1725
-      - US_1729
-      - 🇺🇸 Relay_🇺🇸US-🇪🇸ES_1735
-      - disney_netflix_US 69
-      - US_1744
-      - disney_netflix_US 71
-      - US_1753
-      - ZZ_1815
-      - 🇺🇸 _US_美国_2 (DUP-1)
-      - 甘肃
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 🇰🇷 韩国|@ripaojiedian
-      - 🇸🇬 新加坡2|@ripaojiedian
-      - 🇺🇸 美国1|@ripaojiedian
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇮🇳 印度|@ripaojiedian
-      - 🇮🇳 印度2|@ripaojiedian
-      - 🇷🇺 _RU_俄罗斯联邦
-      - RELAY-104.17.123.55-180_2@180
-      - RELAY-162.159.137.31-215_2@215
-      - 🇬🇧 GB-3.8.14.193-244_2@244
-      - 🇨🇳 中国【付费推荐：https://jdyvip.link/】35_9@16
-      - "🇦🇪 0,3,4,8,9,20|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #4"
-      - 🇷🇺 6,9|🇷🇺_RU_俄罗斯联邦
-      - "🇳🇱 12|荷兰阿姆斯特丹|Github搜索TrojanLinks #3"
-      - 🇨🇳 21|baipaovpn湖南省
-      - 🇨🇳 CN 6 → tg@nicevpn123
+      - 俄罗斯+v2rayfree.eu.org
+      - 广东省江门市+移动
+      - 美国 华盛顿Cogent通信公司
+      - "[VMess] 🇨🇦 加拿大 003"
+      - "[VMess] 🇳🇱 荷兰 006"
+      - "[VMess] 🇺🇸 美国 017"
+      - "[VMess] 🇺🇸 美国 Nokia"
+      - UA乌克兰2 173.9KB/s
+      - 韩国|@ripaojiedian
+      - 美国5|@ripaojiedian
+      - KZ-95.164.114.43-115_2@115
+      - 英国【付费推荐：https://jdyvip.link/】76_9@24
+      - 7|德国2
+      - 16|美国【TG：@ccbaohe】定时更新节点订阅 36
+      - Hong Kong Media 01
+      - Hong Kong 15
+      - Hong Kong 17
+      - CN_speednode_0016
+      - CN 32 → tg@nicevpn123
+      - -US-006
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇨🇳 台湾2|@ripaojiedian
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇺🇸 美国 CloudFlare节点 20
-      - 🇺🇸 美国 CloudFlare节点 21
-      - 🇨🇳 广东省 移动
-      - 🇨🇳 江苏省镇江市 联通IDC机房
-      - 🇨🇳 广东省江门市+移动 2
-      - 🇺🇸 美国+Amazon数据中心
-      - _60
-      - Relay_-🇱🇺LU_74
-      - Relay_-🇩🇪DE_138
-      - disney_netflix_US 25
-      - Relay_-🇩🇪DE_758
-      - Relay_-🇸🇬SG_762
-      - Relay_-🇰🇷KR_763
-      - Relay_-🇰🇷KR_765
-      - BE_781
-      - Pool_🇧🇷BR_789
-      - CA_810
-      - CA_813
-      - CH_817
-      - 🇨🇳 Relay_🇨🇳CN-🇸🇬SG_823
-      - 🇨🇳 Relay_🇨🇳CN-🇺🇸US_824
-      - 🇨🇳 Relay_🇨🇳CN-🇸🇬SG_826
-      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_827
-      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_828
-      - DE_872
-      - DE_873
-      - 🇩🇪 Relay_🇩🇪DE-🇩🇪DE_876
-      - DE_877
-      - FI_884
-      - FR_954
-      - FR_959
-      - GB_974
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_984
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_996
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_999
-      - GB_1003
-      - GB_1004
-      - GB_1005
-      - GB_1007
-      - GI_1009
-      - IE_1021
-      - IE_1022
-      - Relay_🇮🇷IR-🇩🇪DE_1036
-      - JP_1046
-      - KR_1058
-      - KR_1059
-      - netflix_KR 4
-      - 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_1062
-      - netflix_KR 5
-      - KR_1065
-      - KR_1066
-      - LT_1070
-      - 🇳🇱 Relay_🇳🇱NL-🇳🇱NL_1094
-      - SE_1150
-      - SE_1151
-      - SE_1152
-      - SG_1322
-      - SG_1323
-      - TW_1343
-      - netflix_TW 5
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_1346
-      - netflix_TW 6
-      - 🇺🇦 Relay_🇺🇦UA-🇮🇹IT_1366
-      - 🇺🇦 UA_1367
-      - 🇺🇦 Relay_🇺🇦UA-🇮🇹IT_1368
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1531
-      - US_1721
-      - US_1725
-      - US_1729
-      - 🇺🇸 Relay_🇺🇸US-🇪🇸ES_1735
-      - disney_netflix_US 69
-      - US_1744
-      - disney_netflix_US 71
-      - US_1753
-      - ZZ_1815
-      - 🇺🇸 _US_美国_2 (DUP-1)
-      - 甘肃
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 🇰🇷 韩国|@ripaojiedian
-      - 🇸🇬 新加坡2|@ripaojiedian
-      - 🇺🇸 美国1|@ripaojiedian
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇮🇳 印度|@ripaojiedian
-      - 🇮🇳 印度2|@ripaojiedian
-      - 🇷🇺 _RU_俄罗斯联邦
-      - RELAY-104.17.123.55-180_2@180
-      - RELAY-162.159.137.31-215_2@215
-      - 🇬🇧 GB-3.8.14.193-244_2@244
-      - 🇨🇳 中国【付费推荐：https://jdyvip.link/】35_9@16
-      - "🇦🇪 0,3,4,8,9,20|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #4"
-      - 🇷🇺 6,9|🇷🇺_RU_俄罗斯联邦
-      - "🇳🇱 12|荷兰阿姆斯特丹|Github搜索TrojanLinks #3"
-      - 🇨🇳 21|baipaovpn湖南省
-      - 🇨🇳 CN 6 → tg@nicevpn123
+      - 俄罗斯+v2rayfree.eu.org
+      - 广东省江门市+移动
+      - 美国 华盛顿Cogent通信公司
+      - "[VMess] 🇨🇦 加拿大 003"
+      - "[VMess] 🇳🇱 荷兰 006"
+      - "[VMess] 🇺🇸 美国 017"
+      - "[VMess] 🇺🇸 美国 Nokia"
+      - UA乌克兰2 173.9KB/s
+      - 韩国|@ripaojiedian
+      - 美国5|@ripaojiedian
+      - KZ-95.164.114.43-115_2@115
+      - 英国【付费推荐：https://jdyvip.link/】76_9@24
+      - 7|德国2
+      - 16|美国【TG：@ccbaohe】定时更新节点订阅 36
+      - Hong Kong Media 01
+      - Hong Kong 15
+      - Hong Kong 17
+      - CN_speednode_0016
+      - CN 32 → tg@nicevpn123
+      - -US-006
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 CloudFlare节点 20
-      - 🇺🇸 美国 CloudFlare节点 21
-      - 🇨🇳 广东省 移动
-      - 🇨🇳 江苏省镇江市 联通IDC机房
-      - 🇨🇳 广东省江门市+移动 2
-      - 🇺🇸 美国+Amazon数据中心
-      - _60
-      - Relay_-🇱🇺LU_74
-      - Relay_-🇩🇪DE_138
-      - disney_netflix_US 25
-      - Relay_-🇩🇪DE_758
-      - Relay_-🇸🇬SG_762
-      - Relay_-🇰🇷KR_763
-      - Relay_-🇰🇷KR_765
-      - BE_781
-      - Pool_🇧🇷BR_789
-      - CA_810
-      - CA_813
-      - CH_817
-      - 🇨🇳 Relay_🇨🇳CN-🇸🇬SG_823
-      - 🇨🇳 Relay_🇨🇳CN-🇺🇸US_824
-      - 🇨🇳 Relay_🇨🇳CN-🇸🇬SG_826
-      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_827
-      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_828
-      - DE_872
-      - DE_873
-      - 🇩🇪 Relay_🇩🇪DE-🇩🇪DE_876
-      - DE_877
-      - FI_884
-      - FR_954
-      - FR_959
-      - GB_974
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_984
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_996
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_999
-      - GB_1003
-      - GB_1004
-      - GB_1005
-      - GB_1007
-      - GI_1009
-      - IE_1021
-      - IE_1022
-      - Relay_🇮🇷IR-🇩🇪DE_1036
-      - JP_1046
-      - KR_1058
-      - KR_1059
-      - netflix_KR 4
-      - 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_1062
-      - netflix_KR 5
-      - KR_1065
-      - KR_1066
-      - LT_1070
-      - 🇳🇱 Relay_🇳🇱NL-🇳🇱NL_1094
-      - SE_1150
-      - SE_1151
-      - SE_1152
-      - SG_1322
-      - SG_1323
-      - TW_1343
-      - netflix_TW 5
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_1346
-      - netflix_TW 6
-      - 🇺🇦 Relay_🇺🇦UA-🇮🇹IT_1366
-      - 🇺🇦 UA_1367
-      - 🇺🇦 Relay_🇺🇦UA-🇮🇹IT_1368
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1531
-      - US_1721
-      - US_1725
-      - US_1729
-      - 🇺🇸 Relay_🇺🇸US-🇪🇸ES_1735
-      - disney_netflix_US 69
-      - US_1744
-      - disney_netflix_US 71
-      - US_1753
-      - ZZ_1815
-      - 🇺🇸 _US_美国_2 (DUP-1)
-      - 甘肃
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 🇰🇷 韩国|@ripaojiedian
-      - 🇸🇬 新加坡2|@ripaojiedian
-      - 🇺🇸 美国1|@ripaojiedian
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇮🇳 印度|@ripaojiedian
-      - 🇮🇳 印度2|@ripaojiedian
-      - 🇷🇺 _RU_俄罗斯联邦
-      - RELAY-104.17.123.55-180_2@180
-      - RELAY-162.159.137.31-215_2@215
-      - 🇬🇧 GB-3.8.14.193-244_2@244
-      - 🇨🇳 中国【付费推荐：https://jdyvip.link/】35_9@16
-      - "🇦🇪 0,3,4,8,9,20|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #4"
-      - 🇷🇺 6,9|🇷🇺_RU_俄罗斯联邦
-      - "🇳🇱 12|荷兰阿姆斯特丹|Github搜索TrojanLinks #3"
-      - 🇨🇳 21|baipaovpn湖南省
-      - 🇨🇳 CN 6 → tg@nicevpn123
+      - 俄罗斯+v2rayfree.eu.org
+      - 广东省江门市+移动
+      - 美国 华盛顿Cogent通信公司
+      - "[VMess] 🇨🇦 加拿大 003"
+      - "[VMess] 🇳🇱 荷兰 006"
+      - "[VMess] 🇺🇸 美国 017"
+      - "[VMess] 🇺🇸 美国 Nokia"
+      - UA乌克兰2 173.9KB/s
+      - 韩国|@ripaojiedian
+      - 美国5|@ripaojiedian
+      - KZ-95.164.114.43-115_2@115
+      - 英国【付费推荐：https://jdyvip.link/】76_9@24
+      - 7|德国2
+      - 16|美国【TG：@ccbaohe】定时更新节点订阅 36
+      - Hong Kong Media 01
+      - Hong Kong 15
+      - Hong Kong 17
+      - CN_speednode_0016
+      - CN 32 → tg@nicevpn123
+      - -US-006
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 CloudFlare节点 20
-      - 🇺🇸 美国 CloudFlare节点 21
-      - 🇨🇳 广东省 移动
-      - 🇨🇳 江苏省镇江市 联通IDC机房
-      - 🇨🇳 广东省江门市+移动 2
-      - 🇺🇸 美国+Amazon数据中心
-      - _60
-      - Relay_-🇱🇺LU_74
-      - Relay_-🇩🇪DE_138
-      - disney_netflix_US 25
-      - Relay_-🇩🇪DE_758
-      - Relay_-🇸🇬SG_762
-      - Relay_-🇰🇷KR_763
-      - Relay_-🇰🇷KR_765
-      - BE_781
-      - Pool_🇧🇷BR_789
-      - CA_810
-      - CA_813
-      - CH_817
-      - 🇨🇳 Relay_🇨🇳CN-🇸🇬SG_823
-      - 🇨🇳 Relay_🇨🇳CN-🇺🇸US_824
-      - 🇨🇳 Relay_🇨🇳CN-🇸🇬SG_826
-      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_827
-      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_828
-      - DE_872
-      - DE_873
-      - 🇩🇪 Relay_🇩🇪DE-🇩🇪DE_876
-      - DE_877
-      - FI_884
-      - FR_954
-      - FR_959
-      - GB_974
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_984
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_996
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_999
-      - GB_1003
-      - GB_1004
-      - GB_1005
-      - GB_1007
-      - GI_1009
-      - IE_1021
-      - IE_1022
-      - Relay_🇮🇷IR-🇩🇪DE_1036
-      - JP_1046
-      - KR_1058
-      - KR_1059
-      - netflix_KR 4
-      - 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_1062
-      - netflix_KR 5
-      - KR_1065
-      - KR_1066
-      - LT_1070
-      - 🇳🇱 Relay_🇳🇱NL-🇳🇱NL_1094
-      - SE_1150
-      - SE_1151
-      - SE_1152
-      - SG_1322
-      - SG_1323
-      - TW_1343
-      - netflix_TW 5
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_1346
-      - netflix_TW 6
-      - 🇺🇦 Relay_🇺🇦UA-🇮🇹IT_1366
-      - 🇺🇦 UA_1367
-      - 🇺🇦 Relay_🇺🇦UA-🇮🇹IT_1368
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1531
-      - US_1721
-      - US_1725
-      - US_1729
-      - 🇺🇸 Relay_🇺🇸US-🇪🇸ES_1735
-      - disney_netflix_US 69
-      - US_1744
-      - disney_netflix_US 71
-      - US_1753
-      - ZZ_1815
-      - 🇺🇸 _US_美国_2 (DUP-1)
-      - 甘肃
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 🇰🇷 韩国|@ripaojiedian
-      - 🇸🇬 新加坡2|@ripaojiedian
-      - 🇺🇸 美国1|@ripaojiedian
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇮🇳 印度|@ripaojiedian
-      - 🇮🇳 印度2|@ripaojiedian
-      - 🇷🇺 _RU_俄罗斯联邦
-      - RELAY-104.17.123.55-180_2@180
-      - RELAY-162.159.137.31-215_2@215
-      - 🇬🇧 GB-3.8.14.193-244_2@244
-      - 🇨🇳 中国【付费推荐：https://jdyvip.link/】35_9@16
-      - "🇦🇪 0,3,4,8,9,20|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #4"
-      - 🇷🇺 6,9|🇷🇺_RU_俄罗斯联邦
-      - "🇳🇱 12|荷兰阿姆斯特丹|Github搜索TrojanLinks #3"
-      - 🇨🇳 21|baipaovpn湖南省
-      - 🇨🇳 CN 6 → tg@nicevpn123
+      - 俄罗斯+v2rayfree.eu.org
+      - 广东省江门市+移动
+      - 美国 华盛顿Cogent通信公司
+      - "[VMess] 🇨🇦 加拿大 003"
+      - "[VMess] 🇳🇱 荷兰 006"
+      - "[VMess] 🇺🇸 美国 017"
+      - "[VMess] 🇺🇸 美国 Nokia"
+      - UA乌克兰2 173.9KB/s
+      - 韩国|@ripaojiedian
+      - 美国5|@ripaojiedian
+      - KZ-95.164.114.43-115_2@115
+      - 英国【付费推荐：https://jdyvip.link/】76_9@24
+      - 7|德国2
+      - 16|美国【TG：@ccbaohe】定时更新节点订阅 36
+      - Hong Kong Media 01
+      - Hong Kong 15
+      - Hong Kong 17
+      - CN_speednode_0016
+      - CN 32 → tg@nicevpn123
+      - -US-006
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -838,101 +237,26 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 CloudFlare节点 20
-      - 🇺🇸 美国 CloudFlare节点 21
-      - 🇨🇳 广东省 移动
-      - 🇨🇳 江苏省镇江市 联通IDC机房
-      - 🇨🇳 广东省江门市+移动 2
-      - 🇺🇸 美国+Amazon数据中心
-      - _60
-      - Relay_-🇱🇺LU_74
-      - Relay_-🇩🇪DE_138
-      - disney_netflix_US 25
-      - Relay_-🇩🇪DE_758
-      - Relay_-🇸🇬SG_762
-      - Relay_-🇰🇷KR_763
-      - Relay_-🇰🇷KR_765
-      - BE_781
-      - Pool_🇧🇷BR_789
-      - CA_810
-      - CA_813
-      - CH_817
-      - 🇨🇳 Relay_🇨🇳CN-🇸🇬SG_823
-      - 🇨🇳 Relay_🇨🇳CN-🇺🇸US_824
-      - 🇨🇳 Relay_🇨🇳CN-🇸🇬SG_826
-      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_827
-      - 🇨🇳 Relay_🇨🇳CN-🇭🇰HK_828
-      - DE_872
-      - DE_873
-      - 🇩🇪 Relay_🇩🇪DE-🇩🇪DE_876
-      - DE_877
-      - FI_884
-      - FR_954
-      - FR_959
-      - GB_974
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_984
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_996
-      - 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_999
-      - GB_1003
-      - GB_1004
-      - GB_1005
-      - GB_1007
-      - GI_1009
-      - IE_1021
-      - IE_1022
-      - Relay_🇮🇷IR-🇩🇪DE_1036
-      - JP_1046
-      - KR_1058
-      - KR_1059
-      - netflix_KR 4
-      - 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_1062
-      - netflix_KR 5
-      - KR_1065
-      - KR_1066
-      - LT_1070
-      - 🇳🇱 Relay_🇳🇱NL-🇳🇱NL_1094
-      - SE_1150
-      - SE_1151
-      - SE_1152
-      - SG_1322
-      - SG_1323
-      - TW_1343
-      - netflix_TW 5
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_1346
-      - netflix_TW 6
-      - 🇺🇦 Relay_🇺🇦UA-🇮🇹IT_1366
-      - 🇺🇦 UA_1367
-      - 🇺🇦 Relay_🇺🇦UA-🇮🇹IT_1368
-      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1531
-      - US_1721
-      - US_1725
-      - US_1729
-      - 🇺🇸 Relay_🇺🇸US-🇪🇸ES_1735
-      - disney_netflix_US 69
-      - US_1744
-      - disney_netflix_US 71
-      - US_1753
-      - ZZ_1815
-      - 🇺🇸 _US_美国_2 (DUP-1)
-      - 甘肃
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 🇰🇷 韩国|@ripaojiedian
-      - 🇸🇬 新加坡2|@ripaojiedian
-      - 🇺🇸 美国1|@ripaojiedian
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇮🇳 印度|@ripaojiedian
-      - 🇮🇳 印度2|@ripaojiedian
-      - 🇷🇺 _RU_俄罗斯联邦
-      - RELAY-104.17.123.55-180_2@180
-      - RELAY-162.159.137.31-215_2@215
-      - 🇬🇧 GB-3.8.14.193-244_2@244
-      - 🇨🇳 中国【付费推荐：https://jdyvip.link/】35_9@16
-      - "🇦🇪 0,3,4,8,9,20|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #4"
-      - 🇷🇺 6,9|🇷🇺_RU_俄罗斯联邦
-      - "🇳🇱 12|荷兰阿姆斯特丹|Github搜索TrojanLinks #3"
-      - 🇨🇳 21|baipaovpn湖南省
-      - 🇨🇳 CN 6 → tg@nicevpn123
+      - 俄罗斯+v2rayfree.eu.org
+      - 广东省江门市+移动
+      - 美国 华盛顿Cogent通信公司
+      - "[VMess] 🇨🇦 加拿大 003"
+      - "[VMess] 🇳🇱 荷兰 006"
+      - "[VMess] 🇺🇸 美国 017"
+      - "[VMess] 🇺🇸 美国 Nokia"
+      - UA乌克兰2 173.9KB/s
+      - 韩国|@ripaojiedian
+      - 美国5|@ripaojiedian
+      - KZ-95.164.114.43-115_2@115
+      - 英国【付费推荐：https://jdyvip.link/】76_9@24
+      - 7|德国2
+      - 16|美国【TG：@ccbaohe】定时更新节点订阅 36
+      - Hong Kong Media 01
+      - Hong Kong 15
+      - Hong Kong 17
+      - CN_speednode_0016
+      - CN 32 → tg@nicevpn123
+      - -US-006
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
