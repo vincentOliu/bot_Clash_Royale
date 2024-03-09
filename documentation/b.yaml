@@ -6,167 +6,155 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 台湾省新北市 中华电信, server: b12.ntbq.dynu.net, port: 9755, type: trojan, password: 7c252929-6ac0-4681-a835-e52af701f151, sni: b12.ntbq.dynu.net, skip-cert-verify: true, udp: true}
-  - {name: 英国+伦敦Amazon数据中心 3, server: series-a1.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: W74XFALLLuw6m5IA, udp: true}
-  - {name: "[SS] 乌克兰 V2CROSS.COM", server: 95.164.11.94, port: 1080, type: ss, cipher: chacha20-ietf-poly1305, password: 6x8ogTsPzMnizbFkFndqAQ, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 005", server: www.ywnouvbale.biz, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.ywnouvbale.biz}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 042", server: 104.21.46.66, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.ywnouvbale.biz}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 059", server: 104.21.63.52, port: 80, type: vmess, uuid: 60f12435-bb55-4da2-cb7d-4fea34ecfa37, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us65.netfilx.live}}, udp: true}
-  - {name: "[Trojan] 🇨🇳 台湾省新北市 中华电信", server: 36.226.139.97, port: 3271, type: trojan, password: 3d926991-4815-4dd9-aabe-42e8a56b27c4, sni: b24.ntbq.dynu.net, skip-cert-verify: true, udp: true}
-  - {name: "[Trojan] 🇪🇸 西班牙 001", server: es-full.privateip.net, port: 443, type: trojan, password: e2486b91-71a6-421b-9d53-3c080fb0edb8, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇯🇵 日本 004", server: 18.183.205.202, port: 21583, type: vmess, uuid: 65cdb2a2-ac65-3dc6-992d-a58b8cb996b9, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: "[SS] 🇺🇸 美国 Amazon数据中心", server: series-a2.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: mps3FwmDjLrWaOVg, udp: true}
-  - {name: 韩国|@ripaojiedian, server: p238.panda004.net, port: 52771, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: 韩国2|@ripaojiedian, server: p225.panda004.net, port: 39657, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: 韩国3|@ripaojiedian, server: kr2.indianonlinejob2.com, port: 20014, type: ss, cipher: chacha20-ietf-poly1305, password: 26b6b0e6-2791-45b8-b745-62200e26a290, udp: true}
-  - {name: 新加坡|@ripaojiedian 2, server: tank.19890604.day, port: 10827, type: trojan, password: dc66c305-ed19-462a-8d47-32950b81b4cb, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
-  - {name: 新加坡2|@ripaojiedian, server: cfcdn2.sanfencdn9.com, port: 2052, type: vmess, uuid: d7d5e92a-8899-4ebd-92e5-f85c24d8e9ab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 7nAi74jJsg1.yofnhkfc.xyz}}, udp: true}
-  - {name: _US_美国->🇩🇪_DE_德国_2, server: de-01.cloudlion.me, port: 8080, type: vmess, uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: de-01.cloudlion.me}}, udp: true}
-  - {name: 美国【付费推荐：https://jdyvip.link/】52_9@5, server: it-full.privateip.net, port: 443, type: trojan, password: 31583130-de1f-44ce-a433-1dbb108e1846, skip-cert-verify: true, udp: true}
-  - {name: "0,3,4,8,9,20|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9", server: fbi.gov, port: 8080, type: vmess, uuid: 693da022-8e1f-4dab-b3ac-556321989f17, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: nest-emily-healing-h.trycloudflare.com}}, udp: true}
-  - {name: 7|德国1, server: cf.openxai.link, port: 8080, type: vmess, uuid: c18beb85-c67b-46ed-b8cc-4cbfeae5f194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eu1.openxai.link}}, udp: true}
-  - {name: 16|🇺🇸|US|美国|@wxgqlfx|148, server: 104.21.25.78, port: 443, type: vmess, uuid: 1cbb309d-cf3f-464d-a61d-ebaa91983f24, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dk2-vmess.sshmax.xyz}}, udp: true}
-  - {name: 16|🔒 VM-WS-NONE 🇮🇪 IE-54.217.45.1..., server: 54.217.45.184, port: 49837, type: vmess, uuid: dcd200f1-b26f-415e-8643-e6a9cb7a1981, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 16|🇺🇸|US|美国|@wxgqlfx|110, server: 162.159.130.208, port: 8080, type: vmess, uuid: 8df7d5fa-cecb-4816-a943-be94929543f9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: widescreen-instruction-breakdown-postage.trycloudflare.com}}, udp: true}
-  - {name: 16|🇺🇸|US|美国|@wxgqlfx|137, server: 104.21.94.251, port: 80, type: vmess, uuid: c7421a39-020d-4a01-97ed-9eacbce0a7ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: de2.xv2ray.net}}, udp: true}
-  - {name: 16|🇨🇦|CA|加拿大|@wxgqlfx|134, server: 23.227.39.45, port: 8080, type: vmess, uuid: 8df7d5fa-cecb-4816-a943-be94929543f9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: widescreen-instruction-breakdown-postage.trycloudflare.com}}, udp: true}
-  - {name: 16|🇨🇿|CZ|捷克|@wxgqlfx|179, server: cz2-vmess.sshmax.xyz, port: 80, type: vmess, uuid: 3669d547-ee0c-477d-8e47-c4400965db74, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cz2-vmess.sshmax.xyz}}, udp: true}
-  - {name: 16|🇺🇸|US|美国|@wxgqlfx|85, server: fbi.gov, port: 8080, type: vmess, uuid: b36723eb-5493-456d-8cbc-001ee3e9d696, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: parameters-subaru-fifteen-four.trycloudflare.com}}, udp: true}
-  - {name: 16|🔒 VM-TCP-NONE 🇮🇪 IE-54.217.45...., server: 54.217.45.184, port: 10681, type: vmess, uuid: 5c799848-322d-42db-ab8b-a489ab3cba1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 16|🇨🇦|CA|加拿大|@wxgqlfx|81, server: 23.227.39.24, port: 8080, type: vmess, uuid: e62899a7-438c-40ef-96d6-259cb26d6fdd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: per-essex-patterns-bowling.trycloudflare.com}}, udp: true}
-  - {name: 16|in-34084, server: 57.128.159.109, port: 34084, type: vmess, uuid: f66b8a67-8e35-4662-d4c7-8b0cf694e3e2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: CN_speednode_0016, server: data-hk-v1.shwjfkw.cn, port: 20207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: data-hk-v1.shwjfkw.cn}}, udp: true}
-  - {name: UA 5 → tg@nicevpn123, server: 95.164.89.225, port: 38153, type: vmess, uuid: 70a694c8-ba65-4d1d-942d-4fc489da1b5f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: CN 51 → tg@nicevpn123, server: annie51.ceoiii.com, port: 36802, type: vmess, uuid: c0ad0b4b-5372-3ab8-9d43-5f8022a0f1ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: annie51.ceoiii.com}}, udp: true}
-  - {name: -SG-002, server: 18.143.132.154, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: -CZ-002, server: 94.131.97.127, port: 80, type: vmess, uuid: 3669d547-ee0c-477d-8e47-c4400965db74, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: cz2-vmess.sshmax.xyz, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: -SG-003, server: 54.251.73.151, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: -KR-007, server: p110.panda001.net, port: 54345, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 美国 CloudFlare节点 11, server: onea.flha.ru, port: 2052, type: vmess, uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: 美国+加利福尼亚州圣克拉拉Microsoft公司, server: 52.178.209.160, port: 2606, type: ss, cipher: chacha20-ietf-poly1305, password: zh7ETDQRvHCsIIPIrSHwHa, udp: true}
+  - {name: 美国+加利福尼亚州圣克拉拉Microsoft公司 2, server: 52.178.196.34, port: 54559, type: ss, cipher: chacha20-ietf-poly1305, password: wP1HHo24lGRUoVTBJwv92o, udp: true}
+  - {name: 广东省广州市+电信IDC机房, server: kr2.indianonlinejob2.com, port: 20014, type: ss, cipher: chacha20-ietf-poly1305, password: a7fe5385-1777-4e29-9e0a-fa59efb2f5c3, udp: true}
+  - {name: 广东省移动 7, server: data-us-v1.shwjfkw.cn, port: 20401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: data-us-v1.shwjfkw.cn}}, udp: true}
+  - {name: "[VMess] 🇨🇦 加拿大 004", server: www.ywnouvbale.biz, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.ywnouvbale.biz}}, udp: true}
+  - {name: "[VMess] 🇨🇦 加拿大 010", server: 172.67.214.33, port: 2052, type: vmess, uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: "[Trojan] 🇸🇬 新加坡 Linode数据中心", server: sg2-full.privateip.net, port: 443, type: trojan, password: fe41cdbe-ad89-40cd-b415-12067af904b3, skip-cert-verify: true, udp: true}
+  - {name: "[VMess] 🇺🇸 美国 080", server: 172.64.161.60, port: 2052, type: vmess, uuid: 6ad77d6b-7a45-4ed3-b65d-1c3ec0226603, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us1cPZiz8nb.fzbqfrse.xyz}}, udp: true}
+  - {name: "[SS] 🇺🇸 美国 Amazon数据中心", server: 18.175.34.14, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Bog0ELmMM9DSxDdQ, udp: true}
+  - {name: "[VMess] 🇺🇸 美国 CloudFlare节点 12", server: cfcdn2.sanfencdn9.com, port: 2052, type: vmess, uuid: 6ad77d6b-7a45-4ed3-b65d-1c3ec0226603, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jpafzyhfsg3.yofnhkfc.xyz}}, udp: true}
+  - {name: "[VMess] 🇺🇸 美国 CloudFlare节点 15", server: 104.21.46.66, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.ywnouvbale.biz}}, udp: true}
+  - {name: "[Trojan] 🇺🇸 美国 V2CROSS.COM", server: 170.64.201.129, port: 443, type: trojan, password: 89f1d918-0c7b-431a-8e06-182b0f3935b7, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇺🇸 美国 V2CROSS.COM 2", server: au-full.privateip.net, port: 443, type: trojan, password: 89f1d918-0c7b-431a-8e06-182b0f3935b7, skip-cert-verify: true, udp: true}
+  - {name: US美国5 1.8MB/s, server: series-a2.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: mps3FwmDjLrWaOVg, udp: true}
+  - {name: US美国11 91.6KB/s, server: 52.178.196.157, port: 11429, type: ss, cipher: chacha20-ietf-poly1305, password: i7CDBphJenDsfdEqcM8yUH, udp: true}
+  - {name: 香港2|@ripaojiedian, server: 120.232.242.93, port: 41492, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国3|@ripaojiedian, server: cfcdn1.sanfencdn9.com, port: 2052, type: vmess, uuid: 6ad77d6b-7a45-4ed3-b65d-1c3ec0226603, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us1cPZiz8nb.fzbqfrse.xyz}}, udp: true}
+  - {name: 日本特殊|@ripaojiedian, server: 43.207.66.15, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _AR_阿根廷, server: 190.103.176.29, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: GB-13.42.137.161-102_2@102, server: java.ct.arvancode.eu.org, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: W74XFALLLuw6m5IA, udp: true}
+  - {name: RELAY-172.67.99.56-114_2@114, server: cf.openxai.link, port: 8080, type: vmess, uuid: c18beb85-c67b-46ed-b8cc-4cbfeae5f194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eu1.openxai.link}}, udp: true}
+  - {name: 美国【付费推荐：https://jdyvip.link/】11_9@8, server: 104.21.63.52, port: 80, type: vmess, uuid: 60f12435-bb55-4da2-cb7d-4fea34ecfa37, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us65.netfilx.live}}, udp: true}
+  - {name: 6|-https://t.me/MrXbin-2, server: series-a1.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: W74XFALLLuw6m5IA, udp: true}
+  - {name: "12|美国聖荷西|Github搜索TrojanLinks #1", server: 38.14.107.237, port: 38100, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.23179753.xyz}}, udp: true}
+  - {name: 16|🔒 VM-WS-NA 🏴‍☠️ NA-104.19.250...., server: 104.19.250.132, port: 2052, type: vmess, uuid: 6ad77d6b-7a45-4ed3-b65d-1c3ec0226603, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us1cPZiz8nb.fzbqfrse.xyz}}, udp: true}
+  - {name: 21|baipaovpn美国, server: 172.234.56.111, port: 443, type: vmess, uuid: d850a191-6afd-40de-b08e-653e4ff7806e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: fr2-full.privateip.net, network: ws, ws-opts: {path: /, headers: {Host: fr2-full.privateip.net}}, udp: true}
+  - {name: GB_speednode_0073, server: v1.arvancode.eu.org, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: mps3FwmDjLrWaOVg, udp: true}
+  - {name: ZA 1 → tg@nicevpn123, server: 41.203.4.34, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: US 180 → tg@nicevpn123, server: www.brightocean.lol, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.brightocean.lol}}, udp: true}
+  - {name: -CZ-001, server: 77.75.230.125, port: 2086, type: vmess, uuid: d466dd36-8b86-48b7-b0f0-67e7d128de6c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: -GB-005, server: series-a2-me.varzesh360.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Bog0ELmMM9DSxDdQ, udp: true}
+  - {name: -KR-002, server: 211.201.169.70, port: 54345, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾省新北市 中华电信
-      - 英国+伦敦Amazon数据中心 3
-      - "[SS] 乌克兰 V2CROSS.COM"
-      - "[VMess] 🇨🇦 加拿大 005"
-      - "[VMess] 🇨🇦 加拿大 042"
-      - "[VMess] 🇨🇦 加拿大 059"
-      - "[Trojan] 🇨🇳 台湾省新北市 中华电信"
-      - "[Trojan] 🇪🇸 西班牙 001"
-      - "[VMess] 🇯🇵 日本 004"
+      - 美国 CloudFlare节点 11
+      - 美国+加利福尼亚州圣克拉拉Microsoft公司
+      - 美国+加利福尼亚州圣克拉拉Microsoft公司 2
+      - 广东省广州市+电信IDC机房
+      - 广东省移动 7
+      - "[VMess] 🇨🇦 加拿大 004"
+      - "[VMess] 🇨🇦 加拿大 010"
+      - "[Trojan] 🇸🇬 新加坡 Linode数据中心"
+      - "[VMess] 🇺🇸 美国 080"
       - "[SS] 🇺🇸 美国 Amazon数据中心"
-      - 韩国|@ripaojiedian
-      - 韩国2|@ripaojiedian
-      - 韩国3|@ripaojiedian
-      - 新加坡|@ripaojiedian 2
-      - 新加坡2|@ripaojiedian
-      - _US_美国->🇩🇪_DE_德国_2
-      - 美国【付费推荐：https://jdyvip.link/】52_9@5
-      - "0,3,4,8,9,20|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9"
-      - 7|德国1
-      - 16|🇺🇸|US|美国|@wxgqlfx|148
-      - 16|🔒 VM-WS-NONE 🇮🇪 IE-54.217.45.1...
-      - 16|🇺🇸|US|美国|@wxgqlfx|110
-      - 16|🇺🇸|US|美国|@wxgqlfx|137
-      - 16|🇨🇦|CA|加拿大|@wxgqlfx|134
-      - 16|🇨🇿|CZ|捷克|@wxgqlfx|179
-      - 16|🇺🇸|US|美国|@wxgqlfx|85
-      - 16|🔒 VM-TCP-NONE 🇮🇪 IE-54.217.45....
-      - 16|🇨🇦|CA|加拿大|@wxgqlfx|81
-      - 16|in-34084
-      - CN_speednode_0016
-      - UA 5 → tg@nicevpn123
-      - CN 51 → tg@nicevpn123
-      - -SG-002
-      - -CZ-002
-      - -SG-003
-      - -KR-007
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 12"
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 15"
+      - "[Trojan] 🇺🇸 美国 V2CROSS.COM"
+      - "[Trojan] 🇺🇸 美国 V2CROSS.COM 2"
+      - US美国5 1.8MB/s
+      - US美国11 91.6KB/s
+      - 香港2|@ripaojiedian
+      - 美国3|@ripaojiedian
+      - 日本特殊|@ripaojiedian
+      - _AR_阿根廷
+      - GB-13.42.137.161-102_2@102
+      - RELAY-172.67.99.56-114_2@114
+      - 美国【付费推荐：https://jdyvip.link/】11_9@8
+      - 6|-https://t.me/MrXbin-2
+      - "12|美国聖荷西|Github搜索TrojanLinks #1"
+      - 16|🔒 VM-WS-NA 🏴‍☠️ NA-104.19.250....
+      - 21|baipaovpn美国
+      - GB_speednode_0073
+      - ZA 1 → tg@nicevpn123
+      - US 180 → tg@nicevpn123
+      - -CZ-001
+      - -GB-005
+      - -KR-002
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - 台湾省新北市 中华电信
-      - 英国+伦敦Amazon数据中心 3
-      - "[SS] 乌克兰 V2CROSS.COM"
-      - "[VMess] 🇨🇦 加拿大 005"
-      - "[VMess] 🇨🇦 加拿大 042"
-      - "[VMess] 🇨🇦 加拿大 059"
-      - "[Trojan] 🇨🇳 台湾省新北市 中华电信"
-      - "[Trojan] 🇪🇸 西班牙 001"
-      - "[VMess] 🇯🇵 日本 004"
+      - 美国 CloudFlare节点 11
+      - 美国+加利福尼亚州圣克拉拉Microsoft公司
+      - 美国+加利福尼亚州圣克拉拉Microsoft公司 2
+      - 广东省广州市+电信IDC机房
+      - 广东省移动 7
+      - "[VMess] 🇨🇦 加拿大 004"
+      - "[VMess] 🇨🇦 加拿大 010"
+      - "[Trojan] 🇸🇬 新加坡 Linode数据中心"
+      - "[VMess] 🇺🇸 美国 080"
       - "[SS] 🇺🇸 美国 Amazon数据中心"
-      - 韩国|@ripaojiedian
-      - 韩国2|@ripaojiedian
-      - 韩国3|@ripaojiedian
-      - 新加坡|@ripaojiedian 2
-      - 新加坡2|@ripaojiedian
-      - _US_美国->🇩🇪_DE_德国_2
-      - 美国【付费推荐：https://jdyvip.link/】52_9@5
-      - "0,3,4,8,9,20|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9"
-      - 7|德国1
-      - 16|🇺🇸|US|美国|@wxgqlfx|148
-      - 16|🔒 VM-WS-NONE 🇮🇪 IE-54.217.45.1...
-      - 16|🇺🇸|US|美国|@wxgqlfx|110
-      - 16|🇺🇸|US|美国|@wxgqlfx|137
-      - 16|🇨🇦|CA|加拿大|@wxgqlfx|134
-      - 16|🇨🇿|CZ|捷克|@wxgqlfx|179
-      - 16|🇺🇸|US|美国|@wxgqlfx|85
-      - 16|🔒 VM-TCP-NONE 🇮🇪 IE-54.217.45....
-      - 16|🇨🇦|CA|加拿大|@wxgqlfx|81
-      - 16|in-34084
-      - CN_speednode_0016
-      - UA 5 → tg@nicevpn123
-      - CN 51 → tg@nicevpn123
-      - -SG-002
-      - -CZ-002
-      - -SG-003
-      - -KR-007
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 12"
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 15"
+      - "[Trojan] 🇺🇸 美国 V2CROSS.COM"
+      - "[Trojan] 🇺🇸 美国 V2CROSS.COM 2"
+      - US美国5 1.8MB/s
+      - US美国11 91.6KB/s
+      - 香港2|@ripaojiedian
+      - 美国3|@ripaojiedian
+      - 日本特殊|@ripaojiedian
+      - _AR_阿根廷
+      - GB-13.42.137.161-102_2@102
+      - RELAY-172.67.99.56-114_2@114
+      - 美国【付费推荐：https://jdyvip.link/】11_9@8
+      - 6|-https://t.me/MrXbin-2
+      - "12|美国聖荷西|Github搜索TrojanLinks #1"
+      - 16|🔒 VM-WS-NA 🏴‍☠️ NA-104.19.250....
+      - 21|baipaovpn美国
+      - GB_speednode_0073
+      - ZA 1 → tg@nicevpn123
+      - US 180 → tg@nicevpn123
+      - -CZ-001
+      - -GB-005
+      - -KR-002
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾省新北市 中华电信
-      - 英国+伦敦Amazon数据中心 3
-      - "[SS] 乌克兰 V2CROSS.COM"
-      - "[VMess] 🇨🇦 加拿大 005"
-      - "[VMess] 🇨🇦 加拿大 042"
-      - "[VMess] 🇨🇦 加拿大 059"
-      - "[Trojan] 🇨🇳 台湾省新北市 中华电信"
-      - "[Trojan] 🇪🇸 西班牙 001"
-      - "[VMess] 🇯🇵 日本 004"
+      - 美国 CloudFlare节点 11
+      - 美国+加利福尼亚州圣克拉拉Microsoft公司
+      - 美国+加利福尼亚州圣克拉拉Microsoft公司 2
+      - 广东省广州市+电信IDC机房
+      - 广东省移动 7
+      - "[VMess] 🇨🇦 加拿大 004"
+      - "[VMess] 🇨🇦 加拿大 010"
+      - "[Trojan] 🇸🇬 新加坡 Linode数据中心"
+      - "[VMess] 🇺🇸 美国 080"
       - "[SS] 🇺🇸 美国 Amazon数据中心"
-      - 韩国|@ripaojiedian
-      - 韩国2|@ripaojiedian
-      - 韩国3|@ripaojiedian
-      - 新加坡|@ripaojiedian 2
-      - 新加坡2|@ripaojiedian
-      - _US_美国->🇩🇪_DE_德国_2
-      - 美国【付费推荐：https://jdyvip.link/】52_9@5
-      - "0,3,4,8,9,20|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9"
-      - 7|德国1
-      - 16|🇺🇸|US|美国|@wxgqlfx|148
-      - 16|🔒 VM-WS-NONE 🇮🇪 IE-54.217.45.1...
-      - 16|🇺🇸|US|美国|@wxgqlfx|110
-      - 16|🇺🇸|US|美国|@wxgqlfx|137
-      - 16|🇨🇦|CA|加拿大|@wxgqlfx|134
-      - 16|🇨🇿|CZ|捷克|@wxgqlfx|179
-      - 16|🇺🇸|US|美国|@wxgqlfx|85
-      - 16|🔒 VM-TCP-NONE 🇮🇪 IE-54.217.45....
-      - 16|🇨🇦|CA|加拿大|@wxgqlfx|81
-      - 16|in-34084
-      - CN_speednode_0016
-      - UA 5 → tg@nicevpn123
-      - CN 51 → tg@nicevpn123
-      - -SG-002
-      - -CZ-002
-      - -SG-003
-      - -KR-007
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 12"
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 15"
+      - "[Trojan] 🇺🇸 美国 V2CROSS.COM"
+      - "[Trojan] 🇺🇸 美国 V2CROSS.COM 2"
+      - US美国5 1.8MB/s
+      - US美国11 91.6KB/s
+      - 香港2|@ripaojiedian
+      - 美国3|@ripaojiedian
+      - 日本特殊|@ripaojiedian
+      - _AR_阿根廷
+      - GB-13.42.137.161-102_2@102
+      - RELAY-172.67.99.56-114_2@114
+      - 美国【付费推荐：https://jdyvip.link/】11_9@8
+      - 6|-https://t.me/MrXbin-2
+      - "12|美国聖荷西|Github搜索TrojanLinks #1"
+      - 16|🔒 VM-WS-NA 🏴‍☠️ NA-104.19.250....
+      - 21|baipaovpn美国
+      - GB_speednode_0073
+      - ZA 1 → tg@nicevpn123
+      - US 180 → tg@nicevpn123
+      - -CZ-001
+      - -GB-005
+      - -KR-002
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -185,173 +173,160 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾省新北市 中华电信
-      - 英国+伦敦Amazon数据中心 3
-      - "[SS] 乌克兰 V2CROSS.COM"
-      - "[VMess] 🇨🇦 加拿大 005"
-      - "[VMess] 🇨🇦 加拿大 042"
-      - "[VMess] 🇨🇦 加拿大 059"
-      - "[Trojan] 🇨🇳 台湾省新北市 中华电信"
-      - "[Trojan] 🇪🇸 西班牙 001"
-      - "[VMess] 🇯🇵 日本 004"
+      - 美国 CloudFlare节点 11
+      - 美国+加利福尼亚州圣克拉拉Microsoft公司
+      - 美国+加利福尼亚州圣克拉拉Microsoft公司 2
+      - 广东省广州市+电信IDC机房
+      - 广东省移动 7
+      - "[VMess] 🇨🇦 加拿大 004"
+      - "[VMess] 🇨🇦 加拿大 010"
+      - "[Trojan] 🇸🇬 新加坡 Linode数据中心"
+      - "[VMess] 🇺🇸 美国 080"
       - "[SS] 🇺🇸 美国 Amazon数据中心"
-      - 韩国|@ripaojiedian
-      - 韩国2|@ripaojiedian
-      - 韩国3|@ripaojiedian
-      - 新加坡|@ripaojiedian 2
-      - 新加坡2|@ripaojiedian
-      - _US_美国->🇩🇪_DE_德国_2
-      - 美国【付费推荐：https://jdyvip.link/】52_9@5
-      - "0,3,4,8,9,20|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9"
-      - 7|德国1
-      - 16|🇺🇸|US|美国|@wxgqlfx|148
-      - 16|🔒 VM-WS-NONE 🇮🇪 IE-54.217.45.1...
-      - 16|🇺🇸|US|美国|@wxgqlfx|110
-      - 16|🇺🇸|US|美国|@wxgqlfx|137
-      - 16|🇨🇦|CA|加拿大|@wxgqlfx|134
-      - 16|🇨🇿|CZ|捷克|@wxgqlfx|179
-      - 16|🇺🇸|US|美国|@wxgqlfx|85
-      - 16|🔒 VM-TCP-NONE 🇮🇪 IE-54.217.45....
-      - 16|🇨🇦|CA|加拿大|@wxgqlfx|81
-      - 16|in-34084
-      - CN_speednode_0016
-      - UA 5 → tg@nicevpn123
-      - CN 51 → tg@nicevpn123
-      - -SG-002
-      - -CZ-002
-      - -SG-003
-      - -KR-007
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 12"
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 15"
+      - "[Trojan] 🇺🇸 美国 V2CROSS.COM"
+      - "[Trojan] 🇺🇸 美国 V2CROSS.COM 2"
+      - US美国5 1.8MB/s
+      - US美国11 91.6KB/s
+      - 香港2|@ripaojiedian
+      - 美国3|@ripaojiedian
+      - 日本特殊|@ripaojiedian
+      - _AR_阿根廷
+      - GB-13.42.137.161-102_2@102
+      - RELAY-172.67.99.56-114_2@114
+      - 美国【付费推荐：https://jdyvip.link/】11_9@8
+      - 6|-https://t.me/MrXbin-2
+      - "12|美国聖荷西|Github搜索TrojanLinks #1"
+      - 16|🔒 VM-WS-NA 🏴‍☠️ NA-104.19.250....
+      - 21|baipaovpn美国
+      - GB_speednode_0073
+      - ZA 1 → tg@nicevpn123
+      - US 180 → tg@nicevpn123
+      - -CZ-001
+      - -GB-005
+      - -KR-002
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾省新北市 中华电信
-      - "[Trojan] 🇨🇳 台湾省新北市 中华电信"
+      - 香港2|@ripaojiedian
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 台湾省新北市 中华电信
-      - 英国+伦敦Amazon数据中心 3
-      - "[SS] 乌克兰 V2CROSS.COM"
-      - "[VMess] 🇨🇦 加拿大 005"
-      - "[VMess] 🇨🇦 加拿大 042"
-      - "[VMess] 🇨🇦 加拿大 059"
-      - "[Trojan] 🇨🇳 台湾省新北市 中华电信"
-      - "[Trojan] 🇪🇸 西班牙 001"
-      - "[VMess] 🇯🇵 日本 004"
+      - 美国 CloudFlare节点 11
+      - 美国+加利福尼亚州圣克拉拉Microsoft公司
+      - 美国+加利福尼亚州圣克拉拉Microsoft公司 2
+      - 广东省广州市+电信IDC机房
+      - 广东省移动 7
+      - "[VMess] 🇨🇦 加拿大 004"
+      - "[VMess] 🇨🇦 加拿大 010"
+      - "[Trojan] 🇸🇬 新加坡 Linode数据中心"
+      - "[VMess] 🇺🇸 美国 080"
       - "[SS] 🇺🇸 美国 Amazon数据中心"
-      - 韩国|@ripaojiedian
-      - 韩国2|@ripaojiedian
-      - 韩国3|@ripaojiedian
-      - 新加坡|@ripaojiedian 2
-      - 新加坡2|@ripaojiedian
-      - _US_美国->🇩🇪_DE_德国_2
-      - 美国【付费推荐：https://jdyvip.link/】52_9@5
-      - "0,3,4,8,9,20|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9"
-      - 7|德国1
-      - 16|🇺🇸|US|美国|@wxgqlfx|148
-      - 16|🔒 VM-WS-NONE 🇮🇪 IE-54.217.45.1...
-      - 16|🇺🇸|US|美国|@wxgqlfx|110
-      - 16|🇺🇸|US|美国|@wxgqlfx|137
-      - 16|🇨🇦|CA|加拿大|@wxgqlfx|134
-      - 16|🇨🇿|CZ|捷克|@wxgqlfx|179
-      - 16|🇺🇸|US|美国|@wxgqlfx|85
-      - 16|🔒 VM-TCP-NONE 🇮🇪 IE-54.217.45....
-      - 16|🇨🇦|CA|加拿大|@wxgqlfx|81
-      - 16|in-34084
-      - CN_speednode_0016
-      - UA 5 → tg@nicevpn123
-      - CN 51 → tg@nicevpn123
-      - -SG-002
-      - -CZ-002
-      - -SG-003
-      - -KR-007
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 12"
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 15"
+      - "[Trojan] 🇺🇸 美国 V2CROSS.COM"
+      - "[Trojan] 🇺🇸 美国 V2CROSS.COM 2"
+      - US美国5 1.8MB/s
+      - US美国11 91.6KB/s
+      - 香港2|@ripaojiedian
+      - 美国3|@ripaojiedian
+      - 日本特殊|@ripaojiedian
+      - _AR_阿根廷
+      - GB-13.42.137.161-102_2@102
+      - RELAY-172.67.99.56-114_2@114
+      - 美国【付费推荐：https://jdyvip.link/】11_9@8
+      - 6|-https://t.me/MrXbin-2
+      - "12|美国聖荷西|Github搜索TrojanLinks #1"
+      - 16|🔒 VM-WS-NA 🏴‍☠️ NA-104.19.250....
+      - 21|baipaovpn美国
+      - GB_speednode_0073
+      - ZA 1 → tg@nicevpn123
+      - US 180 → tg@nicevpn123
+      - -CZ-001
+      - -GB-005
+      - -KR-002
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 台湾省新北市 中华电信
-      - 英国+伦敦Amazon数据中心 3
-      - "[SS] 乌克兰 V2CROSS.COM"
-      - "[VMess] 🇨🇦 加拿大 005"
-      - "[VMess] 🇨🇦 加拿大 042"
-      - "[VMess] 🇨🇦 加拿大 059"
-      - "[Trojan] 🇨🇳 台湾省新北市 中华电信"
-      - "[Trojan] 🇪🇸 西班牙 001"
-      - "[VMess] 🇯🇵 日本 004"
+      - 美国 CloudFlare节点 11
+      - 美国+加利福尼亚州圣克拉拉Microsoft公司
+      - 美国+加利福尼亚州圣克拉拉Microsoft公司 2
+      - 广东省广州市+电信IDC机房
+      - 广东省移动 7
+      - "[VMess] 🇨🇦 加拿大 004"
+      - "[VMess] 🇨🇦 加拿大 010"
+      - "[Trojan] 🇸🇬 新加坡 Linode数据中心"
+      - "[VMess] 🇺🇸 美国 080"
       - "[SS] 🇺🇸 美国 Amazon数据中心"
-      - 韩国|@ripaojiedian
-      - 韩国2|@ripaojiedian
-      - 韩国3|@ripaojiedian
-      - 新加坡|@ripaojiedian 2
-      - 新加坡2|@ripaojiedian
-      - _US_美国->🇩🇪_DE_德国_2
-      - 美国【付费推荐：https://jdyvip.link/】52_9@5
-      - "0,3,4,8,9,20|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9"
-      - 7|德国1
-      - 16|🇺🇸|US|美国|@wxgqlfx|148
-      - 16|🔒 VM-WS-NONE 🇮🇪 IE-54.217.45.1...
-      - 16|🇺🇸|US|美国|@wxgqlfx|110
-      - 16|🇺🇸|US|美国|@wxgqlfx|137
-      - 16|🇨🇦|CA|加拿大|@wxgqlfx|134
-      - 16|🇨🇿|CZ|捷克|@wxgqlfx|179
-      - 16|🇺🇸|US|美国|@wxgqlfx|85
-      - 16|🔒 VM-TCP-NONE 🇮🇪 IE-54.217.45....
-      - 16|🇨🇦|CA|加拿大|@wxgqlfx|81
-      - 16|in-34084
-      - CN_speednode_0016
-      - UA 5 → tg@nicevpn123
-      - CN 51 → tg@nicevpn123
-      - -SG-002
-      - -CZ-002
-      - -SG-003
-      - -KR-007
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 12"
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 15"
+      - "[Trojan] 🇺🇸 美国 V2CROSS.COM"
+      - "[Trojan] 🇺🇸 美国 V2CROSS.COM 2"
+      - US美国5 1.8MB/s
+      - US美国11 91.6KB/s
+      - 香港2|@ripaojiedian
+      - 美国3|@ripaojiedian
+      - 日本特殊|@ripaojiedian
+      - _AR_阿根廷
+      - GB-13.42.137.161-102_2@102
+      - RELAY-172.67.99.56-114_2@114
+      - 美国【付费推荐：https://jdyvip.link/】11_9@8
+      - 6|-https://t.me/MrXbin-2
+      - "12|美国聖荷西|Github搜索TrojanLinks #1"
+      - 16|🔒 VM-WS-NA 🏴‍☠️ NA-104.19.250....
+      - 21|baipaovpn美国
+      - GB_speednode_0073
+      - ZA 1 → tg@nicevpn123
+      - US 180 → tg@nicevpn123
+      - -CZ-001
+      - -GB-005
+      - -KR-002
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台湾省新北市 中华电信
-      - 英国+伦敦Amazon数据中心 3
-      - "[SS] 乌克兰 V2CROSS.COM"
-      - "[VMess] 🇨🇦 加拿大 005"
-      - "[VMess] 🇨🇦 加拿大 042"
-      - "[VMess] 🇨🇦 加拿大 059"
-      - "[Trojan] 🇨🇳 台湾省新北市 中华电信"
-      - "[Trojan] 🇪🇸 西班牙 001"
-      - "[VMess] 🇯🇵 日本 004"
+      - 美国 CloudFlare节点 11
+      - 美国+加利福尼亚州圣克拉拉Microsoft公司
+      - 美国+加利福尼亚州圣克拉拉Microsoft公司 2
+      - 广东省广州市+电信IDC机房
+      - 广东省移动 7
+      - "[VMess] 🇨🇦 加拿大 004"
+      - "[VMess] 🇨🇦 加拿大 010"
+      - "[Trojan] 🇸🇬 新加坡 Linode数据中心"
+      - "[VMess] 🇺🇸 美国 080"
       - "[SS] 🇺🇸 美国 Amazon数据中心"
-      - 韩国|@ripaojiedian
-      - 韩国2|@ripaojiedian
-      - 韩国3|@ripaojiedian
-      - 新加坡|@ripaojiedian 2
-      - 新加坡2|@ripaojiedian
-      - _US_美国->🇩🇪_DE_德国_2
-      - 美国【付费推荐：https://jdyvip.link/】52_9@5
-      - "0,3,4,8,9,20|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9"
-      - 7|德国1
-      - 16|🇺🇸|US|美国|@wxgqlfx|148
-      - 16|🔒 VM-WS-NONE 🇮🇪 IE-54.217.45.1...
-      - 16|🇺🇸|US|美国|@wxgqlfx|110
-      - 16|🇺🇸|US|美国|@wxgqlfx|137
-      - 16|🇨🇦|CA|加拿大|@wxgqlfx|134
-      - 16|🇨🇿|CZ|捷克|@wxgqlfx|179
-      - 16|🇺🇸|US|美国|@wxgqlfx|85
-      - 16|🔒 VM-TCP-NONE 🇮🇪 IE-54.217.45....
-      - 16|🇨🇦|CA|加拿大|@wxgqlfx|81
-      - 16|in-34084
-      - CN_speednode_0016
-      - UA 5 → tg@nicevpn123
-      - CN 51 → tg@nicevpn123
-      - -SG-002
-      - -CZ-002
-      - -SG-003
-      - -KR-007
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 12"
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 15"
+      - "[Trojan] 🇺🇸 美国 V2CROSS.COM"
+      - "[Trojan] 🇺🇸 美国 V2CROSS.COM 2"
+      - US美国5 1.8MB/s
+      - US美国11 91.6KB/s
+      - 香港2|@ripaojiedian
+      - 美国3|@ripaojiedian
+      - 日本特殊|@ripaojiedian
+      - _AR_阿根廷
+      - GB-13.42.137.161-102_2@102
+      - RELAY-172.67.99.56-114_2@114
+      - 美国【付费推荐：https://jdyvip.link/】11_9@8
+      - 6|-https://t.me/MrXbin-2
+      - "12|美国聖荷西|Github搜索TrojanLinks #1"
+      - 16|🔒 VM-WS-NA 🏴‍☠️ NA-104.19.250....
+      - 21|baipaovpn美国
+      - GB_speednode_0073
+      - ZA 1 → tg@nicevpn123
+      - US 180 → tg@nicevpn123
+      - -CZ-001
+      - -GB-005
+      - -KR-002
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -367,42 +342,39 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台湾省新北市 中华电信
-      - 英国+伦敦Amazon数据中心 3
-      - "[SS] 乌克兰 V2CROSS.COM"
-      - "[VMess] 🇨🇦 加拿大 005"
-      - "[VMess] 🇨🇦 加拿大 042"
-      - "[VMess] 🇨🇦 加拿大 059"
-      - "[Trojan] 🇨🇳 台湾省新北市 中华电信"
-      - "[Trojan] 🇪🇸 西班牙 001"
-      - "[VMess] 🇯🇵 日本 004"
+      - 美国 CloudFlare节点 11
+      - 美国+加利福尼亚州圣克拉拉Microsoft公司
+      - 美国+加利福尼亚州圣克拉拉Microsoft公司 2
+      - 广东省广州市+电信IDC机房
+      - 广东省移动 7
+      - "[VMess] 🇨🇦 加拿大 004"
+      - "[VMess] 🇨🇦 加拿大 010"
+      - "[Trojan] 🇸🇬 新加坡 Linode数据中心"
+      - "[VMess] 🇺🇸 美国 080"
       - "[SS] 🇺🇸 美国 Amazon数据中心"
-      - 韩国|@ripaojiedian
-      - 韩国2|@ripaojiedian
-      - 韩国3|@ripaojiedian
-      - 新加坡|@ripaojiedian 2
-      - 新加坡2|@ripaojiedian
-      - _US_美国->🇩🇪_DE_德国_2
-      - 美国【付费推荐：https://jdyvip.link/】52_9@5
-      - "0,3,4,8,9,20|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9"
-      - 7|德国1
-      - 16|🇺🇸|US|美国|@wxgqlfx|148
-      - 16|🔒 VM-WS-NONE 🇮🇪 IE-54.217.45.1...
-      - 16|🇺🇸|US|美国|@wxgqlfx|110
-      - 16|🇺🇸|US|美国|@wxgqlfx|137
-      - 16|🇨🇦|CA|加拿大|@wxgqlfx|134
-      - 16|🇨🇿|CZ|捷克|@wxgqlfx|179
-      - 16|🇺🇸|US|美国|@wxgqlfx|85
-      - 16|🔒 VM-TCP-NONE 🇮🇪 IE-54.217.45....
-      - 16|🇨🇦|CA|加拿大|@wxgqlfx|81
-      - 16|in-34084
-      - CN_speednode_0016
-      - UA 5 → tg@nicevpn123
-      - CN 51 → tg@nicevpn123
-      - -SG-002
-      - -CZ-002
-      - -SG-003
-      - -KR-007
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 12"
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 15"
+      - "[Trojan] 🇺🇸 美国 V2CROSS.COM"
+      - "[Trojan] 🇺🇸 美国 V2CROSS.COM 2"
+      - US美国5 1.8MB/s
+      - US美国11 91.6KB/s
+      - 香港2|@ripaojiedian
+      - 美国3|@ripaojiedian
+      - 日本特殊|@ripaojiedian
+      - _AR_阿根廷
+      - GB-13.42.137.161-102_2@102
+      - RELAY-172.67.99.56-114_2@114
+      - 美国【付费推荐：https://jdyvip.link/】11_9@8
+      - 6|-https://t.me/MrXbin-2
+      - "12|美国聖荷西|Github搜索TrojanLinks #1"
+      - 16|🔒 VM-WS-NA 🏴‍☠️ NA-104.19.250....
+      - 21|baipaovpn美国
+      - GB_speednode_0073
+      - ZA 1 → tg@nicevpn123
+      - US 180 → tg@nicevpn123
+      - -CZ-001
+      - -GB-005
+      - -KR-002
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
