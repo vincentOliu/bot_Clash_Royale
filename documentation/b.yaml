@@ -6,417 +6,135 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 北美地区+v2rayfree.eu.org, server: 169.197.142.216, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 095", server: mahilu.site, port: 2052, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mahilu.site}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 097", server: 104.21.82.39, port: 2052, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mahilu.site}}, udp: true}
-  - {name: "[Trojan] 🇨🇳 台湾省 中华电信(HiNet)数据中心", server: 118.167.71.141, port: 19489, type: trojan, password: 7c252929-6ac0-4681-a835-e52af701f151, sni: b22.ntbq.dynu.net, skip-cert-verify: true, udp: true}
-  - {name: "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet)", server: 220.141.148.244, port: 13761, type: trojan, password: 7c252929-6ac0-4681-a835-e52af701f151, sni: ty11t.twty.dynu.net, skip-cert-verify: true, udp: true}
-  - {name: "[Trojan] 🇬🇧 英国 伦敦Amazon数据中心", server: 35.178.91.219, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇺🇸 美国 125", server: 172.67.152.170, port: 2052, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mahilu.site}}, udp: true}
-  - {name: "[VMess] 🇺🇸 美国 127", server: 144.126.145.219, port: 80, type: vmess, uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: internet.life.com.by}}, udp: true}
-  - {name: "[Trojan] 🇺🇸 美国 Amazon数据中心", server: 13.36.160.181, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇺🇸 美国 华盛顿Cogent通信公司", server: 38.14.107.247, port: 38001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: FI芬兰, server: 195.20.17.224, port: 34282, type: ss, cipher: aes-256-gcm, password: fVdovvKBlC06pO7s, udp: true}
-  - {name: 香港4|@ripaojiedian, server: hk1.mhw7e2.online, port: 20001, type: ss, cipher: chacha20-ietf-poly1305, password: 70747514-fb14-4f31-8390-e1f0453eff6d, udp: true}
-  - {name: 日本2|@ripaojiedian, server: data-jp-v1.usabooks.com.cn, port: 20301, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: data-jp-v1.usabooks.com.cn}}, udp: true}
-  - {name: 新加坡2|@ripaojiedian, server: ddns.olucloud.subapi.cc, port: 50001, type: ss, cipher: chacha20-ietf-poly1305, password: 6f932057-ffd9-4426-8ca7-f0654babf84f, udp: true}
-  - {name: 美国4|@ripaojiedian, server: 104.21.63.52, port: 80, type: vmess, uuid: 60f12435-bb55-4da2-cb7d-4fea34ecfa37, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us65.netfilx.live}}, udp: true}
-  - {name: _US_美国_1, server: mahilu.site, port: 2052, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mahilu.site}}, udp: true}
-  - {name: RELAY-172.67.147.207-236_2@235, server: cf.openxai.link, port: 8080, type: vmess, uuid: c18beb85-c67b-46ed-b8cc-4cbfeae5f194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eu1.openxai.link}}, udp: true}
-  - {name: "0,3,4,8,9,16,20,24|🇦🇪_AE_阿联酋->🇬🇧_GB_英国_由快嘴科技提供：kk...", server: 94.140.0.110, port: 8880, type: vmess, uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: food.zhaal.ir}}, udp: true}
-  - {name: 6|-https://t.me/MrXbin-20, server: 103.172.116.79, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: 6|-https://t.me/MrXbin-22, server: 103.172.116.79, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: 6|-https://t.me/MrXbin-23, server: 103.172.116.79, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: 6|-https://t.me/MrXbin-24, server: 103.172.116.79, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: 6|-https://t.me/MrXbin-25, server: 103.172.116.79, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: 6|-https://t.me/MrXbin-27, server: 103.172.116.79, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: 6|-https://t.me/MrXbin-28, server: 103.172.116.79, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: 6|-https://t.me/MrXbin-2%%�, server: 103.172.116.79, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: 6|-https://t.me/MrXbin-3%%�, server: 103.172.116.79, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: 6|-https://t.me/MrXbin-3%%� 2, server: 103.172.116.79, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: 6|-https://t.me/MrXbin-3%%� 3, server: 103.172.116.79, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: 6|-https://t.me/MrXbin-3%%� 4, server: 103.172.116.79, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: 6|-https://t.me/MrXbin-3%%� 5, server: 103.172.116.79, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
-  - {name: 6|-https://t.me/MrXbin-3%%� 6, server: 103.172.116.79, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: 6|-https://t.me/MrXbin-3%%� 7, server: 103.172.116.79, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: 6|-https://t.me/MrXbin-4%%�, server: 103.172.116.79, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
-  - {name: 6|-https://t.me/MrXbin-4%%� 2, server: 103.172.116.79, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: 6|-https://t.me/MrXbin-4%%� 3, server: 103.172.116.79, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: 6|-https://t.me/MrXbin-4%%� 4, server: 103.172.116.79, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: 6|-https://t.me/MrXbin-5%%�, server: 103.172.116.79, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: 6|-https://t.me/MrXbin-5%%� 2, server: 103.172.116.79, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: 6|-https://t.me/MrXbin-1%�, server: 103.172.116.79, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: 16|🇳🇱 荷兰 阿姆斯特丹Online S.A.S, server: eu-2.hihu.net, port: 80, type: vmess, uuid: 428a7680-e4f5-11ee-b035-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: zula.ir}}, udp: true}
-  - {name: CN_speednode_0007, server: gzyd.airchat.vip, port: 10009, type: vmess, uuid: 0927b72f-8f1c-38f7-8a86-cb977dba6b83, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0008, server: v3-js-hk.as9929.uk, port: 34936, type: ss, cipher: aes-128-gcm, password: e41b8b00-d940-4006-80ff-bc7865b3b5e0, udp: true}
-  - {name: CN_speednode_0009, server: v3-js-sg.as9929.uk, port: 29978, type: ss, cipher: aes-128-gcm, password: e41b8b00-d940-4006-80ff-bc7865b3b5e0, udp: true}
-  - {name: CN_speednode_0012, server: 101.91.214.217, port: 20102, type: ss, cipher: chacha20-ietf-poly1305, password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8, udp: true}
-  - {name: CN_speednode_0013, server: 101.91.214.217, port: 20101, type: ss, cipher: chacha20-ietf-poly1305, password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8, udp: true}
-  - {name: CN_speednode_0014, server: 101.91.214.217, port: 20104, type: ss, cipher: chacha20-ietf-poly1305, password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8, udp: true}
-  - {name: CN_speednode_0015, server: 101.91.214.217, port: 20103, type: ss, cipher: chacha20-ietf-poly1305, password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8, udp: true}
-  - {name: CN_speednode_0016, server: 101.91.214.217, port: 20105, type: ss, cipher: chacha20-ietf-poly1305, password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8, udp: true}
-  - {name: CN_speednode_0017, server: 101.91.214.217, port: 20106, type: ss, cipher: chacha20-ietf-poly1305, password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8, udp: true}
-  - {name: CN_speednode_0018, server: 101.91.214.217, port: 20109, type: ss, cipher: chacha20-ietf-poly1305, password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8, udp: true}
-  - {name: CN_speednode_0019, server: 101.91.214.217, port: 20108, type: ss, cipher: chacha20-ietf-poly1305, password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8, udp: true}
-  - {name: CN_speednode_0020, server: 101.91.214.217, port: 20107, type: ss, cipher: chacha20-ietf-poly1305, password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8, udp: true}
-  - {name: CN_speednode_0021, server: 101.91.214.217, port: 20110, type: ss, cipher: chacha20-ietf-poly1305, password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8, udp: true}
-  - {name: CN_speednode_0022, server: 101.91.214.217, port: 20114, type: ss, cipher: chacha20-ietf-poly1305, password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8, udp: true}
-  - {name: CN_speednode_0023, server: 101.91.214.217, port: 20112, type: ss, cipher: chacha20-ietf-poly1305, password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8, udp: true}
-  - {name: CN_speednode_0024, server: 101.91.214.217, port: 20113, type: ss, cipher: chacha20-ietf-poly1305, password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8, udp: true}
-  - {name: SG_speednode_0040, server: 18.142.56.221, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: -SG-001, server: 103.172.116.79, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: -SG-003, server: 103.172.116.79, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
-  - {name: -SG-005ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@169.197.142.216:7002#🇺🇸 北美地区+v2rayfree.eu.org, server: 103.172.116.79, port: 9044, type: ss, cipher: aes-256-cfb, password: KBGjZYcy4SyRShmA, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 095 2", server: mahilu.site, port: 2052, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mahilu.site}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 097 2", server: 104.21.82.39, port: 2052, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mahilu.site}}, udp: true}
-  - {name: "[Trojan] 🇨🇳 台湾省 中华电信(HiNet)数据中心 2", server: 118.167.71.141, port: 19489, type: trojan, password: 7c252929-6ac0-4681-a835-e52af701f151, sni: b22.ntbq.dynu.net, skip-cert-verify: true, udp: true}
-  - {name: "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet) 2", server: 220.141.148.244, port: 13761, type: trojan, password: 7c252929-6ac0-4681-a835-e52af701f151, sni: ty11t.twty.dynu.net, skip-cert-verify: true, udp: true}
-  - {name: "[Trojan] 🇬🇧 英国 伦敦Amazon数据中心 2", server: 35.178.91.219, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇺🇸 美国 125 2", server: 172.67.152.170, port: 2052, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mahilu.site}}, udp: true}
-  - {name: "[VMess] 🇺🇸 美国 127 2", server: 144.126.145.219, port: 80, type: vmess, uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: internet.life.com.by}}, udp: true}
-  - {name: "[Trojan] 🇺🇸 美国 Amazon数据中心 2", server: 13.36.160.181, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇺🇸 美国 华盛顿Cogent通信公司 2", server: 38.14.107.247, port: 38001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: FI芬兰 2, server: 195.20.17.224, port: 34282, type: ss, cipher: aes-256-gcm, password: fVdovvKBlC06pO7s, udp: true}
-  - {name: 香港4|@ripaojiedian 2, server: hk1.mhw7e2.online, port: 20001, type: ss, cipher: chacha20-ietf-poly1305, password: 70747514-fb14-4f31-8390-e1f0453eff6d, udp: true}
-  - {name: 日本2|@ripaojiedian 2, server: data-jp-v1.usabooks.com.cn, port: 20301, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: data-jp-v1.usabooks.com.cn}}, udp: true}
-  - {name: 新加坡2|@ripaojiedian 2, server: ddns.olucloud.subapi.cc, port: 50001, type: ss, cipher: chacha20-ietf-poly1305, password: 6f932057-ffd9-4426-8ca7-f0654babf84f, udp: true}
-  - {name: 美国4|@ripaojiedian 2, server: 104.21.63.52, port: 80, type: vmess, uuid: 60f12435-bb55-4da2-cb7d-4fea34ecfa37, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us65.netfilx.live}}, udp: true}
-  - {name: _US_美国_1 2, server: mahilu.site, port: 2052, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mahilu.site}}, udp: true}
-  - {name: RELAY-172.67.147.207-236_2@235 2, server: cf.openxai.link, port: 8080, type: vmess, uuid: c18beb85-c67b-46ed-b8cc-4cbfeae5f194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eu1.openxai.link}}, udp: true}
-  - {name: "0,3,4,8,9,16,20,24|🇦🇪_AE_阿联酋->🇬🇧_GB_英国_由快嘴科技提供：kk... 2", server: 94.140.0.110, port: 8880, type: vmess, uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: food.zhaal.ir}}, udp: true}
-  - {name: 6|-https://t.me/MrXbin-20 2, server: 103.172.116.79, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: 6|-https://t.me/MrXbin-22 2, server: 103.172.116.79, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: 6|-https://t.me/MrXbin-23 2, server: 103.172.116.79, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: 6|-https://t.me/MrXbin-24 2, server: 103.172.116.79, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: 6|-https://t.me/MrXbin-25 2, server: 103.172.116.79, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: 6|-https://t.me/MrXbin-27 2, server: 103.172.116.79, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: 6|-https://t.me/MrXbin-28 2, server: 103.172.116.79, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: 6|-https://t.me/MrXbin-2%%� 2, server: 103.172.116.79, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: 6|-https://t.me/MrXbin-3%%� 8, server: 103.172.116.79, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: 6|-https://t.me/MrXbin-3%%� 9, server: 103.172.116.79, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: 6|-https://t.me/MrXbin-3%%� 10, server: 103.172.116.79, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: 6|-https://t.me/MrXbin-3%%� 11, server: 103.172.116.79, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: 6|-https://t.me/MrXbin-3%%� 12, server: 103.172.116.79, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
-  - {name: 6|-https://t.me/MrXbin-3%%� 13, server: 103.172.116.79, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: 6|-https://t.me/MrXbin-3%%� 14, server: 103.172.116.79, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: 6|-https://t.me/MrXbin-4%%� 5, server: 103.172.116.79, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
-  - {name: 6|-https://t.me/MrXbin-4%%� 6, server: 103.172.116.79, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: 6|-https://t.me/MrXbin-4%%� 7, server: 103.172.116.79, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: 6|-https://t.me/MrXbin-4%%� 8, server: 103.172.116.79, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: 6|-https://t.me/MrXbin-5%%� 3, server: 103.172.116.79, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: 6|-https://t.me/MrXbin-5%%� 4, server: 103.172.116.79, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: 6|-https://t.me/MrXbin-1%� 2, server: 103.172.116.79, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: 16|🇳🇱 荷兰 阿姆斯特丹Online S.A.S 2, server: eu-2.hihu.net, port: 80, type: vmess, uuid: 428a7680-e4f5-11ee-b035-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: zula.ir}}, udp: true}
-  - {name: CN_speednode_0007 2, server: gzyd.airchat.vip, port: 10009, type: vmess, uuid: 0927b72f-8f1c-38f7-8a86-cb977dba6b83, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_speednode_0008 2, server: v3-js-hk.as9929.uk, port: 34936, type: ss, cipher: aes-128-gcm, password: e41b8b00-d940-4006-80ff-bc7865b3b5e0, udp: true}
-  - {name: CN_speednode_0009 2, server: v3-js-sg.as9929.uk, port: 29978, type: ss, cipher: aes-128-gcm, password: e41b8b00-d940-4006-80ff-bc7865b3b5e0, udp: true}
-  - {name: CN_speednode_0012 2, server: 101.91.214.217, port: 20102, type: ss, cipher: chacha20-ietf-poly1305, password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8, udp: true}
-  - {name: CN_speednode_0013 2, server: 101.91.214.217, port: 20101, type: ss, cipher: chacha20-ietf-poly1305, password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8, udp: true}
-  - {name: CN_speednode_0014 2, server: 101.91.214.217, port: 20104, type: ss, cipher: chacha20-ietf-poly1305, password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8, udp: true}
-  - {name: CN_speednode_0015 2, server: 101.91.214.217, port: 20103, type: ss, cipher: chacha20-ietf-poly1305, password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8, udp: true}
-  - {name: CN_speednode_0016 2, server: 101.91.214.217, port: 20105, type: ss, cipher: chacha20-ietf-poly1305, password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8, udp: true}
-  - {name: CN_speednode_0017 2, server: 101.91.214.217, port: 20106, type: ss, cipher: chacha20-ietf-poly1305, password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8, udp: true}
-  - {name: CN_speednode_0018 2, server: 101.91.214.217, port: 20109, type: ss, cipher: chacha20-ietf-poly1305, password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8, udp: true}
-  - {name: CN_speednode_0019 2, server: 101.91.214.217, port: 20108, type: ss, cipher: chacha20-ietf-poly1305, password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8, udp: true}
-  - {name: CN_speednode_0020 2, server: 101.91.214.217, port: 20107, type: ss, cipher: chacha20-ietf-poly1305, password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8, udp: true}
-  - {name: CN_speednode_0021 2, server: 101.91.214.217, port: 20110, type: ss, cipher: chacha20-ietf-poly1305, password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8, udp: true}
-  - {name: CN_speednode_0022 2, server: 101.91.214.217, port: 20114, type: ss, cipher: chacha20-ietf-poly1305, password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8, udp: true}
-  - {name: CN_speednode_0023 2, server: 101.91.214.217, port: 20112, type: ss, cipher: chacha20-ietf-poly1305, password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8, udp: true}
-  - {name: CN_speednode_0024 2, server: 101.91.214.217, port: 20113, type: ss, cipher: chacha20-ietf-poly1305, password: b0b468ee-91c5-40db-970f-a5ab6a0e65c8, udp: true}
-  - {name: SG_speednode_0040 2, server: 18.142.56.221, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: -SG-001 2, server: 103.172.116.79, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: -SG-003 2, server: 103.172.116.79, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
-  - {name: -SG-005, server: 103.172.116.79, port: 9044, type: ss, cipher: aes-256-cfb, password: KBGjZYcy4SyRShmA, udp: true}
+  - {name: 日本 东京Amazon数据中心, server: en7a5-g03.jp05-6786-vm0.entry.fr0307a.art, port: 46484, type: vmess, uuid: dd121fb6-3fbc-3a11-bf1d-5532a767af7e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: GB英国 14.6MB/s, server: 51.145.112.84, port: 34529, type: ss, cipher: chacha20-ietf-poly1305, password: 3kP7lDQUNyM7lKgMnrF4Vu, udp: true}
+  - {name: GB英国2 970.4KB/s, server: 51.145.115.150, port: 46961, type: ss, cipher: chacha20-ietf-poly1305, password: C8Nf2Y0Ub0Q7UN93574OFO, udp: true}
+  - {name: GB英国3 15.1MB/s, server: 51.145.115.142, port: 59744, type: ss, cipher: chacha20-ietf-poly1305, password: SuhSIkV1fu99VODm7BIFsb, udp: true}
+  - {name: 香港4|@ripaojiedian, server: 216.83.41.85, port: 24136, type: trojan, password: 38C17B5E02864C48855DC27A3DB80EF0%40528437691015237, sni: node.kgvsogr.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本|@ripaojiedian, server: 202.61.141.164, port: 9865, type: trojan, password: 36acffd6bb2fd049%40525113083387973, sni: node.ogngwfr.xyz, skip-cert-verify: true, udp: true}
+  - {name: 韩国特殊|@ripaojiedian, server: 13.250.57.60, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: CN-183.240.187.197-164_1@164, server: data-jp-v1.usabooks.com.cn, port: 20301, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: data-jp-v1.usabooks.com.cn}}, udp: true}
+  - {name: 6|-https://t.me/MrXbin-3, server: 54.245.36.10, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 6|-https://t.me/MrXbin-4, server: 54.180.9.46, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 6|-https://t.me/MrXbin-8, server: 43.202.41.139, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 6|-https://t.me/MrXbin-10, server: 13.230.190.100, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 6|-https://t.me/MrXbin-11, server: 13.125.25.193, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 6|-https://t.me/MrXbin-18, server: 18.177.138.167, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 19|🏳️‍🌈飞机群 t.me/eshaoye, server: ying.appleid.bf, port: 2082, type: vmess, uuid: 97c752a2-43d3-4ac6-9369-b298b45feb3d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ying.appleid.bf}}, udp: true}
+  - {name: CN_speednode_0008, server: gzyd.pmxu.link, port: 26841, type: vmess, uuid: 32cd139b-237d-3574-bc52-64428e3e238d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_speednode_0009, server: TWPEiH.gov.goldliond.top, port: 20182, type: vmess, uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_speednode_0010, server: 98899.xef9wvmj31-gc3qil6-jp02.my777999.top, port: 38998, type: ss, cipher: chacha20-ietf-poly1305, password: 861de7db-5ada-4b36-903c-0ad6ba25d75a, udp: true}
+  - {name: CN_speednode_0011, server: 8987-3i640t6rlj4n.zpveerb-jp03.my777999.top, port: 38997, type: vmess, uuid: 861de7db-5ada-4b36-903c-0ad6ba25d75a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_speednode_0014, server: sui.forlive.live, port: 19700, type: vmess, uuid: 2642df7e-42bd-4325-95a6-758f631f98b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sui.forlive.live}}, udp: true}
+  - {name: CN_speednode_0015, server: RrmsDv.gov.goldliond.top, port: 50180, type: vmess, uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_speednode_0016, server: I40ZUL.gov.goldliond.top, port: 20182, type: vmess, uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_speednode_0017, server: k8Wy0w.gov.goldliond.top, port: 50180, type: vmess, uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_speednode_0018, server: v3-js-us.as9929.uk, port: 29483, type: ss, cipher: aes-128-gcm, password: e41b8b00-d940-4006-80ff-bc7865b3b5e0, udp: true}
+  - {name: CN_speednode_0024, server: v3-js-jp.as9929.uk, port: 53495, type: ss, cipher: aes-128-gcm, password: e41b8b00-d940-4006-80ff-bc7865b3b5e0, udp: true}
+  - {name: CN_speednode_0027, server: xnU92R.gov.goldliond.top, port: 50180, type: vmess, uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_speednode_0028, server: ISgGLf.gov.goldliond.top, port: 50182, type: vmess, uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SG_speednode_0061, server: 13.228.23.150, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 北美地区+v2rayfree.eu.org
-      - "[VMess] 🇨🇦 加拿大 095"
-      - "[VMess] 🇨🇦 加拿大 097"
-      - "[Trojan] 🇨🇳 台湾省 中华电信(HiNet)数据中心"
-      - "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet)"
-      - "[Trojan] 🇬🇧 英国 伦敦Amazon数据中心"
-      - "[VMess] 🇺🇸 美国 125"
-      - "[VMess] 🇺🇸 美国 127"
-      - "[Trojan] 🇺🇸 美国 Amazon数据中心"
-      - "[VMess] 🇺🇸 美国 华盛顿Cogent通信公司"
-      - FI芬兰
+      - 日本 东京Amazon数据中心
+      - GB英国 14.6MB/s
+      - GB英国2 970.4KB/s
+      - GB英国3 15.1MB/s
       - 香港4|@ripaojiedian
-      - 日本2|@ripaojiedian
-      - 新加坡2|@ripaojiedian
-      - 美国4|@ripaojiedian
-      - _US_美国_1
-      - RELAY-172.67.147.207-236_2@235
-      - 0,3,4,8,9,16,20,24|🇦🇪_AE_阿联酋->🇬🇧_GB_英国_由快嘴科技提供：kk...
-      - 6|-https://t.me/MrXbin-20
-      - 6|-https://t.me/MrXbin-22
-      - 6|-https://t.me/MrXbin-23
-      - 6|-https://t.me/MrXbin-24
-      - 6|-https://t.me/MrXbin-25
-      - 6|-https://t.me/MrXbin-27
-      - 6|-https://t.me/MrXbin-28
-      - 16|🇳🇱 荷兰 阿姆斯特丹Online S.A.S
-      - CN_speednode_0007
+      - 日本|@ripaojiedian
+      - 韩国特殊|@ripaojiedian
+      - CN-183.240.187.197-164_1@164
+      - 6|-https://t.me/MrXbin-3
+      - 6|-https://t.me/MrXbin-4
+      - 6|-https://t.me/MrXbin-8
+      - 6|-https://t.me/MrXbin-10
+      - 6|-https://t.me/MrXbin-11
+      - 6|-https://t.me/MrXbin-18
+      - 19|🏳️‍🌈飞机群 t.me/eshaoye
       - CN_speednode_0008
       - CN_speednode_0009
-      - CN_speednode_0012
-      - CN_speednode_0013
+      - CN_speednode_0010
+      - CN_speednode_0011
       - CN_speednode_0014
       - CN_speednode_0015
       - CN_speednode_0016
       - CN_speednode_0017
       - CN_speednode_0018
-      - CN_speednode_0019
-      - CN_speednode_0020
-      - CN_speednode_0021
-      - CN_speednode_0022
-      - CN_speednode_0023
       - CN_speednode_0024
-      - SG_speednode_0040
-      - -SG-001
-      - -SG-003
-      - -SG-005ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@169.197.142.216:7002#🇺🇸 北美地区+v2rayfree.eu.org
-      - "[VMess] 🇨🇦 加拿大 095 2"
-      - "[VMess] 🇨🇦 加拿大 097 2"
-      - "[Trojan] 🇨🇳 台湾省 中华电信(HiNet)数据中心 2"
-      - "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet) 2"
-      - "[Trojan] 🇬🇧 英国 伦敦Amazon数据中心 2"
-      - "[VMess] 🇺🇸 美国 125 2"
-      - "[VMess] 🇺🇸 美国 127 2"
-      - "[Trojan] 🇺🇸 美国 Amazon数据中心 2"
-      - "[VMess] 🇺🇸 美国 华盛顿Cogent通信公司 2"
-      - FI芬兰 2
-      - 香港4|@ripaojiedian 2
-      - 日本2|@ripaojiedian 2
-      - 新加坡2|@ripaojiedian 2
-      - 美国4|@ripaojiedian 2
-      - _US_美国_1 2
-      - RELAY-172.67.147.207-236_2@235 2
-      - 0,3,4,8,9,16,20,24|🇦🇪_AE_阿联酋->🇬🇧_GB_英国_由快嘴科技提供：kk... 2
-      - 6|-https://t.me/MrXbin-20 2
-      - 6|-https://t.me/MrXbin-22 2
-      - 6|-https://t.me/MrXbin-23 2
-      - 6|-https://t.me/MrXbin-24 2
-      - 6|-https://t.me/MrXbin-25 2
-      - 6|-https://t.me/MrXbin-27 2
-      - 6|-https://t.me/MrXbin-28 2
-      - 16|🇳🇱 荷兰 阿姆斯特丹Online S.A.S 2
-      - CN_speednode_0007 2
-      - CN_speednode_0008 2
-      - CN_speednode_0009 2
-      - CN_speednode_0012 2
-      - CN_speednode_0013 2
-      - CN_speednode_0014 2
-      - CN_speednode_0015 2
-      - CN_speednode_0016 2
-      - CN_speednode_0017 2
-      - CN_speednode_0018 2
-      - CN_speednode_0019 2
-      - CN_speednode_0020 2
-      - CN_speednode_0021 2
-      - CN_speednode_0022 2
-      - CN_speednode_0023 2
-      - CN_speednode_0024 2
-      - SG_speednode_0040 2
-      - -SG-001 2
-      - -SG-003 2
-      - -SG-005
+      - CN_speednode_0027
+      - CN_speednode_0028
+      - SG_speednode_0061
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - 北美地区+v2rayfree.eu.org
-      - "[VMess] 🇨🇦 加拿大 095"
-      - "[VMess] 🇨🇦 加拿大 097"
-      - "[Trojan] 🇨🇳 台湾省 中华电信(HiNet)数据中心"
-      - "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet)"
-      - "[Trojan] 🇬🇧 英国 伦敦Amazon数据中心"
-      - "[VMess] 🇺🇸 美国 125"
-      - "[VMess] 🇺🇸 美国 127"
-      - "[Trojan] 🇺🇸 美国 Amazon数据中心"
-      - "[VMess] 🇺🇸 美国 华盛顿Cogent通信公司"
-      - FI芬兰
+      - 日本 东京Amazon数据中心
+      - GB英国 14.6MB/s
+      - GB英国2 970.4KB/s
+      - GB英国3 15.1MB/s
       - 香港4|@ripaojiedian
-      - 日本2|@ripaojiedian
-      - 新加坡2|@ripaojiedian
-      - 美国4|@ripaojiedian
-      - _US_美国_1
-      - RELAY-172.67.147.207-236_2@235
-      - 0,3,4,8,9,16,20,24|🇦🇪_AE_阿联酋->🇬🇧_GB_英国_由快嘴科技提供：kk...
-      - 6|-https://t.me/MrXbin-20
-      - 6|-https://t.me/MrXbin-22
-      - 6|-https://t.me/MrXbin-23
-      - 6|-https://t.me/MrXbin-24
-      - 6|-https://t.me/MrXbin-25
-      - 6|-https://t.me/MrXbin-27
-      - 6|-https://t.me/MrXbin-28
-      - 16|🇳🇱 荷兰 阿姆斯特丹Online S.A.S
-      - CN_speednode_0007
+      - 日本|@ripaojiedian
+      - 韩国特殊|@ripaojiedian
+      - CN-183.240.187.197-164_1@164
+      - 6|-https://t.me/MrXbin-3
+      - 6|-https://t.me/MrXbin-4
+      - 6|-https://t.me/MrXbin-8
+      - 6|-https://t.me/MrXbin-10
+      - 6|-https://t.me/MrXbin-11
+      - 6|-https://t.me/MrXbin-18
+      - 19|🏳️‍🌈飞机群 t.me/eshaoye
       - CN_speednode_0008
       - CN_speednode_0009
-      - CN_speednode_0012
-      - CN_speednode_0013
+      - CN_speednode_0010
+      - CN_speednode_0011
       - CN_speednode_0014
       - CN_speednode_0015
       - CN_speednode_0016
       - CN_speednode_0017
       - CN_speednode_0018
-      - CN_speednode_0019
-      - CN_speednode_0020
-      - CN_speednode_0021
-      - CN_speednode_0022
-      - CN_speednode_0023
       - CN_speednode_0024
-      - SG_speednode_0040
-      - -SG-001
-      - -SG-003
-      - -SG-005ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@169.197.142.216:7002#🇺🇸 北美地区+v2rayfree.eu.org
-      - "[VMess] 🇨🇦 加拿大 095 2"
-      - "[VMess] 🇨🇦 加拿大 097 2"
-      - "[Trojan] 🇨🇳 台湾省 中华电信(HiNet)数据中心 2"
-      - "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet) 2"
-      - "[Trojan] 🇬🇧 英国 伦敦Amazon数据中心 2"
-      - "[VMess] 🇺🇸 美国 125 2"
-      - "[VMess] 🇺🇸 美国 127 2"
-      - "[Trojan] 🇺🇸 美国 Amazon数据中心 2"
-      - "[VMess] 🇺🇸 美国 华盛顿Cogent通信公司 2"
-      - FI芬兰 2
-      - 香港4|@ripaojiedian 2
-      - 日本2|@ripaojiedian 2
-      - 新加坡2|@ripaojiedian 2
-      - 美国4|@ripaojiedian 2
-      - _US_美国_1 2
-      - RELAY-172.67.147.207-236_2@235 2
-      - 0,3,4,8,9,16,20,24|🇦🇪_AE_阿联酋->🇬🇧_GB_英国_由快嘴科技提供：kk... 2
-      - 6|-https://t.me/MrXbin-20 2
-      - 6|-https://t.me/MrXbin-22 2
-      - 6|-https://t.me/MrXbin-23 2
-      - 6|-https://t.me/MrXbin-24 2
-      - 6|-https://t.me/MrXbin-25 2
-      - 6|-https://t.me/MrXbin-27 2
-      - 6|-https://t.me/MrXbin-28 2
-      - 16|🇳🇱 荷兰 阿姆斯特丹Online S.A.S 2
-      - CN_speednode_0007 2
-      - CN_speednode_0008 2
-      - CN_speednode_0009 2
-      - CN_speednode_0012 2
-      - CN_speednode_0013 2
-      - CN_speednode_0014 2
-      - CN_speednode_0015 2
-      - CN_speednode_0016 2
-      - CN_speednode_0017 2
-      - CN_speednode_0018 2
-      - CN_speednode_0019 2
-      - CN_speednode_0020 2
-      - CN_speednode_0021 2
-      - CN_speednode_0022 2
-      - CN_speednode_0023 2
-      - CN_speednode_0024 2
-      - SG_speednode_0040 2
-      - -SG-001 2
-      - -SG-003 2
-      - -SG-005
+      - CN_speednode_0027
+      - CN_speednode_0028
+      - SG_speednode_0061
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 北美地区+v2rayfree.eu.org
-      - "[VMess] 🇨🇦 加拿大 095"
-      - "[VMess] 🇨🇦 加拿大 097"
-      - "[Trojan] 🇨🇳 台湾省 中华电信(HiNet)数据中心"
-      - "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet)"
-      - "[Trojan] 🇬🇧 英国 伦敦Amazon数据中心"
-      - "[VMess] 🇺🇸 美国 125"
-      - "[VMess] 🇺🇸 美国 127"
-      - "[Trojan] 🇺🇸 美国 Amazon数据中心"
-      - "[VMess] 🇺🇸 美国 华盛顿Cogent通信公司"
-      - FI芬兰
+      - 日本 东京Amazon数据中心
+      - GB英国 14.6MB/s
+      - GB英国2 970.4KB/s
+      - GB英国3 15.1MB/s
       - 香港4|@ripaojiedian
-      - 日本2|@ripaojiedian
-      - 新加坡2|@ripaojiedian
-      - 美国4|@ripaojiedian
-      - _US_美国_1
-      - RELAY-172.67.147.207-236_2@235
-      - 0,3,4,8,9,16,20,24|🇦🇪_AE_阿联酋->🇬🇧_GB_英国_由快嘴科技提供：kk...
-      - 6|-https://t.me/MrXbin-20
-      - 6|-https://t.me/MrXbin-22
-      - 6|-https://t.me/MrXbin-23
-      - 6|-https://t.me/MrXbin-24
-      - 6|-https://t.me/MrXbin-25
-      - 6|-https://t.me/MrXbin-27
-      - 6|-https://t.me/MrXbin-28
-      - 16|🇳🇱 荷兰 阿姆斯特丹Online S.A.S
-      - CN_speednode_0007
+      - 日本|@ripaojiedian
+      - 韩国特殊|@ripaojiedian
+      - CN-183.240.187.197-164_1@164
+      - 6|-https://t.me/MrXbin-3
+      - 6|-https://t.me/MrXbin-4
+      - 6|-https://t.me/MrXbin-8
+      - 6|-https://t.me/MrXbin-10
+      - 6|-https://t.me/MrXbin-11
+      - 6|-https://t.me/MrXbin-18
+      - 19|🏳️‍🌈飞机群 t.me/eshaoye
       - CN_speednode_0008
       - CN_speednode_0009
-      - CN_speednode_0012
-      - CN_speednode_0013
+      - CN_speednode_0010
+      - CN_speednode_0011
       - CN_speednode_0014
       - CN_speednode_0015
       - CN_speednode_0016
       - CN_speednode_0017
       - CN_speednode_0018
-      - CN_speednode_0019
-      - CN_speednode_0020
-      - CN_speednode_0021
-      - CN_speednode_0022
-      - CN_speednode_0023
       - CN_speednode_0024
-      - SG_speednode_0040
-      - -SG-001
-      - -SG-003
-      - -SG-005ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@169.197.142.216:7002#🇺🇸 北美地区+v2rayfree.eu.org
-      - "[VMess] 🇨🇦 加拿大 095 2"
-      - "[VMess] 🇨🇦 加拿大 097 2"
-      - "[Trojan] 🇨🇳 台湾省 中华电信(HiNet)数据中心 2"
-      - "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet) 2"
-      - "[Trojan] 🇬🇧 英国 伦敦Amazon数据中心 2"
-      - "[VMess] 🇺🇸 美国 125 2"
-      - "[VMess] 🇺🇸 美国 127 2"
-      - "[Trojan] 🇺🇸 美国 Amazon数据中心 2"
-      - "[VMess] 🇺🇸 美国 华盛顿Cogent通信公司 2"
-      - FI芬兰 2
-      - 香港4|@ripaojiedian 2
-      - 日本2|@ripaojiedian 2
-      - 新加坡2|@ripaojiedian 2
-      - 美国4|@ripaojiedian 2
-      - _US_美国_1 2
-      - RELAY-172.67.147.207-236_2@235 2
-      - 0,3,4,8,9,16,20,24|🇦🇪_AE_阿联酋->🇬🇧_GB_英国_由快嘴科技提供：kk... 2
-      - 6|-https://t.me/MrXbin-20 2
-      - 6|-https://t.me/MrXbin-22 2
-      - 6|-https://t.me/MrXbin-23 2
-      - 6|-https://t.me/MrXbin-24 2
-      - 6|-https://t.me/MrXbin-25 2
-      - 6|-https://t.me/MrXbin-27 2
-      - 6|-https://t.me/MrXbin-28 2
-      - 16|🇳🇱 荷兰 阿姆斯特丹Online S.A.S 2
-      - CN_speednode_0007 2
-      - CN_speednode_0008 2
-      - CN_speednode_0009 2
-      - CN_speednode_0012 2
-      - CN_speednode_0013 2
-      - CN_speednode_0014 2
-      - CN_speednode_0015 2
-      - CN_speednode_0016 2
-      - CN_speednode_0017 2
-      - CN_speednode_0018 2
-      - CN_speednode_0019 2
-      - CN_speednode_0020 2
-      - CN_speednode_0021 2
-      - CN_speednode_0022 2
-      - CN_speednode_0023 2
-      - CN_speednode_0024 2
-      - SG_speednode_0040 2
-      - -SG-001 2
-      - -SG-003 2
-      - -SG-005
+      - CN_speednode_0027
+      - CN_speednode_0028
+      - SG_speednode_0061
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -435,397 +153,140 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 北美地区+v2rayfree.eu.org
-      - "[VMess] 🇨🇦 加拿大 095"
-      - "[VMess] 🇨🇦 加拿大 097"
-      - "[Trojan] 🇨🇳 台湾省 中华电信(HiNet)数据中心"
-      - "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet)"
-      - "[Trojan] 🇬🇧 英国 伦敦Amazon数据中心"
-      - "[VMess] 🇺🇸 美国 125"
-      - "[VMess] 🇺🇸 美国 127"
-      - "[Trojan] 🇺🇸 美国 Amazon数据中心"
-      - "[VMess] 🇺🇸 美国 华盛顿Cogent通信公司"
-      - FI芬兰
+      - 日本 东京Amazon数据中心
+      - GB英国 14.6MB/s
+      - GB英国2 970.4KB/s
+      - GB英国3 15.1MB/s
       - 香港4|@ripaojiedian
-      - 日本2|@ripaojiedian
-      - 新加坡2|@ripaojiedian
-      - 美国4|@ripaojiedian
-      - _US_美国_1
-      - RELAY-172.67.147.207-236_2@235
-      - 0,3,4,8,9,16,20,24|🇦🇪_AE_阿联酋->🇬🇧_GB_英国_由快嘴科技提供：kk...
-      - 6|-https://t.me/MrXbin-20
-      - 6|-https://t.me/MrXbin-22
-      - 6|-https://t.me/MrXbin-23
-      - 6|-https://t.me/MrXbin-24
-      - 6|-https://t.me/MrXbin-25
-      - 6|-https://t.me/MrXbin-27
-      - 6|-https://t.me/MrXbin-28
-      - 16|🇳🇱 荷兰 阿姆斯特丹Online S.A.S
-      - CN_speednode_0007
+      - 日本|@ripaojiedian
+      - 韩国特殊|@ripaojiedian
+      - CN-183.240.187.197-164_1@164
+      - 6|-https://t.me/MrXbin-3
+      - 6|-https://t.me/MrXbin-4
+      - 6|-https://t.me/MrXbin-8
+      - 6|-https://t.me/MrXbin-10
+      - 6|-https://t.me/MrXbin-11
+      - 6|-https://t.me/MrXbin-18
+      - 19|🏳️‍🌈飞机群 t.me/eshaoye
       - CN_speednode_0008
       - CN_speednode_0009
-      - CN_speednode_0012
-      - CN_speednode_0013
+      - CN_speednode_0010
+      - CN_speednode_0011
       - CN_speednode_0014
       - CN_speednode_0015
       - CN_speednode_0016
       - CN_speednode_0017
       - CN_speednode_0018
-      - CN_speednode_0019
-      - CN_speednode_0020
-      - CN_speednode_0021
-      - CN_speednode_0022
-      - CN_speednode_0023
       - CN_speednode_0024
-      - SG_speednode_0040
-      - -SG-001
-      - -SG-003
-      - -SG-005ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@169.197.142.216:7002#🇺🇸 北美地区+v2rayfree.eu.org
-      - "[VMess] 🇨🇦 加拿大 095 2"
-      - "[VMess] 🇨🇦 加拿大 097 2"
-      - "[Trojan] 🇨🇳 台湾省 中华电信(HiNet)数据中心 2"
-      - "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet) 2"
-      - "[Trojan] 🇬🇧 英国 伦敦Amazon数据中心 2"
-      - "[VMess] 🇺🇸 美国 125 2"
-      - "[VMess] 🇺🇸 美国 127 2"
-      - "[Trojan] 🇺🇸 美国 Amazon数据中心 2"
-      - "[VMess] 🇺🇸 美国 华盛顿Cogent通信公司 2"
-      - FI芬兰 2
-      - 香港4|@ripaojiedian 2
-      - 日本2|@ripaojiedian 2
-      - 新加坡2|@ripaojiedian 2
-      - 美国4|@ripaojiedian 2
-      - _US_美国_1 2
-      - RELAY-172.67.147.207-236_2@235 2
-      - 0,3,4,8,9,16,20,24|🇦🇪_AE_阿联酋->🇬🇧_GB_英国_由快嘴科技提供：kk... 2
-      - 6|-https://t.me/MrXbin-20 2
-      - 6|-https://t.me/MrXbin-22 2
-      - 6|-https://t.me/MrXbin-23 2
-      - 6|-https://t.me/MrXbin-24 2
-      - 6|-https://t.me/MrXbin-25 2
-      - 6|-https://t.me/MrXbin-27 2
-      - 6|-https://t.me/MrXbin-28 2
-      - 16|🇳🇱 荷兰 阿姆斯特丹Online S.A.S 2
-      - CN_speednode_0007 2
-      - CN_speednode_0008 2
-      - CN_speednode_0009 2
-      - CN_speednode_0012 2
-      - CN_speednode_0013 2
-      - CN_speednode_0014 2
-      - CN_speednode_0015 2
-      - CN_speednode_0016 2
-      - CN_speednode_0017 2
-      - CN_speednode_0018 2
-      - CN_speednode_0019 2
-      - CN_speednode_0020 2
-      - CN_speednode_0021 2
-      - CN_speednode_0022 2
-      - CN_speednode_0023 2
-      - CN_speednode_0024 2
-      - SG_speednode_0040 2
-      - -SG-001 2
-      - -SG-003 2
-      - -SG-005
+      - CN_speednode_0027
+      - CN_speednode_0028
+      - SG_speednode_0061
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "[Trojan] 🇨🇳 台湾省 中华电信(HiNet)数据中心"
-      - "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet)"
       - 香港4|@ripaojiedian
-      - "[Trojan] 🇨🇳 台湾省 中华电信(HiNet)数据中心 2"
-      - "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet) 2"
-      - 香港4|@ripaojiedian 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 北美地区+v2rayfree.eu.org
-      - "[VMess] 🇨🇦 加拿大 095"
-      - "[VMess] 🇨🇦 加拿大 097"
-      - "[Trojan] 🇨🇳 台湾省 中华电信(HiNet)数据中心"
-      - "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet)"
-      - "[Trojan] 🇬🇧 英国 伦敦Amazon数据中心"
-      - "[VMess] 🇺🇸 美国 125"
-      - "[VMess] 🇺🇸 美国 127"
-      - "[Trojan] 🇺🇸 美国 Amazon数据中心"
-      - "[VMess] 🇺🇸 美国 华盛顿Cogent通信公司"
-      - FI芬兰
+      - 日本 东京Amazon数据中心
+      - GB英国 14.6MB/s
+      - GB英国2 970.4KB/s
+      - GB英国3 15.1MB/s
       - 香港4|@ripaojiedian
-      - 日本2|@ripaojiedian
-      - 新加坡2|@ripaojiedian
-      - 美国4|@ripaojiedian
-      - _US_美国_1
-      - RELAY-172.67.147.207-236_2@235
-      - 0,3,4,8,9,16,20,24|🇦🇪_AE_阿联酋->🇬🇧_GB_英国_由快嘴科技提供：kk...
-      - 6|-https://t.me/MrXbin-20
-      - 6|-https://t.me/MrXbin-22
-      - 6|-https://t.me/MrXbin-23
-      - 6|-https://t.me/MrXbin-24
-      - 6|-https://t.me/MrXbin-25
-      - 6|-https://t.me/MrXbin-27
-      - 6|-https://t.me/MrXbin-28
-      - 16|🇳🇱 荷兰 阿姆斯特丹Online S.A.S
-      - CN_speednode_0007
+      - 日本|@ripaojiedian
+      - 韩国特殊|@ripaojiedian
+      - CN-183.240.187.197-164_1@164
+      - 6|-https://t.me/MrXbin-3
+      - 6|-https://t.me/MrXbin-4
+      - 6|-https://t.me/MrXbin-8
+      - 6|-https://t.me/MrXbin-10
+      - 6|-https://t.me/MrXbin-11
+      - 6|-https://t.me/MrXbin-18
+      - 19|🏳️‍🌈飞机群 t.me/eshaoye
       - CN_speednode_0008
       - CN_speednode_0009
-      - CN_speednode_0012
-      - CN_speednode_0013
+      - CN_speednode_0010
+      - CN_speednode_0011
       - CN_speednode_0014
       - CN_speednode_0015
       - CN_speednode_0016
       - CN_speednode_0017
       - CN_speednode_0018
-      - CN_speednode_0019
-      - CN_speednode_0020
-      - CN_speednode_0021
-      - CN_speednode_0022
-      - CN_speednode_0023
       - CN_speednode_0024
-      - SG_speednode_0040
-      - -SG-001
-      - -SG-003
-      - -SG-005ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@169.197.142.216:7002#🇺🇸 北美地区+v2rayfree.eu.org
-      - "[VMess] 🇨🇦 加拿大 095 2"
-      - "[VMess] 🇨🇦 加拿大 097 2"
-      - "[Trojan] 🇨🇳 台湾省 中华电信(HiNet)数据中心 2"
-      - "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet) 2"
-      - "[Trojan] 🇬🇧 英国 伦敦Amazon数据中心 2"
-      - "[VMess] 🇺🇸 美国 125 2"
-      - "[VMess] 🇺🇸 美国 127 2"
-      - "[Trojan] 🇺🇸 美国 Amazon数据中心 2"
-      - "[VMess] 🇺🇸 美国 华盛顿Cogent通信公司 2"
-      - FI芬兰 2
-      - 香港4|@ripaojiedian 2
-      - 日本2|@ripaojiedian 2
-      - 新加坡2|@ripaojiedian 2
-      - 美国4|@ripaojiedian 2
-      - _US_美国_1 2
-      - RELAY-172.67.147.207-236_2@235 2
-      - 0,3,4,8,9,16,20,24|🇦🇪_AE_阿联酋->🇬🇧_GB_英国_由快嘴科技提供：kk... 2
-      - 6|-https://t.me/MrXbin-20 2
-      - 6|-https://t.me/MrXbin-22 2
-      - 6|-https://t.me/MrXbin-23 2
-      - 6|-https://t.me/MrXbin-24 2
-      - 6|-https://t.me/MrXbin-25 2
-      - 6|-https://t.me/MrXbin-27 2
-      - 6|-https://t.me/MrXbin-28 2
-      - 16|🇳🇱 荷兰 阿姆斯特丹Online S.A.S 2
-      - CN_speednode_0007 2
-      - CN_speednode_0008 2
-      - CN_speednode_0009 2
-      - CN_speednode_0012 2
-      - CN_speednode_0013 2
-      - CN_speednode_0014 2
-      - CN_speednode_0015 2
-      - CN_speednode_0016 2
-      - CN_speednode_0017 2
-      - CN_speednode_0018 2
-      - CN_speednode_0019 2
-      - CN_speednode_0020 2
-      - CN_speednode_0021 2
-      - CN_speednode_0022 2
-      - CN_speednode_0023 2
-      - CN_speednode_0024 2
-      - SG_speednode_0040 2
-      - -SG-001 2
-      - -SG-003 2
-      - -SG-005
+      - CN_speednode_0027
+      - CN_speednode_0028
+      - SG_speednode_0061
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 北美地区+v2rayfree.eu.org
-      - "[VMess] 🇨🇦 加拿大 095"
-      - "[VMess] 🇨🇦 加拿大 097"
-      - "[Trojan] 🇨🇳 台湾省 中华电信(HiNet)数据中心"
-      - "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet)"
-      - "[Trojan] 🇬🇧 英国 伦敦Amazon数据中心"
-      - "[VMess] 🇺🇸 美国 125"
-      - "[VMess] 🇺🇸 美国 127"
-      - "[Trojan] 🇺🇸 美国 Amazon数据中心"
-      - "[VMess] 🇺🇸 美国 华盛顿Cogent通信公司"
-      - FI芬兰
+      - 日本 东京Amazon数据中心
+      - GB英国 14.6MB/s
+      - GB英国2 970.4KB/s
+      - GB英国3 15.1MB/s
       - 香港4|@ripaojiedian
-      - 日本2|@ripaojiedian
-      - 新加坡2|@ripaojiedian
-      - 美国4|@ripaojiedian
-      - _US_美国_1
-      - RELAY-172.67.147.207-236_2@235
-      - 0,3,4,8,9,16,20,24|🇦🇪_AE_阿联酋->🇬🇧_GB_英国_由快嘴科技提供：kk...
-      - 6|-https://t.me/MrXbin-20
-      - 6|-https://t.me/MrXbin-22
-      - 6|-https://t.me/MrXbin-23
-      - 6|-https://t.me/MrXbin-24
-      - 6|-https://t.me/MrXbin-25
-      - 6|-https://t.me/MrXbin-27
-      - 6|-https://t.me/MrXbin-28
-      - 16|🇳🇱 荷兰 阿姆斯特丹Online S.A.S
-      - CN_speednode_0007
+      - 日本|@ripaojiedian
+      - 韩国特殊|@ripaojiedian
+      - CN-183.240.187.197-164_1@164
+      - 6|-https://t.me/MrXbin-3
+      - 6|-https://t.me/MrXbin-4
+      - 6|-https://t.me/MrXbin-8
+      - 6|-https://t.me/MrXbin-10
+      - 6|-https://t.me/MrXbin-11
+      - 6|-https://t.me/MrXbin-18
+      - 19|🏳️‍🌈飞机群 t.me/eshaoye
       - CN_speednode_0008
       - CN_speednode_0009
-      - CN_speednode_0012
-      - CN_speednode_0013
+      - CN_speednode_0010
+      - CN_speednode_0011
       - CN_speednode_0014
       - CN_speednode_0015
       - CN_speednode_0016
       - CN_speednode_0017
       - CN_speednode_0018
-      - CN_speednode_0019
-      - CN_speednode_0020
-      - CN_speednode_0021
-      - CN_speednode_0022
-      - CN_speednode_0023
       - CN_speednode_0024
-      - SG_speednode_0040
-      - -SG-001
-      - -SG-003
-      - -SG-005ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@169.197.142.216:7002#🇺🇸 北美地区+v2rayfree.eu.org
-      - "[VMess] 🇨🇦 加拿大 095 2"
-      - "[VMess] 🇨🇦 加拿大 097 2"
-      - "[Trojan] 🇨🇳 台湾省 中华电信(HiNet)数据中心 2"
-      - "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet) 2"
-      - "[Trojan] 🇬🇧 英国 伦敦Amazon数据中心 2"
-      - "[VMess] 🇺🇸 美国 125 2"
-      - "[VMess] 🇺🇸 美国 127 2"
-      - "[Trojan] 🇺🇸 美国 Amazon数据中心 2"
-      - "[VMess] 🇺🇸 美国 华盛顿Cogent通信公司 2"
-      - FI芬兰 2
-      - 香港4|@ripaojiedian 2
-      - 日本2|@ripaojiedian 2
-      - 新加坡2|@ripaojiedian 2
-      - 美国4|@ripaojiedian 2
-      - _US_美国_1 2
-      - RELAY-172.67.147.207-236_2@235 2
-      - 0,3,4,8,9,16,20,24|🇦🇪_AE_阿联酋->🇬🇧_GB_英国_由快嘴科技提供：kk... 2
-      - 6|-https://t.me/MrXbin-20 2
-      - 6|-https://t.me/MrXbin-22 2
-      - 6|-https://t.me/MrXbin-23 2
-      - 6|-https://t.me/MrXbin-24 2
-      - 6|-https://t.me/MrXbin-25 2
-      - 6|-https://t.me/MrXbin-27 2
-      - 6|-https://t.me/MrXbin-28 2
-      - 16|🇳🇱 荷兰 阿姆斯特丹Online S.A.S 2
-      - CN_speednode_0007 2
-      - CN_speednode_0008 2
-      - CN_speednode_0009 2
-      - CN_speednode_0012 2
-      - CN_speednode_0013 2
-      - CN_speednode_0014 2
-      - CN_speednode_0015 2
-      - CN_speednode_0016 2
-      - CN_speednode_0017 2
-      - CN_speednode_0018 2
-      - CN_speednode_0019 2
-      - CN_speednode_0020 2
-      - CN_speednode_0021 2
-      - CN_speednode_0022 2
-      - CN_speednode_0023 2
-      - CN_speednode_0024 2
-      - SG_speednode_0040 2
-      - -SG-001 2
-      - -SG-003 2
-      - -SG-005
+      - CN_speednode_0027
+      - CN_speednode_0028
+      - SG_speednode_0061
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 北美地区+v2rayfree.eu.org
-      - "[VMess] 🇨🇦 加拿大 095"
-      - "[VMess] 🇨🇦 加拿大 097"
-      - "[Trojan] 🇨🇳 台湾省 中华电信(HiNet)数据中心"
-      - "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet)"
-      - "[Trojan] 🇬🇧 英国 伦敦Amazon数据中心"
-      - "[VMess] 🇺🇸 美国 125"
-      - "[VMess] 🇺🇸 美国 127"
-      - "[Trojan] 🇺🇸 美国 Amazon数据中心"
-      - "[VMess] 🇺🇸 美国 华盛顿Cogent通信公司"
-      - FI芬兰
+      - 日本 东京Amazon数据中心
+      - GB英国 14.6MB/s
+      - GB英国2 970.4KB/s
+      - GB英国3 15.1MB/s
       - 香港4|@ripaojiedian
-      - 日本2|@ripaojiedian
-      - 新加坡2|@ripaojiedian
-      - 美国4|@ripaojiedian
-      - _US_美国_1
-      - RELAY-172.67.147.207-236_2@235
-      - 0,3,4,8,9,16,20,24|🇦🇪_AE_阿联酋->🇬🇧_GB_英国_由快嘴科技提供：kk...
-      - 6|-https://t.me/MrXbin-20
-      - 6|-https://t.me/MrXbin-22
-      - 6|-https://t.me/MrXbin-23
-      - 6|-https://t.me/MrXbin-24
-      - 6|-https://t.me/MrXbin-25
-      - 6|-https://t.me/MrXbin-27
-      - 6|-https://t.me/MrXbin-28
-      - 16|🇳🇱 荷兰 阿姆斯特丹Online S.A.S
-      - CN_speednode_0007
+      - 日本|@ripaojiedian
+      - 韩国特殊|@ripaojiedian
+      - CN-183.240.187.197-164_1@164
+      - 6|-https://t.me/MrXbin-3
+      - 6|-https://t.me/MrXbin-4
+      - 6|-https://t.me/MrXbin-8
+      - 6|-https://t.me/MrXbin-10
+      - 6|-https://t.me/MrXbin-11
+      - 6|-https://t.me/MrXbin-18
+      - 19|🏳️‍🌈飞机群 t.me/eshaoye
       - CN_speednode_0008
       - CN_speednode_0009
-      - CN_speednode_0012
-      - CN_speednode_0013
+      - CN_speednode_0010
+      - CN_speednode_0011
       - CN_speednode_0014
       - CN_speednode_0015
       - CN_speednode_0016
       - CN_speednode_0017
       - CN_speednode_0018
-      - CN_speednode_0019
-      - CN_speednode_0020
-      - CN_speednode_0021
-      - CN_speednode_0022
-      - CN_speednode_0023
       - CN_speednode_0024
-      - SG_speednode_0040
-      - -SG-001
-      - -SG-003
-      - -SG-005ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@169.197.142.216:7002#🇺🇸 北美地区+v2rayfree.eu.org
-      - "[VMess] 🇨🇦 加拿大 095 2"
-      - "[VMess] 🇨🇦 加拿大 097 2"
-      - "[Trojan] 🇨🇳 台湾省 中华电信(HiNet)数据中心 2"
-      - "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet) 2"
-      - "[Trojan] 🇬🇧 英国 伦敦Amazon数据中心 2"
-      - "[VMess] 🇺🇸 美国 125 2"
-      - "[VMess] 🇺🇸 美国 127 2"
-      - "[Trojan] 🇺🇸 美国 Amazon数据中心 2"
-      - "[VMess] 🇺🇸 美国 华盛顿Cogent通信公司 2"
-      - FI芬兰 2
-      - 香港4|@ripaojiedian 2
-      - 日本2|@ripaojiedian 2
-      - 新加坡2|@ripaojiedian 2
-      - 美国4|@ripaojiedian 2
-      - _US_美国_1 2
-      - RELAY-172.67.147.207-236_2@235 2
-      - 0,3,4,8,9,16,20,24|🇦🇪_AE_阿联酋->🇬🇧_GB_英国_由快嘴科技提供：kk... 2
-      - 6|-https://t.me/MrXbin-20 2
-      - 6|-https://t.me/MrXbin-22 2
-      - 6|-https://t.me/MrXbin-23 2
-      - 6|-https://t.me/MrXbin-24 2
-      - 6|-https://t.me/MrXbin-25 2
-      - 6|-https://t.me/MrXbin-27 2
-      - 6|-https://t.me/MrXbin-28 2
-      - 16|🇳🇱 荷兰 阿姆斯特丹Online S.A.S 2
-      - CN_speednode_0007 2
-      - CN_speednode_0008 2
-      - CN_speednode_0009 2
-      - CN_speednode_0012 2
-      - CN_speednode_0013 2
-      - CN_speednode_0014 2
-      - CN_speednode_0015 2
-      - CN_speednode_0016 2
-      - CN_speednode_0017 2
-      - CN_speednode_0018 2
-      - CN_speednode_0019 2
-      - CN_speednode_0020 2
-      - CN_speednode_0021 2
-      - CN_speednode_0022 2
-      - CN_speednode_0023 2
-      - CN_speednode_0024 2
-      - SG_speednode_0040 2
-      - -SG-001 2
-      - -SG-003 2
-      - -SG-005
+      - CN_speednode_0027
+      - CN_speednode_0028
+      - SG_speednode_0061
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -841,97 +302,34 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 北美地区+v2rayfree.eu.org
-      - "[VMess] 🇨🇦 加拿大 095"
-      - "[VMess] 🇨🇦 加拿大 097"
-      - "[Trojan] 🇨🇳 台湾省 中华电信(HiNet)数据中心"
-      - "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet)"
-      - "[Trojan] 🇬🇧 英国 伦敦Amazon数据中心"
-      - "[VMess] 🇺🇸 美国 125"
-      - "[VMess] 🇺🇸 美国 127"
-      - "[Trojan] 🇺🇸 美国 Amazon数据中心"
-      - "[VMess] 🇺🇸 美国 华盛顿Cogent通信公司"
-      - FI芬兰
+      - 日本 东京Amazon数据中心
+      - GB英国 14.6MB/s
+      - GB英国2 970.4KB/s
+      - GB英国3 15.1MB/s
       - 香港4|@ripaojiedian
-      - 日本2|@ripaojiedian
-      - 新加坡2|@ripaojiedian
-      - 美国4|@ripaojiedian
-      - _US_美国_1
-      - RELAY-172.67.147.207-236_2@235
-      - 0,3,4,8,9,16,20,24|🇦🇪_AE_阿联酋->🇬🇧_GB_英国_由快嘴科技提供：kk...
-      - 6|-https://t.me/MrXbin-20
-      - 6|-https://t.me/MrXbin-22
-      - 6|-https://t.me/MrXbin-23
-      - 6|-https://t.me/MrXbin-24
-      - 6|-https://t.me/MrXbin-25
-      - 6|-https://t.me/MrXbin-27
-      - 6|-https://t.me/MrXbin-28
-      - 16|🇳🇱 荷兰 阿姆斯特丹Online S.A.S
-      - CN_speednode_0007
+      - 日本|@ripaojiedian
+      - 韩国特殊|@ripaojiedian
+      - CN-183.240.187.197-164_1@164
+      - 6|-https://t.me/MrXbin-3
+      - 6|-https://t.me/MrXbin-4
+      - 6|-https://t.me/MrXbin-8
+      - 6|-https://t.me/MrXbin-10
+      - 6|-https://t.me/MrXbin-11
+      - 6|-https://t.me/MrXbin-18
+      - 19|🏳️‍🌈飞机群 t.me/eshaoye
       - CN_speednode_0008
       - CN_speednode_0009
-      - CN_speednode_0012
-      - CN_speednode_0013
+      - CN_speednode_0010
+      - CN_speednode_0011
       - CN_speednode_0014
       - CN_speednode_0015
       - CN_speednode_0016
       - CN_speednode_0017
       - CN_speednode_0018
-      - CN_speednode_0019
-      - CN_speednode_0020
-      - CN_speednode_0021
-      - CN_speednode_0022
-      - CN_speednode_0023
       - CN_speednode_0024
-      - SG_speednode_0040
-      - -SG-001
-      - -SG-003
-      - -SG-005ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@169.197.142.216:7002#🇺🇸 北美地区+v2rayfree.eu.org
-      - "[VMess] 🇨🇦 加拿大 095 2"
-      - "[VMess] 🇨🇦 加拿大 097 2"
-      - "[Trojan] 🇨🇳 台湾省 中华电信(HiNet)数据中心 2"
-      - "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet) 2"
-      - "[Trojan] 🇬🇧 英国 伦敦Amazon数据中心 2"
-      - "[VMess] 🇺🇸 美国 125 2"
-      - "[VMess] 🇺🇸 美国 127 2"
-      - "[Trojan] 🇺🇸 美国 Amazon数据中心 2"
-      - "[VMess] 🇺🇸 美国 华盛顿Cogent通信公司 2"
-      - FI芬兰 2
-      - 香港4|@ripaojiedian 2
-      - 日本2|@ripaojiedian 2
-      - 新加坡2|@ripaojiedian 2
-      - 美国4|@ripaojiedian 2
-      - _US_美国_1 2
-      - RELAY-172.67.147.207-236_2@235 2
-      - 0,3,4,8,9,16,20,24|🇦🇪_AE_阿联酋->🇬🇧_GB_英国_由快嘴科技提供：kk... 2
-      - 6|-https://t.me/MrXbin-20 2
-      - 6|-https://t.me/MrXbin-22 2
-      - 6|-https://t.me/MrXbin-23 2
-      - 6|-https://t.me/MrXbin-24 2
-      - 6|-https://t.me/MrXbin-25 2
-      - 6|-https://t.me/MrXbin-27 2
-      - 6|-https://t.me/MrXbin-28 2
-      - 16|🇳🇱 荷兰 阿姆斯特丹Online S.A.S 2
-      - CN_speednode_0007 2
-      - CN_speednode_0008 2
-      - CN_speednode_0009 2
-      - CN_speednode_0012 2
-      - CN_speednode_0013 2
-      - CN_speednode_0014 2
-      - CN_speednode_0015 2
-      - CN_speednode_0016 2
-      - CN_speednode_0017 2
-      - CN_speednode_0018 2
-      - CN_speednode_0019 2
-      - CN_speednode_0020 2
-      - CN_speednode_0021 2
-      - CN_speednode_0022 2
-      - CN_speednode_0023 2
-      - CN_speednode_0024 2
-      - SG_speednode_0040 2
-      - -SG-001 2
-      - -SG-003 2
-      - -SG-005
+      - CN_speednode_0027
+      - CN_speednode_0028
+      - SG_speednode_0061
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
