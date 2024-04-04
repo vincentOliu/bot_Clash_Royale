@@ -6,172 +6,404 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国 CloudFlare节点 7, server: 104.21.4.14, port: 2086, type: vmess, uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: admin.arzonhost.ir}}, udp: true}
-  - {name: 韩国特殊|@ripaojiedian, server: 13.231.229.48, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 日本特殊|@ripaojiedian, server: 57.181.42.0, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _US_美国->🇫🇷_FR_法国_1, server: admin.arzonhost.ir, port: 2086, type: vmess, uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: admin.arzonhost.ir}}, udp: true}
-  - {name: 6|-https://t.me/MrXbin-3, server: p232.panda004.net, port: 51472, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: 6|-https://t.me/MrXbin-15, server: p236.panda004.net, port: 42839, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: 6|-https://t.me/MrXbin-17, server: p231.panda004.net, port: 43926, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: 6|-https://t.me/MrXbin-18, server: p229.panda004.net, port: 10218, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: 6|-https://t.me/MrXbin-19, server: p221.panda001.net, port: 49032, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: 6|-https://t.me/MrXbin-24, server: 54.199.15.70, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 6|-https://t.me/MrXbin-25, server: 3.0.50.219, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 6|-https://t.me/MrXbin-27, server: 47.128.64.71, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 6|-https://t.me/MrXbin-28, server: 52.221.231.138, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 6|-https://t.me/MrXbin-39, server: 47.128.72.85, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 6|-https://t.me/MrXbin-40, server: 13.229.184.181, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 6|-https://t.me/MrXbin-43, server: 54.180.156.133, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 6|-https://t.me/MrXbin-44, server: 13.250.63.15, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 6|-https://t.me/MrXbin-45, server: 54.179.101.194, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 6|-https://t.me/MrXbin-47, server: 43.203.201.192, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 6|-https://t.me/MrXbin-50, server: 3.34.200.94, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 6|-https://t.me/MrXbin-178, server: 52.195.237.101, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 19|-1394-VN【ccbaohe.com〗 永久免费节点机场, server: max26.flash5g.com, port: 80, type: vmess, uuid: 4e25f91f-603c-4e83-b002-c26030757816, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: max26.flash5g.com}}, udp: true}
-  - {name: 19|US_youtube@资源分享师_20, server: nicola.pics, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: nicola.pics}}, udp: true}
-  - {name: CN_speednode_0007, server: v3-js-hk.as9929.uk, port: 10061, type: ss, cipher: aes-128-gcm, password: e41b8b00-d940-4006-80ff-bc7865b3b5e0, udp: true}
-  - {name: CN_speednode_0009, server: v3-js-jp.as9929.uk, port: 53495, type: ss, cipher: aes-128-gcm, password: e41b8b00-d940-4006-80ff-bc7865b3b5e0, udp: true}
-  - {name: CN_speednode_00%�, server: 231103level3.unclemanco.com, port: 20004, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.co%%�, udp: true}
-  - {name: CN_speednode_0023, server: v3-js-hk.as9929.uk, port: 34936, type: ss, cipher: aes-128-gcm, password: e41b8b00-d940-4006-80ff-bc7865b3b5e0, udp: true}
-  - {name: CN_speednode_0036, server: v3-js-jp.as9929.uk, port: 33861, type: ss, cipher: aes-128-gcm, password: e41b8b00-d940-4006-80ff-bc7865b3b5e0, udp: true}
-  - {name: CN_speednode_0045, server: v3-js-sg.as9929.uk, port: 22466, type: ss, cipher: aes-128-gcm, password: e41b8b00-d940-4006-80ff-bc7865b3b5e0, udp: true}
-  - {name: KR_speednode_0083, server: 43.201.110.81, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: KR_speednode_0084, server: 43.201.56.52, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: KR_speednode_0085, server: 3.36.96.75, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: NL_speednode_0090, server: 103.214.68.57, port: 10001, type: vmess, uuid: ebca5f68-bf59-4081-e658-f158839c2f5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: VN_speednode_0115, server: max26.flash5g.com, port: 80, type: vmess, uuid: 4e25f91f-603c-4e83-b002-c26030757816, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: max26.flash5g.com}}, udp: true}
-  - {name: JP 24 → tg@nicevpn123, server: 52.195.10.194, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: JP 37 → tg@nicevpn123, server: 54.238.182.167, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: KR 18 → tg@nicevpn123, server: 54.180.9.46, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: KR 5 → tg@nicevpn123, server: p227.panda004.net, port: 49032, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 7, server: 172.67.116.48, port: 80, type: vmess, uuid: 22a13aa2-4854-44cb-e090-ec71ab84b1ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: wap.hostmjj.com}}, udp: true}
+  - {name: 🇰🇷 韩国2|@ripaojiedian, server: 43.203.220.68, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇺🇸 美国2|@ripaojiedian, server: cfcdn1.sanfencdn9.com, port: 2082, type: vmess, uuid: 203cea12-57fe-49c6-9e5b-906d2260ef12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us4Bb5oSgJA.fzbqfrse.xyz}}, udp: true}
+  - {name: 🇨🇳 CN-120.233.205.133-189_1@189, server: data-jp-v1.usabooks.com.cn, port: 20301, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: data-jp-v1.usabooks.com.cn}}, udp: true}
+  - {name: 🇻🇳 越南【付费推荐：https://jdyvip.link/】9_8@11, server: max26.flash5g.com, port: 80, type: vmess, uuid: 4e25f91f-603c-4e83-b002-c26030757816, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: max26.flash5g.com}}, udp: true}
+  - {name: 6|-https://t.me/MrXbin-1, server: 52.221.231.138, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 6|-https://t.me/MrXbin-4, server: 3.38.162.154, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 6|-https://t.me/MrXbin-6, server: 43.201.69.200, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 6|-https://t.me/MrXbin-22, server: 13.229.184.181, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 6|-https://t.me/MrXbin-24, server: 35.77.89.124, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 6|-https://t.me/MrXbin-25, server: 3.34.200.94, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 6|-https://t.me/MrXbin-26, server: 52.195.10.194, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 6|-https://t.me/MrXbin-28, server: 43.203.201.192, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 6|-https://t.me/MrXbin-32, server: 18.142.56.221, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 6|-https://t.me/MrXbin-35, server: 52.195.225.184, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 6|-https://t.me/MrXbin-40, server: trojan.hkg.gz.cn, port: 11003, type: ss, cipher: aes-128-gcm, password: e0beb700-d059-4dec-a9e3-dbe8a1c5c583, udp: true}
+  - {name: 6|-https://t.me/MrXbin-41, server: trojan.hkg.gz.cn, port: 11008, type: ss, cipher: aes-128-gcm, password: e0beb700-d059-4dec-a9e3-dbe8a1c5c583, udp: true}
+  - {name: 6|-https://t.me/MrXbin-42, server: trojan.hkg.gz.cn, port: 11004, type: ss, cipher: aes-128-gcm, password: e0beb700-d059-4dec-a9e3-dbe8a1c5c583, udp: true}
+  - {name: 6|-https://t.me/MrXbin-43, server: 103.172.116.79, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
+  - {name: 6|-https://t.me/MrXbin-45, server: 103.172.116.79, port: 9030, type: ss, cipher: aes-256-cfb, password: GeregetR8cvQHzYr, udp: true}
+  - {name: 6|-https://t.me/MrXbin-46, server: 103.172.116.79, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: 6|-https://t.me/MrXbin-47, server: 103.172.116.79, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+  - {name: 6|-https://t.me/MrXbin-5%%�, server: 103.172.116.79, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
+  - {name: 6|-https://t.me/MrXbin-5%%� 2, server: 103.172.116.79, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: 6|-https://t.me/MrXbin-5%%� 3, server: 103.172.116.79, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: 6|-https://t.me/MrXbin-6%%�, server: 103.172.116.79, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: 6|-https://t.me/MrXbin-5%%� 4, server: 103.172.116.79, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: 6|-https://t.me/MrXbin-188, server: 52.195.237.101, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 6|-https://t.me/MrXbin-191, server: 7oi23-g04.jp06-7c5a-vm0.entry.fr0307a.art, port: 28786, type: vmess, uuid: e147ce52-2598-31b0-950d-6b12c306b360, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 6|-https://t.me/MrXbin-192, server: 203.234.238.145, port: 4005, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 6|-https://t.me/MrXbin-1%�, server: 103.172.116.79, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: 6|-https://t.me/MrXbin-1%� 2, server: 103.172.116.79, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: 6|-https://t.me/MrXbin-1%� 3, server: 103.172.116.79, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: 6|-https://t.me/MrXbin-2%�, server: 103.172.116.79, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: 6|-https://t.me/MrXbin-2%� 2, server: 103.172.116.79, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: 6|-https://t.me/MrXbin-2%� 3, server: 103.172.116.79, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: 6|-https://t.me/MrXbin-2%� 4, server: 103.172.116.79, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: 6|-https://t.me/MrXbin-208, server: 38.75.136.106, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 🇯🇵 19|日本 002, server: 87.120.204.64, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 87.120.204.64}}, udp: true}
+  - {name: 19|U0dfc3BlZWRub2RlXzAxNTA%%�, server: 103.172.116.79, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: 🇸🇬 19|美国【TG：@ccbaohe】定时更新节点订阅 2, server: 104.21.94.251, port: 80, type: vmess, uuid: c7421a39-020d-4a01-97ed-9eacbce0a7ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: de2.xv2ray.net}}, udp: true}
+  - {name: 24|DE_speednode_0041, server: 95.164.68.116, port: 2053, type: trojan, password: f37a931d-7092-48fe-b82f-a98da3040eb2, sni: ftp.debian.org, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 26|baipaovpn广东省广州市, server: 14.18.91.151, port: 50003, type: vmess, uuid: 80d448a5-115b-4af5-8505-89d26fe21fc0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0001, server: gzyd.pmxu.link, port: 26841, type: vmess, uuid: 32cd139b-237d-3574-bc52-64428e3e238d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0002, server: 183.240.180.226, port: 16110, type: vmess, uuid: 1534454e-13c1-332c-a1f6-dffb2e51f778, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0003, server: cn1.one.edu.kg, port: 12004, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0004, server: cn1.one.edu.kg, port: 12001, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0005, server: cn1.one.edu.kg, port: 12006, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0006, server: cn1.one.edu.kg, port: 12003, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0007, server: china2.one.edu.kg, port: 12025, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0008, server: china2.one.edu.kg, port: 12021, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0009, server: cn1.one.edu.kg, port: 12005, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0010, server: china3.one.edu.kg, port: 12033, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0011, server: cn1.one.edu.kg, port: 12002, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0012, server: china2.one.edu.kg, port: 12061, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0015, server: china2.one.edu.kg, port: 12022, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0016, server: china3.one.edu.kg, port: 12035, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0018, server: china2.one.edu.kg, port: 12076, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0019, server: 120.232.242.117, port: 41492, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0020, server: china2.one.edu.kg, port: 12067, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0021, server: china2.one.edu.kg, port: 12072, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0022, server: china3.one.edu.kg, port: 12041, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0023, server: dgyd1.pmxu.link, port: 29214, type: vmess, uuid: c3d17744-7f95-40a4-9bf5-e0cbdb84f92b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0024, server: china3.one.edu.kg, port: 12034, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0025, server: china2.one.edu.kg, port: 12024, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0026, server: china4.one.edu.kg, port: 12069, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0028, server: china4.one.edu.kg, port: 12074, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0029, server: china4.one.edu.kg, port: 12065, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0030, server: china3.one.edu.kg, port: 12031, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0032, server: china4.one.edu.kg, port: 12071, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0033, server: china3.one.edu.kg, port: 12052, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0034, server: china3.one.edu.kg, port: 12053, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0035, server: china4.one.edu.kg, port: 12062, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0037, server: v3-js-sg.as9929.uk, port: 29978, type: ss, cipher: aes-128-gcm, password: e41b8b00-d940-4006-80ff-bc7865b3b5e0, udp: true}
+  - {name: CN_speednode_0038, server: v3-js-hk.as9929.uk, port: 34936, type: ss, cipher: aes-128-gcm, password: e41b8b00-d940-4006-80ff-bc7865b3b5e0, udp: true}
+  - {name: CN_speednode_0039, server: china2.one.edu.kg, port: 12068, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: CN_speednode_0040, server: v3-js-sg.as9929.uk, port: 22466, type: ss, cipher: aes-128-gcm, password: e41b8b00-d940-4006-80ff-bc7865b3b5e0, udp: true}
+  - {name: CN_speednode_0041, server: v3-js-us.as9929.uk, port: 19387, type: ss, cipher: aes-128-gcm, password: e41b8b00-d940-4006-80ff-bc7865b3b5e0, udp: true}
+  - {name: SG_speednode_0056, server: 103.172.116.79, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
+  - {name: SG_speednode_0058, server: 103.172.116.79, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: SG_speednode_0063, server: 103.172.116.79, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: SG_speednode_0064, server: 103.172.116.79, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: SG_speednode_0065, server: 103.172.116.79, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: SG_speednode_0067, server: 103.172.116.79, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: SG_speednode_0068, server: 103.172.116.79, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: SG_speednode_0069, server: 103.172.116.79, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: SG_speednode_0070, server: 103.172.116.79, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: SG_speednode_0072, server: 103.172.116.79, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: SG_speednode_0074, server: 103.172.116.79, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+  - {name: SG_speednode_0075, server: 103.172.116.79, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: SG_speednode_0077, server: 103.172.116.79, port: 9044, type: ss, cipher: aes-256-cfb, password: KBGjZYcy4SyRShmA, udp: true}
+  - {name: SG_speednode_0079, server: 103.172.116.79, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: SG_speednode_0080, server: 103.172.116.79, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: SG_speednode_0081, server: 103.172.116.79, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: SG_speednode_0084, server: 103.172.116.79, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: SG_speednode_0085, server: 103.172.116.79, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: SG_speednode_0086, server: 103.172.116.79, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: 🇺🇦 UA 23 → tg@nicevpn123, server: tr1.trojanvpn.de, port: 2053, type: trojan, password: 2b9e695b-b703-4ab2-910e-161830089cff, sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇦 UA 7 → tg@nicevpn123, server: tr1.trojanvpn.de, port: 2053, type: trojan, password: 2997d686-d910-441b-a15c-c8d11c366025, sni: ftp.debian.org, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 CN 115 → tg@nicevpn123, server: 121.43.117.216, port: 10001, type: ss, cipher: chacha20-ietf-poly1305, password: Rad35baG, udp: true}
+  - {name: 🇯🇵 JP 35 → tg@nicevpn123, server: 54.238.182.167, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇯🇵 JP 9 → tg@nicevpn123, server: 43.202.41.139, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇰🇷 KR 22 → tg@nicevpn123, server: p225.panda004.net, port: 4005, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 🇰🇷 KR 28 → tg@nicevpn123, server: p229.panda004.net, port: 10218, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 🇸🇬 SG 15 → tg@nicevpn123, server: 13.250.61.18, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 CloudFlare节点 7
-      - 韩国特殊|@ripaojiedian
-      - 日本特殊|@ripaojiedian
-      - _US_美国->🇫🇷_FR_法国_1
-      - 6|-https://t.me/MrXbin-3
-      - 6|-https://t.me/MrXbin-15
-      - 6|-https://t.me/MrXbin-17
-      - 6|-https://t.me/MrXbin-18
-      - 6|-https://t.me/MrXbin-19
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇰🇷 韩国2|@ripaojiedian
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇨🇳 CN-120.233.205.133-189_1@189
+      - 🇻🇳 越南【付费推荐：https://jdyvip.link/】9_8@11
+      - 6|-https://t.me/MrXbin-1
+      - 6|-https://t.me/MrXbin-4
+      - 6|-https://t.me/MrXbin-6
+      - 6|-https://t.me/MrXbin-22
       - 6|-https://t.me/MrXbin-24
       - 6|-https://t.me/MrXbin-25
-      - 6|-https://t.me/MrXbin-27
+      - 6|-https://t.me/MrXbin-26
       - 6|-https://t.me/MrXbin-28
-      - 6|-https://t.me/MrXbin-39
+      - 6|-https://t.me/MrXbin-32
+      - 6|-https://t.me/MrXbin-35
       - 6|-https://t.me/MrXbin-40
+      - 6|-https://t.me/MrXbin-41
+      - 6|-https://t.me/MrXbin-42
       - 6|-https://t.me/MrXbin-43
-      - 6|-https://t.me/MrXbin-44
       - 6|-https://t.me/MrXbin-45
+      - 6|-https://t.me/MrXbin-46
       - 6|-https://t.me/MrXbin-47
-      - 6|-https://t.me/MrXbin-50
-      - 6|-https://t.me/MrXbin-178
-      - 19|-1394-VN【ccbaohe.com〗 永久免费节点机场
-      - 19|US_youtube@资源分享师_20
+      - 6|-https://t.me/MrXbin-188
+      - 6|-https://t.me/MrXbin-191
+      - 6|-https://t.me/MrXbin-192
+      - 6|-https://t.me/MrXbin-208
+      - 🇯🇵 19|日本 002
+      - 🇸🇬 19|美国【TG：@ccbaohe】定时更新节点订阅 2
+      - 24|DE_speednode_0041
+      - 🇨🇳 26|baipaovpn广东省广州市
+      - CN_speednode_0001
+      - CN_speednode_0002
+      - CN_speednode_0003
+      - CN_speednode_0004
+      - CN_speednode_0005
+      - CN_speednode_0006
       - CN_speednode_0007
+      - CN_speednode_0008
       - CN_speednode_0009
+      - CN_speednode_0010
+      - CN_speednode_0011
+      - CN_speednode_0012
+      - CN_speednode_0015
+      - CN_speednode_0016
+      - CN_speednode_0018
+      - CN_speednode_0019
+      - CN_speednode_0020
+      - CN_speednode_0021
+      - CN_speednode_0022
       - CN_speednode_0023
-      - CN_speednode_0036
-      - CN_speednode_0045
-      - KR_speednode_0083
-      - KR_speednode_0084
-      - KR_speednode_0085
-      - NL_speednode_0090
-      - VN_speednode_0115
-      - JP 24 → tg@nicevpn123
-      - JP 37 → tg@nicevpn123
-      - KR 18 → tg@nicevpn123
-      - KR 5 → tg@nicevpn123
+      - CN_speednode_0024
+      - CN_speednode_0025
+      - CN_speednode_0026
+      - CN_speednode_0028
+      - CN_speednode_0029
+      - CN_speednode_0030
+      - CN_speednode_0032
+      - CN_speednode_0033
+      - CN_speednode_0034
+      - CN_speednode_0035
+      - CN_speednode_0037
+      - CN_speednode_0038
+      - CN_speednode_0039
+      - CN_speednode_0040
+      - CN_speednode_0041
+      - SG_speednode_0056
+      - SG_speednode_0058
+      - SG_speednode_0063
+      - SG_speednode_0064
+      - SG_speednode_0065
+      - SG_speednode_0067
+      - SG_speednode_0068
+      - SG_speednode_0069
+      - SG_speednode_0070
+      - SG_speednode_0072
+      - SG_speednode_0074
+      - SG_speednode_0075
+      - SG_speednode_0077
+      - SG_speednode_0079
+      - SG_speednode_0080
+      - SG_speednode_0081
+      - SG_speednode_0084
+      - SG_speednode_0085
+      - SG_speednode_0086
+      - 🇺🇦 UA 23 → tg@nicevpn123
+      - 🇺🇦 UA 7 → tg@nicevpn123
+      - 🇨🇳 CN 115 → tg@nicevpn123
+      - 🇯🇵 JP 35 → tg@nicevpn123
+      - 🇯🇵 JP 9 → tg@nicevpn123
+      - 🇰🇷 KR 22 → tg@nicevpn123
+      - 🇰🇷 KR 28 → tg@nicevpn123
+      - 🇸🇬 SG 15 → tg@nicevpn123
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - 美国 CloudFlare节点 7
-      - 韩国特殊|@ripaojiedian
-      - 日本特殊|@ripaojiedian
-      - _US_美国->🇫🇷_FR_法国_1
-      - 6|-https://t.me/MrXbin-3
-      - 6|-https://t.me/MrXbin-15
-      - 6|-https://t.me/MrXbin-17
-      - 6|-https://t.me/MrXbin-18
-      - 6|-https://t.me/MrXbin-19
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇰🇷 韩国2|@ripaojiedian
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇨🇳 CN-120.233.205.133-189_1@189
+      - 🇻🇳 越南【付费推荐：https://jdyvip.link/】9_8@11
+      - 6|-https://t.me/MrXbin-1
+      - 6|-https://t.me/MrXbin-4
+      - 6|-https://t.me/MrXbin-6
+      - 6|-https://t.me/MrXbin-22
       - 6|-https://t.me/MrXbin-24
       - 6|-https://t.me/MrXbin-25
-      - 6|-https://t.me/MrXbin-27
+      - 6|-https://t.me/MrXbin-26
       - 6|-https://t.me/MrXbin-28
-      - 6|-https://t.me/MrXbin-39
+      - 6|-https://t.me/MrXbin-32
+      - 6|-https://t.me/MrXbin-35
       - 6|-https://t.me/MrXbin-40
+      - 6|-https://t.me/MrXbin-41
+      - 6|-https://t.me/MrXbin-42
       - 6|-https://t.me/MrXbin-43
-      - 6|-https://t.me/MrXbin-44
       - 6|-https://t.me/MrXbin-45
+      - 6|-https://t.me/MrXbin-46
       - 6|-https://t.me/MrXbin-47
-      - 6|-https://t.me/MrXbin-50
-      - 6|-https://t.me/MrXbin-178
-      - 19|-1394-VN【ccbaohe.com〗 永久免费节点机场
-      - 19|US_youtube@资源分享师_20
+      - 6|-https://t.me/MrXbin-188
+      - 6|-https://t.me/MrXbin-191
+      - 6|-https://t.me/MrXbin-192
+      - 6|-https://t.me/MrXbin-208
+      - 🇯🇵 19|日本 002
+      - 🇸🇬 19|美国【TG：@ccbaohe】定时更新节点订阅 2
+      - 24|DE_speednode_0041
+      - 🇨🇳 26|baipaovpn广东省广州市
+      - CN_speednode_0001
+      - CN_speednode_0002
+      - CN_speednode_0003
+      - CN_speednode_0004
+      - CN_speednode_0005
+      - CN_speednode_0006
       - CN_speednode_0007
+      - CN_speednode_0008
       - CN_speednode_0009
+      - CN_speednode_0010
+      - CN_speednode_0011
+      - CN_speednode_0012
+      - CN_speednode_0015
+      - CN_speednode_0016
+      - CN_speednode_0018
+      - CN_speednode_0019
+      - CN_speednode_0020
+      - CN_speednode_0021
+      - CN_speednode_0022
       - CN_speednode_0023
-      - CN_speednode_0036
-      - CN_speednode_0045
-      - KR_speednode_0083
-      - KR_speednode_0084
-      - KR_speednode_0085
-      - NL_speednode_0090
-      - VN_speednode_0115
-      - JP 24 → tg@nicevpn123
-      - JP 37 → tg@nicevpn123
-      - KR 18 → tg@nicevpn123
-      - KR 5 → tg@nicevpn123
+      - CN_speednode_0024
+      - CN_speednode_0025
+      - CN_speednode_0026
+      - CN_speednode_0028
+      - CN_speednode_0029
+      - CN_speednode_0030
+      - CN_speednode_0032
+      - CN_speednode_0033
+      - CN_speednode_0034
+      - CN_speednode_0035
+      - CN_speednode_0037
+      - CN_speednode_0038
+      - CN_speednode_0039
+      - CN_speednode_0040
+      - CN_speednode_0041
+      - SG_speednode_0056
+      - SG_speednode_0058
+      - SG_speednode_0063
+      - SG_speednode_0064
+      - SG_speednode_0065
+      - SG_speednode_0067
+      - SG_speednode_0068
+      - SG_speednode_0069
+      - SG_speednode_0070
+      - SG_speednode_0072
+      - SG_speednode_0074
+      - SG_speednode_0075
+      - SG_speednode_0077
+      - SG_speednode_0079
+      - SG_speednode_0080
+      - SG_speednode_0081
+      - SG_speednode_0084
+      - SG_speednode_0085
+      - SG_speednode_0086
+      - 🇺🇦 UA 23 → tg@nicevpn123
+      - 🇺🇦 UA 7 → tg@nicevpn123
+      - 🇨🇳 CN 115 → tg@nicevpn123
+      - 🇯🇵 JP 35 → tg@nicevpn123
+      - 🇯🇵 JP 9 → tg@nicevpn123
+      - 🇰🇷 KR 22 → tg@nicevpn123
+      - 🇰🇷 KR 28 → tg@nicevpn123
+      - 🇸🇬 SG 15 → tg@nicevpn123
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 CloudFlare节点 7
-      - 韩国特殊|@ripaojiedian
-      - 日本特殊|@ripaojiedian
-      - _US_美国->🇫🇷_FR_法国_1
-      - 6|-https://t.me/MrXbin-3
-      - 6|-https://t.me/MrXbin-15
-      - 6|-https://t.me/MrXbin-17
-      - 6|-https://t.me/MrXbin-18
-      - 6|-https://t.me/MrXbin-19
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇰🇷 韩国2|@ripaojiedian
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇨🇳 CN-120.233.205.133-189_1@189
+      - 🇻🇳 越南【付费推荐：https://jdyvip.link/】9_8@11
+      - 6|-https://t.me/MrXbin-1
+      - 6|-https://t.me/MrXbin-4
+      - 6|-https://t.me/MrXbin-6
+      - 6|-https://t.me/MrXbin-22
       - 6|-https://t.me/MrXbin-24
       - 6|-https://t.me/MrXbin-25
-      - 6|-https://t.me/MrXbin-27
+      - 6|-https://t.me/MrXbin-26
       - 6|-https://t.me/MrXbin-28
-      - 6|-https://t.me/MrXbin-39
+      - 6|-https://t.me/MrXbin-32
+      - 6|-https://t.me/MrXbin-35
       - 6|-https://t.me/MrXbin-40
+      - 6|-https://t.me/MrXbin-41
+      - 6|-https://t.me/MrXbin-42
       - 6|-https://t.me/MrXbin-43
-      - 6|-https://t.me/MrXbin-44
       - 6|-https://t.me/MrXbin-45
+      - 6|-https://t.me/MrXbin-46
       - 6|-https://t.me/MrXbin-47
-      - 6|-https://t.me/MrXbin-50
-      - 6|-https://t.me/MrXbin-178
-      - 19|-1394-VN【ccbaohe.com〗 永久免费节点机场
-      - 19|US_youtube@资源分享师_20
+      - 6|-https://t.me/MrXbin-188
+      - 6|-https://t.me/MrXbin-191
+      - 6|-https://t.me/MrXbin-192
+      - 6|-https://t.me/MrXbin-208
+      - 🇯🇵 19|日本 002
+      - 🇸🇬 19|美国【TG：@ccbaohe】定时更新节点订阅 2
+      - 24|DE_speednode_0041
+      - 🇨🇳 26|baipaovpn广东省广州市
+      - CN_speednode_0001
+      - CN_speednode_0002
+      - CN_speednode_0003
+      - CN_speednode_0004
+      - CN_speednode_0005
+      - CN_speednode_0006
       - CN_speednode_0007
+      - CN_speednode_0008
       - CN_speednode_0009
+      - CN_speednode_0010
+      - CN_speednode_0011
+      - CN_speednode_0012
+      - CN_speednode_0015
+      - CN_speednode_0016
+      - CN_speednode_0018
+      - CN_speednode_0019
+      - CN_speednode_0020
+      - CN_speednode_0021
+      - CN_speednode_0022
       - CN_speednode_0023
-      - CN_speednode_0036
-      - CN_speednode_0045
-      - KR_speednode_0083
-      - KR_speednode_0084
-      - KR_speednode_0085
-      - NL_speednode_0090
-      - VN_speednode_0115
-      - JP 24 → tg@nicevpn123
-      - JP 37 → tg@nicevpn123
-      - KR 18 → tg@nicevpn123
-      - KR 5 → tg@nicevpn123
+      - CN_speednode_0024
+      - CN_speednode_0025
+      - CN_speednode_0026
+      - CN_speednode_0028
+      - CN_speednode_0029
+      - CN_speednode_0030
+      - CN_speednode_0032
+      - CN_speednode_0033
+      - CN_speednode_0034
+      - CN_speednode_0035
+      - CN_speednode_0037
+      - CN_speednode_0038
+      - CN_speednode_0039
+      - CN_speednode_0040
+      - CN_speednode_0041
+      - SG_speednode_0056
+      - SG_speednode_0058
+      - SG_speednode_0063
+      - SG_speednode_0064
+      - SG_speednode_0065
+      - SG_speednode_0067
+      - SG_speednode_0068
+      - SG_speednode_0069
+      - SG_speednode_0070
+      - SG_speednode_0072
+      - SG_speednode_0074
+      - SG_speednode_0075
+      - SG_speednode_0077
+      - SG_speednode_0079
+      - SG_speednode_0080
+      - SG_speednode_0081
+      - SG_speednode_0084
+      - SG_speednode_0085
+      - SG_speednode_0086
+      - 🇺🇦 UA 23 → tg@nicevpn123
+      - 🇺🇦 UA 7 → tg@nicevpn123
+      - 🇨🇳 CN 115 → tg@nicevpn123
+      - 🇯🇵 JP 35 → tg@nicevpn123
+      - 🇯🇵 JP 9 → tg@nicevpn123
+      - 🇰🇷 KR 22 → tg@nicevpn123
+      - 🇰🇷 KR 28 → tg@nicevpn123
+      - 🇸🇬 SG 15 → tg@nicevpn123
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -190,43 +422,98 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 CloudFlare节点 7
-      - 韩国特殊|@ripaojiedian
-      - 日本特殊|@ripaojiedian
-      - _US_美国->🇫🇷_FR_法国_1
-      - 6|-https://t.me/MrXbin-3
-      - 6|-https://t.me/MrXbin-15
-      - 6|-https://t.me/MrXbin-17
-      - 6|-https://t.me/MrXbin-18
-      - 6|-https://t.me/MrXbin-19
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇰🇷 韩国2|@ripaojiedian
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇨🇳 CN-120.233.205.133-189_1@189
+      - 🇻🇳 越南【付费推荐：https://jdyvip.link/】9_8@11
+      - 6|-https://t.me/MrXbin-1
+      - 6|-https://t.me/MrXbin-4
+      - 6|-https://t.me/MrXbin-6
+      - 6|-https://t.me/MrXbin-22
       - 6|-https://t.me/MrXbin-24
       - 6|-https://t.me/MrXbin-25
-      - 6|-https://t.me/MrXbin-27
+      - 6|-https://t.me/MrXbin-26
       - 6|-https://t.me/MrXbin-28
-      - 6|-https://t.me/MrXbin-39
+      - 6|-https://t.me/MrXbin-32
+      - 6|-https://t.me/MrXbin-35
       - 6|-https://t.me/MrXbin-40
+      - 6|-https://t.me/MrXbin-41
+      - 6|-https://t.me/MrXbin-42
       - 6|-https://t.me/MrXbin-43
-      - 6|-https://t.me/MrXbin-44
       - 6|-https://t.me/MrXbin-45
+      - 6|-https://t.me/MrXbin-46
       - 6|-https://t.me/MrXbin-47
-      - 6|-https://t.me/MrXbin-50
-      - 6|-https://t.me/MrXbin-178
-      - 19|-1394-VN【ccbaohe.com〗 永久免费节点机场
-      - 19|US_youtube@资源分享师_20
+      - 6|-https://t.me/MrXbin-188
+      - 6|-https://t.me/MrXbin-191
+      - 6|-https://t.me/MrXbin-192
+      - 6|-https://t.me/MrXbin-208
+      - 🇯🇵 19|日本 002
+      - 🇸🇬 19|美国【TG：@ccbaohe】定时更新节点订阅 2
+      - 24|DE_speednode_0041
+      - 🇨🇳 26|baipaovpn广东省广州市
+      - CN_speednode_0001
+      - CN_speednode_0002
+      - CN_speednode_0003
+      - CN_speednode_0004
+      - CN_speednode_0005
+      - CN_speednode_0006
       - CN_speednode_0007
+      - CN_speednode_0008
       - CN_speednode_0009
+      - CN_speednode_0010
+      - CN_speednode_0011
+      - CN_speednode_0012
+      - CN_speednode_0015
+      - CN_speednode_0016
+      - CN_speednode_0018
+      - CN_speednode_0019
+      - CN_speednode_0020
+      - CN_speednode_0021
+      - CN_speednode_0022
       - CN_speednode_0023
-      - CN_speednode_0036
-      - CN_speednode_0045
-      - KR_speednode_0083
-      - KR_speednode_0084
-      - KR_speednode_0085
-      - NL_speednode_0090
-      - VN_speednode_0115
-      - JP 24 → tg@nicevpn123
-      - JP 37 → tg@nicevpn123
-      - KR 18 → tg@nicevpn123
-      - KR 5 → tg@nicevpn123
+      - CN_speednode_0024
+      - CN_speednode_0025
+      - CN_speednode_0026
+      - CN_speednode_0028
+      - CN_speednode_0029
+      - CN_speednode_0030
+      - CN_speednode_0032
+      - CN_speednode_0033
+      - CN_speednode_0034
+      - CN_speednode_0035
+      - CN_speednode_0037
+      - CN_speednode_0038
+      - CN_speednode_0039
+      - CN_speednode_0040
+      - CN_speednode_0041
+      - SG_speednode_0056
+      - SG_speednode_0058
+      - SG_speednode_0063
+      - SG_speednode_0064
+      - SG_speednode_0065
+      - SG_speednode_0067
+      - SG_speednode_0068
+      - SG_speednode_0069
+      - SG_speednode_0070
+      - SG_speednode_0072
+      - SG_speednode_0074
+      - SG_speednode_0075
+      - SG_speednode_0077
+      - SG_speednode_0079
+      - SG_speednode_0080
+      - SG_speednode_0081
+      - SG_speednode_0084
+      - SG_speednode_0085
+      - SG_speednode_0086
+      - 🇺🇦 UA 23 → tg@nicevpn123
+      - 🇺🇦 UA 7 → tg@nicevpn123
+      - 🇨🇳 CN 115 → tg@nicevpn123
+      - 🇯🇵 JP 35 → tg@nicevpn123
+      - 🇯🇵 JP 9 → tg@nicevpn123
+      - 🇰🇷 KR 22 → tg@nicevpn123
+      - 🇰🇷 KR 28 → tg@nicevpn123
+      - 🇸🇬 SG 15 → tg@nicevpn123
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -237,128 +524,293 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国 CloudFlare节点 7
-      - 韩国特殊|@ripaojiedian
-      - 日本特殊|@ripaojiedian
-      - _US_美国->🇫🇷_FR_法国_1
-      - 6|-https://t.me/MrXbin-3
-      - 6|-https://t.me/MrXbin-15
-      - 6|-https://t.me/MrXbin-17
-      - 6|-https://t.me/MrXbin-18
-      - 6|-https://t.me/MrXbin-19
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇰🇷 韩国2|@ripaojiedian
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇨🇳 CN-120.233.205.133-189_1@189
+      - 🇻🇳 越南【付费推荐：https://jdyvip.link/】9_8@11
+      - 6|-https://t.me/MrXbin-1
+      - 6|-https://t.me/MrXbin-4
+      - 6|-https://t.me/MrXbin-6
+      - 6|-https://t.me/MrXbin-22
       - 6|-https://t.me/MrXbin-24
       - 6|-https://t.me/MrXbin-25
-      - 6|-https://t.me/MrXbin-27
+      - 6|-https://t.me/MrXbin-26
       - 6|-https://t.me/MrXbin-28
-      - 6|-https://t.me/MrXbin-39
+      - 6|-https://t.me/MrXbin-32
+      - 6|-https://t.me/MrXbin-35
       - 6|-https://t.me/MrXbin-40
+      - 6|-https://t.me/MrXbin-41
+      - 6|-https://t.me/MrXbin-42
       - 6|-https://t.me/MrXbin-43
-      - 6|-https://t.me/MrXbin-44
       - 6|-https://t.me/MrXbin-45
+      - 6|-https://t.me/MrXbin-46
       - 6|-https://t.me/MrXbin-47
-      - 6|-https://t.me/MrXbin-50
-      - 6|-https://t.me/MrXbin-178
-      - 19|-1394-VN【ccbaohe.com〗 永久免费节点机场
-      - 19|US_youtube@资源分享师_20
+      - 6|-https://t.me/MrXbin-188
+      - 6|-https://t.me/MrXbin-191
+      - 6|-https://t.me/MrXbin-192
+      - 6|-https://t.me/MrXbin-208
+      - 🇯🇵 19|日本 002
+      - 🇸🇬 19|美国【TG：@ccbaohe】定时更新节点订阅 2
+      - 24|DE_speednode_0041
+      - 🇨🇳 26|baipaovpn广东省广州市
+      - CN_speednode_0001
+      - CN_speednode_0002
+      - CN_speednode_0003
+      - CN_speednode_0004
+      - CN_speednode_0005
+      - CN_speednode_0006
       - CN_speednode_0007
+      - CN_speednode_0008
       - CN_speednode_0009
+      - CN_speednode_0010
+      - CN_speednode_0011
+      - CN_speednode_0012
+      - CN_speednode_0015
+      - CN_speednode_0016
+      - CN_speednode_0018
+      - CN_speednode_0019
+      - CN_speednode_0020
+      - CN_speednode_0021
+      - CN_speednode_0022
       - CN_speednode_0023
-      - CN_speednode_0036
-      - CN_speednode_0045
-      - KR_speednode_0083
-      - KR_speednode_0084
-      - KR_speednode_0085
-      - NL_speednode_0090
-      - VN_speednode_0115
-      - JP 24 → tg@nicevpn123
-      - JP 37 → tg@nicevpn123
-      - KR 18 → tg@nicevpn123
-      - KR 5 → tg@nicevpn123
+      - CN_speednode_0024
+      - CN_speednode_0025
+      - CN_speednode_0026
+      - CN_speednode_0028
+      - CN_speednode_0029
+      - CN_speednode_0030
+      - CN_speednode_0032
+      - CN_speednode_0033
+      - CN_speednode_0034
+      - CN_speednode_0035
+      - CN_speednode_0037
+      - CN_speednode_0038
+      - CN_speednode_0039
+      - CN_speednode_0040
+      - CN_speednode_0041
+      - SG_speednode_0056
+      - SG_speednode_0058
+      - SG_speednode_0063
+      - SG_speednode_0064
+      - SG_speednode_0065
+      - SG_speednode_0067
+      - SG_speednode_0068
+      - SG_speednode_0069
+      - SG_speednode_0070
+      - SG_speednode_0072
+      - SG_speednode_0074
+      - SG_speednode_0075
+      - SG_speednode_0077
+      - SG_speednode_0079
+      - SG_speednode_0080
+      - SG_speednode_0081
+      - SG_speednode_0084
+      - SG_speednode_0085
+      - SG_speednode_0086
+      - 🇺🇦 UA 23 → tg@nicevpn123
+      - 🇺🇦 UA 7 → tg@nicevpn123
+      - 🇨🇳 CN 115 → tg@nicevpn123
+      - 🇯🇵 JP 35 → tg@nicevpn123
+      - 🇯🇵 JP 9 → tg@nicevpn123
+      - 🇰🇷 KR 22 → tg@nicevpn123
+      - 🇰🇷 KR 28 → tg@nicevpn123
+      - 🇸🇬 SG 15 → tg@nicevpn123
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国 CloudFlare节点 7
-      - 韩国特殊|@ripaojiedian
-      - 日本特殊|@ripaojiedian
-      - _US_美国->🇫🇷_FR_法国_1
-      - 6|-https://t.me/MrXbin-3
-      - 6|-https://t.me/MrXbin-15
-      - 6|-https://t.me/MrXbin-17
-      - 6|-https://t.me/MrXbin-18
-      - 6|-https://t.me/MrXbin-19
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇰🇷 韩国2|@ripaojiedian
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇨🇳 CN-120.233.205.133-189_1@189
+      - 🇻🇳 越南【付费推荐：https://jdyvip.link/】9_8@11
+      - 6|-https://t.me/MrXbin-1
+      - 6|-https://t.me/MrXbin-4
+      - 6|-https://t.me/MrXbin-6
+      - 6|-https://t.me/MrXbin-22
       - 6|-https://t.me/MrXbin-24
       - 6|-https://t.me/MrXbin-25
-      - 6|-https://t.me/MrXbin-27
+      - 6|-https://t.me/MrXbin-26
       - 6|-https://t.me/MrXbin-28
-      - 6|-https://t.me/MrXbin-39
+      - 6|-https://t.me/MrXbin-32
+      - 6|-https://t.me/MrXbin-35
       - 6|-https://t.me/MrXbin-40
+      - 6|-https://t.me/MrXbin-41
+      - 6|-https://t.me/MrXbin-42
       - 6|-https://t.me/MrXbin-43
-      - 6|-https://t.me/MrXbin-44
       - 6|-https://t.me/MrXbin-45
+      - 6|-https://t.me/MrXbin-46
       - 6|-https://t.me/MrXbin-47
-      - 6|-https://t.me/MrXbin-50
-      - 6|-https://t.me/MrXbin-178
-      - 19|-1394-VN【ccbaohe.com〗 永久免费节点机场
-      - 19|US_youtube@资源分享师_20
+      - 6|-https://t.me/MrXbin-188
+      - 6|-https://t.me/MrXbin-191
+      - 6|-https://t.me/MrXbin-192
+      - 6|-https://t.me/MrXbin-208
+      - 🇯🇵 19|日本 002
+      - 🇸🇬 19|美国【TG：@ccbaohe】定时更新节点订阅 2
+      - 24|DE_speednode_0041
+      - 🇨🇳 26|baipaovpn广东省广州市
+      - CN_speednode_0001
+      - CN_speednode_0002
+      - CN_speednode_0003
+      - CN_speednode_0004
+      - CN_speednode_0005
+      - CN_speednode_0006
       - CN_speednode_0007
+      - CN_speednode_0008
       - CN_speednode_0009
+      - CN_speednode_0010
+      - CN_speednode_0011
+      - CN_speednode_0012
+      - CN_speednode_0015
+      - CN_speednode_0016
+      - CN_speednode_0018
+      - CN_speednode_0019
+      - CN_speednode_0020
+      - CN_speednode_0021
+      - CN_speednode_0022
       - CN_speednode_0023
-      - CN_speednode_0036
-      - CN_speednode_0045
-      - KR_speednode_0083
-      - KR_speednode_0084
-      - KR_speednode_0085
-      - NL_speednode_0090
-      - VN_speednode_0115
-      - JP 24 → tg@nicevpn123
-      - JP 37 → tg@nicevpn123
-      - KR 18 → tg@nicevpn123
-      - KR 5 → tg@nicevpn123
+      - CN_speednode_0024
+      - CN_speednode_0025
+      - CN_speednode_0026
+      - CN_speednode_0028
+      - CN_speednode_0029
+      - CN_speednode_0030
+      - CN_speednode_0032
+      - CN_speednode_0033
+      - CN_speednode_0034
+      - CN_speednode_0035
+      - CN_speednode_0037
+      - CN_speednode_0038
+      - CN_speednode_0039
+      - CN_speednode_0040
+      - CN_speednode_0041
+      - SG_speednode_0056
+      - SG_speednode_0058
+      - SG_speednode_0063
+      - SG_speednode_0064
+      - SG_speednode_0065
+      - SG_speednode_0067
+      - SG_speednode_0068
+      - SG_speednode_0069
+      - SG_speednode_0070
+      - SG_speednode_0072
+      - SG_speednode_0074
+      - SG_speednode_0075
+      - SG_speednode_0077
+      - SG_speednode_0079
+      - SG_speednode_0080
+      - SG_speednode_0081
+      - SG_speednode_0084
+      - SG_speednode_0085
+      - SG_speednode_0086
+      - 🇺🇦 UA 23 → tg@nicevpn123
+      - 🇺🇦 UA 7 → tg@nicevpn123
+      - 🇨🇳 CN 115 → tg@nicevpn123
+      - 🇯🇵 JP 35 → tg@nicevpn123
+      - 🇯🇵 JP 9 → tg@nicevpn123
+      - 🇰🇷 KR 22 → tg@nicevpn123
+      - 🇰🇷 KR 28 → tg@nicevpn123
+      - 🇸🇬 SG 15 → tg@nicevpn123
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 CloudFlare节点 7
-      - 韩国特殊|@ripaojiedian
-      - 日本特殊|@ripaojiedian
-      - _US_美国->🇫🇷_FR_法国_1
-      - 6|-https://t.me/MrXbin-3
-      - 6|-https://t.me/MrXbin-15
-      - 6|-https://t.me/MrXbin-17
-      - 6|-https://t.me/MrXbin-18
-      - 6|-https://t.me/MrXbin-19
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇰🇷 韩国2|@ripaojiedian
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇨🇳 CN-120.233.205.133-189_1@189
+      - 🇻🇳 越南【付费推荐：https://jdyvip.link/】9_8@11
+      - 6|-https://t.me/MrXbin-1
+      - 6|-https://t.me/MrXbin-4
+      - 6|-https://t.me/MrXbin-6
+      - 6|-https://t.me/MrXbin-22
       - 6|-https://t.me/MrXbin-24
       - 6|-https://t.me/MrXbin-25
-      - 6|-https://t.me/MrXbin-27
+      - 6|-https://t.me/MrXbin-26
       - 6|-https://t.me/MrXbin-28
-      - 6|-https://t.me/MrXbin-39
+      - 6|-https://t.me/MrXbin-32
+      - 6|-https://t.me/MrXbin-35
       - 6|-https://t.me/MrXbin-40
+      - 6|-https://t.me/MrXbin-41
+      - 6|-https://t.me/MrXbin-42
       - 6|-https://t.me/MrXbin-43
-      - 6|-https://t.me/MrXbin-44
       - 6|-https://t.me/MrXbin-45
+      - 6|-https://t.me/MrXbin-46
       - 6|-https://t.me/MrXbin-47
-      - 6|-https://t.me/MrXbin-50
-      - 6|-https://t.me/MrXbin-178
-      - 19|-1394-VN【ccbaohe.com〗 永久免费节点机场
-      - 19|US_youtube@资源分享师_20
+      - 6|-https://t.me/MrXbin-188
+      - 6|-https://t.me/MrXbin-191
+      - 6|-https://t.me/MrXbin-192
+      - 6|-https://t.me/MrXbin-208
+      - 🇯🇵 19|日本 002
+      - 🇸🇬 19|美国【TG：@ccbaohe】定时更新节点订阅 2
+      - 24|DE_speednode_0041
+      - 🇨🇳 26|baipaovpn广东省广州市
+      - CN_speednode_0001
+      - CN_speednode_0002
+      - CN_speednode_0003
+      - CN_speednode_0004
+      - CN_speednode_0005
+      - CN_speednode_0006
       - CN_speednode_0007
+      - CN_speednode_0008
       - CN_speednode_0009
+      - CN_speednode_0010
+      - CN_speednode_0011
+      - CN_speednode_0012
+      - CN_speednode_0015
+      - CN_speednode_0016
+      - CN_speednode_0018
+      - CN_speednode_0019
+      - CN_speednode_0020
+      - CN_speednode_0021
+      - CN_speednode_0022
       - CN_speednode_0023
-      - CN_speednode_0036
-      - CN_speednode_0045
-      - KR_speednode_0083
-      - KR_speednode_0084
-      - KR_speednode_0085
-      - NL_speednode_0090
-      - VN_speednode_0115
-      - JP 24 → tg@nicevpn123
-      - JP 37 → tg@nicevpn123
-      - KR 18 → tg@nicevpn123
-      - KR 5 → tg@nicevpn123
+      - CN_speednode_0024
+      - CN_speednode_0025
+      - CN_speednode_0026
+      - CN_speednode_0028
+      - CN_speednode_0029
+      - CN_speednode_0030
+      - CN_speednode_0032
+      - CN_speednode_0033
+      - CN_speednode_0034
+      - CN_speednode_0035
+      - CN_speednode_0037
+      - CN_speednode_0038
+      - CN_speednode_0039
+      - CN_speednode_0040
+      - CN_speednode_0041
+      - SG_speednode_0056
+      - SG_speednode_0058
+      - SG_speednode_0063
+      - SG_speednode_0064
+      - SG_speednode_0065
+      - SG_speednode_0067
+      - SG_speednode_0068
+      - SG_speednode_0069
+      - SG_speednode_0070
+      - SG_speednode_0072
+      - SG_speednode_0074
+      - SG_speednode_0075
+      - SG_speednode_0077
+      - SG_speednode_0079
+      - SG_speednode_0080
+      - SG_speednode_0081
+      - SG_speednode_0084
+      - SG_speednode_0085
+      - SG_speednode_0086
+      - 🇺🇦 UA 23 → tg@nicevpn123
+      - 🇺🇦 UA 7 → tg@nicevpn123
+      - 🇨🇳 CN 115 → tg@nicevpn123
+      - 🇯🇵 JP 35 → tg@nicevpn123
+      - 🇯🇵 JP 9 → tg@nicevpn123
+      - 🇰🇷 KR 22 → tg@nicevpn123
+      - 🇰🇷 KR 28 → tg@nicevpn123
+      - 🇸🇬 SG 15 → tg@nicevpn123
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -374,43 +826,98 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 CloudFlare节点 7
-      - 韩国特殊|@ripaojiedian
-      - 日本特殊|@ripaojiedian
-      - _US_美国->🇫🇷_FR_法国_1
-      - 6|-https://t.me/MrXbin-3
-      - 6|-https://t.me/MrXbin-15
-      - 6|-https://t.me/MrXbin-17
-      - 6|-https://t.me/MrXbin-18
-      - 6|-https://t.me/MrXbin-19
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇰🇷 韩国2|@ripaojiedian
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇨🇳 CN-120.233.205.133-189_1@189
+      - 🇻🇳 越南【付费推荐：https://jdyvip.link/】9_8@11
+      - 6|-https://t.me/MrXbin-1
+      - 6|-https://t.me/MrXbin-4
+      - 6|-https://t.me/MrXbin-6
+      - 6|-https://t.me/MrXbin-22
       - 6|-https://t.me/MrXbin-24
       - 6|-https://t.me/MrXbin-25
-      - 6|-https://t.me/MrXbin-27
+      - 6|-https://t.me/MrXbin-26
       - 6|-https://t.me/MrXbin-28
-      - 6|-https://t.me/MrXbin-39
+      - 6|-https://t.me/MrXbin-32
+      - 6|-https://t.me/MrXbin-35
       - 6|-https://t.me/MrXbin-40
+      - 6|-https://t.me/MrXbin-41
+      - 6|-https://t.me/MrXbin-42
       - 6|-https://t.me/MrXbin-43
-      - 6|-https://t.me/MrXbin-44
       - 6|-https://t.me/MrXbin-45
+      - 6|-https://t.me/MrXbin-46
       - 6|-https://t.me/MrXbin-47
-      - 6|-https://t.me/MrXbin-50
-      - 6|-https://t.me/MrXbin-178
-      - 19|-1394-VN【ccbaohe.com〗 永久免费节点机场
-      - 19|US_youtube@资源分享师_20
+      - 6|-https://t.me/MrXbin-188
+      - 6|-https://t.me/MrXbin-191
+      - 6|-https://t.me/MrXbin-192
+      - 6|-https://t.me/MrXbin-208
+      - 🇯🇵 19|日本 002
+      - 🇸🇬 19|美国【TG：@ccbaohe】定时更新节点订阅 2
+      - 24|DE_speednode_0041
+      - 🇨🇳 26|baipaovpn广东省广州市
+      - CN_speednode_0001
+      - CN_speednode_0002
+      - CN_speednode_0003
+      - CN_speednode_0004
+      - CN_speednode_0005
+      - CN_speednode_0006
       - CN_speednode_0007
+      - CN_speednode_0008
       - CN_speednode_0009
+      - CN_speednode_0010
+      - CN_speednode_0011
+      - CN_speednode_0012
+      - CN_speednode_0015
+      - CN_speednode_0016
+      - CN_speednode_0018
+      - CN_speednode_0019
+      - CN_speednode_0020
+      - CN_speednode_0021
+      - CN_speednode_0022
       - CN_speednode_0023
-      - CN_speednode_0036
-      - CN_speednode_0045
-      - KR_speednode_0083
-      - KR_speednode_0084
-      - KR_speednode_0085
-      - NL_speednode_0090
-      - VN_speednode_0115
-      - JP 24 → tg@nicevpn123
-      - JP 37 → tg@nicevpn123
-      - KR 18 → tg@nicevpn123
-      - KR 5 → tg@nicevpn123
+      - CN_speednode_0024
+      - CN_speednode_0025
+      - CN_speednode_0026
+      - CN_speednode_0028
+      - CN_speednode_0029
+      - CN_speednode_0030
+      - CN_speednode_0032
+      - CN_speednode_0033
+      - CN_speednode_0034
+      - CN_speednode_0035
+      - CN_speednode_0037
+      - CN_speednode_0038
+      - CN_speednode_0039
+      - CN_speednode_0040
+      - CN_speednode_0041
+      - SG_speednode_0056
+      - SG_speednode_0058
+      - SG_speednode_0063
+      - SG_speednode_0064
+      - SG_speednode_0065
+      - SG_speednode_0067
+      - SG_speednode_0068
+      - SG_speednode_0069
+      - SG_speednode_0070
+      - SG_speednode_0072
+      - SG_speednode_0074
+      - SG_speednode_0075
+      - SG_speednode_0077
+      - SG_speednode_0079
+      - SG_speednode_0080
+      - SG_speednode_0081
+      - SG_speednode_0084
+      - SG_speednode_0085
+      - SG_speednode_0086
+      - 🇺🇦 UA 23 → tg@nicevpn123
+      - 🇺🇦 UA 7 → tg@nicevpn123
+      - 🇨🇳 CN 115 → tg@nicevpn123
+      - 🇯🇵 JP 35 → tg@nicevpn123
+      - 🇯🇵 JP 9 → tg@nicevpn123
+      - 🇰🇷 KR 22 → tg@nicevpn123
+      - 🇰🇷 KR 28 → tg@nicevpn123
+      - 🇸🇬 SG 15 → tg@nicevpn123
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
