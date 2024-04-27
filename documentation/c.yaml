@@ -6,283 +6,159 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇬🇧 英国+伦敦Microsoft公司, server: 51.140.77.109, port: 61735, type: ss, cipher: chacha20-ietf-poly1305, password: 2xIUuBlZx2ITuPUTH5SciB, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 5, server: fcdn.flha.ru, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fcdn.flha.ru}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 6, server: 104.21.23.231, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fcdn.flha.ru}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 9, server: 172.67.214.33, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fcdn.flha.ru}}, udp: true}
-  - {name: "🇨🇳 [Trojan] 广东省 移动", server: 120.233.204.80, port: 14755, type: trojan, password: BZjkHMao, skip-cert-verify: false, udp: true}
-  - {name: "🇨🇳 [VMess] 广东省江门市 移动", server: 120.238.122.243, port: 40259, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇨🇳 [VMess] 🇨🇳 中国 阿里云 2", server: 8.218.156.91, port: 80, type: vmess, uuid: 5d815dc6-a795-44ff-aeb6-7ee16a7a1c57, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: needayhk1.renwox.xyz}}, udp: true}
-  - {name: "🇸🇪 [Trojan] 🇸🇪 瑞典 斯德哥尔摩Amazon数据中心", server: 13.53.98.71, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
-  - {name: "🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点 8", server: cfcdn3.sanfencdn9.com, port: 80, type: vmess, uuid: a595e9ba-b641-480f-8597-323612357ba5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: GWYp69Yujp2.yofnhkfc.xyz}}, udp: true}
-  - {name: 🇭🇰 香港7|@ripaojiedian, server: data-hk-v1.usabooks.com.cn, port: 20206, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: data-hk-v1.usabooks.com.cn}}, udp: true}
-  - {name: 🇯🇵 日本|@ripaojiedian, server: 120.226.50.89, port: 443, type: trojan, password: BZjkHMao, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 日本2|@ripaojiedian, server: cfcdn3.sanfencdn9.com, port: 80, type: vmess, uuid: a595e9ba-b641-480f-8597-323612357ba5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 6Sn8mFtTjp3.yofnhkfc.xyz}}, udp: true}
-  - {name: 🇸🇬 新加坡|@ripaojiedian, server: cfcdn2.sanfencdn9.com, port: 2052, type: vmess, uuid: a595e9ba-b641-480f-8597-323612357ba5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jpafzyhfsg3.yofnhkfc.xyz}}, udp: true}
-  - {name: 🇺🇸 美国2|@ripaojiedian, server: dotu-usv1.03ezhg0qsa.download, port: 11029, type: vmess, uuid: ac1f3b35-1d03-3a85-beab-258d8f23edc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国3|@ripaojiedian, server: cfcdn1.sanfencdn9.com, port: 2095, type: vmess, uuid: a595e9ba-b641-480f-8597-323612357ba5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us82pRzxDMb.fzbqfrse.xyz}}, udp: true}
-  - {name: 🇺🇸 _US_美国_5, server: us219.netfilx.live, port: 80, type: vmess, uuid: 1e65ec6d-9a42-4cd0-8c51-63030970134f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us219.netfilx.live}}, udp: true}
-  - {name: None_None_vmess_1073, server: cfcdn1.sanfencdn9.com, port: 2052, type: vmess, uuid: a595e9ba-b641-480f-8597-323612357ba5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: tw1bQiWSE4x.fzbqfrse.xyz}}, udp: true}
-  - {name: 🇳🇴 Norway_Oslo_vmess_1081, server: 95.164.38.6, port: 80, type: vmess, uuid: 8b86eebb-4332-46ea-aa70-8a821dc8272f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: no1.xv2ray.net}}, udp: true}
-  - {name: 🇺🇸 United States_Ashburn_vmess_10142, server: 23.154.136.2, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇨🇳 China_None_trojan_10188, server: 120.233.204.80, port: 14755, type: trojan, password: BZjkHMao, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_112, server: 54.169.189.194, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1111, server: 13.215.208.103, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇯🇵 Japan_Tokyo_ss_1114, server: 57.180.65.163, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇯🇵 Japan_Tokyo_ss_1116, server: 54.238.23.117, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇰🇷 South Korea_Incheon_ss_1117, server: 3.34.95.205, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇰🇷 South Korea_Suwon_ss_1120, server: 125.141.26.7, port: 49032, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1122, server: 18.142.225.182, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1123, server: 13.214.212.171, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇰🇷 South Korea_Suwon_ss_1124, server: p227.panda004.net, port: 49032, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: 🇰🇷 South Korea_Incheon_ss_1125, server: 43.201.69.200, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1128, server: 47.128.64.71, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇰🇷 South Korea_Incheon_ss_1129, server: 43.201.110.81, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1130, server: 13.250.57.60, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇰🇷 South Korea_Incheon_ss_1131, server: 43.202.41.139, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1133, server: 47.129.9.69, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1135, server: 54.179.101.194, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇺🇸 United States_Los Angeles_ss_1136, server: 75.102.51.30, port: 16899, type: ss, cipher: aes-128-gcm, password: Yc2CtrIz8L, udp: true}
-  - {name: 🇯🇵 Japan_Tokyo_ss_1140, server: 54.248.173.222, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇺🇸 United States_Los Angeles_vmess_1146, server: 75.102.51.61, port: 12732, type: vmess, uuid: 191ba971-0f63-402e-bbc9-9e9eb2604b0c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇰🇷 South Korea_Seongnam-si_ss_1156, server: 125.141.31.73, port: 42185, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: 🇦🇹 Austria_Vienna_trojan_1199, server: 95.164.9.196, port: 2053, type: trojan, password: 09191dbf-e7f7-4e7d-b405-c4785ea992bf, sni: ftp.debian.org, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Japan_Tokyo_vmess_11101, server: 47.74.5.99, port: 80, type: vmess, uuid: 5d815dc6-a795-44ff-aeb6-7ee16a7a1c57, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: needayhk1.renwox.xyz}}, udp: true}
-  - {name: 🇳🇱 The Netherlands_Amsterdam_vmess_11104, server: 103.214.68.57, port: 10001, type: vmess, uuid: ebca5f68-bf59-4081-e658-f158839c2f5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 Hong Kong_Hong Kong_vmess_11107, server: 47.242.234.127, port: 80, type: vmess, uuid: 5d815dc6-a795-44ff-aeb6-7ee16a7a1c57, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: needayhk1.renwox.xyz}}, udp: true}
-  - {name: 🇭🇰 Hong Kong_Hong Kong_vmess_11109, server: 8.217.91.121, port: 80, type: vmess, uuid: 5d815dc6-a795-44ff-aeb6-7ee16a7a1c57, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: needayhk1.renwox.xyz}}, udp: true}
-  - {name: 🇭🇰 Hong Kong_Hong Kong_vmess_11110, server: 8.218.243.95, port: 80, type: vmess, uuid: 5d815dc6-a795-44ff-aeb6-7ee16a7a1c57, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: needayhk1.renwox.xyz}}, udp: true}
-  - {name: 🇭🇰 Hong Kong_Hong Kong_vmess_11113, server: 8.218.22.210, port: 80, type: vmess, uuid: 5d815dc6-a795-44ff-aeb6-7ee16a7a1c57, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: needayhk1.renwox.xyz}}, udp: true}
-  - {name: 🇭🇰 Hong Kong_Hong Kong_vmess_11114, server: 8.218.11.90, port: 80, type: vmess, uuid: 5d815dc6-a795-44ff-aeb6-7ee16a7a1c57, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: needayhk1.renwox.xyz}}, udp: true}
-  - {name: 🇬🇧 United Kingdom_London_ss_1322, server: 52.151.70.24, port: 47169, type: ss, cipher: chacha20-ietf-poly1305, password: hVKny3qtcPWTmGpfhOmYzS, udp: true}
-  - {name: 🇨🇳 China_None_vmess_1328, server: data-hk-v1.usabooks.com.cn, port: 20206, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: data-hk-v1.usabooks.com.cn}}, udp: true}
-  - {name: 0|-https://t.me/MrXbin-19, server: 13.250.63.15, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 0|-https://t.me/MrXbin-130, server: 52.198.245.28, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "🇭🇰 9|baipaovpn香港 #3", server: 47.243.70.197, port: 80, type: vmess, uuid: 5d815dc6-a795-44ff-aeb6-7ee16a7a1c57, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: needayhk1.renwox.xyz}}, udp: true}
-  - {name: CN_speednode_0005, server: 120.238.122.243, port: 35601, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 广东省深圳市 移动, server: data-jp-v1.usabooks.com.cn, port: 20301, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: data-jp-v1.usabooks.com.cn}}, udp: true}
+  - {name: 🇨🇳 广东省 移动 2, server: data-hk-v1.usabooks.com.cn, port: 20206, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: data-hk-v1.usabooks.com.cn}}, udp: true}
+  - {name: 🇨🇳 广东省移动 7, server: data-us-v1.shwjfkw.cn, port: 20401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: data-us-v1.shwjfkw.cn}}, udp: true}
+  - {name: 🇭🇰 香港2|@ripaojiedian, server: 120.238.122.243, port: 40259, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港4|@ripaojiedian, server: 112.29.94.24, port: 443, type: trojan, password: BZjkHMao, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本2|@ripaojiedian, server: cfcdn3.sanfencdn9.com, port: 2052, type: vmess, uuid: a1285794-a9fd-4423-83f5-aeecc84dd76d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: kvjqqknzjp6.yofnhkfc.xyz}}, udp: true}
+  - {name: 🇸🇬 新加坡2|@ripaojiedian, server: cfcdn2.sanfencdn9.com, port: 2052, type: vmess, uuid: a1285794-a9fd-4423-83f5-aeecc84dd76d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 7nAi74jJsg1.yofnhkfc.xyz}}, udp: true}
+  - {name: 🇺🇸 美国3|@ripaojiedian, server: cfcdn1.sanfencdn9.com, port: 2095, type: vmess, uuid: a1285794-a9fd-4423-83f5-aeecc84dd76d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us82pRzxDMb.fzbqfrse.xyz}}, udp: true}
+  - {name: 🇩🇪 德国|@ripaojiedian, server: 36.138.99.56, port: 40316, type: trojan, password: BZjkHMao, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 Singapore_Singapore_ss_112, server: 18.139.225.183, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇸🇬 Singapore_Singapore_ss_116, server: 47.128.230.112, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇰🇷 South Korea_Suwon_ss_119, server: p227.panda004.net, port: 49032, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 🇸🇬 Singapore_Singapore_ss_1111, server: 13.214.212.171, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇸🇬 Singapore_Singapore_ss_1115, server: 47.129.9.69, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇰🇷 South Korea_Incheon_ss_1117, server: 43.203.201.192, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇺🇸 United States_None_vmess_11122, server: 172.67.214.33, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fcdn.flha.ru}}, udp: true}
+  - {name: None_None_vmess_11127, server: fcdn.flha.ru, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fcdn.flha.ru}}, udp: true}
+  - {name: None_None_vmess_11128, server: 104.21.23.231, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fcdn.flha.ru}}, udp: true}
+  - {name: 0|-https://t.me/MrXbin-1, server: 43.201.69.200, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 0|-https://t.me/MrXbin-5, server: 18.142.225.182, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 0|-https://t.me/MrXbin-102, server: 38.110.1.51, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 0|-https://t.me/MrXbin-104, server: 38.110.1.51, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 🇺🇸 _US_美国 32, server: 169.197.142.216, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 🇺🇸 _US_美国 33, server: 169.197.142.216, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
   - {name: LV 1 → tg@nicevpn123, server: 46.183.217.232, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 🇺🇦 UA 29 → tg@nicevpn123, server: at1.trojanvpn.de, port: 2053, type: trojan, password: 09191dbf-e7f7-4e7d-b405-c4785ea992bf, sni: ftp.debian.org, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 CN 148 → tg@nicevpn123, server: hk.lianjianode.cc, port: 21032, type: vmess, uuid: 2e009a5a-5329-46cc-a69e-097b94323328, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk.lianjianode.cc}}, udp: true}
-  - {name: 🇨🇳 CN 308 → tg@nicevpn123, server: 120.233.42.83, port: 20207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇨🇳 CN 366 → tg@nicevpn123, server: 120.232.242.117, port: 41492, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 CN 74 → tg@nicevpn123, server: 183.237.20.158, port: 41242, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 DE 17 → tg@nicevpn123, server: 141.94.237.81, port: 8443, type: vmess, uuid: 4b994ea4-6a99-442d-9db9-06df89cca050, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇪🇸 ES 11 → tg@nicevpn123, server: 5.forlive.live, port: 60033, type: ss, cipher: chacha20-ietf-poly1305, password: d77d4bdd-49d7-34c6-adfa-7fda9967d1d7, udp: true}
-  - {name: 🇪🇸 ES 14 → tg@nicevpn123, server: 2.forlive.live, port: 61005, type: ss, cipher: chacha20-ietf-poly1305, password: d77d4bdd-49d7-34c6-adfa-7fda9967d1d7, udp: true}
-  - {name: 🇷🇺 RU 30 → tg@nicevpn123, server: 185.236.233.111, port: 2053, type: trojan, password: ba74833c-8c0f-4dcd-8cbc-13e3c32d3765, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 US 543 → tg@nicevpn123, server: 64.23.196.139, port: 13337, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇨🇳 CN 50 → tg@nicevpn123, server: 120.233.42.83, port: 20207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇪🇸 ES 16 → tg@nicevpn123, server: 4.forlive.live, port: 61001, type: ss, cipher: chacha20-ietf-poly1305, password: 95597817-57ba-43e9-b853-c9dab67c59ce, udp: true}
+  - {name: 🇪🇸 ES 28 → tg@nicevpn123, server: 3.forlive.live, port: 61019, type: ss, cipher: chacha20-ietf-poly1305, password: be134ab3-1760-3e70-8b87-f197a365ffc3, udp: true}
+  - {name: 🇪🇸 ES 5 → tg@nicevpn123, server: 5.forlive.live, port: 60033, type: ss, cipher: chacha20-ietf-poly1305, password: d77d4bdd-49d7-34c6-adfa-7fda9967d1d7, udp: true}
+  - {name: 🇫🇷 FR 3 → tg@nicevpn123, server: 51.210.182.170, port: 443, type: trojan, password: 278fff60-fc3a-11ee-a4a6-1239d0255272, skip-cert-verify: false, udp: true}
+  - {name: 🇬🇧 GB 6 → tg@nicevpn123, server: series-a2-mec.varzesh360.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: u17T3BvpYaaiuW2c, udp: true}
+  - {name: 🇰🇷 KR 28 → tg@nicevpn123, server: 125.141.26.7, port: 49032, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 🇷🇺 RU 42 → tg@nicevpn123, server: 217.30.10.18, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: 🇺🇸 US 476 → tg@nicevpn123, server: onea.flha.ru, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇬🇧 英国+伦敦Microsoft公司
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇨🇳 [Trojan] 广东省 移动
-      - 🇨🇳 [VMess] 广东省江门市 移动
-      - 🇨🇳 [VMess] 🇨🇳 中国 阿里云 2
-      - 🇸🇪 [Trojan] 🇸🇪 瑞典 斯德哥尔摩Amazon数据中心
-      - 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点 8
-      - 🇭🇰 香港7|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
+      - 🇨🇳 广东省深圳市 移动
+      - 🇨🇳 广东省 移动 2
+      - 🇨🇳 广东省移动 7
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇺🇸 美国2|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 _US_美国_5
-      - None_None_vmess_1073
-      - 🇳🇴 Norway_Oslo_vmess_1081
-      - 🇺🇸 United States_Ashburn_vmess_10142
-      - 🇨🇳 China_None_trojan_10188
+      - 🇩🇪 德国|@ripaojiedian
       - 🇸🇬 Singapore_Singapore_ss_112
+      - 🇸🇬 Singapore_Singapore_ss_116
+      - 🇰🇷 South Korea_Suwon_ss_119
       - 🇸🇬 Singapore_Singapore_ss_1111
-      - 🇯🇵 Japan_Tokyo_ss_1114
-      - 🇯🇵 Japan_Tokyo_ss_1116
+      - 🇸🇬 Singapore_Singapore_ss_1115
       - 🇰🇷 South Korea_Incheon_ss_1117
-      - 🇰🇷 South Korea_Suwon_ss_1120
-      - 🇸🇬 Singapore_Singapore_ss_1122
-      - 🇸🇬 Singapore_Singapore_ss_1123
-      - 🇰🇷 South Korea_Suwon_ss_1124
-      - 🇰🇷 South Korea_Incheon_ss_1125
-      - 🇸🇬 Singapore_Singapore_ss_1128
-      - 🇰🇷 South Korea_Incheon_ss_1129
-      - 🇸🇬 Singapore_Singapore_ss_1130
-      - 🇰🇷 South Korea_Incheon_ss_1131
-      - 🇸🇬 Singapore_Singapore_ss_1133
-      - 🇸🇬 Singapore_Singapore_ss_1135
-      - 🇺🇸 United States_Los Angeles_ss_1136
-      - 🇯🇵 Japan_Tokyo_ss_1140
-      - 🇺🇸 United States_Los Angeles_vmess_1146
-      - 🇰🇷 South Korea_Seongnam-si_ss_1156
-      - 🇦🇹 Austria_Vienna_trojan_1199
-      - 🇯🇵 Japan_Tokyo_vmess_11101
-      - 🇳🇱 The Netherlands_Amsterdam_vmess_11104
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11107
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11109
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11110
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11113
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11114
-      - 🇬🇧 United Kingdom_London_ss_1322
-      - 🇨🇳 China_None_vmess_1328
-      - 0|-https://t.me/MrXbin-19
-      - 0|-https://t.me/MrXbin-130
-      - "🇭🇰 9|baipaovpn香港 #3"
-      - CN_speednode_0005
+      - 🇺🇸 United States_None_vmess_11122
+      - None_None_vmess_11127
+      - None_None_vmess_11128
+      - 0|-https://t.me/MrXbin-1
+      - 0|-https://t.me/MrXbin-5
+      - 0|-https://t.me/MrXbin-102
+      - 0|-https://t.me/MrXbin-104
+      - 🇺🇸 _US_美国 32
+      - 🇺🇸 _US_美国 33
       - LV 1 → tg@nicevpn123
-      - 🇺🇦 UA 29 → tg@nicevpn123
-      - 🇨🇳 CN 148 → tg@nicevpn123
-      - 🇨🇳 CN 308 → tg@nicevpn123
-      - 🇨🇳 CN 366 → tg@nicevpn123
-      - 🇨🇳 CN 74 → tg@nicevpn123
-      - 🇩🇪 DE 17 → tg@nicevpn123
-      - 🇪🇸 ES 11 → tg@nicevpn123
-      - 🇪🇸 ES 14 → tg@nicevpn123
-      - 🇷🇺 RU 30 → tg@nicevpn123
-      - 🇺🇸 US 543 → tg@nicevpn123
+      - 🇨🇳 CN 50 → tg@nicevpn123
+      - 🇪🇸 ES 16 → tg@nicevpn123
+      - 🇪🇸 ES 28 → tg@nicevpn123
+      - 🇪🇸 ES 5 → tg@nicevpn123
+      - 🇫🇷 FR 3 → tg@nicevpn123
+      - 🇬🇧 GB 6 → tg@nicevpn123
+      - 🇰🇷 KR 28 → tg@nicevpn123
+      - 🇷🇺 RU 42 → tg@nicevpn123
+      - 🇺🇸 US 476 → tg@nicevpn123
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - 🇬🇧 英国+伦敦Microsoft公司
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇨🇳 [Trojan] 广东省 移动
-      - 🇨🇳 [VMess] 广东省江门市 移动
-      - 🇨🇳 [VMess] 🇨🇳 中国 阿里云 2
-      - 🇸🇪 [Trojan] 🇸🇪 瑞典 斯德哥尔摩Amazon数据中心
-      - 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点 8
-      - 🇭🇰 香港7|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
+      - 🇨🇳 广东省深圳市 移动
+      - 🇨🇳 广东省 移动 2
+      - 🇨🇳 广东省移动 7
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇺🇸 美国2|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 _US_美国_5
-      - None_None_vmess_1073
-      - 🇳🇴 Norway_Oslo_vmess_1081
-      - 🇺🇸 United States_Ashburn_vmess_10142
-      - 🇨🇳 China_None_trojan_10188
+      - 🇩🇪 德国|@ripaojiedian
       - 🇸🇬 Singapore_Singapore_ss_112
+      - 🇸🇬 Singapore_Singapore_ss_116
+      - 🇰🇷 South Korea_Suwon_ss_119
       - 🇸🇬 Singapore_Singapore_ss_1111
-      - 🇯🇵 Japan_Tokyo_ss_1114
-      - 🇯🇵 Japan_Tokyo_ss_1116
+      - 🇸🇬 Singapore_Singapore_ss_1115
       - 🇰🇷 South Korea_Incheon_ss_1117
-      - 🇰🇷 South Korea_Suwon_ss_1120
-      - 🇸🇬 Singapore_Singapore_ss_1122
-      - 🇸🇬 Singapore_Singapore_ss_1123
-      - 🇰🇷 South Korea_Suwon_ss_1124
-      - 🇰🇷 South Korea_Incheon_ss_1125
-      - 🇸🇬 Singapore_Singapore_ss_1128
-      - 🇰🇷 South Korea_Incheon_ss_1129
-      - 🇸🇬 Singapore_Singapore_ss_1130
-      - 🇰🇷 South Korea_Incheon_ss_1131
-      - 🇸🇬 Singapore_Singapore_ss_1133
-      - 🇸🇬 Singapore_Singapore_ss_1135
-      - 🇺🇸 United States_Los Angeles_ss_1136
-      - 🇯🇵 Japan_Tokyo_ss_1140
-      - 🇺🇸 United States_Los Angeles_vmess_1146
-      - 🇰🇷 South Korea_Seongnam-si_ss_1156
-      - 🇦🇹 Austria_Vienna_trojan_1199
-      - 🇯🇵 Japan_Tokyo_vmess_11101
-      - 🇳🇱 The Netherlands_Amsterdam_vmess_11104
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11107
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11109
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11110
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11113
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11114
-      - 🇬🇧 United Kingdom_London_ss_1322
-      - 🇨🇳 China_None_vmess_1328
-      - 0|-https://t.me/MrXbin-19
-      - 0|-https://t.me/MrXbin-130
-      - "🇭🇰 9|baipaovpn香港 #3"
-      - CN_speednode_0005
+      - 🇺🇸 United States_None_vmess_11122
+      - None_None_vmess_11127
+      - None_None_vmess_11128
+      - 0|-https://t.me/MrXbin-1
+      - 0|-https://t.me/MrXbin-5
+      - 0|-https://t.me/MrXbin-102
+      - 0|-https://t.me/MrXbin-104
+      - 🇺🇸 _US_美国 32
+      - 🇺🇸 _US_美国 33
       - LV 1 → tg@nicevpn123
-      - 🇺🇦 UA 29 → tg@nicevpn123
-      - 🇨🇳 CN 148 → tg@nicevpn123
-      - 🇨🇳 CN 308 → tg@nicevpn123
-      - 🇨🇳 CN 366 → tg@nicevpn123
-      - 🇨🇳 CN 74 → tg@nicevpn123
-      - 🇩🇪 DE 17 → tg@nicevpn123
-      - 🇪🇸 ES 11 → tg@nicevpn123
-      - 🇪🇸 ES 14 → tg@nicevpn123
-      - 🇷🇺 RU 30 → tg@nicevpn123
-      - 🇺🇸 US 543 → tg@nicevpn123
+      - 🇨🇳 CN 50 → tg@nicevpn123
+      - 🇪🇸 ES 16 → tg@nicevpn123
+      - 🇪🇸 ES 28 → tg@nicevpn123
+      - 🇪🇸 ES 5 → tg@nicevpn123
+      - 🇫🇷 FR 3 → tg@nicevpn123
+      - 🇬🇧 GB 6 → tg@nicevpn123
+      - 🇰🇷 KR 28 → tg@nicevpn123
+      - 🇷🇺 RU 42 → tg@nicevpn123
+      - 🇺🇸 US 476 → tg@nicevpn123
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇬🇧 英国+伦敦Microsoft公司
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇨🇳 [Trojan] 广东省 移动
-      - 🇨🇳 [VMess] 广东省江门市 移动
-      - 🇨🇳 [VMess] 🇨🇳 中国 阿里云 2
-      - 🇸🇪 [Trojan] 🇸🇪 瑞典 斯德哥尔摩Amazon数据中心
-      - 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点 8
-      - 🇭🇰 香港7|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
+      - 🇨🇳 广东省深圳市 移动
+      - 🇨🇳 广东省 移动 2
+      - 🇨🇳 广东省移动 7
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇺🇸 美国2|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 _US_美国_5
-      - None_None_vmess_1073
-      - 🇳🇴 Norway_Oslo_vmess_1081
-      - 🇺🇸 United States_Ashburn_vmess_10142
-      - 🇨🇳 China_None_trojan_10188
+      - 🇩🇪 德国|@ripaojiedian
       - 🇸🇬 Singapore_Singapore_ss_112
+      - 🇸🇬 Singapore_Singapore_ss_116
+      - 🇰🇷 South Korea_Suwon_ss_119
       - 🇸🇬 Singapore_Singapore_ss_1111
-      - 🇯🇵 Japan_Tokyo_ss_1114
-      - 🇯🇵 Japan_Tokyo_ss_1116
+      - 🇸🇬 Singapore_Singapore_ss_1115
       - 🇰🇷 South Korea_Incheon_ss_1117
-      - 🇰🇷 South Korea_Suwon_ss_1120
-      - 🇸🇬 Singapore_Singapore_ss_1122
-      - 🇸🇬 Singapore_Singapore_ss_1123
-      - 🇰🇷 South Korea_Suwon_ss_1124
-      - 🇰🇷 South Korea_Incheon_ss_1125
-      - 🇸🇬 Singapore_Singapore_ss_1128
-      - 🇰🇷 South Korea_Incheon_ss_1129
-      - 🇸🇬 Singapore_Singapore_ss_1130
-      - 🇰🇷 South Korea_Incheon_ss_1131
-      - 🇸🇬 Singapore_Singapore_ss_1133
-      - 🇸🇬 Singapore_Singapore_ss_1135
-      - 🇺🇸 United States_Los Angeles_ss_1136
-      - 🇯🇵 Japan_Tokyo_ss_1140
-      - 🇺🇸 United States_Los Angeles_vmess_1146
-      - 🇰🇷 South Korea_Seongnam-si_ss_1156
-      - 🇦🇹 Austria_Vienna_trojan_1199
-      - 🇯🇵 Japan_Tokyo_vmess_11101
-      - 🇳🇱 The Netherlands_Amsterdam_vmess_11104
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11107
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11109
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11110
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11113
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11114
-      - 🇬🇧 United Kingdom_London_ss_1322
-      - 🇨🇳 China_None_vmess_1328
-      - 0|-https://t.me/MrXbin-19
-      - 0|-https://t.me/MrXbin-130
-      - "🇭🇰 9|baipaovpn香港 #3"
-      - CN_speednode_0005
+      - 🇺🇸 United States_None_vmess_11122
+      - None_None_vmess_11127
+      - None_None_vmess_11128
+      - 0|-https://t.me/MrXbin-1
+      - 0|-https://t.me/MrXbin-5
+      - 0|-https://t.me/MrXbin-102
+      - 0|-https://t.me/MrXbin-104
+      - 🇺🇸 _US_美国 32
+      - 🇺🇸 _US_美国 33
       - LV 1 → tg@nicevpn123
-      - 🇺🇦 UA 29 → tg@nicevpn123
-      - 🇨🇳 CN 148 → tg@nicevpn123
-      - 🇨🇳 CN 308 → tg@nicevpn123
-      - 🇨🇳 CN 366 → tg@nicevpn123
-      - 🇨🇳 CN 74 → tg@nicevpn123
-      - 🇩🇪 DE 17 → tg@nicevpn123
-      - 🇪🇸 ES 11 → tg@nicevpn123
-      - 🇪🇸 ES 14 → tg@nicevpn123
-      - 🇷🇺 RU 30 → tg@nicevpn123
-      - 🇺🇸 US 543 → tg@nicevpn123
+      - 🇨🇳 CN 50 → tg@nicevpn123
+      - 🇪🇸 ES 16 → tg@nicevpn123
+      - 🇪🇸 ES 28 → tg@nicevpn123
+      - 🇪🇸 ES 5 → tg@nicevpn123
+      - 🇫🇷 FR 3 → tg@nicevpn123
+      - 🇬🇧 GB 6 → tg@nicevpn123
+      - 🇰🇷 KR 28 → tg@nicevpn123
+      - 🇷🇺 RU 42 → tg@nicevpn123
+      - 🇺🇸 US 476 → tg@nicevpn123
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -301,289 +177,165 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇬🇧 英国+伦敦Microsoft公司
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇨🇳 [Trojan] 广东省 移动
-      - 🇨🇳 [VMess] 广东省江门市 移动
-      - 🇨🇳 [VMess] 🇨🇳 中国 阿里云 2
-      - 🇸🇪 [Trojan] 🇸🇪 瑞典 斯德哥尔摩Amazon数据中心
-      - 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点 8
-      - 🇭🇰 香港7|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
+      - 🇨🇳 广东省深圳市 移动
+      - 🇨🇳 广东省 移动 2
+      - 🇨🇳 广东省移动 7
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇺🇸 美国2|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 _US_美国_5
-      - None_None_vmess_1073
-      - 🇳🇴 Norway_Oslo_vmess_1081
-      - 🇺🇸 United States_Ashburn_vmess_10142
-      - 🇨🇳 China_None_trojan_10188
+      - 🇩🇪 德国|@ripaojiedian
       - 🇸🇬 Singapore_Singapore_ss_112
+      - 🇸🇬 Singapore_Singapore_ss_116
+      - 🇰🇷 South Korea_Suwon_ss_119
       - 🇸🇬 Singapore_Singapore_ss_1111
-      - 🇯🇵 Japan_Tokyo_ss_1114
-      - 🇯🇵 Japan_Tokyo_ss_1116
+      - 🇸🇬 Singapore_Singapore_ss_1115
       - 🇰🇷 South Korea_Incheon_ss_1117
-      - 🇰🇷 South Korea_Suwon_ss_1120
-      - 🇸🇬 Singapore_Singapore_ss_1122
-      - 🇸🇬 Singapore_Singapore_ss_1123
-      - 🇰🇷 South Korea_Suwon_ss_1124
-      - 🇰🇷 South Korea_Incheon_ss_1125
-      - 🇸🇬 Singapore_Singapore_ss_1128
-      - 🇰🇷 South Korea_Incheon_ss_1129
-      - 🇸🇬 Singapore_Singapore_ss_1130
-      - 🇰🇷 South Korea_Incheon_ss_1131
-      - 🇸🇬 Singapore_Singapore_ss_1133
-      - 🇸🇬 Singapore_Singapore_ss_1135
-      - 🇺🇸 United States_Los Angeles_ss_1136
-      - 🇯🇵 Japan_Tokyo_ss_1140
-      - 🇺🇸 United States_Los Angeles_vmess_1146
-      - 🇰🇷 South Korea_Seongnam-si_ss_1156
-      - 🇦🇹 Austria_Vienna_trojan_1199
-      - 🇯🇵 Japan_Tokyo_vmess_11101
-      - 🇳🇱 The Netherlands_Amsterdam_vmess_11104
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11107
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11109
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11110
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11113
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11114
-      - 🇬🇧 United Kingdom_London_ss_1322
-      - 🇨🇳 China_None_vmess_1328
-      - 0|-https://t.me/MrXbin-19
-      - 0|-https://t.me/MrXbin-130
-      - "🇭🇰 9|baipaovpn香港 #3"
-      - CN_speednode_0005
+      - 🇺🇸 United States_None_vmess_11122
+      - None_None_vmess_11127
+      - None_None_vmess_11128
+      - 0|-https://t.me/MrXbin-1
+      - 0|-https://t.me/MrXbin-5
+      - 0|-https://t.me/MrXbin-102
+      - 0|-https://t.me/MrXbin-104
+      - 🇺🇸 _US_美国 32
+      - 🇺🇸 _US_美国 33
       - LV 1 → tg@nicevpn123
-      - 🇺🇦 UA 29 → tg@nicevpn123
-      - 🇨🇳 CN 148 → tg@nicevpn123
-      - 🇨🇳 CN 308 → tg@nicevpn123
-      - 🇨🇳 CN 366 → tg@nicevpn123
-      - 🇨🇳 CN 74 → tg@nicevpn123
-      - 🇩🇪 DE 17 → tg@nicevpn123
-      - 🇪🇸 ES 11 → tg@nicevpn123
-      - 🇪🇸 ES 14 → tg@nicevpn123
-      - 🇷🇺 RU 30 → tg@nicevpn123
-      - 🇺🇸 US 543 → tg@nicevpn123
+      - 🇨🇳 CN 50 → tg@nicevpn123
+      - 🇪🇸 ES 16 → tg@nicevpn123
+      - 🇪🇸 ES 28 → tg@nicevpn123
+      - 🇪🇸 ES 5 → tg@nicevpn123
+      - 🇫🇷 FR 3 → tg@nicevpn123
+      - 🇬🇧 GB 6 → tg@nicevpn123
+      - 🇰🇷 KR 28 → tg@nicevpn123
+      - 🇷🇺 RU 42 → tg@nicevpn123
+      - 🇺🇸 US 476 → tg@nicevpn123
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 香港7|@ripaojiedian
-      - "🇭🇰 9|baipaovpn香港 #3"
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇬🇧 英国+伦敦Microsoft公司
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇨🇳 [Trojan] 广东省 移动
-      - 🇨🇳 [VMess] 广东省江门市 移动
-      - 🇨🇳 [VMess] 🇨🇳 中国 阿里云 2
-      - 🇸🇪 [Trojan] 🇸🇪 瑞典 斯德哥尔摩Amazon数据中心
-      - 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点 8
-      - 🇭🇰 香港7|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
+      - 🇨🇳 广东省深圳市 移动
+      - 🇨🇳 广东省 移动 2
+      - 🇨🇳 广东省移动 7
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇺🇸 美国2|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 _US_美国_5
-      - None_None_vmess_1073
-      - 🇳🇴 Norway_Oslo_vmess_1081
-      - 🇺🇸 United States_Ashburn_vmess_10142
-      - 🇨🇳 China_None_trojan_10188
+      - 🇩🇪 德国|@ripaojiedian
       - 🇸🇬 Singapore_Singapore_ss_112
+      - 🇸🇬 Singapore_Singapore_ss_116
+      - 🇰🇷 South Korea_Suwon_ss_119
       - 🇸🇬 Singapore_Singapore_ss_1111
-      - 🇯🇵 Japan_Tokyo_ss_1114
-      - 🇯🇵 Japan_Tokyo_ss_1116
+      - 🇸🇬 Singapore_Singapore_ss_1115
       - 🇰🇷 South Korea_Incheon_ss_1117
-      - 🇰🇷 South Korea_Suwon_ss_1120
-      - 🇸🇬 Singapore_Singapore_ss_1122
-      - 🇸🇬 Singapore_Singapore_ss_1123
-      - 🇰🇷 South Korea_Suwon_ss_1124
-      - 🇰🇷 South Korea_Incheon_ss_1125
-      - 🇸🇬 Singapore_Singapore_ss_1128
-      - 🇰🇷 South Korea_Incheon_ss_1129
-      - 🇸🇬 Singapore_Singapore_ss_1130
-      - 🇰🇷 South Korea_Incheon_ss_1131
-      - 🇸🇬 Singapore_Singapore_ss_1133
-      - 🇸🇬 Singapore_Singapore_ss_1135
-      - 🇺🇸 United States_Los Angeles_ss_1136
-      - 🇯🇵 Japan_Tokyo_ss_1140
-      - 🇺🇸 United States_Los Angeles_vmess_1146
-      - 🇰🇷 South Korea_Seongnam-si_ss_1156
-      - 🇦🇹 Austria_Vienna_trojan_1199
-      - 🇯🇵 Japan_Tokyo_vmess_11101
-      - 🇳🇱 The Netherlands_Amsterdam_vmess_11104
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11107
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11109
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11110
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11113
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11114
-      - 🇬🇧 United Kingdom_London_ss_1322
-      - 🇨🇳 China_None_vmess_1328
-      - 0|-https://t.me/MrXbin-19
-      - 0|-https://t.me/MrXbin-130
-      - "🇭🇰 9|baipaovpn香港 #3"
-      - CN_speednode_0005
+      - 🇺🇸 United States_None_vmess_11122
+      - None_None_vmess_11127
+      - None_None_vmess_11128
+      - 0|-https://t.me/MrXbin-1
+      - 0|-https://t.me/MrXbin-5
+      - 0|-https://t.me/MrXbin-102
+      - 0|-https://t.me/MrXbin-104
+      - 🇺🇸 _US_美国 32
+      - 🇺🇸 _US_美国 33
       - LV 1 → tg@nicevpn123
-      - 🇺🇦 UA 29 → tg@nicevpn123
-      - 🇨🇳 CN 148 → tg@nicevpn123
-      - 🇨🇳 CN 308 → tg@nicevpn123
-      - 🇨🇳 CN 366 → tg@nicevpn123
-      - 🇨🇳 CN 74 → tg@nicevpn123
-      - 🇩🇪 DE 17 → tg@nicevpn123
-      - 🇪🇸 ES 11 → tg@nicevpn123
-      - 🇪🇸 ES 14 → tg@nicevpn123
-      - 🇷🇺 RU 30 → tg@nicevpn123
-      - 🇺🇸 US 543 → tg@nicevpn123
+      - 🇨🇳 CN 50 → tg@nicevpn123
+      - 🇪🇸 ES 16 → tg@nicevpn123
+      - 🇪🇸 ES 28 → tg@nicevpn123
+      - 🇪🇸 ES 5 → tg@nicevpn123
+      - 🇫🇷 FR 3 → tg@nicevpn123
+      - 🇬🇧 GB 6 → tg@nicevpn123
+      - 🇰🇷 KR 28 → tg@nicevpn123
+      - 🇷🇺 RU 42 → tg@nicevpn123
+      - 🇺🇸 US 476 → tg@nicevpn123
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇬🇧 英国+伦敦Microsoft公司
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇨🇳 [Trojan] 广东省 移动
-      - 🇨🇳 [VMess] 广东省江门市 移动
-      - 🇨🇳 [VMess] 🇨🇳 中国 阿里云 2
-      - 🇸🇪 [Trojan] 🇸🇪 瑞典 斯德哥尔摩Amazon数据中心
-      - 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点 8
-      - 🇭🇰 香港7|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
+      - 🇨🇳 广东省深圳市 移动
+      - 🇨🇳 广东省 移动 2
+      - 🇨🇳 广东省移动 7
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇺🇸 美国2|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 _US_美国_5
-      - None_None_vmess_1073
-      - 🇳🇴 Norway_Oslo_vmess_1081
-      - 🇺🇸 United States_Ashburn_vmess_10142
-      - 🇨🇳 China_None_trojan_10188
+      - 🇩🇪 德国|@ripaojiedian
       - 🇸🇬 Singapore_Singapore_ss_112
+      - 🇸🇬 Singapore_Singapore_ss_116
+      - 🇰🇷 South Korea_Suwon_ss_119
       - 🇸🇬 Singapore_Singapore_ss_1111
-      - 🇯🇵 Japan_Tokyo_ss_1114
-      - 🇯🇵 Japan_Tokyo_ss_1116
+      - 🇸🇬 Singapore_Singapore_ss_1115
       - 🇰🇷 South Korea_Incheon_ss_1117
-      - 🇰🇷 South Korea_Suwon_ss_1120
-      - 🇸🇬 Singapore_Singapore_ss_1122
-      - 🇸🇬 Singapore_Singapore_ss_1123
-      - 🇰🇷 South Korea_Suwon_ss_1124
-      - 🇰🇷 South Korea_Incheon_ss_1125
-      - 🇸🇬 Singapore_Singapore_ss_1128
-      - 🇰🇷 South Korea_Incheon_ss_1129
-      - 🇸🇬 Singapore_Singapore_ss_1130
-      - 🇰🇷 South Korea_Incheon_ss_1131
-      - 🇸🇬 Singapore_Singapore_ss_1133
-      - 🇸🇬 Singapore_Singapore_ss_1135
-      - 🇺🇸 United States_Los Angeles_ss_1136
-      - 🇯🇵 Japan_Tokyo_ss_1140
-      - 🇺🇸 United States_Los Angeles_vmess_1146
-      - 🇰🇷 South Korea_Seongnam-si_ss_1156
-      - 🇦🇹 Austria_Vienna_trojan_1199
-      - 🇯🇵 Japan_Tokyo_vmess_11101
-      - 🇳🇱 The Netherlands_Amsterdam_vmess_11104
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11107
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11109
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11110
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11113
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11114
-      - 🇬🇧 United Kingdom_London_ss_1322
-      - 🇨🇳 China_None_vmess_1328
-      - 0|-https://t.me/MrXbin-19
-      - 0|-https://t.me/MrXbin-130
-      - "🇭🇰 9|baipaovpn香港 #3"
-      - CN_speednode_0005
+      - 🇺🇸 United States_None_vmess_11122
+      - None_None_vmess_11127
+      - None_None_vmess_11128
+      - 0|-https://t.me/MrXbin-1
+      - 0|-https://t.me/MrXbin-5
+      - 0|-https://t.me/MrXbin-102
+      - 0|-https://t.me/MrXbin-104
+      - 🇺🇸 _US_美国 32
+      - 🇺🇸 _US_美国 33
       - LV 1 → tg@nicevpn123
-      - 🇺🇦 UA 29 → tg@nicevpn123
-      - 🇨🇳 CN 148 → tg@nicevpn123
-      - 🇨🇳 CN 308 → tg@nicevpn123
-      - 🇨🇳 CN 366 → tg@nicevpn123
-      - 🇨🇳 CN 74 → tg@nicevpn123
-      - 🇩🇪 DE 17 → tg@nicevpn123
-      - 🇪🇸 ES 11 → tg@nicevpn123
-      - 🇪🇸 ES 14 → tg@nicevpn123
-      - 🇷🇺 RU 30 → tg@nicevpn123
-      - 🇺🇸 US 543 → tg@nicevpn123
+      - 🇨🇳 CN 50 → tg@nicevpn123
+      - 🇪🇸 ES 16 → tg@nicevpn123
+      - 🇪🇸 ES 28 → tg@nicevpn123
+      - 🇪🇸 ES 5 → tg@nicevpn123
+      - 🇫🇷 FR 3 → tg@nicevpn123
+      - 🇬🇧 GB 6 → tg@nicevpn123
+      - 🇰🇷 KR 28 → tg@nicevpn123
+      - 🇷🇺 RU 42 → tg@nicevpn123
+      - 🇺🇸 US 476 → tg@nicevpn123
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇬🇧 英国+伦敦Microsoft公司
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇨🇳 [Trojan] 广东省 移动
-      - 🇨🇳 [VMess] 广东省江门市 移动
-      - 🇨🇳 [VMess] 🇨🇳 中国 阿里云 2
-      - 🇸🇪 [Trojan] 🇸🇪 瑞典 斯德哥尔摩Amazon数据中心
-      - 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点 8
-      - 🇭🇰 香港7|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
+      - 🇨🇳 广东省深圳市 移动
+      - 🇨🇳 广东省 移动 2
+      - 🇨🇳 广东省移动 7
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇺🇸 美国2|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 _US_美国_5
-      - None_None_vmess_1073
-      - 🇳🇴 Norway_Oslo_vmess_1081
-      - 🇺🇸 United States_Ashburn_vmess_10142
-      - 🇨🇳 China_None_trojan_10188
+      - 🇩🇪 德国|@ripaojiedian
       - 🇸🇬 Singapore_Singapore_ss_112
+      - 🇸🇬 Singapore_Singapore_ss_116
+      - 🇰🇷 South Korea_Suwon_ss_119
       - 🇸🇬 Singapore_Singapore_ss_1111
-      - 🇯🇵 Japan_Tokyo_ss_1114
-      - 🇯🇵 Japan_Tokyo_ss_1116
+      - 🇸🇬 Singapore_Singapore_ss_1115
       - 🇰🇷 South Korea_Incheon_ss_1117
-      - 🇰🇷 South Korea_Suwon_ss_1120
-      - 🇸🇬 Singapore_Singapore_ss_1122
-      - 🇸🇬 Singapore_Singapore_ss_1123
-      - 🇰🇷 South Korea_Suwon_ss_1124
-      - 🇰🇷 South Korea_Incheon_ss_1125
-      - 🇸🇬 Singapore_Singapore_ss_1128
-      - 🇰🇷 South Korea_Incheon_ss_1129
-      - 🇸🇬 Singapore_Singapore_ss_1130
-      - 🇰🇷 South Korea_Incheon_ss_1131
-      - 🇸🇬 Singapore_Singapore_ss_1133
-      - 🇸🇬 Singapore_Singapore_ss_1135
-      - 🇺🇸 United States_Los Angeles_ss_1136
-      - 🇯🇵 Japan_Tokyo_ss_1140
-      - 🇺🇸 United States_Los Angeles_vmess_1146
-      - 🇰🇷 South Korea_Seongnam-si_ss_1156
-      - 🇦🇹 Austria_Vienna_trojan_1199
-      - 🇯🇵 Japan_Tokyo_vmess_11101
-      - 🇳🇱 The Netherlands_Amsterdam_vmess_11104
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11107
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11109
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11110
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11113
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11114
-      - 🇬🇧 United Kingdom_London_ss_1322
-      - 🇨🇳 China_None_vmess_1328
-      - 0|-https://t.me/MrXbin-19
-      - 0|-https://t.me/MrXbin-130
-      - "🇭🇰 9|baipaovpn香港 #3"
-      - CN_speednode_0005
+      - 🇺🇸 United States_None_vmess_11122
+      - None_None_vmess_11127
+      - None_None_vmess_11128
+      - 0|-https://t.me/MrXbin-1
+      - 0|-https://t.me/MrXbin-5
+      - 0|-https://t.me/MrXbin-102
+      - 0|-https://t.me/MrXbin-104
+      - 🇺🇸 _US_美国 32
+      - 🇺🇸 _US_美国 33
       - LV 1 → tg@nicevpn123
-      - 🇺🇦 UA 29 → tg@nicevpn123
-      - 🇨🇳 CN 148 → tg@nicevpn123
-      - 🇨🇳 CN 308 → tg@nicevpn123
-      - 🇨🇳 CN 366 → tg@nicevpn123
-      - 🇨🇳 CN 74 → tg@nicevpn123
-      - 🇩🇪 DE 17 → tg@nicevpn123
-      - 🇪🇸 ES 11 → tg@nicevpn123
-      - 🇪🇸 ES 14 → tg@nicevpn123
-      - 🇷🇺 RU 30 → tg@nicevpn123
-      - 🇺🇸 US 543 → tg@nicevpn123
+      - 🇨🇳 CN 50 → tg@nicevpn123
+      - 🇪🇸 ES 16 → tg@nicevpn123
+      - 🇪🇸 ES 28 → tg@nicevpn123
+      - 🇪🇸 ES 5 → tg@nicevpn123
+      - 🇫🇷 FR 3 → tg@nicevpn123
+      - 🇬🇧 GB 6 → tg@nicevpn123
+      - 🇰🇷 KR 28 → tg@nicevpn123
+      - 🇷🇺 RU 42 → tg@nicevpn123
+      - 🇺🇸 US 476 → tg@nicevpn123
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -599,71 +351,40 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇬🇧 英国+伦敦Microsoft公司
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇨🇳 [Trojan] 广东省 移动
-      - 🇨🇳 [VMess] 广东省江门市 移动
-      - 🇨🇳 [VMess] 🇨🇳 中国 阿里云 2
-      - 🇸🇪 [Trojan] 🇸🇪 瑞典 斯德哥尔摩Amazon数据中心
-      - 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点 8
-      - 🇭🇰 香港7|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
+      - 🇨🇳 广东省深圳市 移动
+      - 🇨🇳 广东省 移动 2
+      - 🇨🇳 广东省移动 7
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇺🇸 美国2|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 _US_美国_5
-      - None_None_vmess_1073
-      - 🇳🇴 Norway_Oslo_vmess_1081
-      - 🇺🇸 United States_Ashburn_vmess_10142
-      - 🇨🇳 China_None_trojan_10188
+      - 🇩🇪 德国|@ripaojiedian
       - 🇸🇬 Singapore_Singapore_ss_112
+      - 🇸🇬 Singapore_Singapore_ss_116
+      - 🇰🇷 South Korea_Suwon_ss_119
       - 🇸🇬 Singapore_Singapore_ss_1111
-      - 🇯🇵 Japan_Tokyo_ss_1114
-      - 🇯🇵 Japan_Tokyo_ss_1116
+      - 🇸🇬 Singapore_Singapore_ss_1115
       - 🇰🇷 South Korea_Incheon_ss_1117
-      - 🇰🇷 South Korea_Suwon_ss_1120
-      - 🇸🇬 Singapore_Singapore_ss_1122
-      - 🇸🇬 Singapore_Singapore_ss_1123
-      - 🇰🇷 South Korea_Suwon_ss_1124
-      - 🇰🇷 South Korea_Incheon_ss_1125
-      - 🇸🇬 Singapore_Singapore_ss_1128
-      - 🇰🇷 South Korea_Incheon_ss_1129
-      - 🇸🇬 Singapore_Singapore_ss_1130
-      - 🇰🇷 South Korea_Incheon_ss_1131
-      - 🇸🇬 Singapore_Singapore_ss_1133
-      - 🇸🇬 Singapore_Singapore_ss_1135
-      - 🇺🇸 United States_Los Angeles_ss_1136
-      - 🇯🇵 Japan_Tokyo_ss_1140
-      - 🇺🇸 United States_Los Angeles_vmess_1146
-      - 🇰🇷 South Korea_Seongnam-si_ss_1156
-      - 🇦🇹 Austria_Vienna_trojan_1199
-      - 🇯🇵 Japan_Tokyo_vmess_11101
-      - 🇳🇱 The Netherlands_Amsterdam_vmess_11104
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11107
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11109
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11110
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11113
-      - 🇭🇰 Hong Kong_Hong Kong_vmess_11114
-      - 🇬🇧 United Kingdom_London_ss_1322
-      - 🇨🇳 China_None_vmess_1328
-      - 0|-https://t.me/MrXbin-19
-      - 0|-https://t.me/MrXbin-130
-      - "🇭🇰 9|baipaovpn香港 #3"
-      - CN_speednode_0005
+      - 🇺🇸 United States_None_vmess_11122
+      - None_None_vmess_11127
+      - None_None_vmess_11128
+      - 0|-https://t.me/MrXbin-1
+      - 0|-https://t.me/MrXbin-5
+      - 0|-https://t.me/MrXbin-102
+      - 0|-https://t.me/MrXbin-104
+      - 🇺🇸 _US_美国 32
+      - 🇺🇸 _US_美国 33
       - LV 1 → tg@nicevpn123
-      - 🇺🇦 UA 29 → tg@nicevpn123
-      - 🇨🇳 CN 148 → tg@nicevpn123
-      - 🇨🇳 CN 308 → tg@nicevpn123
-      - 🇨🇳 CN 366 → tg@nicevpn123
-      - 🇨🇳 CN 74 → tg@nicevpn123
-      - 🇩🇪 DE 17 → tg@nicevpn123
-      - 🇪🇸 ES 11 → tg@nicevpn123
-      - 🇪🇸 ES 14 → tg@nicevpn123
-      - 🇷🇺 RU 30 → tg@nicevpn123
-      - 🇺🇸 US 543 → tg@nicevpn123
+      - 🇨🇳 CN 50 → tg@nicevpn123
+      - 🇪🇸 ES 16 → tg@nicevpn123
+      - 🇪🇸 ES 28 → tg@nicevpn123
+      - 🇪🇸 ES 5 → tg@nicevpn123
+      - 🇫🇷 FR 3 → tg@nicevpn123
+      - 🇬🇧 GB 6 → tg@nicevpn123
+      - 🇰🇷 KR 28 → tg@nicevpn123
+      - 🇷🇺 RU 42 → tg@nicevpn123
+      - 🇺🇸 US 476 → tg@nicevpn123
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
