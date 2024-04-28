@@ -6,239 +6,195 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇬🇧 英国+伦敦Microsoft公司, server: 51.140.77.109, port: 61735, type: ss, cipher: chacha20-ietf-poly1305, password: 2xIUuBlZx2ITuPUTH5SciB, udp: true}
-  - {name: "🇺🇸 [SS] 北美地区 V2CROSS.COM", server: 23.154.136.148, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: "🇨🇳 [Trojan] 安徽省 移动数据上网公共出口", server: 112.29.94.24, port: 443, type: trojan, password: BZjkHMao, skip-cert-verify: false, udp: true}
-  - {name: "🇨🇳 [VMess] 广东省 移动", server: dotu-sgv1.03ezhg0qsa.download, port: 11038, type: vmess, uuid: ac1f3b35-1d03-3a85-beab-258d8f23edc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇨🇳 [VMess] 🇨🇳 广东省广州市 移动", server: 183.236.51.59, port: 54437, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 US美国10 1.7MB/s, server: 38.86.135.117, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 🇺🇸 US北美2 1.9MB/s, server: 23.154.136.35, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 🇭🇰 香港2|@ripaojiedian, server: 120.238.122.243, port: 40259, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港7|@ripaojiedian, server: data-hk-v1.usabooks.com.cn, port: 20206, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: data-hk-v1.usabooks.com.cn}}, udp: true}
-  - {name: 🇰🇷 韩国|@ripaojiedian, server: dotu-krv1.03ezhg0qsa.download, port: 11045, type: vmess, uuid: ac1f3b35-1d03-3a85-beab-258d8f23edc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 新加坡|@ripaojiedian, server: 112.16.228.100, port: 51001, type: trojan, password: BZjkHMao, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_112, server: 103.172.116.103, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
-  - {name: 🇯🇵 Japan_Tokyo_ss_115, server: 54.238.23.117, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇰🇷 South Korea_Incheon_ss_1110, server: 43.201.69.200, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇯🇵 Japan_Tokyo_ss_1112, server: 57.180.65.163, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1124, server: 103.172.116.103, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1127, server: 103.172.116.103, port: 9030, type: ss, cipher: aes-256-cfb, password: GeregetR8cvQHzYr, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1128, server: 103.172.116.103, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: 🇰🇷 South Korea_Incheon_ss_1131, server: 43.203.233.33, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1132, server: 103.172.116.103, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1133, server: 103.172.116.103, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1134, server: 103.172.116.103, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1135, server: 103.172.116.103, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1136, server: 103.172.116.103, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1137, server: 103.172.116.103, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1138, server: 103.172.116.103, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1139, server: 103.172.116.103, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1142, server: 103.172.116.103, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: 🇰🇷 South Korea_None_ss_1143, server: 13.124.178.1, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1144, server: 103.172.116.103, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1145, server: 103.172.116.103, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1146, server: 103.172.116.103, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1147, server: 103.172.116.103, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1149, server: 103.172.116.103, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1150, server: 103.172.116.103, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1151, server: 103.172.116.103, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1152, server: 103.172.116.103, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1153, server: 103.172.116.103, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1155, server: 103.172.116.103, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1156, server: 103.172.116.103, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1159, server: 103.172.116.103, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1161, server: 103.172.116.103, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1162, server: 103.172.116.103, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1164, server: 103.172.116.103, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1167, server: 103.172.116.103, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1168, server: 103.172.116.103, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: 🇸🇬 Singapore_Singapore_ss_1170, server: 103.172.116.103, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: 🇦🇪 United Arab Emirates_Dubai_ss_1185, server: series-a2.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: mps3FwmDjLrWaOVg, udp: true}
-  - {name: 🇨🇳 China_None_vmess_137, server: 183.237.20.158, port: 41242, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 China_None_vmess_1327, server: data-hk-v1.usabooks.com.cn, port: 20206, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: data-hk-v1.usabooks.com.cn}}, udp: true}
-  - {name: 🇨🇳 CN 145 → tg@nicevpn123, server: 120.233.42.83, port: 20207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇪🇸 ES 10 → tg@nicevpn123, server: 2.forlive.live, port: 61006, type: ss, cipher: chacha20-ietf-poly1305, password: d52848a3-5101-3ccc-aed8-113ce65928a8, udp: true}
-  - {name: 🇪🇸 ES 6 → tg@nicevpn123, server: 2.forlive.live, port: 61005, type: ss, cipher: chacha20-ietf-poly1305, password: d77d4bdd-49d7-34c6-adfa-7fda9967d1d7, udp: true}
-  - {name: 🇫🇷 FR 11 → tg@nicevpn123, server: 51.210.182.170, port: 443, type: trojan, password: 278fff60-fc3a-11ee-a4a6-1239d0255272, skip-cert-verify: false, udp: true}
+  - {name: 香港2|@ripaojiedian, server: 120.238.122.243, port: 40259, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港7|@ripaojiedian, server: data-hk-v1.usabooks.com.cn, port: 20206, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: data-hk-v1.usabooks.com.cn}}, udp: true}
+  - {name: United States_None_vmess_1173, server: fcdn.flha.ru, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: fcdn.flha.ru}}, udp: true}
+  - {name: United States_None_vmess_1174, server: 172.67.214.33, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: fcdn.flha.ru}}, udp: true}
+  - {name: None_None_vmess_1175, server: 104.21.23.231, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: fcdn.flha.ru}}, udp: true}
+  - {name: CN-120.233.205.133-189_1@189, server: data-jp-v1.usabooks.com.cn, port: 20301, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: data-jp-v1.usabooks.com.cn}}, udp: true}
+  - {name: RELAY-104.21.23.231-190_1@190, server: 104.21.23.231, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: 加拿大 009_2@30, server: 172.67.214.33, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: _US_美国->🇭🇰_HK_香港_3_5@22, server: onea.flha.ru, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:8118_6@5, server: 149.202.82.172, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:6379_6@19, server: 149.202.82.172, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 0|-https://t.me/MrXbin-88, server: 46.226.162.112, port: 32913, type: ss, cipher: chacha20-ietf-poly1305, password: KTwIQM1cQJwtkrjfld6Usn, udp: true}
+  - {name: BG 12 → tg@nicevpn123, server: 213.183.63.69, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: LV 1 → tg@nicevpn123, server: 46.183.217.232, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: CN 200 → tg@nicevpn123, server: 120.233.42.83, port: 20207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: ES 17 → tg@nicevpn123, server: 5.forlive.live, port: 60033, type: ss, cipher: chacha20-ietf-poly1305, password: be134ab3-1760-3e70-8b87-f197a365ffc3, udp: true}
+  - {name: FR 11 → tg@nicevpn123, server: 51.210.182.170, port: 443, type: trojan, password: 278fff60-fc3a-11ee-a4a6-1239d0255272, skip-cert-verify: true, udp: true}
+  - {name: FR 12 → tg@nicevpn123, server: 149.202.82.172, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: FR 14 → tg@nicevpn123, server: 149.202.82.172, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: FR 19 → tg@nicevpn123, server: 149.202.82.172, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: FR 22 → tg@nicevpn123, server: 149.202.82.172, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: FR 23 → tg@nicevpn123, server: 149.202.82.172, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: FR 24 → tg@nicevpn123, server: 149.202.82.172, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: FR 26 → tg@nicevpn123, server: 149.202.82.172, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: FR 3 → tg@nicevpn123, server: 149.202.82.172, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: FR 31 → tg@nicevpn123, server: 149.202.82.172, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: FR 32 → tg@nicevpn123, server: 149.202.82.172, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: FR 33 → tg@nicevpn123, server: 149.202.82.172, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: FR 35 → tg@nicevpn123, server: 149.202.82.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: FR 36 → tg@nicevpn123, server: 149.202.82.172, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: FR 37 → tg@nicevpn123, server: 149.202.82.172, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: FR 38 → tg@nicevpn123, server: 149.202.82.172, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: FR 39 → tg@nicevpn123, server: 149.202.82.172, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: FR 4 → tg@nicevpn123, server: 149.202.82.172, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: FR 40 → tg@nicevpn123, server: 149.202.82.172, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: FR 43 → tg@nicevpn123, server: 149.202.82.172, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: FR 5 → tg@nicevpn123, server: 149.202.82.172, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: FR 7 → tg@nicevpn123, server: 149.202.82.172, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: FR 8 → tg@nicevpn123, server: 149.202.82.172, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: FR 9 → tg@nicevpn123, server: 149.202.82.172, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: GB 54 → tg@nicevpn123, server: series-a2-mec.varzesh360.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: u17T3BvpYaaiuW2c, udp: true}
+  - {name: RU 9 → tg@nicevpn123, server: 92.246.136.190, port: 32025, type: ss, cipher: chacha20-ietf-poly1305, password: VRKnPTULDqxaExI5yLJjoc, udp: true}
+  - {name: US 390 → tg@nicevpn123, server: jahfkjha.cfd, port: 443, type: vmess, uuid: 950db6aa-4926-4616-816e-ec0312dcb87b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jahfkjha.cfd}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇬🇧 英国+伦敦Microsoft公司
-      - 🇺🇸 [SS] 北美地区 V2CROSS.COM
-      - 🇨🇳 [Trojan] 安徽省 移动数据上网公共出口
-      - 🇨🇳 [VMess] 广东省 移动
-      - 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动
-      - 🇺🇸 US美国10 1.7MB/s
-      - 🇺🇸 US北美2 1.9MB/s
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇭🇰 香港7|@ripaojiedian
-      - 🇰🇷 韩国|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇸🇬 Singapore_Singapore_ss_112
-      - 🇯🇵 Japan_Tokyo_ss_115
-      - 🇰🇷 South Korea_Incheon_ss_1110
-      - 🇯🇵 Japan_Tokyo_ss_1112
-      - 🇸🇬 Singapore_Singapore_ss_1124
-      - 🇸🇬 Singapore_Singapore_ss_1127
-      - 🇸🇬 Singapore_Singapore_ss_1128
-      - 🇰🇷 South Korea_Incheon_ss_1131
-      - 🇸🇬 Singapore_Singapore_ss_1132
-      - 🇸🇬 Singapore_Singapore_ss_1133
-      - 🇸🇬 Singapore_Singapore_ss_1134
-      - 🇸🇬 Singapore_Singapore_ss_1135
-      - 🇸🇬 Singapore_Singapore_ss_1136
-      - 🇸🇬 Singapore_Singapore_ss_1137
-      - 🇸🇬 Singapore_Singapore_ss_1138
-      - 🇸🇬 Singapore_Singapore_ss_1139
-      - 🇸🇬 Singapore_Singapore_ss_1142
-      - 🇰🇷 South Korea_None_ss_1143
-      - 🇸🇬 Singapore_Singapore_ss_1144
-      - 🇸🇬 Singapore_Singapore_ss_1145
-      - 🇸🇬 Singapore_Singapore_ss_1146
-      - 🇸🇬 Singapore_Singapore_ss_1147
-      - 🇸🇬 Singapore_Singapore_ss_1149
-      - 🇸🇬 Singapore_Singapore_ss_1150
-      - 🇸🇬 Singapore_Singapore_ss_1151
-      - 🇸🇬 Singapore_Singapore_ss_1152
-      - 🇸🇬 Singapore_Singapore_ss_1153
-      - 🇸🇬 Singapore_Singapore_ss_1155
-      - 🇸🇬 Singapore_Singapore_ss_1156
-      - 🇸🇬 Singapore_Singapore_ss_1159
-      - 🇸🇬 Singapore_Singapore_ss_1161
-      - 🇸🇬 Singapore_Singapore_ss_1162
-      - 🇸🇬 Singapore_Singapore_ss_1164
-      - 🇸🇬 Singapore_Singapore_ss_1167
-      - 🇸🇬 Singapore_Singapore_ss_1168
-      - 🇸🇬 Singapore_Singapore_ss_1170
-      - 🇦🇪 United Arab Emirates_Dubai_ss_1185
-      - 🇨🇳 China_None_vmess_137
-      - 🇨🇳 China_None_vmess_1327
-      - 🇨🇳 CN 145 → tg@nicevpn123
-      - 🇪🇸 ES 10 → tg@nicevpn123
-      - 🇪🇸 ES 6 → tg@nicevpn123
-      - 🇫🇷 FR 11 → tg@nicevpn123
+      - 香港2|@ripaojiedian
+      - 香港7|@ripaojiedian
+      - United States_None_vmess_1173
+      - United States_None_vmess_1174
+      - None_None_vmess_1175
+      - CN-120.233.205.133-189_1@189
+      - RELAY-104.21.23.231-190_1@190
+      - 加拿大 009_2@30
+      - _US_美国->🇭🇰_HK_香港_3_5@22
+      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:8118_6@5
+      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:6379_6@19
+      - 0|-https://t.me/MrXbin-88
+      - BG 12 → tg@nicevpn123
+      - LV 1 → tg@nicevpn123
+      - CN 200 → tg@nicevpn123
+      - ES 17 → tg@nicevpn123
+      - FR 11 → tg@nicevpn123
+      - FR 12 → tg@nicevpn123
+      - FR 14 → tg@nicevpn123
+      - FR 19 → tg@nicevpn123
+      - FR 22 → tg@nicevpn123
+      - FR 23 → tg@nicevpn123
+      - FR 24 → tg@nicevpn123
+      - FR 26 → tg@nicevpn123
+      - FR 3 → tg@nicevpn123
+      - FR 31 → tg@nicevpn123
+      - FR 32 → tg@nicevpn123
+      - FR 33 → tg@nicevpn123
+      - FR 35 → tg@nicevpn123
+      - FR 36 → tg@nicevpn123
+      - FR 37 → tg@nicevpn123
+      - FR 38 → tg@nicevpn123
+      - FR 39 → tg@nicevpn123
+      - FR 4 → tg@nicevpn123
+      - FR 40 → tg@nicevpn123
+      - FR 43 → tg@nicevpn123
+      - FR 5 → tg@nicevpn123
+      - FR 7 → tg@nicevpn123
+      - FR 8 → tg@nicevpn123
+      - FR 9 → tg@nicevpn123
+      - GB 54 → tg@nicevpn123
+      - RU 9 → tg@nicevpn123
+      - US 390 → tg@nicevpn123
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - 🇬🇧 英国+伦敦Microsoft公司
-      - 🇺🇸 [SS] 北美地区 V2CROSS.COM
-      - 🇨🇳 [Trojan] 安徽省 移动数据上网公共出口
-      - 🇨🇳 [VMess] 广东省 移动
-      - 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动
-      - 🇺🇸 US美国10 1.7MB/s
-      - 🇺🇸 US北美2 1.9MB/s
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇭🇰 香港7|@ripaojiedian
-      - 🇰🇷 韩国|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇸🇬 Singapore_Singapore_ss_112
-      - 🇯🇵 Japan_Tokyo_ss_115
-      - 🇰🇷 South Korea_Incheon_ss_1110
-      - 🇯🇵 Japan_Tokyo_ss_1112
-      - 🇸🇬 Singapore_Singapore_ss_1124
-      - 🇸🇬 Singapore_Singapore_ss_1127
-      - 🇸🇬 Singapore_Singapore_ss_1128
-      - 🇰🇷 South Korea_Incheon_ss_1131
-      - 🇸🇬 Singapore_Singapore_ss_1132
-      - 🇸🇬 Singapore_Singapore_ss_1133
-      - 🇸🇬 Singapore_Singapore_ss_1134
-      - 🇸🇬 Singapore_Singapore_ss_1135
-      - 🇸🇬 Singapore_Singapore_ss_1136
-      - 🇸🇬 Singapore_Singapore_ss_1137
-      - 🇸🇬 Singapore_Singapore_ss_1138
-      - 🇸🇬 Singapore_Singapore_ss_1139
-      - 🇸🇬 Singapore_Singapore_ss_1142
-      - 🇰🇷 South Korea_None_ss_1143
-      - 🇸🇬 Singapore_Singapore_ss_1144
-      - 🇸🇬 Singapore_Singapore_ss_1145
-      - 🇸🇬 Singapore_Singapore_ss_1146
-      - 🇸🇬 Singapore_Singapore_ss_1147
-      - 🇸🇬 Singapore_Singapore_ss_1149
-      - 🇸🇬 Singapore_Singapore_ss_1150
-      - 🇸🇬 Singapore_Singapore_ss_1151
-      - 🇸🇬 Singapore_Singapore_ss_1152
-      - 🇸🇬 Singapore_Singapore_ss_1153
-      - 🇸🇬 Singapore_Singapore_ss_1155
-      - 🇸🇬 Singapore_Singapore_ss_1156
-      - 🇸🇬 Singapore_Singapore_ss_1159
-      - 🇸🇬 Singapore_Singapore_ss_1161
-      - 🇸🇬 Singapore_Singapore_ss_1162
-      - 🇸🇬 Singapore_Singapore_ss_1164
-      - 🇸🇬 Singapore_Singapore_ss_1167
-      - 🇸🇬 Singapore_Singapore_ss_1168
-      - 🇸🇬 Singapore_Singapore_ss_1170
-      - 🇦🇪 United Arab Emirates_Dubai_ss_1185
-      - 🇨🇳 China_None_vmess_137
-      - 🇨🇳 China_None_vmess_1327
-      - 🇨🇳 CN 145 → tg@nicevpn123
-      - 🇪🇸 ES 10 → tg@nicevpn123
-      - 🇪🇸 ES 6 → tg@nicevpn123
-      - 🇫🇷 FR 11 → tg@nicevpn123
+      - 香港2|@ripaojiedian
+      - 香港7|@ripaojiedian
+      - United States_None_vmess_1173
+      - United States_None_vmess_1174
+      - None_None_vmess_1175
+      - CN-120.233.205.133-189_1@189
+      - RELAY-104.21.23.231-190_1@190
+      - 加拿大 009_2@30
+      - _US_美国->🇭🇰_HK_香港_3_5@22
+      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:8118_6@5
+      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:6379_6@19
+      - 0|-https://t.me/MrXbin-88
+      - BG 12 → tg@nicevpn123
+      - LV 1 → tg@nicevpn123
+      - CN 200 → tg@nicevpn123
+      - ES 17 → tg@nicevpn123
+      - FR 11 → tg@nicevpn123
+      - FR 12 → tg@nicevpn123
+      - FR 14 → tg@nicevpn123
+      - FR 19 → tg@nicevpn123
+      - FR 22 → tg@nicevpn123
+      - FR 23 → tg@nicevpn123
+      - FR 24 → tg@nicevpn123
+      - FR 26 → tg@nicevpn123
+      - FR 3 → tg@nicevpn123
+      - FR 31 → tg@nicevpn123
+      - FR 32 → tg@nicevpn123
+      - FR 33 → tg@nicevpn123
+      - FR 35 → tg@nicevpn123
+      - FR 36 → tg@nicevpn123
+      - FR 37 → tg@nicevpn123
+      - FR 38 → tg@nicevpn123
+      - FR 39 → tg@nicevpn123
+      - FR 4 → tg@nicevpn123
+      - FR 40 → tg@nicevpn123
+      - FR 43 → tg@nicevpn123
+      - FR 5 → tg@nicevpn123
+      - FR 7 → tg@nicevpn123
+      - FR 8 → tg@nicevpn123
+      - FR 9 → tg@nicevpn123
+      - GB 54 → tg@nicevpn123
+      - RU 9 → tg@nicevpn123
+      - US 390 → tg@nicevpn123
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇬🇧 英国+伦敦Microsoft公司
-      - 🇺🇸 [SS] 北美地区 V2CROSS.COM
-      - 🇨🇳 [Trojan] 安徽省 移动数据上网公共出口
-      - 🇨🇳 [VMess] 广东省 移动
-      - 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动
-      - 🇺🇸 US美国10 1.7MB/s
-      - 🇺🇸 US北美2 1.9MB/s
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇭🇰 香港7|@ripaojiedian
-      - 🇰🇷 韩国|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇸🇬 Singapore_Singapore_ss_112
-      - 🇯🇵 Japan_Tokyo_ss_115
-      - 🇰🇷 South Korea_Incheon_ss_1110
-      - 🇯🇵 Japan_Tokyo_ss_1112
-      - 🇸🇬 Singapore_Singapore_ss_1124
-      - 🇸🇬 Singapore_Singapore_ss_1127
-      - 🇸🇬 Singapore_Singapore_ss_1128
-      - 🇰🇷 South Korea_Incheon_ss_1131
-      - 🇸🇬 Singapore_Singapore_ss_1132
-      - 🇸🇬 Singapore_Singapore_ss_1133
-      - 🇸🇬 Singapore_Singapore_ss_1134
-      - 🇸🇬 Singapore_Singapore_ss_1135
-      - 🇸🇬 Singapore_Singapore_ss_1136
-      - 🇸🇬 Singapore_Singapore_ss_1137
-      - 🇸🇬 Singapore_Singapore_ss_1138
-      - 🇸🇬 Singapore_Singapore_ss_1139
-      - 🇸🇬 Singapore_Singapore_ss_1142
-      - 🇰🇷 South Korea_None_ss_1143
-      - 🇸🇬 Singapore_Singapore_ss_1144
-      - 🇸🇬 Singapore_Singapore_ss_1145
-      - 🇸🇬 Singapore_Singapore_ss_1146
-      - 🇸🇬 Singapore_Singapore_ss_1147
-      - 🇸🇬 Singapore_Singapore_ss_1149
-      - 🇸🇬 Singapore_Singapore_ss_1150
-      - 🇸🇬 Singapore_Singapore_ss_1151
-      - 🇸🇬 Singapore_Singapore_ss_1152
-      - 🇸🇬 Singapore_Singapore_ss_1153
-      - 🇸🇬 Singapore_Singapore_ss_1155
-      - 🇸🇬 Singapore_Singapore_ss_1156
-      - 🇸🇬 Singapore_Singapore_ss_1159
-      - 🇸🇬 Singapore_Singapore_ss_1161
-      - 🇸🇬 Singapore_Singapore_ss_1162
-      - 🇸🇬 Singapore_Singapore_ss_1164
-      - 🇸🇬 Singapore_Singapore_ss_1167
-      - 🇸🇬 Singapore_Singapore_ss_1168
-      - 🇸🇬 Singapore_Singapore_ss_1170
-      - 🇦🇪 United Arab Emirates_Dubai_ss_1185
-      - 🇨🇳 China_None_vmess_137
-      - 🇨🇳 China_None_vmess_1327
-      - 🇨🇳 CN 145 → tg@nicevpn123
-      - 🇪🇸 ES 10 → tg@nicevpn123
-      - 🇪🇸 ES 6 → tg@nicevpn123
-      - 🇫🇷 FR 11 → tg@nicevpn123
+      - 香港2|@ripaojiedian
+      - 香港7|@ripaojiedian
+      - United States_None_vmess_1173
+      - United States_None_vmess_1174
+      - None_None_vmess_1175
+      - CN-120.233.205.133-189_1@189
+      - RELAY-104.21.23.231-190_1@190
+      - 加拿大 009_2@30
+      - _US_美国->🇭🇰_HK_香港_3_5@22
+      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:8118_6@5
+      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:6379_6@19
+      - 0|-https://t.me/MrXbin-88
+      - BG 12 → tg@nicevpn123
+      - LV 1 → tg@nicevpn123
+      - CN 200 → tg@nicevpn123
+      - ES 17 → tg@nicevpn123
+      - FR 11 → tg@nicevpn123
+      - FR 12 → tg@nicevpn123
+      - FR 14 → tg@nicevpn123
+      - FR 19 → tg@nicevpn123
+      - FR 22 → tg@nicevpn123
+      - FR 23 → tg@nicevpn123
+      - FR 24 → tg@nicevpn123
+      - FR 26 → tg@nicevpn123
+      - FR 3 → tg@nicevpn123
+      - FR 31 → tg@nicevpn123
+      - FR 32 → tg@nicevpn123
+      - FR 33 → tg@nicevpn123
+      - FR 35 → tg@nicevpn123
+      - FR 36 → tg@nicevpn123
+      - FR 37 → tg@nicevpn123
+      - FR 38 → tg@nicevpn123
+      - FR 39 → tg@nicevpn123
+      - FR 4 → tg@nicevpn123
+      - FR 40 → tg@nicevpn123
+      - FR 43 → tg@nicevpn123
+      - FR 5 → tg@nicevpn123
+      - FR 7 → tg@nicevpn123
+      - FR 8 → tg@nicevpn123
+      - FR 9 → tg@nicevpn123
+      - GB 54 → tg@nicevpn123
+      - RU 9 → tg@nicevpn123
+      - US 390 → tg@nicevpn123
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -257,245 +213,202 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇬🇧 英国+伦敦Microsoft公司
-      - 🇺🇸 [SS] 北美地区 V2CROSS.COM
-      - 🇨🇳 [Trojan] 安徽省 移动数据上网公共出口
-      - 🇨🇳 [VMess] 广东省 移动
-      - 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动
-      - 🇺🇸 US美国10 1.7MB/s
-      - 🇺🇸 US北美2 1.9MB/s
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇭🇰 香港7|@ripaojiedian
-      - 🇰🇷 韩国|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇸🇬 Singapore_Singapore_ss_112
-      - 🇯🇵 Japan_Tokyo_ss_115
-      - 🇰🇷 South Korea_Incheon_ss_1110
-      - 🇯🇵 Japan_Tokyo_ss_1112
-      - 🇸🇬 Singapore_Singapore_ss_1124
-      - 🇸🇬 Singapore_Singapore_ss_1127
-      - 🇸🇬 Singapore_Singapore_ss_1128
-      - 🇰🇷 South Korea_Incheon_ss_1131
-      - 🇸🇬 Singapore_Singapore_ss_1132
-      - 🇸🇬 Singapore_Singapore_ss_1133
-      - 🇸🇬 Singapore_Singapore_ss_1134
-      - 🇸🇬 Singapore_Singapore_ss_1135
-      - 🇸🇬 Singapore_Singapore_ss_1136
-      - 🇸🇬 Singapore_Singapore_ss_1137
-      - 🇸🇬 Singapore_Singapore_ss_1138
-      - 🇸🇬 Singapore_Singapore_ss_1139
-      - 🇸🇬 Singapore_Singapore_ss_1142
-      - 🇰🇷 South Korea_None_ss_1143
-      - 🇸🇬 Singapore_Singapore_ss_1144
-      - 🇸🇬 Singapore_Singapore_ss_1145
-      - 🇸🇬 Singapore_Singapore_ss_1146
-      - 🇸🇬 Singapore_Singapore_ss_1147
-      - 🇸🇬 Singapore_Singapore_ss_1149
-      - 🇸🇬 Singapore_Singapore_ss_1150
-      - 🇸🇬 Singapore_Singapore_ss_1151
-      - 🇸🇬 Singapore_Singapore_ss_1152
-      - 🇸🇬 Singapore_Singapore_ss_1153
-      - 🇸🇬 Singapore_Singapore_ss_1155
-      - 🇸🇬 Singapore_Singapore_ss_1156
-      - 🇸🇬 Singapore_Singapore_ss_1159
-      - 🇸🇬 Singapore_Singapore_ss_1161
-      - 🇸🇬 Singapore_Singapore_ss_1162
-      - 🇸🇬 Singapore_Singapore_ss_1164
-      - 🇸🇬 Singapore_Singapore_ss_1167
-      - 🇸🇬 Singapore_Singapore_ss_1168
-      - 🇸🇬 Singapore_Singapore_ss_1170
-      - 🇦🇪 United Arab Emirates_Dubai_ss_1185
-      - 🇨🇳 China_None_vmess_137
-      - 🇨🇳 China_None_vmess_1327
-      - 🇨🇳 CN 145 → tg@nicevpn123
-      - 🇪🇸 ES 10 → tg@nicevpn123
-      - 🇪🇸 ES 6 → tg@nicevpn123
-      - 🇫🇷 FR 11 → tg@nicevpn123
+      - 香港2|@ripaojiedian
+      - 香港7|@ripaojiedian
+      - United States_None_vmess_1173
+      - United States_None_vmess_1174
+      - None_None_vmess_1175
+      - CN-120.233.205.133-189_1@189
+      - RELAY-104.21.23.231-190_1@190
+      - 加拿大 009_2@30
+      - _US_美国->🇭🇰_HK_香港_3_5@22
+      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:8118_6@5
+      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:6379_6@19
+      - 0|-https://t.me/MrXbin-88
+      - BG 12 → tg@nicevpn123
+      - LV 1 → tg@nicevpn123
+      - CN 200 → tg@nicevpn123
+      - ES 17 → tg@nicevpn123
+      - FR 11 → tg@nicevpn123
+      - FR 12 → tg@nicevpn123
+      - FR 14 → tg@nicevpn123
+      - FR 19 → tg@nicevpn123
+      - FR 22 → tg@nicevpn123
+      - FR 23 → tg@nicevpn123
+      - FR 24 → tg@nicevpn123
+      - FR 26 → tg@nicevpn123
+      - FR 3 → tg@nicevpn123
+      - FR 31 → tg@nicevpn123
+      - FR 32 → tg@nicevpn123
+      - FR 33 → tg@nicevpn123
+      - FR 35 → tg@nicevpn123
+      - FR 36 → tg@nicevpn123
+      - FR 37 → tg@nicevpn123
+      - FR 38 → tg@nicevpn123
+      - FR 39 → tg@nicevpn123
+      - FR 4 → tg@nicevpn123
+      - FR 40 → tg@nicevpn123
+      - FR 43 → tg@nicevpn123
+      - FR 5 → tg@nicevpn123
+      - FR 7 → tg@nicevpn123
+      - FR 8 → tg@nicevpn123
+      - FR 9 → tg@nicevpn123
+      - GB 54 → tg@nicevpn123
+      - RU 9 → tg@nicevpn123
+      - US 390 → tg@nicevpn123
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇭🇰 香港7|@ripaojiedian
+      - 香港2|@ripaojiedian
+      - 香港7|@ripaojiedian
+      - _US_美国->🇭🇰_HK_香港_3_5@22
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇬🇧 英国+伦敦Microsoft公司
-      - 🇺🇸 [SS] 北美地区 V2CROSS.COM
-      - 🇨🇳 [Trojan] 安徽省 移动数据上网公共出口
-      - 🇨🇳 [VMess] 广东省 移动
-      - 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动
-      - 🇺🇸 US美国10 1.7MB/s
-      - 🇺🇸 US北美2 1.9MB/s
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇭🇰 香港7|@ripaojiedian
-      - 🇰🇷 韩国|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇸🇬 Singapore_Singapore_ss_112
-      - 🇯🇵 Japan_Tokyo_ss_115
-      - 🇰🇷 South Korea_Incheon_ss_1110
-      - 🇯🇵 Japan_Tokyo_ss_1112
-      - 🇸🇬 Singapore_Singapore_ss_1124
-      - 🇸🇬 Singapore_Singapore_ss_1127
-      - 🇸🇬 Singapore_Singapore_ss_1128
-      - 🇰🇷 South Korea_Incheon_ss_1131
-      - 🇸🇬 Singapore_Singapore_ss_1132
-      - 🇸🇬 Singapore_Singapore_ss_1133
-      - 🇸🇬 Singapore_Singapore_ss_1134
-      - 🇸🇬 Singapore_Singapore_ss_1135
-      - 🇸🇬 Singapore_Singapore_ss_1136
-      - 🇸🇬 Singapore_Singapore_ss_1137
-      - 🇸🇬 Singapore_Singapore_ss_1138
-      - 🇸🇬 Singapore_Singapore_ss_1139
-      - 🇸🇬 Singapore_Singapore_ss_1142
-      - 🇰🇷 South Korea_None_ss_1143
-      - 🇸🇬 Singapore_Singapore_ss_1144
-      - 🇸🇬 Singapore_Singapore_ss_1145
-      - 🇸🇬 Singapore_Singapore_ss_1146
-      - 🇸🇬 Singapore_Singapore_ss_1147
-      - 🇸🇬 Singapore_Singapore_ss_1149
-      - 🇸🇬 Singapore_Singapore_ss_1150
-      - 🇸🇬 Singapore_Singapore_ss_1151
-      - 🇸🇬 Singapore_Singapore_ss_1152
-      - 🇸🇬 Singapore_Singapore_ss_1153
-      - 🇸🇬 Singapore_Singapore_ss_1155
-      - 🇸🇬 Singapore_Singapore_ss_1156
-      - 🇸🇬 Singapore_Singapore_ss_1159
-      - 🇸🇬 Singapore_Singapore_ss_1161
-      - 🇸🇬 Singapore_Singapore_ss_1162
-      - 🇸🇬 Singapore_Singapore_ss_1164
-      - 🇸🇬 Singapore_Singapore_ss_1167
-      - 🇸🇬 Singapore_Singapore_ss_1168
-      - 🇸🇬 Singapore_Singapore_ss_1170
-      - 🇦🇪 United Arab Emirates_Dubai_ss_1185
-      - 🇨🇳 China_None_vmess_137
-      - 🇨🇳 China_None_vmess_1327
-      - 🇨🇳 CN 145 → tg@nicevpn123
-      - 🇪🇸 ES 10 → tg@nicevpn123
-      - 🇪🇸 ES 6 → tg@nicevpn123
-      - 🇫🇷 FR 11 → tg@nicevpn123
+      - 香港2|@ripaojiedian
+      - 香港7|@ripaojiedian
+      - United States_None_vmess_1173
+      - United States_None_vmess_1174
+      - None_None_vmess_1175
+      - CN-120.233.205.133-189_1@189
+      - RELAY-104.21.23.231-190_1@190
+      - 加拿大 009_2@30
+      - _US_美国->🇭🇰_HK_香港_3_5@22
+      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:8118_6@5
+      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:6379_6@19
+      - 0|-https://t.me/MrXbin-88
+      - BG 12 → tg@nicevpn123
+      - LV 1 → tg@nicevpn123
+      - CN 200 → tg@nicevpn123
+      - ES 17 → tg@nicevpn123
+      - FR 11 → tg@nicevpn123
+      - FR 12 → tg@nicevpn123
+      - FR 14 → tg@nicevpn123
+      - FR 19 → tg@nicevpn123
+      - FR 22 → tg@nicevpn123
+      - FR 23 → tg@nicevpn123
+      - FR 24 → tg@nicevpn123
+      - FR 26 → tg@nicevpn123
+      - FR 3 → tg@nicevpn123
+      - FR 31 → tg@nicevpn123
+      - FR 32 → tg@nicevpn123
+      - FR 33 → tg@nicevpn123
+      - FR 35 → tg@nicevpn123
+      - FR 36 → tg@nicevpn123
+      - FR 37 → tg@nicevpn123
+      - FR 38 → tg@nicevpn123
+      - FR 39 → tg@nicevpn123
+      - FR 4 → tg@nicevpn123
+      - FR 40 → tg@nicevpn123
+      - FR 43 → tg@nicevpn123
+      - FR 5 → tg@nicevpn123
+      - FR 7 → tg@nicevpn123
+      - FR 8 → tg@nicevpn123
+      - FR 9 → tg@nicevpn123
+      - GB 54 → tg@nicevpn123
+      - RU 9 → tg@nicevpn123
+      - US 390 → tg@nicevpn123
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇬🇧 英国+伦敦Microsoft公司
-      - 🇺🇸 [SS] 北美地区 V2CROSS.COM
-      - 🇨🇳 [Trojan] 安徽省 移动数据上网公共出口
-      - 🇨🇳 [VMess] 广东省 移动
-      - 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动
-      - 🇺🇸 US美国10 1.7MB/s
-      - 🇺🇸 US北美2 1.9MB/s
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇭🇰 香港7|@ripaojiedian
-      - 🇰🇷 韩国|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇸🇬 Singapore_Singapore_ss_112
-      - 🇯🇵 Japan_Tokyo_ss_115
-      - 🇰🇷 South Korea_Incheon_ss_1110
-      - 🇯🇵 Japan_Tokyo_ss_1112
-      - 🇸🇬 Singapore_Singapore_ss_1124
-      - 🇸🇬 Singapore_Singapore_ss_1127
-      - 🇸🇬 Singapore_Singapore_ss_1128
-      - 🇰🇷 South Korea_Incheon_ss_1131
-      - 🇸🇬 Singapore_Singapore_ss_1132
-      - 🇸🇬 Singapore_Singapore_ss_1133
-      - 🇸🇬 Singapore_Singapore_ss_1134
-      - 🇸🇬 Singapore_Singapore_ss_1135
-      - 🇸🇬 Singapore_Singapore_ss_1136
-      - 🇸🇬 Singapore_Singapore_ss_1137
-      - 🇸🇬 Singapore_Singapore_ss_1138
-      - 🇸🇬 Singapore_Singapore_ss_1139
-      - 🇸🇬 Singapore_Singapore_ss_1142
-      - 🇰🇷 South Korea_None_ss_1143
-      - 🇸🇬 Singapore_Singapore_ss_1144
-      - 🇸🇬 Singapore_Singapore_ss_1145
-      - 🇸🇬 Singapore_Singapore_ss_1146
-      - 🇸🇬 Singapore_Singapore_ss_1147
-      - 🇸🇬 Singapore_Singapore_ss_1149
-      - 🇸🇬 Singapore_Singapore_ss_1150
-      - 🇸🇬 Singapore_Singapore_ss_1151
-      - 🇸🇬 Singapore_Singapore_ss_1152
-      - 🇸🇬 Singapore_Singapore_ss_1153
-      - 🇸🇬 Singapore_Singapore_ss_1155
-      - 🇸🇬 Singapore_Singapore_ss_1156
-      - 🇸🇬 Singapore_Singapore_ss_1159
-      - 🇸🇬 Singapore_Singapore_ss_1161
-      - 🇸🇬 Singapore_Singapore_ss_1162
-      - 🇸🇬 Singapore_Singapore_ss_1164
-      - 🇸🇬 Singapore_Singapore_ss_1167
-      - 🇸🇬 Singapore_Singapore_ss_1168
-      - 🇸🇬 Singapore_Singapore_ss_1170
-      - 🇦🇪 United Arab Emirates_Dubai_ss_1185
-      - 🇨🇳 China_None_vmess_137
-      - 🇨🇳 China_None_vmess_1327
-      - 🇨🇳 CN 145 → tg@nicevpn123
-      - 🇪🇸 ES 10 → tg@nicevpn123
-      - 🇪🇸 ES 6 → tg@nicevpn123
-      - 🇫🇷 FR 11 → tg@nicevpn123
+      - 香港2|@ripaojiedian
+      - 香港7|@ripaojiedian
+      - United States_None_vmess_1173
+      - United States_None_vmess_1174
+      - None_None_vmess_1175
+      - CN-120.233.205.133-189_1@189
+      - RELAY-104.21.23.231-190_1@190
+      - 加拿大 009_2@30
+      - _US_美国->🇭🇰_HK_香港_3_5@22
+      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:8118_6@5
+      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:6379_6@19
+      - 0|-https://t.me/MrXbin-88
+      - BG 12 → tg@nicevpn123
+      - LV 1 → tg@nicevpn123
+      - CN 200 → tg@nicevpn123
+      - ES 17 → tg@nicevpn123
+      - FR 11 → tg@nicevpn123
+      - FR 12 → tg@nicevpn123
+      - FR 14 → tg@nicevpn123
+      - FR 19 → tg@nicevpn123
+      - FR 22 → tg@nicevpn123
+      - FR 23 → tg@nicevpn123
+      - FR 24 → tg@nicevpn123
+      - FR 26 → tg@nicevpn123
+      - FR 3 → tg@nicevpn123
+      - FR 31 → tg@nicevpn123
+      - FR 32 → tg@nicevpn123
+      - FR 33 → tg@nicevpn123
+      - FR 35 → tg@nicevpn123
+      - FR 36 → tg@nicevpn123
+      - FR 37 → tg@nicevpn123
+      - FR 38 → tg@nicevpn123
+      - FR 39 → tg@nicevpn123
+      - FR 4 → tg@nicevpn123
+      - FR 40 → tg@nicevpn123
+      - FR 43 → tg@nicevpn123
+      - FR 5 → tg@nicevpn123
+      - FR 7 → tg@nicevpn123
+      - FR 8 → tg@nicevpn123
+      - FR 9 → tg@nicevpn123
+      - GB 54 → tg@nicevpn123
+      - RU 9 → tg@nicevpn123
+      - US 390 → tg@nicevpn123
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇬🇧 英国+伦敦Microsoft公司
-      - 🇺🇸 [SS] 北美地区 V2CROSS.COM
-      - 🇨🇳 [Trojan] 安徽省 移动数据上网公共出口
-      - 🇨🇳 [VMess] 广东省 移动
-      - 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动
-      - 🇺🇸 US美国10 1.7MB/s
-      - 🇺🇸 US北美2 1.9MB/s
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇭🇰 香港7|@ripaojiedian
-      - 🇰🇷 韩国|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇸🇬 Singapore_Singapore_ss_112
-      - 🇯🇵 Japan_Tokyo_ss_115
-      - 🇰🇷 South Korea_Incheon_ss_1110
-      - 🇯🇵 Japan_Tokyo_ss_1112
-      - 🇸🇬 Singapore_Singapore_ss_1124
-      - 🇸🇬 Singapore_Singapore_ss_1127
-      - 🇸🇬 Singapore_Singapore_ss_1128
-      - 🇰🇷 South Korea_Incheon_ss_1131
-      - 🇸🇬 Singapore_Singapore_ss_1132
-      - 🇸🇬 Singapore_Singapore_ss_1133
-      - 🇸🇬 Singapore_Singapore_ss_1134
-      - 🇸🇬 Singapore_Singapore_ss_1135
-      - 🇸🇬 Singapore_Singapore_ss_1136
-      - 🇸🇬 Singapore_Singapore_ss_1137
-      - 🇸🇬 Singapore_Singapore_ss_1138
-      - 🇸🇬 Singapore_Singapore_ss_1139
-      - 🇸🇬 Singapore_Singapore_ss_1142
-      - 🇰🇷 South Korea_None_ss_1143
-      - 🇸🇬 Singapore_Singapore_ss_1144
-      - 🇸🇬 Singapore_Singapore_ss_1145
-      - 🇸🇬 Singapore_Singapore_ss_1146
-      - 🇸🇬 Singapore_Singapore_ss_1147
-      - 🇸🇬 Singapore_Singapore_ss_1149
-      - 🇸🇬 Singapore_Singapore_ss_1150
-      - 🇸🇬 Singapore_Singapore_ss_1151
-      - 🇸🇬 Singapore_Singapore_ss_1152
-      - 🇸🇬 Singapore_Singapore_ss_1153
-      - 🇸🇬 Singapore_Singapore_ss_1155
-      - 🇸🇬 Singapore_Singapore_ss_1156
-      - 🇸🇬 Singapore_Singapore_ss_1159
-      - 🇸🇬 Singapore_Singapore_ss_1161
-      - 🇸🇬 Singapore_Singapore_ss_1162
-      - 🇸🇬 Singapore_Singapore_ss_1164
-      - 🇸🇬 Singapore_Singapore_ss_1167
-      - 🇸🇬 Singapore_Singapore_ss_1168
-      - 🇸🇬 Singapore_Singapore_ss_1170
-      - 🇦🇪 United Arab Emirates_Dubai_ss_1185
-      - 🇨🇳 China_None_vmess_137
-      - 🇨🇳 China_None_vmess_1327
-      - 🇨🇳 CN 145 → tg@nicevpn123
-      - 🇪🇸 ES 10 → tg@nicevpn123
-      - 🇪🇸 ES 6 → tg@nicevpn123
-      - 🇫🇷 FR 11 → tg@nicevpn123
+      - 香港2|@ripaojiedian
+      - 香港7|@ripaojiedian
+      - United States_None_vmess_1173
+      - United States_None_vmess_1174
+      - None_None_vmess_1175
+      - CN-120.233.205.133-189_1@189
+      - RELAY-104.21.23.231-190_1@190
+      - 加拿大 009_2@30
+      - _US_美国->🇭🇰_HK_香港_3_5@22
+      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:8118_6@5
+      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:6379_6@19
+      - 0|-https://t.me/MrXbin-88
+      - BG 12 → tg@nicevpn123
+      - LV 1 → tg@nicevpn123
+      - CN 200 → tg@nicevpn123
+      - ES 17 → tg@nicevpn123
+      - FR 11 → tg@nicevpn123
+      - FR 12 → tg@nicevpn123
+      - FR 14 → tg@nicevpn123
+      - FR 19 → tg@nicevpn123
+      - FR 22 → tg@nicevpn123
+      - FR 23 → tg@nicevpn123
+      - FR 24 → tg@nicevpn123
+      - FR 26 → tg@nicevpn123
+      - FR 3 → tg@nicevpn123
+      - FR 31 → tg@nicevpn123
+      - FR 32 → tg@nicevpn123
+      - FR 33 → tg@nicevpn123
+      - FR 35 → tg@nicevpn123
+      - FR 36 → tg@nicevpn123
+      - FR 37 → tg@nicevpn123
+      - FR 38 → tg@nicevpn123
+      - FR 39 → tg@nicevpn123
+      - FR 4 → tg@nicevpn123
+      - FR 40 → tg@nicevpn123
+      - FR 43 → tg@nicevpn123
+      - FR 5 → tg@nicevpn123
+      - FR 7 → tg@nicevpn123
+      - FR 8 → tg@nicevpn123
+      - FR 9 → tg@nicevpn123
+      - GB 54 → tg@nicevpn123
+      - RU 9 → tg@nicevpn123
+      - US 390 → tg@nicevpn123
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -511,60 +424,49 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇬🇧 英国+伦敦Microsoft公司
-      - 🇺🇸 [SS] 北美地区 V2CROSS.COM
-      - 🇨🇳 [Trojan] 安徽省 移动数据上网公共出口
-      - 🇨🇳 [VMess] 广东省 移动
-      - 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动
-      - 🇺🇸 US美国10 1.7MB/s
-      - 🇺🇸 US北美2 1.9MB/s
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇭🇰 香港7|@ripaojiedian
-      - 🇰🇷 韩国|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇸🇬 Singapore_Singapore_ss_112
-      - 🇯🇵 Japan_Tokyo_ss_115
-      - 🇰🇷 South Korea_Incheon_ss_1110
-      - 🇯🇵 Japan_Tokyo_ss_1112
-      - 🇸🇬 Singapore_Singapore_ss_1124
-      - 🇸🇬 Singapore_Singapore_ss_1127
-      - 🇸🇬 Singapore_Singapore_ss_1128
-      - 🇰🇷 South Korea_Incheon_ss_1131
-      - 🇸🇬 Singapore_Singapore_ss_1132
-      - 🇸🇬 Singapore_Singapore_ss_1133
-      - 🇸🇬 Singapore_Singapore_ss_1134
-      - 🇸🇬 Singapore_Singapore_ss_1135
-      - 🇸🇬 Singapore_Singapore_ss_1136
-      - 🇸🇬 Singapore_Singapore_ss_1137
-      - 🇸🇬 Singapore_Singapore_ss_1138
-      - 🇸🇬 Singapore_Singapore_ss_1139
-      - 🇸🇬 Singapore_Singapore_ss_1142
-      - 🇰🇷 South Korea_None_ss_1143
-      - 🇸🇬 Singapore_Singapore_ss_1144
-      - 🇸🇬 Singapore_Singapore_ss_1145
-      - 🇸🇬 Singapore_Singapore_ss_1146
-      - 🇸🇬 Singapore_Singapore_ss_1147
-      - 🇸🇬 Singapore_Singapore_ss_1149
-      - 🇸🇬 Singapore_Singapore_ss_1150
-      - 🇸🇬 Singapore_Singapore_ss_1151
-      - 🇸🇬 Singapore_Singapore_ss_1152
-      - 🇸🇬 Singapore_Singapore_ss_1153
-      - 🇸🇬 Singapore_Singapore_ss_1155
-      - 🇸🇬 Singapore_Singapore_ss_1156
-      - 🇸🇬 Singapore_Singapore_ss_1159
-      - 🇸🇬 Singapore_Singapore_ss_1161
-      - 🇸🇬 Singapore_Singapore_ss_1162
-      - 🇸🇬 Singapore_Singapore_ss_1164
-      - 🇸🇬 Singapore_Singapore_ss_1167
-      - 🇸🇬 Singapore_Singapore_ss_1168
-      - 🇸🇬 Singapore_Singapore_ss_1170
-      - 🇦🇪 United Arab Emirates_Dubai_ss_1185
-      - 🇨🇳 China_None_vmess_137
-      - 🇨🇳 China_None_vmess_1327
-      - 🇨🇳 CN 145 → tg@nicevpn123
-      - 🇪🇸 ES 10 → tg@nicevpn123
-      - 🇪🇸 ES 6 → tg@nicevpn123
-      - 🇫🇷 FR 11 → tg@nicevpn123
+      - 香港2|@ripaojiedian
+      - 香港7|@ripaojiedian
+      - United States_None_vmess_1173
+      - United States_None_vmess_1174
+      - None_None_vmess_1175
+      - CN-120.233.205.133-189_1@189
+      - RELAY-104.21.23.231-190_1@190
+      - 加拿大 009_2@30
+      - _US_美国->🇭🇰_HK_香港_3_5@22
+      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:8118_6@5
+      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:6379_6@19
+      - 0|-https://t.me/MrXbin-88
+      - BG 12 → tg@nicevpn123
+      - LV 1 → tg@nicevpn123
+      - CN 200 → tg@nicevpn123
+      - ES 17 → tg@nicevpn123
+      - FR 11 → tg@nicevpn123
+      - FR 12 → tg@nicevpn123
+      - FR 14 → tg@nicevpn123
+      - FR 19 → tg@nicevpn123
+      - FR 22 → tg@nicevpn123
+      - FR 23 → tg@nicevpn123
+      - FR 24 → tg@nicevpn123
+      - FR 26 → tg@nicevpn123
+      - FR 3 → tg@nicevpn123
+      - FR 31 → tg@nicevpn123
+      - FR 32 → tg@nicevpn123
+      - FR 33 → tg@nicevpn123
+      - FR 35 → tg@nicevpn123
+      - FR 36 → tg@nicevpn123
+      - FR 37 → tg@nicevpn123
+      - FR 38 → tg@nicevpn123
+      - FR 39 → tg@nicevpn123
+      - FR 4 → tg@nicevpn123
+      - FR 40 → tg@nicevpn123
+      - FR 43 → tg@nicevpn123
+      - FR 5 → tg@nicevpn123
+      - FR 7 → tg@nicevpn123
+      - FR 8 → tg@nicevpn123
+      - FR 9 → tg@nicevpn123
+      - GB 54 → tg@nicevpn123
+      - RU 9 → tg@nicevpn123
+      - US 390 → tg@nicevpn123
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
