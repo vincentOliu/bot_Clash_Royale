@@ -6,195 +6,153 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港2|@ripaojiedian, server: 120.238.122.243, port: 40259, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港7|@ripaojiedian, server: data-hk-v1.usabooks.com.cn, port: 20206, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: data-hk-v1.usabooks.com.cn}}, udp: true}
-  - {name: United States_None_vmess_1173, server: fcdn.flha.ru, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: fcdn.flha.ru}}, udp: true}
-  - {name: United States_None_vmess_1174, server: 172.67.214.33, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: fcdn.flha.ru}}, udp: true}
-  - {name: None_None_vmess_1175, server: 104.21.23.231, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: fcdn.flha.ru}}, udp: true}
-  - {name: CN-120.233.205.133-189_1@189, server: data-jp-v1.usabooks.com.cn, port: 20301, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: data-jp-v1.usabooks.com.cn}}, udp: true}
+  - {name: 湖南省 联通, server: yes.cnmjcn.net, port: 16632, type: vmess, uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com}}, udp: true}
+  - {name: 广东省广州市 移动, server: 183.236.51.59, port: 54437, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 广东省广州市 移动 2, server: 120.232.242.117, port: 41492, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 v2rayfree.eu.org, server: 23.162.200.227, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 23.162.200.227}}, udp: true}
+  - {name: 安徽, server: 112.29.94.24, port: 443, type: trojan, password: MyYoZhfX, skip-cert-verify: true, udp: true}
+  - {name: 日本|@ripaojiedian, server: 36.151.192.100, port: 61190, type: trojan, password: MyYoZhfX, skip-cert-verify: true, udp: true}
+  - {name: 狮城特殊|@ripaojiedian, server: 54.65.132.51, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 日本特殊|@ripaojiedian, server: 18.143.159.105, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: The Netherlands_Rozendaal_ss_111, server: 109.201.152.181, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
+  - {name: Singapore_Singapore_ssr_111%%�, server: 103.172.116.79, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: Singapore_Singapore_ssr_111%%� 2, server: 103.172.116.79, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: Singapore_Singapore_ssr_111%%� 3, server: 103.172.116.79, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: Singapore_Singapore_ssr_111%%� 4, server: 103.172.116.79, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: Singapore_Singapore_ssr_111%%� 5, server: 103.172.116.79, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: Singapore_Singapore_ssr_112%%�, server: 103.172.116.79, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: Singapore_Singapore_ssr_112%%� 2, server: 103.172.116.79, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: Singapore_Singapore_ssr_112%%� 3, server: 103.172.116.79, port: 9030, type: ss, cipher: aes-256-cfb, password: GeregetR8cvQHzYr, udp: true}
+  - {name: Singapore_Singapore_ssr_112%%� 4, server: 103.172.116.79, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: Singapore_Singapore_ssr_112%%� 5, server: 103.172.116.79, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: Singapore_Singapore_ssr_112%%� 6, server: 103.172.116.79, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: Germany_Frankfurt am Main_vmess_1148, server: 23.158.56.50, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: Singapore_Singapore_ssr_115%%�, server: 103.172.116.79, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: Singapore_Singapore_ssr_115%%� 2, server: 103.172.116.79, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: Singapore_Singapore_ssr_115%%� 3, server: 103.172.116.79, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: Singapore_Singapore_ssr_115%%� 4, server: 103.172.116.79, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: Singapore_Singapore_ssr_116%%�, server: 103.172.116.79, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: Singapore_Singapore_ssr_116%%� 2, server: 103.172.116.79, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
   - {name: RELAY-104.21.23.231-190_1@190, server: 104.21.23.231, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: 加拿大 009_2@30, server: 172.67.214.33, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: _US_美国->🇭🇰_HK_香港_3_5@22, server: onea.flha.ru, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:8118_6@5, server: 149.202.82.172, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:6379_6@19, server: 149.202.82.172, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 0|-https://t.me/MrXbin-88, server: 46.226.162.112, port: 32913, type: ss, cipher: chacha20-ietf-poly1305, password: KTwIQM1cQJwtkrjfld6Usn, udp: true}
-  - {name: BG 12 → tg@nicevpn123, server: 213.183.63.69, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: LV 1 → tg@nicevpn123, server: 46.183.217.232, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: CN 200 → tg@nicevpn123, server: 120.233.42.83, port: 20207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: ES 17 → tg@nicevpn123, server: 5.forlive.live, port: 60033, type: ss, cipher: chacha20-ietf-poly1305, password: be134ab3-1760-3e70-8b87-f197a365ffc3, udp: true}
-  - {name: FR 11 → tg@nicevpn123, server: 51.210.182.170, port: 443, type: trojan, password: 278fff60-fc3a-11ee-a4a6-1239d0255272, skip-cert-verify: true, udp: true}
-  - {name: FR 12 → tg@nicevpn123, server: 149.202.82.172, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: FR 14 → tg@nicevpn123, server: 149.202.82.172, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: FR 19 → tg@nicevpn123, server: 149.202.82.172, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: FR 22 → tg@nicevpn123, server: 149.202.82.172, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: FR 23 → tg@nicevpn123, server: 149.202.82.172, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: FR 24 → tg@nicevpn123, server: 149.202.82.172, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: FR 26 → tg@nicevpn123, server: 149.202.82.172, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: FR 3 → tg@nicevpn123, server: 149.202.82.172, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: FR 31 → tg@nicevpn123, server: 149.202.82.172, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: FR 32 → tg@nicevpn123, server: 149.202.82.172, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: FR 33 → tg@nicevpn123, server: 149.202.82.172, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: FR 35 → tg@nicevpn123, server: 149.202.82.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: FR 36 → tg@nicevpn123, server: 149.202.82.172, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: FR 37 → tg@nicevpn123, server: 149.202.82.172, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: FR 38 → tg@nicevpn123, server: 149.202.82.172, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: FR 39 → tg@nicevpn123, server: 149.202.82.172, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: FR 4 → tg@nicevpn123, server: 149.202.82.172, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: FR 40 → tg@nicevpn123, server: 149.202.82.172, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: FR 43 → tg@nicevpn123, server: 149.202.82.172, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: FR 5 → tg@nicevpn123, server: 149.202.82.172, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: FR 7 → tg@nicevpn123, server: 149.202.82.172, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: FR 8 → tg@nicevpn123, server: 149.202.82.172, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: FR 9 → tg@nicevpn123, server: 149.202.82.172, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: GB 54 → tg@nicevpn123, server: series-a2-mec.varzesh360.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: u17T3BvpYaaiuW2c, udp: true}
-  - {name: RU 9 → tg@nicevpn123, server: 92.246.136.190, port: 32025, type: ss, cipher: chacha20-ietf-poly1305, password: VRKnPTULDqxaExI5yLJjoc, udp: true}
-  - {name: US 390 → tg@nicevpn123, server: jahfkjha.cfd, port: 443, type: vmess, uuid: 950db6aa-4926-4616-816e-ec0312dcb87b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jahfkjha.cfd}}, udp: true}
+  - {name: 美国 004_2@8, server: 23.142.200.175, port: 443, type: trojan, password: 27876_t7d7f4e3f, skip-cert-verify: true, udp: true}
+  - {name: 0|-https://t.me/MrXbin-5, server: 43.202.41.139, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 0|-https://t.me/MrXbin-3%%�, server: 103.172.116.79, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
+  - {name: CN_speednode_0005, server: sg1.awslcn.info, port: 25245, type: vmess, uuid: 1640b579-cff8-46bc-a657-3860b5455712, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg1.awslcn.info}}, udp: true}
+  - {name: IE 9 → tg@nicevpn123, server: 52.169.202.174, port: 28612, type: ss, cipher: chacha20-ietf-poly1305, password: R5vcCFayGJ8ZwKMSUfdyfF, udp: true}
+  - {name: IT 29 → tg@nicevpn123, server: 188.114.97.2, port: 443, type: vmess, uuid: 6d9911b0-4e14-44fb-8883-52d14f550cca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: be2-vmess.sshmax.xyz}}, udp: true}
+  - {name: RW 13 → tg@nicevpn123, server: 23.162.200.227, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: RW 18 → tg@nicevpn123, server: 23.162.200.225, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: RW 2 → tg@nicevpn123, server: 23.162.200.225, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: RW 5 → tg@nicevpn123, server: 23.162.200.225, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: RW 6 → tg@nicevpn123, server: 23.162.200.225, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: RW 7 → tg@nicevpn123, server: 23.162.200.149, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: RW 8 → tg@nicevpn123, server: 23.162.200.225, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: FR 40 → tg@nicevpn123, server: 51.210.182.170, port: 443, type: trojan, password: 278fff60-fc3a-11ee-a4a6-1239d0255272, skip-cert-verify: true, udp: true}
+  - {name: GB 10 → tg@nicevpn123, server: 51.103.183.241, port: 33910, type: ss, cipher: chacha20-ietf-poly1305, password: IJl7gbeZxeXZzZGcKFMaHA, udp: true}
+  - {name: GB 47 → tg@nicevpn123, server: 45.76.130.173, port: 443, type: trojan, password: wkmY1R4EcP, sni: z-v2-003289.kailib.com, skip-cert-verify: true, udp: true}
+  - {name: JP 39 → tg@nicevpn123, server: 13.231.229.48, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: US 1016 → tg@nicevpn123, server: 104.21.30.254, port: 443, type: vmess, uuid: 6d9911b0-4e14-44fb-8883-52d14f550cca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: be2-vmess.sshmax.xyz}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港2|@ripaojiedian
-      - 香港7|@ripaojiedian
-      - United States_None_vmess_1173
-      - United States_None_vmess_1174
-      - None_None_vmess_1175
-      - CN-120.233.205.133-189_1@189
+      - 湖南省 联通
+      - 广东省广州市 移动
+      - 广东省广州市 移动 2
+      - 美国 v2rayfree.eu.org
+      - 安徽
+      - 日本|@ripaojiedian
+      - 狮城特殊|@ripaojiedian
+      - 日本特殊|@ripaojiedian
+      - The Netherlands_Rozendaal_ss_111
+      - Germany_Frankfurt am Main_vmess_1148
       - RELAY-104.21.23.231-190_1@190
-      - 加拿大 009_2@30
-      - _US_美国->🇭🇰_HK_香港_3_5@22
-      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:8118_6@5
-      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:6379_6@19
-      - 0|-https://t.me/MrXbin-88
-      - BG 12 → tg@nicevpn123
-      - LV 1 → tg@nicevpn123
-      - CN 200 → tg@nicevpn123
-      - ES 17 → tg@nicevpn123
-      - FR 11 → tg@nicevpn123
-      - FR 12 → tg@nicevpn123
-      - FR 14 → tg@nicevpn123
-      - FR 19 → tg@nicevpn123
-      - FR 22 → tg@nicevpn123
-      - FR 23 → tg@nicevpn123
-      - FR 24 → tg@nicevpn123
-      - FR 26 → tg@nicevpn123
-      - FR 3 → tg@nicevpn123
-      - FR 31 → tg@nicevpn123
-      - FR 32 → tg@nicevpn123
-      - FR 33 → tg@nicevpn123
-      - FR 35 → tg@nicevpn123
-      - FR 36 → tg@nicevpn123
-      - FR 37 → tg@nicevpn123
-      - FR 38 → tg@nicevpn123
-      - FR 39 → tg@nicevpn123
-      - FR 4 → tg@nicevpn123
+      - 美国 004_2@8
+      - 0|-https://t.me/MrXbin-5
+      - CN_speednode_0005
+      - IE 9 → tg@nicevpn123
+      - IT 29 → tg@nicevpn123
+      - RW 13 → tg@nicevpn123
+      - RW 18 → tg@nicevpn123
+      - RW 2 → tg@nicevpn123
+      - RW 5 → tg@nicevpn123
+      - RW 6 → tg@nicevpn123
+      - RW 7 → tg@nicevpn123
+      - RW 8 → tg@nicevpn123
       - FR 40 → tg@nicevpn123
-      - FR 43 → tg@nicevpn123
-      - FR 5 → tg@nicevpn123
-      - FR 7 → tg@nicevpn123
-      - FR 8 → tg@nicevpn123
-      - FR 9 → tg@nicevpn123
-      - GB 54 → tg@nicevpn123
-      - RU 9 → tg@nicevpn123
-      - US 390 → tg@nicevpn123
+      - GB 10 → tg@nicevpn123
+      - GB 47 → tg@nicevpn123
+      - JP 39 → tg@nicevpn123
+      - US 1016 → tg@nicevpn123
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - 香港2|@ripaojiedian
-      - 香港7|@ripaojiedian
-      - United States_None_vmess_1173
-      - United States_None_vmess_1174
-      - None_None_vmess_1175
-      - CN-120.233.205.133-189_1@189
+      - 湖南省 联通
+      - 广东省广州市 移动
+      - 广东省广州市 移动 2
+      - 美国 v2rayfree.eu.org
+      - 安徽
+      - 日本|@ripaojiedian
+      - 狮城特殊|@ripaojiedian
+      - 日本特殊|@ripaojiedian
+      - The Netherlands_Rozendaal_ss_111
+      - Germany_Frankfurt am Main_vmess_1148
       - RELAY-104.21.23.231-190_1@190
-      - 加拿大 009_2@30
-      - _US_美国->🇭🇰_HK_香港_3_5@22
-      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:8118_6@5
-      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:6379_6@19
-      - 0|-https://t.me/MrXbin-88
-      - BG 12 → tg@nicevpn123
-      - LV 1 → tg@nicevpn123
-      - CN 200 → tg@nicevpn123
-      - ES 17 → tg@nicevpn123
-      - FR 11 → tg@nicevpn123
-      - FR 12 → tg@nicevpn123
-      - FR 14 → tg@nicevpn123
-      - FR 19 → tg@nicevpn123
-      - FR 22 → tg@nicevpn123
-      - FR 23 → tg@nicevpn123
-      - FR 24 → tg@nicevpn123
-      - FR 26 → tg@nicevpn123
-      - FR 3 → tg@nicevpn123
-      - FR 31 → tg@nicevpn123
-      - FR 32 → tg@nicevpn123
-      - FR 33 → tg@nicevpn123
-      - FR 35 → tg@nicevpn123
-      - FR 36 → tg@nicevpn123
-      - FR 37 → tg@nicevpn123
-      - FR 38 → tg@nicevpn123
-      - FR 39 → tg@nicevpn123
-      - FR 4 → tg@nicevpn123
+      - 美国 004_2@8
+      - 0|-https://t.me/MrXbin-5
+      - CN_speednode_0005
+      - IE 9 → tg@nicevpn123
+      - IT 29 → tg@nicevpn123
+      - RW 13 → tg@nicevpn123
+      - RW 18 → tg@nicevpn123
+      - RW 2 → tg@nicevpn123
+      - RW 5 → tg@nicevpn123
+      - RW 6 → tg@nicevpn123
+      - RW 7 → tg@nicevpn123
+      - RW 8 → tg@nicevpn123
       - FR 40 → tg@nicevpn123
-      - FR 43 → tg@nicevpn123
-      - FR 5 → tg@nicevpn123
-      - FR 7 → tg@nicevpn123
-      - FR 8 → tg@nicevpn123
-      - FR 9 → tg@nicevpn123
-      - GB 54 → tg@nicevpn123
-      - RU 9 → tg@nicevpn123
-      - US 390 → tg@nicevpn123
+      - GB 10 → tg@nicevpn123
+      - GB 47 → tg@nicevpn123
+      - JP 39 → tg@nicevpn123
+      - US 1016 → tg@nicevpn123
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港2|@ripaojiedian
-      - 香港7|@ripaojiedian
-      - United States_None_vmess_1173
-      - United States_None_vmess_1174
-      - None_None_vmess_1175
-      - CN-120.233.205.133-189_1@189
+      - 湖南省 联通
+      - 广东省广州市 移动
+      - 广东省广州市 移动 2
+      - 美国 v2rayfree.eu.org
+      - 安徽
+      - 日本|@ripaojiedian
+      - 狮城特殊|@ripaojiedian
+      - 日本特殊|@ripaojiedian
+      - The Netherlands_Rozendaal_ss_111
+      - Germany_Frankfurt am Main_vmess_1148
       - RELAY-104.21.23.231-190_1@190
-      - 加拿大 009_2@30
-      - _US_美国->🇭🇰_HK_香港_3_5@22
-      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:8118_6@5
-      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:6379_6@19
-      - 0|-https://t.me/MrXbin-88
-      - BG 12 → tg@nicevpn123
-      - LV 1 → tg@nicevpn123
-      - CN 200 → tg@nicevpn123
-      - ES 17 → tg@nicevpn123
-      - FR 11 → tg@nicevpn123
-      - FR 12 → tg@nicevpn123
-      - FR 14 → tg@nicevpn123
-      - FR 19 → tg@nicevpn123
-      - FR 22 → tg@nicevpn123
-      - FR 23 → tg@nicevpn123
-      - FR 24 → tg@nicevpn123
-      - FR 26 → tg@nicevpn123
-      - FR 3 → tg@nicevpn123
-      - FR 31 → tg@nicevpn123
-      - FR 32 → tg@nicevpn123
-      - FR 33 → tg@nicevpn123
-      - FR 35 → tg@nicevpn123
-      - FR 36 → tg@nicevpn123
-      - FR 37 → tg@nicevpn123
-      - FR 38 → tg@nicevpn123
-      - FR 39 → tg@nicevpn123
-      - FR 4 → tg@nicevpn123
+      - 美国 004_2@8
+      - 0|-https://t.me/MrXbin-5
+      - CN_speednode_0005
+      - IE 9 → tg@nicevpn123
+      - IT 29 → tg@nicevpn123
+      - RW 13 → tg@nicevpn123
+      - RW 18 → tg@nicevpn123
+      - RW 2 → tg@nicevpn123
+      - RW 5 → tg@nicevpn123
+      - RW 6 → tg@nicevpn123
+      - RW 7 → tg@nicevpn123
+      - RW 8 → tg@nicevpn123
       - FR 40 → tg@nicevpn123
-      - FR 43 → tg@nicevpn123
-      - FR 5 → tg@nicevpn123
-      - FR 7 → tg@nicevpn123
-      - FR 8 → tg@nicevpn123
-      - FR 9 → tg@nicevpn123
-      - GB 54 → tg@nicevpn123
-      - RU 9 → tg@nicevpn123
-      - US 390 → tg@nicevpn123
+      - GB 10 → tg@nicevpn123
+      - GB 47 → tg@nicevpn123
+      - JP 39 → tg@nicevpn123
+      - US 1016 → tg@nicevpn123
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -213,202 +171,139 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港2|@ripaojiedian
-      - 香港7|@ripaojiedian
-      - United States_None_vmess_1173
-      - United States_None_vmess_1174
-      - None_None_vmess_1175
-      - CN-120.233.205.133-189_1@189
+      - 湖南省 联通
+      - 广东省广州市 移动
+      - 广东省广州市 移动 2
+      - 美国 v2rayfree.eu.org
+      - 安徽
+      - 日本|@ripaojiedian
+      - 狮城特殊|@ripaojiedian
+      - 日本特殊|@ripaojiedian
+      - The Netherlands_Rozendaal_ss_111
+      - Germany_Frankfurt am Main_vmess_1148
       - RELAY-104.21.23.231-190_1@190
-      - 加拿大 009_2@30
-      - _US_美国->🇭🇰_HK_香港_3_5@22
-      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:8118_6@5
-      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:6379_6@19
-      - 0|-https://t.me/MrXbin-88
-      - BG 12 → tg@nicevpn123
-      - LV 1 → tg@nicevpn123
-      - CN 200 → tg@nicevpn123
-      - ES 17 → tg@nicevpn123
-      - FR 11 → tg@nicevpn123
-      - FR 12 → tg@nicevpn123
-      - FR 14 → tg@nicevpn123
-      - FR 19 → tg@nicevpn123
-      - FR 22 → tg@nicevpn123
-      - FR 23 → tg@nicevpn123
-      - FR 24 → tg@nicevpn123
-      - FR 26 → tg@nicevpn123
-      - FR 3 → tg@nicevpn123
-      - FR 31 → tg@nicevpn123
-      - FR 32 → tg@nicevpn123
-      - FR 33 → tg@nicevpn123
-      - FR 35 → tg@nicevpn123
-      - FR 36 → tg@nicevpn123
-      - FR 37 → tg@nicevpn123
-      - FR 38 → tg@nicevpn123
-      - FR 39 → tg@nicevpn123
-      - FR 4 → tg@nicevpn123
+      - 美国 004_2@8
+      - 0|-https://t.me/MrXbin-5
+      - CN_speednode_0005
+      - IE 9 → tg@nicevpn123
+      - IT 29 → tg@nicevpn123
+      - RW 13 → tg@nicevpn123
+      - RW 18 → tg@nicevpn123
+      - RW 2 → tg@nicevpn123
+      - RW 5 → tg@nicevpn123
+      - RW 6 → tg@nicevpn123
+      - RW 7 → tg@nicevpn123
+      - RW 8 → tg@nicevpn123
       - FR 40 → tg@nicevpn123
-      - FR 43 → tg@nicevpn123
-      - FR 5 → tg@nicevpn123
-      - FR 7 → tg@nicevpn123
-      - FR 8 → tg@nicevpn123
-      - FR 9 → tg@nicevpn123
-      - GB 54 → tg@nicevpn123
-      - RU 9 → tg@nicevpn123
-      - US 390 → tg@nicevpn123
+      - GB 10 → tg@nicevpn123
+      - GB 47 → tg@nicevpn123
+      - JP 39 → tg@nicevpn123
+      - US 1016 → tg@nicevpn123
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港2|@ripaojiedian
-      - 香港7|@ripaojiedian
-      - _US_美国->🇭🇰_HK_香港_3_5@22
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港2|@ripaojiedian
-      - 香港7|@ripaojiedian
-      - United States_None_vmess_1173
-      - United States_None_vmess_1174
-      - None_None_vmess_1175
-      - CN-120.233.205.133-189_1@189
+      - 湖南省 联通
+      - 广东省广州市 移动
+      - 广东省广州市 移动 2
+      - 美国 v2rayfree.eu.org
+      - 安徽
+      - 日本|@ripaojiedian
+      - 狮城特殊|@ripaojiedian
+      - 日本特殊|@ripaojiedian
+      - The Netherlands_Rozendaal_ss_111
+      - Germany_Frankfurt am Main_vmess_1148
       - RELAY-104.21.23.231-190_1@190
-      - 加拿大 009_2@30
-      - _US_美国->🇭🇰_HK_香港_3_5@22
-      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:8118_6@5
-      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:6379_6@19
-      - 0|-https://t.me/MrXbin-88
-      - BG 12 → tg@nicevpn123
-      - LV 1 → tg@nicevpn123
-      - CN 200 → tg@nicevpn123
-      - ES 17 → tg@nicevpn123
-      - FR 11 → tg@nicevpn123
-      - FR 12 → tg@nicevpn123
-      - FR 14 → tg@nicevpn123
-      - FR 19 → tg@nicevpn123
-      - FR 22 → tg@nicevpn123
-      - FR 23 → tg@nicevpn123
-      - FR 24 → tg@nicevpn123
-      - FR 26 → tg@nicevpn123
-      - FR 3 → tg@nicevpn123
-      - FR 31 → tg@nicevpn123
-      - FR 32 → tg@nicevpn123
-      - FR 33 → tg@nicevpn123
-      - FR 35 → tg@nicevpn123
-      - FR 36 → tg@nicevpn123
-      - FR 37 → tg@nicevpn123
-      - FR 38 → tg@nicevpn123
-      - FR 39 → tg@nicevpn123
-      - FR 4 → tg@nicevpn123
+      - 美国 004_2@8
+      - 0|-https://t.me/MrXbin-5
+      - CN_speednode_0005
+      - IE 9 → tg@nicevpn123
+      - IT 29 → tg@nicevpn123
+      - RW 13 → tg@nicevpn123
+      - RW 18 → tg@nicevpn123
+      - RW 2 → tg@nicevpn123
+      - RW 5 → tg@nicevpn123
+      - RW 6 → tg@nicevpn123
+      - RW 7 → tg@nicevpn123
+      - RW 8 → tg@nicevpn123
       - FR 40 → tg@nicevpn123
-      - FR 43 → tg@nicevpn123
-      - FR 5 → tg@nicevpn123
-      - FR 7 → tg@nicevpn123
-      - FR 8 → tg@nicevpn123
-      - FR 9 → tg@nicevpn123
-      - GB 54 → tg@nicevpn123
-      - RU 9 → tg@nicevpn123
-      - US 390 → tg@nicevpn123
+      - GB 10 → tg@nicevpn123
+      - GB 47 → tg@nicevpn123
+      - JP 39 → tg@nicevpn123
+      - US 1016 → tg@nicevpn123
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港2|@ripaojiedian
-      - 香港7|@ripaojiedian
-      - United States_None_vmess_1173
-      - United States_None_vmess_1174
-      - None_None_vmess_1175
-      - CN-120.233.205.133-189_1@189
+      - 湖南省 联通
+      - 广东省广州市 移动
+      - 广东省广州市 移动 2
+      - 美国 v2rayfree.eu.org
+      - 安徽
+      - 日本|@ripaojiedian
+      - 狮城特殊|@ripaojiedian
+      - 日本特殊|@ripaojiedian
+      - The Netherlands_Rozendaal_ss_111
+      - Germany_Frankfurt am Main_vmess_1148
       - RELAY-104.21.23.231-190_1@190
-      - 加拿大 009_2@30
-      - _US_美国->🇭🇰_HK_香港_3_5@22
-      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:8118_6@5
-      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:6379_6@19
-      - 0|-https://t.me/MrXbin-88
-      - BG 12 → tg@nicevpn123
-      - LV 1 → tg@nicevpn123
-      - CN 200 → tg@nicevpn123
-      - ES 17 → tg@nicevpn123
-      - FR 11 → tg@nicevpn123
-      - FR 12 → tg@nicevpn123
-      - FR 14 → tg@nicevpn123
-      - FR 19 → tg@nicevpn123
-      - FR 22 → tg@nicevpn123
-      - FR 23 → tg@nicevpn123
-      - FR 24 → tg@nicevpn123
-      - FR 26 → tg@nicevpn123
-      - FR 3 → tg@nicevpn123
-      - FR 31 → tg@nicevpn123
-      - FR 32 → tg@nicevpn123
-      - FR 33 → tg@nicevpn123
-      - FR 35 → tg@nicevpn123
-      - FR 36 → tg@nicevpn123
-      - FR 37 → tg@nicevpn123
-      - FR 38 → tg@nicevpn123
-      - FR 39 → tg@nicevpn123
-      - FR 4 → tg@nicevpn123
+      - 美国 004_2@8
+      - 0|-https://t.me/MrXbin-5
+      - CN_speednode_0005
+      - IE 9 → tg@nicevpn123
+      - IT 29 → tg@nicevpn123
+      - RW 13 → tg@nicevpn123
+      - RW 18 → tg@nicevpn123
+      - RW 2 → tg@nicevpn123
+      - RW 5 → tg@nicevpn123
+      - RW 6 → tg@nicevpn123
+      - RW 7 → tg@nicevpn123
+      - RW 8 → tg@nicevpn123
       - FR 40 → tg@nicevpn123
-      - FR 43 → tg@nicevpn123
-      - FR 5 → tg@nicevpn123
-      - FR 7 → tg@nicevpn123
-      - FR 8 → tg@nicevpn123
-      - FR 9 → tg@nicevpn123
-      - GB 54 → tg@nicevpn123
-      - RU 9 → tg@nicevpn123
-      - US 390 → tg@nicevpn123
+      - GB 10 → tg@nicevpn123
+      - GB 47 → tg@nicevpn123
+      - JP 39 → tg@nicevpn123
+      - US 1016 → tg@nicevpn123
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港2|@ripaojiedian
-      - 香港7|@ripaojiedian
-      - United States_None_vmess_1173
-      - United States_None_vmess_1174
-      - None_None_vmess_1175
-      - CN-120.233.205.133-189_1@189
+      - 湖南省 联通
+      - 广东省广州市 移动
+      - 广东省广州市 移动 2
+      - 美国 v2rayfree.eu.org
+      - 安徽
+      - 日本|@ripaojiedian
+      - 狮城特殊|@ripaojiedian
+      - 日本特殊|@ripaojiedian
+      - The Netherlands_Rozendaal_ss_111
+      - Germany_Frankfurt am Main_vmess_1148
       - RELAY-104.21.23.231-190_1@190
-      - 加拿大 009_2@30
-      - _US_美国->🇭🇰_HK_香港_3_5@22
-      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:8118_6@5
-      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:6379_6@19
-      - 0|-https://t.me/MrXbin-88
-      - BG 12 → tg@nicevpn123
-      - LV 1 → tg@nicevpn123
-      - CN 200 → tg@nicevpn123
-      - ES 17 → tg@nicevpn123
-      - FR 11 → tg@nicevpn123
-      - FR 12 → tg@nicevpn123
-      - FR 14 → tg@nicevpn123
-      - FR 19 → tg@nicevpn123
-      - FR 22 → tg@nicevpn123
-      - FR 23 → tg@nicevpn123
-      - FR 24 → tg@nicevpn123
-      - FR 26 → tg@nicevpn123
-      - FR 3 → tg@nicevpn123
-      - FR 31 → tg@nicevpn123
-      - FR 32 → tg@nicevpn123
-      - FR 33 → tg@nicevpn123
-      - FR 35 → tg@nicevpn123
-      - FR 36 → tg@nicevpn123
-      - FR 37 → tg@nicevpn123
-      - FR 38 → tg@nicevpn123
-      - FR 39 → tg@nicevpn123
-      - FR 4 → tg@nicevpn123
+      - 美国 004_2@8
+      - 0|-https://t.me/MrXbin-5
+      - CN_speednode_0005
+      - IE 9 → tg@nicevpn123
+      - IT 29 → tg@nicevpn123
+      - RW 13 → tg@nicevpn123
+      - RW 18 → tg@nicevpn123
+      - RW 2 → tg@nicevpn123
+      - RW 5 → tg@nicevpn123
+      - RW 6 → tg@nicevpn123
+      - RW 7 → tg@nicevpn123
+      - RW 8 → tg@nicevpn123
       - FR 40 → tg@nicevpn123
-      - FR 43 → tg@nicevpn123
-      - FR 5 → tg@nicevpn123
-      - FR 7 → tg@nicevpn123
-      - FR 8 → tg@nicevpn123
-      - FR 9 → tg@nicevpn123
-      - GB 54 → tg@nicevpn123
-      - RU 9 → tg@nicevpn123
-      - US 390 → tg@nicevpn123
+      - GB 10 → tg@nicevpn123
+      - GB 47 → tg@nicevpn123
+      - JP 39 → tg@nicevpn123
+      - US 1016 → tg@nicevpn123
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -424,49 +319,34 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港2|@ripaojiedian
-      - 香港7|@ripaojiedian
-      - United States_None_vmess_1173
-      - United States_None_vmess_1174
-      - None_None_vmess_1175
-      - CN-120.233.205.133-189_1@189
+      - 湖南省 联通
+      - 广东省广州市 移动
+      - 广东省广州市 移动 2
+      - 美国 v2rayfree.eu.org
+      - 安徽
+      - 日本|@ripaojiedian
+      - 狮城特殊|@ripaojiedian
+      - 日本特殊|@ripaojiedian
+      - The Netherlands_Rozendaal_ss_111
+      - Germany_Frankfurt am Main_vmess_1148
       - RELAY-104.21.23.231-190_1@190
-      - 加拿大 009_2@30
-      - _US_美国->🇭🇰_HK_香港_3_5@22
-      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:8118_6@5
-      - SS-法国-locked-ChatGPT-TikTok-YouTubePrem-149.202.82.172:6379_6@19
-      - 0|-https://t.me/MrXbin-88
-      - BG 12 → tg@nicevpn123
-      - LV 1 → tg@nicevpn123
-      - CN 200 → tg@nicevpn123
-      - ES 17 → tg@nicevpn123
-      - FR 11 → tg@nicevpn123
-      - FR 12 → tg@nicevpn123
-      - FR 14 → tg@nicevpn123
-      - FR 19 → tg@nicevpn123
-      - FR 22 → tg@nicevpn123
-      - FR 23 → tg@nicevpn123
-      - FR 24 → tg@nicevpn123
-      - FR 26 → tg@nicevpn123
-      - FR 3 → tg@nicevpn123
-      - FR 31 → tg@nicevpn123
-      - FR 32 → tg@nicevpn123
-      - FR 33 → tg@nicevpn123
-      - FR 35 → tg@nicevpn123
-      - FR 36 → tg@nicevpn123
-      - FR 37 → tg@nicevpn123
-      - FR 38 → tg@nicevpn123
-      - FR 39 → tg@nicevpn123
-      - FR 4 → tg@nicevpn123
+      - 美国 004_2@8
+      - 0|-https://t.me/MrXbin-5
+      - CN_speednode_0005
+      - IE 9 → tg@nicevpn123
+      - IT 29 → tg@nicevpn123
+      - RW 13 → tg@nicevpn123
+      - RW 18 → tg@nicevpn123
+      - RW 2 → tg@nicevpn123
+      - RW 5 → tg@nicevpn123
+      - RW 6 → tg@nicevpn123
+      - RW 7 → tg@nicevpn123
+      - RW 8 → tg@nicevpn123
       - FR 40 → tg@nicevpn123
-      - FR 43 → tg@nicevpn123
-      - FR 5 → tg@nicevpn123
-      - FR 7 → tg@nicevpn123
-      - FR 8 → tg@nicevpn123
-      - FR 9 → tg@nicevpn123
-      - GB 54 → tg@nicevpn123
-      - RU 9 → tg@nicevpn123
-      - US 390 → tg@nicevpn123
+      - GB 10 → tg@nicevpn123
+      - GB 47 → tg@nicevpn123
+      - JP 39 → tg@nicevpn123
+      - US 1016 → tg@nicevpn123
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
