@@ -6,303 +6,727 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国 CloudFlare节点 10, server: 104.19.43.26, port: 80, type: vmess, uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: osaka.xlb8.eu.org}}, udp: true}
-  - {name: 广东省广州市 移动, server: 183.236.51.59, port: 54437, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 13, server: 104.19.43.163, port: 80, type: vmess, uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: osaka.xlb8.eu.org}}, udp: true}
-  - {name: "[VMess] 乌克兰 V2CROSS.COM", server: 62.72.171.181, port: 33362, type: vmess, uuid: 3ec02cb0-e927-44c7-8173-059b2729a162, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[SS] 河北省 中移铁通", server: gd1-hk.fwcloud.cc, port: 43430, type: ss, cipher: chacha20-ietf-poly1305, password: bMxhj5PHRyXZbwvM, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 001", server: 104.19.45.235, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 002", server: 104.19.45.172, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 003", server: 104.19.45.70, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 004", server: 104.19.45.135, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 005", server: 104.19.45.106, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 006", server: 104.19.45.202, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 007", server: 104.19.45.17, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 008", server: 104.19.45.88, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 009", server: 104.19.45.222, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 010", server: 104.19.45.56, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 011", server: 104.19.45.117, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 012", server: 104.19.45.48, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 013", server: 104.19.45.7, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 014", server: 104.19.45.14, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 070", server: 104.19.43.122, port: 80, type: vmess, uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: osaka.xlb8.eu.org}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 081", server: 104.19.43.197, port: 80, type: vmess, uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: osaka.xlb8.eu.org}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 082", server: 104.19.43.220, port: 80, type: vmess, uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: osaka.xlb8.eu.org}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 084", server: 104.19.43.66, port: 80, type: vmess, uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: osaka.xlb8.eu.org}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 085", server: 104.19.43.93, port: 80, type: vmess, uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: osaka.xlb8.eu.org}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 086", server: 104.19.43.61, port: 80, type: vmess, uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: osaka.xlb8.eu.org}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 088", server: 104.19.43.162, port: 80, type: vmess, uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: osaka.xlb8.eu.org}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 089", server: 104.19.43.170, port: 80, type: vmess, uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: osaka.xlb8.eu.org}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 090", server: 104.19.43.28, port: 80, type: vmess, uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: osaka.xlb8.eu.org}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 091", server: 104.19.43.112, port: 80, type: vmess, uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: osaka.xlb8.eu.org}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 092", server: 104.19.43.240, port: 80, type: vmess, uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: osaka.xlb8.eu.org}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 093", server: 104.19.43.89, port: 80, type: vmess, uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: osaka.xlb8.eu.org}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 094", server: 104.19.43.1, port: 80, type: vmess, uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: osaka.xlb8.eu.org}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 096", server: 104.19.43.123, port: 80, type: vmess, uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: osaka.xlb8.eu.org}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 121", server: 104.18.242.177, port: 2052, type: vmess, uuid: 2eec45db-dfcd-43d6-8514-b141aff651be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tw1bQiWSE4x.fzbqfrse.xyz}}, udp: true}
-  - {name: "[VMess] 🇨🇳 广东省广州市 移动", server: 120.232.240.38, port: 8443, type: vmess, uuid: 39ef8f5d-7286-41b0-9c11-c976925d2931, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: "[SS] 🇨🇳 广东省深圳市 阿里云", server: 119.23.104.213, port: 8474, type: ss, cipher: chacha20-ietf-poly1305, password: a501c82c72d790b8, udp: true}
-  - {name: "[VMess] 🇰🇷 韩国 蘑菇主机BGP数据中心", server: 103.214.68.57, port: 10001, type: vmess, uuid: ebca5f68-bf59-4081-e658-f158839c2f5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇺🇸 美国 004", server: 104.19.43.254, port: 80, type: vmess, uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: osaka.xlb8.eu.org}}, udp: true}
-  - {name: "[VMess] 🇺🇸 美国 008", server: 104.19.43.3, port: 80, type: vmess, uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: osaka.xlb8.eu.org}}, udp: true}
-  - {name: "[VMess] 🇺🇸 美国 CloudFlare节点 8", server: onea.flha.ru, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: onea.flha.ru, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: 未知54 20.6MB/s, server: 109.201.152.181, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
-  - {name: US63 2.0MB/s, server: 38.110.1.201, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US72, server: 34.219.119.71, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 未知197 443.3KB/s, server: series-a2.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: mps3FwmDjLrWaOVg, udp: true}
-  - {name: 未知218 483.4KB/s, server: 3.112.218.182, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 未知219, server: 159.100.14.58, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: WRORkymIVzJrtFcQLjgSrp, udp: true}
-  - {name: 未知230 96.0KB/s, server: 51.103.248.85, port: 60068, type: ss, cipher: chacha20-ietf-poly1305, password: hn6VD57AXa7LSMawDS9dvy, udp: true}
-  - {name: 香港5|@ripaojiedian, server: m.cnmjin.net, port: 16632, type: vmess, uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com}}, udp: true}
-  - {name: 香港8|@ripaojiedian, server: 183.232.199.61, port: 15603, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾|@ripaojiedian, server: 183.232.199.28, port: 21006, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本3|@ripaojiedian, server: 183.236.51.59, port: 51707, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 狮城特殊|@ripaojiedian, server: 18.143.93.163, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: Japan_Tokyo_ss_113, server: 52.195.189.211, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: South Korea_Incheon_ss_115, server: 43.201.47.36, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: Singapore_Singapore_ss_116, server: 13.214.212.171, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 0|-https://t.me/MrXbin-12, server: 47.129.9.69, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 0|-https://t.me/MrXbin-121, server: 38.86.135.225, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 0|-https://t.me/MrXbin-122, server: 38.86.135.225, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 0|-https://t.me/MrXbin-123, server: 38.86.135.225, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 0|-https://t.me/MrXbin-124, server: 38.86.135.225, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 0|-https://t.me/MrXbin-125, server: 38.86.135.225, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: SG_speednode_0084, server: 103.172.116.94, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: SG_speednode_0087, server: 103.172.116.94, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: SG_speednode_0088, server: 103.172.116.94, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: SG_speednode_0090, server: 103.172.116.94, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
-  - {name: CN 292 → tg@nicevpn123, server: 120.233.42.83, port: 20207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: CN 361 → tg@nicevpn123, server: 120.233.42.83, port: 20206, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 0|-https://t.me/MrXbin-150, server: 103.172.116.94, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: CN_speednode_0126, server: 120.232.242.117, port: 31778, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: China_None_vmess_11128, server: 120.233.204.126, port: 16632, type: vmess, uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com}}, udp: true}
+  - {name: "[Trojan] 0|-https://t.me/MrXbin-226", server: hk04.trojanyyds.xyz, port: 443, type: trojan, password: 1640b579-cff8-46bc-a657-3860b5455712, sni: hk04.trojanyyds.xyz, skip-cert-verify: false, udp: true}
+  - {name: "[Trojan] 0|-https://t.me/MrXbin-227", server: in01.trojanyyds.xyz, port: 443, type: trojan, password: 1640b579-cff8-46bc-a657-3860b5455712, sni: in01.trojanyyds.xyz, skip-cert-verify: false, udp: true}
+  - {name: "[Trojan] 0|-https://t.me/MrXbin-228", server: hk01.trojanyyds.xyz, port: 443, type: trojan, password: 1640b579-cff8-46bc-a657-3860b5455712, sni: hk01.trojanyyds.xyz, skip-cert-verify: false, udp: true}
+  - {name: "[Trojan] 0|-https://t.me/MrXbin-230", server: us01.trojanyyds.xyz, port: 443, type: trojan, password: 1640b579-cff8-46bc-a657-3860b5455712, sni: us01.trojanyyds.xyz, skip-cert-verify: false, udp: true}
+  - {name: "[Trojan] 0|-https://t.me/MrXbin-232", server: tw02.trojanyyds.xyz, port: 443, type: trojan, password: 1640b579-cff8-46bc-a657-3860b5455712, sni: tw02.trojanyyds.xyz, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 0|-https://t.me/MrXbin-277", server: 77.75.230.125, port: 2082, type: vmess, uuid: d466dd36-8b86-48b7-b0f0-67e7d128de6c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: cz1-vmess.sshmax.xyz, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "[SSR] CN_speednode_00%�", server: 183.240.220.84, port: 11807, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24:SpYUtPeJYhRk4FW%%�, obfs-param: 6f41b24.microsoft.com, udp: true}
+  - {name: "[SSR] CN_speednode_00%� 2", server: 183.240.220.84, port: 11814, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24:SpYUtPeJYhRk4FW%%�, obfs-param: 6f41b24.microsoft.com, udp: true}
+  - {name: "[SS] CN_speednode_0003", server: 03.forlive.live, port: 22291, type: ss, cipher: aes-128-gcm, password: 14c7684e-c740-45fc-a9b3-1ccf2ac392fd, udp: true}
+  - {name: "[SS] CN_speednode_0005", server: 04.forlive.live, port: 22291, type: ss, cipher: aes-128-gcm, password: a061411e-f58b-4c95-8887-a9d3b84b3160, udp: true}
+  - {name: "[VMess] RELAY-104.21.23.231-190_1@190", server: 104.21.23.231, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: "[SS] Singapore_Singapore_ssr_111%�", server: 103.172.116.79, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: "[SS] Singapore_Singapore_ssr_111%� 2", server: 103.172.116.79, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: "[SS] Singapore_Singapore_ssr_111%� 3", server: 103.172.116.79, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: "[SS] Singapore_Singapore_ssr_111%� 4", server: 103.172.116.79, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: "[SS] Singapore_Singapore_ssr_111%� 5", server: 103.172.116.79, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: "[SS] Singapore_Singapore_ssr_111%� 6", server: 103.172.116.79, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: "[SS] Singapore_Singapore_ssr_111%� 7", server: 103.172.116.79, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: "[SS] Singapore_Singapore_ssr_111%� 8", server: 103.172.116.79, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: "[SS] Singapore_Singapore_ssr_111%� 9", server: 103.172.116.79, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: "[SS] Singapore_Singapore_ssr_111%� 10", server: 103.172.116.79, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: "[SS] Singapore_Singapore_ssr_111%� 11", server: 103.172.116.79, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: "[SS] Singapore_Singapore_ssr_111%� 12", server: 103.172.116.79, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+  - {name: "[SS] Singapore_Singapore_ssr_111%� 13", server: 103.172.116.79, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: "[SS] Singapore_Singapore_ssr_111%� 14", server: 103.172.116.79, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: "[SS] Singapore_Singapore_ssr_111%� 15", server: 103.172.116.79, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: "[SS] Singapore_Singapore_ssr_118%%�", server: 103.172.116.79, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: "[SS] Singapore_Singapore_ssr_118%%� 2", server: 103.172.116.79, port: 9030, type: ss, cipher: aes-256-cfb, password: GeregetR8cvQHzYr, udp: true}
+  - {name: "[SS] Singapore_Singapore_ssr_118%%� 3", server: 103.172.116.79, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
+  - {name: "[SS] Singapore_Singapore_ssr_119%%�", server: 103.172.116.79, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: "[SS] Singapore_Singapore_ssr_119%%� 2", server: 103.172.116.79, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: "[SS] Singapore_Singapore_ssr_119%%� 3", server: 103.172.116.79, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: "[SS] Singapore_Singapore_ssr_119%%� 4", server: 103.172.116.79, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: "[SS] Singapore_Singapore_ssr_119%%� 5", server: 103.172.116.79, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: "[SS] Singapore_Singapore_ssr_119%%� 6", server: 103.172.116.79, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: "[SS] Singapore_Singapore_ssr_119%%� 7", server: 103.172.116.79, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: "[SS] Singapore_Singapore_ssr_119%%� 8", server: 103.172.116.79, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: "[SS] US34 51.8MB/s", server: 205.134.180.151, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 5cp9Z3iWnJZ2, udp: true}
+  - {name: "[Trojan] US39 33.4KB/s", server: 3.12.189.93, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
+  - {name: "[SS] US8 18.9MB/s", server: 34.219.119.71, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "[VMess] VN 3 → tg@nicevpn123", server: max1.flash5g.com, port: 80, type: vmess, uuid: 4e25f91f-603c-4e83-b002-c26030757816, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: max1.flash5g.com}}, udp: true}
+  - {name: "[VMess] [VMess] CN_speednode_0029", server: 183.232.170.21, port: 30119, type: vmess, uuid: 5bd5899a-4b78-4d75-8570-4d21b43422c4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] [VMess] CN_speednode_0032", server: 183.232.170.21, port: 30059, type: vmess, uuid: 5bd5899a-4b78-4d75-8570-4d21b43422c4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] [VMess] CN_speednode_0077", server: 120.232.242.117, port: 31778, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, servername: tms.dingtalk.com, udp: true}
+  - {name: "[VMess] [VMess] CN_speednode_0101", server: 183.232.170.21, port: 30061, type: vmess, uuid: 5bd5899a-4b78-4d75-8570-4d21b43422c4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] [VMess] CN_speednode_0132", server: 183.232.170.21, port: 30025, type: vmess, uuid: 5bd5899a-4b78-4d75-8570-4d21b43422c4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[SS] 未知103 345.5KB/s", server: 103.172.116.79, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: "[SS] 未知106 1.9MB/s", server: 172.99.190.198, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: "[Trojan] 未知110 2.0MB/s", server: 172.207.234.4, port: 443, type: trojan, password: 1640b579-cff8-46bc-a657-3860b5455712, sni: in01.trojanyyds.xyz, skip-cert-verify: false, udp: true}
+  - {name: "[SS] 未知12 222.9KB/s", server: 18.139.225.183, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "[Trojan] 未知129", server: 52.47.106.247, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
+  - {name: "[SS] 未知14 168.6KB/s", server: 103.172.116.94, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: "[SS] 未知15 197.8KB/s", server: 103.172.116.94, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: "[SS] 未知155 266.2KB/s", server: 13.214.211.185, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "[SS] 未知168 278.2KB/s", server: 43.202.41.139, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "[SS] 未知259 274.7KB/s", server: 103.172.116.79, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: "[SS] 未知287", server: 159.100.14.58, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: WRORkymIVzJrtFcQLjgSrp, udp: true}
+  - {name: "[SS] 未知29 237.1KB/s", server: 13.214.214.197, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "[SS] 未知293 376.5KB/s", server: 3.112.218.182, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "[VMess] 未知338 1.6MB/s", server: atlasnet1.myatlasnet.ir, port: 8443, type: vmess, uuid: 63e54742-a244-4bb0-c9cb-17a545f4ca3f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: atlasnet1.myatlasnet.ir}}, udp: true}
+  - {name: "[SS] 未知47", server: 13.214.212.171, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "[Trojan] 未知71", server: 34.251.214.37, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
+  - {name: "[Trojan] 江苏", server: 223.113.54.154, port: 24791, type: trojan, password: MyYoZhfX, skip-cert-verify: false, udp: true}
+  - {name: "[Trojan] 🇨🇦 [Trojan] 🇨🇦 加拿大 173", server: 35.182.134.236, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 001", server: 104.19.45.235, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 002", server: 104.19.45.172, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 003", server: 104.19.45.70, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 004", server: 104.19.45.135, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 005", server: 104.19.45.106, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 006", server: 104.19.45.202, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 007", server: 104.19.45.17, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 008", server: 104.19.45.88, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 009", server: 104.19.45.222, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 010", server: 104.19.45.56, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 011", server: 104.19.45.117, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 012", server: 104.19.45.48, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 013", server: 104.19.45.7, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 014", server: 104.19.45.14, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 018", server: 104.19.45.165, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 019", server: 104.19.45.137, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: "[VMess] 🇨🇳 CN 163 → tg@nicevpn123", server: 8987-3i640t6rlj4n.zpveerb-jp03.my777999.top, port: 38997, type: vmess, uuid: f9d88b9b-baf4-48cd-b98f-c28912b96ce5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇨🇳 CN 292 → tg@nicevpn123", server: 120.233.42.83, port: 20207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "[VMess] 🇨🇳 CN 361 → tg@nicevpn123", server: 120.233.42.83, port: 20206, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "[VMess] 🇨🇳 CN 45 → tg@nicevpn123", server: hk.lianjianode.cc, port: 21032, type: vmess, uuid: 2e009a5a-5329-46cc-a69e-097b94323328, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk.lianjianode.cc}}, udp: true}
+  - {name: "[VMess] 🇨🇳 CN-120.232.240.38-182", server: 120.232.240.38, port: 8443, type: vmess, uuid: 39ef8f5d-7286-41b0-9c11-c976925d2931, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇨🇳 CN-183.232.170.131-175", server: 8789-kf49kc85w.uy2w4vf-sg03.my777999.top, port: 37997, type: vmess, uuid: 6399ac7d-8265-436d-b348-299df4b735a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇨🇳 CN-183.232.199.28-145", server: 183.232.199.28, port: 21006, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇨🇳 CN-183.232.199.61-183", server: 183.232.199.61, port: 15603, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇨🇳 CN-183.240.179.195-173", server: 183.240.179.195, port: 15601, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇨🇳 China_Yichang_vmess_1336", server: data-jp-v1.usabooks.com.cn, port: 20301, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: data-jp-v1.usabooks.com.cn}}, udp: true}
+  - {name: "[Trojan] 🇨🇳 [Trojan] 🇨🇳 江苏省徐州市 移动", server: 223.113.54.154, port: 15274, type: trojan, password: MyYoZhfX, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇨🇳 [VMess] 广东省汕头市 移动", server: 183.240.179.195, port: 15601, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇨🇳 [VMess] 湖北省武汉市 联通", server: data-jp-v1.usabooks.com.cn, port: 20301, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: data-jp-v1.usabooks.com.cn}}, udp: true}
+  - {name: "[VMess] 🇨🇳 [VMess] 🇨🇳 China_None_vmess_11128", server: 120.233.204.126, port: 16632, type: vmess, uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com}}, udp: true}
+  - {name: "[VMess] 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动", server: 120.232.240.38, port: 8443, type: vmess, uuid: 39ef8f5d-7286-41b0-9c11-c976925d2931, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇨🇳 中国【付费推荐：https://jdyvip.link/】31", server: 183.232.199.61, port: 15603, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[SS] 🇨🇳 中国【付费推荐：https://jdyvip.link/】46", server: 119.23.104.213, port: 8474, type: ss, cipher: chacha20-ietf-poly1305, password: a501c82c72d790b8, udp: true}
+  - {name: "[VMess] 🇨🇳 中国【付费推荐：https://jdyvip.link/】48", server: yes.cnmjcn.net, port: 16632, type: vmess, uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com}}, udp: true}
+  - {name: "[VMess] 🇨🇳 台湾2|@ripaojiedian", server: cfcdn1.sanfencdn9.com, port: 2052, type: vmess, uuid: c5da6e6b-7918-4d29-a05c-450f4eeecb19, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: tw1bQiWSE4x.fzbqfrse.xyz}}, udp: true}
+  - {name: "[VMess] 🇨🇳 广东省佛山市 移动", server: 8789-kf49kc85w.uy2w4vf-sg03.my777999.top, port: 37997, type: vmess, uuid: 6399ac7d-8265-436d-b348-299df4b735a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇨🇳 广东省佛山市 移动 2", server: 183.232.199.28, port: 21006, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇨🇳 广东省汕头市 移动 2", server: 183.240.179.195, port: 61002, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 香港 002", server: hk.wish.ml, port: 2052, type: vmess, uuid: 4168440c-41a1-4671-a5b2-8abfe318e1bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk2.wish.ml}}, udp: true}
+  - {name: "[SS] 🇯🇵 Japan_Tokyo_ss_115", server: 52.195.189.211, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "[VMess] 🇯🇵 日本3|@ripaojiedian", server: 183.236.51.59, port: 51707, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "[SS] 🇯🇵 日本特殊|@ripaojiedian", server: 13.124.178.1, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "[VMess] 🇰🇷 9|baipaovpn韩国 #3", server: 103.214.68.57, port: 10001, type: vmess, uuid: ebca5f68-bf59-4081-e658-f158839c2f5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇰🇷 9|baipaovpn韩国首尔 #1", server: 13.125.187.246, port: 80, type: vmess, uuid: b39a02bc-dec0-4964-b861-d89ffe42558a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "[SS] 🇰🇷 South Korea_Incheon_ss_1111", server: 43.203.201.192, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "[SS] 🇰🇷 South Korea_Incheon_ss_117", server: 3.34.95.205, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "[SS] 🇰🇷 South Korea_Suwon_ss_119", server: p227.panda004.net, port: 49032, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: "[SS] 🇰🇷 韩国特殊|@ripaojiedian", server: 43.201.47.36, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "[SS] 🇷🇺 [SS] 🇷🇺 俄罗斯 V2CROSS.COM 2", server: 185.236.233.112, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: NWU5M, udp: true}
+  - {name: "[VMess] 🇷🇺 [VMess] 🇷🇺 俄罗斯 莫斯科JustHost", server: 45.136.245.240, port: 12910, type: vmess, uuid: 8259cb1c-dd6c-4739-9c88-af550d977525, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 22.lwdh.us, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_11106", server: 103.172.116.94, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_11108", server: 103.172.116.94, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1112", server: 103.172.116.79, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1113", server: 103.172.116.79, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1114", server: 103.172.116.103, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1117", server: 103.172.116.94, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1119", server: 103.172.116.79, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_112", server: 103.172.116.79, port: 9044, type: ss, cipher: aes-256-cfb, password: KBGjZYcy4SyRShmA, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1121", server: 103.172.116.79, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1122", server: 103.172.116.79, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1123", server: 103.172.116.79, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1124", server: 103.172.116.79, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1125", server: 103.172.116.103, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1126", server: 103.172.116.103, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1127", server: 103.172.116.103, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1128", server: 103.172.116.79, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1129", server: 103.172.116.103, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1130", server: 103.172.116.103, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1131", server: 103.172.116.79, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1133", server: 103.172.116.79, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1134", server: 103.172.116.79, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1135", server: 103.172.116.103, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1136", server: 103.172.116.79, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1137", server: 103.172.116.94, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1138", server: 103.172.116.103, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1139", server: 103.172.116.103, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1140", server: 103.172.116.103, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1142", server: 103.172.116.103, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1143", server: 103.172.116.79, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1144", server: 103.172.116.103, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1145", server: 103.172.116.103, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1146", server: 103.172.116.103, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1147", server: 103.172.116.103, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1148", server: 103.172.116.103, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1149", server: 103.172.116.103, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1150", server: 103.172.116.94, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1151", server: 103.172.116.79, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1152", server: 103.172.116.79, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1155", server: 103.172.116.103, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1156", server: 103.172.116.79, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1157", server: 103.172.116.103, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1158", server: 103.172.116.103, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1159", server: 103.172.116.79, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_116", server: 47.128.230.112, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1160", server: 103.172.116.79, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1161", server: 103.172.116.79, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1162", server: 103.172.116.103, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1163", server: 103.172.116.94, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1164", server: 103.172.116.103, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1165", server: 103.172.116.103, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1166", server: 103.172.116.94, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1167", server: 103.172.116.103, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1169", server: 103.172.116.103, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1171", server: 103.172.116.79, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1172", server: 103.172.116.103, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1173", server: 103.172.116.103, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1174", server: 103.172.116.103, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1175", server: 103.172.116.103, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1176", server: 103.172.116.103, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1177", server: 103.172.116.79, port: 9030, type: ss, cipher: aes-256-cfb, password: GeregetR8cvQHzYr, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1178", server: 103.172.116.103, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1179", server: 103.172.116.103, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1180", server: 103.172.116.103, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1182", server: 103.172.116.79, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: "[SS] 🇸🇬 狮城特殊|@ripaojiedian", server: 18.183.73.152, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "[VMess] 🇺🇸 9|baipaovpn美国 #5", server: 161.35.212.34, port: 80, type: vmess, uuid: b39a02bc-dec0-4964-b861-d89ffe42558a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "[VMess] 🇺🇸 US 775 → tg@nicevpn123", server: sg4g.xn--vhq70hxyat50h6wk.com, port: 80, type: vmess, uuid: 1f9b54af-3ab1-48c8-b58c-59d8d78277af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg4g.xn--vhq70hxyat50h6wk.com}}, udp: true}
+  - {name: "[SS] 🇺🇸 US北美 1.4MB/s", server: 23.154.136.35, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: "[SS] 🇺🇸 US北美2 2.0MB/s", server: 23.154.136.148, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: "[SS] 🇺🇸 United States_Ashburn_ss_11128", server: 23.154.136.137, port: 5498, type: ss, cipher: aes-256-gcm, password: lGqs95QkFHo2NV, udp: true}
+  - {name: "[SS] 🇺🇸 [SS] 🇺🇸 美国 华盛顿Cogent通信公司", server: 38.86.135.141, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: "[Trojan] 🇺🇸 [Trojan] 🇺🇸 美国 AOL美国在线公司", server: hk03.trojanyyds.xyz, port: 443, type: trojan, password: 1640b579-cff8-46bc-a657-3860b5455712, sni: hk03.trojanyyds.xyz, skip-cert-verify: false, udp: true}
+  - {name: "[Trojan] 🇺🇸 [Trojan] 🇺🇸 美国 AOL美国在线公司 2", server: 172.207.160.184, port: 443, type: trojan, password: 1640b579-cff8-46bc-a657-3860b5455712, sni: in01.trojanyyds.xyz, skip-cert-verify: false, udp: true}
+  - {name: "[Trojan] 🇺🇸 [Trojan] 🇺🇸 美国 Microsoft数据中心", server: de01.trojanyyds.xyz, port: 443, type: trojan, password: 1640b579-cff8-46bc-a657-3860b5455712, sni: de01.trojanyyds.xyz, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点", server: 172.67.199.185, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: oiictw.yydsii.com}}, udp: true}
+  - {name: "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点 4", server: 162.159.1.33, port: 8080, type: vmess, uuid: 4f1f8f1e-926c-4edb-a398-8627110973f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: do-au.alipay.ovh}}, udp: true}
+  - {name: "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点 9", server: 172.67.185.79, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: oiictw.yydsii.com}}, udp: true}
+  - {name: "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 纽约市DigitalOcean云公司", server: 207.154.230.88, port: 80, type: vmess, uuid: b39a02bc-dec0-4964-b861-d89ffe42558a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "[VMess] 🇺🇸 美国3|@ripaojiedian", server: cfcdn1.sanfencdn9.com, port: 8880, type: vmess, uuid: c5da6e6b-7918-4d29-a05c-450f4eeecb19, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us6gzxQRrE4.fzbqfrse.xyz}}, udp: true}
+  - {name: "[Trojan] 🇺🇸 美国5|@ripaojiedian", server: 36.151.195.46, port: 20344, type: trojan, password: MyYoZhfX, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇻🇳 [VMess] 🇻🇳 越南 001", server: 103.252.94.224, port: 80, type: vmess, uuid: 5278f5d3-f001-4459-94b6-7e0915238998, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: bs2.loadingip.com, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "[VMess] 🇻🇳 [VMess] 🇻🇳 越南 002", server: bs1.loadingip.com, port: 80, type: vmess, uuid: 9e5999ba-870a-46b1-8500-37c640371ec6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: bs1.loadingip.com}}, udp: true}
+  - {name: "[VMess] 🇻🇳 [VMess] 🇻🇳 越南 003", server: bs4.loadingip.com, port: 80, type: vmess, uuid: 9e5999ba-870a-46b1-8500-37c640371ec6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: bs4.loadingip.com}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 CloudFlare节点 10
-      - 广东省广州市 移动
-      - 美国 CloudFlare节点 13
-      - "[VMess] 乌克兰 V2CROSS.COM"
-      - "[SS] 河北省 中移铁通"
-      - "[VMess] 🇨🇦 加拿大 001"
-      - "[VMess] 🇨🇦 加拿大 002"
-      - "[VMess] 🇨🇦 加拿大 003"
-      - "[VMess] 🇨🇦 加拿大 004"
-      - "[VMess] 🇨🇦 加拿大 005"
-      - "[VMess] 🇨🇦 加拿大 006"
-      - "[VMess] 🇨🇦 加拿大 007"
-      - "[VMess] 🇨🇦 加拿大 008"
-      - "[VMess] 🇨🇦 加拿大 009"
-      - "[VMess] 🇨🇦 加拿大 010"
-      - "[VMess] 🇨🇦 加拿大 011"
-      - "[VMess] 🇨🇦 加拿大 012"
-      - "[VMess] 🇨🇦 加拿大 013"
-      - "[VMess] 🇨🇦 加拿大 014"
-      - "[VMess] 🇨🇦 加拿大 070"
-      - "[VMess] 🇨🇦 加拿大 081"
-      - "[VMess] 🇨🇦 加拿大 082"
-      - "[VMess] 🇨🇦 加拿大 084"
-      - "[VMess] 🇨🇦 加拿大 085"
-      - "[VMess] 🇨🇦 加拿大 086"
-      - "[VMess] 🇨🇦 加拿大 088"
-      - "[VMess] 🇨🇦 加拿大 089"
-      - "[VMess] 🇨🇦 加拿大 090"
-      - "[VMess] 🇨🇦 加拿大 091"
-      - "[VMess] 🇨🇦 加拿大 092"
-      - "[VMess] 🇨🇦 加拿大 093"
-      - "[VMess] 🇨🇦 加拿大 094"
-      - "[VMess] 🇨🇦 加拿大 096"
-      - "[VMess] 🇨🇦 加拿大 121"
-      - "[VMess] 🇨🇳 广东省广州市 移动"
-      - "[SS] 🇨🇳 广东省深圳市 阿里云"
-      - "[VMess] 🇰🇷 韩国 蘑菇主机BGP数据中心"
-      - "[VMess] 🇺🇸 美国 004"
-      - "[VMess] 🇺🇸 美国 008"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点 8"
-      - 未知54 20.6MB/s
-      - US63 2.0MB/s
-      - US72
-      - 未知197 443.3KB/s
-      - 未知218 483.4KB/s
-      - 未知219
-      - 未知230 96.0KB/s
-      - 香港5|@ripaojiedian
-      - 香港8|@ripaojiedian
-      - 台湾|@ripaojiedian
-      - 日本3|@ripaojiedian
-      - 狮城特殊|@ripaojiedian
-      - Japan_Tokyo_ss_113
-      - South Korea_Incheon_ss_115
-      - Singapore_Singapore_ss_116
-      - 0|-https://t.me/MrXbin-12
-      - 0|-https://t.me/MrXbin-121
-      - 0|-https://t.me/MrXbin-122
-      - 0|-https://t.me/MrXbin-123
-      - 0|-https://t.me/MrXbin-124
-      - 0|-https://t.me/MrXbin-125
-      - SG_speednode_0084
-      - SG_speednode_0087
-      - SG_speednode_0088
-      - SG_speednode_0090
-      - CN 292 → tg@nicevpn123
-      - CN 361 → tg@nicevpn123
-      - 0|-https://t.me/MrXbin-150
-      - CN_speednode_0126
-      - China_None_vmess_11128
+      - "[Trojan] 0|-https://t.me/MrXbin-226"
+      - "[Trojan] 0|-https://t.me/MrXbin-227"
+      - "[Trojan] 0|-https://t.me/MrXbin-228"
+      - "[Trojan] 0|-https://t.me/MrXbin-230"
+      - "[Trojan] 0|-https://t.me/MrXbin-232"
+      - "[VMess] 0|-https://t.me/MrXbin-277"
+      - "[SS] CN_speednode_0003"
+      - "[SS] CN_speednode_0005"
+      - "[VMess] RELAY-104.21.23.231-190_1@190"
+      - "[SS] US34 51.8MB/s"
+      - "[Trojan] US39 33.4KB/s"
+      - "[SS] US8 18.9MB/s"
+      - "[VMess] VN 3 → tg@nicevpn123"
+      - "[VMess] [VMess] CN_speednode_0029"
+      - "[VMess] [VMess] CN_speednode_0032"
+      - "[VMess] [VMess] CN_speednode_0077"
+      - "[VMess] [VMess] CN_speednode_0101"
+      - "[VMess] [VMess] CN_speednode_0132"
+      - "[SS] 未知103 345.5KB/s"
+      - "[SS] 未知106 1.9MB/s"
+      - "[Trojan] 未知110 2.0MB/s"
+      - "[SS] 未知12 222.9KB/s"
+      - "[Trojan] 未知129"
+      - "[SS] 未知14 168.6KB/s"
+      - "[SS] 未知15 197.8KB/s"
+      - "[SS] 未知155 266.2KB/s"
+      - "[SS] 未知168 278.2KB/s"
+      - "[SS] 未知259 274.7KB/s"
+      - "[SS] 未知287"
+      - "[SS] 未知29 237.1KB/s"
+      - "[SS] 未知293 376.5KB/s"
+      - "[VMess] 未知338 1.6MB/s"
+      - "[SS] 未知47"
+      - "[Trojan] 未知71"
+      - "[Trojan] 江苏"
+      - "[Trojan] 🇨🇦 [Trojan] 🇨🇦 加拿大 173"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 001"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 002"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 003"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 004"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 005"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 006"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 007"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 008"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 009"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 010"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 011"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 012"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 013"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 014"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 018"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 019"
+      - "[VMess] 🇨🇳 CN 163 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN 292 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN 361 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN 45 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN-120.232.240.38-182"
+      - "[VMess] 🇨🇳 CN-183.232.170.131-175"
+      - "[VMess] 🇨🇳 CN-183.232.199.28-145"
+      - "[VMess] 🇨🇳 CN-183.232.199.61-183"
+      - "[VMess] 🇨🇳 CN-183.240.179.195-173"
+      - "[VMess] 🇨🇳 China_Yichang_vmess_1336"
+      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 江苏省徐州市 移动"
+      - "[VMess] 🇨🇳 [VMess] 广东省汕头市 移动"
+      - "[VMess] 🇨🇳 [VMess] 湖北省武汉市 联通"
+      - "[VMess] 🇨🇳 [VMess] 🇨🇳 China_None_vmess_11128"
+      - "[VMess] 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动"
+      - "[VMess] 🇨🇳 中国【付费推荐：https://jdyvip.link/】31"
+      - "[SS] 🇨🇳 中国【付费推荐：https://jdyvip.link/】46"
+      - "[VMess] 🇨🇳 中国【付费推荐：https://jdyvip.link/】48"
+      - "[VMess] 🇨🇳 台湾2|@ripaojiedian"
+      - "[VMess] 🇨🇳 广东省佛山市 移动"
+      - "[VMess] 🇨🇳 广东省佛山市 移动 2"
+      - "[VMess] 🇨🇳 广东省汕头市 移动 2"
+      - "[VMess] 🇭🇰 [VMess] 🇭🇰 香港 002"
+      - "[SS] 🇯🇵 Japan_Tokyo_ss_115"
+      - "[VMess] 🇯🇵 日本3|@ripaojiedian"
+      - "[SS] 🇯🇵 日本特殊|@ripaojiedian"
+      - "[VMess] 🇰🇷 9|baipaovpn韩国 #3"
+      - "[VMess] 🇰🇷 9|baipaovpn韩国首尔 #1"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_1111"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_117"
+      - "[SS] 🇰🇷 South Korea_Suwon_ss_119"
+      - "[SS] 🇰🇷 韩国特殊|@ripaojiedian"
+      - "[SS] 🇷🇺 [SS] 🇷🇺 俄罗斯 V2CROSS.COM 2"
+      - "[VMess] 🇷🇺 [VMess] 🇷🇺 俄罗斯 莫斯科JustHost"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_11106"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_11108"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1112"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1113"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1114"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1117"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1119"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_112"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1121"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1122"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1123"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1124"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1125"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1126"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1127"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1128"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1129"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1130"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1131"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1133"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1134"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1135"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1136"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1137"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1138"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1139"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1140"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1142"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1143"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1144"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1145"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1146"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1147"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1148"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1149"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1150"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1151"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1152"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1155"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1156"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1157"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1158"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1159"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_116"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1160"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1161"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1162"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1163"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1164"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1165"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1166"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1167"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1169"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1171"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1172"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1173"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1174"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1175"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1176"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1177"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1178"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1179"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1180"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1182"
+      - "[SS] 🇸🇬 狮城特殊|@ripaojiedian"
+      - "[VMess] 🇺🇸 9|baipaovpn美国 #5"
+      - "[VMess] 🇺🇸 US 775 → tg@nicevpn123"
+      - "[SS] 🇺🇸 US北美 1.4MB/s"
+      - "[SS] 🇺🇸 US北美2 2.0MB/s"
+      - "[SS] 🇺🇸 United States_Ashburn_ss_11128"
+      - "[SS] 🇺🇸 [SS] 🇺🇸 美国 华盛顿Cogent通信公司"
+      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 美国 AOL美国在线公司"
+      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 美国 AOL美国在线公司 2"
+      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 美国 Microsoft数据中心"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点 4"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点 9"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 纽约市DigitalOcean云公司"
+      - "[VMess] 🇺🇸 美国3|@ripaojiedian"
+      - "[Trojan] 🇺🇸 美国5|@ripaojiedian"
+      - "[VMess] 🇻🇳 [VMess] 🇻🇳 越南 001"
+      - "[VMess] 🇻🇳 [VMess] 🇻🇳 越南 002"
+      - "[VMess] 🇻🇳 [VMess] 🇻🇳 越南 003"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - 美国 CloudFlare节点 10
-      - 广东省广州市 移动
-      - 美国 CloudFlare节点 13
-      - "[VMess] 乌克兰 V2CROSS.COM"
-      - "[SS] 河北省 中移铁通"
-      - "[VMess] 🇨🇦 加拿大 001"
-      - "[VMess] 🇨🇦 加拿大 002"
-      - "[VMess] 🇨🇦 加拿大 003"
-      - "[VMess] 🇨🇦 加拿大 004"
-      - "[VMess] 🇨🇦 加拿大 005"
-      - "[VMess] 🇨🇦 加拿大 006"
-      - "[VMess] 🇨🇦 加拿大 007"
-      - "[VMess] 🇨🇦 加拿大 008"
-      - "[VMess] 🇨🇦 加拿大 009"
-      - "[VMess] 🇨🇦 加拿大 010"
-      - "[VMess] 🇨🇦 加拿大 011"
-      - "[VMess] 🇨🇦 加拿大 012"
-      - "[VMess] 🇨🇦 加拿大 013"
-      - "[VMess] 🇨🇦 加拿大 014"
-      - "[VMess] 🇨🇦 加拿大 070"
-      - "[VMess] 🇨🇦 加拿大 081"
-      - "[VMess] 🇨🇦 加拿大 082"
-      - "[VMess] 🇨🇦 加拿大 084"
-      - "[VMess] 🇨🇦 加拿大 085"
-      - "[VMess] 🇨🇦 加拿大 086"
-      - "[VMess] 🇨🇦 加拿大 088"
-      - "[VMess] 🇨🇦 加拿大 089"
-      - "[VMess] 🇨🇦 加拿大 090"
-      - "[VMess] 🇨🇦 加拿大 091"
-      - "[VMess] 🇨🇦 加拿大 092"
-      - "[VMess] 🇨🇦 加拿大 093"
-      - "[VMess] 🇨🇦 加拿大 094"
-      - "[VMess] 🇨🇦 加拿大 096"
-      - "[VMess] 🇨🇦 加拿大 121"
-      - "[VMess] 🇨🇳 广东省广州市 移动"
-      - "[SS] 🇨🇳 广东省深圳市 阿里云"
-      - "[VMess] 🇰🇷 韩国 蘑菇主机BGP数据中心"
-      - "[VMess] 🇺🇸 美国 004"
-      - "[VMess] 🇺🇸 美国 008"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点 8"
-      - 未知54 20.6MB/s
-      - US63 2.0MB/s
-      - US72
-      - 未知197 443.3KB/s
-      - 未知218 483.4KB/s
-      - 未知219
-      - 未知230 96.0KB/s
-      - 香港5|@ripaojiedian
-      - 香港8|@ripaojiedian
-      - 台湾|@ripaojiedian
-      - 日本3|@ripaojiedian
-      - 狮城特殊|@ripaojiedian
-      - Japan_Tokyo_ss_113
-      - South Korea_Incheon_ss_115
-      - Singapore_Singapore_ss_116
-      - 0|-https://t.me/MrXbin-12
-      - 0|-https://t.me/MrXbin-121
-      - 0|-https://t.me/MrXbin-122
-      - 0|-https://t.me/MrXbin-123
-      - 0|-https://t.me/MrXbin-124
-      - 0|-https://t.me/MrXbin-125
-      - SG_speednode_0084
-      - SG_speednode_0087
-      - SG_speednode_0088
-      - SG_speednode_0090
-      - CN 292 → tg@nicevpn123
-      - CN 361 → tg@nicevpn123
-      - 0|-https://t.me/MrXbin-150
-      - CN_speednode_0126
-      - China_None_vmess_11128
+      - "[Trojan] 0|-https://t.me/MrXbin-226"
+      - "[Trojan] 0|-https://t.me/MrXbin-227"
+      - "[Trojan] 0|-https://t.me/MrXbin-228"
+      - "[Trojan] 0|-https://t.me/MrXbin-230"
+      - "[Trojan] 0|-https://t.me/MrXbin-232"
+      - "[VMess] 0|-https://t.me/MrXbin-277"
+      - "[SS] CN_speednode_0003"
+      - "[SS] CN_speednode_0005"
+      - "[VMess] RELAY-104.21.23.231-190_1@190"
+      - "[SS] US34 51.8MB/s"
+      - "[Trojan] US39 33.4KB/s"
+      - "[SS] US8 18.9MB/s"
+      - "[VMess] VN 3 → tg@nicevpn123"
+      - "[VMess] [VMess] CN_speednode_0029"
+      - "[VMess] [VMess] CN_speednode_0032"
+      - "[VMess] [VMess] CN_speednode_0077"
+      - "[VMess] [VMess] CN_speednode_0101"
+      - "[VMess] [VMess] CN_speednode_0132"
+      - "[SS] 未知103 345.5KB/s"
+      - "[SS] 未知106 1.9MB/s"
+      - "[Trojan] 未知110 2.0MB/s"
+      - "[SS] 未知12 222.9KB/s"
+      - "[Trojan] 未知129"
+      - "[SS] 未知14 168.6KB/s"
+      - "[SS] 未知15 197.8KB/s"
+      - "[SS] 未知155 266.2KB/s"
+      - "[SS] 未知168 278.2KB/s"
+      - "[SS] 未知259 274.7KB/s"
+      - "[SS] 未知287"
+      - "[SS] 未知29 237.1KB/s"
+      - "[SS] 未知293 376.5KB/s"
+      - "[VMess] 未知338 1.6MB/s"
+      - "[SS] 未知47"
+      - "[Trojan] 未知71"
+      - "[Trojan] 江苏"
+      - "[Trojan] 🇨🇦 [Trojan] 🇨🇦 加拿大 173"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 001"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 002"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 003"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 004"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 005"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 006"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 007"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 008"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 009"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 010"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 011"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 012"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 013"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 014"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 018"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 019"
+      - "[VMess] 🇨🇳 CN 163 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN 292 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN 361 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN 45 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN-120.232.240.38-182"
+      - "[VMess] 🇨🇳 CN-183.232.170.131-175"
+      - "[VMess] 🇨🇳 CN-183.232.199.28-145"
+      - "[VMess] 🇨🇳 CN-183.232.199.61-183"
+      - "[VMess] 🇨🇳 CN-183.240.179.195-173"
+      - "[VMess] 🇨🇳 China_Yichang_vmess_1336"
+      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 江苏省徐州市 移动"
+      - "[VMess] 🇨🇳 [VMess] 广东省汕头市 移动"
+      - "[VMess] 🇨🇳 [VMess] 湖北省武汉市 联通"
+      - "[VMess] 🇨🇳 [VMess] 🇨🇳 China_None_vmess_11128"
+      - "[VMess] 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动"
+      - "[VMess] 🇨🇳 中国【付费推荐：https://jdyvip.link/】31"
+      - "[SS] 🇨🇳 中国【付费推荐：https://jdyvip.link/】46"
+      - "[VMess] 🇨🇳 中国【付费推荐：https://jdyvip.link/】48"
+      - "[VMess] 🇨🇳 台湾2|@ripaojiedian"
+      - "[VMess] 🇨🇳 广东省佛山市 移动"
+      - "[VMess] 🇨🇳 广东省佛山市 移动 2"
+      - "[VMess] 🇨🇳 广东省汕头市 移动 2"
+      - "[VMess] 🇭🇰 [VMess] 🇭🇰 香港 002"
+      - "[SS] 🇯🇵 Japan_Tokyo_ss_115"
+      - "[VMess] 🇯🇵 日本3|@ripaojiedian"
+      - "[SS] 🇯🇵 日本特殊|@ripaojiedian"
+      - "[VMess] 🇰🇷 9|baipaovpn韩国 #3"
+      - "[VMess] 🇰🇷 9|baipaovpn韩国首尔 #1"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_1111"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_117"
+      - "[SS] 🇰🇷 South Korea_Suwon_ss_119"
+      - "[SS] 🇰🇷 韩国特殊|@ripaojiedian"
+      - "[SS] 🇷🇺 [SS] 🇷🇺 俄罗斯 V2CROSS.COM 2"
+      - "[VMess] 🇷🇺 [VMess] 🇷🇺 俄罗斯 莫斯科JustHost"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_11106"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_11108"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1112"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1113"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1114"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1117"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1119"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_112"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1121"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1122"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1123"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1124"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1125"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1126"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1127"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1128"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1129"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1130"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1131"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1133"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1134"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1135"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1136"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1137"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1138"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1139"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1140"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1142"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1143"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1144"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1145"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1146"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1147"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1148"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1149"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1150"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1151"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1152"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1155"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1156"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1157"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1158"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1159"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_116"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1160"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1161"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1162"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1163"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1164"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1165"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1166"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1167"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1169"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1171"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1172"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1173"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1174"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1175"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1176"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1177"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1178"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1179"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1180"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1182"
+      - "[SS] 🇸🇬 狮城特殊|@ripaojiedian"
+      - "[VMess] 🇺🇸 9|baipaovpn美国 #5"
+      - "[VMess] 🇺🇸 US 775 → tg@nicevpn123"
+      - "[SS] 🇺🇸 US北美 1.4MB/s"
+      - "[SS] 🇺🇸 US北美2 2.0MB/s"
+      - "[SS] 🇺🇸 United States_Ashburn_ss_11128"
+      - "[SS] 🇺🇸 [SS] 🇺🇸 美国 华盛顿Cogent通信公司"
+      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 美国 AOL美国在线公司"
+      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 美国 AOL美国在线公司 2"
+      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 美国 Microsoft数据中心"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点 4"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点 9"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 纽约市DigitalOcean云公司"
+      - "[VMess] 🇺🇸 美国3|@ripaojiedian"
+      - "[Trojan] 🇺🇸 美国5|@ripaojiedian"
+      - "[VMess] 🇻🇳 [VMess] 🇻🇳 越南 001"
+      - "[VMess] 🇻🇳 [VMess] 🇻🇳 越南 002"
+      - "[VMess] 🇻🇳 [VMess] 🇻🇳 越南 003"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 CloudFlare节点 10
-      - 广东省广州市 移动
-      - 美国 CloudFlare节点 13
-      - "[VMess] 乌克兰 V2CROSS.COM"
-      - "[SS] 河北省 中移铁通"
-      - "[VMess] 🇨🇦 加拿大 001"
-      - "[VMess] 🇨🇦 加拿大 002"
-      - "[VMess] 🇨🇦 加拿大 003"
-      - "[VMess] 🇨🇦 加拿大 004"
-      - "[VMess] 🇨🇦 加拿大 005"
-      - "[VMess] 🇨🇦 加拿大 006"
-      - "[VMess] 🇨🇦 加拿大 007"
-      - "[VMess] 🇨🇦 加拿大 008"
-      - "[VMess] 🇨🇦 加拿大 009"
-      - "[VMess] 🇨🇦 加拿大 010"
-      - "[VMess] 🇨🇦 加拿大 011"
-      - "[VMess] 🇨🇦 加拿大 012"
-      - "[VMess] 🇨🇦 加拿大 013"
-      - "[VMess] 🇨🇦 加拿大 014"
-      - "[VMess] 🇨🇦 加拿大 070"
-      - "[VMess] 🇨🇦 加拿大 081"
-      - "[VMess] 🇨🇦 加拿大 082"
-      - "[VMess] 🇨🇦 加拿大 084"
-      - "[VMess] 🇨🇦 加拿大 085"
-      - "[VMess] 🇨🇦 加拿大 086"
-      - "[VMess] 🇨🇦 加拿大 088"
-      - "[VMess] 🇨🇦 加拿大 089"
-      - "[VMess] 🇨🇦 加拿大 090"
-      - "[VMess] 🇨🇦 加拿大 091"
-      - "[VMess] 🇨🇦 加拿大 092"
-      - "[VMess] 🇨🇦 加拿大 093"
-      - "[VMess] 🇨🇦 加拿大 094"
-      - "[VMess] 🇨🇦 加拿大 096"
-      - "[VMess] 🇨🇦 加拿大 121"
-      - "[VMess] 🇨🇳 广东省广州市 移动"
-      - "[SS] 🇨🇳 广东省深圳市 阿里云"
-      - "[VMess] 🇰🇷 韩国 蘑菇主机BGP数据中心"
-      - "[VMess] 🇺🇸 美国 004"
-      - "[VMess] 🇺🇸 美国 008"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点 8"
-      - 未知54 20.6MB/s
-      - US63 2.0MB/s
-      - US72
-      - 未知197 443.3KB/s
-      - 未知218 483.4KB/s
-      - 未知219
-      - 未知230 96.0KB/s
-      - 香港5|@ripaojiedian
-      - 香港8|@ripaojiedian
-      - 台湾|@ripaojiedian
-      - 日本3|@ripaojiedian
-      - 狮城特殊|@ripaojiedian
-      - Japan_Tokyo_ss_113
-      - South Korea_Incheon_ss_115
-      - Singapore_Singapore_ss_116
-      - 0|-https://t.me/MrXbin-12
-      - 0|-https://t.me/MrXbin-121
-      - 0|-https://t.me/MrXbin-122
-      - 0|-https://t.me/MrXbin-123
-      - 0|-https://t.me/MrXbin-124
-      - 0|-https://t.me/MrXbin-125
-      - SG_speednode_0084
-      - SG_speednode_0087
-      - SG_speednode_0088
-      - SG_speednode_0090
-      - CN 292 → tg@nicevpn123
-      - CN 361 → tg@nicevpn123
-      - 0|-https://t.me/MrXbin-150
-      - CN_speednode_0126
-      - China_None_vmess_11128
+      - "[Trojan] 0|-https://t.me/MrXbin-226"
+      - "[Trojan] 0|-https://t.me/MrXbin-227"
+      - "[Trojan] 0|-https://t.me/MrXbin-228"
+      - "[Trojan] 0|-https://t.me/MrXbin-230"
+      - "[Trojan] 0|-https://t.me/MrXbin-232"
+      - "[VMess] 0|-https://t.me/MrXbin-277"
+      - "[SS] CN_speednode_0003"
+      - "[SS] CN_speednode_0005"
+      - "[VMess] RELAY-104.21.23.231-190_1@190"
+      - "[SS] US34 51.8MB/s"
+      - "[Trojan] US39 33.4KB/s"
+      - "[SS] US8 18.9MB/s"
+      - "[VMess] VN 3 → tg@nicevpn123"
+      - "[VMess] [VMess] CN_speednode_0029"
+      - "[VMess] [VMess] CN_speednode_0032"
+      - "[VMess] [VMess] CN_speednode_0077"
+      - "[VMess] [VMess] CN_speednode_0101"
+      - "[VMess] [VMess] CN_speednode_0132"
+      - "[SS] 未知103 345.5KB/s"
+      - "[SS] 未知106 1.9MB/s"
+      - "[Trojan] 未知110 2.0MB/s"
+      - "[SS] 未知12 222.9KB/s"
+      - "[Trojan] 未知129"
+      - "[SS] 未知14 168.6KB/s"
+      - "[SS] 未知15 197.8KB/s"
+      - "[SS] 未知155 266.2KB/s"
+      - "[SS] 未知168 278.2KB/s"
+      - "[SS] 未知259 274.7KB/s"
+      - "[SS] 未知287"
+      - "[SS] 未知29 237.1KB/s"
+      - "[SS] 未知293 376.5KB/s"
+      - "[VMess] 未知338 1.6MB/s"
+      - "[SS] 未知47"
+      - "[Trojan] 未知71"
+      - "[Trojan] 江苏"
+      - "[Trojan] 🇨🇦 [Trojan] 🇨🇦 加拿大 173"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 001"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 002"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 003"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 004"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 005"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 006"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 007"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 008"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 009"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 010"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 011"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 012"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 013"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 014"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 018"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 019"
+      - "[VMess] 🇨🇳 CN 163 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN 292 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN 361 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN 45 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN-120.232.240.38-182"
+      - "[VMess] 🇨🇳 CN-183.232.170.131-175"
+      - "[VMess] 🇨🇳 CN-183.232.199.28-145"
+      - "[VMess] 🇨🇳 CN-183.232.199.61-183"
+      - "[VMess] 🇨🇳 CN-183.240.179.195-173"
+      - "[VMess] 🇨🇳 China_Yichang_vmess_1336"
+      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 江苏省徐州市 移动"
+      - "[VMess] 🇨🇳 [VMess] 广东省汕头市 移动"
+      - "[VMess] 🇨🇳 [VMess] 湖北省武汉市 联通"
+      - "[VMess] 🇨🇳 [VMess] 🇨🇳 China_None_vmess_11128"
+      - "[VMess] 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动"
+      - "[VMess] 🇨🇳 中国【付费推荐：https://jdyvip.link/】31"
+      - "[SS] 🇨🇳 中国【付费推荐：https://jdyvip.link/】46"
+      - "[VMess] 🇨🇳 中国【付费推荐：https://jdyvip.link/】48"
+      - "[VMess] 🇨🇳 台湾2|@ripaojiedian"
+      - "[VMess] 🇨🇳 广东省佛山市 移动"
+      - "[VMess] 🇨🇳 广东省佛山市 移动 2"
+      - "[VMess] 🇨🇳 广东省汕头市 移动 2"
+      - "[VMess] 🇭🇰 [VMess] 🇭🇰 香港 002"
+      - "[SS] 🇯🇵 Japan_Tokyo_ss_115"
+      - "[VMess] 🇯🇵 日本3|@ripaojiedian"
+      - "[SS] 🇯🇵 日本特殊|@ripaojiedian"
+      - "[VMess] 🇰🇷 9|baipaovpn韩国 #3"
+      - "[VMess] 🇰🇷 9|baipaovpn韩国首尔 #1"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_1111"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_117"
+      - "[SS] 🇰🇷 South Korea_Suwon_ss_119"
+      - "[SS] 🇰🇷 韩国特殊|@ripaojiedian"
+      - "[SS] 🇷🇺 [SS] 🇷🇺 俄罗斯 V2CROSS.COM 2"
+      - "[VMess] 🇷🇺 [VMess] 🇷🇺 俄罗斯 莫斯科JustHost"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_11106"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_11108"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1112"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1113"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1114"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1117"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1119"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_112"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1121"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1122"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1123"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1124"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1125"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1126"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1127"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1128"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1129"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1130"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1131"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1133"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1134"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1135"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1136"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1137"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1138"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1139"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1140"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1142"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1143"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1144"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1145"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1146"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1147"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1148"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1149"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1150"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1151"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1152"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1155"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1156"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1157"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1158"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1159"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_116"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1160"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1161"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1162"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1163"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1164"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1165"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1166"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1167"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1169"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1171"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1172"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1173"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1174"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1175"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1176"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1177"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1178"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1179"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1180"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1182"
+      - "[SS] 🇸🇬 狮城特殊|@ripaojiedian"
+      - "[VMess] 🇺🇸 9|baipaovpn美国 #5"
+      - "[VMess] 🇺🇸 US 775 → tg@nicevpn123"
+      - "[SS] 🇺🇸 US北美 1.4MB/s"
+      - "[SS] 🇺🇸 US北美2 2.0MB/s"
+      - "[SS] 🇺🇸 United States_Ashburn_ss_11128"
+      - "[SS] 🇺🇸 [SS] 🇺🇸 美国 华盛顿Cogent通信公司"
+      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 美国 AOL美国在线公司"
+      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 美国 AOL美国在线公司 2"
+      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 美国 Microsoft数据中心"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点 4"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点 9"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 纽约市DigitalOcean云公司"
+      - "[VMess] 🇺🇸 美国3|@ripaojiedian"
+      - "[Trojan] 🇺🇸 美国5|@ripaojiedian"
+      - "[VMess] 🇻🇳 [VMess] 🇻🇳 越南 001"
+      - "[VMess] 🇻🇳 [VMess] 🇻🇳 越南 002"
+      - "[VMess] 🇻🇳 [VMess] 🇻🇳 越南 003"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -321,310 +745,705 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 CloudFlare节点 10
-      - 广东省广州市 移动
-      - 美国 CloudFlare节点 13
-      - "[VMess] 乌克兰 V2CROSS.COM"
-      - "[SS] 河北省 中移铁通"
-      - "[VMess] 🇨🇦 加拿大 001"
-      - "[VMess] 🇨🇦 加拿大 002"
-      - "[VMess] 🇨🇦 加拿大 003"
-      - "[VMess] 🇨🇦 加拿大 004"
-      - "[VMess] 🇨🇦 加拿大 005"
-      - "[VMess] 🇨🇦 加拿大 006"
-      - "[VMess] 🇨🇦 加拿大 007"
-      - "[VMess] 🇨🇦 加拿大 008"
-      - "[VMess] 🇨🇦 加拿大 009"
-      - "[VMess] 🇨🇦 加拿大 010"
-      - "[VMess] 🇨🇦 加拿大 011"
-      - "[VMess] 🇨🇦 加拿大 012"
-      - "[VMess] 🇨🇦 加拿大 013"
-      - "[VMess] 🇨🇦 加拿大 014"
-      - "[VMess] 🇨🇦 加拿大 070"
-      - "[VMess] 🇨🇦 加拿大 081"
-      - "[VMess] 🇨🇦 加拿大 082"
-      - "[VMess] 🇨🇦 加拿大 084"
-      - "[VMess] 🇨🇦 加拿大 085"
-      - "[VMess] 🇨🇦 加拿大 086"
-      - "[VMess] 🇨🇦 加拿大 088"
-      - "[VMess] 🇨🇦 加拿大 089"
-      - "[VMess] 🇨🇦 加拿大 090"
-      - "[VMess] 🇨🇦 加拿大 091"
-      - "[VMess] 🇨🇦 加拿大 092"
-      - "[VMess] 🇨🇦 加拿大 093"
-      - "[VMess] 🇨🇦 加拿大 094"
-      - "[VMess] 🇨🇦 加拿大 096"
-      - "[VMess] 🇨🇦 加拿大 121"
-      - "[VMess] 🇨🇳 广东省广州市 移动"
-      - "[SS] 🇨🇳 广东省深圳市 阿里云"
-      - "[VMess] 🇰🇷 韩国 蘑菇主机BGP数据中心"
-      - "[VMess] 🇺🇸 美国 004"
-      - "[VMess] 🇺🇸 美国 008"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点 8"
-      - 未知54 20.6MB/s
-      - US63 2.0MB/s
-      - US72
-      - 未知197 443.3KB/s
-      - 未知218 483.4KB/s
-      - 未知219
-      - 未知230 96.0KB/s
-      - 香港5|@ripaojiedian
-      - 香港8|@ripaojiedian
-      - 台湾|@ripaojiedian
-      - 日本3|@ripaojiedian
-      - 狮城特殊|@ripaojiedian
-      - Japan_Tokyo_ss_113
-      - South Korea_Incheon_ss_115
-      - Singapore_Singapore_ss_116
-      - 0|-https://t.me/MrXbin-12
-      - 0|-https://t.me/MrXbin-121
-      - 0|-https://t.me/MrXbin-122
-      - 0|-https://t.me/MrXbin-123
-      - 0|-https://t.me/MrXbin-124
-      - 0|-https://t.me/MrXbin-125
-      - SG_speednode_0084
-      - SG_speednode_0087
-      - SG_speednode_0088
-      - SG_speednode_0090
-      - CN 292 → tg@nicevpn123
-      - CN 361 → tg@nicevpn123
-      - 0|-https://t.me/MrXbin-150
-      - CN_speednode_0126
-      - China_None_vmess_11128
+      - "[Trojan] 0|-https://t.me/MrXbin-226"
+      - "[Trojan] 0|-https://t.me/MrXbin-227"
+      - "[Trojan] 0|-https://t.me/MrXbin-228"
+      - "[Trojan] 0|-https://t.me/MrXbin-230"
+      - "[Trojan] 0|-https://t.me/MrXbin-232"
+      - "[VMess] 0|-https://t.me/MrXbin-277"
+      - "[SS] CN_speednode_0003"
+      - "[SS] CN_speednode_0005"
+      - "[VMess] RELAY-104.21.23.231-190_1@190"
+      - "[SS] US34 51.8MB/s"
+      - "[Trojan] US39 33.4KB/s"
+      - "[SS] US8 18.9MB/s"
+      - "[VMess] VN 3 → tg@nicevpn123"
+      - "[VMess] [VMess] CN_speednode_0029"
+      - "[VMess] [VMess] CN_speednode_0032"
+      - "[VMess] [VMess] CN_speednode_0077"
+      - "[VMess] [VMess] CN_speednode_0101"
+      - "[VMess] [VMess] CN_speednode_0132"
+      - "[SS] 未知103 345.5KB/s"
+      - "[SS] 未知106 1.9MB/s"
+      - "[Trojan] 未知110 2.0MB/s"
+      - "[SS] 未知12 222.9KB/s"
+      - "[Trojan] 未知129"
+      - "[SS] 未知14 168.6KB/s"
+      - "[SS] 未知15 197.8KB/s"
+      - "[SS] 未知155 266.2KB/s"
+      - "[SS] 未知168 278.2KB/s"
+      - "[SS] 未知259 274.7KB/s"
+      - "[SS] 未知287"
+      - "[SS] 未知29 237.1KB/s"
+      - "[SS] 未知293 376.5KB/s"
+      - "[VMess] 未知338 1.6MB/s"
+      - "[SS] 未知47"
+      - "[Trojan] 未知71"
+      - "[Trojan] 江苏"
+      - "[Trojan] 🇨🇦 [Trojan] 🇨🇦 加拿大 173"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 001"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 002"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 003"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 004"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 005"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 006"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 007"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 008"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 009"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 010"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 011"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 012"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 013"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 014"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 018"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 019"
+      - "[VMess] 🇨🇳 CN 163 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN 292 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN 361 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN 45 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN-120.232.240.38-182"
+      - "[VMess] 🇨🇳 CN-183.232.170.131-175"
+      - "[VMess] 🇨🇳 CN-183.232.199.28-145"
+      - "[VMess] 🇨🇳 CN-183.232.199.61-183"
+      - "[VMess] 🇨🇳 CN-183.240.179.195-173"
+      - "[VMess] 🇨🇳 China_Yichang_vmess_1336"
+      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 江苏省徐州市 移动"
+      - "[VMess] 🇨🇳 [VMess] 广东省汕头市 移动"
+      - "[VMess] 🇨🇳 [VMess] 湖北省武汉市 联通"
+      - "[VMess] 🇨🇳 [VMess] 🇨🇳 China_None_vmess_11128"
+      - "[VMess] 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动"
+      - "[VMess] 🇨🇳 中国【付费推荐：https://jdyvip.link/】31"
+      - "[SS] 🇨🇳 中国【付费推荐：https://jdyvip.link/】46"
+      - "[VMess] 🇨🇳 中国【付费推荐：https://jdyvip.link/】48"
+      - "[VMess] 🇨🇳 台湾2|@ripaojiedian"
+      - "[VMess] 🇨🇳 广东省佛山市 移动"
+      - "[VMess] 🇨🇳 广东省佛山市 移动 2"
+      - "[VMess] 🇨🇳 广东省汕头市 移动 2"
+      - "[VMess] 🇭🇰 [VMess] 🇭🇰 香港 002"
+      - "[SS] 🇯🇵 Japan_Tokyo_ss_115"
+      - "[VMess] 🇯🇵 日本3|@ripaojiedian"
+      - "[SS] 🇯🇵 日本特殊|@ripaojiedian"
+      - "[VMess] 🇰🇷 9|baipaovpn韩国 #3"
+      - "[VMess] 🇰🇷 9|baipaovpn韩国首尔 #1"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_1111"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_117"
+      - "[SS] 🇰🇷 South Korea_Suwon_ss_119"
+      - "[SS] 🇰🇷 韩国特殊|@ripaojiedian"
+      - "[SS] 🇷🇺 [SS] 🇷🇺 俄罗斯 V2CROSS.COM 2"
+      - "[VMess] 🇷🇺 [VMess] 🇷🇺 俄罗斯 莫斯科JustHost"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_11106"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_11108"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1112"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1113"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1114"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1117"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1119"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_112"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1121"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1122"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1123"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1124"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1125"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1126"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1127"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1128"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1129"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1130"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1131"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1133"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1134"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1135"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1136"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1137"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1138"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1139"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1140"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1142"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1143"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1144"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1145"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1146"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1147"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1148"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1149"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1150"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1151"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1152"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1155"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1156"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1157"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1158"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1159"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_116"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1160"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1161"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1162"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1163"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1164"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1165"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1166"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1167"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1169"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1171"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1172"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1173"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1174"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1175"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1176"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1177"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1178"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1179"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1180"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1182"
+      - "[SS] 🇸🇬 狮城特殊|@ripaojiedian"
+      - "[VMess] 🇺🇸 9|baipaovpn美国 #5"
+      - "[VMess] 🇺🇸 US 775 → tg@nicevpn123"
+      - "[SS] 🇺🇸 US北美 1.4MB/s"
+      - "[SS] 🇺🇸 US北美2 2.0MB/s"
+      - "[SS] 🇺🇸 United States_Ashburn_ss_11128"
+      - "[SS] 🇺🇸 [SS] 🇺🇸 美国 华盛顿Cogent通信公司"
+      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 美国 AOL美国在线公司"
+      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 美国 AOL美国在线公司 2"
+      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 美国 Microsoft数据中心"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点 4"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点 9"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 纽约市DigitalOcean云公司"
+      - "[VMess] 🇺🇸 美国3|@ripaojiedian"
+      - "[Trojan] 🇺🇸 美国5|@ripaojiedian"
+      - "[VMess] 🇻🇳 [VMess] 🇻🇳 越南 001"
+      - "[VMess] 🇻🇳 [VMess] 🇻🇳 越南 002"
+      - "[VMess] 🇻🇳 [VMess] 🇻🇳 越南 003"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港5|@ripaojiedian
-      - 香港8|@ripaojiedian
-      - 台湾|@ripaojiedian
+      - "[VMess] 🇨🇳 台湾2|@ripaojiedian"
+      - "[VMess] 🇭🇰 [VMess] 🇭🇰 香港 002"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国 CloudFlare节点 10
-      - 广东省广州市 移动
-      - 美国 CloudFlare节点 13
-      - "[VMess] 乌克兰 V2CROSS.COM"
-      - "[SS] 河北省 中移铁通"
-      - "[VMess] 🇨🇦 加拿大 001"
-      - "[VMess] 🇨🇦 加拿大 002"
-      - "[VMess] 🇨🇦 加拿大 003"
-      - "[VMess] 🇨🇦 加拿大 004"
-      - "[VMess] 🇨🇦 加拿大 005"
-      - "[VMess] 🇨🇦 加拿大 006"
-      - "[VMess] 🇨🇦 加拿大 007"
-      - "[VMess] 🇨🇦 加拿大 008"
-      - "[VMess] 🇨🇦 加拿大 009"
-      - "[VMess] 🇨🇦 加拿大 010"
-      - "[VMess] 🇨🇦 加拿大 011"
-      - "[VMess] 🇨🇦 加拿大 012"
-      - "[VMess] 🇨🇦 加拿大 013"
-      - "[VMess] 🇨🇦 加拿大 014"
-      - "[VMess] 🇨🇦 加拿大 070"
-      - "[VMess] 🇨🇦 加拿大 081"
-      - "[VMess] 🇨🇦 加拿大 082"
-      - "[VMess] 🇨🇦 加拿大 084"
-      - "[VMess] 🇨🇦 加拿大 085"
-      - "[VMess] 🇨🇦 加拿大 086"
-      - "[VMess] 🇨🇦 加拿大 088"
-      - "[VMess] 🇨🇦 加拿大 089"
-      - "[VMess] 🇨🇦 加拿大 090"
-      - "[VMess] 🇨🇦 加拿大 091"
-      - "[VMess] 🇨🇦 加拿大 092"
-      - "[VMess] 🇨🇦 加拿大 093"
-      - "[VMess] 🇨🇦 加拿大 094"
-      - "[VMess] 🇨🇦 加拿大 096"
-      - "[VMess] 🇨🇦 加拿大 121"
-      - "[VMess] 🇨🇳 广东省广州市 移动"
-      - "[SS] 🇨🇳 广东省深圳市 阿里云"
-      - "[VMess] 🇰🇷 韩国 蘑菇主机BGP数据中心"
-      - "[VMess] 🇺🇸 美国 004"
-      - "[VMess] 🇺🇸 美国 008"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点 8"
-      - 未知54 20.6MB/s
-      - US63 2.0MB/s
-      - US72
-      - 未知197 443.3KB/s
-      - 未知218 483.4KB/s
-      - 未知219
-      - 未知230 96.0KB/s
-      - 香港5|@ripaojiedian
-      - 香港8|@ripaojiedian
-      - 台湾|@ripaojiedian
-      - 日本3|@ripaojiedian
-      - 狮城特殊|@ripaojiedian
-      - Japan_Tokyo_ss_113
-      - South Korea_Incheon_ss_115
-      - Singapore_Singapore_ss_116
-      - 0|-https://t.me/MrXbin-12
-      - 0|-https://t.me/MrXbin-121
-      - 0|-https://t.me/MrXbin-122
-      - 0|-https://t.me/MrXbin-123
-      - 0|-https://t.me/MrXbin-124
-      - 0|-https://t.me/MrXbin-125
-      - SG_speednode_0084
-      - SG_speednode_0087
-      - SG_speednode_0088
-      - SG_speednode_0090
-      - CN 292 → tg@nicevpn123
-      - CN 361 → tg@nicevpn123
-      - 0|-https://t.me/MrXbin-150
-      - CN_speednode_0126
-      - China_None_vmess_11128
+      - "[Trojan] 0|-https://t.me/MrXbin-226"
+      - "[Trojan] 0|-https://t.me/MrXbin-227"
+      - "[Trojan] 0|-https://t.me/MrXbin-228"
+      - "[Trojan] 0|-https://t.me/MrXbin-230"
+      - "[Trojan] 0|-https://t.me/MrXbin-232"
+      - "[VMess] 0|-https://t.me/MrXbin-277"
+      - "[SS] CN_speednode_0003"
+      - "[SS] CN_speednode_0005"
+      - "[VMess] RELAY-104.21.23.231-190_1@190"
+      - "[SS] US34 51.8MB/s"
+      - "[Trojan] US39 33.4KB/s"
+      - "[SS] US8 18.9MB/s"
+      - "[VMess] VN 3 → tg@nicevpn123"
+      - "[VMess] [VMess] CN_speednode_0029"
+      - "[VMess] [VMess] CN_speednode_0032"
+      - "[VMess] [VMess] CN_speednode_0077"
+      - "[VMess] [VMess] CN_speednode_0101"
+      - "[VMess] [VMess] CN_speednode_0132"
+      - "[SS] 未知103 345.5KB/s"
+      - "[SS] 未知106 1.9MB/s"
+      - "[Trojan] 未知110 2.0MB/s"
+      - "[SS] 未知12 222.9KB/s"
+      - "[Trojan] 未知129"
+      - "[SS] 未知14 168.6KB/s"
+      - "[SS] 未知15 197.8KB/s"
+      - "[SS] 未知155 266.2KB/s"
+      - "[SS] 未知168 278.2KB/s"
+      - "[SS] 未知259 274.7KB/s"
+      - "[SS] 未知287"
+      - "[SS] 未知29 237.1KB/s"
+      - "[SS] 未知293 376.5KB/s"
+      - "[VMess] 未知338 1.6MB/s"
+      - "[SS] 未知47"
+      - "[Trojan] 未知71"
+      - "[Trojan] 江苏"
+      - "[Trojan] 🇨🇦 [Trojan] 🇨🇦 加拿大 173"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 001"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 002"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 003"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 004"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 005"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 006"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 007"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 008"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 009"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 010"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 011"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 012"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 013"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 014"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 018"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 019"
+      - "[VMess] 🇨🇳 CN 163 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN 292 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN 361 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN 45 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN-120.232.240.38-182"
+      - "[VMess] 🇨🇳 CN-183.232.170.131-175"
+      - "[VMess] 🇨🇳 CN-183.232.199.28-145"
+      - "[VMess] 🇨🇳 CN-183.232.199.61-183"
+      - "[VMess] 🇨🇳 CN-183.240.179.195-173"
+      - "[VMess] 🇨🇳 China_Yichang_vmess_1336"
+      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 江苏省徐州市 移动"
+      - "[VMess] 🇨🇳 [VMess] 广东省汕头市 移动"
+      - "[VMess] 🇨🇳 [VMess] 湖北省武汉市 联通"
+      - "[VMess] 🇨🇳 [VMess] 🇨🇳 China_None_vmess_11128"
+      - "[VMess] 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动"
+      - "[VMess] 🇨🇳 中国【付费推荐：https://jdyvip.link/】31"
+      - "[SS] 🇨🇳 中国【付费推荐：https://jdyvip.link/】46"
+      - "[VMess] 🇨🇳 中国【付费推荐：https://jdyvip.link/】48"
+      - "[VMess] 🇨🇳 台湾2|@ripaojiedian"
+      - "[VMess] 🇨🇳 广东省佛山市 移动"
+      - "[VMess] 🇨🇳 广东省佛山市 移动 2"
+      - "[VMess] 🇨🇳 广东省汕头市 移动 2"
+      - "[VMess] 🇭🇰 [VMess] 🇭🇰 香港 002"
+      - "[SS] 🇯🇵 Japan_Tokyo_ss_115"
+      - "[VMess] 🇯🇵 日本3|@ripaojiedian"
+      - "[SS] 🇯🇵 日本特殊|@ripaojiedian"
+      - "[VMess] 🇰🇷 9|baipaovpn韩国 #3"
+      - "[VMess] 🇰🇷 9|baipaovpn韩国首尔 #1"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_1111"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_117"
+      - "[SS] 🇰🇷 South Korea_Suwon_ss_119"
+      - "[SS] 🇰🇷 韩国特殊|@ripaojiedian"
+      - "[SS] 🇷🇺 [SS] 🇷🇺 俄罗斯 V2CROSS.COM 2"
+      - "[VMess] 🇷🇺 [VMess] 🇷🇺 俄罗斯 莫斯科JustHost"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_11106"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_11108"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1112"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1113"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1114"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1117"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1119"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_112"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1121"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1122"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1123"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1124"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1125"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1126"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1127"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1128"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1129"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1130"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1131"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1133"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1134"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1135"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1136"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1137"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1138"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1139"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1140"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1142"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1143"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1144"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1145"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1146"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1147"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1148"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1149"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1150"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1151"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1152"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1155"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1156"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1157"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1158"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1159"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_116"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1160"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1161"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1162"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1163"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1164"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1165"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1166"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1167"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1169"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1171"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1172"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1173"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1174"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1175"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1176"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1177"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1178"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1179"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1180"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1182"
+      - "[SS] 🇸🇬 狮城特殊|@ripaojiedian"
+      - "[VMess] 🇺🇸 9|baipaovpn美国 #5"
+      - "[VMess] 🇺🇸 US 775 → tg@nicevpn123"
+      - "[SS] 🇺🇸 US北美 1.4MB/s"
+      - "[SS] 🇺🇸 US北美2 2.0MB/s"
+      - "[SS] 🇺🇸 United States_Ashburn_ss_11128"
+      - "[SS] 🇺🇸 [SS] 🇺🇸 美国 华盛顿Cogent通信公司"
+      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 美国 AOL美国在线公司"
+      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 美国 AOL美国在线公司 2"
+      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 美国 Microsoft数据中心"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点 4"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点 9"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 纽约市DigitalOcean云公司"
+      - "[VMess] 🇺🇸 美国3|@ripaojiedian"
+      - "[Trojan] 🇺🇸 美国5|@ripaojiedian"
+      - "[VMess] 🇻🇳 [VMess] 🇻🇳 越南 001"
+      - "[VMess] 🇻🇳 [VMess] 🇻🇳 越南 002"
+      - "[VMess] 🇻🇳 [VMess] 🇻🇳 越南 003"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国 CloudFlare节点 10
-      - 广东省广州市 移动
-      - 美国 CloudFlare节点 13
-      - "[VMess] 乌克兰 V2CROSS.COM"
-      - "[SS] 河北省 中移铁通"
-      - "[VMess] 🇨🇦 加拿大 001"
-      - "[VMess] 🇨🇦 加拿大 002"
-      - "[VMess] 🇨🇦 加拿大 003"
-      - "[VMess] 🇨🇦 加拿大 004"
-      - "[VMess] 🇨🇦 加拿大 005"
-      - "[VMess] 🇨🇦 加拿大 006"
-      - "[VMess] 🇨🇦 加拿大 007"
-      - "[VMess] 🇨🇦 加拿大 008"
-      - "[VMess] 🇨🇦 加拿大 009"
-      - "[VMess] 🇨🇦 加拿大 010"
-      - "[VMess] 🇨🇦 加拿大 011"
-      - "[VMess] 🇨🇦 加拿大 012"
-      - "[VMess] 🇨🇦 加拿大 013"
-      - "[VMess] 🇨🇦 加拿大 014"
-      - "[VMess] 🇨🇦 加拿大 070"
-      - "[VMess] 🇨🇦 加拿大 081"
-      - "[VMess] 🇨🇦 加拿大 082"
-      - "[VMess] 🇨🇦 加拿大 084"
-      - "[VMess] 🇨🇦 加拿大 085"
-      - "[VMess] 🇨🇦 加拿大 086"
-      - "[VMess] 🇨🇦 加拿大 088"
-      - "[VMess] 🇨🇦 加拿大 089"
-      - "[VMess] 🇨🇦 加拿大 090"
-      - "[VMess] 🇨🇦 加拿大 091"
-      - "[VMess] 🇨🇦 加拿大 092"
-      - "[VMess] 🇨🇦 加拿大 093"
-      - "[VMess] 🇨🇦 加拿大 094"
-      - "[VMess] 🇨🇦 加拿大 096"
-      - "[VMess] 🇨🇦 加拿大 121"
-      - "[VMess] 🇨🇳 广东省广州市 移动"
-      - "[SS] 🇨🇳 广东省深圳市 阿里云"
-      - "[VMess] 🇰🇷 韩国 蘑菇主机BGP数据中心"
-      - "[VMess] 🇺🇸 美国 004"
-      - "[VMess] 🇺🇸 美国 008"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点 8"
-      - 未知54 20.6MB/s
-      - US63 2.0MB/s
-      - US72
-      - 未知197 443.3KB/s
-      - 未知218 483.4KB/s
-      - 未知219
-      - 未知230 96.0KB/s
-      - 香港5|@ripaojiedian
-      - 香港8|@ripaojiedian
-      - 台湾|@ripaojiedian
-      - 日本3|@ripaojiedian
-      - 狮城特殊|@ripaojiedian
-      - Japan_Tokyo_ss_113
-      - South Korea_Incheon_ss_115
-      - Singapore_Singapore_ss_116
-      - 0|-https://t.me/MrXbin-12
-      - 0|-https://t.me/MrXbin-121
-      - 0|-https://t.me/MrXbin-122
-      - 0|-https://t.me/MrXbin-123
-      - 0|-https://t.me/MrXbin-124
-      - 0|-https://t.me/MrXbin-125
-      - SG_speednode_0084
-      - SG_speednode_0087
-      - SG_speednode_0088
-      - SG_speednode_0090
-      - CN 292 → tg@nicevpn123
-      - CN 361 → tg@nicevpn123
-      - 0|-https://t.me/MrXbin-150
-      - CN_speednode_0126
-      - China_None_vmess_11128
+      - "[Trojan] 0|-https://t.me/MrXbin-226"
+      - "[Trojan] 0|-https://t.me/MrXbin-227"
+      - "[Trojan] 0|-https://t.me/MrXbin-228"
+      - "[Trojan] 0|-https://t.me/MrXbin-230"
+      - "[Trojan] 0|-https://t.me/MrXbin-232"
+      - "[VMess] 0|-https://t.me/MrXbin-277"
+      - "[SS] CN_speednode_0003"
+      - "[SS] CN_speednode_0005"
+      - "[VMess] RELAY-104.21.23.231-190_1@190"
+      - "[SS] US34 51.8MB/s"
+      - "[Trojan] US39 33.4KB/s"
+      - "[SS] US8 18.9MB/s"
+      - "[VMess] VN 3 → tg@nicevpn123"
+      - "[VMess] [VMess] CN_speednode_0029"
+      - "[VMess] [VMess] CN_speednode_0032"
+      - "[VMess] [VMess] CN_speednode_0077"
+      - "[VMess] [VMess] CN_speednode_0101"
+      - "[VMess] [VMess] CN_speednode_0132"
+      - "[SS] 未知103 345.5KB/s"
+      - "[SS] 未知106 1.9MB/s"
+      - "[Trojan] 未知110 2.0MB/s"
+      - "[SS] 未知12 222.9KB/s"
+      - "[Trojan] 未知129"
+      - "[SS] 未知14 168.6KB/s"
+      - "[SS] 未知15 197.8KB/s"
+      - "[SS] 未知155 266.2KB/s"
+      - "[SS] 未知168 278.2KB/s"
+      - "[SS] 未知259 274.7KB/s"
+      - "[SS] 未知287"
+      - "[SS] 未知29 237.1KB/s"
+      - "[SS] 未知293 376.5KB/s"
+      - "[VMess] 未知338 1.6MB/s"
+      - "[SS] 未知47"
+      - "[Trojan] 未知71"
+      - "[Trojan] 江苏"
+      - "[Trojan] 🇨🇦 [Trojan] 🇨🇦 加拿大 173"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 001"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 002"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 003"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 004"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 005"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 006"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 007"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 008"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 009"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 010"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 011"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 012"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 013"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 014"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 018"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 019"
+      - "[VMess] 🇨🇳 CN 163 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN 292 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN 361 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN 45 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN-120.232.240.38-182"
+      - "[VMess] 🇨🇳 CN-183.232.170.131-175"
+      - "[VMess] 🇨🇳 CN-183.232.199.28-145"
+      - "[VMess] 🇨🇳 CN-183.232.199.61-183"
+      - "[VMess] 🇨🇳 CN-183.240.179.195-173"
+      - "[VMess] 🇨🇳 China_Yichang_vmess_1336"
+      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 江苏省徐州市 移动"
+      - "[VMess] 🇨🇳 [VMess] 广东省汕头市 移动"
+      - "[VMess] 🇨🇳 [VMess] 湖北省武汉市 联通"
+      - "[VMess] 🇨🇳 [VMess] 🇨🇳 China_None_vmess_11128"
+      - "[VMess] 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动"
+      - "[VMess] 🇨🇳 中国【付费推荐：https://jdyvip.link/】31"
+      - "[SS] 🇨🇳 中国【付费推荐：https://jdyvip.link/】46"
+      - "[VMess] 🇨🇳 中国【付费推荐：https://jdyvip.link/】48"
+      - "[VMess] 🇨🇳 台湾2|@ripaojiedian"
+      - "[VMess] 🇨🇳 广东省佛山市 移动"
+      - "[VMess] 🇨🇳 广东省佛山市 移动 2"
+      - "[VMess] 🇨🇳 广东省汕头市 移动 2"
+      - "[VMess] 🇭🇰 [VMess] 🇭🇰 香港 002"
+      - "[SS] 🇯🇵 Japan_Tokyo_ss_115"
+      - "[VMess] 🇯🇵 日本3|@ripaojiedian"
+      - "[SS] 🇯🇵 日本特殊|@ripaojiedian"
+      - "[VMess] 🇰🇷 9|baipaovpn韩国 #3"
+      - "[VMess] 🇰🇷 9|baipaovpn韩国首尔 #1"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_1111"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_117"
+      - "[SS] 🇰🇷 South Korea_Suwon_ss_119"
+      - "[SS] 🇰🇷 韩国特殊|@ripaojiedian"
+      - "[SS] 🇷🇺 [SS] 🇷🇺 俄罗斯 V2CROSS.COM 2"
+      - "[VMess] 🇷🇺 [VMess] 🇷🇺 俄罗斯 莫斯科JustHost"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_11106"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_11108"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1112"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1113"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1114"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1117"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1119"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_112"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1121"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1122"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1123"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1124"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1125"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1126"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1127"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1128"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1129"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1130"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1131"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1133"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1134"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1135"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1136"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1137"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1138"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1139"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1140"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1142"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1143"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1144"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1145"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1146"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1147"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1148"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1149"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1150"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1151"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1152"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1155"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1156"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1157"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1158"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1159"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_116"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1160"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1161"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1162"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1163"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1164"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1165"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1166"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1167"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1169"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1171"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1172"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1173"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1174"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1175"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1176"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1177"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1178"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1179"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1180"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1182"
+      - "[SS] 🇸🇬 狮城特殊|@ripaojiedian"
+      - "[VMess] 🇺🇸 9|baipaovpn美国 #5"
+      - "[VMess] 🇺🇸 US 775 → tg@nicevpn123"
+      - "[SS] 🇺🇸 US北美 1.4MB/s"
+      - "[SS] 🇺🇸 US北美2 2.0MB/s"
+      - "[SS] 🇺🇸 United States_Ashburn_ss_11128"
+      - "[SS] 🇺🇸 [SS] 🇺🇸 美国 华盛顿Cogent通信公司"
+      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 美国 AOL美国在线公司"
+      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 美国 AOL美国在线公司 2"
+      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 美国 Microsoft数据中心"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点 4"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点 9"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 纽约市DigitalOcean云公司"
+      - "[VMess] 🇺🇸 美国3|@ripaojiedian"
+      - "[Trojan] 🇺🇸 美国5|@ripaojiedian"
+      - "[VMess] 🇻🇳 [VMess] 🇻🇳 越南 001"
+      - "[VMess] 🇻🇳 [VMess] 🇻🇳 越南 002"
+      - "[VMess] 🇻🇳 [VMess] 🇻🇳 越南 003"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 CloudFlare节点 10
-      - 广东省广州市 移动
-      - 美国 CloudFlare节点 13
-      - "[VMess] 乌克兰 V2CROSS.COM"
-      - "[SS] 河北省 中移铁通"
-      - "[VMess] 🇨🇦 加拿大 001"
-      - "[VMess] 🇨🇦 加拿大 002"
-      - "[VMess] 🇨🇦 加拿大 003"
-      - "[VMess] 🇨🇦 加拿大 004"
-      - "[VMess] 🇨🇦 加拿大 005"
-      - "[VMess] 🇨🇦 加拿大 006"
-      - "[VMess] 🇨🇦 加拿大 007"
-      - "[VMess] 🇨🇦 加拿大 008"
-      - "[VMess] 🇨🇦 加拿大 009"
-      - "[VMess] 🇨🇦 加拿大 010"
-      - "[VMess] 🇨🇦 加拿大 011"
-      - "[VMess] 🇨🇦 加拿大 012"
-      - "[VMess] 🇨🇦 加拿大 013"
-      - "[VMess] 🇨🇦 加拿大 014"
-      - "[VMess] 🇨🇦 加拿大 070"
-      - "[VMess] 🇨🇦 加拿大 081"
-      - "[VMess] 🇨🇦 加拿大 082"
-      - "[VMess] 🇨🇦 加拿大 084"
-      - "[VMess] 🇨🇦 加拿大 085"
-      - "[VMess] 🇨🇦 加拿大 086"
-      - "[VMess] 🇨🇦 加拿大 088"
-      - "[VMess] 🇨🇦 加拿大 089"
-      - "[VMess] 🇨🇦 加拿大 090"
-      - "[VMess] 🇨🇦 加拿大 091"
-      - "[VMess] 🇨🇦 加拿大 092"
-      - "[VMess] 🇨🇦 加拿大 093"
-      - "[VMess] 🇨🇦 加拿大 094"
-      - "[VMess] 🇨🇦 加拿大 096"
-      - "[VMess] 🇨🇦 加拿大 121"
-      - "[VMess] 🇨🇳 广东省广州市 移动"
-      - "[SS] 🇨🇳 广东省深圳市 阿里云"
-      - "[VMess] 🇰🇷 韩国 蘑菇主机BGP数据中心"
-      - "[VMess] 🇺🇸 美国 004"
-      - "[VMess] 🇺🇸 美国 008"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点 8"
-      - 未知54 20.6MB/s
-      - US63 2.0MB/s
-      - US72
-      - 未知197 443.3KB/s
-      - 未知218 483.4KB/s
-      - 未知219
-      - 未知230 96.0KB/s
-      - 香港5|@ripaojiedian
-      - 香港8|@ripaojiedian
-      - 台湾|@ripaojiedian
-      - 日本3|@ripaojiedian
-      - 狮城特殊|@ripaojiedian
-      - Japan_Tokyo_ss_113
-      - South Korea_Incheon_ss_115
-      - Singapore_Singapore_ss_116
-      - 0|-https://t.me/MrXbin-12
-      - 0|-https://t.me/MrXbin-121
-      - 0|-https://t.me/MrXbin-122
-      - 0|-https://t.me/MrXbin-123
-      - 0|-https://t.me/MrXbin-124
-      - 0|-https://t.me/MrXbin-125
-      - SG_speednode_0084
-      - SG_speednode_0087
-      - SG_speednode_0088
-      - SG_speednode_0090
-      - CN 292 → tg@nicevpn123
-      - CN 361 → tg@nicevpn123
-      - 0|-https://t.me/MrXbin-150
-      - CN_speednode_0126
-      - China_None_vmess_11128
+      - "[Trojan] 0|-https://t.me/MrXbin-226"
+      - "[Trojan] 0|-https://t.me/MrXbin-227"
+      - "[Trojan] 0|-https://t.me/MrXbin-228"
+      - "[Trojan] 0|-https://t.me/MrXbin-230"
+      - "[Trojan] 0|-https://t.me/MrXbin-232"
+      - "[VMess] 0|-https://t.me/MrXbin-277"
+      - "[SS] CN_speednode_0003"
+      - "[SS] CN_speednode_0005"
+      - "[VMess] RELAY-104.21.23.231-190_1@190"
+      - "[SS] US34 51.8MB/s"
+      - "[Trojan] US39 33.4KB/s"
+      - "[SS] US8 18.9MB/s"
+      - "[VMess] VN 3 → tg@nicevpn123"
+      - "[VMess] [VMess] CN_speednode_0029"
+      - "[VMess] [VMess] CN_speednode_0032"
+      - "[VMess] [VMess] CN_speednode_0077"
+      - "[VMess] [VMess] CN_speednode_0101"
+      - "[VMess] [VMess] CN_speednode_0132"
+      - "[SS] 未知103 345.5KB/s"
+      - "[SS] 未知106 1.9MB/s"
+      - "[Trojan] 未知110 2.0MB/s"
+      - "[SS] 未知12 222.9KB/s"
+      - "[Trojan] 未知129"
+      - "[SS] 未知14 168.6KB/s"
+      - "[SS] 未知15 197.8KB/s"
+      - "[SS] 未知155 266.2KB/s"
+      - "[SS] 未知168 278.2KB/s"
+      - "[SS] 未知259 274.7KB/s"
+      - "[SS] 未知287"
+      - "[SS] 未知29 237.1KB/s"
+      - "[SS] 未知293 376.5KB/s"
+      - "[VMess] 未知338 1.6MB/s"
+      - "[SS] 未知47"
+      - "[Trojan] 未知71"
+      - "[Trojan] 江苏"
+      - "[Trojan] 🇨🇦 [Trojan] 🇨🇦 加拿大 173"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 001"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 002"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 003"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 004"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 005"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 006"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 007"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 008"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 009"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 010"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 011"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 012"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 013"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 014"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 018"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 019"
+      - "[VMess] 🇨🇳 CN 163 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN 292 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN 361 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN 45 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN-120.232.240.38-182"
+      - "[VMess] 🇨🇳 CN-183.232.170.131-175"
+      - "[VMess] 🇨🇳 CN-183.232.199.28-145"
+      - "[VMess] 🇨🇳 CN-183.232.199.61-183"
+      - "[VMess] 🇨🇳 CN-183.240.179.195-173"
+      - "[VMess] 🇨🇳 China_Yichang_vmess_1336"
+      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 江苏省徐州市 移动"
+      - "[VMess] 🇨🇳 [VMess] 广东省汕头市 移动"
+      - "[VMess] 🇨🇳 [VMess] 湖北省武汉市 联通"
+      - "[VMess] 🇨🇳 [VMess] 🇨🇳 China_None_vmess_11128"
+      - "[VMess] 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动"
+      - "[VMess] 🇨🇳 中国【付费推荐：https://jdyvip.link/】31"
+      - "[SS] 🇨🇳 中国【付费推荐：https://jdyvip.link/】46"
+      - "[VMess] 🇨🇳 中国【付费推荐：https://jdyvip.link/】48"
+      - "[VMess] 🇨🇳 台湾2|@ripaojiedian"
+      - "[VMess] 🇨🇳 广东省佛山市 移动"
+      - "[VMess] 🇨🇳 广东省佛山市 移动 2"
+      - "[VMess] 🇨🇳 广东省汕头市 移动 2"
+      - "[VMess] 🇭🇰 [VMess] 🇭🇰 香港 002"
+      - "[SS] 🇯🇵 Japan_Tokyo_ss_115"
+      - "[VMess] 🇯🇵 日本3|@ripaojiedian"
+      - "[SS] 🇯🇵 日本特殊|@ripaojiedian"
+      - "[VMess] 🇰🇷 9|baipaovpn韩国 #3"
+      - "[VMess] 🇰🇷 9|baipaovpn韩国首尔 #1"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_1111"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_117"
+      - "[SS] 🇰🇷 South Korea_Suwon_ss_119"
+      - "[SS] 🇰🇷 韩国特殊|@ripaojiedian"
+      - "[SS] 🇷🇺 [SS] 🇷🇺 俄罗斯 V2CROSS.COM 2"
+      - "[VMess] 🇷🇺 [VMess] 🇷🇺 俄罗斯 莫斯科JustHost"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_11106"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_11108"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1112"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1113"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1114"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1117"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1119"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_112"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1121"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1122"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1123"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1124"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1125"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1126"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1127"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1128"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1129"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1130"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1131"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1133"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1134"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1135"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1136"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1137"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1138"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1139"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1140"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1142"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1143"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1144"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1145"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1146"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1147"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1148"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1149"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1150"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1151"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1152"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1155"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1156"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1157"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1158"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1159"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_116"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1160"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1161"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1162"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1163"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1164"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1165"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1166"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1167"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1169"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1171"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1172"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1173"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1174"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1175"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1176"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1177"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1178"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1179"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1180"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1182"
+      - "[SS] 🇸🇬 狮城特殊|@ripaojiedian"
+      - "[VMess] 🇺🇸 9|baipaovpn美国 #5"
+      - "[VMess] 🇺🇸 US 775 → tg@nicevpn123"
+      - "[SS] 🇺🇸 US北美 1.4MB/s"
+      - "[SS] 🇺🇸 US北美2 2.0MB/s"
+      - "[SS] 🇺🇸 United States_Ashburn_ss_11128"
+      - "[SS] 🇺🇸 [SS] 🇺🇸 美国 华盛顿Cogent通信公司"
+      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 美国 AOL美国在线公司"
+      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 美国 AOL美国在线公司 2"
+      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 美国 Microsoft数据中心"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点 4"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点 9"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 纽约市DigitalOcean云公司"
+      - "[VMess] 🇺🇸 美国3|@ripaojiedian"
+      - "[Trojan] 🇺🇸 美国5|@ripaojiedian"
+      - "[VMess] 🇻🇳 [VMess] 🇻🇳 越南 001"
+      - "[VMess] 🇻🇳 [VMess] 🇻🇳 越南 002"
+      - "[VMess] 🇻🇳 [VMess] 🇻🇳 越南 003"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -640,76 +1459,175 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 CloudFlare节点 10
-      - 广东省广州市 移动
-      - 美国 CloudFlare节点 13
-      - "[VMess] 乌克兰 V2CROSS.COM"
-      - "[SS] 河北省 中移铁通"
-      - "[VMess] 🇨🇦 加拿大 001"
-      - "[VMess] 🇨🇦 加拿大 002"
-      - "[VMess] 🇨🇦 加拿大 003"
-      - "[VMess] 🇨🇦 加拿大 004"
-      - "[VMess] 🇨🇦 加拿大 005"
-      - "[VMess] 🇨🇦 加拿大 006"
-      - "[VMess] 🇨🇦 加拿大 007"
-      - "[VMess] 🇨🇦 加拿大 008"
-      - "[VMess] 🇨🇦 加拿大 009"
-      - "[VMess] 🇨🇦 加拿大 010"
-      - "[VMess] 🇨🇦 加拿大 011"
-      - "[VMess] 🇨🇦 加拿大 012"
-      - "[VMess] 🇨🇦 加拿大 013"
-      - "[VMess] 🇨🇦 加拿大 014"
-      - "[VMess] 🇨🇦 加拿大 070"
-      - "[VMess] 🇨🇦 加拿大 081"
-      - "[VMess] 🇨🇦 加拿大 082"
-      - "[VMess] 🇨🇦 加拿大 084"
-      - "[VMess] 🇨🇦 加拿大 085"
-      - "[VMess] 🇨🇦 加拿大 086"
-      - "[VMess] 🇨🇦 加拿大 088"
-      - "[VMess] 🇨🇦 加拿大 089"
-      - "[VMess] 🇨🇦 加拿大 090"
-      - "[VMess] 🇨🇦 加拿大 091"
-      - "[VMess] 🇨🇦 加拿大 092"
-      - "[VMess] 🇨🇦 加拿大 093"
-      - "[VMess] 🇨🇦 加拿大 094"
-      - "[VMess] 🇨🇦 加拿大 096"
-      - "[VMess] 🇨🇦 加拿大 121"
-      - "[VMess] 🇨🇳 广东省广州市 移动"
-      - "[SS] 🇨🇳 广东省深圳市 阿里云"
-      - "[VMess] 🇰🇷 韩国 蘑菇主机BGP数据中心"
-      - "[VMess] 🇺🇸 美国 004"
-      - "[VMess] 🇺🇸 美国 008"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点 8"
-      - 未知54 20.6MB/s
-      - US63 2.0MB/s
-      - US72
-      - 未知197 443.3KB/s
-      - 未知218 483.4KB/s
-      - 未知219
-      - 未知230 96.0KB/s
-      - 香港5|@ripaojiedian
-      - 香港8|@ripaojiedian
-      - 台湾|@ripaojiedian
-      - 日本3|@ripaojiedian
-      - 狮城特殊|@ripaojiedian
-      - Japan_Tokyo_ss_113
-      - South Korea_Incheon_ss_115
-      - Singapore_Singapore_ss_116
-      - 0|-https://t.me/MrXbin-12
-      - 0|-https://t.me/MrXbin-121
-      - 0|-https://t.me/MrXbin-122
-      - 0|-https://t.me/MrXbin-123
-      - 0|-https://t.me/MrXbin-124
-      - 0|-https://t.me/MrXbin-125
-      - SG_speednode_0084
-      - SG_speednode_0087
-      - SG_speednode_0088
-      - SG_speednode_0090
-      - CN 292 → tg@nicevpn123
-      - CN 361 → tg@nicevpn123
-      - 0|-https://t.me/MrXbin-150
-      - CN_speednode_0126
-      - China_None_vmess_11128
+      - "[Trojan] 0|-https://t.me/MrXbin-226"
+      - "[Trojan] 0|-https://t.me/MrXbin-227"
+      - "[Trojan] 0|-https://t.me/MrXbin-228"
+      - "[Trojan] 0|-https://t.me/MrXbin-230"
+      - "[Trojan] 0|-https://t.me/MrXbin-232"
+      - "[VMess] 0|-https://t.me/MrXbin-277"
+      - "[SS] CN_speednode_0003"
+      - "[SS] CN_speednode_0005"
+      - "[VMess] RELAY-104.21.23.231-190_1@190"
+      - "[SS] US34 51.8MB/s"
+      - "[Trojan] US39 33.4KB/s"
+      - "[SS] US8 18.9MB/s"
+      - "[VMess] VN 3 → tg@nicevpn123"
+      - "[VMess] [VMess] CN_speednode_0029"
+      - "[VMess] [VMess] CN_speednode_0032"
+      - "[VMess] [VMess] CN_speednode_0077"
+      - "[VMess] [VMess] CN_speednode_0101"
+      - "[VMess] [VMess] CN_speednode_0132"
+      - "[SS] 未知103 345.5KB/s"
+      - "[SS] 未知106 1.9MB/s"
+      - "[Trojan] 未知110 2.0MB/s"
+      - "[SS] 未知12 222.9KB/s"
+      - "[Trojan] 未知129"
+      - "[SS] 未知14 168.6KB/s"
+      - "[SS] 未知15 197.8KB/s"
+      - "[SS] 未知155 266.2KB/s"
+      - "[SS] 未知168 278.2KB/s"
+      - "[SS] 未知259 274.7KB/s"
+      - "[SS] 未知287"
+      - "[SS] 未知29 237.1KB/s"
+      - "[SS] 未知293 376.5KB/s"
+      - "[VMess] 未知338 1.6MB/s"
+      - "[SS] 未知47"
+      - "[Trojan] 未知71"
+      - "[Trojan] 江苏"
+      - "[Trojan] 🇨🇦 [Trojan] 🇨🇦 加拿大 173"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 001"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 002"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 003"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 004"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 005"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 006"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 007"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 008"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 009"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 010"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 011"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 012"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 013"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 014"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 018"
+      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 019"
+      - "[VMess] 🇨🇳 CN 163 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN 292 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN 361 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN 45 → tg@nicevpn123"
+      - "[VMess] 🇨🇳 CN-120.232.240.38-182"
+      - "[VMess] 🇨🇳 CN-183.232.170.131-175"
+      - "[VMess] 🇨🇳 CN-183.232.199.28-145"
+      - "[VMess] 🇨🇳 CN-183.232.199.61-183"
+      - "[VMess] 🇨🇳 CN-183.240.179.195-173"
+      - "[VMess] 🇨🇳 China_Yichang_vmess_1336"
+      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 江苏省徐州市 移动"
+      - "[VMess] 🇨🇳 [VMess] 广东省汕头市 移动"
+      - "[VMess] 🇨🇳 [VMess] 湖北省武汉市 联通"
+      - "[VMess] 🇨🇳 [VMess] 🇨🇳 China_None_vmess_11128"
+      - "[VMess] 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动"
+      - "[VMess] 🇨🇳 中国【付费推荐：https://jdyvip.link/】31"
+      - "[SS] 🇨🇳 中国【付费推荐：https://jdyvip.link/】46"
+      - "[VMess] 🇨🇳 中国【付费推荐：https://jdyvip.link/】48"
+      - "[VMess] 🇨🇳 台湾2|@ripaojiedian"
+      - "[VMess] 🇨🇳 广东省佛山市 移动"
+      - "[VMess] 🇨🇳 广东省佛山市 移动 2"
+      - "[VMess] 🇨🇳 广东省汕头市 移动 2"
+      - "[VMess] 🇭🇰 [VMess] 🇭🇰 香港 002"
+      - "[SS] 🇯🇵 Japan_Tokyo_ss_115"
+      - "[VMess] 🇯🇵 日本3|@ripaojiedian"
+      - "[SS] 🇯🇵 日本特殊|@ripaojiedian"
+      - "[VMess] 🇰🇷 9|baipaovpn韩国 #3"
+      - "[VMess] 🇰🇷 9|baipaovpn韩国首尔 #1"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_1111"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_117"
+      - "[SS] 🇰🇷 South Korea_Suwon_ss_119"
+      - "[SS] 🇰🇷 韩国特殊|@ripaojiedian"
+      - "[SS] 🇷🇺 [SS] 🇷🇺 俄罗斯 V2CROSS.COM 2"
+      - "[VMess] 🇷🇺 [VMess] 🇷🇺 俄罗斯 莫斯科JustHost"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_11106"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_11108"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1112"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1113"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1114"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1117"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1119"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_112"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1121"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1122"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1123"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1124"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1125"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1126"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1127"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1128"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1129"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1130"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1131"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1133"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1134"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1135"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1136"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1137"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1138"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1139"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1140"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1142"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1143"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1144"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1145"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1146"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1147"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1148"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1149"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1150"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1151"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1152"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1155"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1156"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1157"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1158"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1159"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_116"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1160"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1161"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1162"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1163"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1164"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1165"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1166"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1167"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1169"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1171"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1172"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1173"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1174"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1175"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1176"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1177"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1178"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1179"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1180"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1182"
+      - "[SS] 🇸🇬 狮城特殊|@ripaojiedian"
+      - "[VMess] 🇺🇸 9|baipaovpn美国 #5"
+      - "[VMess] 🇺🇸 US 775 → tg@nicevpn123"
+      - "[SS] 🇺🇸 US北美 1.4MB/s"
+      - "[SS] 🇺🇸 US北美2 2.0MB/s"
+      - "[SS] 🇺🇸 United States_Ashburn_ss_11128"
+      - "[SS] 🇺🇸 [SS] 🇺🇸 美国 华盛顿Cogent通信公司"
+      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 美国 AOL美国在线公司"
+      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 美国 AOL美国在线公司 2"
+      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 美国 Microsoft数据中心"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点 4"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 CloudFlare节点 9"
+      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 纽约市DigitalOcean云公司"
+      - "[VMess] 🇺🇸 美国3|@ripaojiedian"
+      - "[Trojan] 🇺🇸 美国5|@ripaojiedian"
+      - "[VMess] 🇻🇳 [VMess] 🇻🇳 越南 001"
+      - "[VMess] 🇻🇳 [VMess] 🇻🇳 越南 002"
+      - "[VMess] 🇻🇳 [VMess] 🇻🇳 越南 003"
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
