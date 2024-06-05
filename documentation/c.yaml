@@ -6,103 +6,95 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[SS] [SS] US2 205.5KB/s", server: 23.157.40.19, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: "[Trojan] [Trojan] US413", server: 34.218.175.146, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
-  - {name: "[Trojan] [Trojan] 未知609", server: 35.156.40.167, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
-  - {name: "[Trojan] [Trojan] 未知917 75.3KB/s", server: 51.20.170.88, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
-  - {name: "[Trojan] [Trojan] 江苏", server: 36.151.195.48, port: 29841, type: trojan, password: TNDSJfNv, skip-cert-verify: false, udp: true}
-  - {name: "[VMess] [VMess] 0|-https://t.me/MrXbin-67", server: sg4g.xn--vhq70hxyat50h6wk.com, port: 80, type: vmess, uuid: 1f9b54af-3ab1-48c8-b58c-59d8d78277af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg4g.xn--vhq70hxyat50h6wk.com}}, udp: true}
-  - {name: "[VMess] [VMess] [VMess] [VMess] CN_speednode_0030", server: 183.232.142.179, port: 15604, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "[VMess] [VMess] [VMess] [VMess] CN_speednode_0033", server: 183.232.142.179, port: 62001, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "[VMess] [VMess] [VMess] [VMess] [VMess] [VMess] CN_speednode_0029", server: 183.232.199.28, port: 43002, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 018", server: 104.19.54.147, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk2.wish.ml}}, udp: true}
-  - {name: "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 CN-183.232.199.28-250", server: 183.232.199.28, port: 45001, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动", server: 183.236.51.59, port: 54100, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "[VMess] 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动 2", server: 183.236.51.59, port: 51707, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "[SS] 🇪🇸 [SS] 🇪🇸 ES 18 → tg@nicevpn123", server: 5.forlive.live, port: 60033, type: ss, cipher: chacha20-ietf-poly1305, password: d77d4bdd-49d7-34c6-adfa-7fda9967d1d7, udp: true}
-  - {name: "[Trojan] 🇭🇰 [Trojan] 🇭🇰 香港4|@ripaojiedian", server: 183.232.139.22, port: 41446, type: trojan, password: TNDSJfNv, skip-cert-verify: false, udp: true}
-  - {name: "[VMess] 🇭🇰 [VMess] 🇭🇰 香港7|@ripaojiedian", server: 786huix-ee.dc-zix4ssc1-hk03.my777999.top, port: 35996, type: vmess, uuid: 33aefd89-3285-4347-9083-6249711f02e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "[VMess] 🇲🇾 [VMess] 🇲🇾 [VMess] 🇲🇾 [VMess] 🇲🇾 马来西亚|@ripaojiedian", server: 183.232.199.28, port: 62001, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "[VMess] 🇷🇺 [VMess] 🇷🇺 俄罗斯 001", server: 31.192.234.7, port: 12954, type: vmess, uuid: 8259cb1c-dd6c-4739-9c88-af550d977525, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: "[Trojan] 🇺🇸 [Trojan] 🇺🇸 _CN_中国->🇺🇸_US_美国_1", server: 36.151.195.48, port: 4603, type: trojan, password: TNDSJfNv, skip-cert-verify: false, udp: true}
-  - {name: "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 036", server: zula.ir, port: 2082, type: vmess, uuid: d2c7b321-5e48-4d28-80e2-f64c6ddfad96, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: V2ray-Vip-Ritl.xn--85-pv2cl2k5x3fipr.org.Cd3.boutiquemad.ir.}}, udp: true}
+  - {name: "[SS] CN_speednode_0008", server: fg5d.84bbo0t-olimkrx-kr02.my777999.top, port: 32998, type: ss, cipher: chacha20-ietf-poly1305, password: 33aefd89-3285-4347-9083-6249711f02e9, udp: true}
+  - {name: "[SS] CN_speednode_0009", server: gfoq.b4-h5a6gq7.h3w-kr01.my777999.top, port: 32999, type: ss, cipher: chacha20-ietf-poly1305, password: 33aefd89-3285-4347-9083-6249711f02e9, udp: true}
+  - {name: "[VMess] VN 4 → tg@nicevpn123", server: max8.flash5g.com, port: 80, type: vmess, uuid: 4e25f91f-603c-4e83-b002-c26030757816, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: max8.flash5g.com}}, udp: true}
+  - {name: "[Trojan] 江苏", server: 36.151.195.48, port: 29841, type: trojan, password: TNDSJfNv, skip-cert-verify: false, udp: true}
+  - {name: "[SS] 🇫🇷 FR法国 122.2KB/s", server: 146.19.233.101, port: 29682, type: ss, cipher: chacha20-ietf-poly1305, password: VdOOvTaY02wdR77FoI5pB6, udp: true}
+  - {name: "[Trojan] 🇭🇰 香港4|@ripaojiedian", server: 183.232.139.22, port: 4027, type: trojan, password: gkviEOYc, skip-cert-verify: false, udp: true}
+  - {name: "[SS] 🇭🇰 香港R|@ripaojiedian", server: 59.56.77.178, port: 15001, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD, udp: true}
+  - {name: "[Trojan] 🇯🇵 日本|@ripaojiedian", server: 223.113.54.154, port: 23621, type: trojan, password: gkviEOYc, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇰🇷 KR 24 → tg@nicevpn123", server: 103.214.68.57, port: 10001, type: vmess, uuid: ebca5f68-bf59-4081-e658-f158839c2f5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇷🇺 俄罗斯 001", server: 31.192.234.7, port: 12954, type: vmess, uuid: 8259cb1c-dd6c-4739-9c88-af550d977525, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: "[Trojan] 🇺🇦 UA 32 → tg@nicevpn123", server: at1.trojanvpn.de, port: 2053, type: trojan, password: 09191dbf-e7f7-4e7d-b405-c4785ea992bf, sni: ftp.debian.org, skip-cert-verify: false, udp: true}
+  - {name: "[VMess] 🇺🇸 美国 CloudFlare节点 2", server: 172.67.204.84, port: 2095, type: vmess, uuid: edf2bc84-8723-4c98-82d3-52a3a59875a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: Asdfghjkl10.unique69.com.}}, udp: true}
+  - {name: "[VMess] 🇺🇸 美国 CloudFlare节点 3", server: 172.67.204.84, port: 80, type: vmess, uuid: 1886c4a7-c395-4aee-a1a2-a816722f5d29, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: Pl2.vmess.site.}}, udp: true}
+  - {name: "[Trojan] 🇺🇸 美国4|@ripaojiedian", server: 36.151.195.48, port: 4603, type: trojan, password: gkviEOYc, skip-cert-verify: false, udp: true}
+  - {name: "[Trojan] 🇺🇸 美国5|@ripaojiedian", server: 36.151.195.48, port: 4787, type: trojan, password: gkviEOYc, skip-cert-verify: false, udp: true}
+  - {name: "[SS] 🇺🇸 美国R|@ripaojiedian", server: 59.56.77.178, port: 16058, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD, udp: true}
+  - {name: "[VMess] 🇺🇸 美国【付费推荐：https://jdyvip.link】35", server: 172.67.171.49, port: 80, type: vmess, uuid: 10c580e4-f83b-42f1-8e6a-25fc8add4da7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: No1.vmess.site.}}, udp: true}
+  - {name: "[VMess] 🇺🇸 美国【付费推荐：https://jdyvip.link】8", server: www.speedtest.net, port: 80, type: vmess, uuid: 31488365-7b6a-434a-8b7b-8f35012c6a22, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: Se2.vmess.site.}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[SS] [SS] US2 205.5KB/s"
-      - "[Trojan] [Trojan] US413"
-      - "[Trojan] [Trojan] 未知609"
-      - "[Trojan] [Trojan] 未知917 75.3KB/s"
-      - "[Trojan] [Trojan] 江苏"
-      - "[VMess] [VMess] 0|-https://t.me/MrXbin-67"
-      - "[VMess] [VMess] [VMess] [VMess] CN_speednode_0030"
-      - "[VMess] [VMess] [VMess] [VMess] CN_speednode_0033"
-      - "[VMess] [VMess] [VMess] [VMess] [VMess] [VMess] CN_speednode_0029"
-      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 018"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 CN-183.232.199.28-250"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动 2"
-      - "[SS] 🇪🇸 [SS] 🇪🇸 ES 18 → tg@nicevpn123"
-      - "[Trojan] 🇭🇰 [Trojan] 🇭🇰 香港4|@ripaojiedian"
-      - "[VMess] 🇭🇰 [VMess] 🇭🇰 香港7|@ripaojiedian"
-      - "[VMess] 🇲🇾 [VMess] 🇲🇾 [VMess] 🇲🇾 [VMess] 🇲🇾 马来西亚|@ripaojiedian"
-      - "[VMess] 🇷🇺 [VMess] 🇷🇺 俄罗斯 001"
-      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 _CN_中国->🇺🇸_US_美国_1"
-      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 036"
+      - "[SS] CN_speednode_0008"
+      - "[SS] CN_speednode_0009"
+      - "[VMess] VN 4 → tg@nicevpn123"
+      - "[Trojan] 江苏"
+      - "[SS] 🇫🇷 FR法国 122.2KB/s"
+      - "[Trojan] 🇭🇰 香港4|@ripaojiedian"
+      - "[SS] 🇭🇰 香港R|@ripaojiedian"
+      - "[Trojan] 🇯🇵 日本|@ripaojiedian"
+      - "[VMess] 🇰🇷 KR 24 → tg@nicevpn123"
+      - "[VMess] 🇷🇺 俄罗斯 001"
+      - "[Trojan] 🇺🇦 UA 32 → tg@nicevpn123"
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 2"
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 3"
+      - "[Trojan] 🇺🇸 美国4|@ripaojiedian"
+      - "[Trojan] 🇺🇸 美国5|@ripaojiedian"
+      - "[SS] 🇺🇸 美国R|@ripaojiedian"
+      - "[VMess] 🇺🇸 美国【付费推荐：https://jdyvip.link】35"
+      - "[VMess] 🇺🇸 美国【付费推荐：https://jdyvip.link】8"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - "[SS] [SS] US2 205.5KB/s"
-      - "[Trojan] [Trojan] US413"
-      - "[Trojan] [Trojan] 未知609"
-      - "[Trojan] [Trojan] 未知917 75.3KB/s"
-      - "[Trojan] [Trojan] 江苏"
-      - "[VMess] [VMess] 0|-https://t.me/MrXbin-67"
-      - "[VMess] [VMess] [VMess] [VMess] CN_speednode_0030"
-      - "[VMess] [VMess] [VMess] [VMess] CN_speednode_0033"
-      - "[VMess] [VMess] [VMess] [VMess] [VMess] [VMess] CN_speednode_0029"
-      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 018"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 CN-183.232.199.28-250"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动 2"
-      - "[SS] 🇪🇸 [SS] 🇪🇸 ES 18 → tg@nicevpn123"
-      - "[Trojan] 🇭🇰 [Trojan] 🇭🇰 香港4|@ripaojiedian"
-      - "[VMess] 🇭🇰 [VMess] 🇭🇰 香港7|@ripaojiedian"
-      - "[VMess] 🇲🇾 [VMess] 🇲🇾 [VMess] 🇲🇾 [VMess] 🇲🇾 马来西亚|@ripaojiedian"
-      - "[VMess] 🇷🇺 [VMess] 🇷🇺 俄罗斯 001"
-      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 _CN_中国->🇺🇸_US_美国_1"
-      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 036"
+      - "[SS] CN_speednode_0008"
+      - "[SS] CN_speednode_0009"
+      - "[VMess] VN 4 → tg@nicevpn123"
+      - "[Trojan] 江苏"
+      - "[SS] 🇫🇷 FR法国 122.2KB/s"
+      - "[Trojan] 🇭🇰 香港4|@ripaojiedian"
+      - "[SS] 🇭🇰 香港R|@ripaojiedian"
+      - "[Trojan] 🇯🇵 日本|@ripaojiedian"
+      - "[VMess] 🇰🇷 KR 24 → tg@nicevpn123"
+      - "[VMess] 🇷🇺 俄罗斯 001"
+      - "[Trojan] 🇺🇦 UA 32 → tg@nicevpn123"
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 2"
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 3"
+      - "[Trojan] 🇺🇸 美国4|@ripaojiedian"
+      - "[Trojan] 🇺🇸 美国5|@ripaojiedian"
+      - "[SS] 🇺🇸 美国R|@ripaojiedian"
+      - "[VMess] 🇺🇸 美国【付费推荐：https://jdyvip.link】35"
+      - "[VMess] 🇺🇸 美国【付费推荐：https://jdyvip.link】8"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[SS] [SS] US2 205.5KB/s"
-      - "[Trojan] [Trojan] US413"
-      - "[Trojan] [Trojan] 未知609"
-      - "[Trojan] [Trojan] 未知917 75.3KB/s"
-      - "[Trojan] [Trojan] 江苏"
-      - "[VMess] [VMess] 0|-https://t.me/MrXbin-67"
-      - "[VMess] [VMess] [VMess] [VMess] CN_speednode_0030"
-      - "[VMess] [VMess] [VMess] [VMess] CN_speednode_0033"
-      - "[VMess] [VMess] [VMess] [VMess] [VMess] [VMess] CN_speednode_0029"
-      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 018"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 CN-183.232.199.28-250"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动 2"
-      - "[SS] 🇪🇸 [SS] 🇪🇸 ES 18 → tg@nicevpn123"
-      - "[Trojan] 🇭🇰 [Trojan] 🇭🇰 香港4|@ripaojiedian"
-      - "[VMess] 🇭🇰 [VMess] 🇭🇰 香港7|@ripaojiedian"
-      - "[VMess] 🇲🇾 [VMess] 🇲🇾 [VMess] 🇲🇾 [VMess] 🇲🇾 马来西亚|@ripaojiedian"
-      - "[VMess] 🇷🇺 [VMess] 🇷🇺 俄罗斯 001"
-      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 _CN_中国->🇺🇸_US_美国_1"
-      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 036"
+      - "[SS] CN_speednode_0008"
+      - "[SS] CN_speednode_0009"
+      - "[VMess] VN 4 → tg@nicevpn123"
+      - "[Trojan] 江苏"
+      - "[SS] 🇫🇷 FR法国 122.2KB/s"
+      - "[Trojan] 🇭🇰 香港4|@ripaojiedian"
+      - "[SS] 🇭🇰 香港R|@ripaojiedian"
+      - "[Trojan] 🇯🇵 日本|@ripaojiedian"
+      - "[VMess] 🇰🇷 KR 24 → tg@nicevpn123"
+      - "[VMess] 🇷🇺 俄罗斯 001"
+      - "[Trojan] 🇺🇦 UA 32 → tg@nicevpn123"
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 2"
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 3"
+      - "[Trojan] 🇺🇸 美国4|@ripaojiedian"
+      - "[Trojan] 🇺🇸 美国5|@ripaojiedian"
+      - "[SS] 🇺🇸 美国R|@ripaojiedian"
+      - "[VMess] 🇺🇸 美国【付费推荐：https://jdyvip.link】35"
+      - "[VMess] 🇺🇸 美国【付费推荐：https://jdyvip.link】8"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -121,109 +113,101 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[SS] [SS] US2 205.5KB/s"
-      - "[Trojan] [Trojan] US413"
-      - "[Trojan] [Trojan] 未知609"
-      - "[Trojan] [Trojan] 未知917 75.3KB/s"
-      - "[Trojan] [Trojan] 江苏"
-      - "[VMess] [VMess] 0|-https://t.me/MrXbin-67"
-      - "[VMess] [VMess] [VMess] [VMess] CN_speednode_0030"
-      - "[VMess] [VMess] [VMess] [VMess] CN_speednode_0033"
-      - "[VMess] [VMess] [VMess] [VMess] [VMess] [VMess] CN_speednode_0029"
-      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 018"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 CN-183.232.199.28-250"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动 2"
-      - "[SS] 🇪🇸 [SS] 🇪🇸 ES 18 → tg@nicevpn123"
-      - "[Trojan] 🇭🇰 [Trojan] 🇭🇰 香港4|@ripaojiedian"
-      - "[VMess] 🇭🇰 [VMess] 🇭🇰 香港7|@ripaojiedian"
-      - "[VMess] 🇲🇾 [VMess] 🇲🇾 [VMess] 🇲🇾 [VMess] 🇲🇾 马来西亚|@ripaojiedian"
-      - "[VMess] 🇷🇺 [VMess] 🇷🇺 俄罗斯 001"
-      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 _CN_中国->🇺🇸_US_美国_1"
-      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 036"
+      - "[SS] CN_speednode_0008"
+      - "[SS] CN_speednode_0009"
+      - "[VMess] VN 4 → tg@nicevpn123"
+      - "[Trojan] 江苏"
+      - "[SS] 🇫🇷 FR法国 122.2KB/s"
+      - "[Trojan] 🇭🇰 香港4|@ripaojiedian"
+      - "[SS] 🇭🇰 香港R|@ripaojiedian"
+      - "[Trojan] 🇯🇵 日本|@ripaojiedian"
+      - "[VMess] 🇰🇷 KR 24 → tg@nicevpn123"
+      - "[VMess] 🇷🇺 俄罗斯 001"
+      - "[Trojan] 🇺🇦 UA 32 → tg@nicevpn123"
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 2"
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 3"
+      - "[Trojan] 🇺🇸 美国4|@ripaojiedian"
+      - "[Trojan] 🇺🇸 美国5|@ripaojiedian"
+      - "[SS] 🇺🇸 美国R|@ripaojiedian"
+      - "[VMess] 🇺🇸 美国【付费推荐：https://jdyvip.link】35"
+      - "[VMess] 🇺🇸 美国【付费推荐：https://jdyvip.link】8"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "[Trojan] 🇭🇰 [Trojan] 🇭🇰 香港4|@ripaojiedian"
-      - "[VMess] 🇭🇰 [VMess] 🇭🇰 香港7|@ripaojiedian"
+      - "[Trojan] 🇭🇰 香港4|@ripaojiedian"
+      - "[SS] 🇭🇰 香港R|@ripaojiedian"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[SS] [SS] US2 205.5KB/s"
-      - "[Trojan] [Trojan] US413"
-      - "[Trojan] [Trojan] 未知609"
-      - "[Trojan] [Trojan] 未知917 75.3KB/s"
-      - "[Trojan] [Trojan] 江苏"
-      - "[VMess] [VMess] 0|-https://t.me/MrXbin-67"
-      - "[VMess] [VMess] [VMess] [VMess] CN_speednode_0030"
-      - "[VMess] [VMess] [VMess] [VMess] CN_speednode_0033"
-      - "[VMess] [VMess] [VMess] [VMess] [VMess] [VMess] CN_speednode_0029"
-      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 018"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 CN-183.232.199.28-250"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动 2"
-      - "[SS] 🇪🇸 [SS] 🇪🇸 ES 18 → tg@nicevpn123"
-      - "[Trojan] 🇭🇰 [Trojan] 🇭🇰 香港4|@ripaojiedian"
-      - "[VMess] 🇭🇰 [VMess] 🇭🇰 香港7|@ripaojiedian"
-      - "[VMess] 🇲🇾 [VMess] 🇲🇾 [VMess] 🇲🇾 [VMess] 🇲🇾 马来西亚|@ripaojiedian"
-      - "[VMess] 🇷🇺 [VMess] 🇷🇺 俄罗斯 001"
-      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 _CN_中国->🇺🇸_US_美国_1"
-      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 036"
+      - "[SS] CN_speednode_0008"
+      - "[SS] CN_speednode_0009"
+      - "[VMess] VN 4 → tg@nicevpn123"
+      - "[Trojan] 江苏"
+      - "[SS] 🇫🇷 FR法国 122.2KB/s"
+      - "[Trojan] 🇭🇰 香港4|@ripaojiedian"
+      - "[SS] 🇭🇰 香港R|@ripaojiedian"
+      - "[Trojan] 🇯🇵 日本|@ripaojiedian"
+      - "[VMess] 🇰🇷 KR 24 → tg@nicevpn123"
+      - "[VMess] 🇷🇺 俄罗斯 001"
+      - "[Trojan] 🇺🇦 UA 32 → tg@nicevpn123"
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 2"
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 3"
+      - "[Trojan] 🇺🇸 美国4|@ripaojiedian"
+      - "[Trojan] 🇺🇸 美国5|@ripaojiedian"
+      - "[SS] 🇺🇸 美国R|@ripaojiedian"
+      - "[VMess] 🇺🇸 美国【付费推荐：https://jdyvip.link】35"
+      - "[VMess] 🇺🇸 美国【付费推荐：https://jdyvip.link】8"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[SS] [SS] US2 205.5KB/s"
-      - "[Trojan] [Trojan] US413"
-      - "[Trojan] [Trojan] 未知609"
-      - "[Trojan] [Trojan] 未知917 75.3KB/s"
-      - "[Trojan] [Trojan] 江苏"
-      - "[VMess] [VMess] 0|-https://t.me/MrXbin-67"
-      - "[VMess] [VMess] [VMess] [VMess] CN_speednode_0030"
-      - "[VMess] [VMess] [VMess] [VMess] CN_speednode_0033"
-      - "[VMess] [VMess] [VMess] [VMess] [VMess] [VMess] CN_speednode_0029"
-      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 018"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 CN-183.232.199.28-250"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动 2"
-      - "[SS] 🇪🇸 [SS] 🇪🇸 ES 18 → tg@nicevpn123"
-      - "[Trojan] 🇭🇰 [Trojan] 🇭🇰 香港4|@ripaojiedian"
-      - "[VMess] 🇭🇰 [VMess] 🇭🇰 香港7|@ripaojiedian"
-      - "[VMess] 🇲🇾 [VMess] 🇲🇾 [VMess] 🇲🇾 [VMess] 🇲🇾 马来西亚|@ripaojiedian"
-      - "[VMess] 🇷🇺 [VMess] 🇷🇺 俄罗斯 001"
-      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 _CN_中国->🇺🇸_US_美国_1"
-      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 036"
+      - "[SS] CN_speednode_0008"
+      - "[SS] CN_speednode_0009"
+      - "[VMess] VN 4 → tg@nicevpn123"
+      - "[Trojan] 江苏"
+      - "[SS] 🇫🇷 FR法国 122.2KB/s"
+      - "[Trojan] 🇭🇰 香港4|@ripaojiedian"
+      - "[SS] 🇭🇰 香港R|@ripaojiedian"
+      - "[Trojan] 🇯🇵 日本|@ripaojiedian"
+      - "[VMess] 🇰🇷 KR 24 → tg@nicevpn123"
+      - "[VMess] 🇷🇺 俄罗斯 001"
+      - "[Trojan] 🇺🇦 UA 32 → tg@nicevpn123"
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 2"
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 3"
+      - "[Trojan] 🇺🇸 美国4|@ripaojiedian"
+      - "[Trojan] 🇺🇸 美国5|@ripaojiedian"
+      - "[SS] 🇺🇸 美国R|@ripaojiedian"
+      - "[VMess] 🇺🇸 美国【付费推荐：https://jdyvip.link】35"
+      - "[VMess] 🇺🇸 美国【付费推荐：https://jdyvip.link】8"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[SS] [SS] US2 205.5KB/s"
-      - "[Trojan] [Trojan] US413"
-      - "[Trojan] [Trojan] 未知609"
-      - "[Trojan] [Trojan] 未知917 75.3KB/s"
-      - "[Trojan] [Trojan] 江苏"
-      - "[VMess] [VMess] 0|-https://t.me/MrXbin-67"
-      - "[VMess] [VMess] [VMess] [VMess] CN_speednode_0030"
-      - "[VMess] [VMess] [VMess] [VMess] CN_speednode_0033"
-      - "[VMess] [VMess] [VMess] [VMess] [VMess] [VMess] CN_speednode_0029"
-      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 018"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 CN-183.232.199.28-250"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动 2"
-      - "[SS] 🇪🇸 [SS] 🇪🇸 ES 18 → tg@nicevpn123"
-      - "[Trojan] 🇭🇰 [Trojan] 🇭🇰 香港4|@ripaojiedian"
-      - "[VMess] 🇭🇰 [VMess] 🇭🇰 香港7|@ripaojiedian"
-      - "[VMess] 🇲🇾 [VMess] 🇲🇾 [VMess] 🇲🇾 [VMess] 🇲🇾 马来西亚|@ripaojiedian"
-      - "[VMess] 🇷🇺 [VMess] 🇷🇺 俄罗斯 001"
-      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 _CN_中国->🇺🇸_US_美国_1"
-      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 036"
+      - "[SS] CN_speednode_0008"
+      - "[SS] CN_speednode_0009"
+      - "[VMess] VN 4 → tg@nicevpn123"
+      - "[Trojan] 江苏"
+      - "[SS] 🇫🇷 FR法国 122.2KB/s"
+      - "[Trojan] 🇭🇰 香港4|@ripaojiedian"
+      - "[SS] 🇭🇰 香港R|@ripaojiedian"
+      - "[Trojan] 🇯🇵 日本|@ripaojiedian"
+      - "[VMess] 🇰🇷 KR 24 → tg@nicevpn123"
+      - "[VMess] 🇷🇺 俄罗斯 001"
+      - "[Trojan] 🇺🇦 UA 32 → tg@nicevpn123"
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 2"
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 3"
+      - "[Trojan] 🇺🇸 美国4|@ripaojiedian"
+      - "[Trojan] 🇺🇸 美国5|@ripaojiedian"
+      - "[SS] 🇺🇸 美国R|@ripaojiedian"
+      - "[VMess] 🇺🇸 美国【付费推荐：https://jdyvip.link】35"
+      - "[VMess] 🇺🇸 美国【付费推荐：https://jdyvip.link】8"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -239,26 +223,24 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[SS] [SS] US2 205.5KB/s"
-      - "[Trojan] [Trojan] US413"
-      - "[Trojan] [Trojan] 未知609"
-      - "[Trojan] [Trojan] 未知917 75.3KB/s"
-      - "[Trojan] [Trojan] 江苏"
-      - "[VMess] [VMess] 0|-https://t.me/MrXbin-67"
-      - "[VMess] [VMess] [VMess] [VMess] CN_speednode_0030"
-      - "[VMess] [VMess] [VMess] [VMess] CN_speednode_0033"
-      - "[VMess] [VMess] [VMess] [VMess] [VMess] [VMess] CN_speednode_0029"
-      - "[VMess] 🇨🇦 [VMess] 🇨🇦 加拿大 018"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 CN-183.232.199.28-250"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 广东省广州市 移动 2"
-      - "[SS] 🇪🇸 [SS] 🇪🇸 ES 18 → tg@nicevpn123"
-      - "[Trojan] 🇭🇰 [Trojan] 🇭🇰 香港4|@ripaojiedian"
-      - "[VMess] 🇭🇰 [VMess] 🇭🇰 香港7|@ripaojiedian"
-      - "[VMess] 🇲🇾 [VMess] 🇲🇾 [VMess] 🇲🇾 [VMess] 🇲🇾 马来西亚|@ripaojiedian"
-      - "[VMess] 🇷🇺 [VMess] 🇷🇺 俄罗斯 001"
-      - "[Trojan] 🇺🇸 [Trojan] 🇺🇸 _CN_中国->🇺🇸_US_美国_1"
-      - "[VMess] 🇺🇸 [VMess] 🇺🇸 美国 036"
+      - "[SS] CN_speednode_0008"
+      - "[SS] CN_speednode_0009"
+      - "[VMess] VN 4 → tg@nicevpn123"
+      - "[Trojan] 江苏"
+      - "[SS] 🇫🇷 FR法国 122.2KB/s"
+      - "[Trojan] 🇭🇰 香港4|@ripaojiedian"
+      - "[SS] 🇭🇰 香港R|@ripaojiedian"
+      - "[Trojan] 🇯🇵 日本|@ripaojiedian"
+      - "[VMess] 🇰🇷 KR 24 → tg@nicevpn123"
+      - "[VMess] 🇷🇺 俄罗斯 001"
+      - "[Trojan] 🇺🇦 UA 32 → tg@nicevpn123"
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 2"
+      - "[VMess] 🇺🇸 美国 CloudFlare节点 3"
+      - "[Trojan] 🇺🇸 美国4|@ripaojiedian"
+      - "[Trojan] 🇺🇸 美国5|@ripaojiedian"
+      - "[SS] 🇺🇸 美国R|@ripaojiedian"
+      - "[VMess] 🇺🇸 美国【付费推荐：https://jdyvip.link】35"
+      - "[VMess] 🇺🇸 美国【付费推荐：https://jdyvip.link】8"
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
