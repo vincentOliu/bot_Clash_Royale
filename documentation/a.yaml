@@ -1,4 +1,3 @@
-mixed-port: 7890
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -6,302 +5,231 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[VMess] 2|🇺🇸12 |  3.6MB/s", server: 03f17bde-supts0-tfvcxz-1nq4g.cu.plebai.net, port: 5229, type: vmess, uuid: 80aa5178-f936-11ed-8ce6-f23c91369f2d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] CN_speednode_0019", server: 120.232.153.40, port: 42892, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] CN_speednode_0039", server: 119.188.66.248, port: 22643, type: vmess, uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: zxjp-c.tkong.cc}}, udp: true}
-  - {name: "[SSR] China_None_ssr_108%%�", server: cn17.mynode.me, port: 8625, type: ssr, cipher: chacha20-ietf, password: passwd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: 20176-L1juani984.download.microsoft.com, udp: true}
-  - {name: "[SS] SE-151.236.206.42-004", server: 151.236.206.42, port: 39649, type: ss, cipher: chacha20-ietf-poly1305, password: zCbrIk12Qlg9YcERdnzjoh, udp: true}
-  - {name: "[SSR] [SSR] [SSR] [SSR] [SSR] CN_speednode_00%%�[%%�[%�\x1f{%�\x1f@���%�\x1f{%�\x1fI%%�[�%%�", server: 2.hublink.pro, port: 40218, type: ssr, cipher: rc4-md5, password: ENZ52K, protocol: auth_aes128_md5, obfs: plain, protocol-param: 92902:pFWGOQ, obfs-param: "cd2b692902.6602b8463464108506.microsoft.co%%�%%%�[%�\x1fI%%�[�%%�", udp: true}
-  - {name: "[SSR] [SSR] [SSR] [SSR] [SSR] [SSR] speednode_00%%�[%%�[%%�[��^%%�[��^%%�[��^%%�[��^%%�[��rR^��վ�%�\x1fW%%�[�%%�[�%%�[�%%�", server: 2.hublink.pro, port: 40208, type: ssr, cipher: rc4-md5, password: ENZ52K, protocol: auth_aes128_md5, obfs: plain, protocol-param: 92902:pFWGOQ, obfs-param: "cd2b692902.6602b8463464108506.microsoft.co%%�%%%�[%%�[��R^��վ�%�\x1fII{�%�", udp: true}
-  - {name: "[Trojan] [Trojan] 1|🇬🇧3 |  4.5MB/s", server: 84.8.159.155, port: 10200, type: trojan, password: b19c4375-d847-4c40-9824-4767c88b5f38, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] [VMess] [VMess] [VMess] [VMess] [VMess] speednode_0041", server: tk.hzlt.tkddns.xyz, port: 22643, type: vmess, uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: zxjp-c.tkong.cc}}, udp: true}
-  - {name: "[VMess] 🇨🇦 CA-51.79.103.76-007", server: 51.79.103.76, port: 80, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc}}, udp: true}
-  - {name: "[VMess] 🇨🇦 加拿大 07", server: v25.heduian.link, port: 30825, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: baidu.com}}, udp: true}
-  - {name: "[VMess] 🇨🇳 CN-120.198.71.214-201", server: 120.198.71.214, port: 46345, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇨🇳 CN-120.232.153.40-026", server: 120.232.153.40, port: 57852, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇨🇳 CN-120.232.153.40-204", server: 120.232.153.40, port: 42892, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇨🇳 CN-120.232.153.41-027", server: 120.232.153.41, port: 46597, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇨🇳 CN-183.236.51.38-024", server: 183.236.51.38, port: 34652, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇨🇳 CN-183.236.51.38-106", server: 183.236.51.38, port: 43121, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇨🇳 CN-183.236.51.38-186", server: 183.236.51.38, port: 59554, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇨🇳 CN-183.236.51.38-211", server: 183.236.51.38, port: 37802, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇨🇳 CN-183.236.51.38-226", server: 183.236.51.38, port: 42524, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇨🇳 CN-223.109.230.166-023", server: tk.hzlt.tkddns.xyz, port: 22641, type: vmess, uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: zxjp-a.tkong.cc}}, udp: true}
-  - {name: "[VMess] 🇨🇳 CN-E 14", server: 120.232.153.40, port: 36609, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[Trojan] 🇨🇳 China_Guangzhou_trojan_11113", server: gysz0000.dynu.net, port: 38340, type: trojan, password: VMhGp5wEIyCDf90T, sni: hk39.work.gd, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇨🇳 China_Guangzhou_vmess_1135", server: 120.232.153.41, port: 44491, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[SS] 🇨🇳 China_Haikou_ss_10100", server: 111.29.57.125, port: 52612, type: ss, cipher: chacha20-ietf-poly1305, password: 2be0c954-4291-45ea-b47d-ca713180550b, udp: true}
-  - {name: "[SS] 🇨🇳 China_None_ss_10105", server: gdyd.aicheetah.lol, port: 57314, type: ss, cipher: chacha20-ietf-poly1305, password: d192a833-b118-4b46-8e54-12cf5025d4cd, udp: true}
-  - {name: "[SS] 🇨🇳 China_None_ss_10107", server: gsyd.aicheetah.lol, port: 33248, type: ss, cipher: chacha20-ietf-poly1305, password: d192a833-b118-4b46-8e54-12cf5025d4cd, udp: true}
-  - {name: "[SS] 🇨🇳 China_None_ss_10109", server: gdlt.aicheetah.lol, port: 27534, type: ss, cipher: chacha20-ietf-poly1305, password: d192a833-b118-4b46-8e54-12cf5025d4cd, udp: true}
-  - {name: "[SS] 🇨🇳 China_None_ss_10111", server: gdlt.aicheetah.lol, port: 43450, type: ss, cipher: chacha20-ietf-poly1305, password: d192a833-b118-4b46-8e54-12cf5025d4cd, udp: true}
-  - {name: "[SS] 🇨🇳 China_None_ss_10117", server: gsyd.aicheetah.lol, port: 55601, type: ss, cipher: chacha20-ietf-poly1305, password: d192a833-b118-4b46-8e54-12cf5025d4cd, udp: true}
-  - {name: "[SS] 🇨🇳 China_None_ss_10123", server: gdlt.aicheetah.lol, port: 50269, type: ss, cipher: chacha20-ietf-poly1305, password: d192a833-b118-4b46-8e54-12cf5025d4cd, udp: true}
-  - {name: "[VMess] 🇨🇳 China_None_vmess_10101", server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: baidu.com}}, udp: true}
-  - {name: "[VMess] 🇨🇳 China_None_vmess_10102", server: cloudgd.coemn.com, port: 46003, type: vmess, uuid: 4c5a8a75-7d65-40a9-8c3b-a67abae08534, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cloudgd.coemn.com}}, udp: true}
-  - {name: "[VMess] 🇨🇳 China_None_vmess_10116", server: v8.heduian.link, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: baidu.com}}, udp: true}
-  - {name: "[VMess] 🇨🇳 China_None_vmess_10124", server: cloudgd.coemn.com, port: 46003, type: vmess, uuid: 4c5a8a75-7d65-40a9-8c3b-a67abae08534, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cloudgd.coemn.com}}, udp: true}
-  - {name: "[VMess] 🇨🇳 China_None_vmess_1084", server: 03f17bde-supts0-tfvcxz-1nq4g.cu.plebai.net, port: 5229, type: vmess, uuid: 80aa5178-f936-11ed-8ce6-f23c91369f2d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[SS] 🇨🇳 [SS] 🇨🇳 [SS] 🇨🇳 CN-58.19.16.228-261", server: hk01.x.quickcht3.club, port: 52611, type: ss, cipher: chacha20-ietf-poly1305, password: 2be0c954-4291-45ea-b47d-ca713180550b, udp: true}
-  - {name: "[Trojan] 🇨🇳 [Trojan] 🇨🇳 [Trojan] 🇨🇳 China_None_trojan_1166", server: vt-bana2-cn-11.ghpgwqswodgzv.com, port: 40021, type: trojan, password: a38c9e28-9960-4e31-9f18-ed2495a756aa, sni: vt-bana2-cn-11.ghpgwqswodgzv.com, skip-cert-verify: true, network: ws, ws-opts: {path: /dl_media, headers: {Host: vt-bana2-cn-11.ghpgwqswodgzv.com}}, udp: true}
-  - {name: "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-120.198.71.214-113", server: 120.198.71.214, port: 46345, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-120.232.153.41-105", server: 120.232.153.41, port: 46597, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-183.236.51.38-013", server: 183.236.51.38, port: 37802, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-183.236.51.38-196", server: 183.236.51.38, port: 59554, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 CN-120.198.71.219-225", server: 120.198.71.219, port: 51095, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇨🇳 节点-CN 01", server: dxv4.pai50288.uk, port: 14100, type: vmess, uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[SS] 🇫🇷 FR 02", server: 51.15.15.82, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: "[Trojan] 🇫🇷 FR-141.227.138.29-034", server: 141.227.138.29, port: 1935, type: trojan, password: hZ7JkYVAfB, skip-cert-verify: true, udp: true}
-  - {name: "[Trojan] 🇫🇷 France_None_trojan_1088", server: 141.227.138.29, port: 1935, type: trojan, password: hZ7JkYVAfB, sni: x1ch-ovh.devefun.net, skip-cert-verify: true, udp: true}
-  - {name: "[Trojan] 🇬🇧 英国 016", server: 194.164.57.9, port: 1935, type: trojan, password: I46LpSIM1f, sni: x4ger-ionos.devefun.net, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇬🇧 英国 04", server: v36.heduian.link, port: 30836, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: baidu.com}}, udp: true}
-  - {name: "[SS] 🇭🇰 Hong Kong_Hong Kong_ss_1099", server: 129.226.58.228, port: 3306, type: ss, cipher: aes-256-cfb, password: 1601e3c29c8db1a88942cf0cad731bf3, udp: true}
-  - {name: "[SS] 🇭🇰 Hong Kong_None_ss_1098", server: hk02.x.quickcht3.club, port: 52612, type: ss, cipher: chacha20-ietf-poly1305, password: 2be0c954-4291-45ea-b47d-ca713180550b, udp: true}
-  - {name: "[Trojan] 🇯🇵 TOKYO-TROJAN 01", server: 43.167.160.4, port: 443, type: trojan, password: oIwjHDXpKePvYIg8, sni: myvps.cfd, skip-cert-verify: true, udp: true}
-  - {name: "[SS] 🇰🇷 South Korea_Seoul_ss_10112", server: 43.131.255.175, port: 3306, type: ss, cipher: aes-256-cfb, password: 1601e3c29c8db1a88942cf0cad731bf3, udp: true}
-  - {name: "[VMess] 🇳🇱 荷兰 01", server: v30.heduian.link, port: 30830, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ocbc.com}}, udp: true}
-  - {name: "[SS] 🇷🇸 Serbia_Belgrade_ss_1073", server: 185.186.77.220, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: "[SS] 🇷🇺 RU 05", server: 5.189.201.250, port: 31348, type: ss, cipher: chacha20-ietf-poly1305, password: RiPuKJJl18ZgvLpTjWxBwSfKiPkt9gzFKyxGCY8eHtOcDb2X, udp: true}
-  - {name: "[SS] 🇸🇬 SG新加坡3", server: gg21.hangfengjiasu.com, port: 13203, type: ss, cipher: chacha20-ietf-poly1305, password: cdc48a7a-b618-45af-a831-5afbd686b02f, udp: true}
-  - {name: "[VMess] 🇸🇬 T新加坡 01", server: v12.heduian.link, port: 30812, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ocbc.com}}, udp: true}
-  - {name: "[Trojan] 🇸🇬 新加坡 25", server: automq4-proxy.automq-sg.com, port: 443, type: trojan, password: dQUWbcwECl, skip-cert-verify: true, udp: true}
-  - {name: "[SS] 🇺🇸 US 226 → tg@nicevpn123", server: 38.121.43.71, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: "[SS] 🇺🇸 US 407 → tg@nicevpn123", server: 38.110.1.88, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: "[SS] 🇺🇸 US 944 → tg@nicevpn123", server: 38.110.1.88, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: "[VMess] 🇺🇸 US-2.58.87.221-035", server: 2.58.87.221, port: 14555, type: vmess, uuid: 6c764a03-bb1a-4bc6-baca-452453fce1ae, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 2.58.87.221}}, udp: true}
-  - {name: "[VMess] 🇺🇸 United States_None_vmess_1074", server: 156.238.18.68, port: 8443, type: vmess, uuid: c313606f-98c2-4d7b-ba74-48b94f61b11d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: uswuxian.pai50288.uk, network: ws, ws-opts: {path: /, headers: {Host: uswuxian.pai50288.uk}}, udp: true}
-  - {name: "[SS] 🇺🇸 United States_Phoenix_ss_1081", server: 184.170.241.194, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
-  - {name: "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_2", server: v30.heduian.link, port: 30830, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v30.heduian.link}}, udp: true}
-  - {name: "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_5", server: v8.heduian.link, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v8.heduian.link}}, udp: true}
-  - {name: "[VMess] 🇺🇸 美国 16", server: v4.heduian.link, port: 30804, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ocbc.com}}, udp: true}
-  - {name: "[VMess] 🇺🇸 美国 19", server: v29.heduian.link, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ocbc.com}}, udp: true}
-  - {name: "[VMess] 🇺🇸 美国 22", server: v32.heduian.link, port: 30832, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: baidu.com}}, udp: true}
-  - {name: "[VMess] 🇺🇸 美国 324", server: 107.148.207.249, port: 48712, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇺🇸 美国 475", server: 5.180.30.146, port: 27773, type: vmess, uuid: b2347239-dd15-40b3-b683-50cc2ff19ae7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[SS] 2|🇰🇷13 |  1.3MB/s", server: 52.79.248.173, port: 80, type: ss, cipher: aes-256-gcm, password: amazonskr05, udp: true}
+  - {name: "[SS] 2|🇰🇷7 |  5.6MB/s", server: p239.panda004.net, port: 1641, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: "[SS] 2|🇰🇷9 |  1.2MB/s", server: p231.panda004.net, port: 11389, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: "[VMess] CN_speednode_0042", server: v8.heduian.link, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: baidu.com}}, udp: true}
+  - {name: "[SS] tg频道:@ripaojiedian", server: 43.207.170.102, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "[VMess] 🇨🇳 CN-120.198.71.214-033", server: 120.198.71.214, port: 32980, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[VMess] 🇨🇳 CN-120.198.71.216-249", server: 120.198.71.216, port: 42259, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[VMess] 🇨🇳 CN-120.198.71.219-165", server: 120.198.71.219, port: 44015, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[VMess] 🇨🇳 CN-120.232.153.63-036", server: 120.232.153.63, port: 37805, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[VMess] 🇨🇳 China_None_vmess_11107", server: 183.236.51.38, port: 41902, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[VMess] 🇨🇳 China_None_vmess_11110", server: tk.hzlt.tkddns.xyz, port: 22642, type: vmess, uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, servername: tk.hzlt.tkddns.xyz, network: ws, ws-opts: {path: /, headers: {Host: zxjp-b.tkong.cc}}, udp: true}
+  - {name: "[Trojan] 🇨🇳 [Trojan] 🇨🇳 China_Guangzhou_trojan_11113", server: gysz0000.dynu.net, port: 38340, type: trojan, password: VMhGp5wEIyCDf90T, sni: hk39.work.gd, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇨🇳 [Trojan] 🇨🇳 广东省广州市 电信", server: sla.cn.964e995b760.gogodns.xin, port: 22271, type: trojan, password: 9fb2a71b-3875-41d8-8947-5c7dd7cdc30a, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: "[VMess] 🇨🇳 中国【机场推荐：https://socks.news】32", server: 120.198.71.219, port: 51095, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[VMess] 🇨🇳 中国【机场推荐：https://socks.news】78", server: 183.236.51.38, port: 32919, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[VMess] 🇪🇸 _CN_中国->🇪🇸_ES_西班牙", server: v5.heduian.link, port: 30805, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v5.heduian.link}}, udp: true}
+  - {name: "[Trojan] 🇭🇰 Hong Kong_Hong Kong_trojan_1063", server: sla.cn.964e995b760.gogodns.xin, port: 22269, type: trojan, password: e7eeb9b6-6b38-4159-bdf3-ef90e63cce65, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: "[VMess] 🇭🇰 香港3|@ripaojiedian", server: 47.83.137.220, port: 57888, type: vmess, uuid: b68f8c35-935e-444f-8944-291bf15a56a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[SS] 🇯🇵 Japan_Tokyo_ss_1166", server: 18.183.126.3, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "[SS] 🇰🇷 South Korea_Cheonan_ss_1098", server: p235.panda004.net, port: 8772, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: "[SS] 🇰🇷 South Korea_Incheon_ss_1078", server: 15.165.74.90, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "[SS] 🇰🇷 South Korea_Incheon_ss_1177", server: 3.38.99.70, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "[SS] 🇰🇷 South Korea_Songpa-gu_ss_11115", server: p230.panda004.net, port: 58487, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: "[SS] 🇰🇷 [SS] 🇰🇷 韩国 首尔Amazon数据中心", server: 3.34.141.66, port: 80, type: ss, cipher: aes-256-gcm, password: amazonskr05, udp: true}
+  - {name: "[SS] 🇰🇷 韩国特殊|@ripaojiedian", server: 13.231.81.63, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】103", server: sla.cn.964e995b760.gogodns.xin, port: 44397, type: trojan, password: 690ec257-f7f2-4dd3-acad-215fd7cf175e, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】19", server: sla.cn.964e995b760.gogodns.xin, port: 43397, type: trojan, password: ba451618-40e1-4f22-a39f-6b52cef19932, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】21", server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz, port: 27103, type: trojan, password: fd29d178-3039-4f77-a99d-832efb3b1189, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】33", server: sla.cn.964e995b760.gogodns.xin, port: 27201, type: trojan, password: c702521f-8953-4bb0-95df-ec0479d68c1a, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】50", server: sla.cn.964e995b760.gogodns.xin, port: 22269, type: trojan, password: d1133687-5bac-47e4-9277-ac0e4bfccb94, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】51", server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz, port: 27408, type: trojan, password: f4ae93de-3230-43b4-9267-70591a8974f8, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】53", server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz, port: 22269, type: trojan, password: 95b6fb69-e8f3-4135-be0a-df3e06ab8265, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】54", server: sla.cn.964e995b760.gogodns.xin, port: 27001, type: trojan, password: 379dd033-5db9-4498-9648-e2e5803a56e9, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】57", server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz, port: 43383, type: trojan, password: b63b2102-a88a-47cf-a936-f5c3088a4d10, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】59", server: sla.cn.964e995b760.gogodns.xin, port: 22271, type: trojan, password: cd2c25c7-e433-4f51-b887-4599eea2b08b, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】60", server: sla.cn.964e995b760.gogodns.xin, port: 27002, type: trojan, password: b62dde84-5db9-4015-a879-d2888c624d2d, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】61", server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz, port: 22271, type: trojan, password: 7ff29f7b-49c2-4c80-9a4e-9de52ca010bb, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】66", server: sla.cn.964e995b760.gogodns.xin, port: 46668, type: trojan, password: c58865ad-eb12-45fe-953b-39822a0c11d6, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】70", server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz, port: 43393, type: trojan, password: cabbbe38-8a91-461d-84ee-57decb8b41ef, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】73", server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz, port: 43396, type: trojan, password: 1e0a3f8d-dd1a-49f5-9d78-70f191f70ca4, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】88", server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz, port: 34014, type: trojan, password: 5399c848-b0a3-49f9-b524-78ca874902f7, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】96", server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz, port: 43583, type: trojan, password: c12a9e3b-e8c8-4a09-8919-4dc7c86750cc, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】97", server: sla.cn.964e995b760.gogodns.xin, port: 33506, type: trojan, password: 5db9b45b-e4be-4ad6-b50c-1342d907cc21, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: "[SS] 🇸🇬 Singapore_Singapore_ss_1066", server: 54.251.144.227, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "[SS] 🇸🇬 [SS] 🇸🇬 新加坡 Amazon数据中心", server: 3.0.139.112, port: 80, type: ss, cipher: aes-256-gcm, password: amazonskr05, udp: true}
+  - {name: "[VMess] 🇸🇬 新加坡4|@ripaojiedian", server: 180e94b7-sv59c0-t6vkd1-6tmd.d.volczijie.com, port: 4135, type: vmess, uuid: d385d6b2-cc15-11ee-89bc-f23c93141fad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[SS] 🇸🇬 狮城特殊|@ripaojiedian", server: 44.247.228.17, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "[SS] 🇺🇸 United States_Boardman_ss_1085", server: 35.89.254.216, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_2", server: v8.heduian.link, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v8.heduian.link}}, udp: true}
+  - {name: "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_7", server: v25.heduian.link, port: 30825, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v25.heduian.link}}, udp: true}
+  - {name: "[SS] 🇻🇳 Vietnam_None_ss_1097", server: 103.186.154.27, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: "[VMess] 🇿🇦 [VMess] 🇿🇦 南非 V2CROSS.COM", server: 45.194.53.81, port: 443, type: vmess, uuid: 0212fab5-e93c-4904-b7a8-187fd535f354, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 3sdfgvcxxx.938.pp.ua}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[VMess] 2|🇺🇸12 |  3.6MB/s"
-      - "[VMess] CN_speednode_0019"
-      - "[VMess] CN_speednode_0039"
-      - "[SS] SE-151.236.206.42-004"
-      - "[Trojan] [Trojan] 1|🇬🇧3 |  4.5MB/s"
-      - "[VMess] [VMess] [VMess] [VMess] [VMess] [VMess] speednode_0041"
-      - "[VMess] 🇨🇦 CA-51.79.103.76-007"
-      - "[VMess] 🇨🇦 加拿大 07"
-      - "[VMess] 🇨🇳 CN-120.198.71.214-201"
-      - "[VMess] 🇨🇳 CN-120.232.153.40-026"
-      - "[VMess] 🇨🇳 CN-120.232.153.40-204"
-      - "[VMess] 🇨🇳 CN-120.232.153.41-027"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-024"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-106"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-186"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-211"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-226"
-      - "[VMess] 🇨🇳 CN-223.109.230.166-023"
-      - "[VMess] 🇨🇳 CN-E 14"
-      - "[Trojan] 🇨🇳 China_Guangzhou_trojan_11113"
-      - "[VMess] 🇨🇳 China_Guangzhou_vmess_1135"
-      - "[SS] 🇨🇳 China_Haikou_ss_10100"
-      - "[SS] 🇨🇳 China_None_ss_10105"
-      - "[SS] 🇨🇳 China_None_ss_10107"
-      - "[SS] 🇨🇳 China_None_ss_10109"
-      - "[SS] 🇨🇳 China_None_ss_10111"
-      - "[SS] 🇨🇳 China_None_ss_10117"
-      - "[SS] 🇨🇳 China_None_ss_10123"
-      - "[VMess] 🇨🇳 China_None_vmess_10101"
-      - "[VMess] 🇨🇳 China_None_vmess_10102"
-      - "[VMess] 🇨🇳 China_None_vmess_10116"
-      - "[VMess] 🇨🇳 China_None_vmess_10124"
-      - "[VMess] 🇨🇳 China_None_vmess_1084"
-      - "[SS] 🇨🇳 [SS] 🇨🇳 [SS] 🇨🇳 CN-58.19.16.228-261"
-      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 [Trojan] 🇨🇳 China_None_trojan_1166"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-120.198.71.214-113"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-120.232.153.41-105"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-183.236.51.38-013"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-183.236.51.38-196"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 CN-120.198.71.219-225"
-      - "[VMess] 🇨🇳 节点-CN 01"
-      - "[SS] 🇫🇷 FR 02"
-      - "[Trojan] 🇫🇷 FR-141.227.138.29-034"
-      - "[Trojan] 🇫🇷 France_None_trojan_1088"
-      - "[Trojan] 🇬🇧 英国 016"
-      - "[VMess] 🇬🇧 英国 04"
-      - "[SS] 🇭🇰 Hong Kong_Hong Kong_ss_1099"
-      - "[SS] 🇭🇰 Hong Kong_None_ss_1098"
-      - "[Trojan] 🇯🇵 TOKYO-TROJAN 01"
-      - "[SS] 🇰🇷 South Korea_Seoul_ss_10112"
-      - "[VMess] 🇳🇱 荷兰 01"
-      - "[SS] 🇷🇸 Serbia_Belgrade_ss_1073"
-      - "[SS] 🇷🇺 RU 05"
-      - "[SS] 🇸🇬 SG新加坡3"
-      - "[VMess] 🇸🇬 T新加坡 01"
-      - "[Trojan] 🇸🇬 新加坡 25"
-      - "[SS] 🇺🇸 US 226 → tg@nicevpn123"
-      - "[SS] 🇺🇸 US 407 → tg@nicevpn123"
-      - "[SS] 🇺🇸 US 944 → tg@nicevpn123"
-      - "[VMess] 🇺🇸 US-2.58.87.221-035"
-      - "[VMess] 🇺🇸 United States_None_vmess_1074"
-      - "[SS] 🇺🇸 United States_Phoenix_ss_1081"
+      - "[SS] 2|🇰🇷13 |  1.3MB/s"
+      - "[SS] 2|🇰🇷7 |  5.6MB/s"
+      - "[SS] 2|🇰🇷9 |  1.2MB/s"
+      - "[VMess] CN_speednode_0042"
+      - "[SS] tg频道:@ripaojiedian"
+      - "[VMess] 🇨🇳 CN-120.198.71.214-033"
+      - "[VMess] 🇨🇳 CN-120.198.71.216-249"
+      - "[VMess] 🇨🇳 CN-120.198.71.219-165"
+      - "[VMess] 🇨🇳 CN-120.232.153.63-036"
+      - "[VMess] 🇨🇳 China_None_vmess_11107"
+      - "[VMess] 🇨🇳 China_None_vmess_11110"
+      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 China_Guangzhou_trojan_11113"
+      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 广东省广州市 电信"
+      - "[VMess] 🇨🇳 中国【机场推荐：https://socks.news】32"
+      - "[VMess] 🇨🇳 中国【机场推荐：https://socks.news】78"
+      - "[VMess] 🇪🇸 _CN_中国->🇪🇸_ES_西班牙"
+      - "[Trojan] 🇭🇰 Hong Kong_Hong Kong_trojan_1063"
+      - "[VMess] 🇭🇰 香港3|@ripaojiedian"
+      - "[SS] 🇯🇵 Japan_Tokyo_ss_1166"
+      - "[SS] 🇰🇷 South Korea_Cheonan_ss_1098"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_1078"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_1177"
+      - "[SS] 🇰🇷 South Korea_Songpa-gu_ss_11115"
+      - "[SS] 🇰🇷 [SS] 🇰🇷 韩国 首尔Amazon数据中心"
+      - "[SS] 🇰🇷 韩国特殊|@ripaojiedian"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】103"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】19"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】21"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】33"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】50"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】51"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】53"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】54"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】57"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】59"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】60"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】61"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】66"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】70"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】73"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】88"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】96"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】97"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1066"
+      - "[SS] 🇸🇬 [SS] 🇸🇬 新加坡 Amazon数据中心"
+      - "[VMess] 🇸🇬 新加坡4|@ripaojiedian"
+      - "[SS] 🇸🇬 狮城特殊|@ripaojiedian"
+      - "[SS] 🇺🇸 United States_Boardman_ss_1085"
       - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_2"
-      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_5"
-      - "[VMess] 🇺🇸 美国 16"
-      - "[VMess] 🇺🇸 美国 19"
-      - "[VMess] 🇺🇸 美国 22"
-      - "[VMess] 🇺🇸 美国 324"
-      - "[VMess] 🇺🇸 美国 475"
+      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_7"
+      - "[SS] 🇻🇳 Vietnam_None_ss_1097"
+      - "[VMess] 🇿🇦 [VMess] 🇿🇦 南非 V2CROSS.COM"
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.youtube.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "[VMess] 2|🇺🇸12 |  3.6MB/s"
-      - "[VMess] CN_speednode_0019"
-      - "[VMess] CN_speednode_0039"
-      - "[SS] SE-151.236.206.42-004"
-      - "[Trojan] [Trojan] 1|🇬🇧3 |  4.5MB/s"
-      - "[VMess] [VMess] [VMess] [VMess] [VMess] [VMess] speednode_0041"
-      - "[VMess] 🇨🇦 CA-51.79.103.76-007"
-      - "[VMess] 🇨🇦 加拿大 07"
-      - "[VMess] 🇨🇳 CN-120.198.71.214-201"
-      - "[VMess] 🇨🇳 CN-120.232.153.40-026"
-      - "[VMess] 🇨🇳 CN-120.232.153.40-204"
-      - "[VMess] 🇨🇳 CN-120.232.153.41-027"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-024"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-106"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-186"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-211"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-226"
-      - "[VMess] 🇨🇳 CN-223.109.230.166-023"
-      - "[VMess] 🇨🇳 CN-E 14"
-      - "[Trojan] 🇨🇳 China_Guangzhou_trojan_11113"
-      - "[VMess] 🇨🇳 China_Guangzhou_vmess_1135"
-      - "[SS] 🇨🇳 China_Haikou_ss_10100"
-      - "[SS] 🇨🇳 China_None_ss_10105"
-      - "[SS] 🇨🇳 China_None_ss_10107"
-      - "[SS] 🇨🇳 China_None_ss_10109"
-      - "[SS] 🇨🇳 China_None_ss_10111"
-      - "[SS] 🇨🇳 China_None_ss_10117"
-      - "[SS] 🇨🇳 China_None_ss_10123"
-      - "[VMess] 🇨🇳 China_None_vmess_10101"
-      - "[VMess] 🇨🇳 China_None_vmess_10102"
-      - "[VMess] 🇨🇳 China_None_vmess_10116"
-      - "[VMess] 🇨🇳 China_None_vmess_10124"
-      - "[VMess] 🇨🇳 China_None_vmess_1084"
-      - "[SS] 🇨🇳 [SS] 🇨🇳 [SS] 🇨🇳 CN-58.19.16.228-261"
-      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 [Trojan] 🇨🇳 China_None_trojan_1166"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-120.198.71.214-113"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-120.232.153.41-105"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-183.236.51.38-013"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-183.236.51.38-196"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 CN-120.198.71.219-225"
-      - "[VMess] 🇨🇳 节点-CN 01"
-      - "[SS] 🇫🇷 FR 02"
-      - "[Trojan] 🇫🇷 FR-141.227.138.29-034"
-      - "[Trojan] 🇫🇷 France_None_trojan_1088"
-      - "[Trojan] 🇬🇧 英国 016"
-      - "[VMess] 🇬🇧 英国 04"
-      - "[SS] 🇭🇰 Hong Kong_Hong Kong_ss_1099"
-      - "[SS] 🇭🇰 Hong Kong_None_ss_1098"
-      - "[Trojan] 🇯🇵 TOKYO-TROJAN 01"
-      - "[SS] 🇰🇷 South Korea_Seoul_ss_10112"
-      - "[VMess] 🇳🇱 荷兰 01"
-      - "[SS] 🇷🇸 Serbia_Belgrade_ss_1073"
-      - "[SS] 🇷🇺 RU 05"
-      - "[SS] 🇸🇬 SG新加坡3"
-      - "[VMess] 🇸🇬 T新加坡 01"
-      - "[Trojan] 🇸🇬 新加坡 25"
-      - "[SS] 🇺🇸 US 226 → tg@nicevpn123"
-      - "[SS] 🇺🇸 US 407 → tg@nicevpn123"
-      - "[SS] 🇺🇸 US 944 → tg@nicevpn123"
-      - "[VMess] 🇺🇸 US-2.58.87.221-035"
-      - "[VMess] 🇺🇸 United States_None_vmess_1074"
-      - "[SS] 🇺🇸 United States_Phoenix_ss_1081"
+      - "[SS] 2|🇰🇷13 |  1.3MB/s"
+      - "[SS] 2|🇰🇷7 |  5.6MB/s"
+      - "[SS] 2|🇰🇷9 |  1.2MB/s"
+      - "[VMess] CN_speednode_0042"
+      - "[SS] tg频道:@ripaojiedian"
+      - "[VMess] 🇨🇳 CN-120.198.71.214-033"
+      - "[VMess] 🇨🇳 CN-120.198.71.216-249"
+      - "[VMess] 🇨🇳 CN-120.198.71.219-165"
+      - "[VMess] 🇨🇳 CN-120.232.153.63-036"
+      - "[VMess] 🇨🇳 China_None_vmess_11107"
+      - "[VMess] 🇨🇳 China_None_vmess_11110"
+      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 China_Guangzhou_trojan_11113"
+      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 广东省广州市 电信"
+      - "[VMess] 🇨🇳 中国【机场推荐：https://socks.news】32"
+      - "[VMess] 🇨🇳 中国【机场推荐：https://socks.news】78"
+      - "[VMess] 🇪🇸 _CN_中国->🇪🇸_ES_西班牙"
+      - "[Trojan] 🇭🇰 Hong Kong_Hong Kong_trojan_1063"
+      - "[VMess] 🇭🇰 香港3|@ripaojiedian"
+      - "[SS] 🇯🇵 Japan_Tokyo_ss_1166"
+      - "[SS] 🇰🇷 South Korea_Cheonan_ss_1098"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_1078"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_1177"
+      - "[SS] 🇰🇷 South Korea_Songpa-gu_ss_11115"
+      - "[SS] 🇰🇷 [SS] 🇰🇷 韩国 首尔Amazon数据中心"
+      - "[SS] 🇰🇷 韩国特殊|@ripaojiedian"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】103"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】19"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】21"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】33"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】50"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】51"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】53"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】54"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】57"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】59"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】60"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】61"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】66"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】70"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】73"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】88"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】96"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】97"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1066"
+      - "[SS] 🇸🇬 [SS] 🇸🇬 新加坡 Amazon数据中心"
+      - "[VMess] 🇸🇬 新加坡4|@ripaojiedian"
+      - "[SS] 🇸🇬 狮城特殊|@ripaojiedian"
+      - "[SS] 🇺🇸 United States_Boardman_ss_1085"
       - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_2"
-      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_5"
-      - "[VMess] 🇺🇸 美国 16"
-      - "[VMess] 🇺🇸 美国 19"
-      - "[VMess] 🇺🇸 美国 22"
-      - "[VMess] 🇺🇸 美国 324"
-      - "[VMess] 🇺🇸 美国 475"
+      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_7"
+      - "[SS] 🇻🇳 Vietnam_None_ss_1097"
+      - "[VMess] 🇿🇦 [VMess] 🇿🇦 南非 V2CROSS.COM"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[VMess] 2|🇺🇸12 |  3.6MB/s"
-      - "[VMess] CN_speednode_0019"
-      - "[VMess] CN_speednode_0039"
-      - "[SS] SE-151.236.206.42-004"
-      - "[Trojan] [Trojan] 1|🇬🇧3 |  4.5MB/s"
-      - "[VMess] [VMess] [VMess] [VMess] [VMess] [VMess] speednode_0041"
-      - "[VMess] 🇨🇦 CA-51.79.103.76-007"
-      - "[VMess] 🇨🇦 加拿大 07"
-      - "[VMess] 🇨🇳 CN-120.198.71.214-201"
-      - "[VMess] 🇨🇳 CN-120.232.153.40-026"
-      - "[VMess] 🇨🇳 CN-120.232.153.40-204"
-      - "[VMess] 🇨🇳 CN-120.232.153.41-027"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-024"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-106"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-186"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-211"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-226"
-      - "[VMess] 🇨🇳 CN-223.109.230.166-023"
-      - "[VMess] 🇨🇳 CN-E 14"
-      - "[Trojan] 🇨🇳 China_Guangzhou_trojan_11113"
-      - "[VMess] 🇨🇳 China_Guangzhou_vmess_1135"
-      - "[SS] 🇨🇳 China_Haikou_ss_10100"
-      - "[SS] 🇨🇳 China_None_ss_10105"
-      - "[SS] 🇨🇳 China_None_ss_10107"
-      - "[SS] 🇨🇳 China_None_ss_10109"
-      - "[SS] 🇨🇳 China_None_ss_10111"
-      - "[SS] 🇨🇳 China_None_ss_10117"
-      - "[SS] 🇨🇳 China_None_ss_10123"
-      - "[VMess] 🇨🇳 China_None_vmess_10101"
-      - "[VMess] 🇨🇳 China_None_vmess_10102"
-      - "[VMess] 🇨🇳 China_None_vmess_10116"
-      - "[VMess] 🇨🇳 China_None_vmess_10124"
-      - "[VMess] 🇨🇳 China_None_vmess_1084"
-      - "[SS] 🇨🇳 [SS] 🇨🇳 [SS] 🇨🇳 CN-58.19.16.228-261"
-      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 [Trojan] 🇨🇳 China_None_trojan_1166"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-120.198.71.214-113"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-120.232.153.41-105"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-183.236.51.38-013"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-183.236.51.38-196"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 CN-120.198.71.219-225"
-      - "[VMess] 🇨🇳 节点-CN 01"
-      - "[SS] 🇫🇷 FR 02"
-      - "[Trojan] 🇫🇷 FR-141.227.138.29-034"
-      - "[Trojan] 🇫🇷 France_None_trojan_1088"
-      - "[Trojan] 🇬🇧 英国 016"
-      - "[VMess] 🇬🇧 英国 04"
-      - "[SS] 🇭🇰 Hong Kong_Hong Kong_ss_1099"
-      - "[SS] 🇭🇰 Hong Kong_None_ss_1098"
-      - "[Trojan] 🇯🇵 TOKYO-TROJAN 01"
-      - "[SS] 🇰🇷 South Korea_Seoul_ss_10112"
-      - "[VMess] 🇳🇱 荷兰 01"
-      - "[SS] 🇷🇸 Serbia_Belgrade_ss_1073"
-      - "[SS] 🇷🇺 RU 05"
-      - "[SS] 🇸🇬 SG新加坡3"
-      - "[VMess] 🇸🇬 T新加坡 01"
-      - "[Trojan] 🇸🇬 新加坡 25"
-      - "[SS] 🇺🇸 US 226 → tg@nicevpn123"
-      - "[SS] 🇺🇸 US 407 → tg@nicevpn123"
-      - "[SS] 🇺🇸 US 944 → tg@nicevpn123"
-      - "[VMess] 🇺🇸 US-2.58.87.221-035"
-      - "[VMess] 🇺🇸 United States_None_vmess_1074"
-      - "[SS] 🇺🇸 United States_Phoenix_ss_1081"
+      - "[SS] 2|🇰🇷13 |  1.3MB/s"
+      - "[SS] 2|🇰🇷7 |  5.6MB/s"
+      - "[SS] 2|🇰🇷9 |  1.2MB/s"
+      - "[VMess] CN_speednode_0042"
+      - "[SS] tg频道:@ripaojiedian"
+      - "[VMess] 🇨🇳 CN-120.198.71.214-033"
+      - "[VMess] 🇨🇳 CN-120.198.71.216-249"
+      - "[VMess] 🇨🇳 CN-120.198.71.219-165"
+      - "[VMess] 🇨🇳 CN-120.232.153.63-036"
+      - "[VMess] 🇨🇳 China_None_vmess_11107"
+      - "[VMess] 🇨🇳 China_None_vmess_11110"
+      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 China_Guangzhou_trojan_11113"
+      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 广东省广州市 电信"
+      - "[VMess] 🇨🇳 中国【机场推荐：https://socks.news】32"
+      - "[VMess] 🇨🇳 中国【机场推荐：https://socks.news】78"
+      - "[VMess] 🇪🇸 _CN_中国->🇪🇸_ES_西班牙"
+      - "[Trojan] 🇭🇰 Hong Kong_Hong Kong_trojan_1063"
+      - "[VMess] 🇭🇰 香港3|@ripaojiedian"
+      - "[SS] 🇯🇵 Japan_Tokyo_ss_1166"
+      - "[SS] 🇰🇷 South Korea_Cheonan_ss_1098"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_1078"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_1177"
+      - "[SS] 🇰🇷 South Korea_Songpa-gu_ss_11115"
+      - "[SS] 🇰🇷 [SS] 🇰🇷 韩国 首尔Amazon数据中心"
+      - "[SS] 🇰🇷 韩国特殊|@ripaojiedian"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】103"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】19"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】21"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】33"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】50"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】51"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】53"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】54"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】57"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】59"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】60"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】61"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】66"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】70"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】73"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】88"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】96"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】97"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1066"
+      - "[SS] 🇸🇬 [SS] 🇸🇬 新加坡 Amazon数据中心"
+      - "[VMess] 🇸🇬 新加坡4|@ripaojiedian"
+      - "[SS] 🇸🇬 狮城特殊|@ripaojiedian"
+      - "[SS] 🇺🇸 United States_Boardman_ss_1085"
       - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_2"
-      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_5"
-      - "[VMess] 🇺🇸 美国 16"
-      - "[VMess] 🇺🇸 美国 19"
-      - "[VMess] 🇺🇸 美国 22"
-      - "[VMess] 🇺🇸 美国 324"
-      - "[VMess] 🇺🇸 美国 475"
+      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_7"
+      - "[SS] 🇻🇳 Vietnam_None_ss_1097"
+      - "[VMess] 🇿🇦 [VMess] 🇿🇦 南非 V2CROSS.COM"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -320,303 +248,236 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[VMess] 2|🇺🇸12 |  3.6MB/s"
-      - "[VMess] CN_speednode_0019"
-      - "[VMess] CN_speednode_0039"
-      - "[SS] SE-151.236.206.42-004"
-      - "[Trojan] [Trojan] 1|🇬🇧3 |  4.5MB/s"
-      - "[VMess] [VMess] [VMess] [VMess] [VMess] [VMess] speednode_0041"
-      - "[VMess] 🇨🇦 CA-51.79.103.76-007"
-      - "[VMess] 🇨🇦 加拿大 07"
-      - "[VMess] 🇨🇳 CN-120.198.71.214-201"
-      - "[VMess] 🇨🇳 CN-120.232.153.40-026"
-      - "[VMess] 🇨🇳 CN-120.232.153.40-204"
-      - "[VMess] 🇨🇳 CN-120.232.153.41-027"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-024"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-106"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-186"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-211"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-226"
-      - "[VMess] 🇨🇳 CN-223.109.230.166-023"
-      - "[VMess] 🇨🇳 CN-E 14"
-      - "[Trojan] 🇨🇳 China_Guangzhou_trojan_11113"
-      - "[VMess] 🇨🇳 China_Guangzhou_vmess_1135"
-      - "[SS] 🇨🇳 China_Haikou_ss_10100"
-      - "[SS] 🇨🇳 China_None_ss_10105"
-      - "[SS] 🇨🇳 China_None_ss_10107"
-      - "[SS] 🇨🇳 China_None_ss_10109"
-      - "[SS] 🇨🇳 China_None_ss_10111"
-      - "[SS] 🇨🇳 China_None_ss_10117"
-      - "[SS] 🇨🇳 China_None_ss_10123"
-      - "[VMess] 🇨🇳 China_None_vmess_10101"
-      - "[VMess] 🇨🇳 China_None_vmess_10102"
-      - "[VMess] 🇨🇳 China_None_vmess_10116"
-      - "[VMess] 🇨🇳 China_None_vmess_10124"
-      - "[VMess] 🇨🇳 China_None_vmess_1084"
-      - "[SS] 🇨🇳 [SS] 🇨🇳 [SS] 🇨🇳 CN-58.19.16.228-261"
-      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 [Trojan] 🇨🇳 China_None_trojan_1166"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-120.198.71.214-113"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-120.232.153.41-105"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-183.236.51.38-013"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-183.236.51.38-196"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 CN-120.198.71.219-225"
-      - "[VMess] 🇨🇳 节点-CN 01"
-      - "[SS] 🇫🇷 FR 02"
-      - "[Trojan] 🇫🇷 FR-141.227.138.29-034"
-      - "[Trojan] 🇫🇷 France_None_trojan_1088"
-      - "[Trojan] 🇬🇧 英国 016"
-      - "[VMess] 🇬🇧 英国 04"
-      - "[SS] 🇭🇰 Hong Kong_Hong Kong_ss_1099"
-      - "[SS] 🇭🇰 Hong Kong_None_ss_1098"
-      - "[Trojan] 🇯🇵 TOKYO-TROJAN 01"
-      - "[SS] 🇰🇷 South Korea_Seoul_ss_10112"
-      - "[VMess] 🇳🇱 荷兰 01"
-      - "[SS] 🇷🇸 Serbia_Belgrade_ss_1073"
-      - "[SS] 🇷🇺 RU 05"
-      - "[SS] 🇸🇬 SG新加坡3"
-      - "[VMess] 🇸🇬 T新加坡 01"
-      - "[Trojan] 🇸🇬 新加坡 25"
-      - "[SS] 🇺🇸 US 226 → tg@nicevpn123"
-      - "[SS] 🇺🇸 US 407 → tg@nicevpn123"
-      - "[SS] 🇺🇸 US 944 → tg@nicevpn123"
-      - "[VMess] 🇺🇸 US-2.58.87.221-035"
-      - "[VMess] 🇺🇸 United States_None_vmess_1074"
-      - "[SS] 🇺🇸 United States_Phoenix_ss_1081"
+      - "[SS] 2|🇰🇷13 |  1.3MB/s"
+      - "[SS] 2|🇰🇷7 |  5.6MB/s"
+      - "[SS] 2|🇰🇷9 |  1.2MB/s"
+      - "[VMess] CN_speednode_0042"
+      - "[SS] tg频道:@ripaojiedian"
+      - "[VMess] 🇨🇳 CN-120.198.71.214-033"
+      - "[VMess] 🇨🇳 CN-120.198.71.216-249"
+      - "[VMess] 🇨🇳 CN-120.198.71.219-165"
+      - "[VMess] 🇨🇳 CN-120.232.153.63-036"
+      - "[VMess] 🇨🇳 China_None_vmess_11107"
+      - "[VMess] 🇨🇳 China_None_vmess_11110"
+      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 China_Guangzhou_trojan_11113"
+      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 广东省广州市 电信"
+      - "[VMess] 🇨🇳 中国【机场推荐：https://socks.news】32"
+      - "[VMess] 🇨🇳 中国【机场推荐：https://socks.news】78"
+      - "[VMess] 🇪🇸 _CN_中国->🇪🇸_ES_西班牙"
+      - "[Trojan] 🇭🇰 Hong Kong_Hong Kong_trojan_1063"
+      - "[VMess] 🇭🇰 香港3|@ripaojiedian"
+      - "[SS] 🇯🇵 Japan_Tokyo_ss_1166"
+      - "[SS] 🇰🇷 South Korea_Cheonan_ss_1098"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_1078"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_1177"
+      - "[SS] 🇰🇷 South Korea_Songpa-gu_ss_11115"
+      - "[SS] 🇰🇷 [SS] 🇰🇷 韩国 首尔Amazon数据中心"
+      - "[SS] 🇰🇷 韩国特殊|@ripaojiedian"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】103"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】19"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】21"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】33"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】50"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】51"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】53"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】54"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】57"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】59"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】60"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】61"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】66"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】70"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】73"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】88"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】96"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】97"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1066"
+      - "[SS] 🇸🇬 [SS] 🇸🇬 新加坡 Amazon数据中心"
+      - "[VMess] 🇸🇬 新加坡4|@ripaojiedian"
+      - "[SS] 🇸🇬 狮城特殊|@ripaojiedian"
+      - "[SS] 🇺🇸 United States_Boardman_ss_1085"
       - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_2"
-      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_5"
-      - "[VMess] 🇺🇸 美国 16"
-      - "[VMess] 🇺🇸 美国 19"
-      - "[VMess] 🇺🇸 美国 22"
-      - "[VMess] 🇺🇸 美国 324"
-      - "[VMess] 🇺🇸 美国 475"
+      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_7"
+      - "[SS] 🇻🇳 Vietnam_None_ss_1097"
+      - "[VMess] 🇿🇦 [VMess] 🇿🇦 南非 V2CROSS.COM"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - "[VMess] 🇭🇰 香港3|@ripaojiedian"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[VMess] 2|🇺🇸12 |  3.6MB/s"
-      - "[VMess] CN_speednode_0019"
-      - "[VMess] CN_speednode_0039"
-      - "[SS] SE-151.236.206.42-004"
-      - "[Trojan] [Trojan] 1|🇬🇧3 |  4.5MB/s"
-      - "[VMess] [VMess] [VMess] [VMess] [VMess] [VMess] speednode_0041"
-      - "[VMess] 🇨🇦 CA-51.79.103.76-007"
-      - "[VMess] 🇨🇦 加拿大 07"
-      - "[VMess] 🇨🇳 CN-120.198.71.214-201"
-      - "[VMess] 🇨🇳 CN-120.232.153.40-026"
-      - "[VMess] 🇨🇳 CN-120.232.153.40-204"
-      - "[VMess] 🇨🇳 CN-120.232.153.41-027"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-024"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-106"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-186"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-211"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-226"
-      - "[VMess] 🇨🇳 CN-223.109.230.166-023"
-      - "[VMess] 🇨🇳 CN-E 14"
-      - "[Trojan] 🇨🇳 China_Guangzhou_trojan_11113"
-      - "[VMess] 🇨🇳 China_Guangzhou_vmess_1135"
-      - "[SS] 🇨🇳 China_Haikou_ss_10100"
-      - "[SS] 🇨🇳 China_None_ss_10105"
-      - "[SS] 🇨🇳 China_None_ss_10107"
-      - "[SS] 🇨🇳 China_None_ss_10109"
-      - "[SS] 🇨🇳 China_None_ss_10111"
-      - "[SS] 🇨🇳 China_None_ss_10117"
-      - "[SS] 🇨🇳 China_None_ss_10123"
-      - "[VMess] 🇨🇳 China_None_vmess_10101"
-      - "[VMess] 🇨🇳 China_None_vmess_10102"
-      - "[VMess] 🇨🇳 China_None_vmess_10116"
-      - "[VMess] 🇨🇳 China_None_vmess_10124"
-      - "[VMess] 🇨🇳 China_None_vmess_1084"
-      - "[SS] 🇨🇳 [SS] 🇨🇳 [SS] 🇨🇳 CN-58.19.16.228-261"
-      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 [Trojan] 🇨🇳 China_None_trojan_1166"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-120.198.71.214-113"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-120.232.153.41-105"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-183.236.51.38-013"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-183.236.51.38-196"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 CN-120.198.71.219-225"
-      - "[VMess] 🇨🇳 节点-CN 01"
-      - "[SS] 🇫🇷 FR 02"
-      - "[Trojan] 🇫🇷 FR-141.227.138.29-034"
-      - "[Trojan] 🇫🇷 France_None_trojan_1088"
-      - "[Trojan] 🇬🇧 英国 016"
-      - "[VMess] 🇬🇧 英国 04"
-      - "[SS] 🇭🇰 Hong Kong_Hong Kong_ss_1099"
-      - "[SS] 🇭🇰 Hong Kong_None_ss_1098"
-      - "[Trojan] 🇯🇵 TOKYO-TROJAN 01"
-      - "[SS] 🇰🇷 South Korea_Seoul_ss_10112"
-      - "[VMess] 🇳🇱 荷兰 01"
-      - "[SS] 🇷🇸 Serbia_Belgrade_ss_1073"
-      - "[SS] 🇷🇺 RU 05"
-      - "[SS] 🇸🇬 SG新加坡3"
-      - "[VMess] 🇸🇬 T新加坡 01"
-      - "[Trojan] 🇸🇬 新加坡 25"
-      - "[SS] 🇺🇸 US 226 → tg@nicevpn123"
-      - "[SS] 🇺🇸 US 407 → tg@nicevpn123"
-      - "[SS] 🇺🇸 US 944 → tg@nicevpn123"
-      - "[VMess] 🇺🇸 US-2.58.87.221-035"
-      - "[VMess] 🇺🇸 United States_None_vmess_1074"
-      - "[SS] 🇺🇸 United States_Phoenix_ss_1081"
+      - "[SS] 2|🇰🇷13 |  1.3MB/s"
+      - "[SS] 2|🇰🇷7 |  5.6MB/s"
+      - "[SS] 2|🇰🇷9 |  1.2MB/s"
+      - "[VMess] CN_speednode_0042"
+      - "[SS] tg频道:@ripaojiedian"
+      - "[VMess] 🇨🇳 CN-120.198.71.214-033"
+      - "[VMess] 🇨🇳 CN-120.198.71.216-249"
+      - "[VMess] 🇨🇳 CN-120.198.71.219-165"
+      - "[VMess] 🇨🇳 CN-120.232.153.63-036"
+      - "[VMess] 🇨🇳 China_None_vmess_11107"
+      - "[VMess] 🇨🇳 China_None_vmess_11110"
+      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 China_Guangzhou_trojan_11113"
+      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 广东省广州市 电信"
+      - "[VMess] 🇨🇳 中国【机场推荐：https://socks.news】32"
+      - "[VMess] 🇨🇳 中国【机场推荐：https://socks.news】78"
+      - "[VMess] 🇪🇸 _CN_中国->🇪🇸_ES_西班牙"
+      - "[Trojan] 🇭🇰 Hong Kong_Hong Kong_trojan_1063"
+      - "[VMess] 🇭🇰 香港3|@ripaojiedian"
+      - "[SS] 🇯🇵 Japan_Tokyo_ss_1166"
+      - "[SS] 🇰🇷 South Korea_Cheonan_ss_1098"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_1078"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_1177"
+      - "[SS] 🇰🇷 South Korea_Songpa-gu_ss_11115"
+      - "[SS] 🇰🇷 [SS] 🇰🇷 韩国 首尔Amazon数据中心"
+      - "[SS] 🇰🇷 韩国特殊|@ripaojiedian"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】103"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】19"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】21"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】33"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】50"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】51"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】53"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】54"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】57"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】59"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】60"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】61"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】66"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】70"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】73"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】88"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】96"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】97"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1066"
+      - "[SS] 🇸🇬 [SS] 🇸🇬 新加坡 Amazon数据中心"
+      - "[VMess] 🇸🇬 新加坡4|@ripaojiedian"
+      - "[SS] 🇸🇬 狮城特殊|@ripaojiedian"
+      - "[SS] 🇺🇸 United States_Boardman_ss_1085"
       - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_2"
-      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_5"
-      - "[VMess] 🇺🇸 美国 16"
-      - "[VMess] 🇺🇸 美国 19"
-      - "[VMess] 🇺🇸 美国 22"
-      - "[VMess] 🇺🇸 美国 324"
-      - "[VMess] 🇺🇸 美国 475"
+      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_7"
+      - "[SS] 🇻🇳 Vietnam_None_ss_1097"
+      - "[VMess] 🇿🇦 [VMess] 🇿🇦 南非 V2CROSS.COM"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[VMess] 2|🇺🇸12 |  3.6MB/s"
-      - "[VMess] CN_speednode_0019"
-      - "[VMess] CN_speednode_0039"
-      - "[SS] SE-151.236.206.42-004"
-      - "[Trojan] [Trojan] 1|🇬🇧3 |  4.5MB/s"
-      - "[VMess] [VMess] [VMess] [VMess] [VMess] [VMess] speednode_0041"
-      - "[VMess] 🇨🇦 CA-51.79.103.76-007"
-      - "[VMess] 🇨🇦 加拿大 07"
-      - "[VMess] 🇨🇳 CN-120.198.71.214-201"
-      - "[VMess] 🇨🇳 CN-120.232.153.40-026"
-      - "[VMess] 🇨🇳 CN-120.232.153.40-204"
-      - "[VMess] 🇨🇳 CN-120.232.153.41-027"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-024"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-106"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-186"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-211"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-226"
-      - "[VMess] 🇨🇳 CN-223.109.230.166-023"
-      - "[VMess] 🇨🇳 CN-E 14"
-      - "[Trojan] 🇨🇳 China_Guangzhou_trojan_11113"
-      - "[VMess] 🇨🇳 China_Guangzhou_vmess_1135"
-      - "[SS] 🇨🇳 China_Haikou_ss_10100"
-      - "[SS] 🇨🇳 China_None_ss_10105"
-      - "[SS] 🇨🇳 China_None_ss_10107"
-      - "[SS] 🇨🇳 China_None_ss_10109"
-      - "[SS] 🇨🇳 China_None_ss_10111"
-      - "[SS] 🇨🇳 China_None_ss_10117"
-      - "[SS] 🇨🇳 China_None_ss_10123"
-      - "[VMess] 🇨🇳 China_None_vmess_10101"
-      - "[VMess] 🇨🇳 China_None_vmess_10102"
-      - "[VMess] 🇨🇳 China_None_vmess_10116"
-      - "[VMess] 🇨🇳 China_None_vmess_10124"
-      - "[VMess] 🇨🇳 China_None_vmess_1084"
-      - "[SS] 🇨🇳 [SS] 🇨🇳 [SS] 🇨🇳 CN-58.19.16.228-261"
-      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 [Trojan] 🇨🇳 China_None_trojan_1166"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-120.198.71.214-113"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-120.232.153.41-105"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-183.236.51.38-013"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-183.236.51.38-196"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 CN-120.198.71.219-225"
-      - "[VMess] 🇨🇳 节点-CN 01"
-      - "[SS] 🇫🇷 FR 02"
-      - "[Trojan] 🇫🇷 FR-141.227.138.29-034"
-      - "[Trojan] 🇫🇷 France_None_trojan_1088"
-      - "[Trojan] 🇬🇧 英国 016"
-      - "[VMess] 🇬🇧 英国 04"
-      - "[SS] 🇭🇰 Hong Kong_Hong Kong_ss_1099"
-      - "[SS] 🇭🇰 Hong Kong_None_ss_1098"
-      - "[Trojan] 🇯🇵 TOKYO-TROJAN 01"
-      - "[SS] 🇰🇷 South Korea_Seoul_ss_10112"
-      - "[VMess] 🇳🇱 荷兰 01"
-      - "[SS] 🇷🇸 Serbia_Belgrade_ss_1073"
-      - "[SS] 🇷🇺 RU 05"
-      - "[SS] 🇸🇬 SG新加坡3"
-      - "[VMess] 🇸🇬 T新加坡 01"
-      - "[Trojan] 🇸🇬 新加坡 25"
-      - "[SS] 🇺🇸 US 226 → tg@nicevpn123"
-      - "[SS] 🇺🇸 US 407 → tg@nicevpn123"
-      - "[SS] 🇺🇸 US 944 → tg@nicevpn123"
-      - "[VMess] 🇺🇸 US-2.58.87.221-035"
-      - "[VMess] 🇺🇸 United States_None_vmess_1074"
-      - "[SS] 🇺🇸 United States_Phoenix_ss_1081"
+      - "[SS] 2|🇰🇷13 |  1.3MB/s"
+      - "[SS] 2|🇰🇷7 |  5.6MB/s"
+      - "[SS] 2|🇰🇷9 |  1.2MB/s"
+      - "[VMess] CN_speednode_0042"
+      - "[SS] tg频道:@ripaojiedian"
+      - "[VMess] 🇨🇳 CN-120.198.71.214-033"
+      - "[VMess] 🇨🇳 CN-120.198.71.216-249"
+      - "[VMess] 🇨🇳 CN-120.198.71.219-165"
+      - "[VMess] 🇨🇳 CN-120.232.153.63-036"
+      - "[VMess] 🇨🇳 China_None_vmess_11107"
+      - "[VMess] 🇨🇳 China_None_vmess_11110"
+      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 China_Guangzhou_trojan_11113"
+      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 广东省广州市 电信"
+      - "[VMess] 🇨🇳 中国【机场推荐：https://socks.news】32"
+      - "[VMess] 🇨🇳 中国【机场推荐：https://socks.news】78"
+      - "[VMess] 🇪🇸 _CN_中国->🇪🇸_ES_西班牙"
+      - "[Trojan] 🇭🇰 Hong Kong_Hong Kong_trojan_1063"
+      - "[VMess] 🇭🇰 香港3|@ripaojiedian"
+      - "[SS] 🇯🇵 Japan_Tokyo_ss_1166"
+      - "[SS] 🇰🇷 South Korea_Cheonan_ss_1098"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_1078"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_1177"
+      - "[SS] 🇰🇷 South Korea_Songpa-gu_ss_11115"
+      - "[SS] 🇰🇷 [SS] 🇰🇷 韩国 首尔Amazon数据中心"
+      - "[SS] 🇰🇷 韩国特殊|@ripaojiedian"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】103"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】19"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】21"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】33"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】50"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】51"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】53"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】54"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】57"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】59"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】60"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】61"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】66"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】70"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】73"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】88"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】96"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】97"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1066"
+      - "[SS] 🇸🇬 [SS] 🇸🇬 新加坡 Amazon数据中心"
+      - "[VMess] 🇸🇬 新加坡4|@ripaojiedian"
+      - "[SS] 🇸🇬 狮城特殊|@ripaojiedian"
+      - "[SS] 🇺🇸 United States_Boardman_ss_1085"
       - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_2"
-      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_5"
-      - "[VMess] 🇺🇸 美国 16"
-      - "[VMess] 🇺🇸 美国 19"
-      - "[VMess] 🇺🇸 美国 22"
-      - "[VMess] 🇺🇸 美国 324"
-      - "[VMess] 🇺🇸 美国 475"
+      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_7"
+      - "[SS] 🇻🇳 Vietnam_None_ss_1097"
+      - "[VMess] 🇿🇦 [VMess] 🇿🇦 南非 V2CROSS.COM"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[VMess] 2|🇺🇸12 |  3.6MB/s"
-      - "[VMess] CN_speednode_0019"
-      - "[VMess] CN_speednode_0039"
-      - "[SS] SE-151.236.206.42-004"
-      - "[Trojan] [Trojan] 1|🇬🇧3 |  4.5MB/s"
-      - "[VMess] [VMess] [VMess] [VMess] [VMess] [VMess] speednode_0041"
-      - "[VMess] 🇨🇦 CA-51.79.103.76-007"
-      - "[VMess] 🇨🇦 加拿大 07"
-      - "[VMess] 🇨🇳 CN-120.198.71.214-201"
-      - "[VMess] 🇨🇳 CN-120.232.153.40-026"
-      - "[VMess] 🇨🇳 CN-120.232.153.40-204"
-      - "[VMess] 🇨🇳 CN-120.232.153.41-027"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-024"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-106"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-186"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-211"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-226"
-      - "[VMess] 🇨🇳 CN-223.109.230.166-023"
-      - "[VMess] 🇨🇳 CN-E 14"
-      - "[Trojan] 🇨🇳 China_Guangzhou_trojan_11113"
-      - "[VMess] 🇨🇳 China_Guangzhou_vmess_1135"
-      - "[SS] 🇨🇳 China_Haikou_ss_10100"
-      - "[SS] 🇨🇳 China_None_ss_10105"
-      - "[SS] 🇨🇳 China_None_ss_10107"
-      - "[SS] 🇨🇳 China_None_ss_10109"
-      - "[SS] 🇨🇳 China_None_ss_10111"
-      - "[SS] 🇨🇳 China_None_ss_10117"
-      - "[SS] 🇨🇳 China_None_ss_10123"
-      - "[VMess] 🇨🇳 China_None_vmess_10101"
-      - "[VMess] 🇨🇳 China_None_vmess_10102"
-      - "[VMess] 🇨🇳 China_None_vmess_10116"
-      - "[VMess] 🇨🇳 China_None_vmess_10124"
-      - "[VMess] 🇨🇳 China_None_vmess_1084"
-      - "[SS] 🇨🇳 [SS] 🇨🇳 [SS] 🇨🇳 CN-58.19.16.228-261"
-      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 [Trojan] 🇨🇳 China_None_trojan_1166"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-120.198.71.214-113"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-120.232.153.41-105"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-183.236.51.38-013"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-183.236.51.38-196"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 CN-120.198.71.219-225"
-      - "[VMess] 🇨🇳 节点-CN 01"
-      - "[SS] 🇫🇷 FR 02"
-      - "[Trojan] 🇫🇷 FR-141.227.138.29-034"
-      - "[Trojan] 🇫🇷 France_None_trojan_1088"
-      - "[Trojan] 🇬🇧 英国 016"
-      - "[VMess] 🇬🇧 英国 04"
-      - "[SS] 🇭🇰 Hong Kong_Hong Kong_ss_1099"
-      - "[SS] 🇭🇰 Hong Kong_None_ss_1098"
-      - "[Trojan] 🇯🇵 TOKYO-TROJAN 01"
-      - "[SS] 🇰🇷 South Korea_Seoul_ss_10112"
-      - "[VMess] 🇳🇱 荷兰 01"
-      - "[SS] 🇷🇸 Serbia_Belgrade_ss_1073"
-      - "[SS] 🇷🇺 RU 05"
-      - "[SS] 🇸🇬 SG新加坡3"
-      - "[VMess] 🇸🇬 T新加坡 01"
-      - "[Trojan] 🇸🇬 新加坡 25"
-      - "[SS] 🇺🇸 US 226 → tg@nicevpn123"
-      - "[SS] 🇺🇸 US 407 → tg@nicevpn123"
-      - "[SS] 🇺🇸 US 944 → tg@nicevpn123"
-      - "[VMess] 🇺🇸 US-2.58.87.221-035"
-      - "[VMess] 🇺🇸 United States_None_vmess_1074"
-      - "[SS] 🇺🇸 United States_Phoenix_ss_1081"
+      - "[SS] 2|🇰🇷13 |  1.3MB/s"
+      - "[SS] 2|🇰🇷7 |  5.6MB/s"
+      - "[SS] 2|🇰🇷9 |  1.2MB/s"
+      - "[VMess] CN_speednode_0042"
+      - "[SS] tg频道:@ripaojiedian"
+      - "[VMess] 🇨🇳 CN-120.198.71.214-033"
+      - "[VMess] 🇨🇳 CN-120.198.71.216-249"
+      - "[VMess] 🇨🇳 CN-120.198.71.219-165"
+      - "[VMess] 🇨🇳 CN-120.232.153.63-036"
+      - "[VMess] 🇨🇳 China_None_vmess_11107"
+      - "[VMess] 🇨🇳 China_None_vmess_11110"
+      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 China_Guangzhou_trojan_11113"
+      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 广东省广州市 电信"
+      - "[VMess] 🇨🇳 中国【机场推荐：https://socks.news】32"
+      - "[VMess] 🇨🇳 中国【机场推荐：https://socks.news】78"
+      - "[VMess] 🇪🇸 _CN_中国->🇪🇸_ES_西班牙"
+      - "[Trojan] 🇭🇰 Hong Kong_Hong Kong_trojan_1063"
+      - "[VMess] 🇭🇰 香港3|@ripaojiedian"
+      - "[SS] 🇯🇵 Japan_Tokyo_ss_1166"
+      - "[SS] 🇰🇷 South Korea_Cheonan_ss_1098"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_1078"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_1177"
+      - "[SS] 🇰🇷 South Korea_Songpa-gu_ss_11115"
+      - "[SS] 🇰🇷 [SS] 🇰🇷 韩国 首尔Amazon数据中心"
+      - "[SS] 🇰🇷 韩国特殊|@ripaojiedian"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】103"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】19"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】21"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】33"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】50"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】51"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】53"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】54"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】57"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】59"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】60"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】61"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】66"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】70"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】73"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】88"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】96"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】97"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1066"
+      - "[SS] 🇸🇬 [SS] 🇸🇬 新加坡 Amazon数据中心"
+      - "[VMess] 🇸🇬 新加坡4|@ripaojiedian"
+      - "[SS] 🇸🇬 狮城特殊|@ripaojiedian"
+      - "[SS] 🇺🇸 United States_Boardman_ss_1085"
       - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_2"
-      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_5"
-      - "[VMess] 🇺🇸 美国 16"
-      - "[VMess] 🇺🇸 美国 19"
-      - "[VMess] 🇺🇸 美国 22"
-      - "[VMess] 🇺🇸 美国 324"
-      - "[VMess] 🇺🇸 美国 475"
+      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_7"
+      - "[SS] 🇻🇳 Vietnam_None_ss_1097"
+      - "[VMess] 🇿🇦 [VMess] 🇿🇦 南非 V2CROSS.COM"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -632,75 +493,58 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[VMess] 2|🇺🇸12 |  3.6MB/s"
-      - "[VMess] CN_speednode_0019"
-      - "[VMess] CN_speednode_0039"
-      - "[SS] SE-151.236.206.42-004"
-      - "[Trojan] [Trojan] 1|🇬🇧3 |  4.5MB/s"
-      - "[VMess] [VMess] [VMess] [VMess] [VMess] [VMess] speednode_0041"
-      - "[VMess] 🇨🇦 CA-51.79.103.76-007"
-      - "[VMess] 🇨🇦 加拿大 07"
-      - "[VMess] 🇨🇳 CN-120.198.71.214-201"
-      - "[VMess] 🇨🇳 CN-120.232.153.40-026"
-      - "[VMess] 🇨🇳 CN-120.232.153.40-204"
-      - "[VMess] 🇨🇳 CN-120.232.153.41-027"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-024"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-106"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-186"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-211"
-      - "[VMess] 🇨🇳 CN-183.236.51.38-226"
-      - "[VMess] 🇨🇳 CN-223.109.230.166-023"
-      - "[VMess] 🇨🇳 CN-E 14"
-      - "[Trojan] 🇨🇳 China_Guangzhou_trojan_11113"
-      - "[VMess] 🇨🇳 China_Guangzhou_vmess_1135"
-      - "[SS] 🇨🇳 China_Haikou_ss_10100"
-      - "[SS] 🇨🇳 China_None_ss_10105"
-      - "[SS] 🇨🇳 China_None_ss_10107"
-      - "[SS] 🇨🇳 China_None_ss_10109"
-      - "[SS] 🇨🇳 China_None_ss_10111"
-      - "[SS] 🇨🇳 China_None_ss_10117"
-      - "[SS] 🇨🇳 China_None_ss_10123"
-      - "[VMess] 🇨🇳 China_None_vmess_10101"
-      - "[VMess] 🇨🇳 China_None_vmess_10102"
-      - "[VMess] 🇨🇳 China_None_vmess_10116"
-      - "[VMess] 🇨🇳 China_None_vmess_10124"
-      - "[VMess] 🇨🇳 China_None_vmess_1084"
-      - "[SS] 🇨🇳 [SS] 🇨🇳 [SS] 🇨🇳 CN-58.19.16.228-261"
-      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 [Trojan] 🇨🇳 China_None_trojan_1166"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-120.198.71.214-113"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-120.232.153.41-105"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-183.236.51.38-013"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 CN-183.236.51.38-196"
-      - "[VMess] 🇨🇳 [VMess] 🇨🇳 [VMess] 🇨🇳 CN-120.198.71.219-225"
-      - "[VMess] 🇨🇳 节点-CN 01"
-      - "[SS] 🇫🇷 FR 02"
-      - "[Trojan] 🇫🇷 FR-141.227.138.29-034"
-      - "[Trojan] 🇫🇷 France_None_trojan_1088"
-      - "[Trojan] 🇬🇧 英国 016"
-      - "[VMess] 🇬🇧 英国 04"
-      - "[SS] 🇭🇰 Hong Kong_Hong Kong_ss_1099"
-      - "[SS] 🇭🇰 Hong Kong_None_ss_1098"
-      - "[Trojan] 🇯🇵 TOKYO-TROJAN 01"
-      - "[SS] 🇰🇷 South Korea_Seoul_ss_10112"
-      - "[VMess] 🇳🇱 荷兰 01"
-      - "[SS] 🇷🇸 Serbia_Belgrade_ss_1073"
-      - "[SS] 🇷🇺 RU 05"
-      - "[SS] 🇸🇬 SG新加坡3"
-      - "[VMess] 🇸🇬 T新加坡 01"
-      - "[Trojan] 🇸🇬 新加坡 25"
-      - "[SS] 🇺🇸 US 226 → tg@nicevpn123"
-      - "[SS] 🇺🇸 US 407 → tg@nicevpn123"
-      - "[SS] 🇺🇸 US 944 → tg@nicevpn123"
-      - "[VMess] 🇺🇸 US-2.58.87.221-035"
-      - "[VMess] 🇺🇸 United States_None_vmess_1074"
-      - "[SS] 🇺🇸 United States_Phoenix_ss_1081"
+      - "[SS] 2|🇰🇷13 |  1.3MB/s"
+      - "[SS] 2|🇰🇷7 |  5.6MB/s"
+      - "[SS] 2|🇰🇷9 |  1.2MB/s"
+      - "[VMess] CN_speednode_0042"
+      - "[SS] tg频道:@ripaojiedian"
+      - "[VMess] 🇨🇳 CN-120.198.71.214-033"
+      - "[VMess] 🇨🇳 CN-120.198.71.216-249"
+      - "[VMess] 🇨🇳 CN-120.198.71.219-165"
+      - "[VMess] 🇨🇳 CN-120.232.153.63-036"
+      - "[VMess] 🇨🇳 China_None_vmess_11107"
+      - "[VMess] 🇨🇳 China_None_vmess_11110"
+      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 China_Guangzhou_trojan_11113"
+      - "[Trojan] 🇨🇳 [Trojan] 🇨🇳 广东省广州市 电信"
+      - "[VMess] 🇨🇳 中国【机场推荐：https://socks.news】32"
+      - "[VMess] 🇨🇳 中国【机场推荐：https://socks.news】78"
+      - "[VMess] 🇪🇸 _CN_中国->🇪🇸_ES_西班牙"
+      - "[Trojan] 🇭🇰 Hong Kong_Hong Kong_trojan_1063"
+      - "[VMess] 🇭🇰 香港3|@ripaojiedian"
+      - "[SS] 🇯🇵 Japan_Tokyo_ss_1166"
+      - "[SS] 🇰🇷 South Korea_Cheonan_ss_1098"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_1078"
+      - "[SS] 🇰🇷 South Korea_Incheon_ss_1177"
+      - "[SS] 🇰🇷 South Korea_Songpa-gu_ss_11115"
+      - "[SS] 🇰🇷 [SS] 🇰🇷 韩国 首尔Amazon数据中心"
+      - "[SS] 🇰🇷 韩国特殊|@ripaojiedian"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】103"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】19"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】21"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】33"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】50"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】51"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】53"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】54"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】57"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】59"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】60"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】61"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】66"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】70"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】73"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】88"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】96"
+      - "[Trojan] 🇳🇱 荷兰【机场推荐：https://socks.news】97"
+      - "[SS] 🇸🇬 Singapore_Singapore_ss_1066"
+      - "[SS] 🇸🇬 [SS] 🇸🇬 新加坡 Amazon数据中心"
+      - "[VMess] 🇸🇬 新加坡4|@ripaojiedian"
+      - "[SS] 🇸🇬 狮城特殊|@ripaojiedian"
+      - "[SS] 🇺🇸 United States_Boardman_ss_1085"
       - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_2"
-      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_5"
-      - "[VMess] 🇺🇸 美国 16"
-      - "[VMess] 🇺🇸 美国 19"
-      - "[VMess] 🇺🇸 美国 22"
-      - "[VMess] 🇺🇸 美国 324"
-      - "[VMess] 🇺🇸 美国 475"
+      - "[VMess] 🇺🇸 _CN_中国->🇺🇸_US_美国_7"
+      - "[SS] 🇻🇳 Vietnam_None_ss_1097"
+      - "[VMess] 🇿🇦 [VMess] 🇿🇦 南非 V2CROSS.COM"
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -995,7 +839,6 @@ rules:
   - DOMAIN-SUFFIX,biz5.kankan.com,🛑 全球拦截
   - DOMAIN-SUFFIX,c.algovid.com,🛑 全球拦截
   - DOMAIN-SUFFIX,cms.laifeng.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,da.mmarket.com,🛑 全球拦截
   - DOMAIN-SUFFIX,dotcounter.douyutv.com,🛑 全球拦截
   - DOMAIN-SUFFIX,g.uusee.com,🛑 全球拦截
   - DOMAIN-SUFFIX,gcdn.2mdn.net,🛑 全球拦截
@@ -9940,20 +9783,14 @@ rules:
   - DOMAIN-SUFFIX,hdslb.com,🌏 国内媒体
   - DOMAIN,upos-hz-mirrorakam.akamaized.net,🌏 国内媒体
   - DOMAIN,apiintl.biliapi.net,🌏 国内媒体
-  - DOMAIN,intel-cache.m.iqiyi.com,🌏 国内媒体
-  - DOMAIN,intel-cache.video.iqiyi.com,🌏 国内媒体
-  - DOMAIN,intl-rcd.iqiyi.com,🌏 国内媒体
-  - DOMAIN,intl-subscription.iqiyi.com,🌏 国内媒体
-  - DOMAIN-SUFFIX,inter.iqiyi.com,🌏 国内媒体
-  - DOMAIN-SUFFIX,inter.ptqy.gitv.tv,🌏 国内媒体
-  - DOMAIN-SUFFIX,intl.iqiyi.com,🌏 国内媒体
+  - DOMAIN-SUFFIX,iqiyi.com,🌏 国内媒体
+  - DOMAIN-SUFFIX,iqiyipic.com,🌏 国内媒体
   - DOMAIN-SUFFIX,iq.com,🌏 国内媒体
-  - IP-CIDR,103.44.56.0/22,🌏 国内媒体,no-resolve
-  - IP-CIDR,118.26.120.0/24,🌏 国内媒体,no-resolve
-  - IP-CIDR,118.26.32.0/23,🌏 国内媒体,no-resolve
-  - IP-CIDR,223.119.62.225/28,🌏 国内媒体,no-resolve
-  - IP-CIDR,23.40.241.251/32,🌏 国内媒体,no-resolve
-  - IP-CIDR,23.40.242.10/32,🌏 国内媒体,no-resolve
+  - DOMAIN-SUFFIX,qy.net,🌏 国内媒体
+  - DOMAIN-SUFFIX,gitv.tv,🌏 国内媒体
+  - DOMAIN-SUFFIX,71.am,🌏 国内媒体
+  - DOMAIN-KEYWORD,qiyi,🌏 国内媒体
+  - DOMAIN,cache.video.iqiyi.com,🌏 国内媒体
   - DOMAIN-SUFFIX,api.mob.app.letv.com,🌏 国内媒体
   - DOMAIN-SUFFIX,v.smtcdns.com,🌏 国内媒体
   - DOMAIN-SUFFIX,vv.video.qq.com,🌏 国内媒体
@@ -10167,15 +10004,6 @@ rules:
   - DOMAIN,ocsp.int-x3.letsencrypt.org,🔰 节点选择
   - DOMAIN,a248.e.akamai.net,🔰 节点选择
   - DOMAIN,a771.dscq.akamai.net,🔰 节点选择
-  - PROCESS-NAME,GalaxyClient,🔰 节点选择
-  - PROCESS-NAME,Gwent,🔰 节点选择
-  - PROCESS-NAME,Steam,🔰 节点选择
-  - PROCESS-NAME,iTerm2,🔰 节点选择
-  - PROCESS-NAME,Microsoft To Do,🔰 节点选择
-  - PROCESS-NAME,clash-config-manager,🔰 节点选择
-  - PROCESS-NAME,clash-config-manager Helper,🔰 节点选择
-  - PROCESS-NAME,clash-config-manager Helper(GPU),🔰 节点选择
-  - PROCESS-NAME,clash-config-manager Helper(Renderer),🔰 节点选择
   - DOMAIN-SUFFIX,amazon.co.jp,🔰 节点选择
   - DOMAIN,d3c33hcgiwev3.cloudfront.net,🔰 节点选择
   - DOMAIN,payments-jp.amazon.com,🔰 节点选择
