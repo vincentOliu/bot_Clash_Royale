@@ -6,63 +6,100 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[VMess] IR-91.199.27.118-014", server: 91.199.27.118, port: 6531, type: vmess, uuid: bb28cfcd-c3d0-4866-bb0a-c3fd86b0ec12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇨🇳 CN-111.26.109.79-068", server: 111.26.109.79, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ocbc.com}}, udp: true}
-  - {name: "[VMess] 🇨🇳 中国【机场推荐：https://a0a.xyz/】4", server: 120.198.71.217, port: 58882, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇨🇳 中国【机场推荐：https://a0a.xyz/】6", server: 120.198.71.218, port: 32915, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇨🇳 中国【机场推荐：https://a0a.xyz/】7", server: 120.198.71.217, port: 46759, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[Trojan] 🇯🇵 节点日期：06-29", server: xd-js.timiwc.com, port: 59599, type: trojan, password: 2b1ed981-6547-4094-998b-06a3323d6f6c, sni: k62.tudou211.com, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇰🇷 韩国3|@ripaojiedian", server: 111.26.109.79, port: 30828, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ocbc.com}}, udp: true}
-  - {name: "[SS] 🇸🇪 瑞典【机场推荐：https://a0a.xyz/】27", server: homa.cybsecguru.com, port: 62005, type: ss, cipher: chacha20-ietf-poly1305, password: wRZFQJBv__VgFOiB30jhew, udp: true}
-  - {name: "[VMess] 🇺🇸 美国3|@ripaojiedian", server: v24.heduian.link, port: 30824, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v24.heduian.link}}, udp: true}
-  - {name: "[SS] 🇻🇳 越南|@ripaojiedian", server: 103.163.218.2, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇸🇬 SG新加坡2, server: 36.151.251.61, port: 38482, type: trojan, password: d0d08cddacc3190ea81b1b792e1b5fde, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US美国3, server: 36.151.251.36, port: 30534, type: trojan, password: d0d08cddacc3190ea81b1b792e1b5fde, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 江苏, server: 36.151.251.29, port: 53067, type: trojan, password: d0d08cddacc3190ea81b1b792e1b5fde, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK香港2, server: q2.46322416.xyz, port: 20220, type: trojan, password: 0b9c9261-7209-4dcc-b268-2fa74f6cd536, sni: cdn.alibaba.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP日本, server: h.cm2.xiaomi-api.xyz, port: 19832, type: ss, cipher: chacha20-ietf-poly1305, password: feafc2ef-d5fd-4f6d-803b-fad4a5cc1f0e, udp: true}
+  - {name: 🇰🇷 KR韩国, server: h.cm2.xiaomi-api.xyz, port: 19852, type: ss, cipher: chacha20-ietf-poly1305, password: feafc2ef-d5fd-4f6d-803b-fad4a5cc1f0e, udp: true}
+  - {name: 🇯🇵 JP日本3, server: 36.151.251.58, port: 21829, type: trojan, password: d0d08cddacc3190ea81b1b792e1b5fde, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK香港4, server: 36.151.192.10, port: 9141, type: trojan, password: d0d08cddacc3190ea81b1b792e1b5fde, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP日本4, server: 36.151.251.33, port: 19577, type: trojan, password: d0d08cddacc3190ea81b1b792e1b5fde, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK香港6, server: 36.151.251.24, port: 50723, type: trojan, password: d0d08cddacc3190ea81b1b792e1b5fde, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG新加坡3, server: 36.151.251.61, port: 7041, type: trojan, password: d0d08cddacc3190ea81b1b792e1b5fde, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR韩国2, server: 36.151.251.61, port: 45203, type: trojan, password: d0d08cddacc3190ea81b1b792e1b5fde, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US美国7, server: 36.151.251.60, port: 30495, type: trojan, password: d0d08cddacc3190ea81b1b792e1b5fde, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 韩国3|@ripaojiedian, server: 111.26.109.79, port: 30828, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ocbc.com}}, udp: true}
+  - {name: 🇨🇦 _CN_中国->🇨🇦_CA_加拿大, server: 111.26.109.79, port: 30835, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇮🇸 _IS_冰岛, server: 37.235.49.152, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: "%�\x11�<'����З�\"�yf�", server: 62.100.205.48, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇨🇳 CN-111.26.109.79-009, server: 111.26.109.79, port: 30835, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 111.26.109.79}}, udp: true}
+  - {name: 🇨🇳 CN-120.237.60.54-012, server: v7.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v7.heduian.link}}, udp: true}
+  - {name: 🇨🇳 CN-111.26.109.79-079, server: 111.26.109.79, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 111.26.109.79}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[VMess] IR-91.199.27.118-014"
-      - "[VMess] 🇨🇳 CN-111.26.109.79-068"
-      - "[VMess] 🇨🇳 中国【机场推荐：https://a0a.xyz/】4"
-      - "[VMess] 🇨🇳 中国【机场推荐：https://a0a.xyz/】6"
-      - "[VMess] 🇨🇳 中国【机场推荐：https://a0a.xyz/】7"
-      - "[Trojan] 🇯🇵 节点日期：06-29"
-      - "[VMess] 🇰🇷 韩国3|@ripaojiedian"
-      - "[SS] 🇸🇪 瑞典【机场推荐：https://a0a.xyz/】27"
-      - "[VMess] 🇺🇸 美国3|@ripaojiedian"
-      - "[SS] 🇻🇳 越南|@ripaojiedian"
+      - 🇸🇬 SG新加坡2
+      - 🇺🇸 US美国3
+      - 江苏
+      - 🇭🇰 HK香港2
+      - 🇯🇵 JP日本
+      - 🇰🇷 KR韩国
+      - 🇯🇵 JP日本3
+      - 🇭🇰 HK香港4
+      - 🇯🇵 JP日本4
+      - 🇭🇰 HK香港6
+      - 🇸🇬 SG新加坡3
+      - 🇰🇷 KR韩国2
+      - 🇺🇸 US美国7
+      - 🇰🇷 韩国3|@ripaojiedian
+      - 🇨🇦 _CN_中国->🇨🇦_CA_加拿大
+      - 🇮🇸 _IS_冰岛
+      - 🇨🇳 CN-111.26.109.79-009
+      - 🇨🇳 CN-120.237.60.54-012
+      - 🇨🇳 CN-111.26.109.79-079
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - "[VMess] IR-91.199.27.118-014"
-      - "[VMess] 🇨🇳 CN-111.26.109.79-068"
-      - "[VMess] 🇨🇳 中国【机场推荐：https://a0a.xyz/】4"
-      - "[VMess] 🇨🇳 中国【机场推荐：https://a0a.xyz/】6"
-      - "[VMess] 🇨🇳 中国【机场推荐：https://a0a.xyz/】7"
-      - "[Trojan] 🇯🇵 节点日期：06-29"
-      - "[VMess] 🇰🇷 韩国3|@ripaojiedian"
-      - "[SS] 🇸🇪 瑞典【机场推荐：https://a0a.xyz/】27"
-      - "[VMess] 🇺🇸 美国3|@ripaojiedian"
-      - "[SS] 🇻🇳 越南|@ripaojiedian"
+      - 🇸🇬 SG新加坡2
+      - 🇺🇸 US美国3
+      - 江苏
+      - 🇭🇰 HK香港2
+      - 🇯🇵 JP日本
+      - 🇰🇷 KR韩国
+      - 🇯🇵 JP日本3
+      - 🇭🇰 HK香港4
+      - 🇯🇵 JP日本4
+      - 🇭🇰 HK香港6
+      - 🇸🇬 SG新加坡3
+      - 🇰🇷 KR韩国2
+      - 🇺🇸 US美国7
+      - 🇰🇷 韩国3|@ripaojiedian
+      - 🇨🇦 _CN_中国->🇨🇦_CA_加拿大
+      - 🇮🇸 _IS_冰岛
+      - 🇨🇳 CN-111.26.109.79-009
+      - 🇨🇳 CN-120.237.60.54-012
+      - 🇨🇳 CN-111.26.109.79-079
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[VMess] IR-91.199.27.118-014"
-      - "[VMess] 🇨🇳 CN-111.26.109.79-068"
-      - "[VMess] 🇨🇳 中国【机场推荐：https://a0a.xyz/】4"
-      - "[VMess] 🇨🇳 中国【机场推荐：https://a0a.xyz/】6"
-      - "[VMess] 🇨🇳 中国【机场推荐：https://a0a.xyz/】7"
-      - "[Trojan] 🇯🇵 节点日期：06-29"
-      - "[VMess] 🇰🇷 韩国3|@ripaojiedian"
-      - "[SS] 🇸🇪 瑞典【机场推荐：https://a0a.xyz/】27"
-      - "[VMess] 🇺🇸 美国3|@ripaojiedian"
-      - "[SS] 🇻🇳 越南|@ripaojiedian"
+      - 🇸🇬 SG新加坡2
+      - 🇺🇸 US美国3
+      - 江苏
+      - 🇭🇰 HK香港2
+      - 🇯🇵 JP日本
+      - 🇰🇷 KR韩国
+      - 🇯🇵 JP日本3
+      - 🇭🇰 HK香港4
+      - 🇯🇵 JP日本4
+      - 🇭🇰 HK香港6
+      - 🇸🇬 SG新加坡3
+      - 🇰🇷 KR韩国2
+      - 🇺🇸 US美国7
+      - 🇰🇷 韩国3|@ripaojiedian
+      - 🇨🇦 _CN_中国->🇨🇦_CA_加拿大
+      - 🇮🇸 _IS_冰岛
+      - 🇨🇳 CN-111.26.109.79-009
+      - 🇨🇳 CN-120.237.60.54-012
+      - 🇨🇳 CN-111.26.109.79-079
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -81,67 +118,106 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[VMess] IR-91.199.27.118-014"
-      - "[VMess] 🇨🇳 CN-111.26.109.79-068"
-      - "[VMess] 🇨🇳 中国【机场推荐：https://a0a.xyz/】4"
-      - "[VMess] 🇨🇳 中国【机场推荐：https://a0a.xyz/】6"
-      - "[VMess] 🇨🇳 中国【机场推荐：https://a0a.xyz/】7"
-      - "[Trojan] 🇯🇵 节点日期：06-29"
-      - "[VMess] 🇰🇷 韩国3|@ripaojiedian"
-      - "[SS] 🇸🇪 瑞典【机场推荐：https://a0a.xyz/】27"
-      - "[VMess] 🇺🇸 美国3|@ripaojiedian"
-      - "[SS] 🇻🇳 越南|@ripaojiedian"
+      - 🇸🇬 SG新加坡2
+      - 🇺🇸 US美国3
+      - 江苏
+      - 🇭🇰 HK香港2
+      - 🇯🇵 JP日本
+      - 🇰🇷 KR韩国
+      - 🇯🇵 JP日本3
+      - 🇭🇰 HK香港4
+      - 🇯🇵 JP日本4
+      - 🇭🇰 HK香港6
+      - 🇸🇬 SG新加坡3
+      - 🇰🇷 KR韩国2
+      - 🇺🇸 US美国7
+      - 🇰🇷 韩国3|@ripaojiedian
+      - 🇨🇦 _CN_中国->🇨🇦_CA_加拿大
+      - 🇮🇸 _IS_冰岛
+      - 🇨🇳 CN-111.26.109.79-009
+      - 🇨🇳 CN-120.237.60.54-012
+      - 🇨🇳 CN-111.26.109.79-079
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 🇭🇰 HK香港2
+      - 🇭🇰 HK香港4
+      - 🇭🇰 HK香港6
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[VMess] IR-91.199.27.118-014"
-      - "[VMess] 🇨🇳 CN-111.26.109.79-068"
-      - "[VMess] 🇨🇳 中国【机场推荐：https://a0a.xyz/】4"
-      - "[VMess] 🇨🇳 中国【机场推荐：https://a0a.xyz/】6"
-      - "[VMess] 🇨🇳 中国【机场推荐：https://a0a.xyz/】7"
-      - "[Trojan] 🇯🇵 节点日期：06-29"
-      - "[VMess] 🇰🇷 韩国3|@ripaojiedian"
-      - "[SS] 🇸🇪 瑞典【机场推荐：https://a0a.xyz/】27"
-      - "[VMess] 🇺🇸 美国3|@ripaojiedian"
-      - "[SS] 🇻🇳 越南|@ripaojiedian"
+      - 🇸🇬 SG新加坡2
+      - 🇺🇸 US美国3
+      - 江苏
+      - 🇭🇰 HK香港2
+      - 🇯🇵 JP日本
+      - 🇰🇷 KR韩国
+      - 🇯🇵 JP日本3
+      - 🇭🇰 HK香港4
+      - 🇯🇵 JP日本4
+      - 🇭🇰 HK香港6
+      - 🇸🇬 SG新加坡3
+      - 🇰🇷 KR韩国2
+      - 🇺🇸 US美国7
+      - 🇰🇷 韩国3|@ripaojiedian
+      - 🇨🇦 _CN_中国->🇨🇦_CA_加拿大
+      - 🇮🇸 _IS_冰岛
+      - 🇨🇳 CN-111.26.109.79-009
+      - 🇨🇳 CN-120.237.60.54-012
+      - 🇨🇳 CN-111.26.109.79-079
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[VMess] IR-91.199.27.118-014"
-      - "[VMess] 🇨🇳 CN-111.26.109.79-068"
-      - "[VMess] 🇨🇳 中国【机场推荐：https://a0a.xyz/】4"
-      - "[VMess] 🇨🇳 中国【机场推荐：https://a0a.xyz/】6"
-      - "[VMess] 🇨🇳 中国【机场推荐：https://a0a.xyz/】7"
-      - "[Trojan] 🇯🇵 节点日期：06-29"
-      - "[VMess] 🇰🇷 韩国3|@ripaojiedian"
-      - "[SS] 🇸🇪 瑞典【机场推荐：https://a0a.xyz/】27"
-      - "[VMess] 🇺🇸 美国3|@ripaojiedian"
-      - "[SS] 🇻🇳 越南|@ripaojiedian"
+      - 🇸🇬 SG新加坡2
+      - 🇺🇸 US美国3
+      - 江苏
+      - 🇭🇰 HK香港2
+      - 🇯🇵 JP日本
+      - 🇰🇷 KR韩国
+      - 🇯🇵 JP日本3
+      - 🇭🇰 HK香港4
+      - 🇯🇵 JP日本4
+      - 🇭🇰 HK香港6
+      - 🇸🇬 SG新加坡3
+      - 🇰🇷 KR韩国2
+      - 🇺🇸 US美国7
+      - 🇰🇷 韩国3|@ripaojiedian
+      - 🇨🇦 _CN_中国->🇨🇦_CA_加拿大
+      - 🇮🇸 _IS_冰岛
+      - 🇨🇳 CN-111.26.109.79-009
+      - 🇨🇳 CN-120.237.60.54-012
+      - 🇨🇳 CN-111.26.109.79-079
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[VMess] IR-91.199.27.118-014"
-      - "[VMess] 🇨🇳 CN-111.26.109.79-068"
-      - "[VMess] 🇨🇳 中国【机场推荐：https://a0a.xyz/】4"
-      - "[VMess] 🇨🇳 中国【机场推荐：https://a0a.xyz/】6"
-      - "[VMess] 🇨🇳 中国【机场推荐：https://a0a.xyz/】7"
-      - "[Trojan] 🇯🇵 节点日期：06-29"
-      - "[VMess] 🇰🇷 韩国3|@ripaojiedian"
-      - "[SS] 🇸🇪 瑞典【机场推荐：https://a0a.xyz/】27"
-      - "[VMess] 🇺🇸 美国3|@ripaojiedian"
-      - "[SS] 🇻🇳 越南|@ripaojiedian"
+      - 🇸🇬 SG新加坡2
+      - 🇺🇸 US美国3
+      - 江苏
+      - 🇭🇰 HK香港2
+      - 🇯🇵 JP日本
+      - 🇰🇷 KR韩国
+      - 🇯🇵 JP日本3
+      - 🇭🇰 HK香港4
+      - 🇯🇵 JP日本4
+      - 🇭🇰 HK香港6
+      - 🇸🇬 SG新加坡3
+      - 🇰🇷 KR韩国2
+      - 🇺🇸 US美国7
+      - 🇰🇷 韩国3|@ripaojiedian
+      - 🇨🇦 _CN_中国->🇨🇦_CA_加拿大
+      - 🇮🇸 _IS_冰岛
+      - 🇨🇳 CN-111.26.109.79-009
+      - 🇨🇳 CN-120.237.60.54-012
+      - 🇨🇳 CN-111.26.109.79-079
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -157,16 +233,25 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[VMess] IR-91.199.27.118-014"
-      - "[VMess] 🇨🇳 CN-111.26.109.79-068"
-      - "[VMess] 🇨🇳 中国【机场推荐：https://a0a.xyz/】4"
-      - "[VMess] 🇨🇳 中国【机场推荐：https://a0a.xyz/】6"
-      - "[VMess] 🇨🇳 中国【机场推荐：https://a0a.xyz/】7"
-      - "[Trojan] 🇯🇵 节点日期：06-29"
-      - "[VMess] 🇰🇷 韩国3|@ripaojiedian"
-      - "[SS] 🇸🇪 瑞典【机场推荐：https://a0a.xyz/】27"
-      - "[VMess] 🇺🇸 美国3|@ripaojiedian"
-      - "[SS] 🇻🇳 越南|@ripaojiedian"
+      - 🇸🇬 SG新加坡2
+      - 🇺🇸 US美国3
+      - 江苏
+      - 🇭🇰 HK香港2
+      - 🇯🇵 JP日本
+      - 🇰🇷 KR韩国
+      - 🇯🇵 JP日本3
+      - 🇭🇰 HK香港4
+      - 🇯🇵 JP日本4
+      - 🇭🇰 HK香港6
+      - 🇸🇬 SG新加坡3
+      - 🇰🇷 KR韩国2
+      - 🇺🇸 US美国7
+      - 🇰🇷 韩国3|@ripaojiedian
+      - 🇨🇦 _CN_中国->🇨🇦_CA_加拿大
+      - 🇮🇸 _IS_冰岛
+      - 🇨🇳 CN-111.26.109.79-009
+      - 🇨🇳 CN-120.237.60.54-012
+      - 🇨🇳 CN-111.26.109.79-079
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
