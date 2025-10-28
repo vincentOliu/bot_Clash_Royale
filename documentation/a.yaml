@@ -6,131 +6,67 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[SS] CN_speednode_0006", server: sgp.fastsoonlink.com, port: 40005, type: ss, cipher: chacha20-ietf-poly1305, password: 9177de1a-aeff-43f1-93a6-7dd08a2fdc41, udp: true}
-  - {name: "[SS] CN_speednode_0008", server: fr.fastsoonlink.com, port: 40034, type: ss, cipher: chacha20-ietf-poly1305, password: 9177de1a-aeff-43f1-93a6-7dd08a2fdc41, udp: true}
-  - {name: "[VMess] CN_speednode_0010", server: v24.heduian.link, port: 30824, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v24.heduian.link}}, udp: true}
-  - {name: "[Trojan] end-gfw.com21@kr64", server: 43.201.251.27, port: 6688, type: trojan, password: 1a17b19d-4896-4531-af79-6e91d8ef8228, sni: baidu.com, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] xx|f100|puddincat07@Telegram", server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: 🇭🇰HK-119.236.248.2-0305 | 11.658MB, network: ws, ws-opts: {path: /, headers: {Host: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com}}, udp: true}
-  - {name: "[SS] 🇨🇳 福建2 49.9KB/s", server: pr.fastsoonlink.com, port: 40030, type: ss, cipher: chacha20-ietf-poly1305, password: 9177de1a-aeff-43f1-93a6-7dd08a2fdc41, udp: true}
-  - {name: "[SS] 🇩🇪 机场推荐:dafei.de 冰岛 01", server: 37.235.49.152, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: "[SS] 🇩🇪 机场推荐:dafei.de 冰岛 02", server: 37.235.49.168, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: "[SS] 🇩🇪 机场推荐:dafei.de 巴拉圭 01", server: 38.165.233.93, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: "[SS] 🇩🇪 机场推荐:dafei.de 希腊 01", server: 192.71.166.100, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: "[SS] 🇩🇪 机场推荐:dafei.de 挪威 01", server: 185.213.23.226, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: "[SS] 🇩🇪 机场推荐:dafei.de 摩尔多瓦 02", server: 185.153.197.5, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: "[SS] 🇩🇪 机场推荐:dafei.de 斯洛伐克 01", server: 156.146.40.194, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: "[SS] 🇩🇪 机场推荐:dafei.de 荷兰 01", server: 51.15.17.169, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: "[SS] 🇩🇪 机场推荐:dafei.de 越南 06", server: 103.186.154.24, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: "[SS] 🇩🇪 机场推荐:dafei.de 越南 219", server: 103.186.155.156, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: "[SS] 🇩🇪 机场推荐:dafei.de 越南 47", server: 103.186.154.27, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: "[SS] 🇭🇰 机场推荐:dafei.de 香港 04", server: hk.fastsoonlink.com, port: 40000, type: ss, cipher: chacha20-ietf-poly1305, password: 9177de1a-aeff-43f1-93a6-7dd08a2fdc41, udp: true}
-  - {name: "[SS] 🇭🇰 机场推荐:dafei.de 香港 15", server: 154.197.26.237, port: 8388, type: ss, cipher: chacha20-ietf, password: asd123456, udp: true}
-  - {name: "[VMess] 🇭🇰 香港|@stairnode", server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: baidu.com}}, udp: true}
-  - {name: "[SS] 🇰🇷 [SS] 🇰🇷 机场推荐:dafei.de 韩国 02", server: glance.asuscomm.com, port: 10099, type: ss, cipher: chacha20-ietf-poly1305, password: !<str> 12242, udp: true}
-  - {name: "[SS] 🇰🇷 机场推荐:dafei.de 韩国 02", server: 154.90.63.177, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: "[SS] 🇰🇷 韩国【机场推荐：https://a0a.xyz/】15", server: kr.fastsoonlink.com, port: 40032, type: ss, cipher: chacha20-ietf-poly1305, password: 9177de1a-aeff-43f1-93a6-7dd08a2fdc41, udp: true}
-  - {name: "[SS] 🇷🇺 RU俄罗斯 91.8KB/s", server: 212.192.12.77, port: 30398, type: ss, cipher: aes-256-gcm, password: 7e1dd4c55bf85da5, udp: true}
-  - {name: "[SS] 🇷🇺 RU俄罗斯2 49.1KB/s", server: 45.140.169.26, port: 30102, type: ss, cipher: aes-256-gcm, password: 7ae4e68cf77f6089, udp: true}
-  - {name: "[VMess] 🇸🇬 新加坡3|@stairnode", server: v39.heduian.link, port: 30839, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: baidu.com}}, udp: true}
-  - {name: "[SS] 🇺🇸 机场推荐:dafei.de 美国 04", server: 104.192.226.106, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇸🇬 机场推荐:dafei.de 新加坡 06, server: v12.heduian.link, port: 30812, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ocbc.com}}, udp: true}
+  - {name: 🇺🇸 机场推荐:dafei.de 美国 26, server: v29.heduian.link, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ocbc.com}}, udp: true}
+  - {name: 🇩🇪 机场推荐:dafei.de 摩尔多瓦 01, server: 185.153.197.5, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇺🇸 美国(yudou678.top 玉豆免费节点) 4, server: 113.99.143.139, port: 40316, type: ss, cipher: aes-128-gcm, password: b637f2e47b7827b308ebf399008075d2, udp: true}
+  - {name: 🇺🇸 美国(yudou678.top 玉豆免费节点) 5, server: 113.99.143.139, port: 26470, type: ss, cipher: aes-128-gcm, password: b637f2e47b7827b308ebf399008075d2, udp: true}
+  - {name: 🇭🇰 香港|@stairnode, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: baidu.com}}, udp: true}
+  - {name: xx|0b1a|puddincat07@Telegram, server: v24.heduian.link, port: 30824, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v24.heduian.link}}, udp: true}
+  - {name: xx|bb48|puddincat07@Telegram, server: v39.heduian.link, port: 30839, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: baidu.com}}, udp: true}
+  - {name: xx|e474|puddincat07@Telegram, server: v6.heduian.link, port: 30806, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ocbc.com}}, udp: true}
+  - {name: xx|afcb|puddincat07@Telegram, server: p141.panda001.net, port: 4652, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国, server: v29.heduian.link, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v29.heduian.link}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[SS] CN_speednode_0006"
-      - "[SS] CN_speednode_0008"
-      - "[VMess] CN_speednode_0010"
-      - "[Trojan] end-gfw.com21@kr64"
-      - "[VMess] xx|f100|puddincat07@Telegram"
-      - "[SS] 🇨🇳 福建2 49.9KB/s"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 冰岛 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 冰岛 02"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 巴拉圭 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 希腊 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 挪威 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 摩尔多瓦 02"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 斯洛伐克 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 荷兰 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 越南 06"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 越南 219"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 越南 47"
-      - "[SS] 🇭🇰 机场推荐:dafei.de 香港 04"
-      - "[SS] 🇭🇰 机场推荐:dafei.de 香港 15"
-      - "[VMess] 🇭🇰 香港|@stairnode"
-      - "[SS] 🇰🇷 [SS] 🇰🇷 机场推荐:dafei.de 韩国 02"
-      - "[SS] 🇰🇷 机场推荐:dafei.de 韩国 02"
-      - "[SS] 🇰🇷 韩国【机场推荐：https://a0a.xyz/】15"
-      - "[SS] 🇷🇺 RU俄罗斯 91.8KB/s"
-      - "[SS] 🇷🇺 RU俄罗斯2 49.1KB/s"
-      - "[VMess] 🇸🇬 新加坡3|@stairnode"
-      - "[SS] 🇺🇸 机场推荐:dafei.de 美国 04"
+      - 🇸🇬 机场推荐:dafei.de 新加坡 06
+      - 🇺🇸 机场推荐:dafei.de 美国 26
+      - 🇩🇪 机场推荐:dafei.de 摩尔多瓦 01
+      - 🇺🇸 美国(yudou678.top 玉豆免费节点) 4
+      - 🇺🇸 美国(yudou678.top 玉豆免费节点) 5
+      - 🇭🇰 香港|@stairnode
+      - xx|0b1a|puddincat07@Telegram
+      - xx|bb48|puddincat07@Telegram
+      - xx|e474|puddincat07@Telegram
+      - xx|afcb|puddincat07@Telegram
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.youtube.com/generate_204
     interval: 300
     proxies:
-      - "[SS] CN_speednode_0006"
-      - "[SS] CN_speednode_0008"
-      - "[VMess] CN_speednode_0010"
-      - "[Trojan] end-gfw.com21@kr64"
-      - "[VMess] xx|f100|puddincat07@Telegram"
-      - "[SS] 🇨🇳 福建2 49.9KB/s"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 冰岛 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 冰岛 02"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 巴拉圭 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 希腊 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 挪威 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 摩尔多瓦 02"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 斯洛伐克 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 荷兰 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 越南 06"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 越南 219"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 越南 47"
-      - "[SS] 🇭🇰 机场推荐:dafei.de 香港 04"
-      - "[SS] 🇭🇰 机场推荐:dafei.de 香港 15"
-      - "[VMess] 🇭🇰 香港|@stairnode"
-      - "[SS] 🇰🇷 [SS] 🇰🇷 机场推荐:dafei.de 韩国 02"
-      - "[SS] 🇰🇷 机场推荐:dafei.de 韩国 02"
-      - "[SS] 🇰🇷 韩国【机场推荐：https://a0a.xyz/】15"
-      - "[SS] 🇷🇺 RU俄罗斯 91.8KB/s"
-      - "[SS] 🇷🇺 RU俄罗斯2 49.1KB/s"
-      - "[VMess] 🇸🇬 新加坡3|@stairnode"
-      - "[SS] 🇺🇸 机场推荐:dafei.de 美国 04"
+      - 🇸🇬 机场推荐:dafei.de 新加坡 06
+      - 🇺🇸 机场推荐:dafei.de 美国 26
+      - 🇩🇪 机场推荐:dafei.de 摩尔多瓦 01
+      - 🇺🇸 美国(yudou678.top 玉豆免费节点) 4
+      - 🇺🇸 美国(yudou678.top 玉豆免费节点) 5
+      - 🇭🇰 香港|@stairnode
+      - xx|0b1a|puddincat07@Telegram
+      - xx|bb48|puddincat07@Telegram
+      - xx|e474|puddincat07@Telegram
+      - xx|afcb|puddincat07@Telegram
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[SS] CN_speednode_0006"
-      - "[SS] CN_speednode_0008"
-      - "[VMess] CN_speednode_0010"
-      - "[Trojan] end-gfw.com21@kr64"
-      - "[VMess] xx|f100|puddincat07@Telegram"
-      - "[SS] 🇨🇳 福建2 49.9KB/s"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 冰岛 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 冰岛 02"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 巴拉圭 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 希腊 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 挪威 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 摩尔多瓦 02"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 斯洛伐克 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 荷兰 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 越南 06"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 越南 219"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 越南 47"
-      - "[SS] 🇭🇰 机场推荐:dafei.de 香港 04"
-      - "[SS] 🇭🇰 机场推荐:dafei.de 香港 15"
-      - "[VMess] 🇭🇰 香港|@stairnode"
-      - "[SS] 🇰🇷 [SS] 🇰🇷 机场推荐:dafei.de 韩国 02"
-      - "[SS] 🇰🇷 机场推荐:dafei.de 韩国 02"
-      - "[SS] 🇰🇷 韩国【机场推荐：https://a0a.xyz/】15"
-      - "[SS] 🇷🇺 RU俄罗斯 91.8KB/s"
-      - "[SS] 🇷🇺 RU俄罗斯2 49.1KB/s"
-      - "[VMess] 🇸🇬 新加坡3|@stairnode"
-      - "[SS] 🇺🇸 机场推荐:dafei.de 美国 04"
+      - 🇸🇬 机场推荐:dafei.de 新加坡 06
+      - 🇺🇸 机场推荐:dafei.de 美国 26
+      - 🇩🇪 机场推荐:dafei.de 摩尔多瓦 01
+      - 🇺🇸 美国(yudou678.top 玉豆免费节点) 4
+      - 🇺🇸 美国(yudou678.top 玉豆免费节点) 5
+      - 🇭🇰 香港|@stairnode
+      - xx|0b1a|puddincat07@Telegram
+      - xx|bb48|puddincat07@Telegram
+      - xx|e474|puddincat07@Telegram
+      - xx|afcb|puddincat07@Telegram
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -149,138 +85,72 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[SS] CN_speednode_0006"
-      - "[SS] CN_speednode_0008"
-      - "[VMess] CN_speednode_0010"
-      - "[Trojan] end-gfw.com21@kr64"
-      - "[VMess] xx|f100|puddincat07@Telegram"
-      - "[SS] 🇨🇳 福建2 49.9KB/s"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 冰岛 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 冰岛 02"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 巴拉圭 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 希腊 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 挪威 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 摩尔多瓦 02"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 斯洛伐克 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 荷兰 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 越南 06"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 越南 219"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 越南 47"
-      - "[SS] 🇭🇰 机场推荐:dafei.de 香港 04"
-      - "[SS] 🇭🇰 机场推荐:dafei.de 香港 15"
-      - "[VMess] 🇭🇰 香港|@stairnode"
-      - "[SS] 🇰🇷 [SS] 🇰🇷 机场推荐:dafei.de 韩国 02"
-      - "[SS] 🇰🇷 机场推荐:dafei.de 韩国 02"
-      - "[SS] 🇰🇷 韩国【机场推荐：https://a0a.xyz/】15"
-      - "[SS] 🇷🇺 RU俄罗斯 91.8KB/s"
-      - "[SS] 🇷🇺 RU俄罗斯2 49.1KB/s"
-      - "[VMess] 🇸🇬 新加坡3|@stairnode"
-      - "[SS] 🇺🇸 机场推荐:dafei.de 美国 04"
+      - 🇸🇬 机场推荐:dafei.de 新加坡 06
+      - 🇺🇸 机场推荐:dafei.de 美国 26
+      - 🇩🇪 机场推荐:dafei.de 摩尔多瓦 01
+      - 🇺🇸 美国(yudou678.top 玉豆免费节点) 4
+      - 🇺🇸 美国(yudou678.top 玉豆免费节点) 5
+      - 🇭🇰 香港|@stairnode
+      - xx|0b1a|puddincat07@Telegram
+      - xx|bb48|puddincat07@Telegram
+      - xx|e474|puddincat07@Telegram
+      - xx|afcb|puddincat07@Telegram
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "[SS] 🇭🇰 机场推荐:dafei.de 香港 04"
-      - "[SS] 🇭🇰 机场推荐:dafei.de 香港 15"
-      - "[VMess] 🇭🇰 香港|@stairnode"
+      - 🇭🇰 香港|@stairnode
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[SS] CN_speednode_0006"
-      - "[SS] CN_speednode_0008"
-      - "[VMess] CN_speednode_0010"
-      - "[Trojan] end-gfw.com21@kr64"
-      - "[VMess] xx|f100|puddincat07@Telegram"
-      - "[SS] 🇨🇳 福建2 49.9KB/s"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 冰岛 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 冰岛 02"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 巴拉圭 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 希腊 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 挪威 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 摩尔多瓦 02"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 斯洛伐克 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 荷兰 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 越南 06"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 越南 219"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 越南 47"
-      - "[SS] 🇭🇰 机场推荐:dafei.de 香港 04"
-      - "[SS] 🇭🇰 机场推荐:dafei.de 香港 15"
-      - "[VMess] 🇭🇰 香港|@stairnode"
-      - "[SS] 🇰🇷 [SS] 🇰🇷 机场推荐:dafei.de 韩国 02"
-      - "[SS] 🇰🇷 机场推荐:dafei.de 韩国 02"
-      - "[SS] 🇰🇷 韩国【机场推荐：https://a0a.xyz/】15"
-      - "[SS] 🇷🇺 RU俄罗斯 91.8KB/s"
-      - "[SS] 🇷🇺 RU俄罗斯2 49.1KB/s"
-      - "[VMess] 🇸🇬 新加坡3|@stairnode"
-      - "[SS] 🇺🇸 机场推荐:dafei.de 美国 04"
+      - 🇸🇬 机场推荐:dafei.de 新加坡 06
+      - 🇺🇸 机场推荐:dafei.de 美国 26
+      - 🇩🇪 机场推荐:dafei.de 摩尔多瓦 01
+      - 🇺🇸 美国(yudou678.top 玉豆免费节点) 4
+      - 🇺🇸 美国(yudou678.top 玉豆免费节点) 5
+      - 🇭🇰 香港|@stairnode
+      - xx|0b1a|puddincat07@Telegram
+      - xx|bb48|puddincat07@Telegram
+      - xx|e474|puddincat07@Telegram
+      - xx|afcb|puddincat07@Telegram
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[SS] CN_speednode_0006"
-      - "[SS] CN_speednode_0008"
-      - "[VMess] CN_speednode_0010"
-      - "[Trojan] end-gfw.com21@kr64"
-      - "[VMess] xx|f100|puddincat07@Telegram"
-      - "[SS] 🇨🇳 福建2 49.9KB/s"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 冰岛 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 冰岛 02"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 巴拉圭 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 希腊 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 挪威 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 摩尔多瓦 02"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 斯洛伐克 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 荷兰 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 越南 06"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 越南 219"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 越南 47"
-      - "[SS] 🇭🇰 机场推荐:dafei.de 香港 04"
-      - "[SS] 🇭🇰 机场推荐:dafei.de 香港 15"
-      - "[VMess] 🇭🇰 香港|@stairnode"
-      - "[SS] 🇰🇷 [SS] 🇰🇷 机场推荐:dafei.de 韩国 02"
-      - "[SS] 🇰🇷 机场推荐:dafei.de 韩国 02"
-      - "[SS] 🇰🇷 韩国【机场推荐：https://a0a.xyz/】15"
-      - "[SS] 🇷🇺 RU俄罗斯 91.8KB/s"
-      - "[SS] 🇷🇺 RU俄罗斯2 49.1KB/s"
-      - "[VMess] 🇸🇬 新加坡3|@stairnode"
-      - "[SS] 🇺🇸 机场推荐:dafei.de 美国 04"
+      - 🇸🇬 机场推荐:dafei.de 新加坡 06
+      - 🇺🇸 机场推荐:dafei.de 美国 26
+      - 🇩🇪 机场推荐:dafei.de 摩尔多瓦 01
+      - 🇺🇸 美国(yudou678.top 玉豆免费节点) 4
+      - 🇺🇸 美国(yudou678.top 玉豆免费节点) 5
+      - 🇭🇰 香港|@stairnode
+      - xx|0b1a|puddincat07@Telegram
+      - xx|bb48|puddincat07@Telegram
+      - xx|e474|puddincat07@Telegram
+      - xx|afcb|puddincat07@Telegram
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[SS] CN_speednode_0006"
-      - "[SS] CN_speednode_0008"
-      - "[VMess] CN_speednode_0010"
-      - "[Trojan] end-gfw.com21@kr64"
-      - "[VMess] xx|f100|puddincat07@Telegram"
-      - "[SS] 🇨🇳 福建2 49.9KB/s"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 冰岛 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 冰岛 02"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 巴拉圭 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 希腊 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 挪威 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 摩尔多瓦 02"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 斯洛伐克 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 荷兰 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 越南 06"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 越南 219"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 越南 47"
-      - "[SS] 🇭🇰 机场推荐:dafei.de 香港 04"
-      - "[SS] 🇭🇰 机场推荐:dafei.de 香港 15"
-      - "[VMess] 🇭🇰 香港|@stairnode"
-      - "[SS] 🇰🇷 [SS] 🇰🇷 机场推荐:dafei.de 韩国 02"
-      - "[SS] 🇰🇷 机场推荐:dafei.de 韩国 02"
-      - "[SS] 🇰🇷 韩国【机场推荐：https://a0a.xyz/】15"
-      - "[SS] 🇷🇺 RU俄罗斯 91.8KB/s"
-      - "[SS] 🇷🇺 RU俄罗斯2 49.1KB/s"
-      - "[VMess] 🇸🇬 新加坡3|@stairnode"
-      - "[SS] 🇺🇸 机场推荐:dafei.de 美国 04"
+      - 🇸🇬 机场推荐:dafei.de 新加坡 06
+      - 🇺🇸 机场推荐:dafei.de 美国 26
+      - 🇩🇪 机场推荐:dafei.de 摩尔多瓦 01
+      - 🇺🇸 美国(yudou678.top 玉豆免费节点) 4
+      - 🇺🇸 美国(yudou678.top 玉豆免费节点) 5
+      - 🇭🇰 香港|@stairnode
+      - xx|0b1a|puddincat07@Telegram
+      - xx|bb48|puddincat07@Telegram
+      - xx|e474|puddincat07@Telegram
+      - xx|afcb|puddincat07@Telegram
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -296,33 +166,17 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[SS] CN_speednode_0006"
-      - "[SS] CN_speednode_0008"
-      - "[VMess] CN_speednode_0010"
-      - "[Trojan] end-gfw.com21@kr64"
-      - "[VMess] xx|f100|puddincat07@Telegram"
-      - "[SS] 🇨🇳 福建2 49.9KB/s"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 冰岛 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 冰岛 02"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 巴拉圭 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 希腊 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 挪威 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 摩尔多瓦 02"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 斯洛伐克 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 荷兰 01"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 越南 06"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 越南 219"
-      - "[SS] 🇩🇪 机场推荐:dafei.de 越南 47"
-      - "[SS] 🇭🇰 机场推荐:dafei.de 香港 04"
-      - "[SS] 🇭🇰 机场推荐:dafei.de 香港 15"
-      - "[VMess] 🇭🇰 香港|@stairnode"
-      - "[SS] 🇰🇷 [SS] 🇰🇷 机场推荐:dafei.de 韩国 02"
-      - "[SS] 🇰🇷 机场推荐:dafei.de 韩国 02"
-      - "[SS] 🇰🇷 韩国【机场推荐：https://a0a.xyz/】15"
-      - "[SS] 🇷🇺 RU俄罗斯 91.8KB/s"
-      - "[SS] 🇷🇺 RU俄罗斯2 49.1KB/s"
-      - "[VMess] 🇸🇬 新加坡3|@stairnode"
-      - "[SS] 🇺🇸 机场推荐:dafei.de 美国 04"
+      - 🇸🇬 机场推荐:dafei.de 新加坡 06
+      - 🇺🇸 机场推荐:dafei.de 美国 26
+      - 🇩🇪 机场推荐:dafei.de 摩尔多瓦 01
+      - 🇺🇸 美国(yudou678.top 玉豆免费节点) 4
+      - 🇺🇸 美国(yudou678.top 玉豆免费节点) 5
+      - 🇭🇰 香港|@stairnode
+      - xx|0b1a|puddincat07@Telegram
+      - xx|bb48|puddincat07@Telegram
+      - xx|e474|puddincat07@Telegram
+      - xx|afcb|puddincat07@Telegram
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
